@@ -174,7 +174,7 @@
             this.backstageViewPagemand.LinkText = "Mandatory Hardware";
             this.backstageViewPagemand.Page = this.configMandatory1;
             this.backstageViewPagemand.Parent = null;
-            this.backstageViewPagemand.Show = true;
+            this.backstageViewPagemand.Show = false;
             this.backstageViewPagemand.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagemand, "backstageViewPagemand");
             // 
@@ -190,7 +190,7 @@
             this.backstageViewPagetradheli.LinkText = "Heli Setup";
             this.backstageViewPagetradheli.Page = this.configTradHeli1;
             this.backstageViewPagetradheli.Parent = this.backstageViewPagemand;
-            this.backstageViewPagetradheli.Show = true;
+            this.backstageViewPagetradheli.Show = false;
             this.backstageViewPagetradheli.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagetradheli, "backstageViewPagetradheli");
             // 
@@ -206,7 +206,7 @@
             this.backstageViewPageframetype.LinkText = "Frame Type";
             this.backstageViewPageframetype.Page = this.configFrameType1;
             this.backstageViewPageframetype.Parent = this.backstageViewPagemand;
-            this.backstageViewPageframetype.Show = true;
+            this.backstageViewPageframetype.Show = false;
             this.backstageViewPageframetype.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageframetype, "backstageViewPageframetype");
             // 
@@ -222,7 +222,7 @@
             this.backstageViewPageaccel.LinkText = "Accel Calibration";
             this.backstageViewPageaccel.Page = this.configAccelerometerCalibration;
             this.backstageViewPageaccel.Parent = this.backstageViewPagemand;
-            this.backstageViewPageaccel.Show = true;
+            this.backstageViewPageaccel.Show = false;
             this.backstageViewPageaccel.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageaccel, "backstageViewPageaccel");
             // 
@@ -237,7 +237,7 @@
             this.backstageViewPagecompass.LinkText = "Compass";
             this.backstageViewPagecompass.Page = this.configHWCompass1;
             this.backstageViewPagecompass.Parent = this.backstageViewPagemand;
-            this.backstageViewPagecompass.Show = true;
+            this.backstageViewPagecompass.Show = false;
             this.backstageViewPagecompass.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagecompass, "backstageViewPagecompass");
             // 
@@ -252,7 +252,7 @@
             this.backstageViewPageradio.LinkText = "Radio Calibration";
             this.backstageViewPageradio.Page = this.configRadioInput1;
             this.backstageViewPageradio.Parent = this.backstageViewPagemand;
-            this.backstageViewPageradio.Show = true;
+            this.backstageViewPageradio.Show = false;
             this.backstageViewPageradio.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageradio, "backstageViewPageradio");
             // 
@@ -267,7 +267,7 @@
             this.backstageViewPageflmode.LinkText = "Flight Modes";
             this.backstageViewPageflmode.Page = this.configFlightModes1;
             this.backstageViewPageflmode.Parent = this.backstageViewPagemand;
-            this.backstageViewPageflmode.Show = true;
+            this.backstageViewPageflmode.Show = false;
             this.backstageViewPageflmode.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageflmode, "backstageViewPageflmode");
             // 
@@ -282,7 +282,7 @@
             this.backstageViewPagefs.LinkText = "FailSafe";
             this.backstageViewPagefs.Page = this.configFailSafe1;
             this.backstageViewPagefs.Parent = this.backstageViewPagemand;
-            this.backstageViewPagefs.Show = true;
+            this.backstageViewPagefs.Show = false;
             this.backstageViewPagefs.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefs, "backstageViewPagefs");
             // 
@@ -297,7 +297,7 @@
             this.backstageViewPageopt.LinkText = "Optional Hardware";
             this.backstageViewPageopt.Page = this.configOptional1;
             this.backstageViewPageopt.Parent = null;
-            this.backstageViewPageopt.Show = true;
+            this.backstageViewPageopt.Show = false;
             this.backstageViewPageopt.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageopt, "backstageViewPageopt");
             // 
@@ -312,7 +312,7 @@
             this.backstageViewPage3drradio.LinkText = "3DR Radio";
             this.backstageViewPage3drradio.Page = this._3DRradio1;
             this.backstageViewPage3drradio.Parent = this.backstageViewPageopt;
-            this.backstageViewPage3drradio.Show = true;
+            this.backstageViewPage3drradio.Show = false;
             this.backstageViewPage3drradio.Spacing = 30;
             resources.ApplyResources(this.backstageViewPage3drradio, "backstageViewPage3drradio");
             // 
@@ -328,7 +328,7 @@
             this.backstageViewPagebatmon.LinkText = "Battery Monitor";
             this.backstageViewPagebatmon.Page = this.configBatteryMonitoring1;
             this.backstageViewPagebatmon.Parent = this.backstageViewPageopt;
-            this.backstageViewPagebatmon.Show = true;
+            this.backstageViewPagebatmon.Show = false;
             this.backstageViewPagebatmon.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagebatmon, "backstageViewPagebatmon");
             // 
@@ -344,7 +344,7 @@
             this.backstageViewPagecompassmot.LinkText = "Compass/Motor Calib";
             this.backstageViewPagecompassmot.Page = this.configCompassMot1;
             this.backstageViewPagecompassmot.Parent = this.backstageViewPageopt;
-            this.backstageViewPagecompassmot.Show = true;
+            this.backstageViewPagecompassmot.Show = false;
             this.backstageViewPagecompassmot.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagecompassmot, "backstageViewPagecompassmot");
             // 
@@ -360,7 +360,7 @@
             this.backstageViewPagesonar.LinkText = "Sonar";
             this.backstageViewPagesonar.Page = this.configHWSonar1;
             this.backstageViewPagesonar.Parent = this.backstageViewPageopt;
-            this.backstageViewPagesonar.Show = true;
+            this.backstageViewPagesonar.Show = false;
             this.backstageViewPagesonar.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagesonar, "backstageViewPagesonar");
             // 
@@ -376,7 +376,7 @@
             this.backstageViewPageairspeed.LinkText = "Airspeed";
             this.backstageViewPageairspeed.Page = this.configHWAirspeed1;
             this.backstageViewPageairspeed.Parent = this.backstageViewPageopt;
-            this.backstageViewPageairspeed.Show = true;
+            this.backstageViewPageairspeed.Show = false;
             this.backstageViewPageairspeed.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageairspeed, "backstageViewPageairspeed");
             // 
@@ -392,7 +392,7 @@
             this.backstageViewPageoptflow.LinkText = "Optical Flow";
             this.backstageViewPageoptflow.Page = this.configHWOptFlow1;
             this.backstageViewPageoptflow.Parent = this.backstageViewPageopt;
-            this.backstageViewPageoptflow.Show = true;
+            this.backstageViewPageoptflow.Show = false;
             this.backstageViewPageoptflow.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageoptflow, "backstageViewPageoptflow");
             // 
@@ -408,7 +408,7 @@
             this.backstageViewPageosd.LinkText = "OSD";
             this.backstageViewPageosd.Page = this.configHWOSD1;
             this.backstageViewPageosd.Parent = this.backstageViewPageopt;
-            this.backstageViewPageosd.Show = true;
+            this.backstageViewPageosd.Show = false;
             this.backstageViewPageosd.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageosd, "backstageViewPageosd");
             // 
@@ -424,7 +424,7 @@
             this.backstageViewPagegimbal.LinkText = "Camera Gimbal";
             this.backstageViewPagegimbal.Page = this.configMount1;
             this.backstageViewPagegimbal.Parent = this.backstageViewPageopt;
-            this.backstageViewPagegimbal.Show = true;
+            this.backstageViewPagegimbal.Show = false;
             this.backstageViewPagegimbal.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagegimbal, "backstageViewPagegimbal");
             // 
@@ -439,7 +439,7 @@
             this.backstageViewPageAntTrack.LinkText = "Antenna tracker";
             this.backstageViewPageAntTrack.Page = this.tracker1;
             this.backstageViewPageAntTrack.Parent = this.backstageViewPageopt;
-            this.backstageViewPageAntTrack.Show = true;
+            this.backstageViewPageAntTrack.Show = false;
             this.backstageViewPageAntTrack.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageAntTrack, "backstageViewPageAntTrack");
             // 
@@ -457,7 +457,7 @@
             this.backstageViewPageMotorTest.LinkText = "Motor Test";
             this.backstageViewPageMotorTest.Page = this.configMotor1;
             this.backstageViewPageMotorTest.Parent = this.backstageViewPageopt;
-            this.backstageViewPageMotorTest.Show = true;
+            this.backstageViewPageMotorTest.Show = false;
             this.backstageViewPageMotorTest.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageMotorTest, "backstageViewPageMotorTest");
             // 
@@ -472,7 +472,7 @@
             this.backstageViewPagehwbt.LinkText = "Bluetooth Setup";
             this.backstageViewPagehwbt.Page = this.configHWBT1;
             this.backstageViewPagehwbt.Parent = this.backstageViewPageopt;
-            this.backstageViewPagehwbt.Show = true;
+            this.backstageViewPagehwbt.Show = false;
             this.backstageViewPagehwbt.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagehwbt, "backstageViewPagehwbt");
             // 
@@ -488,7 +488,7 @@
             this.backstageViewPageParachute.LinkText = "Parachute";
             this.backstageViewPageParachute.Page = this.configHWPa1;
             this.backstageViewPageParachute.Parent = this.backstageViewPageopt;
-            this.backstageViewPageParachute.Show = true;
+            this.backstageViewPageParachute.Show = false;
             this.backstageViewPageParachute.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageParachute, "backstageViewPageParachute");
             // 

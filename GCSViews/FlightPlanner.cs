@@ -390,7 +390,7 @@ namespace MissionPlanner.GCSViews
 
             // config map             
             MainMap.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "gmapcache" + Path.DirectorySeparatorChar;
-            MainMap.MapProvider = GoogleSatelliteMapProvider.Instance;
+            MainMap.MapProvider = AMapProvider.Instance;
 
             // map events
             MainMap.OnPositionChanged += MainMap_OnCurrentPositionChanged;
@@ -415,6 +415,19 @@ namespace MissionPlanner.GCSViews
             //WebRequest.DefaultWebProxy.Credentials = System.Net.CredentialCache.DefaultCredentials;
 
             // get map type
+            //获取地面站使用的五种地图
+            System.Collections.ArrayList Map = new System.Collections.ArrayList();
+            for (int i = 1; i < GMapProviders.List.Count; i++)
+            {
+                if (GMapProviders.List[i].Id == new Guid("ef3dd303-3f74-4938-bf40-232d0595ee88")
+                    || GMapProviders.List[i].Id == new Guid("fca94af4-3467-47c6-bda2-6f52e4a145bc")
+                    || GMapProviders.List[i].Id == new Guid("d0ceb371-f10a-4e12-a2c1-df617d6674a8")
+                    || GMapProviders.List[i].Id == new Guid("3ac742dd-966b-4cfb-b67d-33e7f82f2d37")
+                    || GMapProviders.List[i].Id == new Guid("94e2fcb4-caac-45ea-a1f9-8147c4b14970"))
+                {
+                    Map.Add(GMapProviders.List[i]);
+                }
+            }
             comboBoxMapType.ValueMember = "Name";
             comboBoxMapType.DataSource = GMapProviders.List.ToArray();
             comboBoxMapType.SelectedItem = MainMap.MapProvider;

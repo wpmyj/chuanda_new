@@ -273,7 +273,7 @@ namespace MissionPlanner.GCSViews
             // config map      
             log.Info("Map Setup");
             gMapControl1.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "gmapcache" + Path.DirectorySeparatorChar;
-            gMapControl1.MapProvider = GMapProviders.GoogleSatelliteMap;
+            gMapControl1.MapProvider = GMapProviders.AMap;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
             gMapControl1.Zoom = 3;
@@ -459,31 +459,46 @@ namespace MissionPlanner.GCSViews
 
         private void MainV2_AdvancedChanged(object sender, EventArgs e)
         {
-            if (!MainV2.Advanced)
-            {
-                if (!tabControlactions.TabPages.Contains(tabActionsSimple))
-                    tabControlactions.TabPages.Add(tabActionsSimple);
-                //tabControlactions.TabPages.Remove(tabGauges);
-                tabControlactions.TabPages.Remove(tabActions);
-                tabControlactions.TabPages.Remove(tabStatus);
-                tabControlactions.TabPages.Remove(tabServo);
-                tabControlactions.TabPages.Remove(tabScripts);
+            #region 隐藏历史代码
 
-                tabControlactions.Invalidate();
-            }
-            else
-            {
-                //tabControlactions.TabPages.Remove(tabGauges);
-                tabControlactions.TabPages.Remove(tabActionsSimple);
-                if (!tabControlactions.TabPages.Contains(tabActions))
-                    tabControlactions.TabPages.Add(tabActions);
-                if (!tabControlactions.TabPages.Contains(tabStatus))
-                    tabControlactions.TabPages.Add(tabStatus);
-                if (!tabControlactions.TabPages.Contains(tabServo))
-                    tabControlactions.TabPages.Add(tabServo);
-                if (!tabControlactions.TabPages.Contains(tabScripts))
-                    tabControlactions.TabPages.Add(tabScripts);
-            }
+            //if (!MainV2.Advanced)
+            //{
+            //    if (!tabControlactions.TabPages.Contains(tabActionsSimple))
+            //        tabControlactions.TabPages.Add(tabActionsSimple);
+            //    //tabControlactions.TabPages.Remove(tabGauges);
+            //    tabControlactions.TabPages.Remove(tabActions);
+            //    tabControlactions.TabPages.Remove(tabStatus);
+            //    tabControlactions.TabPages.Remove(tabServo);
+            //    tabControlactions.TabPages.Remove(tabScripts);
+
+            //    tabControlactions.Invalidate();
+            //}
+            //else
+            //{
+            //    //tabControlactions.TabPages.Remove(tabGauges);
+            //    tabControlactions.TabPages.Remove(tabActionsSimple);
+            //    if (!tabControlactions.TabPages.Contains(tabActions))
+            //        tabControlactions.TabPages.Add(tabActions);
+            //    if (!tabControlactions.TabPages.Contains(tabStatus))
+            //        tabControlactions.TabPages.Add(tabStatus);
+            //    if (!tabControlactions.TabPages.Contains(tabServo))
+            //        tabControlactions.TabPages.Add(tabServo);
+            //    if (!tabControlactions.TabPages.Contains(tabScripts))
+            //        tabControlactions.TabPages.Add(tabScripts);
+            //}
+            #endregion
+            //去除除Quick之外的全部Tab
+            tabControlactions.TabPages.Remove(tabGauges);
+            tabControlactions.TabPages.Remove(tabStatus);
+            
+            tabControlactions.TabPages.Remove(tabActions);
+            tabControlactions.TabPages.Remove(tabTLogs);
+            tabControlactions.TabPages.Remove(tabPagemessages);
+            tabControlactions.TabPages.Remove(tabActionsSimple);
+            //tabControlactions.TabPages.Remove(tabQuick);
+            tabControlactions.TabPages.Remove(tabServo);
+            tabControlactions.TabPages.Remove(tablogbrowse);
+            tabControlactions.TabPages.Remove(tabScripts);
         }
 
         public void Activate()

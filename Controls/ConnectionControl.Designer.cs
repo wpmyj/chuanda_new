@@ -37,10 +37,9 @@
             // 
             // cmb_Baud
             // 
-            resources.ApplyResources(this.cmb_Baud, "cmb_Baud");
-            this.cmb_Baud.BackColor = System.Drawing.Color.Black;
+            this.cmb_Baud.BackColor = System.Drawing.Color.DarkGray;
             this.cmb_Baud.DropDownWidth = 150;
-            this.cmb_Baud.ForeColor = System.Drawing.Color.White;
+            this.cmb_Baud.ForeColor = System.Drawing.Color.Black;
             this.cmb_Baud.FormattingEnabled = true;
             this.cmb_Baud.Items.AddRange(new object[] {
             resources.GetString("cmb_Baud.Items"),
@@ -55,24 +54,25 @@
             resources.GetString("cmb_Baud.Items9"),
             resources.GetString("cmb_Baud.Items10"),
             resources.GetString("cmb_Baud.Items11")});
+            resources.ApplyResources(this.cmb_Baud, "cmb_Baud");
             this.cmb_Baud.Name = "cmb_Baud";
             // 
             // cmb_ConnectionType
             // 
-            resources.ApplyResources(this.cmb_ConnectionType, "cmb_ConnectionType");
-            this.cmb_ConnectionType.BackColor = System.Drawing.Color.Black;
-            this.cmb_ConnectionType.ForeColor = System.Drawing.Color.White;
+            this.cmb_ConnectionType.BackColor = System.Drawing.Color.DarkGray;
+            this.cmb_ConnectionType.ForeColor = System.Drawing.Color.Black;
             this.cmb_ConnectionType.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_ConnectionType, "cmb_ConnectionType");
             this.cmb_ConnectionType.Name = "cmb_ConnectionType";
             // 
             // cmb_Connection
             // 
-            resources.ApplyResources(this.cmb_Connection, "cmb_Connection");
-            this.cmb_Connection.BackColor = System.Drawing.Color.Black;
+            this.cmb_Connection.BackColor = System.Drawing.Color.DarkGray;
             this.cmb_Connection.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmb_Connection.DropDownWidth = 200;
-            this.cmb_Connection.ForeColor = System.Drawing.Color.White;
+            this.cmb_Connection.ForeColor = System.Drawing.Color.Black;
             this.cmb_Connection.FormattingEnabled = true;
+            resources.ApplyResources(this.cmb_Connection, "cmb_Connection");
             this.cmb_Connection.Name = "cmb_Connection";
             this.cmb_Connection.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.cmb_Connection_DrawItem);
             // 
@@ -80,8 +80,9 @@
             // 
             resources.ApplyResources(this.linkLabel1, "linkLabel1");
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Image = global::MissionPlanner.Properties.Resources.bgdark;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel1.Image = global::MissionPlanner.Properties.Resources.LightGry;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.TabStop = true;
             // 
@@ -89,7 +90,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.bgdark;
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightGry;
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cmb_Connection);
             this.Controls.Add(this.cmb_ConnectionType);

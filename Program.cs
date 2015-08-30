@@ -36,6 +36,12 @@ namespace MissionPlanner
         [STAThread]
         public static void Main(string[] args)
         {
+            //给窗体添加皮肤样式 wangjicheng
+            //Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine();
+            ////skin.SkinFile = Application.StartupPath.Replace(@"\bin\Debug", "") + @"\skins\Emerald.ssk";
+            //skin.SkinFile = System.Environment.CurrentDirectory + "\\skins\\" + "SteelBlue.ssk";
+            //skin.Active = true;
+
             Program.args = args;
             Console.WriteLine("If your error is about Microsoft.DirectX.DirectInput, please install the latest directx redist from here http://www.microsoft.com/en-us/download/details.aspx?id=35 \n\n");
             Console.WriteLine("Debug under mono    MONO_LOG_LEVEL=debug mono MissionPlanner.exe");
@@ -56,11 +62,12 @@ namespace MissionPlanner
             // fix ssl on mono
             ServicePointManager.ServerCertificateValidationCallback = new System.Net.Security.RemoteCertificateValidationCallback((sender, certificate, chain, policyErrors) => { return true; });
 
-            if (args.Length > 0 && args[0] == "/update")
-            {
-                Utilities.Update.DoUpdate();
-                return;
-            }
+            //隐藏系统更新wangjicheng
+            //if (args.Length > 0 && args[0] == "/update")
+            //{
+            //    Utilities.Update.DoUpdate();
+            //    return;
+            //}
 
             // setup theme provider
             CustomMessageBox.ApplyTheme += MissionPlanner.Utilities.ThemeManager.ApplyThemeTo;
@@ -87,7 +94,7 @@ namespace MissionPlanner
             WebRequest.DefaultWebProxy = WebRequest.GetSystemWebProxy();
             WebRequest.DefaultWebProxy.Credentials = CredentialCache.DefaultNetworkCredentials;
 
-            string name = "Mission Planner";
+            string name = "ByAero,BeHero Data Ground Station";
 
             if (File.Exists(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt"))
                 name = File.ReadAllText(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt", Encoding.UTF8);
@@ -109,99 +116,12 @@ namespace MissionPlanner
 
             CleanupFiles();
 
-            Utilities.NGEN.doNGEN();
+            //Utilities.NGEN.doNGEN();
 
-            //new AP_GPS_SBF();
-
-            //return;
-
-            //fontgen.dowork();
-
-            //adsb.server = "64.93.124.152";
-            //adsb.serverport = 31001;
-            //adsb.serverport = 30003;
-
-            //Utilities.Airports.ReadUNLOCODE(@"C:\Users\hog\Desktop\2013-2 UNLOCODE CodeListPart1.csv");
-            //Utilities.Airports.ReadUNLOCODE(@"C:\Users\hog\Desktop\2013-2 UNLOCODE CodeListPart2.csv");
-            //Utilities.Airports.ReadUNLOCODE(@"C:\Users\hog\Desktop\2013-2 UNLOCODE CodeListPart3.csv");
-            //Utilities.Airports.ReadPartow(@"C:\Users\hog\Desktop\GlobalAirportDatabase.txt");
-
-
-            /*
-            Arduino.ArduinoSTKv2 comport = new Arduino.ArduinoSTKv2();
-
-            comport.PortName = "com8";
-
-            comport.BaudRate = 115200;
-
-            comport.Open();
-
-            Arduino.Chip.Populate();
-
-            if (comport.connectAP())
-            {
-                Arduino.Chip chip = comport.getChipType();
-                Console.WriteLine(chip);
-            }
-            Console.ReadLine();
-
-            return;
-            */
-            /*
-            Comms.SerialPort sp = new Comms.SerialPort();
-
-            sp.PortName = "com8";
-            sp.BaudRate = 115200;
-
-            CurrentState cs = new CurrentState();
-
-            MAVLink mav = new MAVLink();
-
-            mav.BaseStream = sp;
-
-            mav.Open();
-
-            HIL.XPlane xp = new HIL.XPlane();
-
-            xp.SetupSockets(49005, 49000, "127.0.0.1");
-
-            HIL.Hil.sitl_fdm data = new HIL.Hil.sitl_fdm();
-
-            while (true)
-            {
-                while (mav.BaseStream.BytesToRead > 0)
-                    mav.readPacket();
-
-                // update all stats
-                cs.UpdateCurrentSettings(null);
-
-                xp.GetFromSim(ref data);
-                xp.GetFromAP(); // no function
-
-                xp.SendToAP(data);
-                xp.SendToSim();
-
-                MAVLink.mavlink_rc_channels_override_t rc = new MAVLink.mavlink_rc_channels_override_t();
-
-                rc.chan3_raw = 1500;
-
-                mav.sendPacket(rc);
-                
-            }       */
-        
-           // return;
-          //  OSDVideo vid = new OSDVideo();
-
-         //   vid.ShowDialog();
-
-         //   return;
-             
-          //  if (Debugger.IsAttached)
-          //      ThemeManager.doxamlgen();
-
+            //显示公司login
             Splash = new MissionPlanner.Splash();
             string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            Splash.Text = name+" " + Application.ProductVersion + " build " + strVersion;
+            Splash.Text = name;
             Splash.Show();
 
             Application.DoEvents();

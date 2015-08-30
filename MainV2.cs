@@ -80,7 +80,7 @@ namespace MissionPlanner
             public override Image donate { get { return global::MissionPlanner.Properties.Resources.donate; } }
             public override Image connect { get { return global::MissionPlanner.Properties.Resources.light_connect_icon; } }
             public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.light_disconnect_icon; } }
-            public override Image bg { get { return global::MissionPlanner.Properties.Resources.bgdark; } }
+            public override Image bg { get { return global::MissionPlanner.Properties.Resources.LightGry; } }
         }
 
         public class menuicons2 : menuicons
@@ -304,8 +304,8 @@ namespace MissionPlanner
             }
             else
             {
-                MenuTerminal.Visible = true;
-                MenuSimulation.Visible = true;
+                MenuTerminal.Visible = false;
+                MenuSimulation.Visible = false;
             }
         }
 
@@ -688,7 +688,8 @@ namespace MissionPlanner
 
             MainMenu.BackColor = SystemColors.MenuBar;
 
-            MainMenu.BackgroundImage = displayicons.bg;
+            //改变MainMenu背景颜色
+            //MainMenu.BackgroundImage = MissionPlanner.Properties.Resources.LightSkyBlue; ;
 
             MenuFlightData.Image = displayicons.fd;
             MenuFlightPlanner.Image = displayicons.fp;
@@ -721,8 +722,8 @@ namespace MissionPlanner
                 MenuConfigTune.Visible = true;
                 MenuHelp.Visible = true;
                 MenuInitConfig.Visible = true;
-                MenuSimulation.Visible = true;
-                MenuTerminal.Visible = true;
+                MenuSimulation.Visible = false;
+                MenuTerminal.Visible = false;
             }
             else
             {
@@ -733,8 +734,8 @@ namespace MissionPlanner
                     MenuConfigTune.Visible = true;
                     MenuHelp.Visible = true;
                     MenuInitConfig.Visible = true;
-                    MenuSimulation.Visible = true;
-                    MenuTerminal.Visible = true;
+                    MenuSimulation.Visible = false;
+                    MenuTerminal.Visible = false;
                 }
             }
         }

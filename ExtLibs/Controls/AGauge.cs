@@ -175,7 +175,7 @@ namespace AGaugeApp
         {
             get
             {
-                return base.BackColor;
+                return System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255))))); ;
             }
             set
             {
@@ -1929,7 +1929,7 @@ System.ComponentModel.Description("Enables or disables the range selected by Nee
             // 
             // AGauge
             // 
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DoubleBuffered = true;
             this.Name = "AGauge";

@@ -218,7 +218,7 @@ namespace MissionPlanner.GCSViews
 
             if (MainV2.config.ContainsKey("hudcolor"))
             {
-                hud1.hudcolor = Color.FromName(MainV2.config["hudcolor"].ToString());
+                hud1.hudcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             }
 
             MainV2.comPort.MavChanged += comPort_MavChanged;
@@ -623,7 +623,7 @@ namespace MissionPlanner.GCSViews
             // Draw the background of the ListBox control for each item.
             //e.DrawBackground();
             // Define the default color of the brush as black.
-            Brush myBrush = Brushes.Black;
+            Brush myBrush = Brushes.LightBlue;
 
             LinearGradientBrush linear = new LinearGradientBrush(e.Bounds, Color.FromArgb(0x94, 0xc1, 0x1f), Color.FromArgb(0xcd, 0xe2, 0x96), LinearGradientMode.Vertical);
 
@@ -660,7 +660,7 @@ namespace MissionPlanner.GCSViews
             TRK_zoom.Maximum = 24;
             TRK_zoom.Value = (float)gMapControl1.Zoom;
 
-            gMapControl1.EmptyTileColor = Color.Gray;
+            gMapControl1.EmptyTileColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
 
             Zoomlevel.Minimum = gMapControl1.MapProvider.MinZoom;
             Zoomlevel.Maximum = 24;
@@ -689,6 +689,14 @@ namespace MissionPlanner.GCSViews
             thisthread.Name = "FD Mainloop";
             thisthread.IsBackground = true;
             thisthread.Start();
+        }
+
+        private void InitControl() 
+        {
+            Color bkc =Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabQuick.BackColor = bkc;
+            this.TRK_zoom.BackColor = bkc;
+            this.panel1.ForeColor = Color.Black;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)

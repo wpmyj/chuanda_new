@@ -78,9 +78,9 @@ namespace MissionPlanner
             public override Image terminal { get { return global::MissionPlanner.Properties.Resources.light_terminal_icon; } }
             public override Image help { get { return global::MissionPlanner.Properties.Resources.light_help_icon; } }
             public override Image donate { get { return global::MissionPlanner.Properties.Resources.donate; } }
-            public override Image connect { get { return global::MissionPlanner.Properties.Resources.light_connect_icon; } }
-            public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.light_disconnect_icon; } }
-            public override Image bg { get { return global::MissionPlanner.Properties.Resources.LightGry; } }
+            public override Image connect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
+            public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
+            public override Image bg { get { return global::MissionPlanner.Properties.Resources.LightBlue; } }
         }
 
         public class menuicons2 : menuicons
@@ -93,8 +93,8 @@ namespace MissionPlanner
             public override Image terminal { get { return global::MissionPlanner.Properties.Resources.dark_terminal_icon; } }
             public override Image help { get { return global::MissionPlanner.Properties.Resources.dark_help_icon; } }
             public override Image donate { get { return global::MissionPlanner.Properties.Resources.donate; } }
-            public override Image connect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon; } }
-            public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.dark_disconnect_icon; } }
+            public override Image connect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
+            public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
             public override Image bg { get { return null; } }
         }
 
@@ -687,30 +687,30 @@ namespace MissionPlanner
             displayicons = icons;
 
             MainMenu.BackColor = SystemColors.MenuBar;
-
+            //MainMenu.
             //改变MainMenu背景颜色
             //MainMenu.BackgroundImage = MissionPlanner.Properties.Resources.LightSkyBlue; ;
 
-            MenuFlightData.Image = displayicons.fd;
-            MenuFlightPlanner.Image = displayicons.fp;
-            MenuInitConfig.Image = displayicons.config_tuning;
-            MenuSimulation.Image = displayicons.sim;
-            MenuConfigTune.Image = displayicons.config_tuning;
-            MenuTerminal.Image = displayicons.terminal;
-            MenuConnect.Image = displayicons.connect;
-            MenuHelp.Image = displayicons.help;
-            MenuDonate.Image = displayicons.donate;
+            //MenuFlightData.Image = displayicons.fd;
+            //MenuFlightPlanner.Image = displayicons.fp;
+            //MenuInitConfig.Image = displayicons.config_tuning;
+            //MenuSimulation.Image = displayicons.sim;
+            //MenuConfigTune.Image = displayicons.config_tuning;
+            //MenuTerminal.Image = displayicons.terminal;
+            //MenuConnect.Image = displayicons.connect;
+            //MenuHelp.Image = displayicons.help;
+            //MenuDonate.Image = displayicons.donate;
 
 
-            MenuFlightData.ForeColor = ThemeManager.TextColor;
-            MenuFlightPlanner.ForeColor = ThemeManager.TextColor;
-            MenuInitConfig.ForeColor = ThemeManager.TextColor;
-            MenuSimulation.ForeColor = ThemeManager.TextColor;
-            MenuConfigTune.ForeColor = ThemeManager.TextColor;
-            MenuTerminal.ForeColor = ThemeManager.TextColor;
-            MenuConnect.ForeColor = ThemeManager.TextColor;
-            MenuHelp.ForeColor = ThemeManager.TextColor;
-            MenuDonate.ForeColor = ThemeManager.TextColor;
+            //MenuFlightData.ForeColor = ThemeManager.TextColor;
+            //MenuFlightPlanner.ForeColor = ThemeManager.TextColor;
+            //MenuInitConfig.ForeColor = ThemeManager.TextColor;
+            //MenuSimulation.ForeColor = ThemeManager.TextColor;
+            //MenuConfigTune.ForeColor = ThemeManager.TextColor;
+            //MenuTerminal.ForeColor = ThemeManager.TextColor;
+            //MenuConnect.ForeColor = ThemeManager.TextColor;
+            //MenuHelp.ForeColor = ThemeManager.TextColor;
+            //MenuDonate.ForeColor = ThemeManager.TextColor;
         }
 
         void MenuCustom_Click(object sender, EventArgs e)
@@ -909,7 +909,7 @@ namespace MissionPlanner
             }
             catch { }
 
-            this.MenuConnect.Image = global::MissionPlanner.Properties.Resources.light_connect_icon;
+            this.MenuConnect.Image = global::MissionPlanner.Properties.Resources.dark_connect_icon_1;
         }
 
         public void doConnect(MAVLinkInterface comPort, string portname, string baud)
@@ -2908,7 +2908,7 @@ namespace MissionPlanner
             {
                 if (e.ClickedItem == item)
                 {
-                    item.BackColor = ThemeManager.ControlBGColor;
+                    item.BackColor = Color.LightBlue;
                 }
                 else
                 {

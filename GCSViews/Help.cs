@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using MissionPlanner.Controls;
 using MissionPlanner.Properties;
+using System.Drawing;
 
 namespace MissionPlanner.GCSViews
 {
@@ -11,6 +12,12 @@ namespace MissionPlanner.GCSViews
         public Help()
         {
             InitializeComponent();
+            InitControl();
+        }
+
+        private void InitControl() 
+        {
+            this.BackColor = Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
         }
 
         public void Activate()

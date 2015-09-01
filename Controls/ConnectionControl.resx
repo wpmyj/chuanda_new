@@ -224,6 +224,18 @@
   <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="linkLabel1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAGYktHRAD/AP8A/6C9p5MAAAFhSURBVHhe7dEBDQAwEAOh
+        +VdVZz8fFxIc8LajwWWHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw
+        2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6X
+        HS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ
+        4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcd
+        LjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnh
+        ssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bJi9wF0ykxsETccuwAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 30</value>
   </data>
@@ -256,6 +268,18 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
+  </data>
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAGYktHRAD/AP8A/6C9p5MAAAFhSURBVHhe7dEBDQAwEAOh
+        +VdVZz8fFxIc8LajwWWHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw
+        2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6X
+        HS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ
+        4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcd
+        LjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnh
+        ssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bJi9wF0ykxsETccuwAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 50</value>

@@ -59,7 +59,7 @@ namespace MissionPlanner
             // 
             // MainMenu
             // 
-            this.MainMenu.BackgroundImage = global::MissionPlanner.Properties.Resources.LightGry;
+            resources.ApplyResources(this.MainMenu, "MainMenu");
             this.MainMenu.ContextMenuStrip = this.CTX_mainmenu;
             this.MainMenu.GripMargin = new System.Windows.Forms.Padding(0);
             this.MainMenu.ImageScalingSize = new System.Drawing.Size(0, 0);
@@ -74,7 +74,6 @@ namespace MissionPlanner
             this.MenuConnect,
             this.toolStripConnectionControl,
             this.MenuDonate});
-            resources.ApplyResources(this.MainMenu, "MainMenu");
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Stretch = false;
             this.MainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MainMenu_ItemClicked);
@@ -190,7 +189,7 @@ namespace MissionPlanner
             // 
             this.toolStripConnectionControl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripConnectionControl.BackColor = System.Drawing.Color.White;
-            this.toolStripConnectionControl.BackgroundImage = global::MissionPlanner.Properties.Resources.LightGry;
+            this.toolStripConnectionControl.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.toolStripConnectionControl.ForeColor = System.Drawing.Color.Black;
             this.toolStripConnectionControl.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripConnectionControl.Name = "toolStripConnectionControl";
@@ -209,8 +208,8 @@ namespace MissionPlanner
             // 
             // menu
             // 
-            this.menu.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.menu.BGGradTop = System.Drawing.Color.Silver;
+            this.menu.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.menu.BGGradTop = System.Drawing.Color.LightSteelBlue;
             resources.ApplyResources(this.menu, "menu");
             this.menu.Name = "menu";
             this.menu.Outline = System.Drawing.Color.Transparent;
@@ -234,6 +233,7 @@ namespace MissionPlanner
             this.Controls.Add(this.menu);
             this.KeyPreview = true;
             this.MainMenuStrip = this.MainMenu;
+            this.MaximizeBox = false;
             this.Name = "MainV2";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainV2_KeyDown);
             this.Resize += new System.EventHandler(this.MainV2_Resize);

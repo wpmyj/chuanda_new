@@ -1001,7 +1001,7 @@ namespace MissionPlanner.Controls
 
                     if (bg.Height != 0)
                     {
-                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Blue,
+                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.SkyBlue,
                             Color.LightBlue, LinearGradientMode.Vertical);
 
                         graphicsObject.FillRectangle(linearBrush, bg);
@@ -1012,8 +1012,8 @@ namespace MissionPlanner.Controls
 
                     if (bg.Height != 0)
                     {
-                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.FromArgb(0x9b, 0xb8, 0x24),
-                            Color.FromArgb(0x41, 0x4f, 0x07), LinearGradientMode.Vertical);
+                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Peru,
+                            Color.White, LinearGradientMode.Vertical);
 
                         graphicsObject.FillRectangle(linearBrush, bg);
                     }
@@ -1681,7 +1681,7 @@ namespace MissionPlanner.Controls
                 {
                     //if ((armedtimer.AddSeconds(8) > DateTime.Now))
                     {
-                        drawstring(graphicsObject, HUDT.DISARMED, font, fontsize + 10, (SolidBrush)Brushes.Red, -85, halfheight / -3);
+                        drawstring(graphicsObject, HUDT.DISARMED, font, fontsize + 10, (SolidBrush)Brushes.Blue, -85, halfheight / -3);
                         statuslast = status;
                     }
                 }
@@ -1689,20 +1689,20 @@ namespace MissionPlanner.Controls
                 {
                     if ((armedtimer.AddSeconds(8) > DateTime.Now))
                     {
-                        drawstring(graphicsObject, HUDT.ARMED, font, fontsize + 20, (SolidBrush)Brushes.Red, -70, halfheight / -3);
+                        drawstring(graphicsObject, HUDT.ARMED, font, fontsize + 20, (SolidBrush)Brushes.Blue, -70, halfheight / -3);
                         statuslast = status;
                     }
                 }
 
                 if (failsafe == true)
                 {
-                    drawstring(graphicsObject, HUDT.FAILSAFE, font, fontsize + 20, (SolidBrush)Brushes.Red, -85, halfheight / - HUDT.FailsafeH);
+                    drawstring(graphicsObject, HUDT.FAILSAFE, font, fontsize + 20, (SolidBrush)Brushes.Blue, -85, halfheight / -HUDT.FailsafeH);
                     statuslast = status;
                 }
 
                 if (message != "" && messagetime.AddSeconds(10) > DateTime.Now)
                 {
-                    drawstring(graphicsObject, message, font, fontsize + 10, (SolidBrush)Brushes.Red, -halfwidth + 50, halfheight / 3);
+                    drawstring(graphicsObject, message, font, fontsize + 10, (SolidBrush)Brushes.Blue, -halfwidth + 50, halfheight / 3);
                 }
 
                 graphicsObject.ResetTransform();
@@ -1710,7 +1710,7 @@ namespace MissionPlanner.Controls
                 if (vibex > 30 || vibey > 30 || vibez > 30)
                 {
                     vibehitzone = new Rectangle( this.Width - 18 * fontsize, this.Height - 30 - fontoffset,40,fontsize *2);
-                    drawstring(graphicsObject, "Vibe", font, fontsize + 2, (SolidBrush)Brushes.Red, vibehitzone.X, vibehitzone.Y);
+                    drawstring(graphicsObject, "Vibe", font, fontsize + 2, (SolidBrush)Brushes.Blue, vibehitzone.X, vibehitzone.Y);
                 }
 
                 if (ekfstatus > 0.5)
@@ -1718,11 +1718,11 @@ namespace MissionPlanner.Controls
                     ekfhitzone = new Rectangle(this.Width - 23 * fontsize, this.Height - 30 - fontoffset, 40,fontsize *2);
                     if (ekfstatus > 1)
                     {
-                        drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Red, ekfhitzone.X, ekfhitzone.Y);
+                        drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Blue, ekfhitzone.X, ekfhitzone.Y);
                     }
                     else
                     {
-                        drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Orange, ekfhitzone.X, ekfhitzone.Y);
+                        drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Blue, ekfhitzone.X, ekfhitzone.Y);
                     }
                 }
 

@@ -1634,6 +1634,9 @@ Please visit {\field{\*\fldinst{HYPERLINK "www.diydrones.com"}}{\fldrslt{\ul\cf2
   <data name="LightGry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LightGry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+    <data name="LightBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightBlue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="x8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x8.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1645,5 +1648,27 @@ Please visit {\field{\*\fldinst{HYPERLINK "www.diydrones.com"}}{\fldrslt{\ul\cf2
   </data>
   <data name="Parachute" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Parachute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  
+  <data name="dark_connect_icon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_connect_icon_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_flightdata_icon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_flightdata_icon_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_help_icon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_help_icon_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_initialsetup_icon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_initialsetup_icon_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_tuningconfig_icon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_tuningconfig_icon_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_flightplan_icon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark_flightplan_icon_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lofin_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lofin_logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

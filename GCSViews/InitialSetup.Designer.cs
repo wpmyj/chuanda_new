@@ -86,7 +86,10 @@
             // 
             // backstageView
             // 
+            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
+            this.backstageView.ForeColor = System.Drawing.Color.Black;
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.backstageView.Name = "backstageView";
@@ -511,6 +514,7 @@
             // InitialSetup
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.backstageView);
             this.Controls.Add(this.configAccelerometerCalibration);
             this.Controls.Add(this.configHWBT1);

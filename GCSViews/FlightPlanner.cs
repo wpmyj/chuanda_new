@@ -3190,8 +3190,8 @@ namespace MissionPlanner.GCSViews
                 var temp = ((ComboBox)e.Control);
                 ((ComboBox)e.Control).SelectionChangeCommitted -= Commands_SelectionChangeCommitted;
                 ((ComboBox)e.Control).SelectionChangeCommitted += Commands_SelectionChangeCommitted;
-                ((ComboBox)e.Control).ForeColor = Color.White;
-                ((ComboBox)e.Control).BackColor = Color.FromArgb(0x43, 0x44, 0x45);
+                ((ComboBox)e.Control).ForeColor = Color.Black;
+                ((ComboBox)e.Control).BackColor = Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
                 Debug.WriteLine("Setting event handle");
             }
         }
@@ -3199,7 +3199,7 @@ namespace MissionPlanner.GCSViews
         void Commands_SelectionChangeCommitted(object sender, EventArgs e)
         {
             // update row headers
-            ((ComboBox)sender).ForeColor = Color.White;
+            ((ComboBox)sender).ForeColor = Color.Black;
             ChangeColumnHeader(((ComboBox)sender).Text);
             try
             {

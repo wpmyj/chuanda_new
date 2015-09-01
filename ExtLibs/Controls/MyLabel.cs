@@ -84,7 +84,7 @@ namespace MissionPlanner.Controls
         {
             get
             {
-                return base.BackColor;
+                return System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255))))); ;
             }
             set
             {

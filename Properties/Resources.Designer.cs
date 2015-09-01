@@ -433,6 +433,16 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap dark_connect_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_connect_icon_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap dark_disconnect_icon {
             get {
                 object obj = ResourceManager.GetObject("dark_disconnect_icon", resourceCulture);
@@ -453,9 +463,29 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap dark_flightdata_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_flightdata_icon_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap dark_flightplan_icon {
             get {
                 object obj = ResourceManager.GetObject("dark_flightplan_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap dark_flightplan_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_flightplan_icon_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,9 +503,29 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap dark_help_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_help_icon_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap dark_initialsetup_icon {
             get {
                 object obj = ResourceManager.GetObject("dark_initialsetup_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap dark_initialsetup_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_initialsetup_icon_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +556,16 @@ namespace MissionPlanner.Properties {
         public static System.Drawing.Bitmap dark_tuningconfig_icon {
             get {
                 object obj = ResourceManager.GetObject("dark_tuningconfig_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap dark_tuningconfig_icon_1 {
+            get {
+                object obj = ResourceManager.GetObject("dark_tuningconfig_icon_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -992,9 +1052,29 @@ namespace MissionPlanner.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap LightBlue {
+            get {
+                object obj = ResourceManager.GetObject("LightBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap LightGry {
             get {
                 object obj = ResourceManager.GetObject("LightGry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap lofin_logo {
+            get {
+                object obj = ResourceManager.GetObject("lofin_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -55,6 +55,8 @@
             // BUT_updatecheck
             // 
             resources.ApplyResources(this.BUT_updatecheck, "BUT_updatecheck");
+            this.BUT_updatecheck.BGGradBot = System.Drawing.Color.White;
+            this.BUT_updatecheck.BGGradTop = System.Drawing.Color.Gray;
             this.BUT_updatecheck.Name = "BUT_updatecheck";
             this.BUT_updatecheck.UseVisualStyleBackColor = true;
             this.BUT_updatecheck.Click += new System.EventHandler(this.BUT_updatecheck_Click);
@@ -77,6 +79,8 @@
             // BUT_betaupdate
             // 
             resources.ApplyResources(this.BUT_betaupdate, "BUT_betaupdate");
+            this.BUT_betaupdate.BGGradBot = System.Drawing.Color.White;
+            this.BUT_betaupdate.BGGradTop = System.Drawing.Color.Gray;
             this.BUT_betaupdate.Name = "BUT_betaupdate";
             this.BUT_betaupdate.UseVisualStyleBackColor = true;
             this.BUT_betaupdate.Click += new System.EventHandler(this.BUT_betaupdate_Click);

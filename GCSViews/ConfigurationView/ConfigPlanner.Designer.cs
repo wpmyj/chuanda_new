@@ -75,17 +75,11 @@
             this.CHK_maprotation = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.CHK_disttohomeflightdata = new System.Windows.Forms.CheckBox();
-            this.BUT_Joystick = new MissionPlanner.Controls.MyButton();
-            this.BUT_videostop = new MissionPlanner.Controls.MyButton();
-            this.BUT_videostart = new MissionPlanner.Controls.MyButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_log_dir = new System.Windows.Forms.TextBox();
-            this.BUT_logdirbrowse = new MissionPlanner.Controls.MyButton();
             this.label4 = new System.Windows.Forms.Label();
             this.CMB_theme = new System.Windows.Forms.ComboBox();
-            this.BUT_themecustom = new MissionPlanner.Controls.MyButton();
             this.CHK_speecharmdisarm = new System.Windows.Forms.CheckBox();
-            this.BUT_Vario = new MissionPlanner.Controls.MyButton();
             this.label5 = new System.Windows.Forms.Label();
             this.chk_analytics = new System.Windows.Forms.CheckBox();
             this.CHK_beta = new System.Windows.Forms.CheckBox();
@@ -95,6 +89,12 @@
             this.CHK_showairports = new System.Windows.Forms.CheckBox();
             this.chk_ADSB = new System.Windows.Forms.CheckBox();
             this.chk_tfr = new System.Windows.Forms.CheckBox();
+            this.BUT_Vario = new MissionPlanner.Controls.MyButton();
+            this.BUT_themecustom = new MissionPlanner.Controls.MyButton();
+            this.BUT_logdirbrowse = new MissionPlanner.Controls.MyButton();
+            this.BUT_Joystick = new MissionPlanner.Controls.MyButton();
+            this.BUT_videostop = new MissionPlanner.Controls.MyButton();
+            this.BUT_videostart = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_tracklength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,6 +105,7 @@
             // 
             // CMB_ratesensors
             // 
+            this.CMB_ratesensors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_ratesensors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_ratesensors.FormattingEnabled = true;
             this.CMB_ratesensors.Items.AddRange(new object[] {
@@ -131,6 +132,7 @@
             // 
             // CMB_videoresolutions
             // 
+            this.CMB_videoresolutions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_videoresolutions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_videoresolutions.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_videoresolutions, "CMB_videoresolutions");
@@ -167,6 +169,7 @@
             // 
             // NUM_tracklength
             // 
+            this.NUM_tracklength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.NUM_tracklength.Increment = new decimal(new int[] {
             100,
             0,
@@ -226,6 +229,7 @@
             // 
             // CMB_raterc
             // 
+            this.CMB_raterc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_raterc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_raterc.FormattingEnabled = true;
             this.CMB_raterc.Items.AddRange(new object[] {
@@ -266,6 +270,7 @@
             // 
             // CMB_ratestatus
             // 
+            this.CMB_ratestatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_ratestatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_ratestatus.FormattingEnabled = true;
             this.CMB_ratestatus.Items.AddRange(new object[] {
@@ -286,6 +291,7 @@
             // 
             // CMB_rateposition
             // 
+            this.CMB_rateposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_rateposition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_rateposition.FormattingEnabled = true;
             this.CMB_rateposition.Items.AddRange(new object[] {
@@ -306,6 +312,7 @@
             // 
             // CMB_rateattitude
             // 
+            this.CMB_rateattitude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_rateattitude.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_rateattitude.FormattingEnabled = true;
             this.CMB_rateattitude.Items.AddRange(new object[] {
@@ -341,6 +348,7 @@
             // 
             // CMB_speedunits
             // 
+            this.CMB_speedunits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_speedunits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_speedunits.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_speedunits, "CMB_speedunits");
@@ -349,6 +357,7 @@
             // 
             // CMB_distunits
             // 
+            this.CMB_distunits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_distunits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_distunits.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_distunits, "CMB_distunits");
@@ -400,6 +409,7 @@
             // 
             // CMB_osdcolor
             // 
+            this.CMB_osdcolor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_osdcolor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMB_osdcolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_osdcolor.FormattingEnabled = true;
@@ -410,6 +420,7 @@
             // 
             // CMB_language
             // 
+            this.CMB_language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_language.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_language, "CMB_language");
@@ -444,6 +455,7 @@
             // 
             // CMB_videosources
             // 
+            this.CMB_videosources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_videosources.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_videosources.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_videosources, "CMB_videosources");
@@ -477,27 +489,6 @@
             this.CHK_disttohomeflightdata.UseVisualStyleBackColor = true;
             this.CHK_disttohomeflightdata.CheckedChanged += new System.EventHandler(this.CHK_disttohomeflightdata_CheckedChanged);
             // 
-            // BUT_Joystick
-            // 
-            resources.ApplyResources(this.BUT_Joystick, "BUT_Joystick");
-            this.BUT_Joystick.Name = "BUT_Joystick";
-            this.BUT_Joystick.UseVisualStyleBackColor = true;
-            this.BUT_Joystick.Click += new System.EventHandler(this.BUT_Joystick_Click);
-            // 
-            // BUT_videostop
-            // 
-            resources.ApplyResources(this.BUT_videostop, "BUT_videostop");
-            this.BUT_videostop.Name = "BUT_videostop";
-            this.BUT_videostop.UseVisualStyleBackColor = true;
-            this.BUT_videostop.Click += new System.EventHandler(this.BUT_videostop_Click);
-            // 
-            // BUT_videostart
-            // 
-            resources.ApplyResources(this.BUT_videostart, "BUT_videostart");
-            this.BUT_videostart.Name = "BUT_videostart";
-            this.BUT_videostart.UseVisualStyleBackColor = true;
-            this.BUT_videostart.Click += new System.EventHandler(this.BUT_videostart_Click);
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -505,15 +496,9 @@
             // 
             // txt_log_dir
             // 
+            this.txt_log_dir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.txt_log_dir, "txt_log_dir");
             this.txt_log_dir.Name = "txt_log_dir";
-            // 
-            // BUT_logdirbrowse
-            // 
-            resources.ApplyResources(this.BUT_logdirbrowse, "BUT_logdirbrowse");
-            this.BUT_logdirbrowse.Name = "BUT_logdirbrowse";
-            this.BUT_logdirbrowse.UseVisualStyleBackColor = true;
-            this.BUT_logdirbrowse.Click += new System.EventHandler(this.BUT_logdirbrowse_Click);
             // 
             // label4
             // 
@@ -522,18 +507,12 @@
             // 
             // CMB_theme
             // 
+            this.CMB_theme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CMB_theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_theme.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_theme, "CMB_theme");
             this.CMB_theme.Name = "CMB_theme";
             this.CMB_theme.SelectedIndexChanged += new System.EventHandler(this.CMB_theme_SelectedIndexChanged);
-            // 
-            // BUT_themecustom
-            // 
-            resources.ApplyResources(this.BUT_themecustom, "BUT_themecustom");
-            this.BUT_themecustom.Name = "BUT_themecustom";
-            this.BUT_themecustom.UseVisualStyleBackColor = true;
-            this.BUT_themecustom.Click += new System.EventHandler(this.BUT_themecustom_Click);
             // 
             // CHK_speecharmdisarm
             // 
@@ -541,13 +520,6 @@
             this.CHK_speecharmdisarm.Name = "CHK_speecharmdisarm";
             this.CHK_speecharmdisarm.UseVisualStyleBackColor = true;
             this.CHK_speecharmdisarm.CheckedChanged += new System.EventHandler(this.CHK_speecharmdisarm_CheckedChanged);
-            // 
-            // BUT_Vario
-            // 
-            resources.ApplyResources(this.BUT_Vario, "BUT_Vario");
-            this.BUT_Vario.Name = "BUT_Vario";
-            this.BUT_Vario.UseVisualStyleBackColor = true;
-            this.BUT_Vario.Click += new System.EventHandler(this.BUT_Vario_Click);
             // 
             // label5
             // 
@@ -614,10 +586,65 @@
             this.chk_tfr.UseVisualStyleBackColor = true;
             this.chk_tfr.CheckedChanged += new System.EventHandler(this.chk_tfr_CheckedChanged);
             // 
+            // BUT_Vario
+            // 
+            this.BUT_Vario.BGGradBot = System.Drawing.Color.White;
+            this.BUT_Vario.BGGradTop = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.BUT_Vario, "BUT_Vario");
+            this.BUT_Vario.Name = "BUT_Vario";
+            this.BUT_Vario.UseVisualStyleBackColor = true;
+            this.BUT_Vario.Click += new System.EventHandler(this.BUT_Vario_Click);
+            // 
+            // BUT_themecustom
+            // 
+            this.BUT_themecustom.BGGradBot = System.Drawing.Color.White;
+            this.BUT_themecustom.BGGradTop = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.BUT_themecustom, "BUT_themecustom");
+            this.BUT_themecustom.Name = "BUT_themecustom";
+            this.BUT_themecustom.UseVisualStyleBackColor = true;
+            this.BUT_themecustom.Click += new System.EventHandler(this.BUT_themecustom_Click);
+            // 
+            // BUT_logdirbrowse
+            // 
+            this.BUT_logdirbrowse.BGGradBot = System.Drawing.Color.White;
+            this.BUT_logdirbrowse.BGGradTop = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.BUT_logdirbrowse, "BUT_logdirbrowse");
+            this.BUT_logdirbrowse.Name = "BUT_logdirbrowse";
+            this.BUT_logdirbrowse.UseVisualStyleBackColor = true;
+            this.BUT_logdirbrowse.Click += new System.EventHandler(this.BUT_logdirbrowse_Click);
+            // 
+            // BUT_Joystick
+            // 
+            this.BUT_Joystick.BGGradBot = System.Drawing.Color.White;
+            this.BUT_Joystick.BGGradTop = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.BUT_Joystick, "BUT_Joystick");
+            this.BUT_Joystick.Name = "BUT_Joystick";
+            this.BUT_Joystick.UseVisualStyleBackColor = true;
+            this.BUT_Joystick.Click += new System.EventHandler(this.BUT_Joystick_Click);
+            // 
+            // BUT_videostop
+            // 
+            this.BUT_videostop.BGGradBot = System.Drawing.Color.White;
+            this.BUT_videostop.BGGradTop = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.BUT_videostop, "BUT_videostop");
+            this.BUT_videostop.Name = "BUT_videostop";
+            this.BUT_videostop.UseVisualStyleBackColor = true;
+            this.BUT_videostop.Click += new System.EventHandler(this.BUT_videostop_Click);
+            // 
+            // BUT_videostart
+            // 
+            this.BUT_videostart.BGGradBot = System.Drawing.Color.White;
+            this.BUT_videostart.BGGradTop = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.BUT_videostart, "BUT_videostart");
+            this.BUT_videostart.Name = "BUT_videostart";
+            this.BUT_videostart.UseVisualStyleBackColor = true;
+            this.BUT_videostart.Click += new System.EventHandler(this.BUT_videostart_Click);
+            // 
             // ConfigPlanner
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.chk_tfr);
             this.Controls.Add(this.chk_ADSB);
             this.Controls.Add(this.CHK_showairports);

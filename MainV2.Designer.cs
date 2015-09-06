@@ -189,19 +189,17 @@ namespace MissionPlanner
             // 
             this.toolStripConnectionControl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripConnectionControl.BackColor = System.Drawing.Color.White;
-            this.toolStripConnectionControl.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            resources.ApplyResources(this.toolStripConnectionControl, "toolStripConnectionControl");
             this.toolStripConnectionControl.ForeColor = System.Drawing.Color.Black;
             this.toolStripConnectionControl.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripConnectionControl.Name = "toolStripConnectionControl";
             this.toolStripConnectionControl.Padding = new System.Windows.Forms.Padding(0, 0, 60, 0);
-            resources.ApplyResources(this.toolStripConnectionControl, "toolStripConnectionControl");
             this.toolStripConnectionControl.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
             // 
             // MenuDonate
             // 
             resources.ApplyResources(this.MenuDonate, "MenuDonate");
             this.MenuDonate.ForeColor = System.Drawing.Color.White;
-            this.MenuDonate.Image = global::MissionPlanner.Properties.Resources.donate;
             this.MenuDonate.Name = "MenuDonate";
             this.MenuDonate.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.MenuDonate.Click += new System.EventHandler(this.toolStripMenuItem1_Click);

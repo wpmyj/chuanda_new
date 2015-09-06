@@ -43,10 +43,11 @@
             // SoftwareConfig
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.backstageView);
+            resources.ApplyResources(this, "$this");
             this.MinimumSize = new System.Drawing.Size(1000, 450);
             this.Name = "SoftwareConfig";
-            resources.ApplyResources(this, "$this");
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SoftwareConfig_FormClosing);
             this.Load += new System.EventHandler(this.SoftwareConfig_Load);
             this.ResumeLayout(false);

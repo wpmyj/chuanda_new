@@ -684,6 +684,9 @@ namespace MissionPlanner.GCSViews
             }
 
             hud1.doResize();
+            
+            //控制控件背景颜色
+            InitControl();
 
             thisthread = new Thread(mainloop);
             thisthread.Name = "FD Mainloop";
@@ -693,10 +696,15 @@ namespace MissionPlanner.GCSViews
 
         private void InitControl() 
         {
-            Color bkc =Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            Color bkc =Color.FromArgb(192,192,225);
             this.tabQuick.BackColor = bkc;
-            this.TRK_zoom.BackColor = bkc;
+            //this.TRK_zoom.BackColor = bkc;
             this.panel1.ForeColor = Color.Black;
+            this.coords1.ForeColor = Color.DarkGreen;
+            this.CB_tuning.ForeColor = Color.DarkGreen;
+            this.CHK_autopan.ForeColor = Color.DarkGreen;
+            this.label1.ForeColor = Color.DarkGreen;
+            this.tableLayoutPanelQuick.ForeColor = Color.Blue;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)

@@ -50,16 +50,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightPlanner));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Commands = new System.Windows.Forms.DataGridView();
+            this.Command = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Param1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Param2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Param3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Param4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Alt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Up = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Down = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Grad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dist = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CHK_verifyheight = new System.Windows.Forms.CheckBox();
             this.TXT_WPRad = new System.Windows.Forms.TextBox();
             this.TXT_DefaultAlt = new System.Windows.Forms.TextBox();
@@ -174,24 +188,9 @@
             this.enterUTMCoordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchDockingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trackBar1 = new MissionPlanner.Controls.MyTrackBar();
-            this.label11 = new System.Windows.Forms.Label();
             this.panelBASE = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Command = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Param1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Param2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Param3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Param4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Up = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Down = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Grad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dist = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -210,8 +209,8 @@
             // Commands
             // 
             this.Commands.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Commands.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Commands.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.Commands, "Commands");
             this.Commands.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Commands.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -231,17 +230,17 @@
             this.AZ});
             this.Commands.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Commands.Name = "Commands";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Format = "N0";
-            dataGridViewCellStyle5.NullValue = "0";
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("微软雅黑", 9F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.Format = "N0";
+            dataGridViewCellStyle13.NullValue = "0";
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.Commands.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Commands.RowsDefaultCellStyle = dataGridViewCellStyle14;
             this.Commands.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellContentClick);
             this.Commands.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Commands_CellEndEdit);
             this.Commands.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.Commands_DataError);
@@ -251,11 +250,121 @@
             this.Commands.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.Commands_RowsAdded);
             this.Commands.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.Commands_RowValidating);
             // 
+            // Command
+            // 
+            this.Command.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            this.Command.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Command.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
+            resources.ApplyResources(this.Command, "Command");
+            this.Command.Name = "Command";
+            // 
+            // Param1
+            // 
+            this.Param1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Param1, "Param1");
+            this.Param1.Name = "Param1";
+            this.Param1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Param2
+            // 
+            this.Param2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Param2, "Param2");
+            this.Param2.Name = "Param2";
+            this.Param2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Param3
+            // 
+            this.Param3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Param3, "Param3");
+            this.Param3.Name = "Param3";
+            this.Param3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Param4
+            // 
+            this.Param4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Param4, "Param4");
+            this.Param4.Name = "Param4";
+            this.Param4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Lat
+            // 
+            this.Lat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Lat, "Lat");
+            this.Lat.Name = "Lat";
+            this.Lat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Lon
+            // 
+            this.Lon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Lon, "Lon");
+            this.Lon.Name = "Lon";
+            this.Lon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Alt
+            // 
+            this.Alt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Alt, "Alt");
+            this.Alt.Name = "Alt";
+            this.Alt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Delete, "Delete");
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "X";
+            // 
+            // Up
+            // 
+            this.Up.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            this.Up.DefaultCellStyle = dataGridViewCellStyle11;
+            resources.ApplyResources(this.Up, "Up");
+            this.Up.Image = ((System.Drawing.Image)(resources.GetObject("Up.Image")));
+            this.Up.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Up.Name = "Up";
+            // 
+            // Down
+            // 
+            this.Down.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Down.DefaultCellStyle = dataGridViewCellStyle12;
+            resources.ApplyResources(this.Down, "Down");
+            this.Down.Image = ((System.Drawing.Image)(resources.GetObject("Down.Image")));
+            this.Down.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Down.Name = "Down";
+            // 
+            // Grad
+            // 
+            this.Grad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Grad, "Grad");
+            this.Grad.Name = "Grad";
+            this.Grad.ReadOnly = true;
+            this.Grad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Dist
+            // 
+            this.Dist.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.Dist, "Dist");
+            this.Dist.Name = "Dist";
+            this.Dist.ReadOnly = true;
+            this.Dist.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // AZ
+            // 
+            this.AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            resources.ApplyResources(this.AZ, "AZ");
+            this.AZ.Name = "AZ";
+            this.AZ.ReadOnly = true;
+            this.AZ.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // CHK_verifyheight
             // 
             resources.ApplyResources(this.CHK_verifyheight, "CHK_verifyheight");
+            this.CHK_verifyheight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CHK_verifyheight.Name = "CHK_verifyheight";
-            this.CHK_verifyheight.UseVisualStyleBackColor = true;
+            this.CHK_verifyheight.UseVisualStyleBackColor = false;
             // 
             // TXT_WPRad
             // 
@@ -278,17 +387,20 @@
             // LBL_WPRad
             // 
             resources.ApplyResources(this.LBL_WPRad, "LBL_WPRad");
+            this.LBL_WPRad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.LBL_WPRad.Name = "LBL_WPRad";
             // 
             // LBL_defalutalt
             // 
             resources.ApplyResources(this.LBL_defalutalt, "LBL_defalutalt");
+            this.LBL_defalutalt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.LBL_defalutalt.Name = "LBL_defalutalt";
             // 
             // TXT_loiterrad
             // 
             this.TXT_loiterrad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.TXT_loiterrad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TXT_loiterrad.ForeColor = System.Drawing.SystemColors.WindowText;
             resources.ApplyResources(this.TXT_loiterrad, "TXT_loiterrad");
             this.TXT_loiterrad.Name = "TXT_loiterrad";
             this.TXT_loiterrad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_loiterrad_KeyPress);
@@ -297,10 +409,12 @@
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label5.Name = "label5";
             // 
             // panel5
             // 
+            this.panel5.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.panel5.Controls.Add(this.BUT_write);
             this.panel5.Controls.Add(this.BUT_read);
             resources.ApplyResources(this.panel5, "panel5");
@@ -326,6 +440,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -339,6 +454,7 @@
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.Image = global::MissionPlanner.Properties.Resources.LightBlue;
             this.label4.Name = "label4";
             this.label4.TabStop = true;
             this.label4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.label4_LinkClicked);
@@ -385,8 +501,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle15;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -394,8 +510,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle16;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -411,6 +527,7 @@
             this.coords1.Alt = 0D;
             this.coords1.AltUnit = "m";
             this.coords1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.coords1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.coords1.Lat = 0D;
             this.coords1.Lng = 0D;
             resources.ApplyResources(this.coords1, "coords1");
@@ -483,13 +600,15 @@
             // CHK_splinedefault
             // 
             resources.ApplyResources(this.CHK_splinedefault, "CHK_splinedefault");
+            this.CHK_splinedefault.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.CHK_splinedefault.Name = "CHK_splinedefault";
-            this.CHK_splinedefault.UseVisualStyleBackColor = true;
+            this.CHK_splinedefault.UseVisualStyleBackColor = false;
             this.CHK_splinedefault.CheckedChanged += new System.EventHandler(this.CHK_splinedefault_CheckedChanged);
             // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.label17.Name = "label17";
             // 
             // TXT_altwarn
@@ -548,6 +667,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel2);
@@ -558,12 +678,14 @@
             // 
             // panel4
             // 
+            this.panel4.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.panel4.Controls.Add(this.coords1);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // panel3
             // 
+            this.panel3.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.panel3.Controls.Add(this.chk_grid);
             this.panel3.Controls.Add(this.lbl_status);
             this.panel3.Controls.Add(this.comboBoxMapType);
@@ -574,12 +696,14 @@
             // chk_grid
             // 
             resources.ApplyResources(this.chk_grid, "chk_grid");
+            this.chk_grid.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.chk_grid.Name = "chk_grid";
             this.chk_grid.UseVisualStyleBackColor = true;
             this.chk_grid.CheckedChanged += new System.EventHandler(this.chk_grid_CheckedChanged);
             // 
             // comboBoxMapType
             // 
+            this.comboBoxMapType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.comboBoxMapType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMapType.FormattingEnabled = true;
             resources.ApplyResources(this.comboBoxMapType, "comboBoxMapType");
@@ -589,12 +713,14 @@
             // lnk_kml
             // 
             resources.ApplyResources(this.lnk_kml, "lnk_kml");
+            this.lnk_kml.Image = global::MissionPlanner.Properties.Resources.LightBlue;
             this.lnk_kml.Name = "lnk_kml";
             this.lnk_kml.TabStop = true;
             this.lnk_kml.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk_kml_LinkClicked);
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.panel2.Controls.Add(this.lbl_wpfile);
             this.panel2.Controls.Add(this.BUT_loadwpfile);
             this.panel2.Controls.Add(this.BUT_saveWPFile);
@@ -626,12 +752,12 @@
             // 
             // panelMap
             // 
+            this.panelMap.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.panelMap.Controls.Add(this.lbl_distance);
             this.panelMap.Controls.Add(this.lbl_homedist);
             this.panelMap.Controls.Add(this.lbl_prevdist);
             this.panelMap.Controls.Add(this.MainMap);
             this.panelMap.Controls.Add(this.trackBar1);
-            this.panelMap.Controls.Add(this.label11);
             resources.ApplyResources(this.panelMap, "panelMap");
             this.panelMap.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelMap.Name = "panelMap";
@@ -655,7 +781,8 @@
             // MainMap
             // 
             resources.ApplyResources(this.MainMap, "MainMap");
-            this.MainMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.MainMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.MainMap.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.MainMap.Bearing = 0F;
             this.MainMap.CanDragMap = true;
             this.MainMap.ContextMenuStrip = this.contextMenuStrip1;
@@ -1141,6 +1268,7 @@
             // trackBar1
             // 
             resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.BackColor = System.Drawing.SystemColors.Control;
             this.trackBar1.LargeChange = 0.005F;
             this.trackBar1.Maximum = 24F;
             this.trackBar1.Minimum = 1F;
@@ -1150,11 +1278,6 @@
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.trackBar1.Value = 2F;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
             // 
             // panelBASE
             // 
@@ -1174,119 +1297,11 @@
             this.timer1.Interval = 1200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Command
-            // 
-            this.Command.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            this.Command.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Command.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
-            resources.ApplyResources(this.Command, "Command");
-            this.Command.Name = "Command";
-            // 
-            // Param1
-            // 
-            this.Param1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Param1, "Param1");
-            this.Param1.Name = "Param1";
-            this.Param1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Param2
-            // 
-            this.Param2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Param2, "Param2");
-            this.Param2.Name = "Param2";
-            this.Param2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Param3
-            // 
-            this.Param3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Param3, "Param3");
-            this.Param3.Name = "Param3";
-            this.Param3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Param4
-            // 
-            this.Param4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Param4, "Param4");
-            this.Param4.Name = "Param4";
-            this.Param4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Lat
-            // 
-            this.Lat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Lat, "Lat");
-            this.Lat.Name = "Lat";
-            this.Lat.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Lon
-            // 
-            this.Lon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Lon, "Lon");
-            this.Lon.Name = "Lon";
-            this.Lon.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Alt
-            // 
-            this.Alt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Alt, "Alt");
-            this.Alt.Name = "Alt";
-            this.Alt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Delete, "Delete");
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "X";
-            // 
-            // Up
-            // 
-            this.Up.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            this.Up.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.Up, "Up");
-            this.Up.Image = ((System.Drawing.Image)(resources.GetObject("Up.Image")));
-            this.Up.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Up.Name = "Up";
-            // 
-            // Down
-            // 
-            this.Down.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Down.DefaultCellStyle = dataGridViewCellStyle4;
-            resources.ApplyResources(this.Down, "Down");
-            this.Down.Image = ((System.Drawing.Image)(resources.GetObject("Down.Image")));
-            this.Down.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Down.Name = "Down";
-            // 
-            // Grad
-            // 
-            this.Grad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Grad, "Grad");
-            this.Grad.Name = "Grad";
-            this.Grad.ReadOnly = true;
-            this.Grad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Dist
-            // 
-            this.Dist.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.Dist, "Dist");
-            this.Dist.Name = "Dist";
-            this.Dist.ReadOnly = true;
-            this.Dist.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // AZ
-            // 
-            this.AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
-            resources.ApplyResources(this.AZ, "AZ");
-            this.AZ.Name = "AZ";
-            this.AZ.ReadOnly = true;
-            this.AZ.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.Controls.Add(this.panelBASE);
             resources.ApplyResources(this, "$this");
             this.Name = "FlightPlanner";
@@ -1347,7 +1362,6 @@
         private System.Windows.Forms.Panel panelMap;
         private Controls.myGMAP MainMap;
         private Controls.MyTrackBar trackBar1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lbl_distance;
         private System.Windows.Forms.Label lbl_prevdist;
         private BSE.Windows.Forms.Splitter splitter1;

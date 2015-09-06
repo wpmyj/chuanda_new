@@ -645,6 +645,7 @@ namespace MissionPlanner.GCSViews
 
         private void FlightPlanner_Load(object sender, EventArgs e)
         {
+            InitControl(); 
             quickadd = true;
 
             config(false);
@@ -712,10 +713,33 @@ namespace MissionPlanner.GCSViews
             {
                 switchDockingToolStripMenuItem_Click(null, null);
             }
-
+            
             timer1.Start();
         }
 
+        /// <summary>
+        /// 控制控件属性
+        /// </summary>
+        private void InitControl() 
+        {
+            Color fc = Color.FromArgb(192, 192, 225);
+            this.panel1.BackColor = this.panel2.BackColor = this.panel3.BackColor = this.panel4.BackColor
+                = this.panel5.BackColor = this.chk_grid.BackColor = this.comboBoxMapType.BackColor
+                = this.lbl_wpfile.BackColor = lnk_kml.BackColor = label4.BackColor
+                = Commands.BackgroundColor = panelMap.BackColor = this.CHK_verifyheight.BackColor
+                = this.CHK_splinedefault.BackColor = fc;
+            this.TXT_homelat.BackColor = TXT_homelng.BackColor
+                = TXT_homealt.BackColor = Color.White;
+
+            this.panel1.ForeColor = this.panel2.ForeColor = this.panel3.ForeColor = this.panel4.ForeColor
+                = this.panel5.ForeColor = this.chk_grid.ForeColor = this.comboBoxMapType.ForeColor
+                = this.lbl_wpfile.ForeColor = this.LBL_WPRad.ForeColor = this.LBL_defalutalt.ForeColor
+                = this.label5.ForeColor = this.CHK_verifyheight.ForeColor = this.label17.ForeColor
+                = this.CHK_splinedefault.ForeColor = Color.Black;
+
+            this.lnk_kml.ForeColor = label4.ForeColor = Color.Blue;
+          
+        }
         void POI_POIModified(object sender, EventArgs e)
         {
             POI.UpdateOverlay(poioverlay);
@@ -3114,7 +3138,7 @@ namespace MissionPlanner.GCSViews
 
             MethodInvoker m = delegate
             {
-                lbl_status.Text = "Status: loaded tiles";
+                //lbl_status.Text = "Status: loaded tiles";
 
                 //panelMenu.Text = "Menu, last load in " + MainMap.ElapsedMilliseconds + "ms";
 
@@ -3678,7 +3702,7 @@ namespace MissionPlanner.GCSViews
             MainMap.Size = new Size(panelMap.Size.Width - 50, panelMap.Size.Height);
             trackBar1.Location = new Point(panelMap.Size.Width - 50, trackBar1.Location.Y);
             trackBar1.Size = new Size(trackBar1.Size.Width, panelMap.Size.Height - trackBar1.Location.Y);
-            label11.Location = new Point(panelMap.Size.Width - 50, label11.Location.Y);
+            //label11.Location = new Point(panelMap.Size.Width - 50, label11.Location.Y);
         }
 
         DateTime mapupdate = DateTime.MinValue;

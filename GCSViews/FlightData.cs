@@ -700,10 +700,9 @@ namespace MissionPlanner.GCSViews
             this.tabQuick.BackColor = bkc;
             //this.TRK_zoom.BackColor = bkc;
             this.panel1.ForeColor = Color.Black;
-            this.coords1.ForeColor = Color.DarkGreen;
-            this.CB_tuning.ForeColor = Color.DarkGreen;
-            this.CHK_autopan.ForeColor = Color.DarkGreen;
-            this.label1.ForeColor = Color.DarkGreen;
+            this.coords1.ForeColor = this.CB_tuning.ForeColor 
+                = this.label1.ForeColor = this.CHK_autopan.ForeColor
+                = Color.White;
             this.tableLayoutPanelQuick.ForeColor = Color.Blue;
         }
 

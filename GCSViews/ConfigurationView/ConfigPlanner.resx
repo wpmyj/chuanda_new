@@ -523,13 +523,13 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_mavdebug.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 632</value>
+    <value>143, 648</value>
   </data>
   <data name="CHK_mavdebug.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
   <data name="CHK_mavdebug.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 23</value>
+    <value>139, 23</value>
   </data>
   <data name="CHK_mavdebug.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -944,16 +944,19 @@
     <value>NoControl</value>
   </data>
   <data name="label98.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 259</value>
+    <value>17, 255</value>
   </data>
   <data name="label98.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 17</value>
+    <value>76, 29</value>
   </data>
   <data name="label98.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
   </data>
   <data name="label98.Text" xml:space="preserve">
     <value>Speed Units</value>
+  </data>
+  <data name="label98.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label98.Name" xml:space="preserve">
     <value>label98</value>
@@ -971,7 +974,7 @@
     <value>NoControl</value>
   </data>
   <data name="label97.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 222</value>
+    <value>17, 225</value>
   </data>
   <data name="label97.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 17</value>
@@ -1046,16 +1049,19 @@
     <value>NoControl</value>
   </data>
   <data name="label96.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 187</value>
+    <value>17, 183</value>
   </data>
   <data name="label96.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
+    <value>52, 25</value>
   </data>
   <data name="label96.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="label96.Text" xml:space="preserve">
     <value>Joystick</value>
+  </data>
+  <data name="label96.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label96.Name" xml:space="preserve">
     <value>label96</value>
@@ -1073,16 +1079,19 @@
     <value>NoControl</value>
   </data>
   <data name="label95.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 122</value>
+    <value>17, 116</value>
   </data>
   <data name="label95.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 17</value>
+    <value>51, 25</value>
   </data>
   <data name="label95.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
   <data name="label95.Text" xml:space="preserve">
     <value>Speech</value>
+  </data>
+  <data name="label95.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label95.Name" xml:space="preserve">
     <value>label95</value>
@@ -1319,7 +1328,7 @@
     <value>NoControl</value>
   </data>
   <data name="label93.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 152</value>
+    <value>17, 151</value>
   </data>
   <data name="label93.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 17</value>
@@ -2204,7 +2213,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>897, 657</value>
+    <value>897, 670</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigPlanner</value>

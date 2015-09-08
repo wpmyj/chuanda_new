@@ -16,6 +16,12 @@ namespace MissionPlanner.GCSViews
         public InitialSetup()
         {
             InitializeComponent();
+            InitControl();
+        }
+
+        private void InitControl() 
+        {
+            this.BackColor = System.Drawing.Color.FromArgb(192,192,225);
         }
 
         public bool isConnected

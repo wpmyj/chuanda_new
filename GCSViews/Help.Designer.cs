@@ -41,6 +41,7 @@
             // richTextBox1
             // 
             resources.ApplyResources(this.richTextBox1, "richTextBox1");
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.DetectUrls = false;
             this.richTextBox1.Name = "richTextBox1";
@@ -71,7 +72,9 @@
             // PIC_wizard
             // 
             resources.ApplyResources(this.PIC_wizard, "PIC_wizard");
-            this.PIC_wizard.Image = global::MissionPlanner.Properties.Resources.wizardicon;
+            this.PIC_wizard.BackColor = System.Drawing.Color.Transparent;
+            this.PIC_wizard.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.PIC_wizard.Image = global::MissionPlanner.Properties.Resources.lofin_logo;
             this.PIC_wizard.Name = "PIC_wizard";
             this.PIC_wizard.TabStop = false;
             this.PIC_wizard.Click += new System.EventHandler(this.PIC_wizard_Click);
@@ -90,6 +93,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.Controls.Add(this.BUT_betaupdate);
             this.Controls.Add(this.PIC_wizard);
             this.Controls.Add(this.linkLabel1);

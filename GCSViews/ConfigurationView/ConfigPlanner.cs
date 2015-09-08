@@ -582,6 +582,23 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         // on start up. See Activate() for the remainder
         private void ConfigPlanner_Load(object sender, EventArgs e)
         {
+            InitControl();
+        }
+
+        private void InitControl() 
+        {
+            this.BackColor = System.Drawing.Color.FromArgb(192, 192, 255);
+            this.ForeColor = System.Drawing.Color.Black;
+
+            foreach(Control c in this.Controls)
+            {
+                if(c is CheckBox)
+                {
+                    ((CheckBox)c).BackColor = System.Drawing.Color.FromArgb(192,192,225);
+                    ((CheckBox)c).BackgroundImage = MissionPlanner.Properties.Resources.LightBlue;
+                    ((CheckBox)c).ForeColor = System.Drawing.Color.Black;
+                }
+            }
         }
 
         private void CMB_osdcolor_DrawItem(object sender, DrawItemEventArgs e)

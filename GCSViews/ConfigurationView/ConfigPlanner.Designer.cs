@@ -132,7 +132,7 @@
             // 
             // CMB_videoresolutions
             // 
-            this.CMB_videoresolutions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_videoresolutions.BackColor = System.Drawing.Color.White;
             this.CMB_videoresolutions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_videoresolutions.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_videoresolutions, "CMB_videoresolutions");
@@ -645,6 +645,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.Controls.Add(this.chk_tfr);
             this.Controls.Add(this.chk_ADSB);
             this.Controls.Add(this.CHK_showairports);

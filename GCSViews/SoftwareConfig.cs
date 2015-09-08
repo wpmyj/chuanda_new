@@ -115,9 +115,12 @@ namespace MissionPlanner.GCSViews
                     }
                 }
 
-
-                if (backstageView.SelectedPage == null && start != null)
+                if (backstageView.SelectedPage == null && start != null) 
+                {
                     backstageView.ActivatePage(start);
+                   
+                }
+                    
             }
             catch (Exception ex)
             {

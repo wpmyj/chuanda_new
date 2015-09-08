@@ -17,7 +17,12 @@ namespace MissionPlanner.GCSViews
 
         private void InitControl() 
         {
-            this.BackColor = Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
+            this.BackgroundImage = MissionPlanner.Properties.Resources.LightBlue;
+            this.ForeColor = System.Drawing.Color.Black;
+
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black; 
         }
 
         public void Activate()

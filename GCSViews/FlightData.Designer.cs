@@ -381,7 +381,6 @@
             this.lbl_hdop.ForeColor = System.Drawing.Color.Maroon;
             this.lbl_hdop.Name = "lbl_hdop";
             this.lbl_hdop.resize = true;
-            this.toolTip1.SetToolTip(this.lbl_hdop, resources.GetString("lbl_hdop.ToolTip"));
             // 
             // lbl_sats
             // 
@@ -788,7 +787,6 @@
             this.quickView1.number = 0D;
             this.quickView1.numberColor = System.Drawing.Color.Maroon;
             this.quickView1.numberformat = "0.00";
-            this.toolTip1.SetToolTip(this.quickView1, resources.GetString("quickView1.ToolTip"));
             // 
             // tabActions
             // 

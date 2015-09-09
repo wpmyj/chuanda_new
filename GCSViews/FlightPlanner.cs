@@ -429,7 +429,7 @@ namespace MissionPlanner.GCSViews
                 }
             }
             comboBoxMapType.ValueMember = "Name";
-            comboBoxMapType.DataSource = GMapProviders.List.ToArray();
+            comboBoxMapType.DataSource = Map;
             comboBoxMapType.SelectedItem = MainMap.MapProvider;
 
             comboBoxMapType.SelectedValueChanged += comboBoxMapType_SelectedValueChanged;
@@ -738,6 +738,7 @@ namespace MissionPlanner.GCSViews
                 = this.CHK_splinedefault.ForeColor = Color.Black;
 
             this.lnk_kml.ForeColor = label4.ForeColor = Color.Blue;
+            this.CMB_altmode.Visible = false;
           
         }
         void POI_POIModified(object sender, EventArgs e)
@@ -4274,7 +4275,7 @@ namespace MissionPlanner.GCSViews
             }
             else
             {
-                CMB_altmode.Visible = true;
+                CMB_altmode.Visible = false;
             }
 
             //switchDockingToolStripMenuItem_Click(null, null);

@@ -4487,7 +4487,7 @@
     <value>Selected Script: None</value>
   </data>
   <data name="lbl_hdop.Text" xml:space="preserve">
-    <value>hdop: 0</value>
+    <value>CPS 水平误差：</value>
   </data>
   <data name="lbl_hdop.ToolTip" xml:space="preserve">
     <value>gps hdop</value>
@@ -4499,7 +4499,7 @@
     <value>x 1.0</value>
   </data>
   <data name="lbl_sats.Text" xml:space="preserve">
-    <value>Sats: 0</value>
+    <value>卫星个数:</value>
   </data>
   <data name="lbl_sats.ToolTip" xml:space="preserve">
     <value>Satallite Count</value>

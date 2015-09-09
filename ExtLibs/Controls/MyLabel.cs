@@ -84,7 +84,7 @@ namespace MissionPlanner.Controls
         {
             get
             {
-                return System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255))))); ;
+                return System.Drawing.Color.FromArgb(192,192,225);
             }
             set
             {
@@ -99,7 +99,7 @@ namespace MissionPlanner.Controls
         {
             get
             {
-                return base.ForeColor;
+                return System.Drawing.Color.Maroon;
             }
             set
             {

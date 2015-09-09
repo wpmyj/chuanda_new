@@ -39,8 +39,8 @@ namespace MissionPlanner.Controls
             // 
             // labelWithPseudoOpacity1
             // 
-            this.labelWithPseudoOpacity1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelWithPseudoOpacity1.AutoSize = true;
+            this.labelWithPseudoOpacity1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 0);
@@ -68,8 +68,8 @@ namespace MissionPlanner.Controls
             // 
             // labelWithPseudoOpacity2
             // 
-            this.labelWithPseudoOpacity2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelWithPseudoOpacity2.AutoSize = true;
+            this.labelWithPseudoOpacity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Maroon;
             this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(79, 0);

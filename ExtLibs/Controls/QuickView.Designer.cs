@@ -39,15 +39,14 @@ namespace MissionPlanner.Controls
             // 
             // labelWithPseudoOpacity1
             // 
-            this.labelWithPseudoOpacity1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelWithPseudoOpacity1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelWithPseudoOpacity1.AutoSize = true;
-            this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 10);
+            this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(38, 13);
             this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
-            this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(72, 20);
+            this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(0, 17);
             this.labelWithPseudoOpacity1.TabIndex = 0;
-            this.labelWithPseudoOpacity1.Text = "Altitude:";
             this.labelWithPseudoOpacity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
@@ -62,29 +61,29 @@ namespace MissionPlanner.Controls
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(156, 41);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(152, 43);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // labelWithPseudoOpacity2
             // 
-            this.labelWithPseudoOpacity2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelWithPseudoOpacity2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelWithPseudoOpacity2.AutoSize = true;
-            this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Maroon;
-            this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(86, 10);
+            this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(96, 12);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
-            this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(67, 20);
+            this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(36, 19);
             this.labelWithPseudoOpacity2.TabIndex = 2;
-            this.labelWithPseudoOpacity2.Text = "0000.00";
+            this.labelWithPseudoOpacity2.Text = "0.00";
             this.labelWithPseudoOpacity2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QuickView
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "QuickView";
-            this.Size = new System.Drawing.Size(156, 41);
+            this.Size = new System.Drawing.Size(152, 43);
             this.Resize += new System.EventHandler(this.QuickView_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

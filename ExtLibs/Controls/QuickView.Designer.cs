@@ -39,16 +39,17 @@ namespace MissionPlanner.Controls
             // 
             // labelWithPseudoOpacity1
             // 
+            this.labelWithPseudoOpacity1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelWithPseudoOpacity1.AutoSize = true;
-            this.labelWithPseudoOpacity1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 0);
             this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
+            this.labelWithPseudoOpacity1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(70, 43);
             this.labelWithPseudoOpacity1.TabIndex = 0;
             this.labelWithPseudoOpacity1.Text = "地速";
-            this.labelWithPseudoOpacity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelWithPseudoOpacity1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel1
             // 
@@ -61,22 +62,22 @@ namespace MissionPlanner.Controls
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(152, 43);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // labelWithPseudoOpacity2
             // 
+            this.labelWithPseudoOpacity2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelWithPseudoOpacity2.AutoSize = true;
-            this.labelWithPseudoOpacity2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Maroon;
             this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(79, 0);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
             this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(70, 43);
             this.labelWithPseudoOpacity2.TabIndex = 2;
             this.labelWithPseudoOpacity2.Text = "0.00";
-            this.labelWithPseudoOpacity2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelWithPseudoOpacity2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // QuickView
             // 

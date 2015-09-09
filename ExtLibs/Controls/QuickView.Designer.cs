@@ -39,13 +39,13 @@ namespace MissionPlanner.Controls
             // 
             // labelWithPseudoOpacity1
             // 
-            this.labelWithPseudoOpacity1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelWithPseudoOpacity1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.labelWithPseudoOpacity1.AutoSize = true;
-            this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 0);
+            this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(4, 9);
             this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
-            this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(118, 16);
+            this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(72, 20);
             this.labelWithPseudoOpacity1.TabIndex = 0;
             this.labelWithPseudoOpacity1.Text = "Altitude:";
             this.labelWithPseudoOpacity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -53,28 +53,27 @@ namespace MissionPlanner.Controls
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity1, 0, 0);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(122, 54);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(151, 41);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // labelWithPseudoOpacity2
             // 
-            this.labelWithPseudoOpacity2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(3, 20);
+            this.labelWithPseudoOpacity2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelWithPseudoOpacity2.AutoSize = true;
+            this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Maroon;
+            this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(81, 10);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
-            this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(118, 34);
+            this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(67, 20);
             this.labelWithPseudoOpacity2.TabIndex = 2;
             this.labelWithPseudoOpacity2.Text = "0000.00";
             this.labelWithPseudoOpacity2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,13 +81,18 @@ namespace MissionPlanner.Controls
             // 
             // QuickView
             // 
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.labelWithPseudoOpacity1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "QuickView";
-            this.Size = new System.Drawing.Size(122, 54);
+            this.Size = new System.Drawing.Size(151, 41);
             this.Resize += new System.EventHandler(this.QuickView_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

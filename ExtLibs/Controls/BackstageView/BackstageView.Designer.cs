@@ -59,6 +59,7 @@
             // BackstageView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlPages);
             this.Margin = new System.Windows.Forms.Padding(4);

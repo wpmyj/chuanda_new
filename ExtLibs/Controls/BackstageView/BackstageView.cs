@@ -96,13 +96,14 @@ namespace MissionPlanner.Controls.BackstageView
         {
             get
             {
-                return base.BackColor;
+                return System.Drawing.Color.FromArgb(192, 192, 225)
+;
             }
             set
             {
                 base.BackColor = value;
                 UpdateButtonAppearance();
-                pnlMenu.GradColor = this.BackColor;
+                pnlMenu.GradColor = System.Drawing.Color.FromArgb(192, 192, 225);
             }
         }
 

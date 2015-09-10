@@ -43,7 +43,8 @@
             // SoftwareConfig
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(192,192,225);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
             this.Controls.Add(this.backstageView);
             resources.ApplyResources(this, "$this");
             this.MinimumSize = new System.Drawing.Size(1000, 450);

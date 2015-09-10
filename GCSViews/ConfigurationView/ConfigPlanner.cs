@@ -22,6 +22,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         public ConfigPlanner()
         {
             InitializeComponent();
+            this.NUM_tracklength.BackColor = System.Drawing.Color.FromArgb(192,192,225);
         }
 
         // Called every time that this control is made current in the backstage view

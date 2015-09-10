@@ -161,7 +161,7 @@
             this.backstageViewPagewizard.LinkText = "Wizard";
             this.backstageViewPagewizard.Page = this.configWizard1;
             this.backstageViewPagewizard.Parent = null;
-            this.backstageViewPagewizard.Show = true;
+            this.backstageViewPagewizard.Show = false;
             this.backstageViewPagewizard.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagewizard, "backstageViewPagewizard");
             // 

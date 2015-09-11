@@ -30,10 +30,10 @@ namespace MissionPlanner.Controls
        bool inOnPaint = false;
 
        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Colors")]
-       [DefaultValue(typeof(Color), "0x94, 0xc1, 0x1f")]
+       [DefaultValue(typeof(Color), "192, 255, 255")]
        public Color BGGradTop { get { return _BGGradTop; } set { _BGGradTop = value; this.Invalidate(); } }
          [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Colors")]
-         [DefaultValue(typeof(Color), "0xcd, 0xe2, 0x96")]
+         [DefaultValue(typeof(Color), "0, 192, 192")]
        public Color BGGradBot { get { return _BGGradBot; } set { _BGGradBot = value; this.Invalidate(); } }
 
         // i want to ignore forecolor
@@ -46,8 +46,8 @@ namespace MissionPlanner.Controls
 
          public MyButton()
          {
-             _BGGradTop = Color.FromArgb(0x94, 0xc1, 0x1f);
-             _BGGradBot = Color.FromArgb(0xcd, 0xe2, 0x96);
+             _BGGradTop = Color.FromArgb(192, 255, 255);
+             _BGGradBot = Color.FromArgb(0, 192, 192);
              _TextColor = Color.FromArgb(0x40, 0x57, 0x04);
              _Outline = Color.FromArgb(0x79, 0x94, 0x29);
          }

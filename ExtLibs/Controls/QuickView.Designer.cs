@@ -46,7 +46,7 @@ namespace MissionPlanner.Controls
             this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 0);
             this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
             this.labelWithPseudoOpacity1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(70, 43);
+            this.labelWithPseudoOpacity1.Size = new System.Drawing.Size(39, 43);
             this.labelWithPseudoOpacity1.TabIndex = 0;
             this.labelWithPseudoOpacity1.Text = "地速";
             this.labelWithPseudoOpacity1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -54,8 +54,8 @@ namespace MissionPlanner.Controls
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -72,9 +72,9 @@ namespace MissionPlanner.Controls
             this.labelWithPseudoOpacity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Maroon;
-            this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(79, 0);
+            this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(48, 0);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
-            this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(70, 43);
+            this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(101, 43);
             this.labelWithPseudoOpacity2.TabIndex = 2;
             this.labelWithPseudoOpacity2.Text = "0.00";
             this.labelWithPseudoOpacity2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

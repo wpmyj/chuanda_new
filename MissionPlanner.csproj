@@ -362,6 +362,12 @@
     </Compile>
     <Compile Include="Controls\Waypoints\Spline2.cs" />
     <Compile Include="Controls\Waypoints\Spline.cs" />
+    <Compile Include="ExtLibs\Controls\QuickView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExtLibs\Controls\QuickView.Designer.cs">
+      <DependentUpon>QuickView.cs</DependentUpon>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -725,6 +731,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Vibration.resx">
       <DependentUpon>Vibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtLibs\Controls\QuickView.resx">
+      <DependentUpon>QuickView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FollowMe.zh-Hant.resx">
       <DependentUpon>FollowMe.cs</DependentUpon>
@@ -6878,7 +6887,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExtLibs\Controls\" />
     <Folder Include="Plugins\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

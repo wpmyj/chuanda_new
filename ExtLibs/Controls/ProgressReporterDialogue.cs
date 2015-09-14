@@ -226,7 +226,8 @@ namespace MissionPlanner.Controls
                                                         this.progressBar1.Visible = false;
                                                         this.btnCancel.Visible = false;
                                                         this.btnClose.Visible = true;
-                                                        this.linkLabel1.Visible = exception != null;
+                                                        //this.linkLabel1.Visible = exception != null;
+                                                        this.linkLabel1.Visible = false;
                                                         this.workerException = exception;
                                                     });
                 }

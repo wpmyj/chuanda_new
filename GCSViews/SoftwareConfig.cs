@@ -52,35 +52,35 @@ namespace MissionPlanner.GCSViews
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        start = AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
+                        //AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
 
-                        AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
+                        start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
                     }
 
-                    if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane)
-                    {
-                        start = AddBackstageViewPage(new ConfigArduplane(), Strings.BasicTuning);
-                    }
+                    //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane)
+                    //{
+                    //    start = AddBackstageViewPage(new ConfigArduplane(), Strings.BasicTuning);
+                    //}
 
-                    if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduRover)
-                    {
-                        start = AddBackstageViewPage(new ConfigArdurover(), Strings.BasicTuning);
-                    }
+                    //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduRover)
+                    //{
+                    //    start = AddBackstageViewPage(new ConfigArdurover(), Strings.BasicTuning);
+                    //}
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduTracker)
                     {
                         start = AddBackstageViewPage(new ConfigAntennaTracker(), Strings.ExtendedTuning);
                     }
 
-                    AddBackstageViewPage(
-                        new ConfigFriendlyParams {ParameterMode = ParameterMetaDataConstants.Standard},
-                        Strings.StandardParams);
-                    AddBackstageViewPage(
-                        new ConfigFriendlyParams {ParameterMode = ParameterMetaDataConstants.Advanced},
-                        Strings.AdvancedParams, null, true);
-                    AddBackstageViewPage(new ConfigRawParams(), Strings.FullParameterList, null, true);
+                    //AddBackstageViewPage(
+                    //    new ConfigFriendlyParams {ParameterMode = ParameterMetaDataConstants.Standard},
+                    //    Strings.StandardParams);
+                    //AddBackstageViewPage(
+                    //    new ConfigFriendlyParams {ParameterMode = ParameterMetaDataConstants.Advanced},
+                    //    Strings.AdvancedParams, null, true);
+                    //AddBackstageViewPage(new ConfigRawParams(), Strings.FullParameterList, null, true);
 
-                    AddBackstageViewPage(new ConfigRawParamsTree(), Strings.FullParameterTree, null, true);
+                    //AddBackstageViewPage(new ConfigRawParamsTree(), Strings.FullParameterTree, null, true);
 
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.Ateryx)
@@ -90,16 +90,16 @@ namespace MissionPlanner.GCSViews
                         AddBackstageViewPage(new ConfigAteryx(), "Ateryx Pids");
                     }
 
-                    if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduTracker)
-                    {
-                        start = AddBackstageViewPage(new ConfigRawParams(), Strings.FullParameterList, null, true);
-                    }
+                    //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduTracker)
+                    //{
+                    //    start = AddBackstageViewPage(new ConfigRawParams(), Strings.FullParameterList, null, true);
+                    //}
 
-                    AddBackstageViewPage(new ConfigPlanner(), "Planner");
+                    //AddBackstageViewPage(new ConfigPlanner(), "Planner");
                 }
                 else
                 {
-                    start = AddBackstageViewPage(new ConfigPlanner(), "Planner");
+                    //start = AddBackstageViewPage(new ConfigPlanner(), "Planner");
                 }
 
                 // apply theme before trying to display it

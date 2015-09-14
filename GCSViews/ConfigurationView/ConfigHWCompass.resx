@@ -117,53 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BUT_MagCalibrationLive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BUT_MagCalibrationLive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 432</value>
-  </data>
-  <data name="BUT_MagCalibrationLive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 27</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BUT_MagCalibrationLive.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="BUT_MagCalibrationLive.Text" xml:space="preserve">
-    <value>Live Calibration</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.Name" xml:space="preserve">
-    <value>BUT_MagCalibrationLive</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BUT_MagCalibrationLive.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <data name="linkLabelmagdec.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="linkLabelmagdec.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="linkLabelmagdec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 72</value>
+    <value>252, 66</value>
   </data>
   <data name="linkLabelmagdec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>119, 12</value>
   </data>
   <data name="linkLabelmagdec.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
   <data name="linkLabelmagdec.Text" xml:space="preserve">
     <value>Declination WebSite</value>
+  </data>
+  <data name="linkLabelmagdec.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;linkLabelmagdec.Name" xml:space="preserve">
     <value>linkLabelmagdec</value>
@@ -181,16 +157,19 @@
     <value>NoControl</value>
   </data>
   <data name="label100.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 73</value>
+    <value>170, 67</value>
   </data>
   <data name="label100.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
+    <value>72, 15</value>
   </data>
   <data name="label100.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="label100.Text" xml:space="preserve">
     <value>Declination</value>
+  </data>
+  <data name="label100.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label100.Name" xml:space="preserve">
     <value>label100</value>
@@ -208,13 +187,16 @@
     <value>False</value>
   </data>
   <data name="TXT_declination_deg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 49</value>
+    <value>299, 45</value>
   </data>
   <data name="TXT_declination_deg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
+    <value>37, 21</value>
   </data>
   <data name="TXT_declination_deg.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
+  </data>
+  <data name="TXT_declination_deg.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;TXT_declination_deg.Name" xml:space="preserve">
     <value>TXT_declination_deg</value>
@@ -241,13 +223,16 @@
     <value />
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 33</value>
+    <value>491, 30</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
+    <value>75, 69</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
+  </data>
+  <data name="pictureBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
     <value>pictureBox1</value>
@@ -265,16 +250,19 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_autodec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 55</value>
+    <value>157, 51</value>
   </data>
   <data name="CHK_autodec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 17</value>
+    <value>82, 16</value>
   </data>
   <data name="CHK_autodec.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
   <data name="CHK_autodec.Text" xml:space="preserve">
     <value>Auto Dec</value>
+  </data>
+  <data name="CHK_autodec.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CHK_autodec.Name" xml:space="preserve">
     <value>CHK_autodec</value>
@@ -298,7 +286,7 @@
     <value>7, 3</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>167, 18</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -322,7 +310,7 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 21</value>
+    <value>3, 19</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>644, 5</value>
@@ -349,16 +337,19 @@
     <value>NoControl</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 439</value>
+    <value>84, 405</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
+    <value>95, 12</value>
   </data>
   <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
   </data>
   <data name="linkLabel1.Text" xml:space="preserve">
     <value>Youtube Example</value>
+  </data>
+  <data name="linkLabel1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;linkLabel1.Name" xml:space="preserve">
     <value>linkLabel1</value>
@@ -376,10 +367,10 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 16</value>
+    <value>6, 15</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 78</value>
+    <value>290, 72</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -406,54 +397,6 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="imageLabel1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAS+SURBVHhe7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACzXC7gAB9GuoowAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
-  <data name="imageLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 122</value>
-  </data>
-  <data name="imageLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 135</value>
-  </data>
-  <data name="imageLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="&gt;&gt;imageLabel1.Name" xml:space="preserve">
-    <value>imageLabel1</value>
-  </data>
-  <data name="&gt;&gt;imageLabel1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;imageLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;imageLabel1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="pictureBox2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -467,13 +410,16 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value />
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 100</value>
+    <value>175, 92</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 75</value>
+    <value>114, 69</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
+  </data>
+  <data name="pictureBox2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
@@ -494,10 +440,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="rb_px4pixhawk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 50</value>
+    <value>7, 46</value>
   </data>
   <data name="rb_px4pixhawk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 17</value>
+    <value>89, 16</value>
   </data>
   <data name="rb_px4pixhawk.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -530,13 +476,16 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value />
   </data>
   <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 19</value>
+    <value>175, 18</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 75</value>
+    <value>114, 69</value>
   </data>
   <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
+  </data>
+  <data name="pictureBox4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
     <value>pictureBox4</value>
@@ -557,16 +506,19 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="radioButtonmanual.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 271</value>
+    <value>7, 250</value>
   </data>
   <data name="radioButtonmanual.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 17</value>
+    <value>59, 16</value>
   </data>
   <data name="radioButtonmanual.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
   </data>
   <data name="radioButtonmanual.Text" xml:space="preserve">
     <value>Manual</value>
+  </data>
+  <data name="radioButtonmanual.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;radioButtonmanual.Name" xml:space="preserve">
     <value>radioButtonmanual</value>
@@ -587,16 +539,19 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="radioButton_external.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 212</value>
+    <value>7, 196</value>
   </data>
   <data name="radioButton_external.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 17</value>
+    <value>173, 16</value>
   </data>
   <data name="radioButton_external.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
   </data>
   <data name="radioButton_external.Text" xml:space="preserve">
     <value>APM with External Compass</value>
+  </data>
+  <data name="radioButton_external.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;radioButton_external.Name" xml:space="preserve">
     <value>radioButton_external</value>
@@ -623,13 +578,16 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value />
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 181</value>
+    <value>175, 167</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 75</value>
+    <value>114, 69</value>
   </data>
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
+  </data>
+  <data name="pictureBox3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
     <value>pictureBox3</value>
@@ -647,19 +605,22 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>False</value>
   </data>
   <data name="CMB_compass_orient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 271</value>
+    <value>98, 250</value>
   </data>
   <data name="CMB_compass_orient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 21</value>
+    <value>202, 20</value>
   </data>
   <data name="CMB_compass_orient.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
+  </data>
+  <data name="CMB_compass_orient.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CMB_compass_orient.Name" xml:space="preserve">
     <value>CMB_compass_orient</value>
   </data>
   <data name="&gt;&gt;CMB_compass_orient.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5406.14104, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5732.19176, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CMB_compass_orient.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -674,16 +635,19 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="radioButton_onboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 131</value>
+    <value>7, 121</value>
   </data>
   <data name="radioButton_onboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 17</value>
+    <value>167, 16</value>
   </data>
   <data name="radioButton_onboard.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="radioButton_onboard.Text" xml:space="preserve">
     <value>APM with OnBoard Compass</value>
+  </data>
+  <data name="radioButton_onboard.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;radioButton_onboard.Name" xml:space="preserve">
     <value>radioButton_onboard</value>
@@ -698,16 +662,19 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>6</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 112</value>
+    <value>0, 100</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 304</value>
+    <value>314, 281</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Orientation</value>
+  </data>
+  <data name="groupBox1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -719,19 +686,22 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="TXT_declination_min.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="TXT_declination_min.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 49</value>
+    <value>392, 45</value>
   </data>
   <data name="TXT_declination_min.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 20</value>
+    <value>53, 21</value>
   </data>
   <data name="TXT_declination_min.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
+  </data>
+  <data name="TXT_declination_min.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;TXT_declination_min.Name" xml:space="preserve">
     <value>TXT_declination_min</value>
@@ -743,7 +713,7 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_declination_min.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -752,16 +722,19 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 52</value>
+    <value>248, 48</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 13</value>
+    <value>47, 12</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Degrees</value>
+  </data>
+  <data name="label2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -773,7 +746,7 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -782,16 +755,19 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 52</value>
+    <value>342, 48</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
+    <value>47, 12</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Minutes</value>
+  </data>
+  <data name="label3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -803,19 +779,22 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>331, 205</value>
+    <value>331, 189</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>302, 94</value>
+    <value>302, 87</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Example Manual Settings</value>
+  </data>
+  <data name="groupBox3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
     <value>groupBox3</value>
@@ -829,6 +808,84 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="imageLabel1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAS+SURBVHhe7cEBDQAAAMKg909tDjcgAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACzXC7gAB9GuoowAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="imageLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 113</value>
+  </data>
+  <data name="imageLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 125</value>
+  </data>
+  <data name="imageLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="imageLabel1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.Name" xml:space="preserve">
+    <value>imageLabel1</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BUT_MagCalibrationLive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_MagCalibrationLive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 35</value>
+  </data>
+  <data name="BUT_MagCalibrationLive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 25</value>
+  </data>
+  <data name="BUT_MagCalibrationLive.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="BUT_MagCalibrationLive.Text" xml:space="preserve">
+    <value>Live Calibration</value>
+  </data>
+  <data name="&gt;&gt;BUT_MagCalibrationLive.Name" xml:space="preserve">
+    <value>BUT_MagCalibrationLive</value>
+  </data>
+  <data name="&gt;&gt;BUT_MagCalibrationLive.Type" xml:space="preserve">
+    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_MagCalibrationLive.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BUT_MagCalibrationLive.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="CHK_enablecompass.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -836,10 +893,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="CHK_enablecompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 33</value>
+    <value>157, 30</value>
   </data>
   <data name="CHK_enablecompass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 17</value>
+    <value>82, 16</value>
   </data>
   <data name="CHK_enablecompass.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -847,11 +904,14 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="CHK_enablecompass.Text" xml:space="preserve">
     <value>Enable</value>
   </data>
+  <data name="CHK_enablecompass.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;CHK_enablecompass.Name" xml:space="preserve">
     <value>CHK_enablecompass</value>
   </data>
   <data name="&gt;&gt;CHK_enablecompass.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, MissionPlanner, Version=1.1.5406.14104, Culture=neutral, PublicKeyToken=null</value>
+    <value>MissionPlanner.Controls.MavlinkCheckBox, MissionPlanner, Version=1.1.5732.19176, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CHK_enablecompass.Parent" xml:space="preserve">
     <value>$this</value>
@@ -863,10 +923,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>6, 12</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 466</value>
+    <value>650, 100</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigHWCompass</value>

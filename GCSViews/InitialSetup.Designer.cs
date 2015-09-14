@@ -86,6 +86,7 @@
             // 
             // backstageView
             // 
+            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
             this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
@@ -177,7 +178,7 @@
             this.backstageViewPagemand.LinkText = "Mandatory Hardware";
             this.backstageViewPagemand.Page = this.configMandatory1;
             this.backstageViewPagemand.Parent = null;
-            this.backstageViewPagemand.Show = false;
+            this.backstageViewPagemand.Show = true;
             this.backstageViewPagemand.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagemand, "backstageViewPagemand");
             // 
@@ -193,7 +194,7 @@
             this.backstageViewPagetradheli.LinkText = "Heli Setup";
             this.backstageViewPagetradheli.Page = this.configTradHeli1;
             this.backstageViewPagetradheli.Parent = this.backstageViewPagemand;
-            this.backstageViewPagetradheli.Show = false;
+            this.backstageViewPagetradheli.Show = true;
             this.backstageViewPagetradheli.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagetradheli, "backstageViewPagetradheli");
             // 
@@ -209,7 +210,7 @@
             this.backstageViewPageframetype.LinkText = "Frame Type";
             this.backstageViewPageframetype.Page = this.configFrameType1;
             this.backstageViewPageframetype.Parent = this.backstageViewPagemand;
-            this.backstageViewPageframetype.Show = false;
+            this.backstageViewPageframetype.Show = true;
             this.backstageViewPageframetype.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageframetype, "backstageViewPageframetype");
             // 
@@ -225,7 +226,7 @@
             this.backstageViewPageaccel.LinkText = "Accel Calibration";
             this.backstageViewPageaccel.Page = this.configAccelerometerCalibration;
             this.backstageViewPageaccel.Parent = this.backstageViewPagemand;
-            this.backstageViewPageaccel.Show = false;
+            this.backstageViewPageaccel.Show = true;
             this.backstageViewPageaccel.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageaccel, "backstageViewPageaccel");
             // 
@@ -240,7 +241,7 @@
             this.backstageViewPagecompass.LinkText = "Compass";
             this.backstageViewPagecompass.Page = this.configHWCompass1;
             this.backstageViewPagecompass.Parent = this.backstageViewPagemand;
-            this.backstageViewPagecompass.Show = false;
+            this.backstageViewPagecompass.Show = true;
             this.backstageViewPagecompass.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagecompass, "backstageViewPagecompass");
             // 
@@ -255,7 +256,7 @@
             this.backstageViewPageradio.LinkText = "Radio Calibration";
             this.backstageViewPageradio.Page = this.configRadioInput1;
             this.backstageViewPageradio.Parent = this.backstageViewPagemand;
-            this.backstageViewPageradio.Show = false;
+            this.backstageViewPageradio.Show = true;
             this.backstageViewPageradio.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageradio, "backstageViewPageradio");
             // 
@@ -270,7 +271,7 @@
             this.backstageViewPageflmode.LinkText = "Flight Modes";
             this.backstageViewPageflmode.Page = this.configFlightModes1;
             this.backstageViewPageflmode.Parent = this.backstageViewPagemand;
-            this.backstageViewPageflmode.Show = false;
+            this.backstageViewPageflmode.Show = true;
             this.backstageViewPageflmode.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageflmode, "backstageViewPageflmode");
             // 
@@ -285,7 +286,7 @@
             this.backstageViewPagefs.LinkText = "FailSafe";
             this.backstageViewPagefs.Page = this.configFailSafe1;
             this.backstageViewPagefs.Parent = this.backstageViewPagemand;
-            this.backstageViewPagefs.Show = false;
+            this.backstageViewPagefs.Show = true;
             this.backstageViewPagefs.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefs, "backstageViewPagefs");
             // 

@@ -557,7 +557,7 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(NumericUpDown) || ctl.GetType() == typeof(MavlinkNumericUpDown))
                 {
-                    ctl.BackColor = ControlBGColor;
+                    ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
                 else if (ctl.GetType() == typeof(TrackBar))
@@ -794,7 +794,7 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(NumericUpDown) || ctl.GetType() == typeof(MavlinkNumericUpDown))
                 {
-                    ctl.BackColor = ControlBGColor;
+                    ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
                 else if (ctl.GetType() == typeof(TrackBar))
@@ -1011,7 +1011,7 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(NumericUpDown) || ctl.GetType() == typeof(MavlinkNumericUpDown))
                 {
-                    ctl.BackColor = ControlBGColor;
+                    ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
                 }
                 else if (ctl.GetType() == typeof(TrackBar))

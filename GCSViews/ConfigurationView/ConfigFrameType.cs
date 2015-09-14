@@ -27,7 +27,6 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         public ConfigFrameType()
         {
             InitializeComponent();
-
             configDefaultSettings1.OnChange += configDefaultSettings1_OnChange;
         }
 
@@ -40,6 +39,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
 
             DoChange((Frame) Enum.Parse(typeof (Frame), MainV2.comPort.MAV.param["FRAME"].ToString()));
+
+            this.groupBox1.BackColor = this.groupBox2.BackColor = System.Drawing.Color.White;
         }
 
         public void Deactivate()

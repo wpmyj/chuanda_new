@@ -153,7 +153,8 @@ namespace MissionPlanner.GCSViews
         {
             if (selectedrow > Commands.RowCount)
             {
-                CustomMessageBox.Show("Invalid coord, How did you do this?");
+                //Invalid coord, How did you do this?
+                CustomMessageBox.Show("无效坐标！");
                 return;
             }
 
@@ -189,23 +190,25 @@ namespace MissionPlanner.GCSViews
 
                     if (pass == false)
                     {
-                        CustomMessageBox.Show("You must have a home altitude");
+                        CustomMessageBox.Show("你必须有一个初始的高度！");
                         string homealt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Home Alt", "Home Altitude", ref homealt))
+                        if (DialogResult.Cancel == InputBox.Show("初始高度", "初始高度", ref homealt))
                             return;
                         TXT_homealt.Text = homealt;
                     }
                     int results1;
                     if (!int.TryParse(TXT_DefaultAlt.Text, out results1))
                     {
-                        CustomMessageBox.Show("Your default alt is not valid");
+                        //Your default alt is not valid
+                        CustomMessageBox.Show("默认的高度是无效的！");
                         return;
                     }
 
                     if (results1 == 0)
                     {
                         string defalt = "100";
-                        if (DialogResult.Cancel == InputBox.Show("Default Alt", "Default Altitude", ref defalt))
+
+                        if (DialogResult.Cancel == InputBox.Show("默认高度", "默认高度", ref defalt))
                             return;
                         TXT_DefaultAlt.Text = defalt;
                     }
@@ -1591,7 +1594,7 @@ namespace MissionPlanner.GCSViews
                 }
                 else
                 {
-                    if (CustomMessageBox.Show("This will clear your existing planned mission, Continue?", "Confirm", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                    if (CustomMessageBox.Show("这将清除您现有的计划任务，继续?", "清除计划任务", MessageBoxButtons.OKCancel) != DialogResult.OK)
                     {
                         return;
                     }
@@ -1624,7 +1627,7 @@ namespace MissionPlanner.GCSViews
 
                 if (!port.BaseStream.IsOpen)
                 {
-                    throw new Exception("Please Connect First!");
+                    throw new Exception("请先链接地面站!");
                 }
 
                 MainV2.comPort.giveComport = true;
@@ -3284,7 +3287,7 @@ namespace MissionPlanner.GCSViews
         private void TXT_homelat_Enter(object sender, EventArgs e)
         {
             sethome = true;
-            CustomMessageBox.Show("Click on the Map to set Home ");
+            CustomMessageBox.Show("请点击地图设置初始化参数！");
         }
 
         private void Planner_Resize(object sender, EventArgs e)

@@ -1187,7 +1187,7 @@ namespace MissionPlanner
                 {
                     log.Warn(ex2);
                 }
-                CustomMessageBox.Show("Can not establish a connection\n\n" + ex.Message);
+                CustomMessageBox.Show("不能建立连接!\n\n" + ex.Message);
                 return;
             }
         }

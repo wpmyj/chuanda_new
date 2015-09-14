@@ -255,6 +255,8 @@
             // 
             // BUT_SaveModes
             // 
+            this.BUT_SaveModes.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BUT_SaveModes.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.BUT_SaveModes, "BUT_SaveModes");
             this.BUT_SaveModes.Name = "BUT_SaveModes";
             this.BUT_SaveModes.UseVisualStyleBackColor = true;
@@ -329,7 +331,7 @@
             this.tableLayoutPanel1.Controls.Add(this.BUT_SaveModes, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.CB_simple1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.CB_simple6, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.linkLabel1_ss, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.linkLabel1_ss, 4, 6);
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
@@ -337,7 +339,6 @@
             // 
             resources.ApplyResources(this.linkLabel1_ss, "linkLabel1_ss");
             this.linkLabel1_ss.Name = "linkLabel1_ss";
-            this.linkLabel1_ss.TabStop = true;
             this.linkLabel1_ss.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_ss_LinkClicked);
             // 
             // ConfigFlightModes

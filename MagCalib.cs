@@ -303,8 +303,8 @@ namespace MissionPlanner
             string extramsg = "";
 
             // clear any old data
-            ((ProgressReporterSphere)sender).sphere1.Clear();
-            ((ProgressReporterSphere)sender).sphere2.Clear();
+            //((ProgressReporterSphere)sender).sphere1.Clear();
+            //((ProgressReporterSphere)sender).sphere2.Clear();
 
             // keep track of data count and last lsq run
             int lastcount = 0;

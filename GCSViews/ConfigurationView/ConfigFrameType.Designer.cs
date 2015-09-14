@@ -49,17 +49,16 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.pictureBoxY = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.configDefaultSettings1 = new MissionPlanner.Controls.DefaultSettings();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.radioButton_VTail = new System.Windows.Forms.RadioButton();
             this.pictureBoxVTail = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.configDefaultSettings1 = new MissionPlanner.Controls.DefaultSettings();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).BeginInit();
             this.SuspendLayout();
@@ -92,18 +91,18 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxPlus
             // 
-            resources.ApplyResources(this.pictureBoxPlus, "pictureBoxPlus");
             this.pictureBoxPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxPlus.Image = global::MissionPlanner.Properties.Resources.frames_plus;
+            resources.ApplyResources(this.pictureBoxPlus, "pictureBoxPlus");
             this.pictureBoxPlus.Name = "pictureBoxPlus";
             this.pictureBoxPlus.TabStop = false;
             this.pictureBoxPlus.Click += new System.EventHandler(this.pictureBoxPlus_Click);
             // 
             // pictureBoxX
             // 
-            resources.ApplyResources(this.pictureBoxX, "pictureBoxX");
             this.pictureBoxX.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxX.Image = global::MissionPlanner.Properties.Resources.frames_x;
+            resources.ApplyResources(this.pictureBoxX, "pictureBoxX");
             this.pictureBoxX.Name = "pictureBoxX";
             this.pictureBoxX.TabStop = false;
             this.pictureBoxX.Click += new System.EventHandler(this.pictureBoxX_Click);
@@ -123,9 +122,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxV
             // 
-            resources.ApplyResources(this.pictureBoxV, "pictureBoxV");
             this.pictureBoxV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxV.Image = global::MissionPlanner.Properties.Resources.new_3DR_04;
+            resources.ApplyResources(this.pictureBoxV, "pictureBoxV");
             this.pictureBoxV.Name = "pictureBoxV";
             this.pictureBoxV.TabStop = false;
             this.pictureBoxV.Click += new System.EventHandler(this.pictureBoxV_Click);
@@ -145,9 +144,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxH
             // 
-            resources.ApplyResources(this.pictureBoxH, "pictureBoxH");
             this.pictureBoxH.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxH.Image = global::MissionPlanner.Properties.Resources.frames_h;
+            resources.ApplyResources(this.pictureBoxH, "pictureBoxH");
             this.pictureBoxH.Name = "pictureBoxH";
             this.pictureBoxH.TabStop = false;
             this.pictureBoxH.Click += new System.EventHandler(this.pictureBoxH_Click);
@@ -172,9 +171,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxY
             // 
-            resources.ApplyResources(this.pictureBoxY, "pictureBoxY");
             this.pictureBoxY.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxY.Image = global::MissionPlanner.Properties.Resources.y6b;
+            resources.ApplyResources(this.pictureBoxY, "pictureBoxY");
             this.pictureBoxY.Name = "pictureBoxY";
             this.pictureBoxY.TabStop = false;
             this.pictureBoxY.Click += new System.EventHandler(this.pictureBoxY_Click);
@@ -187,18 +186,13 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.configDefaultSettings1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // configDefaultSettings1
-            // 
-            resources.ApplyResources(this.configDefaultSettings1, "configDefaultSettings1");
-            this.configDefaultSettings1.Name = "configDefaultSettings1";
-            // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.configDefaultSettings1);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.radioButton_VTail);
             this.groupBox2.Controls.Add(this.pictureBoxVTail);
@@ -219,6 +213,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.groupBox2.Controls.Add(this.radioButton_H);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.pictureBoxH);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -237,16 +232,23 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxVTail
             // 
-            resources.ApplyResources(this.pictureBoxVTail, "pictureBoxVTail");
             this.pictureBoxVTail.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBoxVTail, "pictureBoxVTail");
             this.pictureBoxVTail.Name = "pictureBoxVTail";
             this.pictureBoxVTail.TabStop = false;
             this.pictureBoxVTail.Click += new System.EventHandler(this.pictureBoxVTail_Click);
+            // 
+            // configDefaultSettings1
+            // 
+            this.configDefaultSettings1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.configDefaultSettings1, "configDefaultSettings1");
+            this.configDefaultSettings1.Name = "configDefaultSettings1";
             // 
             // ConfigFrameType
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigFrameType";
@@ -255,7 +257,6 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).EndInit();

@@ -33,6 +33,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
             CHK_enablecompass.setup(1, 0, "MAG_ENABLE", MainV2.comPort.MAV.param, TXT_declination_deg);
 
+            this.CHK_enablecompass.Visible = false;
 
             if (MainV2.comPort.MAV.param["COMPASS_DEC"] != null)
             {

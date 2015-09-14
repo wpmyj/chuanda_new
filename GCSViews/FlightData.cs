@@ -704,6 +704,7 @@ namespace MissionPlanner.GCSViews
                 = this.label1.ForeColor = this.CHK_autopan.ForeColor
                 = Color.White;
             this.tableLayoutPanelQuick.ForeColor = Color.Blue;
+            this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)

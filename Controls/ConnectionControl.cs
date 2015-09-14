@@ -34,7 +34,7 @@ namespace MissionPlanner.Controls
         /// <param name="isConnected">Whether we are connected</param>
         public void IsConnected(bool isConnected)
         {
-            this.linkLabel1.Visible = isConnected;
+            this.linkLabel1.Visible = false;
             cmb_Baud.Enabled = !isConnected;
             cmb_Connection.Enabled = !isConnected;
         }

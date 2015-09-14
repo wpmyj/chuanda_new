@@ -757,7 +757,7 @@ Please check the following
             frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen,
-                Text = Strings.GettingParams + " " + sysidcurrent
+                Text = Strings.GettingParams
             };
 
             frmProgressReporter.DoWork += FrmProgressReporterGetParams;
@@ -935,7 +935,7 @@ Please check the following
 
                         //Console.WriteLine(DateTime.Now.Millisecond + " gp3 ");
 
-                        this.frmProgressReporter.UpdateProgressAndStatus((indexsreceived.Count * 100) / param_total, Strings.Gotparam + paramID);
+                        this.frmProgressReporter.UpdateProgressAndStatus((indexsreceived.Count * 100) / param_total, Strings.Gotparam);
 
                         // we hit the last param - lets escape eq total = 176 index = 0-175
                         if (par.param_index == (param_total - 1))

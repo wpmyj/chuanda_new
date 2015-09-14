@@ -61,7 +61,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             timer.Interval = 100;
             timer.Start();
 
-            CustomMessageBox.Show("Ensure your props are not on the Plane/Quad", "FailSafe", MessageBoxButtons.OK,
+            CustomMessageBox.Show("确保你的道具没有在飞机上！", "故障保护", MessageBoxButtons.OK,
                 MessageBoxIcon.Exclamation);
         }
 
@@ -99,11 +99,11 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             lbl_armed.SuspendLayout();
             if (lbl_armed.Text == "True")
             {
-                lbl_armed.Text = "Armed";
+                lbl_armed.Text = "已解锁";
             }
             else if (lbl_armed.Text == "False")
             {
-                lbl_armed.Text = "Disarmed";
+                lbl_armed.Text = "未解锁";
             }
             lbl_armed.ResumeLayout();
         }
@@ -124,19 +124,19 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
             if (_gpsfix == 0)
             {
-                gps = ("GPS: No GPS");
+                gps = ("GPS: 无GPS");
             }
             else if (_gpsfix == 1)
             {
-                gps = ("GPS: No Fix");
+                gps = ("GPS: 未定位");
             }
             else if (_gpsfix == 2)
             {
-                gps = ("GPS: 3D Fix");
+                gps = ("GPS: 已定位");
             }
             else if (_gpsfix == 3)
             {
-                gps = ("GPS: 3D Fix");
+                gps = ("GPS: 已定位");
             }
             lbl_gpslock.SuspendLayout();
             lbl_gpslock.Text = gps;

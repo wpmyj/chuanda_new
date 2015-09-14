@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigHWCompass));
-            this.BUT_MagCalibrationLive = new MissionPlanner.Controls.MyButton();
             this.linkLabelmagdec = new System.Windows.Forms.LinkLabel();
             this.label100 = new System.Windows.Forms.Label();
             this.TXT_declination_deg = new System.Windows.Forms.TextBox();
@@ -39,7 +38,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.imageLabel1 = new MissionPlanner.Controls.ImageLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rb_px4pixhawk = new System.Windows.Forms.RadioButton();
@@ -47,12 +45,14 @@
             this.radioButtonmanual = new System.Windows.Forms.RadioButton();
             this.radioButton_external = new System.Windows.Forms.RadioButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.CMB_compass_orient = new MissionPlanner.Controls.MavlinkComboBox();
             this.radioButton_onboard = new System.Windows.Forms.RadioButton();
             this.TXT_declination_min = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.imageLabel1 = new MissionPlanner.Controls.ImageLabel();
+            this.BUT_MagCalibrationLive = new MissionPlanner.Controls.MyButton();
+            this.CMB_compass_orient = new MissionPlanner.Controls.MavlinkComboBox();
             this.CHK_enablecompass = new MissionPlanner.Controls.MavlinkCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -61,13 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BUT_MagCalibrationLive
-            // 
-            resources.ApplyResources(this.BUT_MagCalibrationLive, "BUT_MagCalibrationLive");
-            this.BUT_MagCalibrationLive.Name = "BUT_MagCalibrationLive";
-            this.BUT_MagCalibrationLive.UseVisualStyleBackColor = true;
-            this.BUT_MagCalibrationLive.Click += new System.EventHandler(this.BUT_MagCalibration_Click);
             // 
             // linkLabelmagdec
             // 
@@ -97,6 +90,8 @@
             // 
             // CHK_autodec
             // 
+            this.CHK_autodec.Checked = true;
+            this.CHK_autodec.CheckState = System.Windows.Forms.CheckState.Checked;
             resources.ApplyResources(this.CHK_autodec, "CHK_autodec");
             this.CHK_autodec.Name = "CHK_autodec";
             this.CHK_autodec.UseVisualStyleBackColor = true;
@@ -125,12 +120,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // imageLabel1
-            // 
-            this.imageLabel1.Image = ((System.Drawing.Image)(resources.GetObject("imageLabel1.Image")));
-            resources.ApplyResources(this.imageLabel1, "imageLabel1");
-            this.imageLabel1.Name = "imageLabel1";
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::MissionPlanner.Properties.Resources.apmp2;
@@ -156,7 +145,9 @@
             // rb_px4pixhawk
             // 
             resources.ApplyResources(this.rb_px4pixhawk, "rb_px4pixhawk");
+            this.rb_px4pixhawk.Checked = true;
             this.rb_px4pixhawk.Name = "rb_px4pixhawk";
+            this.rb_px4pixhawk.TabStop = true;
             this.rb_px4pixhawk.UseVisualStyleBackColor = true;
             this.rb_px4pixhawk.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -171,9 +162,7 @@
             // radioButtonmanual
             // 
             resources.ApplyResources(this.radioButtonmanual, "radioButtonmanual");
-            this.radioButtonmanual.Checked = true;
             this.radioButtonmanual.Name = "radioButtonmanual";
-            this.radioButtonmanual.TabStop = true;
             this.radioButtonmanual.UseVisualStyleBackColor = true;
             this.radioButtonmanual.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -191,15 +180,6 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
-            // 
-            // CMB_compass_orient
-            // 
-            this.CMB_compass_orient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.CMB_compass_orient, "CMB_compass_orient");
-            this.CMB_compass_orient.FormattingEnabled = true;
-            this.CMB_compass_orient.Name = "CMB_compass_orient";
-            
-            this.CMB_compass_orient.ParamName = null;
             // 
             // radioButton_onboard
             // 
@@ -231,13 +211,38 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // imageLabel1
+            // 
+            this.imageLabel1.Image = ((System.Drawing.Image)(resources.GetObject("imageLabel1.Image")));
+            resources.ApplyResources(this.imageLabel1, "imageLabel1");
+            this.imageLabel1.Name = "imageLabel1";
+            // 
+            // BUT_MagCalibrationLive
+            // 
+            this.BUT_MagCalibrationLive.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BUT_MagCalibrationLive.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.BUT_MagCalibrationLive, "BUT_MagCalibrationLive");
+            this.BUT_MagCalibrationLive.Name = "BUT_MagCalibrationLive";
+            this.BUT_MagCalibrationLive.UseVisualStyleBackColor = true;
+            this.BUT_MagCalibrationLive.Click += new System.EventHandler(this.BUT_MagCalibration_Click);
+            // 
+            // CMB_compass_orient
+            // 
+            this.CMB_compass_orient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.CMB_compass_orient, "CMB_compass_orient");
+            this.CMB_compass_orient.FormattingEnabled = true;
+            this.CMB_compass_orient.Name = "CMB_compass_orient";
+            this.CMB_compass_orient.ParamName = null;
+            this.CMB_compass_orient.SubControl = null;
+            // 
             // CHK_enablecompass
             // 
+            this.CHK_enablecompass.Checked = true;
+            this.CHK_enablecompass.CheckState = System.Windows.Forms.CheckState.Checked;
             resources.ApplyResources(this.CHK_enablecompass, "CHK_enablecompass");
             this.CHK_enablecompass.Name = "CHK_enablecompass";
-            this.CHK_enablecompass.OffValue = 0F;
-            this.CHK_enablecompass.OnValue = 1F;
-            
+            this.CHK_enablecompass.OffValue = 0D;
+            this.CHK_enablecompass.OnValue = 1D;
             this.CHK_enablecompass.ParamName = null;
             this.CHK_enablecompass.UseVisualStyleBackColor = true;
             this.CHK_enablecompass.CheckedChanged += new System.EventHandler(this.CHK_enablecompass_CheckedChanged);
@@ -246,11 +251,12 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TXT_declination_min);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.imageLabel1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.CHK_enablecompass);

@@ -155,7 +155,7 @@ namespace MissionPlanner.Controls
 
             if (doWorkArgs.CancelRequested)
             {
-                ShowDoneWithError(null, "Operation could not cancel");
+                ShowDoneWithError(null, "此操作不能取消！");
                 Running = false;
                 return;
             }
@@ -172,7 +172,7 @@ namespace MissionPlanner.Controls
             this.Invoke((MethodInvoker)delegate
             {
                 this.progressBar1.Visible = false;
-                this.lblProgressMessage.Text = "Cancelled";
+                this.lblProgressMessage.Text = "取消";
                 this.btnClose.Visible = true;
             });
         }
@@ -247,7 +247,7 @@ namespace MissionPlanner.Controls
             // * Set the progress bar to marquee, we don't know how long the worker will take to cancel
             // * Signal the worker.
             this.btnCancel.Visible = false;
-            this.lblProgressMessage.Text = "Cancelling...";
+            this.lblProgressMessage.Text = "取消...";
             this.progressBar1.Style = ProgressBarStyle.Marquee;
 
             doWorkArgs.CancelRequested = true;
@@ -285,9 +285,9 @@ namespace MissionPlanner.Controls
         {
             var message = this.workerException.Message
                           + Environment.NewLine + Environment.NewLine
-                          + this.workerException.StackTrace;
+                          ;//+ this.workerException.StackTrace
 
-            CustomMessageBox.Show(message,"Exception Details",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            CustomMessageBox.Show(message,"错误信息",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         /// <summary>

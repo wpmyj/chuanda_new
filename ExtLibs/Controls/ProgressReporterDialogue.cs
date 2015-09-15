@@ -208,7 +208,7 @@ namespace MissionPlanner.Controls
         // - Change the Cancel button to 'Close', so that the user can look at the exception message a bit
         private void ShowDoneWithError(Exception exception, string doWorkArgs)
         {
-            var errMessage = doWorkArgs ?? "有一个意外的错误!";
+            var errMessage = doWorkArgs ?? "有一个意外的错误产生!";
 
             if (this.Disposing || this.IsDisposed)
                 return;
@@ -225,9 +225,9 @@ namespace MissionPlanner.Controls
                                                         this.imgWarning.Visible = true;
                                                         this.progressBar1.Visible = false;
                                                         this.btnCancel.Visible = false;
-                                                        //this.btnClose.Visible = true;
+                                                        this.btnClose.Visible = true;
                                                         this.linkLabel1.Visible = exception != null;
-                                                        this.linkLabel1.Visible = false;
+                                                        //this.linkLabel1.Visible = false;
                                                         this.workerException = exception;
                                                     });
                 }

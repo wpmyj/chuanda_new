@@ -49,8 +49,8 @@ namespace MissionPlanner.Controls
             // 
             resources.ApplyResources(this.progressBar1, "progressBar1");
             this.progressBar1.BackColor = System.Drawing.Color.Transparent;
-            this.progressBar1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(167)))), ((int)(((byte)(42)))));
-            this.progressBar1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(139)))), ((int)(((byte)(26)))));
+            this.progressBar1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.progressBar1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Outline = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(171)))), ((int)(((byte)(112)))));
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -91,7 +91,6 @@ namespace MissionPlanner.Controls
             // imgWarning
             // 
             resources.ApplyResources(this.imgWarning, "imgWarning");
-            this.imgWarning.Image = global::MissionPlanner.Controls.Properties.Resources.iconWarning48;
             this.imgWarning.Name = "imgWarning";
             this.imgWarning.TabStop = false;
             // 

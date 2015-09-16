@@ -362,13 +362,6 @@
     </Compile>
     <Compile Include="Controls\Waypoints\Spline2.cs" />
     <Compile Include="Controls\Waypoints\Spline.cs" />
-    <Compile Include="ExtLibs\Grid\GridPlugin.cs" />
-    <Compile Include="ExtLibs\Grid\GridUI - 复制.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExtLibs\Grid\GridUI - 复制.Designer.cs">
-      <DependentUpon>GridUI - 复制.cs</DependentUpon>
-    </Compile>
     <Compile Include="ExtLibs\Grid\GridUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -738,12 +731,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Vibration.resx">
       <DependentUpon>Vibration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExtLibs\Grid\GridUI - 复制.resx">
-      <DependentUpon>GridUI - 复制.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ExtLibs\Grid\GridUI - 复制.zh-Hans.resx">
-      <DependentUpon>GridUI - 复制.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExtLibs\Grid\GridUI.resx">
       <DependentUpon>GridUI.cs</DependentUpon>

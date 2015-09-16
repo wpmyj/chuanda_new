@@ -1142,9 +1142,9 @@ namespace MissionPlanner
             }
             else
             {
-                tabControl1.TabPages.Remove(tabGrid);
-                //tabControl1.TabPages.Remove(tabCamera);
+                tabControl1.TabPages.Remove(tabGrid);               
             }
+            tabControl1.TabPages.Remove(tabCamera);
         }
 
         private void CHK_copter_headinghold_CheckedChanged(object sender, EventArgs e)

@@ -37,7 +37,7 @@ namespace MissionPlanner.SimpleGrid
         {
             Host2 = Host;
 
-            but = new ToolStripMenuItem("SimpleGrid");
+            but = new ToolStripMenuItem("简单网格");
             but.Click += but_Click;
 
             bool hit = false;

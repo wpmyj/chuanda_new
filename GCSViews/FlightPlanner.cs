@@ -1636,7 +1636,7 @@ namespace MissionPlanner.GCSViews
 
                 log.Info("Getting WP #");
 
-                ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(0, "Getting WP count");
+                ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(0, "获取航点数量");
 
                 int cmdcount = port.getWPCount();
 
@@ -1645,7 +1645,7 @@ namespace MissionPlanner.GCSViews
                     if (((ProgressReporterDialogue)sender).doWorkArgs.CancelRequested)
                     {
                         ((ProgressReporterDialogue)sender).doWorkArgs.CancelAcknowledged = true;
-                        throw new Exception("Cancel Requested");
+                        throw new Exception("取消请求");
                     }
 
                     log.Info("Getting WP" + a);
@@ -1655,7 +1655,7 @@ namespace MissionPlanner.GCSViews
 
                 port.setWPACK();
 
-                ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(100, "Done");
+                ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(100, "完成");
 
                 log.Info("Done");
             }
@@ -1811,7 +1811,7 @@ namespace MissionPlanner.GCSViews
 
                 if (!port.BaseStream.IsOpen)
                 {
-                    throw new Exception("Please connect first!");
+                    throw new Exception("请先连接地面站!");
                 }
 
                 MainV2.comPort.giveComport = true;
@@ -1826,7 +1826,7 @@ namespace MissionPlanner.GCSViews
                     home.lng = (double.Parse(TXT_homelng.Text));
                     home.alt = (float.Parse(TXT_homealt.Text) / CurrentState.multiplierdist); // use saved home
                 }
-                catch { throw new Exception("Your home location is invalid"); }
+                catch { throw new Exception("飞行器的起始位置无效！"); }
 
                 // log
                 log.Info("wps values " + MainV2.comPort.MAV.wps.Values.Count);
@@ -2478,7 +2478,7 @@ namespace MissionPlanner.GCSViews
 
             if (polygon.Count == 0)
             {
-                CustomMessageBox.Show("Please define a polygon!");
+                CustomMessageBox.Show("请定义一个多边形！!");
                 return 0;
             }
 
@@ -3592,10 +3592,10 @@ namespace MissionPlanner.GCSViews
         private void jumpwPToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string wp = "1";
-            if (DialogResult.Cancel == InputBox.Show("WP No", "Jump to WP no?", ref wp))
+            if (DialogResult.Cancel == InputBox.Show("航点编号", "跳转到航点的编号", ref wp))
                 return;
             string repeat = "5";
-            if (DialogResult.Cancel == InputBox.Show("Jump repeat", "Number of times to Repeat", ref repeat))
+            if (DialogResult.Cancel == InputBox.Show("重复跳转", "重复的次数", ref repeat))
                 return;
 
             selectedrow = Commands.Rows.Add();
@@ -3620,7 +3620,7 @@ namespace MissionPlanner.GCSViews
                     {
                         Commands.Rows.RemoveAt(no - 1); // home is 0
                     }
-                    catch { CustomMessageBox.Show("error selecting wp, please try again."); }
+                    catch { CustomMessageBox.Show("选择的航点错误,请再次尝试。"); }
                 }
                 else if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("grid", ""), out no))
                 {
@@ -3642,7 +3642,7 @@ namespace MissionPlanner.GCSViews
                     }
                     catch
                     {
-                        CustomMessageBox.Show("Remove point Failed. Please try again.");
+                        CustomMessageBox.Show("清除失败的航点，请再次尝试。");
                     }
                 }
             }
@@ -3664,7 +3664,7 @@ namespace MissionPlanner.GCSViews
         private void loitertimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string time = "5";
-            if (DialogResult.Cancel == InputBox.Show("Loiter Time", "Loiter Time", ref time))
+            if (DialogResult.Cancel == InputBox.Show("Loiter 时间", "Loiter 时间", ref time))
                 return;
 
             selectedrow = Commands.Rows.Add();
@@ -3683,7 +3683,7 @@ namespace MissionPlanner.GCSViews
         private void loitercirclesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string turns = "3";
-            if (DialogResult.Cancel == InputBox.Show("Loiter Turns", "Loiter Turns", ref turns))
+            if (DialogResult.Cancel == InputBox.Show("Loiter 圈数", "Loiter 圈数", ref turns))
                 return;
 
             selectedrow = Commands.Rows.Add();
@@ -4185,19 +4185,19 @@ namespace MissionPlanner.GCSViews
         private void createWpCircleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string RadiusIn = "50";
-            if (DialogResult.Cancel == InputBox.Show("Radius", "Radius", ref RadiusIn))
+            if (DialogResult.Cancel == InputBox.Show("半径", "半径", ref RadiusIn))
                 return;
 
             string Pointsin = "20";
-            if (DialogResult.Cancel == InputBox.Show("Points", "Number of points to generate Circle", ref Pointsin))
+            if (DialogResult.Cancel == InputBox.Show("航点", "在圆上生成的行点数", ref Pointsin))
                 return;
 
             string Directionin = "1";
-            if (DialogResult.Cancel == InputBox.Show("Points", "Direction of circle (-1 or 1)", ref Directionin))
+            if (DialogResult.Cancel == InputBox.Show("航点", "圆的方向 (-1 or 1)", ref Directionin))
                 return;
 
             string startanglein = "0";
-            if (DialogResult.Cancel == InputBox.Show("angle", "Angle of first point (whole degrees)", ref startanglein))
+            if (DialogResult.Cancel == InputBox.Show("角度", "第一点角度（全度）", ref startanglein))
                 return;
 
             int Points = 0;
@@ -4207,25 +4207,25 @@ namespace MissionPlanner.GCSViews
 
             if (!int.TryParse(RadiusIn, out Radius))
             {
-                CustomMessageBox.Show("Bad Radius");
+                CustomMessageBox.Show("错误半径");
                 return;
             }
 
             if (!int.TryParse(Pointsin, out Points))
             {
-                CustomMessageBox.Show("Bad Point value");
+                CustomMessageBox.Show("错误的航点");
                 return;
             }
 
             if (!int.TryParse(Directionin, out Direction))
             {
-                CustomMessageBox.Show("Bad Direction value");
+                CustomMessageBox.Show("错误的方向");
                 return;
             }
 
             if (!int.TryParse(startanglein, out startangle))
             {
-                CustomMessageBox.Show("Bad start angle value");
+                CustomMessageBox.Show("错误的开始角度");
                 return;
             }
 
@@ -4653,7 +4653,7 @@ namespace MissionPlanner.GCSViews
             // altitude
             string alt = "10";
 
-            if (DialogResult.Cancel == InputBox.Show("Altitude", "Please enter your takeoff altitude", ref alt))
+            if (DialogResult.Cancel == InputBox.Show("高度", "请输入飞行器起飞高度", ref alt))
                 return;
 
             int alti = -1;
@@ -4671,12 +4671,12 @@ namespace MissionPlanner.GCSViews
             {
                 string top = "15";
 
-                if (DialogResult.Cancel == InputBox.Show("Takeoff Pitch", "Please enter your takeoff pitch", ref top))
+                if (DialogResult.Cancel == InputBox.Show("起飞俯仰角", "请输入起飞俯仰角", ref top))
                     return;
 
                 if (!int.TryParse(top, out topi))
                 {
-                    MessageBox.Show("Bad Takeoff pitch");
+                    MessageBox.Show("错误的俯仰角");
                     return;
                 }
             }
@@ -4865,7 +4865,7 @@ namespace MissionPlanner.GCSViews
 
             double areasqf = aream2 * 10.7639;
 
-            CustomMessageBox.Show("Area: " + aream2.ToString("0") + " m2\n\t" + areaa.ToString("0.00") + " Acre\n\t" + areaha.ToString("0.00") + " Hectare\n\t" + areasqf.ToString("0") + " sqf", "Area");
+            CustomMessageBox.Show("区域: " + aream2.ToString("0") + " m2\n\t" + areaa.ToString("0.00") + " 英亩\n\t" + areaha.ToString("0.00") + " 公顷\n\t" + areasqf.ToString("0") + " 平方英尺", "区域");
         }
 
         private void MainMap_Paint(object sender, PaintEventArgs e)
@@ -4953,13 +4953,13 @@ namespace MissionPlanner.GCSViews
         private void insertWpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string wpno = (selectedrow + 1).ToString("0");
-            if (InputBox.Show("Insert WP", "Insert WP after wp#", ref wpno) == DialogResult.OK)
+            if (InputBox.Show("插入航点", "请插入航点", ref wpno) == DialogResult.OK)
             {
                 try
                 {
                     Commands.Rows.Insert(int.Parse(wpno), 1);
                 }
-                catch { CustomMessageBox.Show("Invalid insert position", Strings.ERROR); return; }
+                catch { CustomMessageBox.Show("无效的插入位置", Strings.ERROR); return; }
 
                 selectedrow = int.Parse(wpno);
 
@@ -4973,7 +4973,7 @@ namespace MissionPlanner.GCSViews
         {
             if (MainV2.comPort.MAV.param["RALLY_TOTAL"] == null)
             {
-                CustomMessageBox.Show("Not Supported");
+                CustomMessageBox.Show("不支持！");
                 return;
             }
 
@@ -5015,7 +5015,7 @@ namespace MissionPlanner.GCSViews
                     MainV2.comPort.setRallyPoint(count, new PointLatLngAlt(pnt.Position) { Alt = pnt.Alt }, 0, 0, 0, (byte)(float)MainV2.comPort.MAV.param["RALLY_TOTAL"]);
                     count++;
                 }
-                catch { CustomMessageBox.Show("Failed to save rally point", Strings.ERROR); return; }
+                catch { CustomMessageBox.Show("未能保存集结点", Strings.ERROR); return; }
             }
         }
 
@@ -5023,7 +5023,7 @@ namespace MissionPlanner.GCSViews
         {
             string altstring = TXT_DefaultAlt.Text;
 
-            if (InputBox.Show("Altitude", "Altitude", ref altstring) == DialogResult.Cancel)
+            if (InputBox.Show("高度", "高度", ref altstring) == DialogResult.Cancel)
                 return;
 
             int alt = 0;
@@ -5486,7 +5486,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void insertSplineWPToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string wpno = (selectedrow + 1).ToString("0");
-            if (InputBox.Show("Insert WP", "Insert WP after wp#", ref wpno) == DialogResult.OK)
+            if (InputBox.Show("插入航点", "请插入航点", ref wpno) == DialogResult.OK)
             {
                 try
                 {
@@ -5516,24 +5516,24 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         private void createSplineCircleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string RadiusIn = "50";
-            if (DialogResult.Cancel == InputBox.Show("Radius", "Radius", ref RadiusIn))
+            if (DialogResult.Cancel == InputBox.Show("半径", "半径", ref RadiusIn))
                 return;
 
             string minaltin = "5";
-            if (DialogResult.Cancel == InputBox.Show("min alt", "Min Alt", ref minaltin))
+            if (DialogResult.Cancel == InputBox.Show("最小高度", "最小高度", ref minaltin))
                 return;
 
             string maxaltin = "20";
-            if (DialogResult.Cancel == InputBox.Show("max alt", "Max Alt", ref maxaltin))
+            if (DialogResult.Cancel == InputBox.Show("最大高度", "最大高度", ref maxaltin))
                 return;
 
             string altstepin = "5";
-            if (DialogResult.Cancel == InputBox.Show("alt step", "alt step", ref altstepin))
+            if (DialogResult.Cancel == InputBox.Show("起始高度", "起始高度", ref altstepin))
                 return;
 
 
             string startanglein = "0";
-            if (DialogResult.Cancel == InputBox.Show("angle", "Angle of first point (whole degrees)", ref startanglein))
+            if (DialogResult.Cancel == InputBox.Show("角度", "第一点角度（全度）", ref startanglein))
                 return;
 
             int Points = 4;
@@ -5545,23 +5545,23 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             int altstep = 5;
             if (!int.TryParse(RadiusIn, out Radius))
             {
-                CustomMessageBox.Show("Bad Radius");
+                CustomMessageBox.Show("错误半径");
                 return;
             }
 
             if (!int.TryParse(minaltin, out minalt))
             {
-                CustomMessageBox.Show("Bad min alt");
+                CustomMessageBox.Show("错误的最小高度");
                 return;
             }
             if (!int.TryParse(maxaltin, out maxalt))
             {
-                CustomMessageBox.Show("Bad maxalt");
+                CustomMessageBox.Show("错误的最大高度");
                 return;
             }
             if (!int.TryParse(altstepin, out altstep))
             {
-                CustomMessageBox.Show("Bad alt step");
+                CustomMessageBox.Show("错误的起始高度");
                 return;
             }
            

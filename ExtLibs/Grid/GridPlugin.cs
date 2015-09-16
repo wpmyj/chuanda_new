@@ -74,14 +74,14 @@ namespace MissionPlanner
             }
             else
             {
-                if (CustomMessageBox.Show("No polygon defined. Load a file?", "Load File", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (CustomMessageBox.Show("没有定义多边形。加载文件?", "加载文件", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     gridui.LoadGrid();
                     gridui.ShowDialog();
                 }
                 else
                 {
-                    CustomMessageBox.Show("Please define a polygon.", "Error");
+                    CustomMessageBox.Show("请定义一个多边形.", "错误");
                 }
             }
         }

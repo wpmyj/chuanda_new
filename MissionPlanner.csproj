@@ -362,11 +362,18 @@
     </Compile>
     <Compile Include="Controls\Waypoints\Spline2.cs" />
     <Compile Include="Controls\Waypoints\Spline.cs" />
-    <Compile Include="ExtLibs\Controls\ProgressReporterDialogue.cs">
+    <Compile Include="ExtLibs\Grid\GridPlugin.cs" />
+    <Compile Include="ExtLibs\Grid\GridUI - 复制.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExtLibs\Controls\ProgressReporterDialogue.designer.cs">
-      <DependentUpon>ProgressReporterDialogue.cs</DependentUpon>
+    <Compile Include="ExtLibs\Grid\GridUI - 复制.Designer.cs">
+      <DependentUpon>GridUI - 复制.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtLibs\Grid\GridUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtLibs\Grid\GridUI.Designer.cs">
+      <DependentUpon>GridUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.cs">
       <SubType>UserControl</SubType>
@@ -732,11 +739,17 @@
     <EmbeddedResource Include="Controls\Vibration.resx">
       <DependentUpon>Vibration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExtLibs\Controls\ProgressReporterDialogue.resx">
-      <DependentUpon>ProgressReporterDialogue.cs</DependentUpon>
+    <EmbeddedResource Include="ExtLibs\Grid\GridUI - 复制.resx">
+      <DependentUpon>GridUI - 复制.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExtLibs\Controls\ProgressReporterDialogue.zh-Hans.resx">
-      <DependentUpon>ProgressReporterDialogue.cs</DependentUpon>
+    <EmbeddedResource Include="ExtLibs\Grid\GridUI - 复制.zh-Hans.resx">
+      <DependentUpon>GridUI - 复制.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtLibs\Grid\GridUI.resx">
+      <DependentUpon>GridUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtLibs\Grid\GridUI.zh-Hans.resx">
+      <DependentUpon>GridUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FollowMe.zh-Hant.resx">
       <DependentUpon>FollowMe.cs</DependentUpon>
@@ -6890,7 +6903,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExtLibs\Grid\" />
+    <Folder Include="ExtLibs\Controls\" />
     <Folder Include="Plugins\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

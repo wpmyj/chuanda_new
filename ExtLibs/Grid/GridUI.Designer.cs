@@ -863,8 +863,8 @@
             this.groupBox6.Controls.Add(this.NUM_UpDownFlySpeed);
             this.groupBox6.Controls.Add(this.label26);
             this.groupBox6.Controls.Add(this.label4);
-            this.groupBox6.Controls.Add(this.NUM_angle);
             this.groupBox6.Controls.Add(this.CMB_camera);
+            this.groupBox6.Controls.Add(this.NUM_angle);
             this.groupBox6.Controls.Add(this.CHK_camdirection);
             this.groupBox6.Controls.Add(this.NUM_altitude);
             this.groupBox6.Controls.Add(this.label1);

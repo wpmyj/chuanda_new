@@ -581,8 +581,8 @@ mc:Ignorable=""d""
 
                     bsv.BackColor = System.Drawing.Color.FromArgb(192,192,225);
                     bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);
-                    bsv.HighlightColor2 = Color.FromArgb(0x94, 0xc1, 0x1f);
-                    bsv.HighlightColor1 = Color.FromArgb(0x40, 0x57, 0x04);
+                    bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
+                    bsv.HighlightColor1 = Color.FromArgb(192,255,255);
                     bsv.SelectedTextColor = Color.White;
                     bsv.UnSelectedTextColor = Color.Gray;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
@@ -590,8 +590,8 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(HorizontalProgressBar2) || ctl.GetType() == typeof(VerticalProgressBar2))
                 {
-                    ((HorizontalProgressBar2)ctl).BackgroundColor = ControlBGColor;
-                    ((HorizontalProgressBar2)ctl).ValueColor = Color.FromArgb(148, 193, 31);
+                    ((HorizontalProgressBar2)ctl).BackgroundColor = Color.FromArgb(20, 20, 255);
+                    ((HorizontalProgressBar2)ctl).ValueColor =  Color.FromArgb(255, 0, 255);
                 }
 
                 if (ctl.Controls.Count > 0)
@@ -816,10 +816,10 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = System.Drawing.Color.FromArgb(192,192,225);
+                    bsv.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
                     bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);
-                    bsv.HighlightColor2 = Color.FromArgb(0x94, 0xc1, 0x1f);
-                    bsv.HighlightColor1 = Color.FromArgb(0x40, 0x57, 0x04);
+                    bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
+                    bsv.HighlightColor1 = Color.FromArgb(192, 255, 255);
                     bsv.SelectedTextColor = Color.White;
                     bsv.UnSelectedTextColor = Color.Gray;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
@@ -827,8 +827,8 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(HorizontalProgressBar2) || ctl.GetType() == typeof(VerticalProgressBar2))
                 {
-                    ((HorizontalProgressBar2)ctl).BackgroundColor = ControlBGColor;
-                    ((HorizontalProgressBar2)ctl).ValueColor = Color.FromArgb(148, 193, 31);
+                    ((HorizontalProgressBar2)ctl).BackgroundColor = Color.FromArgb(20, 20, 255);
+                    ((HorizontalProgressBar2)ctl).ValueColor = Color.FromArgb(255, 0, 255);
                 }
 
                 if (ctl.Controls.Count > 0)
@@ -1033,19 +1033,19 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = Color.FromArgb(192,192,225);
-                    bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);// ControlBGColor;
-                    bsv.HighlightColor2 = Color.FromArgb(0x94, 0xc1, 0x1f);
-                    bsv.HighlightColor1 = Color.FromArgb(0x40, 0x57, 0x04);
+                    bsv.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
+                    bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);
+                    bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
+                    bsv.HighlightColor1 = Color.FromArgb(192, 255, 255);
                     bsv.SelectedTextColor = Color.White;
-                    bsv.UnSelectedTextColor = Color.WhiteSmoke;
+                    bsv.UnSelectedTextColor = Color.Gray;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
                     bsv.ForeColor = Color.Black;
                 }
                 else if (ctl.GetType() == typeof(HorizontalProgressBar2) || ctl.GetType() == typeof(VerticalProgressBar2))
                 {
-                    ((HorizontalProgressBar2)ctl).BackgroundColor = ControlBGColor;
-                    ((HorizontalProgressBar2)ctl).ValueColor = Color.FromArgb(148, 193, 31);
+                    ((HorizontalProgressBar2)ctl).BackgroundColor = Color.FromArgb(20, 20, 255);
+                    ((HorizontalProgressBar2)ctl).ValueColor = Color.FromArgb(255, 0, 255);
                 }
 
                 if (ctl.Controls.Count > 0)

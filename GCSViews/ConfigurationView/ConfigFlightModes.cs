@@ -262,7 +262,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
             var no = readSwitch(pwm);
 
-            fmodelist[no].BackColor = Color.Green;
+            fmodelist[no].BackColor = Color.GreenYellow;
         }
 
         // from arducopter code

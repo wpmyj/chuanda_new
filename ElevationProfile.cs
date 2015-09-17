@@ -36,7 +36,7 @@ namespace MissionPlanner
 
             if (planlocs.Count <= 1)
             {
-                CustomMessageBox.Show("Please plan something first", Strings.ERROR);
+                CustomMessageBox.Show("请先设定计划", Strings.ERROR);
                 return;
             }
 

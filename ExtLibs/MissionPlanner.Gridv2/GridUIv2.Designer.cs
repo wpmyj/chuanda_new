@@ -424,6 +424,8 @@
             // 
             // quickViewimagecount
             // 
+            this.quickViewimagecount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickViewimagecount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickViewimagecount.desc = "Number of images";
             resources.ApplyResources(this.quickViewimagecount, "quickViewimagecount");
             this.quickViewimagecount.Name = "quickViewimagecount";
@@ -433,6 +435,8 @@
             // 
             // quickViewgroundres
             // 
+            this.quickViewgroundres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickViewgroundres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickViewgroundres.desc = "Ground resolution (cm/pixel)";
             resources.ApplyResources(this.quickViewgroundres, "quickViewgroundres");
             this.quickViewgroundres.Name = "quickViewgroundres";
@@ -442,6 +446,8 @@
             // 
             // quickViewflighttime
             // 
+            this.quickViewflighttime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickViewflighttime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickViewflighttime.desc = "Flight time (min)";
             resources.ApplyResources(this.quickViewflighttime, "quickViewflighttime");
             this.quickViewflighttime.Name = "quickViewflighttime";
@@ -451,6 +457,8 @@
             // 
             // quickViewarea
             // 
+            this.quickViewarea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickViewarea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickViewarea.desc = "Area (km2)";
             resources.ApplyResources(this.quickViewarea, "quickViewarea");
             this.quickViewarea.Name = "quickViewarea";

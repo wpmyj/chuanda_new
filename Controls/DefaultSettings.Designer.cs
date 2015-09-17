@@ -48,11 +48,12 @@
             // 
             // BUT_paramfileload
             // 
+            this.BUT_paramfileload.BackColor = System.Drawing.Color.White;
             this.BUT_paramfileload.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_paramfileload.BGGradTop = System.Drawing.Color.Aqua;
+            this.BUT_paramfileload.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             resources.ApplyResources(this.BUT_paramfileload, "BUT_paramfileload");
             this.BUT_paramfileload.Name = "BUT_paramfileload";
-            this.BUT_paramfileload.UseVisualStyleBackColor = true;
+            this.BUT_paramfileload.UseVisualStyleBackColor = false;
             this.BUT_paramfileload.Click += new System.EventHandler(this.BUT_paramfileload_Click);
             // 
             // DefaultSettings

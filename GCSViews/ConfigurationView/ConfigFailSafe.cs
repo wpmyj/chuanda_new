@@ -155,7 +155,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     }
                     else
                     {
-                        lbl_currentmode.ForeColor = Color.White;
+                        lbl_currentmode.ForeColor = Color.Green;
                     }
                 }
             }

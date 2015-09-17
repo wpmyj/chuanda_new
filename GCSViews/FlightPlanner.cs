@@ -3448,7 +3448,7 @@ namespace MissionPlanner.GCSViews
                 startmeasure = MouseDownStart;
                 polygonsoverlay.Markers.Add(new GMarkerGoogle(MouseDownStart, GMarkerGoogleType.red));
                 MainMap.Invalidate();
-                Common.MessageShowAgain("Measure Dist", "You can now pan/zoom around.\nClick this option again to get the distance.");
+                Common.MessageShowAgain("测量距离", "你现在可以平移或者缩放当前位置\n点击选定位置获取当前距离.");
             }
             else
             {
@@ -3463,7 +3463,7 @@ namespace MissionPlanner.GCSViews
 
                 polygonsoverlay.Markers.Add(new GMarkerGoogle(MouseDownStart, GMarkerGoogleType.red));
                 MainMap.Invalidate();
-                CustomMessageBox.Show("Distance: " + FormatDistance(MainMap.MapProvider.Projection.GetDistance(startmeasure, MouseDownStart), true) + " AZ: " + (MainMap.MapProvider.Projection.GetBearing(startmeasure, MouseDownStart).ToString("0")));
+                CustomMessageBox.Show("距离: " + FormatDistance(MainMap.MapProvider.Projection.GetDistance(startmeasure, MouseDownStart), true) + " 区域带: " + (MainMap.MapProvider.Projection.GetBearing(startmeasure, MouseDownStart).ToString("0")));
                 polygonsoverlay.Polygons.Remove(line);
                 polygonsoverlay.Markers.Clear();
                 startmeasure = new PointLatLng();
@@ -3473,7 +3473,7 @@ namespace MissionPlanner.GCSViews
         private void rotateMapToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string heading = "0";
-            if (DialogResult.Cancel == InputBox.Show("Rotate map to heading", "Enter new UP heading", ref heading))
+            if (DialogResult.Cancel == InputBox.Show("旋转地图", "输入新的航向", ref heading))
                 return;
             float ans = 0;
             if (float.TryParse(heading, out ans))
@@ -4293,7 +4293,7 @@ namespace MissionPlanner.GCSViews
             {
                 int.Parse(TXT_DefaultAlt.Text);
             }
-            catch { CustomMessageBox.Show("Please fix your default alt value"); TXT_DefaultAlt.Text = (50 * CurrentState.multiplierdist).ToString("0"); }
+            catch { CustomMessageBox.Show("请先确定高度的默认值"); TXT_DefaultAlt.Text = (50 * CurrentState.multiplierdist).ToString("0"); }
         }
 
         public void updateHome()
@@ -4360,14 +4360,14 @@ namespace MissionPlanner.GCSViews
 
         private void zoomToToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string place = "Perth Airport, Australia";
-            if (DialogResult.OK == InputBox.Show("Location", "Enter your location", ref place))
+            string place = "";
+            if (DialogResult.OK == InputBox.Show("位置", "输入你的位置", ref place))
             {
 
                 GeoCoderStatusCode status = MainMap.SetPositionByKeywords(place);
                 if (status != GeoCoderStatusCode.G_GEO_SUCCESS)
                 {
-                    CustomMessageBox.Show("Google Maps Geocoder can't find: '" + place + "', reason: " + status, "GMap.NET", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    CustomMessageBox.Show("地图地理编码找不到: '" + place + "', 原因: " + status, "地图", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
@@ -4382,7 +4382,7 @@ namespace MissionPlanner.GCSViews
         {
             PointLatLngAlt lastpnt = null;
 
-            DialogResult res = CustomMessageBox.Show("Ready ripp WP Path at Zoom = " + (int)MainMap.Zoom + " ?", "GMap.NET", MessageBoxButtons.YesNo);
+            DialogResult res = CustomMessageBox.Show("准备好对选定的航线进行放大 = " + (int)MainMap.Zoom + " ?", "地图", MessageBoxButtons.YesNo);
 
             fetchpathrip = true;
 
@@ -4459,7 +4459,7 @@ namespace MissionPlanner.GCSViews
             RectLatLng area = MainMap.SelectedArea;
             if (area.IsEmpty)
             {
-                DialogResult res = CustomMessageBox.Show("No ripp area defined, ripp displayed on screen?", "Rip", MessageBoxButtons.YesNo);
+                DialogResult res = CustomMessageBox.Show("选定的区域不明确, 是否显示在屏幕？", "选定区域", MessageBoxButtons.YesNo);
                 if (res == DialogResult.Yes)
                 {
                     area = MainMap.ViewArea;
@@ -4468,7 +4468,7 @@ namespace MissionPlanner.GCSViews
 
             if (!area.IsEmpty)
             {
-                DialogResult res = CustomMessageBox.Show("Ready ripp at Zoom = " + (int)MainMap.Zoom + " ?", "GMap.NET", MessageBoxButtons.YesNo);
+                DialogResult res = CustomMessageBox.Show("准备选定的区域放大 = " + (int)MainMap.Zoom + " ?", "地图", MessageBoxButtons.YesNo);
 
                 for (int i = 1; i <= MainMap.MaxZoom; i++)
                 {
@@ -4489,7 +4489,7 @@ namespace MissionPlanner.GCSViews
             }
             else
             {
-                CustomMessageBox.Show("Select map area holding ALT", "GMap.NET", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                CustomMessageBox.Show("按住ALT选择地图区域", "地图", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -4550,7 +4550,7 @@ namespace MissionPlanner.GCSViews
                         parser.ElementAdded += parser_ElementAdded;
                         parser.ParseString(kml, false);
 
-                        if (DialogResult.Yes == CustomMessageBox.Show("Do you want to load this into the flight data screen?", "Load data", MessageBoxButtons.YesNo))
+                        if (DialogResult.Yes == CustomMessageBox.Show("你想把这个加载到飞行数据?", "加载数据", MessageBoxButtons.YesNo))
                         {
                             foreach (var temp in kmlpolygonsoverlay.Polygons)
                             {
@@ -4563,7 +4563,7 @@ namespace MissionPlanner.GCSViews
                         }
 
                     }
-                    catch (Exception ex) { CustomMessageBox.Show("Bad KML File :" + ex); }
+                    catch (Exception ex) { CustomMessageBox.Show("错误的KML文件 :" + ex); }
                 }
             }
         }
@@ -5177,7 +5177,7 @@ namespace MissionPlanner.GCSViews
         private void modifyAltToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string altdif = "0";
-            InputBox.Show("Alt Change", "Please enter the alitude change you require.\n(20 = up 20, *2 = up by alt * 2)", ref altdif);
+            InputBox.Show("高度设置", "请输入你需要的高度值.\n(20 = up 20, *2 = up by alt * 2)", ref altdif);
 
             int altchange = 0;
             float multiplyer = 1;
@@ -5210,7 +5210,7 @@ namespace MissionPlanner.GCSViews
         {
             if (rallypointoverlay.Markers.Count == 0)
             {
-                CustomMessageBox.Show("Please set some rally points");
+                CustomMessageBox.Show("请设置集结点");
                 return;
             }
             /*
@@ -5242,7 +5242,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                             }
                         }
                     }
-                    catch { CustomMessageBox.Show("Failed to write rally file"); }
+                    catch { CustomMessageBox.Show("写入集结点文件失败"); }
                 }
             }
         }

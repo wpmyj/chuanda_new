@@ -67,6 +67,7 @@ namespace MissionPlanner.GCSViews
         public void Activate()
         {
             initialSetupBindingSource.DataSource = this;
+            
         }
 
         private void HardwareConfig_Load(object sender, EventArgs e)

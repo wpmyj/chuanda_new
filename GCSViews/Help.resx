@@ -204,6 +204,9 @@
   <data name="BUT_updatecheck.Text" xml:space="preserve">
     <value>Check for Updates</value>
   </data>
+  <data name="BUT_updatecheck.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;BUT_updatecheck.Name" xml:space="preserve">
     <value>BUT_updatecheck</value>
   </data>
@@ -299,6 +302,9 @@
   </data>
   <data name="BUT_betaupdate.Text" xml:space="preserve">
     <value>Check for BETA Updates</value>
+  </data>
+  <data name="BUT_betaupdate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;BUT_betaupdate.Name" xml:space="preserve">
     <value>BUT_betaupdate</value>

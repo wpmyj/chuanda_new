@@ -63,12 +63,12 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             switch (frame)
             {
                 case Frame.Plus:
-                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, DisabledOpacity);
-                    FadePicBoxes(pictureBoxV, DisabledOpacity);
-                    FadePicBoxes(pictureBoxH, DisabledOpacity);
-                    FadePicBoxes(pictureBoxY, DisabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, DisabledOpacity);
+                        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+                    FadePicBoxes(pictureBoxX, EnabledOpacity);
+                    FadePicBoxes(pictureBoxV, EnabledOpacity);
+                    FadePicBoxes(pictureBoxH, EnabledOpacity);
+                    FadePicBoxes(pictureBoxY, EnabledOpacity);
+                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
                     radioButton_VTail.Checked = false;
                     radioButton_Plus.Checked = true;
                     radioButton_V.Checked = false;
@@ -78,12 +78,12 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     SetFrameParam(frame);
                     break;
                 case Frame.X:
-                    FadePicBoxes(pictureBoxPlus, DisabledOpacity);
+                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
                     FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, DisabledOpacity);
-                    FadePicBoxes(pictureBoxH, DisabledOpacity);
-                    FadePicBoxes(pictureBoxY, DisabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, DisabledOpacity);
+                    FadePicBoxes(pictureBoxV, EnabledOpacity);
+                    FadePicBoxes(pictureBoxH, EnabledOpacity);
+                    FadePicBoxes(pictureBoxY, EnabledOpacity);
+                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
                     radioButton_VTail.Checked = false;
                     radioButton_Plus.Checked = false;
                     radioButton_V.Checked = false;
@@ -93,12 +93,12 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     SetFrameParam(frame);
                     break;
                 case Frame.V:
-                    FadePicBoxes(pictureBoxPlus, DisabledOpacity);
-                    FadePicBoxes(pictureBoxX, DisabledOpacity);
+                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+                    FadePicBoxes(pictureBoxX, EnabledOpacity);
                     FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, DisabledOpacity);
-                    FadePicBoxes(pictureBoxY, DisabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, DisabledOpacity);
+                    FadePicBoxes(pictureBoxH, EnabledOpacity);
+                    FadePicBoxes(pictureBoxY, EnabledOpacity);
+                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
                     radioButton_VTail.Checked = false;
                     radioButton_Plus.Checked = false;
                     radioButton_V.Checked = true;
@@ -108,12 +108,12 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     SetFrameParam(frame);
                     break;
                 case Frame.H:
-                    FadePicBoxes(pictureBoxPlus, DisabledOpacity);
-                    FadePicBoxes(pictureBoxX, DisabledOpacity);
-                    FadePicBoxes(pictureBoxV, DisabledOpacity);
+                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+                    FadePicBoxes(pictureBoxX, EnabledOpacity);
+                    FadePicBoxes(pictureBoxV, EnabledOpacity);
                     FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, DisabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, DisabledOpacity);
+                    FadePicBoxes(pictureBoxY, EnabledOpacity);
+                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
                     radioButton_VTail.Checked = false;
                     radioButton_Plus.Checked = false;
                     radioButton_V.Checked = false;
@@ -123,12 +123,12 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     SetFrameParam(frame);
                     break;
                 case Frame.Y:
-                    FadePicBoxes(pictureBoxPlus, DisabledOpacity);
-                    FadePicBoxes(pictureBoxX, DisabledOpacity);
-                    FadePicBoxes(pictureBoxV, DisabledOpacity);
-                    FadePicBoxes(pictureBoxH, DisabledOpacity);
+                     FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+                    FadePicBoxes(pictureBoxX, EnabledOpacity);
+                    FadePicBoxes(pictureBoxV, EnabledOpacity);
+                    FadePicBoxes(pictureBoxH, EnabledOpacity);
                     FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, DisabledOpacity);
+                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
                     radioButton_VTail.Checked = false;
                     radioButton_Plus.Checked = false;
                     radioButton_V.Checked = false;
@@ -138,11 +138,11 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                     SetFrameParam(frame);
                     break;
                 case Frame.VTail:
-                    FadePicBoxes(pictureBoxPlus, DisabledOpacity);
-                    FadePicBoxes(pictureBoxX, DisabledOpacity);
-                    FadePicBoxes(pictureBoxV, DisabledOpacity);
-                    FadePicBoxes(pictureBoxH, DisabledOpacity);
-                    FadePicBoxes(pictureBoxY, DisabledOpacity);
+                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+                    FadePicBoxes(pictureBoxX, EnabledOpacity);
+                    FadePicBoxes(pictureBoxV, EnabledOpacity);
+                    FadePicBoxes(pictureBoxH, EnabledOpacity);
+                    FadePicBoxes(pictureBoxY, EnabledOpacity);
                     FadePicBoxes(pictureBoxVTail, EnabledOpacity);
                     radioButton_VTail.Checked = true;
                     radioButton_Plus.Checked = false;

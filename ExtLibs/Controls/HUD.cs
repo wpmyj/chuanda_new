@@ -1001,8 +1001,8 @@ namespace MissionPlanner.Controls
 
                     if (bg.Height != 0)
                     {
-                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.SkyBlue,
-                            Color.LightBlue, LinearGradientMode.Vertical);
+                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Violet,
+                            Color.Violet, LinearGradientMode.Vertical);
 
                         graphicsObject.FillRectangle(linearBrush, bg);
                     }
@@ -1013,7 +1013,7 @@ namespace MissionPlanner.Controls
                     if (bg.Height != 0)
                     {
                         LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Peru,
-                            Color.White, LinearGradientMode.Vertical);
+                            Color.Peru, LinearGradientMode.Vertical);
 
                         graphicsObject.FillRectangle(linearBrush, bg);
                     }

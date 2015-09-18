@@ -155,10 +155,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmb_Baud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 4</value>
+    <value>3, 30</value>
   </data>
   <data name="cmb_Baud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 20</value>
+    <value>108, 20</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmb_Baud.TabIndex" type="System.Int32, mscorlib">
@@ -177,10 +177,10 @@
     <value>3</value>
   </data>
   <data name="cmb_ConnectionType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 26</value>
+    <value>132, 27</value>
   </data>
   <data name="cmb_ConnectionType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 20</value>
+    <value>95, 20</value>
   </data>
   <data name="cmb_ConnectionType.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -204,7 +204,7 @@
     <value>3, 4</value>
   </data>
   <data name="cmb_Connection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+    <value>108, 22</value>
   </data>
   <data name="cmb_Connection.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -226,18 +226,18 @@
   </data>
   <data name="linkLabel1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAGYktHRAD/AP8A/6C9p5MAAAFhSURBVHhe7dEBDQAwEAOh
-        +VdVZz8fFxIc8LajwWWHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw
-        2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6X
-        HS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ
-        4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcd
-        LjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnh
-        ssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bJi9wF0ykxsETccuwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAWFJREFUeF7t0QENADAQA6H5V1VnPx8XEhzwtqPBZYfLDpcdLjtcdrjscNnhssNl
+        h8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2
+        uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WH
+        yw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa4
+        7HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfL
+        DpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjs
+        cNnhsmL3AXTKTGwRNxy7AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 30</value>
+    <value>130, 7</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 12</value>
@@ -271,18 +271,18 @@
   </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAGYktHRAD/AP8A/6C9p5MAAAFhSURBVHhe7dEBDQAwEAOh
-        +VdVZz8fFxIc8LajwWWHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw
-        2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6X
-        HS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ
-        4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcd
-        LjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnh
-        ssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bJi9wF0ykxsETccuwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAWFJREFUeF7t0QENADAQA6H5V1VnPx8XEhzwtqPBZYfLDpcdLjtcdrjscNnhssNl
+        h8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2
+        uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WH
+        yw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa4
+        7HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfL
+        DpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjs
+        cNnhsmL3AXTKTGwRNxy7AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 50</value>
+    <value>230, 56</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConnectionControl</value>

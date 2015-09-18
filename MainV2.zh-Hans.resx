@@ -121,13 +121,13 @@
     <value>模拟</value>
   </data>
   <data name="MenuFlightPlanner.Text" xml:space="preserve">
-    <value>飞行计划</value>
+    <value>航线规划</value>
   </data>
   <data name="MenuHelp.Text" xml:space="preserve">
     <value>帮助</value>
   </data>
   <data name="MenuInitConfig.ToolTipText" xml:space="preserve">
-    <value>硬件配置</value>
+    <value>调试模式</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Mission Planner - By Michael Oborne</value>
@@ -139,10 +139,10 @@
     <value>捐赠</value>
   </data>
   <data name="MenuFlightData.Text" xml:space="preserve">
-    <value>飞行数据</value>
+    <value>首页</value>
   </data>
   <data name="MenuInitConfig.Text" xml:space="preserve">
-    <value>初始设置</value>
+    <value>参数设置</value>
   </data>
   <data name="MenuConnect.Text" xml:space="preserve">
     <value>连接</value>
@@ -151,10 +151,10 @@
     <value>飞行计划器</value>
   </data>
   <data name="MenuConfigTune.Text" xml:space="preserve">
-    <value>配置/调试</value>
+    <value>调试模式</value>
   </data>
   <data name="MenuFlightData.ToolTipText" xml:space="preserve">
-    <value>飞行数据</value>
+    <value>首页</value>
   </data>
   <data name="MenuConfigTune.ToolTipText" xml:space="preserve">
     <value>软件配置</value>

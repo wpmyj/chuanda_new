@@ -94,8 +94,8 @@
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.backstageView.Name = "backstageView";
-            this.backstageView.Pages.Add(this.backstageViewPagefw);
-            this.backstageView.Pages.Add(this.backstageViewPagefwdisabled);
+            //this.backstageView.Pages.Add(this.backstageViewPagefw);
+            //this.backstageView.Pages.Add(this.backstageViewPagefwdisabled);
             this.backstageView.Pages.Add(this.backstageViewPagewizard);
             this.backstageView.Pages.Add(this.backstageViewPagemand);
             this.backstageView.Pages.Add(this.backstageViewPagetradheli);
@@ -127,7 +127,7 @@
             this.backstageViewPagefw.LinkText = "Install Firmware";
             this.backstageViewPagefw.Page = this.configFirmware1;
             this.backstageViewPagefw.Parent = null;
-            this.backstageViewPagefw.Show = true;
+            this.backstageViewPagefw.Show = false;
             this.backstageViewPagefw.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefw, "backstageViewPagefw");
             // 
@@ -147,7 +147,7 @@
             this.backstageViewPagefwdisabled.LinkText = "Install Firmware";
             this.backstageViewPagefwdisabled.Page = this.configFirmwareDisabled1;
             this.backstageViewPagefwdisabled.Parent = null;
-            this.backstageViewPagefwdisabled.Show = true;
+            this.backstageViewPagefwdisabled.Show = false;
             this.backstageViewPagefwdisabled.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefwdisabled, "backstageViewPagefwdisabled");
             // 
@@ -217,6 +217,7 @@
             // configFrameType1
             // 
             resources.ApplyResources(this.configFrameType1, "configFrameType1");
+            this.configFrameType1.BackColor = System.Drawing.Color.White;
             this.configFrameType1.Name = "configFrameType1";
             // 
             // backstageViewPageaccel
@@ -247,6 +248,7 @@
             // 
             // configHWCompass1
             // 
+            this.configHWCompass1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.configHWCompass1, "configHWCompass1");
             this.configHWCompass1.Name = "configHWCompass1";
             // 

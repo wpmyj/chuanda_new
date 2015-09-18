@@ -117,83 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;CHK_mixmode.Name" xml:space="preserve">
-    <value>CHK_mixmode</value>
-  </data>
-  <data name="&gt;&gt;CHK_mixmode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_mixmode.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_mixmode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.Name" xml:space="preserve">
-    <value>CHK_elevonch2rev</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.Name" xml:space="preserve">
-    <value>CHK_elevonrev</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.Name" xml:space="preserve">
-    <value>CHK_elevonch1rev</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBoxElevons.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 329</value>
-  </data>
-  <data name="groupBoxElevons.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 39</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBoxElevons.TabIndex" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="groupBoxElevons.Text" xml:space="preserve">
-    <value>Elevon Config</value>
-  </data>
-  <data name="groupBoxElevons.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.Name" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="CHK_mixmode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -201,6 +125,7 @@
   <data name="CHK_mixmode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CHK_mixmode.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 18</value>
   </data>
@@ -314,6 +239,33 @@
   </data>
   <data name="&gt;&gt;CHK_elevonch1rev.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="groupBoxElevons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 329</value>
+  </data>
+  <data name="groupBoxElevons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 39</value>
+  </data>
+  <data name="groupBoxElevons.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="groupBoxElevons.Text" xml:space="preserve">
+    <value>Elevon Config</value>
+  </data>
+  <data name="groupBoxElevons.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.Name" xml:space="preserve">
+    <value>groupBoxElevons</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="CHK_revch3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -746,6 +698,9 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>628, 375</value>

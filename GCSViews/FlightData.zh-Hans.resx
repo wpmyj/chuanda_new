@@ -224,7 +224,7 @@
     <value>350, 179</value>
   </data>
   <data name="tabQuick.Text" xml:space="preserve">
-    <value></value>
+    <value>飞行数据</value>
   </data>
   <data name="BUT_resumemis.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 122</value>

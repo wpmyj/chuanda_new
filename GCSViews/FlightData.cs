@@ -520,6 +520,8 @@ namespace MissionPlanner.GCSViews
                 hud1.Dock = DockStyle.Fill;
             }
 
+            this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
+
             for (int f = 1; f < 10; f++)
             {
                 // load settings

@@ -71,8 +71,8 @@ namespace MissionPlanner
             this.MenuSimulation,
             this.MenuTerminal,
             this.MenuHelp,
-            this.MenuConnect,
             this.toolStripConnectionControl,
+            this.MenuConnect,
             this.MenuDonate});
             this.MainMenu.Name = "MainMenu";
             this.MainMenu.Stretch = false;

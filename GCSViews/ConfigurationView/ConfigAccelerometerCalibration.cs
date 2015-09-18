@@ -68,7 +68,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             {
                 MainV2.comPort.giveComport = false;
                 Log.Error("Exception on level", ex);
-                CustomMessageBox.Show("Failed to level", Strings.ERROR);
+                CustomMessageBox.Show("水平校准失败", Strings.ERROR);
             }
         }
 
@@ -80,8 +80,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             MainV2.comPort.MAV.cs.messages.Clear();
 
             while (
-                !(MainV2.comPort.MAV.cs.message.ToLower().Contains("calibration successful") ||
-                  MainV2.comPort.MAV.cs.message.ToLower().Contains("calibration failed")))
+                !(MainV2.comPort.MAV.cs.message.ToLower().Contains("校准成功") ||
+                  MainV2.comPort.MAV.cs.message.ToLower().Contains("校准失败")))
             {
                 try
                 {
@@ -135,7 +135,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             catch (Exception ex)
             {
                 Log.Error("Exception on level", ex);
-                CustomMessageBox.Show("Failed to level", Strings.ERROR);
+                CustomMessageBox.Show("水平校准失败", Strings.ERROR);
             }
         }
     }

@@ -457,7 +457,7 @@ namespace MissionPlanner
                         //((ProgressReporterSphere)sender).sphere1.AimFor(new OpenTK.Vector3((float)point_sphere.x, (float)point_sphere.y, (float)point_sphere.z));
                         if (!found)
                         {
-                            displayresult = "more data needed Aim For " + GetColour((int)(theta * rad2deg),(int)(phi * rad2deg));
+                            displayresult = "需要更多的数据目的是 " + GetColour((int)(theta * rad2deg),(int)(phi * rad2deg));
                             ((ProgressReporterSphere)sender).sphere1.AimFor(new OpenTK.Vector3((float)point_sphere.x, (float)point_sphere.y, (float)point_sphere.z));
                             //j = factor;
                             //break;
@@ -495,7 +495,7 @@ namespace MissionPlanner
 
             if (MainV2.speechEnable)
             {
-                MainV2.speechEngine.SpeakAsync("Compass Calibration Complete");
+                MainV2.speechEngine.SpeakAsync("罗盘校准完成");
             }
             else
             {
@@ -504,7 +504,7 @@ namespace MissionPlanner
 
             if (minx > 0 && maxx > 0 || minx < 0 && maxx < 0 || miny > 0 && maxy > 0 || miny < 0 && maxy < 0 || minz > 0 && maxz > 0 || minz < 0 && maxz < 0)
             {
-                e.ErrorMessage = "Bad compass raw values. Check for magnetic interferance.";
+                e.ErrorMessage = "坏罗盘的原始值，检查磁干扰.";
                 ans = null;
                 ans2 = null;
                 return;
@@ -531,7 +531,7 @@ namespace MissionPlanner
 
             if (datacompass1.Count < 10)
             {
-                e.ErrorMessage = "Log does not contain enough data";
+                e.ErrorMessage = "日志不包含足够的数据";
                 ans = null;
                 ans2 = null;
                 return;
@@ -693,7 +693,7 @@ namespace MissionPlanner
                 {
                     mine.logplaybackfile = new BinaryReader(File.Open(logfile, FileMode.Open, FileAccess.Read, FileShare.Read));
                 }
-                catch (Exception ex) { log.Debug(ex.ToString()); CustomMessageBox.Show("Log Can not be opened. Are you still connected?"); return new double[] { 0 }; }
+                catch (Exception ex) { log.Debug(ex.ToString()); CustomMessageBox.Show("日志不能打开，是否仍要链接?"); return new double[] { 0 }; }
 
                 mine.logreadmode = true;
 
@@ -787,7 +787,7 @@ namespace MissionPlanner
 
             if (data.Count < 10)
             {
-                CustomMessageBox.Show("Log does not contain enough data");
+                CustomMessageBox.Show("日志不包含足够的数据");
                 throw new Exception("Not Enough Data");
             }
 
@@ -970,15 +970,15 @@ namespace MissionPlanner
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Set Compass offset failed");
+                    CustomMessageBox.Show("设置罗盘偏移失败");
                     return;
                 }
 
-                CustomMessageBox.Show("New offsets are " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\nThese have been saved for you.", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\nThese have been saved for you.", "New Mag Offsets");
             }
             else
             {
-                CustomMessageBox.Show("New offsets are " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "New Mag Offsets");
             }
         }
 
@@ -1005,15 +1005,15 @@ namespace MissionPlanner
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Set Compass2 offset failed");
+                    CustomMessageBox.Show("设置罗盘偏移失败");
                     return;
                 }
 
-                CustomMessageBox.Show("New compass2 offsets are " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\nThese have been saved for you.", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量2 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\nThese have been saved for you.", "New Mag Offsets");
             }
             else
             {
-                CustomMessageBox.Show("New compass2 offsets are " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量2 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "New Mag Offsets");
             }
         }
         /// <summary>

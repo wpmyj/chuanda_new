@@ -71,6 +71,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.Controls.Add(this.chk_advview);
             this.Controls.Add(this.BUT_Find);
             this.Controls.Add(this.BUT_rerequestparams);

@@ -66,7 +66,7 @@ namespace MissionPlanner.Controls.BackstageView
             this.pnlMenu.Height = this.Height;
             this.pnlPages.Height = this.Height;
 
-            pnlMenu.BackColor = System.Drawing.Color.FromArgb(192,192,225);
+            pnlMenu.BackColor = System.Drawing.Color.Teal;
             pnlMenu.PencilBorderColor = _buttonsAreaPencilColor;
             pnlMenu.GradColor = this.BackColor;
 

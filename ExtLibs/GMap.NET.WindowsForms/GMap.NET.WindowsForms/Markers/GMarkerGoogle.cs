@@ -32,9 +32,9 @@ namespace GMap.NET.WindowsForms.Markers
       yellow_dot,
       yellow_big_pause,
       yellow_pushpin,
-      lightblue,
-      lightblue_dot,
-      lightblue_pushpin,
+      Teal,
+      Teal_dot,
+      Teal_pushpin,
       orange,
       orange_small,
       orange_dot,
@@ -108,8 +108,8 @@ namespace GMap.NET.WindowsForms.Markers
             case GMarkerGoogleType.green_dot:
             case GMarkerGoogleType.yellow:
             case GMarkerGoogleType.yellow_dot:
-            case GMarkerGoogleType.lightblue:
-            case GMarkerGoogleType.lightblue_dot:
+            case GMarkerGoogleType.Teal:
+            case GMarkerGoogleType.Teal_dot:
             case GMarkerGoogleType.orange:
             case GMarkerGoogleType.orange_dot:
             case GMarkerGoogleType.pink:
@@ -166,7 +166,7 @@ namespace GMap.NET.WindowsForms.Markers
             case GMarkerGoogleType.blue_pushpin:
             case GMarkerGoogleType.green_pushpin:
             case GMarkerGoogleType.yellow_pushpin:
-            case GMarkerGoogleType.lightblue_pushpin:
+            case GMarkerGoogleType.Teal_pushpin:
             case GMarkerGoogleType.pink_pushpin:
             case GMarkerGoogleType.purple_pushpin:
             case GMarkerGoogleType.red_pushpin:

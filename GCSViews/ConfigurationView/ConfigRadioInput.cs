@@ -160,7 +160,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
 
             CustomMessageBox.Show(
-                "Ensure your transmitter is on and receiver is powered and connected\nEnsure your motor does not have power/no props!!!");
+                "确保你的遥控器和接收机连接电源，并且电机没有连接电源。");
 
             var oldrc = MainV2.comPort.MAV.cs.raterc;
             var oldatt = MainV2.comPort.MAV.cs.rateattitude;
@@ -183,7 +183,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             BUT_Calibrateradio.Text = Strings.Click_when_Done;
 
             CustomMessageBox.Show(
-                "Click OK and move all RC sticks and switches to their\nextreme positions so the red bars hit the limits.");
+                "确保你遥控器所有摇杆的位置达到红线位置");
 
             run = true;
 
@@ -254,11 +254,11 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
             else
             {
-                CustomMessageBox.Show("Bad channel 1 input, canceling");
+                CustomMessageBox.Show("坏的通道1，取消...");
                 return;
             }
 
-            CustomMessageBox.Show("Ensure all your sticks are centered and throttle is down, and click ok to continue");
+            CustomMessageBox.Show("确保遥控器的摇杆和油门都是居中的，然后点击确定继续");
 
             MainV2.comPort.MAV.cs.UpdateCurrentSettings(currentStateBindingSource, true, MainV2.comPort);
 
@@ -289,7 +289,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Failed to set Channel " + (a + 1));
+                    CustomMessageBox.Show("设置通道失败 " + (a + 1));
                 }
 
                 data = data + "CH" + (a + 1) + " " + rcmin[a] + " | " + rcmax[a] + "\n";
@@ -309,7 +309,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
 
             CustomMessageBox.Show(
-                "Here are the detected radio options\nNOTE Channels not connected are displayed as 1500 +-2\nNormal values are around 1100 | 1900\nChannel:Min | Max \n" +
+                "检测参数设置\n通道参数没有显示在 1500 +-2\n正常值范围 1100 | 1900\n通道:Min | Max \n" +
                 data, "Radio");
 
             BUT_Calibrateradio.Text = Strings.Completed;
@@ -323,7 +323,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             {
                 if (MainV2.comPort.MAV.param["ELEVON_MIXING"] == null)
                 {
-                    CustomMessageBox.Show("Not Available on " + MainV2.comPort.MAV.cs.firmware);
+                    CustomMessageBox.Show("不可用 " + MainV2.comPort.MAV.cs.firmware);
                 }
                 else
                 {
@@ -332,7 +332,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             }
             catch
             {
-                CustomMessageBox.Show("Set ELEVON_MIXING Failed");
+                CustomMessageBox.Show("设置 ELEVON_MIXING 失败");
             }
         }
 

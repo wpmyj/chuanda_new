@@ -233,7 +233,7 @@
     <value>描述：</value>
   </data>
   <data name="ExtendedTuning" xml:space="preserve">
-    <value>扩展调参</value>
+    <value>参数调整</value>
   </data>
   <data name="FlightModes" xml:space="preserve">
     <value>飞行模式</value>
@@ -245,7 +245,7 @@
     <value>全部参数树</value>
   </data>
   <data name="GeoFence" xml:space="preserve">
-    <value>地理围栏</value>
+    <value>围栏设置</value>
   </data>
   <data name="StandardParams" xml:space="preserve">
     <value>标准参数</value>

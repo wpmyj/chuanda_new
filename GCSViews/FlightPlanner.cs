@@ -712,10 +712,10 @@ namespace MissionPlanner.GCSViews
             writeKML();        
 
             // switch the action and wp table
-            if (MainV2.getConfig("FP_docking") == "Bottom")
-            {
+            //if (MainV2.getConfig("FP_docking") == "Bottom")
+            //{
                 switchDockingToolStripMenuItem_Click(null, null);
-            }
+            //}
             
             timer1.Start();
         }
@@ -725,7 +725,7 @@ namespace MissionPlanner.GCSViews
         /// </summary>
         private void InitControl() 
         {
-            Color fc = Color.FromArgb(192, 192, 225);
+            Color fc = Color.Teal;
             this.panel1.BackColor = this.panel2.BackColor = this.panel3.BackColor = this.panel4.BackColor
                 = this.panel5.BackColor = this.chk_grid.BackColor = this.comboBoxMapType.BackColor
                 = this.lbl_wpfile.BackColor = lnk_kml.BackColor = label4.BackColor
@@ -1156,9 +1156,9 @@ namespace MissionPlanner.GCSViews
                             }
                             else if (command == (byte)MAVLink.MAV_CMD.LOITER_TIME || command == (byte)MAVLink.MAV_CMD.LOITER_TURNS || command == (byte)MAVLink.MAV_CMD.LOITER_UNLIM)
                             {
-                                pointlist.Add(new PointLatLngAlt(double.Parse(cell3), double.Parse(cell4), (int)double.Parse(cell2) + homealt, (a + 1).ToString()) { color = Color.LightBlue });
+                                pointlist.Add(new PointLatLngAlt(double.Parse(cell3), double.Parse(cell4), (int)double.Parse(cell2) + homealt, (a + 1).ToString()) { color = Color.Teal });
                                 fullpointlist.Add(pointlist[pointlist.Count - 1]);
-                                addpolygonmarker((a + 1).ToString(), double.Parse(cell4), double.Parse(cell3), (int)double.Parse(cell2), Color.LightBlue);
+                                addpolygonmarker((a + 1).ToString(), double.Parse(cell4), double.Parse(cell3), (int)double.Parse(cell2), Color.Teal);
                             }
                             else if (command == (byte)MAVLink.MAV_CMD.SPLINE_WAYPOINT)
                             {
@@ -5467,18 +5467,18 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void switchDockingToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (panelAction.Dock == DockStyle.Bottom)
-            {
-                panelAction.Dock = DockStyle.Right;
-                panelWaypoints.Dock = DockStyle.Bottom;
-            }
-            else
-            {
+            //if (panelAction.Dock == DockStyle.Bottom)
+            //{
+            //    panelAction.Dock = DockStyle.Right;
+            //    panelWaypoints.Dock = DockStyle.Bottom;
+            //}
+            //else
+            //{
                 panelAction.Dock = DockStyle.Bottom;
                 panelAction.Height = 120;
                 panelWaypoints.Dock = DockStyle.Right;
-                panelWaypoints.Width = Width / 2;
-            }
+                panelWaypoints.Width = Width / 3;
+            //}
 
             MainV2.config["FP_docking"] = panelAction.Dock;
         }

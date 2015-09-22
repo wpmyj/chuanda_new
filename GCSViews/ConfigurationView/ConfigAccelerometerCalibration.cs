@@ -118,8 +118,47 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         {
             Invoke((MethodInvoker) delegate
             {
-                if (!MainV2.comPort.MAV.cs.message.ToLower().Contains("initi"))
-                    lbl_Accel_user.Text = MainV2.comPort.MAV.cs.message;
+                if (!MainV2.comPort.MAV.cs.message.ToLower().Contains("initi")) 
+                {
+                    if (MainV2.comPort.MAV.cs.message != "")
+                    {
+                        if (MainV2.comPort.MAV.cs.message.Contains("LEFT"))
+                        {
+                            lbl_Accel_user.Text = "将飞行器放在左侧，按任意键";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("RIGHT"))
+                        {
+                            lbl_Accel_user.Text = "将飞行器放在右侧，按任意键";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("DOWN"))
+                        {
+                            lbl_Accel_user.Text = "将飞行器头向下，按任意键";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("UP"))
+                        {
+                            lbl_Accel_user.Text = "将飞行器头向上，按任意键";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("BACK"))
+                        {
+                            lbl_Accel_user.Text = "将飞行器反方向放置，按任意键";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("level"))
+                        {
+                            lbl_Accel_user.Text = "将飞行器水平方向放置，按任意键";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("FAILED"))
+                        {
+                            lbl_Accel_user.Text = "校准失败";
+                        }
+                    }
+                    else 
+                    {
+                        lbl_Accel_user.Text = MainV2.comPort.MAV.cs.message;
+                    }
+                    
+                
+                }
+                    //lbl_Accel_user.Text = MainV2.comPort.MAV.cs.message;
             });
         }
 

@@ -227,13 +227,16 @@
   <data name="linkLabel1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAWFJREFUeF7t0QENADAQA6H5V1VnPx8XEhzwtqPBZYfLDpcdLjtcdrjscNnhssNl
-        h8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2
-        uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WH
-        yw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa4
-        7HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfL
-        DpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjs
-        cNnhsmL3AXTKTGwRNxy7AAAAAElFTkSuQmCC
+        wgAADsIBFShKgAAAAftJREFUeF7t1gENACEQA0H8qzpngIzNZZI3QOl8OTPXtyOBs+MYTvETcJd7fkvu
+        0l1a2V4CXHLZa6XnD5dcctlLgEsue620l1xyyWUvAS657LXSXnLJJZe9BLjkstdKe8kll1z2EuCSy14r
+        7SWXXHLZS4BLLnuttJdccsllLwEuuey10l5yySWXvQS45LLXSnvJJZdc9hLgksteK+0ll1xy2UuASy57
+        rbSXXHLJZS8BLrnstdJecskll70EuOSy10p7ySWXXPYS4JLLXivtJZdcctlLgEsue620l1xyyWUvAS65
+        7LXSXnLJJZe9BLjkstdKe8kll1z2EuCSy14r7SWXXHLZS4BLLnuttJdccsllLwEuuey10l5yySWXvQS4
+        5LLXSnvJJZdc9hLgksteK+0ll1xy2UuASy57rbSXXHLJZS8BLrnstdJecskll70EuOSy10p7ySWXXPYS
+        4JLLXivtJZdcctlLgEsue620l1xyyWUvAS657LXSXnLJJZe9BLjkstdKe8kll1z2EuCSy14r7SWXXHLZ
+        S4BLLnuttJdccsllLwEuuey10l5yySWXvQS45LLXSnvJJZdc9hLgksteK+0ll1xy2UuASy57rbSXXHLJ
+        ZS8BLrnstdJecskll70EuOSy10p7ySWXXPYS4JLLXivtJZdcctlL4AF0ykxs7lhlmwAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
@@ -268,18 +271,6 @@
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
-  </data>
-  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAIAAACzPg/tAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAWFJREFUeF7t0QENADAQA6H5V1VnPx8XEhzwtqPBZYfLDpcdLjtcdrjscNnhssNl
-        h8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2
-        uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WH
-        yw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa4
-        7HDZ4bLDZYfLDpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfL
-        DpcdLjtcdrjscNnhssNlh8sOlx0uO1x2uOxw2eGyw2WHyw6XHS47XHa47HDZ4bLDZYfLDpcdLjtcdrjs
-        cNnhsmL3AXTKTGwRNxy7AAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 56</value>

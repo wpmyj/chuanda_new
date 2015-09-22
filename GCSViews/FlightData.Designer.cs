@@ -191,8 +191,8 @@
             // 
             // MainH
             // 
-            this.MainH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.MainH.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.MainH.BackColor = System.Drawing.Color.Teal;
+            this.MainH.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.MainH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.MainH, "MainH");
             this.MainH.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
@@ -200,8 +200,8 @@
             // 
             // MainH.Panel1
             // 
-            this.MainH.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.MainH.Panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.MainH.Panel1.BackColor = System.Drawing.Color.Teal;
+            this.MainH.Panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.MainH.Panel1.Controls.Add(this.tableMap);
             resources.ApplyResources(this.MainH.Panel1, "MainH.Panel1");
             // 
@@ -211,7 +211,7 @@
             // 
             // tableMap
             // 
-            this.tableMap.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.tableMap.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             resources.ApplyResources(this.tableMap, "tableMap");
             this.tableMap.Controls.Add(this.splitContainer1, 0, 0);
             this.tableMap.Controls.Add(this.panel1, 0, 1);
@@ -219,19 +219,20 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.splitContainer1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.splitContainer1.Panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.splitContainer1.Panel1.Controls.Add(this.zg1);
             this.splitContainer1.Panel1Collapsed = true;
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
+            this.splitContainer1.Panel2.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
             this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
             this.splitContainer1.Panel2.Controls.Add(this.windDir1);
@@ -246,7 +247,7 @@
             // 
             // zg1
             // 
-            this.zg1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.zg1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             resources.ApplyResources(this.zg1, "zg1");
             this.zg1.Name = "zg1";
             this.zg1.ScrollGrace = 0D;
@@ -346,7 +347,7 @@
             // windDir1
             // 
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
-            this.windDir1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.windDir1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.Direction = 180D;
@@ -389,6 +390,7 @@
             // lbl_hdop
             // 
             resources.ApplyResources(this.lbl_hdop, "lbl_hdop");
+            this.lbl_hdop.BackColor = System.Drawing.Color.Teal;
             this.lbl_hdop.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
             this.lbl_hdop.ForeColor = System.Drawing.Color.Maroon;
             this.lbl_hdop.Name = "lbl_hdop";
@@ -397,6 +399,7 @@
             // lbl_sats
             // 
             resources.ApplyResources(this.lbl_sats, "lbl_sats");
+            this.lbl_sats.BackColor = System.Drawing.Color.Teal;
             this.lbl_sats.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "卫星数量: 0"));
             this.lbl_sats.ForeColor = System.Drawing.Color.Maroon;
             this.lbl_sats.Name = "lbl_sats";
@@ -404,7 +407,7 @@
             // 
             // gMapControl1
             // 
-            this.gMapControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gMapControl1.BackColor = System.Drawing.Color.Teal;
             this.gMapControl1.Bearing = 0F;
             this.gMapControl1.CanDragMap = true;
             this.gMapControl1.ContextMenuStrip = this.contextMenuStripMap;
@@ -447,7 +450,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.panel1.Controls.Add(this.coords1);
             this.panel1.Controls.Add(this.Zoomlevel);
             this.panel1.Controls.Add(this.label1);
@@ -461,7 +464,7 @@
             // 
             this.coords1.Alt = 0D;
             this.coords1.AltUnit = "m";
-            this.coords1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.coords1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Alt", this.bindingSource1, "alt", true));
             this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lat", this.bindingSource1, "lat", true));
             this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lng", this.bindingSource1, "lng", true));
@@ -474,7 +477,7 @@
             // Zoomlevel
             // 
             resources.ApplyResources(this.Zoomlevel, "Zoomlevel");
-            this.Zoomlevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Zoomlevel.BackColor = System.Drawing.Color.Teal;
             this.Zoomlevel.DecimalPlaces = 1;
             this.Zoomlevel.Increment = new decimal(new int[] {
             5,
@@ -503,14 +506,14 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.label1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.label1.Name = "label1";
             this.label1.resize = false;
             // 
             // CHK_autopan
             // 
             resources.ApplyResources(this.CHK_autopan, "CHK_autopan");
-            this.CHK_autopan.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.CHK_autopan.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.CHK_autopan.Checked = true;
             this.CHK_autopan.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_autopan.Name = "CHK_autopan";
@@ -521,7 +524,7 @@
             // CB_tuning
             // 
             resources.ApplyResources(this.CB_tuning, "CB_tuning");
-            this.CB_tuning.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.CB_tuning.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.CB_tuning.Name = "CB_tuning";
             this.toolTip1.SetToolTip(this.CB_tuning, resources.GetString("CB_tuning.ToolTip"));
             this.CB_tuning.UseVisualStyleBackColor = true;
@@ -704,8 +707,8 @@
             // 
             // contextMenuStripactionstab
             // 
-            this.contextMenuStripactionstab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.contextMenuStripactionstab.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.contextMenuStripactionstab.BackColor = System.Drawing.Color.Teal;
+            this.contextMenuStripactionstab.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             resources.ApplyResources(this.contextMenuStripactionstab, "contextMenuStripactionstab");
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dropOutToolStripMenuItem});
@@ -720,8 +723,8 @@
             // tabQuick
             // 
             resources.ApplyResources(this.tabQuick, "tabQuick");
-            this.tabQuick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabQuick.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.tabQuick.BackColor = System.Drawing.Color.Teal;
+            this.tabQuick.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.tabQuick.Controls.Add(this.tableLayoutPanelQuick);
             this.tabQuick.ForeColor = System.Drawing.SystemColors.Highlight;
             this.tabQuick.Name = "tabQuick";
@@ -730,7 +733,7 @@
             // tableLayoutPanelQuick
             // 
             resources.ApplyResources(this.tableLayoutPanelQuick, "tableLayoutPanelQuick");
-            this.tableLayoutPanelQuick.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.tableLayoutPanelQuick.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.tableLayoutPanelQuick.Controls.Add(this.quickView6, 1, 2);
             this.tableLayoutPanelQuick.Controls.Add(this.quickView5, 0, 2);
             this.tableLayoutPanelQuick.Controls.Add(this.quickView4, 1, 1);
@@ -741,7 +744,7 @@
             // 
             // quickView6
             // 
-            this.quickView6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickView6.BackColor = System.Drawing.Color.Teal;
             this.quickView6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView6.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
             this.quickView6.desc = "到飞行器距离(m/s)";
@@ -757,7 +760,7 @@
             // 
             // quickView5
             // 
-            this.quickView5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickView5.BackColor = System.Drawing.Color.Teal;
             this.quickView5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView5.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
             this.quickView5.desc = "垂直速度(m/s)";
@@ -769,7 +772,7 @@
             // 
             // quickView4
             // 
-            this.quickView4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickView4.BackColor = System.Drawing.Color.Teal;
             this.quickView4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
             this.quickView4.desc = "偏航角(deg)";
@@ -781,7 +784,7 @@
             // 
             // quickView2
             // 
-            this.quickView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickView2.BackColor = System.Drawing.Color.Teal;
             this.quickView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView2.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
             this.quickView2.desc = "地速(m/s)";
@@ -793,7 +796,7 @@
             // 
             // quickView3
             // 
-            this.quickView3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickView3.BackColor = System.Drawing.Color.Teal;
             this.quickView3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView3.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
             this.quickView3.desc = "到航距点距离(m/s)";
@@ -805,7 +808,7 @@
             // 
             // quickView1
             // 
-            this.quickView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.quickView1.BackColor = System.Drawing.Color.Teal;
             this.quickView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView1.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
             this.quickView1.desc = "高度(m)";
@@ -1056,7 +1059,7 @@
             // 
             // Gvspeed
             // 
-            this.Gvspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Gvspeed.BackColor = System.Drawing.Color.Teal;
             this.Gvspeed.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Gvspeed, "Gvspeed");
             this.Gvspeed.BaseArcColor = System.Drawing.Color.Transparent;
@@ -1214,7 +1217,7 @@
             // 
             // Galt
             // 
-            this.Galt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Galt.BackColor = System.Drawing.Color.Teal;
             this.Galt.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Galt, "Galt");
             this.Galt.BaseArcColor = System.Drawing.Color.Transparent;
@@ -1359,7 +1362,7 @@
             // 
             // Gspeed
             // 
-            this.Gspeed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Gspeed.BackColor = System.Drawing.Color.Teal;
             this.Gspeed.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Gspeed, "Gspeed");
             this.Gspeed.BaseArcColor = System.Drawing.Color.Transparent;

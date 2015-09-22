@@ -42,7 +42,7 @@ namespace MissionPlanner.Controls
             this.labelWithPseudoOpacity1.AutoSize = true;
             this.labelWithPseudoOpacity1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.Cyan;
             this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 0);
             this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
             this.labelWithPseudoOpacity1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -71,7 +71,7 @@ namespace MissionPlanner.Controls
             this.labelWithPseudoOpacity2.AutoSize = true;
             this.labelWithPseudoOpacity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Maroon;
+            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Lime;
             this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(79, 0);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
             this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(70, 43);
@@ -81,7 +81,7 @@ namespace MissionPlanner.Controls
             // 
             // QuickView
             // 
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Teal;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "QuickView";

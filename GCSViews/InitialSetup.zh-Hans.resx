@@ -127,20 +127,20 @@
     <value>向导</value>
   </data>
   <data name="backstageViewPagemand.Text" xml:space="preserve">
-    <value>必要硬件</value>
+    <value>参数设置</value>
   </data>
   <data name="backstageViewPagetradheli.Text" xml:space="preserve">
     <value>直升机安装</value>
   </data>
   <data name="backstageViewPageframetype.Text" xml:space="preserve">
-    <value>机架类型</value>
+    <value>机架类型选择</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="configAccelerometerCalibration.Size" type="System.Drawing.Size, System.Drawing">
     <value>1000, 450</value>
   </data>
   <data name="backstageViewPagecompass.Text" xml:space="preserve">
-    <value>罗盘</value>
+    <value>罗盘参数校准</value>
   </data>
   <data name="backstageViewPageradio.Text" xml:space="preserve">
     <value>遥控器校准</value>
@@ -149,7 +149,7 @@
     <value>飞行模式</value>
   </data>
   <data name="backstageViewPagefs.Text" xml:space="preserve">
-    <value>故障保护</value>
+    <value>信号通道</value>
   </data>
   <data name="backstageViewPageopt.Text" xml:space="preserve">
     <value>可选硬件</value>

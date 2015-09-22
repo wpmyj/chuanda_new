@@ -105,7 +105,7 @@
             // 
             // CMB_ratesensors
             // 
-            this.CMB_ratesensors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_ratesensors.BackColor = System.Drawing.Color.Teal;
             this.CMB_ratesensors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_ratesensors.FormattingEnabled = true;
             this.CMB_ratesensors.Items.AddRange(new object[] {
@@ -169,7 +169,7 @@
             // 
             // NUM_tracklength
             // 
-            this.NUM_tracklength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.NUM_tracklength.BackColor = System.Drawing.Color.Teal;
             this.NUM_tracklength.Increment = new decimal(new int[] {
             100,
             0,
@@ -229,7 +229,7 @@
             // 
             // CMB_raterc
             // 
-            this.CMB_raterc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_raterc.BackColor = System.Drawing.Color.Teal;
             this.CMB_raterc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_raterc.FormattingEnabled = true;
             this.CMB_raterc.Items.AddRange(new object[] {
@@ -270,7 +270,7 @@
             // 
             // CMB_ratestatus
             // 
-            this.CMB_ratestatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_ratestatus.BackColor = System.Drawing.Color.Teal;
             this.CMB_ratestatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_ratestatus.FormattingEnabled = true;
             this.CMB_ratestatus.Items.AddRange(new object[] {
@@ -291,7 +291,7 @@
             // 
             // CMB_rateposition
             // 
-            this.CMB_rateposition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_rateposition.BackColor = System.Drawing.Color.Teal;
             this.CMB_rateposition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_rateposition.FormattingEnabled = true;
             this.CMB_rateposition.Items.AddRange(new object[] {
@@ -312,7 +312,7 @@
             // 
             // CMB_rateattitude
             // 
-            this.CMB_rateattitude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_rateattitude.BackColor = System.Drawing.Color.Teal;
             this.CMB_rateattitude.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_rateattitude.FormattingEnabled = true;
             this.CMB_rateattitude.Items.AddRange(new object[] {
@@ -348,7 +348,7 @@
             // 
             // CMB_speedunits
             // 
-            this.CMB_speedunits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_speedunits.BackColor = System.Drawing.Color.Teal;
             this.CMB_speedunits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_speedunits.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_speedunits, "CMB_speedunits");
@@ -357,7 +357,7 @@
             // 
             // CMB_distunits
             // 
-            this.CMB_distunits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_distunits.BackColor = System.Drawing.Color.Teal;
             this.CMB_distunits.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_distunits.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_distunits, "CMB_distunits");
@@ -409,7 +409,7 @@
             // 
             // CMB_osdcolor
             // 
-            this.CMB_osdcolor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_osdcolor.BackColor = System.Drawing.Color.Teal;
             this.CMB_osdcolor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CMB_osdcolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_osdcolor.FormattingEnabled = true;
@@ -420,7 +420,7 @@
             // 
             // CMB_language
             // 
-            this.CMB_language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_language.BackColor = System.Drawing.Color.Teal;
             this.CMB_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_language.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_language, "CMB_language");
@@ -455,7 +455,7 @@
             // 
             // CMB_videosources
             // 
-            this.CMB_videosources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_videosources.BackColor = System.Drawing.Color.Teal;
             this.CMB_videosources.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_videosources.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_videosources, "CMB_videosources");
@@ -496,7 +496,7 @@
             // 
             // txt_log_dir
             // 
-            this.txt_log_dir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txt_log_dir.BackColor = System.Drawing.Color.Teal;
             resources.ApplyResources(this.txt_log_dir, "txt_log_dir");
             this.txt_log_dir.Name = "txt_log_dir";
             // 
@@ -507,7 +507,7 @@
             // 
             // CMB_theme
             // 
-            this.CMB_theme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.CMB_theme.BackColor = System.Drawing.Color.Teal;
             this.CMB_theme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_theme.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_theme, "CMB_theme");
@@ -644,8 +644,8 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.LightBlue;
+            this.BackColor = System.Drawing.Color.Teal;
+            this.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
             this.Controls.Add(this.chk_tfr);
             this.Controls.Add(this.chk_ADSB);
             this.Controls.Add(this.CHK_showairports);

@@ -22,7 +22,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         public ConfigPlanner()
         {
             InitializeComponent();
-            this.NUM_tracklength.BackColor = System.Drawing.Color.FromArgb(192,192,225);
+            this.NUM_tracklength.BackColor = System.Drawing.Color.Teal;
         }
 
         // Called every time that this control is made current in the backstage view
@@ -595,8 +595,8 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             {
                 if(c is CheckBox)
                 {
-                    ((CheckBox)c).BackColor = System.Drawing.Color.FromArgb(192,192,225);
-                    ((CheckBox)c).BackgroundImage = MissionPlanner.Properties.Resources.LightBlue;
+                    ((CheckBox)c).BackColor = System.Drawing.Color.Teal;
+                    ((CheckBox)c).BackgroundImage = MissionPlanner.Properties.Resources.Teal;
                     ((CheckBox)c).ForeColor = System.Drawing.Color.Black;
                 }
             }

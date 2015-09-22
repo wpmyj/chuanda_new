@@ -124,80 +124,80 @@
     <value>Cannot graph this field</value>
   </data>
   <data name="CommandFailed" xml:space="preserve">
-    <value>The Command failed to execute
+    <value>命令未能执行
 </value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value>Error</value>
+    <value>错误</value>
   </data>
   <data name="ErrorClosingLogFile" xml:space="preserve">
-    <value>Error closing log files</value>
+    <value>关闭日志文件时出错</value>
   </data>
   <data name="ErrorCommunicating" xml:space="preserve">
-    <value>Error communicating with the autopilot</value>
+    <value>与自动驾驶仪通信时出错</value>
   </data>
   <data name="ErrorConnecting" xml:space="preserve">
-    <value>Error Connecting
+    <value>连接错误
 </value>
   </data>
   <data name="ErrorFeatureNotEnabled" xml:space="preserve">
-    <value>This feature is not enabled in your firmware.</value>
+    <value>此功能在您的固件中没有启用</value>
   </data>
   <data name="ErrorFirmwareFile" xml:space="preserve">
-    <value>Error loading firmware file</value>
+    <value>错误加载固件文件</value>
   </data>
   <data name="ErrorLogList" xml:space="preserve">
-    <value>Error receiving log list</value>
+    <value>接收日志列表的错误</value>
   </data>
   <data name="ErrorNoResponce" xml:space="preserve">
-    <value>Error: no responce from MAV</value>
+    <value>错误：无法从飞行器收到响应</value>
   </data>
   <data name="ErrorNotConnected" xml:space="preserve">
-    <value>You are not connected.</value>
+    <value>没有连接。</value>
   </data>
   <data name="ErrorReceivingParams" xml:space="preserve">
-    <value>Error receiving list
+    <value>接收列表错误
 </value>
   </data>
   <data name="ErrorRejectedByMAV" xml:space="preserve">
-    <value>Error: command rejected by MAV</value>
+    <value>错误：命令拒绝了MAV</value>
   </data>
   <data name="ErrorRenameFile" xml:space="preserve">
-    <value>Error renaming file</value>
+    <value>错误重命名文件</value>
   </data>
   <data name="ErrorSettingParameter" xml:space="preserve">
-    <value>Error setting parameter </value>
+    <value>设定参数 </value>
   </data>
   <data name="ErrorSetValueFailed" xml:space="preserve">
-    <value>Set {0} Failed</value>
+    <value>设置{ 0 }失败</value>
   </data>
   <data name="InvalidAlt" xml:space="preserve">
-    <value>Invalid Alt</value>
+    <value>无效高度</value>
   </data>
   <data name="InvalidBaudRate" xml:space="preserve">
-    <value>Invalid BaudRate</value>
+    <value>无效波特率</value>
   </data>
   <data name="InvalidField" xml:space="preserve">
     <value>Invalid Field</value>
   </data>
   <data name="InvalidFileName" xml:space="preserve">
-    <value>Invalid FileName</value>
+    <value>无效的文件名</value>
   </data>
   <data name="InvalidNumberEntered" xml:space="preserve">
-    <value>Invalid number entered
+    <value>输入的号码无效
 </value>
   </data>
   <data name="InvalidPanRange" xml:space="preserve">
-    <value>Invalid Pan Range</value>
+    <value>无效平移范围</value>Invalid Pan Range
   </data>
   <data name="InvalidPortName" xml:space="preserve">
-    <value>Invalid PortName</value>
+    <value>无效端口名</value>
   </data>
   <data name="InvalidTiltRange" xml:space="preserve">
-    <value>Invalid Tilt Range</value>
+    <value>无效倾斜范围</value>
   </data>
   <data name="InvalidUpdateRate" xml:space="preserve">
-    <value>Invalid Update Rate</value>
+    <value>无效更新率</value>
   </data>
   <data name="NoFMTMessage" xml:space="preserve">
     <value>No FMT message for </value>
@@ -355,7 +355,7 @@ Do you wish to continue?</value>
     <value>Epprom format changed ({0) vs {1})</value>
   </data>
   <data name="FailedDownload" xml:space="preserve">
-    <value>Failed download</value>
+    <value>下载失败</value>
   </data>
   <data name="FailedReadHEX" xml:space="preserve">
     <value>Failed read HEX</value>
@@ -484,34 +484,34 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>These are the latest trunk firmware, use at your own risk!!!</value>
   </data>
   <data name="BadGPSHealth" xml:space="preserve">
-    <value>Bad GPS Health</value>
+    <value>GPS 故障</value>
   </data>
   <data name="BadGyroHealth" xml:space="preserve">
-    <value>Bad Gyro Health</value>
+    <value>陀螺故障</value>
   </data>
   <data name="BadAccelHealth" xml:space="preserve">
-    <value>Bad Accel Health</value>
+    <value>加速度计故障</value>
   </data>
   <data name="BadCompassHealth" xml:space="preserve">
-    <value>Bad Compass Health</value>
+    <value>罗盘故障</value>
   </data>
   <data name="BadBaroHealth" xml:space="preserve">
-    <value>Bad Baro Health</value>
+    <value>气压计故障</value>
   </data>
   <data name="BadLiDARHealth" xml:space="preserve">
-    <value>Bad LiDAR Health</value>
+    <value>雷达故障</value>
   </data>
   <data name="BadOptFlowHealth" xml:space="preserve">
     <value>Bad OptFlow Health</value>
   </data>
   <data name="BadorNoTerrainData" xml:space="preserve">
-    <value>Bad or No Terrain Data</value>
+    <value>没有地形数据</value>
   </data>
   <data name="GeofenceBreach" xml:space="preserve">
-    <value>Geofence Breach</value>
+    <value>超出区域</value>
   </data>
   <data name="BadAHRS" xml:space="preserve">
-    <value>Bad AHRS</value>
+    <value>AHRS故障</value>
   </data>
   <data name="NORCReceiver" xml:space="preserve">
     <value>NO RC Receiver</value>

@@ -19,7 +19,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             y = 10;
 
             var searchfor = "";
-            InputBox.Show("Search For", "Enter a single word to search for", ref searchfor);
+            InputBox.Show("查询", "输入一个单词查询", ref searchfor);
 
             foreach (Control ctl in tableLayoutPanel1.Controls)
             {
@@ -143,7 +143,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             if (!errorThrown)
             {
                 _params_changed.Clear();
-                CustomMessageBox.Show("Parameters successfully saved.", "Saved");
+                CustomMessageBox.Show("参数保存成功.", "保存");
             }
         }
 

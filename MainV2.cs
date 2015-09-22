@@ -80,7 +80,7 @@ namespace MissionPlanner
             public override Image donate { get { return global::MissionPlanner.Properties.Resources.donate; } }
             public override Image connect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
             public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
-            public override Image bg { get { return global::MissionPlanner.Properties.Resources.LightBlue; } }
+            public override Image bg { get { return global::MissionPlanner.Properties.Resources.Teal; } }
         }
 
         public class menuicons2 : menuicons
@@ -2908,7 +2908,7 @@ namespace MissionPlanner
             {
                 if (e.ClickedItem == item)
                 {
-                    item.BackColor = Color.LightBlue;
+                    item.BackColor = Color.Teal;
                 }
                 else
                 {

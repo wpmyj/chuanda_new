@@ -579,12 +579,12 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = System.Drawing.Color.FromArgb(192,192,225);
-                    bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);
+                    bsv.BackColor = System.Drawing.Color.Teal;
+                    bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
                     bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
                     bsv.HighlightColor1 = Color.FromArgb(192,255,255);
                     bsv.SelectedTextColor = Color.White;
-                    bsv.UnSelectedTextColor = Color.Gray;
+                    bsv.UnSelectedTextColor = Color.Black;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
                     bsv.ForeColor = Color.Black;
                 }
@@ -625,7 +625,7 @@ mc:Ignorable=""d""
         {
             unchecked
             {
-                BGColor = Color.FromArgb(192,192,225); // background
+                BGColor = Color.Teal; // background
                 ControlBGColor = Color.FromArgb((int)0xffe2e2e2); // editable bg color
                 TextColor = Color.Black;
                 ButBG = Color.FromArgb((int)0xffffff99);
@@ -816,12 +816,12 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
-                    bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);
+                    bsv.BackColor = System.Drawing.Color.Teal;
+                    bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
                     bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
                     bsv.HighlightColor1 = Color.FromArgb(192, 255, 255);
                     bsv.SelectedTextColor = Color.White;
-                    bsv.UnSelectedTextColor = Color.Gray;
+                    bsv.UnSelectedTextColor = Color.Black;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
                     bsv.ForeColor = Color.Black;
                 }
@@ -838,7 +838,7 @@ mc:Ignorable=""d""
 
         private static void ApplyBurntKermitTheme(Control temp, int level)
         {
-            BGColor = Color.FromArgb(192,192,225); // background
+            BGColor = Color.Teal; // background
             ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45); // editable bg color
             TextColor = Color.Black;
 
@@ -1033,12 +1033,12 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
-                    bsv.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(192, 192, 225);
+                    bsv.BackColor = System.Drawing.Color.Teal;
+                    bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
                     bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
                     bsv.HighlightColor1 = Color.FromArgb(192, 255, 255);
                     bsv.SelectedTextColor = Color.White;
-                    bsv.UnSelectedTextColor = Color.Gray;
+                    bsv.UnSelectedTextColor = Color.Black;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
                     bsv.ForeColor = Color.Black;
                 }

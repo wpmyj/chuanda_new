@@ -264,7 +264,7 @@ namespace MissionPlanner.Controls
 
             GL.LoadMatrix(ref modelview);
 
-            GL.ClearColor(Color.LightBlue);
+            GL.ClearColor(Color.Teal);
 
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
@@ -384,7 +384,7 @@ namespace MissionPlanner.Controls
             // OpenGLtest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Teal;
             this.Name = "OpenGLtest";
             this.Load += new System.EventHandler(this.test_Load);
             this.Resize += new System.EventHandler(this.test_Resize);

@@ -31,14 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitialSetup));
             this.backstageView = new MissionPlanner.Controls.BackstageView.BackstageView();
-            this.backstageViewPagefw = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.initialSetupBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.configFirmware1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFirmware();
-            this.backstageViewPagefwdisabled = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configFirmwareDisabled1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
             this.backstageViewPagewizard = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
             this.configWizard1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigWizard();
             this.backstageViewPagemand = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
+            this.initialSetupBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.configMandatory1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigMandatory();
             this.backstageViewPagetradheli = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
             this.configTradHeli1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigTradHeli();
@@ -80,22 +76,24 @@
             this.configHWBT1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWBT();
             this.backstageViewPageParachute = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
             this.configHWPa1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWParachute();
+            this.backstageViewPagefw = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
+            this.configFirmware1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFirmware();
+            this.backstageViewPagefwdisabled = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
+            this.configFirmwareDisabled1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
             this.backstageViewPageinstfw = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // backstageView
             // 
-            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
-            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.backstageView.BackColor = System.Drawing.Color.Teal;
+            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.Teal;
             this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
             this.backstageView.ForeColor = System.Drawing.Color.Black;
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.backstageView.Name = "backstageView";
-            //this.backstageView.Pages.Add(this.backstageViewPagefw);
-            //this.backstageView.Pages.Add(this.backstageViewPagefwdisabled);
             this.backstageView.Pages.Add(this.backstageViewPagewizard);
             this.backstageView.Pages.Add(this.backstageViewPagemand);
             this.backstageView.Pages.Add(this.backstageViewPagetradheli);
@@ -120,42 +118,6 @@
             this.backstageView.Pages.Add(this.backstageViewPageParachute);
             this.backstageView.WidthMenu = 172;
             // 
-            // backstageViewPagefw
-            // 
-            this.backstageViewPagefw.Advanced = false;
-            this.backstageViewPagefw.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isDisConnected", true));
-            this.backstageViewPagefw.LinkText = "Install Firmware";
-            this.backstageViewPagefw.Page = this.configFirmware1;
-            this.backstageViewPagefw.Parent = null;
-            this.backstageViewPagefw.Show = false;
-            this.backstageViewPagefw.Spacing = 30;
-            resources.ApplyResources(this.backstageViewPagefw, "backstageViewPagefw");
-            // 
-            // initialSetupBindingSource
-            // 
-            this.initialSetupBindingSource.DataSource = typeof(MissionPlanner.GCSViews.InitialSetup);
-            // 
-            // configFirmware1
-            // 
-            resources.ApplyResources(this.configFirmware1, "configFirmware1");
-            this.configFirmware1.Name = "configFirmware1";
-            // 
-            // backstageViewPagefwdisabled
-            // 
-            this.backstageViewPagefwdisabled.Advanced = false;
-            this.backstageViewPagefwdisabled.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
-            this.backstageViewPagefwdisabled.LinkText = "Install Firmware";
-            this.backstageViewPagefwdisabled.Page = this.configFirmwareDisabled1;
-            this.backstageViewPagefwdisabled.Parent = null;
-            this.backstageViewPagefwdisabled.Show = false;
-            this.backstageViewPagefwdisabled.Spacing = 30;
-            resources.ApplyResources(this.backstageViewPagefwdisabled, "backstageViewPagefwdisabled");
-            // 
-            // configFirmwareDisabled1
-            // 
-            resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
-            this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
-            // 
             // backstageViewPagewizard
             // 
             this.backstageViewPagewizard.Advanced = false;
@@ -178,9 +140,13 @@
             this.backstageViewPagemand.LinkText = "Mandatory Hardware";
             this.backstageViewPagemand.Page = this.configMandatory1;
             this.backstageViewPagemand.Parent = null;
-            this.backstageViewPagemand.Show = true;
+            this.backstageViewPagemand.Show = false;
             this.backstageViewPagemand.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagemand, "backstageViewPagemand");
+            // 
+            // initialSetupBindingSource
+            // 
+            this.initialSetupBindingSource.DataSource = typeof(MissionPlanner.GCSViews.InitialSetup);
             // 
             // configMandatory1
             // 
@@ -248,7 +214,7 @@
             // 
             // configHWCompass1
             // 
-            this.configHWCompass1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.configHWCompass1.BackColor = System.Drawing.Color.Teal;
             resources.ApplyResources(this.configHWCompass1, "configHWCompass1");
             this.configHWCompass1.Name = "configHWCompass1";
             // 
@@ -503,6 +469,38 @@
             resources.ApplyResources(this.configHWPa1, "configHWPa1");
             this.configHWPa1.Name = "configHWPa1";
             // 
+            // backstageViewPagefw
+            // 
+            this.backstageViewPagefw.Advanced = false;
+            this.backstageViewPagefw.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isDisConnected", true));
+            this.backstageViewPagefw.LinkText = "Install Firmware";
+            this.backstageViewPagefw.Page = this.configFirmware1;
+            this.backstageViewPagefw.Parent = null;
+            this.backstageViewPagefw.Show = false;
+            this.backstageViewPagefw.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPagefw, "backstageViewPagefw");
+            // 
+            // configFirmware1
+            // 
+            resources.ApplyResources(this.configFirmware1, "configFirmware1");
+            this.configFirmware1.Name = "configFirmware1";
+            // 
+            // backstageViewPagefwdisabled
+            // 
+            this.backstageViewPagefwdisabled.Advanced = false;
+            this.backstageViewPagefwdisabled.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
+            this.backstageViewPagefwdisabled.LinkText = "Install Firmware";
+            this.backstageViewPagefwdisabled.Page = this.configFirmwareDisabled1;
+            this.backstageViewPagefwdisabled.Parent = null;
+            this.backstageViewPagefwdisabled.Show = false;
+            this.backstageViewPagefwdisabled.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPagefwdisabled, "backstageViewPagefwdisabled");
+            // 
+            // configFirmwareDisabled1
+            // 
+            resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
+            this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
+            // 
             // backstageViewPageinstfw
             // 
             this.backstageViewPageinstfw.Advanced = false;
@@ -517,7 +515,7 @@
             // InitialSetup
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Teal;
             this.Controls.Add(this.backstageView);
             this.Controls.Add(this.configAccelerometerCalibration);
             this.Controls.Add(this.configHWBT1);

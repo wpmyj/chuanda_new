@@ -61,7 +61,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             timer.Interval = 100;
             timer.Start();
 
-            CustomMessageBox.Show("确保你的道具没有在飞机上！", "故障保护", MessageBoxButtons.OK,
+            CustomMessageBox.Show("确保你的螺旋桨没有在飞机上！", "故障保护", MessageBoxButtons.OK,
                 MessageBoxIcon.Exclamation);
         }
 

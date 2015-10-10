@@ -72,9 +72,9 @@ namespace MissionPlanner.GCSViews
                         start = AddBackstageViewPage(new ConfigAntennaTracker(), Strings.ExtendedTuning);
                     }
 
-                    AddBackstageViewPage(
-                        new ConfigFriendlyParams { ParameterMode = ParameterMetaDataConstants.Standard },
-                        Strings.StandardParams);
+                    //AddBackstageViewPage(
+                    //    new ConfigFriendlyParams { ParameterMode = ParameterMetaDataConstants.Standard },
+                    //    Strings.StandardParams);
                     //AddBackstageViewPage(
                     //    new ConfigFriendlyParams {ParameterMode = ParameterMetaDataConstants.Advanced},
                     //    Strings.AdvancedParams, null, true);

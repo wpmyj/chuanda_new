@@ -27,20 +27,22 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         public ConfigFrameType()
         {
             InitializeComponent();
-            configDefaultSettings1.OnChange += configDefaultSettings1_OnChange;
+            //configDefaultSettings1.OnChange += configDefaultSettings1_OnChange;
         }
 
         public void Activate()
         {
-            if (!MainV2.comPort.MAV.param.ContainsKey("FRAME"))
-            {
-                Enabled = false;
-                return;
-            }
+            //if (!MainV2.comPort.MAV.param.ContainsKey("FRAME"))
+            //{
+            //    Enabled = false;
+            //    return;
+            //}
 
             DoChange((Frame) Enum.Parse(typeof (Frame), MainV2.comPort.MAV.param["FRAME"].ToString()));
 
-            this.groupBox1.BackColor = this.groupBox2.BackColor = System.Drawing.Color.White;
+            //this.groupBox1.BackColor = this.groupBox2.BackColor = System.Drawing.Color.White;
+
+            //this.
         }
 
         public void Deactivate()
@@ -55,112 +57,112 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
         private void DoChange(Frame frame)
         {
-            if (indochange)
-                return;
+            //if (indochange)
+            //    return;
 
-            indochange = true;
+            //indochange = true;
 
-            switch (frame)
-            {
-                case Frame.Plus:
-                        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
-                    radioButton_VTail.Checked = false;
-                    radioButton_Plus.Checked = true;
-                    radioButton_V.Checked = false;
-                    radioButton_X.Checked = false;
-                    radioButton_H.Checked = false;
-                    radioButton_Y.Checked = false;
-                    SetFrameParam(frame);
-                    break;
-                case Frame.X:
-                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
-                    radioButton_VTail.Checked = false;
-                    radioButton_Plus.Checked = false;
-                    radioButton_V.Checked = false;
-                    radioButton_X.Checked = true;
-                    radioButton_H.Checked = false;
-                    radioButton_Y.Checked = false;
-                    SetFrameParam(frame);
-                    break;
-                case Frame.V:
-                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
-                    radioButton_VTail.Checked = false;
-                    radioButton_Plus.Checked = false;
-                    radioButton_V.Checked = true;
-                    radioButton_X.Checked = false;
-                    radioButton_H.Checked = false;
-                    radioButton_Y.Checked = false;
-                    SetFrameParam(frame);
-                    break;
-                case Frame.H:
-                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
-                    radioButton_VTail.Checked = false;
-                    radioButton_Plus.Checked = false;
-                    radioButton_V.Checked = false;
-                    radioButton_X.Checked = false;
-                    radioButton_H.Checked = true;
-                    radioButton_Y.Checked = false;
-                    SetFrameParam(frame);
-                    break;
-                case Frame.Y:
-                     FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
-                    radioButton_VTail.Checked = false;
-                    radioButton_Plus.Checked = false;
-                    radioButton_V.Checked = false;
-                    radioButton_X.Checked = false;
-                    radioButton_H.Checked = false;
-                    radioButton_Y.Checked = true;
-                    SetFrameParam(frame);
-                    break;
-                case Frame.VTail:
-                    FadePicBoxes(pictureBoxPlus, EnabledOpacity);
-                    FadePicBoxes(pictureBoxX, EnabledOpacity);
-                    FadePicBoxes(pictureBoxV, EnabledOpacity);
-                    FadePicBoxes(pictureBoxH, EnabledOpacity);
-                    FadePicBoxes(pictureBoxY, EnabledOpacity);
-                    FadePicBoxes(pictureBoxVTail, EnabledOpacity);
-                    radioButton_VTail.Checked = true;
-                    radioButton_Plus.Checked = false;
-                    radioButton_V.Checked = false;
-                    radioButton_X.Checked = false;
-                    radioButton_H.Checked = false;
-                    radioButton_Y.Checked = false;
-                    SetFrameParam(frame);
-                    break;
-                default:
-                    radioButton_Plus.Checked = false;
-                    radioButton_V.Checked = false;
-                    radioButton_X.Checked = false;
-                    radioButton_H.Checked = false;
-                    radioButton_Y.Checked = false;
-                    break;
-            }
-            indochange = false;
+            //switch (frame)
+            //{
+            //    case Frame.Plus:
+            //            FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxX, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxV, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxH, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxY, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxVTail, EnabledOpacity);
+            //        radioButton_VTail.Checked = false;
+            //        radioButton_Plus.Checked = true;
+            //        radioButton_V.Checked = false;
+            //        radioButton_X.Checked = false;
+            //        radioButton_H.Checked = false;
+            //        radioButton_Y.Checked = false;
+            //        SetFrameParam(frame);
+            //        break;
+            //    case Frame.X:
+            //        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxX, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxV, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxH, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxY, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxVTail, EnabledOpacity);
+            //        radioButton_VTail.Checked = false;
+            //        radioButton_Plus.Checked = false;
+            //        radioButton_V.Checked = false;
+            //        radioButton_X.Checked = true;
+            //        radioButton_H.Checked = false;
+            //        radioButton_Y.Checked = false;
+            //        SetFrameParam(frame);
+            //        break;
+            //    case Frame.V:
+            //        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxX, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxV, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxH, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxY, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxVTail, EnabledOpacity);
+            //        radioButton_VTail.Checked = false;
+            //        radioButton_Plus.Checked = false;
+            //        radioButton_V.Checked = true;
+            //        radioButton_X.Checked = false;
+            //        radioButton_H.Checked = false;
+            //        radioButton_Y.Checked = false;
+            //        SetFrameParam(frame);
+            //        break;
+            //    case Frame.H:
+            //        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxX, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxV, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxH, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxY, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxVTail, EnabledOpacity);
+            //        radioButton_VTail.Checked = false;
+            //        radioButton_Plus.Checked = false;
+            //        radioButton_V.Checked = false;
+            //        radioButton_X.Checked = false;
+            //        radioButton_H.Checked = true;
+            //        radioButton_Y.Checked = false;
+            //        SetFrameParam(frame);
+            //        break;
+            //    case Frame.Y:
+            //         FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxX, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxV, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxH, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxY, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxVTail, EnabledOpacity);
+            //        radioButton_VTail.Checked = false;
+            //        radioButton_Plus.Checked = false;
+            //        radioButton_V.Checked = false;
+            //        radioButton_X.Checked = false;
+            //        radioButton_H.Checked = false;
+            //        radioButton_Y.Checked = true;
+            //        SetFrameParam(frame);
+            //        break;
+            //    case Frame.VTail:
+            //        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxX, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxV, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxH, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxY, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxVTail, EnabledOpacity);
+            //        radioButton_VTail.Checked = true;
+            //        radioButton_Plus.Checked = false;
+            //        radioButton_V.Checked = false;
+            //        radioButton_X.Checked = false;
+            //        radioButton_H.Checked = false;
+            //        radioButton_Y.Checked = false;
+            //        SetFrameParam(frame);
+            //        break;
+            //    default:
+            //        radioButton_Plus.Checked = false;
+            //        radioButton_V.Checked = false;
+            //        radioButton_X.Checked = false;
+            //        radioButton_H.Checked = false;
+            //        radioButton_Y.Checked = false;
+            //        break;
+            //}
+            //indochange = false;
         }
 
         private void SetFrameParam(Frame frame)

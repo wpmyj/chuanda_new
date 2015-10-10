@@ -14,7 +14,7 @@ namespace MissionPlanner
         {
             InitializeComponent();
 
-            string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            //string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
     }
 }

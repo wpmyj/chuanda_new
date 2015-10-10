@@ -120,7 +120,7 @@ namespace MissionPlanner
 
             //显示公司login
             Splash = new MissionPlanner.Splash();
-            string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            //string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Splash.Text = name;
             Splash.Show();
 

@@ -86,7 +86,7 @@
             // 
             // backstageView
             // 
-            this.backstageView.BackColor = System.Drawing.Color.Teal;
+            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
             this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.Teal;
             this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
@@ -136,7 +136,7 @@
             // backstageViewPagemand
             // 
             this.backstageViewPagemand.Advanced = false;
-            this.backstageViewPagemand.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
+            //this.backstageViewPagemand.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPagemand.LinkText = "Mandatory Hardware";
             this.backstageViewPagemand.Page = this.configMandatory1;
             this.backstageViewPagemand.Parent = null;
@@ -159,8 +159,8 @@
             this.backstageViewPagetradheli.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isHeli", true));
             this.backstageViewPagetradheli.LinkText = "Heli Setup";
             this.backstageViewPagetradheli.Page = this.configTradHeli1;
-            this.backstageViewPagetradheli.Parent = this.backstageViewPagemand;
-            this.backstageViewPagetradheli.Show = true;
+            this.backstageViewPagetradheli.Parent = null;
+            this.backstageViewPagetradheli.Show = false;
             this.backstageViewPagetradheli.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagetradheli, "backstageViewPagetradheli");
             // 
@@ -175,7 +175,7 @@
             this.backstageViewPageframetype.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isCopter", true));
             this.backstageViewPageframetype.LinkText = "Frame Type";
             this.backstageViewPageframetype.Page = this.configFrameType1;
-            this.backstageViewPageframetype.Parent = this.backstageViewPagemand;
+            this.backstageViewPageframetype.Parent = null;
             this.backstageViewPageframetype.Show = true;
             this.backstageViewPageframetype.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageframetype, "backstageViewPageframetype");
@@ -192,7 +192,7 @@
             this.backstageViewPageaccel.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPageaccel.LinkText = "Accel Calibration";
             this.backstageViewPageaccel.Page = this.configAccelerometerCalibration;
-            this.backstageViewPageaccel.Parent = this.backstageViewPagemand;
+            this.backstageViewPageaccel.Parent = null;
             this.backstageViewPageaccel.Show = true;
             this.backstageViewPageaccel.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageaccel, "backstageViewPageaccel");
@@ -207,8 +207,8 @@
             this.backstageViewPagecompass.Advanced = false;
             this.backstageViewPagecompass.LinkText = "Compass";
             this.backstageViewPagecompass.Page = this.configHWCompass1;
-            this.backstageViewPagecompass.Parent = this.backstageViewPagemand;
-            this.backstageViewPagecompass.Show = true;
+            this.backstageViewPagecompass.Parent = null;
+            this.backstageViewPagecompass.Show = false;
             this.backstageViewPagecompass.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagecompass, "backstageViewPagecompass");
             // 
@@ -223,7 +223,7 @@
             this.backstageViewPageradio.Advanced = false;
             this.backstageViewPageradio.LinkText = "Radio Calibration";
             this.backstageViewPageradio.Page = this.configRadioInput1;
-            this.backstageViewPageradio.Parent = this.backstageViewPagemand;
+            this.backstageViewPageradio.Parent = null;
             this.backstageViewPageradio.Show = true;
             this.backstageViewPageradio.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageradio, "backstageViewPageradio");
@@ -238,7 +238,7 @@
             this.backstageViewPageflmode.Advanced = false;
             this.backstageViewPageflmode.LinkText = "Flight Modes";
             this.backstageViewPageflmode.Page = this.configFlightModes1;
-            this.backstageViewPageflmode.Parent = this.backstageViewPagemand;
+            this.backstageViewPageflmode.Parent = null;
             this.backstageViewPageflmode.Show = true;
             this.backstageViewPageflmode.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageflmode, "backstageViewPageflmode");
@@ -253,8 +253,8 @@
             this.backstageViewPagefs.Advanced = false;
             this.backstageViewPagefs.LinkText = "FailSafe";
             this.backstageViewPagefs.Page = this.configFailSafe1;
-            this.backstageViewPagefs.Parent = this.backstageViewPagemand;
-            this.backstageViewPagefs.Show = true;
+            this.backstageViewPagefs.Parent = null;
+            this.backstageViewPagefs.Show = false;
             this.backstageViewPagefs.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefs, "backstageViewPagefs");
             // 

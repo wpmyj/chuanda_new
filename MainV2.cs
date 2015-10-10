@@ -802,11 +802,11 @@ namespace MissionPlanner
         private void PopulateSerialportList()
         {
             _connectionControl.CMB_serialport.Items.Clear();
-            _connectionControl.CMB_serialport.Items.Add("AUTO");
+            //_connectionControl.CMB_serialport.Items.Add("AUTO");
             _connectionControl.CMB_serialport.Items.AddRange(SerialPort.GetPortNames());
-            _connectionControl.CMB_serialport.Items.Add("TCP");
-            _connectionControl.CMB_serialport.Items.Add("UDP");
-            _connectionControl.CMB_serialport.Items.Add("UDPCl");
+            //_connectionControl.CMB_serialport.Items.Add("TCP");
+            //_connectionControl.CMB_serialport.Items.Add("UDP");
+            //_connectionControl.CMB_serialport.Items.Add("UDPCl");
         }
 
         private void MenuFlightData_Click(object sender, EventArgs e)
@@ -1123,7 +1123,8 @@ namespace MissionPlanner
                 // save the baudrate for this port
                 config[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
 
-                this.Text = titlebar + " " + comPort.MAV.VersionString;
+                this.Text = titlebar;
+                //+" " + comPort.MAV.VersionString;
 
                 // refresh config window if needed
                 if (MyView.current != null)

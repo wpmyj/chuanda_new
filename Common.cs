@@ -540,9 +540,9 @@ namespace MissionPlanner
             AP_PRODUCT_ID_APM1_2560 = 0x02,// APM1 with 2560 CPUs
             [DisplayText("SITL")]
             AP_PRODUCT_ID_SITL = 0x03,// Software in the loop
-            [DisplayText("BY007")]
+            [DisplayText("PX4")]
             AP_PRODUCT_ID_PX4 = 0x04,   // PX4 on NuttX
-            [DisplayText("BY001")]
+            [DisplayText("PX4 FMU 2")]
             AP_PRODUCT_ID_PX4_V2 = 0x05,   // PX4 FMU2 on NuttX
             [DisplayText("APM2 ES C4")]
             AP_PRODUCT_ID_APM2ES_REV_C4 = 0x14,// APM2 with MPU6000ES_REV_C4

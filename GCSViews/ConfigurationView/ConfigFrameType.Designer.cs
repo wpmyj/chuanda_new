@@ -31,8 +31,6 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigFrameType));
-            this.radioButton_Plus = new System.Windows.Forms.RadioButton();
-            this.radioButton_X = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBoxPlus = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
@@ -50,10 +48,16 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.radioButton_VTail = new System.Windows.Forms.RadioButton();
             this.pictureBoxVTail = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity1 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity2 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity3 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.btnSetData = new System.Windows.Forms.Button();
             this.configDefaultSettings1 = new MissionPlanner.Controls.DefaultSettings();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).BeginInit();
@@ -61,23 +65,10 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // radioButton_Plus
-            // 
-            resources.ApplyResources(this.radioButton_Plus, "radioButton_Plus");
-            this.radioButton_Plus.Name = "radioButton_Plus";
-            this.radioButton_Plus.TabStop = true;
-            this.radioButton_Plus.UseVisualStyleBackColor = true;
-            this.radioButton_Plus.CheckedChanged += new System.EventHandler(this.radioButton_Plus_CheckedChanged);
-            // 
-            // radioButton_X
-            // 
-            resources.ApplyResources(this.radioButton_X, "radioButton_X");
-            this.radioButton_X.Name = "radioButton_X";
-            this.radioButton_X.TabStop = true;
-            this.radioButton_X.UseVisualStyleBackColor = true;
-            this.radioButton_X.CheckedChanged += new System.EventHandler(this.radioButton_X_CheckedChanged);
             // 
             // label2
             // 
@@ -192,16 +183,20 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.radioButton3);
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.btnSetData);
+            this.groupBox2.Controls.Add(this.pictureBoxWithPseudoOpacity3);
+            this.groupBox2.Controls.Add(this.pictureBoxWithPseudoOpacity2);
+            this.groupBox2.Controls.Add(this.pictureBoxWithPseudoOpacity1);
             this.groupBox2.Controls.Add(this.configDefaultSettings1);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.radioButton_VTail);
             this.groupBox2.Controls.Add(this.pictureBoxVTail);
             this.groupBox2.Controls.Add(this.pictureBoxPlus);
             this.groupBox2.Controls.Add(this.pictureBoxX);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.radioButton_Plus);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.radioButton_X);
             this.groupBox2.Controls.Add(this.radioButton_Y);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.pictureBoxY);
@@ -216,11 +211,6 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
             // 
             // radioButton_VTail
             // 
@@ -238,11 +228,63 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.pictureBoxVTail.TabStop = false;
             this.pictureBoxVTail.Click += new System.EventHandler(this.pictureBoxVTail_Click);
             // 
+            // pictureBoxWithPseudoOpacity1
+            // 
+            this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity1.Image = global::MissionPlanner.Properties.Resources.quadhover_06;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
+            this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
+            this.pictureBoxWithPseudoOpacity1.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity2
+            // 
+            this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity2.Image = global::MissionPlanner.Properties.Resources.quadhover_03;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
+            this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
+            this.pictureBoxWithPseudoOpacity2.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity3
+            // 
+            this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity3.Image = global::MissionPlanner.Properties.Resources.quadhover_12;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
+            this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
+            this.pictureBoxWithPseudoOpacity3.TabStop = false;
+            // 
+            // btnSetData
+            // 
+            this.btnSetData.BackColor = System.Drawing.Color.Turquoise;
+            resources.ApplyResources(this.btnSetData, "btnSetData");
+            this.btnSetData.Name = "btnSetData";
+            this.btnSetData.UseVisualStyleBackColor = false;
+            // 
             // configDefaultSettings1
             // 
             this.configDefaultSettings1.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.configDefaultSettings1, "configDefaultSettings1");
             this.configDefaultSettings1.Name = "configDefaultSettings1";
+            // 
+            // radioButton2
+            // 
+            resources.ApplyResources(this.radioButton2, "radioButton2");
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.TabStop = true;
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            resources.ApplyResources(this.radioButton1, "radioButton1");
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.TabStop = true;
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            resources.ApplyResources(this.radioButton3, "radioButton3");
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // ConfigFrameType
             // 
@@ -260,6 +302,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,8 +313,6 @@ namespace MissionPlanner.GCSViews.ConfigurationView
 
         private PictureBoxWithPseudoOpacity pictureBoxX;
         private PictureBoxWithPseudoOpacity pictureBoxPlus;
-        private System.Windows.Forms.RadioButton radioButton_Plus;
-        private System.Windows.Forms.RadioButton radioButton_X;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
@@ -286,8 +329,14 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private DefaultSettings configDefaultSettings1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton radioButton_VTail;
         private PictureBoxWithPseudoOpacity pictureBoxVTail;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity3;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity2;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity1;
+        private System.Windows.Forms.Button btnSetData;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

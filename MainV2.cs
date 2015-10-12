@@ -793,6 +793,11 @@ namespace ByAeroBeHero
 
         private void CMB_serialport_Click(object sender, EventArgs e)
         {
+            if (_connectionControl.CMB_serialport.Items.Count > 0)
+                this.MenuConnect.Visible = true;
+            else
+                this.MenuConnect.Visible = false;
+
             string oldport = _connectionControl.CMB_serialport.Text;
             PopulateSerialportList();
             if (_connectionControl.CMB_serialport.Items.Contains(oldport))
@@ -1240,7 +1245,11 @@ namespace ByAeroBeHero
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
         {
             comPortName = _connectionControl.CMB_serialport.Text;
-            
+            if (_connectionControl.CMB_serialport.Items.Count > 0)
+                this.MenuConnect.Visible = true;
+            else
+                this.MenuConnect.Visible = false;
+
             if (comPortName == "UDP" || comPortName == "UDPCl" || comPortName == "TCP" || comPortName == "AUTO")
             {
                 _connectionControl.CMB_baudrate.Enabled = false;

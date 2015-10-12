@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using log4net;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     /// <summary>
     /// Form that is shown to the user during a background operation

@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls
+﻿namespace ByAeroBeHero.Controls
 {
     partial class DefaultSettings
     {
@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DefaultSettings));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.CMB_paramfiles = new System.Windows.Forms.ComboBox();
-            this.BUT_paramfileload = new MissionPlanner.Controls.MyButton();
+            this.BUT_paramfileload = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
             // 
             // textBox1

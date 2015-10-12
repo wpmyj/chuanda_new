@@ -9,7 +9,7 @@ using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 
-namespace MissionPlanner.Maps
+namespace ByAeroBeHero.Maps
 {
     public class MyImageCache : PureImageCache
     {

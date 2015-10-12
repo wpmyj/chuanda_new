@@ -2,10 +2,10 @@
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using ZedGraph;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigCompassMot : UserControl, IActivate, IDeactivate
     {

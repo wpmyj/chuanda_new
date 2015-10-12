@@ -9,7 +9,7 @@ using System.Web;
 using System.Windows.Forms;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class Tracking
     {
@@ -154,7 +154,7 @@ namespace MissionPlanner.Utilities
                 }
                 // 150 bytes
 
-                reportline = reportline.Replace(@"c:\Users\hog\Documents\Visual Studio 2010\Projects\MissionPlanner.", "");
+                reportline = reportline.Replace(@"c:\Users\hog\Documents\Visual Studio 2010\Projects\ByAeroBeHero.", "");
 
                 param.Add(new KeyValuePair<string, string>("exd", ex.Message + reportline));
             }

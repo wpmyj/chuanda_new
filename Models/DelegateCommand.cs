@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MissionPlanner.Models
+namespace ByAeroBeHero.Models
 {
     //http://rachel53461.wordpress.com/2011/05/08/simplemvvmexample/
 

@@ -5,7 +5,7 @@ using System.Text;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public struct utmpos
     {

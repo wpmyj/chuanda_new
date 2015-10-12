@@ -11,11 +11,11 @@ using System.Threading;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using SharpKml.Base;
 using SharpKml.Dom;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     class httpserver
     {

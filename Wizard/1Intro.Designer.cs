@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _1Intro
     {
@@ -39,12 +39,12 @@ namespace MissionPlanner.Wizard
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxheli = new MissionPlanner.Controls.PictureBoxMouseOver();
+            this.pictureBoxheli = new ByAeroBeHero.Controls.PictureBoxMouseOver();
             this.pictureBoxselectvehicle = new System.Windows.Forms.PictureBox();
-            this.pictureBoxquad = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxrover = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxplane = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.pictureBoxquad = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxrover = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxplane = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxwizard)).BeginInit();
             this.panel2.SuspendLayout();
@@ -79,7 +79,7 @@ namespace MissionPlanner.Wizard
             // pictureBoxwizard
             // 
             resources.ApplyResources(this.pictureBoxwizard, "pictureBoxwizard");
-            this.pictureBoxwizard.Image = global::MissionPlanner.Properties.Resources.wizardicon1;
+            this.pictureBoxwizard.Image = global::ByAeroBeHero.Properties.Resources.wizardicon1;
             this.pictureBoxwizard.Name = "pictureBoxwizard";
             this.pictureBoxwizard.TabStop = false;
             // 
@@ -122,9 +122,9 @@ namespace MissionPlanner.Wizard
             // pictureBoxheli
             // 
             resources.ApplyResources(this.pictureBoxheli, "pictureBoxheli");
-            this.pictureBoxheli.Image = global::MissionPlanner.Properties.Resources.light_06;
-            this.pictureBoxheli.ImageNormal = global::MissionPlanner.Properties.Resources.light_06;
-            this.pictureBoxheli.ImageOver = global::MissionPlanner.Properties.Resources._01_06;
+            this.pictureBoxheli.Image = global::ByAeroBeHero.Properties.Resources.light_06;
+            this.pictureBoxheli.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_06;
+            this.pictureBoxheli.ImageOver = global::ByAeroBeHero.Properties.Resources._01_06;
             this.pictureBoxheli.Name = "pictureBoxheli";
             this.pictureBoxheli.selected = false;
             this.pictureBoxheli.TabStop = false;
@@ -134,16 +134,16 @@ namespace MissionPlanner.Wizard
             // pictureBoxselectvehicle
             // 
             resources.ApplyResources(this.pictureBoxselectvehicle, "pictureBoxselectvehicle");
-            this.pictureBoxselectvehicle.Image = global::MissionPlanner.Properties.Resources.selectvehicle;
+            this.pictureBoxselectvehicle.Image = global::ByAeroBeHero.Properties.Resources.selectvehicle;
             this.pictureBoxselectvehicle.Name = "pictureBoxselectvehicle";
             this.pictureBoxselectvehicle.TabStop = false;
             // 
             // pictureBoxquad
             // 
             resources.ApplyResources(this.pictureBoxquad, "pictureBoxquad");
-            this.pictureBoxquad.Image = global::MissionPlanner.Properties.Resources.light_05;
-            this.pictureBoxquad.ImageNormal = global::MissionPlanner.Properties.Resources.light_05;
-            this.pictureBoxquad.ImageOver = global::MissionPlanner.Properties.Resources._01_05;
+            this.pictureBoxquad.Image = global::ByAeroBeHero.Properties.Resources.light_05;
+            this.pictureBoxquad.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_05;
+            this.pictureBoxquad.ImageOver = global::ByAeroBeHero.Properties.Resources._01_05;
             this.pictureBoxquad.Name = "pictureBoxquad";
             this.pictureBoxquad.selected = false;
             this.pictureBoxquad.TabStop = false;
@@ -153,9 +153,9 @@ namespace MissionPlanner.Wizard
             // pictureBoxrover
             // 
             resources.ApplyResources(this.pictureBoxrover, "pictureBoxrover");
-            this.pictureBoxrover.Image = global::MissionPlanner.Properties.Resources.light_03;
-            this.pictureBoxrover.ImageNormal = global::MissionPlanner.Properties.Resources.light_03;
-            this.pictureBoxrover.ImageOver = global::MissionPlanner.Properties.Resources._01_03;
+            this.pictureBoxrover.Image = global::ByAeroBeHero.Properties.Resources.light_03;
+            this.pictureBoxrover.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_03;
+            this.pictureBoxrover.ImageOver = global::ByAeroBeHero.Properties.Resources._01_03;
             this.pictureBoxrover.Name = "pictureBoxrover";
             this.pictureBoxrover.selected = false;
             this.pictureBoxrover.TabStop = false;
@@ -165,9 +165,9 @@ namespace MissionPlanner.Wizard
             // pictureBoxplane
             // 
             resources.ApplyResources(this.pictureBoxplane, "pictureBoxplane");
-            this.pictureBoxplane.Image = global::MissionPlanner.Properties.Resources.light_01;
-            this.pictureBoxplane.ImageNormal = global::MissionPlanner.Properties.Resources.light_01;
-            this.pictureBoxplane.ImageOver = global::MissionPlanner.Properties.Resources._01_01;
+            this.pictureBoxplane.Image = global::ByAeroBeHero.Properties.Resources.light_01;
+            this.pictureBoxplane.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_01;
+            this.pictureBoxplane.ImageOver = global::ByAeroBeHero.Properties.Resources._01_01;
             this.pictureBoxplane.Name = "pictureBoxplane";
             this.pictureBoxplane.selected = false;
             this.pictureBoxplane.TabStop = false;
@@ -189,7 +189,7 @@ namespace MissionPlanner.Wizard
             this.radialGradientBG1.Image.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("radialGradientBG1.Image.BackgroundImageLayout")));
             this.radialGradientBG1.Image.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("radialGradientBG1.Image.Dock")));
             this.radialGradientBG1.Image.Font = ((System.Drawing.Font)(resources.GetObject("radialGradientBG1.Image.Font")));
-            this.radialGradientBG1.Image.Image = global::MissionPlanner.Properties.Resources.missionplannerlogodark;
+            this.radialGradientBG1.Image.Image = global::ByAeroBeHero.Properties.Resources.missionplannerlogodark;
             this.radialGradientBG1.Image.ImageLocation = resources.GetString("radialGradientBG1.Image.ImageLocation");
             this.radialGradientBG1.Image.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("radialGradientBG1.Image.ImeMode")));
             this.radialGradientBG1.Image.Location = ((System.Drawing.Point)(resources.GetObject("radialGradientBG1.Image.Location")));
@@ -233,7 +233,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

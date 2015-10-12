@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class MAVState : MAVLink
     {

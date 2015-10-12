@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public partial class LogIndex : Form
     {

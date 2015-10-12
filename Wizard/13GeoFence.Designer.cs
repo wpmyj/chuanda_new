@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _13GeoFence
     {
@@ -31,10 +31,10 @@ namespace MissionPlanner.Wizard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_13GeoFence));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.configAC_Fence1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigAC_Fence();
+            this.configAC_Fence1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigAC_Fence();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radialGradientBG1.Image)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +125,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;

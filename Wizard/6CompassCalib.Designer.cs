@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
-using MissionPlanner;
+using ByAeroBeHero;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _6CompassCalib
     {
@@ -34,18 +34,18 @@ namespace MissionPlanner.Wizard
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_6CompassCalib));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BUT_MagCalibrationLive = new MissionPlanner.Controls.MyButton();
+            this.BUT_MagCalibrationLive = new ByAeroBeHero.Controls.MyButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.BUT_compassorient = new MissionPlanner.Controls.MyButton();
-            this.pictureBoxMouseOver3 = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxMouseOver2 = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxMouseOver1 = new MissionPlanner.Controls.PictureBoxMouseOver();
+            this.BUT_compassorient = new ByAeroBeHero.Controls.MyButton();
+            this.pictureBoxMouseOver3 = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOver2 = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOver1 = new ByAeroBeHero.Controls.PictureBoxMouseOver();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -184,9 +184,9 @@ namespace MissionPlanner.Wizard
             // pictureBoxMouseOver3
             // 
             resources.ApplyResources(this.pictureBoxMouseOver3, "pictureBoxMouseOver3");
-            this.pictureBoxMouseOver3.Image = global::MissionPlanner.Properties.Resources.apmp2;
-            this.pictureBoxMouseOver3.ImageNormal = global::MissionPlanner.Properties.Resources.apmp2;
-            this.pictureBoxMouseOver3.ImageOver = global::MissionPlanner.Properties.Resources.apmp2;
+            this.pictureBoxMouseOver3.Image = global::ByAeroBeHero.Properties.Resources.apmp2;
+            this.pictureBoxMouseOver3.ImageNormal = global::ByAeroBeHero.Properties.Resources.apmp2;
+            this.pictureBoxMouseOver3.ImageOver = global::ByAeroBeHero.Properties.Resources.apmp2;
             this.pictureBoxMouseOver3.Name = "pictureBoxMouseOver3";
             this.pictureBoxMouseOver3.selected = false;
             this.pictureBoxMouseOver3.TabStop = false;
@@ -196,9 +196,9 @@ namespace MissionPlanner.Wizard
             // pictureBoxMouseOver2
             // 
             resources.ApplyResources(this.pictureBoxMouseOver2, "pictureBoxMouseOver2");
-            this.pictureBoxMouseOver2.Image = global::MissionPlanner.Properties.Resources.px4;
-            this.pictureBoxMouseOver2.ImageNormal = global::MissionPlanner.Properties.Resources.px4;
-            this.pictureBoxMouseOver2.ImageOver = global::MissionPlanner.Properties.Resources.px4;
+            this.pictureBoxMouseOver2.Image = global::ByAeroBeHero.Properties.Resources.px4;
+            this.pictureBoxMouseOver2.ImageNormal = global::ByAeroBeHero.Properties.Resources.px4;
+            this.pictureBoxMouseOver2.ImageOver = global::ByAeroBeHero.Properties.Resources.px4;
             this.pictureBoxMouseOver2.Name = "pictureBoxMouseOver2";
             this.pictureBoxMouseOver2.selected = false;
             this.pictureBoxMouseOver2.TabStop = false;
@@ -208,9 +208,9 @@ namespace MissionPlanner.Wizard
             // pictureBoxMouseOver1
             // 
             resources.ApplyResources(this.pictureBoxMouseOver1, "pictureBoxMouseOver1");
-            this.pictureBoxMouseOver1.Image = global::MissionPlanner.Properties.Resources.maggps;
-            this.pictureBoxMouseOver1.ImageNormal = global::MissionPlanner.Properties.Resources.maggps;
-            this.pictureBoxMouseOver1.ImageOver = global::MissionPlanner.Properties.Resources.maggps;
+            this.pictureBoxMouseOver1.Image = global::ByAeroBeHero.Properties.Resources.maggps;
+            this.pictureBoxMouseOver1.ImageNormal = global::ByAeroBeHero.Properties.Resources.maggps;
+            this.pictureBoxMouseOver1.ImageOver = global::ByAeroBeHero.Properties.Resources.maggps;
             this.pictureBoxMouseOver1.Name = "pictureBoxMouseOver1";
             this.pictureBoxMouseOver1.selected = false;
             this.pictureBoxMouseOver1.TabStop = false;
@@ -236,7 +236,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);

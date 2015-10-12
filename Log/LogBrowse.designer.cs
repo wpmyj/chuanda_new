@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Log
+﻿namespace ByAeroBeHero.Log
 {
     partial class LogBrowse
     {
@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogBrowse));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BUT_Graphit = new MissionPlanner.Controls.MyButton();
-            this.BUT_cleargraph = new MissionPlanner.Controls.MyButton();
-            this.BUT_loadlog = new MissionPlanner.Controls.MyButton();
+            this.BUT_Graphit = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_cleargraph = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_loadlog = new ByAeroBeHero.Controls.MyButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
-            this.myGMAP1 = new MissionPlanner.Controls.myGMAP();
+            this.myGMAP1 = new ByAeroBeHero.Controls.myGMAP();
             this.chk_time = new System.Windows.Forms.CheckBox();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.CMB_preselect = new System.Windows.Forms.ComboBox();
-            this.BUT_removeitem = new MissionPlanner.Controls.MyButton();
+            this.BUT_removeitem = new ByAeroBeHero.Controls.MyButton();
             this.CHK_map = new System.Windows.Forms.CheckBox();
-            this.BUT_Graphit_R = new MissionPlanner.Controls.MyButton();
+            this.BUT_Graphit_R = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();

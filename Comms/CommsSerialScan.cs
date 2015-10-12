@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     public class CommsSerialScan
     {

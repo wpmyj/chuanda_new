@@ -2,10 +2,10 @@
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using Timer = System.Windows.Forms.Timer;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigRadioInput : UserControl, IActivate, IDeactivate
     {

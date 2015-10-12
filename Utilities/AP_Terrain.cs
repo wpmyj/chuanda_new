@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using int32_t = System.Int32;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     class AP_Terrain : HIL.Utils
     {

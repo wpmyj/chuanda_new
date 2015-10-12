@@ -1,6 +1,6 @@
-﻿using MissionPlanner.Controls;
+﻿using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigFrameType
     {
@@ -33,28 +33,28 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigFrameType));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxPlus = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxX = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxPlus = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxX = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.label6 = new System.Windows.Forms.Label();
             this.radioButton_V = new System.Windows.Forms.RadioButton();
-            this.pictureBoxV = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxV = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton_H = new System.Windows.Forms.RadioButton();
-            this.pictureBoxH = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxH = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.radioButton_Y = new System.Windows.Forms.RadioButton();
-            this.pictureBoxY = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxY = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton_VTail = new System.Windows.Forms.RadioButton();
-            this.pictureBoxVTail = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxWithPseudoOpacity1 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxWithPseudoOpacity2 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxWithPseudoOpacity3 = new MissionPlanner.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxVTail = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity1 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity2 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity3 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.btnSetData = new System.Windows.Forms.Button();
-            this.configDefaultSettings1 = new MissionPlanner.Controls.DefaultSettings();
+            this.configDefaultSettings1 = new ByAeroBeHero.Controls.DefaultSettings();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -83,7 +83,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxPlus
             // 
             this.pictureBoxPlus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxPlus.Image = global::MissionPlanner.Properties.Resources.frames_plus;
+            this.pictureBoxPlus.Image = global::ByAeroBeHero.Properties.Resources.frames_plus;
             resources.ApplyResources(this.pictureBoxPlus, "pictureBoxPlus");
             this.pictureBoxPlus.Name = "pictureBoxPlus";
             this.pictureBoxPlus.TabStop = false;
@@ -92,7 +92,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxX
             // 
             this.pictureBoxX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxX.Image = global::MissionPlanner.Properties.Resources.frames_x;
+            this.pictureBoxX.Image = global::ByAeroBeHero.Properties.Resources.frames_x;
             resources.ApplyResources(this.pictureBoxX, "pictureBoxX");
             this.pictureBoxX.Name = "pictureBoxX";
             this.pictureBoxX.TabStop = false;
@@ -114,7 +114,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxV
             // 
             this.pictureBoxV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxV.Image = global::MissionPlanner.Properties.Resources.new_3DR_04;
+            this.pictureBoxV.Image = global::ByAeroBeHero.Properties.Resources.new_3DR_04;
             resources.ApplyResources(this.pictureBoxV, "pictureBoxV");
             this.pictureBoxV.Name = "pictureBoxV";
             this.pictureBoxV.TabStop = false;
@@ -136,7 +136,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxH
             // 
             this.pictureBoxH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxH.Image = global::MissionPlanner.Properties.Resources.frames_h;
+            this.pictureBoxH.Image = global::ByAeroBeHero.Properties.Resources.frames_h;
             resources.ApplyResources(this.pictureBoxH, "pictureBoxH");
             this.pictureBoxH.Name = "pictureBoxH";
             this.pictureBoxH.TabStop = false;
@@ -163,7 +163,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxY
             // 
             this.pictureBoxY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxY.Image = global::MissionPlanner.Properties.Resources.y6b;
+            this.pictureBoxY.Image = global::ByAeroBeHero.Properties.Resources.y6b;
             resources.ApplyResources(this.pictureBoxY, "pictureBoxY");
             this.pictureBoxY.Name = "pictureBoxY";
             this.pictureBoxY.TabStop = false;
@@ -231,7 +231,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxWithPseudoOpacity1
             // 
             this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity1.Image = global::MissionPlanner.Properties.Resources.quadhover_06;
+            this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.quadhover_06;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
             this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
             this.pictureBoxWithPseudoOpacity1.TabStop = false;
@@ -239,7 +239,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxWithPseudoOpacity2
             // 
             this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity2.Image = global::MissionPlanner.Properties.Resources.quadhover_03;
+            this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.quadhover_03;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
             this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
             this.pictureBoxWithPseudoOpacity2.TabStop = false;
@@ -247,7 +247,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxWithPseudoOpacity3
             // 
             this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity3.Image = global::MissionPlanner.Properties.Resources.quadhover_12;
+            this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.quadhover_12;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
             this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
             this.pictureBoxWithPseudoOpacity3.TabStop = false;

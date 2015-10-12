@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews.ConfigurationView
+﻿namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigAteryxSensors
     {
@@ -121,7 +121,7 @@
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // timer1
             // 

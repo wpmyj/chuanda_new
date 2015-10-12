@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews.ConfigurationView
+﻿namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigRawParamsTree
     {
@@ -39,14 +39,14 @@
             this.olvColumn3 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumn4 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumn5 = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.BUT_compare = new MissionPlanner.Controls.MyButton();
-            this.BUT_rerequestparams = new MissionPlanner.Controls.MyButton();
-            this.BUT_writePIDS = new MissionPlanner.Controls.MyButton();
-            this.BUT_save = new MissionPlanner.Controls.MyButton();
-            this.BUT_load = new MissionPlanner.Controls.MyButton();
-            this.BUT_find = new MissionPlanner.Controls.MyButton();
-            this.BUT_paramfileload = new MissionPlanner.Controls.MyButton();
-            this.BUT_reset_params = new MissionPlanner.Controls.MyButton();
+            this.BUT_compare = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_rerequestparams = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_save = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_load = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_find = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_paramfileload = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_reset_params = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.Params)).BeginInit();
             this.SuspendLayout();
             // 

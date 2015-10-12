@@ -6,9 +6,9 @@ using log4net;
 using System.IO.Ports;
 using System.IO;
 using System;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     public class UdpSerial : CommsBase, ICommsSerial, IDisposable
     {

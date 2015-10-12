@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews.ConfigurationView
+﻿namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigHWCompass
     {
@@ -50,10 +50,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.imageLabel1 = new MissionPlanner.Controls.ImageLabel();
-            this.BUT_MagCalibrationLive = new MissionPlanner.Controls.MyButton();
-            this.CMB_compass_orient = new MissionPlanner.Controls.MavlinkComboBox();
-            this.CHK_enablecompass = new MissionPlanner.Controls.MavlinkCheckBox();
+            this.imageLabel1 = new ByAeroBeHero.Controls.ImageLabel();
+            this.BUT_MagCalibrationLive = new ByAeroBeHero.Controls.MyButton();
+            this.CMB_compass_orient = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.CHK_enablecompass = new ByAeroBeHero.Controls.MavlinkCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -82,7 +82,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::MissionPlanner.Properties.Resources.compass;
+            this.pictureBox1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.compass;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Name = "pictureBox1";
@@ -122,7 +122,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::MissionPlanner.Properties.Resources.apmp2;
+            this.pictureBox2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.apmp2;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Name = "pictureBox2";
@@ -153,7 +153,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::MissionPlanner.Properties.Resources.pixhawk;
+            this.pictureBox4.BackgroundImage = global::ByAeroBeHero.Properties.Resources.pixhawk;
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Name = "pictureBox4";
@@ -175,7 +175,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::MissionPlanner.Properties.Resources.maggps;
+            this.pictureBox3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.maggps;
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Name = "pictureBox3";

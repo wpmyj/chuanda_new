@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using System.Collections;
 using log4net;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class DefaultSettings : UserControl, IActivate
     {

@@ -139,7 +139,7 @@
     <value>pictureBoxAPM</value>
   </data>
   <data name="&gt;&gt;pictureBoxAPM.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxAPM.Parent" xml:space="preserve">
     <value>$this</value>
@@ -163,7 +163,7 @@
     <value>pictureBoxQuad</value>
   </data>
   <data name="&gt;&gt;pictureBoxQuad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxQuad.Parent" xml:space="preserve">
     <value>$this</value>
@@ -187,7 +187,7 @@
     <value>pictureBoxHexa</value>
   </data>
   <data name="&gt;&gt;pictureBoxHexa.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxHexa.Parent" xml:space="preserve">
     <value>$this</value>
@@ -211,7 +211,7 @@
     <value>pictureBoxTri</value>
   </data>
   <data name="&gt;&gt;pictureBoxTri.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxTri.Parent" xml:space="preserve">
     <value>$this</value>
@@ -235,7 +235,7 @@
     <value>pictureBoxY6</value>
   </data>
   <data name="&gt;&gt;pictureBoxY6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxY6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -343,7 +343,7 @@
     <value>pictureBoxHeli</value>
   </data>
   <data name="&gt;&gt;pictureBoxHeli.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxHeli.Parent" xml:space="preserve">
     <value>$this</value>
@@ -472,7 +472,7 @@
     <value>pictureBoxOcta</value>
   </data>
   <data name="&gt;&gt;pictureBoxOcta.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxOcta.Parent" xml:space="preserve">
     <value>$this</value>
@@ -493,7 +493,7 @@
     <value>pictureBoxOctaQuad</value>
   </data>
   <data name="&gt;&gt;pictureBoxOctaQuad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxOctaQuad.Parent" xml:space="preserve">
     <value>$this</value>
@@ -517,7 +517,7 @@
     <value>pictureBoxRover</value>
   </data>
   <data name="&gt;&gt;pictureBoxRover.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxRover.Parent" xml:space="preserve">
     <value>$this</value>
@@ -742,7 +742,7 @@
     <value>pictureAntennaTracker</value>
   </data>
   <data name="&gt;&gt;pictureAntennaTracker.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ImageLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureAntennaTracker.Parent" xml:space="preserve">
     <value>$this</value>
@@ -820,6 +820,6 @@
     <value>ConfigFirmware</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

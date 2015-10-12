@@ -7,13 +7,13 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Comms;
-using MissionPlanner.Controls;
-using MissionPlanner.Log;
-using MissionPlanner.Utilities;
-using SerialPort = MissionPlanner.Comms.SerialPort;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Log;
+using ByAeroBeHero.Utilities;
+using SerialPort = ByAeroBeHero.Comms.SerialPort;
 
-namespace MissionPlanner.GCSViews
+namespace ByAeroBeHero.GCSViews
 {
     public partial class Terminal : MyUserControl, IActivate, IDeactivate
     {

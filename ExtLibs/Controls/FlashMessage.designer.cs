@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     partial class FlashMessage
     {

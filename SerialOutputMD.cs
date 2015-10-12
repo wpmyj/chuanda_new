@@ -6,10 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Comms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class SerialOutputMD : Form
     {
@@ -29,7 +29,7 @@ namespace MissionPlanner
                 BUT_connect.Text = Strings.Stop;
             }
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void BUT_connect_Click(object sender, EventArgs e)

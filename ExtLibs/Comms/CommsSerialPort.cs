@@ -11,7 +11,7 @@ using Microsoft.Win32.SafeHandles;
 using System.Threading;
 using log4net;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
 
     public class SerialPort : System.IO.Ports.SerialPort, ICommsSerial

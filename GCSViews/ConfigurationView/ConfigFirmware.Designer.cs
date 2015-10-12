@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 using System.Xml;
 using System.Net;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigFirmware : MyUserControl
     {
@@ -56,22 +56,22 @@ namespace MissionPlanner.GCSViews.ConfigurationView
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigFirmware));
-            this.pictureBoxAPM = new MissionPlanner.Controls.ImageLabel();
-            this.pictureBoxQuad = new MissionPlanner.Controls.ImageLabel();
-            this.pictureBoxHexa = new MissionPlanner.Controls.ImageLabel();
-            this.pictureBoxTri = new MissionPlanner.Controls.ImageLabel();
-            this.pictureBoxY6 = new MissionPlanner.Controls.ImageLabel();
+            this.pictureBoxAPM = new ByAeroBeHero.Controls.ImageLabel();
+            this.pictureBoxQuad = new ByAeroBeHero.Controls.ImageLabel();
+            this.pictureBoxHexa = new ByAeroBeHero.Controls.ImageLabel();
+            this.pictureBoxTri = new ByAeroBeHero.Controls.ImageLabel();
+            this.pictureBoxY6 = new ByAeroBeHero.Controls.ImageLabel();
             this.lbl_status = new System.Windows.Forms.Label();
             this.progress = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBoxHeli = new MissionPlanner.Controls.ImageLabel();
+            this.pictureBoxHeli = new ByAeroBeHero.Controls.ImageLabel();
             this.pictureBoxHilimage = new System.Windows.Forms.PictureBox();
             this.pictureBoxAPHil = new System.Windows.Forms.PictureBox();
             this.pictureBoxACHil = new System.Windows.Forms.PictureBox();
             this.pictureBoxACHHil = new System.Windows.Forms.PictureBox();
-            this.pictureBoxOcta = new MissionPlanner.Controls.ImageLabel();
-            this.pictureBoxOctaQuad = new MissionPlanner.Controls.ImageLabel();
-            this.pictureBoxRover = new MissionPlanner.Controls.ImageLabel();
+            this.pictureBoxOcta = new ByAeroBeHero.Controls.ImageLabel();
+            this.pictureBoxOctaQuad = new ByAeroBeHero.Controls.ImageLabel();
+            this.pictureBoxRover = new ByAeroBeHero.Controls.ImageLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.CMB_history = new System.Windows.Forms.ComboBox();
             this.CMB_history_label = new System.Windows.Forms.Label();
@@ -79,7 +79,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.lbl_devfw = new System.Windows.Forms.Label();
             this.lbl_dlfw = new System.Windows.Forms.Label();
             this.lbl_px4bl = new System.Windows.Forms.Label();
-            this.pictureAntennaTracker = new MissionPlanner.Controls.ImageLabel();
+            this.pictureAntennaTracker = new ByAeroBeHero.Controls.ImageLabel();
             this.lbl_licence = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHilimage)).BeginInit();
@@ -91,7 +91,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxAPM
             // 
             this.pictureBoxAPM.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxAPM.Image = global::MissionPlanner.Properties.Resources.APM_airframes_001;
+            this.pictureBoxAPM.Image = global::ByAeroBeHero.Properties.Resources.APM_airframes_001;
             resources.ApplyResources(this.pictureBoxAPM, "pictureBoxAPM");
             this.pictureBoxAPM.Name = "pictureBoxAPM";
             this.pictureBoxAPM.TabStop = false;
@@ -101,7 +101,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxQuad
             // 
             this.pictureBoxQuad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxQuad.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_04;
+            this.pictureBoxQuad.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_04;
             resources.ApplyResources(this.pictureBoxQuad, "pictureBoxQuad");
             this.pictureBoxQuad.Name = "pictureBoxQuad";
             this.pictureBoxQuad.TabStop = false;
@@ -111,7 +111,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxHexa
             // 
             this.pictureBoxHexa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxHexa.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_10;
+            this.pictureBoxHexa.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_10;
             resources.ApplyResources(this.pictureBoxHexa, "pictureBoxHexa");
             this.pictureBoxHexa.Name = "pictureBoxHexa";
             this.pictureBoxHexa.TabStop = false;
@@ -121,7 +121,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxTri
             // 
             this.pictureBoxTri.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxTri.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_08;
+            this.pictureBoxTri.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_08;
             resources.ApplyResources(this.pictureBoxTri, "pictureBoxTri");
             this.pictureBoxTri.Name = "pictureBoxTri";
             this.pictureBoxTri.TabStop = false;
@@ -131,7 +131,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxY6
             // 
             this.pictureBoxY6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxY6.Image = global::MissionPlanner.Properties.Resources.y6a;
+            this.pictureBoxY6.Image = global::ByAeroBeHero.Properties.Resources.y6a;
             resources.ApplyResources(this.pictureBoxY6, "pictureBoxY6");
             this.pictureBoxY6.Name = "pictureBoxY6";
             this.pictureBoxY6.TabStop = false;
@@ -157,7 +157,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxHeli
             // 
             this.pictureBoxHeli.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxHeli.Image = global::MissionPlanner.Properties.Resources.APM_airframes_08;
+            this.pictureBoxHeli.Image = global::ByAeroBeHero.Properties.Resources.APM_airframes_08;
             resources.ApplyResources(this.pictureBoxHeli, "pictureBoxHeli");
             this.pictureBoxHeli.Name = "pictureBoxHeli";
             this.pictureBoxHeli.TabStop = false;
@@ -166,7 +166,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxHilimage
             // 
-            this.pictureBoxHilimage.Image = global::MissionPlanner.Properties.Resources.hil;
+            this.pictureBoxHilimage.Image = global::ByAeroBeHero.Properties.Resources.hil;
             resources.ApplyResources(this.pictureBoxHilimage, "pictureBoxHilimage");
             this.pictureBoxHilimage.Name = "pictureBoxHilimage";
             this.pictureBoxHilimage.TabStop = false;
@@ -175,7 +175,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxAPHil
             // 
             this.pictureBoxAPHil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxAPHil.Image = global::MissionPlanner.Properties.Resources.hilplane;
+            this.pictureBoxAPHil.Image = global::ByAeroBeHero.Properties.Resources.hilplane;
             resources.ApplyResources(this.pictureBoxAPHil, "pictureBoxAPHil");
             this.pictureBoxAPHil.Name = "pictureBoxAPHil";
             this.pictureBoxAPHil.TabStop = false;
@@ -185,7 +185,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxACHil
             // 
             this.pictureBoxACHil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxACHil.Image = global::MissionPlanner.Properties.Resources.hilquad;
+            this.pictureBoxACHil.Image = global::ByAeroBeHero.Properties.Resources.hilquad;
             resources.ApplyResources(this.pictureBoxACHil, "pictureBoxACHil");
             this.pictureBoxACHil.Name = "pictureBoxACHil";
             this.pictureBoxACHil.TabStop = false;
@@ -195,7 +195,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxACHHil
             // 
             this.pictureBoxACHHil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxACHHil.Image = global::MissionPlanner.Properties.Resources.hilheli;
+            this.pictureBoxACHHil.Image = global::ByAeroBeHero.Properties.Resources.hilheli;
             resources.ApplyResources(this.pictureBoxACHHil, "pictureBoxACHHil");
             this.pictureBoxACHHil.Name = "pictureBoxACHHil";
             this.pictureBoxACHHil.TabStop = false;
@@ -204,7 +204,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxOcta
             // 
-            this.pictureBoxOcta.Image = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_12;
+            this.pictureBoxOcta.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_12;
             resources.ApplyResources(this.pictureBoxOcta, "pictureBoxOcta");
             this.pictureBoxOcta.Name = "pictureBoxOcta";
             this.pictureBoxOcta.TabStop = false;
@@ -213,7 +213,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBoxOctaQuad
             // 
-            this.pictureBoxOctaQuad.Image = global::MissionPlanner.Properties.Resources.x8;
+            this.pictureBoxOctaQuad.Image = global::ByAeroBeHero.Properties.Resources.x8;
             resources.ApplyResources(this.pictureBoxOctaQuad, "pictureBoxOctaQuad");
             this.pictureBoxOctaQuad.Name = "pictureBoxOctaQuad";
             this.pictureBoxOctaQuad.TabStop = false;
@@ -223,7 +223,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureBoxRover
             // 
             this.pictureBoxRover.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxRover.Image = global::MissionPlanner.Properties.Resources.rover_11;
+            this.pictureBoxRover.Image = global::ByAeroBeHero.Properties.Resources.rover_11;
             resources.ApplyResources(this.pictureBoxRover, "pictureBoxRover");
             this.pictureBoxRover.Name = "pictureBoxRover";
             this.pictureBoxRover.TabStop = false;
@@ -282,7 +282,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // pictureAntennaTracker
             // 
             this.pictureAntennaTracker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureAntennaTracker.Image = global::MissionPlanner.Properties.Resources.Antenna_Tracker_01;
+            this.pictureAntennaTracker.Image = global::ByAeroBeHero.Properties.Resources.Antenna_Tracker_01;
             resources.ApplyResources(this.pictureAntennaTracker, "pictureAntennaTracker");
             this.pictureAntennaTracker.Name = "pictureAntennaTracker";
             this.pictureAntennaTracker.TabStop = false;

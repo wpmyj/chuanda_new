@@ -431,7 +431,7 @@ ConfigHWBT: add a Bluetooth module picture
 Multiple: update zh-Hans translation
 MagCalib: add zh-Hans translation
 GMap: fix GoogleChinaSatelliteMap
-RawParamsTree: fix diydrones/MissionPlanner#769
+RawParamsTree: fix diydrones/ByAeroBeHero#769
 3drradio: update mavlinkserialport #785
 mavlinklog: fix remove from graph #790
 ExtGuided: new test plugin

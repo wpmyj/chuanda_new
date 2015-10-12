@@ -2,10 +2,10 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.HIL;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.HIL;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigMotorTest : UserControl, IActivate
     {

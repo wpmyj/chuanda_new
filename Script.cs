@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using IronPython.Hosting;
 using System.IO;
-using MissionPlanner;
+using ByAeroBeHero;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class Script
     {

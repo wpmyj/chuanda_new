@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using MissionPlanner.Controls.BackstageView;
+using ByAeroBeHero.Controls.BackstageView;
 
-namespace MissionPlanner.Controls.BackstageView
+namespace ByAeroBeHero.Controls.BackstageView
 {
     /// <summary>
     /// A Control to somewhat emulate the 'backstage view' as in MS Office 2010
@@ -455,7 +455,7 @@ namespace MissionPlanner.Controls.BackstageView
                 return;
             }
 
-            MissionPlanner.Utilities.Tracking.AddPage(associatedPage.Page.GetType().ToString(), associatedPage.LinkText);
+            ByAeroBeHero.Utilities.Tracking.AddPage(associatedPage.Page.GetType().ToString(), associatedPage.LinkText);
 
             this.SuspendLayout();
             associatedPage.Page.SuspendLayout();

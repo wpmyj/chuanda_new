@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Properties;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Properties;
 using System.Drawing;
 
-namespace MissionPlanner.GCSViews
+namespace ByAeroBeHero.GCSViews
 {
     public partial class Help : MyUserControl, IActivate
     {
@@ -18,7 +18,7 @@ namespace MissionPlanner.GCSViews
         private void InitControl() 
         {
             this.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
-            this.BackgroundImage = MissionPlanner.Properties.Resources.Teal;
+            this.BackgroundImage = ByAeroBeHero.Properties.Resources.Teal;
             this.ForeColor = System.Drawing.Color.Black;
 
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
@@ -53,7 +53,7 @@ namespace MissionPlanner.GCSViews
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://firmware.diydrones.com/Tools/MissionPlanner/upgrade/ChangeLog.txt");
+            Process.Start("http://firmware.diydrones.com/Tools/ByAeroBeHero/upgrade/ChangeLog.txt");
         }
 
         private void PIC_wizard_Click(object sender, EventArgs e)

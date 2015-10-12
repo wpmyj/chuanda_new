@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using MissionPlanner.Attributes;
+using ByAeroBeHero.Attributes;
 
 #endregion
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
    public static class EnumTranslator
    {

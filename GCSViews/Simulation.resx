@@ -261,7 +261,7 @@
     <value>ConnectComPort</value>
   </data>
   <data name="&gt;&gt;ConnectComPort.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ConnectComPort.Parent" xml:space="preserve">
     <value>panel5</value>
@@ -309,7 +309,7 @@
     <value>TXT_roll</value>
   </data>
   <data name="&gt;&gt;TXT_roll.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_roll.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -330,7 +330,7 @@
     <value>TXT_pitch</value>
   </data>
   <data name="&gt;&gt;TXT_pitch.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_pitch.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -351,7 +351,7 @@
     <value>TXT_heading</value>
   </data>
   <data name="&gt;&gt;TXT_heading.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_heading.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -372,7 +372,7 @@
     <value>TXT_wpdist</value>
   </data>
   <data name="&gt;&gt;TXT_wpdist.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_wpdist.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -393,7 +393,7 @@
     <value>TXT_bererror</value>
   </data>
   <data name="&gt;&gt;TXT_bererror.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_bererror.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -414,7 +414,7 @@
     <value>TXT_alterror</value>
   </data>
   <data name="&gt;&gt;TXT_alterror.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_alterror.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -435,7 +435,7 @@
     <value>TXT_lat</value>
   </data>
   <data name="&gt;&gt;TXT_lat.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_lat.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -456,7 +456,7 @@
     <value>TXT_long</value>
   </data>
   <data name="&gt;&gt;TXT_long.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_long.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -477,7 +477,7 @@
     <value>TXT_alt</value>
   </data>
   <data name="&gt;&gt;TXT_alt.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_alt.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -501,7 +501,7 @@
     <value>SaveSettings</value>
   </data>
   <data name="&gt;&gt;SaveSettings.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SaveSettings.Parent" xml:space="preserve">
     <value>$this</value>
@@ -585,7 +585,7 @@
     <value>TXT_servoroll</value>
   </data>
   <data name="&gt;&gt;TXT_servoroll.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_servoroll.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -606,7 +606,7 @@
     <value>TXT_servopitch</value>
   </data>
   <data name="&gt;&gt;TXT_servopitch.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_servopitch.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -627,7 +627,7 @@
     <value>TXT_servorudder</value>
   </data>
   <data name="&gt;&gt;TXT_servorudder.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_servorudder.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -648,7 +648,7 @@
     <value>TXT_servothrottle</value>
   </data>
   <data name="&gt;&gt;TXT_servothrottle.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_servothrottle.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -660,7 +660,7 @@
     <value>label4</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -672,7 +672,7 @@
     <value>label3</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -684,7 +684,7 @@
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -696,7 +696,7 @@
     <value>label1</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -741,7 +741,7 @@
     <value>label4</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -765,7 +765,7 @@
     <value>label3</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -789,7 +789,7 @@
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -813,7 +813,7 @@
     <value>label1</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -825,7 +825,7 @@
     <value>label30</value>
   </data>
   <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label30.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -837,7 +837,7 @@
     <value>TXT_yaw</value>
   </data>
   <data name="&gt;&gt;TXT_yaw.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_yaw.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -849,7 +849,7 @@
     <value>label11</value>
   </data>
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -861,7 +861,7 @@
     <value>label7</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -873,7 +873,7 @@
     <value>label6</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -885,7 +885,7 @@
     <value>label5</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -930,7 +930,7 @@
     <value>label30</value>
   </data>
   <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label30.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -951,7 +951,7 @@
     <value>TXT_yaw</value>
   </data>
   <data name="&gt;&gt;TXT_yaw.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_yaw.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -975,7 +975,7 @@
     <value>label11</value>
   </data>
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -999,7 +999,7 @@
     <value>label7</value>
   </data>
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1023,7 +1023,7 @@
     <value>label6</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1047,7 +1047,7 @@
     <value>label5</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1071,7 +1071,7 @@
     <value>label8</value>
   </data>
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1095,7 +1095,7 @@
     <value>label9</value>
   </data>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1119,7 +1119,7 @@
     <value>label10</value>
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1131,7 +1131,7 @@
     <value>label16</value>
   </data>
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label16.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1143,7 +1143,7 @@
     <value>label15</value>
   </data>
   <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1155,7 +1155,7 @@
     <value>label14</value>
   </data>
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1167,7 +1167,7 @@
     <value>label13</value>
   </data>
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1179,7 +1179,7 @@
     <value>label12</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1224,7 +1224,7 @@
     <value>label16</value>
   </data>
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label16.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1248,7 +1248,7 @@
     <value>label15</value>
   </data>
   <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1272,7 +1272,7 @@
     <value>label14</value>
   </data>
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1296,7 +1296,7 @@
     <value>label13</value>
   </data>
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1320,7 +1320,7 @@
     <value>label12</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label12.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -1332,7 +1332,7 @@
     <value>label20</value>
   </data>
   <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label20.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1344,7 +1344,7 @@
     <value>label19</value>
   </data>
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label19.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1356,7 +1356,7 @@
     <value>TXT_control_mode</value>
   </data>
   <data name="&gt;&gt;TXT_control_mode.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_control_mode.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1368,7 +1368,7 @@
     <value>TXT_WP</value>
   </data>
   <data name="&gt;&gt;TXT_WP.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_WP.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1380,7 +1380,7 @@
     <value>label18</value>
   </data>
   <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1425,7 +1425,7 @@
     <value>label20</value>
   </data>
   <data name="&gt;&gt;label20.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label20.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1449,7 +1449,7 @@
     <value>label19</value>
   </data>
   <data name="&gt;&gt;label19.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label19.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1470,7 +1470,7 @@
     <value>TXT_control_mode</value>
   </data>
   <data name="&gt;&gt;TXT_control_mode.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_control_mode.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1491,7 +1491,7 @@
     <value>TXT_WP</value>
   </data>
   <data name="&gt;&gt;TXT_WP.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TXT_WP.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1515,7 +1515,7 @@
     <value>label18</value>
   </data>
   <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -1539,7 +1539,7 @@
     <value>label17</value>
   </data>
   <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label17.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1600,7 +1600,7 @@
     <value>label28</value>
   </data>
   <data name="&gt;&gt;label28.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label28.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1612,7 +1612,7 @@
     <value>label29</value>
   </data>
   <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label29.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1624,7 +1624,7 @@
     <value>label27</value>
   </data>
   <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label27.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1636,7 +1636,7 @@
     <value>label25</value>
   </data>
   <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label25.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1660,7 +1660,7 @@
     <value>label24</value>
   </data>
   <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label24.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1672,7 +1672,7 @@
     <value>label23</value>
   </data>
   <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label23.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1684,7 +1684,7 @@
     <value>label22</value>
   </data>
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label22.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1696,7 +1696,7 @@
     <value>label21</value>
   </data>
   <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label21.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1777,7 +1777,7 @@
     <value>label28</value>
   </data>
   <data name="&gt;&gt;label28.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label28.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1801,7 +1801,7 @@
     <value>label29</value>
   </data>
   <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label29.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1825,7 +1825,7 @@
     <value>label27</value>
   </data>
   <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label27.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1849,7 +1849,7 @@
     <value>label25</value>
   </data>
   <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label25.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1897,7 +1897,7 @@
     <value>label24</value>
   </data>
   <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label24.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1921,7 +1921,7 @@
     <value>label23</value>
   </data>
   <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label23.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1945,7 +1945,7 @@
     <value>label22</value>
   </data>
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label22.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1969,7 +1969,7 @@
     <value>label21</value>
   </data>
   <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label21.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -2065,7 +2065,7 @@
     <value>label26</value>
   </data>
   <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyLabel, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label26.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2236,7 +2236,7 @@
     <value>but_advsettings</value>
   </data>
   <data name="&gt;&gt;but_advsettings.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;but_advsettings.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2263,7 +2263,7 @@
     <value>BUT_startxplane</value>
   </data>
   <data name="&gt;&gt;BUT_startxplane.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_startxplane.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2389,7 +2389,7 @@
     <value>BUT_sitl</value>
   </data>
   <data name="&gt;&gt;BUT_sitl.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_sitl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2422,6 +2422,6 @@
     <value>Simulation</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

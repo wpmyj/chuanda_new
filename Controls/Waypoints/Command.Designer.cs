@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls.Waypoints
+﻿namespace ByAeroBeHero.Controls.Waypoints
 {
     partial class Command
     {
@@ -37,9 +37,9 @@
             this.txt_param4 = new System.Windows.Forms.TextBox();
             this.txt_param3 = new System.Windows.Forms.TextBox();
             this.txt_param2 = new System.Windows.Forms.TextBox();
-            this.BUT_del = new MissionPlanner.Controls.MyButton();
-            this.BUT_UP = new MissionPlanner.Controls.MyButton();
-            this.BUT_DOWN = new MissionPlanner.Controls.MyButton();
+            this.BUT_del = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_UP = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_DOWN = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 

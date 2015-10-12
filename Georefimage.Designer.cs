@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     partial class Georefimage
     {
@@ -14,11 +14,11 @@ namespace MissionPlanner
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.TXT_outputlog = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.BUT_Geotagimages = new MissionPlanner.Controls.MyButton();
-            this.BUT_estoffset = new MissionPlanner.Controls.MyButton();
-            this.BUT_doit = new MissionPlanner.Controls.MyButton();
-            this.BUT_browsedir = new MissionPlanner.Controls.MyButton();
-            this.BUT_browselog = new MissionPlanner.Controls.MyButton();
+            this.BUT_Geotagimages = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_estoffset = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_doit = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_browsedir = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_browselog = new ByAeroBeHero.Controls.MyButton();
             this.NUM_latpos = new System.Windows.Forms.NumericUpDown();
             this.NUM_lngpos = new System.Windows.Forms.NumericUpDown();
             this.NUM_altpos = new System.Windows.Forms.NumericUpDown();
@@ -27,7 +27,7 @@ namespace MissionPlanner
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.BUT_networklinkgeoref = new MissionPlanner.Controls.MyButton();
+            this.BUT_networklinkgeoref = new ByAeroBeHero.Controls.MyButton();
             this.NUM_time = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();

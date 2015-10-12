@@ -1,5 +1,5 @@
 ﻿﻿using System.Windows.Forms;
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class ToolStripConnectionControl : ToolStripControlHost
     {

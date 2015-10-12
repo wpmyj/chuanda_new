@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls
+﻿namespace ByAeroBeHero.Controls
 {
     partial class Vibration
     {
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.VibBarX = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.VibBarZ = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.VibBarY = new MissionPlanner.Controls.VerticalProgressBar2();
+            this.VibBarX = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.VibBarZ = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.VibBarY = new ByAeroBeHero.Controls.VerticalProgressBar2();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();

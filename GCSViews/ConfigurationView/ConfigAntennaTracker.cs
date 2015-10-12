@@ -4,10 +4,10 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigAntennaTracker : UserControl, IActivate
     {

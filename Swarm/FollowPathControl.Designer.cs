@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Swarm
+﻿namespace ByAeroBeHero.Swarm
 {
     partial class FollowPathControl
     {

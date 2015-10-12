@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Utilities.DroneApi.UI
+namespace ByAeroBeHero.Utilities.DroneApi.UI
 {
     public partial class VehicleSelection : Form
     {

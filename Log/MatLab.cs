@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner;
+using ByAeroBeHero;
 using csmatio.io;
 using csmatio.types;
 using System.Globalization;
@@ -13,7 +13,7 @@ using log4net;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public class MatLab
     {
@@ -37,7 +37,7 @@ namespace MissionPlanner.Log
                 {
                     foreach (string logfile in openFileDialog1.FileNames)
                     {
-                        MissionPlanner.Log.MatLab.tlog(logfile);
+                        ByAeroBeHero.Log.MatLab.tlog(logfile);
                     }
                 }
             }
@@ -61,7 +61,7 @@ namespace MissionPlanner.Log
                 {
                     foreach (string logfile in openFileDialog1.FileNames)
                     {
-                        MissionPlanner.Log.MatLab.ProcessLog(logfile);
+                        ByAeroBeHero.Log.MatLab.ProcessLog(logfile);
                     }
                 }
             }

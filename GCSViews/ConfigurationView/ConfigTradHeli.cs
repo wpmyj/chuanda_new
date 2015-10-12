@@ -2,11 +2,11 @@
 using System.ComponentModel;
 using System.Threading;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 using Timer = System.Windows.Forms.Timer;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigTradHeli : UserControl, IActivate, IDeactivate
     {

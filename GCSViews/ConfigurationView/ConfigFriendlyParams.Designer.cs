@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews.ConfigurationView
+﻿namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
    partial class ConfigFriendlyParams
    {
@@ -30,9 +30,9 @@
       {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigFriendlyParams));
             this.tableLayoutPanel1 = new System.Windows.Forms.Panel();
-            this.BUT_rerequestparams = new MissionPlanner.Controls.MyButton();
-            this.BUT_writePIDS = new MissionPlanner.Controls.MyButton();
-            this.BUT_Find = new MissionPlanner.Controls.MyButton();
+            this.BUT_rerequestparams = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_Find = new ByAeroBeHero.Controls.MyButton();
             this.chk_advview = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 

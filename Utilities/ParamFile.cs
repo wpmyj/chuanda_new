@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using log4net;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class ParamFile
     {

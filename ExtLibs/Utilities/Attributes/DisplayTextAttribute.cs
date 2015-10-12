@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace MissionPlanner.Attributes
+namespace ByAeroBeHero.Attributes
 {
    /// <summary>
    /// Used to decorate a type or type member with display text.

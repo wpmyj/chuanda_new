@@ -5,10 +5,10 @@ using System.Windows.Forms;
 using System.Threading;
 using log4net;
 using System.Globalization;
-using MissionPlanner.Comms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.Arduino
+namespace ByAeroBeHero.Arduino
 {
     public class BoardDetect
     {

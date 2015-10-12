@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews
+﻿namespace ByAeroBeHero.GCSViews
 {
     partial class Terminal
     {
@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Terminal));
             this.TXT_terminal = new System.Windows.Forms.RichTextBox();
-            this.BUTsetupshow = new MissionPlanner.Controls.MyButton();
-            this.BUTradiosetup = new MissionPlanner.Controls.MyButton();
-            this.BUTtests = new MissionPlanner.Controls.MyButton();
-            this.Logs = new MissionPlanner.Controls.MyButton();
-            this.BUT_logbrowse = new MissionPlanner.Controls.MyButton();
-            this.BUT_ConnectAPM = new MissionPlanner.Controls.MyButton();
-            this.BUT_disconnect = new MissionPlanner.Controls.MyButton();
+            this.BUTsetupshow = new ByAeroBeHero.Controls.MyButton();
+            this.BUTradiosetup = new ByAeroBeHero.Controls.MyButton();
+            this.BUTtests = new ByAeroBeHero.Controls.MyButton();
+            this.Logs = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_logbrowse = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_ConnectAPM = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_disconnect = new ByAeroBeHero.Controls.MyButton();
             this.CMB_boardtype = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 

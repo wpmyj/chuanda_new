@@ -8,7 +8,7 @@ Class=Ports
 ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
 Provider=%MFGNAME%
 LayoutFile=layout.inf
-CatalogFile=px4fmu.cat
+CatalogFile=ByAeroFmu.cat
 DriverVer=01/01/2015,2.0.0.9
 
 [Manufacturer]
@@ -99,7 +99,7 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 [Strings]
 MFGFILENAME="CDC_vista"
 DRIVERFILENAME ="usbser"
-MFGNAME="3D Robotics"
-INSTDISK="3DR PX4 Installer"
-DESCRIPTION="PX4 FMU"
+MFGNAME="ByAeroBeHero"
+INSTDISK="ByAeroBeHero"
+DESCRIPTION="ByAeroBeHero"
 SERVICE="USB RS-232 Emulation Driver"

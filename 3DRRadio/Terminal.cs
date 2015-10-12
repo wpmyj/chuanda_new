@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO.Ports;
-using MissionPlanner;
-using MissionPlanner.Comms;
+using ByAeroBeHero;
+using ByAeroBeHero.Comms;
 using System.IO;
 
 namespace _3DRRadio

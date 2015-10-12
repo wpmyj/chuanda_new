@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigAteryxSensors : UserControl, IActivate, IDeactivate
     {

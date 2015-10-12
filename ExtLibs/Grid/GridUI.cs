@@ -16,11 +16,11 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using log4net;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class GridUI : Form
     {
@@ -1317,7 +1317,7 @@ namespace MissionPlanner
 
             string camname = "Default";
 
-            if (MissionPlanner.Controls.InputBox.Show("Camera Name", "Please and a camera name", ref camname) != System.Windows.Forms.DialogResult.OK)
+            if (ByAeroBeHero.Controls.InputBox.Show("Camera Name", "Please and a camera name", ref camname) != System.Windows.Forms.DialogResult.OK)
                 return;
 
             CMB_camera.Text = camname;

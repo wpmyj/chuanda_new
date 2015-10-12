@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Log
+﻿namespace ByAeroBeHero.Log
 {
     partial class LogDownloadMavLink
     {
@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogDownloadMavLink));
             this.TXT_seriallog = new System.Windows.Forms.TextBox();
-            this.BUT_DLall = new MissionPlanner.Controls.MyButton();
-            this.BUT_DLthese = new MissionPlanner.Controls.MyButton();
-            this.BUT_clearlogs = new MissionPlanner.Controls.MyButton();
+            this.BUT_DLall = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_DLthese = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clearlogs = new ByAeroBeHero.Controls.MyButton();
             this.CHK_logs = new System.Windows.Forms.CheckedListBox();
             this.TXT_status = new System.Windows.Forms.TextBox();
-            this.BUT_redokml = new MissionPlanner.Controls.MyButton();
-            this.BUT_firstperson = new MissionPlanner.Controls.MyButton();
-            this.BUT_bintolog = new MissionPlanner.Controls.MyButton();
+            this.BUT_redokml = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_firstperson = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_bintolog = new ByAeroBeHero.Controls.MyButton();
             this.chk_droneshare = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 

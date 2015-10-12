@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Joystick
+﻿namespace ByAeroBeHero.Joystick
 {
     partial class Joy_Button_axis
     {

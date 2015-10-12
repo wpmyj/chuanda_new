@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Comms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.Antenna
+namespace ByAeroBeHero.Antenna
 {
     public partial class Tracker : UserControl, IDeactivate
     {

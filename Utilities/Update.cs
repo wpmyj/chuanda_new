@@ -10,11 +10,11 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     class Update
     {

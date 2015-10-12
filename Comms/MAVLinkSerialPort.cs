@@ -6,7 +6,7 @@ using System.Text;
 using log4net;
 using System.Threading;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     /// <summary>
     /// this is a proxy port for SERIAL_CONTROL messages

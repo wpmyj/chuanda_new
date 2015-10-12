@@ -2,10 +2,10 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigFailSafe : UserControl, IActivate, IDeactivate
     {

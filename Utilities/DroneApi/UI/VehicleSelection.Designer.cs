@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Utilities.DroneApi.UI
+﻿namespace ByAeroBeHero.Utilities.DroneApi.UI
 {
     partial class VehicleSelection
     {
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.CMB_vehicle = new System.Windows.Forms.ComboBox();
-            this.BUT_Select = new MissionPlanner.Controls.MyButton();
-            this.BUT_new = new MissionPlanner.Controls.MyButton();
+            this.BUT_Select = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_new = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
             // 
             // CMB_vehicle

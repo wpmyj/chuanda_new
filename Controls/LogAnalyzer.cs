@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class LogAnalyzer : Form
     {
-        public LogAnalyzer(MissionPlanner.Utilities.LogAnalyzer.analysis analysis)
+        public LogAnalyzer(ByAeroBeHero.Utilities.LogAnalyzer.analysis analysis)
         {
             InitializeComponent();
 

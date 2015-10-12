@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using MissionPlanner.Controls.BackstageView;
+using ByAeroBeHero.Controls.BackstageView;
 using log4net;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using System.IO;
 using System.Collections.Generic;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     /// <summary>
     /// Helper class for the stylng 'theming' of forms and controls, and provides MessageBox
@@ -105,41 +105,41 @@ namespace MissionPlanner.Utilities
             temp.Add(new ServoOptions());
             temp.Add(new ThemeColors());
 
-            temp.Add(new MissionPlanner.Controls.BackstageView.BackstageView());
-            temp.Add(new MissionPlanner.Controls.BackstageView.BackstageViewButton());
-            temp.Add(new MissionPlanner.Controls.BackstageView.BackStageViewMenuPanel());
-            temp.Add(new MissionPlanner.Controls.ConnectionControl());
-            temp.Add(new MissionPlanner.Controls.ConnectionStats());
-            temp.Add(new MissionPlanner.Controls.Coords());
-            temp.Add(new MissionPlanner.Controls.FileBrowse());
-            temp.Add(new MissionPlanner.Controls.FlashMessage());
-            temp.Add(new MissionPlanner.Controls.GradientBG());
-            temp.Add(new MissionPlanner.Controls.HorizontalProgressBar());
-            temp.Add(new MissionPlanner.Controls.HorizontalProgressBar2());
-            temp.Add(new MissionPlanner.Controls.HSI());
-            temp.Add(new MissionPlanner.Controls.HUD());
-            temp.Add(new MissionPlanner.Controls.ImageLabel());
-            temp.Add(new MissionPlanner.Controls.LabelWithPseudoOpacity());
-            temp.Add(new MissionPlanner.Controls.LineSeparator());
+            temp.Add(new ByAeroBeHero.Controls.BackstageView.BackstageView());
+            temp.Add(new ByAeroBeHero.Controls.BackstageView.BackstageViewButton());
+            temp.Add(new ByAeroBeHero.Controls.BackstageView.BackStageViewMenuPanel());
+            temp.Add(new ByAeroBeHero.Controls.ConnectionControl());
+            temp.Add(new ByAeroBeHero.Controls.ConnectionStats());
+            temp.Add(new ByAeroBeHero.Controls.Coords());
+            temp.Add(new ByAeroBeHero.Controls.FileBrowse());
+            temp.Add(new ByAeroBeHero.Controls.FlashMessage());
+            temp.Add(new ByAeroBeHero.Controls.GradientBG());
+            temp.Add(new ByAeroBeHero.Controls.HorizontalProgressBar());
+            temp.Add(new ByAeroBeHero.Controls.HorizontalProgressBar2());
+            temp.Add(new ByAeroBeHero.Controls.HSI());
+            temp.Add(new ByAeroBeHero.Controls.HUD());
+            temp.Add(new ByAeroBeHero.Controls.ImageLabel());
+            temp.Add(new ByAeroBeHero.Controls.LabelWithPseudoOpacity());
+            temp.Add(new ByAeroBeHero.Controls.LineSeparator());
 
-            temp.Add(new MissionPlanner.Controls.MyButton());
-            temp.Add(new MissionPlanner.Controls.myGMAP());
-            temp.Add(new MissionPlanner.Controls.MyLabel());
-            temp.Add(new MissionPlanner.Controls.MyProgressBar());
-            temp.Add(new MissionPlanner.Controls.MyTrackBar());
-            temp.Add(new MissionPlanner.Controls.OpenGLtest());
-            temp.Add(new MissionPlanner.Controls.OptionForm());
-            temp.Add(new MissionPlanner.Controls.PictureBoxMouseOver());
-            temp.Add(new MissionPlanner.Controls.PictureBoxWithPseudoOpacity());
-            temp.Add(new MissionPlanner.Controls.ProgressReporterDialogue());
-            temp.Add(new MissionPlanner.Controls.ProgressStep());
-            temp.Add(new MissionPlanner.Controls.QuickView());
-            temp.Add(new MissionPlanner.Controls.RadialGradientBG());
-            temp.Add(new MissionPlanner.Controls.RangeControl());
-            temp.Add(new MissionPlanner.Controls.ServoOptions());
-            temp.Add(new MissionPlanner.Controls.ValuesControl());
-            temp.Add(new MissionPlanner.Controls.VerticalProgressBar());
-            temp.Add(new MissionPlanner.Controls.VerticalProgressBar2());
+            temp.Add(new ByAeroBeHero.Controls.MyButton());
+            temp.Add(new ByAeroBeHero.Controls.myGMAP());
+            temp.Add(new ByAeroBeHero.Controls.MyLabel());
+            temp.Add(new ByAeroBeHero.Controls.MyProgressBar());
+            temp.Add(new ByAeroBeHero.Controls.MyTrackBar());
+            temp.Add(new ByAeroBeHero.Controls.OpenGLtest());
+            temp.Add(new ByAeroBeHero.Controls.OptionForm());
+            temp.Add(new ByAeroBeHero.Controls.PictureBoxMouseOver());
+            temp.Add(new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity());
+            temp.Add(new ByAeroBeHero.Controls.ProgressReporterDialogue());
+            temp.Add(new ByAeroBeHero.Controls.ProgressStep());
+            temp.Add(new ByAeroBeHero.Controls.QuickView());
+            temp.Add(new ByAeroBeHero.Controls.RadialGradientBG());
+            temp.Add(new ByAeroBeHero.Controls.RangeControl());
+            temp.Add(new ByAeroBeHero.Controls.ServoOptions());
+            temp.Add(new ByAeroBeHero.Controls.ValuesControl());
+            temp.Add(new ByAeroBeHero.Controls.VerticalProgressBar());
+            temp.Add(new ByAeroBeHero.Controls.VerticalProgressBar2());
 
 
 
@@ -213,11 +213,11 @@ xmlns:mc=""http://schemas.openxmlformats.org/markup-compatibility/2006""
 xmlns:d=""http://schemas.microsoft.com/expression/blend/2008"" 
 xmlns:xctk=""http://schemas.xceed.com/wpf/xaml/toolkit"" 
 xmlns:Custom=""http://schemas.microsoft.com/wpf/2008/toolkit""
-xmlns:BackstageView=""clr-namespace:MissionPlanner.Controls.BackstageView""
-xmlns:Controls=""clr-namespace:MissionPlanner.Controls""
-xmlns:GCSViews=""clr-namespace:MissionPlanner.GCSViews""
-xmlns:Wizard=""clr-namespace:MissionPlanner.Wizard""
-xmlns:ConfigurationView=""clr-namespace:MissionPlanner.GCSViews.ConfigurationView""
+xmlns:BackstageView=""clr-namespace:ByAeroBeHero.Controls.BackstageView""
+xmlns:Controls=""clr-namespace:ByAeroBeHero.Controls""
+xmlns:GCSViews=""clr-namespace:ByAeroBeHero.GCSViews""
+xmlns:Wizard=""clr-namespace:ByAeroBeHero.Wizard""
+xmlns:ConfigurationView=""clr-namespace:ByAeroBeHero.GCSViews.ConfigurationView""
 mc:Ignorable=""d"" 
 > <Grid>";
 
@@ -240,7 +240,7 @@ mc:Ignorable=""d""
             foreach (Control ctl in control.Controls)
             {
                 if (ctl is QuickView || ctl is ServoOptions || ctl is ModifyandSet 
-                    || ctl is Coords /*|| ctl is AGaugeApp.AGauge*/ || ctl is MissionPlanner.Controls.HUD) 
+                    || ctl is Coords /*|| ctl is AGaugeApp.AGauge*/ || ctl is ByAeroBeHero.Controls.HUD) 
                 {
                  //   st.WriteLine(@"<WindowsFormsHost HorizontalAlignment=""Left"" VerticalAlignment=""Top"" Margin=""" + ctl.Location.X + "," + ctl.Location.Y + @",0,0"" Width=""" + ctl.Width + @""" Height=""" + ctl.Height + @""">");
 

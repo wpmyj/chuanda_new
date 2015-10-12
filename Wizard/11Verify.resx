@@ -249,7 +249,7 @@ NOTE: this test will attempt to arm your autopilot and props may spin, please re
     <value>21</value>
   </data>
   <data name="&gt;&gt;radialGradientBG1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.GradientBG, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.GradientBG, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="chk_perarm.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -666,7 +666,7 @@ NOTE: this test will attempt to arm your autopilot and props may spin, please re
     <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>

@@ -6,10 +6,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     public partial class Grid : UserControl
     {

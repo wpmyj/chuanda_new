@@ -9,10 +9,10 @@ using System.Threading;
 using System.Windows.Forms;
 using BrightIdeasSoftware;
 using log4net;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigRawParamsTree : UserControl, IActivate
     {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     /// <summary>
     /// Follow the trail of the leader

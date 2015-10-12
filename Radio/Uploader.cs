@@ -1,7 +1,7 @@
 using System;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 using System.Collections.Generic;
-using MissionPlanner;
+using ByAeroBeHero;
 
 namespace uploader
 {

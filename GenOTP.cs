@@ -10,10 +10,10 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 using px4uploader;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class GenOTP : Form
     {

@@ -16,7 +16,7 @@ namespace tlogThumbnailHandler
 
     // reg add HKEY_CLASSES_ROOT\.tlog\shellex\{BB2E617C-0920-11D1-9A0B-00C04FC2D6C1} /d {f3b857f1-0b79-4e77-9d0b-8b8b7e874f56}
 
-    // reg add HKEY_CLASSES_ROOT\MissionPlanner.tlog\shellex\{BB2E617C-0920-11D1-9A0B-00C04FC2D6C1} /d {f3b857f1-0b79-4e77-9d0b-8b8b7e874f56}
+    // reg add HKEY_CLASSES_ROOT\ByAeroBeHero.tlog\shellex\{BB2E617C-0920-11D1-9A0B-00C04FC2D6C1} /d {f3b857f1-0b79-4e77-9d0b-8b8b7e874f56}
 
     enum IEIFLAG
     {

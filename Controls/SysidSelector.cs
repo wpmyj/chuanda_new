@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class SysidSelector : Form
     {

@@ -6,13 +6,13 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 using System.Globalization;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 using System.IO;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class FollowMe : Form
     {
@@ -43,7 +43,7 @@ namespace MissionPlanner
                 CMB_updaterate.Text = updaterate.ToString();
             }
 
-            MissionPlanner.Utilities.Tracking.AddPage(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.ToString(), System.Reflection.MethodBase.GetCurrentMethod().Name);
+            ByAeroBeHero.Utilities.Tracking.AddPage(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.ToString(), System.Reflection.MethodBase.GetCurrentMethod().Name);
         }
 
         private void BUT_connect_Click(object sender, EventArgs e)

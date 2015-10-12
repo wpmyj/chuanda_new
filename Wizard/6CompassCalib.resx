@@ -214,7 +214,7 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;radialGradientBG1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.GradientBG, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.GradientBG, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -271,7 +271,7 @@
     <value>Zoom</value>
   </data>
   <data name="&gt;&gt;BUT_MagCalibrationLive.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="radialGradientBG1.Image.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -346,7 +346,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOver3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="BUT_MagCalibrationLive.Text" xml:space="preserve">
     <value>Live Calibration</value>
@@ -397,7 +397,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BUT_compassorient.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 143</value>
@@ -487,7 +487,7 @@
     <value>panel2</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOver2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -505,7 +505,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -577,7 +577,7 @@
     <value>5, 26</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOver1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="linkLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

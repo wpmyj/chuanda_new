@@ -208,7 +208,7 @@
     <value>pictureBoxPlus</value>
   </data>
   <data name="&gt;&gt;pictureBoxPlus.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxPlus.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -238,7 +238,7 @@
     <value>pictureBoxX</value>
   </data>
   <data name="&gt;&gt;pictureBoxX.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxX.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -331,7 +331,7 @@
     <value>pictureBoxV</value>
   </data>
   <data name="&gt;&gt;pictureBoxV.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxV.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -424,7 +424,7 @@
     <value>pictureBoxH</value>
   </data>
   <data name="&gt;&gt;pictureBoxH.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxH.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -547,7 +547,7 @@
     <value>pictureBoxY</value>
   </data>
   <data name="&gt;&gt;pictureBoxY.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxY.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -742,7 +742,7 @@
     <value>pictureBoxWithPseudoOpacity3</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity3.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -769,7 +769,7 @@
     <value>pictureBoxWithPseudoOpacity2</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity2.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -796,7 +796,7 @@
     <value>pictureBoxWithPseudoOpacity1</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity1.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -823,7 +823,7 @@
     <value>configDefaultSettings1</value>
   </data>
   <data name="&gt;&gt;configDefaultSettings1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.DefaultSettings, MissionPlanner, Version=1.1.5759.20025, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.1.5759.20025, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configDefaultSettings1.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -883,7 +883,7 @@
     <value>pictureBoxVTail</value>
   </data>
   <data name="&gt;&gt;pictureBoxVTail.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxWithPseudoOpacity, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxVTail.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -931,6 +931,6 @@
     <value>ConfigFrameType</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

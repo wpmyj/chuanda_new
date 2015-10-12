@@ -1,7 +1,7 @@
-﻿using MissionPlanner.Controls;
-using MissionPlanner.Presenter;
+﻿using ByAeroBeHero.Controls;
+using ByAeroBeHero.Presenter;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigCameraStab
     {
@@ -81,7 +81,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
 
-            this.pictureBox1.BackgroundImage = global::MissionPlanner.Properties.Resources.cameraGimalPitch1;
+            this.pictureBox1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.cameraGimalPitch1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(33, 52);
             this.pictureBox1.Name = "pictureBox1";
@@ -115,7 +115,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // presenterBindingSource
             // 
-            this.presenterBindingSource.DataSource = typeof(MissionPlanner.Presenter.ConfigCameraStabModel);
+            this.presenterBindingSource.DataSource = typeof(ByAeroBeHero.Presenter.ConfigCameraStabModel);
             // 
             // checkBox1
             // 
@@ -261,7 +261,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::MissionPlanner.Properties.Resources.cameraGimalRoll1;
+            this.pictureBox2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.cameraGimalRoll1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(33, 207);
             this.pictureBox2.Name = "pictureBox2";
@@ -505,7 +505,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             this.PBOX_WarningIcon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PBOX_WarningIcon.Image = global::MissionPlanner.Properties.Resources.iconWarning32;
+            this.PBOX_WarningIcon.Image = global::ByAeroBeHero.Properties.Resources.iconWarning32;
             this.PBOX_WarningIcon.Location = new System.Drawing.Point(264, 389);
             this.PBOX_WarningIcon.Name = "PBOX_WarningIcon";
             this.PBOX_WarningIcon.Opacity = 0.5F;

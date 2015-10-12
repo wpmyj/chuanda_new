@@ -5,7 +5,7 @@ using System.Text;
 using System.IO.Ports;
 using System.IO;
 
-namespace MissionPlanner.Arduino
+namespace ByAeroBeHero.Arduino
 {
     public delegate void ProgressEventHandler(int progress, string status);
 

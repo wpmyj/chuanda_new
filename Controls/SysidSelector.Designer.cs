@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls
+﻿namespace ByAeroBeHero.Controls
 {
     partial class SysidSelector
     {
@@ -30,7 +30,7 @@
         {
             this.cmb_sysid = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.myButton1 = new MissionPlanner.Controls.MyButton();
+            this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
             // 
             // cmb_sysid

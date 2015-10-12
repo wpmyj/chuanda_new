@@ -9,9 +9,9 @@ using System.Net; // dns, ip address
 using System.Net.Sockets; // tcplistner
 using log4net;
 using System.IO;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     public class UdpSerialConnect : CommsBase,  ICommsSerial, IDisposable
     {

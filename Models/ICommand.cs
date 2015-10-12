@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Models
+﻿namespace ByAeroBeHero.Models
 {
     public interface ICommand
     {

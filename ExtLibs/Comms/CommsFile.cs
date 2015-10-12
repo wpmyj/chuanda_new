@@ -5,7 +5,7 @@ using System.Text;
 using System.IO.Ports;
 using System.IO;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     public class CommsFile : CommsBase, ICommsSerial
     {

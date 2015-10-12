@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _8OptionalItemsAP
     {
@@ -32,14 +32,14 @@ namespace MissionPlanner.Wizard
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_8OptionalItemsAP));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CHK_airspeeduse = new MissionPlanner.Controls.MavlinkCheckBox();
+            this.CHK_airspeeduse = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.LBL_airspeed = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.CHK_enableairspeed = new MissionPlanner.Controls.MavlinkCheckBox();
+            this.CHK_enableairspeed = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -97,7 +97,7 @@ namespace MissionPlanner.Wizard
             // 
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.BackgroundImage = global::MissionPlanner.Properties.Resources.airspeed;
+            this.pictureBox3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.airspeed;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
@@ -173,7 +173,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;

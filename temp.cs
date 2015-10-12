@@ -22,22 +22,22 @@ using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using log4net;
-using MissionPlanner.Arduino;
-using MissionPlanner.Comms;
-using MissionPlanner.Controls;
-using MissionPlanner.GCSViews;
-using MissionPlanner.HIL;
-using MissionPlanner.Log;
-using MissionPlanner.Maps;
-using MissionPlanner.Swarm;
-using MissionPlanner.Utilities;
-using MissionPlanner.Utilities.DroneApi;
-using MissionPlanner.Warnings;
+using ByAeroBeHero.Arduino;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.GCSViews;
+using ByAeroBeHero.HIL;
+using ByAeroBeHero.Log;
+using ByAeroBeHero.Maps;
+using ByAeroBeHero.Swarm;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero.Utilities.DroneApi;
+using ByAeroBeHero.Warnings;
 using resedit;
 using ILog = log4net.ILog;
-using LogAnalyzer = MissionPlanner.Utilities.LogAnalyzer;
+using LogAnalyzer = ByAeroBeHero.Utilities.LogAnalyzer;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class temp : Form
     {

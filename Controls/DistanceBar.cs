@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class DistanceBar : UserControl
     {
         Brush brushbar = new SolidBrush(Color.FromArgb(50, Color.White));
 
-        private readonly Bitmap icon = global::MissionPlanner.Properties.Resources.marker_05;
+        private readonly Bitmap icon = global::ByAeroBeHero.Properties.Resources.marker_05;
 
         public float totaldist { get; set; }
         public float traveleddist { get; set; }

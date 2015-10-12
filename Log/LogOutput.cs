@@ -14,9 +14,9 @@ using KMLib;
 using KMLib.Feature;
 using KMLib.Geometry;
 using log4net;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public class LogOutput
     {

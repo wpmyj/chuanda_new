@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _11Verify
     {
@@ -50,7 +50,7 @@ namespace MissionPlanner.Wizard
             this.chk_gps = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -243,7 +243,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;

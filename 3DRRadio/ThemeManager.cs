@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using MissionPlanner.Controls.BackstageView;
+using ByAeroBeHero.Controls.BackstageView;
 using log4net;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     /// <summary>
     /// Helper class for the stylng 'theming' of forms and controls, and provides MessageBox

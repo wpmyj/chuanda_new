@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class MainSwitcher : IDisposable
     {
@@ -112,7 +112,7 @@ namespace MissionPlanner.Controls
 
             nextscreen.Control.Dock = DockStyle.Fill;
 
-            MissionPlanner.Utilities.Tracking.AddPage(nextscreen.Control.GetType().ToString(), name);
+            ByAeroBeHero.Utilities.Tracking.AddPage(nextscreen.Control.GetType().ToString(), name);
 
             if (nextscreen.Control is IActivate)
             {

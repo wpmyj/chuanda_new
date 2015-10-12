@@ -6,10 +6,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Controls.BackstageView;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Controls.BackstageView;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     public partial class _10FlightModes : MyUserControl, IWizard, IActivate, IDeactivate
     {

@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews.ConfigurationView
+﻿namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigArdurover
     {
@@ -49,8 +49,8 @@
             this.SPEED2THR_P = new System.Windows.Forms.NumericUpDown();
             this.label76 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.BUT_writePIDS = new MissionPlanner.Controls.MyButton();
-            this.BUT_rerequestparams = new MissionPlanner.Controls.MyButton();
+            this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_rerequestparams = new ByAeroBeHero.Controls.MyButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.WP_RADIUS = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.NAVL1_PERIOD = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
-            this.BUT_refreshpart = new MissionPlanner.Controls.MyButton();
+            this.BUT_refreshpart = new ByAeroBeHero.Controls.MyButton();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FS_THR_VALUE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_MAX)).BeginInit();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.Utilities.DroneApi
+namespace ByAeroBeHero.Utilities.DroneApi
 {
     class APIConstants
     {

@@ -8,9 +8,9 @@ using System.Windows.Forms;
 using ZedGraph;
 using GMap.NET;
 using System.Xml;
-using MissionPlanner.Utilities; // GE xml alt reader
+using ByAeroBeHero.Utilities; // GE xml alt reader
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class ElevationProfile : Form
     {
@@ -64,7 +64,7 @@ namespace MissionPlanner
 
             frm.Close();
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void ElevationProfile_Load(object sender, EventArgs e)

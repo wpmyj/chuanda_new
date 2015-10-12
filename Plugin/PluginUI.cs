@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Plugin
+namespace ByAeroBeHero.Plugin
 {
     public partial class PluginUI : Form
     {
@@ -18,7 +18,7 @@ namespace MissionPlanner.Plugin
 
         private void PluginUI_Load(object sender, EventArgs e)
         {
-            foreach (var item in MissionPlanner.Plugin.PluginLoader.Plugins)
+            foreach (var item in ByAeroBeHero.Plugin.PluginLoader.Plugins)
             {
                 int row = dataGridView1.Rows.Add();
 

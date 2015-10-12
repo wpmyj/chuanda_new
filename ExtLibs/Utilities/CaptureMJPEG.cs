@@ -8,7 +8,7 @@ using System.Drawing;
 using System.Threading;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class CaptureMJPEG
     {

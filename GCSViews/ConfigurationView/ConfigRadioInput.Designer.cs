@@ -1,5 +1,5 @@
-﻿using MissionPlanner.Controls;
-namespace MissionPlanner.GCSViews.ConfigurationView
+﻿using ByAeroBeHero.Controls;
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigRadioInput
     {
@@ -40,18 +40,18 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.CHK_revch4 = new System.Windows.Forms.CheckBox();
             this.CHK_revch2 = new System.Windows.Forms.CheckBox();
             this.CHK_revch1 = new System.Windows.Forms.CheckBox();
-            this.BUT_BindDSM8 = new MissionPlanner.Controls.MyButton();
-            this.BUT_BindDSMX = new MissionPlanner.Controls.MyButton();
-            this.BUT_BindDSM2 = new MissionPlanner.Controls.MyButton();
-            this.BUT_Calibrateradio = new MissionPlanner.Controls.MyButton();
-            this.BAR8 = new MissionPlanner.Controls.HorizontalProgressBar2();
-            this.BAR7 = new MissionPlanner.Controls.HorizontalProgressBar2();
-            this.BAR6 = new MissionPlanner.Controls.HorizontalProgressBar2();
-            this.BAR5 = new MissionPlanner.Controls.HorizontalProgressBar2();
-            this.BARpitch = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.BARthrottle = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.BARyaw = new MissionPlanner.Controls.HorizontalProgressBar2();
-            this.BARroll = new MissionPlanner.Controls.HorizontalProgressBar2();
+            this.BUT_BindDSM8 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_BindDSMX = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_BindDSM2 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_Calibrateradio = new ByAeroBeHero.Controls.MyButton();
+            this.BAR8 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BAR7 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BAR6 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BAR5 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BARpitch = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.BARthrottle = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.BARyaw = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BARroll = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxElevons.SuspendLayout();
@@ -275,7 +275,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // currentStateBindingSource
             // 
-            this.currentStateBindingSource.DataSource = typeof(MissionPlanner.CurrentState);
+            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // groupBox1
             // 

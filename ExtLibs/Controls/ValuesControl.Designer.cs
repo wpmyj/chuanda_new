@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
    partial class ValuesControl
    {

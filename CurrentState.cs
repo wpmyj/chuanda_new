@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using System.ComponentModel;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using log4net;
-using MissionPlanner.Attributes;
-using MissionPlanner;
+using ByAeroBeHero.Attributes;
+using ByAeroBeHero;
 using System.Collections;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class CurrentState : ICloneable
     {

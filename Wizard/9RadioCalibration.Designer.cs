@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _9RadioCalibration
     {
@@ -31,11 +31,11 @@ namespace MissionPlanner.Wizard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_9RadioCalibration));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BUT_continue = new MissionPlanner.Controls.MyButton();
+            this.BUT_continue = new ByAeroBeHero.Controls.MyButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.configRadioInput1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigRadioInput();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.configRadioInput1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigRadioInput();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radialGradientBG1.Image)).BeginInit();
             this.SuspendLayout();
@@ -134,7 +134,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;

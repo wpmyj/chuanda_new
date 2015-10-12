@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews
+﻿namespace ByAeroBeHero.GCSViews
 {
     partial class FlightPlanner
     {
@@ -82,8 +82,8 @@
             this.TXT_loiterrad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.BUT_write = new MissionPlanner.Controls.MyButton();
-            this.BUT_read = new MissionPlanner.Controls.MyButton();
+            this.BUT_write = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_read = new ByAeroBeHero.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
@@ -95,7 +95,7 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.label6 = new System.Windows.Forms.Label();
-            this.coords1 = new MissionPlanner.Controls.Coords();
+            this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.lbl_status = new System.Windows.Forms.Label();
             this.panelWaypoints = new BSE.Windows.Forms.Panel();
             this.splitter1 = new BSE.Windows.Forms.Splitter();
@@ -103,7 +103,7 @@
             this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.TXT_altwarn = new System.Windows.Forms.TextBox();
-            this.BUT_Add = new MissionPlanner.Controls.MyButton();
+            this.BUT_Add = new ByAeroBeHero.Controls.MyButton();
             this.panelAction = new BSE.Windows.Forms.Panel();
             this.splitter2 = new BSE.Windows.Forms.Splitter();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -114,13 +114,13 @@
             this.lnk_kml = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_wpfile = new System.Windows.Forms.Label();
-            this.BUT_loadwpfile = new MissionPlanner.Controls.MyButton();
-            this.BUT_saveWPFile = new MissionPlanner.Controls.MyButton();
+            this.BUT_loadwpfile = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_saveWPFile = new ByAeroBeHero.Controls.MyButton();
             this.panelMap = new System.Windows.Forms.Panel();
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
             this.lbl_prevdist = new System.Windows.Forms.Label();
-            this.MainMap = new MissionPlanner.Controls.myGMAP();
+            this.MainMap = new ByAeroBeHero.Controls.myGMAP();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertWpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -187,7 +187,7 @@
             this.modifyAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enterUTMCoordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchDockingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trackBar1 = new MissionPlanner.Controls.MyTrackBar();
+            this.trackBar1 = new ByAeroBeHero.Controls.MyTrackBar();
             this.panelBASE = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -414,7 +414,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panel5.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panel5.Controls.Add(this.BUT_write);
             this.panel5.Controls.Add(this.BUT_read);
             resources.ApplyResources(this.panel5, "panel5");
@@ -440,7 +440,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -454,7 +454,7 @@
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
-            this.label4.Image = global::MissionPlanner.Properties.Resources.Teal;
+            this.label4.Image = global::ByAeroBeHero.Properties.Resources.Teal;
             this.label4.Name = "label4";
             this.label4.TabStop = true;
             this.label4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.label4_LinkClicked);
@@ -527,7 +527,7 @@
             this.coords1.Alt = 0D;
             this.coords1.AltUnit = "m";
             this.coords1.BackColor = System.Drawing.Color.Teal;
-            this.coords1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.coords1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.coords1.Lat = 0D;
             this.coords1.Lng = 0D;
             resources.ApplyResources(this.coords1, "coords1");
@@ -679,14 +679,14 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panel4.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panel4.Controls.Add(this.coords1);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // panel3
             // 
-            this.panel3.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panel3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panel3.Controls.Add(this.chk_grid);
             this.panel3.Controls.Add(this.lbl_status);
             this.panel3.Controls.Add(this.comboBoxMapType);
@@ -697,7 +697,7 @@
             // chk_grid
             // 
             resources.ApplyResources(this.chk_grid, "chk_grid");
-            this.chk_grid.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.chk_grid.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.chk_grid.Name = "chk_grid";
             this.chk_grid.UseVisualStyleBackColor = true;
             this.chk_grid.CheckedChanged += new System.EventHandler(this.chk_grid_CheckedChanged);
@@ -714,14 +714,14 @@
             // lnk_kml
             // 
             resources.ApplyResources(this.lnk_kml, "lnk_kml");
-            this.lnk_kml.Image = global::MissionPlanner.Properties.Resources.Teal;
+            this.lnk_kml.Image = global::ByAeroBeHero.Properties.Resources.Teal;
             this.lnk_kml.Name = "lnk_kml";
             this.lnk_kml.TabStop = true;
             this.lnk_kml.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk_kml_LinkClicked);
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panel2.Controls.Add(this.lbl_wpfile);
             this.panel2.Controls.Add(this.BUT_loadwpfile);
             this.panel2.Controls.Add(this.BUT_saveWPFile);
@@ -753,7 +753,7 @@
             // 
             // panelMap
             // 
-            this.panelMap.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panelMap.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panelMap.Controls.Add(this.lbl_distance);
             this.panelMap.Controls.Add(this.lbl_homedist);
             this.panelMap.Controls.Add(this.lbl_prevdist);
@@ -783,7 +783,7 @@
             // 
             resources.ApplyResources(this.MainMap, "MainMap");
             this.MainMap.BackColor = System.Drawing.Color.Teal;
-            this.MainMap.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.MainMap.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.MainMap.Bearing = 0F;
             this.MainMap.CanDragMap = true;
             this.MainMap.ContextMenuStrip = this.contextMenuStrip1;
@@ -1283,7 +1283,7 @@
             // panelBASE
             // 
             this.panelBASE.BackColor = System.Drawing.Color.Teal;
-            this.panelBASE.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panelBASE.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panelBASE.Controls.Add(this.splitter2);
             this.panelBASE.Controls.Add(this.splitter1);
             this.panelBASE.Controls.Add(this.panelMap);
@@ -1302,7 +1302,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.Controls.Add(this.panelBASE);
             resources.ApplyResources(this, "$this");
             this.Name = "FlightPlanner";

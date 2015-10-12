@@ -6,12 +6,12 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Controls.BackstageView;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Controls.BackstageView;
+using ByAeroBeHero.Utilities;
 using System.Globalization;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     public partial class _12FailSafe : MyUserControl, IWizard, IDeactivate, IActivate
     {

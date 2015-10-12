@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _7BatteryMonitor
     {
@@ -39,7 +39,7 @@ namespace MissionPlanner.Wizard
             this.CMB_apmversion = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -75,7 +75,7 @@ namespace MissionPlanner.Wizard
             // 
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.BackgroundImage = global::MissionPlanner.Properties.Resources.BR_APMPWRDEAN_2;
+            this.pictureBox5.BackgroundImage = global::ByAeroBeHero.Properties.Resources.BR_APMPWRDEAN_2;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
@@ -185,7 +185,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);

@@ -16,11 +16,11 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using log4net;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class GridUIv2 : Form
     {

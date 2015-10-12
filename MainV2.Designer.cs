@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     partial class MainV2
     {
@@ -47,10 +47,10 @@ namespace MissionPlanner
             this.MenuSimulation = new System.Windows.Forms.ToolStripButton();
             this.MenuTerminal = new System.Windows.Forms.ToolStripButton();
             this.MenuHelp = new System.Windows.Forms.ToolStripButton();
-            this.toolStripConnectionControl = new MissionPlanner.Controls.ToolStripConnectionControl();
+            this.toolStripConnectionControl = new ByAeroBeHero.Controls.ToolStripConnectionControl();
             this.MenuConnect = new System.Windows.Forms.ToolStripButton();
             this.MenuDonate = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu = new MissionPlanner.Controls.MyButton();
+            this.menu = new ByAeroBeHero.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();

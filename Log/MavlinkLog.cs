@@ -26,13 +26,13 @@ using System.Xml;
 using log4net;
 using ZedGraph; // Graphs
 
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
 using System.CodeDom.Compiler;
-using MissionPlanner;
-using MissionPlanner.Controls;
+using ByAeroBeHero;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public partial class MavlinkLog : Form
     {
@@ -63,7 +63,7 @@ namespace MissionPlanner.Log
             zg1.GraphPane.XAxis.Scale.MinorUnit = DateUnit.Second;
             zg1.PointDateFormat = "HH:mm:ss";
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void writeKML(string filename, double basealt = 0)
@@ -1620,7 +1620,7 @@ namespace MissionPlanner.Log
 
         private void BUT_matlab_Click(object sender, EventArgs e)
         {
-            MissionPlanner.Log.MatLab.ProcessTLog();
+            ByAeroBeHero.Log.MatLab.ProcessTLog();
         }
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)

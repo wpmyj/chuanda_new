@@ -17,7 +17,7 @@ using System.Xml;
 using System.Text.RegularExpressions;
 using System.Globalization;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     partial class Georefimage : Form 
     {
@@ -221,7 +221,7 @@ namespace MissionPlanner
             NUM_CAM_Roll.Value = rollCAMATT;
             NUM_CAM_Pitch.Value = pitchCAMATT;
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
 
         }
 

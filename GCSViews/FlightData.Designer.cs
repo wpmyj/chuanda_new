@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews
+﻿namespace ByAeroBeHero.GCSViews
 {
     partial class FlightData
     {
@@ -25,25 +25,25 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.distanceBar1 = new MissionPlanner.Controls.DistanceBar();
-            this.windDir1 = new MissionPlanner.Controls.WindDir();
+            this.distanceBar1 = new ByAeroBeHero.Controls.DistanceBar();
+            this.windDir1 = new ByAeroBeHero.Controls.WindDir();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbl_hdop = new MissionPlanner.Controls.MyLabel();
-            this.lbl_sats = new MissionPlanner.Controls.MyLabel();
-            this.gMapControl1 = new MissionPlanner.Controls.myGMAP();
-            this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
+            this.lbl_hdop = new ByAeroBeHero.Controls.MyLabel();
+            this.lbl_sats = new ByAeroBeHero.Controls.MyLabel();
+            this.gMapControl1 = new ByAeroBeHero.Controls.myGMAP();
+            this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.coords1 = new MissionPlanner.Controls.Coords();
+            this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.Zoomlevel = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new MissionPlanner.Controls.MyLabel();
+            this.label1 = new ByAeroBeHero.Controls.MyLabel();
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.CB_tuning = new System.Windows.Forms.CheckBox();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
-            this.hud1 = new MissionPlanner.Controls.HUD();
+            this.hud1 = new ByAeroBeHero.Controls.HUD();
             this.contextMenuStripHud = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.recordHudToAVIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,87 +57,87 @@
             this.dropOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
-            this.quickView6 = new MissionPlanner.Controls.QuickView();
+            this.quickView6 = new ByAeroBeHero.Controls.QuickView();
             this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
-            this.quickView5 = new MissionPlanner.Controls.QuickView();
-            this.quickView4 = new MissionPlanner.Controls.QuickView();
-            this.quickView2 = new MissionPlanner.Controls.QuickView();
-            this.quickView3 = new MissionPlanner.Controls.QuickView();
-            this.quickView1 = new MissionPlanner.Controls.QuickView();
+            this.quickView5 = new ByAeroBeHero.Controls.QuickView();
+            this.quickView4 = new ByAeroBeHero.Controls.QuickView();
+            this.quickView2 = new ByAeroBeHero.Controls.QuickView();
+            this.quickView3 = new ByAeroBeHero.Controls.QuickView();
+            this.quickView1 = new ByAeroBeHero.Controls.QuickView();
             this.tabActions = new System.Windows.Forms.TabPage();
-            this.BUT_resumemis = new MissionPlanner.Controls.MyButton();
+            this.BUT_resumemis = new ByAeroBeHero.Controls.MyButton();
             this.CMB_mountmode = new System.Windows.Forms.ComboBox();
-            this.BUT_mountmode = new MissionPlanner.Controls.MyButton();
-            this.BUT_ARM = new MissionPlanner.Controls.MyButton();
-            this.BUT_joystick = new MissionPlanner.Controls.MyButton();
-            this.BUT_quickmanual = new MissionPlanner.Controls.MyButton();
-            this.BUT_quickrtl = new MissionPlanner.Controls.MyButton();
-            this.BUT_quickauto = new MissionPlanner.Controls.MyButton();
+            this.BUT_mountmode = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_ARM = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_joystick = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickmanual = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickrtl = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickauto = new ByAeroBeHero.Controls.MyButton();
             this.CMB_setwp = new System.Windows.Forms.ComboBox();
-            this.BUT_setwp = new MissionPlanner.Controls.MyButton();
+            this.BUT_setwp = new ByAeroBeHero.Controls.MyButton();
             this.CMB_modes = new System.Windows.Forms.ComboBox();
-            this.BUT_setmode = new MissionPlanner.Controls.MyButton();
-            this.BUT_clear_track = new MissionPlanner.Controls.MyButton();
+            this.BUT_setmode = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clear_track = new ByAeroBeHero.Controls.MyButton();
             this.CMB_action = new System.Windows.Forms.ComboBox();
-            this.BUT_Homealt = new MissionPlanner.Controls.MyButton();
-            this.BUT_RAWSensor = new MissionPlanner.Controls.MyButton();
-            this.BUTrestartmission = new MissionPlanner.Controls.MyButton();
-            this.BUTactiondo = new MissionPlanner.Controls.MyButton();
-            this.modifyandSetSpeed = new MissionPlanner.Controls.ModifyandSet();
-            this.modifyandSetAlt = new MissionPlanner.Controls.ModifyandSet();
+            this.BUT_Homealt = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_RAWSensor = new ByAeroBeHero.Controls.MyButton();
+            this.BUTrestartmission = new ByAeroBeHero.Controls.MyButton();
+            this.BUTactiondo = new ByAeroBeHero.Controls.MyButton();
+            this.modifyandSetSpeed = new ByAeroBeHero.Controls.ModifyandSet();
+            this.modifyandSetAlt = new ByAeroBeHero.Controls.ModifyandSet();
             this.tabActionsSimple = new System.Windows.Forms.TabPage();
-            this.myButton1 = new MissionPlanner.Controls.MyButton();
-            this.myButton2 = new MissionPlanner.Controls.MyButton();
-            this.myButton3 = new MissionPlanner.Controls.MyButton();
+            this.myButton1 = new ByAeroBeHero.Controls.MyButton();
+            this.myButton2 = new ByAeroBeHero.Controls.MyButton();
+            this.myButton3 = new ByAeroBeHero.Controls.MyButton();
             this.tabGauges = new System.Windows.Forms.TabPage();
             this.Gvspeed = new AGaugeApp.AGauge();
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
-            this.Gheading = new MissionPlanner.Controls.HSI();
+            this.Gheading = new ByAeroBeHero.Controls.HSI();
             this.Galt = new AGaugeApp.AGauge();
             this.Gspeed = new AGaugeApp.AGauge();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
-            this.servoOptions1 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions2 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions3 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions4 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions5 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions6 = new MissionPlanner.Controls.ServoOptions();
-            this.servoOptions7 = new MissionPlanner.Controls.ServoOptions();
+            this.servoOptions1 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions2 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions3 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions4 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions5 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions6 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions7 = new ByAeroBeHero.Controls.ServoOptions();
             this.tabTLogs = new System.Windows.Forms.TabPage();
             this.tableLayoutPaneltlogs = new System.Windows.Forms.TableLayoutPanel();
-            this.BUT_loadtelem = new MissionPlanner.Controls.MyButton();
-            this.lbl_playbackspeed = new MissionPlanner.Controls.MyLabel();
-            this.lbl_logpercent = new MissionPlanner.Controls.MyLabel();
+            this.BUT_loadtelem = new ByAeroBeHero.Controls.MyButton();
+            this.lbl_playbackspeed = new ByAeroBeHero.Controls.MyLabel();
+            this.lbl_logpercent = new ByAeroBeHero.Controls.MyLabel();
             this.tracklog = new System.Windows.Forms.TrackBar();
-            this.LBL_logfn = new MissionPlanner.Controls.MyLabel();
-            this.BUT_log2kml = new MissionPlanner.Controls.MyButton();
-            this.BUT_playlog = new MissionPlanner.Controls.MyButton();
+            this.LBL_logfn = new ByAeroBeHero.Controls.MyLabel();
+            this.BUT_log2kml = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_playlog = new ByAeroBeHero.Controls.MyButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.BUT_speed10 = new MissionPlanner.Controls.MyButton();
-            this.BUT_speed5 = new MissionPlanner.Controls.MyButton();
-            this.BUT_speed2 = new MissionPlanner.Controls.MyButton();
-            this.BUT_speed1 = new MissionPlanner.Controls.MyButton();
-            this.BUT_speed1_2 = new MissionPlanner.Controls.MyButton();
-            this.BUT_speed1_4 = new MissionPlanner.Controls.MyButton();
-            this.BUT_speed1_10 = new MissionPlanner.Controls.MyButton();
+            this.BUT_speed10 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_speed5 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_speed2 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_speed1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_speed1_2 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_speed1_4 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_speed1_10 = new ByAeroBeHero.Controls.MyButton();
             this.tablogbrowse = new System.Windows.Forms.TabPage();
-            this.BUT_loganalysis = new MissionPlanner.Controls.MyButton();
-            this.BUT_DFMavlink = new MissionPlanner.Controls.MyButton();
-            this.but_dflogtokml = new MissionPlanner.Controls.MyButton();
-            this.but_bintolog = new MissionPlanner.Controls.MyButton();
-            this.BUT_matlab = new MissionPlanner.Controls.MyButton();
-            this.BUT_logbrowse = new MissionPlanner.Controls.MyButton();
+            this.BUT_loganalysis = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_DFMavlink = new ByAeroBeHero.Controls.MyButton();
+            this.but_dflogtokml = new ByAeroBeHero.Controls.MyButton();
+            this.but_bintolog = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_matlab = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_logbrowse = new ByAeroBeHero.Controls.MyButton();
             this.tabScripts = new System.Windows.Forms.TabPage();
             this.checkBoxRedirectOutput = new System.Windows.Forms.CheckBox();
-            this.BUT_edit_selected = new MissionPlanner.Controls.MyButton();
+            this.BUT_edit_selected = new ByAeroBeHero.Controls.MyButton();
             this.labelSelectedScript = new System.Windows.Forms.Label();
-            this.BUT_run_script = new MissionPlanner.Controls.MyButton();
-            this.BUT_abort_script = new MissionPlanner.Controls.MyButton();
+            this.BUT_run_script = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_abort_script = new ByAeroBeHero.Controls.MyButton();
             this.labelScriptStatus = new System.Windows.Forms.Label();
-            this.BUT_select_script = new MissionPlanner.Controls.MyButton();
+            this.BUT_select_script = new ByAeroBeHero.Controls.MyButton();
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
@@ -192,7 +192,7 @@
             // MainH
             // 
             this.MainH.BackColor = System.Drawing.Color.Teal;
-            this.MainH.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.MainH.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.MainH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.MainH, "MainH");
             this.MainH.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
@@ -201,7 +201,7 @@
             // MainH.Panel1
             // 
             this.MainH.Panel1.BackColor = System.Drawing.Color.Teal;
-            this.MainH.Panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.MainH.Panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.MainH.Panel1.Controls.Add(this.tableMap);
             resources.ApplyResources(this.MainH.Panel1, "MainH.Panel1");
             // 
@@ -211,7 +211,7 @@
             // 
             // tableMap
             // 
-            this.tableMap.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.tableMap.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             resources.ApplyResources(this.tableMap, "tableMap");
             this.tableMap.Controls.Add(this.splitContainer1, 0, 0);
             this.tableMap.Controls.Add(this.panel1, 0, 1);
@@ -219,20 +219,20 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.splitContainer1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.splitContainer1.Panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel1.Controls.Add(this.zg1);
             this.splitContainer1.Panel1Collapsed = true;
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
-            this.splitContainer1.Panel2.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.splitContainer1.Panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
             this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
             this.splitContainer1.Panel2.Controls.Add(this.windDir1);
@@ -247,7 +247,7 @@
             // 
             // zg1
             // 
-            this.zg1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.zg1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             resources.ApplyResources(this.zg1, "zg1");
             this.zg1.Name = "zg1";
             this.zg1.ScrollGrace = 0D;
@@ -347,7 +347,7 @@
             // windDir1
             // 
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
-            this.windDir1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.Direction = 180D;
@@ -357,7 +357,7 @@
             // 
             // bindingSource1
             // 
-            this.bindingSource1.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // label6
             // 
@@ -450,7 +450,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.panel1.Controls.Add(this.coords1);
             this.panel1.Controls.Add(this.Zoomlevel);
             this.panel1.Controls.Add(this.label1);
@@ -464,7 +464,7 @@
             // 
             this.coords1.Alt = 0D;
             this.coords1.AltUnit = "m";
-            this.coords1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.coords1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Alt", this.bindingSource1, "alt", true));
             this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lat", this.bindingSource1, "lat", true));
             this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lng", this.bindingSource1, "lng", true));
@@ -506,14 +506,14 @@
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.label1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.label1.Name = "label1";
             this.label1.resize = false;
             // 
             // CHK_autopan
             // 
             resources.ApplyResources(this.CHK_autopan, "CHK_autopan");
-            this.CHK_autopan.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.CHK_autopan.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.CHK_autopan.Checked = true;
             this.CHK_autopan.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_autopan.Name = "CHK_autopan";
@@ -524,7 +524,7 @@
             // CB_tuning
             // 
             resources.ApplyResources(this.CB_tuning, "CB_tuning");
-            this.CB_tuning.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.CB_tuning.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.CB_tuning.Name = "CB_tuning";
             this.toolTip1.SetToolTip(this.CB_tuning, resources.GetString("CB_tuning.ToolTip"));
             this.CB_tuning.UseVisualStyleBackColor = true;
@@ -684,7 +684,7 @@
             // 
             // bindingSourceHud
             // 
-            this.bindingSourceHud.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSourceHud.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // tabControlactions
             // 
@@ -708,7 +708,7 @@
             // contextMenuStripactionstab
             // 
             this.contextMenuStripactionstab.BackColor = System.Drawing.Color.Teal;
-            this.contextMenuStripactionstab.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.contextMenuStripactionstab.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             resources.ApplyResources(this.contextMenuStripactionstab, "contextMenuStripactionstab");
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dropOutToolStripMenuItem});
@@ -724,7 +724,7 @@
             // 
             resources.ApplyResources(this.tabQuick, "tabQuick");
             this.tabQuick.BackColor = System.Drawing.Color.Teal;
-            this.tabQuick.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.tabQuick.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.tabQuick.Controls.Add(this.tableLayoutPanelQuick);
             this.tabQuick.ForeColor = System.Drawing.SystemColors.Highlight;
             this.tabQuick.Name = "tabQuick";
@@ -733,7 +733,7 @@
             // tableLayoutPanelQuick
             // 
             resources.ApplyResources(this.tableLayoutPanelQuick, "tableLayoutPanelQuick");
-            this.tableLayoutPanelQuick.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.tableLayoutPanelQuick.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.tableLayoutPanelQuick.Controls.Add(this.quickView6, 1, 2);
             this.tableLayoutPanelQuick.Controls.Add(this.quickView5, 0, 2);
             this.tableLayoutPanelQuick.Controls.Add(this.quickView4, 1, 1);
@@ -756,7 +756,7 @@
             // 
             // bindingSourceQuickTab
             // 
-            this.bindingSourceQuickTab.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSourceQuickTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // quickView5
             // 
@@ -1060,7 +1060,7 @@
             // Gvspeed
             // 
             this.Gvspeed.BackColor = System.Drawing.Color.Teal;
-            this.Gvspeed.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
+            this.Gvspeed.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Gvspeed, "Gvspeed");
             this.Gvspeed.BaseArcColor = System.Drawing.Color.Transparent;
             this.Gvspeed.BaseArcRadius = 60;
@@ -1202,12 +1202,12 @@
             // 
             // bindingSourceGaugesTab
             // 
-            this.bindingSourceGaugesTab.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSourceGaugesTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // Gheading
             // 
             this.Gheading.BackColor = System.Drawing.Color.Transparent;
-            this.Gheading.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
+            this.Gheading.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Gheading, "Gheading");
             this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("Heading", this.bindingSourceGaugesTab, "yaw", true));
             this.Gheading.DataBindings.Add(new System.Windows.Forms.Binding("NavHeading", this.bindingSourceGaugesTab, "nav_bearing", true));
@@ -1218,7 +1218,7 @@
             // Galt
             // 
             this.Galt.BackColor = System.Drawing.Color.Teal;
-            this.Galt.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
+            this.Galt.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Galt, "Galt");
             this.Galt.BaseArcColor = System.Drawing.Color.Transparent;
             this.Galt.BaseArcRadius = 60;
@@ -1363,7 +1363,7 @@
             // Gspeed
             // 
             this.Gspeed.BackColor = System.Drawing.Color.Teal;
-            this.Gspeed.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
+            this.Gspeed.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Gspeed, "Gspeed");
             this.Gspeed.BaseArcColor = System.Drawing.Color.Transparent;
             this.Gspeed.BaseArcRadius = 70;
@@ -1861,7 +1861,7 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
-            this.dataGridViewImageColumn1.Image = global::MissionPlanner.Properties.Resources.up;
+            this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
@@ -1870,7 +1870,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
-            this.dataGridViewImageColumn2.Image = global::MissionPlanner.Properties.Resources.down;
+            this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
@@ -1881,7 +1881,7 @@
             // 
             // bindingSourceStatusTab
             // 
-            this.bindingSourceStatusTab.DataSource = typeof(MissionPlanner.CurrentState);
+            this.bindingSourceStatusTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // FlightData
             // 
@@ -2060,7 +2060,7 @@
         private System.Windows.Forms.BindingSource bindingSourceStatusTab;
         private System.Windows.Forms.BindingSource bindingSourceGaugesTab;
         private System.Windows.Forms.ToolStripMenuItem setHomeHereToolStripMenuItem;
-        private MissionPlanner.Controls.Coords coords1;
+        private ByAeroBeHero.Controls.Coords coords1;
         private Controls.MyButton BUT_matlab;
         private System.Windows.Forms.ComboBox CMB_mountmode;
         private Controls.MyButton BUT_mountmode;

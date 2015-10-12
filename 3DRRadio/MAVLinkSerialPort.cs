@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
-    class MAVLinkSerialPort: MissionPlanner.Comms.SerialPort
+    class MAVLinkSerialPort: ByAeroBeHero.Comms.SerialPort
     {
-        private MissionPlanner.portproxy portproxy;
+        private ByAeroBeHero.portproxy portproxy;
         private int p;
 
-        public MAVLinkSerialPort(MissionPlanner.portproxy portproxy, int p)
+        public MAVLinkSerialPort(ByAeroBeHero.portproxy portproxy, int p)
         {
             // TODO: Complete member initialization
             this.portproxy = portproxy;

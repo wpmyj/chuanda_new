@@ -9,7 +9,7 @@ using ProjNet.CoordinateSystems.Transformations;
 using GeoUtility;
 using GeoUtility.GeoSystem;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
 
     public class PointLatLngAlt: IComparable

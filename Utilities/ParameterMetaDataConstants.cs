@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Utilities
+﻿namespace ByAeroBeHero.Utilities
 {
     public sealed class ParameterMetaDataConstants
     {

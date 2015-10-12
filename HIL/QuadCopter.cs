@@ -4,11 +4,11 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using log4net;
-using MissionPlanner.HIL;
-using MissionPlanner.GCSViews;
+using ByAeroBeHero.HIL;
+using ByAeroBeHero.GCSViews;
 
 
-namespace MissionPlanner.HIL
+namespace ByAeroBeHero.HIL
 {
     public class Motor : Utils
     {
@@ -348,7 +348,7 @@ namespace MissionPlanner.HIL
         {
             self = this;
 
-            motors = Motor.build_motors(MAVLink.MAV_TYPE.QUADROTOR, (int)MissionPlanner.GCSViews.ConfigurationView.ConfigFrameType.Frame.Plus);
+            motors = Motor.build_motors(MAVLink.MAV_TYPE.QUADROTOR, (int)ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType.Frame.Plus);
             motor_speed = new double[motors.Length];
             mass = 1.5;// # Kg
             frame_height = 0.1;

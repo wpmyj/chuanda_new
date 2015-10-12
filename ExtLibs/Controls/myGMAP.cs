@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     /// <summary>
     /// Mono handles calls from other thread difrently - this prevents those crashs

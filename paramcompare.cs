@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Collections;
 using BrightIdeasSoftware;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class ParamCompare : Form
     {

@@ -6,7 +6,7 @@ using System.Text;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class Sphere: OpenTK.GLControl
     {

@@ -1,11 +1,11 @@
-﻿using MissionPlanner.Utilities;
+﻿using ByAeroBeHero.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public static class Localizations
     {

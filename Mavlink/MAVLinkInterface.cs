@@ -10,16 +10,16 @@ using System.Reflection.Emit;
 using System.IO;
 using System.Drawing;
 using System.Threading;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using System.ComponentModel;
 using System.Linq;
 using log4net;
-using MissionPlanner.Comms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Utilities;
 using System.Windows.Forms;
-using MissionPlanner.HIL;
+using ByAeroBeHero.HIL;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class MAVLinkInterface: MAVLink, IDisposable
     {

@@ -334,7 +334,7 @@
     <value>mavlinkNumericUpDowntailspeed</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDowntailspeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDowntailspeed.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -358,7 +358,7 @@
     <value>mavlinkComboBoxTailType</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxTailType.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxTailType.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -430,7 +430,7 @@
     <value>mavlinkNumericUpDowntailspeed</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDowntailspeed.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDowntailspeed.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -484,7 +484,7 @@
     <value>mavlinkComboBoxTailType</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxTailType.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxTailType.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -631,7 +631,7 @@
     <value>BUT_0collective</value>
   </data>
   <data name="&gt;&gt;BUT_0collective.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_0collective.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -736,7 +736,7 @@
     <value>BUT_0collective</value>
   </data>
   <data name="&gt;&gt;BUT_0collective.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_0collective.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -1705,7 +1705,7 @@
     <value>H_COLYAW</value>
   </data>
   <data name="&gt;&gt;H_COLYAW.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_COLYAW.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1756,7 +1756,7 @@
     <value>H_COLYAW</value>
   </data>
   <data name="&gt;&gt;H_COLYAW.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_COLYAW.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1792,7 +1792,7 @@
     <value>H_STAB_COL_MIN</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MIN.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MIN.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -1804,7 +1804,7 @@
     <value>H_STAB_COL_MAX</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MAX.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MAX.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -1912,7 +1912,7 @@
     <value>H_STAB_COL_MIN</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MIN.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MIN.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -1936,7 +1936,7 @@
     <value>H_STAB_COL_MAX</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MAX.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_STAB_COL_MAX.Parent" xml:space="preserve">
     <value>groupBox6</value>
@@ -1960,7 +1960,7 @@
     <value>mavlinkNumericUpDownrunuptime</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownrunuptime.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownrunuptime.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -1984,7 +1984,7 @@
     <value>mavlinkudH_RSC_RATE</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_RATE.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_RATE.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -2065,7 +2065,7 @@
     <value>mavlinkNumericUpDownrunuptime</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownrunuptime.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownrunuptime.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -2122,7 +2122,7 @@
     <value>mavlinkudH_RSC_RATE</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_RATE.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_RATE.Parent" xml:space="preserve">
     <value>groupBox7</value>
@@ -2134,7 +2134,7 @@
     <value>mavlinkudH_RSC_SETPOINT</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_SETPOINT.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_SETPOINT.Parent" xml:space="preserve">
     <value>groupBox8</value>
@@ -2185,7 +2185,7 @@
     <value>mavlinkudH_RSC_SETPOINT</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_SETPOINT.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkudH_RSC_SETPOINT.Parent" xml:space="preserve">
     <value>groupBox8</value>
@@ -2197,7 +2197,7 @@
     <value>H_RSC_MODE</value>
   </data>
   <data name="&gt;&gt;H_RSC_MODE.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_RSC_MODE.Parent" xml:space="preserve">
     <value>groupBox9</value>
@@ -2245,7 +2245,7 @@
     <value>H_RSC_MODE</value>
   </data>
   <data name="&gt;&gt;H_RSC_MODE.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;H_RSC_MODE.Parent" xml:space="preserve">
     <value>groupBox9</value>
@@ -2257,7 +2257,7 @@
     <value>mavlinkNumericUpDownland_col_min</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownland_col_min.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownland_col_min.Parent" xml:space="preserve">
     <value>groupBox10</value>
@@ -2308,7 +2308,7 @@
     <value>mavlinkNumericUpDownland_col_min</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownland_col_min.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownland_col_min.Parent" xml:space="preserve">
     <value>groupBox10</value>
@@ -2335,7 +2335,7 @@
     <value>BUT_reset_swash</value>
   </data>
   <data name="&gt;&gt;BUT_reset_swash.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_reset_swash.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2359,7 +2359,7 @@
     <value>mavlinkNumericUpDownpitchmax</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownpitchmax.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownpitchmax.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2383,7 +2383,7 @@
     <value>mavlinkNumericUpDownrollmax</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownrollmax.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownrollmax.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2407,7 +2407,7 @@
     <value>mavlinkNumericUpDown3max</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3max.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3max.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2431,7 +2431,7 @@
     <value>mavlinkNumericUpDown3min</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3min.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3min.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2455,7 +2455,7 @@
     <value>mavlinkNumericUpDown2max</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2max.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2max.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2479,7 +2479,7 @@
     <value>mavlinkNumericUpDown2min</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2min.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2min.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2503,7 +2503,7 @@
     <value>mavlinkNumericUpDown1max</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1max.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1max.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2527,7 +2527,7 @@
     <value>mavlinkNumericUpDown1min</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1min.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5141.12960, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1min.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2554,7 +2554,7 @@
     <value>BUT_swash_manual</value>
   </data>
   <data name="&gt;&gt;BUT_swash_manual.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_swash_manual.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2581,7 +2581,7 @@
     <value>BUT_HS4save</value>
   </data>
   <data name="&gt;&gt;BUT_HS4save.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_HS4save.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2605,7 +2605,7 @@
     <value>HS4</value>
   </data>
   <data name="&gt;&gt;HS4.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.HorizontalProgressBar2, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.HorizontalProgressBar2, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;HS4.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2629,7 +2629,7 @@
     <value>HS3</value>
   </data>
   <data name="&gt;&gt;HS3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.VerticalProgressBar2, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.VerticalProgressBar2, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;HS3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2659,7 +2659,7 @@
     <value>Gservoloc</value>
   </data>
   <data name="&gt;&gt;Gservoloc.Type" xml:space="preserve">
-    <value>AGaugeApp.AGauge, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>AGaugeApp.AGauge, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Gservoloc.Parent" xml:space="preserve">
     <value>$this</value>

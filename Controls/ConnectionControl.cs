@@ -6,9 +6,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class ConnectionControl : UserControl
     {
@@ -20,6 +20,7 @@ namespace MissionPlanner.Controls
                                              if (ShowLinkStats!=null)
                                                  ShowLinkStats.Invoke(this, EventArgs.Empty);
                                          };
+            this.cmb_Connection.Text = "";
         }
 
         public event EventHandler ShowLinkStats;
@@ -68,6 +69,8 @@ namespace MissionPlanner.Controls
             {
                 text = text + " "+ SerialPort.GetNiceName(text);
             }
+
+            ByAeroBeHero.MainV2.instance.InitControl(text);
 
             e.Graphics.DrawString(text, e.Font,
                                   new SolidBrush(combo.ForeColor),

@@ -7,10 +7,10 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public static class ParameterMetaDataParser
     {
@@ -30,7 +30,7 @@ namespace MissionPlanner.Utilities
         {
             string parameterLocationsString = ConfigurationManager.AppSettings["ParameterLocations"];
 
-            if (MissionPlanner.Utilities.Update.dobeta)
+            if (ByAeroBeHero.Utilities.Update.dobeta)
                 parameterLocationsString = ConfigurationManager.AppSettings["ParameterLocationsBleeding"];
 
             if (!String.IsNullOrEmpty(parameterLocationsString))

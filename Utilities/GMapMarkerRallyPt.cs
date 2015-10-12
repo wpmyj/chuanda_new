@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using GMap.NET;
 using GMap.NET.WindowsForms;
-using MissionPlanner.Properties;
+using ByAeroBeHero.Properties;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     [Serializable]
     public class GMapMarkerRallyPt : GMapMarker

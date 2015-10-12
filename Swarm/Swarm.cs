@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using log4net;
 using System.Reflection;
-using MissionPlanner.Utilities;
-using MissionPlanner;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     abstract class Swarm
     {

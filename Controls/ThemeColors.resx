@@ -243,7 +243,7 @@
     <value>BUT_butbord</value>
   </data>
   <data name="&gt;&gt;BUT_butbord.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_butbord.Parent" xml:space="preserve">
     <value>$this</value>
@@ -267,7 +267,7 @@
     <value>BUT_butbg</value>
   </data>
   <data name="&gt;&gt;BUT_butbg.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_butbg.Parent" xml:space="preserve">
     <value>$this</value>
@@ -291,7 +291,7 @@
     <value>BUT_text</value>
   </data>
   <data name="&gt;&gt;BUT_text.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_text.Parent" xml:space="preserve">
     <value>$this</value>
@@ -315,7 +315,7 @@
     <value>BUT_ctlbg</value>
   </data>
   <data name="&gt;&gt;BUT_ctlbg.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_ctlbg.Parent" xml:space="preserve">
     <value>$this</value>
@@ -339,7 +339,7 @@
     <value>BUT_bg</value>
   </data>
   <data name="&gt;&gt;BUT_bg.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_bg.Parent" xml:space="preserve">
     <value>$this</value>
@@ -363,7 +363,7 @@
     <value>BUT_done</value>
   </data>
   <data name="&gt;&gt;BUT_done.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_done.Parent" xml:space="preserve">
     <value>$this</value>

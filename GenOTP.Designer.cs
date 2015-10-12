@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner
+﻿namespace ByAeroBeHero
 {
     partial class GenOTP
     {
@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.txtboardsn = new System.Windows.Forms.TextBox();
-            this.myLabel3 = new MissionPlanner.Controls.MyLabel();
-            this.fileBrowseOtpbin = new MissionPlanner.Controls.FileBrowse();
-            this.BUT_makeotp = new MissionPlanner.Controls.MyButton();
-            this.myLabel2 = new MissionPlanner.Controls.MyLabel();
-            this.myLabel1 = new MissionPlanner.Controls.MyLabel();
-            this.fileBrowsePrivateKey = new MissionPlanner.Controls.FileBrowse();
-            this.myLabel4 = new MissionPlanner.Controls.MyLabel();
+            this.myLabel3 = new ByAeroBeHero.Controls.MyLabel();
+            this.fileBrowseOtpbin = new ByAeroBeHero.Controls.FileBrowse();
+            this.BUT_makeotp = new ByAeroBeHero.Controls.MyButton();
+            this.myLabel2 = new ByAeroBeHero.Controls.MyLabel();
+            this.myLabel1 = new ByAeroBeHero.Controls.MyLabel();
+            this.fileBrowsePrivateKey = new ByAeroBeHero.Controls.FileBrowse();
+            this.myLabel4 = new ByAeroBeHero.Controls.MyLabel();
             this.txt_vid = new System.Windows.Forms.TextBox();
-            this.myLabel5 = new MissionPlanner.Controls.MyLabel();
+            this.myLabel5 = new ByAeroBeHero.Controls.MyLabel();
             this.txt_pid = new System.Windows.Forms.TextBox();
-            this.myLabel6 = new MissionPlanner.Controls.MyLabel();
+            this.myLabel6 = new ByAeroBeHero.Controls.MyLabel();
             this.txt_id = new System.Windows.Forms.TextBox();
-            this.BUT_sn = new MissionPlanner.Controls.MyButton();
+            this.BUT_sn = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
             // 
             // txtboardsn

@@ -8,11 +8,11 @@ using System.Drawing.Imaging;
 using System.Drawing;
 using GMap.NET;
 using GMap.NET.WindowsForms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using GMap.NET.MapProviders;
 using GMap.NET.Projections;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class OpenGLtest : GLControl
     {

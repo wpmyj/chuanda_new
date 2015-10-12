@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using log4net;
 
-namespace MissionPlanner.Plugin
+namespace ByAeroBeHero.Plugin
 {
     public class PluginLoader
     {
@@ -36,7 +36,7 @@ namespace MissionPlanner.Plugin
             try
             {
                 Type[] types = asm.GetTypes();
-                Type type = typeof(MissionPlanner.Plugin.Plugin);
+                Type type = typeof(ByAeroBeHero.Plugin.Plugin);
                 foreach (var t in types)
                     if (type.IsAssignableFrom((Type)t))
                     {

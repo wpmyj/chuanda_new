@@ -1,5 +1,5 @@
 ﻿
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     partial class QuickView
     {

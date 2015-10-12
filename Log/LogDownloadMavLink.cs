@@ -17,11 +17,11 @@ using ICSharpCode.SharpZipLib.Zip;
 using ICSharpCode.SharpZipLib.Checksums;
 using ICSharpCode.SharpZipLib.Core;
 using log4net;
-using MissionPlanner.Comms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Comms;
+using ByAeroBeHero.Utilities;
 
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public partial class LogDownloadMavLink : Form
     {
@@ -52,7 +52,7 @@ namespace MissionPlanner.Log
 
             ThemeManager.ApplyThemeTo(this);
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void Log_Load(object sender, EventArgs e)

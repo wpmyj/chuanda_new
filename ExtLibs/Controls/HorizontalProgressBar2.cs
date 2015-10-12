@@ -19,14 +19,14 @@ using System.Xml; // config file
 using System.Runtime.InteropServices; // dll imports
 using log4net;
 
-using MissionPlanner;
+using ByAeroBeHero;
 using System.Reflection;
 
 using System.IO;
 
 using System.Drawing.Drawing2D;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class HorizontalProgressBar2 : BSE.Windows.Forms.ProgressBar
     {

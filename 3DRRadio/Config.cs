@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 
 namespace _3DRRadio
 {
@@ -32,13 +32,13 @@ namespace _3DRRadio
 
             panel1.Controls.Clear();
 
-            MissionPlanner._3DRradio form = new MissionPlanner._3DRradio();
+            ByAeroBeHero._3DRradio form = new ByAeroBeHero._3DRradio();
 
             panel1.Controls.Add(form);
 
-            MissionPlanner.Utilities.ThemeManager.SetTheme(MissionPlanner.Utilities.ThemeManager.Themes.None);
+            ByAeroBeHero.Utilities.ThemeManager.SetTheme(ByAeroBeHero.Utilities.ThemeManager.Themes.None);
 
-            MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(this);
+            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(this);
         }
 
         void loadTerminal()
@@ -51,9 +51,9 @@ namespace _3DRRadio
 
             panel1.Controls.Add(form);
 
-            MissionPlanner.Utilities.ThemeManager.SetTheme(MissionPlanner.Utilities.ThemeManager.Themes.None);
+            ByAeroBeHero.Utilities.ThemeManager.SetTheme(ByAeroBeHero.Utilities.ThemeManager.Themes.None);
 
-            MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(this);
+            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(this);
         }
 
         void loadRssi()
@@ -68,19 +68,19 @@ namespace _3DRRadio
 
             panel1.Controls.Add(form);
 
-            MissionPlanner.Utilities.ThemeManager.SetTheme(MissionPlanner.Utilities.ThemeManager.Themes.None);
+            ByAeroBeHero.Utilities.ThemeManager.SetTheme(ByAeroBeHero.Utilities.ThemeManager.Themes.None);
 
-            MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(this);
+            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(this);
         }
 
         private void CMB_SerialPort_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MissionPlanner.MainV2.comPort.BaseStream.PortName = CMB_SerialPort.Text;
+            ByAeroBeHero.MainV2.comPort.BaseStream.PortName = CMB_SerialPort.Text;
         }
 
         private void CMB_Baudrate_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MissionPlanner.MainV2.comPort.BaseStream.BaudRate = int.Parse(CMB_Baudrate.Text);
+            ByAeroBeHero.MainV2.comPort.BaseStream.BaudRate = int.Parse(CMB_Baudrate.Text);
         }
 
         private void CMB_SerialPort_Click(object sender, EventArgs e)

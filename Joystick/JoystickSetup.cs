@@ -8,11 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using Microsoft.DirectX.DirectInput;
 using OpenTK.Input;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 
 
-namespace MissionPlanner.Joystick
+namespace ByAeroBeHero.Joystick
 {
     public partial class JoystickSetup : Form
     {
@@ -24,7 +24,7 @@ namespace MissionPlanner.Joystick
         {
             InitializeComponent();
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void Joystick_Load(object sender, EventArgs e)

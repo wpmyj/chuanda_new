@@ -24,11 +24,11 @@ using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using Ionic.Zip;
 using log4net;
-using MissionPlanner.Controls;
-using MissionPlanner.Controls.Waypoints;
-using MissionPlanner.Maps;
-using MissionPlanner.Properties;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Controls.Waypoints;
+using ByAeroBeHero.Maps;
+using ByAeroBeHero.Properties;
+using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 using SharpKml.Base;
@@ -38,7 +38,7 @@ using ILog = log4net.ILog;
 using Placemark = SharpKml.Dom.Placemark;
 using Point = System.Drawing.Point;
 
-namespace MissionPlanner.GCSViews
+namespace ByAeroBeHero.GCSViews
 {
     public partial class FlightPlanner : MyUserControl, IDeactivate, IActivate
     {
@@ -963,7 +963,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch { }
 
-                //MissionPlanner.GMapMarkerRectWPRad mBorders = new MissionPlanner.GMapMarkerRectWPRad(point, (int)float.Parse(TXT_WPRad.Text), MainMap);
+                //ByAeroBeHero.GMapMarkerRectWPRad mBorders = new ByAeroBeHero.GMapMarkerRectWPRad(point, (int)float.Parse(TXT_WPRad.Text), MainMap);
                 GMapMarkerRect mBorders = new GMapMarkerRect(point);
                 {
                     mBorders.InnerMarker = m;
@@ -991,7 +991,7 @@ namespace MissionPlanner.GCSViews
                 m.ToolTipText = "grid" + tag;
                 m.Tag = "grid" + tag;
 
-                //MissionPlanner.GMapMarkerRectWPRad mBorders = new MissionPlanner.GMapMarkerRectWPRad(point, (int)float.Parse(TXT_WPRad.Text), MainMap);
+                //ByAeroBeHero.GMapMarkerRectWPRad mBorders = new ByAeroBeHero.GMapMarkerRectWPRad(point, (int)float.Parse(TXT_WPRad.Text), MainMap);
                 GMapMarkerRect mBorders = new GMapMarkerRect(point);
                 {
                     mBorders.InnerMarker = m;
@@ -1344,7 +1344,7 @@ namespace MissionPlanner.GCSViews
 
                         Spline2 sp = new Spline2();
 
-                        //sp._flags.segment_type = MissionPlanner.Controls.Waypoints.Spline2.SegmentType.SEGMENT_STRAIGHT;
+                        //sp._flags.segment_type = ByAeroBeHero.Controls.Waypoints.Spline2.SegmentType.SEGMENT_STRAIGHT;
                         //sp._flags.reached_destination = true;
                         //sp._origin = sp.pv_location_to_vector(lastpnt);
                         //sp._destination = sp.pv_location_to_vector(fullpointlist[0]);
@@ -1390,7 +1390,7 @@ namespace MissionPlanner.GCSViews
                         splinepnts.Clear();
 
                         /*
-                        MissionPlanner.Controls.Waypoints.Spline sp = new Controls.Waypoints.Spline();
+                        ByAeroBeHero.Controls.Waypoints.Spline sp = new Controls.Waypoints.Spline();
                         
                         var spline = sp.doit(splinepnts, 20, lastlastpnt.GetBearing(splinepnts[0]),false);
 

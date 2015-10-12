@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MissionPlanner.HIL;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.HIL;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.Controls.Waypoints
+namespace ByAeroBeHero.Controls.Waypoints
 {
-    public class Spline: MissionPlanner.HIL.Utils
+    public class Spline: ByAeroBeHero.HIL.Utils
     {
         float spline_t;
         Vector3 current_position;

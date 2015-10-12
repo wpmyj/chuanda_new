@@ -6,19 +6,19 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner;
+using ByAeroBeHero;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class Grid
     {
-        public static MissionPlanner.Plugin.PluginHost Host2;
+        public static ByAeroBeHero.Plugin.PluginHost Host2;
 
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);

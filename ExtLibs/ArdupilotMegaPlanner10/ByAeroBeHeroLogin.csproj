@@ -7,8 +7,8 @@
     <ProjectGuid>{B1538F7F-C82B-4678-9397-880F92848BFB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ArdupilotMegaPlanner10</RootNamespace>
-    <AssemblyName>ArdupilotMegaPlanner10</AssemblyName>
+    <RootNamespace>ByAeroBeHeroLogin</RootNamespace>
+    <AssemblyName>ByAeroBeHeroLogin</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

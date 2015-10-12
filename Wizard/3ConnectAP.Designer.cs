@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _3ConnectAP
     {
@@ -34,7 +34,7 @@ namespace MissionPlanner.Wizard
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel4 = new System.Windows.Forms.Panel();
             this.CMB_port = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@ namespace MissionPlanner.Wizard
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MissionPlanner.Properties.Resources.apmp4;
+            this.pictureBox1.Image = global::ByAeroBeHero.Properties.Resources.apmp4;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
@@ -142,7 +142,7 @@ namespace MissionPlanner.Wizard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);

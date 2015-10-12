@@ -4,9 +4,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using Core.ExtendedObjects;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class StreamCombiner
     {

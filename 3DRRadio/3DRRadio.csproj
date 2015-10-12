@@ -211,17 +211,17 @@
     <None Include="Resources\3dr3.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtLibs\Comms\MissionPlanner.Comms.csproj">
+    <ProjectReference Include="..\ExtLibs\Comms\ByAeroBeHero.Comms.csproj">
       <Project>{825E7A10-390C-4A2B-B3A8-491D14966912}</Project>
-      <Name>MissionPlanner.Comms</Name>
+      <Name>ByAeroBeHero.Comms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ExtLibs\Controls\MissionPlanner.Controls.csproj">
+    <ProjectReference Include="..\ExtLibs\Controls\ByAeroBeHero.Controls.csproj">
       <Project>{C8B88795-6D01-494D-83AD-6944BD4C5023}</Project>
-      <Name>MissionPlanner.Controls</Name>
+      <Name>ByAeroBeHero.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ExtLibs\Utilities\MissionPlanner.Utilities.csproj">
+    <ProjectReference Include="..\ExtLibs\Utilities\ByAeroBeHero.Utilities.csproj">
       <Project>{1378A66C-38E4-46F5-A05F-DC04EF7D4D16}</Project>
-      <Name>MissionPlanner.Utilities</Name>
+      <Name>ByAeroBeHero.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

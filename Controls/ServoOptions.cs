@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class ServoOptions : UserControl
     {
@@ -142,7 +142,7 @@ namespace MissionPlanner.Controls
             Control sourcectl = ((ContextMenuStrip)renameToolStripMenuItem.Owner).SourceControl;
 
             string desc = sourcectl.Text;
-            MissionPlanner.Controls.InputBox.Show("Description", "Enter new Description", ref desc);
+            ByAeroBeHero.Controls.InputBox.Show("Description", "Enter new Description", ref desc);
             sourcectl.Text = desc;
 
             if (sourcectl == BUT_High)

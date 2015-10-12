@@ -11,9 +11,9 @@ using System.Net.Sockets; // tcplistner
 using log4net;
 using System.IO;
 using System.Runtime.InteropServices;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     public class CommsNTRIP : CommsBase,  ICommsSerial, IDisposable
     {

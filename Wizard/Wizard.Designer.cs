@@ -1,6 +1,6 @@
-﻿using MissionPlanner.Controls;
+﻿using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class Wizard
     {
@@ -32,9 +32,9 @@ namespace MissionPlanner.Wizard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Wizard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.progressStep1 = new MissionPlanner.Controls.ProgressStep();
-            this.BUT_Next = new MissionPlanner.Controls.MyButton();
-            this.BUT_Back = new MissionPlanner.Controls.MyButton();
+            this.progressStep1 = new ByAeroBeHero.Controls.ProgressStep();
+            this.BUT_Next = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_Back = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
             // 
             // panel1

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 using System.Threading;
 using log4net;
 
 // Written by Michael Oborne
 
-namespace MissionPlanner.Arduino
+namespace ByAeroBeHero.Arduino
 {
     public class ArduinoSTKv2 : SerialPort,IArduinoComms
     {

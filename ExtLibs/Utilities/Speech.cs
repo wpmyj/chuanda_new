@@ -5,7 +5,7 @@ using System.Text;
 using System.Speech.Synthesis;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class Speech: IDisposable
     {

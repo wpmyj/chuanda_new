@@ -10,7 +10,7 @@ using AGaugeApp;
 using System.IO.Ports;
 using System.Threading;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class RAW_Sensor : Form
     {
@@ -31,7 +31,7 @@ namespace MissionPlanner
 
             CreateChart(zg1, "Raw Sensors", "Time", "Raw Data");
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         public struct plot
@@ -160,32 +160,32 @@ namespace MissionPlanner
 
             if (chkax.Checked)
             {
-                list1.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.ax);
+                list1.Add(time, ByAeroBeHero.MainV2.comPort.MAV.cs.ax);
             }
             else { list1.Clear(); }
             if (chkay.Checked)
             {
-                list2.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.ay);
+                list2.Add(time, ByAeroBeHero.MainV2.comPort.MAV.cs.ay);
             }
             else { list2.Clear(); }
             if (chkaz.Checked)
             {
-                list3.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.az);
+                list3.Add(time, ByAeroBeHero.MainV2.comPort.MAV.cs.az);
             }
             else { list3.Clear(); }
             if (chkgx.Checked)
             {
-                list4.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.gx);
+                list4.Add(time, ByAeroBeHero.MainV2.comPort.MAV.cs.gx);
             }
             else { list4.Clear(); }
             if (chkgy.Checked)
             {
-                list5.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.gy);
+                list5.Add(time, ByAeroBeHero.MainV2.comPort.MAV.cs.gy);
             }
             else { list5.Clear(); }
             if (chkgz.Checked)
             {
-                list6.Add(time, MissionPlanner.MainV2.comPort.MAV.cs.gz);
+                list6.Add(time, ByAeroBeHero.MainV2.comPort.MAV.cs.gz);
             }
             else { list6.Clear(); }
         }
@@ -235,12 +235,12 @@ namespace MissionPlanner
                         //comPort.Open();
                         //comPort.stopall(true); // ensure off
 
-                        //comPort.requestDatastream((byte)MissionPlanner.MAVLink09.MAV_DATA_STREAM.EXTENDED_STATUS, 0); // mode gps raw
-                        //comPort.requestDatastream((byte)MissionPlanner.MAVLink09.MAV_DATA_STREAM.POSITION, 3); // request location
-                        //comPort.requestDatastream((byte)MissionPlanner.MAVLink09.MAV_DATA_STREAM.EXTRA1, 3); // request attitude
-                        //comPort.requestDatastream((byte)MissionPlanner.MAVLink09.MAV_DATA_STREAM.EXTRA2, 3); // request vfr
+                        //comPort.requestDatastream((byte)ByAeroBeHero.MAVLink09.MAV_DATA_STREAM.EXTENDED_STATUS, 0); // mode gps raw
+                        //comPort.requestDatastream((byte)ByAeroBeHero.MAVLink09.MAV_DATA_STREAM.POSITION, 3); // request location
+                        //comPort.requestDatastream((byte)ByAeroBeHero.MAVLink09.MAV_DATA_STREAM.EXTRA1, 3); // request attitude
+                        //comPort.requestDatastream((byte)ByAeroBeHero.MAVLink09.MAV_DATA_STREAM.EXTRA2, 3); // request vfr
                         MainV2.comPort.requestDatastream(MAVLink.MAV_DATA_STREAM.RAW_SENSORS, MainV2.comPort.MAV.cs.ratesensors); // request raw sensor
-                        //comPort.requestDatastream((byte)MissionPlanner.MAVLink09.MAV_DATA_STREAM.RC_CHANNELS, 3); // request rc info
+                        //comPort.requestDatastream((byte)ByAeroBeHero.MAVLink09.MAV_DATA_STREAM.RC_CHANNELS, 3); // request rc info
                     }
                     catch
                     {

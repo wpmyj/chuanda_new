@@ -7,8 +7,8 @@
     <ProjectGuid>{C8B88795-6D01-494D-83AD-6944BD4C5023}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MissionPlanner.Controls</RootNamespace>
-    <AssemblyName>MissionPlanner.Controls</AssemblyName>
+    <RootNamespace>ByAeroBeHero.Controls</RootNamespace>
+    <AssemblyName>ByAeroBeHero.Controls</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -325,9 +325,9 @@
       <Project>{e06def77-f933-42fb-afd7-db2d0d8d6a98}</Project>
       <Name>GMap.NET.WindowsForms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utilities\MissionPlanner.Utilities.csproj">
+    <ProjectReference Include="..\Utilities\ByAeroBeHero.Utilities.csproj">
       <Project>{1378A66C-38E4-46F5-A05F-DC04EF7D4D16}</Project>
-      <Name>MissionPlanner.Utilities</Name>
+      <Name>ByAeroBeHero.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

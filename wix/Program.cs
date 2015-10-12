@@ -87,7 +87,7 @@ namespace wix
             //Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar+ 
             string file = "installer.wxs";
 
-            string outputfilename = "MissionPlanner";
+            string outputfilename = "ByAeroBeHero";
 
             if (args.Length > 1)
                 outputfilename = args[1];
@@ -96,7 +96,7 @@ namespace wix
 
             header();
 
-            sw.WriteLine("<Directory Id=\"MissionPlanner\" Name=\"Mission Planner\">");
+            sw.WriteLine("<Directory Id=\"ByAeroBeHero\" Name=\"Mission Planner\">");
 
             sw.WriteLine(@"<Component Id=""InstallDirPermissions"" Guid=""{525389D7-EB3C-4d77-A5F6-A285CF99437D}"" KeyPath=""yes""> 
                         <CreateFolder> 
@@ -111,7 +111,7 @@ namespace wix
 
             sw.Close();
 
-            string exepath = Path.GetFullPath(path) + Path.DirectorySeparatorChar + "MissionPlanner.exe";
+            string exepath = Path.GetFullPath(path) + Path.DirectorySeparatorChar + "ByAeroBeHero.exe";
             string version = Assembly.LoadFile(exepath).GetName().Version.ToString();
 
             System.Diagnostics.FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(exepath);
@@ -135,11 +135,11 @@ namespace wix
             st.WriteLine(@"c:\cygwin\bin\ln.exe -f -s " + fn + ".zip " + outputfilename + "-latest.zip");
             st.WriteLine(@"c:\cygwin\bin\ln.exe -f -s " + fn + ".msi " + outputfilename + "-latest.msi");
 
-            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt " + fn + ".zip michael@firmware.diydrones.com::MissionPlanner/");
-            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt " + fn + ".msi michael@firmware.diydrones.com::MissionPlanner/");
+            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt " + fn + ".zip michael@firmware.diydrones.com::ByAeroBeHero/");
+            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt " + fn + ".msi michael@firmware.diydrones.com::ByAeroBeHero/");
 
-            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt -l MissionPlanner-latest.zip michael@firmware.diydrones.com::MissionPlanner/");
-            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt -l MissionPlanner-latest.msi michael@firmware.diydrones.com::MissionPlanner/");
+            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt -l ByAeroBeHero-latest.zip michael@firmware.diydrones.com::ByAeroBeHero/");
+            st.WriteLine(@"c:\cygwin\bin\rsync.exe -Pv --password-file=/cygdrive/c/users/michael/diyrsync.txt -l ByAeroBeHero-latest.msi michael@firmware.diydrones.com::ByAeroBeHero/");
 
             st.Close();
 
@@ -250,33 +250,33 @@ namespace wix
  
 <CustomAction
   Id='comReg' Impersonate='no' Execute='deferred' 
-  Directory='MissionPlanner'
-  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework\v4.0.30319\regasm.exe"" ""[MissionPlanner]tlogThumbnailHandler.dll"" /codebase""'
+  Directory='ByAeroBeHero'
+  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework\v4.0.30319\regasm.exe"" ""[ByAeroBeHero]tlogThumbnailHandler.dll"" /codebase""'
   Return='ignore' />
  
 <CustomAction
   Id='comUnreg' Impersonate='no' Execute='deferred' 
-  Directory='MissionPlanner'
-  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework\v4.0.30319\regasm.exe"" /u ""[MissionPlanner]tlogThumbnailHandler.dll""""'
+  Directory='ByAeroBeHero'
+  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework\v4.0.30319\regasm.exe"" /u ""[ByAeroBeHero]tlogThumbnailHandler.dll""""'
   Return='ignore' />        
 
 <CustomAction
   Id='comReg64' Impersonate='no' Execute='deferred' 
-  Directory='MissionPlanner'
-  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319\regasm.exe"" ""[MissionPlanner]tlogThumbnailHandler.dll"" /codebase""'
+  Directory='ByAeroBeHero'
+  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319\regasm.exe"" ""[ByAeroBeHero]tlogThumbnailHandler.dll"" /codebase""'
   Return='ignore' />
  
 <CustomAction
   Id='comUnreg64' Impersonate='no' Execute='deferred' 
-  Directory='MissionPlanner'
-  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319\regasm.exe"" /u ""[MissionPlanner]tlogThumbnailHandler.dll""""'
+  Directory='ByAeroBeHero'
+  ExeCommand='[SystemFolder]cmd.exe /c """"[WindowsFolder]Microsoft.NET\Framework64\v4.0.30319\regasm.exe"" /u ""[ByAeroBeHero]tlogThumbnailHandler.dll""""'
   Return='ignore' />           
 
         <DirectoryRef Id=""ApplicationProgramsFolder"">
             <Component Id=""ApplicationShortcut"" Guid=""*"">
-                <Shortcut Id=""ApplicationStartMenuShortcut10"" Name=""Mission Planner"" Description=""Mission Planner"" Target=""[MissionPlanner]MissionPlanner.exe"" WorkingDirectory=""MissionPlanner"" />
+                <Shortcut Id=""ApplicationStartMenuShortcut10"" Name=""Mission Planner"" Description=""Mission Planner"" Target=""[ByAeroBeHero]ByAeroBeHero.exe"" WorkingDirectory=""ByAeroBeHero"" />
                 <Shortcut Id=""UninstallProduct"" Name=""Uninstall Mission Planner"" Description=""Uninstalls My Application"" Target=""[System64Folder]msiexec.exe"" Arguments=""/x [ProductCode]"" />
-                <RegistryValue Root=""HKCU"" Key=""Software\MichaelOborne\MissionPlanner"" Name=""installed"" Type=""integer"" Value=""1"" KeyPath=""yes"" />
+                <RegistryValue Root=""HKCU"" Key=""Software\MichaelOborne\ByAeroBeHero"" Name=""installed"" Type=""integer"" Value=""1"" KeyPath=""yes"" />
 
                 <RemoveFolder Id=""dltApplicationProgramsFolder"" Directory=""ApplicationProgramsFolder"" On=""uninstall"" />
 
@@ -301,9 +301,9 @@ namespace wix
         </Feature>
         
             <!-- Step 2: Add UI to your installer / Step 4: Trigger the custom action -->
-    <Property Id=""WIXUI_INSTALLDIR"" Value=""MissionPlanner"" />
+    <Property Id=""WIXUI_INSTALLDIR"" Value=""ByAeroBeHero"" />
 
-<Property Id=""ApplicationFolderName"" Value=""MissionPlanner"" /> 
+<Property Id=""ApplicationFolderName"" Value=""ByAeroBeHero"" /> 
 
 <WixVariable Id=""WixUILicenseRtf"" Value=""licence.rtf"" />
 
@@ -366,18 +366,18 @@ namespace wix
                 no++;
 
 
-                if (filepath.EndsWith("MissionPlanner.exe"))
+                if (filepath.EndsWith("ByAeroBeHero.exe"))
                 {
                     mainexeid = "_" + no;
 
-                    sw.WriteLine("<File Id=\"" + mainexeid + "\" Source=\"" + filepath + "\" ><netfx:NativeImage Id=\"ngen_MissionPlannerexe\"/> </File>");
+                    sw.WriteLine("<File Id=\"" + mainexeid + "\" Source=\"" + filepath + "\" ><netfx:NativeImage Id=\"ngen_ByAeroBeHeroexe\"/> </File>");
 
-                    sw.WriteLine(@"<ProgId Id='MissionPlanner.tlog' Description='Telemetry Log'>
+                    sw.WriteLine(@"<ProgId Id='ByAeroBeHero.tlog' Description='Telemetry Log'>
   <Extension Id='tlog' ContentType='application/tlog'>
      <Verb Id='open' Command='Open' TargetFile='" + mainexeid + @"' Argument='""%1""' />
   </Extension>
 </ProgId>
- <RegistryValue Root=""HKCR"" Key=""MissionPlanner.tlog\shellex\{BB2E617C-0920-11D1-9A0B-00C04FC2D6C1}"" Value=""{f3b857f1-0b79-4e77-9d0b-8b8b7e874f56}"" Type=""string"" Action=""write"" />
+ <RegistryValue Root=""HKCR"" Key=""ByAeroBeHero.tlog\shellex\{BB2E617C-0920-11D1-9A0B-00C04FC2D6C1}"" Value=""{f3b857f1-0b79-4e77-9d0b-8b8b7e874f56}"" Type=""string"" Action=""write"" />
 ");
 
                 }

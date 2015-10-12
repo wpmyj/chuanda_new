@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class GitHubContent
     {

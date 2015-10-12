@@ -1,2 +1,2 @@
 ﻿#!/bin/sh
-mono MissionPlanner.exe
+mono ByAeroBeHero.exe

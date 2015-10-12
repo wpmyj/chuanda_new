@@ -10,7 +10,7 @@ using System.Threading;
 using System.Collections;
 using log4net;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class srtm: IDisposable
     {

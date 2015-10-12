@@ -6,9 +6,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     public partial class _1Intro : MyUserControl, IWizard
     {

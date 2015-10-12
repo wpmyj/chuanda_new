@@ -4,12 +4,12 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Models;
-using MissionPlanner.Presenter;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Models;
+using ByAeroBeHero.Presenter;
 using Transitions;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigCameraStab : UserControl, IActivate
     {

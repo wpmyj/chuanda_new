@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls.BackstageView
+namespace ByAeroBeHero.Controls.BackstageView
 {
 
     /// <summary>

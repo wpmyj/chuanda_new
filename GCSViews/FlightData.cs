@@ -15,17 +15,18 @@ using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using log4net;
-using MissionPlanner.Controls;
-using MissionPlanner.Joystick;
-using MissionPlanner.Log;
-using MissionPlanner.Utilities;
-using MissionPlanner.Warnings;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Joystick;
+using ByAeroBeHero.Log;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero.Warnings;
 using OpenTK;
 using ZedGraph;
-using LogAnalyzer = MissionPlanner.Utilities.LogAnalyzer;
+using LogAnalyzer = ByAeroBeHero.Utilities.LogAnalyzer;
+using ByAeroBeHero.Controls;
 
 // written by michael oborne
-namespace MissionPlanner.GCSViews
+namespace ByAeroBeHero.GCSViews
 {
     public partial class FlightData : MyUserControl, IActivate, IDeactivate
     {
@@ -3149,7 +3150,7 @@ namespace MissionPlanner.GCSViews
 
                 scriptChecker_Tick(null, null);
 
-                MissionPlanner.Utilities.Tracking.AddPage(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.ToString(), System.Reflection.MethodBase.GetCurrentMethod().Name);
+                ByAeroBeHero.Utilities.Tracking.AddPage(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.ToString(), System.Reflection.MethodBase.GetCurrentMethod().Name);
             }
             else
             {

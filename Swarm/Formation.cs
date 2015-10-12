@@ -5,10 +5,10 @@ using System.Text;
 using ProjNet.CoordinateSystems.Transformations;
 using ProjNet.CoordinateSystems;
 using ProjNet.Converters;
-using MissionPlanner.Utilities;
-using MissionPlanner;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     /// <summary>
     /// Follow the leader

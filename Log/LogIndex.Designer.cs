@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Log
+﻿namespace ByAeroBeHero.Log
 {
     partial class LogIndex
     {
@@ -33,7 +33,7 @@
             this.olvColumndir = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumnName = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.olvColumnduration = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
-            this.BUT_changedir = new MissionPlanner.Controls.MyButton();
+            this.BUT_changedir = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).BeginInit();
             this.SuspendLayout();
             // 

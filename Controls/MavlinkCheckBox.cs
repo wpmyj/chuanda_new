@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class MavlinkCheckBox : CheckBox
     {

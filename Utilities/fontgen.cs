@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using System.IO;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     class fontgen
     {

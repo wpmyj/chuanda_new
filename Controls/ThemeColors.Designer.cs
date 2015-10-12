@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls
+﻿namespace ByAeroBeHero.Controls
 {
     partial class ThemeColors
     {
@@ -35,12 +35,12 @@
             this.TXT_text = new System.Windows.Forms.TextBox();
             this.TXT_butbg = new System.Windows.Forms.TextBox();
             this.TXT_butbord = new System.Windows.Forms.TextBox();
-            this.BUT_butbord = new MissionPlanner.Controls.MyButton();
-            this.BUT_butbg = new MissionPlanner.Controls.MyButton();
-            this.BUT_text = new MissionPlanner.Controls.MyButton();
-            this.BUT_ctlbg = new MissionPlanner.Controls.MyButton();
-            this.BUT_bg = new MissionPlanner.Controls.MyButton();
-            this.BUT_done = new MissionPlanner.Controls.MyButton();
+            this.BUT_butbord = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_butbg = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_text = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_ctlbg = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_bg = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_done = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
             // 
             // TXT_bg

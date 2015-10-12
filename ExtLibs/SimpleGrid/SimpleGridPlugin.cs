@@ -5,11 +5,11 @@ using System.Text;
 using System.Windows.Forms;
 using GMap.NET.WindowsForms;
 
-namespace MissionPlanner.SimpleGrid
+namespace ByAeroBeHero.SimpleGrid
 {
-    public class GridPlugin : MissionPlanner.Plugin.Plugin
+    public class GridPlugin : ByAeroBeHero.Plugin.Plugin
     {
-        public static MissionPlanner.Plugin.PluginHost Host2;
+        public static ByAeroBeHero.Plugin.PluginHost Host2;
 
         ToolStripMenuItem but;
 
@@ -65,7 +65,7 @@ namespace MissionPlanner.SimpleGrid
             if (Host.FPDrawnPolygon != null && Host.FPDrawnPolygon.Points.Count > 2)
             {
                 Form gridui = new GridUI(this);
-                MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(gridui);
+                ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
                 gridui.ShowDialog();
             }
             else

@@ -1,5 +1,5 @@
-﻿using MissionPlanner.Controls;
-namespace MissionPlanner.Joystick
+﻿using ByAeroBeHero.Controls;
+namespace ByAeroBeHero.Joystick
 {
     partial class JoystickSetup
     {
@@ -71,24 +71,24 @@ namespace MissionPlanner.Joystick
             this.label13 = new System.Windows.Forms.Label();
             this.expo_ch8 = new System.Windows.Forms.TextBox();
             this.CMB_CH8 = new System.Windows.Forms.ComboBox();
-            this.BUT_detch8 = new MissionPlanner.Controls.MyButton();
-            this.ProgressBarCH8 = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.BUT_detch4 = new MissionPlanner.Controls.MyButton();
-            this.BUT_detch3 = new MissionPlanner.Controls.MyButton();
-            this.BUT_detch2 = new MissionPlanner.Controls.MyButton();
-            this.BUT_detch1 = new MissionPlanner.Controls.MyButton();
-            this.BUT_enable = new MissionPlanner.Controls.MyButton();
-            this.BUT_save = new MissionPlanner.Controls.MyButton();
-            this.progressBarRudder = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.progressBarThrottle = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.progressBarPith = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.progressBarRoll = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.BUT_detch5 = new MissionPlanner.Controls.MyButton();
-            this.ProgressBarCH5 = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.BUT_detch6 = new MissionPlanner.Controls.MyButton();
-            this.ProgressBarCH6 = new MissionPlanner.Controls.HorizontalProgressBar();
-            this.BUT_detch7 = new MissionPlanner.Controls.MyButton();
-            this.ProgressBarCH7 = new MissionPlanner.Controls.HorizontalProgressBar();
+            this.BUT_detch8 = new ByAeroBeHero.Controls.MyButton();
+            this.ProgressBarCH8 = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.BUT_detch4 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_detch3 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_detch2 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_detch1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_enable = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_save = new ByAeroBeHero.Controls.MyButton();
+            this.progressBarRudder = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.progressBarThrottle = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.progressBarPith = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.progressBarRoll = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.BUT_detch5 = new ByAeroBeHero.Controls.MyButton();
+            this.ProgressBarCH5 = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.BUT_detch6 = new ByAeroBeHero.Controls.MyButton();
+            this.ProgressBarCH6 = new ByAeroBeHero.Controls.HorizontalProgressBar();
+            this.BUT_detch7 = new ByAeroBeHero.Controls.MyButton();
+            this.ProgressBarCH7 = new ByAeroBeHero.Controls.HorizontalProgressBar();
             this.label14 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 

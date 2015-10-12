@@ -7,14 +7,14 @@ using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using MissionPlanner.Arduino;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Arduino;
+using ByAeroBeHero.Comms;
 using log4net;
 using px4uploader;
 using System.Collections;
 using System.Xml.Serialization;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class Firmware
     {
@@ -25,8 +25,8 @@ namespace MissionPlanner.Utilities
         string firmwareurl = "https://raw.github.com/diydrones/binary/master/Firmware/firmware2.xml";
 
         // ap 2.5 - ac 2.7
-        readonly string gcoldurl = ("https://meee146-planner.googlecode.com/git-history/!Hash!/Tools/MissionPlanner.lanner/Firmware/firmware2.xml");
-        readonly string gcoldfirmwareurl = ("https://meee146-planner.googlecode.com/git-history/!Hash!/Tools/MissionPlanner.lanner/Firmware/!Firmware!");
+        readonly string gcoldurl = ("https://meee146-planner.googlecode.com/git-history/!Hash!/Tools/ByAeroBeHero.lanner/Firmware/firmware2.xml");
+        readonly string gcoldfirmwareurl = ("https://meee146-planner.googlecode.com/git-history/!Hash!/Tools/ByAeroBeHero.lanner/Firmware/!Firmware!");
         string[] gcoldurls = new string[] { "76ff91fe7b2940a509ea7dfd728542491f480372", "bb5ee0e1c3e643e7e359ffb4c8bde34aa7d4f996", "55ec5eaf662a56044ea25c894d235d17185f0660", "cb5b736976c7ed791ea45675c31f588ecb8228d4", "bcd5239322df38db011f183e48d596f215803838", "8709cc418e00326295abc562530413c0089807a7", "06a64192df594b0f81233dfb1f0214aab2cb2603", "7853ef3fad98e5053f228b7c1748c76858c4d282", "abe930ce723267697542388ef181328f00371f40", "26305d5790333f730cd396afcd08c165cde33ed7", "bc1f26ca40b076e3d06f173adad772fb25aa6512", "dfc5737c5efc1e7b78e908829a097624c273d9d7", "682065db449b6c79d89717908ed8beea1ed6a03a", "b21116847d35472b9ab770408cbeb88ed2ed0a95", "511e00bc89a554aea8768a274bff28af532cd335", "1da56714aa1ed88dcdb078a90d33bcef4eb4315f", "8aa4c7a1ed07648f31335926cc6bcc06c87dc536" };
         readonly string gholdurl = ("https://github.com/diydrones/binary/raw/!Hash!/Firmware/firmware2.xml");
         readonly string gholdfirmwareurl = ("https://github.com/diydrones/binary/raw/!Hash!/Firmware/!Firmware!");
@@ -623,7 +623,7 @@ namespace MissionPlanner.Utilities
                 return false; 
             }
 
-            MissionPlanner.Utilities.Tracking.AddFW(temp.name, board.ToString());
+            ByAeroBeHero.Utilities.Tracking.AddFW(temp.name, board.ToString());
 
             return UploadFlash(comport, Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + @"firmware.hex", board);
         }
@@ -746,30 +746,30 @@ namespace MissionPlanner.Utilities
 
                         if (up.libre)
                         {
-                            MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "libre", "");
+                            ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "libre", "");
                         }
                         else 
                         {
-                            MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "Pass", "");
+                            ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "Pass", "");
                         }
                     }
                     catch (Org.BouncyCastle.Security.InvalidKeyException ex) 
                     {
-                        MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp","InvalidKeyException","");
+                        ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp","InvalidKeyException","");
                         log.Error(ex);
                         CustomMessageBox.Show(Strings.YouAreUsingUnsupportedHardware , Strings.InvalidCert); 
                         up.skipotp = true;
                     }
                     catch (FormatException ex)
                     {
-                        MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "FormatException", "");
+                        ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "FormatException", "");
                         log.Error(ex);
                         CustomMessageBox.Show(Strings.YouAreUsingUnsupportedHardware, Strings.InvalidCert);
                         up.skipotp = true;
                     }
                     catch (IOException ex) 
                     {
-                        MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "IOException", "");
+                        ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "IOException", "");
                         log.Error(ex);
                         CustomMessageBox.Show("lost communication with the board.", "lost comms");
                         up.close();
@@ -777,7 +777,7 @@ namespace MissionPlanner.Utilities
                     }
                     catch (TimeoutException ex)
                     {
-                        MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "TimeoutException", "");
+                        ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "TimeoutException", "");
                         log.Error(ex);
                         CustomMessageBox.Show("lost communication with the board.", "lost comms");
                         up.close();
@@ -785,7 +785,7 @@ namespace MissionPlanner.Utilities
                     }
                     catch (Exception ex)
                     {
-                        MissionPlanner.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "Exception", "");
+                        ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "Exception", "");
                         log.Error(ex);
                         CustomMessageBox.Show("lost communication with the board. " + ex.ToString(), "lost comms");
                         up.close();

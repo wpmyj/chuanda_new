@@ -6,10 +6,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using System.IO;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     public partial class _5AccelCalib : MyUserControl, IWizard
     {
@@ -97,42 +97,42 @@ namespace MissionPlanner.Wizard
             {
                 if (MainV2.comPort.MAV.cs.message.ToLower().Contains("initi"))
                 {
-                    //imageLabel1.Image = MissionPlanner.Properties.Resources.calibration01;
+                    //imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration01;
                     //imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 if (MainV2.comPort.MAV.cs.message.ToLower().Contains("level"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration01;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration01;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 else if (MainV2.comPort.MAV.cs.message.ToLower().Contains("left"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration07;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration07;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 else if (MainV2.comPort.MAV.cs.message.ToLower().Contains("right"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration05;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration05;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 else if (MainV2.comPort.MAV.cs.message.ToLower().Contains("down"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration04;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration04;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 else if (MainV2.comPort.MAV.cs.message.ToLower().Contains("up"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration06;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration06;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 else if (MainV2.comPort.MAV.cs.message.ToLower().Contains("back"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration03;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration03;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
                 else if (MainV2.comPort.MAV.cs.message.ToLower().Contains("calibration"))
                 {
-                    imageLabel1.Image = MissionPlanner.Properties.Resources.calibration01;
+                    imageLabel1.Image = ByAeroBeHero.Properties.Resources.calibration01;
                     imageLabel1.Text = MainV2.comPort.MAV.cs.message;
                 }
 

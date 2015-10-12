@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class LineOffset
     {

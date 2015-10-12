@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using log4net;
-using MissionPlanner;
-using MissionPlanner.HIL;
+using ByAeroBeHero;
+using ByAeroBeHero.HIL;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class Magfitrotation : HIL.Utils
     {

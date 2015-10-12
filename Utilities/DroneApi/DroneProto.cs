@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.IO;
 using ProtoBuf;
 
-namespace MissionPlanner.Utilities.DroneApi
+namespace ByAeroBeHero.Utilities.DroneApi
 {
     public class DroneProto
     {

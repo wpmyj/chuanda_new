@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner
+﻿namespace ByAeroBeHero
 {
     partial class GridUI
     {
@@ -64,7 +64,7 @@
             this.rad_repeatservo = new System.Windows.Forms.RadioButton();
             this.rad_trigdist = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BUT_samplephoto = new MissionPlanner.Controls.MyButton();
+            this.BUT_samplephoto = new ByAeroBeHero.Controls.MyButton();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.BUT_save = new MissionPlanner.Controls.MyButton();
+            this.BUT_save = new ByAeroBeHero.Controls.MyButton();
             this.tabGrid = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.LBL_Alternating_lanes = new System.Windows.Forms.Label();
@@ -135,10 +135,10 @@
             this.CHK_grid = new System.Windows.Forms.CheckBox();
             this.CHK_markers = new System.Windows.Forms.CheckBox();
             this.CHK_boundary = new System.Windows.Forms.CheckBox();
-            this.BUT_Accept = new MissionPlanner.Controls.MyButton();
+            this.BUT_Accept = new ByAeroBeHero.Controls.MyButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.map = new MissionPlanner.Controls.myGMAP();
-            this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
+            this.map = new ByAeroBeHero.Controls.myGMAP();
+            this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
             this.groupBox5.SuspendLayout();
             this.tabCamera.SuspendLayout();
             this.groupBox3.SuspendLayout();

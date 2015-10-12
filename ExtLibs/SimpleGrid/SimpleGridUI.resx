@@ -136,7 +136,7 @@
     <value>map</value>
   </data>
   <data name="&gt;&gt;map.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.myGMAP, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.myGMAP, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;map.Parent" xml:space="preserve">
     <value>$this</value>
@@ -610,7 +610,7 @@
     <value>BUT_Accept</value>
   </data>
   <data name="&gt;&gt;BUT_Accept.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_Accept.Parent" xml:space="preserve">
     <value>groupBox6</value>

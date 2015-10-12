@@ -6,13 +6,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Comms;
 using System.Collections;
-using MissionPlanner.Utilities;
-using MissionPlanner.Controls.BackstageView;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero.Controls.BackstageView;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     public partial class _3ConnectAP : MyUserControl, IWizard, IActivate
     {

@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public class CollectionBuffer<T> : IList<T>, ICollection<T>, IEnumerable<T>, IDisposable
     {

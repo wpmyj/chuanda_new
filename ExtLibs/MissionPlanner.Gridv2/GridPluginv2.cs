@@ -5,9 +5,9 @@ using System.Text;
 using System.Windows.Forms;
 using GMap.NET.WindowsForms;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
-    public class GridPluginv2 : MissionPlanner.Plugin.Plugin
+    public class GridPluginv2 : ByAeroBeHero.Plugin.Plugin
     {
         ToolStripMenuItem but;
 
@@ -64,7 +64,7 @@ namespace MissionPlanner
         void but_Click(object sender, EventArgs e)
         {
             var gridui = new GridUIv2(this);
-            MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(gridui);
+            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
 
                 gridui.ShowDialog();
           

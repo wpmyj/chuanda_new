@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using AGaugeApp;
 using System.IO.Ports;
 using System.Threading;
-using MissionPlanner.Attributes;
+using ByAeroBeHero.Attributes;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
@@ -22,9 +22,9 @@ using System.Xml; // config file
 using System.Runtime.InteropServices; // dll imports
 using log4net;
 using ZedGraph; // Graphs
-using MissionPlanner;
+using ByAeroBeHero;
 using System.Reflection;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
 using System.IO;
 
@@ -32,7 +32,7 @@ using System.Drawing.Drawing2D;
 using ProjNet.CoordinateSystems.Transformations;
 using ProjNet.CoordinateSystems;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
 
     /// <summary>
@@ -103,7 +103,7 @@ namespace MissionPlanner
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
 
-        private readonly Bitmap icon = global::MissionPlanner.Properties.Resources.FW_icons_2013_logos_01;
+        private readonly Bitmap icon = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_01;
 
         float heading = 0;
 
@@ -186,7 +186,7 @@ namespace MissionPlanner
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
 
-        static readonly System.Drawing.Size SizeSt = new System.Drawing.Size(global::MissionPlanner.Properties.Resources.rover.Width, global::MissionPlanner.Properties.Resources.rover.Height);
+        static readonly System.Drawing.Size SizeSt = new System.Drawing.Size(global::ByAeroBeHero.Properties.Resources.rover.Width, global::ByAeroBeHero.Properties.Resources.rover.Height);
         float heading = 0;
         float cog = -1;
         float target = -1;
@@ -226,7 +226,7 @@ namespace MissionPlanner
                 g.RotateTransform(heading);
             }
             catch { }
-            g.DrawImageUnscaled(global::MissionPlanner.Properties.Resources.rover, global::MissionPlanner.Properties.Resources.rover.Width / -2, global::MissionPlanner.Properties.Resources.rover.Height / -2);
+            g.DrawImageUnscaled(global::ByAeroBeHero.Properties.Resources.rover, global::ByAeroBeHero.Properties.Resources.rover.Width / -2, global::ByAeroBeHero.Properties.Resources.rover.Height / -2);
 
             g.Transform = temp;
         }
@@ -238,7 +238,7 @@ namespace MissionPlanner
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
 
-        private readonly Bitmap icon = global::MissionPlanner.Properties.Resources.planeicon;
+        private readonly Bitmap icon = global::ByAeroBeHero.Properties.Resources.planeicon;
 
         float heading = 0;
         float cog = -1;
@@ -329,7 +329,7 @@ namespace MissionPlanner
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
 
-        private readonly Bitmap icon = global::MissionPlanner.Properties.Resources.quadicon;
+        private readonly Bitmap icon = global::ByAeroBeHero.Properties.Resources.quadicon;
 
         float heading = 0;
         float cog = -1;
@@ -382,7 +382,7 @@ namespace MissionPlanner
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
 
-        private readonly Bitmap icon = global::MissionPlanner.Properties.Resources.heli;
+        private readonly Bitmap icon = global::ByAeroBeHero.Properties.Resources.heli;
 
         float heading = 0;
         float cog = -1;
@@ -430,7 +430,7 @@ namespace MissionPlanner
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
 
-        private readonly Bitmap icon = global::MissionPlanner.Properties.Resources.Antenna_Tracker_01;
+        private readonly Bitmap icon = global::ByAeroBeHero.Properties.Resources.Antenna_Tracker_01;
 
         float heading = 0;
         private float target = 0;

@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews
+﻿namespace ByAeroBeHero.GCSViews
 {
     partial class Help
     {
@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.CHK_showconsole = new System.Windows.Forms.CheckBox();
-            this.BUT_updatecheck = new MissionPlanner.Controls.MyButton();
+            this.BUT_updatecheck = new ByAeroBeHero.Controls.MyButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.PIC_wizard = new System.Windows.Forms.PictureBox();
-            this.BUT_betaupdate = new MissionPlanner.Controls.MyButton();
+            this.BUT_betaupdate = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.PIC_wizard)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,8 +73,8 @@
             // 
             resources.ApplyResources(this.PIC_wizard, "PIC_wizard");
             this.PIC_wizard.BackColor = System.Drawing.Color.Transparent;
-            this.PIC_wizard.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
-            this.PIC_wizard.Image = global::MissionPlanner.Properties.Resources.lofin_logo;
+            this.PIC_wizard.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.PIC_wizard.Image = global::ByAeroBeHero.Properties.Resources.lofin_logo;
             this.PIC_wizard.Name = "PIC_wizard";
             this.PIC_wizard.TabStop = false;
             this.PIC_wizard.Click += new System.EventHandler(this.PIC_wizard_Click);
@@ -93,7 +93,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.Controls.Add(this.BUT_betaupdate);
             this.Controls.Add(this.PIC_wizard);
             this.Controls.Add(this.linkLabel1);

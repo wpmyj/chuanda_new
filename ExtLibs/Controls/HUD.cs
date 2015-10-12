@@ -20,7 +20,7 @@ using OpenTK.Graphics.OpenGL;
 // Control written by Michael Oborne 2011
 // dual opengl and GDI+
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class HUD : GLControl
     {

@@ -9,7 +9,7 @@ using Microsoft.DirectX.DirectInput;
 using System.Reflection;
 using System.IO;
 
-namespace MissionPlanner.Joystick
+namespace ByAeroBeHero.Joystick
 {
     public class Joystick : IDisposable
     {

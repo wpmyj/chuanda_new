@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using log4net;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     /// <summary>
     /// read log and extract log

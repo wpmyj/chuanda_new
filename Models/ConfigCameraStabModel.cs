@@ -4,10 +4,10 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using log4net;
-using MissionPlanner;
-using MissionPlanner.Models;
+using ByAeroBeHero;
+using ByAeroBeHero.Models;
 
-namespace MissionPlanner.Presenter
+namespace ByAeroBeHero.Presenter
 {
    public class ConfigCameraStabModel : INotifyPropertyChanged, IDataErrorInfo
     {

@@ -7,10 +7,10 @@ from math import sqrt
 import clr
 import time
 import re, string
-clr.AddReference("MissionPlanner.Utilities")
-import MissionPlanner #import *
-clr.AddReference("MissionPlanner.Utilities") #includes the Utilities class
-from MissionPlanner.Utilities import Locationwp
+clr.AddReference("ByAeroBeHero.Utilities")
+import ByAeroBeHero #import *
+clr.AddReference("ByAeroBeHero.Utilities") #includes the Utilities class
+from ByAeroBeHero.Utilities import Locationwp
 
 
 HOST = 'localhost'   # Symbolic name meaning all available interfaces
@@ -95,11 +95,11 @@ while 1:
        print(float_alt)
 
        """Writing Waypoints"""
-       item = MissionPlanner.Utilities.Locationwp() # creating waypoint
-       MissionPlanner.Utilities.Locationwp.lat.SetValue(item,float_lat)
-       MissionPlanner.Utilities.Locationwp.lng.SetValue(item,float_lng)
-       #MissionPlanner.Utilities.Locationwp.groundcourse.SetValue(item,float_heading)
-       MissionPlanner.Utilities.Locationwp.alt.SetValue(item,float_alt) #Can only use lat,lng, or alt
+       item = ByAeroBeHero.Utilities.Locationwp() # creating waypoint
+       ByAeroBeHero.Utilities.Locationwp.lat.SetValue(item,float_lat)
+       ByAeroBeHero.Utilities.Locationwp.lng.SetValue(item,float_lng)
+       #ByAeroBeHero.Utilities.Locationwp.groundcourse.SetValue(item,float_heading)
+       ByAeroBeHero.Utilities.Locationwp.alt.SetValue(item,float_alt) #Can only use lat,lng, or alt
        MAV.setGuidedModeWP(item) #set waypoint
        print 'Waypoint Sent'
        print time.strftime('%X %x %Z')

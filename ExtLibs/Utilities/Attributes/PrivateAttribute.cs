@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace MissionPlanner.Attributes
+namespace ByAeroBeHero.Attributes
 {
    [AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = false)]
    public sealed class PrivateAttribute : Attribute

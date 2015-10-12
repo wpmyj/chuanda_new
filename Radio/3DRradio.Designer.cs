@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner
+﻿namespace ByAeroBeHero
 {
     partial class _3DRradio
     {
@@ -102,11 +102,11 @@
             this.ATI = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.BUT_savesettings = new MissionPlanner.Controls.MyButton();
-            this.BUT_getcurrent = new MissionPlanner.Controls.MyButton();
+            this.BUT_savesettings = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_getcurrent = new ByAeroBeHero.Controls.MyButton();
             this.lbl_status = new System.Windows.Forms.Label();
-            this.BUT_upload = new MissionPlanner.Controls.MyButton();
-            this.BUT_Syncoptions = new MissionPlanner.Controls.MyButton();
+            this.BUT_upload = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_Syncoptions = new ByAeroBeHero.Controls.MyButton();
             this.ATI3 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ATI2 = new System.Windows.Forms.TextBox();
@@ -114,8 +114,8 @@
             this.RTI2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.BUT_resettodefault = new MissionPlanner.Controls.MyButton();
-            this.BUT_loadcustom = new MissionPlanner.Controls.MyButton();
+            this.BUT_resettodefault = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_loadcustom = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.SPLIT_local)).BeginInit();
             this.SPLIT_local.Panel1.SuspendLayout();
             this.SPLIT_local.Panel2.SuspendLayout();

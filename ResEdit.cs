@@ -64,7 +64,7 @@ namespace resedit
                         Console.WriteLine("   {0}: '{1}' (Type {2})",
                                           dict.Key, dict.Value, dict.Value.GetType().Name);
 
-                        if (file.Contains("MissionPlanner.Strings.resources") ||  dict.Key.ToString().EndsWith(".ToolTip") || dict.Key.ToString().EndsWith(".Text") || dict.Key.ToString().EndsWith("HeaderText") || dict.Key.ToString().EndsWith("ToolTipText"))
+                        if (file.Contains("ByAeroBeHero.Strings.resources") ||  dict.Key.ToString().EndsWith(".ToolTip") || dict.Key.ToString().EndsWith(".Text") || dict.Key.ToString().EndsWith("HeaderText") || dict.Key.ToString().EndsWith("ToolTipText"))
                         {
                             dataGridView1.Rows.Add();
 
@@ -87,7 +87,7 @@ namespace resedit
 
             ProcessAssembly(thisAssembly);
 
-            foreach (var item in MissionPlanner.Plugin.PluginLoader.Plugins) 
+            foreach (var item in ByAeroBeHero.Plugin.PluginLoader.Plugins) 
             {
                 // silent fail
                 try
@@ -275,7 +275,7 @@ namespace resedit
 
             try
             {
-                string fn = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + ci + Path.DirectorySeparatorChar + "MissionPlanner.resources.dll";
+                string fn = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + ci + Path.DirectorySeparatorChar + "ByAeroBeHero.resources.dll";
                 if (File.Exists(fn))
                     thisAssembly = Assembly.LoadFile(fn);
                 else

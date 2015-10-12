@@ -1,5 +1,5 @@
-﻿using MissionPlanner.Controls;
-namespace MissionPlanner.GCSViews.ConfigurationView
+﻿using ByAeroBeHero.Controls;
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigTradHeli
     {
@@ -38,9 +38,9 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.CCPM = new System.Windows.Forms.RadioButton();
             this.label41 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.mavlinkNumericUpDowntailspeed = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDowntailspeed = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.mavlinkComboBoxTailType = new MissionPlanner.Controls.MavlinkComboBox();
+            this.mavlinkComboBoxTailType = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.label46 = new System.Windows.Forms.Label();
             this.H_GYR_GAIN = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.H_COL_MID = new System.Windows.Forms.TextBox();
             this.H_COL_MAX = new System.Windows.Forms.TextBox();
-            this.BUT_0collective = new MissionPlanner.Controls.MyButton();
+            this.BUT_0collective = new ByAeroBeHero.Controls.MyButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.HS4_MIN = new System.Windows.Forms.TextBox();
@@ -83,37 +83,37 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.H_COLYAW = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.H_COLYAW = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.H_STAB_COL_MIN = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.H_STAB_COL_MAX = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.H_STAB_COL_MIN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.H_STAB_COL_MAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.mavlinkNumericUpDownrunuptime = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDownrunuptime = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.mavlinkudH_RSC_RATE = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.mavlinkudH_RSC_RATE = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.mavlinkudH_RSC_SETPOINT = new MissionPlanner.Controls.MavlinkNumericUpDown();
+            this.mavlinkudH_RSC_SETPOINT = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.H_RSC_MODE = new MissionPlanner.Controls.MavlinkComboBox();
+            this.H_RSC_MODE = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.mavlinkNumericUpDownland_col_min = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.BUT_reset_swash = new MissionPlanner.Controls.MyButton();
-            this.mavlinkNumericUpDownpitchmax = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDownrollmax = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown3max = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown3min = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown2max = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown2min = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown1max = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown1min = new MissionPlanner.Controls.MavlinkNumericUpDown();
-            this.BUT_swash_manual = new MissionPlanner.Controls.MyButton();
-            this.BUT_HS4save = new MissionPlanner.Controls.MyButton();
-            this.HS4 = new MissionPlanner.Controls.HorizontalProgressBar2();
+            this.mavlinkNumericUpDownland_col_min = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.BUT_reset_swash = new ByAeroBeHero.Controls.MyButton();
+            this.mavlinkNumericUpDownpitchmax = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDownrollmax = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown3max = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown3min = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown2max = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown2min = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown1max = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown1min = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.BUT_swash_manual = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_HS4save = new ByAeroBeHero.Controls.MyButton();
+            this.HS4 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.HS3 = new MissionPlanner.Controls.VerticalProgressBar2();
+            this.HS3 = new ByAeroBeHero.Controls.VerticalProgressBar2();
             this.Gservoloc = new AGaugeApp.AGauge();
             this.groupBox5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -805,7 +805,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // 
             // currentStateBindingSource
             // 
-            this.currentStateBindingSource.DataSource = typeof(MissionPlanner.CurrentState);
+            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // HS3
             // 
@@ -826,7 +826,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
             // Gservoloc
             // 
             this.Gservoloc.BackColor = System.Drawing.Color.Transparent;
-            this.Gservoloc.BackgroundImage = global::MissionPlanner.Properties.Resources.Gaugebg;
+            this.Gservoloc.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Gaugebg;
             resources.ApplyResources(this.Gservoloc, "Gservoloc");
             this.Gservoloc.BaseArcColor = System.Drawing.Color.Transparent;
             this.Gservoloc.BaseArcRadius = 60;

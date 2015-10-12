@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _5AccelCalib
     {
@@ -31,12 +31,12 @@ namespace MissionPlanner.Wizard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_5AccelCalib));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BUT_continue = new MissionPlanner.Controls.MyButton();
-            this.imageLabel1 = new MissionPlanner.Controls.ImageLabel();
-            this.BUT_start = new MissionPlanner.Controls.MyButton();
+            this.BUT_continue = new ByAeroBeHero.Controls.MyButton();
+            this.imageLabel1 = new ByAeroBeHero.Controls.ImageLabel();
+            this.BUT_start = new ByAeroBeHero.Controls.MyButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radialGradientBG1.Image)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,7 @@ namespace MissionPlanner.Wizard
             // imageLabel1
             // 
             resources.ApplyResources(this.imageLabel1, "imageLabel1");
-            this.imageLabel1.Image = global::MissionPlanner.Properties.Resources.calibration01;
+            this.imageLabel1.Image = global::ByAeroBeHero.Properties.Resources.calibration01;
             this.imageLabel1.Name = "imageLabel1";
             // 
             // BUT_start
@@ -144,7 +144,7 @@ namespace MissionPlanner.Wizard
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;

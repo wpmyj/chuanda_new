@@ -8,11 +8,11 @@ using System.Windows.Forms;
 using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
-using MissionPlanner;
-using MissionPlanner.Utilities;
-using MissionPlanner.GCSViews;
+using ByAeroBeHero;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero.GCSViews;
 
-namespace MissionPlanner.Plugin
+namespace ByAeroBeHero.Plugin
 {
     public abstract class Plugin
     {

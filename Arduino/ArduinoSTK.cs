@@ -4,12 +4,12 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 using log4net;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 
 
 // Written by Michael Oborne
 
-namespace MissionPlanner.Arduino
+namespace ByAeroBeHero.Arduino
 {
     public class ArduinoSTK : SerialPort, IArduinoComms
     {

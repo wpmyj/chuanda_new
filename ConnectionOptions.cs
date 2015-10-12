@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Comms;
 using System.Net.Sockets;
 using System.Threading;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class ConnectionOptions : Form
     {
@@ -30,7 +30,7 @@ namespace MissionPlanner
 
             ThemeManager.ApplyThemeTo(this);
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void BUT_connect_Click(object sender, EventArgs e)

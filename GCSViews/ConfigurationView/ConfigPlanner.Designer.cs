@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews.ConfigurationView
+﻿namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigPlanner
     {
@@ -89,12 +89,12 @@
             this.CHK_showairports = new System.Windows.Forms.CheckBox();
             this.chk_ADSB = new System.Windows.Forms.CheckBox();
             this.chk_tfr = new System.Windows.Forms.CheckBox();
-            this.BUT_Vario = new MissionPlanner.Controls.MyButton();
-            this.BUT_themecustom = new MissionPlanner.Controls.MyButton();
-            this.BUT_logdirbrowse = new MissionPlanner.Controls.MyButton();
-            this.BUT_Joystick = new MissionPlanner.Controls.MyButton();
-            this.BUT_videostop = new MissionPlanner.Controls.MyButton();
-            this.BUT_videostart = new MissionPlanner.Controls.MyButton();
+            this.BUT_Vario = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_themecustom = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_logdirbrowse = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_Joystick = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_videostop = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_videostart = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_tracklength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -645,7 +645,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.Controls.Add(this.chk_tfr);
             this.Controls.Add(this.chk_ADSB);
             this.Controls.Add(this.CHK_showairports);

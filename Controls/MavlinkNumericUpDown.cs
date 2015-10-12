@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public class MavlinkNumericUpDown : NumericUpDown
     {

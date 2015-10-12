@@ -1,6 +1,6 @@
 ﻿using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class POI
     {

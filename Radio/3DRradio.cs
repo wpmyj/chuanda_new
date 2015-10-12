@@ -8,14 +8,14 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
-using MissionPlanner.Controls.BackstageView;
-using MissionPlanner.Arduino;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Controls.BackstageView;
+using ByAeroBeHero.Arduino;
+using ByAeroBeHero.Comms;
 using log4net;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class _3DRradio : UserControl
     {

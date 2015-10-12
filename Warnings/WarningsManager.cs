@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-namespace MissionPlanner.Warnings
+namespace ByAeroBeHero.Warnings
 {
     public partial class WarningsManager : Form
     {

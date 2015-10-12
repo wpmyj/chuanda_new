@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using log4net;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     class VersionDetection
     {

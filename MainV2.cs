@@ -10,15 +10,15 @@ using System.Collections;
 using System.Runtime.InteropServices;
 using System.Globalization;
 using System.Threading;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using IronPython.Hosting;
 using log4net;
-using MissionPlanner.Controls;
-using MissionPlanner.Comms;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Comms;
 using Transitions;
 using System.Speech.Synthesis;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class MainV2 : Form
     {
@@ -70,31 +70,31 @@ namespace MissionPlanner
 
         public class menuicons1 : menuicons
         {
-            public override Image fd { get { return global::MissionPlanner.Properties.Resources.light_flightdata_icon; } }
-            public override Image fp { get { return global::MissionPlanner.Properties.Resources.light_flightplan_icon; } }
-            public override Image initsetup { get { return global::MissionPlanner.Properties.Resources.light_initialsetup_icon; } }
-            public override Image config_tuning { get { return global::MissionPlanner.Properties.Resources.light_tuningconfig_icon; } }
-            public override Image sim { get { return global::MissionPlanner.Properties.Resources.light_simulation_icon; } }
-            public override Image terminal { get { return global::MissionPlanner.Properties.Resources.light_terminal_icon; } }
-            public override Image help { get { return global::MissionPlanner.Properties.Resources.light_help_icon; } }
-            public override Image donate { get { return global::MissionPlanner.Properties.Resources.donate; } }
-            public override Image connect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
-            public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
-            public override Image bg { get { return global::MissionPlanner.Properties.Resources.Teal; } }
+            public override Image fd { get { return global::ByAeroBeHero.Properties.Resources.light_flightdata_icon; } }
+            public override Image fp { get { return global::ByAeroBeHero.Properties.Resources.light_flightplan_icon; } }
+            public override Image initsetup { get { return global::ByAeroBeHero.Properties.Resources.light_initialsetup_icon; } }
+            public override Image config_tuning { get { return global::ByAeroBeHero.Properties.Resources.light_tuningconfig_icon; } }
+            public override Image sim { get { return global::ByAeroBeHero.Properties.Resources.light_simulation_icon; } }
+            public override Image terminal { get { return global::ByAeroBeHero.Properties.Resources.light_terminal_icon; } }
+            public override Image help { get { return global::ByAeroBeHero.Properties.Resources.light_help_icon; } }
+            public override Image donate { get { return global::ByAeroBeHero.Properties.Resources.donate; } }
+            public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
+            public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
+            public override Image bg { get { return global::ByAeroBeHero.Properties.Resources.Teal; } }
         }
 
         public class menuicons2 : menuicons
         {
-            public override Image fd { get { return global::MissionPlanner.Properties.Resources.dark_flightdata_icon; } }
-            public override Image fp { get { return global::MissionPlanner.Properties.Resources.dark_flightplan_icon; } }
-            public override Image initsetup { get { return global::MissionPlanner.Properties.Resources.dark_initialsetup_icon; } }
-            public override Image config_tuning { get { return global::MissionPlanner.Properties.Resources.dark_tuningconfig_icon; } }
-            public override Image sim { get { return global::MissionPlanner.Properties.Resources.dark_simulation_icon; } }
-            public override Image terminal { get { return global::MissionPlanner.Properties.Resources.dark_terminal_icon; } }
-            public override Image help { get { return global::MissionPlanner.Properties.Resources.dark_help_icon; } }
-            public override Image donate { get { return global::MissionPlanner.Properties.Resources.donate; } }
-            public override Image connect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
-            public override Image disconnect { get { return global::MissionPlanner.Properties.Resources.dark_connect_icon_1; } }
+            public override Image fd { get { return global::ByAeroBeHero.Properties.Resources.dark_flightdata_icon; } }
+            public override Image fp { get { return global::ByAeroBeHero.Properties.Resources.dark_flightplan_icon; } }
+            public override Image initsetup { get { return global::ByAeroBeHero.Properties.Resources.dark_initialsetup_icon; } }
+            public override Image config_tuning { get { return global::ByAeroBeHero.Properties.Resources.dark_tuningconfig_icon; } }
+            public override Image sim { get { return global::ByAeroBeHero.Properties.Resources.dark_simulation_icon; } }
+            public override Image terminal { get { return global::ByAeroBeHero.Properties.Resources.dark_terminal_icon; } }
+            public override Image help { get { return global::ByAeroBeHero.Properties.Resources.dark_help_icon; } }
+            public override Image donate { get { return global::ByAeroBeHero.Properties.Resources.donate; } }
+            public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
+            public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
             public override Image bg { get { return null; } }
         }
 
@@ -113,7 +113,7 @@ namespace MissionPlanner
             set
             {
                 _advanced = value;
-                MissionPlanner.Controls.BackstageView.BackstageView.Advanced = value;
+                ByAeroBeHero.Controls.BackstageView.BackstageView.Advanced = value;
 
                 if (AdvancedChanged != null)
                     AdvancedChanged(null, new EventArgs());
@@ -206,8 +206,8 @@ namespace MissionPlanner
         { 
             get 
             { 
-                if (MissionPlanner.Controls.SITL.SITLSEND == null) return false;
-                if (MissionPlanner.Controls.SITL.SITLSEND.Client.Connected) return true;
+                if (ByAeroBeHero.Controls.SITL.SITLSEND == null) return false;
+                if (ByAeroBeHero.Controls.SITL.SITLSEND.Client.Connected) return true;
                 return false;
             } 
         }
@@ -400,7 +400,7 @@ namespace MissionPlanner
             // load config
             xmlconfig(false);
 
-            MissionPlanner.Utilities.Tracking.cid = new Guid(MainV2.config["guid"].ToString());
+            ByAeroBeHero.Utilities.Tracking.cid = new Guid(MainV2.config["guid"].ToString());
 
             // setup guids for droneshare
             if (!MainV2.config.ContainsKey("plane_guid"))
@@ -573,7 +573,7 @@ namespace MissionPlanner
                     MainV2.speechEnable = bool.Parse(config["speechenable"].ToString());
 
                 if (MainV2.config["analyticsoptout"] != null)
-                    MissionPlanner.Utilities.Tracking.OptOut = bool.Parse(config["analyticsoptout"].ToString());
+                    ByAeroBeHero.Utilities.Tracking.OptOut = bool.Parse(config["analyticsoptout"].ToString());
 
                 try
                 {
@@ -689,7 +689,7 @@ namespace MissionPlanner
             MainMenu.BackColor = SystemColors.MenuBar;
             //MainMenu.
             //改变MainMenu背景颜色
-            //MainMenu.BackgroundImage = MissionPlanner.Properties.Resources.LightSkyBlue; ;
+            //MainMenu.BackgroundImage = ByAeroBeHero.Properties.Resources.LightSkyBlue; ;
 
             //MenuFlightData.Image = displayicons.fd;
             //MenuFlightPlanner.Image = displayicons.fp;
@@ -744,8 +744,8 @@ namespace MissionPlanner
         {
             lock (adsblock)
             {
-                adsbPlanes[((MissionPlanner.Utilities.adsb.PointLatLngAltHdg)sender).Tag] = ((MissionPlanner.Utilities.adsb.PointLatLngAltHdg)sender);
-                adsbPlaneAge[((MissionPlanner.Utilities.adsb.PointLatLngAltHdg)sender).Tag] = DateTime.Now;
+                adsbPlanes[((ByAeroBeHero.Utilities.adsb.PointLatLngAltHdg)sender).Tag] = ((ByAeroBeHero.Utilities.adsb.PointLatLngAltHdg)sender);
+                adsbPlaneAge[((ByAeroBeHero.Utilities.adsb.PointLatLngAltHdg)sender).Tag] = DateTime.Now;
             }
         }
 
@@ -901,7 +901,7 @@ namespace MissionPlanner
                 {
                     try
                     {
-                        MissionPlanner.Log.LogSort.SortLogs(Directory.GetFiles(MainV2.LogDir, "*.tlog"));
+                        ByAeroBeHero.Log.LogSort.SortLogs(Directory.GetFiles(MainV2.LogDir, "*.tlog"));
                     }
                     catch { }
                 }
@@ -909,7 +909,7 @@ namespace MissionPlanner
             }
             catch { }
 
-            this.MenuConnect.Image = global::MissionPlanner.Properties.Resources.dark_connect_icon_1;
+            this.MenuConnect.Image = global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1;
         }
 
         public void doConnect(MAVLinkInterface comPort, string portname, string baud)
@@ -1044,7 +1044,7 @@ namespace MissionPlanner
                 {
                     // we have more than one mav
                     // user selection of sysid
-                    MissionPlanner.Controls.SysidSelector id = new SysidSelector();
+                    ByAeroBeHero.Controls.SysidSelector id = new SysidSelector();
 
                     id.Show();
                 }
@@ -1115,10 +1115,10 @@ namespace MissionPlanner
 
                 FlightData.CheckBatteryShow();
 
-                MissionPlanner.Utilities.Tracking.AddEvent("Connect", "Connect", comPort.MAV.cs.firmware.ToString(), comPort.MAV.param.Count.ToString());
-                MissionPlanner.Utilities.Tracking.AddTiming("Connect", "Connect Time", (DateTime.Now - connecttime).TotalMilliseconds, "");
+                ByAeroBeHero.Utilities.Tracking.AddEvent("Connect", "Connect", comPort.MAV.cs.firmware.ToString(), comPort.MAV.param.Count.ToString());
+                ByAeroBeHero.Utilities.Tracking.AddTiming("Connect", "Connect Time", (DateTime.Now - connecttime).TotalMilliseconds, "");
 
-                MissionPlanner.Utilities.Tracking.AddEvent("Connect", "Baud", comPort.BaseStream.BaudRate.ToString(), "");
+                ByAeroBeHero.Utilities.Tracking.AddEvent("Connect", "Baud", comPort.BaseStream.BaudRate.ToString(), "");
 
                 // save the baudrate for this port
                 config[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
@@ -1240,6 +1240,7 @@ namespace MissionPlanner
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
         {
             comPortName = _connectionControl.CMB_serialport.Text;
+            
             if (comPortName == "UDP" || comPortName == "UDPCl" || comPortName == "TCP" || comPortName == "AUTO")
             {
                 _connectionControl.CMB_baudrate.Enabled = false;
@@ -1354,7 +1355,7 @@ namespace MissionPlanner
                 {
                     try
                     {
-                        MissionPlanner.Log.LogSort.SortLogs(Directory.GetFiles(MainV2.LogDir, "*.tlog"));
+                        ByAeroBeHero.Log.LogSort.SortLogs(Directory.GetFiles(MainV2.LogDir, "*.tlog"));
                     }
                     catch { }
                 }
@@ -1634,7 +1635,7 @@ namespace MissionPlanner
                                 {
                                     if (sitl)
                                     {
-                                        MissionPlanner.Controls.SITL.rcinput();
+                                        ByAeroBeHero.Controls.SITL.rcinput();
                                     }
                                     else
                                     {
@@ -2276,7 +2277,7 @@ namespace MissionPlanner
 
             Program.Splash.Close();
 
-            MissionPlanner.Utilities.Tracking.AddTiming("AppLoad", "Load Time", (DateTime.Now - Program.starttime).TotalMilliseconds, "");
+            ByAeroBeHero.Utilities.Tracking.AddTiming("AppLoad", "Load Time", (DateTime.Now - Program.starttime).TotalMilliseconds, "");
 
             try
             {
@@ -2288,7 +2289,7 @@ namespace MissionPlanner
                 }
                 else if (getConfig("beta_updates") == "True")
                 {
-                    MissionPlanner.Utilities.Update.dobeta = true;
+                    ByAeroBeHero.Utilities.Update.dobeta = true;
                     System.Threading.ThreadPool.QueueUserWorkItem(checkupdate);
                 }
             }
@@ -2350,7 +2351,7 @@ namespace MissionPlanner
             // sort logs
             try
             {
-                MissionPlanner.Log.LogSort.SortLogs(Directory.GetFiles(MainV2.LogDir, "*.tlog"));
+                ByAeroBeHero.Log.LogSort.SortLogs(Directory.GetFiles(MainV2.LogDir, "*.tlog"));
             }
             catch (Exception ex) { log.Error(ex); }
 
@@ -2386,7 +2387,7 @@ namespace MissionPlanner
         {
             try
             {
-                MissionPlanner.Utilities.Update.CheckForUpdate();
+                ByAeroBeHero.Utilities.Update.CheckForUpdate();
             }
             catch (Exception ex)
             {
@@ -2473,7 +2474,7 @@ namespace MissionPlanner
             }
             if (keyData == (Keys.Control | Keys.X)) // select sysid
             {
-                MissionPlanner.Controls.SysidSelector id = new SysidSelector();
+                ByAeroBeHero.Controls.SysidSelector id = new SysidSelector();
                 id.TopMost = true;
                 id.Show();
 
@@ -2492,7 +2493,7 @@ namespace MissionPlanner
             }
             if (keyData == (Keys.Control | Keys.Z))
             {
-                MissionPlanner.GenOTP otp = new MissionPlanner.GenOTP();
+                ByAeroBeHero.GenOTP otp = new ByAeroBeHero.GenOTP();
 
                 otp.ShowDialog(this);
 
@@ -2861,7 +2862,7 @@ namespace MissionPlanner
                         catch { }
                     }
 
-                    foreach (Plugin.Plugin item in MissionPlanner.Plugin.PluginLoader.Plugins)
+                    foreach (Plugin.Plugin item in ByAeroBeHero.Plugin.PluginLoader.Plugins)
                     {
                         item.Host.ProcessDeviceChanged((WM_DEVICECHANGE_enum)m.WParam);
                     }
@@ -2918,7 +2919,7 @@ namespace MissionPlanner
                 }
             }
             //MainMenu.BackColor = Color.Black;
-            //MainMenu.BackgroundImage = MissionPlanner.Properties.Resources.bgdark;
+            //MainMenu.BackgroundImage = ByAeroBeHero.Properties.Resources.bgdark;
         }
 
         private void fullScreenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2949,6 +2950,17 @@ namespace MissionPlanner
             new ConnectionOptions().Show(this);
         }
 
+        public void InitControl(string menuConnect) 
+        {
+            if (menuConnect == "COM3 ByAeroBeHero (COM3)")
+            {
+                this.MenuConnect.Visible = true;
+            }
+            else 
+            {
+                this.MenuConnect.Visible = false;
+            }
+        }
 
     }
 }

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 using ProjNet.CoordinateSystems.Transformations;
 using ProjNet.CoordinateSystems;
 using ProjNet.Converters;
-using MissionPlanner;
+using ByAeroBeHero;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     public partial class FormationControl : Form
     {
@@ -34,7 +34,7 @@ namespace MissionPlanner.Swarm
 
             MessageBox.Show("this is beta, use at own risk");
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         void FollowLeaderControl_MouseWheel(object sender, MouseEventArgs e)

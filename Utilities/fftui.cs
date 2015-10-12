@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using ZedGraph;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public partial class fftui : Form
     {

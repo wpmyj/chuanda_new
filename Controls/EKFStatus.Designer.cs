@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls
+﻿namespace ByAeroBeHero.Controls
 {
     partial class EKFStatus
     {
@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ekfvel = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.ekfposv = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.ekfposh = new MissionPlanner.Controls.VerticalProgressBar2();
+            this.ekfvel = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.ekfposv = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.ekfposh = new ByAeroBeHero.Controls.VerticalProgressBar2();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.ekfcompass = new MissionPlanner.Controls.VerticalProgressBar2();
-            this.ekfterrain = new MissionPlanner.Controls.VerticalProgressBar2();
+            this.ekfcompass = new ByAeroBeHero.Controls.VerticalProgressBar2();
+            this.ekfterrain = new ByAeroBeHero.Controls.VerticalProgressBar2();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();

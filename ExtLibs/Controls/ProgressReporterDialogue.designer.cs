@@ -1,8 +1,9 @@
-﻿using System;
+﻿using ByAeroBeHero.Controls;
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     partial class ProgressReporterDialogue
     {
@@ -35,11 +36,11 @@ namespace MissionPlanner.Controls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgressReporterDialogue));
-            this.progressBar1 = new MissionPlanner.Controls.MyProgressBar();
+            this.progressBar1 = new ByAeroBeHero.Controls.MyProgressBar();
             this.lblProgressMessage = new System.Windows.Forms.Label();
-            this.btnCancel = new MissionPlanner.Controls.MyButton();
+            this.btnCancel = new ByAeroBeHero.Controls.MyButton();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnClose = new MissionPlanner.Controls.MyButton();
+            this.btnClose = new ByAeroBeHero.Controls.MyButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.imgWarning = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgWarning)).BeginInit();

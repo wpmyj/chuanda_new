@@ -7,12 +7,12 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 using DirectShowLib;
-using MissionPlanner.Controls;
-using MissionPlanner.Joystick;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Joystick;
+using ByAeroBeHero.Utilities;
 using WebCamService;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigPlanner : UserControl, IActivate
     {
@@ -596,7 +596,7 @@ namespace MissionPlanner.GCSViews.ConfigurationView
                 if(c is CheckBox)
                 {
                     ((CheckBox)c).BackColor = System.Drawing.Color.Teal;
-                    ((CheckBox)c).BackgroundImage = MissionPlanner.Properties.Resources.Teal;
+                    ((CheckBox)c).BackgroundImage = ByAeroBeHero.Properties.Resources.Teal;
                     ((CheckBox)c).ForeColor = System.Drawing.Color.Black;
                 }
             }

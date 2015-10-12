@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Swarm
+﻿namespace ByAeroBeHero.Swarm
 {
     partial class FormationControl
     {
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.CMB_mavs = new System.Windows.Forms.ComboBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.grid1 = new MissionPlanner.Swarm.Grid();
+            this.grid1 = new ByAeroBeHero.Swarm.Grid();
             this.BUT_connect = new Controls.MyButton();
             this.BUT_Start = new Controls.MyButton();
             this.BUT_leader = new Controls.MyButton();
@@ -67,7 +67,7 @@
             this.grid1.Size = new System.Drawing.Size(755, 388);
             this.grid1.TabIndex = 8;
             this.grid1.Vertical = false;
-            this.grid1.UpdateOffsets += new MissionPlanner.Swarm.Grid.UpdateOffsetsEvent(this.grid1_UpdateOffsets);
+            this.grid1.UpdateOffsets += new ByAeroBeHero.Swarm.Grid.UpdateOffsetsEvent(this.grid1_UpdateOffsets);
             // 
             // BUT_connect
             // 

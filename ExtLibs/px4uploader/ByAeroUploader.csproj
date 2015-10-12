@@ -6,8 +6,8 @@
     <ProjectGuid>{664FC484-2A94-4B0D-808F-A71F88E06B11}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>px4uploader</RootNamespace>
-    <AssemblyName>px4uploader</AssemblyName>
+    <RootNamespace>ByAeroUploader</RootNamespace>
+    <AssemblyName>ByAeroUploader</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>

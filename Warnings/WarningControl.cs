@@ -5,7 +5,7 @@ using System.Text;
 using System.Collections;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Warnings
+namespace ByAeroBeHero.Warnings
 {
     public class WarningControl: UserControl
     {
@@ -74,8 +74,8 @@ namespace MissionPlanner.Warnings
             this.NUM_warning = new System.Windows.Forms.NumericUpDown();
             this.NUM_repeattime = new System.Windows.Forms.NumericUpDown();
             this.TXT_warningtext = new System.Windows.Forms.TextBox();
-            this.but_addchild = new MissionPlanner.Controls.MyButton();
-            this.but_remove = new MissionPlanner.Controls.MyButton();
+            this.but_addchild = new ByAeroBeHero.Controls.MyButton();
+            this.but_remove = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_warning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_repeattime)).BeginInit();
             this.SuspendLayout();

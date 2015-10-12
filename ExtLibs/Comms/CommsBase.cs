@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
     public delegate string SettingsOption(string name, string value, bool set = false);
 

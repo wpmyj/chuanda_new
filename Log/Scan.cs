@@ -6,7 +6,7 @@ using System.Text;
 using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public class Scan
     {

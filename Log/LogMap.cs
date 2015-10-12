@@ -1,7 +1,7 @@
 ﻿using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -9,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public class LogMap
     {

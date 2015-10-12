@@ -13,7 +13,7 @@ using System.ComponentModel;
 using netDxf;
 using System.IO.Ports;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     class AP_GPS_SBF
     {

@@ -138,7 +138,7 @@
     <value>pictureBoxMouseOvery6</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOvery6.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOvery6.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -165,7 +165,7 @@
     <value>pictureBoxMouseOverocta</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverocta.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverocta.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -192,7 +192,7 @@
     <value>pictureBoxMouseOverx8</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverx8.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverx8.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -219,7 +219,7 @@
     <value>pictureBoxMouseOverhexa</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverhexa.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverhexa.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -246,7 +246,7 @@
     <value>pictureBoxMouseOvertrap</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOvertrap.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOvertrap.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -273,7 +273,7 @@
     <value>pictureBoxMouseOverquad</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverquad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOverquad.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -300,7 +300,7 @@
     <value>pictureBoxMouseOvertri</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOvertri.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;pictureBoxMouseOvertri.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -448,7 +448,7 @@
     <value>radialGradientBG1</value>
   </data>
   <data name="&gt;&gt;radialGradientBG1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.GradientBG, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.GradientBG, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;radialGradientBG1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -466,6 +466,6 @@
     <value>_2FrameFW</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

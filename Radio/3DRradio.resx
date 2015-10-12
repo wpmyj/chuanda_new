@@ -608,7 +608,7 @@ which result in a valid packet CRC
     <value>7</value>
   </data>
   <data name="&gt;&gt;BUT_upload.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="S15.Items6" xml:space="preserve">
     <value>6</value>
@@ -797,7 +797,7 @@ which result in a valid packet CRC
     <value>28</value>
   </data>
   <data name="&gt;&gt;BUT_resettodefault.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="S4.Items2" xml:space="preserve">
     <value>5</value>
@@ -1747,7 +1747,7 @@ which result in a valid packet CRC
     <value>80, 18</value>
   </data>
   <data name="&gt;&gt;BUT_Syncoptions.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="RS3.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2021,7 +2021,7 @@ which result in a valid packet CRC
     <value>4</value>
   </data>
   <data name="&gt;&gt;BUT_loadcustom.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;S12.Parent" xml:space="preserve">
     <value>SPLIT_local.Panel2</value>
@@ -2685,7 +2685,7 @@ which result in a valid packet CRC
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BUT_savesettings.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
     <value>Format</value>
@@ -2790,7 +2790,7 @@ which result in a valid packet CRC
     <value>30</value>
   </data>
   <data name="&gt;&gt;BUT_getcurrent.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="SPLIT_local.Panel1.ToolTip" xml:space="preserve">
     <value />

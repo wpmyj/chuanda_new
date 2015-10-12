@@ -15,7 +15,7 @@ using DirectShowLib;
 using AviFile;
 using DirectShowLib.DES;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public partial class OSDVideo : Form, ISampleGrabberCB
     {
@@ -79,7 +79,7 @@ namespace MissionPlanner
 
             hud1.SixteenXNine = true;
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         void OSDVideo_camimage(Image camimage)

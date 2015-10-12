@@ -7,8 +7,8 @@
     <ProjectGuid>{A01404DF-CB52-4CCC-AD17-0F815D533D98}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MissionPlanner</RootNamespace>
-    <AssemblyName>MissionPlanner.Grid</AssemblyName>
+    <RootNamespace>ByAeroBeHero</RootNamespace>
+    <AssemblyName>ByAeroBeHero.Grid</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -68,19 +68,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MissionPlanner.csproj">
+    <ProjectReference Include="..\..\ByAeroBeHero.csproj">
       <Project>{A2E22272-95FE-47B6-B050-9AE7E2055BF5}</Project>
-      <Name>MissionPlanner</Name>
+      <Name>ByAeroBeHero</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Comms\MissionPlanner.Comms.csproj">
+    <ProjectReference Include="..\Comms\ByAeroBeHero.Comms.csproj">
       <Project>{825E7A10-390C-4A2B-B3A8-491D14966912}</Project>
-      <Name>MissionPlanner.Comms</Name>
+      <Name>ByAeroBeHero.Comms</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Controls\MissionPlanner.Controls.csproj">
+    <ProjectReference Include="..\Controls\ByAeroBeHero.Controls.csproj">
       <Project>{C8B88795-6D01-494D-83AD-6944BD4C5023}</Project>
-      <Name>MissionPlanner.Controls</Name>
+      <Name>ByAeroBeHero.Controls</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\GeoUtility\GeoUtility.csproj">
@@ -108,9 +108,9 @@
       <Name>MetaDataExtractor</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\Utilities\MissionPlanner.Utilities.csproj">
+    <ProjectReference Include="..\Utilities\ByAeroBeHero.Utilities.csproj">
       <Project>{1378A66C-38E4-46F5-A05F-DC04EF7D4D16}</Project>
-      <Name>MissionPlanner.Utilities</Name>
+      <Name>ByAeroBeHero.Utilities</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

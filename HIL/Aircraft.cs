@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using MissionPlanner.HIL;
+using ByAeroBeHero.HIL;
 
-namespace MissionPlanner.HIL
+namespace ByAeroBeHero.HIL
 {
     public class Aircraft : Utils
     {

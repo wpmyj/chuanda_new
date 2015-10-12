@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews
+﻿namespace ByAeroBeHero.GCSViews
 {
     partial class SoftwareConfig
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoftwareConfig));
-            this.backstageView = new MissionPlanner.Controls.BackstageView.BackstageView();
+            this.backstageView = new ByAeroBeHero.Controls.BackstageView.BackstageView();
             this.SuspendLayout();
             // 
             // backstageView
@@ -44,7 +44,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.Teal;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.Controls.Add(this.backstageView);
             resources.ApplyResources(this, "$this");
             this.MinimumSize = new System.Drawing.Size(1000, 450);

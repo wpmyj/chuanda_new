@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MissionPlanner.HIL
+namespace ByAeroBeHero.HIL
 {
     public class Wind : Utils
     {

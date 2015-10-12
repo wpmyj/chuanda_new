@@ -2,10 +2,10 @@
 using System.Reflection;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using Transitions;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigFrameType : MyUserControl, IActivate, IDeactivate
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using GMap.NET;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.HIL
+namespace ByAeroBeHero.HIL
 {
     public class Vector3
     {

@@ -184,7 +184,7 @@
     <value>4</value>
   </data>
   <data name="&gt;&gt;pictureBoxrover.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="radialGradientBG1.Image.WaitOnLoad" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -205,7 +205,7 @@
     <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;radialGradientBG1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.GradientBG, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.GradientBG, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -463,7 +463,7 @@
     <value>Inherit</value>
   </data>
   <data name="&gt;&gt;pictureBoxplane.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="radialGradientBG1.Label.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -487,7 +487,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -552,7 +552,7 @@ Please ensure you have assembled your vehicle as per the instructions provided b
     <value>label2</value>
   </data>
   <data name="&gt;&gt;pictureBoxquad.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="pictureBoxheli.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -576,7 +576,7 @@ Please ensure you have assembled your vehicle as per the instructions provided b
     <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBoxheli.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.PictureBoxMouseOver, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.PictureBoxMouseOver, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>3</value>

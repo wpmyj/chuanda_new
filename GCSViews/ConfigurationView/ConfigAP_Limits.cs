@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Diagnostics;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigAP_Limits : UserControl, IActivate
     {

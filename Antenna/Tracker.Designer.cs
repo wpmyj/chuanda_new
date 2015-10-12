@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Antenna
+﻿namespace ByAeroBeHero.Antenna
 {
     partial class Tracker
     {
@@ -52,10 +52,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.BUT_connect = new MissionPlanner.Controls.MyButton();
+            this.BUT_connect = new ByAeroBeHero.Controls.MyButton();
             this.LBL_pantrim = new System.Windows.Forms.Label();
             this.LBL_tilttrim = new System.Windows.Forms.Label();
-            this.BUT_find = new MissionPlanner.Controls.MyButton();
+            this.BUT_find = new ByAeroBeHero.Controls.MyButton();
             this.TXT_centerpan = new System.Windows.Forms.TextBox();
             this.TXT_centertilt = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();

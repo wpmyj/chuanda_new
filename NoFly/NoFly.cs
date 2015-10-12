@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 using Ionic.Zip;
 
-namespace MissionPlanner.NoFly
+namespace ByAeroBeHero.NoFly
 {
     public class NoFly
     {

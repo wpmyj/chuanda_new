@@ -11,8 +11,8 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Controls;
-using MissionPlanner.HIL;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.HIL;
 using ZedGraph;
 // config file
 // dll imports
@@ -20,7 +20,7 @@ using ZedGraph;
 
 // Written by Michael Oborne
 
-namespace MissionPlanner.GCSViews
+namespace ByAeroBeHero.GCSViews
 {
     public partial class Simulation : MyUserControl
     {

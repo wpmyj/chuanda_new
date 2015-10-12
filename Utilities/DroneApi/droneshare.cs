@@ -1,6 +1,6 @@
 ﻿using fastJSON;
 using log4net;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -11,9 +11,9 @@ using System.Reflection;
 using System.Text;
 using System.Web;
 using System.Windows.Forms;
-using MissionPlanner.Utilities.DroneApi.UI;
+using ByAeroBeHero.Utilities.DroneApi.UI;
 
-namespace MissionPlanner.Utilities.DroneApi
+namespace ByAeroBeHero.Utilities.DroneApi
 {
     public class droneshare
     {

@@ -8,7 +8,7 @@ using System.Globalization;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public static class CultureInfoEx
     {

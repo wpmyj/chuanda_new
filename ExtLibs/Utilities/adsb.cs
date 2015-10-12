@@ -9,7 +9,7 @@ using System.Text;
 using log4net;
 using System.Threading;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
     public class adsb
     {

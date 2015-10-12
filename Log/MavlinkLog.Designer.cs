@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Log
+﻿namespace ByAeroBeHero.Log
 {
     partial class MavlinkLog
     {
@@ -30,16 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MavlinkLog));
-            this.BUT_redokml = new MissionPlanner.Controls.MyButton();
+            this.BUT_redokml = new ByAeroBeHero.Controls.MyButton();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.BUT_humanreadable = new MissionPlanner.Controls.MyButton();
-            this.BUT_graphmavlog = new MissionPlanner.Controls.MyButton();
+            this.BUT_humanreadable = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_graphmavlog = new ByAeroBeHero.Controls.MyButton();
             this.zg1 = new ZedGraph.ZedGraphControl();
-            this.BUT_convertcsv = new MissionPlanner.Controls.MyButton();
-            this.BUT_paramsfromlog = new MissionPlanner.Controls.MyButton();
-            this.BUT_getwpsfromlog = new MissionPlanner.Controls.MyButton();
-            this.BUT_droneshare = new MissionPlanner.Controls.MyButton();
-            this.BUT_matlab = new MissionPlanner.Controls.MyButton();
+            this.BUT_convertcsv = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_paramsfromlog = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_getwpsfromlog = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_droneshare = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_matlab = new ByAeroBeHero.Controls.MyButton();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 

@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     partial class _4FrameType
     {
@@ -32,14 +32,14 @@ namespace MissionPlanner.Wizard
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_4FrameType));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxMouseOverY = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxMouseOverH = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxMouseOvertrap = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxMouseOverX = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxMouseOverplus = new MissionPlanner.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOverY = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOverH = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOvertrap = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOverX = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxMouseOverplus = new ByAeroBeHero.Controls.PictureBoxMouseOver();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.radialGradientBG1 = new MissionPlanner.Controls.GradientBG();
+            this.radialGradientBG1 = new ByAeroBeHero.Controls.GradientBG();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMouseOverY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMouseOverH)).BeginInit();
@@ -71,9 +71,9 @@ namespace MissionPlanner.Wizard
             // 
             // pictureBoxMouseOverY
             // 
-            this.pictureBoxMouseOverY.Image = global::MissionPlanner.Properties.Resources.quadframesnormal_14;
-            this.pictureBoxMouseOverY.ImageNormal = global::MissionPlanner.Properties.Resources.quadframesnormal_14;
-            this.pictureBoxMouseOverY.ImageOver = global::MissionPlanner.Properties.Resources.quadhover_14;
+            this.pictureBoxMouseOverY.Image = global::ByAeroBeHero.Properties.Resources.quadframesnormal_14;
+            this.pictureBoxMouseOverY.ImageNormal = global::ByAeroBeHero.Properties.Resources.quadframesnormal_14;
+            this.pictureBoxMouseOverY.ImageOver = global::ByAeroBeHero.Properties.Resources.quadhover_14;
             resources.ApplyResources(this.pictureBoxMouseOverY, "pictureBoxMouseOverY");
             this.pictureBoxMouseOverY.Name = "pictureBoxMouseOverY";
             this.pictureBoxMouseOverY.selected = false;
@@ -83,9 +83,9 @@ namespace MissionPlanner.Wizard
             // 
             // pictureBoxMouseOverH
             // 
-            this.pictureBoxMouseOverH.Image = global::MissionPlanner.Properties.Resources.Hframelight;
-            this.pictureBoxMouseOverH.ImageNormal = global::MissionPlanner.Properties.Resources.Hframelight;
-            this.pictureBoxMouseOverH.ImageOver = global::MissionPlanner.Properties.Resources.Hframe;
+            this.pictureBoxMouseOverH.Image = global::ByAeroBeHero.Properties.Resources.Hframelight;
+            this.pictureBoxMouseOverH.ImageNormal = global::ByAeroBeHero.Properties.Resources.Hframelight;
+            this.pictureBoxMouseOverH.ImageOver = global::ByAeroBeHero.Properties.Resources.Hframe;
             resources.ApplyResources(this.pictureBoxMouseOverH, "pictureBoxMouseOverH");
             this.pictureBoxMouseOverH.Name = "pictureBoxMouseOverH";
             this.pictureBoxMouseOverH.selected = false;
@@ -95,9 +95,9 @@ namespace MissionPlanner.Wizard
             // 
             // pictureBoxMouseOvertrap
             // 
-            this.pictureBoxMouseOvertrap.Image = global::MissionPlanner.Properties.Resources.quadframesnormal_05;
-            this.pictureBoxMouseOvertrap.ImageNormal = global::MissionPlanner.Properties.Resources.quadframesnormal_05;
-            this.pictureBoxMouseOvertrap.ImageOver = global::MissionPlanner.Properties.Resources.quadhover_05;
+            this.pictureBoxMouseOvertrap.Image = global::ByAeroBeHero.Properties.Resources.quadframesnormal_05;
+            this.pictureBoxMouseOvertrap.ImageNormal = global::ByAeroBeHero.Properties.Resources.quadframesnormal_05;
+            this.pictureBoxMouseOvertrap.ImageOver = global::ByAeroBeHero.Properties.Resources.quadhover_05;
             resources.ApplyResources(this.pictureBoxMouseOvertrap, "pictureBoxMouseOvertrap");
             this.pictureBoxMouseOvertrap.Name = "pictureBoxMouseOvertrap";
             this.pictureBoxMouseOvertrap.selected = false;
@@ -107,9 +107,9 @@ namespace MissionPlanner.Wizard
             // 
             // pictureBoxMouseOverX
             // 
-            this.pictureBoxMouseOverX.Image = global::MissionPlanner.Properties.Resources.quadframesnormal_03;
-            this.pictureBoxMouseOverX.ImageNormal = global::MissionPlanner.Properties.Resources.quadframesnormal_03;
-            this.pictureBoxMouseOverX.ImageOver = global::MissionPlanner.Properties.Resources.quadhover_03;
+            this.pictureBoxMouseOverX.Image = global::ByAeroBeHero.Properties.Resources.quadframesnormal_03;
+            this.pictureBoxMouseOverX.ImageNormal = global::ByAeroBeHero.Properties.Resources.quadframesnormal_03;
+            this.pictureBoxMouseOverX.ImageOver = global::ByAeroBeHero.Properties.Resources.quadhover_03;
             resources.ApplyResources(this.pictureBoxMouseOverX, "pictureBoxMouseOverX");
             this.pictureBoxMouseOverX.Name = "pictureBoxMouseOverX";
             this.pictureBoxMouseOverX.selected = false;
@@ -119,9 +119,9 @@ namespace MissionPlanner.Wizard
             // 
             // pictureBoxMouseOverplus
             // 
-            this.pictureBoxMouseOverplus.Image = global::MissionPlanner.Properties.Resources.PlusFrames_06;
-            this.pictureBoxMouseOverplus.ImageNormal = global::MissionPlanner.Properties.Resources.PlusFrames_06;
-            this.pictureBoxMouseOverplus.ImageOver = global::MissionPlanner.Properties.Resources.PlusFramesGreen_06;
+            this.pictureBoxMouseOverplus.Image = global::ByAeroBeHero.Properties.Resources.PlusFrames_06;
+            this.pictureBoxMouseOverplus.ImageNormal = global::ByAeroBeHero.Properties.Resources.PlusFrames_06;
+            this.pictureBoxMouseOverplus.ImageOver = global::ByAeroBeHero.Properties.Resources.PlusFramesGreen_06;
             resources.ApplyResources(this.pictureBoxMouseOverplus, "pictureBoxMouseOverplus");
             this.pictureBoxMouseOverplus.Name = "pictureBoxMouseOverplus";
             this.pictureBoxMouseOverplus.selected = false;
@@ -177,7 +177,7 @@ namespace MissionPlanner.Wizard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.planebackground;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.planebackground;
             this.Controls.Add(this.radialGradientBG1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;

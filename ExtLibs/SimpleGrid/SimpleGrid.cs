@@ -6,15 +6,15 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner;
+using ByAeroBeHero;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 
-namespace MissionPlanner.SimpleGrid
+namespace ByAeroBeHero.SimpleGrid
 {
     public class Grid
     {

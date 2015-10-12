@@ -11,12 +11,12 @@ using log4net;
 using ZedGraph; // Graphs
 using System.Xml;
 using System.Collections;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 
-namespace MissionPlanner.Log
+namespace ByAeroBeHero.Log
 {
     public partial class LogBrowse : Form
     {
@@ -259,7 +259,7 @@ namespace MissionPlanner.Log
 
             //chk_time.Checked = true;
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -1893,7 +1893,7 @@ namespace MissionPlanner.Log
                 if (lri != null)
                 { 
                     //cerco il punto più vicino
-                    MissionPlanner.Utilities.PointLatLngAlt pt2 = new MissionPlanner.Utilities.PointLatLngAlt(myGMAP1.FromLocalToLatLng(e.X, e.Y));
+                    ByAeroBeHero.Utilities.PointLatLngAlt pt2 = new ByAeroBeHero.Utilities.PointLatLngAlt(myGMAP1.FromLocalToLatLng(e.X, e.Y));
                     double dBest = double.MaxValue;
                     int nBest = 0;
                     for (int i = 0; i < item.LocalPoints.Count; i++)
@@ -1933,7 +1933,7 @@ namespace MissionPlanner.Log
             PointLatLng pt1;
             if (GetGPSFromRow(SampleID, out pt1))
             {
-                MissionPlanner.Utilities.PointLatLngAlt pt3 = new MissionPlanner.Utilities.PointLatLngAlt(pt1);
+                ByAeroBeHero.Utilities.PointLatLngAlt pt3 = new ByAeroBeHero.Utilities.PointLatLngAlt(pt1);
                 GMapMarker pos3 = new GMarkerGoogle(pt3, GMarkerGoogleType.pink_dot);
                 markeroverlay.Markers.Add(pos3);
             }

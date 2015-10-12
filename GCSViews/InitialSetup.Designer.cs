@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.GCSViews
+﻿namespace ByAeroBeHero.GCSViews
 {
     partial class InitialSetup
     {
@@ -30,57 +30,57 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitialSetup));
-            this.backstageView = new MissionPlanner.Controls.BackstageView.BackstageView();
-            this.backstageViewPagewizard = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configWizard1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigWizard();
-            this.backstageViewPagemand = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
+            this.backstageView = new ByAeroBeHero.Controls.BackstageView.BackstageView();
+            this.backstageViewPagewizard = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configWizard1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard();
+            this.backstageViewPagemand = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.initialSetupBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.configMandatory1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigMandatory();
-            this.backstageViewPagetradheli = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configTradHeli1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigTradHeli();
-            this.backstageViewPageframetype = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configFrameType1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFrameType();
-            this.backstageViewPageaccel = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configAccelerometerCalibration = new MissionPlanner.GCSViews.ConfigurationView.ConfigAccelerometerCalibration();
-            this.backstageViewPagecompass = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWCompass1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWCompass();
-            this.backstageViewPageradio = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configRadioInput1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigRadioInput();
-            this.backstageViewPageflmode = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configFlightModes1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFlightModes();
-            this.backstageViewPagefs = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configFailSafe1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFailSafe();
-            this.backstageViewPageopt = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configOptional1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigOptional();
-            this.backstageViewPage3drradio = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this._3DRradio1 = new MissionPlanner._3DRradio();
-            this.backstageViewPagebatmon = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configBatteryMonitoring1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigBatteryMonitoring();
-            this.backstageViewPagecompassmot = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configCompassMot1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigCompassMot();
-            this.backstageViewPagesonar = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWSonar1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWSonar();
-            this.backstageViewPageairspeed = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWAirspeed1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWAirspeed();
-            this.backstageViewPageoptflow = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWOptFlow1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWOptFlow();
-            this.backstageViewPageosd = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWOSD1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWOSD();
-            this.backstageViewPagegimbal = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configMount1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigMount();
-            this.backstageViewPageAntTrack = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.tracker1 = new MissionPlanner.Antenna.Tracker();
-            this.backstageViewPageMotorTest = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configMotor1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigMotorTest();
-            this.backstageViewPagehwbt = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWBT1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWBT();
-            this.backstageViewPageParachute = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configHWPa1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigHWParachute();
-            this.backstageViewPagefw = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configFirmware1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFirmware();
-            this.backstageViewPagefwdisabled = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
-            this.configFirmwareDisabled1 = new MissionPlanner.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
-            this.backstageViewPageinstfw = new MissionPlanner.Controls.BackstageView.BackstageViewPage();
+            this.configMandatory1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMandatory();
+            this.backstageViewPagetradheli = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configTradHeli1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigTradHeli();
+            this.backstageViewPageframetype = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configFrameType1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType();
+            this.backstageViewPageaccel = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configAccelerometerCalibration = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigAccelerometerCalibration();
+            this.backstageViewPagecompass = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWCompass1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWCompass();
+            this.backstageViewPageradio = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configRadioInput1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigRadioInput();
+            this.backstageViewPageflmode = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configFlightModes1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFlightModes();
+            this.backstageViewPagefs = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configFailSafe1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFailSafe();
+            this.backstageViewPageopt = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configOptional1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigOptional();
+            this.backstageViewPage3drradio = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this._3DRradio1 = new ByAeroBeHero._3DRradio();
+            this.backstageViewPagebatmon = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configBatteryMonitoring1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigBatteryMonitoring();
+            this.backstageViewPagecompassmot = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configCompassMot1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigCompassMot();
+            this.backstageViewPagesonar = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWSonar1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWSonar();
+            this.backstageViewPageairspeed = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWAirspeed1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWAirspeed();
+            this.backstageViewPageoptflow = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWOptFlow1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOptFlow();
+            this.backstageViewPageosd = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWOSD1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOSD();
+            this.backstageViewPagegimbal = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configMount1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMount();
+            this.backstageViewPageAntTrack = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.tracker1 = new ByAeroBeHero.Antenna.Tracker();
+            this.backstageViewPageMotorTest = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configMotor1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorTest();
+            this.backstageViewPagehwbt = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWBT1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT();
+            this.backstageViewPageParachute = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configHWPa1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute();
+            this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configFirmware1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware();
+            this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
+            this.backstageViewPageinstfw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,7 +146,7 @@
             // 
             // initialSetupBindingSource
             // 
-            this.initialSetupBindingSource.DataSource = typeof(MissionPlanner.GCSViews.InitialSetup);
+            this.initialSetupBindingSource.DataSource = typeof(ByAeroBeHero.GCSViews.InitialSetup);
             // 
             // configMandatory1
             // 

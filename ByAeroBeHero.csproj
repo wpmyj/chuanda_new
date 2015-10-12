@@ -6,8 +6,8 @@
     <ProjectGuid>{A2E22272-95FE-47B6-B050-9AE7E2055BF5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MissionPlanner</RootNamespace>
-    <AssemblyName>MissionPlanner</AssemblyName>
+    <RootNamespace>ByAeroBeHero</RootNamespace>
+    <AssemblyName>ByAeroBeHero</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -15,7 +15,8 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
     <RestorePackages>true</RestorePackages>
-    <PublishUrl>C:\publish\MissionPlanner\</PublishUrl>
+    <NuGetPackageImportStamp>8c4aca6f</NuGetPackageImportStamp>
+    <PublishUrl>C:\publish\ByAeroBeHero\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -28,8 +29,8 @@
     <InstallUrl>http://firmware.diydrones.com/MissionPlanner/upgrade/</InstallUrl>
     <UpdateUrl>http://firmware.diydrones.com/MissionPlanner/upgrade/</UpdateUrl>
     <TargetCulture>en-US</TargetCulture>
-    <ProductName>MissionPlanner</ProductName>
-    <PublisherName>Michael Oborne</PublisherName>
+    <ProductName>ByAeroBeHero</ProductName>
+    <PublisherName>By Aero Be Hero</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
     <ApplicationRevision>5</ApplicationRevision>
@@ -37,7 +38,6 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>8c4aca6f</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -72,7 +72,7 @@
     <OutputPath>bin\Release09\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>MissionPlanner.Program</StartupObject>
+    <StartupObject>ByAeroBeHero.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>B6B1638E5EFC0DA254F575DF248AD0D1D227924B</ManifestCertificateThumbprint>
@@ -1401,34 +1401,34 @@
     <EmbeddedResource Include="Wizard\Wizard.zh-TW.resx">
       <DependentUpon>Wizard.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="aircraft\arducopter\data\rw_generic_pylon.ac">
+    <None Include="aircraft\ByAeroCopter\data\rw_generic_pylon.ac">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\arducopter.ac">
+    <None Include="aircraft\ByAeroCopter\Models\arducopter.ac">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\plus_quad.ac">
+    <None Include="aircraft\ByAeroCopter\Models\plus_quad.ac">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\plus_quad2.ac">
+    <None Include="aircraft\ByAeroCopter\Models\plus_quad2.ac">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\quad.3ds">
+    <None Include="aircraft\ByAeroCopter\Models\quad.3ds">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\shareware_output.3ds">
+    <None Include="aircraft\ByAeroCopter\Models\shareware_output.3ds">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\Untitled.ac">
+    <None Include="aircraft\ByAeroCopter\Models\Untitled.ac">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\Models\Y6_test.ac">
+    <None Include="aircraft\ByAeroCopter\Models\Y6_test.ac">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\quad.nas">
+    <None Include="aircraft\ByAeroCopter\quad.nas">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="aircraft\arducopter\README">
+    <None Include="aircraft\ByAeroCopter\README">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="aircraft\Rascal\Models\Rascal.rgb">
@@ -2002,10 +2002,10 @@
     <EmbeddedResource Include="Swarm\Status.resx">
       <DependentUpon>Status.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Drivers\px4flow.cat">
+    <None Include="Drivers\ByAeroFlow.cat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Drivers\px4fmu.cat">
+    <None Include="Drivers\ByAeroFmu.cat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Drivers\signed.cer">
@@ -2929,40 +2929,40 @@
     <Content Include="aircraft.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\arducopter-set.xml">
+    <Content Include="aircraft\ByAeroCopter\arducopter-set.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\arducopter.jpg">
+    <Content Include="aircraft\ByAeroCopter\arducopter.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\arducopter.xml">
+    <Content Include="aircraft\ByAeroCopter\arducopter.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\data\arducopter_half_step.txt">
+    <Content Include="aircraft\ByAeroCopter\data\arducopter_half_step.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\data\arducopter_step.txt">
+    <Content Include="aircraft\ByAeroCopter\data\arducopter_step.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\Engines\a2830-12.xml">
+    <Content Include="aircraft\ByAeroCopter\Engines\a2830-12.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\Engines\prop10x4.5.xml">
+    <Content Include="aircraft\ByAeroCopter\Engines\prop10x4.5.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\initfile.xml">
+    <Content Include="aircraft\ByAeroCopter\initfile.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\Models\arducopter.xml">
+    <Content Include="aircraft\ByAeroCopter\Models\arducopter.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\Models\plus_quad2.xml">
+    <Content Include="aircraft\ByAeroCopter\Models\plus_quad2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\plus_quad2-set.xml">
+    <Content Include="aircraft\ByAeroCopter\plus_quad2-set.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="aircraft\arducopter\plus_quad2.xml">
+    <Content Include="aircraft\ByAeroCopter\plus_quad2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="aircraft\Rascal\Dialogs\config.xml">
@@ -3106,10 +3106,10 @@
     <None Include="Drivers\DPInstx86.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Drivers\px4flow.inf">
+    <None Include="Drivers\ByAeroFlow.inf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Drivers\px4fmu.inf">
+    <None Include="Drivers\ByAeroFmu.inf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <Content Include="Drivers\amd64\ftbusui.dll">
@@ -6793,7 +6793,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -6823,13 +6823,13 @@
       <Name>BSE.Windows.Forms</Name>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
-    <ProjectReference Include="ExtLibs\Comms\MissionPlanner.Comms.csproj">
+    <ProjectReference Include="ExtLibs\Comms\ByAeroBeHero.Comms.csproj">
       <Project>{825E7A10-390C-4A2B-B3A8-491D14966912}</Project>
-      <Name>MissionPlanner.Comms</Name>
+      <Name>ByAeroBeHero.Comms</Name>
     </ProjectReference>
-    <ProjectReference Include="ExtLibs\Controls\MissionPlanner.Controls.csproj">
+    <ProjectReference Include="ExtLibs\Controls\ByAeroBeHero.Controls.csproj">
       <Project>{C8B88795-6D01-494D-83AD-6944BD4C5023}</Project>
-      <Name>MissionPlanner.Controls</Name>
+      <Name>ByAeroBeHero.Controls</Name>
     </ProjectReference>
     <ProjectReference Include="ExtLibs\Core\Core.csproj">
       <Project>{59129078-7B12-4198-B93E-0AA08D0BB7ED}</Project>
@@ -6859,9 +6859,9 @@
       <Project>{B46F6C6C-9184-41AF-8F8B-E0084752CA7C}</Project>
       <Name>MetaDataExtractor</Name>
     </ProjectReference>
-    <ProjectReference Include="ExtLibs\px4uploader\px4uploader.csproj">
+    <ProjectReference Include="ExtLibs\px4uploader\ByAeroUploader.csproj">
       <Project>{664FC484-2A94-4B0D-808F-A71F88E06B11}</Project>
-      <Name>px4uploader</Name>
+      <Name>ByAeroUploader</Name>
     </ProjectReference>
     <ProjectReference Include="ExtLibs\SharpKml\SharpKml.csproj">
       <Project>{53F12A60-E9CC-44BC-8366-1AE3AB2B547D}</Project>
@@ -6871,9 +6871,9 @@
       <Project>{aba78b2e-77c3-4377-8568-9542ac227971}</Project>
       <Name>tlogThumbnailHandler</Name>
     </ProjectReference>
-    <ProjectReference Include="ExtLibs\Utilities\MissionPlanner.Utilities.csproj">
+    <ProjectReference Include="ExtLibs\Utilities\ByAeroBeHero.Utilities.csproj">
       <Project>{1378A66C-38E4-46F5-A05F-DC04EF7D4D16}</Project>
-      <Name>MissionPlanner.Utilities</Name>
+      <Name>ByAeroBeHero.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="ExtLibs\ZedGraph\ZedGraph.csproj">
       <Project>{2541686B-1673-43BF-AF89-3163945DB009}</Project>
@@ -6882,10 +6882,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExtLibs\BSE.Windows.Forms\" />
-    <Folder Include="ExtLibs\Controls\" />
-    <Folder Include="ExtLibs\Grid\" />
-    <Folder Include="ExtLibs\MissionPlanner.Gridv2\" />
     <Folder Include="Plugins\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

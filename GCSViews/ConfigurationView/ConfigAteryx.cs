@@ -7,9 +7,9 @@ using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Controls;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigAteryx : UserControl, IActivate
     {

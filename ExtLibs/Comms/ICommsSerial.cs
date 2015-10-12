@@ -5,7 +5,7 @@ using System.IO.Ports;
 using System.IO;
 using System.Reflection;
 
-namespace MissionPlanner.Comms
+namespace ByAeroBeHero.Comms
 {
 
     public interface ICommsSerial

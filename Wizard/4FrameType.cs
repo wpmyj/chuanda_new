@@ -6,10 +6,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using MissionPlanner.Controls;
-using MissionPlanner.GCSViews.ConfigurationView;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.GCSViews.ConfigurationView;
 
-namespace MissionPlanner.Wizard
+namespace ByAeroBeHero.Wizard
 {
     public partial class _4FrameType : MyUserControl, IWizard, IActivate
     {

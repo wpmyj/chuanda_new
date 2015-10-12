@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Controls
+﻿namespace ByAeroBeHero.Controls
 {
     partial class SITL
     {
@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SITL));
-            this.myGMAP1 = new MissionPlanner.Controls.myGMAP();
+            this.myGMAP1 = new ByAeroBeHero.Controls.myGMAP();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxheli = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxquad = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxrover = new MissionPlanner.Controls.PictureBoxMouseOver();
-            this.pictureBoxplane = new MissionPlanner.Controls.PictureBoxMouseOver();
+            this.pictureBoxheli = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxquad = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxrover = new ByAeroBeHero.Controls.PictureBoxMouseOver();
+            this.pictureBoxplane = new ByAeroBeHero.Controls.PictureBoxMouseOver();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -144,9 +144,9 @@
             // 
             // pictureBoxheli
             // 
-            this.pictureBoxheli.Image = global::MissionPlanner.Properties.Resources.light_06;
-            this.pictureBoxheli.ImageNormal = global::MissionPlanner.Properties.Resources.light_06;
-            this.pictureBoxheli.ImageOver = global::MissionPlanner.Properties.Resources._01_06;
+            this.pictureBoxheli.Image = global::ByAeroBeHero.Properties.Resources.light_06;
+            this.pictureBoxheli.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_06;
+            this.pictureBoxheli.ImageOver = global::ByAeroBeHero.Properties.Resources._01_06;
             this.pictureBoxheli.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBoxheli.Location = new System.Drawing.Point(477, 3);
             this.pictureBoxheli.Name = "pictureBoxheli";
@@ -159,9 +159,9 @@
             // 
             // pictureBoxquad
             // 
-            this.pictureBoxquad.Image = global::MissionPlanner.Properties.Resources.light_05;
-            this.pictureBoxquad.ImageNormal = global::MissionPlanner.Properties.Resources.light_05;
-            this.pictureBoxquad.ImageOver = global::MissionPlanner.Properties.Resources._01_05;
+            this.pictureBoxquad.Image = global::ByAeroBeHero.Properties.Resources.light_05;
+            this.pictureBoxquad.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_05;
+            this.pictureBoxquad.ImageOver = global::ByAeroBeHero.Properties.Resources._01_05;
             this.pictureBoxquad.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBoxquad.Location = new System.Drawing.Point(331, 3);
             this.pictureBoxquad.Name = "pictureBoxquad";
@@ -174,9 +174,9 @@
             // 
             // pictureBoxrover
             // 
-            this.pictureBoxrover.Image = global::MissionPlanner.Properties.Resources.light_03;
-            this.pictureBoxrover.ImageNormal = global::MissionPlanner.Properties.Resources.light_03;
-            this.pictureBoxrover.ImageOver = global::MissionPlanner.Properties.Resources._01_03;
+            this.pictureBoxrover.Image = global::ByAeroBeHero.Properties.Resources.light_03;
+            this.pictureBoxrover.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_03;
+            this.pictureBoxrover.ImageOver = global::ByAeroBeHero.Properties.Resources._01_03;
             this.pictureBoxrover.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBoxrover.Location = new System.Drawing.Point(159, 3);
             this.pictureBoxrover.Name = "pictureBoxrover";
@@ -189,9 +189,9 @@
             // 
             // pictureBoxplane
             // 
-            this.pictureBoxplane.Image = global::MissionPlanner.Properties.Resources.light_01;
-            this.pictureBoxplane.ImageNormal = global::MissionPlanner.Properties.Resources.light_01;
-            this.pictureBoxplane.ImageOver = global::MissionPlanner.Properties.Resources._01_01;
+            this.pictureBoxplane.Image = global::ByAeroBeHero.Properties.Resources.light_01;
+            this.pictureBoxplane.ImageNormal = global::ByAeroBeHero.Properties.Resources.light_01;
+            this.pictureBoxplane.ImageOver = global::ByAeroBeHero.Properties.Resources._01_01;
             this.pictureBoxplane.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBoxplane.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxplane.Name = "pictureBoxplane";

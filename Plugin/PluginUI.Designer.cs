@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner.Plugin
+﻿namespace ByAeroBeHero.Plugin
 {
     partial class PluginUI
     {

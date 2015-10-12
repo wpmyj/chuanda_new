@@ -15,10 +15,10 @@ import time
 import System
 from System import Byte
 
-clr.AddReference("MissionPlanner")
-import MissionPlanner
-clr.AddReference("MissionPlanner.Utilities") # includes the Utilities class
-from MissionPlanner.Utilities import Locationwp
+clr.AddReference("ByAeroBeHero")
+import ByAeroBeHero
+clr.AddReference("ByAeroBeHero.Utilities") # includes the Utilities class
+from ByAeroBeHero.Utilities import Locationwp
 clr.AddReference("MAVLink") # includes the Utilities class
 import MAVLink
 

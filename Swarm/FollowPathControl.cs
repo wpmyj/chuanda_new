@@ -10,7 +10,7 @@ using ProjNet.CoordinateSystems.Transformations;
 using ProjNet.CoordinateSystems;
 using ProjNet.Converters;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     public partial class FollowPathControl : Form
     {
@@ -29,7 +29,7 @@ namespace MissionPlanner.Swarm
 
             MessageBox.Show("this is beta, use at own risk");
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void CMB_mavs_SelectedIndexChanged(object sender, EventArgs e)

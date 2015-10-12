@@ -5,7 +5,7 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 
-namespace MissionPlanner.HIL
+namespace ByAeroBeHero.HIL
 {
     public class XPlane : Hil, IDisposable
     {

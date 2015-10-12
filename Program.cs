@@ -9,12 +9,12 @@ using log4net;
 using log4net.Config;
 using System.Diagnostics;
 using System.Linq;
-using MissionPlanner.Utilities;
-using MissionPlanner;
+using ByAeroBeHero.Utilities;
+using ByAeroBeHero;
 using System.Drawing;
 using System.Text.RegularExpressions;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public static class Program
     {
@@ -44,7 +44,7 @@ namespace MissionPlanner
 
             Program.args = args;
             Console.WriteLine("If your error is about Microsoft.DirectX.DirectInput, please install the latest directx redist from here http://www.microsoft.com/en-us/download/details.aspx?id=35 \n\n");
-            Console.WriteLine("Debug under mono    MONO_LOG_LEVEL=debug mono MissionPlanner.exe");
+            Console.WriteLine("Debug under mono    MONO_LOG_LEVEL=debug mono ByAeroBeHero.exe");
 
             Thread = Thread.CurrentThread;
 
@@ -70,12 +70,12 @@ namespace MissionPlanner
             //}
 
             // setup theme provider
-            CustomMessageBox.ApplyTheme += MissionPlanner.Utilities.ThemeManager.ApplyThemeTo;
-            Controls.MainSwitcher.ApplyTheme += MissionPlanner.Utilities.ThemeManager.ApplyThemeTo;
-            MissionPlanner.Controls.InputBox.ApplyTheme += MissionPlanner.Utilities.ThemeManager.ApplyThemeTo;
+            CustomMessageBox.ApplyTheme += ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo;
+            Controls.MainSwitcher.ApplyTheme += ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo;
+            ByAeroBeHero.Controls.InputBox.ApplyTheme += ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo;
 
             // setup settings provider
-            MissionPlanner.Comms.CommsBase.Settings += CommsBase_Settings;
+            ByAeroBeHero.Comms.CommsBase.Settings += CommsBase_Settings;
 
             // set the cache provider to my custom version
             GMap.NET.GMaps.Instance.PrimaryCache = new Maps.MyImageCache();
@@ -119,7 +119,7 @@ namespace MissionPlanner
             //Utilities.NGEN.doNGEN();
 
             //显示公司login
-            Splash = new MissionPlanner.Splash();
+            Splash = new ByAeroBeHero.Splash();
             //string strVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             Splash.Text = name;
             Splash.Show();
@@ -201,7 +201,7 @@ namespace MissionPlanner
 
         static void handleException(Exception ex)
         {
-            MissionPlanner.Utilities.Tracking.AddException(ex);
+            ByAeroBeHero.Utilities.Tracking.AddException(ex);
 
             log.Debug(ex.ToString());
 

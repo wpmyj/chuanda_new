@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner
+﻿namespace ByAeroBeHero
 {
     partial class temp
     {
@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.BUT_xplane = new MissionPlanner.Controls.MyButton();
-            this.but_osdvideo = new MissionPlanner.Controls.MyButton();
-            this.BUT_outputMD = new MissionPlanner.Controls.MyButton();
-            this.BUT_paramgen = new MissionPlanner.Controls.MyButton();
-            this.BUT_follow_me = new MissionPlanner.Controls.MyButton();
-            this.BUT_georefimage = new MissionPlanner.Controls.MyButton();
-            this.BUT_lang_edit = new MissionPlanner.Controls.MyButton();
-            this.BUT_clearcustommaps = new MissionPlanner.Controls.MyButton();
-            this.BUT_geinjection = new MissionPlanner.Controls.MyButton();
-            this.BUT_swarm = new MissionPlanner.Controls.MyButton();
-            this.BUT_outputnmea = new MissionPlanner.Controls.MyButton();
-            this.BUT_outputMavlink = new MissionPlanner.Controls.MyButton();
-            this.BUT_followleader = new MissionPlanner.Controls.MyButton();
-            this.BUT_driverclean = new MissionPlanner.Controls.MyButton();
-            this.BUT_sorttlogs = new MissionPlanner.Controls.MyButton();
+            this.BUT_xplane = new ByAeroBeHero.Controls.MyButton();
+            this.but_osdvideo = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_outputMD = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_paramgen = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_follow_me = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_georefimage = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_lang_edit = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clearcustommaps = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_geinjection = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_swarm = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_outputnmea = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_outputMavlink = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_followleader = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_driverclean = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_sorttlogs = new ByAeroBeHero.Controls.MyButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.BUT_movingbase = new MissionPlanner.Controls.MyButton();
-            this.but_getfw = new MissionPlanner.Controls.MyButton();
-            this.but_mavserialport = new MissionPlanner.Controls.MyButton();
+            this.BUT_movingbase = new ByAeroBeHero.Controls.MyButton();
+            this.but_getfw = new ByAeroBeHero.Controls.MyButton();
+            this.but_mavserialport = new ByAeroBeHero.Controls.MyButton();
             this.button3 = new System.Windows.Forms.Button();
-            this.BUT_shptopoly = new MissionPlanner.Controls.MyButton();
-            this.but_gimbaltest = new MissionPlanner.Controls.MyButton();
-            this.but_maplogs = new MissionPlanner.Controls.MyButton();
-            this.butlogindex = new MissionPlanner.Controls.MyButton();
-            this.but_structtest = new MissionPlanner.Controls.MyButton();
-            this.but_rtspurl = new MissionPlanner.Controls.MyButton();
-            this.but_armandtakeoff = new MissionPlanner.Controls.MyButton();
+            this.BUT_shptopoly = new ByAeroBeHero.Controls.MyButton();
+            this.but_gimbaltest = new ByAeroBeHero.Controls.MyButton();
+            this.but_maplogs = new ByAeroBeHero.Controls.MyButton();
+            this.butlogindex = new ByAeroBeHero.Controls.MyButton();
+            this.but_structtest = new ByAeroBeHero.Controls.MyButton();
+            this.but_rtspurl = new ByAeroBeHero.Controls.MyButton();
+            this.but_armandtakeoff = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -83,10 +83,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.but_sitl_comb = new MissionPlanner.Controls.MyButton();
-            this.but_injectgps = new MissionPlanner.Controls.MyButton();
-            this.BUT_fft = new MissionPlanner.Controls.MyButton();
-            this.BUT_vib = new MissionPlanner.Controls.MyButton();
+            this.but_sitl_comb = new ByAeroBeHero.Controls.MyButton();
+            this.but_injectgps = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_fft = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_vib = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 

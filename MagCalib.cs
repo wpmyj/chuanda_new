@@ -11,10 +11,10 @@ using netDxf.Tables;
 using netDxf.Header;
 using System.Reflection;
 using log4net;
-using MissionPlanner.HIL;
-using MissionPlanner.Controls;
+using ByAeroBeHero.HIL;
+using ByAeroBeHero.Controls;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class MagCalib
     {

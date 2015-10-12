@@ -17,9 +17,9 @@ namespace ArdupilotMega
                 bool MONO = (t != null);
 
                 if (!MONO)
-                    System.Diagnostics.Process.Start(Application.StartupPath + Path.DirectorySeparatorChar + "MissionPlanner.exe");
+                    System.Diagnostics.Process.Start(Application.StartupPath + Path.DirectorySeparatorChar + "ByAeroBeHero.exe");
                 else
-                    System.Diagnostics.Process.Start("mono MissionPlanner.exe");
+                    System.Diagnostics.Process.Start("mono ByAeroBeHero.exe");
             }
             catch (Exception ex) { Console.WriteLine(ex.ToString()); Console.ReadLine(); }
         }

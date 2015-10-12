@@ -5,9 +5,9 @@ using System.Text;
 using System.Windows.Forms;
 using GMap.NET.WindowsForms;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
-    public class GridPlugin : MissionPlanner.Plugin.Plugin
+    public class GridPlugin : ByAeroBeHero.Plugin.Plugin
     {
         
 
@@ -66,7 +66,7 @@ namespace MissionPlanner
         void but_Click(object sender, EventArgs e)
         {
             var gridui = new GridUI(this);
-            MissionPlanner.Utilities.ThemeManager.ApplyThemeTo(gridui);
+            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
 
             if (Host.FPDrawnPolygon != null && Host.FPDrawnPolygon.Points.Count > 2)
             {

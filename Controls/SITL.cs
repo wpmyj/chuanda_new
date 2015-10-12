@@ -13,11 +13,11 @@ using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Controls
+namespace ByAeroBeHero.Controls
 {
     public partial class SITL : Form
     {
-        Uri sitlurl = new Uri("http://firmware.diydrones.com/Tools/MissionPlanner/sitl/");
+        Uri sitlurl = new Uri("http://firmware.diydrones.com/Tools/ByAeroBeHero/sitl/");
         string sitldirectory = Application.StartupPath + Path.DirectorySeparatorChar + "sitl" + Path.DirectorySeparatorChar;
 
         GMapOverlay markeroverlay;
@@ -92,7 +92,7 @@ namespace MissionPlanner.Controls
 
             Utilities.ThemeManager.ApplyThemeTo(this);
 
-            MissionPlanner.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+            ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
         private void pictureBoxplane_Click(object sender, EventArgs e)

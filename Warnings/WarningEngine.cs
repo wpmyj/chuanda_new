@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Threading;
 
-namespace MissionPlanner.Warnings
+namespace ByAeroBeHero.Warnings
 {
     public class WarningEngine
     {

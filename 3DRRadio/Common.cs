@@ -13,7 +13,7 @@ using log4net;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace MissionPlanner
+namespace ByAeroBeHero
 {
     public class Common
     {

@@ -125,7 +125,7 @@
     <value>btnCancel</value>
   </data>
   <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MyButton, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -150,7 +150,7 @@
     <value>sphere1</value>
   </data>
   <data name="&gt;&gt;sphere1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.Sphere, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.Sphere, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;sphere1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -201,7 +201,7 @@
     <value>sphere2</value>
   </data>
   <data name="&gt;&gt;sphere2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.Sphere, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.Sphere, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;sphere2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -280,6 +280,6 @@ This method should hit every white dot.</value>
     <value>ProgressReporterSphere</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.ProgressReporterDialogue, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ProgressReporterDialogue, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

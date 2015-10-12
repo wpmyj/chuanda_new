@@ -7,7 +7,7 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MissionPlanner.Utilities
+namespace ByAeroBeHero.Utilities
 {
    public class ParameterMetaDataRepositoryAutoTest
    {

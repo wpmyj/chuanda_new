@@ -7,8 +7,8 @@
     <ProjectGuid>{825E7A10-390C-4A2B-B3A8-491D14966912}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MissionPlanner.Comms</RootNamespace>
-    <AssemblyName>MissionPlanner.Comms</AssemblyName>
+    <RootNamespace>ByAeroBeHero.Comms</RootNamespace>
+    <AssemblyName>ByAeroBeHero.Comms</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -62,9 +62,9 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controls\MissionPlanner.Controls.csproj">
+    <ProjectReference Include="..\Controls\ByAeroBeHero.Controls.csproj">
       <Project>{C8B88795-6D01-494D-83AD-6944BD4C5023}</Project>
-      <Name>MissionPlanner.Controls</Name>
+      <Name>ByAeroBeHero.Controls</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

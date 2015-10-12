@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MissionPlanner.Swarm
+namespace ByAeroBeHero.Swarm
 {
     public partial class Status : UserControl
     {

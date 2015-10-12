@@ -2,11 +2,11 @@
 using System.Reflection;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Controls;
-using MissionPlanner.Controls.BackstageView;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Controls.BackstageView;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.GCSViews
+namespace ByAeroBeHero.GCSViews
 {
     public partial class InitialSetup : MyUserControl, IActivate
     {

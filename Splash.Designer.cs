@@ -1,4 +1,4 @@
-﻿namespace MissionPlanner
+﻿namespace ByAeroBeHero
 {
     partial class Splash
     {
@@ -34,7 +34,7 @@
             // Splash
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::MissionPlanner.Properties.Resources.lofin_logo;
+            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.lofin_logo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 362);
             this.ControlBox = false;

@@ -6,11 +6,11 @@ using System.Net;
 using System.Reflection;
 using System.Windows.Forms;
 using log4net;
-using MissionPlanner.Arduino;
-using MissionPlanner.Controls;
-using MissionPlanner.Utilities;
+using ByAeroBeHero.Arduino;
+using ByAeroBeHero.Controls;
+using ByAeroBeHero.Utilities;
 
-namespace MissionPlanner.GCSViews.ConfigurationView
+namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     partial class ConfigFirmware : MyUserControl, IActivate
     {

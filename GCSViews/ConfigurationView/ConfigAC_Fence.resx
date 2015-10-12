@@ -172,7 +172,7 @@
     <value>mavlinkComboBox2</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -184,7 +184,7 @@
     <value>mavlinkNumericUpDown1</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -196,7 +196,7 @@
     <value>mavlinkNumericUpDown2</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -208,7 +208,7 @@
     <value>mavlinkCheckBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBox1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -232,7 +232,7 @@
     <value>mavlinkComboBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -292,7 +292,7 @@
     <value>mavlinkNumericUpDown3</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -370,7 +370,7 @@
     <value>mavlinkComboBox2</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -394,7 +394,7 @@
     <value>mavlinkNumericUpDown1</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -418,7 +418,7 @@
     <value>mavlinkNumericUpDown2</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -448,7 +448,7 @@
     <value>mavlinkCheckBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBox1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkCheckBox, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -499,7 +499,7 @@
     <value>mavlinkComboBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkComboBox, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -631,7 +631,7 @@
     <value>mavlinkNumericUpDown3</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.MavlinkNumericUpDown, MissionPlanner, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5168.13906, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -658,7 +658,7 @@
     <value>lineSeparator2</value>
   </data>
   <data name="&gt;&gt;lineSeparator2.Type" xml:space="preserve">
-    <value>MissionPlanner.Controls.LineSeparator, MissionPlanner.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.LineSeparator, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;lineSeparator2.Parent" xml:space="preserve">
     <value>$this</value>

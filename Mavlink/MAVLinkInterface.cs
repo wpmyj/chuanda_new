@@ -3548,5 +3548,24 @@ Please check the following
             logreadmode = false;
             logplaybackfile = null;
         }
+
+        public bool SendCopterType(int copterType)
+        {
+            bool SetCopterType = true;
+            try
+            {
+                mavlink_copter_type ct = new mavlink_copter_type();
+                ct.copter_type = (byte)copterType;
+
+                
+                generatePacket((byte)MAVLINK_MSG_ID.COPTER_TYPE, ct);
+                System.Threading.Thread.Sleep(20);
+            }
+            catch 
+            {
+                SetCopterType = false;
+            }
+            return SetCopterType;
+        }
     }
 }

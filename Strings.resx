@@ -188,7 +188,7 @@
 </value>
   </data>
   <data name="InvalidPanRange" xml:space="preserve">
-    <value>无效平移范围</value>Invalid Pan Range
+    <value>Invalid Pan Range</value>
   </data>
   <data name="InvalidPortName" xml:space="preserve">
     <value>无效端口名</value>
@@ -587,5 +587,14 @@ Please contact your hardware vendor about signing your hardware.</value>
   </data>
   <data name="terrain_alt_variance" xml:space="preserve">
     <value>terrain alt variance</value>
+  </data>
+  <data name="CopterTypeSelected" xml:space="preserve">
+    <value>选择机架类型</value>
+  </data>
+  <data name="CopterTypeSetFailed" xml:space="preserve">
+    <value>选择机架类型失败</value>
+  </data>
+  <data name="CopterTypeSetSuccessed" xml:space="preserve">
+    <value>选择机架类型成功</value>
   </data>
 </root>

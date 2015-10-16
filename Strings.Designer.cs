@@ -341,6 +341,33 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
+        ///   查找类似 选择机架类型 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeSelected {
+            get {
+                return ResourceManager.GetString("CopterTypeSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 选择机架类型失败 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeSetFailed {
+            get {
+                return ResourceManager.GetString("CopterTypeSetFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 选择机架类型成功 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeSetSuccessed {
+            get {
+                return ResourceManager.GetString("CopterTypeSetSuccessed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Description:  的本地化字符串。
         /// </summary>
         public static string Desc {

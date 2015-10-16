@@ -48,26 +48,26 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.RadbtnFiveRotor = new System.Windows.Forms.RadioButton();
+            this.RadbtnSevenRotor = new System.Windows.Forms.RadioButton();
+            this.RadbtnFourRotor = new System.Windows.Forms.RadioButton();
+            this.btnSelectRackType = new System.Windows.Forms.Button();
+            this.pictureBoxWithPseudoOpacity3 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity2 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity1 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.configDefaultSettings1 = new ByAeroBeHero.Controls.DefaultSettings();
             this.radioButton_VTail = new System.Windows.Forms.RadioButton();
             this.pictureBoxVTail = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxWithPseudoOpacity1 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxWithPseudoOpacity2 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxWithPseudoOpacity3 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.btnSetData = new System.Windows.Forms.Button();
-            this.configDefaultSettings1 = new ByAeroBeHero.Controls.DefaultSettings();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -183,10 +183,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.btnSetData);
+            this.groupBox2.Controls.Add(this.RadbtnFiveRotor);
+            this.groupBox2.Controls.Add(this.RadbtnSevenRotor);
+            this.groupBox2.Controls.Add(this.RadbtnFourRotor);
+            this.groupBox2.Controls.Add(this.btnSelectRackType);
             this.groupBox2.Controls.Add(this.pictureBoxWithPseudoOpacity3);
             this.groupBox2.Controls.Add(this.pictureBoxWithPseudoOpacity2);
             this.groupBox2.Controls.Add(this.pictureBoxWithPseudoOpacity1);
@@ -212,6 +212,68 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // RadbtnFiveRotor
+            // 
+            resources.ApplyResources(this.RadbtnFiveRotor, "RadbtnFiveRotor");
+            this.RadbtnFiveRotor.Name = "RadbtnFiveRotor";
+            this.RadbtnFiveRotor.TabStop = true;
+            this.RadbtnFiveRotor.UseVisualStyleBackColor = true;
+            this.RadbtnFiveRotor.CheckedChanged += new System.EventHandler(this.RadbtnFiveRotor_CheckedChanged);
+            // 
+            // RadbtnSevenRotor
+            // 
+            resources.ApplyResources(this.RadbtnSevenRotor, "RadbtnSevenRotor");
+            this.RadbtnSevenRotor.Name = "RadbtnSevenRotor";
+            this.RadbtnSevenRotor.TabStop = true;
+            this.RadbtnSevenRotor.UseVisualStyleBackColor = true;
+            this.RadbtnSevenRotor.CheckedChanged += new System.EventHandler(this.RadbtnSevenRotor_CheckedChanged);
+            // 
+            // RadbtnFourRotor
+            // 
+            resources.ApplyResources(this.RadbtnFourRotor, "RadbtnFourRotor");
+            this.RadbtnFourRotor.Name = "RadbtnFourRotor";
+            this.RadbtnFourRotor.TabStop = true;
+            this.RadbtnFourRotor.UseVisualStyleBackColor = true;
+            this.RadbtnFourRotor.CheckedChanged += new System.EventHandler(this.RadbtnFourRotor_CheckedChanged);
+            // 
+            // btnSelectRackType
+            // 
+            this.btnSelectRackType.BackColor = System.Drawing.Color.Turquoise;
+            resources.ApplyResources(this.btnSelectRackType, "btnSelectRackType");
+            this.btnSelectRackType.Name = "btnSelectRackType";
+            this.btnSelectRackType.UseVisualStyleBackColor = false;
+            this.btnSelectRackType.Click += new System.EventHandler(this.btnSelectRackType_Click);
+            // 
+            // pictureBoxWithPseudoOpacity3
+            // 
+            this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.quadhover_12;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
+            this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
+            this.pictureBoxWithPseudoOpacity3.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity2
+            // 
+            this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.quadhover_03;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
+            this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
+            this.pictureBoxWithPseudoOpacity2.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity1
+            // 
+            this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.quadhover_06;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
+            this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
+            this.pictureBoxWithPseudoOpacity1.TabStop = false;
+            // 
+            // configDefaultSettings1
+            // 
+            this.configDefaultSettings1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.configDefaultSettings1, "configDefaultSettings1");
+            this.configDefaultSettings1.Name = "configDefaultSettings1";
+            // 
             // radioButton_VTail
             // 
             resources.ApplyResources(this.radioButton_VTail, "radioButton_VTail");
@@ -228,64 +290,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.pictureBoxVTail.TabStop = false;
             this.pictureBoxVTail.Click += new System.EventHandler(this.pictureBoxVTail_Click);
             // 
-            // pictureBoxWithPseudoOpacity1
-            // 
-            this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.quadhover_06;
-            resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
-            this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
-            this.pictureBoxWithPseudoOpacity1.TabStop = false;
-            // 
-            // pictureBoxWithPseudoOpacity2
-            // 
-            this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.quadhover_03;
-            resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
-            this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
-            this.pictureBoxWithPseudoOpacity2.TabStop = false;
-            // 
-            // pictureBoxWithPseudoOpacity3
-            // 
-            this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.quadhover_12;
-            resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
-            this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
-            this.pictureBoxWithPseudoOpacity3.TabStop = false;
-            // 
-            // btnSetData
-            // 
-            this.btnSetData.BackColor = System.Drawing.Color.Turquoise;
-            resources.ApplyResources(this.btnSetData, "btnSetData");
-            this.btnSetData.Name = "btnSetData";
-            this.btnSetData.UseVisualStyleBackColor = false;
-            // 
-            // configDefaultSettings1
-            // 
-            this.configDefaultSettings1.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.configDefaultSettings1, "configDefaultSettings1");
-            this.configDefaultSettings1.Name = "configDefaultSettings1";
-            // 
-            // radioButton2
-            // 
-            resources.ApplyResources(this.radioButton2, "radioButton2");
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.TabStop = true;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            resources.ApplyResources(this.radioButton1, "radioButton1");
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.TabStop = true;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            resources.ApplyResources(this.radioButton3, "radioButton3");
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.TabStop = true;
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // ConfigFrameType
             // 
             resources.ApplyResources(this, "$this");
@@ -301,10 +305,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,9 +338,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity3;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity2;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity1;
-        private System.Windows.Forms.Button btnSetData;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button btnSelectRackType;
+        private System.Windows.Forms.RadioButton RadbtnFourRotor;
+        private System.Windows.Forms.RadioButton RadbtnFiveRotor;
+        private System.Windows.Forms.RadioButton RadbtnSevenRotor;
     }
 }

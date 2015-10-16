@@ -9,6 +9,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigFrameType : MyUserControl, IActivate, IDeactivate
     {
+
         public enum Frame
         {
             Plus = 0,
@@ -19,10 +20,18 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             Y = 10
         }
 
+        public enum CopterType 
+        {
+            Four = 4,
+            Five = 5,
+            Eight = 8
+        }
+
         private const float DisabledOpacity = 0.2F;
         private const float EnabledOpacity = 1.0F;
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private bool indochange;
+        private int iCopterType;
 
         public ConfigFrameType()
         {
@@ -39,10 +48,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //}
 
             DoChange((Frame) Enum.Parse(typeof (Frame), MainV2.comPort.MAV.param["FRAME"].ToString()));
-
-            //this.groupBox1.BackColor = this.groupBox2.BackColor = System.Drawing.Color.White;
-
-            //this.
         }
 
         public void Deactivate()
@@ -55,6 +60,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             Activate();
         }
 
+        #region
+
         private void DoChange(Frame frame)
         {
             //if (indochange)
@@ -65,7 +72,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //switch (frame)
             //{
             //    case Frame.Plus:
-            //            FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
             //        FadePicBoxes(pictureBoxX, EnabledOpacity);
             //        FadePicBoxes(pictureBoxV, EnabledOpacity);
             //        FadePicBoxes(pictureBoxH, EnabledOpacity);
@@ -125,7 +132,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //        SetFrameParam(frame);
             //        break;
             //    case Frame.Y:
-            //         FadePicBoxes(pictureBoxPlus, EnabledOpacity);
+            //        FadePicBoxes(pictureBoxPlus, EnabledOpacity);
             //        FadePicBoxes(pictureBoxX, EnabledOpacity);
             //        FadePicBoxes(pictureBoxV, EnabledOpacity);
             //        FadePicBoxes(pictureBoxH, EnabledOpacity);
@@ -244,5 +251,37 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             DoChange(Frame.VTail);
         }
+
+#endregion
+
+        #region 加载参数
+        private void btnSelectRackType_Click(object sender, EventArgs e)
+        {
+            if(MainV2.comPort.SendCopterType(iCopterType))
+                CustomMessageBox.Show(string.Format(Strings.CopterTypeSetSuccessed, "CopterType"), Strings.CopterTypeSelected,
+                   MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+                CustomMessageBox.Show(string.Format(Strings.CopterTypeSetFailed, "CopterType"), Strings.CopterTypeSelected,
+                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void RadbtnFourRotor_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.RadbtnFourRotor.Checked)
+                this.iCopterType = (int)CopterType.Four;
+        }
+
+        private void RadbtnFiveRotor_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.RadbtnFiveRotor.Checked)
+                this.iCopterType = (int)CopterType.Five;
+        }
+
+        private void RadbtnSevenRotor_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.RadbtnSevenRotor.Checked)
+                this.iCopterType = (int)CopterType.Eight;
+        }
+        #endregion
     }
 }

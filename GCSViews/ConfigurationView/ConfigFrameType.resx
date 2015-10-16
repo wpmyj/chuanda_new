@@ -609,118 +609,118 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="radioButton3.AutoSize" type="System.Boolean, mscorlib">
+  <data name="RadbtnFiveRotor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="RadbtnFiveRotor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="radioButton3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="RadbtnFiveRotor.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 113</value>
   </data>
-  <data name="radioButton3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RadbtnFiveRotor.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 16</value>
   </data>
-  <data name="radioButton3.TabIndex" type="System.Int32, mscorlib">
+  <data name="RadbtnFiveRotor.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
   </data>
-  <data name="radioButton3.Text" xml:space="preserve">
+  <data name="RadbtnFiveRotor.Text" xml:space="preserve">
     <value>六旋翼</value>
   </data>
-  <data name="&gt;&gt;radioButton3.Name" xml:space="preserve">
-    <value>radioButton3</value>
+  <data name="&gt;&gt;RadbtnFiveRotor.Name" xml:space="preserve">
+    <value>RadbtnFiveRotor</value>
   </data>
-  <data name="&gt;&gt;radioButton3.Type" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnFiveRotor.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnFiveRotor.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;radioButton3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnFiveRotor.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="radioButton1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="RadbtnSevenRotor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="RadbtnSevenRotor.Location" type="System.Drawing.Point, System.Drawing">
     <value>365, 113</value>
   </data>
-  <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RadbtnSevenRotor.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 16</value>
   </data>
-  <data name="radioButton1.TabIndex" type="System.Int32, mscorlib">
+  <data name="RadbtnSevenRotor.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
   </data>
-  <data name="radioButton1.Text" xml:space="preserve">
+  <data name="RadbtnSevenRotor.Text" xml:space="preserve">
     <value>八旋翼</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Name" xml:space="preserve">
-    <value>radioButton1</value>
+  <data name="&gt;&gt;RadbtnSevenRotor.Name" xml:space="preserve">
+    <value>RadbtnSevenRotor</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Type" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnSevenRotor.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnSevenRotor.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;radioButton1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnSevenRotor.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="radioButton2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="RadbtnFourRotor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="RadbtnFourRotor.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 113</value>
   </data>
-  <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RadbtnFourRotor.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 16</value>
   </data>
-  <data name="radioButton2.TabIndex" type="System.Int32, mscorlib">
+  <data name="RadbtnFourRotor.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
   </data>
-  <data name="radioButton2.Text" xml:space="preserve">
+  <data name="RadbtnFourRotor.Text" xml:space="preserve">
     <value>四旋翼</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Name" xml:space="preserve">
-    <value>radioButton2</value>
+  <data name="&gt;&gt;RadbtnFourRotor.Name" xml:space="preserve">
+    <value>RadbtnFourRotor</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Type" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnFourRotor.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radioButton2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnFourRotor.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;radioButton2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RadbtnFourRotor.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnSetData.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnSelectRackType.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
-  <data name="btnSetData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnSelectRackType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnSetData.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnSelectRackType.Location" type="System.Drawing.Point, System.Drawing">
     <value>211, 145</value>
   </data>
-  <data name="btnSetData.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnSelectRackType.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 34</value>
   </data>
-  <data name="btnSetData.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnSelectRackType.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
   </data>
-  <data name="btnSetData.Text" xml:space="preserve">
+  <data name="btnSelectRackType.Text" xml:space="preserve">
     <value>加载参数</value>
   </data>
-  <data name="&gt;&gt;btnSetData.Name" xml:space="preserve">
-    <value>btnSetData</value>
+  <data name="&gt;&gt;btnSelectRackType.Name" xml:space="preserve">
+    <value>btnSelectRackType</value>
   </data>
-  <data name="&gt;&gt;btnSetData.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnSelectRackType.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnSetData.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSelectRackType.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;btnSetData.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnSelectRackType.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -823,7 +823,7 @@
     <value>configDefaultSettings1</value>
   </data>
   <data name="&gt;&gt;configDefaultSettings1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.1.5759.20025, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.1.5765.32372, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configDefaultSettings1.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -925,7 +925,7 @@
     <value>True</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 466</value>
+    <value>430, 432</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigFrameType</value>

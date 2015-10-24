@@ -250,6 +250,9 @@
     <EmbeddedResource Include="HSI.resx">
       <DependentUpon>HSI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HUD.resx">
+      <DependentUpon>HUD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HUDT.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>HUDT.Designer.cs</LastGenOutput>

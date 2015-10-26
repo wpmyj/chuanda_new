@@ -521,7 +521,7 @@ namespace ByAeroBeHero.GCSViews
                 hud1.Dock = DockStyle.Fill;
             }
 
-            this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
+           
 
             for (int f = 1; f < 10; f++)
             {
@@ -583,6 +583,9 @@ namespace ByAeroBeHero.GCSViews
                         Zoomlevel.Value = (decimal)float.Parse(MainV2.getConfig("maplast_zoom"));
                         TRK_zoom.Value = (float)Zoomlevel.Value;
                     }
+
+                    Zoomlevel.Value = 5;
+                    TRK_zoom.Value = 5;
                 }
                 catch { }
             }
@@ -708,7 +711,6 @@ namespace ByAeroBeHero.GCSViews
                 = this.label1.ForeColor = this.CHK_autopan.ForeColor
                 = Color.White;
             this.tableLayoutPanelQuick.ForeColor = Color.Blue;
-            this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)

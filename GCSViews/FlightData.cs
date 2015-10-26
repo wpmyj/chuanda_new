@@ -521,7 +521,7 @@ namespace ByAeroBeHero.GCSViews
                 hud1.Dock = DockStyle.Fill;
             }
 
-            this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
+            //this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
 
             for (int f = 1; f < 10; f++)
             {
@@ -708,7 +708,7 @@ namespace ByAeroBeHero.GCSViews
                 = this.label1.ForeColor = this.CHK_autopan.ForeColor
                 = Color.White;
             this.tableLayoutPanelQuick.ForeColor = Color.Blue;
-            this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
+            //this.lbl_hdop.ForeColor = this.lbl_sats.ForeColor = Color.Maroon;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)
@@ -3583,6 +3583,52 @@ namespace ByAeroBeHero.GCSViews
             Vibration frm = new Vibration();
             frm.TopMost = true;
             frm.Show();
+        }
+
+
+        int xPos;//记录x坐标
+        int yPos;//记录y坐标
+        bool MoveFlag;//记录是否按下鼠标
+        private void Qvalt_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlag = true;//已经按下.    
+            xPos = e.X;//当前x坐标.    
+            yPos = e.Y;//当前y坐标.
+        }
+
+        private void Qvalt_MouseMove(object sender, MouseEventArgs e)
+        {
+              if (MoveFlag)    
+              {
+                  Qvalt.Left += Convert.ToInt16(e.X - xPos);//设置x坐标.        
+                  Qvalt.Top += Convert.ToInt16(e.Y - yPos);//设置y坐标.    
+              }
+        }
+
+        private void Qvalt_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlag = false;
+        }
+
+        private void hud1_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlag = true;//已经按下.    
+            xPos = e.X;//当前x坐标.    
+            yPos = e.Y;//当前y坐标.
+        }
+
+        private void hud1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlag)
+            {
+                hud1.Left += Convert.ToInt16(e.X - xPos);//设置x坐标.        
+                hud1.Top += Convert.ToInt16(e.Y - yPos);//设置y坐标.    
+            }
+        }
+
+        private void hud1_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlag = false;
         }
     }
 }

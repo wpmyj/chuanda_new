@@ -3611,5 +3611,19 @@ namespace ByAeroBeHero.GCSViews
         {
             MoveFlag = false;
         }
+
+        private void btnMeter_Click(object sender, EventArgs e)
+        {
+            if (pbMeter.Enabled)
+            {
+                this.hud1.Hide();
+                pbMeter.Enabled = false;
+            }
+            else
+            {
+                this.hud1.Show();
+                pbMeter.Enabled = true;
+            }
+        }
     }
 }

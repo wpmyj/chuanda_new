@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -114,7 +114,6 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Qvalt = new ByAeroBeHero.Controls.QuickView();
             this.lblHorizontalError = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSataCount = new System.Windows.Forms.Label();
@@ -122,6 +121,7 @@
             this.Qvverspeed = new ByAeroBeHero.Controls.QuickView();
             this.Qvdist = new ByAeroBeHero.Controls.QuickView();
             this.Qvgroundspeed = new ByAeroBeHero.Controls.QuickView();
+            this.Qvalt = new ByAeroBeHero.Controls.QuickView();
             this.hud1 = new ByAeroBeHero.Controls.HUD();
             this.contextMenuStripHud = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.recordHudToAVIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -133,14 +133,16 @@
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
             this.distanceBar1 = new ByAeroBeHero.Controls.DistanceBar();
             this.windDir1 = new ByAeroBeHero.Controls.WindDir();
+            this.lbl_hdop = new ByAeroBeHero.Controls.MyLabel();
+            this.lbl_sats = new ByAeroBeHero.Controls.MyLabel();
             this.gMapControl1 = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.Zoomlevel = new System.Windows.Forms.NumericUpDown();
             this.label1 = new ByAeroBeHero.Controls.MyLabel();
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.CB_tuning = new System.Windows.Forms.CheckBox();
-            this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.openScriptDialog = new System.Windows.Forms.OpenFileDialog();
@@ -1395,16 +1397,18 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
             this.splitContainer1.Panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
-            this.splitContainer1.Panel2.Controls.Add(this.Qvalt);
             this.splitContainer1.Panel2.Controls.Add(this.lblHorizontalError);
             this.splitContainer1.Panel2.Controls.Add(this.lblSataCount);
             this.splitContainer1.Panel2.Controls.Add(this.Qvtohome);
             this.splitContainer1.Panel2.Controls.Add(this.Qvverspeed);
             this.splitContainer1.Panel2.Controls.Add(this.Qvdist);
             this.splitContainer1.Panel2.Controls.Add(this.Qvgroundspeed);
+            this.splitContainer1.Panel2.Controls.Add(this.Qvalt);
             this.splitContainer1.Panel2.Controls.Add(this.hud1);
             this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
             this.splitContainer1.Panel2.Controls.Add(this.windDir1);
+            this.splitContainer1.Panel2.Controls.Add(this.lbl_hdop);
+            this.splitContainer1.Panel2.Controls.Add(this.lbl_sats);
             this.splitContainer1.Panel2.Controls.Add(this.gMapControl1);
             this.splitContainer1.Panel2.Controls.Add(this.TRK_zoom);
             // 
@@ -1499,25 +1503,10 @@
             resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
             this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
-            // Qvalt
-            // 
-            this.Qvalt.BackColor = System.Drawing.Color.Teal;
-            this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
-            this.Qvalt.desc = "飞行器海拔(M)";
-            resources.ApplyResources(this.Qvalt, "Qvalt");
-            this.Qvalt.Name = "Qvalt";
-            this.Qvalt.number = 0D;
-            this.Qvalt.numberColor = System.Drawing.Color.Lime;
-            this.Qvalt.numberformat = "0.00";
-            this.Qvalt.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Qvalt_MouseDown);
-            this.Qvalt.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Qvalt_MouseMove);
-            this.Qvalt.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Qvalt_MouseUp);
-            // 
             // lblHorizontalError
             // 
             resources.ApplyResources(this.lblHorizontalError, "lblHorizontalError");
-            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpsop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
+            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.Cyan;
             this.lblHorizontalError.Name = "lblHorizontalError";
             // 
@@ -1579,6 +1568,18 @@
             this.Qvgroundspeed.number = 0D;
             this.Qvgroundspeed.numberColor = System.Drawing.Color.Lime;
             this.Qvgroundspeed.numberformat = "0.00";
+            // 
+            // Qvalt
+            // 
+            this.Qvalt.BackColor = System.Drawing.Color.Teal;
+            this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
+            this.Qvalt.desc = "飞行器海拔(M)";
+            resources.ApplyResources(this.Qvalt, "Qvalt");
+            this.Qvalt.Name = "Qvalt";
+            this.Qvalt.number = 0D;
+            this.Qvalt.numberColor = System.Drawing.Color.Lime;
+            this.Qvalt.numberformat = "0.00";
             // 
             // hud1
             // 
@@ -1668,9 +1669,6 @@
             this.hud1.ekfclick += new System.EventHandler(this.hud1_ekfclick);
             this.hud1.vibeclick += new System.EventHandler(this.hud1_vibeclick);
             this.hud1.DoubleClick += new System.EventHandler(this.hud1_DoubleClick);
-            this.hud1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hud1_MouseDown);
-            this.hud1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.hud1_MouseMove);
-            this.hud1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hud1_MouseUp);
             this.hud1.Resize += new System.EventHandler(this.hud1_Resize);
             // 
             // contextMenuStripHud
@@ -1744,6 +1742,24 @@
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
             // 
+            // lbl_hdop
+            // 
+            resources.ApplyResources(this.lbl_hdop, "lbl_hdop");
+            this.lbl_hdop.BackColor = System.Drawing.Color.Teal;
+            this.lbl_hdop.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
+            this.lbl_hdop.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_hdop.Name = "lbl_hdop";
+            this.lbl_hdop.resize = true;
+            // 
+            // lbl_sats
+            // 
+            resources.ApplyResources(this.lbl_sats, "lbl_sats");
+            this.lbl_sats.BackColor = System.Drawing.Color.Teal;
+            this.lbl_sats.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "卫星数量: 0"));
+            this.lbl_sats.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_sats.Name = "lbl_sats";
+            this.lbl_sats.resize = true;
+            // 
             // gMapControl1
             // 
             this.gMapControl1.BackColor = System.Drawing.Color.Teal;
@@ -1790,14 +1806,28 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.panel1.Controls.Add(this.coords1);
             this.panel1.Controls.Add(this.Zoomlevel);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.CHK_autopan);
             this.panel1.Controls.Add(this.CB_tuning);
-            this.panel1.Controls.Add(this.coords1);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.panel1.Name = "panel1";
+            // 
+            // coords1
+            // 
+            this.coords1.Alt = 0D;
+            this.coords1.AltUnit = "m";
+            this.coords1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Alt", this.bindingSource1, "alt", true));
+            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lat", this.bindingSource1, "lat", true));
+            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lng", this.bindingSource1, "lng", true));
+            this.coords1.Lat = 0D;
+            this.coords1.Lng = 0D;
+            resources.ApplyResources(this.coords1, "coords1");
+            this.coords1.Name = "coords1";
+            this.coords1.Vertical = false;
             // 
             // Zoomlevel
             // 
@@ -1855,20 +1885,6 @@
             this.CB_tuning.UseVisualStyleBackColor = true;
             this.CB_tuning.CheckedChanged += new System.EventHandler(this.CB_tuning_CheckedChanged);
             // 
-            // coords1
-            // 
-            this.coords1.Alt = 0D;
-            this.coords1.AltUnit = "m";
-            this.coords1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Alt", this.bindingSource1, "alt", true));
-            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lat", this.bindingSource1, "lat", true));
-            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lng", this.bindingSource1, "lng", true));
-            this.coords1.Lat = 0D;
-            this.coords1.Lng = 0D;
-            resources.ApplyResources(this.coords1, "coords1");
-            this.coords1.Name = "coords1";
-            this.coords1.Vertical = false;
-            // 
             // ZedGraphTimer
             // 
             this.ZedGraphTimer.Tick += new System.EventHandler(this.timer1_Tick);
@@ -1888,8 +1904,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -1897,8 +1913,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle10;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2022,6 +2038,8 @@
         private Controls.MyLabel lbl_logpercent;
         private System.Windows.Forms.ToolStripMenuItem pointCameraHereToolStripMenuItem;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private Controls.MyLabel lbl_hdop;
+        private Controls.MyLabel lbl_sats;
         private Controls.HSI Gheading;
         private Controls.MyLabel lbl_playbackspeed;
         private System.Windows.Forms.ToolStripMenuItem setMJPEGSourceToolStripMenuItem;

@@ -3584,5 +3584,29 @@ namespace ByAeroBeHero.GCSViews
             frm.TopMost = true;
             frm.Show();
         }
+
+        int yPos;
+        int xPos;
+        bool MoveFlag;
+        private void hud1_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlag = true;//已经按下.    
+            xPos = e.X;//当前x坐标.    
+            yPos = e.Y;//当前y坐标.
+        }
+
+        private void hud1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlag)
+            {
+                hud1.Left += Convert.ToInt16(e.X - xPos);//设置x坐标.        
+                hud1.Top += Convert.ToInt16(e.Y - yPos);//设置y坐标.    
+            }
+        }
+
+        private void hud1_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlag = false;
+        }
     }
 }

@@ -457,7 +457,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -469,7 +469,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1882,7 +1882,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1903,7 +1903,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -2137,7 +2137,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2149,7 +2149,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2161,7 +2161,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2173,7 +2173,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2185,7 +2185,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2197,7 +2197,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2209,7 +2209,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2254,7 +2254,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2275,7 +2275,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2296,7 +2296,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2317,7 +2317,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2338,7 +2338,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2359,7 +2359,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -2380,7 +2380,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -3502,7 +3502,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.29841, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.26031, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -3721,7 +3721,7 @@
     <value>17, 17</value>
   </metadata>
   <data name="hud1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 117</value>
+    <value>256, 91</value>
   </data>
   <data name="hud1.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 164</value>
@@ -3760,7 +3760,7 @@
     <value>distanceBar1</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.DistanceBar, ByAeroBeHero, Version=1.1.5775.30595, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.DistanceBar, ByAeroBeHero, Version=1.1.5777.26183, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;distanceBar1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -3768,9 +3768,6 @@
   <data name="&gt;&gt;distanceBar1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>307, 17</value>
-  </metadata>
   <data name="windDir1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
@@ -4161,6 +4158,9 @@
   <data name="takeOffToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>307, 17</value>
+  </metadata>
   <data name="recordHudToAVIToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>186, 22</value>
   </data>

@@ -233,7 +233,6 @@ namespace ByAeroBeHero
             this.Controls.Add(this.menu);
             this.KeyPreview = true;
             this.MainMenuStrip = this.MainMenu;
-            this.MaximizeBox = false;
             this.Name = "MainV2";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainV2_KeyDown);
             this.Resize += new System.EventHandler(this.MainV2_Resize);

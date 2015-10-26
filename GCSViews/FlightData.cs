@@ -274,7 +274,7 @@ namespace ByAeroBeHero.GCSViews
             // config map      
             log.Info("Map Setup");
             gMapControl1.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "gmapcache" + Path.DirectorySeparatorChar;
-            gMapControl1.MapProvider = GMapProviders.AMap;
+            gMapControl1.MapProvider = GMapProviders.AMapStatelite;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
             gMapControl1.Zoom = 3;
@@ -324,6 +324,7 @@ namespace ByAeroBeHero.GCSViews
 
             // first run
             MainV2_AdvancedChanged(null, null);
+            //this.distanceBar1.Visible = false;
         }
 
         void NoFly_NoFlyEvent(object sender, NoFly.NoFly.NoFlyEventArgs e)
@@ -336,7 +337,7 @@ namespace ByAeroBeHero.GCSViews
 
         void mymap_Paint(object sender, PaintEventArgs e)
         {
-            distanceBar1.DoPaintRemote(e);
+            //distanceBar1.DoPaintRemote(e);
         }
 
         void comPort_MavChanged(object sender, EventArgs e)
@@ -1033,7 +1034,7 @@ namespace ByAeroBeHero.GCSViews
 
                             float dist = 0;
                             float travdist = 0;
-                            distanceBar1.ClearWPDist();
+                            //distanceBar1.ClearWPDist();
                             MAVLink.mavlink_mission_item_t lastplla = new MAVLink.mavlink_mission_item_t();
                             MAVLink.mavlink_mission_item_t home = new MAVLink.mavlink_mission_item_t(); 
 
@@ -1066,7 +1067,7 @@ namespace ByAeroBeHero.GCSViews
                                 {
                                     dist = (float)new PointLatLngAlt(plla.x, plla.y).GetDistance(new PointLatLngAlt(lastplla.x, lastplla.y));
 
-                                    distanceBar1.AddWPDist(dist);
+                                    //distanceBar1.AddWPDist(dist);
 
                                     if (plla.seq <= MainV2.comPort.MAV.cs.wpno)
                                     {
@@ -1090,7 +1091,7 @@ namespace ByAeroBeHero.GCSViews
                             travdist -= MainV2.comPort.MAV.cs.wp_dist;
 
                             if (MainV2.comPort.MAV.cs.mode.ToUpper() == "AUTO")
-                                distanceBar1.traveleddist = travdist;
+                               // distanceBar1.traveleddist = travdist;
 
                             RegeneratePolygon();
 

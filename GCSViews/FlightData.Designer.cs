@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -90,6 +90,9 @@
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pbMeter = new System.Windows.Forms.PictureBox();
+            this.btnMeter = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -137,7 +140,6 @@
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
-            this.distanceBar1 = new ByAeroBeHero.Controls.DistanceBar();
             this.modifyandSetSpeed = new ByAeroBeHero.Controls.ModifyandSet();
             this.modifyandSetAlt = new ByAeroBeHero.Controls.ModifyandSet();
             this.servoOptions1 = new ByAeroBeHero.Controls.ServoOptions();
@@ -149,7 +151,6 @@
             this.servoOptions7 = new ByAeroBeHero.Controls.ServoOptions();
             this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel2.SuspendLayout();
             this.MainH.SuspendLayout();
@@ -173,6 +174,8 @@
             this.tabScripts.SuspendLayout();
             this.tabPagemessages.SuspendLayout();
             this.tableMap.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -1300,10 +1303,32 @@
             // 
             this.tableMap.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             resources.ApplyResources(this.tableMap, "tableMap");
-            this.tableMap.Controls.Add(this.panel3, 0, 2);
+            this.tableMap.Controls.Add(this.panel3, 0, 0);
             this.tableMap.Controls.Add(this.splitContainer1, 0, 1);
             this.tableMap.Controls.Add(this.panel1, 0, 2);
             this.tableMap.Name = "tableMap";
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.panel3.Controls.Add(this.pbMeter);
+            this.panel3.Controls.Add(this.btnMeter);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.ForeColor = System.Drawing.Color.DarkGreen;
+            this.panel3.Name = "panel3";
+            // 
+            // pbMeter
+            // 
+            resources.ApplyResources(this.pbMeter, "pbMeter");
+            this.pbMeter.Name = "pbMeter";
+            this.pbMeter.TabStop = false;
+            // 
+            // btnMeter
+            // 
+            resources.ApplyResources(this.btnMeter, "btnMeter");
+            this.btnMeter.ForeColor = System.Drawing.Color.Black;
+            this.btnMeter.Name = "btnMeter";
+            this.btnMeter.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
@@ -1330,7 +1355,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.Qvgroundspeed);
             this.splitContainer1.Panel2.Controls.Add(this.Qvalt);
             this.splitContainer1.Panel2.Controls.Add(this.hud1);
-            this.splitContainer1.Panel2.Controls.Add(this.distanceBar1);
             this.splitContainer1.Panel2.Controls.Add(this.windDir1);
             this.splitContainer1.Panel2.Controls.Add(this.gMapControl1);
             this.splitContainer1.Panel2.Controls.Add(this.TRK_zoom);
@@ -1795,8 +1819,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -1804,8 +1828,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -1827,14 +1851,6 @@
             // bindingSourceHud
             // 
             this.bindingSourceHud.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
-            // distanceBar1
-            // 
-            resources.ApplyResources(this.distanceBar1, "distanceBar1");
-            this.distanceBar1.BackColor = System.Drawing.Color.Transparent;
-            this.distanceBar1.Name = "distanceBar1";
-            this.distanceBar1.totaldist = 100F;
-            this.distanceBar1.traveleddist = 0F;
             // 
             // modifyandSetSpeed
             // 
@@ -1911,13 +1927,6 @@
             // 
             this.bindingSourceStatusTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.panel3.Name = "panel3";
-            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
@@ -1957,6 +1966,8 @@
             this.tabPagemessages.ResumeLayout(false);
             this.tabPagemessages.PerformLayout();
             this.tableMap.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
@@ -2109,7 +2120,6 @@
         private System.Windows.Forms.ToolStripMenuItem addPoiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveFileToolStripMenuItem;
-        private Controls.DistanceBar distanceBar1;
         private System.Windows.Forms.ToolStripMenuItem takeOffToolStripMenuItem;
         private Controls.MyButton BUT_resumemis;
         private Controls.QuickView Qvalt;
@@ -2120,6 +2130,8 @@
         private System.Windows.Forms.Label lblHorizontalError;
         private System.Windows.Forms.Label lblSataCount;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnMeter;
+        private System.Windows.Forms.PictureBox pbMeter;
 
     }
 }

@@ -125,11 +125,9 @@
             this.gMapControl1 = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.coords1 = new ByAeroBeHero.Controls.Coords();
-            this.Zoomlevel = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new ByAeroBeHero.Controls.MyLabel();
-            this.CHK_autopan = new System.Windows.Forms.CheckBox();
-            this.CB_tuning = new System.Windows.Forms.CheckBox();
+            this.fiGPS = new ByAeroBeHero.Controls.FlightInfo();
+            this.fiBat = new ByAeroBeHero.Controls.FlightInfo();
+            this.mylblbat = new ByAeroBeHero.Controls.MyLabel();
             this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.openScriptDialog = new System.Windows.Forms.OpenFileDialog();
@@ -184,7 +182,6 @@
             this.contextMenuStripHud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Zoomlevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
@@ -1529,7 +1526,7 @@
             // 
             this.hud1.airspeed = 0F;
             this.hud1.alt = 0F;
-            this.hud1.BackColor = System.Drawing.Color.Black;
+            this.hud1.BackColor = System.Drawing.Color.Transparent;
             this.hud1.batterylevel = 0F;
             this.hud1.batteryremaining = 0F;
             this.hud1.connected = false;
@@ -1671,7 +1668,7 @@
             this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -1722,84 +1719,53 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            this.panel1.Controls.Add(this.coords1);
-            this.panel1.Controls.Add(this.Zoomlevel);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.CHK_autopan);
-            this.panel1.Controls.Add(this.CB_tuning);
+            this.panel1.Controls.Add(this.fiGPS);
+            this.panel1.Controls.Add(this.fiBat);
+            this.panel1.Controls.Add(this.mylblbat);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.panel1.Name = "panel1";
             // 
-            // coords1
+            // fiGPS
             // 
-            this.coords1.Alt = 0D;
-            this.coords1.AltUnit = "m";
-            this.coords1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Alt", this.bindingSource1, "alt", true));
-            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lat", this.bindingSource1, "lat", true));
-            this.coords1.DataBindings.Add(new System.Windows.Forms.Binding("Lng", this.bindingSource1, "lng", true));
-            this.coords1.Lat = 0D;
-            this.coords1.Lng = 0D;
-            resources.ApplyResources(this.coords1, "coords1");
-            this.coords1.Name = "coords1";
-            this.coords1.Vertical = false;
+            this.fiGPS.BackColor = System.Drawing.Color.Black;
+            this.fiGPS.batterylevel = 0F;
+            this.fiGPS.batteryremaining = 0F;
+            this.fiGPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiGPS.current = 0F;
+            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.bindingSourceHud, "gpsstatus", true));
+            this.fiGPS.desc = "GPS|";
+            this.fiGPS.ForeColor = System.Drawing.Color.White;
+            this.fiGPS.gpsfix = 0F;
+            resources.ApplyResources(this.fiGPS, "fiGPS");
+            this.fiGPS.Name = "fiGPS";
+            this.fiGPS.numberColor = System.Drawing.Color.White;
+            this.fiGPS.text = "";
             // 
-            // Zoomlevel
+            // fiBat
             // 
-            resources.ApplyResources(this.Zoomlevel, "Zoomlevel");
-            this.Zoomlevel.BackColor = System.Drawing.Color.Teal;
-            this.Zoomlevel.DecimalPlaces = 1;
-            this.Zoomlevel.Increment = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.Zoomlevel.Maximum = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            this.Zoomlevel.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.Zoomlevel.Name = "Zoomlevel";
-            this.toolTip1.SetToolTip(this.Zoomlevel, resources.GetString("Zoomlevel.ToolTip"));
-            this.Zoomlevel.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.Zoomlevel.ValueChanged += new System.EventHandler(this.Zoomlevel_ValueChanged);
+            this.fiBat.BackColor = System.Drawing.Color.Black;
+            this.fiBat.batterylevel = 0F;
+            this.fiBat.batteryremaining = 0F;
+            this.fiBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiBat.current = 0F;
+            this.fiBat.DataBindings.Add(new System.Windows.Forms.Binding("batterylevel", this.bindingSourceHud, "battery_voltage", true));
+            this.fiBat.DataBindings.Add(new System.Windows.Forms.Binding("batteryremaining", this.bindingSourceHud, "battery_remaining", true));
+            this.fiBat.DataBindings.Add(new System.Windows.Forms.Binding("current", this.bindingSourceHud, "current", true));
+            this.fiBat.desc = "电池|";
+            this.fiBat.ForeColor = System.Drawing.Color.White;
+            this.fiBat.gpsfix = 0F;
+            resources.ApplyResources(this.fiBat, "fiBat");
+            this.fiBat.Name = "fiBat";
+            this.fiBat.numberColor = System.Drawing.Color.White;
+            this.fiBat.text = "";
             // 
-            // label1
+            // mylblbat
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            this.label1.Name = "label1";
-            this.label1.resize = false;
-            // 
-            // CHK_autopan
-            // 
-            resources.ApplyResources(this.CHK_autopan, "CHK_autopan");
-            this.CHK_autopan.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            this.CHK_autopan.Checked = true;
-            this.CHK_autopan.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CHK_autopan.Name = "CHK_autopan";
-            this.toolTip1.SetToolTip(this.CHK_autopan, resources.GetString("CHK_autopan.ToolTip"));
-            this.CHK_autopan.UseVisualStyleBackColor = true;
-            this.CHK_autopan.CheckedChanged += new System.EventHandler(this.CHK_autopan_CheckedChanged);
-            // 
-            // CB_tuning
-            // 
-            resources.ApplyResources(this.CB_tuning, "CB_tuning");
-            this.CB_tuning.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
-            this.CB_tuning.Name = "CB_tuning";
-            this.toolTip1.SetToolTip(this.CB_tuning, resources.GetString("CB_tuning.ToolTip"));
-            this.CB_tuning.UseVisualStyleBackColor = true;
-            this.CB_tuning.CheckedChanged += new System.EventHandler(this.CB_tuning_CheckedChanged);
+            this.mylblbat.ForeColor = System.Drawing.Color.Maroon;
+            resources.ApplyResources(this.mylblbat, "mylblbat");
+            this.mylblbat.Name = "mylblbat";
+            this.mylblbat.resize = false;
             // 
             // ZedGraphTimer
             // 
@@ -1978,8 +1944,6 @@
             this.contextMenuStripHud.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Zoomlevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
@@ -2000,7 +1964,6 @@
         private System.Windows.Forms.ToolStripMenuItem goHereToolStripMenuItem;
         private Controls.HUD hud1;
         private Controls.MyButton BUT_clear_track;
-        private System.Windows.Forms.CheckBox CB_tuning;
         private Controls.MyButton BUT_RAWSensor;
         private Controls.MyButton BUTactiondo;
         private Controls.MyButton BUTrestartmission;
@@ -2014,9 +1977,6 @@
         private AGaugeApp.AGauge Gvspeed;
         private System.Windows.Forms.TableLayoutPanel tableMap;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.NumericUpDown Zoomlevel;
-        private Controls.MyLabel label1;
-        private System.Windows.Forms.CheckBox CHK_autopan;
         private Controls.myGMAP gMapControl1;
         private ZedGraph.ZedGraphControl zg1;
         private System.Windows.Forms.TabControl tabControlactions;
@@ -2100,7 +2060,6 @@
         private System.Windows.Forms.BindingSource bindingSourceStatusTab;
         private System.Windows.Forms.BindingSource bindingSourceGaugesTab;
         private System.Windows.Forms.ToolStripMenuItem setHomeHereToolStripMenuItem;
-        private ByAeroBeHero.Controls.Coords coords1;
         private Controls.MyButton BUT_matlab;
         private System.Windows.Forms.ComboBox CMB_mountmode;
         private Controls.MyButton BUT_mountmode;
@@ -2133,6 +2092,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnMeter;
         private System.Windows.Forms.PictureBox pbMeter;
+        private Controls.MyLabel mylblbat;
+        private Controls.FlightInfo fiBat;
+        private Controls.FlightInfo fiGPS;
 
     }
 }

@@ -188,6 +188,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="PseudoOpacityHelper.cs" />
+    <Compile Include="FlightInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlightInfo.Designer.cs">
+      <DependentUpon>FlightInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuickView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightInfo.resx">
+      <DependentUpon>FlightInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuickView.resx">
       <DependentUpon>QuickView.cs</DependentUpon>

@@ -277,7 +277,7 @@ namespace ByAeroBeHero.GCSViews
             gMapControl1.MapProvider = GMapProviders.AMapStatelite;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 3;
+            gMapControl1.Zoom = 10;
 
             gMapControl1.OnMapZoomChanged += gMapControl1_OnMapZoomChanged;
 
@@ -509,8 +509,8 @@ namespace ByAeroBeHero.GCSViews
 
             OnResize(new EventArgs());
 
-            if (CB_tuning.Checked)
-                ZedGraphTimer.Start();
+            //if (CB_tuning.Checked)
+            //    ZedGraphTimer.Start();
 
             if (MainV2.MONO)
             {
@@ -572,21 +572,21 @@ namespace ByAeroBeHero.GCSViews
             {
                 try
                 {
-                    gMapControl1.Position = new PointLatLng(double.Parse(MainV2.getConfig("maplast_lat")), double.Parse(MainV2.getConfig("maplast_lng")));
-                    if (Math.Round(double.Parse(MainV2.getConfig("maplast_lat")), 1) == 0)
-                    {
-                        // no zoom in
-                        Zoomlevel.Value = 3;
-                        TRK_zoom.Value = 3;
-                    }
-                    else
-                    {
-                        Zoomlevel.Value = (decimal)float.Parse(MainV2.getConfig("maplast_zoom"));
-                        TRK_zoom.Value = (float)Zoomlevel.Value;
-                    }
+                    //gMapControl1.Position = new PointLatLng(double.Parse(MainV2.getConfig("maplast_lat")), double.Parse(MainV2.getConfig("maplast_lng")));
+                    //if (Math.Round(double.Parse(MainV2.getConfig("maplast_lat")), 1) == 0)
+                    //{
+                    //    // no zoom in
+                    //    Zoomlevel.Value = 3;
+                    //    TRK_zoom.Value = 3;
+                    //}
+                    //else
+                    //{
+                    //    Zoomlevel.Value = (decimal)float.Parse(MainV2.getConfig("maplast_zoom"));
+                    //    TRK_zoom.Value = (float)Zoomlevel.Value;
+                    //}
 
-                    Zoomlevel.Value = 5;
-                    TRK_zoom.Value = 5;
+                    //Zoomlevel.Value = 5;
+                    TRK_zoom.Value = 6;
                 }
                 catch { }
             }
@@ -651,7 +651,7 @@ namespace ByAeroBeHero.GCSViews
             try
             { // Exception System.Runtime.InteropServices.SEHException: External component has thrown an exception.
                 TRK_zoom.Value = (float)gMapControl1.Zoom;
-                Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
+                //Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
             }
             catch { }
         }
@@ -670,16 +670,16 @@ namespace ByAeroBeHero.GCSViews
 
             gMapControl1.EmptyTileColor = System.Drawing.Color.Teal;
 
-            Zoomlevel.Minimum = gMapControl1.MapProvider.MinZoom;
-            Zoomlevel.Maximum = 24;
-            Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
+            //Zoomlevel.Minimum = gMapControl1.MapProvider.MinZoom;
+            //Zoomlevel.Maximum = 24;
+            //Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);
 
             CMB_mountmode.DataSource = ParameterMetaDataRepository.GetParameterOptionsInt("MNT_MODE", MainV2.comPort.MAV.cs.firmware.ToString());
             CMB_mountmode.DisplayMember = "Value";
             CMB_mountmode.ValueMember = "Key";
 
             if (MainV2.config["CHK_autopan"] != null)
-                CHK_autopan.Checked = bool.Parse(MainV2.config["CHK_autopan"].ToString());
+                //CHK_autopan.Checked = bool.Parse(MainV2.config["CHK_autopan"].ToString());
 
             if (MainV2.config.Contains("FlightSplitter"))
             {
@@ -704,14 +704,6 @@ namespace ByAeroBeHero.GCSViews
 
         private void InitControl() 
         {
-            Color bkc =Color.Teal;
-            this.tabQuick.BackColor = bkc;
-            //this.TRK_zoom.BackColor = bkc;
-            this.panel1.ForeColor = Color.Black;
-            this.coords1.ForeColor = this.CB_tuning.ForeColor 
-                = this.label1.ForeColor = this.CHK_autopan.ForeColor
-                = Color.White;
-            this.tableLayoutPanelQuick.ForeColor = Color.Blue;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)
@@ -942,31 +934,31 @@ namespace ByAeroBeHero.GCSViews
                     Vario.SetValue(MainV2.comPort.MAV.cs.climbrate);
 
                     // udpate tunning tab
-                    if (tunning.AddMilliseconds(50) < DateTime.Now && CB_tuning.Checked)
-                    {
+                    //if (tunning.AddMilliseconds(50) < DateTime.Now && CB_tuning.Checked)
+                    //{
 
-                        double time = (Environment.TickCount - tickStart) / 1000.0;
-                        if (list1item != null)
-                            list1.Add(time, ConvertToDouble(list1item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list2item != null)
-                            list2.Add(time, ConvertToDouble(list2item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list3item != null)
-                            list3.Add(time, ConvertToDouble(list3item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list4item != null)
-                            list4.Add(time, ConvertToDouble(list4item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list5item != null)
-                            list5.Add(time, ConvertToDouble(list5item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list6item != null)
-                            list6.Add(time, ConvertToDouble(list6item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list7item != null)
-                            list7.Add(time, ConvertToDouble(list7item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list8item != null)
-                            list8.Add(time, ConvertToDouble(list8item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list9item != null)
-                            list9.Add(time, ConvertToDouble(list9item.GetValue(MainV2.comPort.MAV.cs, null)));
-                        if (list10item != null)
-                            list10.Add(time, ConvertToDouble(list10item.GetValue(MainV2.comPort.MAV.cs, null)));
-                    }
+                    //    double time = (Environment.TickCount - tickStart) / 1000.0;
+                    //    if (list1item != null)
+                    //        list1.Add(time, ConvertToDouble(list1item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list2item != null)
+                    //        list2.Add(time, ConvertToDouble(list2item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list3item != null)
+                    //        list3.Add(time, ConvertToDouble(list3item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list4item != null)
+                    //        list4.Add(time, ConvertToDouble(list4item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list5item != null)
+                    //        list5.Add(time, ConvertToDouble(list5item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list6item != null)
+                    //        list6.Add(time, ConvertToDouble(list6item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list7item != null)
+                    //        list7.Add(time, ConvertToDouble(list7item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list8item != null)
+                    //        list8.Add(time, ConvertToDouble(list8item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list9item != null)
+                    //        list9.Add(time, ConvertToDouble(list9item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //    if (list10item != null)
+                    //        list10.Add(time, ConvertToDouble(list10item.GetValue(MainV2.comPort.MAV.cs, null)));
+                    //}
 
                     // update map
                     if (tracklast.AddSeconds(1.2) < DateTime.Now)
@@ -1166,7 +1158,7 @@ namespace ByAeroBeHero.GCSViews
                                 }
                             }
 
-                            if (route.Points[route.Points.Count - 1].Lat != 0 && (mapupdate.AddSeconds(3) < DateTime.Now) && CHK_autopan.Checked)
+                            if (route.Points[route.Points.Count - 1].Lat != 0 && (mapupdate.AddSeconds(3) < DateTime.Now))
                             {
                                 updateMapPosition(currentloc);
                                 mapupdate = DateTime.Now;
@@ -1705,21 +1697,10 @@ namespace ByAeroBeHero.GCSViews
 
         private void CB_tuning_CheckedChanged(object sender, EventArgs e)
         {
-            if (CB_tuning.Checked)
-            {
-                splitContainer1.Panel1Collapsed = false;
-                ZedGraphTimer.Enabled = true;
-                ZedGraphTimer.Start();
-                zg1.Visible = true;
-                zg1.Refresh();
-            }
-            else
-            {
-                splitContainer1.Panel1Collapsed = true;
-                ZedGraphTimer.Enabled = false;
-                ZedGraphTimer.Stop();
-                zg1.Visible = false;
-            }
+            splitContainer1.Panel1Collapsed = true;
+            ZedGraphTimer.Enabled = false;
+            ZedGraphTimer.Stop();
+            zg1.Visible = false;      
         }
 
         private void BUT_RAWSensor_Click(object sender, EventArgs e)
@@ -1787,14 +1768,14 @@ namespace ByAeroBeHero.GCSViews
         {
             try
             {
-                if (gMapControl1.MaxZoom + 1 == (double)Zoomlevel.Value)
-                {
-                    gMapControl1.Zoom = (double)Zoomlevel.Value - .1;
-                }
-                else
-                {
-                    gMapControl1.Zoom = (double)Zoomlevel.Value;
-                }
+                //if (gMapControl1.MaxZoom + 1 == (double)Zoomlevel.Value)
+                //{
+                //    gMapControl1.Zoom = (double)Zoomlevel.Value - .1;
+                //}
+                //else
+                //{
+                //    gMapControl1.Zoom = (double)Zoomlevel.Value;
+                //}
             }
             catch { }
         }
@@ -2744,7 +2725,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void CHK_autopan_CheckedChanged(object sender, EventArgs e)
         {
-            MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            //MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
 
                 //GCSViews.FlightPlanner.instance.autopan = CHK_autopan.Checked;
         }

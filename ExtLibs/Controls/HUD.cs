@@ -994,48 +994,48 @@ namespace ByAeroBeHero.Controls
                     whitePen.Color = _hudcolor;
                 }
 
-
-                //if (bgon == true)
-                //{
-                //    RectangleF bg = new RectangleF(-halfwidth * 2, -halfheight * 2, this.Width * 2, halfheight * 2 + pitchoffset);
-
-                //    if (bg.Height != 0)
-                //    {
-                //        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Violet,
-                //            Color.Violet, LinearGradientMode.Vertical);
-
-                //        graphicsObject.FillRectangle(linearBrush, bg);
-                //    }
-                //    // draw ground
-
-                //    bg = new RectangleF(-halfwidth * 2, pitchoffset, this.Width * 2, halfheight * 2 - pitchoffset);
-
-                //    if (bg.Height != 0)
-                //    {
-                //        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Peru,
-                //            Color.Peru, LinearGradientMode.Vertical);
-
-                //        graphicsObject.FillRectangle(linearBrush, bg);
-                //    }
                 // draw sky
                 if (bgon == true)
                 {
-                    Rectangle bg = new Rectangle(-halfwidth, -halfwidth, halfwidth * 2, halfwidth * 2);
+                    RectangleF bg = new RectangleF(-halfwidth * 2, -halfheight * 2, this.Width * 2, halfheight * 2 + pitchoffset);
 
                     if (bg.Height != 0)
                     {
-                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Teal,
-                            Color.Teal, LinearGradientMode.Vertical);
+                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Blue,
+                            Color.Blue, LinearGradientMode.Vertical);
 
                         graphicsObject.FillRectangle(linearBrush, bg);
-                    }  
+                    }
+                    // draw ground
 
-                    //draw centerline
-                    graphicsObject.DrawLine(whitePen, -halfwidth * 2, pitchoffset + 0, halfwidth * 2, pitchoffset + 0);
+                    bg = new RectangleF(-halfwidth * 2, pitchoffset, this.Width * 2, halfheight * 2 - pitchoffset);
 
-                    //graphicsObject.DrawEllipse(redPen, bg);
+                    if (bg.Height != 0)
+                    {
+                        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Chocolate,
+                            Color.Chocolate, LinearGradientMode.Vertical);
 
+                        graphicsObject.FillRectangle(linearBrush, bg);
+                    }
                 }
+                //if (bgon == true)
+                //{
+                //    Rectangle bg = new Rectangle(-halfwidth, -halfwidth, halfwidth * 2, halfwidth * 2);
+
+                //    if (bg.Height != 0)
+                //    {
+                //        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Teal,
+                //            Color.Teal, LinearGradientMode.Vertical);
+
+                //        graphicsObject.FillRectangle(linearBrush, bg);
+                //    }  
+
+                //    //draw centerline
+                //    graphicsObject.DrawLine(whitePen, -halfwidth * 2, pitchoffset + 0, halfwidth * 2, pitchoffset + 0);
+
+                //    //graphicsObject.DrawEllipse(redPen, bg);
+
+                //}
 
 
 
@@ -1405,23 +1405,23 @@ namespace ByAeroBeHero.Controls
 
                     // extra text data
 
-                    if (_lowairspeed)
-                    {
-                        drawstring(graphicsObject, HUDT.AS + _airspeed.ToString("0.0"), font, fontsize, (SolidBrush)Brushes.Red, 1, scrollbg.Bottom + 5);
-                    }
-                    else
-                    {
-                        drawstring(graphicsObject, HUDT.AS + _airspeed.ToString("0.0"), font, fontsize, whiteBrush, 1, scrollbg.Bottom + 5);
-                    }
+                    //if (_lowairspeed)
+                    //{
+                    //    drawstring(graphicsObject, HUDT.AS + _airspeed.ToString("0.0"), font, fontsize, (SolidBrush)Brushes.Red, 1, scrollbg.Bottom + 5);
+                    //}
+                    //else
+                    //{
+                    //    drawstring(graphicsObject, HUDT.AS + _airspeed.ToString("0.0"), font, fontsize, whiteBrush, 1, scrollbg.Bottom + 5);
+                    //}
 
-                    if (_lowgroundspeed)
-                    {
-                        drawstring(graphicsObject, HUDT.GS + _groundspeed.ToString("0.0"), font, fontsize, (SolidBrush)Brushes.Red, 1, scrollbg.Bottom + fontsize + 2 + 10);
-                    }
-                    else
-                    {
-                        drawstring(graphicsObject, HUDT.GS + _groundspeed.ToString("0.0"), font, fontsize, whiteBrush, 1, scrollbg.Bottom + fontsize + 2 + 10);
-                    }
+                    //if (_lowgroundspeed)
+                    //{
+                    //    drawstring(graphicsObject, HUDT.GS + _groundspeed.ToString("0.0"), font, fontsize, (SolidBrush)Brushes.Red, 1, scrollbg.Bottom + fontsize + 2 + 10);
+                    //}
+                    //else
+                    //{
+                    //    drawstring(graphicsObject, HUDT.GS + _groundspeed.ToString("0.0"), font, fontsize, whiteBrush, 1, scrollbg.Bottom + fontsize + 2 + 10);
+                    //}
                 }
 
                 //drawstring(e,, new Font("Arial", fontsize + 2), whiteBrush, 1, scrollbg.Bottom + fontsize + 2 + 10);

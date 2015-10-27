@@ -49,6 +49,10 @@ namespace ByAeroBeHero.Controls
         float _batteryremaining = 0;
         float _current = 0;
         float _gpsfix = 0;
+        string _mode = "Manual";
+        bool _state = false;
+        bool _failsafe = false;
+        string _message = "";
 
         [System.ComponentModel.Browsable(true)]
         public Color numberColor 
@@ -135,7 +139,69 @@ namespace ByAeroBeHero.Controls
                 } 
             } 
         }
-        
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public string mode 
+        { 
+            get 
+            { 
+                return _mode; 
+            } 
+            set 
+            { 
+                if (_mode != value) 
+                { 
+                    _mode = value; 
+                    this.Invalidate(); 
+                } 
+            } 
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public bool status 
+        {
+            get 
+            {
+                return _state;
+            }
+            set 
+            {
+                _state = value;
+
+                this.Invalidate();
+            }
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public bool failsafe 
+        {
+            get 
+            {
+                return _failsafe;
+            }
+            set 
+            {
+                _failsafe = value;
+                this.Invalidate();
+            }
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public string message 
+        { 
+            get
+            {
+                return _message;
+            }
+            set
+            {
+                _message = value;
+                this.Invalidate();
+            } 
+        }
+
+        bool statuslast = false;
+        DateTime armedtimer = DateTime.MinValue;
 
         public FlightInfo()
         {
@@ -164,9 +230,21 @@ namespace ByAeroBeHero.Controls
             {
                 str = _batterylevel.ToString("0.00v") + " " + _current.ToString("0.0 A") + " " + (_batteryremaining) + "%";
             }
-            else if(this.Name =="fiGPS")
+            else if(this.Name == "fiGPS")
             {
                 str = strGPRS();
+            }
+            else if(this.Name == "fiMode")
+            {
+                str =mode;
+            }
+            else if (this.Name == "fiState") 
+            {
+                str = strFiState();
+            }
+            else if(this.Name == "fiBad")
+            {
+                str = message;
             }
 
             this.text = str;
@@ -202,6 +280,37 @@ namespace ByAeroBeHero.Controls
             } 
             
             return gps;
+        }
+
+        private string strFiState() 
+        {
+            string state = string.Empty; 
+            if (status != statuslast)
+            {
+                armedtimer = DateTime.Now;
+            }
+
+            if (status == false) // not armed
+            {
+                state = HUDT.DISARMED;
+                statuslast = status;
+            }
+            else if (status == true) // armed
+            {
+                if ((armedtimer.AddSeconds(8) > DateTime.Now))
+                {
+                    state = HUDT.ARMED;
+                    statuslast = status;
+                }
+            }
+
+            if (failsafe == true)
+            {
+                state = HUDT.FAILSAFE;
+                statuslast = status;
+            }
+
+            return state;
         }
 
         void GetFontSize()

@@ -1018,24 +1018,6 @@ namespace ByAeroBeHero.Controls
                         graphicsObject.FillRectangle(linearBrush, bg);
                     }
                 }
-                //if (bgon == true)
-                //{
-                //    Rectangle bg = new Rectangle(-halfwidth, -halfwidth, halfwidth * 2, halfwidth * 2);
-
-                //    if (bg.Height != 0)
-                //    {
-                //        LinearGradientBrush linearBrush = new LinearGradientBrush(bg, Color.Teal,
-                //            Color.Teal, LinearGradientMode.Vertical);
-
-                //        graphicsObject.FillRectangle(linearBrush, bg);
-                //    }  
-
-                //    //draw centerline
-                //    graphicsObject.DrawLine(whitePen, -halfwidth * 2, pitchoffset + 0, halfwidth * 2, pitchoffset + 0);
-
-                //    //graphicsObject.DrawEllipse(redPen, bg);
-
-                //}
 
 
 
@@ -1344,9 +1326,9 @@ namespace ByAeroBeHero.Controls
 
                 if (displayspeed)
                 {
-                    //graphicsObject.DrawRectangle(whitePen, scrollbg);
+                    graphicsObject.DrawRectangle(whitePen, scrollbg);
 
-                    //graphicsObject.FillRectangle(solidBrush, scrollbg);
+                    graphicsObject.FillRectangle(solidBrush, scrollbg);
 
                     Point[] arrow = new Point[5];
 
@@ -1387,19 +1369,19 @@ namespace ByAeroBeHero.Controls
                         if (a == (int)_targetspeed && _targetspeed != 0)
                         {
                             greenPen.Width = 6;
-                            //graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Left + scrollbg.Width, scrollbg.Top - space * (a - start));
+                            graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Left + scrollbg.Width, scrollbg.Top - space * (a - start));
                         }
                         if (a % 5 == 0)
                         {
-                            //Console.WriteLine(a + " " + scrollbg.Right + " " + (scrollbg.Top - space * (a - start)) + " " + (scrollbg.Right - 20) + " " + (scrollbg.Top - space * (a - start)));
-                            //graphicsObject.DrawLine(whitePen, scrollbg.Right, scrollbg.Top - space * (a - start), scrollbg.Right - 10, scrollbg.Top - space * (a - start));
-                            //drawstring(graphicsObject, a.ToString().PadLeft(5), font, fontsize, whiteBrush, scrollbg.Right - 50 - 4 * fontoffset, scrollbg.Top - space * (a - start) - 6 - fontoffset);
+                            Console.WriteLine(a + " " + scrollbg.Right + " " + (scrollbg.Top - space * (a - start)) + " " + (scrollbg.Right - 20) + " " + (scrollbg.Top - space * (a - start)));
+                            graphicsObject.DrawLine(whitePen, scrollbg.Right, scrollbg.Top - space * (a - start), scrollbg.Right - 10, scrollbg.Top - space * (a - start));
+                            drawstring(graphicsObject, a.ToString().PadLeft(5), font, fontsize, whiteBrush, scrollbg.Right - 50 - 4 * fontoffset, scrollbg.Top - space * (a - start) - 6 - fontoffset);
                         }
                     }
 
-                    //graphicsObject.DrawPolygon(blackPen, arrow);
-                    //graphicsObject.FillPolygon(Brushes.Black, arrow);
-                    //drawstring(graphicsObject, ((int)speed).ToString("0"), font, 10, (SolidBrush)Brushes.AliceBlue, 0, -9);
+                    graphicsObject.DrawPolygon(blackPen, arrow);
+                    graphicsObject.FillPolygon(Brushes.Black, arrow);
+                    drawstring(graphicsObject, ((int)speed).ToString("0"), font, 10, (SolidBrush)Brushes.AliceBlue, 0, -9);
 
                     graphicsObject.ResetTransform();
 
@@ -1431,9 +1413,9 @@ namespace ByAeroBeHero.Controls
 
                 if (displayalt)
                 {
-                    //graphicsObject.DrawRectangle(whitePen, scrollbg);
+                    graphicsObject.DrawRectangle(whitePen, scrollbg);
 
-                    //graphicsObject.FillRectangle(solidBrush, scrollbg);
+                    graphicsObject.FillRectangle(solidBrush, scrollbg);
 
                     Point[] arrow = new Point[5];
 
@@ -1454,15 +1436,15 @@ namespace ByAeroBeHero.Controls
                     {
                         greenPen.Color = Color.FromArgb(128, greenPen.Color);
                         greenPen.Width = 6;
-                        //graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top, scrollbg.Left + scrollbg.Width, scrollbg.Top);
-                        //greenPen.Color = Color.FromArgb(255, greenPen.Color);
+                        graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top, scrollbg.Left + scrollbg.Width, scrollbg.Top);
+                        greenPen.Color = Color.FromArgb(255, greenPen.Color);
                     }
                     if ((_alt + viewrange / 2) < _targetalt)
                     {
                         greenPen.Color = Color.FromArgb(128, greenPen.Color);
                         greenPen.Width = 6;
-                        //graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top - space * viewrange, scrollbg.Left + scrollbg.Width, scrollbg.Top - space * viewrange);
-                        //greenPen.Color = Color.FromArgb(255, greenPen.Color);
+                        graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top - space * viewrange, scrollbg.Left + scrollbg.Width, scrollbg.Top - space * viewrange);
+                        greenPen.Color = Color.FromArgb(255, greenPen.Color);
                     }
 
                     bool ground = false;
@@ -1472,21 +1454,21 @@ namespace ByAeroBeHero.Controls
                         if (a == Math.Round(_targetalt) && _targetalt != 0)
                         {
                             greenPen.Width = 6;
-                            //graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Left + scrollbg.Width, scrollbg.Top - space * (a - start));
+                            graphicsObject.DrawLine(greenPen, scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Left + scrollbg.Width, scrollbg.Top - space * (a - start));
                         }
 
 
                         // ground doesnt appear if we are not in view or below ground level
                         if (a == Math.Round(groundalt) && groundalt != 0 && ground == false)
                         {
-                            //graphicsObject.FillRectangle(new SolidBrush(Color.FromArgb(100, Color.BurlyWood)), new RectangleF(scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Width, (space * (a - start))));
+                            graphicsObject.FillRectangle(new SolidBrush(Color.FromArgb(100, Color.BurlyWood)), new RectangleF(scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Width, (space * (a - start))));
                         }
 
                         if (a % 5 == 0)
                         {
-                            //Console.WriteLine(a + " " + scrollbg.Left + " " + (scrollbg.Top - space * (a - start)) + " " + (scrollbg.Left + 20) + " " + (scrollbg.Top - space * (a - start)));
-                            //graphicsObject.DrawLine(whitePen, scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Left + 10, scrollbg.Top - space * (a - start));
-                            //drawstring(graphicsObject, a.ToString().PadLeft(5), font, fontsize, whiteBrush, scrollbg.Left + 0 + (int)(0 * fontoffset), scrollbg.Top - space * (a - start) - 6 - fontoffset);
+                            Console.WriteLine(a + " " + scrollbg.Left + " " + (scrollbg.Top - space * (a - start)) + " " + (scrollbg.Left + 20) + " " + (scrollbg.Top - space * (a - start)));
+                            graphicsObject.DrawLine(whitePen, scrollbg.Left, scrollbg.Top - space * (a - start), scrollbg.Left + 10, scrollbg.Top - space * (a - start));
+                            drawstring(graphicsObject, a.ToString().PadLeft(5), font, fontsize, whiteBrush, scrollbg.Left + 0 + (int)(0 * fontoffset), scrollbg.Top - space * (a - start) - 6 - fontoffset);
                         }
 
                     }
@@ -1537,15 +1519,15 @@ namespace ByAeroBeHero.Controls
                     polyn[2] = new PointF(scrollbg.Left - scrollbg.Width / 4, scrollbg.Top + (scrollbg.Bottom - scrollbg.Top) / 2 + scaledvalue + peak);
                     polyn[3] = new PointF(scrollbg.Left, scrollbg.Top + (scrollbg.Bottom - scrollbg.Top) / 2 + scaledvalue);
 
-                    ////graphicsObject.DrawPolygon(redPen, poly);
-                    //graphicsObject.FillPolygon(Brushes.Blue, polyn);
+                    //graphicsObject.DrawPolygon(redPen, poly);
+                    graphicsObject.FillPolygon(Brushes.Blue, polyn);
 
-                    //// draw outsidebox
-                    //graphicsObject.DrawPolygon(whitePen, poly);
+                    // draw outsidebox
+                    graphicsObject.DrawPolygon(whitePen, poly);
 
                     for (int a = 1; a < viewrange; a++)
                     {
-                        //graphicsObject.DrawLine(whitePen, scrollbg.Left - scrollbg.Width / 4, scrollbg.Top - linespace * a, scrollbg.Left - scrollbg.Width / 8, scrollbg.Top - linespace * a);
+                        graphicsObject.DrawLine(whitePen, scrollbg.Left - scrollbg.Width / 4, scrollbg.Top - linespace * a, scrollbg.Left - scrollbg.Width / 8, scrollbg.Top - linespace * a);
                     }
 
                     // draw arrow and text
@@ -1554,17 +1536,17 @@ namespace ByAeroBeHero.Controls
                     graphicsObject.TranslateTransform(this.Width, this.Height / 2);
                     graphicsObject.RotateTransform(180);
 
-                    //graphicsObject.DrawPolygon(blackPen, arrow);
-                    //graphicsObject.FillPolygon(Brushes.Black, arrow);
+                    graphicsObject.DrawPolygon(blackPen, arrow);
+                    graphicsObject.FillPolygon(Brushes.Black, arrow);
                     graphicsObject.ResetTransform();
                     graphicsObject.TranslateTransform(0, this.Height / 2);
 
-                    //drawstring(graphicsObject, ((int)_alt).ToString("0"), font, 10, (SolidBrush)Brushes.AliceBlue, scrollbg.Left + 10, -9);
+                    drawstring(graphicsObject, ((int)_alt).ToString("0"), font, 10, (SolidBrush)Brushes.AliceBlue, scrollbg.Left + 10, -9);
                     graphicsObject.ResetTransform();
 
                     // mode and wp dist and wp
                     drawstring(graphicsObject, _mode, font, fontsize, whiteBrush, scrollbg.Left - 30, scrollbg.Bottom + 5);
-                    drawstring(graphicsObject, (int)_disttowp + ">" + _wpno, font, fontsize, whiteBrush, scrollbg.Left - 30, scrollbg.Bottom + fontsize + 2 + 10);
+                    //drawstring(graphicsObject, (int)_disttowp + ">" + _wpno, font, fontsize, whiteBrush, scrollbg.Left - 30, scrollbg.Bottom + fontsize + 2 + 10);
                 }
 
                 if (displayconninfo)
@@ -1588,18 +1570,18 @@ namespace ByAeroBeHero.Controls
                 {
                     graphicsObject.ResetTransform();
 
-                    string text = HUDT.Bat + _batterylevel.ToString("0.00v") + " " + _current.ToString("0.0 A");
+                    //string text = HUDT.Bat + _batterylevel.ToString("0.00v") + " " + _current.ToString("0.0 A");
 
-                    text = HUDT.Bat + _batterylevel.ToString("0.00v") + " " + _current.ToString("0.0 A") + " " + (_batteryremaining) + "%";
+                    //text = HUDT.Bat + _batterylevel.ToString("0.00v") + " " + _current.ToString("0.0 A") + " " + (_batteryremaining) + "%";
 
-                    if (lowvoltagealert)
-                    {
-                        drawstring(graphicsObject, text, font, fontsize + 2, (SolidBrush)Brushes.Red, fontsize, this.Height - 30 - fontoffset);
-                    }
-                    else
-                    {
-                        drawstring(graphicsObject, text, font, fontsize + 2, whiteBrush, fontsize, this.Height - 30 - fontoffset);
-                    }
+                    //if (lowvoltagealert)
+                    //{
+                    //    drawstring(graphicsObject, text, font, fontsize + 2, (SolidBrush)Brushes.Red, fontsize, this.Height - 30 - fontoffset);
+                    //}
+                    //else
+                    //{
+                    //    drawstring(graphicsObject, text, font, fontsize + 2, whiteBrush, fontsize, this.Height - 30 - fontoffset);
+                    //}
                 }
                 // gps
                 if (displaygps)
@@ -1633,7 +1615,7 @@ namespace ByAeroBeHero.Controls
                     {
                         gps = (HUDT.GPS5);
                     }
-                    drawstring(graphicsObject, gps, font, fontsize + 2, col, this.Width - 13 * fontsize, this.Height - 30 - fontoffset);
+                    drawstring(graphicsObject, null, font, fontsize + 2, col, this.Width - 13 * fontsize, this.Height - 30 - fontoffset);
                 }
 
                 if (isNaN)
@@ -1693,7 +1675,7 @@ namespace ByAeroBeHero.Controls
                 {
                     //if ((armedtimer.AddSeconds(8) > DateTime.Now))
                     {
-                        drawstring(graphicsObject, HUDT.DISARMED, font, fontsize + 10, (SolidBrush)Brushes.Blue, -85, halfheight / -3);
+                        drawstring(graphicsObject, null, font, fontsize + 10, (SolidBrush)Brushes.Blue, -85, halfheight / -3);
                         statuslast = status;
                     }
                 }
@@ -1701,14 +1683,14 @@ namespace ByAeroBeHero.Controls
                 {
                     if ((armedtimer.AddSeconds(8) > DateTime.Now))
                     {
-                        drawstring(graphicsObject, HUDT.ARMED, font, fontsize + 20, (SolidBrush)Brushes.Blue, -70, halfheight / -3);
+                        drawstring(graphicsObject, null, font, fontsize + 20, (SolidBrush)Brushes.Blue, -70, halfheight / -3);
                         statuslast = status;
                     }
                 }
 
                 if (failsafe == true)
                 {
-                    drawstring(graphicsObject, HUDT.FAILSAFE, font, fontsize + 20, (SolidBrush)Brushes.Blue, -85, halfheight / -HUDT.FailsafeH);
+                    drawstring(graphicsObject, null, font, fontsize + 20, (SolidBrush)Brushes.Blue, -85, halfheight / -HUDT.FailsafeH);
                     statuslast = status;
                 }
 
@@ -1727,15 +1709,15 @@ namespace ByAeroBeHero.Controls
 
                 if (ekfstatus > 0.5)
                 {
-                    ekfhitzone = new Rectangle(this.Width - 23 * fontsize, this.Height - 30 - fontoffset, 40,fontsize *2);
-                    if (ekfstatus > 1)
-                    {
-                        drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Blue, ekfhitzone.X, ekfhitzone.Y);
-                    }
-                    else
-                    {
-                        drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Blue, ekfhitzone.X, ekfhitzone.Y);
-                    }
+                    //ekfhitzone = new Rectangle(this.Width - 23 * fontsize, this.Height - 30 - fontoffset, 40,fontsize *2);
+                    //if (ekfstatus > 1)
+                    //{
+                    //    drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Blue, ekfhitzone.X, ekfhitzone.Y);
+                    //}
+                    //else
+                    //{
+                    //    drawstring(graphicsObject, "EKF", font, fontsize + 2, (SolidBrush)Brushes.Blue, ekfhitzone.X, ekfhitzone.Y);
+                    //}
                 }
 
                 if (!opengl)

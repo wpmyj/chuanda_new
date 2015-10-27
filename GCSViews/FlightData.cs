@@ -277,7 +277,7 @@ namespace ByAeroBeHero.GCSViews
             gMapControl1.MapProvider = GMapProviders.AMapStatelite;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
-            gMapControl1.Zoom = 10;
+            gMapControl1.Zoom = 5;
 
             gMapControl1.OnMapZoomChanged += gMapControl1_OnMapZoomChanged;
 
@@ -586,7 +586,7 @@ namespace ByAeroBeHero.GCSViews
                     //}
 
                     //Zoomlevel.Value = 5;
-                    TRK_zoom.Value = 6;
+                    TRK_zoom.Value = 5;
                 }
                 catch { }
             }

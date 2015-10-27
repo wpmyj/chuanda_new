@@ -3087,6 +3087,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\Parachute.png" />
+    <Content Include="Resources\time.jpg" />
     <Content Include="Scripts\example5 inject data.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

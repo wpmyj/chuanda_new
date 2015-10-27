@@ -128,7 +128,7 @@
 </value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value>错误</value>
+    <value></value>
   </data>
   <data name="ErrorClosingLogFile" xml:space="preserve">
     <value>关闭日志文件时出错</value>
@@ -150,7 +150,7 @@
     <value>接收日志列表的错误</value>
   </data>
   <data name="ErrorNoResponce" xml:space="preserve">
-    <value>错误：无法从飞行器收到响应</value>
+    <value>无法从飞行器收到响应</value>
   </data>
   <data name="ErrorNotConnected" xml:space="preserve">
     <value>没有连接。</value>
@@ -160,7 +160,7 @@
 </value>
   </data>
   <data name="ErrorRejectedByMAV" xml:space="preserve">
-    <value>错误：命令拒绝了MAV</value>
+    <value>命令拒绝了MAV</value>
   </data>
   <data name="ErrorRenameFile" xml:space="preserve">
     <value>错误重命名文件</value>

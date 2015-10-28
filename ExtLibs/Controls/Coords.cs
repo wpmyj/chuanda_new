@@ -46,18 +46,11 @@ namespace ByAeroBeHero.Controls
         {
             base.OnPaint(e);
 
-            PointF text = new PointF(CMB_coordsystem.Right + 3, 3);
+            PointF text = new PointF(3, 3);
 
             if (System == CoordsSystems.GEO.ToString())
             {
-                if (Vertical)
-                {
-                    e.Graphics.DrawString(Lat.ToString("0.000000") + "\n" + Lng.ToString("0.000000") + "\n" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
-                }
-                else
-                {
-                    e.Graphics.DrawString(Lat.ToString("0.000000") + " " + Lng.ToString("0.000000") + "   " + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
-                }
+               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000") + "\n" +"经度|"+ Lng.ToString("0.000000") + "\n" + "HOME|" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
             } 
             else  if (System == CoordsSystems.UTM.ToString())
             {

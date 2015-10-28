@@ -514,7 +514,8 @@ namespace ByAeroBeHero.GCSViews
             Down.Image = Resources.down;
 
             // hide the map to prevent redraws when its loaded
-            panelMap.Visible = false;  
+            panelMap.Visible = false;
+            comboBoxMapType.SelectedIndex = 4;
         }
 
         void updateCMDParams()
@@ -699,7 +700,7 @@ namespace ByAeroBeHero.GCSViews
                 if (TXT_homelat.Text != "")
                 {
                     MainMap.Position = new PointLatLng(double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text));
-                    MainMap.Zoom = 16;
+                    MainMap.Zoom = 7;
                 }
 
             }
@@ -725,23 +726,6 @@ namespace ByAeroBeHero.GCSViews
         /// </summary>
         private void InitControl() 
         {
-            Color fc = Color.Teal;
-            this.panel1.BackColor = this.panel2.BackColor = this.panel3.BackColor = this.panel4.BackColor
-                = this.panel5.BackColor = this.chk_grid.BackColor = this.comboBoxMapType.BackColor
-                = this.lbl_wpfile.BackColor = lnk_kml.BackColor = label4.BackColor
-                = Commands.BackgroundColor = panelMap.BackColor = this.CHK_verifyheight.BackColor
-                = this.CHK_splinedefault.BackColor = fc;
-            this.TXT_homelat.BackColor = TXT_homelng.BackColor
-                = TXT_homealt.BackColor = Color.White;
-
-            this.panel1.ForeColor = this.panel2.ForeColor = this.panel3.ForeColor = this.panel4.ForeColor
-                = this.panel5.ForeColor = this.chk_grid.ForeColor = this.comboBoxMapType.ForeColor
-                = this.lbl_wpfile.ForeColor = this.LBL_WPRad.ForeColor = this.LBL_defalutalt.ForeColor
-                = this.label5.ForeColor = this.CHK_verifyheight.ForeColor = this.label17.ForeColor
-                = this.CHK_splinedefault.ForeColor = Color.Black;
-
-            this.lnk_kml.ForeColor = label4.ForeColor = Color.Blue;
-            this.CMB_altmode.Visible = false;
           
         }
         void POI_POIModified(object sender, EventArgs e)
@@ -1566,7 +1550,7 @@ namespace ByAeroBeHero.GCSViews
                         }
                         sw.Close();
 
-                        lbl_wpfile.Text = "Saved " + Path.GetFileName(file);
+                        //lbl_wpfile.Text = "Saved " + Path.GetFileName(file);
                     }
                     catch (Exception) { CustomMessageBox.Show(Strings.ERROR); }
                 }
@@ -2376,7 +2360,7 @@ namespace ByAeroBeHero.GCSViews
                         readQGC110wpfile(file);
                     }
 
-                    lbl_wpfile.Text = "Loaded " + Path.GetFileName(file);
+                    //lbl_wpfile.Text = "Loaded " + Path.GetFileName(file);
                 }
             }
         }
@@ -3123,7 +3107,7 @@ namespace ByAeroBeHero.GCSViews
         void MainMap_OnTileLoadStart()
         {
             MethodInvoker m = delegate {
-                lbl_status.Text = "Status: loading tiles...";
+                //lbl_status.Text = "Status: loading tiles...";
             };
             try
             {
@@ -4947,7 +4931,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void chk_grid_CheckedChanged(object sender, EventArgs e)
         {
-            grid = chk_grid.Checked;
+            //grid = chk_grid.Checked;
         }
 
         private void insertWpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -5474,13 +5458,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             //}
             //else
             //{
-                panelAction.Dock = DockStyle.Bottom;
-                panelAction.Height = 120;
-                panelWaypoints.Dock = DockStyle.Right;
-                panelWaypoints.Width = Width / 3;
+                //panelAction.Dock = DockStyle.Bottom;
+                //panelAction.Height = 120;
+                //panelWaypoints.Dock = DockStyle.Right;
+                //panelWaypoints.Width = Width / 3;
             //}
 
-            MainV2.config["FP_docking"] = panelAction.Dock;
+            //MainV2.config["FP_docking"] = panelAction.Dock;
         }
 
         private void insertSplineWPToolStripMenuItem_Click(object sender, EventArgs e)

@@ -40,9 +40,10 @@
             "MGRS"});
             this.CMB_coordsystem.Location = new System.Drawing.Point(0, 0);
             this.CMB_coordsystem.Name = "CMB_coordsystem";
-            this.CMB_coordsystem.Size = new System.Drawing.Size(54, 21);
+            this.CMB_coordsystem.Size = new System.Drawing.Size(54, 20);
             this.CMB_coordsystem.TabIndex = 0;
             this.CMB_coordsystem.Text = "GEO";
+            this.CMB_coordsystem.Visible = false;
             this.CMB_coordsystem.SelectedIndexChanged += new System.EventHandler(this.CMB_coordsystem_SelectedIndexChanged);
             // 
             // Coords

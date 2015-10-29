@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BadCoords" xml:space="preserve">
-    <value>Bad Lat/Lng</value>
+    <value>错误经纬度</value>
   </data>
   <data name="CannotGraphField" xml:space="preserve">
-    <value>Cannot graph this field</value>
+    <value>不能绘制这个字段</value>
   </data>
   <data name="CommandFailed" xml:space="preserve">
     <value>命令未能执行
 </value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="ErrorClosingLogFile" xml:space="preserve">
     <value>关闭日志文件时出错</value>
@@ -178,7 +178,7 @@
     <value>无效波特率</value>
   </data>
   <data name="InvalidField" xml:space="preserve">
-    <value>Invalid Field</value>
+    <value>无效字段</value>
   </data>
   <data name="InvalidFileName" xml:space="preserve">
     <value>无效的文件名</value>
@@ -188,7 +188,7 @@
 </value>
   </data>
   <data name="InvalidPanRange" xml:space="preserve">
-    <value>Invalid Pan Range</value>
+    <value>无效平移范围</value>
   </data>
   <data name="InvalidPortName" xml:space="preserve">
     <value>无效端口名</value>
@@ -224,10 +224,10 @@ DON'T DO THIS IF YOU ARE IN THE AIR
 </value>
   </data>
   <data name="Checking" xml:space="preserve">
-    <value>Checking </value>
+    <value>检查</value>
   </data>
   <data name="DownloadedFromInternet" xml:space="preserve">
-    <value>Downloaded from internet</value>
+    <value>从互联网下载</value>
   </data>
   <data name="Getting" xml:space="preserve">
     <value>Getting </value>
@@ -239,13 +239,13 @@ DON'T DO THIS IF YOU ARE IN THE AIR
     <value>Advanced Params</value>
   </data>
   <data name="BasicTuning" xml:space="preserve">
-    <value>Basic Tuning</value>
+    <value>基本调谐</value>
   </data>
   <data name="Desc" xml:space="preserve">
-    <value>Description: </value>
+    <value>描述: </value>
   </data>
   <data name="ExtendedTuning" xml:space="preserve">
-    <value>Extended Tuning</value>
+    <value>扩展调谐</value>
   </data>
   <data name="FlightModes" xml:space="preserve">
     <value>Flight Modes</value>
@@ -269,16 +269,16 @@ DON'T DO THIS IF YOU ARE IN THE AIR
     <value>Sucessfully programmed</value>
   </data>
   <data name="CONNECTc" xml:space="preserve">
-    <value>CONNECT</value>
+    <value>连接</value>
   </data>
   <data name="Disconnect" xml:space="preserve">
-    <value>Disconnect</value>
+    <value>断开</value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value>DISCONNECT</value>
+    <value>断开</value>
   </data>
   <data name="Failclog" xml:space="preserve">
-    <value>Failed to create log - wont log this session</value>
+    <value>创建日志失败-不会登录这个会话</value>
   </data>
   <data name="NewFirmware" xml:space="preserve">
     <value>New Firmware</value>
@@ -298,13 +298,13 @@ Please upgrade</value>
     <value>Timeout waiting for autoscan/no mavlink device connected</value>
   </data>
   <data name="ConnectFailed" xml:space="preserve">
-    <value>Connect Failed</value>
+    <value>连接失败</value>
   </data>
   <data name="ConnectingMavlink" xml:space="preserve">
-    <value>Connecting Mavlink</value>
+    <value>正在链接串口</value>
   </data>
   <data name="Done" xml:space="preserve">
-    <value>Done</value>
+    <value>完成</value>
   </data>
   <data name="GettingParams" xml:space="preserve">
     <value>Getting Params</value>
@@ -330,41 +330,40 @@ Mission Planner waits for 2 valid heartbeat packets before connecting</value>
 Timeout in {0}</value>
   </data>
   <data name="CantDetectBoardVersion" xml:space="preserve">
-    <value>Cant detect your Board version. Please check your cabling</value>
+    <value>无法检测到您的版本。请检查您的布线</value>
   </data>
   <data name="CheckPortSettingsOr" xml:space="preserve">
-    <value>Check port settings or Port in use?</value>
+    <value>检查端口设置或使用端口？</value>
   </data>
   <data name="CommunicationErrorNoConnection" xml:space="preserve">
-    <value>Communication Error - no connection</value>
+    <value>通信错误-没有连接</value>
   </data>
   <data name="DetectedA" xml:space="preserve">
-    <value>Detected a</value>
+    <value>检测到</value>
   </data>
   <data name="DetectingBoardVersion" xml:space="preserve">
-    <value>Detecting Board Version</value>
+    <value>检测版本</value>
   </data>
   <data name="DownloadingFromInternet" xml:space="preserve">
-    <value>Downloading from Internet</value>
+    <value>从互联网下载</value>
   </data>
   <data name="EppromChanged" xml:space="preserve">
-    <value>Epprom changed, all your setting will be lost during the update,
-Do you wish to continue?</value>
+    <value>EPPROM改变，你所有的设置将在更新过程中丢失，你想继续吗？</value>
   </data>
   <data name="EppromFormatChanged" xml:space="preserve">
-    <value>Epprom format changed ({0) vs {1})</value>
+    <value>EPPROM格式改变（{ 0）VS { 1 }）</value>
   </data>
   <data name="FailedDownload" xml:space="preserve">
     <value>下载失败</value>
   </data>
   <data name="FailedReadHEX" xml:space="preserve">
-    <value>Failed read HEX</value>
+    <value>读取失败</value>
   </data>
   <data name="FailedToReadHex" xml:space="preserve">
     <value>Failed to read firmware.hex :</value>
   </data>
   <data name="FailedUpload" xml:space="preserve">
-    <value>Failed upload</value>
+    <value>下载失败</value>
   </data>
   <data name="GettingFWList" xml:space="preserve">
     <value>Getting FW List</value>
@@ -373,7 +372,7 @@ Do you wish to continue?</value>
     <value>Getting FW Version</value>
   </data>
   <data name="InvalidBoardType" xml:space="preserve">
-    <value>Invalid Board Type</value>
+    <value>无效的板类型</value>
   </data>
   <data name="PleaseConnectAndBackupConfig" xml:space="preserve">
     <value>Please connect and backup your config in the configuration tab.</value>
@@ -391,10 +390,10 @@ Do you wish to continue?</value>
     <value>Uploading {0} bytes to Board:</value>
   </data>
   <data name="VerifyComplete" xml:space="preserve">
-    <value>Verify Complete</value>
+    <value>验证完成</value>
   </data>
   <data name="VerifyFirmware" xml:space="preserve">
-    <value>Verify Firmware</value>
+    <value>验证固件</value>
   </data>
   <data name="UploadSucceededButVerifyFailed" xml:space="preserve">
     <value>Upload succeeded, but verify failed: exp {0} got {1} at </value>
@@ -406,7 +405,7 @@ Do you wish to continue?</value>
     <value>Warning rally points are located greater than RALLY_LIMIT_KM</value>
   </data>
   <data name="Warning" xml:space="preserve">
-    <value>Warning</value>
+    <value>警告</value>
   </data>
   <data name="WarningAC32" xml:space="preserve">
     <value>Warning, if you are installing AC 3.2 for the first time you MUST redo a Compass calibration.</value>
@@ -451,28 +450,28 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>Stop</value>
   </data>
   <data name="Connect" xml:space="preserve">
-    <value>Connect</value>
+    <value>连接</value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Start</value>
   </data>
   <data name="AreYouSureYouWantToUpload" xml:space="preserve">
-    <value>Are you sure you want to upload </value>
+    <value>确定要上传？</value>
   </data>
   <data name="Beta" xml:space="preserve">
-    <value>Beta</value>
+    <value>公开测试</value>
   </data>
   <data name="BetaWarning" xml:space="preserve">
     <value>These are beta firmware, use at your own risk!!!</value>
   </data>
   <data name="CanNotConnectToComPortAnd" xml:space="preserve">
-    <value>Can not connect to com port and detect board type</value>
+    <value>无法连接到串口和检测板类型</value>
   </data>
   <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
+    <value>继续</value>
   </data>
   <data name="ErrorUploadingFirmware" xml:space="preserve">
-    <value>Error uploading firmware</value>
+    <value>上传固件错误</value>
   </data>
   <data name="QuestionMark" xml:space="preserve">
     <value>?</value>
@@ -502,7 +501,7 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>雷达故障</value>
   </data>
   <data name="BadOptFlowHealth" xml:space="preserve">
-    <value>Bad OptFlow Health</value>
+    <value>光流故障</value>
   </data>
   <data name="BadorNoTerrainData" xml:space="preserve">
     <value>没有地形数据</value>
@@ -520,28 +519,28 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>Auto WP</value>
   </data>
   <data name="EnsurePropsNotOn" xml:space="preserve">
-    <value>Ensure your props are not on the Plane/Quad</value>
+    <value>确保你的桨不在飞机上</value>
   </data>
   <data name="FailSafe" xml:space="preserve">
     <value>FailSafe</value>
   </data>
   <data name="Error_binding" xml:space="preserve">
-    <value>Error binding</value>
+    <value>绑定错误</value>
   </data>
   <data name="Put_the_transmitter_in_bind_mode__Receiver_is_waiting" xml:space="preserve">
     <value>Put the transmitter in bind mode. Receiver is waiting.</value>
   </data>
   <data name="Completed" xml:space="preserve">
-    <value>Completed</value>
+    <value>完成</value>
   </data>
   <data name="Click_when_Done" xml:space="preserve">
-    <value>Click when Done</value>
+    <value>点击完成</value>
   </data>
   <data name="Saving" xml:space="preserve">
     <value>Saving</value>
   </data>
   <data name="InvalidCert" xml:space="preserve">
-    <value>Invalid Cert</value>
+    <value>无效的证书</value>
   </data>
   <data name="Note" xml:space="preserve">
     <value>Note</value>
@@ -574,10 +573,10 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Tracker Home</value>
   </data>
   <data name="velocity_variance" xml:space="preserve">
-    <value>velocity variance</value>
+    <value>速度方差</value>
   </data>
   <data name="compass_variance" xml:space="preserve">
-    <value>compass variance</value>
+    <value>罗盘方差</value>
   </data>
   <data name="pos_horiz_variance" xml:space="preserve">
     <value>pos horiz variance</value>

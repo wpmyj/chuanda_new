@@ -876,27 +876,27 @@ namespace ByAeroBeHero
 
                         if (ekfvelv >= 1)
                         {
-                            messageHigh = Strings.ERROR + " " + Strings.velocity_variance;
+                            messageHigh = Strings.velocity_variance;
                             messageHighTime = DateTime.Now;
                         }
                         if (ekfcompv >= 1)
                         {
-                            messageHigh = Strings.ERROR + " " + Strings.compass_variance;
+                            messageHigh = Strings.compass_variance;
                             messageHighTime = DateTime.Now;
                         }
                         if (ekfposhor >= 1)
                         {
-                            messageHigh = Strings.ERROR + " " + Strings.pos_horiz_variance;
+                            messageHigh = Strings.pos_horiz_variance;
                             messageHighTime = DateTime.Now;
                         }
                         if (ekfposvert >= 1)
                         {
-                            messageHigh = Strings.ERROR + " " + Strings.pos_vert_variance;
+                            messageHigh = Strings.pos_vert_variance;
                             messageHighTime = DateTime.Now;
                         }
                         if (ekfteralt >= 1)
                         {
-                            messageHigh = Strings.ERROR + " " + Strings.terrain_alt_variance;
+                            messageHigh = Strings.terrain_alt_variance;
                             messageHighTime = DateTime.Now;
                         }
 

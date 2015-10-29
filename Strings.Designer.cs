@@ -70,7 +70,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Are you sure you want to upload  的本地化字符串。
+        ///   查找类似 确定要上传？ 的本地化字符串。
         /// </summary>
         public static string AreYouSureYouWantToUpload {
             get {
@@ -124,7 +124,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Bad Lat/Lng 的本地化字符串。
+        ///   查找类似 错误经纬度 的本地化字符串。
         /// </summary>
         public static string BadCoords {
             get {
@@ -160,7 +160,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Bad OptFlow Health 的本地化字符串。
+        ///   查找类似 光流故障 的本地化字符串。
         /// </summary>
         public static string BadOptFlowHealth {
             get {
@@ -178,7 +178,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Basic Tuning 的本地化字符串。
+        ///   查找类似 基本调谐 的本地化字符串。
         /// </summary>
         public static string BasicTuning {
             get {
@@ -187,7 +187,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Beta 的本地化字符串。
+        ///   查找类似 公开测试 的本地化字符串。
         /// </summary>
         public static string Beta {
             get {
@@ -205,7 +205,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Can not connect to com port and detect board type 的本地化字符串。
+        ///   查找类似 无法连接到串口和检测板类型 的本地化字符串。
         /// </summary>
         public static string CanNotConnectToComPortAnd {
             get {
@@ -214,7 +214,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Cannot graph this field 的本地化字符串。
+        ///   查找类似 不能绘制这个字段 的本地化字符串。
         /// </summary>
         public static string CannotGraphField {
             get {
@@ -223,7 +223,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Cant detect your Board version. Please check your cabling 的本地化字符串。
+        ///   查找类似 无法检测到您的版本。请检查您的布线 的本地化字符串。
         /// </summary>
         public static string CantDetectBoardVersion {
             get {
@@ -232,7 +232,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Checking  的本地化字符串。
+        ///   查找类似 检查 的本地化字符串。
         /// </summary>
         public static string Checking {
             get {
@@ -241,7 +241,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Check port settings or Port in use? 的本地化字符串。
+        ///   查找类似 检查端口设置或使用端口？ 的本地化字符串。
         /// </summary>
         public static string CheckPortSettingsOr {
             get {
@@ -250,7 +250,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Click when Done 的本地化字符串。
+        ///   查找类似 点击完成 的本地化字符串。
         /// </summary>
         public static string Click_when_Done {
             get {
@@ -269,7 +269,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Communication Error - no connection 的本地化字符串。
+        ///   查找类似 通信错误-没有连接 的本地化字符串。
         /// </summary>
         public static string CommunicationErrorNoConnection {
             get {
@@ -278,7 +278,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 compass variance 的本地化字符串。
+        ///   查找类似 罗盘方差 的本地化字符串。
         /// </summary>
         public static string compass_variance {
             get {
@@ -287,7 +287,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Completed 的本地化字符串。
+        ///   查找类似 完成 的本地化字符串。
         /// </summary>
         public static string Completed {
             get {
@@ -296,7 +296,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Connect 的本地化字符串。
+        ///   查找类似 连接 的本地化字符串。
         /// </summary>
         public static string Connect {
             get {
@@ -305,7 +305,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 CONNECT 的本地化字符串。
+        ///   查找类似 连接 的本地化字符串。
         /// </summary>
         public static string CONNECTc {
             get {
@@ -314,7 +314,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Connect Failed 的本地化字符串。
+        ///   查找类似 连接失败 的本地化字符串。
         /// </summary>
         public static string ConnectFailed {
             get {
@@ -323,7 +323,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Connecting Mavlink 的本地化字符串。
+        ///   查找类似 正在链接串口 的本地化字符串。
         /// </summary>
         public static string ConnectingMavlink {
             get {
@@ -332,7 +332,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Continue 的本地化字符串。
+        ///   查找类似 继续 的本地化字符串。
         /// </summary>
         public static string Continue {
             get {
@@ -368,7 +368,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Description:  的本地化字符串。
+        ///   查找类似 描述:  的本地化字符串。
         /// </summary>
         public static string Desc {
             get {
@@ -377,7 +377,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Detected a 的本地化字符串。
+        ///   查找类似 检测到 的本地化字符串。
         /// </summary>
         public static string DetectedA {
             get {
@@ -386,7 +386,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Detecting Board Version 的本地化字符串。
+        ///   查找类似 检测版本 的本地化字符串。
         /// </summary>
         public static string DetectingBoardVersion {
             get {
@@ -395,7 +395,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Disconnect 的本地化字符串。
+        ///   查找类似 断开 的本地化字符串。
         /// </summary>
         public static string Disconnect {
             get {
@@ -404,7 +404,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 DISCONNECT 的本地化字符串。
+        ///   查找类似 断开 的本地化字符串。
         /// </summary>
         public static string DISCONNECTc {
             get {
@@ -413,7 +413,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Done 的本地化字符串。
+        ///   查找类似 完成 的本地化字符串。
         /// </summary>
         public static string Done {
             get {
@@ -422,7 +422,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Downloaded from internet 的本地化字符串。
+        ///   查找类似 从互联网下载 的本地化字符串。
         /// </summary>
         public static string DownloadedFromInternet {
             get {
@@ -431,7 +431,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Downloading from Internet 的本地化字符串。
+        ///   查找类似 从互联网下载 的本地化字符串。
         /// </summary>
         public static string DownloadingFromInternet {
             get {
@@ -440,7 +440,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Ensure your props are not on the Plane/Quad 的本地化字符串。
+        ///   查找类似 确保你的桨不在飞机上 的本地化字符串。
         /// </summary>
         public static string EnsurePropsNotOn {
             get {
@@ -449,8 +449,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Epprom changed, all your setting will be lost during the update,
-        ///Do you wish to continue? 的本地化字符串。
+        ///   查找类似 EPPROM改变，你所有的设置将在更新过程中丢失，你想继续吗？ 的本地化字符串。
         /// </summary>
         public static string EppromChanged {
             get {
@@ -459,7 +458,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Epprom format changed ({0) vs {1}) 的本地化字符串。
+        ///   查找类似 EPPROM格式改变（{ 0）VS { 1 }） 的本地化字符串。
         /// </summary>
         public static string EppromFormatChanged {
             get {
@@ -477,7 +476,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Error binding 的本地化字符串。
+        ///   查找类似 绑定错误 的本地化字符串。
         /// </summary>
         public static string Error_binding {
             get {
@@ -605,7 +604,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Error uploading firmware 的本地化字符串。
+        ///   查找类似 上传固件错误 的本地化字符串。
         /// </summary>
         public static string ErrorUploadingFirmware {
             get {
@@ -614,7 +613,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Extended Tuning 的本地化字符串。
+        ///   查找类似 扩展调谐 的本地化字符串。
         /// </summary>
         public static string ExtendedTuning {
             get {
@@ -623,7 +622,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Failed to create log - wont log this session 的本地化字符串。
+        ///   查找类似 创建日志失败-不会登录这个会话 的本地化字符串。
         /// </summary>
         public static string Failclog {
             get {
@@ -641,7 +640,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Failed read HEX 的本地化字符串。
+        ///   查找类似 读取失败 的本地化字符串。
         /// </summary>
         public static string FailedReadHEX {
             get {
@@ -659,7 +658,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Failed upload 的本地化字符串。
+        ///   查找类似 下载失败 的本地化字符串。
         /// </summary>
         public static string FailedUpload {
             get {
@@ -803,7 +802,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Invalid Board Type 的本地化字符串。
+        ///   查找类似 无效的板类型 的本地化字符串。
         /// </summary>
         public static string InvalidBoardType {
             get {
@@ -812,7 +811,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Invalid Cert 的本地化字符串。
+        ///   查找类似 无效的证书 的本地化字符串。
         /// </summary>
         public static string InvalidCert {
             get {
@@ -821,7 +820,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Invalid Field 的本地化字符串。
+        ///   查找类似 无效字段 的本地化字符串。
         /// </summary>
         public static string InvalidField {
             get {
@@ -849,7 +848,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Invalid Pan Range 的本地化字符串。
+        ///   查找类似 无效平移范围 的本地化字符串。
         /// </summary>
         public static string InvalidPanRange {
             get {
@@ -1370,7 +1369,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 velocity variance 的本地化字符串。
+        ///   查找类似 速度方差 的本地化字符串。
         /// </summary>
         public static string velocity_variance {
             get {
@@ -1379,7 +1378,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Verify Complete 的本地化字符串。
+        ///   查找类似 验证完成 的本地化字符串。
         /// </summary>
         public static string VerifyComplete {
             get {
@@ -1388,7 +1387,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Verify Firmware 的本地化字符串。
+        ///   查找类似 验证固件 的本地化字符串。
         /// </summary>
         public static string VerifyFirmware {
             get {
@@ -1397,7 +1396,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 Warning 的本地化字符串。
+        ///   查找类似 警告 的本地化字符串。
         /// </summary>
         public static string Warning {
             get {

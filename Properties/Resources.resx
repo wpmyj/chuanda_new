@@ -1671,4 +1671,10 @@ Please visit {\field{\*\fldinst{HYPERLINK "www.diydrones.com"}}{\fldrslt{\ul\cf2
   <data name="lofin_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lofin_logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+    <data name="disConnection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disConnection.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Connection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Connection.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

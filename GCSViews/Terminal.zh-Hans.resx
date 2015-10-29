@@ -124,7 +124,7 @@
     <value>测试</value>
   </data>
   <data name="BUT_ConnectAPM.Text" xml:space="preserve">
-    <value>连接</value>
+    <value></value>
   </data>
   <data name="Logs.Text" xml:space="preserve">
     <value>下载日志</value>
@@ -133,7 +133,7 @@
     <value>设置遥控</value>
   </data>
   <data name="BUT_disconnect.Text" xml:space="preserve">
-    <value>断开连接</value>
+    <value></value>
   </data>
   <data name="TXT_terminal.Text" xml:space="preserve">
     <value>*注意* 请点击上方的连接

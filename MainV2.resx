@@ -124,403 +124,13 @@
     <value>127, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CTX_mainmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 92</value>
-  </data>
-  <data name="&gt;&gt;CTX_mainmenu.Name" xml:space="preserve">
-    <value>CTX_mainmenu</value>
-  </data>
-  <data name="&gt;&gt;CTX_mainmenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MenuFlightData.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9.75pt, style=Bold</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MenuFlightData.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuFlightData.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Aqua</value>
-  </data>
-  <data name="MenuFlightData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 71</value>
-  </data>
-  <data name="MenuFlightData.Text" xml:space="preserve">
-    <value>FLIGHT DATA</value>
-  </data>
-  <data name="MenuFlightData.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="MenuFlightData.ToolTipText" xml:space="preserve">
-    <value>Flight Data</value>
-  </data>
-  <data name="MenuFlightPlanner.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9.75pt, style=Bold</value>
-  </data>
-  <data name="MenuFlightPlanner.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuFlightPlanner.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
-  </data>
-  <data name="MenuFlightPlanner.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 71</value>
-  </data>
-  <data name="MenuFlightPlanner.Text" xml:space="preserve">
-    <value>FLIGHT PLAN</value>
-  </data>
-  <data name="MenuFlightPlanner.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="MenuFlightPlanner.ToolTipText" xml:space="preserve">
-    <value>Flight Planner</value>
-  </data>
-  <data name="MenuInitConfig.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9.75pt, style=Bold</value>
-  </data>
-  <data name="MenuInitConfig.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuInitConfig.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="MenuInitConfig.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 71</value>
-  </data>
-  <data name="MenuInitConfig.Text" xml:space="preserve">
-    <value>INITIAL SETUP</value>
-  </data>
-  <data name="MenuInitConfig.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="MenuInitConfig.ToolTipText" xml:space="preserve">
-    <value>Hardware Config</value>
-  </data>
-  <data name="MenuConfigTune.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9.75pt, style=Bold</value>
-  </data>
-  <data name="MenuConfigTune.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuConfigTune.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="MenuConfigTune.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 71</value>
-  </data>
-  <data name="MenuConfigTune.Text" xml:space="preserve">
-    <value>CONFIG/TUNING</value>
-  </data>
-  <data name="MenuConfigTune.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="MenuConfigTune.ToolTipText" xml:space="preserve">
-    <value>Software Config</value>
-  </data>
-  <data name="MenuSimulation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
-  <data name="MenuSimulation.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        RK5CYII=
-</value>
-  </data>
-  <data name="MenuSimulation.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuSimulation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="MenuSimulation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 71</value>
-  </data>
-  <data name="MenuSimulation.Text" xml:space="preserve">
-    <value>SIMULATION</value>
-  </data>
-  <data name="MenuSimulation.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="MenuSimulation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextAboveImage</value>
-  </data>
-  <data name="MenuSimulation.ToolTipText" xml:space="preserve">
-    <value>Simulation</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MenuSimulation.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuTerminal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="MenuTerminal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADUAAAAtCAYAAAAOYyOGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOvSURBVGhD7ZnbShtBGIB9BG9CNAc36gv4Bt0bkUqllrZI
-        aTW2zUWrWE9IqkKzxUPQqNtgNJ5ijBiSGHUtaLVGuxfVXihpoiYR8WxQ8QA+wt8d2URiV01LamLdD/6b
-        WYb9v5nZmeWfOB4eHh6eOwFJkvEajQaPqVCrcTUTbIrhg2T6+vqMgzYbDNntMRU2qxV6ewygVX86ZeTy
-        2ZSvZ2pqyuh2u2FlZQVWV1djKnw+H8zPz8MoRYGutRXCnrX19XU4OjqCk5OTmIvj42M4ODiARfcioJXU
-        rNEY2bSvBgnt7+/D2toaeDyeNLY5Zjg8PCR3dnZg2jENOq2WZpuvBo0IEpr4MgFsU0zh9/uJvb09mP0+
-        Cx1tbeFLLS8vQ7/JFBWpzAJRWqZCeOkmsLW1RaCV9GNuDjo7OsKXWlpaAmNv741LyVVYfI5SePronRjS
-        XyYSbHMIt0oKCZV1S13l3SmQq8IgUyHinK1bJaU0JFE1I6nw3pQKuR+SLt3Vbo1URbeErKNSgLCnQEFz
-        EsU2cxJxqbxKAfmsQkBnvU2g0+Wi4HYvrxKk5VYK6KelAvq+IiHkRS+qBPno2ZMiAZ3xSkiyzUHK9KL8
-        +lEZIKnSdqkLLUP2EScRl6o0SOiSVgnkVIghQy4MnublejFe3SeBwhYJZBeJQvopO8WEslsKijoJPHiT
-        GJJEcasYr6cwaBxLBqVeeHqdECLiUg3jMlpllUGeSgoZr8+lauwYTjqSodIkgyflkpB+6s8Y0cAkXdKG
-        QVZRqNRHm5RumpCBckB4qqg9n/mriLhU7SCWpjRi+PNqMX5Pfj6qKiMWr6YwvFyP4Y+LxSH/YyoLJkPS
-        hSSGP2TOILb5DBWFxRNWKV3QePm5dJFbs1H8CbxUAF4qCvBSAXipKMBLBeClogAvFQBJeTweMA8MQFNT
-        UzZnpTQKodfrcYfDgW9vb1N/JbWxsQHfZmZgeGiIs1IajRgfG4OfTiegSlKwmtTeHl7dD9XVUMFwc3OT
-        s0oarUBlO7/ff1ZoZWYLHFMO0Ol04dclkRiasVgLVKFFS29hYWHLajZns+neHMzA0BeTYtqA+dDB6/Vy
-        lr9iHmbd/ya1u7t79oHbLJb/RwrN0tfJSdBqtbzUjWDoMdDocOaKkeFhcLlcZ1cuF6WCy89q5eyLoquz
-        C8iWlvDvniKF0+mk0V8HV6DLOpQ81x1XYKPweb2cfVGg86ff1A/oKpR93c3AnBv56HflXwQzYITFbCGY
-        mZKxr7vrxMX9AhHLB76xDwzlAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="MenuTerminal.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuTerminal.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="MenuTerminal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 71</value>
-  </data>
-  <data name="MenuTerminal.Text" xml:space="preserve">
-    <value>TERMINAL</value>
-  </data>
-  <data name="MenuTerminal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="MenuTerminal.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextAboveImage</value>
-  </data>
-  <data name="MenuTerminal.ToolTipText" xml:space="preserve">
-    <value>Terminal</value>
-  </data>
-  <data name="MenuTerminal.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuHelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9.75pt, style=Bold</value>
-  </data>
-  <data name="MenuHelp.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="MenuHelp.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuHelp.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="MenuHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 71</value>
-  </data>
-  <data name="MenuHelp.Text" xml:space="preserve">
-    <value>HELP</value>
-  </data>
-  <data name="MenuHelp.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="MenuHelp.ToolTipText" xml:space="preserve">
-    <value>Terminal</value>
-  </data>
-  <data name="toolStripConnectionControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 71</value>
-  </data>
-  <data name="MenuConnect.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
-  <data name="MenuConnect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="MenuConnect.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuConnect.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="MenuConnect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 71</value>
-  </data>
-  <data name="MenuConnect.Text" xml:space="preserve">
-    <value>CONNECT</value>
-  </data>
-  <data name="MenuConnect.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="MenuConnect.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="MenuConnect.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MenuDonate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 8.25pt</value>
-  </data>
-  <data name="MenuDonate.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="MenuDonate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 71</value>
-  </data>
-  <data name="MenuDonate.Text" xml:space="preserve">
-    <value>DONATE</value>
-  </data>
-  <data name="MenuDonate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="MenuDonate.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>TextAboveImage</value>
-  </data>
-  <data name="MenuDonate.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="MainMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MainMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 2, 0, 4</value>
-  </data>
-  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>953, 77</value>
-  </data>
-  <data name="MainMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="MainMenu.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="autoHideToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 22</value>
   </data>
   <data name="autoHideToolStripMenuItem.Text" xml:space="preserve">
     <value>AutoHide</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="autoHideToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -550,6 +160,305 @@
   </data>
   <data name="connectionOptionsToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="CTX_mainmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 92</value>
+  </data>
+  <data name="&gt;&gt;CTX_mainmenu.Name" xml:space="preserve">
+    <value>CTX_mainmenu</value>
+  </data>
+  <data name="&gt;&gt;CTX_mainmenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MenuFlightData.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9.75pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MenuFlightData.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuFlightData.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Aqua</value>
+  </data>
+  <data name="MenuFlightData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 34</value>
+  </data>
+  <data name="MenuFlightData.Text" xml:space="preserve">
+    <value>FLIGHT DATA</value>
+  </data>
+  <data name="MenuFlightData.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="MenuFlightData.ToolTipText" xml:space="preserve">
+    <value>Flight Data</value>
+  </data>
+  <data name="MenuFlightPlanner.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9.75pt, style=Bold</value>
+  </data>
+  <data name="MenuFlightPlanner.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuFlightPlanner.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="MenuFlightPlanner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 34</value>
+  </data>
+  <data name="MenuFlightPlanner.Text" xml:space="preserve">
+    <value>FLIGHT PLAN</value>
+  </data>
+  <data name="MenuFlightPlanner.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="MenuFlightPlanner.ToolTipText" xml:space="preserve">
+    <value>Flight Planner</value>
+  </data>
+  <data name="MenuInitConfig.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9.75pt, style=Bold</value>
+  </data>
+  <data name="MenuInitConfig.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuInitConfig.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MenuInitConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 34</value>
+  </data>
+  <data name="MenuInitConfig.Text" xml:space="preserve">
+    <value>INITIAL SETUP</value>
+  </data>
+  <data name="MenuInitConfig.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="MenuInitConfig.ToolTipText" xml:space="preserve">
+    <value>Hardware Config</value>
+  </data>
+  <data name="MenuConfigTune.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9.75pt, style=Bold</value>
+  </data>
+  <data name="MenuConfigTune.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuConfigTune.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MenuConfigTune.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 34</value>
+  </data>
+  <data name="MenuConfigTune.Text" xml:space="preserve">
+    <value>CONFIG/TUNING</value>
+  </data>
+  <data name="MenuConfigTune.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="MenuConfigTune.ToolTipText" xml:space="preserve">
+    <value>Software Config</value>
+  </data>
+  <data name="MenuSimulation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 8.25pt</value>
+  </data>
+  <data name="MenuSimulation.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuSimulation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MenuSimulation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 34</value>
+  </data>
+  <data name="MenuSimulation.Text" xml:space="preserve">
+    <value>SIMULATION</value>
+  </data>
+  <data name="MenuSimulation.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextAboveImage</value>
+  </data>
+  <data name="MenuSimulation.ToolTipText" xml:space="preserve">
+    <value>Simulation</value>
+  </data>
+  <data name="MenuSimulation.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuTerminal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="MenuTerminal.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuTerminal.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MenuTerminal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 34</value>
+  </data>
+  <data name="MenuTerminal.Text" xml:space="preserve">
+    <value>TERMINAL</value>
+  </data>
+  <data name="MenuTerminal.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextAboveImage</value>
+  </data>
+  <data name="MenuTerminal.ToolTipText" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="MenuTerminal.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuHelp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9.75pt, style=Bold</value>
+  </data>
+  <data name="MenuHelp.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="MenuHelp.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuHelp.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MenuHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 34</value>
+  </data>
+  <data name="MenuHelp.Text" xml:space="preserve">
+    <value>HELP</value>
+  </data>
+  <data name="MenuHelp.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="MenuHelp.ToolTipText" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="toolStripConnectionControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 34</value>
+  </data>
+  <data name="MenuConnect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 8.25pt</value>
+  </data>
+  <data name="MenuConnect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        ARrxsxyBYlUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="MenuConnect.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuConnect.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="MenuConnect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 34</value>
+  </data>
+  <data name="MenuConnect.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="MenuConnect.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="MenuConnect.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MenuDonate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="MenuDonate.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MenuDonate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 34</value>
+  </data>
+  <data name="MenuDonate.Text" xml:space="preserve">
+    <value>DONATE</value>
+  </data>
+  <data name="MenuDonate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="MenuDonate.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>TextAboveImage</value>
+  </data>
+  <data name="MenuDonate.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MainMenu.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 2, 0, 4</value>
+  </data>
+  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>953, 40</value>
+  </data>
+  <data name="MainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="MainMenu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -591,7 +500,7 @@
     <value>133332, 123</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>953, 82</value>
+    <value>953, 41</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1837,7 +1746,7 @@
     <value>toolStripConnectionControl</value>
   </data>
   <data name="&gt;&gt;toolStripConnectionControl.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ToolStripConnectionControl, ByAeroBeHero, Version=1.1.5779.32500, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ToolStripConnectionControl, ByAeroBeHero, Version=1.1.5780.27917, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuConnect.Name" xml:space="preserve">
     <value>MenuConnect</value>

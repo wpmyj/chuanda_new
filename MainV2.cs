@@ -78,8 +78,8 @@ namespace ByAeroBeHero
             public override Image terminal { get { return global::ByAeroBeHero.Properties.Resources.light_terminal_icon; } }
             public override Image help { get { return global::ByAeroBeHero.Properties.Resources.light_help_icon; } }
             public override Image donate { get { return global::ByAeroBeHero.Properties.Resources.donate; } }
-            public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
-            public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
+            public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.Connection; } }
+            public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.disConnection; } }
             public override Image bg { get { return global::ByAeroBeHero.Properties.Resources.Teal; } }
         }
 
@@ -93,8 +93,8 @@ namespace ByAeroBeHero
             public override Image terminal { get { return global::ByAeroBeHero.Properties.Resources.dark_terminal_icon; } }
             public override Image help { get { return global::ByAeroBeHero.Properties.Resources.dark_help_icon; } }
             public override Image donate { get { return global::ByAeroBeHero.Properties.Resources.donate; } }
-            public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
-            public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1; } }
+            public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.Connection; } }
+            public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.disConnection; } }
             public override Image bg { get { return null; } }
         }
 
@@ -914,7 +914,7 @@ namespace ByAeroBeHero
             }
             catch { }
 
-            this.MenuConnect.Image = global::ByAeroBeHero.Properties.Resources.dark_connect_icon_1;
+            this.MenuConnect.Image = global::ByAeroBeHero.Properties.Resources.disConnection;
         }
 
         public void doConnect(MAVLinkInterface comPort, string portname, string baud)

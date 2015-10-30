@@ -70,7 +70,7 @@ namespace ByAeroBeHero.SimpleGrid
             }
             else
             {
-                CustomMessageBox.Show("Please define a polygon.", "Error");
+                CustomMessageBox.Show("请定义一个多边形！", "错误");
             }
         }
 

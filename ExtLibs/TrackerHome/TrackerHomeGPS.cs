@@ -64,11 +64,11 @@ using TrackerHomeGPS;
                 if (_Available == false)
                 {
                     _Available = true;
-                    if (CustomMessageBox.Show("A GPS module was detected on your system. Would you like to use it to set your tracker home location?", "Tracker Home", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (CustomMessageBox.Show("在系统上检测到一个全球定位系统模块。你想用它来设置你的跟踪器的位置吗?", "跟踪返航点", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         GPSPosition pos = gpsModule.GetCoordinates();
                         double alt = getGEAlt(pos.Lat, pos.Lng);
-                        Host.comPort.MAV.cs.TrackerLocation = new PointLatLngAlt(pos.Lat, pos.Lng, alt, "Tracker Home");
+                        Host.comPort.MAV.cs.TrackerLocation = new PointLatLngAlt(pos.Lat, pos.Lng, alt, "跟踪返航点");
                     }
                 }
             }
@@ -107,12 +107,12 @@ using TrackerHomeGPS;
                 _Available = true;
                 GPSPosition pos = gpsModule.GetCoordinates();
                 double alt = getGEAlt(pos.Lat, pos.Lng);
-                Host.comPort.MAV.cs.TrackerLocation = new PointLatLngAlt(pos.Lat, pos.Lng, alt, "Tracker Home");
+                Host.comPort.MAV.cs.TrackerLocation = new PointLatLngAlt(pos.Lat, pos.Lng, alt, "跟踪返航点");
             }
             else
             {
                 _Available = false;
-                CustomMessageBox.Show("No GPS Device connected. Please verify it is connected and try again.");
+                CustomMessageBox.Show("没有全球定位系统设备连接。请验证它是连接和尝试.");
             }
         }
 

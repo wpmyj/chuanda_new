@@ -1107,6 +1107,7 @@ namespace ByAeroBeHero
                                 if (ver2 > ver1)
                                 {
                                     Common.MessageShowAgain(Strings.NewFirmware, Strings.NewFirmwareA + item.name + Strings.Pleaseup);
+                                    ShowMessage();
                                     break;
                                 }
 
@@ -1174,6 +1175,7 @@ namespace ByAeroBeHero
                     if (comPort.MAV.param.ContainsKey("RALLY_LIMIT_KM") && (maxdist / 1000.0) > (float)comPort.MAV.param["RALLY_LIMIT_KM"])
                     {
                         CustomMessageBox.Show(Strings.Warningrallypointdistance + " " + (maxdist / 1000.0).ToString("0.00") + " > " + (float)comPort.MAV.param["RALLY_LIMIT_KM"]);
+                        //ShowMessage();
                     }
                 }
 
@@ -1194,6 +1196,7 @@ namespace ByAeroBeHero
                     log.Warn(ex2);
                 }
                 CustomMessageBox.Show("不能建立连接!\n\n" + ex.Message);
+                //ShowMessage();
                 return;
             }
         }
@@ -1226,6 +1229,7 @@ namespace ByAeroBeHero
             catch (Exception ex)
             {
                 CustomMessageBox.Show(Strings.ErrorClosingLogFile + ex.Message, Strings.ERROR);
+                //ShowMessage();
             }
 
             comPort.logfile = null;
@@ -1241,7 +1245,11 @@ namespace ByAeroBeHero
                 doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
             }
         }
-
+        
+        public static void ShowMessage() 
+        {
+            DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。"+"\n"+"2.请检查串口是否选择正确。","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
+        }
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
         {
             comPortName = _connectionControl.CMB_serialport.Text;

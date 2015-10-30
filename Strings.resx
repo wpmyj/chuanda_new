@@ -441,7 +441,7 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>Show me again?</value>
   </data>
   <data name="OK" xml:space="preserve">
-    <value>OK</value>
+    <value>确定</value>
   </data>
   <data name="LinkStats" xml:space="preserve">
     <value>Link Stats</value>

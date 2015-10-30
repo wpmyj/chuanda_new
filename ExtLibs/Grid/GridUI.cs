@@ -765,7 +765,7 @@ namespace ByAeroBeHero
 
             if (polygon.Count == 0)
             {
-                CustomMessageBox.Show("Please define a polygon!");
+                CustomMessageBox.Show("请定义一个多边形!");
                 return 0;
             }
 
@@ -1445,7 +1445,7 @@ namespace ByAeroBeHero
             }
             else
             {
-                CustomMessageBox.Show("Bad Grid", "Error");
+                CustomMessageBox.Show("网格规划失败", "错误");
             }
         }
 

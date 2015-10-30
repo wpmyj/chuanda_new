@@ -113,7 +113,9 @@ namespace ByAeroBeHero.Controls
                 // Otherwise display 'Unexpected error' and exception details
                 timer1.Stop();
                 ShowDoneWithError(e, doWorkArgs.ErrorMessage);
+                //this.Close();
                 Running = false;
+                DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。" + "\n" + "2.请检查串口是否选择正确。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -171,9 +173,9 @@ namespace ByAeroBeHero.Controls
         {
             this.Invoke((MethodInvoker)delegate
             {
-                this.progressBar1.Visible = false;
-                this.lblProgressMessage.Text = "取消";
-                this.btnClose.Visible = true;
+                //this.progressBar1.Visible = false;
+                //this.lblProgressMessage.Text = "取消";
+                //this.btnClose.Visible = true;
             });
         }
 
@@ -219,16 +221,17 @@ namespace ByAeroBeHero.Controls
                 {
                     this.Invoke((MethodInvoker)delegate
                                                     {
-                                                        this.Text = "错误";
-                                                        this.lblProgressMessage.Left = 65;
-                                                        this.lblProgressMessage.Text = errMessage;
-                                                        this.imgWarning.Visible = true;
-                                                        this.progressBar1.Visible = false;
-                                                        this.btnCancel.Visible = false;
-                                                        this.btnClose.Visible = true;
-                                                        this.linkLabel1.Visible = exception != null;
-                                                        //this.linkLabel1.Visible = false;
-                                                        this.workerException = exception;
+                                                        //this.Text = "错误";
+                                                        //this.lblProgressMessage.Left = 65;
+                                                        //this.lblProgressMessage.Text = errMessage;
+                                                        //this.imgWarning.Visible = true;
+                                                        //this.progressBar1.Visible = false;
+                                                        //this.btnCancel.Visible = false;
+                                                        //this.btnClose.Visible = true;
+                                                        //this.linkLabel1.Visible = exception != null;
+                                                        ////this.linkLabel1.Visible = false;
+                                                        //this.workerException = exception;
+                                                        this.Close();
                                                     });
                 }
                 catch { } // disposing
@@ -247,7 +250,7 @@ namespace ByAeroBeHero.Controls
             // * Set the progress bar to marquee, we don't know how long the worker will take to cancel
             // * Signal the worker.
             this.btnCancel.Visible = false;
-            this.lblProgressMessage.Text = "取消...";
+            //this.lblProgressMessage.Text = "取消...";
             this.progressBar1.Style = ProgressBarStyle.Marquee;
 
             doWorkArgs.CancelRequested = true;

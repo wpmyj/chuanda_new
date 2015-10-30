@@ -33,40 +33,39 @@ namespace ByAeroBeHero
 
         public override bool Loaded()
         {
-            Grid.Host2 = Host;
+            //Grid.Host2 = Host;
 
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUIv2));
-            var temp = (string)(resources.GetObject("$this.Text"));
+            //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUIv2));
+            //var temp = (string)(resources.GetObject("$this.Text"));
 
-            but = new ToolStripMenuItem(temp);
-            but.Click += but_Click;
+            //but = new ToolStripMenuItem(temp);
+            //but.Click += but_Click;
 
-            bool hit = false;
-            ToolStripItemCollection col = Host.FPMenuMap.Items;
-            int index = col.Count;
-            foreach (ToolStripItem item in col)
-            {
-                if (item.Text.Equals(Strings.AutoWP))
-                {
-                    index = col.IndexOf(item);
-                    ((ToolStripMenuItem)item).DropDownItems.Add(but);
-                    hit = true;
-                    break;
-                }
-            }
+            //bool hit = false;
+            //ToolStripItemCollection col = Host.FPMenuMap.Items;
+            //int index = col.Count;
+            //foreach (ToolStripItem item in col)
+            //{
+            //    if (item.Text.Equals(Strings.AutoWP))
+            //    {
+            //        index = col.IndexOf(item);
+            //        ((ToolStripMenuItem)item).DropDownItems.Add(but);
+            //        hit = true;
+            //        break;
+            //    }
+            //}
 
-            if (hit == false)
-                col.Add(but);
+            //if (hit == false)
+                //col.Add(but);
 
             return true;
         }
 
         void but_Click(object sender, EventArgs e)
         {
-            var gridui = new GridUIv2(this);
-            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
-
-                gridui.ShowDialog();
+            //var gridui = new GridUIv2(this);
+            //ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
+            //gridui.ShowDialog();
           
         }
 

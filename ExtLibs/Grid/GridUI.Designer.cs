@@ -123,8 +123,8 @@
             this.NUM_UpDownFlySpeed = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.NUM_angle = new System.Windows.Forms.NumericUpDown();
             this.CMB_camera = new System.Windows.Forms.ComboBox();
+            this.NUM_angle = new System.Windows.Forms.NumericUpDown();
             this.CHK_camdirection = new System.Windows.Forms.CheckBox();
             this.NUM_altitude = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
@@ -925,6 +925,13 @@
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
+            // CMB_camera
+            // 
+            this.CMB_camera.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_camera, "CMB_camera");
+            this.CMB_camera.Name = "CMB_camera";
+            this.CMB_camera.SelectedIndexChanged += new System.EventHandler(this.CMB_camera_SelectedIndexChanged);
+            // 
             // NUM_angle
             // 
             resources.ApplyResources(this.NUM_angle, "NUM_angle");
@@ -935,13 +942,6 @@
             0});
             this.NUM_angle.Name = "NUM_angle";
             this.NUM_angle.ValueChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
-            // 
-            // CMB_camera
-            // 
-            this.CMB_camera.FormattingEnabled = true;
-            resources.ApplyResources(this.CMB_camera, "CMB_camera");
-            this.CMB_camera.Name = "CMB_camera";
-            this.CMB_camera.SelectedIndexChanged += new System.EventHandler(this.CMB_camera_SelectedIndexChanged);
             // 
             // CHK_camdirection
             // 

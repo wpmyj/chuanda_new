@@ -984,7 +984,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 OK 的本地化字符串。
+        ///   查找类似 确定 的本地化字符串。
         /// </summary>
         public static string OK {
             get {

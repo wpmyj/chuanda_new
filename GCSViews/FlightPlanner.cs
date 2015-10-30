@@ -3558,8 +3558,8 @@ namespace ByAeroBeHero.GCSViews
 
         private void jumpstartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string repeat = "5";
-            if (DialogResult.Cancel == InputBox.Show("Jump repeat", "Number of times to Repeat", ref repeat))
+            string repeat = "2";
+            if (DialogResult.Cancel == InputBox.Show("重复跳转", "重复跳转次数", ref repeat))
                 return;
 
             selectedrow = Commands.Rows.Add();
@@ -3578,7 +3578,7 @@ namespace ByAeroBeHero.GCSViews
             string wp = "1";
             if (DialogResult.Cancel == InputBox.Show("航点编号", "跳转到航点的编号", ref wp))
                 return;
-            string repeat = "5";
+            string repeat = "2";
             if (DialogResult.Cancel == InputBox.Show("重复跳转", "重复的次数", ref repeat))
                 return;
 

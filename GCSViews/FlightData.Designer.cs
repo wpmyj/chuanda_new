@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -117,6 +117,9 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qvyaw = new ByAeroBeHero.Controls.QuickView();
+            this.qvroll = new ByAeroBeHero.Controls.QuickView();
+            this.qvpitch = new ByAeroBeHero.Controls.QuickView();
             this.lblHorizontalError = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSataCount = new System.Windows.Forms.Label();
@@ -1423,6 +1426,9 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
             this.splitContainer1.Panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
+            this.splitContainer1.Panel2.Controls.Add(this.qvyaw);
+            this.splitContainer1.Panel2.Controls.Add(this.qvroll);
+            this.splitContainer1.Panel2.Controls.Add(this.qvpitch);
             this.splitContainer1.Panel2.Controls.Add(this.lblHorizontalError);
             this.splitContainer1.Panel2.Controls.Add(this.lblSataCount);
             this.splitContainer1.Panel2.Controls.Add(this.Qvtohome);
@@ -1525,6 +1531,42 @@
             this.takeOffToolStripMenuItem.Name = "takeOffToolStripMenuItem";
             resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
             this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
+            // 
+            // qvyaw
+            // 
+            this.qvyaw.BackColor = System.Drawing.Color.Teal;
+            this.qvyaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qvyaw.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
+            this.qvyaw.desc = "航向角度(D)";
+            resources.ApplyResources(this.qvyaw, "qvyaw");
+            this.qvyaw.Name = "qvyaw";
+            this.qvyaw.number = 0D;
+            this.qvyaw.numberColor = System.Drawing.Color.Lime;
+            this.qvyaw.numberformat = "0.00";
+            // 
+            // qvroll
+            // 
+            this.qvroll.BackColor = System.Drawing.Color.Teal;
+            this.qvroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qvroll.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true));
+            this.qvroll.desc = "滚转角度(D)";
+            resources.ApplyResources(this.qvroll, "qvroll");
+            this.qvroll.Name = "qvroll";
+            this.qvroll.number = 0D;
+            this.qvroll.numberColor = System.Drawing.Color.Lime;
+            this.qvroll.numberformat = "0.00";
+            // 
+            // qvpitch
+            // 
+            this.qvpitch.BackColor = System.Drawing.Color.Teal;
+            this.qvpitch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qvpitch.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true));
+            this.qvpitch.desc = "俯仰角度(D)";
+            resources.ApplyResources(this.qvpitch, "qvpitch");
+            this.qvpitch.Name = "qvpitch";
+            this.qvpitch.number = 0D;
+            this.qvpitch.numberColor = System.Drawing.Color.Lime;
+            this.qvpitch.numberformat = "0.00";
             // 
             // lblHorizontalError
             // 
@@ -1751,7 +1793,7 @@
             this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -1941,8 +1983,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -1950,8 +1992,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2170,6 +2212,9 @@
         private Controls.FlightInfo fiMode;
         private Controls.FlightInfo fiState;
         private Controls.FlightInfo fiBad;
+        private Controls.QuickView qvroll;
+        private Controls.QuickView qvpitch;
+        private Controls.QuickView qvyaw;
 
     }
 }

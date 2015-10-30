@@ -46,7 +46,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //    Enabled = false;
             //    return;
             //}
-
+            this.BackColor = System.Drawing.Color.Teal;
             DoChange((Frame) Enum.Parse(typeof (Frame), MainV2.comPort.MAV.param["FRAME"].ToString()));
         }
 

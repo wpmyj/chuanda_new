@@ -48,7 +48,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.labelfm6 = new System.Windows.Forms.Label();
-            this.CMB_fmode6 = new System.Windows.Forms.ComboBox();
             this.labelfm5 = new System.Windows.Forms.Label();
             this.CMB_fmode5 = new System.Windows.Forms.ComboBox();
             this.labelfm4 = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@
             this.chk_ss1 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.linkLabel1_ss = new System.Windows.Forms.LinkLabel();
+            this.CMB_fmode6 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -168,16 +168,6 @@
             resources.ApplyResources(this.labelfm6, "labelfm6");
             this.labelfm6.Name = "labelfm6";
             // 
-            // CMB_fmode6
-            // 
-            this.CMB_fmode6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CMB_fmode6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            resources.ApplyResources(this.CMB_fmode6, "CMB_fmode6");
-            this.CMB_fmode6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CMB_fmode6.FormattingEnabled = true;
-            this.CMB_fmode6.Name = "CMB_fmode6";
-            this.CMB_fmode6.SelectedIndexChanged += new System.EventHandler(this.flightmode_SelectedIndexChanged);
-            // 
             // labelfm5
             // 
             resources.ApplyResources(this.labelfm5, "labelfm5");
@@ -217,9 +207,9 @@
             // 
             this.CMB_fmode3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CMB_fmode3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            resources.ApplyResources(this.CMB_fmode3, "CMB_fmode3");
             this.CMB_fmode3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_fmode3.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode3, "CMB_fmode3");
             this.CMB_fmode3.Name = "CMB_fmode3";
             this.CMB_fmode3.SelectedIndexChanged += new System.EventHandler(this.flightmode_SelectedIndexChanged);
             // 
@@ -232,9 +222,9 @@
             // 
             this.CMB_fmode2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CMB_fmode2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            resources.ApplyResources(this.CMB_fmode2, "CMB_fmode2");
             this.CMB_fmode2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_fmode2.FormattingEnabled = true;
+            resources.ApplyResources(this.CMB_fmode2, "CMB_fmode2");
             this.CMB_fmode2.Name = "CMB_fmode2";
             this.CMB_fmode2.SelectedIndexChanged += new System.EventHandler(this.flightmode_SelectedIndexChanged);
             // 
@@ -301,37 +291,37 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.Controls.Add(this.labelfm1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.chk_ss6, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.chk_ss6, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.chk_ss5, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.chk_ss4, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.chk_ss4, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label10, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.chk_ss1, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.chk_ss3, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label9, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.chk_ss3, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label8, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.label12, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.chk_ss2, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.chk_ss2, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.CB_simple5, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.labelfm2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CB_simple4, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CB_simple3, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.CB_simple2, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CB_simple4, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CB_simple3, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.CB_simple2, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.labelfm3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.labelfm4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelfm5, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.labelfm6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode4, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.CMB_fmode5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode6, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.BUT_SaveModes, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.CB_simple1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.CB_simple6, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.CB_simple6, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.linkLabel1_ss, 4, 6);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode4, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode6, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode3, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.CMB_fmode2, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.BUT_SaveModes, 1, 3);
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
@@ -340,6 +330,16 @@
             resources.ApplyResources(this.linkLabel1_ss, "linkLabel1_ss");
             this.linkLabel1_ss.Name = "linkLabel1_ss";
             this.linkLabel1_ss.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_ss_LinkClicked);
+            // 
+            // CMB_fmode6
+            // 
+            this.CMB_fmode6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            resources.ApplyResources(this.CMB_fmode6, "CMB_fmode6");
+            this.CMB_fmode6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode6.FormattingEnabled = true;
+            this.CMB_fmode6.Name = "CMB_fmode6";
+            this.CMB_fmode6.SelectedIndexChanged += new System.EventHandler(this.flightmode_SelectedIndexChanged);
             // 
             // ConfigFlightModes
             // 
@@ -378,7 +378,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label labelfm6;
-        private System.Windows.Forms.ComboBox CMB_fmode6;
         private System.Windows.Forms.Label labelfm5;
         private System.Windows.Forms.ComboBox CMB_fmode5;
         private System.Windows.Forms.Label labelfm4;
@@ -399,5 +398,6 @@
         private System.Windows.Forms.CheckBox chk_ss1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.LinkLabel linkLabel1_ss;
+        private System.Windows.Forms.ComboBox CMB_fmode6;
     }
 }

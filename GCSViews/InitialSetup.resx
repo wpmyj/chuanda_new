@@ -154,16 +154,13 @@
     <value>configWizard1</value>
   </data>
   <data name="&gt;&gt;configWizard1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagewizard.Text" xml:space="preserve">
     <value>Wizard</value>
   </data>
   <metadata name="backstageViewPagemand.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>627, 17</value>
-  </metadata>
-  <metadata name="initialSetupBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>433, 131</value>
   </metadata>
   <data name="configMandatory1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -184,13 +181,16 @@
     <value>configMandatory1</value>
   </data>
   <data name="&gt;&gt;configMandatory1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMandatory, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMandatory, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagemand.Text" xml:space="preserve">
     <value>Mandatory Hardware</value>
   </data>
   <metadata name="backstageViewPagetradheli.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1019, 17</value>
+  </metadata>
+  <metadata name="initialSetupBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>433, 131</value>
   </metadata>
   <data name="configTradHeli1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -211,7 +211,7 @@
     <value>configTradHeli1</value>
   </data>
   <data name="&gt;&gt;configTradHeli1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigTradHeli, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigTradHeli, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagetradheli.Text" xml:space="preserve">
     <value>Heli Setup</value>
@@ -229,10 +229,10 @@
     <value>0, 0</value>
   </data>
   <data name="configFrameType1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 11, 3, 11</value>
+    <value>3, 16, 3, 16</value>
   </data>
   <data name="configFrameType1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 1825</value>
+    <value>1069, 2585</value>
   </data>
   <data name="configFrameType1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -241,7 +241,7 @@
     <value>configFrameType1</value>
   </data>
   <data name="&gt;&gt;configFrameType1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageframetype.Text" xml:space="preserve">
     <value>Frame Type</value>
@@ -265,7 +265,7 @@
     <value>configAccelerometerCalibration</value>
   </data>
   <data name="&gt;&gt;configAccelerometerCalibration.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigAccelerometerCalibration, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigAccelerometerCalibration, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configAccelerometerCalibration.Parent" xml:space="preserve">
     <value>$this</value>
@@ -298,7 +298,7 @@
     <value>configHWCompass1</value>
   </data>
   <data name="&gt;&gt;configHWCompass1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWCompass, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWCompass, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagecompass.Text" xml:space="preserve">
     <value>Compass</value>
@@ -316,10 +316,10 @@
     <value>0, 0</value>
   </data>
   <data name="configRadioInput1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 11, 3, 11</value>
+    <value>3, 16, 3, 16</value>
   </data>
   <data name="configRadioInput1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1163, 1636</value>
+    <value>1357, 2318</value>
   </data>
   <data name="configRadioInput1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -328,7 +328,7 @@
     <value>configRadioInput1</value>
   </data>
   <data name="&gt;&gt;configRadioInput1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigRadioInput, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigRadioInput, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageradio.Text" xml:space="preserve">
     <value>Radio Calibration</value>
@@ -343,10 +343,10 @@
     <value>0, 0</value>
   </data>
   <data name="configFlightModes1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 11, 3, 11</value>
+    <value>3, 16, 3, 16</value>
   </data>
   <data name="configFlightModes1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1038, 997</value>
+    <value>1211, 1412</value>
   </data>
   <data name="configFlightModes1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -355,7 +355,7 @@
     <value>configFlightModes1</value>
   </data>
   <data name="&gt;&gt;configFlightModes1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFlightModes, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFlightModes, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageflmode.Text" xml:space="preserve">
     <value>Flight Modes</value>
@@ -385,7 +385,7 @@
     <value>configFailSafe1</value>
   </data>
   <data name="&gt;&gt;configFailSafe1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFailSafe, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFailSafe, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagefs.Text" xml:space="preserve">
     <value>FailSafe</value>
@@ -409,7 +409,7 @@
     <value>configOptional1</value>
   </data>
   <data name="&gt;&gt;configOptional1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigOptional, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigOptional, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageopt.Text" xml:space="preserve">
     <value>Optional Hardware</value>
@@ -436,7 +436,7 @@
     <value>_3DRradio1</value>
   </data>
   <data name="&gt;&gt;_3DRradio1.Type" xml:space="preserve">
-    <value>ByAeroBeHero._3DRradio, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero._3DRradio, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPage3drradio.Text" xml:space="preserve">
     <value>3DR Radio</value>
@@ -460,7 +460,7 @@
     <value>configBatteryMonitoring1</value>
   </data>
   <data name="&gt;&gt;configBatteryMonitoring1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigBatteryMonitoring, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigBatteryMonitoring, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagebatmon.Text" xml:space="preserve">
     <value>Battery Monitor</value>
@@ -484,7 +484,7 @@
     <value>configCompassMot1</value>
   </data>
   <data name="&gt;&gt;configCompassMot1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigCompassMot, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigCompassMot, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagecompassmot.Text" xml:space="preserve">
     <value>Compass/Motor Calib</value>
@@ -508,7 +508,7 @@
     <value>configHWSonar1</value>
   </data>
   <data name="&gt;&gt;configHWSonar1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWSonar, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWSonar, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagesonar.Text" xml:space="preserve">
     <value>Sonar</value>
@@ -532,7 +532,7 @@
     <value>configHWAirspeed1</value>
   </data>
   <data name="&gt;&gt;configHWAirspeed1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWAirspeed, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWAirspeed, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageairspeed.Text" xml:space="preserve">
     <value>Airspeed</value>
@@ -556,7 +556,7 @@
     <value>configHWOptFlow1</value>
   </data>
   <data name="&gt;&gt;configHWOptFlow1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOptFlow, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOptFlow, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageoptflow.Text" xml:space="preserve">
     <value>Optical Flow</value>
@@ -580,7 +580,7 @@
     <value>configHWOSD1</value>
   </data>
   <data name="&gt;&gt;configHWOSD1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOSD, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOSD, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageosd.Text" xml:space="preserve">
     <value>OSD</value>
@@ -604,7 +604,7 @@
     <value>configMount1</value>
   </data>
   <data name="&gt;&gt;configMount1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMount, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMount, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagegimbal.Text" xml:space="preserve">
     <value>Camera Gimbal</value>
@@ -628,7 +628,7 @@
     <value>tracker1</value>
   </data>
   <data name="&gt;&gt;tracker1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Antenna.Tracker, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Antenna.Tracker, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageAntTrack.Text" xml:space="preserve">
     <value>Antenna tracker</value>
@@ -652,7 +652,7 @@
     <value>configMotor1</value>
   </data>
   <data name="&gt;&gt;configMotor1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorTest, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorTest, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageMotorTest.Text" xml:space="preserve">
     <value>Motor Test</value>
@@ -676,7 +676,7 @@
     <value>configHWBT1</value>
   </data>
   <data name="&gt;&gt;configHWBT1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configHWBT1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -706,7 +706,7 @@
     <value>configHWPa1</value>
   </data>
   <data name="&gt;&gt;configHWPa1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageParachute.Text" xml:space="preserve">
     <value>Parachute</value>
@@ -754,7 +754,7 @@
     <value>configFirmware1</value>
   </data>
   <data name="&gt;&gt;configFirmware1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagefw.Text" xml:space="preserve">
     <value>Install Firmware</value>
@@ -781,7 +781,7 @@
     <value>configFirmwareDisabled1</value>
   </data>
   <data name="&gt;&gt;configFirmwareDisabled1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled, ByAeroBeHero, Version=1.1.5759.18567, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled, ByAeroBeHero, Version=1.1.5781.22598, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagefwdisabled.Text" xml:space="preserve">
     <value>Install Firmware</value>
@@ -813,17 +813,17 @@
   <data name="&gt;&gt;backstageViewPagemand.Type" xml:space="preserve">
     <value>ByAeroBeHero.Controls.BackstageView.BackstageViewPage, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;initialSetupBindingSource.Name" xml:space="preserve">
-    <value>initialSetupBindingSource</value>
-  </data>
-  <data name="&gt;&gt;initialSetupBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;backstageViewPagetradheli.Name" xml:space="preserve">
     <value>backstageViewPagetradheli</value>
   </data>
   <data name="&gt;&gt;backstageViewPagetradheli.Type" xml:space="preserve">
     <value>ByAeroBeHero.Controls.BackstageView.BackstageViewPage, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;initialSetupBindingSource.Name" xml:space="preserve">
+    <value>initialSetupBindingSource</value>
+  </data>
+  <data name="&gt;&gt;initialSetupBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;backstageViewPageframetype.Name" xml:space="preserve">
     <value>backstageViewPageframetype</value>

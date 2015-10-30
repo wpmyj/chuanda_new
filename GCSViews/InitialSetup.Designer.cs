@@ -34,9 +34,9 @@
             this.backstageViewPagewizard = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configWizard1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard();
             this.backstageViewPagemand = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
-            this.initialSetupBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.configMandatory1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMandatory();
             this.backstageViewPagetradheli = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.initialSetupBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.configTradHeli1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigTradHeli();
             this.backstageViewPageframetype = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFrameType1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType();
@@ -136,17 +136,12 @@
             // backstageViewPagemand
             // 
             this.backstageViewPagemand.Advanced = false;
-            //this.backstageViewPagemand.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPagemand.LinkText = "Mandatory Hardware";
             this.backstageViewPagemand.Page = this.configMandatory1;
             this.backstageViewPagemand.Parent = null;
             this.backstageViewPagemand.Show = false;
             this.backstageViewPagemand.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagemand, "backstageViewPagemand");
-            // 
-            // initialSetupBindingSource
-            // 
-            this.initialSetupBindingSource.DataSource = typeof(ByAeroBeHero.GCSViews.InitialSetup);
             // 
             // configMandatory1
             // 
@@ -163,6 +158,10 @@
             this.backstageViewPagetradheli.Show = false;
             this.backstageViewPagetradheli.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagetradheli, "backstageViewPagetradheli");
+            // 
+            // initialSetupBindingSource
+            // 
+            this.initialSetupBindingSource.DataSource = typeof(ByAeroBeHero.GCSViews.InitialSetup);
             // 
             // configTradHeli1
             // 
@@ -239,7 +238,7 @@
             this.backstageViewPageflmode.LinkText = "Flight Modes";
             this.backstageViewPageflmode.Page = this.configFlightModes1;
             this.backstageViewPageflmode.Parent = null;
-            this.backstageViewPageflmode.Show = true;
+            this.backstageViewPageflmode.Show = false;
             this.backstageViewPageflmode.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageflmode, "backstageViewPageflmode");
             // 

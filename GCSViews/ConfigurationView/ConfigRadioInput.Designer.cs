@@ -48,15 +48,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR7 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.BAR6 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.BAR5 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
-            this.BARpitch = new ByAeroBeHero.Controls.VerticalProgressBar2();
-            this.BARthrottle = new ByAeroBeHero.Controls.VerticalProgressBar2();
             this.BARyaw = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.BARroll = new ByAeroBeHero.Controls.HorizontalProgressBar2();
-            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BARpitch = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BARthrottle = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBoxElevons.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxElevons
@@ -213,36 +213,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR5.Value = 1500;
             this.BAR5.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             // 
-            // BARpitch
-            // 
-            this.BARpitch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
-            this.BARpitch.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BARpitch.DrawLabel = true;
-            this.BARpitch.Label = "Pitch";
-            resources.ApplyResources(this.BARpitch, "BARpitch");
-            this.BARpitch.Maximum = 2200;
-            this.BARpitch.maxline = 0;
-            this.BARpitch.Minimum = 800;
-            this.BARpitch.minline = 0;
-            this.BARpitch.Name = "BARpitch";
-            this.BARpitch.Value = 1500;
-            this.BARpitch.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            // 
-            // BARthrottle
-            // 
-            this.BARthrottle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(68)))), ((int)(((byte)(69)))));
-            this.BARthrottle.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BARthrottle.DrawLabel = true;
-            this.BARthrottle.Label = "Throttle";
-            resources.ApplyResources(this.BARthrottle, "BARthrottle");
-            this.BARthrottle.Maximum = 2200;
-            this.BARthrottle.maxline = 0;
-            this.BARthrottle.Minimum = 800;
-            this.BARthrottle.minline = 0;
-            this.BARthrottle.Name = "BARthrottle";
-            this.BARthrottle.Value = 1000;
-            this.BARthrottle.ValueColor = System.Drawing.Color.Magenta;
-            // 
             // BARyaw
             // 
             this.BARyaw.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
@@ -273,10 +243,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARroll.Value = 1500;
             this.BARroll.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             // 
-            // currentStateBindingSource
-            // 
-            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.BUT_BindDSM2);
@@ -286,10 +252,46 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // BARpitch
+            // 
+            this.BARpitch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BARpitch.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BARpitch.DrawLabel = true;
+            this.BARpitch.Label = "Pitch";
+            resources.ApplyResources(this.BARpitch, "BARpitch");
+            this.BARpitch.Maximum = 2200;
+            this.BARpitch.maxline = 0;
+            this.BARpitch.Minimum = 800;
+            this.BARpitch.minline = 0;
+            this.BARpitch.Name = "BARpitch";
+            this.BARpitch.Value = 1500;
+            this.BARpitch.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // BARthrottle
+            // 
+            this.BARthrottle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BARthrottle.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BARthrottle.DrawLabel = true;
+            this.BARthrottle.Label = "Throttle";
+            resources.ApplyResources(this.BARthrottle, "BARthrottle");
+            this.BARthrottle.Maximum = 2200;
+            this.BARthrottle.maxline = 0;
+            this.BARthrottle.Minimum = 800;
+            this.BARthrottle.minline = 0;
+            this.BARthrottle.Name = "BARthrottle";
+            this.BARthrottle.Value = 1500;
+            this.BARthrottle.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // currentStateBindingSource
+            // 
+            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // ConfigRadioInput
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.BARthrottle);
+            this.Controls.Add(this.BARpitch);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxElevons);
             this.Controls.Add(this.CHK_revch3);
@@ -301,15 +303,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.Controls.Add(this.BAR7);
             this.Controls.Add(this.BAR6);
             this.Controls.Add(this.BAR5);
-            this.Controls.Add(this.BARpitch);
-            this.Controls.Add(this.BARthrottle);
             this.Controls.Add(this.BARyaw);
             this.Controls.Add(this.BARroll);
             this.Name = "ConfigRadioInput";
             this.groupBoxElevons.ResumeLayout(false);
             this.groupBoxElevons.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,8 +331,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private HorizontalProgressBar2 BAR7;
         private HorizontalProgressBar2 BAR6;
         private HorizontalProgressBar2 BAR5;
-        private VerticalProgressBar2 BARpitch;
-        private VerticalProgressBar2 BARthrottle;
         private HorizontalProgressBar2 BARyaw;
         private HorizontalProgressBar2 BARroll;
         private System.Windows.Forms.BindingSource currentStateBindingSource;
@@ -340,5 +338,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private MyButton BUT_BindDSMX;
         private MyButton BUT_BindDSM8;
         private System.Windows.Forms.GroupBox groupBox1;
+        private HorizontalProgressBar2 BARpitch;
+        private HorizontalProgressBar2 BARthrottle;
     }
 }

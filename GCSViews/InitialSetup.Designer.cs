@@ -253,7 +253,7 @@
             this.backstageViewPagefs.LinkText = "FailSafe";
             this.backstageViewPagefs.Page = this.configFailSafe1;
             this.backstageViewPagefs.Parent = null;
-            this.backstageViewPagefs.Show = false;
+            this.backstageViewPagefs.Show = true;
             this.backstageViewPagefs.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefs, "backstageViewPagefs");
             // 

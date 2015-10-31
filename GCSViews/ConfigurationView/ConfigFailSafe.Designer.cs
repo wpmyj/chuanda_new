@@ -38,16 +38,14 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.LNK_wiki = new System.Windows.Forms.LinkLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.mavlinkNumericUpDownlow_voltage = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.mavlinkCheckBoxlong_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkCheckBoxshort_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.mavlinkCheckBoxgcs_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkCheckBoxthr_fs_action = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxshort_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxlong_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkComboBox_fs_thr_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.mavlinkNumericUpDownfs_thr_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkNumericUpDownthr_fs_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkCheckBoxthr_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkComboBox_fs_thr_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.mavlinkComboBoxfs_batt_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.mavlinkCheckBoxFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxthr_fs_action = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.pnlmah = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.mavlinkNumericUpDownFS_BATT_MAH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
@@ -75,7 +73,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.horizontalProgressBar1 = new ByAeroBeHero.Controls.HorizontalProgressBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.mavlinkCheckBoxFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.mavlinkComboBoxfs_batt_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.fiGPS = new ByAeroBeHero.Controls.FlightInfo();
+            this.fiState = new ByAeroBeHero.Controls.FlightInfo();
+            this.fiMode = new ByAeroBeHero.Controls.FlightInfo();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).BeginInit();
@@ -145,15 +148,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             0,
             65536});
             // 
-            // mavlinkCheckBoxlong_fs
+            // mavlinkCheckBoxgcs_fs
             // 
-            resources.ApplyResources(this.mavlinkCheckBoxlong_fs, "mavlinkCheckBoxlong_fs");
-            this.mavlinkCheckBoxlong_fs.Name = "mavlinkCheckBoxlong_fs";
-            this.mavlinkCheckBoxlong_fs.OffValue = 0D;
-            this.mavlinkCheckBoxlong_fs.OnValue = 1D;
-            this.mavlinkCheckBoxlong_fs.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxlong_fs, resources.GetString("mavlinkCheckBoxlong_fs.ToolTip"));
-            this.mavlinkCheckBoxlong_fs.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.mavlinkCheckBoxgcs_fs, "mavlinkCheckBoxgcs_fs");
+            this.mavlinkCheckBoxgcs_fs.Name = "mavlinkCheckBoxgcs_fs";
+            this.mavlinkCheckBoxgcs_fs.OffValue = 0D;
+            this.mavlinkCheckBoxgcs_fs.OnValue = 1D;
+            this.mavlinkCheckBoxgcs_fs.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxgcs_fs, resources.GetString("mavlinkCheckBoxgcs_fs.ToolTip"));
+            this.mavlinkCheckBoxgcs_fs.UseVisualStyleBackColor = true;
             // 
             // mavlinkCheckBoxshort_fs
             // 
@@ -165,25 +168,25 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.toolTip1.SetToolTip(this.mavlinkCheckBoxshort_fs, resources.GetString("mavlinkCheckBoxshort_fs.ToolTip"));
             this.mavlinkCheckBoxshort_fs.UseVisualStyleBackColor = true;
             // 
-            // mavlinkCheckBoxgcs_fs
+            // mavlinkCheckBoxlong_fs
             // 
-            resources.ApplyResources(this.mavlinkCheckBoxgcs_fs, "mavlinkCheckBoxgcs_fs");
-            this.mavlinkCheckBoxgcs_fs.Name = "mavlinkCheckBoxgcs_fs";
-            this.mavlinkCheckBoxgcs_fs.OffValue = 0D;
-            this.mavlinkCheckBoxgcs_fs.OnValue = 1D;
-            this.mavlinkCheckBoxgcs_fs.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxgcs_fs, resources.GetString("mavlinkCheckBoxgcs_fs.ToolTip"));
-            this.mavlinkCheckBoxgcs_fs.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.mavlinkCheckBoxlong_fs, "mavlinkCheckBoxlong_fs");
+            this.mavlinkCheckBoxlong_fs.Name = "mavlinkCheckBoxlong_fs";
+            this.mavlinkCheckBoxlong_fs.OffValue = 0D;
+            this.mavlinkCheckBoxlong_fs.OnValue = 1D;
+            this.mavlinkCheckBoxlong_fs.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxlong_fs, resources.GetString("mavlinkCheckBoxlong_fs.ToolTip"));
+            this.mavlinkCheckBoxlong_fs.UseVisualStyleBackColor = true;
             // 
-            // mavlinkCheckBoxthr_fs_action
+            // mavlinkComboBox_fs_thr_enable
             // 
-            resources.ApplyResources(this.mavlinkCheckBoxthr_fs_action, "mavlinkCheckBoxthr_fs_action");
-            this.mavlinkCheckBoxthr_fs_action.Name = "mavlinkCheckBoxthr_fs_action";
-            this.mavlinkCheckBoxthr_fs_action.OffValue = 0D;
-            this.mavlinkCheckBoxthr_fs_action.OnValue = 1D;
-            this.mavlinkCheckBoxthr_fs_action.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs_action, resources.GetString("mavlinkCheckBoxthr_fs_action.ToolTip"));
-            this.mavlinkCheckBoxthr_fs_action.UseVisualStyleBackColor = true;
+            this.mavlinkComboBox_fs_thr_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboBox_fs_thr_enable, "mavlinkComboBox_fs_thr_enable");
+            this.mavlinkComboBox_fs_thr_enable.FormattingEnabled = true;
+            this.mavlinkComboBox_fs_thr_enable.Name = "mavlinkComboBox_fs_thr_enable";
+            this.mavlinkComboBox_fs_thr_enable.ParamName = null;
+            this.mavlinkComboBox_fs_thr_enable.SubControl = null;
+            this.toolTip1.SetToolTip(this.mavlinkComboBox_fs_thr_enable, resources.GetString("mavlinkComboBox_fs_thr_enable.ToolTip"));
             // 
             // mavlinkNumericUpDownfs_thr_value
             // 
@@ -213,33 +216,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs, resources.GetString("mavlinkCheckBoxthr_fs.ToolTip"));
             this.mavlinkCheckBoxthr_fs.UseVisualStyleBackColor = true;
             // 
-            // mavlinkComboBox_fs_thr_enable
+            // mavlinkCheckBoxthr_fs_action
             // 
-            this.mavlinkComboBox_fs_thr_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.mavlinkComboBox_fs_thr_enable, "mavlinkComboBox_fs_thr_enable");
-            this.mavlinkComboBox_fs_thr_enable.FormattingEnabled = true;
-            this.mavlinkComboBox_fs_thr_enable.Name = "mavlinkComboBox_fs_thr_enable";
-            this.mavlinkComboBox_fs_thr_enable.ParamName = null;
-            this.mavlinkComboBox_fs_thr_enable.SubControl = null;
-            this.toolTip1.SetToolTip(this.mavlinkComboBox_fs_thr_enable, resources.GetString("mavlinkComboBox_fs_thr_enable.ToolTip"));
-            // 
-            // mavlinkComboBoxfs_batt_enable
-            // 
-            this.mavlinkComboBoxfs_batt_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.mavlinkComboBoxfs_batt_enable, "mavlinkComboBoxfs_batt_enable");
-            this.mavlinkComboBoxfs_batt_enable.FormattingEnabled = true;
-            this.mavlinkComboBoxfs_batt_enable.Name = "mavlinkComboBoxfs_batt_enable";
-            this.mavlinkComboBoxfs_batt_enable.ParamName = null;
-            this.mavlinkComboBoxfs_batt_enable.SubControl = null;
-            // 
-            // mavlinkCheckBoxFS_GCS_ENABLE
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxFS_GCS_ENABLE, "mavlinkCheckBoxFS_GCS_ENABLE");
-            this.mavlinkCheckBoxFS_GCS_ENABLE.Name = "mavlinkCheckBoxFS_GCS_ENABLE";
-            this.mavlinkCheckBoxFS_GCS_ENABLE.OffValue = 0D;
-            this.mavlinkCheckBoxFS_GCS_ENABLE.OnValue = 1D;
-            this.mavlinkCheckBoxFS_GCS_ENABLE.ParamName = null;
-            this.mavlinkCheckBoxFS_GCS_ENABLE.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.mavlinkCheckBoxthr_fs_action, "mavlinkCheckBoxthr_fs_action");
+            this.mavlinkCheckBoxthr_fs_action.Name = "mavlinkCheckBoxthr_fs_action";
+            this.mavlinkCheckBoxthr_fs_action.OffValue = 0D;
+            this.mavlinkCheckBoxthr_fs_action.OnValue = 1D;
+            this.mavlinkCheckBoxthr_fs_action.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs_action, resources.GetString("mavlinkCheckBoxthr_fs_action.ToolTip"));
+            this.mavlinkCheckBoxthr_fs_action.UseVisualStyleBackColor = true;
             // 
             // pnlmah
             // 
@@ -573,6 +558,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // mavlinkCheckBoxFS_GCS_ENABLE
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxFS_GCS_ENABLE, "mavlinkCheckBoxFS_GCS_ENABLE");
+            this.mavlinkCheckBoxFS_GCS_ENABLE.Name = "mavlinkCheckBoxFS_GCS_ENABLE";
+            this.mavlinkCheckBoxFS_GCS_ENABLE.OffValue = 0D;
+            this.mavlinkCheckBoxFS_GCS_ENABLE.OnValue = 1D;
+            this.mavlinkCheckBoxFS_GCS_ENABLE.ParamName = null;
+            this.mavlinkCheckBoxFS_GCS_ENABLE.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.mavlinkComboBoxfs_batt_enable);
@@ -582,10 +576,79 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
+            // mavlinkComboBoxfs_batt_enable
+            // 
+            this.mavlinkComboBoxfs_batt_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboBoxfs_batt_enable, "mavlinkComboBoxfs_batt_enable");
+            this.mavlinkComboBoxfs_batt_enable.FormattingEnabled = true;
+            this.mavlinkComboBoxfs_batt_enable.Name = "mavlinkComboBoxfs_batt_enable";
+            this.mavlinkComboBoxfs_batt_enable.ParamName = null;
+            this.mavlinkComboBoxfs_batt_enable.SubControl = null;
+            // 
+            // fiGPS
+            // 
+            this.fiGPS.BackColor = System.Drawing.Color.Black;
+            this.fiGPS.batterylevel = 0F;
+            this.fiGPS.batteryremaining = 0F;
+            this.fiGPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiGPS.current = 0F;
+            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "gpsstatus", true));
+            this.fiGPS.desc = "GPS：";
+            this.fiGPS.failsafe = false;
+            this.fiGPS.gpsfix = 0F;
+            resources.ApplyResources(this.fiGPS, "fiGPS");
+            this.fiGPS.message = "";
+            this.fiGPS.mode = "Manual";
+            this.fiGPS.Name = "fiGPS";
+            this.fiGPS.numberColor = System.Drawing.Color.White;
+            this.fiGPS.status = false;
+            this.fiGPS.text = "";
+            // 
+            // fiState
+            // 
+            this.fiState.BackColor = System.Drawing.Color.Black;
+            this.fiState.batterylevel = 0F;
+            this.fiState.batteryremaining = 0F;
+            this.fiState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiState.current = 0F;
+            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "armed", true));
+            this.fiState.desc = "状态：";
+            this.fiState.failsafe = false;
+            this.fiState.gpsfix = 0F;
+            resources.ApplyResources(this.fiState, "fiState");
+            this.fiState.message = "";
+            this.fiState.mode = "Manual";
+            this.fiState.Name = "fiState";
+            this.fiState.numberColor = System.Drawing.Color.White;
+            this.fiState.status = false;
+            this.fiState.text = "";
+            // 
+            // fiMode
+            // 
+            this.fiMode.BackColor = System.Drawing.Color.Black;
+            this.fiMode.batterylevel = 0F;
+            this.fiMode.batteryremaining = 0F;
+            this.fiMode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiMode.current = 0F;
+            this.fiMode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "mode", true));
+            this.fiMode.desc = "模式：";
+            this.fiMode.failsafe = false;
+            this.fiMode.gpsfix = 0F;
+            resources.ApplyResources(this.fiMode, "fiMode");
+            this.fiMode.message = "";
+            this.fiMode.mode = "Manual";
+            this.fiMode.Name = "fiMode";
+            this.fiMode.numberColor = System.Drawing.Color.White;
+            this.fiMode.status = false;
+            this.fiMode.text = "";
+            // 
             // ConfigFailSafe
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.fiMode);
+            this.Controls.Add(this.fiState);
+            this.Controls.Add(this.fiGPS);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -680,5 +743,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private FlightInfo fiGPS;
+        private FlightInfo fiState;
+        private FlightInfo fiMode;
     }
 }

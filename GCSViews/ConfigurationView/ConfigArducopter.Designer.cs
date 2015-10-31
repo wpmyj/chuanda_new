@@ -30,82 +30,48 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigArducopter));
-            this.TUNE_LOW = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.TUNE_HIGH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.TUNE = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.CH7_OPT = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.THR_RATE_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.CHK_lockrollpitch = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
-            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
-            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.THR_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.HLD_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.STB_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label35 = new System.Windows.Forms.Label();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.STB_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.STB_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label46 = new System.Windows.Forms.Label();
             this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.RATE_YAW_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
-            this.RATE_YAW_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.RATE_YAW_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label47 = new System.Windows.Forms.Label();
-            this.RATE_YAW_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label77 = new System.Windows.Forms.Label();
-            this.RATE_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label82 = new System.Windows.Forms.Label();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.RATE_PIT_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.RATE_PIT_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.RATE_PIT_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label84 = new System.Windows.Forms.Label();
-            this.RATE_PIT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label86 = new System.Windows.Forms.Label();
-            this.RATE_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label87 = new System.Windows.Forms.Label();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.RATE_RLL_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.RATE_RLL_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
-            this.RATE_RLL_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label88 = new System.Windows.Forms.Label();
-            this.RATE_RLL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label90 = new System.Windows.Forms.Label();
-            this.RATE_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label91 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.LOITER_LAT_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.LOITER_LAT_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.LOITER_LAT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.LOITER_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.BUT_rerequestparams = new ByAeroBeHero.Controls.MyButton();
             this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
@@ -113,106 +79,100 @@
             this.myLabel2 = new ByAeroBeHero.Controls.MyLabel();
             this.myLabel1 = new ByAeroBeHero.Controls.MyLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.THR_ACCEL_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.THR_ACCEL_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.THR_ACCEL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.THR_ACCEL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.BUT_refreshpart = new ByAeroBeHero.Controls.MyButton();
             this.myLabel4 = new ByAeroBeHero.Controls.MyLabel();
             this.CH8_OPT = new ByAeroBeHero.Controls.MavlinkComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.TUNE_LOW)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TUNE_HIGH)).BeginInit();
+            this.THR_ACCEL_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.THR_ACCEL_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.THR_ACCEL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.THR_ACCEL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.LOITER_LAT_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.LOITER_LAT_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.LOITER_LAT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.LOITER_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.TUNE_LOW = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.TUNE_HIGH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.TUNE = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.CH7_OPT = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.THR_RATE_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.THR_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.HLD_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.STB_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.STB_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.STB_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_YAW_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_YAW_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_YAW_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_YAW_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.THR_RATE_P)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).BeginInit();
             this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HLD_LAT_P)).BeginInit();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.STB_YAW_P)).BeginInit();
             this.groupBox21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.STB_PIT_P)).BeginInit();
             this.groupBox22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.STB_RLL_P)).BeginInit();
             this.groupBox23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_FF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_D)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_IMAX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).BeginInit();
             this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_FF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_D)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_IMAX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).BeginInit();
             this.groupBox25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_FF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_D)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_IMAX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_D)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_IMAX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_P)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_D)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_IMAX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_I)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_IMAX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_I)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TUNE_LOW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TUNE_HIGH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.THR_RATE_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HLD_LAT_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STB_YAW_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STB_PIT_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STB_RLL_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_FF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_IMAX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_I)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_FF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_IMAX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_FF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_IMAX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TUNE_LOW
-            // 
-            resources.ApplyResources(this.TUNE_LOW, "TUNE_LOW");
-            this.TUNE_LOW.Max = 1F;
-            this.TUNE_LOW.Min = 0F;
-            this.TUNE_LOW.Name = "TUNE_LOW";
-            this.TUNE_LOW.ParamName = null;
-            this.TUNE_LOW.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // TUNE_HIGH
-            // 
-            resources.ApplyResources(this.TUNE_HIGH, "TUNE_HIGH");
-            this.TUNE_HIGH.Max = 1F;
-            this.TUNE_HIGH.Min = 0F;
-            this.TUNE_HIGH.Name = "TUNE_HIGH";
-            this.TUNE_HIGH.ParamName = null;
-            this.TUNE_HIGH.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // TUNE
-            // 
-            this.TUNE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TUNE.DropDownWidth = 170;
-            resources.ApplyResources(this.TUNE, "TUNE");
-            this.TUNE.FormattingEnabled = true;
-            this.TUNE.Name = "TUNE";
-            this.TUNE.ParamName = null;
-            this.TUNE.SubControl = null;
-            this.TUNE.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // CH7_OPT
-            // 
-            this.CH7_OPT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CH7_OPT.DropDownWidth = 170;
-            resources.ApplyResources(this.CH7_OPT, "CH7_OPT");
-            this.CH7_OPT.FormattingEnabled = true;
-            this.CH7_OPT.Name = "CH7_OPT";
-            this.CH7_OPT.ParamName = null;
-            this.CH7_OPT.SubControl = null;
-            this.CH7_OPT.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // groupBox5
             // 
@@ -221,15 +181,6 @@
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
-            // 
-            // THR_RATE_P
-            // 
-            resources.ApplyResources(this.THR_RATE_P, "THR_RATE_P");
-            this.THR_RATE_P.Max = 1F;
-            this.THR_RATE_P.Min = 0F;
-            this.THR_RATE_P.Name = "THR_RATE_P";
-            this.THR_RATE_P.ParamName = null;
-            this.THR_RATE_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label25
             // 
@@ -260,70 +211,25 @@
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
-            // WPNAV_SPEED_UP
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
-            this.WPNAV_SPEED_UP.Max = 1F;
-            this.WPNAV_SPEED_UP.Min = 0F;
-            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
-            this.WPNAV_SPEED_UP.ParamName = null;
-            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            // 
-            // WPNAV_LOIT_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
-            this.WPNAV_LOIT_SPEED.Max = 1F;
-            this.WPNAV_LOIT_SPEED.Min = 0F;
-            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
-            this.WPNAV_LOIT_SPEED.ParamName = null;
-            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
-            // WPNAV_SPEED_DN
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
-            this.WPNAV_SPEED_DN.Max = 1F;
-            this.WPNAV_SPEED_DN.Min = 0F;
-            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
-            this.WPNAV_SPEED_DN.ParamName = null;
-            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
             // 
-            // WPNAV_RADIUS
-            // 
-            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
-            this.WPNAV_RADIUS.Max = 1F;
-            this.WPNAV_RADIUS.Min = 0F;
-            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
-            this.WPNAV_RADIUS.ParamName = null;
-            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            // 
-            // WPNAV_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
-            this.WPNAV_SPEED.Max = 1F;
-            this.WPNAV_SPEED.Min = 0F;
-            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
-            this.WPNAV_SPEED.ParamName = null;
-            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label16
             // 
@@ -338,15 +244,6 @@
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
-            // THR_ALT_P
-            // 
-            resources.ApplyResources(this.THR_ALT_P, "THR_ALT_P");
-            this.THR_ALT_P.Max = 1F;
-            this.THR_ALT_P.Min = 0F;
-            this.THR_ALT_P.Name = "THR_ALT_P";
-            this.THR_ALT_P.ParamName = null;
-            this.THR_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label22
             // 
             resources.ApplyResources(this.label22, "label22");
@@ -359,15 +256,6 @@
             resources.ApplyResources(this.groupBox19, "groupBox19");
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.TabStop = false;
-            // 
-            // HLD_LAT_P
-            // 
-            resources.ApplyResources(this.HLD_LAT_P, "HLD_LAT_P");
-            this.HLD_LAT_P.Max = 1F;
-            this.HLD_LAT_P.Min = 0F;
-            this.HLD_LAT_P.Name = "HLD_LAT_P";
-            this.HLD_LAT_P.ParamName = null;
-            this.HLD_LAT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label31
             // 
@@ -382,15 +270,6 @@
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.TabStop = false;
             // 
-            // STB_YAW_P
-            // 
-            resources.ApplyResources(this.STB_YAW_P, "STB_YAW_P");
-            this.STB_YAW_P.Max = 1F;
-            this.STB_YAW_P.Min = 0F;
-            this.STB_YAW_P.Name = "STB_YAW_P";
-            this.STB_YAW_P.ParamName = null;
-            this.STB_YAW_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label35
             // 
             resources.ApplyResources(this.label35, "label35");
@@ -404,15 +283,6 @@
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.TabStop = false;
             // 
-            // STB_PIT_P
-            // 
-            resources.ApplyResources(this.STB_PIT_P, "STB_PIT_P");
-            this.STB_PIT_P.Max = 1F;
-            this.STB_PIT_P.Min = 0F;
-            this.STB_PIT_P.Name = "STB_PIT_P";
-            this.STB_PIT_P.ParamName = null;
-            this.STB_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label42
             // 
             resources.ApplyResources(this.label42, "label42");
@@ -425,15 +295,6 @@
             resources.ApplyResources(this.groupBox22, "groupBox22");
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.TabStop = false;
-            // 
-            // STB_RLL_P
-            // 
-            resources.ApplyResources(this.STB_RLL_P, "STB_RLL_P");
-            this.STB_RLL_P.Max = 1F;
-            this.STB_RLL_P.Min = 0F;
-            this.STB_RLL_P.Name = "STB_RLL_P";
-            this.STB_RLL_P.ParamName = null;
-            this.STB_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label46
             // 
@@ -456,70 +317,25 @@
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.TabStop = false;
             // 
-            // RATE_YAW_FF
-            // 
-            resources.ApplyResources(this.RATE_YAW_FF, "RATE_YAW_FF");
-            this.RATE_YAW_FF.Max = 1F;
-            this.RATE_YAW_FF.Min = 0F;
-            this.RATE_YAW_FF.Name = "RATE_YAW_FF";
-            this.RATE_YAW_FF.ParamName = null;
-            this.RATE_YAW_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            // 
-            // RATE_YAW_D
-            // 
-            resources.ApplyResources(this.RATE_YAW_D, "RATE_YAW_D");
-            this.RATE_YAW_D.Max = 1F;
-            this.RATE_YAW_D.Min = 0F;
-            this.RATE_YAW_D.Name = "RATE_YAW_D";
-            this.RATE_YAW_D.ParamName = null;
-            this.RATE_YAW_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
             // 
-            // RATE_YAW_IMAX
-            // 
-            resources.ApplyResources(this.RATE_YAW_IMAX, "RATE_YAW_IMAX");
-            this.RATE_YAW_IMAX.Max = 1F;
-            this.RATE_YAW_IMAX.Min = 0F;
-            this.RATE_YAW_IMAX.Name = "RATE_YAW_IMAX";
-            this.RATE_YAW_IMAX.ParamName = null;
-            this.RATE_YAW_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label47
             // 
             resources.ApplyResources(this.label47, "label47");
             this.label47.Name = "label47";
             // 
-            // RATE_YAW_I
-            // 
-            resources.ApplyResources(this.RATE_YAW_I, "RATE_YAW_I");
-            this.RATE_YAW_I.Max = 1F;
-            this.RATE_YAW_I.Min = 0F;
-            this.RATE_YAW_I.Name = "RATE_YAW_I";
-            this.RATE_YAW_I.ParamName = null;
-            this.RATE_YAW_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label77
             // 
             resources.ApplyResources(this.label77, "label77");
             this.label77.Name = "label77";
-            // 
-            // RATE_YAW_P
-            // 
-            resources.ApplyResources(this.RATE_YAW_P, "RATE_YAW_P");
-            this.RATE_YAW_P.Max = 1F;
-            this.RATE_YAW_P.Min = 0F;
-            this.RATE_YAW_P.Name = "RATE_YAW_P";
-            this.RATE_YAW_P.ParamName = null;
-            this.RATE_YAW_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label82
             // 
@@ -542,70 +358,25 @@
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.TabStop = false;
             // 
-            // RATE_PIT_FF
-            // 
-            resources.ApplyResources(this.RATE_PIT_FF, "RATE_PIT_FF");
-            this.RATE_PIT_FF.Max = 1F;
-            this.RATE_PIT_FF.Min = 0F;
-            this.RATE_PIT_FF.Name = "RATE_PIT_FF";
-            this.RATE_PIT_FF.ParamName = null;
-            this.RATE_PIT_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            // 
-            // RATE_PIT_D
-            // 
-            resources.ApplyResources(this.RATE_PIT_D, "RATE_PIT_D");
-            this.RATE_PIT_D.Max = 1F;
-            this.RATE_PIT_D.Min = 0F;
-            this.RATE_PIT_D.Name = "RATE_PIT_D";
-            this.RATE_PIT_D.ParamName = null;
-            this.RATE_PIT_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
-            // RATE_PIT_IMAX
-            // 
-            resources.ApplyResources(this.RATE_PIT_IMAX, "RATE_PIT_IMAX");
-            this.RATE_PIT_IMAX.Max = 1F;
-            this.RATE_PIT_IMAX.Min = 0F;
-            this.RATE_PIT_IMAX.Name = "RATE_PIT_IMAX";
-            this.RATE_PIT_IMAX.ParamName = null;
-            this.RATE_PIT_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label84
             // 
             resources.ApplyResources(this.label84, "label84");
             this.label84.Name = "label84";
             // 
-            // RATE_PIT_I
-            // 
-            resources.ApplyResources(this.RATE_PIT_I, "RATE_PIT_I");
-            this.RATE_PIT_I.Max = 1F;
-            this.RATE_PIT_I.Min = 0F;
-            this.RATE_PIT_I.Name = "RATE_PIT_I";
-            this.RATE_PIT_I.ParamName = null;
-            this.RATE_PIT_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label86
             // 
             resources.ApplyResources(this.label86, "label86");
             this.label86.Name = "label86";
-            // 
-            // RATE_PIT_P
-            // 
-            resources.ApplyResources(this.RATE_PIT_P, "RATE_PIT_P");
-            this.RATE_PIT_P.Max = 1F;
-            this.RATE_PIT_P.Min = 0F;
-            this.RATE_PIT_P.Name = "RATE_PIT_P";
-            this.RATE_PIT_P.ParamName = null;
-            this.RATE_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label87
             // 
@@ -628,70 +399,25 @@
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.TabStop = false;
             // 
-            // RATE_RLL_FF
-            // 
-            resources.ApplyResources(this.RATE_RLL_FF, "RATE_RLL_FF");
-            this.RATE_RLL_FF.Max = 1F;
-            this.RATE_RLL_FF.Min = 0F;
-            this.RATE_RLL_FF.Name = "RATE_RLL_FF";
-            this.RATE_RLL_FF.ParamName = null;
-            this.RATE_RLL_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            // 
-            // RATE_RLL_D
-            // 
-            resources.ApplyResources(this.RATE_RLL_D, "RATE_RLL_D");
-            this.RATE_RLL_D.Max = 1F;
-            this.RATE_RLL_D.Min = 0F;
-            this.RATE_RLL_D.Name = "RATE_RLL_D";
-            this.RATE_RLL_D.ParamName = null;
-            this.RATE_RLL_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
             // 
-            // RATE_RLL_IMAX
-            // 
-            resources.ApplyResources(this.RATE_RLL_IMAX, "RATE_RLL_IMAX");
-            this.RATE_RLL_IMAX.Max = 1F;
-            this.RATE_RLL_IMAX.Min = 0F;
-            this.RATE_RLL_IMAX.Name = "RATE_RLL_IMAX";
-            this.RATE_RLL_IMAX.ParamName = null;
-            this.RATE_RLL_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label88
             // 
             resources.ApplyResources(this.label88, "label88");
             this.label88.Name = "label88";
             // 
-            // RATE_RLL_I
-            // 
-            resources.ApplyResources(this.RATE_RLL_I, "RATE_RLL_I");
-            this.RATE_RLL_I.Max = 1F;
-            this.RATE_RLL_I.Min = 0F;
-            this.RATE_RLL_I.Name = "RATE_RLL_I";
-            this.RATE_RLL_I.ParamName = null;
-            this.RATE_RLL_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label90
             // 
             resources.ApplyResources(this.label90, "label90");
             this.label90.Name = "label90";
-            // 
-            // RATE_RLL_P
-            // 
-            resources.ApplyResources(this.RATE_RLL_P, "RATE_RLL_P");
-            this.RATE_RLL_P.Max = 1F;
-            this.RATE_RLL_P.Min = 0F;
-            this.RATE_RLL_P.Name = "RATE_RLL_P";
-            this.RATE_RLL_P.ParamName = null;
-            this.RATE_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label91
             // 
@@ -718,56 +444,20 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // LOITER_LAT_D
-            // 
-            resources.ApplyResources(this.LOITER_LAT_D, "LOITER_LAT_D");
-            this.LOITER_LAT_D.Max = 1F;
-            this.LOITER_LAT_D.Min = 0F;
-            this.LOITER_LAT_D.Name = "LOITER_LAT_D";
-            this.LOITER_LAT_D.ParamName = null;
-            this.LOITER_LAT_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
-            // LOITER_LAT_IMAX
-            // 
-            resources.ApplyResources(this.LOITER_LAT_IMAX, "LOITER_LAT_IMAX");
-            this.LOITER_LAT_IMAX.Max = 1F;
-            this.LOITER_LAT_IMAX.Min = 0F;
-            this.LOITER_LAT_IMAX.Name = "LOITER_LAT_IMAX";
-            this.LOITER_LAT_IMAX.ParamName = null;
-            this.LOITER_LAT_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // LOITER_LAT_I
-            // 
-            resources.ApplyResources(this.LOITER_LAT_I, "LOITER_LAT_I");
-            this.LOITER_LAT_I.Max = 1F;
-            this.LOITER_LAT_I.Min = 0F;
-            this.LOITER_LAT_I.Name = "LOITER_LAT_I";
-            this.LOITER_LAT_I.ParamName = null;
-            this.LOITER_LAT_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            // 
-            // LOITER_LAT_P
-            // 
-            resources.ApplyResources(this.LOITER_LAT_P, "LOITER_LAT_P");
-            this.LOITER_LAT_P.Max = 1F;
-            this.LOITER_LAT_P.Min = 0F;
-            this.LOITER_LAT_P.Name = "LOITER_LAT_P";
-            this.LOITER_LAT_P.ParamName = null;
-            this.LOITER_LAT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label4
             // 
@@ -824,15 +514,6 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
-            // THR_ACCEL_D
-            // 
-            resources.ApplyResources(this.THR_ACCEL_D, "THR_ACCEL_D");
-            this.THR_ACCEL_D.Max = 1F;
-            this.THR_ACCEL_D.Min = 0F;
-            this.THR_ACCEL_D.Name = "THR_ACCEL_D";
-            this.THR_ACCEL_D.ParamName = null;
-            this.THR_ACCEL_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
@@ -843,42 +524,10 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // THR_ACCEL_IMAX
-            // 
-            resources.ApplyResources(this.THR_ACCEL_IMAX, "THR_ACCEL_IMAX");
-            this.THR_ACCEL_IMAX.Max = 1F;
-            this.THR_ACCEL_IMAX.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.THR_ACCEL_IMAX.Min = 0F;
-            this.THR_ACCEL_IMAX.Name = "THR_ACCEL_IMAX";
-            this.THR_ACCEL_IMAX.ParamName = null;
-            this.THR_ACCEL_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // THR_ACCEL_I
-            // 
-            resources.ApplyResources(this.THR_ACCEL_I, "THR_ACCEL_I");
-            this.THR_ACCEL_I.Max = 1F;
-            this.THR_ACCEL_I.Min = 0F;
-            this.THR_ACCEL_I.Name = "THR_ACCEL_I";
-            this.THR_ACCEL_I.ParamName = null;
-            this.THR_ACCEL_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            // 
-            // THR_ACCEL_P
-            // 
-            resources.ApplyResources(this.THR_ACCEL_P, "THR_ACCEL_P");
-            this.THR_ACCEL_P.Max = 1F;
-            this.THR_ACCEL_P.Min = 0F;
-            this.THR_ACCEL_P.Name = "THR_ACCEL_P";
-            this.THR_ACCEL_P.ParamName = null;
-            this.THR_ACCEL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // label8
             // 
@@ -911,6 +560,357 @@
             this.CH8_OPT.SubControl = null;
             this.CH8_OPT.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // THR_ACCEL_D
+            // 
+            resources.ApplyResources(this.THR_ACCEL_D, "THR_ACCEL_D");
+            this.THR_ACCEL_D.Max = 1F;
+            this.THR_ACCEL_D.Min = 0F;
+            this.THR_ACCEL_D.Name = "THR_ACCEL_D";
+            this.THR_ACCEL_D.ParamName = null;
+            this.THR_ACCEL_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // THR_ACCEL_IMAX
+            // 
+            resources.ApplyResources(this.THR_ACCEL_IMAX, "THR_ACCEL_IMAX");
+            this.THR_ACCEL_IMAX.Max = 1F;
+            this.THR_ACCEL_IMAX.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.THR_ACCEL_IMAX.Min = 0F;
+            this.THR_ACCEL_IMAX.Name = "THR_ACCEL_IMAX";
+            this.THR_ACCEL_IMAX.ParamName = null;
+            this.THR_ACCEL_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // THR_ACCEL_I
+            // 
+            resources.ApplyResources(this.THR_ACCEL_I, "THR_ACCEL_I");
+            this.THR_ACCEL_I.Max = 1F;
+            this.THR_ACCEL_I.Min = 0F;
+            this.THR_ACCEL_I.Name = "THR_ACCEL_I";
+            this.THR_ACCEL_I.ParamName = null;
+            this.THR_ACCEL_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // THR_ACCEL_P
+            // 
+            resources.ApplyResources(this.THR_ACCEL_P, "THR_ACCEL_P");
+            this.THR_ACCEL_P.Max = 1F;
+            this.THR_ACCEL_P.Min = 0F;
+            this.THR_ACCEL_P.Name = "THR_ACCEL_P";
+            this.THR_ACCEL_P.ParamName = null;
+            this.THR_ACCEL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // LOITER_LAT_D
+            // 
+            resources.ApplyResources(this.LOITER_LAT_D, "LOITER_LAT_D");
+            this.LOITER_LAT_D.Max = 1F;
+            this.LOITER_LAT_D.Min = 0F;
+            this.LOITER_LAT_D.Name = "LOITER_LAT_D";
+            this.LOITER_LAT_D.ParamName = null;
+            this.LOITER_LAT_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // LOITER_LAT_IMAX
+            // 
+            resources.ApplyResources(this.LOITER_LAT_IMAX, "LOITER_LAT_IMAX");
+            this.LOITER_LAT_IMAX.Max = 1F;
+            this.LOITER_LAT_IMAX.Min = 0F;
+            this.LOITER_LAT_IMAX.Name = "LOITER_LAT_IMAX";
+            this.LOITER_LAT_IMAX.ParamName = null;
+            this.LOITER_LAT_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // LOITER_LAT_I
+            // 
+            resources.ApplyResources(this.LOITER_LAT_I, "LOITER_LAT_I");
+            this.LOITER_LAT_I.Max = 1F;
+            this.LOITER_LAT_I.Min = 0F;
+            this.LOITER_LAT_I.Name = "LOITER_LAT_I";
+            this.LOITER_LAT_I.ParamName = null;
+            this.LOITER_LAT_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // LOITER_LAT_P
+            // 
+            resources.ApplyResources(this.LOITER_LAT_P, "LOITER_LAT_P");
+            this.LOITER_LAT_P.Max = 1F;
+            this.LOITER_LAT_P.Min = 0F;
+            this.LOITER_LAT_P.Name = "LOITER_LAT_P";
+            this.LOITER_LAT_P.ParamName = null;
+            this.LOITER_LAT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // TUNE_LOW
+            // 
+            resources.ApplyResources(this.TUNE_LOW, "TUNE_LOW");
+            this.TUNE_LOW.Max = 1F;
+            this.TUNE_LOW.Min = 0F;
+            this.TUNE_LOW.Name = "TUNE_LOW";
+            this.TUNE_LOW.ParamName = null;
+            this.TUNE_LOW.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // TUNE_HIGH
+            // 
+            resources.ApplyResources(this.TUNE_HIGH, "TUNE_HIGH");
+            this.TUNE_HIGH.Max = 1F;
+            this.TUNE_HIGH.Min = 0F;
+            this.TUNE_HIGH.Name = "TUNE_HIGH";
+            this.TUNE_HIGH.ParamName = null;
+            this.TUNE_HIGH.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // TUNE
+            // 
+            this.TUNE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TUNE.DropDownWidth = 170;
+            resources.ApplyResources(this.TUNE, "TUNE");
+            this.TUNE.FormattingEnabled = true;
+            this.TUNE.Name = "TUNE";
+            this.TUNE.ParamName = null;
+            this.TUNE.SubControl = null;
+            this.TUNE.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // CH7_OPT
+            // 
+            this.CH7_OPT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CH7_OPT.DropDownWidth = 170;
+            resources.ApplyResources(this.CH7_OPT, "CH7_OPT");
+            this.CH7_OPT.FormattingEnabled = true;
+            this.CH7_OPT.Name = "CH7_OPT";
+            this.CH7_OPT.ParamName = null;
+            this.CH7_OPT.SubControl = null;
+            this.CH7_OPT.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // THR_RATE_P
+            // 
+            resources.ApplyResources(this.THR_RATE_P, "THR_RATE_P");
+            this.THR_RATE_P.Max = 1F;
+            this.THR_RATE_P.Min = 0F;
+            this.THR_RATE_P.Name = "THR_RATE_P";
+            this.THR_RATE_P.ParamName = null;
+            this.THR_RATE_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED_UP
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
+            this.WPNAV_SPEED_UP.Max = 1F;
+            this.WPNAV_SPEED_UP.Min = 0F;
+            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
+            this.WPNAV_SPEED_UP.ParamName = null;
+            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_LOIT_SPEED
+            // 
+            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
+            this.WPNAV_LOIT_SPEED.Max = 1F;
+            this.WPNAV_LOIT_SPEED.Min = 0F;
+            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
+            this.WPNAV_LOIT_SPEED.ParamName = null;
+            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED_DN
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
+            this.WPNAV_SPEED_DN.Max = 1F;
+            this.WPNAV_SPEED_DN.Min = 0F;
+            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
+            this.WPNAV_SPEED_DN.ParamName = null;
+            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_RADIUS
+            // 
+            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
+            this.WPNAV_RADIUS.Max = 1F;
+            this.WPNAV_RADIUS.Min = 0F;
+            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
+            this.WPNAV_RADIUS.ParamName = null;
+            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
+            this.WPNAV_SPEED.Max = 1F;
+            this.WPNAV_SPEED.Min = 0F;
+            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
+            this.WPNAV_SPEED.ParamName = null;
+            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // THR_ALT_P
+            // 
+            resources.ApplyResources(this.THR_ALT_P, "THR_ALT_P");
+            this.THR_ALT_P.Max = 1F;
+            this.THR_ALT_P.Min = 0F;
+            this.THR_ALT_P.Name = "THR_ALT_P";
+            this.THR_ALT_P.ParamName = null;
+            this.THR_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // HLD_LAT_P
+            // 
+            resources.ApplyResources(this.HLD_LAT_P, "HLD_LAT_P");
+            this.HLD_LAT_P.Max = 1F;
+            this.HLD_LAT_P.Min = 0F;
+            this.HLD_LAT_P.Name = "HLD_LAT_P";
+            this.HLD_LAT_P.ParamName = null;
+            this.HLD_LAT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // STB_YAW_P
+            // 
+            resources.ApplyResources(this.STB_YAW_P, "STB_YAW_P");
+            this.STB_YAW_P.Max = 1F;
+            this.STB_YAW_P.Min = 0F;
+            this.STB_YAW_P.Name = "STB_YAW_P";
+            this.STB_YAW_P.ParamName = null;
+            this.STB_YAW_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // STB_PIT_P
+            // 
+            resources.ApplyResources(this.STB_PIT_P, "STB_PIT_P");
+            this.STB_PIT_P.Max = 1F;
+            this.STB_PIT_P.Min = 0F;
+            this.STB_PIT_P.Name = "STB_PIT_P";
+            this.STB_PIT_P.ParamName = null;
+            this.STB_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // STB_RLL_P
+            // 
+            resources.ApplyResources(this.STB_RLL_P, "STB_RLL_P");
+            this.STB_RLL_P.Max = 1F;
+            this.STB_RLL_P.Min = 0F;
+            this.STB_RLL_P.Name = "STB_RLL_P";
+            this.STB_RLL_P.ParamName = null;
+            this.STB_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_YAW_FF
+            // 
+            resources.ApplyResources(this.RATE_YAW_FF, "RATE_YAW_FF");
+            this.RATE_YAW_FF.Max = 1F;
+            this.RATE_YAW_FF.Min = 0F;
+            this.RATE_YAW_FF.Name = "RATE_YAW_FF";
+            this.RATE_YAW_FF.ParamName = null;
+            this.RATE_YAW_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_YAW_D
+            // 
+            resources.ApplyResources(this.RATE_YAW_D, "RATE_YAW_D");
+            this.RATE_YAW_D.Max = 1F;
+            this.RATE_YAW_D.Min = 0F;
+            this.RATE_YAW_D.Name = "RATE_YAW_D";
+            this.RATE_YAW_D.ParamName = null;
+            this.RATE_YAW_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_YAW_IMAX
+            // 
+            resources.ApplyResources(this.RATE_YAW_IMAX, "RATE_YAW_IMAX");
+            this.RATE_YAW_IMAX.Max = 1F;
+            this.RATE_YAW_IMAX.Min = 0F;
+            this.RATE_YAW_IMAX.Name = "RATE_YAW_IMAX";
+            this.RATE_YAW_IMAX.ParamName = null;
+            this.RATE_YAW_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_YAW_I
+            // 
+            resources.ApplyResources(this.RATE_YAW_I, "RATE_YAW_I");
+            this.RATE_YAW_I.Max = 1F;
+            this.RATE_YAW_I.Min = 0F;
+            this.RATE_YAW_I.Name = "RATE_YAW_I";
+            this.RATE_YAW_I.ParamName = null;
+            this.RATE_YAW_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_YAW_P
+            // 
+            resources.ApplyResources(this.RATE_YAW_P, "RATE_YAW_P");
+            this.RATE_YAW_P.Max = 1F;
+            this.RATE_YAW_P.Min = 0F;
+            this.RATE_YAW_P.Name = "RATE_YAW_P";
+            this.RATE_YAW_P.ParamName = null;
+            this.RATE_YAW_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_FF
+            // 
+            resources.ApplyResources(this.RATE_PIT_FF, "RATE_PIT_FF");
+            this.RATE_PIT_FF.Max = 1F;
+            this.RATE_PIT_FF.Min = 0F;
+            this.RATE_PIT_FF.Name = "RATE_PIT_FF";
+            this.RATE_PIT_FF.ParamName = null;
+            this.RATE_PIT_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_D
+            // 
+            resources.ApplyResources(this.RATE_PIT_D, "RATE_PIT_D");
+            this.RATE_PIT_D.Max = 1F;
+            this.RATE_PIT_D.Min = 0F;
+            this.RATE_PIT_D.Name = "RATE_PIT_D";
+            this.RATE_PIT_D.ParamName = null;
+            this.RATE_PIT_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_IMAX
+            // 
+            resources.ApplyResources(this.RATE_PIT_IMAX, "RATE_PIT_IMAX");
+            this.RATE_PIT_IMAX.Max = 1F;
+            this.RATE_PIT_IMAX.Min = 0F;
+            this.RATE_PIT_IMAX.Name = "RATE_PIT_IMAX";
+            this.RATE_PIT_IMAX.ParamName = null;
+            this.RATE_PIT_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_I
+            // 
+            resources.ApplyResources(this.RATE_PIT_I, "RATE_PIT_I");
+            this.RATE_PIT_I.Max = 1F;
+            this.RATE_PIT_I.Min = 0F;
+            this.RATE_PIT_I.Name = "RATE_PIT_I";
+            this.RATE_PIT_I.ParamName = null;
+            this.RATE_PIT_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_P
+            // 
+            resources.ApplyResources(this.RATE_PIT_P, "RATE_PIT_P");
+            this.RATE_PIT_P.Max = 1F;
+            this.RATE_PIT_P.Min = 0F;
+            this.RATE_PIT_P.Name = "RATE_PIT_P";
+            this.RATE_PIT_P.ParamName = null;
+            this.RATE_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_RLL_FF
+            // 
+            resources.ApplyResources(this.RATE_RLL_FF, "RATE_RLL_FF");
+            this.RATE_RLL_FF.Max = 1F;
+            this.RATE_RLL_FF.Min = 0F;
+            this.RATE_RLL_FF.Name = "RATE_RLL_FF";
+            this.RATE_RLL_FF.ParamName = null;
+            this.RATE_RLL_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_RLL_D
+            // 
+            resources.ApplyResources(this.RATE_RLL_D, "RATE_RLL_D");
+            this.RATE_RLL_D.Max = 1F;
+            this.RATE_RLL_D.Min = 0F;
+            this.RATE_RLL_D.Name = "RATE_RLL_D";
+            this.RATE_RLL_D.ParamName = null;
+            this.RATE_RLL_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_RLL_IMAX
+            // 
+            resources.ApplyResources(this.RATE_RLL_IMAX, "RATE_RLL_IMAX");
+            this.RATE_RLL_IMAX.Max = 1F;
+            this.RATE_RLL_IMAX.Min = 0F;
+            this.RATE_RLL_IMAX.Name = "RATE_RLL_IMAX";
+            this.RATE_RLL_IMAX.ParamName = null;
+            this.RATE_RLL_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_RLL_I
+            // 
+            resources.ApplyResources(this.RATE_RLL_I, "RATE_RLL_I");
+            this.RATE_RLL_I.Max = 1F;
+            this.RATE_RLL_I.Min = 0F;
+            this.RATE_RLL_I.Name = "RATE_RLL_I";
+            this.RATE_RLL_I.ParamName = null;
+            this.RATE_RLL_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_RLL_P
+            // 
+            resources.ApplyResources(this.RATE_RLL_P, "RATE_RLL_P");
+            this.RATE_RLL_P.Max = 1F;
+            this.RATE_RLL_P.Min = 0F;
+            this.RATE_RLL_P.Name = "RATE_RLL_P";
+            this.RATE_RLL_P.ParamName = null;
+            this.RATE_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // ConfigArducopter
             // 
             resources.ApplyResources(this, "$this");
@@ -941,54 +941,54 @@
             this.Controls.Add(this.groupBox24);
             this.Controls.Add(this.groupBox25);
             this.Name = "ConfigArducopter";
-            ((System.ComponentModel.ISupportInitialize)(this.TUNE_LOW)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TUNE_HIGH)).EndInit();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.THR_RATE_P)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).EndInit();
             this.groupBox19.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.HLD_LAT_P)).EndInit();
             this.groupBox20.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.STB_YAW_P)).EndInit();
             this.groupBox21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.STB_PIT_P)).EndInit();
             this.groupBox22.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.STB_RLL_P)).EndInit();
             this.groupBox23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_FF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_D)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_IMAX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).EndInit();
             this.groupBox24.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_FF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_D)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_IMAX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).EndInit();
             this.groupBox25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_FF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_D)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_IMAX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_D)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_IMAX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_P)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_D)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_IMAX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_I)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_IMAX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_I)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TUNE_LOW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TUNE_HIGH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.THR_RATE_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HLD_LAT_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STB_YAW_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STB_PIT_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.STB_RLL_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_FF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_IMAX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_I)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_FF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_IMAX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_FF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_IMAX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

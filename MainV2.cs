@@ -1086,38 +1086,38 @@ namespace ByAeroBeHero
                 }
 
                 // check for newer firmware
-                var softwares = Firmware.LoadSoftwares();
+                //var softwares = Firmware.LoadSoftwares();
 
-                if (softwares.Count > 0)
-                {
-                    try
-                    {
-                        string[] fields1 = comPort.MAV.VersionString.Split(' ');
+                //if (softwares.Count > 0)
+                //{
+                //    try
+                //    {
+                //        string[] fields1 = comPort.MAV.VersionString.Split(' ');
 
-                        foreach (Firmware.software item in softwares)
-                        {
-                            string[] fields2 = item.name.Split(' ');
+                //        foreach (Firmware.software item in softwares)
+                //        {
+                //            string[] fields2 = item.name.Split(' ');
 
-                            // check primare firmware type. ie arudplane, arducopter
-                            if (fields1[0] == fields2[0])
-                            {
-                                Version ver1 = VersionDetection.GetVersion(comPort.MAV.VersionString);
-                                Version ver2 = VersionDetection.GetVersion(item.name);
+                //            // check primare firmware type. ie arudplane, arducopter
+                //            if (fields1[0] == fields2[0])
+                //            {
+                //                Version ver1 = VersionDetection.GetVersion(comPort.MAV.VersionString);
+                //                Version ver2 = VersionDetection.GetVersion(item.name);
 
-                                if (ver2 > ver1)
-                                {
-                                    Common.MessageShowAgain(Strings.NewFirmware, Strings.NewFirmwareA + item.name + Strings.Pleaseup);
-                                    ShowMessage();
-                                    break;
-                                }
+                //                if (ver2 > ver1)
+                //                {
+                //                    Common.MessageShowAgain(Strings.NewFirmware, Strings.NewFirmwareA + item.name + Strings.Pleaseup);
+                //                    ShowMessage();
+                //                    break;
+                //                }
 
-                                // check the first hit only
-                                break;
-                            }
-                        }
-                    }
-                    catch (Exception ex) { log.Error(ex); }
-                }
+                //                // check the first hit only
+                //                break;
+                //            }
+                //        }
+                //    }
+                //    catch (Exception ex) { log.Error(ex); }
+                //}
 
                 FlightData.CheckBatteryShow();
 

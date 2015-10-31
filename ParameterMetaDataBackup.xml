@@ -2832,37 +2832,37 @@
     <FLTMODE1>
       <DisplayName>Flight Mode 1</DisplayName>
       <Description>Flight mode when Channel 5 pwm is &lt;= 1230</Description>
-      <Values>0:Stabilize,1:Acro,2:AltHold,3:Auto,4:Guided,5:Loiter,6:RTL,7:Circle,9:Land,10:OF_Loiter,11:Drift,13:Sport,16:PosHold</Values>
+      <Values>0:自稳,1:特技,2:定高,3:自动,4:引导,5:留待,6:返航,7:绕圈,9:降落,10:关闭留待,11:飘移,13:运动,16:定点</Values>
       <User>Standard</User>
     </FLTMODE1>
     <FLTMODE2>
       <DisplayName>Flight Mode 2</DisplayName>
       <Description>Flight mode when Channel 5 pwm is &gt;1230, &lt;= 1360</Description>
-      <Values>0:Stabilize,1:Acro,2:AltHold,3:Auto,4:Guided,5:Loiter,6:RTL,7:Circle,9:Land,10:OF_Loiter,11:Drift,13:Sport,16:PosHold</Values>
+      <Values>0:自稳,1:特技,2:定高,3:自动,4:引导,5:留待,6:返航,7:绕圈,9:降落,10:关闭留待,11:飘移,13:运动,16:定点</Values>
       <User>Standard</User>
     </FLTMODE2>
     <FLTMODE3>
       <DisplayName>Flight Mode 3</DisplayName>
       <Description>Flight mode when Channel 5 pwm is &gt;1360, &lt;= 1490</Description>
-      <Values>0:Stabilize,1:Acro,2:AltHold,3:Auto,4:Guided,5:Loiter,6:RTL,7:Circle,9:Land,10:OF_Loiter,11:Drift,13:Sport,16:PosHold</Values>
+      <Values>0:自稳,1:特技,2:定高,3:自动,4:引导,5:留待,6:返航,7:绕圈,9:降落,10:关闭留待,11:飘移,13:运动,16:定点</Values>
       <User>Standard</User>
     </FLTMODE3>
     <FLTMODE4>
       <DisplayName>Flight Mode 4</DisplayName>
       <Description>Flight mode when Channel 5 pwm is &gt;1490, &lt;= 1620</Description>
-      <Values>0:Stabilize,1:Acro,2:AltHold,3:Auto,4:Guided,5:Loiter,6:RTL,7:Circle,9:Land,10:OF_Loiter,11:Drift,13:Sport,16:PosHold</Values>
+      <Values>0:自稳,1:特技,2:定高,3:自动,4:引导,5:留待,6:返航,7:绕圈,9:降落,10:关闭留待,11:飘移,13:运动,16:定点</Values>
       <User>Standard</User>
     </FLTMODE4>
     <FLTMODE5>
       <DisplayName>Flight Mode 5</DisplayName>
       <Description>Flight mode when Channel 5 pwm is &gt;1620, &lt;= 1749</Description>
-      <Values>0:Stabilize,1:Acro,2:AltHold,3:Auto,4:Guided,5:Loiter,6:RTL,7:Circle,9:Land,10:OF_Loiter,11:Drift,13:Sport,16:PosHold</Values>
+      <Values>0:自稳,1:特技,2:定高,3:自动,4:引导,5:留待,6:返航,7:绕圈,9:降落,10:关闭留待,11:飘移,13:运动,16:定点</Values>
       <User>Standard</User>
     </FLTMODE5>
     <FLTMODE6>
       <DisplayName>Flight Mode 6</DisplayName>
       <Description>Flight mode when Channel 5 pwm is &gt;=1750</Description>
-      <Values>0:Stabilize,1:Acro,2:AltHold,3:Auto,4:Guided,5:Loiter,6:RTL,7:Circle,9:Land,10:OF_Loiter,11:Drift,13:Sport,16:PosHold</Values>
+      <Values>0:自稳,1:特技,2:定高,3:自动,4:引导,5:留待,6:返航,7:绕圈,9:降落,10:关闭留待,11:飘移,13:运动,16:定点</Values>
       <User>Standard</User>
     </FLTMODE6>
     <SIMPLE>

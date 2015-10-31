@@ -328,7 +328,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CustomMessageBox.Show(Strings.ErrorSettingParameter, Strings.ERROR);
             }
-            BUT_SaveModes.Text = "Complete";
+            BUT_SaveModes.Text = "完成";
         }
 
         private void updateDropDown(ComboBox ctl, string param)

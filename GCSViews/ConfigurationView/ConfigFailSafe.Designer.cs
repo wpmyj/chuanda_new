@@ -592,7 +592,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.fiGPS.batteryremaining = 0F;
             this.fiGPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fiGPS.current = 0F;
-            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "gpsstatus", true));
+            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.currentStateBindingSource, "gpsstatus", true));
             this.fiGPS.desc = "GPS：";
             this.fiGPS.failsafe = false;
             this.fiGPS.gpsfix = 0F;
@@ -611,7 +611,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.fiState.batteryremaining = 0F;
             this.fiState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fiState.current = 0F;
-            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "armed", true));
+            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("status", this.currentStateBindingSource, "armed", true));
+            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("failsafe", this.currentStateBindingSource, "failsafe", true));
             this.fiState.desc = "状态：";
             this.fiState.failsafe = false;
             this.fiState.gpsfix = 0F;
@@ -630,7 +631,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.fiMode.batteryremaining = 0F;
             this.fiMode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fiMode.current = 0F;
-            this.fiMode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "mode", true));
+            this.fiMode.DataBindings.Add(new System.Windows.Forms.Binding("mode", this.currentStateBindingSource, "mode", true));
             this.fiMode.desc = "模式：";
             this.fiMode.failsafe = false;
             this.fiMode.gpsfix = 0F;

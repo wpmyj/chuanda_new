@@ -158,7 +158,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR8.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR8.DrawLabel = true;
-            this.BAR8.Label = "Radio 8";
+            this.BAR8.Label = "通道 8";
             resources.ApplyResources(this.BAR8, "BAR8");
             this.BAR8.Maximum = 2200;
             this.BAR8.maxline = 0;
@@ -173,7 +173,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR7.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR7.DrawLabel = true;
-            this.BAR7.Label = "Radio 7";
+            this.BAR7.Label = "通道 7";
             resources.ApplyResources(this.BAR7, "BAR7");
             this.BAR7.Maximum = 2200;
             this.BAR7.maxline = 0;
@@ -188,7 +188,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR6.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR6.DrawLabel = true;
-            this.BAR6.Label = "Radio 6";
+            this.BAR6.Label = "通道 6";
             resources.ApplyResources(this.BAR6, "BAR6");
             this.BAR6.Maximum = 2200;
             this.BAR6.maxline = 0;
@@ -203,7 +203,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR5.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR5.DrawLabel = true;
-            this.BAR5.Label = "Radio 5";
+            this.BAR5.Label = "通道 5";
             resources.ApplyResources(this.BAR5, "BAR5");
             this.BAR5.Maximum = 2200;
             this.BAR5.maxline = 0;
@@ -218,7 +218,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARyaw.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARyaw.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARyaw.DrawLabel = true;
-            this.BARyaw.Label = "Yaw";
+            this.BARyaw.Label = "航向";
             resources.ApplyResources(this.BARyaw, "BARyaw");
             this.BARyaw.Maximum = 2200;
             this.BARyaw.maxline = 0;
@@ -233,7 +233,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARroll.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARroll.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARroll.DrawLabel = true;
-            this.BARroll.Label = "Roll";
+            this.BARroll.Label = "滚转";
             resources.ApplyResources(this.BARroll, "BARroll");
             this.BARroll.Maximum = 2200;
             this.BARroll.maxline = 0;
@@ -257,7 +257,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARpitch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARpitch.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARpitch.DrawLabel = true;
-            this.BARpitch.Label = "Pitch";
+            this.BARpitch.Label = "俯仰";
             resources.ApplyResources(this.BARpitch, "BARpitch");
             this.BARpitch.Maximum = 2200;
             this.BARpitch.maxline = 0;
@@ -272,7 +272,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARthrottle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARthrottle.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARthrottle.DrawLabel = true;
-            this.BARthrottle.Label = "Throttle";
+            this.BARthrottle.Label = "油门";
             resources.ApplyResources(this.BARthrottle, "BARthrottle");
             this.BARthrottle.Maximum = 2200;
             this.BARthrottle.maxline = 0;

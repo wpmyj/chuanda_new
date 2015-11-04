@@ -1749,7 +1749,7 @@
     <value>toolStripConnectionControl</value>
   </data>
   <data name="&gt;&gt;toolStripConnectionControl.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ToolStripConnectionControl, ByAeroBeHero, Version=1.1.5782.26589, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ToolStripConnectionControl, ByAeroBeHero, Version=1.1.5784.18259, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuConnect.Name" xml:space="preserve">
     <value>MenuConnect</value>

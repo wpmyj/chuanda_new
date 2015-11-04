@@ -23,7 +23,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public enum CopterType 
         {
             Four = 4,
-            Five = 5,
+            Six = 6,
             Eight = 8
         }
 
@@ -274,7 +274,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void RadbtnFiveRotor_CheckedChanged(object sender, EventArgs e)
         {
             if (this.RadbtnFiveRotor.Checked)
-                this.iCopterType = (int)CopterType.Five;
+                this.iCopterType = (int)CopterType.Six;
         }
 
         private void RadbtnSevenRotor_CheckedChanged(object sender, EventArgs e)

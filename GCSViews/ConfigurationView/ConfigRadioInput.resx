@@ -274,7 +274,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 106</value>
+    <value>201, 111</value>
   </data>
   <data name="CHK_revch3.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 16</value>
@@ -304,7 +304,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 152</value>
+    <value>201, 158</value>
   </data>
   <data name="CHK_revch4.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 16</value>
@@ -334,7 +334,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 59</value>
+    <value>201, 66</value>
   </data>
   <data name="CHK_revch2.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 16</value>
@@ -364,7 +364,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 12</value>
+    <value>201, 19</value>
   </data>
   <data name="CHK_revch1.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 16</value>
@@ -496,7 +496,7 @@
     <value>8</value>
   </data>
   <data name="BAR8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 340</value>
+    <value>12, 350</value>
   </data>
   <data name="BAR8.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 23</value>
@@ -517,7 +517,7 @@
     <value>9</value>
   </data>
   <data name="BAR7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 297</value>
+    <value>12, 304</value>
   </data>
   <data name="BAR7.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 23</value>
@@ -538,7 +538,7 @@
     <value>10</value>
   </data>
   <data name="BAR6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 249</value>
+    <value>12, 255</value>
   </data>
   <data name="BAR6.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 23</value>
@@ -559,7 +559,7 @@
     <value>11</value>
   </data>
   <data name="BAR5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 201</value>
+    <value>12, 207</value>
   </data>
   <data name="BAR5.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 23</value>
@@ -580,7 +580,7 @@
     <value>12</value>
   </data>
   <data name="BARyaw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 152</value>
+    <value>12, 158</value>
   </data>
   <data name="BARyaw.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 23</value>
@@ -670,7 +670,7 @@
     <value>1</value>
   </data>
   <data name="BARthrottle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 106</value>
+    <value>12, 111</value>
   </data>
   <data name="BARthrottle.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 23</value>

@@ -179,6 +179,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.splitter1 = new BSE.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.panelMap.SuspendLayout();
@@ -1137,6 +1138,7 @@
             // 
             this.panelBASE.BackColor = System.Drawing.Color.Teal;
             this.panelBASE.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.panelBASE.Controls.Add(this.splitter1);
             this.panelBASE.Controls.Add(this.tableLayoutPanel1);
             this.panelBASE.Controls.Add(this.panelWaypoints);
             this.panelBASE.Controls.Add(this.label6);
@@ -1173,6 +1175,14 @@
             // 
             this.timer1.Interval = 1200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // splitter1
+            // 
+            this.splitter1.BackColor = System.Drawing.Color.Transparent;
+            this.splitter1.Cursor = System.Windows.Forms.Cursors.HSplit;
+            resources.ApplyResources(this.splitter1, "splitter1");
+            this.splitter1.Name = "splitter1";
+            this.splitter1.TabStop = false;
             // 
             // FlightPlanner
             // 
@@ -1323,5 +1333,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
+        private BSE.Windows.Forms.Splitter splitter1;
     }
 }

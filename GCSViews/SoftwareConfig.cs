@@ -52,7 +52,7 @@ namespace ByAeroBeHero.GCSViews
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        //AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
+                        AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
 
                         start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
                     }

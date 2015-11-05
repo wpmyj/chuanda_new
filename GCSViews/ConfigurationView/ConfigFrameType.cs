@@ -257,12 +257,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         #region 加载参数
         private void btnSelectRackType_Click(object sender, EventArgs e)
         {
-            if(MainV2.comPort.SendCopterType(iCopterType))
+            string paramName = "COPTER_TYPE";
+            if (MainV2.comPort.setParams(paramName, iCopterType))
                 CustomMessageBox.Show(string.Format(Strings.CopterTypeSetSuccessed, "CopterType"), Strings.CopterTypeSelected,
-                   MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else  
                 CustomMessageBox.Show(string.Format(Strings.CopterTypeSetFailed, "CopterType"), Strings.CopterTypeSelected,
-                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void RadbtnFourRotor_CheckedChanged(object sender, EventArgs e)

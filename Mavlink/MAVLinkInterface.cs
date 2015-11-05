@@ -3567,5 +3567,37 @@ Please check the following
             }
             return SetCopterType;
         }
+
+        /// <summary>
+        /// Set parameter on apm
+        /// </summary>
+        /// <param name="paramname">name as a string</param>
+        /// <param name="value"></param>
+        public bool setParams(string paramname, double value)
+        {
+            giveComport = true;
+
+            try {
+                // param type is set here, however it is always sent over the air as a float 100int = 100f.
+                var req = new mavlink_param_set_t { target_system = MAV.sysid, target_component = MAV.compid, param_type = (byte)4 };//MAV.param_types[paramname]
+
+                byte[] temp = Encoding.ASCII.GetBytes(paramname);
+
+                Array.Resize(ref temp, 16);
+                req.param_id = temp;
+
+                req.param_value = new MAVLinkParam(paramname, value, (MAV_PARAM_TYPE.REAL32)).float_value;
+
+                generatePacket((byte)MAVLINK_MSG_ID.PARAM_SET, req);
+
+                System.Threading.Thread.Sleep(20);
+                return true;
+            }
+            catch {
+
+                return false;
+            }
+            
+        }
     }
 }

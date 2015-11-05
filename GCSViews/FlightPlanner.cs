@@ -1588,7 +1588,7 @@ namespace ByAeroBeHero.GCSViews
             ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Receiving WP's"
+                Text = "接收航点"
             };
 
             frmProgressReporter.DoWork += getWPs;
@@ -1733,7 +1733,7 @@ namespace ByAeroBeHero.GCSViews
             ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Sending WP's"
+                Text = "发送航点"
             };
 
             frmProgressReporter.DoWork += saveWPs;

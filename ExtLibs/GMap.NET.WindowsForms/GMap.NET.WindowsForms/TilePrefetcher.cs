@@ -55,7 +55,7 @@ using System.Drawing;
 
             MethodInvoker m = delegate
             {
-               label2.Text = "all tiles saved";
+               label2.Text = "全部保存";
             };
             Invoke(m);
          }
@@ -69,7 +69,7 @@ using System.Drawing;
 
             MethodInvoker m = delegate
             {
-               label2.Text = "saving tiles...";
+               label2.Text = "正在保存...";
             };
             Invoke(m);
          }
@@ -81,7 +81,7 @@ using System.Drawing;
          {
             MethodInvoker m = delegate
             {
-               label2.Text = left + " tile to save...";
+               label2.Text = left + " 正在保存...";
             };
             Invoke(m);
          }
@@ -139,11 +139,11 @@ using System.Drawing;
          {
             if(!e.Cancelled)
             {
-               MessageBox.Show(this, "Prefetch Complete! => " + ((int)e.Result).ToString() + " of " + all);
+               MessageBox.Show(this, "完成更新! => " + ((int)e.Result).ToString() + "/" + all);
             }
             else
             {
-               MessageBox.Show(this, "Prefetch Canceled! => " + ((int)e.Result).ToString() + " of " + all);
+               MessageBox.Show(this, "取消更新! => " + ((int)e.Result).ToString() + "/" + all);
             }
          }
 
@@ -266,7 +266,7 @@ using System.Drawing;
 
       void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
       {
-         this.label1.Text = "Fetching tile at zoom (" + zoom + "): " + ((int)e.UserState).ToString() + " of " + all + ", complete: " + e.ProgressPercentage.ToString() + "%";
+         this.label1.Text = "更新地图缩放比(" + zoom + "): " + ((int)e.UserState).ToString() + "/" + all + ", 完成: " + e.ProgressPercentage.ToString() + "%";
          this.progressBarDownload.Value = e.ProgressPercentage;
 
          if (Overlay != null)

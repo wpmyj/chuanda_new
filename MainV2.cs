@@ -224,6 +224,7 @@ namespace ByAeroBeHero
 
         bool joystickthreadrun = false;
 
+        string strConnect = "";
         Thread httpthread;
         Thread joystickthread;
         Thread serialreaderthread;
@@ -252,6 +253,7 @@ namespace ByAeroBeHero
                 config["logdirectory"] = value;
             }
         }
+
         static string _logdir = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + @"logs";
 
         public static MainSwitcher View;
@@ -793,7 +795,7 @@ namespace ByAeroBeHero
 
         private void CMB_serialport_Click(object sender, EventArgs e)
         {
-            if (_connectionControl.CMB_serialport.Items.Count > 0)
+            if (_connectionControl.CMB_serialport.Items.Count > 0 && strConnect.Contains("ByAero"))
                 this.MenuConnect.Visible = true;
             else
                 this.MenuConnect.Visible = false;
@@ -1253,7 +1255,7 @@ namespace ByAeroBeHero
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
         {
             comPortName = _connectionControl.CMB_serialport.Text;
-            if (_connectionControl.CMB_serialport.Items.Count > 0)
+            if (_connectionControl.CMB_serialport.Items.Count > 0 && strConnect.Contains("ByAero"))
                 this.MenuConnect.Visible = true;
             else
                 this.MenuConnect.Visible = false;
@@ -2969,9 +2971,10 @@ namespace ByAeroBeHero
 
         public void InitControl(string menuConnect) 
         {
-            if (menuConnect == "COM3 ByAeroBeHero (COM3)")
+            if (menuConnect.Contains("ByAero"))
             {
                 this.MenuConnect.Visible = true;
+                this.strConnect = menuConnect;
             }
             else 
             {

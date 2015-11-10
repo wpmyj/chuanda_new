@@ -264,8 +264,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 {
                     if ((float) changes[value] > (float) MainV2.comPort.MAV.param[value]*2.0f)
                         if (
-                            CustomMessageBox.Show(value + " has more than doubled the last input. Are you sure?",
-                                "Large Value", MessageBoxButtons.YesNo) == DialogResult.No)
+                            CustomMessageBox.Show(value + " 比最后的输入值大一倍多. 是否确定?",
+                                "参数设置", MessageBoxButtons.YesNo) == DialogResult.No)
                             return;
 
                     MainV2.comPort.setParam(value, (float) changes[value]);

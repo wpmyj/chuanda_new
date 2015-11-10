@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -1537,7 +1537,7 @@
             this.qvyaw.BackColor = System.Drawing.Color.Teal;
             this.qvyaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvyaw.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
-            this.qvyaw.desc = "航向角度(D)";
+            this.qvyaw.desc = "航向角度(D):";
             resources.ApplyResources(this.qvyaw, "qvyaw");
             this.qvyaw.Name = "qvyaw";
             this.qvyaw.number = 0D;
@@ -1549,7 +1549,7 @@
             this.qvroll.BackColor = System.Drawing.Color.Teal;
             this.qvroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvroll.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true));
-            this.qvroll.desc = "滚转角度(D)";
+            this.qvroll.desc = "滚转角度(D):";
             resources.ApplyResources(this.qvroll, "qvroll");
             this.qvroll.Name = "qvroll";
             this.qvroll.number = 0D;
@@ -1561,7 +1561,7 @@
             this.qvpitch.BackColor = System.Drawing.Color.Teal;
             this.qvpitch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvpitch.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true));
-            this.qvpitch.desc = "俯仰角度(D)";
+            this.qvpitch.desc = "俯仰角度(D):";
             resources.ApplyResources(this.qvpitch, "qvpitch");
             this.qvpitch.Name = "qvpitch";
             this.qvpitch.number = 0D;
@@ -1571,8 +1571,9 @@
             // lblHorizontalError
             // 
             resources.ApplyResources(this.lblHorizontalError, "lblHorizontalError");
+            this.lblHorizontalError.BackColor = System.Drawing.Color.Black;
             this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
-            this.lblHorizontalError.ForeColor = System.Drawing.Color.Cyan;
+            this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
             // 
             // bindingSource1
@@ -1582,8 +1583,9 @@
             // lblSataCount
             // 
             resources.ApplyResources(this.lblSataCount, "lblSataCount");
+            this.lblSataCount.BackColor = System.Drawing.Color.Black;
             this.lblSataCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "卫星数量: 0"));
-            this.lblSataCount.ForeColor = System.Drawing.Color.Cyan;
+            this.lblSataCount.ForeColor = System.Drawing.Color.White;
             this.lblSataCount.Name = "lblSataCount";
             // 
             // Qvtohome
@@ -1591,7 +1593,7 @@
             this.Qvtohome.BackColor = System.Drawing.Color.Teal;
             this.Qvtohome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvtohome.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
-            this.Qvtohome.desc = "距离返航点(M)";
+            this.Qvtohome.desc = "距离返航点(M):";
             resources.ApplyResources(this.Qvtohome, "Qvtohome");
             this.Qvtohome.Name = "Qvtohome";
             this.Qvtohome.number = 0D;
@@ -1603,7 +1605,7 @@
             this.Qvverspeed.BackColor = System.Drawing.Color.Teal;
             this.Qvverspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvverspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
-            this.Qvverspeed.desc = "垂直速度(M/S)";
+            this.Qvverspeed.desc = "垂直速度(M/S):";
             resources.ApplyResources(this.Qvverspeed, "Qvverspeed");
             this.Qvverspeed.Name = "Qvverspeed";
             this.Qvverspeed.number = 0D;
@@ -1615,7 +1617,7 @@
             this.Qvdist.BackColor = System.Drawing.Color.Teal;
             this.Qvdist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvdist.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
-            this.Qvdist.desc = "距离目标点(M)";
+            this.Qvdist.desc = "距离目标点(M):";
             resources.ApplyResources(this.Qvdist, "Qvdist");
             this.Qvdist.Name = "Qvdist";
             this.Qvdist.number = 0D;
@@ -1627,7 +1629,7 @@
             this.Qvgroundspeed.BackColor = System.Drawing.Color.Teal;
             this.Qvgroundspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvgroundspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
-            this.Qvgroundspeed.desc = "水平速度(M/S)";
+            this.Qvgroundspeed.desc = "水平速度(M/S):";
             resources.ApplyResources(this.Qvgroundspeed, "Qvgroundspeed");
             this.Qvgroundspeed.Name = "Qvgroundspeed";
             this.Qvgroundspeed.number = 0D;
@@ -1639,7 +1641,7 @@
             this.Qvalt.BackColor = System.Drawing.Color.Teal;
             this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
-            this.Qvalt.desc = "飞行器海拔(M)";
+            this.Qvalt.desc = "飞行器海拔(M):";
             resources.ApplyResources(this.Qvalt, "Qvalt");
             this.Qvalt.Name = "Qvalt";
             this.Qvalt.number = 0D;
@@ -1793,7 +1795,7 @@
             this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -1983,8 +1985,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle25;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -1992,8 +1994,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle26;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;

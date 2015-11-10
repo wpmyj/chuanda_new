@@ -88,7 +88,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 加速度计故障 的本地化字符串。
+        ///   查找类似 加速度计读取失败 的本地化字符串。
         /// </summary>
         public static string BadAccelHealth {
             get {
@@ -97,7 +97,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 AHRS故障 的本地化字符串。
+        ///   查找类似 AHRS故障读取失败 的本地化字符串。
         /// </summary>
         public static string BadAHRS {
             get {
@@ -106,7 +106,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 气压计故障 的本地化字符串。
+        ///   查找类似 气压计读取失败 的本地化字符串。
         /// </summary>
         public static string BadBaroHealth {
             get {
@@ -115,7 +115,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 罗盘故障 的本地化字符串。
+        ///   查找类似 罗盘读取失败 的本地化字符串。
         /// </summary>
         public static string BadCompassHealth {
             get {
@@ -133,7 +133,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 GPS 故障 的本地化字符串。
+        ///   查找类似 GPS读取失败 的本地化字符串。
         /// </summary>
         public static string BadGPSHealth {
             get {
@@ -142,7 +142,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 陀螺故障 的本地化字符串。
+        ///   查找类似 陀螺读取失败 的本地化字符串。
         /// </summary>
         public static string BadGyroHealth {
             get {
@@ -151,7 +151,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 雷达故障 的本地化字符串。
+        ///   查找类似 雷达读取失败 的本地化字符串。
         /// </summary>
         public static string BadLiDARHealth {
             get {
@@ -160,7 +160,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 光流故障 的本地化字符串。
+        ///   查找类似 光流读取失败 的本地化字符串。
         /// </summary>
         public static string BadOptFlowHealth {
             get {
@@ -667,7 +667,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 FailSafe 的本地化字符串。
+        ///   查找类似 故障保护 的本地化字符串。
         /// </summary>
         public static string FailSafe {
             get {
@@ -957,7 +957,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 NO RC Receiver 的本地化字符串。
+        ///   查找类似 没有遥控接收器 的本地化字符串。
         /// </summary>
         public static string NORCReceiver {
             get {

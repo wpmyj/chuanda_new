@@ -42,7 +42,7 @@ namespace ByAeroBeHero.Controls
             this.labelWithPseudoOpacity1.AutoSize = true;
             this.labelWithPseudoOpacity1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.Cyan;
+            this.labelWithPseudoOpacity1.ForeColor = System.Drawing.Color.White;
             this.labelWithPseudoOpacity1.Location = new System.Drawing.Point(3, 0);
             this.labelWithPseudoOpacity1.Name = "labelWithPseudoOpacity1";
             this.labelWithPseudoOpacity1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -53,12 +53,14 @@ namespace ByAeroBeHero.Controls
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelWithPseudoOpacity2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -71,7 +73,7 @@ namespace ByAeroBeHero.Controls
             this.labelWithPseudoOpacity2.AutoSize = true;
             this.labelWithPseudoOpacity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Lime;
+            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.White;
             this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(79, 0);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
             this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(70, 43);

@@ -483,25 +483,25 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>These are the latest trunk firmware, use at your own risk!!!</value>
   </data>
   <data name="BadGPSHealth" xml:space="preserve">
-    <value>GPS 故障</value>
+    <value>GPS读取失败</value>
   </data>
   <data name="BadGyroHealth" xml:space="preserve">
-    <value>陀螺故障</value>
+    <value>陀螺读取失败</value>
   </data>
   <data name="BadAccelHealth" xml:space="preserve">
-    <value>加速度计故障</value>
+    <value>加速度计读取失败</value>
   </data>
   <data name="BadCompassHealth" xml:space="preserve">
-    <value>罗盘故障</value>
+    <value>罗盘读取失败</value>
   </data>
   <data name="BadBaroHealth" xml:space="preserve">
-    <value>气压计故障</value>
+    <value>气压计读取失败</value>
   </data>
   <data name="BadLiDARHealth" xml:space="preserve">
-    <value>雷达故障</value>
+    <value>雷达读取失败</value>
   </data>
   <data name="BadOptFlowHealth" xml:space="preserve">
-    <value>光流故障</value>
+    <value>光流读取失败</value>
   </data>
   <data name="BadorNoTerrainData" xml:space="preserve">
     <value>没有地形数据</value>
@@ -510,10 +510,10 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>超出区域</value>
   </data>
   <data name="BadAHRS" xml:space="preserve">
-    <value>AHRS故障</value>
+    <value>AHRS故障读取失败</value>
   </data>
   <data name="NORCReceiver" xml:space="preserve">
-    <value>NO RC Receiver</value>
+    <value>没有遥控接收器</value>
   </data>
   <data name="AutoWP" xml:space="preserve">
     <value>Auto WP</value>
@@ -522,7 +522,7 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>确保你的桨不在飞机上</value>
   </data>
   <data name="FailSafe" xml:space="preserve">
-    <value>FailSafe</value>
+    <value>故障保护</value>
   </data>
   <data name="Error_binding" xml:space="preserve">
     <value>绑定错误</value>

@@ -53,6 +53,8 @@ namespace ByAeroBeHero.Controls
         bool _state = false;
         bool _failsafe = false;
         string _message = "";
+        float _ch6out = 0;
+        float _ch8out = 0;
 
         [System.ComponentModel.Browsable(true)]
         public Color numberColor 
@@ -200,6 +202,34 @@ namespace ByAeroBeHero.Controls
             } 
         }
 
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public float ch6out
+        {
+            get
+            {
+                return _ch6out;
+            }
+            set
+            {
+                _ch6out = value;
+                this.Invalidate();
+            }
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public float ch8out
+        {
+            get
+            {
+                return _ch8out;
+            }
+            set
+            {
+                _ch8out = value;
+                this.Invalidate();
+            }
+        }
+
         bool statuslast = false;
         DateTime armedtimer = DateTime.MinValue;
 
@@ -245,6 +275,21 @@ namespace ByAeroBeHero.Controls
             else if(this.Name == "fiBad")
             {
                 str = message;
+            }
+            else if(this.Name =="fiType")
+            {
+                if(ch6out>0 && ch8out ==0)
+                {
+                    str = "六轴";
+                }
+                else if (ch8out > 0)
+                {
+                    str = "八轴轴";
+                }
+                else 
+                {
+                    str = "四轴";
+                }
             }
 
             this.text = str;

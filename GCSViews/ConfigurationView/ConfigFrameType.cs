@@ -22,9 +22,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         public enum CopterType 
         {
-            Four = 4,
-            Six = 6,
-            Eight = 8
+            Four = 1,
+            Six = 2,
+            Eight = 3
         }
 
         private const float DisabledOpacity = 0.2F;

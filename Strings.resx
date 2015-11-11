@@ -579,13 +579,13 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>罗盘方差</value>
   </data>
   <data name="pos_horiz_variance" xml:space="preserve">
-    <value>pos horiz variance</value>
+    <value>POS水平方差</value>
   </data>
   <data name="pos_vert_variance" xml:space="preserve">
-    <value>pos vert variance</value>
+    <value>POS垂直方差</value>
   </data>
   <data name="terrain_alt_variance" xml:space="preserve">
-    <value>terrain alt variance</value>
+    <value>地形高度方差</value>
   </data>
   <data name="CopterTypeSelected" xml:space="preserve">
     <value>选择机架类型</value>

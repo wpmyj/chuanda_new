@@ -759,7 +759,7 @@ namespace ByAeroBeHero
                         if (fence.breach_status != (byte)MAVLink.FENCE_BREACH.NONE)
                         {
                             // fence breached
-                            messageHigh = "Fence Breach";
+                            messageHigh = "超出围栏范围";
                             messageHighTime = DateTime.Now;
                         }
 

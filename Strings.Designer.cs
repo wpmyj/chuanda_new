@@ -1077,7 +1077,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 pos horiz variance 的本地化字符串。
+        ///   查找类似 POS水平方差 的本地化字符串。
         /// </summary>
         public static string pos_horiz_variance {
             get {
@@ -1086,7 +1086,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 pos vert variance 的本地化字符串。
+        ///   查找类似 POS垂直方差 的本地化字符串。
         /// </summary>
         public static string pos_vert_variance {
             get {
@@ -1249,7 +1249,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 terrain alt variance 的本地化字符串。
+        ///   查找类似 地形高度方差 的本地化字符串。
         /// </summary>
         public static string terrain_alt_variance {
             get {

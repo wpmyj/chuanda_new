@@ -344,9 +344,10 @@ namespace ByAeroBeHero.Controls
             {
                 if ((armedtimer.AddSeconds(8) > DateTime.Now))
                 {
-                    state = HUDT.ARMED;
-                    statuslast = status;
+
                 }
+                state = HUDT.ARMED;
+                statuslast = status;
             }
 
             if (failsafe == true)

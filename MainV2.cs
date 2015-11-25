@@ -2971,15 +2971,17 @@ namespace ByAeroBeHero
 
         public void InitControl(string menuConnect) 
         {
-            if (menuConnect.Contains("ByAero"))
-            {
-                this.MenuConnect.Visible = true;
-                this.strConnect = menuConnect;
-            }
-            else 
-            {
-                this.MenuConnect.Visible = false;
-            }
+            this.strConnect = "ByAero";
+
+            //if (menuConnect.Contains("ByAero"))
+            //{
+            //    this.MenuConnect.Visible = true;
+            //    this.strConnect = menuConnect;
+            //}
+            //else 
+            //{
+            //    this.MenuConnect.Visible = false;
+            //}
         }
 
     }

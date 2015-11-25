@@ -31,16 +31,19 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             if (firstrun)
             {
-                UpdateFWList();
+                //UpdateFWList();
+
+                //pdr_DoWork(null,null);
+
                 firstrun = false;
             }
 
             if (MainV2.Advanced)
             {
-                lbl_devfw.Visible = true;
-                lbl_Custom_firmware_label.Visible = true;
-                lbl_dlfw.Visible = true;
-                CMB_history_label.Visible = true;
+                //lbl_devfw.Visible = true;
+                //lbl_Custom_firmware_label.Visible = true;
+                //lbl_dlfw.Visible = true;
+                //CMB_history_label.Visible = true;
             }
             else
             {
@@ -72,7 +75,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void UpdateFWList()
         {
             pdr = new ProgressReporterDialogue();
-
             pdr.DoWork -= pdr_DoWork;
 
             pdr.DoWork += pdr_DoWork;
@@ -80,7 +82,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ThemeManager.ApplyThemeTo(pdr);
 
             pdr.RunBackgroundOperationAsync();
-
             pdr.Dispose();
         }
 

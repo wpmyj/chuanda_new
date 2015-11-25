@@ -581,8 +581,8 @@ mc:Ignorable=""d""
 
                     bsv.BackColor = System.Drawing.Color.Teal;
                     bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
-                    bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
-                    bsv.HighlightColor1 = Color.FromArgb(192,255,255);
+                    bsv.HighlightColor2 = Color.Black;
+                    bsv.HighlightColor1 = Color.Black;
                     bsv.SelectedTextColor = Color.White;
                     bsv.UnSelectedTextColor = Color.Black;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
@@ -818,8 +818,8 @@ mc:Ignorable=""d""
 
                     bsv.BackColor = System.Drawing.Color.Teal;
                     bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
-                    bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
-                    bsv.HighlightColor1 = Color.FromArgb(192, 255, 255);
+                    bsv.HighlightColor2 = Color.Black;
+                    bsv.HighlightColor1 = Color.Black;
                     bsv.SelectedTextColor = Color.White;
                     bsv.UnSelectedTextColor = Color.Black;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;
@@ -1035,8 +1035,8 @@ mc:Ignorable=""d""
 
                     bsv.BackColor = System.Drawing.Color.Teal;
                     bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
-                    bsv.HighlightColor2 = Color.FromArgb(0, 192, 192);
-                    bsv.HighlightColor1 = Color.FromArgb(192, 255, 255);
+                    bsv.HighlightColor2 = Color.Black;
+                    bsv.HighlightColor1 = Color.Black;
                     bsv.SelectedTextColor = Color.White;
                     bsv.UnSelectedTextColor = Color.Black;
                     bsv.ButtonsAreaPencilColor = Color.DarkGray;

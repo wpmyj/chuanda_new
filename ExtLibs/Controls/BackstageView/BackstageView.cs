@@ -57,17 +57,17 @@ namespace ByAeroBeHero.Controls.BackstageView
 
         private BackstageViewPage popoutPage = null;
 
-        private int ButtonTopPos = 0;
+        private int ButtonTopPos = 5;
 
         public BackstageView()
         {
             InitializeComponent();
 
-            this.pnlMenu.Height = this.Height;
+            this.pnlMenu.Height = 42;
             this.pnlPages.Height = this.Height;
 
             pnlMenu.BackColor = System.Drawing.Color.Teal;
-            pnlMenu.PencilBorderColor = _buttonsAreaPencilColor;
+            pnlMenu.PencilBorderColor = System.Drawing.Color.Teal;
             pnlMenu.GradColor = this.BackColor;
 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -232,7 +232,7 @@ namespace ByAeroBeHero.Controls.BackstageView
 
             if (haschild)
             {
-                label = ">> " + label;
+                label = "" + label;
             }
             if (child)
             {
@@ -245,10 +245,10 @@ namespace ByAeroBeHero.Controls.BackstageView
                                 {
                                     Text = label,
                                     Tag = page,
-                                    Top = ButtonTopPos,
+                                    Left = ButtonTopPos,
                                     // Top = _items.TakeWhile(i => i != page).Sum(i => i.Spacing),
-                                    Width = this.pnlMenu.Width,
-                                    Height = ButtonHeight + heightextra,
+                                    Width = 120,
+                                    Height = 35,
                                     ContentPageColor = this.BackColor,
                                     PencilBorderColor = _buttonsAreaPencilColor,
                                     SelectedTextColor = _selectedTextColor,
@@ -262,7 +262,9 @@ namespace ByAeroBeHero.Controls.BackstageView
             lnkButton.Click += this.ButtonClick;
             lnkButton.DoubleClick += lnkButton_DoubleClick;
 
-            ButtonTopPos += lnkButton.Height;
+            ButtonTopPos += lnkButton.Width;
+
+            pnlMenu.Width = 1337;
         }
 
         public void DrawMenu(BackstageViewPage CurrentPage, bool force = false)
@@ -535,6 +537,11 @@ namespace ByAeroBeHero.Controls.BackstageView
         {
             UpdateDisplay();
             DrawMenu(_activePage, false);
+        }
+
+        private void btnRemote_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

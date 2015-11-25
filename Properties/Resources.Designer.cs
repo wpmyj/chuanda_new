@@ -613,9 +613,19 @@ namespace ByAeroBeHero.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        public static System.Drawing.Bitmap frames_06 {
+        public static System.Drawing.Bitmap frames_04 {
             get {
-                object obj = ResourceManager.GetObject("frames_06", resourceCulture);
+                object obj = ResourceManager.GetObject("frames-04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap frames_061 {
+            get {
+                object obj = ResourceManager.GetObject("frames-061", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -766,6 +776,16 @@ namespace ByAeroBeHero.Properties {
         public static System.Drawing.Bitmap FW_icons_2013_logos_12 {
             get {
                 object obj = ResourceManager.GetObject("FW icons 2013+logos-12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap FW_icons_2013_logos_121 {
+            get {
+                object obj = ResourceManager.GetObject("FW icons 2013+logos-121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

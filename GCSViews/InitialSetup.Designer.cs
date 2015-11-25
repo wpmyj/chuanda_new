@@ -76,11 +76,11 @@
             this.configHWBT1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT();
             this.backstageViewPageParachute = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configHWPa1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute();
-            this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.backstageViewPageinstfw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmware1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware();
+            this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
-            this.backstageViewPageinstfw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +94,7 @@
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.backstageView.Name = "backstageView";
+            this.backstageView.Pages.Add(this.backstageViewPageinstfw);
             this.backstageView.Pages.Add(this.backstageViewPagewizard);
             this.backstageView.Pages.Add(this.backstageViewPagemand);
             this.backstageView.Pages.Add(this.backstageViewPagetradheli);
@@ -116,7 +117,7 @@
             this.backstageView.Pages.Add(this.backstageViewPageMotorTest);
             this.backstageView.Pages.Add(this.backstageViewPagehwbt);
             this.backstageView.Pages.Add(this.backstageViewPageParachute);
-            this.backstageView.WidthMenu = 172;
+            this.backstageView.WidthMenu = 1000;
             // 
             // backstageViewPagewizard
             // 
@@ -195,6 +196,18 @@
             this.backstageViewPageaccel.Show = true;
             this.backstageViewPageaccel.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageaccel, "backstageViewPageaccel");
+
+            // 
+            // backstageViewPageinstfw
+            // 
+            this.backstageViewPageinstfw.Advanced = false;
+            //this.backstageViewPageinstfw.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
+            this.backstageViewPageinstfw.LinkText = "安装固件";
+            this.backstageViewPageinstfw.Page = this.configFirmware1;
+            this.backstageViewPageinstfw.Parent = null;
+            this.backstageViewPageinstfw.Show = true;
+            this.backstageViewPageinstfw.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPageinstfw, "backstageViewPageinstfw");
             // 
             // configAccelerometerCalibration
             // 
@@ -467,6 +480,12 @@
             // 
             resources.ApplyResources(this.configHWPa1, "configHWPa1");
             this.configHWPa1.Name = "configHWPa1";
+            
+            // 
+            // configFirmware1
+            // 
+            resources.ApplyResources(this.configFirmware1, "configFirmware1");
+            this.configFirmware1.Name = "configFirmware1";
             // 
             // backstageViewPagefw
             // 
@@ -478,11 +497,6 @@
             this.backstageViewPagefw.Show = false;
             this.backstageViewPagefw.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagefw, "backstageViewPagefw");
-            // 
-            // configFirmware1
-            // 
-            resources.ApplyResources(this.configFirmware1, "configFirmware1");
-            this.configFirmware1.Name = "configFirmware1";
             // 
             // backstageViewPagefwdisabled
             // 
@@ -499,17 +513,6 @@
             // 
             resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
             this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
-            // 
-            // backstageViewPageinstfw
-            // 
-            this.backstageViewPageinstfw.Advanced = false;
-            this.backstageViewPageinstfw.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isDisConnected", true));
-            this.backstageViewPageinstfw.LinkText = "Install Firmware";
-            this.backstageViewPageinstfw.Page = this.configFirmware1;
-            this.backstageViewPageinstfw.Parent = null;
-            this.backstageViewPageinstfw.Show = false;
-            this.backstageViewPageinstfw.Spacing = 30;
-            resources.ApplyResources(this.backstageViewPageinstfw, "backstageViewPageinstfw");
             // 
             // InitialSetup
             // 

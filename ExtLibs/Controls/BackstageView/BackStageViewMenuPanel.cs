@@ -22,7 +22,7 @@ namespace ByAeroBeHero.Controls.BackstageView
 
             var rc = new Rectangle(ClientSize.Width - GradientWidth, 0, GradientWidth, this.ClientSize.Height);
 
-            using (var brush = new LinearGradientBrush(rc, BackColor, GradColor, LinearGradientMode.Horizontal))
+            using (var brush = new LinearGradientBrush(rc, BackColor, BackColor, LinearGradientMode.Vertical))
             {
                 pevent.Graphics.FillRectangle(brush, rc);
             }

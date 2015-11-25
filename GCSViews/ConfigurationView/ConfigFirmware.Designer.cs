@@ -82,10 +82,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.pictureAntennaTracker = new ByAeroBeHero.Controls.ImageLabel();
             this.lbl_licence = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHilimage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAPHil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxACHil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxACHHil)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxAPM
@@ -300,27 +303,41 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.linkLabel1, "linkLabel1");
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.TabStop = true;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.progress);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Custom_firmware_label_Click);
             // 
             // ConfigFirmware
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lbl_status);
             this.Controls.Add(this.lbl_licence);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureAntennaTracker);
+            this.Controls.Add(this.lbl_Custom_firmware_label);
             this.Controls.Add(this.lbl_px4bl);
             this.Controls.Add(this.lbl_dlfw);
             this.Controls.Add(this.lbl_devfw);
-            this.Controls.Add(this.lbl_Custom_firmware_label);
             this.Controls.Add(this.CMB_history_label);
             this.Controls.Add(this.pictureBoxRover);
             this.Controls.Add(this.CMB_history);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lbl_status);
-            this.Controls.Add(this.progress);
             this.Controls.Add(this.pictureBoxACHHil);
             this.Controls.Add(this.pictureBoxACHil);
             this.Controls.Add(this.pictureBoxAPHil);
@@ -338,6 +355,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAPHil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxACHil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxACHHil)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,6 +371,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private Controls.ImageLabel pictureAntennaTracker;
         private Label lbl_licence;
         private LinkLabel linkLabel1;
+        private GroupBox groupBox1;
+        private Button button1;
 
     }
 }

@@ -362,5 +362,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             EEPROM_View_float_TextChanged(sender, e);
         }
+
+        private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            // 重绘
+            //e.Graphics.DrawRectangle(new Pen(Color.Black), e.CellBounds.X, e.CellBounds.Y, e.CellBounds.X + e.CellBounds.Width - 1, e.CellBounds.Y + e.CellBounds.Height - 1); 
+        }
     }
 }

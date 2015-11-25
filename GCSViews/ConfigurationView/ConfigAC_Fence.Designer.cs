@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigAC_Fence));
-            this.label1gftitle = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2rtlalt = new System.Windows.Forms.Label();
             this.mavlinkComboBox2 = new ByAeroBeHero.Controls.MavlinkComboBox();
@@ -43,34 +42,29 @@
             this.label6maxalt = new System.Windows.Forms.Label();
             this.label7maxrad = new System.Windows.Forms.Label();
             this.mavlinkNumericUpDown3 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.lineSeparator2 = new ByAeroBeHero.Controls.LineSeparator();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown3)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1gftitle
-            // 
-            resources.ApplyResources(this.label1gftitle, "label1gftitle");
-            this.label1gftitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1gftitle.Name = "label1gftitle";
             // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.label2rtlalt, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.mavlinkComboBox2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown1, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown2, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.mavlinkCheckBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3enable, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mavlinkComboBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4type, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label5action, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label6maxalt, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7maxrad, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown3, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label6maxalt, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label7maxrad, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label2rtlalt, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown1, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown2, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown3, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // label2rtlalt
@@ -80,12 +74,12 @@
             // 
             // mavlinkComboBox2
             // 
-            this.mavlinkComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.mavlinkComboBox2, "mavlinkComboBox2");
+            this.mavlinkComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mavlinkComboBox2.FormattingEnabled = true;
             this.mavlinkComboBox2.Name = "mavlinkComboBox2";
-            
             this.mavlinkComboBox2.ParamName = null;
+            this.mavlinkComboBox2.SubControl = null;
             // 
             // mavlinkNumericUpDown1
             // 
@@ -93,7 +87,6 @@
             this.mavlinkNumericUpDown1.Max = 1F;
             this.mavlinkNumericUpDown1.Min = 0F;
             this.mavlinkNumericUpDown1.Name = "mavlinkNumericUpDown1";
-            
             this.mavlinkNumericUpDown1.ParamName = null;
             // 
             // mavlinkNumericUpDown2
@@ -107,7 +100,6 @@
             0,
             0});
             this.mavlinkNumericUpDown2.Name = "mavlinkNumericUpDown2";
-            
             this.mavlinkNumericUpDown2.ParamName = null;
             this.mavlinkNumericUpDown2.Value = new decimal(new int[] {
             30,
@@ -119,9 +111,8 @@
             // 
             resources.ApplyResources(this.mavlinkCheckBox1, "mavlinkCheckBox1");
             this.mavlinkCheckBox1.Name = "mavlinkCheckBox1";
-            this.mavlinkCheckBox1.OffValue = 0F;
-            this.mavlinkCheckBox1.OnValue = 1F;
-            
+            this.mavlinkCheckBox1.OffValue = 0D;
+            this.mavlinkCheckBox1.OnValue = 1D;
             this.mavlinkCheckBox1.ParamName = null;
             this.mavlinkCheckBox1.UseVisualStyleBackColor = true;
             // 
@@ -132,12 +123,12 @@
             // 
             // mavlinkComboBox1
             // 
-            this.mavlinkComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.mavlinkComboBox1, "mavlinkComboBox1");
+            this.mavlinkComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mavlinkComboBox1.FormattingEnabled = true;
             this.mavlinkComboBox1.Name = "mavlinkComboBox1";
-            
             this.mavlinkComboBox1.ParamName = null;
+            this.mavlinkComboBox1.SubControl = null;
             // 
             // label4type
             // 
@@ -165,41 +156,33 @@
             this.mavlinkNumericUpDown3.Max = 1F;
             this.mavlinkNumericUpDown3.Min = 0F;
             this.mavlinkNumericUpDown3.Name = "mavlinkNumericUpDown3";
-            
             this.mavlinkNumericUpDown3.ParamName = null;
             // 
-            // lineSeparator2
+            // groupBox1
             // 
-            resources.ApplyResources(this.lineSeparator2, "lineSeparator2");
-            this.lineSeparator2.Name = "lineSeparator2";
-            this.lineSeparator2.Opacity1 = 0.6F;
-            this.lineSeparator2.Opacity2 = 0.7F;
-            this.lineSeparator2.Opacity3 = 0.1F;
-            this.lineSeparator2.PrimaryColor = System.Drawing.Color.Black;
-            this.lineSeparator2.SecondaryColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // ConfigAC_Fence
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.label1gftitle);
-            this.Controls.Add(this.lineSeparator2);
+            this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAC_Fence";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown3)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Controls.LineSeparator lineSeparator2;
-        private System.Windows.Forms.Label label1gftitle;
         private Controls.MavlinkCheckBox mavlinkCheckBox1;
         private Controls.MavlinkComboBox mavlinkComboBox1;
         private Controls.MavlinkComboBox mavlinkComboBox2;
@@ -213,5 +196,6 @@
         private System.Windows.Forms.Label label7maxrad;
         private System.Windows.Forms.Label label2rtlalt;
         private Controls.MavlinkNumericUpDown mavlinkNumericUpDown3;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

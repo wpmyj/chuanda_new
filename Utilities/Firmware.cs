@@ -558,7 +558,7 @@ namespace ByAeroBeHero.Utilities
                 {
                     if (temp.name.ToLower().Contains("arducopter")) 
                     {
-                        CustomMessageBox.Show(Strings.ThisBoardHasBeenRetired,Strings.Note);
+                       // CustomMessageBox.Show(Strings.ThisBoardHasBeenRetired,Strings.Note);
                     }
                 }
 
@@ -757,14 +757,14 @@ namespace ByAeroBeHero.Utilities
                     {
                         ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp","InvalidKeyException","");
                         log.Error(ex);
-                        CustomMessageBox.Show(Strings.YouAreUsingUnsupportedHardware , Strings.InvalidCert); 
+                        //CustomMessageBox.Show(Strings.YouAreUsingUnsupportedHardware , Strings.InvalidCert); 
                         up.skipotp = true;
                     }
                     catch (FormatException ex)
                     {
                         ByAeroBeHero.Utilities.Tracking.AddEvent("FWUpload", "verifyotp", "FormatException", "");
                         log.Error(ex);
-                        CustomMessageBox.Show(Strings.YouAreUsingUnsupportedHardware, Strings.InvalidCert);
+                        //CustomMessageBox.Show(Strings.YouAreUsingUnsupportedHardware, Strings.InvalidCert);
                         up.skipotp = true;
                     }
                     catch (IOException ex) 

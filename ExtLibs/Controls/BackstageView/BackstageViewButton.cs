@@ -13,7 +13,7 @@ namespace ByAeroBeHero.Controls.BackstageView
         internal Color PencilBorderColor = Color.White;
         internal Color SelectedTextColor = Color.White;
         internal Color UnSelectedTextColor = Color.Gray;
-        internal Color HighlightColor1 = SystemColors.Highlight;
+        internal Color HighlightColor1 = Color.Black;
         internal Color HighlightColor2 = SystemColors.MenuHighlight;
         private bool _isMouseOver;
 
@@ -75,7 +75,7 @@ namespace ByAeroBeHero.Controls.BackstageView
                var rect2 = new Rectangle(0, 0, Width, Height);
 
               // g.FillRectangle(new LinearGradientBrush(rect1, HighlightColor1, HighlightColor2, LinearGradientMode.Horizontal), rect1);
-               g.FillRectangle(new LinearGradientBrush(rect2, HighlightColor2, HighlightColor1, LinearGradientMode.Horizontal), rect2);
+               g.FillRectangle(new LinearGradientBrush(rect2, HighlightColor1, HighlightColor1, LinearGradientMode.Vertical), rect2);
 
                var butPen = new Pen(HighlightColor1);
                g.DrawLine(butPen, 0, 0, Width, 0);
@@ -100,7 +100,7 @@ namespace ByAeroBeHero.Controls.BackstageView
                g.DrawLine(pencilBrush, Width - 1, 0, Width - 1, Height - 1);
                g.FillPolygon(arrowBrush, arrowPoints); 
 
-               g.DrawPolygon(pencilBrush, arrowPoints);
+              // g.DrawPolygon(pencilBrush, arrowPoints);
 
                
            }

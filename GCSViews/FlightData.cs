@@ -669,7 +669,6 @@ namespace ByAeroBeHero.GCSViews
             TRK_zoom.Value = (float)gMapControl1.Zoom;
 
             gMapControl1.EmptyTileColor = System.Drawing.Color.Teal;
-
             //Zoomlevel.Minimum = gMapControl1.MapProvider.MinZoom;
             //Zoomlevel.Maximum = 24;
             //Zoomlevel.Value = Convert.ToDecimal(gMapControl1.Zoom);

@@ -31,20 +31,22 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigAccelerometerCalibration));
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_Accel_user = new System.Windows.Forms.Label();
             this.BUT_calib_accell = new ByAeroBeHero.Controls.MyButton();
-            this.lineSeparator2 = new ByAeroBeHero.Controls.LineSeparator();
             this.BUT_level = new ByAeroBeHero.Controls.MyButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Name = "label5";
             // 
             // label4
             // 
@@ -63,16 +65,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BUT_calib_accell.UseVisualStyleBackColor = true;
             this.BUT_calib_accell.Click += new System.EventHandler(this.BUT_calib_accell_Click);
             // 
-            // lineSeparator2
-            // 
-            resources.ApplyResources(this.lineSeparator2, "lineSeparator2");
-            this.lineSeparator2.Name = "lineSeparator2";
-            this.lineSeparator2.Opacity1 = 0.6F;
-            this.lineSeparator2.Opacity2 = 0.7F;
-            this.lineSeparator2.Opacity3 = 0.1F;
-            this.lineSeparator2.PrimaryColor = System.Drawing.Color.Black;
-            this.lineSeparator2.SecondaryColor = System.Drawing.Color.Gainsboro;
-            // 
             // BUT_level
             // 
             resources.ApplyResources(this.BUT_level, "BUT_level");
@@ -85,31 +77,75 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label4, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.lbl_Accel_user, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.BUT_calib_accell, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.BUT_level, 0, 1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
             // ConfigAccelerometerCalibration
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.BUT_level);
-            this.Controls.Add(this.lbl_Accel_user);
-            this.Controls.Add(this.BUT_calib_accell);
-            this.Controls.Add(this.lineSeparator2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAccelerometerCalibration";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private LineSeparator lineSeparator2;
         private MyButton BUT_calib_accell;
         private System.Windows.Forms.Label lbl_Accel_user;
         private MyButton BUT_level;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

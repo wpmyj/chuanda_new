@@ -54,9 +54,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARpitch = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.BARthrottle = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxElevons
@@ -248,6 +252,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1.Controls.Add(this.BUT_BindDSM2);
             this.groupBox1.Controls.Add(this.BUT_BindDSM8);
             this.groupBox1.Controls.Add(this.BUT_BindDSMX);
+            this.groupBox1.Controls.Add(this.groupBoxElevons);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -286,32 +291,47 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BAR5);
+            this.groupBox2.Controls.Add(this.BAR6);
+            this.groupBox2.Controls.Add(this.BAR7);
+            this.groupBox2.Controls.Add(this.BAR8);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.BARthrottle);
+            this.groupBox3.Controls.Add(this.BARroll);
+            this.groupBox3.Controls.Add(this.BARyaw);
+            this.groupBox3.Controls.Add(this.BARpitch);
+            this.groupBox3.Controls.Add(this.CHK_revch1);
+            this.groupBox3.Controls.Add(this.CHK_revch2);
+            this.groupBox3.Controls.Add(this.CHK_revch3);
+            this.groupBox3.Controls.Add(this.CHK_revch4);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
             // ConfigRadioInput
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.BARthrottle);
-            this.Controls.Add(this.BARpitch);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBoxElevons);
-            this.Controls.Add(this.CHK_revch3);
-            this.Controls.Add(this.CHK_revch4);
-            this.Controls.Add(this.CHK_revch2);
-            this.Controls.Add(this.CHK_revch1);
             this.Controls.Add(this.BUT_Calibrateradio);
-            this.Controls.Add(this.BAR8);
-            this.Controls.Add(this.BAR7);
-            this.Controls.Add(this.BAR6);
-            this.Controls.Add(this.BAR5);
-            this.Controls.Add(this.BARyaw);
-            this.Controls.Add(this.BARroll);
             this.Name = "ConfigRadioInput";
             this.groupBoxElevons.ResumeLayout(false);
             this.groupBoxElevons.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -340,5 +360,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.GroupBox groupBox1;
         private HorizontalProgressBar2 BARpitch;
         private HorizontalProgressBar2 BARthrottle;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

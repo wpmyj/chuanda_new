@@ -75,11 +75,13 @@ namespace ByAeroBeHero.GCSViews
             // remeber last page accessed
             foreach (BackstageViewPage page in backstageView.Pages)
             {
+                
                 if (page.LinkText == lastpagename && page.Show)
                 {
                     backstageView.ActivatePage(page);
                     break;
                 }
+
             }
 
             ThemeManager.ApplyThemeTo(this);

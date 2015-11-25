@@ -1796,7 +1796,7 @@
             this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -1826,6 +1826,7 @@
             this.gMapControl1.ShowTileGridLines = false;
             this.gMapControl1.Zoom = 3D;
             this.gMapControl1.Click += new System.EventHandler(this.gMapControl1_Click);
+            this.gMapControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.mymap_Paint);
             this.gMapControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseDown);
             this.gMapControl1.MouseLeave += new System.EventHandler(this.gMapControl1_MouseLeave);
             this.gMapControl1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.gMapControl1_MouseMove);

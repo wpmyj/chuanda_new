@@ -34,11 +34,12 @@
             // 
             // backstageView
             // 
+            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
             resources.ApplyResources(this.backstageView, "backstageView");
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.backstageView.Name = "backstageView";
-            this.backstageView.WidthMenu = 172;
+            this.backstageView.WidthMenu = 1337;
             // 
             // SoftwareConfig
             // 

@@ -227,7 +227,7 @@
     <value>41, 12</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>低电量</value>
+    <value>低电压</value>
   </data>
   <data name="label4.ToolTip" xml:space="preserve">
     <value />
@@ -308,7 +308,7 @@
     <value />
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>电台</value>
+    <value>遥控器</value>
   </data>
   <data name="groupBox2.ToolTip" xml:space="preserve">
     <value />
@@ -320,7 +320,7 @@
     <value />
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>电池</value>
+    <value>电池、遥控器、地面站保护设置</value>
   </data>
   <data name="groupBox4.ToolTip" xml:space="preserve">
     <value />

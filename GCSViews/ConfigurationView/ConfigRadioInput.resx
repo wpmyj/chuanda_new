@@ -117,83 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;CHK_mixmode.Name" xml:space="preserve">
-    <value>CHK_mixmode</value>
-  </data>
-  <data name="&gt;&gt;CHK_mixmode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_mixmode.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_mixmode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.Name" xml:space="preserve">
-    <value>CHK_elevonch2rev</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch2rev.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.Name" xml:space="preserve">
-    <value>CHK_elevonrev</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonrev.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.Name" xml:space="preserve">
-    <value>CHK_elevonch1rev</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.Parent" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;CHK_elevonch1rev.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="groupBoxElevons.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="groupBoxElevons.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 39</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="groupBoxElevons.TabIndex" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="groupBoxElevons.Text" xml:space="preserve">
-    <value>Elevon Config</value>
-  </data>
-  <data name="groupBoxElevons.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.Name" xml:space="preserve">
-    <value>groupBoxElevons</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxElevons.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="CHK_mixmode.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -201,11 +125,12 @@
   <data name="CHK_mixmode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CHK_mixmode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 18</value>
+    <value>13, 17</value>
   </data>
   <data name="CHK_mixmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>66, 15</value>
   </data>
   <data name="CHK_mixmode.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -232,10 +157,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_elevonch2rev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 18</value>
+    <value>293, 17</value>
   </data>
   <data name="CHK_elevonch2rev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 16</value>
+    <value>114, 15</value>
   </data>
   <data name="CHK_elevonch2rev.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -262,10 +187,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_elevonrev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 18</value>
+    <value>83, 17</value>
   </data>
   <data name="CHK_elevonrev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 16</value>
+    <value>90, 15</value>
   </data>
   <data name="CHK_elevonrev.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -292,10 +217,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_elevonch1rev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 18</value>
+    <value>176, 17</value>
   </data>
   <data name="CHK_elevonch1rev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 16</value>
+    <value>114, 15</value>
   </data>
   <data name="CHK_elevonch1rev.TabIndex" type="System.Int32, mscorlib">
     <value>109</value>
@@ -315,6 +240,33 @@
   <data name="&gt;&gt;CHK_elevonch1rev.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBoxElevons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="groupBoxElevons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 36</value>
+  </data>
+  <data name="groupBoxElevons.TabIndex" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="groupBoxElevons.Text" xml:space="preserve">
+    <value>Elevon Config</value>
+  </data>
+  <data name="groupBoxElevons.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.Name" xml:space="preserve">
+    <value>groupBoxElevons</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxElevons.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="CHK_revch3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -322,10 +274,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 130</value>
+    <value>206, 113</value>
   </data>
   <data name="CHK_revch3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>73, 21</value>
   </data>
   <data name="CHK_revch3.TabIndex" type="System.Int32, mscorlib">
     <value>124</value>
@@ -352,10 +304,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 177</value>
+    <value>206, 156</value>
   </data>
   <data name="CHK_revch4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>73, 21</value>
   </data>
   <data name="CHK_revch4.TabIndex" type="System.Int32, mscorlib">
     <value>123</value>
@@ -382,10 +334,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 85</value>
+    <value>206, 72</value>
   </data>
   <data name="CHK_revch2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>73, 21</value>
   </data>
   <data name="CHK_revch2.TabIndex" type="System.Int32, mscorlib">
     <value>122</value>
@@ -412,10 +364,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_revch1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 38</value>
+    <value>206, 28</value>
   </data>
   <data name="CHK_revch1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>73, 21</value>
   </data>
   <data name="CHK_revch1.TabIndex" type="System.Int32, mscorlib">
     <value>121</value>
@@ -439,10 +391,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_BindDSM8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 14</value>
+    <value>138, 13</value>
   </data>
   <data name="BUT_BindDSM8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 21</value>
+    <value>65, 19</value>
   </data>
   <data name="BUT_BindDSM8.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -466,10 +418,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_BindDSMX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 14</value>
+    <value>71, 13</value>
   </data>
   <data name="BUT_BindDSMX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 21</value>
+    <value>65, 19</value>
   </data>
   <data name="BUT_BindDSMX.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -493,10 +445,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_BindDSM2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 14</value>
+    <value>6, 13</value>
   </data>
   <data name="BUT_BindDSM2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 21</value>
+    <value>63, 19</value>
   </data>
   <data name="BUT_BindDSM2.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
@@ -520,10 +472,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_Calibrateradio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 314</value>
+    <value>156, 315</value>
   </data>
   <data name="BUT_Calibrateradio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 21</value>
+    <value>134, 25</value>
   </data>
   <data name="BUT_Calibrateradio.TabIndex" type="System.Int32, mscorlib">
     <value>120</value>
@@ -541,13 +493,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BUT_Calibrateradio.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="BAR8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
   </data>
   <data name="BAR8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 160</value>
+    <value>17, 210</value>
   </data>
   <data name="BAR8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BAR8.TabIndex" type="System.Int32, mscorlib">
     <value>119</value>
@@ -564,11 +519,14 @@
   <data name="&gt;&gt;BAR8.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="BAR7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="BAR7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 113</value>
+    <value>17, 151</value>
   </data>
   <data name="BAR7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BAR7.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -585,11 +543,14 @@
   <data name="&gt;&gt;BAR7.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="BAR6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="BAR6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 68</value>
+    <value>17, 88</value>
   </data>
   <data name="BAR6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BAR6.TabIndex" type="System.Int32, mscorlib">
     <value>117</value>
@@ -606,11 +567,14 @@
   <data name="&gt;&gt;BAR6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="BAR5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="BAR5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 21</value>
+    <value>17, 22</value>
   </data>
   <data name="BAR5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BAR5.TabIndex" type="System.Int32, mscorlib">
     <value>116</value>
@@ -627,11 +591,14 @@
   <data name="&gt;&gt;BAR5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="BARyaw.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="BARyaw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 177</value>
+    <value>17, 210</value>
   </data>
   <data name="BARyaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BARyaw.TabIndex" type="System.Int32, mscorlib">
     <value>113</value>
@@ -648,11 +615,14 @@
   <data name="&gt;&gt;BARyaw.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="BARroll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="BARroll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 31</value>
+    <value>17, 22</value>
   </data>
   <data name="BARroll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BARroll.TabIndex" type="System.Int32, mscorlib">
     <value>112</value>
@@ -670,10 +640,10 @@
     <value>1</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>615, 418</value>
+    <value>615, 383</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 39</value>
+    <value>10, 36</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>129</value>
@@ -694,13 +664,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="BARpitch.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
   </data>
   <data name="BARpitch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 78</value>
+    <value>17, 88</value>
   </data>
   <data name="BARpitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BARpitch.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
@@ -717,11 +690,14 @@
   <data name="&gt;&gt;BARpitch.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="BARthrottle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="BARthrottle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 130</value>
+    <value>17, 151</value>
   </data>
   <data name="BARthrottle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>170, 25</value>
   </data>
   <data name="BARthrottle.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -738,14 +714,14 @@
   <data name="&gt;&gt;BARthrottle.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 28</value>
+    <value>226, 3</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 229</value>
+    <value>202, 289</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>132</value>
@@ -763,13 +739,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 28</value>
+    <value>16, 3</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 229</value>
+    <value>204, 289</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -787,19 +766,121 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 68</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 34</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>2.校准遥控器时切勿安装螺旋桨及其遥控器不要做解锁动作并保
+持2秒以上,否则飞控会解锁,电机会启动.</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 34</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>1.在进行遥控器校准时，依次校准每一个遥杆，校准的过程中不
+可做解锁动作，否则可能会解锁。
+</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 3</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>361, 171</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>6, 11</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 8.25pt</value>
+  </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>684, 457</value>
+    <value>837, 454</value>
   </data>
   <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
     <value>currentStateBindingSource</value>

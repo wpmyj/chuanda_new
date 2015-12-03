@@ -42,6 +42,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblCalibrate = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -113,15 +114,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Accel_user, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.BUT_calib_accell, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.BUT_level, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.BUT_level, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblCalibrate, 1, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // lblCalibrate
+            // 
+            resources.ApplyResources(this.lblCalibrate, "lblCalibrate");
+            this.lblCalibrate.Name = "lblCalibrate";
             // 
             // ConfigAccelerometerCalibration
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.BUT_calib_accell);
+            this.Controls.Add(this.lbl_Accel_user);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAccelerometerCalibration";
@@ -130,6 +137,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -147,5 +155,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label lblCalibrate;
     }
 }

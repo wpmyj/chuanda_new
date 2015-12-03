@@ -127,7 +127,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 317</value>
+    <value>681, 359</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 12</value>
@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -178,13 +178,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="pictureBoxPlus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBoxPlus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 253</value>
+    <value>681, 345</value>
   </data>
   <data name="pictureBoxPlus.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -208,7 +208,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxPlus.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="pictureBoxX.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -247,7 +247,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>649, 255</value>
+    <value>674, 347</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 12</value>
@@ -271,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>21</value>
   </data>
   <data name="radioButton_V.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -280,7 +280,7 @@
     <value>NoControl</value>
   </data>
   <data name="radioButton_V.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 258</value>
+    <value>677, 350</value>
   </data>
   <data name="radioButton_V.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -301,7 +301,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton_V.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -310,7 +310,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 256</value>
+    <value>671, 348</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 12</value>
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="radioButton_H.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -343,7 +343,7 @@
     <value>NoControl</value>
   </data>
   <data name="radioButton_H.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 256</value>
+    <value>676, 348</value>
   </data>
   <data name="radioButton_H.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -364,7 +364,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton_H.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -424,7 +424,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="radioButton_Y.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -433,7 +433,7 @@
     <value>NoControl</value>
   </data>
   <data name="radioButton_Y.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 257</value>
+    <value>680, 349</value>
   </data>
   <data name="radioButton_Y.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -454,13 +454,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton_Y.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="pictureBoxY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBoxY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 256</value>
+    <value>680, 348</value>
   </data>
   <data name="pictureBoxY.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -484,7 +484,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxY.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -517,7 +517,7 @@
     <value>1</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 261</value>
+    <value>677, 353</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -538,10 +538,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 256</value>
+    <value>680, 348</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 16</value>
@@ -565,7 +565,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="RadbtnFiveRotor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -573,14 +573,17 @@
   <data name="RadbtnFiveRotor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="RadbtnFiveRotor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="RadbtnFiveRotor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="RadbtnFiveRotor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 123</value>
+    <value>263, 183</value>
   </data>
   <data name="RadbtnFiveRotor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 16</value>
+    <value>62, 21</value>
   </data>
   <data name="RadbtnFiveRotor.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -606,11 +609,17 @@
   <data name="RadbtnSevenRotor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="RadbtnSevenRotor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="RadbtnSevenRotor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="RadbtnSevenRotor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 123</value>
+    <value>460, 183</value>
   </data>
   <data name="RadbtnSevenRotor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 16</value>
+    <value>62, 21</value>
   </data>
   <data name="RadbtnSevenRotor.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -636,11 +645,17 @@
   <data name="RadbtnFourRotor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="RadbtnFourRotor.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="RadbtnFourRotor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="RadbtnFourRotor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 123</value>
+    <value>67, 183</value>
   </data>
   <data name="RadbtnFourRotor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 16</value>
+    <value>62, 21</value>
   </data>
   <data name="RadbtnFourRotor.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -658,7 +673,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;RadbtnFourRotor.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -667,10 +682,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>342, 19</value>
+    <value>408, 17</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 78</value>
+    <value>165, 137</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -688,7 +703,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -697,10 +712,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 19</value>
+    <value>15, 17</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 78</value>
+    <value>165, 138</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -718,7 +733,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -727,10 +742,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 19</value>
+    <value>211, 17</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 78</value>
+    <value>165, 138</value>
   </data>
   <data name="pictureBoxWithPseudoOpacity1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -748,7 +763,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;pictureBoxWithPseudoOpacity1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="btnSelectRackType.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -757,10 +772,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnSelectRackType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 221</value>
+    <value>273, 275</value>
   </data>
   <data name="btnSelectRackType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 34</value>
+    <value>111, 24</value>
   </data>
   <data name="btnSelectRackType.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -778,30 +793,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSelectRackType.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="configDefaultSettings1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 316</value>
-  </data>
-  <data name="configDefaultSettings1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="configDefaultSettings1.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="configDefaultSettings1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;configDefaultSettings1.Name" xml:space="preserve">
-    <value>configDefaultSettings1</value>
-  </data>
-  <data name="&gt;&gt;configDefaultSettings1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.1.5802.17734, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;configDefaultSettings1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;configDefaultSettings1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="radioButton_VTail.AutoSize" type="System.Boolean, mscorlib">
@@ -811,7 +802,7 @@
     <value>NoControl</value>
   </data>
   <data name="radioButton_VTail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>658, 253</value>
+    <value>683, 345</value>
   </data>
   <data name="radioButton_VTail.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 13</value>
@@ -832,13 +823,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;radioButton_VTail.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="pictureBoxVTail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBoxVTail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 253</value>
+    <value>685, 345</value>
   </data>
   <data name="pictureBoxVTail.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -862,13 +853,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxVTail.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="pictureBoxV.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBoxV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 253</value>
+    <value>681, 345</value>
   </data>
   <data name="pictureBoxV.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -892,13 +883,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxV.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="pictureBoxH.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBoxH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>652, 257</value>
+    <value>677, 349</value>
   </data>
   <data name="pictureBoxH.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 10</value>
@@ -922,19 +913,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBoxH.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 32</value>
+    <value>3, 19</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>477, 146</value>
+    <value>590, 216</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -952,13 +946,16 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="RadbtnSevenRotor" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RadbtnFiveRotor" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxWithPseudoOpacity2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxWithPseudoOpacity1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="RadbtnFourRotor" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxWithPseudoOpacity3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33334,Percent,33.33334,Percent,33.33334" /&gt;&lt;Rows Styles="Percent,80,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="RadbtnSevenRotor" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RadbtnFiveRotor" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxWithPseudoOpacity1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="RadbtnFourRotor" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxWithPseudoOpacity3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxWithPseudoOpacity2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33.33334,Percent,33.33334,Percent,33.33334" /&gt;&lt;Rows Styles="Percent,80,Percent,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 16</value>
+    <value>22, 31</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>545, 199</value>
+    <value>596, 238</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -976,8 +973,585 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tlpExplain.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblText4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblText4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblText4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblText4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 110</value>
+  </data>
+  <data name="lblText4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 47</value>
+  </data>
+  <data name="lblText4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblText4.Text" xml:space="preserve">
+    <value>2.每个类型选择图中标记的M1至M8与主控器输出端口M1至M8相对应，箭头表示电机和桨的旋转方向。
+
+</value>
+  </data>
+  <data name="lblText4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;lblText4.Name" xml:space="preserve">
+    <value>lblText4</value>
+  </data>
+  <data name="&gt;&gt;lblText4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblText4.Parent" xml:space="preserve">
+    <value>tlpExplain</value>
+  </data>
+  <data name="&gt;&gt;lblText4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lblText1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblText1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblText1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lblText1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 46</value>
+  </data>
+  <data name="lblText1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblText1.Text" xml:space="preserve">
+    <value>    欢迎使用BY多旋翼飞行控制器。您可根据自己的情况在此页面选择您所使用的飞行器类型。
+</value>
+  </data>
+  <data name="&gt;&gt;lblText1.Name" xml:space="preserve">
+    <value>lblText1</value>
+  </data>
+  <data name="&gt;&gt;lblText1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblText1.Parent" xml:space="preserve">
+    <value>tlpExplain</value>
+  </data>
+  <data name="&gt;&gt;lblText1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblText2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblText2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9.75pt, style=Bold</value>
+  </data>
+  <data name="lblText2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblText2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 46</value>
+  </data>
+  <data name="lblText2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 18</value>
+  </data>
+  <data name="lblText2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblText2.Text" xml:space="preserve">
+    <value>提示
+
+</value>
+  </data>
+  <data name="lblText2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;lblText2.Name" xml:space="preserve">
+    <value>lblText2</value>
+  </data>
+  <data name="&gt;&gt;lblText2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblText2.Parent" xml:space="preserve">
+    <value>tlpExplain</value>
+  </data>
+  <data name="&gt;&gt;lblText2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblText3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblText3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblText3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblText3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 64</value>
+  </data>
+  <data name="lblText3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 46</value>
+  </data>
+  <data name="lblText3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblText3.Text" xml:space="preserve">
+    <value>1.进行软件调参之前，请确保您已根据《飞控系统用户手册》正确安装飞行器。
+
+</value>
+  </data>
+  <data name="lblText3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomLeft</value>
+  </data>
+  <data name="&gt;&gt;lblText3.Name" xml:space="preserve">
+    <value>lblText3</value>
+  </data>
+  <data name="&gt;&gt;lblText3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblText3.Parent" xml:space="preserve">
+    <value>tlpExplain</value>
+  </data>
+  <data name="&gt;&gt;lblText3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tlpExplain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="tlpExplain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 17</value>
+  </data>
+  <data name="tlpExplain.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tlpExplain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 157</value>
+  </data>
+  <data name="tlpExplain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.Name" xml:space="preserve">
+    <value>tlpExplain</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpExplain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblText4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,29.41176,Percent,11.76471,Percent,29.41176,Percent,29.41176" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>658, 31</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 238</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>类型说明</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rbtn6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 23</value>
+  </data>
+  <data name="rbtn6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn6.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="rbtn6.Text" xml:space="preserve">
+    <value>6号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn6.Name" xml:space="preserve">
+    <value>rbtn6</value>
+  </data>
+  <data name="&gt;&gt;rbtn6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn6.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbtn8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 21</value>
+  </data>
+  <data name="rbtn8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn8.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="rbtn8.Text" xml:space="preserve">
+    <value>8号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn8.Name" xml:space="preserve">
+    <value>rbtn8</value>
+  </data>
+  <data name="&gt;&gt;rbtn8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn8.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbtn7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 22</value>
+  </data>
+  <data name="rbtn7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn7.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="rbtn7.Text" xml:space="preserve">
+    <value>7号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn7.Name" xml:space="preserve">
+    <value>rbtn7</value>
+  </data>
+  <data name="&gt;&gt;rbtn7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn7.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rbtn4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 23</value>
+  </data>
+  <data name="rbtn4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn4.TabIndex" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="rbtn4.Text" xml:space="preserve">
+    <value>4号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn4.Name" xml:space="preserve">
+    <value>rbtn4</value>
+  </data>
+  <data name="&gt;&gt;rbtn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn4.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rbtn5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 23</value>
+  </data>
+  <data name="rbtn5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn5.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="rbtn5.Text" xml:space="preserve">
+    <value>5号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn5.Name" xml:space="preserve">
+    <value>rbtn5</value>
+  </data>
+  <data name="&gt;&gt;rbtn5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn5.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rbtn3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 23</value>
+  </data>
+  <data name="rbtn3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn3.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="rbtn3.Text" xml:space="preserve">
+    <value>3号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn3.Name" xml:space="preserve">
+    <value>rbtn3</value>
+  </data>
+  <data name="&gt;&gt;rbtn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn3.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rbtn2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="rbtn2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn2.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="rbtn2.Text" xml:space="preserve">
+    <value>2号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn2.Name" xml:space="preserve">
+    <value>rbtn2</value>
+  </data>
+  <data name="&gt;&gt;rbtn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn2.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn2.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rbtn1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="rbtn1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtn1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="rbtn1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rbtn1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="rbtn1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 21</value>
+  </data>
+  <data name="rbtn1.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="rbtn1.Text" xml:space="preserve">
+    <value>1号旋翼</value>
+  </data>
+  <data name="&gt;&gt;rbtn1.Name" xml:space="preserve">
+    <value>rbtn1</value>
+  </data>
+  <data name="&gt;&gt;rbtn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtn1.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;rbtn1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="groupBox5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 331</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 67</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>电机测试</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnMotorTest.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="btnMotorTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnMotorTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>273, 416</value>
+  </data>
+  <data name="btnMotorTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
+  </data>
+  <data name="btnMotorTest.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="btnMotorTest.Text" xml:space="preserve">
+    <value>电机测试</value>
+  </data>
+  <data name="&gt;&gt;btnMotorTest.Name" xml:space="preserve">
+    <value>btnMotorTest</value>
+  </data>
+  <data name="&gt;&gt;btnMotorTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMotorTest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnMotorTest.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="configDefaultSettings1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 358</value>
+  </data>
+  <data name="configDefaultSettings1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="configDefaultSettings1.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="configDefaultSettings1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;configDefaultSettings1.Name" xml:space="preserve">
+    <value>configDefaultSettings1</value>
+  </data>
+  <data name="&gt;&gt;configDefaultSettings1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.1.5815.23747, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;configDefaultSettings1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;configDefaultSettings1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -988,7 +1562,13 @@
     <value>True</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 359</value>
+    <value>988, 739</value>
+  </data>
+  <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
+    <value>currentStateBindingSource</value>
+  </data>
+  <data name="&gt;&gt;currentStateBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigFrameType</value>

@@ -341,6 +341,51 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
+        ///   查找类似 您选择的是X型四旋翼飞行器 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeInstruction1 {
+            get {
+                return ResourceManager.GetString("CopterTypeInstruction1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 1.电机测试用于测试电机的旋转方向是否与图示一致以及电调与主控器端口连接是否正确。 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeInstruction2 {
+            get {
+                return ResourceManager.GetString("CopterTypeInstruction2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 2.请确保每个螺旋桨的安装方向与电机旋转方向一致。 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeInstruction3 {
+            get {
+                return ResourceManager.GetString("CopterTypeInstruction3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 您选择的是X型六旋翼飞行器 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeInstruction4 {
+            get {
+                return ResourceManager.GetString("CopterTypeInstruction4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 您选择的是X型八旋翼飞行器 的本地化字符串。
+        /// </summary>
+        public static string CopterTypeInstruction5 {
+            get {
+                return ResourceManager.GetString("CopterTypeInstruction5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 选择机架类型 的本地化字符串。
         /// </summary>
         public static string CopterTypeSelected {

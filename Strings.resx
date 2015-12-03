@@ -596,4 +596,19 @@ Please contact your hardware vendor about signing your hardware.</value>
   <data name="CopterTypeSetSuccessed" xml:space="preserve">
     <value>选择机架类型成功</value>
   </data>
+  <data name="CopterTypeInstruction1" xml:space="preserve">
+    <value>您选择的是X型四旋翼飞行器</value>
+  </data>
+  <data name="CopterTypeInstruction2" xml:space="preserve">
+    <value>1.电机测试用于测试电机的旋转方向是否与图示一致以及电调与主控器端口连接是否正确。</value>
+  </data>
+  <data name="CopterTypeInstruction3" xml:space="preserve">
+    <value>2.请确保每个螺旋桨的安装方向与电机旋转方向一致。</value>
+  </data>
+  <data name="CopterTypeInstruction4" xml:space="preserve">
+    <value>您选择的是X型六旋翼飞行器</value>
+  </data>
+  <data name="CopterTypeInstruction5" xml:space="preserve">
+    <value>您选择的是X型八旋翼飞行器</value>
+  </data>
 </root>

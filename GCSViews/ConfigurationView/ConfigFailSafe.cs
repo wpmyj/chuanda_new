@@ -63,6 +63,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             CustomMessageBox.Show("确保你的螺旋桨没有在飞机上！", "故障保护", MessageBoxButtons.OK,
                 MessageBoxIcon.Exclamation);
+
+            mavlinkNumericUpDownFS_BATT_MAH.Visible = false;
         }
 
         public void Deactivate()

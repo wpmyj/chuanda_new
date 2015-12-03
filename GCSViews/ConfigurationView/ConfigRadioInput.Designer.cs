@@ -53,14 +53,18 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BARpitch = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.BARthrottle = new ByAeroBeHero.Controls.HorizontalProgressBar2();
-            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxElevons
@@ -162,8 +166,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR8.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR8.DrawLabel = true;
-            this.BAR8.Label = "通道 8";
             resources.ApplyResources(this.BAR8, "BAR8");
+            this.BAR8.Label = "通道 8";
             this.BAR8.Maximum = 2200;
             this.BAR8.maxline = 0;
             this.BAR8.Minimum = 800;
@@ -177,8 +181,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR7.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR7.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR7.DrawLabel = true;
-            this.BAR7.Label = "通道 7";
             resources.ApplyResources(this.BAR7, "BAR7");
+            this.BAR7.Label = "通道 7";
             this.BAR7.Maximum = 2200;
             this.BAR7.maxline = 0;
             this.BAR7.Minimum = 800;
@@ -192,8 +196,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR6.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR6.DrawLabel = true;
-            this.BAR6.Label = "通道 6";
             resources.ApplyResources(this.BAR6, "BAR6");
+            this.BAR6.Label = "通道 6";
             this.BAR6.Maximum = 2200;
             this.BAR6.maxline = 0;
             this.BAR6.Minimum = 800;
@@ -207,8 +211,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BAR5.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BAR5.DrawLabel = true;
-            this.BAR5.Label = "通道 5";
             resources.ApplyResources(this.BAR5, "BAR5");
+            this.BAR5.Label = "通道 5";
             this.BAR5.Maximum = 2200;
             this.BAR5.maxline = 0;
             this.BAR5.Minimum = 800;
@@ -222,8 +226,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARyaw.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARyaw.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARyaw.DrawLabel = true;
-            this.BARyaw.Label = "航向";
             resources.ApplyResources(this.BARyaw, "BARyaw");
+            this.BARyaw.Label = "航向";
             this.BARyaw.Maximum = 2200;
             this.BARyaw.maxline = 0;
             this.BARyaw.Minimum = 800;
@@ -237,8 +241,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARroll.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARroll.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARroll.DrawLabel = true;
-            this.BARroll.Label = "滚转";
             resources.ApplyResources(this.BARroll, "BARroll");
+            this.BARroll.Label = "滚转";
             this.BARroll.Maximum = 2200;
             this.BARroll.maxline = 0;
             this.BARroll.Minimum = 800;
@@ -262,8 +266,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARpitch.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARpitch.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARpitch.DrawLabel = true;
-            this.BARpitch.Label = "俯仰";
             resources.ApplyResources(this.BARpitch, "BARpitch");
+            this.BARpitch.Label = "俯仰";
             this.BARpitch.Maximum = 2200;
             this.BARpitch.maxline = 0;
             this.BARpitch.Minimum = 800;
@@ -277,8 +281,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARthrottle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
             this.BARthrottle.BorderColor = System.Drawing.SystemColors.ActiveBorder;
             this.BARthrottle.DrawLabel = true;
-            this.BARthrottle.Label = "油门";
             resources.ApplyResources(this.BARthrottle, "BARthrottle");
+            this.BARthrottle.Label = "油门";
             this.BARthrottle.Maximum = 2200;
             this.BARthrottle.maxline = 0;
             this.BARthrottle.Minimum = 800;
@@ -286,10 +290,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARthrottle.Name = "BARthrottle";
             this.BARthrottle.Value = 1500;
             this.BARthrottle.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            // 
-            // currentStateBindingSource
-            // 
-            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // groupBox2
             // 
@@ -315,10 +315,33 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // currentStateBindingSource
+            // 
+            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // ConfigRadioInput
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -327,10 +350,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBoxElevons.ResumeLayout(false);
             this.groupBoxElevons.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,5 +387,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private HorizontalProgressBar2 BARthrottle;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

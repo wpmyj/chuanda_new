@@ -27,16 +27,30 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             Eight = 3
         }
 
+        public enum MotorTest
+        {
+            One = 11,
+            Two = 12,
+            Three = 13,
+            Four = 14,
+            Five = 15,
+            Six = 16,
+            Seven = 17,
+            Eight = 18
+        }
+
         private const float DisabledOpacity = 0.2F;
         private const float EnabledOpacity = 1.0F;
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         private bool indochange;
         private int iCopterType;
+        private int iMotorTest;
 
         public ConfigFrameType()
         {
             InitializeComponent();
             //configDefaultSettings1.OnChange += configDefaultSettings1_OnChange;
+            ControlRabtn();
         }
 
         public void Activate()
@@ -254,11 +268,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
 #endregion
 
-        #region 加载参数
+        #region 选择机架类型
         private void btnSelectRackType_Click(object sender, EventArgs e)
         {
             string paramName = "COPTER_TYPE";
-            if (MainV2.comPort.setParams(paramName, iCopterType))
+            if (iCopterType != 0 && MainV2.comPort.setParams(paramName, iCopterType))
                 CustomMessageBox.Show(string.Format(Strings.CopterTypeSetSuccessed, "CopterType"), Strings.CopterTypeSelected,
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else  
@@ -268,21 +282,141 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void RadbtnFourRotor_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnFourRotor.Checked)
+            if (this.RadbtnFourRotor.Checked) 
+            {
                 this.iCopterType = (int)CopterType.Four;
+                this.lblText1.Text = Strings.CopterTypeInstruction1;
+                this.lblText3.Text = Strings.CopterTypeInstruction2;
+                this.lblText4.Text = Strings.CopterTypeInstruction3;
+
+                ControlRabtn();
+            }
         }
 
         private void RadbtnFiveRotor_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnFiveRotor.Checked)
+            if (this.RadbtnFiveRotor.Checked) 
+            {
                 this.iCopterType = (int)CopterType.Six;
+                this.lblText1.Text = Strings.CopterTypeInstruction4;
+                this.lblText3.Text = Strings.CopterTypeInstruction2;
+                this.lblText4.Text = Strings.CopterTypeInstruction3;
+
+                ControlRabtn();
+            } 
         }
 
         private void RadbtnSevenRotor_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnSevenRotor.Checked)
+            if (this.RadbtnSevenRotor.Checked) 
+            {
                 this.iCopterType = (int)CopterType.Eight;
+                this.lblText1.Text = Strings.CopterTypeInstruction5;
+                this.lblText3.Text = Strings.CopterTypeInstruction2;
+                this.lblText4.Text = Strings.CopterTypeInstruction3;
+
+                ControlRabtn();
+            }
         }
         #endregion
+
+        #region 电机测试
+        private void rbtn1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn1.Checked)
+                this.iMotorTest = (int)MotorTest.One;
+        }
+
+        private void rbtn2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn2.Checked)
+                this.iMotorTest = (int)MotorTest.Two;
+        }
+
+        private void rbtn3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn3.Checked)
+                this.iMotorTest = (int)MotorTest.Three;
+        }
+
+        private void rbtn4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn4.Checked)
+                this.iMotorTest = (int)MotorTest.Four;
+        }
+
+        private void rbtn5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn5.Checked)
+                this.iMotorTest = (int)MotorTest.Five;
+        }
+
+        private void rbtn6_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn6.Checked)
+                this.iMotorTest = (int)MotorTest.Six;
+        }
+
+        private void rbtn7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn7.Checked)
+                this.iMotorTest = (int)MotorTest.Seven;
+        }
+
+        private void rbtn8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.rbtn8.Checked)
+                this.iMotorTest = (int)MotorTest.Eight;
+        }
+
+        private void ControlRabtn() 
+        {
+            this.rbtn1.Enabled = true;
+            this.rbtn2.Enabled = true;
+            this.rbtn3.Enabled = true;
+            this.rbtn4.Enabled = true;
+            this.rbtn5.Enabled = true;
+            this.rbtn6.Enabled = true;
+            this.rbtn7.Enabled = true;
+            this.rbtn8.Enabled = true;
+
+
+            if (iCopterType == 1) 
+            {
+                this.rbtn5.Enabled = false;
+                this.rbtn6.Enabled = false;
+                this.rbtn7.Enabled = false;
+                this.rbtn8.Enabled = false;
+            }
+            else if(iCopterType == 2)
+            {
+                this.rbtn7.Enabled = false;
+                this.rbtn8.Enabled = false;
+            }
+            else if (iCopterType == 3)
+            {
+            
+            }
+            else
+            {
+                this.rbtn1.Enabled = false;
+                this.rbtn2.Enabled = false;
+                this.rbtn3.Enabled = false;
+                this.rbtn4.Enabled = false;
+                this.rbtn5.Enabled = false;
+                this.rbtn6.Enabled = false;
+                this.rbtn7.Enabled = false;
+                this.rbtn8.Enabled = false;
+            }
+        }
+
+        private void btnMotorTest_Click(object sender, EventArgs e)
+        {
+            string paramName = "Motor_Test";
+            MainV2.comPort.setParams(paramName, iMotorTest);
+        }
+        #endregion
+
+
     }
 }

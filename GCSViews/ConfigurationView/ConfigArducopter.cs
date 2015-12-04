@@ -17,6 +17,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private readonly Hashtable changes = new Hashtable();
         internal bool startup = true;
 
+
         public ConfigArducopter()
         {
             InitializeComponent();

@@ -5,11 +5,17 @@ using System.Linq;
 using System.Windows.Forms;
 using ByAeroBeHero.Controls;
 using ByAeroBeHero.Utilities;
+using System.Collections;
 
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigFlightModes : UserControl, IActivate, IDeactivate
     {
+        private int iMode;
+
+        private readonly Hashtable changes = new Hashtable();
+        internal bool startup = true;
+
         [Flags]
         public enum SimpleMode
         {
@@ -121,6 +127,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 try
                 {
+                     startup = true;
+                     changes.Clear();
+
                     updateDropDown(CMB_fmode1, "FLTMODE1");
                     updateDropDown(CMB_fmode2, "FLTMODE2");
                     updateDropDown(CMB_fmode3, "FLTMODE3");
@@ -159,14 +168,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                         chk_ss5.Checked = ((simple >> 4 & 1) == 1);
                         chk_ss6.Checked = ((simple >> 5 & 1) == 1);
                     }
+
+                    //CH7_OPT.setup(
+                    //ParameterMetaDataRepository.GetParameterOptionsInt("CH7_OPT", MainV2.comPort.MAV.cs.firmware.ToString())
+                    //.ToList(), "CH7_OPT", MainV2.comPort.MAV.param);
+
+                    startup = false;
                 }
                 catch
                 {
                 }
             }
 
-            timer.Tick += timer_Tick;
+            
 
+            timer.Tick += timer_Tick;
             timer.Enabled = true;
             timer.Interval = 100;
             timer.Start();
@@ -250,7 +266,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2) // ac2
             {
                 pwm = MainV2.comPort.MAV.cs.ch5in;
-                LBL_flightmodepwm.Text = "5: " + MainV2.comPort.MAV.cs.ch5in;
+                LBL_flightmodepwm.Text = MainV2.comPort.MAV.cs.ch5in.ToString();
             }
 
             Control[] fmodelist = {CMB_fmode1, CMB_fmode2, CMB_fmode3, CMB_fmode4, CMB_fmode5, CMB_fmode6};
@@ -262,7 +278,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             var no = readSwitch(pwm);
 
-            fmodelist[no].BackColor = Color.GreenYellow;
+            //fmodelist[iMode].BackColor = Color.Red;
+            //模式选择
+            iMode = (int)no;
+            selectMode(pwm, fmodelist);
         }
 
         // from arducopter code
@@ -278,13 +297,60 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             return 0;
         }
 
+        private void selectMode(float inpwm, Control[] fmodelist) 
+        {
+            var pulsewidth = (int)inpwm;
+            if (pulsewidth > 1490 && pulsewidth <= 1620)
+            {
+                CMB_fmode4.BackColor = Color.Violet;
+                label1.Text = "中档";
+                CMB_fmode1.Visible = false;
+                CMB_fmode4.Visible = true;
+                CMB_fmode6.Visible = false;
+                CB_simple1.Visible = false;
+                CB_simple4.Visible = true;
+                CB_simple6.Visible = false;
+                chk_ss1.Visible = false;
+                chk_ss4.Visible = true;
+                chk_ss6.Visible = false;
+            }
+            else if (pulsewidth >= 1750)
+            {
+                CMB_fmode6.BackColor = Color.GreenYellow;
+                label1.Text = "高档";
+                CMB_fmode1.Visible = false;
+                CMB_fmode4.Visible = false;
+                CMB_fmode6.Visible = true;
+                CB_simple1.Visible = false;
+                CB_simple4.Visible = false;
+                CB_simple6.Visible = true;
+                chk_ss1.Visible = false;
+                chk_ss4.Visible = false;
+                chk_ss6.Visible = true;
+            }
+            else 
+            {
+                CMB_fmode1.BackColor = Color.Silver;
+                label1.Text = "低档";
+                CMB_fmode1.Visible = true;
+                CMB_fmode4.Visible = false;
+                CMB_fmode6.Visible = false;
+                CB_simple1.Visible = true;
+                CB_simple4.Visible = false;
+                CB_simple6.Visible = false;
+                chk_ss1.Visible = true;
+                chk_ss4.Visible = false;
+                chk_ss6.Visible = false;
+            }
+        }
+
         private void BUT_SaveModes_Click(object sender, EventArgs e)
         {
             try
             {
                 if (MainV2.comPort.MAV.param.ContainsKey("FLTMODE1"))
                 {
-                    MainV2.comPort.setParam("FLTMODE1", int.Parse(CMB_fmode1.SelectedValue.ToString()));
+                    MainV2.comPort.setParam("FLTMODE2", int.Parse(CMB_fmode1.SelectedValue.ToString()));
                     MainV2.comPort.setParam("FLTMODE2", int.Parse(CMB_fmode2.SelectedValue.ToString()));
                     MainV2.comPort.setParam("FLTMODE3", int.Parse(CMB_fmode3.SelectedValue.ToString()));
                     MainV2.comPort.setParam("FLTMODE4", int.Parse(CMB_fmode4.SelectedValue.ToString()));
@@ -303,23 +369,32 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
                 if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2) // ac2
                 {
+                    int iSimple = 0;
+                    if (iMode == 1)
+                        iSimple = 1;
+                    if (iMode == 3)
+                        iSimple = 8;
+                    if (iMode == 5)
+                        iSimple = 32;
+
                     // simple
-                    var value = (float) (CB_simple1.Checked ? (int) SimpleMode.Simple1 : 0) +
-                                (CB_simple2.Checked ? (int) SimpleMode.Simple2 : 0) +
-                                (CB_simple3.Checked ? (int) SimpleMode.Simple3 : 0)
-                                + (CB_simple4.Checked ? (int) SimpleMode.Simple4 : 0) +
-                                (CB_simple5.Checked ? (int) SimpleMode.Simple5 : 0) +
-                                (CB_simple6.Checked ? (int) SimpleMode.Simple6 : 0);
+                    var value = (float)(CB_simple1.Checked ? (int)SimpleMode.Simple1 : 0)
+                    +(CB_simple2.Checked ? (int)SimpleMode.Simple2 : 0) +
+                    (CB_simple3.Checked ? (int)SimpleMode.Simple3 : 0)
+                    + (CB_simple4.Checked ? (int)SimpleMode.Simple4 : 0) +
+                    (CB_simple5.Checked ? (int)SimpleMode.Simple5 : 0) +
+                    (CB_simple6.Checked ? (int)SimpleMode.Simple6 : 0);
                     if (MainV2.comPort.MAV.param.ContainsKey("SIMPLE"))
                         MainV2.comPort.setParam("SIMPLE", value);
 
                     // supersimple
-                    value = (float) (chk_ss1.Checked ? (int) SimpleMode.Simple1 : 0) +
-                            (chk_ss2.Checked ? (int) SimpleMode.Simple2 : 0) +
-                            (chk_ss3.Checked ? (int) SimpleMode.Simple3 : 0)
-                            + (chk_ss4.Checked ? (int) SimpleMode.Simple4 : 0) +
-                            (chk_ss5.Checked ? (int) SimpleMode.Simple5 : 0) +
-                            (chk_ss6.Checked ? (int) SimpleMode.Simple6 : 0);
+                    value = (float)(chk_ss1.Checked ? (int)SimpleMode.Simple1 : 0)
+                    +
+                        (chk_ss2.Checked ? (int)SimpleMode.Simple2 : 0) +
+                        (chk_ss3.Checked ? (int)SimpleMode.Simple3 : 0)
+                        + (chk_ss4.Checked ? (int)SimpleMode.Simple4 : 0) +
+                        (chk_ss5.Checked ? (int)SimpleMode.Simple5 : 0) +
+                        (chk_ss6.Checked ? (int)SimpleMode.Simple6 : 0);
                     if (MainV2.comPort.MAV.param.ContainsKey("SUPER_SIMPLE"))
                         MainV2.comPort.setParam("SUPER_SIMPLE", value);
                 }
@@ -394,5 +469,64 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 items[0].Enabled = enable;
             }
         }
+        #region
+        //private void mBSave_Click(object sender, EventArgs e)
+        //{
+        //    var temp = (Hashtable) changes.Clone();
+
+        //    foreach (string value in temp.Keys)
+        //    {
+        //        try
+        //        {
+        //            MainV2.comPort.setParam(value, (float) changes[value]);
+
+        //            changes.Remove(value);
+
+        //            try
+        //            {
+        //                //set control as well
+        //                var textControls = Controls.Find(value, true);
+        //                if (textControls.Length > 0)
+        //                {
+        //                    textControls[0].BackColor = Color.FromArgb(0x43, 0x44, 0x45);
+        //                }
+        //            }
+        //            catch
+        //            {
+        //            }
+        //        }
+        //        catch
+        //        {
+        //            CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR);
+        //        }
+        //    }
+        //}
+
+        //private void numeric_ValueUpdated(object sender, EventArgs e)
+        //{
+        //    EEPROM_View_float_TextChanged(sender, e);
+        //}
+
+        //internal void EEPROM_View_float_TextChanged(object sender, EventArgs e)
+        //{
+        //    if (startup)
+        //        return;
+
+        //    float value = 0;
+        //    var name = ((Control)sender).Name;
+
+        //    // do domainupdown state check
+        //    try
+        //    {
+        //        value = ((MAVLinkParamChanged)e).value;
+        //        changes[name] = value;
+        //        ((Control)sender).BackColor = Color.Green;
+        //    }
+        //    catch (Exception)
+        //    {
+        //        ((Control)sender).BackColor = Color.Red;
+        //    }
+        //}
+        #endregion
     }
 }

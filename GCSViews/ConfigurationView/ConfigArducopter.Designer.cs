@@ -663,7 +663,6 @@
             this.tableLayoutPanel1.Controls.Add(this.HLD_LAT_P, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.STB_YAW_P, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.STB_PIT_P, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.STB_RLL_P, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label23, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.label21, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label20, 1, 0);
@@ -730,6 +729,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.tableLayoutPanel1);
+            this.groupBox3.Controls.Add(this.STB_RLL_P);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;

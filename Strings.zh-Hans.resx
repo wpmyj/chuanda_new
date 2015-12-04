@@ -245,7 +245,7 @@
     <value>全部参数树</value>
   </data>
   <data name="GeoFence" xml:space="preserve">
-    <value>区域设置</value>
+    <value>区域限定</value>
   </data>
   <data name="StandardParams" xml:space="preserve">
     <value>标准参数</value>

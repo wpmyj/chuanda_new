@@ -101,11 +101,11 @@
             this.HLD_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.STB_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.STB_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.STB_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.STB_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.THR_RATE_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
@@ -697,15 +697,6 @@
             this.STB_PIT_P.ParamName = null;
             this.STB_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
-            // STB_RLL_P
-            // 
-            resources.ApplyResources(this.STB_RLL_P, "STB_RLL_P");
-            this.STB_RLL_P.Max = 1F;
-            this.STB_RLL_P.Min = 0F;
-            this.STB_RLL_P.Name = "STB_RLL_P";
-            this.STB_RLL_P.ParamName = null;
-            this.STB_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // label23
             // 
             resources.ApplyResources(this.label23, "label23");
@@ -725,6 +716,15 @@
             // 
             resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
+            // 
+            // STB_RLL_P
+            // 
+            resources.ApplyResources(this.STB_RLL_P, "STB_RLL_P");
+            this.STB_RLL_P.Max = 1F;
+            this.STB_RLL_P.Min = 0F;
+            this.STB_RLL_P.Name = "STB_RLL_P";
+            this.STB_RLL_P.ParamName = null;
+            this.STB_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // groupBox3
             // 

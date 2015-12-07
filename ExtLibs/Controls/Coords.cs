@@ -13,7 +13,7 @@ namespace ByAeroBeHero.Controls
     public partial class Coords : UserControl
     {
         [System.ComponentModel.Browsable(true), DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
-        public string System { get { return CMB_coordsystem.Text; } set { CMB_coordsystem.Text = value; } }
+        public string Sys { get { return CMB_coordsystem.Text; } set { CMB_coordsystem.Text = value; } }
         public double Lat { get { return point.Latitude; } set { point.Latitude = value; this.Invalidate(); } }
         public double Lng { get { return point.Longitude; } set { point.Longitude = value; this.Invalidate(); } }
         public double Alt { get { return _alt; } set { _alt = value; this.Invalidate(); } }
@@ -48,11 +48,11 @@ namespace ByAeroBeHero.Controls
 
             PointF text = new PointF(3, 3);
 
-            if (System == CoordsSystems.GEO.ToString())
+            if (Sys == CoordsSystems.GEO.ToString())
             {
-               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000") + "\n" +"经度|"+ Lng.ToString("0.000000") + "\n" + "HOME|" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
-            } 
-            else  if (System == CoordsSystems.UTM.ToString())
+               e.Graphics.DrawString("|纬度:"+ Lat.ToString("0.000000")+"      " +"|经度:"+ Lng.ToString("0.000000")+"      " + "|家:" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
+            }
+            else if (Sys == CoordsSystems.UTM.ToString())
             {
                 try
                 {
@@ -74,7 +74,7 @@ namespace ByAeroBeHero.Controls
                 }
                 catch { }
             }
-            else if (System == CoordsSystems.MGRS.ToString())
+            else if (Sys == CoordsSystems.MGRS.ToString())
             {
                 try
                 {

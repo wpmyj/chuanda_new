@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigAC_Fence));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2rtlalt = new System.Windows.Forms.Label();
             this.mavlinkComboBox2 = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.mavlinkNumericUpDown1 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDown2 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkCheckBox1 = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.label3enable = new System.Windows.Forms.Label();
             this.mavlinkComboBox1 = new ByAeroBeHero.Controls.MavlinkComboBox();
@@ -41,13 +38,25 @@
             this.label5action = new System.Windows.Forms.Label();
             this.label6maxalt = new System.Windows.Forms.Label();
             this.label7maxrad = new System.Windows.Forms.Label();
+            this.label2rtlalt = new System.Windows.Forms.Label();
+            this.mavlinkNumericUpDown1 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDown2 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkNumericUpDown3 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown3)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -67,11 +76,6 @@
             this.tableLayoutPanel1.Controls.Add(this.mavlinkNumericUpDown3, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // label2rtlalt
-            // 
-            resources.ApplyResources(this.label2rtlalt, "label2rtlalt");
-            this.label2rtlalt.Name = "label2rtlalt";
-            // 
             // mavlinkComboBox2
             // 
             resources.ApplyResources(this.mavlinkComboBox2, "mavlinkComboBox2");
@@ -80,32 +84,6 @@
             this.mavlinkComboBox2.Name = "mavlinkComboBox2";
             this.mavlinkComboBox2.ParamName = null;
             this.mavlinkComboBox2.SubControl = null;
-            // 
-            // mavlinkNumericUpDown1
-            // 
-            resources.ApplyResources(this.mavlinkNumericUpDown1, "mavlinkNumericUpDown1");
-            this.mavlinkNumericUpDown1.Max = 1F;
-            this.mavlinkNumericUpDown1.Min = 0F;
-            this.mavlinkNumericUpDown1.Name = "mavlinkNumericUpDown1";
-            this.mavlinkNumericUpDown1.ParamName = null;
-            // 
-            // mavlinkNumericUpDown2
-            // 
-            resources.ApplyResources(this.mavlinkNumericUpDown2, "mavlinkNumericUpDown2");
-            this.mavlinkNumericUpDown2.Max = 1F;
-            this.mavlinkNumericUpDown2.Min = 0F;
-            this.mavlinkNumericUpDown2.Minimum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.mavlinkNumericUpDown2.Name = "mavlinkNumericUpDown2";
-            this.mavlinkNumericUpDown2.ParamName = null;
-            this.mavlinkNumericUpDown2.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
             // 
             // mavlinkCheckBox1
             // 
@@ -150,6 +128,37 @@
             resources.ApplyResources(this.label7maxrad, "label7maxrad");
             this.label7maxrad.Name = "label7maxrad";
             // 
+            // label2rtlalt
+            // 
+            resources.ApplyResources(this.label2rtlalt, "label2rtlalt");
+            this.label2rtlalt.Name = "label2rtlalt";
+            // 
+            // mavlinkNumericUpDown1
+            // 
+            resources.ApplyResources(this.mavlinkNumericUpDown1, "mavlinkNumericUpDown1");
+            this.mavlinkNumericUpDown1.Max = 1F;
+            this.mavlinkNumericUpDown1.Min = 0F;
+            this.mavlinkNumericUpDown1.Name = "mavlinkNumericUpDown1";
+            this.mavlinkNumericUpDown1.ParamName = null;
+            // 
+            // mavlinkNumericUpDown2
+            // 
+            resources.ApplyResources(this.mavlinkNumericUpDown2, "mavlinkNumericUpDown2");
+            this.mavlinkNumericUpDown2.Max = 1F;
+            this.mavlinkNumericUpDown2.Min = 0F;
+            this.mavlinkNumericUpDown2.Minimum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.mavlinkNumericUpDown2.Name = "mavlinkNumericUpDown2";
+            this.mavlinkNumericUpDown2.ParamName = null;
+            this.mavlinkNumericUpDown2.Value = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            // 
             // mavlinkNumericUpDown3
             // 
             resources.ApplyResources(this.mavlinkNumericUpDown3, "mavlinkNumericUpDown3");
@@ -165,10 +174,53 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 4);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
             // ConfigAC_Fence
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAC_Fence";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -177,6 +229,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown3)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -197,5 +252,12 @@
         private System.Windows.Forms.Label label2rtlalt;
         private Controls.MavlinkNumericUpDown mavlinkNumericUpDown3;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
     }
 }

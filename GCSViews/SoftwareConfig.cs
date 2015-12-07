@@ -52,9 +52,8 @@ namespace ByAeroBeHero.GCSViews
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
-
-                        start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
+                        start = AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
+                        //start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
                     }
 
                     //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane)
@@ -67,10 +66,10 @@ namespace ByAeroBeHero.GCSViews
                     //    start = AddBackstageViewPage(new ConfigArdurover(), Strings.BasicTuning);
                     //}
 
-                    if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduTracker)
-                    {
-                        start = AddBackstageViewPage(new ConfigAntennaTracker(), Strings.ExtendedTuning);
-                    }
+                    //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduTracker)
+                    //{
+                    //    start = AddBackstageViewPage(new ConfigAntennaTracker(), Strings.ExtendedTuning);
+                    //}
 
                     //AddBackstageViewPage(
                     //    new ConfigFriendlyParams { ParameterMode = ParameterMetaDataConstants.Standard },

@@ -149,7 +149,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 }
 
                 var incrementf = 0.01f;
-                if (increment.Length > 0)
+                 if (increment.Length > 0)
                     float.TryParse(increment, NumberStyles.Float, CultureInfo.InvariantCulture, out incrementf);
 
                 var RNG = new RangeControl(item.paramname, item.desc, item.title, incrementf, 1, item.min, item.max,
@@ -170,7 +170,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("Failed to process " + item.paramname + "\n" + ex);
+                CustomMessageBox.Show("未能处理 " + item.paramname + "\n" + ex);
             }
         }
 
@@ -194,7 +194,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("Failed to change setting " + ex.Message);
+                CustomMessageBox.Show("更改设置失败！");
                 return;
             }
             TXT_info.AppendText("set " + rc.Name + " " + rc.Value + "\r\n");
@@ -208,7 +208,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 }
                 catch (Exception ex)
                 {
-                    CustomMessageBox.Show("Failed to change setting " + ex.Message);
+                    CustomMessageBox.Show("更改设置失败！");
                     return;
                 }
             }

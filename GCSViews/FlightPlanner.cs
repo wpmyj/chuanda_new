@@ -520,15 +520,22 @@ namespace ByAeroBeHero.GCSViews
 
         void updateCMDParams()
         {
+
             cmdParamNames = readCMDXML();
 
             List<string> cmds = new List<string>();
 
-            foreach (string item in cmdParamNames.Keys)
-            {
-                cmds.Add(item);
-            }
-
+            //foreach (string item in cmdParamNames.Keys)
+            //{
+            //    cmds.Add(item);
+            //}
+            cmds.Add("WAYPOINT");
+            cmds.Add("LOITER_TURNS");
+            cmds.Add("LOITER_TIME");
+            cmds.Add("RETURN_TO_LAUNCH");
+            cmds.Add("LAND");
+            cmds.Add("TAKEOFF");
+            cmds.Add("DO_JUMP");
             cmds.Add("UNKNOWN");
 
             Command.DataSource = cmds;
@@ -810,7 +817,7 @@ namespace ByAeroBeHero.GCSViews
                         Commands.Columns[i].HeaderText = cmdParamNames[command][i - 1];
                 else
                     for (int i = 1; i <= 7; i++)
-                        Commands.Columns[i].HeaderText = "setme";
+                        Commands.Columns[i].HeaderText = "";
             }
             catch (Exception ex) { CustomMessageBox.Show(ex.ToString()); }
         }
@@ -2098,6 +2105,8 @@ namespace ByAeroBeHero.GCSViews
             MainMap_OnMapZoomChanged();
         }
 
+        private readonly Hashtable changes = new Hashtable();
+        internal bool startup = true;
         void setWPParams()
         {
             try
@@ -2112,7 +2121,11 @@ namespace ByAeroBeHero.GCSViews
                 }
                 if (param["WPNAV_RADIUS"] != null)
                 {
-                    TXT_WPRad.Text = ((int)((float)param["WPNAV_RADIUS"] * CurrentState.multiplierdist / 100)).ToString();
+                    //float fDadius = (float)param["WPNAV_RADIUS"];
+                    //float fCurrentState = (float)CurrentState.multiplierdist;
+                    //float fWprad = fDadius * fCurrentState / 100;
+
+                    TXT_WPRad.Text = ((double)param["WPNAV_RADIUS"] * CurrentState.multiplierdist / 100).ToString();
                 }
 
                 log.Info("param WP_RADIUS " + TXT_WPRad.Text);
@@ -2137,10 +2150,85 @@ namespace ByAeroBeHero.GCSViews
                 {
 
                 }
+
+                if (!MainV2.comPort.BaseStream.IsOpen)
+                {
+                    WPNAV_LOIT_SPEED.Enabled = false;
+                    WPNAV_RADIUS.Enabled = false;
+                    WPNAV_SPEED.Enabled = false;
+                    WPNAV_SPEED_DN.Enabled = false;
+                    WPNAV_SPEED_UP.Enabled = false;
+                }
+                else 
+                {
+                    startup = true;
+                    changes.Clear();
+
+                    WPNAV_LOIT_SPEED.setup(0, 0, 1, 0.001f, "WPNAV_LOIT_SPEED", MainV2.comPort.MAV.param);
+                    WPNAV_RADIUS.setup(0, 0, 1, 0.001f, "WPNAV_RADIUS", MainV2.comPort.MAV.param);
+                    WPNAV_SPEED.setup(0, 0, 1, 0.001f, "WPNAV_SPEED", MainV2.comPort.MAV.param);
+                    WPNAV_SPEED_DN.setup(0, 0, 1, 0.001f, "WPNAV_SPEED_DN", MainV2.comPort.MAV.param);
+                    WPNAV_SPEED_UP.setup(0, 0, 1, 0.001f, "WPNAV_SPEED_UP", MainV2.comPort.MAV.param);
+                    startup = false;
+                } 
             }
             catch (Exception ex) { log.Error(ex); }
         }
 
+        #region
+        private void numeric_ValueUpdated(object sender, EventArgs e)
+        {
+            EEPROM_View_float_TextChanged(sender, e);
+        }
+
+        private void BUT_writePIDS_Click(object sender, EventArgs e)
+        {
+            var temp = (Hashtable)changes.Clone();
+            foreach (string value in temp.Keys)
+            {
+                try
+                {
+                    MainV2.comPort.setParam(value, (float)changes[value]);
+                    changes.Remove(value);
+                    try
+                    {
+                        // set control as well
+                        var textControls = Controls.Find(value, true);
+                        if (textControls.Length > 0)
+                        {
+                            textControls[0].BackColor = Color.FromArgb(0x43, 0x44, 0x45);
+                        }
+                    }
+                    catch{}
+                }
+                catch{CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR);}
+            }
+        }
+
+        internal void EEPROM_View_float_TextChanged(object sender, EventArgs e)
+        {
+            if (startup)
+                return;
+
+            float value = 0;
+            var name = ((Control)sender).Name;
+
+            // do domainupdown state check
+            try
+            {
+                if (sender.GetType() == typeof(MavlinkNumericUpDown))
+                {
+                    value = ((MAVLinkParamChanged)e).value;
+                    changes[name] = value;
+                }
+                ((Control)sender).BackColor = Color.Green;
+            }
+            catch (Exception)
+            {
+                ((Control)sender).BackColor = Color.Red;
+            }
+        }
+        #endregion
         /// <summary>
         /// Saves this forms config to MAIN, where it is written in a global config
         /// </summary>
@@ -2164,7 +2252,7 @@ namespace ByAeroBeHero.GCSViews
 
                 MainV2.config["fpminaltwarning"] = TXT_altwarn.Text;
 
-                MainV2.config["fpcoordmouse"] = coords1.System;
+                MainV2.config["fpcoordmouse"] = coords1.Sys;
             }
             else
             {
@@ -2190,7 +2278,7 @@ namespace ByAeroBeHero.GCSViews
                             TXT_altwarn.Text = MainV2.getConfig("fpminaltwarning");
                             break;
                         case "fpcoordmouse":
-                            coords1.System = MainV2.config[key].ToString();
+                            coords1.Sys = MainV2.config[key].ToString();
                             break;
                         default:
                             break;
@@ -4978,7 +5066,7 @@ namespace ByAeroBeHero.GCSViews
                     PointLatLngAlt plla = MainV2.comPort.getRallyPoint(a, ref count);
                     rallypointoverlay.Markers.Add(new GMapMarkerRallyPt(new PointLatLng(plla.Lat, plla.Lng)) { Alt = (int)plla.Alt, ToolTipMode = MarkerTooltipMode.OnMouseOver, ToolTipText = "Rally Point" + "\nAlt: " + (plla.Alt * CurrentState.multiplierdist) });
                 }
-                catch { CustomMessageBox.Show("Failed to get rally point", Strings.ERROR); return; }
+                catch { CustomMessageBox.Show("获取集结点失败！", Strings.ERROR); return; }
             }
 
             MainMap.UpdateMarkerLocalPosition(rallypointoverlay.Markers[0]);
@@ -5463,7 +5551,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                 //panelWaypoints.Dock = DockStyle.Right;
                 //panelWaypoints.Width = Width / 3;
             //}
-
+            
             //MainV2.config["FP_docking"] = panelAction.Dock;
         }
 

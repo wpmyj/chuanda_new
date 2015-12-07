@@ -62,10 +62,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tlpExplain = new System.Windows.Forms.TableLayoutPanel();
-            this.lblText4 = new System.Windows.Forms.Label();
             this.lblText1 = new System.Windows.Forms.Label();
             this.lblText2 = new System.Windows.Forms.Label();
             this.lblText3 = new System.Windows.Forms.Label();
+            this.lblText4 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rbtn6 = new System.Windows.Forms.RadioButton();
             this.rbtn8 = new System.Windows.Forms.RadioButton();
@@ -317,16 +317,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // tlpExplain
             // 
             resources.ApplyResources(this.tlpExplain, "tlpExplain");
-            this.tlpExplain.Controls.Add(this.lblText4, 0, 3);
             this.tlpExplain.Controls.Add(this.lblText1, 0, 0);
             this.tlpExplain.Controls.Add(this.lblText2, 0, 1);
+            this.tlpExplain.Controls.Add(this.lblText4, 0, 3);
             this.tlpExplain.Controls.Add(this.lblText3, 0, 2);
             this.tlpExplain.Name = "tlpExplain";
-            // 
-            // lblText4
-            // 
-            resources.ApplyResources(this.lblText4, "lblText4");
-            this.lblText4.Name = "lblText4";
             // 
             // lblText1
             // 
@@ -342,6 +337,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.lblText3, "lblText3");
             this.lblText3.Name = "lblText3";
+            // 
+            // lblText4
+            // 
+            resources.ApplyResources(this.lblText4, "lblText4");
+            this.lblText4.Name = "lblText4";
             // 
             // groupBox5
             // 

@@ -450,6 +450,10 @@ mc:Ignorable=""d""
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
+                    if (ctl.Name == "Coords") 
+                    {
+                        ctl.BackColor = System.Drawing.Color.Black;
+                    }
                 }
                 else if (ctl.GetType() == typeof(ZedGraph.ZedGraphControl))
                 {
@@ -685,6 +689,10 @@ mc:Ignorable=""d""
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
+                    if (ctl.Name == "Coords")
+                    {
+                        ctl.BackColor = System.Drawing.Color.Black;
+                    }
                 }
                 else if (ctl.GetType() == typeof(ZedGraph.ZedGraphControl))
                 {
@@ -898,6 +906,10 @@ mc:Ignorable=""d""
                 {
                     ctl.BackColor = BGColor;
                     ctl.ForeColor = TextColor;
+                    if (ctl.Name == "Coords")
+                    {
+                        ctl.BackColor = System.Drawing.Color.Black;
+                    }
                 }
                 else if (ctl.GetType() == typeof(ZedGraph.ZedGraphControl))
                 {

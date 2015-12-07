@@ -1835,7 +1835,7 @@
     <FENCE_TYPE>
       <DisplayName>Fence Type</DisplayName>
       <Description>Enabled fence types held as bitmask</Description>
-      <Values>0:无,1:高度,2:绕圈,3:高度并且绕圈</Values>
+      <Values>0:无,1:高度,2:半径,3:高度和半径</Values>
       <User>Standard</User>
     </FENCE_TYPE>
     <FENCE_ACTION>

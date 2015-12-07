@@ -1197,7 +1197,7 @@ namespace ByAeroBeHero
                 {
                     log.Warn(ex2);
                 }
-                CustomMessageBox.Show("不能建立连接!\n\n" + ex.Message);
+                //CustomMessageBox.Show("不能建立连接!\n\n" + ex.Message);
                 //ShowMessage();
                 return;
             }

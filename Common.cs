@@ -143,7 +143,7 @@ namespace ByAeroBeHero
         public bool selected = false;
 
         public GMapMarkerWP(PointLatLng p, string wpno)
-            : base(p, GMarkerGoogleType.green)
+            : base(p, GMarkerGoogleType.orange)
         {
             this.wpno = wpno;
         }

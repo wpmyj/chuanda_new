@@ -48,9 +48,10 @@
             // 
             // Coords
             // 
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.CMB_coordsystem);
             this.Name = "Coords";
-            this.Size = new System.Drawing.Size(200, 21);
+            this.Size = new System.Drawing.Size(332, 23);
             this.ResumeLayout(false);
 
         }

@@ -169,7 +169,7 @@
     <value>设定参数 </value>
   </data>
   <data name="ErrorSetValueFailed" xml:space="preserve">
-    <value>设置{ 0 }失败</value>
+    <value>设置参数失败</value>
   </data>
   <data name="InvalidAlt" xml:space="preserve">
     <value>无效高度</value>

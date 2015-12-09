@@ -31,6 +31,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void BUT_calib_accell_Click(object sender, EventArgs e)
         {
+            this.lblWarnInfo.Visible = false;
             if (MainV2.comPort.giveComport)
             {
                 count++;
@@ -124,31 +125,31 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     {
                         if (MainV2.comPort.MAV.cs.message.Contains("LEFT"))
                         {
-                            lbl_Accel_user.Text = "将飞行器放在左侧，按任意键";
+                            lbl_Accel_user.Text = "要求:将飞行器放在左侧，按任意键";
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("RIGHT"))
                         {
-                            lbl_Accel_user.Text = "将飞行器放在右侧，按任意键";
+                            lbl_Accel_user.Text = "要求:将飞行器放在右侧，按任意键";
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("DOWN"))
                         {
-                            lbl_Accel_user.Text = "将飞行器头向下，按任意键";
+                            lbl_Accel_user.Text = "要求:将飞行器头向下，按任意键";
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("UP"))
                         {
-                            lbl_Accel_user.Text = "将飞行器头向上，按任意键";
+                            lbl_Accel_user.Text = "要求:将飞行器头向上，按任意键";
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("BACK"))
                         {
-                            lbl_Accel_user.Text = "将飞行器反方向放置，按任意键";
+                            lbl_Accel_user.Text = "要求:将飞行器反方向放置，按任意键";
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("level"))
                         {
-                            lbl_Accel_user.Text = "将飞行器水平方向放置，按任意键";
+                            lbl_Accel_user.Text = "要求:将飞行器水平方向放置，按任意键";
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("FAILED"))
                         {
-                            lbl_Accel_user.Text = "校准失败";
+                            lbl_Accel_user.Text = "要求:校准失败";
                         }
                     }
                     else 

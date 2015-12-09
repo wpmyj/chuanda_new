@@ -302,7 +302,7 @@ namespace ByAeroBeHero.GCSViews
                     lastbearing = MainMap.MapProvider.Projection.GetBearing(last, currentMarker.Position);
                 }
 
-                lbl_prevdist.Text = rm.GetString("lbl_prevdist.Text") + ": " + FormatDistance(lastdist, true) + " AZ: " + lastbearing.ToString("0");
+                lbl_prevdist.Text = rm.GetString("lbl_prevdist.Text") + "| " + FormatDistance(lastdist, true) + "        航向角| " + lastbearing.ToString("0");
 
                 // 0 is home
                 if (pointlist[0] != null)
@@ -1023,7 +1023,7 @@ namespace ByAeroBeHero.GCSViews
                     }//);
                 }
             });
-            t1.Name = "Row number updater";
+            t1.Name = "行数更新";
             t1.IsBackground = true;
             t1.Start();
         }
@@ -1134,7 +1134,7 @@ namespace ByAeroBeHero.GCSViews
                                 GMapMarkerRect mBorders = new GMapMarkerRect(m.Position);
                                 {
                                     mBorders.InnerMarker = m;
-                                    mBorders.Tag = "Dont draw line";
+                                    mBorders.Tag = "不画线";
                                 }
 
                                 // check for clear roi, and hide it
@@ -1282,7 +1282,7 @@ namespace ByAeroBeHero.GCSViews
                         dist += MainMap.MapProvider.Projection.GetDistance(fullpointlist[a - 1], fullpointlist[a]);
                     }
 
-                    lbl_distance.Text = rm.GetString("lbl_distance.Text") + ": " + FormatDistance(dist + homedist, false);
+                    lbl_distance.Text = rm.GetString("lbl_distance.Text") + "| " + FormatDistance(dist + homedist, false);
                 }
 
                 setgradanddistandaz();
@@ -1695,7 +1695,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
             {
-                if (DialogResult.No == CustomMessageBox.Show("Absolute Alt is selected are you sure?", "Alt Mode", MessageBoxButtons.YesNo))
+                if (DialogResult.No == CustomMessageBox.Show("确认选择绝对高度?", "高度模式", MessageBoxButtons.YesNo))
                 {
                     CMB_altmode.SelectedValue = (int)altmode.Relative;
                 }
@@ -1711,7 +1711,7 @@ namespace ByAeroBeHero.GCSViews
                     {
                         if (!double.TryParse(Commands[b, a].Value.ToString(), out answer))
                         {
-                            CustomMessageBox.Show("There are errors in your mission");
+                            CustomMessageBox.Show("任务中存在错误！");
                             return;
                         }
                     }
@@ -1730,7 +1730,7 @@ namespace ByAeroBeHero.GCSViews
                             cmd != (byte)MAVLink.MAV_CMD.LAND &&
                             cmd != (byte)MAVLink.MAV_CMD.RETURN_TO_LAUNCH)
                         {
-                            CustomMessageBox.Show("Low alt on WP#" + (a + 1) + "\nPlease reduce the alt warning, or increase the altitude");
+                            CustomMessageBox.Show("航点高度过低" + (a + 1) + "\n请降低高度的警告，或增加高度。");
                             return;
                         }
                     }
@@ -1929,12 +1929,12 @@ namespace ByAeroBeHero.GCSViews
                     
                     if (ans == MAVLink.MAV_MISSION_RESULT.MAV_MISSION_NO_SPACE)
                     {
-                        e.ErrorMessage = "Upload failed, please reduce the number of wp's";
+                        e.ErrorMessage = "上传失败，请减少航点的数量！";
                         return;
                     }
                     if (ans == MAVLink.MAV_MISSION_RESULT.MAV_MISSION_INVALID)
                     {
-                        e.ErrorMessage = "Upload failed, mission was rejected byt the Mav,\n item had a bad option wp# " + a + " " + ans;
+                        e.ErrorMessage = "上传失败，航点文件中存在错误的航点！" + a + " " + ans;
                         return;
                     }
                     if (ans == MAVLink.MAV_MISSION_RESULT.MAV_MISSION_INVALID_SEQUENCE)
@@ -1946,7 +1946,7 @@ namespace ByAeroBeHero.GCSViews
                     }
                     if (ans != MAVLink.MAV_MISSION_RESULT.MAV_MISSION_ACCEPTED)
                     {
-                        e.ErrorMessage = "Upload wps failed " + Enum.Parse(typeof(MAVLink.MAV_CMD), temp.id.ToString()) + " " + Enum.Parse(typeof(MAVLink.MAV_MISSION_RESULT), ans.ToString());
+                        e.ErrorMessage = "更显航点失败 " + Enum.Parse(typeof(MAVLink.MAV_CMD), temp.id.ToString()) + " " + Enum.Parse(typeof(MAVLink.MAV_MISSION_RESULT), ans.ToString());
                         return;
                     }
 
@@ -2075,7 +2075,7 @@ namespace ByAeroBeHero.GCSViews
                 {
                     if (cellhome.Value.ToString() != TXT_homelat.Text && cellhome.Value.ToString() != "0")
                     {
-                        DialogResult dr = CustomMessageBox.Show("Reset Home to loaded coords", "Reset Home Coords", MessageBoxButtons.YesNo);
+                        DialogResult dr = CustomMessageBox.Show("重新设置家的坐标", "重新设置家的坐标", MessageBoxButtons.YesNo);
 
                         if (dr == DialogResult.Yes)
                         {
@@ -2228,6 +2228,46 @@ namespace ByAeroBeHero.GCSViews
                 ((Control)sender).BackColor = Color.Red;
             }
         }
+
+        private void BUT_refreshpart_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            ((Control)sender).Enabled = false;
+
+
+            updateparam(this);
+
+            ((Control)sender).Enabled = true;
+
+
+            Activate();
+            this.Refresh();
+        }
+
+        private void updateparam(Control parentctl)
+        {
+            foreach (Control ctl in parentctl.Controls)
+            {
+                if (typeof(MavlinkNumericUpDown) == ctl.GetType())
+                {
+                    try
+                    {
+                        MainV2.comPort.GetParam(ctl.Name);
+                    }
+                    catch
+                    {
+                    }
+                }
+
+                if (ctl.Controls.Count > 0)
+                {
+                    updateparam(ctl);
+                }
+            }
+        }
+
         #endregion
         /// <summary>
         /// Saves this forms config to MAIN, where it is written in a global config
@@ -2384,12 +2424,12 @@ namespace ByAeroBeHero.GCSViews
                 }
                 setgradanddistandaz();
             }
-            catch (Exception) { CustomMessageBox.Show("Row error"); }
+            catch (Exception) { CustomMessageBox.Show("错误的数据行！"); }
         }
 
         private void Commands_DefaultValuesNeeded(object sender, DataGridViewRowEventArgs e)
         {
-            e.Row.Cells[Delete.Index].Value = "X";
+            e.Row.Cells[Delete.Index].Value = "删除";
             e.Row.Cells[Up.Index].Value = Resources.up;
             e.Row.Cells[Down.Index].Value = Resources.down;
         }
@@ -2465,7 +2505,7 @@ namespace ByAeroBeHero.GCSViews
                 string header = sr.ReadLine();
                 if (header == null || !header.Contains("QGC WPL"))
                 {
-                    CustomMessageBox.Show("Invalid Waypoint file");
+                    CustomMessageBox.Show("无效的路点文件");
                     return;
                 }
 
@@ -2513,7 +2553,7 @@ namespace ByAeroBeHero.GCSViews
                         wp_count++;
 
                     }
-                    catch { CustomMessageBox.Show("Line invalid\n" + line); }
+                    catch { CustomMessageBox.Show("无效的行\n" + line); }
                 }
 
                 sr.Close();
@@ -2526,7 +2566,7 @@ namespace ByAeroBeHero.GCSViews
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("Can't open file! " + ex);
+                CustomMessageBox.Show("不能打开当前文件! ");
             }
         }
 

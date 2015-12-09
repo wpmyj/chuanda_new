@@ -64,8 +64,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.tlpExplain = new System.Windows.Forms.TableLayoutPanel();
             this.lblText1 = new System.Windows.Forms.Label();
             this.lblText2 = new System.Windows.Forms.Label();
-            this.lblText3 = new System.Windows.Forms.Label();
             this.lblText4 = new System.Windows.Forms.Label();
+            this.lblText3 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.rbtn6 = new System.Windows.Forms.RadioButton();
             this.rbtn8 = new System.Windows.Forms.RadioButton();
@@ -236,7 +236,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
             this.pictureBoxWithPseudoOpacity2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.frames_04;
+            this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.frames_041;
             this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
             this.pictureBoxWithPseudoOpacity2.TabStop = false;
             // 
@@ -245,7 +245,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
             this.pictureBoxWithPseudoOpacity1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.frames_061;
+            this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.frames_0611;
             this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
             this.pictureBoxWithPseudoOpacity1.TabStop = false;
             // 
@@ -333,15 +333,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.lblText2, "lblText2");
             this.lblText2.Name = "lblText2";
             // 
-            // lblText3
-            // 
-            resources.ApplyResources(this.lblText3, "lblText3");
-            this.lblText3.Name = "lblText3";
-            // 
             // lblText4
             // 
             resources.ApplyResources(this.lblText4, "lblText4");
             this.lblText4.Name = "lblText4";
+            // 
+            // lblText3
+            // 
+            resources.ApplyResources(this.lblText3, "lblText3");
+            this.lblText3.Name = "lblText3";
             // 
             // groupBox5
             // 

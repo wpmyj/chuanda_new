@@ -588,7 +588,7 @@ namespace ByAeroBeHero
         {
             lock (this)
             {
-                mode = "Unknown";
+                mode = "未知";
                 _mode = 99999;
                 messages = new List<string>();
                 useLocation = false;

@@ -131,8 +131,7 @@
     <value>353, 24</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>水平放置您的自驾仪，设置加速度计的默认最小/最大值（3轴）。
-这会要求您将自驾仪的每一面都放置一次。</value>
+    <value>注意:放置飞行器在水平面上,您将自驾仪的每一面都放置一次,点击校准按钮即可。</value>
   </data>
   <data name="BUT_calib_accell.Text" xml:space="preserve">
     <value>校准加速度计</value>

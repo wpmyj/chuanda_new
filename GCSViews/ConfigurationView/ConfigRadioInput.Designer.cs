@@ -56,8 +56,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -323,15 +323,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // currentStateBindingSource
             // 

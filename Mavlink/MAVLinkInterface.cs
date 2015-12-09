@@ -700,7 +700,8 @@ Please check the following
                         continue;
                     }
                     giveComport = false;
-                    throw new Exception("Timeout on read - setParam " + paramname);
+                    //throw new Exception("Timeout on read - setParam " + paramname);
+                    throw new Exception("读取设置参数失败！");
                 }
 
                 byte[] buffer = readPacket();
@@ -2627,7 +2628,10 @@ Please check the following
 
                         byte sev = msg.severity;
 
-                        string logdata = Encoding.ASCII.GetString(msg.text);
+                        //string logdata = Encoding.ASCII.GetString(msg.text);
+
+                        string logdata = Encoding.UTF8.GetString(msg.text, 0, msg.text.Length);
+
                         int ind = logdata.IndexOf('\0');
                         if (ind != -1)
                             logdata = logdata.Substring(0, ind);

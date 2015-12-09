@@ -94,6 +94,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.panelWaypoints = new BSE.Windows.Forms.Panel();
+            this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -524,6 +525,7 @@
             this.panelWaypoints.CaptionFont = new System.Drawing.Font("Segoe UI", 11.75F, System.Drawing.FontStyle.Bold);
             this.panelWaypoints.CaptionHeight = 21;
             this.panelWaypoints.ColorScheme = BSE.Windows.Forms.ColorScheme.Custom;
+            this.panelWaypoints.Controls.Add(this.myButton1);
             this.panelWaypoints.Controls.Add(this.BUT_writePIDS);
             this.panelWaypoints.Controls.Add(this.tableLayoutPanel3);
             this.panelWaypoints.Controls.Add(this.tableLayoutPanel2);
@@ -553,6 +555,15 @@
             this.panelWaypoints.ToolTipTextExpandIconPanelCollapsed = null;
             this.panelWaypoints.ToolTipTextExpandIconPanelExpanded = null;
             this.panelWaypoints.ExpandClick += new System.EventHandler<System.EventArgs>(this.panelWaypoints_ExpandClick);
+            // 
+            // myButton1
+            // 
+            this.myButton1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.myButton1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.myButton1, "myButton1");
+            this.myButton1.Name = "myButton1";
+            this.myButton1.UseVisualStyleBackColor = true;
+            this.myButton1.Click += new System.EventHandler(this.BUT_refreshpart_Click);
             // 
             // BUT_writePIDS
             // 
@@ -1526,5 +1537,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private Controls.MyButton myButton1;
     }
 }

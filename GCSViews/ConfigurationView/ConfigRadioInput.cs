@@ -254,7 +254,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
             else
             {
-                CustomMessageBox.Show("坏的通道1，取消...");
+                CustomMessageBox.Show("错误的通道1");
                 return;
             }
 

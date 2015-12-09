@@ -35,7 +35,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lbl_Accel_user = new System.Windows.Forms.Label();
             this.BUT_calib_accell = new ByAeroBeHero.Controls.MyButton();
             this.BUT_level = new ByAeroBeHero.Controls.MyButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCalibate = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -43,10 +43,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCalibrate = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblWarnInfo = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
@@ -57,6 +60,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // lbl_Accel_user
             // 
             resources.ApplyResources(this.lbl_Accel_user, "lbl_Accel_user");
+            this.lbl_Accel_user.ForeColor = System.Drawing.Color.Red;
             this.lbl_Accel_user.Name = "lbl_Accel_user";
             // 
             // BUT_calib_accell
@@ -73,10 +77,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BUT_level.UseVisualStyleBackColor = true;
             this.BUT_level.Click += new System.EventHandler(this.BUT_level_Click);
             // 
-            // label1
+            // lblCalibate
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.lblCalibate, "lblCalibate");
+            this.lblCalibate.Name = "lblCalibate";
             // 
             // label3
             // 
@@ -94,7 +98,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBox1
@@ -114,8 +117,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.BUT_calib_accell, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.BUT_level, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblCalibrate, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // lblCalibrate
@@ -123,12 +128,24 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.lblCalibrate, "lblCalibrate");
             this.lblCalibrate.Name = "lblCalibrate";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lblWarnInfo);
+            this.panel1.Controls.Add(this.lbl_Accel_user);
+            this.panel1.Controls.Add(this.lblCalibate);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // lblWarnInfo
+            // 
+            resources.ApplyResources(this.lblWarnInfo, "lblWarnInfo");
+            this.lblWarnInfo.ForeColor = System.Drawing.Color.Red;
+            this.lblWarnInfo.Name = "lblWarnInfo";
+            // 
             // ConfigAccelerometerCalibration
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.BUT_calib_accell);
-            this.Controls.Add(this.lbl_Accel_user);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAccelerometerCalibration";
@@ -138,6 +155,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -148,7 +167,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private MyButton BUT_calib_accell;
         private System.Windows.Forms.Label lbl_Accel_user;
         private MyButton BUT_level;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCalibate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -156,5 +175,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label lblCalibrate;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblWarnInfo;
     }
 }

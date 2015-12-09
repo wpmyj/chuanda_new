@@ -415,7 +415,7 @@
     <value>29, 12</value>
   </data>
   <data name="lbl_distance.Text" xml:space="preserve">
-    <value>距离</value>
+    <value>航程</value>
   </data>
   <data name="lbl_distance.ToolTip" xml:space="preserve">
     <value />
@@ -433,7 +433,7 @@
     <value>41, 12</value>
   </data>
   <data name="lbl_prevdist.Text" xml:space="preserve">
-    <value>上一点</value>
+    <value>前航点</value>
   </data>
   <data name="lbl_prevdist.ToolTip" xml:space="preserve">
     <value />

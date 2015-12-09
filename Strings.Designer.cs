@@ -640,7 +640,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 设置{ 0 }失败 的本地化字符串。
+        ///   查找类似 设置参数失败 的本地化字符串。
         /// </summary>
         public static string ErrorSetValueFailed {
             get {

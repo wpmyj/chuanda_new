@@ -623,9 +623,29 @@ namespace ByAeroBeHero.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap frames_041 {
+            get {
+                object obj = ResourceManager.GetObject("frames-041", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap frames_061 {
             get {
                 object obj = ResourceManager.GetObject("frames-061", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap frames_0611 {
+            get {
+                object obj = ResourceManager.GetObject("frames-0611", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

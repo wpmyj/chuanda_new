@@ -65,7 +65,7 @@ namespace ByAeroBeHero
             //隐藏系统更新wangjicheng
             //if (args.Length > 0 && args[0] == "/update")
             //{
-            //    Utilities.Update.DoUpdate();
+             //  Utilities.Update.DoUpdate();
             //    return;
             //}
 

@@ -611,4 +611,22 @@ Please contact your hardware vendor about signing your hardware.</value>
   <data name="CopterTypeInstruction5" xml:space="preserve">
     <value>您选择的是X型八旋翼飞行器</value>
   </data>
+  <data name="CompassOffsetsHigh" xml:space="preserve">
+    <value>罗盘补偿量过高</value>
+  </data>
+  <data name="GyrosNotHealthy" xml:space="preserve">
+    <value>陀螺不健康</value>
+  </data>
+  <data name="LostAircraft" xml:space="preserve">
+    <value>飞行器丢失报警</value>
+  </data>
+  <data name="Need3DFix" xml:space="preserve">
+    <value>需要3D定位</value>
+  </data>
+  <data name="ThrottleBelowFailsafe" xml:space="preserve">
+    <value>油门低保护</value>
+  </data>
+  <data name="ThrottleTooHigh" xml:space="preserve">
+    <value>油门过高</value>
+  </data>
 </root>

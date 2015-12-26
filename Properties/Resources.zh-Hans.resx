@@ -128,6 +128,13 @@
 {\sp{\sn fillBlip}{\sv {\pict\wmetafile0\picscalex1\picscaley1 
 }}}}}}
 \pard\nowidctlpar\sa200\sl276\slmult1\cf1\f0\fs22\par
-\tab 欢迎使用\b 博鹰通航地面站\b0 ，本软件可以为无人机(\b UAV\b0 )规划任务。</value>
+\tab 欢迎使用\b 博鹰通航地面站 v1.0.0\b0 ，本软件可以为无人机规划任务.
+\tab 主要功能:\par
+\tab\tab\b 首页 \endash  \b0 无人机的飞行位置、飞行姿态、飞行模式及其相关参数的显示.\par
+\b\tab\tab 航线规划 \endash  \b0 无人机飞行航线的规划设置.\par
+\b\tab\tab 参数设置 \endash  \b0 机架类型选择、电机测试及其加速度计、遥控器等的相关校准设置.\par
+\b\tab\tab 调试模式 \endash  \b0 无人机飞行模式、区域限制等相关参数设置.\par
+\tab 获取更多帮助请访问博鹰官网：www.byaero.com.
+  </value>
   </data>
 </root>

@@ -45,14 +45,14 @@ namespace ByAeroBeHero.GCSViews
 
                 if (MainV2.comPort.BaseStream.IsOpen)
                 {
-                    AddBackstageViewPage(new ConfigFlightModes(), Strings.FlightModes);
+                    start=AddBackstageViewPage(new ConfigFlightModes(), Strings.FlightModes);
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                         AddBackstageViewPage(new ConfigAC_Fence(), Strings.GeoFence);
 
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        start = AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
+                        AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
                         //start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
                     }
 

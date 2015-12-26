@@ -117,12 +117,13 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.qvyaw = new ByAeroBeHero.Controls.QuickView();
-            this.qvroll = new ByAeroBeHero.Controls.QuickView();
-            this.qvpitch = new ByAeroBeHero.Controls.QuickView();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblHorizontalError = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSataCount = new System.Windows.Forms.Label();
+            this.qvyaw = new ByAeroBeHero.Controls.QuickView();
+            this.qvroll = new ByAeroBeHero.Controls.QuickView();
+            this.qvpitch = new ByAeroBeHero.Controls.QuickView();
             this.Qvtohome = new ByAeroBeHero.Controls.QuickView();
             this.Qvverspeed = new ByAeroBeHero.Controls.QuickView();
             this.Qvdist = new ByAeroBeHero.Controls.QuickView();
@@ -188,6 +189,7 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStripHud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
@@ -1427,11 +1429,10 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
             this.splitContainer1.Panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
+            this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
             this.splitContainer1.Panel2.Controls.Add(this.qvyaw);
             this.splitContainer1.Panel2.Controls.Add(this.qvroll);
             this.splitContainer1.Panel2.Controls.Add(this.qvpitch);
-            this.splitContainer1.Panel2.Controls.Add(this.lblHorizontalError);
-            this.splitContainer1.Panel2.Controls.Add(this.lblSataCount);
             this.splitContainer1.Panel2.Controls.Add(this.Qvtohome);
             this.splitContainer1.Panel2.Controls.Add(this.Qvverspeed);
             this.splitContainer1.Panel2.Controls.Add(this.Qvdist);
@@ -1533,6 +1534,34 @@
             resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
             this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.lblHorizontalError, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblSataCount, 1, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // lblHorizontalError
+            // 
+            resources.ApplyResources(this.lblHorizontalError, "lblHorizontalError");
+            this.lblHorizontalError.BackColor = System.Drawing.Color.Black;
+            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
+            this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
+            this.lblHorizontalError.Name = "lblHorizontalError";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // lblSataCount
+            // 
+            resources.ApplyResources(this.lblSataCount, "lblSataCount");
+            this.lblSataCount.BackColor = System.Drawing.Color.Black;
+            this.lblSataCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "卫星数量: 0"));
+            this.lblSataCount.ForeColor = System.Drawing.Color.White;
+            this.lblSataCount.Name = "lblSataCount";
+            // 
             // qvyaw
             // 
             this.qvyaw.BackColor = System.Drawing.Color.Teal;
@@ -1568,26 +1597,6 @@
             this.qvpitch.number = 0D;
             this.qvpitch.numberColor = System.Drawing.Color.Lime;
             this.qvpitch.numberformat = "0.00";
-            // 
-            // lblHorizontalError
-            // 
-            resources.ApplyResources(this.lblHorizontalError, "lblHorizontalError");
-            this.lblHorizontalError.BackColor = System.Drawing.Color.Black;
-            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
-            this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
-            this.lblHorizontalError.Name = "lblHorizontalError";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
-            // lblSataCount
-            // 
-            resources.ApplyResources(this.lblSataCount, "lblSataCount");
-            this.lblSataCount.BackColor = System.Drawing.Color.Black;
-            this.lblSataCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "卫星数量: 0"));
-            this.lblSataCount.ForeColor = System.Drawing.Color.White;
-            this.lblSataCount.Name = "lblSataCount";
             // 
             // Qvtohome
             // 
@@ -1876,6 +1885,7 @@
             this.fiType.gpsfix = 0F;
             resources.ApplyResources(this.fiType, "fiType");
             this.fiType.message = "";
+            this.fiType.messagetime = new System.DateTime(((long)(0)));
             this.fiType.mode = "Manual";
             this.fiType.Name = "fiType";
             this.fiType.numberColor = System.Drawing.Color.White;
@@ -1892,12 +1902,14 @@
             this.fiBad.ch8out = 0F;
             this.fiBad.current = 0F;
             this.fiBad.DataBindings.Add(new System.Windows.Forms.Binding("message", this.bindingSourceHud, "messageHigh", true));
-            this.fiBad.desc = "故障|";
+            this.fiBad.DataBindings.Add(new System.Windows.Forms.Binding("messagetime", this.bindingSourceHud, "messageHighTime", true));
+            this.fiBad.desc = "消息|";
             this.fiBad.failsafe = false;
             this.fiBad.ForeColor = System.Drawing.Color.White;
             this.fiBad.gpsfix = 0F;
             resources.ApplyResources(this.fiBad, "fiBad");
             this.fiBad.message = "";
+            this.fiBad.messagetime = new System.DateTime(((long)(0)));
             this.fiBad.mode = "Manual";
             this.fiBad.Name = "fiBad";
             this.fiBad.numberColor = System.Drawing.Color.Red;
@@ -1921,6 +1933,7 @@
             this.fiState.gpsfix = 0F;
             resources.ApplyResources(this.fiState, "fiState");
             this.fiState.message = "";
+            this.fiState.messagetime = new System.DateTime(((long)(0)));
             this.fiState.mode = "Manual";
             this.fiState.Name = "fiState";
             this.fiState.numberColor = System.Drawing.Color.White;
@@ -1943,6 +1956,7 @@
             this.fiMode.gpsfix = 0F;
             resources.ApplyResources(this.fiMode, "fiMode");
             this.fiMode.message = "";
+            this.fiMode.messagetime = new System.DateTime(((long)(0)));
             this.fiMode.mode = "Manual";
             this.fiMode.Name = "fiMode";
             this.fiMode.numberColor = System.Drawing.Color.White;
@@ -1965,6 +1979,7 @@
             this.fiGPS.gpsfix = 0F;
             resources.ApplyResources(this.fiGPS, "fiGPS");
             this.fiGPS.message = "";
+            this.fiGPS.messagetime = new System.DateTime(((long)(0)));
             this.fiGPS.mode = "Manual";
             this.fiGPS.Name = "fiGPS";
             this.fiGPS.numberColor = System.Drawing.Color.White;
@@ -1989,6 +2004,7 @@
             this.fiBat.gpsfix = 0F;
             resources.ApplyResources(this.fiBat, "fiBat");
             this.fiBat.message = "";
+            this.fiBat.messagetime = new System.DateTime(((long)(0)));
             this.fiBat.mode = "Manual";
             this.fiBat.Name = "fiBat";
             this.fiBat.numberColor = System.Drawing.Color.White;
@@ -2095,6 +2111,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripMap.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStripHud.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
@@ -2254,6 +2272,7 @@
         private Controls.QuickView qvpitch;
         private Controls.QuickView qvyaw;
         private Controls.FlightInfo fiType;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 
     }
 }

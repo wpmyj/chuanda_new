@@ -5,7 +5,7 @@
 
     <param>
       <title>遥控器感度设置：</title>
-      <desc>向左滑动减弱或者向右滑动加强.</desc>
+      <desc>参数值设置越大，遥控器的俯仰/滚转的灵敏度越强；反之,越弱.</desc>
       <name>RC_FEEL_RP</name>
       <value>100</value>
       <min>0</min>
@@ -14,7 +14,7 @@
 
     <param>
       <title>飞行器感度设置:</title>
-      <desc>如果飞行器动作迟缓，向右滑动;如果飞行器动作幅度过大，向左滑动.</desc>
+      <desc>参数设置越大，飞行器的俯仰/滚转的灵敏度越强；反之,越弱.</desc>
       <name>RATE_RLL_P</name>
       <value>0.15</value>
       <min>0.08</min>
@@ -34,8 +34,8 @@
     </param>
     
     <param>
-      <title>油门感度设置:</title>
-      <desc> 多少油门需要保持一个稳定的悬停. </desc>
+      <title>悬停油门设置:</title>
+      <desc> 保持飞行器悬停的油门，默认为510. </desc>
       <name>THR_MID</name>
       <value>480</value>
       <min>200</min>

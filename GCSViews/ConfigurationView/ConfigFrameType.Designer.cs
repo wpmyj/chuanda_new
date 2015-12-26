@@ -32,6 +32,19 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigFrameType));
+            this.lblMonitor = new System.Windows.Forms.Label();
+            this.lblDuration = new System.Windows.Forms.Label();
+            this.NUM_thr_percent = new System.Windows.Forms.NumericUpDown();
+            this.NUM_duration = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.rbtn6 = new System.Windows.Forms.RadioButton();
+            this.rbtn5 = new System.Windows.Forms.RadioButton();
+            this.rbtn8 = new System.Windows.Forms.RadioButton();
+            this.rbtn2 = new System.Windows.Forms.RadioButton();
+            this.rbtn3 = new System.Windows.Forms.RadioButton();
+            this.rbtn7 = new System.Windows.Forms.RadioButton();
+            this.rbtn1 = new System.Windows.Forms.RadioButton();
+            this.rbtn4 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBoxPlus = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
@@ -47,6 +60,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnMotorTest = new System.Windows.Forms.Button();
             this.RadbtnFiveRotor = new System.Windows.Forms.RadioButton();
             this.RadbtnSevenRotor = new System.Windows.Forms.RadioButton();
             this.RadbtnFourRotor = new System.Windows.Forms.RadioButton();
@@ -66,22 +81,20 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lblText2 = new System.Windows.Forms.Label();
             this.lblText4 = new System.Windows.Forms.Label();
             this.lblText3 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.rbtn6 = new System.Windows.Forms.RadioButton();
-            this.rbtn8 = new System.Windows.Forms.RadioButton();
-            this.rbtn7 = new System.Windows.Forms.RadioButton();
-            this.rbtn4 = new System.Windows.Forms.RadioButton();
-            this.rbtn5 = new System.Windows.Forms.RadioButton();
-            this.rbtn3 = new System.Windows.Forms.RadioButton();
-            this.rbtn2 = new System.Windows.Forms.RadioButton();
-            this.rbtn1 = new System.Windows.Forms.RadioButton();
-            this.btnMotorTest = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.configDefaultSettings1 = new ByAeroBeHero.Controls.DefaultSettings();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_duration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).BeginInit();
@@ -92,9 +105,120 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tlpExplain.SuspendLayout();
-            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblMonitor
+            // 
+            resources.ApplyResources(this.lblMonitor, "lblMonitor");
+            this.lblMonitor.ForeColor = System.Drawing.Color.Black;
+            this.lblMonitor.Name = "lblMonitor";
+            // 
+            // lblDuration
+            // 
+            resources.ApplyResources(this.lblDuration, "lblDuration");
+            this.lblDuration.Name = "lblDuration";
+            // 
+            // NUM_thr_percent
+            // 
+            resources.ApplyResources(this.NUM_thr_percent, "NUM_thr_percent");
+            this.NUM_thr_percent.Name = "NUM_thr_percent";
+            this.NUM_thr_percent.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // NUM_duration
+            // 
+            resources.ApplyResources(this.NUM_duration, "NUM_duration");
+            this.NUM_duration.Name = "NUM_duration";
+            this.NUM_duration.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // rbtn6
+            // 
+            resources.ApplyResources(this.rbtn6, "rbtn6");
+            this.rbtn6.Name = "rbtn6";
+            this.rbtn6.TabStop = true;
+            this.rbtn6.Tag = "6";
+            this.rbtn6.UseVisualStyleBackColor = true;
+            this.rbtn6.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn5
+            // 
+            resources.ApplyResources(this.rbtn5, "rbtn5");
+            this.rbtn5.Name = "rbtn5";
+            this.rbtn5.TabStop = true;
+            this.rbtn5.Tag = "5";
+            this.rbtn5.UseVisualStyleBackColor = true;
+            this.rbtn5.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn8
+            // 
+            resources.ApplyResources(this.rbtn8, "rbtn8");
+            this.rbtn8.Name = "rbtn8";
+            this.rbtn8.TabStop = true;
+            this.rbtn8.Tag = "8";
+            this.rbtn8.UseVisualStyleBackColor = true;
+            this.rbtn8.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn2
+            // 
+            resources.ApplyResources(this.rbtn2, "rbtn2");
+            this.rbtn2.Name = "rbtn2";
+            this.rbtn2.TabStop = true;
+            this.rbtn2.Tag = "2";
+            this.rbtn2.UseVisualStyleBackColor = true;
+            this.rbtn2.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn3
+            // 
+            resources.ApplyResources(this.rbtn3, "rbtn3");
+            this.rbtn3.Name = "rbtn3";
+            this.rbtn3.TabStop = true;
+            this.rbtn3.Tag = "3";
+            this.rbtn3.UseVisualStyleBackColor = true;
+            this.rbtn3.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn7
+            // 
+            resources.ApplyResources(this.rbtn7, "rbtn7");
+            this.rbtn7.Name = "rbtn7";
+            this.rbtn7.TabStop = true;
+            this.rbtn7.Tag = "7";
+            this.rbtn7.UseVisualStyleBackColor = true;
+            this.rbtn7.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn1
+            // 
+            resources.ApplyResources(this.rbtn1, "rbtn1");
+            this.rbtn1.Name = "rbtn1";
+            this.rbtn1.TabStop = true;
+            this.rbtn1.Tag = "1";
+            this.rbtn1.UseVisualStyleBackColor = true;
+            this.rbtn1.Click += new System.EventHandler(this.but_Click);
+            // 
+            // rbtn4
+            // 
+            resources.ApplyResources(this.rbtn4, "rbtn4");
+            this.rbtn4.Name = "rbtn4";
+            this.rbtn4.TabStop = true;
+            this.rbtn4.Tag = "4";
+            this.rbtn4.UseVisualStyleBackColor = true;
+            this.rbtn4.Click += new System.EventHandler(this.but_Click);
             // 
             // label2
             // 
@@ -192,11 +316,26 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.pictureBoxX);
+            this.groupBox2.Controls.Add(this.groupBox5);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label4);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnMotorTest);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
+            // 
+            // btnMotorTest
+            // 
+            this.btnMotorTest.BackColor = System.Drawing.Color.Turquoise;
+            resources.ApplyResources(this.btnMotorTest, "btnMotorTest");
+            this.btnMotorTest.Name = "btnMotorTest";
+            this.btnMotorTest.UseVisualStyleBackColor = false;
             // 
             // RadbtnFiveRotor
             // 
@@ -224,27 +363,27 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // pictureBoxWithPseudoOpacity3
             // 
-            resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
             this.pictureBoxWithPseudoOpacity3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
             this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_12;
             this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
             this.pictureBoxWithPseudoOpacity3.TabStop = false;
             // 
             // pictureBoxWithPseudoOpacity2
             // 
-            resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
             this.pictureBoxWithPseudoOpacity2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
             this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.frames_041;
             this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
             this.pictureBoxWithPseudoOpacity2.TabStop = false;
             // 
             // pictureBoxWithPseudoOpacity1
             // 
-            resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
             this.pictureBoxWithPseudoOpacity1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
             this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.frames_0611;
             this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
             this.pictureBoxWithPseudoOpacity1.TabStop = false;
@@ -343,91 +482,49 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.lblText3, "lblText3");
             this.lblText3.Name = "lblText3";
             // 
-            // groupBox5
+            // groupBox6
             // 
-            this.groupBox5.Controls.Add(this.rbtn6);
-            this.groupBox5.Controls.Add(this.rbtn8);
-            this.groupBox5.Controls.Add(this.rbtn7);
-            this.groupBox5.Controls.Add(this.rbtn4);
-            this.groupBox5.Controls.Add(this.rbtn5);
-            this.groupBox5.Controls.Add(this.rbtn3);
-            this.groupBox5.Controls.Add(this.rbtn2);
-            this.groupBox5.Controls.Add(this.rbtn1);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
+            this.groupBox6.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
             // 
-            // rbtn6
+            // tableLayoutPanel2
             // 
-            resources.ApplyResources(this.rbtn6, "rbtn6");
-            this.rbtn6.Name = "rbtn6";
-            this.rbtn6.TabStop = true;
-            this.rbtn6.UseVisualStyleBackColor = true;
-            this.rbtn6.CheckedChanged += new System.EventHandler(this.rbtn6_CheckedChanged);
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
-            // rbtn8
+            // panel1
             // 
-            resources.ApplyResources(this.rbtn8, "rbtn8");
-            this.rbtn8.Name = "rbtn8";
-            this.rbtn8.TabStop = true;
-            this.rbtn8.UseVisualStyleBackColor = true;
-            this.rbtn8.CheckedChanged += new System.EventHandler(this.rbtn8_CheckedChanged);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lblDuration);
+            this.panel1.Controls.Add(this.NUM_duration);
+            this.panel1.Controls.Add(this.NUM_thr_percent);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
-            // rbtn7
+            // label10
             // 
-            resources.ApplyResources(this.rbtn7, "rbtn7");
-            this.rbtn7.Name = "rbtn7";
-            this.rbtn7.TabStop = true;
-            this.rbtn7.UseVisualStyleBackColor = true;
-            this.rbtn7.CheckedChanged += new System.EventHandler(this.rbtn7_CheckedChanged);
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Name = "label10";
             // 
-            // rbtn4
+            // panel2
             // 
-            resources.ApplyResources(this.rbtn4, "rbtn4");
-            this.rbtn4.Name = "rbtn4";
-            this.rbtn4.TabStop = true;
-            this.rbtn4.UseVisualStyleBackColor = true;
-            this.rbtn4.CheckedChanged += new System.EventHandler(this.rbtn4_CheckedChanged);
-            // 
-            // rbtn5
-            // 
-            resources.ApplyResources(this.rbtn5, "rbtn5");
-            this.rbtn5.Name = "rbtn5";
-            this.rbtn5.TabStop = true;
-            this.rbtn5.UseVisualStyleBackColor = true;
-            this.rbtn5.CheckedChanged += new System.EventHandler(this.rbtn5_CheckedChanged);
-            // 
-            // rbtn3
-            // 
-            resources.ApplyResources(this.rbtn3, "rbtn3");
-            this.rbtn3.Name = "rbtn3";
-            this.rbtn3.TabStop = true;
-            this.rbtn3.UseVisualStyleBackColor = true;
-            this.rbtn3.CheckedChanged += new System.EventHandler(this.rbtn3_CheckedChanged);
-            // 
-            // rbtn2
-            // 
-            resources.ApplyResources(this.rbtn2, "rbtn2");
-            this.rbtn2.Name = "rbtn2";
-            this.rbtn2.TabStop = true;
-            this.rbtn2.UseVisualStyleBackColor = true;
-            this.rbtn2.CheckedChanged += new System.EventHandler(this.rbtn2_CheckedChanged);
-            // 
-            // rbtn1
-            // 
-            resources.ApplyResources(this.rbtn1, "rbtn1");
-            this.rbtn1.Name = "rbtn1";
-            this.rbtn1.TabStop = true;
-            this.rbtn1.UseVisualStyleBackColor = true;
-            this.rbtn1.CheckedChanged += new System.EventHandler(this.rbtn1_CheckedChanged);
-            // 
-            // btnMotorTest
-            // 
-            this.btnMotorTest.BackColor = System.Drawing.Color.Turquoise;
-            resources.ApplyResources(this.btnMotorTest, "btnMotorTest");
-            this.btnMotorTest.Name = "btnMotorTest";
-            this.btnMotorTest.UseVisualStyleBackColor = false;
-            this.btnMotorTest.Click += new System.EventHandler(this.btnMotorTest_Click);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.rbtn6);
+            this.panel2.Controls.Add(this.lblMonitor);
+            this.panel2.Controls.Add(this.rbtn3);
+            this.panel2.Controls.Add(this.rbtn5);
+            this.panel2.Controls.Add(this.rbtn4);
+            this.panel2.Controls.Add(this.rbtn8);
+            this.panel2.Controls.Add(this.rbtn1);
+            this.panel2.Controls.Add(this.rbtn2);
+            this.panel2.Controls.Add(this.rbtn7);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
             // 
             // configDefaultSettings1
             // 
@@ -444,8 +541,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnMotorTest);
-            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBoxH);
@@ -467,10 +563,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.Controls.Add(this.radioButton_H);
             this.Controls.Add(this.label6);
             this.Name = "ConfigFrameType";
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_duration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).EndInit();
@@ -482,8 +581,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.tableLayoutPanel1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.tlpExplain.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -538,5 +641,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.RadioButton rbtn1;
         private System.Windows.Forms.Button btnMotorTest;
         private System.Windows.Forms.BindingSource currentStateBindingSource;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.NumericUpDown NUM_duration;
+        private System.Windows.Forms.NumericUpDown NUM_thr_percent;
+        private System.Windows.Forms.Label lblDuration;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblMonitor;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label10;
     }
 }

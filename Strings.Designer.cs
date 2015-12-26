@@ -287,6 +287,15 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
+        ///   查找类似 罗盘补偿量过高 的本地化字符串。
+        /// </summary>
+        public static string CompassOffsetsHigh {
+            get {
+                return ResourceManager.GetString("CompassOffsetsHigh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 完成 的本地化字符串。
         /// </summary>
         public static string Completed {
@@ -829,6 +838,15 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
+        ///   查找类似 陀螺不健康 的本地化字符串。
+        /// </summary>
+        public static string GyrosNotHealthy {
+            get {
+                return ResourceManager.GetString("GyrosNotHealthy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 无效高度 的本地化字符串。
         /// </summary>
         public static string InvalidAlt {
@@ -938,6 +956,15 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
+        ///   查找类似 飞行器丢失报警 的本地化字符串。
+        /// </summary>
+        public static string LostAircraft {
+            get {
+                return ResourceManager.GetString("LostAircraft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Please click ok and move the autopilot around all axises in a circular motion 的本地化字符串。
         /// </summary>
         public static string MagCalibMsg {
@@ -961,6 +988,15 @@ namespace ByAeroBeHero {
         public static string MissingDataPoints {
             get {
                 return ResourceManager.GetString("MissingDataPoints", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 需要3D定位 的本地化字符串。
+        /// </summary>
+        public static string Need3DFix {
+            get {
+                return ResourceManager.GetString("Need3DFix", resourceCulture);
             }
         }
         
@@ -1308,6 +1344,24 @@ namespace ByAeroBeHero {
         public static string ThisBoardHasBeenRetired {
             get {
                 return ResourceManager.GetString("ThisBoardHasBeenRetired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 油门低保护 的本地化字符串。
+        /// </summary>
+        public static string ThrottleBelowFailsafe {
+            get {
+                return ResourceManager.GetString("ThrottleBelowFailsafe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 油门过高 的本地化字符串。
+        /// </summary>
+        public static string ThrottleTooHigh {
+            get {
+                return ResourceManager.GetString("ThrottleTooHigh", resourceCulture);
             }
         }
         

@@ -58,9 +58,9 @@ namespace ByAeroBeHero.GCSViews
 
         private void PIC_wizard_Click(object sender, EventArgs e)
         {
-            var cfg = new Wizard.Wizard();
+            //var cfg = new Wizard.Wizard();
 
-            cfg.ShowDialog(this);
+            //cfg.ShowDialog(this);
         }
 
         private void BUT_betaupdate_Click(object sender, EventArgs e)

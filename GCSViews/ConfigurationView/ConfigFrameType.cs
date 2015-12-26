@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using log4net;
 using ByAeroBeHero.Controls;
 using Transitions;
+using ByAeroBeHero.HIL;
+using System.Drawing;
 
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
@@ -50,7 +52,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             InitializeComponent();
             //configDefaultSettings1.OnChange += configDefaultSettings1_OnChange;
-            ControlRabtn();
         }
 
         public void Activate()
@@ -60,9 +61,57 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //    Enabled = false;
             //    return;
             //}
+
+            #region
+
+            var motormax = 8;
+
+            if (!MainV2.comPort.MAV.param.ContainsKey("FRAME"))
+            {
+                Enabled = false;
+                return;
+            }
+
+            var motors = new Motor[0];
+
+            if (MainV2.comPort.MAV.aptype == MAVLink.MAV_TYPE.TRICOPTER)
+            {
+                motormax = 4;
+
+                motors = Motor.build_motors(MAVLink.MAV_TYPE.TRICOPTER, (int)(float)MainV2.comPort.MAV.param["FRAME"]);
+            }
+            else if (MainV2.comPort.MAV.aptype == MAVLink.MAV_TYPE.QUADROTOR)
+            {
+                motormax = 4;
+
+                motors = Motor.build_motors(MAVLink.MAV_TYPE.QUADROTOR, (int)(float)MainV2.comPort.MAV.param["FRAME"]);
+            }
+            else if (MainV2.comPort.MAV.aptype == MAVLink.MAV_TYPE.HEXAROTOR)
+            {
+                motormax = 6;
+
+                motors = Motor.build_motors(MAVLink.MAV_TYPE.HEXAROTOR, (int)(float)MainV2.comPort.MAV.param["FRAME"]);
+            }
+            else if (MainV2.comPort.MAV.aptype == MAVLink.MAV_TYPE.OCTOROTOR)
+            {
+                motormax = 8;
+
+                motors = Motor.build_motors(MAVLink.MAV_TYPE.OCTOROTOR, (int)(float)MainV2.comPort.MAV.param["FRAME"]);
+            }
+            else if (MainV2.comPort.MAV.aptype == MAVLink.MAV_TYPE.HELICOPTER)
+            {
+                motormax = 0;
+            }
+
+            ControlRabtn(motormax);
+
+            #endregion
+
             this.BackColor = System.Drawing.Color.Teal;
             DoChange((Frame) Enum.Parse(typeof (Frame), MainV2.comPort.MAV.param["FRAME"].ToString()));
         }
+
+        
 
         public void Deactivate()
         {
@@ -288,8 +337,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction1;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
-
-                ControlRabtn();
             }
         }
 
@@ -301,8 +348,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction4;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
-
-                ControlRabtn();
             } 
         }
 
@@ -314,62 +359,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction5;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
-
-                ControlRabtn();
             }
         }
         #endregion
 
         #region 电机测试
-        private void rbtn1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn1.Checked)
-                this.iMotorTest = (int)MotorTest.One;
-        }
 
-        private void rbtn2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn2.Checked)
-                this.iMotorTest = (int)MotorTest.Two;
-        }
-
-        private void rbtn3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn3.Checked)
-                this.iMotorTest = (int)MotorTest.Three;
-        }
-
-        private void rbtn4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn4.Checked)
-                this.iMotorTest = (int)MotorTest.Four;
-        }
-
-        private void rbtn5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn5.Checked)
-                this.iMotorTest = (int)MotorTest.Five;
-        }
-
-        private void rbtn6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn6.Checked)
-                this.iMotorTest = (int)MotorTest.Six;
-        }
-
-        private void rbtn7_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn7.Checked)
-                this.iMotorTest = (int)MotorTest.Seven;
-        }
-
-        private void rbtn8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (this.rbtn8.Checked)
-                this.iMotorTest = (int)MotorTest.Eight;
-        }
-
-        private void ControlRabtn() 
+        private void ControlRabtn(int motormax)
         {
             this.rbtn1.Enabled = true;
             this.rbtn2.Enabled = true;
@@ -381,21 +377,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.rbtn8.Enabled = true;
 
 
-            if (iCopterType == 1) 
+            if (motormax == 4)
             {
                 this.rbtn5.Enabled = false;
                 this.rbtn6.Enabled = false;
                 this.rbtn7.Enabled = false;
                 this.rbtn8.Enabled = false;
             }
-            else if(iCopterType == 2)
+            else if (motormax == 6)
             {
                 this.rbtn7.Enabled = false;
                 this.rbtn8.Enabled = false;
             }
-            else if (iCopterType == 3)
+            else if (motormax == 8)
             {
-            
+
             }
             else
             {
@@ -409,11 +405,26 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.rbtn8.Enabled = false;
             }
         }
-
-        private void btnMotorTest_Click(object sender, EventArgs e)
+        private void but_Click(object sender, EventArgs e)
         {
-            string paramName = "Motor_Test";
-            MainV2.comPort.setParams(paramName, iMotorTest);
+            try
+            {
+                object motor = ((RadioButton)sender).Tag;
+
+                int imotor = Convert.ToInt32(motor);
+                if (MainV2.comPort.doMotorTest(imotor, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
+                    (int)NUM_thr_percent.Value, (int)NUM_duration.Value))
+                {
+                }
+                else
+                {
+                    CustomMessageBox.Show("测试电机失败!");
+                }
+            }
+            catch (Exception ex)
+            {
+                CustomMessageBox.Show("测试电机失败!");
+            }
         }
         #endregion
 

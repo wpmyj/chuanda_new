@@ -227,7 +227,7 @@
     <value>高级参数</value>
   </data>
   <data name="BasicTuning" xml:space="preserve">
-    <value>基本调参</value>
+    <value>感度设置</value>
   </data>
   <data name="Desc" xml:space="preserve">
     <value>描述：</value>

@@ -350,7 +350,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 if (MainV2.comPort.MAV.param.ContainsKey("FLTMODE1"))
                 {
-                    MainV2.comPort.setParam("FLTMODE2", int.Parse(CMB_fmode1.SelectedValue.ToString()));
+                    MainV2.comPort.setParam("FLTMODE1", int.Parse(CMB_fmode1.SelectedValue.ToString()));
                     MainV2.comPort.setParam("FLTMODE2", int.Parse(CMB_fmode2.SelectedValue.ToString()));
                     MainV2.comPort.setParam("FLTMODE3", int.Parse(CMB_fmode3.SelectedValue.ToString()));
                     MainV2.comPort.setParam("FLTMODE4", int.Parse(CMB_fmode4.SelectedValue.ToString()));
@@ -403,7 +403,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CustomMessageBox.Show(Strings.ErrorSettingParameter, Strings.ERROR);
             }
-            BUT_SaveModes.Text = "完成";
+            //BUT_SaveModes.Text = "完成";
         }
 
         private void updateDropDown(ComboBox ctl, string param)

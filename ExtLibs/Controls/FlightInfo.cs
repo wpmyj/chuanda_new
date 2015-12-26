@@ -203,6 +203,13 @@ namespace ByAeroBeHero.Controls
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public DateTime messagetime
+        {
+            get;
+            set;
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
         public float ch6out
         {
             get
@@ -274,7 +281,10 @@ namespace ByAeroBeHero.Controls
             }
             else if(this.Name == "fiBad")
             {
-                str = message;
+                if (message != "" && messagetime.AddSeconds(10) > DateTime.Now)
+                {
+                    str = message;
+                }
             }
             else if(this.Name =="fiType")
             {

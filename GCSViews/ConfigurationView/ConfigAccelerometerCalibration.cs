@@ -81,8 +81,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             MainV2.comPort.MAV.cs.messages.Clear();
 
             while (
-                !(MainV2.comPort.MAV.cs.message.ToLower().Contains("校准成功") ||
-                  MainV2.comPort.MAV.cs.message.ToLower().Contains("校准失败")))
+                !(MainV2.comPort.MAV.cs.message.ToLower().Contains("calibration successful") ||
+                  MainV2.comPort.MAV.cs.message.ToLower().Contains("calibration failed")))
             {
                 try
                 {
@@ -108,6 +108,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 {
                     local.BUT_calib_accell.Text = Strings.Done;
                     local.BUT_calib_accell.Enabled = false;
+                    
                 });
             }
             catch
@@ -149,7 +150,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                         }
                         else if (MainV2.comPort.MAV.cs.message.Contains("FAILED"))
                         {
-                            lbl_Accel_user.Text = "要求:校准失败";
+                            lbl_Accel_user.Text = "校准失败";
+                        }
+                        else if (MainV2.comPort.MAV.cs.message.Contains("successful")) 
+                        {
+                            lbl_Accel_user.Text = "校准完成";
                         }
                     }
                     else 

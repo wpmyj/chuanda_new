@@ -2627,28 +2627,53 @@ Please check the following
                         var msg = MAVlist[sysid].packets[(byte)MAVLink.MAVLINK_MSG_ID.STATUSTEXT].ByteArrayToStructure<MAVLink.mavlink_statustext_t>(6);
 
                         byte sev = msg.severity;
-
-                        //string logdata = Encoding.ASCII.GetString(msg.text);
-
-                        string logdata = Encoding.UTF8.GetString(msg.text, 0, msg.text.Length);
-
-                        int ind = logdata.IndexOf('\0');
-                        if (ind != -1)
-                            logdata = logdata.Substring(0, ind);
-                        log.Info(DateTime.Now + " " + logdata);
-
-                        MAVlist[sysid].cs.messages.Add(logdata);
-
-                        if (sev >= 3)
+                        string logdatabefor = Encoding.ASCII.GetString(msg.text, 0, msg.text.Length);
+                      
+                        int ind = logdatabefor.IndexOf('\0');
+                        if (ind != -1) 
                         {
-                            MAVlist[sysid].cs.messageHigh = logdata;
+                            logdatabefor = logdatabefor.Substring(0, ind);
+                        }
+
+                        //ASCII转化为unicode方法 20151215 wangjicheng
+                        string str = logdatabefor;
+                        string outStr = "";
+                        if (!string.IsNullOrEmpty(str)&&logdatabefor.Contains(@"\"))
+                        {
+                            string[] strlist = str.Replace("\\", "").Split('u');
+                            try
+                            {
+                                for (int i = 1; i < strlist.Length; i++)
+                                {
+                                    //将unicode字符转为10进制整数，然后转为char中文字符  
+                                    outStr += (char)int.Parse(strlist[i], System.Globalization.NumberStyles.HexNumber);
+                                }
+                            }
+                            catch (FormatException ex)
+                            {
+                                outStr = ex.Message;
+                            }
+
+                            logdatabefor = outStr;
+                        } 
+
+                        //byte[] bufferMessage = Encoding.Unicode.GetBytes(logdatabefor);
+                        //string logdata = Encoding.Unicode.GetString(bufferMessage);
+
+                        log.Info(DateTime.Now + " " + logdatabefor);
+
+                        MAVlist[sysid].cs.messages.Add(logdatabefor);
+
+                        //if (sev >= 3)
+                        //{
+                            MAVlist[sysid].cs.messageHigh = logdatabefor;
                             MAVlist[sysid].cs.messageHighTime = DateTime.Now;
 
                             if (MainV2.speechEngine != null && MainV2.speechEngine.State == System.Speech.Synthesis.SynthesizerState.Ready && MainV2.config["speechenable"] != null && MainV2.config["speechenable"].ToString() == "True")
                             {
-                                MainV2.speechEngine.SpeakAsync(logdata);
+                                MainV2.speechEngine.SpeakAsync(logdatabefor);
                             }
-                        }
+                        //}                       
                     }
 
                     if (lastparamset != DateTime.MinValue && lastparamset.AddSeconds(10) < DateTime.Now) 

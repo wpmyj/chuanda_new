@@ -188,7 +188,7 @@
     <value>蓝牙设置</value>
   </data>
   <data name="backstageViewPageaccel.Text" xml:space="preserve">
-    <value>加速度计校准</value>
+    <value>姿态水平修正</value>
   </data>
   <data name="backstageViewPageParachute.Text" xml:space="preserve">
     <value>降落伞</value>

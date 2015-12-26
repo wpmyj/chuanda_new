@@ -759,7 +759,7 @@ namespace ByAeroBeHero
                         if (fence.breach_status != (byte)MAVLink.FENCE_BREACH.NONE)
                         {
                             // fence breached
-                            messageHigh = "超出围栏范围";
+                            messageHigh = "超出限定区域";
                             messageHighTime = DateTime.Now;
                         }
 
@@ -873,32 +873,34 @@ namespace ByAeroBeHero
 
                         ekfstatus = (int)Math.Max(ekfvelv,
                             Math.Max(ekfcompv, Math.Max(ekfposhor, Math.Max(ekfposvert, ekfteralt))));
-
-                        if (ekfvelv >= 1)
-                        {
-                            messageHigh = Strings.velocity_variance;
-                            messageHighTime = DateTime.Now;
-                        }
-                        if (ekfcompv >= 1)
-                        {
-                            messageHigh = Strings.compass_variance;
-                            messageHighTime = DateTime.Now;
-                        }
-                        if (ekfposhor >= 1)
-                        {
-                            messageHigh = Strings.pos_horiz_variance;
-                            messageHighTime = DateTime.Now;
-                        }
-                        if (ekfposvert >= 1)
-                        {
-                            messageHigh = Strings.pos_vert_variance;
-                            messageHighTime = DateTime.Now;
-                        }
-                        if (ekfteralt >= 1)
-                        {
-                            messageHigh = Strings.terrain_alt_variance;
-                            messageHighTime = DateTime.Now;
-                        }
+                       
+                        #region
+                        //if (ekfvelv >= 1)
+                        //{
+                        //    messageHigh = Strings.velocity_variance;
+                        //    messageHighTime = DateTime.Now;
+                        //}
+                        //if (ekfcompv >= 1)
+                        //{
+                        //    messageHigh = Strings.compass_variance;
+                        //    messageHighTime = DateTime.Now;
+                        //}
+                        //if (ekfposhor >= 1)
+                        //{
+                        //    messageHigh = Strings.pos_horiz_variance;
+                        //    messageHighTime = DateTime.Now;
+                        //}
+                        //if (ekfposvert >= 1)
+                        //{
+                        //    messageHigh = Strings.pos_vert_variance;
+                        //    messageHighTime = DateTime.Now;
+                        //}
+                        //if (ekfteralt >= 1)
+                        //{
+                        //    messageHigh = Strings.terrain_alt_variance;
+                        //    messageHighTime = DateTime.Now;
+                        //}
+                        #endregion
 
                         for (int a = 1; a < (int)MAVLink.EKF_STATUS_FLAGS.ENUM_END; a = a << 1)
                         {

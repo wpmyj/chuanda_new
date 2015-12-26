@@ -3,13 +3,13 @@
 <CMD>
   <AC2>
     <WAYPOINT>
-      <P1>Delay</P1>
+      <P1>延迟</P1>
       <P2></P2>
       <P3></P3>
       <P4></P4>
-      <X>Lat</X>
-      <Y>Long</Y>
-      <Z>Alt</Z>
+      <X>经度</X>
+      <Y>纬度</Y>
+      <Z>高度</Z>
     </WAYPOINT>
     <SPLINE_WAYPOINT>
       <P1>Delay</P1>
@@ -21,22 +21,22 @@
       <Z>Alt</Z>      
     </SPLINE_WAYPOINT>
     <LOITER_TURNS>
-      <P1>Turns</P1>
+      <P1>圈数</P1>
       <P2></P2>
-      <P3>Radius</P3>
+      <P3>半径</P3>
       <P4></P4>
-      <X>Lat</X>
-      <Y>Long</Y>
-      <Z>Alt</Z>
+      <X>纬度</X>
+      <Y>经度</Y>
+      <Z>高度</Z>
     </LOITER_TURNS>
     <LOITER_TIME>
-      <P1>Time s</P1>
+      <P1>时间 s</P1>
       <P2></P2>
       <P3></P3>
       <P4></P4>
-      <X>Lat</X>
-      <Y>Long</Y>
-      <Z>Alt</Z>
+      <X>纬度</X>
+      <Y>经度</Y>
+      <Z>高度</Z>
     </LOITER_TIME>
     <LOITER_UNLIM>
       <P1></P1>
@@ -61,9 +61,9 @@
       <P2></P2>
       <P3></P3>
       <P4></P4>
-      <X>Lat</X>
-      <Y>Long</Y>
-      <Z>Alt</Z>
+      <X>纬度</X>
+      <Y>经度</Y>
+      <Z>高度</Z>
     </LAND>
     <TAKEOFF>
       <P1></P1>
@@ -72,7 +72,7 @@
       <P4></P4>
       <X></X>
       <Y></Y>
-      <Z>Alt</Z>
+      <Z>高度</Z>
     </TAKEOFF>
     <GUIDED_ENABLE>
     <P1>on=1/off=0</P1>
@@ -138,8 +138,8 @@
       <Z></Z>
     </CONDITION_YAW>
     <DO_JUMP>
-      <P1>WP #</P1>
-      <P2>Repeat#</P2>
+      <P1>航点</P1>
+      <P2>重复次数</P2>
       <P3></P3>
       <P4></P4>
       <X></X>

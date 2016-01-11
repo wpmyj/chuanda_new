@@ -46,12 +46,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lblWarnInfo = new System.Windows.Forms.Label();
             this.panCalibrate = new System.Windows.Forms.Panel();
             this.lblCalibrate = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panCalibrate.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
@@ -120,9 +124,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.BUT_calib_accell, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.BUT_level, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panCalibrate, 1, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // panel1
@@ -150,10 +152,25 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.lblCalibrate, "lblCalibrate");
             this.lblCalibrate.Name = "lblCalibrate";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tableLayoutPanel3);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.BUT_level, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.panCalibrate, 1, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
             // ConfigAccelerometerCalibration
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAccelerometerCalibration";
@@ -166,6 +183,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel1.PerformLayout();
             this.panCalibrate.ResumeLayout(false);
             this.panCalibrate.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -187,5 +206,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label lblWarnInfo;
         private System.Windows.Forms.Panel panCalibrate;
         private System.Windows.Forms.Label lblCalibrate;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
     }
 }

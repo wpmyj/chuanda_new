@@ -1541,7 +1541,7 @@
     <value>91</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Dist to Home</value>
+    <value>距离家</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>

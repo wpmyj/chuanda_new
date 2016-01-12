@@ -175,7 +175,7 @@
     <value>时间</value>
   </data>
   <data name="CHK_altmode.Text" xml:space="preserve">
-    <value>绝对高度</value>
+    <value>海拔高度</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
     <value>高度警告</value>
@@ -199,7 +199,7 @@
     <value>纬度</value>
   </data>
   <data name="autoWPToolStripMenuItem.Text" xml:space="preserve">
-    <value>自动航点</value>
+    <value>航线自动扫描</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>经度</value>
@@ -247,7 +247,7 @@
     <value>下载</value>
   </data>
   <data name="prefetchToolStripMenuItem.Text" xml:space="preserve">
-    <value>读取</value>
+    <value>读取地图数据</value>
   </data>
   <data name="GeoFenceuploadToolStripMenuItem.Text" xml:space="preserve">
     <value>上载</value>
@@ -265,7 +265,7 @@
     <value>经度</value>
   </data>
   <data name="saveToFileToolStripMenuItem1.Text" xml:space="preserve">
-    <value>保存集结点至文件</value>
+    <value>保存备用降落点至文件</value>
   </data>
   <data name="Command.HeaderText" xml:space="preserve">
     <value>命令</value>
@@ -286,7 +286,7 @@
     <value>面板6</value>
   </data>
   <data name="clearPolygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>清除多边形</value>
+    <value>清除工作区域</value>
   </data>
   <data name="loadKMLFileToolStripMenuItem.Text" xml:space="preserve">
     <value>加载KML文件</value>
@@ -310,7 +310,7 @@
     <value>起飞</value>
   </data>
   <data name="addPolygonPointToolStripMenuItem.Text" xml:space="preserve">
-    <value>添加多边形点</value>
+    <value>添加工作区域</value>
   </data>
   <data name="loiterToolStripMenuItem.Text" xml:space="preserve">
     <value>悬停</value>
@@ -325,7 +325,7 @@
     <value>拉伸点</value>
   </data>
   <data name="BUT_Add.Text" xml:space="preserve">
-    <value>添加以下</value>
+    <value>添加航点</value>
   </data>
   <data name="areaToolStripMenuItem.Text" xml:space="preserve">
     <value>区域</value>
@@ -349,7 +349,7 @@
     <value>经度</value>
   </data>
   <data name="polygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>绘制多边形</value>
+    <value>规划工作区域</value>
   </data>
   <data name="jumpToolStripMenuItem.Text" xml:space="preserve">
     <value>跳转</value>
@@ -358,7 +358,7 @@
     <value>降落</value>
   </data>
   <data name="fileLoadSaveToolStripMenuItem.Text" xml:space="preserve">
-    <value>档案下载/保存</value>
+    <value>航点文件</value>
   </data>
   <data name="TXT_altwarn.Text" xml:space="preserve">
     <value>0</value>
@@ -424,7 +424,7 @@
     <value>添加一行到网格下</value>
   </data>
   <data name="clearRallyPointsToolStripMenuItem.Text" xml:space="preserve">
-    <value>清除集结点</value>
+    <value>清除备用降落点</value>
   </data>
   <data name="AZ.HeaderText" xml:space="preserve">
     <value>角度</value>
@@ -436,10 +436,10 @@
     <value>复杂</value>
   </data>
   <data name="savePolygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>保存多边形</value>
+    <value>保存工作区域</value>
   </data>
   <data name="createWpCircleToolStripMenuItem.Text" xml:space="preserve">
-    <value>创建航点圈</value>
+    <value>创建盘旋航线</value>
   </data>
   <data name="ContextMeasure.Text" xml:space="preserve">
     <value>测量距离</value>

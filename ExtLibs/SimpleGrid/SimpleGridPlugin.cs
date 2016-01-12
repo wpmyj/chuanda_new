@@ -37,7 +37,7 @@ namespace ByAeroBeHero.SimpleGrid
         {
             Host2 = Host;
 
-            but = new ToolStripMenuItem("简单网格");
+            but = new ToolStripMenuItem("航线扫描(简单)");
             but.Click += but_Click;
 
             bool hit = false;

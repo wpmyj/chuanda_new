@@ -5312,7 +5312,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>测量(网格)</value>
+    <value>航线扫描(高级)</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>GridUI</value>

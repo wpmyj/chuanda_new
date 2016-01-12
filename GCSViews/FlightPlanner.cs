@@ -1695,7 +1695,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
             {
-                if (DialogResult.No == CustomMessageBox.Show("确认选择绝对高度?", "高度模式", MessageBoxButtons.YesNo))
+                if (DialogResult.No == CustomMessageBox.Show("确认选择海拔高度?", "高度模式", MessageBoxButtons.YesNo))
                 {
                     CMB_altmode.SelectedValue = (int)altmode.Relative;
                 }
@@ -3599,7 +3599,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if (polygongridmode == false)
             {
-                CustomMessageBox.Show("你将保持在多边形模式,直到你清除多边形或者创建/上传一个多边形。");
+                CustomMessageBox.Show("你将保持在规划工作区域模式,直到你清除工作区域或者创建/上传一个供作区域。");
             }
 
             polygongridmode = true;
@@ -5106,7 +5106,7 @@ namespace ByAeroBeHero.GCSViews
                     PointLatLngAlt plla = MainV2.comPort.getRallyPoint(a, ref count);
                     rallypointoverlay.Markers.Add(new GMapMarkerRallyPt(new PointLatLng(plla.Lat, plla.Lng)) { Alt = (int)plla.Alt, ToolTipMode = MarkerTooltipMode.OnMouseOver, ToolTipText = "Rally Point" + "\nAlt: " + (plla.Alt * CurrentState.multiplierdist) });
                 }
-                catch { CustomMessageBox.Show("获取集结点失败！", Strings.ERROR); return; }
+                catch { CustomMessageBox.Show("获取备用降落点失败！", Strings.ERROR); return; }
             }
 
             MainMap.UpdateMarkerLocalPosition(rallypointoverlay.Markers[0]);
@@ -5127,7 +5127,7 @@ namespace ByAeroBeHero.GCSViews
                     MainV2.comPort.setRallyPoint(count, new PointLatLngAlt(pnt.Position) { Alt = pnt.Alt }, 0, 0, 0, (byte)(float)MainV2.comPort.MAV.param["RALLY_TOTAL"]);
                     count++;
                 }
-                catch { CustomMessageBox.Show("未能保存集结点", Strings.ERROR); return; }
+                catch { CustomMessageBox.Show("未能保存备用降落点", Strings.ERROR); return; }
             }
         }
 
@@ -5322,7 +5322,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if (rallypointoverlay.Markers.Count == 0)
             {
-                CustomMessageBox.Show("请设置集结点");
+                CustomMessageBox.Show("请设置备用降落点");
                 return;
             }
             /*
@@ -5354,7 +5354,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                             }
                         }
                     }
-                    catch { CustomMessageBox.Show("写入集结点文件失败"); }
+                    catch { CustomMessageBox.Show("写入备用降落点文件失败"); }
                 }
             }
         }

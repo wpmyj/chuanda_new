@@ -409,7 +409,7 @@ Mission Planner waits for 2 valid heartbeat packets before connecting</value>
     <value>警告，从AC 3.1起，电机将在解锁后转动，这可以通过MOT_SPIN_ARMED参数配置</value>
   </data>
   <data name="Warningrallypointdistance" xml:space="preserve">
-    <value>警告，集结点放置在了比RALLY_LIMIT_KM还大的地方</value>
+    <value>警告，备用降落点放置在了比RALLY_LIMIT_KM还大的地方</value>
   </data>
   <data name="MagCalibMsg" xml:space="preserve">
     <value>请单击确认并且将自动驾驶仪绕所有轴做圆周运动</value>
@@ -481,7 +481,7 @@ Mission Planner waits for 2 valid heartbeat packets before connecting</value>
     <value>吗？</value>
   </data>
   <data name="AutoWP" xml:space="preserve">
-    <value>自动航点</value>
+    <value>航线自动扫描</value>
   </data>
   <data name="EnsurePropsNotOn" xml:space="preserve">
     <value>确保飞行器没有安装螺旋桨</value>

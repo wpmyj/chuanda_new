@@ -29,6 +29,7 @@ using TrackerHomeGPS;
             Host.DeviceChanged += deviceChanged;
             /* Add to Flight Planner Map Menu */
             ToolStripMenuItem trkrHome = new ToolStripMenuItem(Strings.TrackerHome);
+            trkrHome.Visible = false;
             trkrHome.Name = "trkrHomeMenuItem";
             ToolStripMenuItem obtainFrmMod = new ToolStripMenuItem(Strings.ObtainFromModule);
             obtainFrmMod.Click += setTrackerHomeFromModule;
@@ -38,18 +39,18 @@ using TrackerHomeGPS;
             trkrHome.DropDownItems.AddRange( new ToolStripItem[] { obtainFrmMod, setAtLoc } );
 
             ToolStripItemCollection col = Host.FPMenuMap.Items;
-            int index = col.Count;
-            foreach (ToolStripItem item in col)
-            {
-                if (item.Text.Equals(Strings.TrackerHome))
-                {
-                    index = col.IndexOf(item);
-                    col.Remove(item);
-                    break;
-                }
-            }
-            if (index != col.Count) col.Insert(index, trkrHome);
-            else col.Add(trkrHome);
+            //int index = col.Count;
+            //foreach (ToolStripItem item in col)
+            //{
+            //    if (item.Text.Equals(Strings.TrackerHome))
+            //    {
+            //        index = col.IndexOf(item);
+            //        col.Remove(item);
+            //        break;
+            //    }
+            //}
+            //if (index != col.Count) col.Insert(index, trkrHome);
+            //else col.Add(trkrHome);
 
             if (getDevice() != null) _Available = true;
             

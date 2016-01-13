@@ -51,6 +51,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label4 = new System.Windows.Forms.Label();
             this.PNL_thr_fs_value = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblFailSafeBegin = new System.Windows.Forms.Label();
             this.lblPC = new System.Windows.Forms.Label();
             this.mavlinkCheckBoxFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.mavlinkComboBoxfs_batt_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
@@ -250,6 +251,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.lblFailSafeBegin);
             this.groupBox4.Controls.Add(this.lblPC);
             this.groupBox4.Controls.Add(this.mavlinkCheckBoxlong_fs);
             this.groupBox4.Controls.Add(this.mavlinkCheckBoxshort_fs);
@@ -265,6 +267,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
+            // 
+            // lblFailSafeBegin
+            // 
+            resources.ApplyResources(this.lblFailSafeBegin, "lblFailSafeBegin");
+            this.lblFailSafeBegin.Name = "lblFailSafeBegin";
             // 
             // lblPC
             // 
@@ -304,6 +311,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.fiMode.gpsfix = 0F;
             resources.ApplyResources(this.fiMode, "fiMode");
             this.fiMode.message = "";
+            this.fiMode.messagetime = new System.DateTime(((long)(0)));
             this.fiMode.mode = "Manual";
             this.fiMode.Name = "fiMode";
             this.fiMode.numberColor = System.Drawing.Color.White;
@@ -326,6 +334,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.fiState.gpsfix = 0F;
             resources.ApplyResources(this.fiState, "fiState");
             this.fiState.message = "";
+            this.fiState.messagetime = new System.DateTime(((long)(0)));
             this.fiState.mode = "Manual";
             this.fiState.Name = "fiState";
             this.fiState.numberColor = System.Drawing.Color.White;
@@ -347,6 +356,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.fiGPS.gpsfix = 0F;
             resources.ApplyResources(this.fiGPS, "fiGPS");
             this.fiGPS.message = "";
+            this.fiGPS.messagetime = new System.DateTime(((long)(0)));
             this.fiGPS.mode = "Manual";
             this.fiGPS.Name = "fiGPS";
             this.fiGPS.numberColor = System.Drawing.Color.White;
@@ -754,5 +764,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label lblinfo1;
         private System.Windows.Forms.Label lblinfo2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblFailSafeBegin;
     }
 }

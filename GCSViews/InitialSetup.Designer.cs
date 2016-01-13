@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitialSetup));
             this.backstageView = new ByAeroBeHero.Controls.BackstageView.BackstageView();
-            this.backstageViewPageinstfw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
-            this.configFirmware1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware();
             this.backstageViewPagewizard = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configWizard1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard();
             this.backstageViewPagemand = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
@@ -78,6 +76,8 @@
             this.configHWBT1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT();
             this.backstageViewPageParachute = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configHWPa1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute();
+            this.backstageViewPageinstfw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configFirmware1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware();
             this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
@@ -118,21 +118,6 @@
             this.backstageView.Pages.Add(this.backstageViewPageParachute);
             this.backstageView.Pages.Add(this.backstageViewPageinstfw);
             this.backstageView.WidthMenu = 1000;
-            // 
-            // backstageViewPageinstfw
-            // 
-            this.backstageViewPageinstfw.Advanced = false;
-            this.backstageViewPageinstfw.LinkText = "安装固件";
-            this.backstageViewPageinstfw.Page = this.configFirmware1;
-            this.backstageViewPageinstfw.Parent = null;
-            this.backstageViewPageinstfw.Show = true;
-            this.backstageViewPageinstfw.Spacing = 30;
-            resources.ApplyResources(this.backstageViewPageinstfw, "backstageViewPageinstfw");
-            // 
-            // configFirmware1
-            // 
-            resources.ApplyResources(this.configFirmware1, "configFirmware1");
-            this.configFirmware1.Name = "configFirmware1";
             // 
             // backstageViewPagewizard
             // 
@@ -483,6 +468,21 @@
             // 
             resources.ApplyResources(this.configHWPa1, "configHWPa1");
             this.configHWPa1.Name = "configHWPa1";
+            // 
+            // backstageViewPageinstfw
+            // 
+            this.backstageViewPageinstfw.Advanced = false;
+            this.backstageViewPageinstfw.LinkText = "安装固件";
+            this.backstageViewPageinstfw.Page = this.configFirmware1;
+            this.backstageViewPageinstfw.Parent = null;
+            this.backstageViewPageinstfw.Show = false;
+            this.backstageViewPageinstfw.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPageinstfw, "backstageViewPageinstfw");
+            // 
+            // configFirmware1
+            // 
+            resources.ApplyResources(this.configFirmware1, "configFirmware1");
+            this.configFirmware1.Name = "configFirmware1";
             // 
             // backstageViewPagefw
             // 

@@ -128,7 +128,7 @@
     <value>50, 17</value>
   </data>
   <data name="mavlinkCheckBox1.Text" xml:space="preserve">
-    <value>启用</value>
+    <value />
   </data>
   <data name="label3enable.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>

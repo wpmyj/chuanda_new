@@ -1549,13 +1549,13 @@
     <value>9, 19</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>591, 17</value>
+    <value>579, 17</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>通道8，需映射成三段开关，低档：无效，中档：航向锁定模式，高档：返航点锁定模式，模式默认不可修改。</value>
+    <value>通道8需映射成三段开关，低档：无效，中档：航向锁定模式，高档：返航点锁定模式，模式默认不可修改。</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>

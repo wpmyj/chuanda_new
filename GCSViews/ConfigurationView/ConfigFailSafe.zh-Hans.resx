@@ -206,7 +206,7 @@
     <value>132, 16</value>
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.Text" xml:space="preserve">
-    <value>启用地面站故障保护</value>
+    <value></value>
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.ToolTip" xml:space="preserve">
     <value />

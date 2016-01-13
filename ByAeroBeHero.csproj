@@ -3094,6 +3094,8 @@
     <None Include="Resources\frames-061.png" />
     <None Include="Resources\FW icons 2013+logos-121.png" />
     <None Include="Resources\frames-062.png" />
+    <None Include="Resources\pmeter.gif" />
+    <None Include="Resources\2 %281%29.gif" />
     <Content Include="Resources\time.jpg" />
     <Content Include="Scripts\example5 inject data.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

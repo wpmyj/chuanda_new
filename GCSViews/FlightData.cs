@@ -692,7 +692,7 @@ namespace ByAeroBeHero.GCSViews
 
             hud1.doResize();
             
-            //控制控件背景颜色
+            //控制信息显示
             InitControl();
 
             thisthread = new Thread(mainloop);
@@ -703,6 +703,12 @@ namespace ByAeroBeHero.GCSViews
 
         private void InitControl() 
         {
+            this.Messagetabtimer.Stop();
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                this.Messagetabtimer.Start();
+
+            this.txt_messagebox.BackColor = Color.Black;
+            this.txt_messagebox.ForeColor = Color.Wheat;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)
@@ -3603,6 +3609,20 @@ namespace ByAeroBeHero.GCSViews
             {
                 this.hud1.Show();
                 pbMeter.Enabled = true;
+            }
+        }
+
+        private void btnWarnMessage_Click(object sender, EventArgs e)
+        {
+            if (this.pboxWarnMessage.Enabled)
+            {
+                this.panel4.Visible = true;
+                pboxWarnMessage.Enabled = false;
+            }
+            else
+            {
+                this.panel4.Visible=false;
+                pboxWarnMessage.Enabled = true;
             }
         }
     }

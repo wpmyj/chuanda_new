@@ -103,6 +103,16 @@ namespace ByAeroBeHero.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap _2__1_ {
+            get {
+                object obj = ResourceManager.GetObject("2 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap airspeed {
             get {
                 object obj = ResourceManager.GetObject("airspeed", resourceCulture);
@@ -1400,6 +1410,16 @@ namespace ByAeroBeHero.Properties {
         public static System.Drawing.Bitmap PlusFramesGreen_06 {
             get {
                 object obj = ResourceManager.GetObject("PlusFramesGreen_06", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap pmeter {
+            get {
+                object obj = ResourceManager.GetObject("pmeter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

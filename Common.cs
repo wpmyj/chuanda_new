@@ -664,7 +664,13 @@ namespace ByAeroBeHero
             }
             else if (cs.firmware == MainV2.Firmwares.ArduCopter2)
             {
-                var flightModes = Utilities.ParameterMetaDataRepository.GetParameterOptionsInt("FLTMODE1", cs.firmware.ToString());
+                //var flightModes = Utilities.ParameterMetaDataRepository.GetParameterOptionsInt("FLTMODE1", cs.firmware.ToString());
+                var flightModes = new List<KeyValuePair<int, string>>();
+                flightModes.Add(new KeyValuePair<int, string>(0, "自稳"));
+                flightModes.Add(new KeyValuePair<int, string>(2, "定高"));
+                flightModes.Add(new KeyValuePair<int, string>(6, "返航"));
+                flightModes.Add(new KeyValuePair<int, string>(9, "降落"));
+                flightModes.Add(new KeyValuePair<int, string>(16, "定点"));
                 return flightModes;
             }
             else if (cs.firmware == MainV2.Firmwares.ArduRover)

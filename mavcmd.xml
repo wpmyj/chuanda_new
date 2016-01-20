@@ -2,7 +2,7 @@
 <!-- TAGS ARE CASE SENSATIVE -->
 <CMD>
   <AC2>
-    <WAYPOINT>
+    <航点>
       <P1>延迟</P1>
       <P2></P2>
       <P3></P3>
@@ -10,7 +10,7 @@
       <X>经度</X>
       <Y>纬度</Y>
       <Z>高度</Z>
-    </WAYPOINT>
+    </航点>
     <SPLINE_WAYPOINT>
       <P1>Delay</P1>
       <P2></P2>
@@ -20,33 +20,33 @@
       <Y>Long</Y>
       <Z>Alt</Z>      
     </SPLINE_WAYPOINT>
-    <LOITER_TURNS>
+    <盘旋_圈数>
       <P1>圈数</P1>
       <P2></P2>
       <P3>半径</P3>
       <P4></P4>
-      <X>纬度</X>
-      <Y>经度</Y>
+      <X>经度</X>
+      <Y>纬度</Y>
       <Z>高度</Z>
-    </LOITER_TURNS>
-    <LOITER_TIME>
-      <P1>时间 s</P1>
+    </盘旋_圈数>
+    <盘旋_时间>
+      <P1>时间(S)</P1>
       <P2></P2>
       <P3></P3>
       <P4></P4>
-      <X>纬度</X>
-      <Y>经度</Y>
+      <X>经度</X>
+      <Y>纬度</Y>
       <Z>高度</Z>
-    </LOITER_TIME>
-    <LOITER_UNLIM>
+    </盘旋_时间>
+    <盘旋_持续>
       <P1></P1>
       <P2></P2>
       <P3></P3>
       <P4></P4>
-      <X>Lat</X>
-      <Y>Long</Y>
-      <Z>Alt</Z>
-    </LOITER_UNLIM>
+      <X>经度</X>
+      <Y>纬度</Y>
+      <Z>高度</Z>
+    </盘旋_持续>
     <RETURN_TO_LAUNCH>
       <P1></P1>
       <P2></P2>
@@ -56,7 +56,7 @@
       <Y></Y>
       <Z></Z>
     </RETURN_TO_LAUNCH>
-    <LAND>
+    <降落>
       <P1></P1>
       <P2></P2>
       <P3></P3>
@@ -64,8 +64,8 @@
       <X>纬度</X>
       <Y>经度</Y>
       <Z>高度</Z>
-    </LAND>
-    <TAKEOFF>
+    </降落>
+    <起飞>
       <P1></P1>
       <P2></P2>
       <P3></P3>
@@ -73,7 +73,7 @@
       <X></X>
       <Y></Y>
       <Z>高度</Z>
-    </TAKEOFF>
+    </起飞>
     <GUIDED_ENABLE>
     <P1>on=1/off=0</P1>
       <P2></P2>
@@ -137,7 +137,7 @@
       <Y></Y>
       <Z></Z>
     </CONDITION_YAW>
-    <DO_JUMP>
+    <执行跳转>
       <P1>航点</P1>
       <P2>重复次数</P2>
       <P3></P3>
@@ -145,7 +145,7 @@
       <X></X>
       <Y></Y>
       <Z></Z>
-    </DO_JUMP>
+    </执行跳转>
     <DO_CHANGE_SPEED>
       <P1>speed m/s</P1>
       <P2>speed m/s</P2>

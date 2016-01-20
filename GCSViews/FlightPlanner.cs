@@ -66,6 +66,7 @@ namespace ByAeroBeHero.GCSViews
         private ComponentResourceManager rm = new ComponentResourceManager(typeof(FlightPlanner));
 
         private Dictionary<string, string[]> cmdParamNames = new Dictionary<string, string[]>();
+        
 
         List<List<Locationwp>> history = new List<List<Locationwp>>();
 
@@ -168,19 +169,20 @@ namespace ByAeroBeHero.GCSViews
             }
 
             DataGridViewTextBoxCell cell;
-            if (Commands.Columns[Lat.Index].HeaderText.Equals(cmdParamNames["WAYPOINT"][4]/*"Lat"*/))
+
+            if (Commands.Columns[Lat.Index].HeaderText.Equals(cmdParamNames["航点"][4]/*"Lat"*/))
             {
                 cell = Commands.Rows[selectedrow].Cells[Lat.Index] as DataGridViewTextBoxCell;
                 cell.Value = lat.ToString("0.0000000");
                 cell.DataGridView.EndEdit();
             }
-            if (Commands.Columns[Lon.Index].HeaderText.Equals(cmdParamNames["WAYPOINT"][5]/*"Long"*/))
+            if (Commands.Columns[Lon.Index].HeaderText.Equals(cmdParamNames["航点"][5]/*"Long"*/))
             {
                 cell = Commands.Rows[selectedrow].Cells[Lon.Index] as DataGridViewTextBoxCell;
                 cell.Value = lng.ToString("0.0000000");
                 cell.DataGridView.EndEdit();
             }
-            if (alt != -1 && Commands.Columns[Alt.Index].HeaderText.Equals(cmdParamNames["WAYPOINT"][6]/*"Alt"*/))
+            if (alt != -1 && Commands.Columns[Alt.Index].HeaderText.Equals(cmdParamNames["航点"][6]/*"Alt"*/))
             {
                 cell = Commands.Rows[selectedrow].Cells[Alt.Index] as DataGridViewTextBoxCell;
 
@@ -255,7 +257,7 @@ namespace ByAeroBeHero.GCSViews
             }
 
             // Add more for other params
-            if (Commands.Columns[Param1.Index].HeaderText.Equals(cmdParamNames["WAYPOINT"][1]/*"Delay"*/))
+            if (Commands.Columns[Param1.Index].HeaderText.Equals(cmdParamNames["航点"][1]/*"Delay"*/))
             {
                 cell = Commands.Rows[selectedrow].Cells[Param1.Index] as DataGridViewTextBoxCell;
                 cell.Value = p1;
@@ -346,8 +348,9 @@ namespace ByAeroBeHero.GCSViews
             }
             else
             {
-                Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.WAYPOINT.ToString();
-                ChangeColumnHeader(MAVLink.MAV_CMD.WAYPOINT.ToString());
+                Commands.Rows[selectedrow].Cells[Command.Index].Value = "航点";
+                //ChangeColumnHeader(MAVLink.MAV_CMD.WAYPOINT.ToString());
+                ChangeColumnHeader("航点");
             }
 
             setfromMap(lat, lng, alt);
@@ -529,14 +532,24 @@ namespace ByAeroBeHero.GCSViews
             //{
             //    cmds.Add(item);
             //}
-            cmds.Add("WAYPOINT");
-            cmds.Add("LOITER_TURNS");
-            cmds.Add("LOITER_TIME");
-            cmds.Add("RETURN_TO_LAUNCH");
-            cmds.Add("LAND");
-            cmds.Add("TAKEOFF");
-            cmds.Add("DO_JUMP");
-            cmds.Add("UNKNOWN");
+            //cmds.Add("WAYPOINT");
+            //cmds.Add("LOITER_TURNS");
+            //cmds.Add("LOITER_TIME");
+            //cmds.Add("RETURN_TO_LAUNCH");
+            //cmds.Add("LAND");
+            //cmds.Add("TAKEOFF");
+            //cmds.Add("DO_JUMP");
+            //cmds.Add("UNKNOWN");
+
+            cmds.Add("航点");
+            cmds.Add("盘旋_圈数");
+            cmds.Add("盘旋_时间");
+            cmds.Add("返航");
+            cmds.Add("降落");
+            cmds.Add("起飞");
+            cmds.Add("执行跳转");
+            cmds.Add("盘旋_持续");
+            cmds.Add("未知");
 
             Command.DataSource = cmds;
         }
@@ -810,6 +823,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void ChangeColumnHeader(string command)
         {
+
             try
             {
                 if (cmdParamNames.ContainsKey(command))
@@ -846,7 +860,7 @@ namespace ByAeroBeHero.GCSViews
 
                 setgradanddistandaz();
 
-                if (cmd == "WAYPOINT")
+                if (cmd == "航点")
                 {
 
                 }
@@ -871,7 +885,7 @@ namespace ByAeroBeHero.GCSViews
             DataGridViewComboBoxCell cell = Commands.Rows[e.RowIndex].Cells[Command.Index] as DataGridViewComboBoxCell;
             if (cell.Value == null)
             {
-                cell.Value = "WAYPOINT";
+                cell.Value = "航点";
                 cell.DropDownWidth = 200;
                 Commands.Rows[e.RowIndex].Cells[Delete.Index].Value = "X";
                 if (!quickadd)
@@ -1099,10 +1113,12 @@ namespace ByAeroBeHero.GCSViews
                 {
                     try
                     {
-                        if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("UNKNOWN"))
+                        if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("未知"))
                             continue;
 
-                        int command = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD), Commands.Rows[a].Cells[Command.Index].Value.ToString(), false);
+                        string commandValue = Commands.Rows[a].Cells[Command.Index].Value.ToString();
+
+                        int command = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(commandValue) , false);
                         if (command < (byte)MAVLink.MAV_CMD.LAST && 
                             command != (byte)MAVLink.MAV_CMD.TAKEOFF && 
                             command != (byte)MAVLink.MAV_CMD.RETURN_TO_LAUNCH && 
@@ -1295,6 +1311,87 @@ namespace ByAeroBeHero.GCSViews
             Debug.WriteLine(DateTime.Now);
         }
 
+        private  string mavcnd(string mode)
+        {
+            string _mode = string.Empty;
+            if (mode == "航点")
+            {
+                _mode = "WAYPOINT";
+            }
+            else if (mode == "盘旋_圈数")
+            {
+                _mode = "LOITER_TURNS";
+            }
+            else if (mode == "盘旋_时间")
+            {
+                _mode = "LOITER_TIME";
+            }
+            else if (mode == "返航")
+            {
+                _mode = "RETURN_TO_LAUNCH";
+            }
+            else if (mode == "降落")
+            {
+                _mode = "LAND";
+            }
+            else if (mode == "起飞")
+            {
+                _mode = "TAKEOFF";
+            }
+            else if (mode == "执行跳转")
+            {
+                _mode = "DO_JUMP";
+            }
+            else if (mode == "盘旋_持续")
+            {
+                _mode = "LOITER_UNLIM";
+            }
+            else 
+            {
+                _mode = mode;
+            }
+
+            return _mode;
+        }
+
+        private string mavcndchange(string mode)
+        {
+            string _mode = string.Empty;
+            if (mode == "WAYPOINT")
+            {
+                _mode = "航点";
+            }
+            else if (mode == "LOITER_TURNS")
+            {
+                _mode = "盘旋_圈数";
+            }
+            else if (mode == "LOITER_TIME")
+            {
+                _mode = "盘旋_时间";
+            }
+            else if (mode == "RETURN_TO_LAUNCH")
+            {
+                _mode = "返航";
+            }
+            else if (mode == "LAND")
+            {
+                _mode = "降落";
+            }
+            else if (mode == "TAKEOFF")
+            {
+                _mode = "起飞";
+            }
+            else if (mode == "DO_JUMP")
+            {
+                _mode = "执行跳转";
+            }
+            else if (mode == "LOITER_UNLIM") 
+            {
+                _mode = "盘旋_持续";            
+            }
+
+            return _mode;
+        } 
         private void RegenerateWPRoute(List<PointLatLngAlt> fullpointlist)
         {
 
@@ -1539,7 +1636,7 @@ namespace ByAeroBeHero.GCSViews
                         }
                         for (int a = 0; a < Commands.Rows.Count - 0; a++)
                         {
-                            byte mode = (byte)(MAVLink.MAV_CMD)Enum.Parse(typeof(MAVLink.MAV_CMD), Commands.Rows[a].Cells[0].Value.ToString());
+                            byte mode = (byte)(MAVLink.MAV_CMD)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(Commands.Rows[a].Cells[0].Value.ToString()));
 
                             sw.Write((a + 1)); // seq
                             sw.Write("\t" + 0); // current
@@ -1709,7 +1806,7 @@ namespace ByAeroBeHero.GCSViews
                     double answer;
                     if (b >= 1 && b <= 7)
                     {
-                        if (!double.TryParse(Commands[b, a].Value.ToString(), out answer))
+                        if (!double.TryParse(mavcnd(Commands[b, a].Value.ToString()), out answer))
                         {
                             CustomMessageBox.Show("任务中存在错误！");
                             return;
@@ -1719,10 +1816,10 @@ namespace ByAeroBeHero.GCSViews
                     if (TXT_altwarn.Text == "")
                         TXT_altwarn.Text = (0).ToString();
 
-                    if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("UNKNOWN"))
+                    if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("未知"))
                         continue;
 
-                    byte cmd = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD), Commands.Rows[a].Cells[Command.Index].Value.ToString(), false);
+                    byte cmd = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(Commands.Rows[a].Cells[Command.Index].Value.ToString()), false);
 
                     if (cmd < (byte)MAVLink.MAV_CMD.LAST && double.Parse(Commands[Alt.Index, a].Value.ToString()) < double.Parse(TXT_altwarn.Text))
                     {
@@ -1759,16 +1856,16 @@ namespace ByAeroBeHero.GCSViews
         Locationwp DataViewtoLocationwp(int a)
         {
             Locationwp temp = new Locationwp();
-            if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("UNKNOWN"))
+            if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("未知"))
             {
                 temp.id = (byte)Commands.Rows[a].Cells[Command.Index].Tag;
             }
             else
             {
-                temp.id = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD), Commands.Rows[a].Cells[Command.Index].Value.ToString(), false);
+                temp.id = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(Commands.Rows[a].Cells[Command.Index].Value.ToString()), false);
             }
             temp.p1 = float.Parse(Commands.Rows[a].Cells[Param1.Index].Value.ToString());
-
+            
             temp.alt = (float)(double.Parse(Commands.Rows[a].Cells[Alt.Index].Value.ToString()) / CurrentState.multiplierdist);
             temp.lat = (double.Parse(Commands.Rows[a].Cells[Lat.Index].Value.ToString()));
             temp.lng = (double.Parse(Commands.Rows[a].Cells[Lon.Index].Value.ToString()));
@@ -2016,15 +2113,15 @@ namespace ByAeroBeHero.GCSViews
                 //  continue;
                 DataGridViewTextBoxCell cell;
                 DataGridViewComboBoxCell cellcmd;
-                cellcmd = Commands.Rows[i].Cells[Command.Index] as DataGridViewComboBoxCell;
-                cellcmd.Value = "UNKNOWN";
+                cellcmd = Commands.Rows[i].Cells[   Command.Index] as DataGridViewComboBoxCell;
+                cellcmd.Value = "未知";
                 cellcmd.Tag = temp.id;
 
                 foreach (object value in Enum.GetValues(typeof(MAVLink.MAV_CMD)))
                 {
                     if ((int)value == temp.id)
                     {
-                        cellcmd.Value = value.ToString();
+                        cellcmd.Value = mavcndchange(value.ToString());
                         break;
                     }
                 }
@@ -3675,9 +3772,9 @@ namespace ByAeroBeHero.GCSViews
         {
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.LOITER_UNLIM.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value =mavcndchange(MAVLink.MAV_CMD.LOITER_UNLIM.ToString());
 
-            ChangeColumnHeader(MAVLink.MAV_CMD.LOITER_UNLIM.ToString());
+            ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.LOITER_UNLIM.ToString()));
 
             setfromMap(MouseDownEnd.Lat, MouseDownEnd.Lng, (int)float.Parse(TXT_DefaultAlt.Text));
 
@@ -3692,7 +3789,7 @@ namespace ByAeroBeHero.GCSViews
 
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.DO_JUMP.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.DO_JUMP.ToString());
 
             Commands.Rows[selectedrow].Cells[Param1.Index].Value = 1;
 
@@ -3712,7 +3809,7 @@ namespace ByAeroBeHero.GCSViews
 
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.DO_JUMP.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.DO_JUMP.ToString());
 
             Commands.Rows[selectedrow].Cells[Param1.Index].Value = wp;
 
@@ -3776,16 +3873,16 @@ namespace ByAeroBeHero.GCSViews
         private void loitertimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string time = "5";
-            if (DialogResult.Cancel == InputBox.Show("Loiter 时间", "Loiter 时间", ref time))
+            if (DialogResult.Cancel == InputBox.Show("盘旋时间", "盘旋时间(S)", ref time))
                 return;
 
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.LOITER_TIME.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.LOITER_TIME.ToString());
 
             Commands.Rows[selectedrow].Cells[Param1.Index].Value = time;
 
-            ChangeColumnHeader(MAVLink.MAV_CMD.LOITER_TIME.ToString());
+            ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.LOITER_TIME.ToString()));
 
             setfromMap(MouseDownEnd.Lat, MouseDownEnd.Lng, (int)float.Parse(TXT_DefaultAlt.Text));
 
@@ -3795,16 +3892,16 @@ namespace ByAeroBeHero.GCSViews
         private void loitercirclesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string turns = "3";
-            if (DialogResult.Cancel == InputBox.Show("Loiter 圈数", "Loiter 圈数", ref turns))
+            if (DialogResult.Cancel == InputBox.Show("盘旋圈数", "盘旋圈数", ref turns))
                 return;
 
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.LOITER_TURNS.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.LOITER_TURNS.ToString());
 
             Commands.Rows[selectedrow].Cells[Param1.Index].Value = turns;
 
-            ChangeColumnHeader(MAVLink.MAV_CMD.LOITER_TURNS.ToString());
+            ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.LOITER_TURNS.ToString()));
 
             setfromMap(MouseDownEnd.Lat, MouseDownEnd.Lng, (int)float.Parse(TXT_DefaultAlt.Text));
 

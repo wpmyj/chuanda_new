@@ -103,7 +103,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblKeepLiter = new System.Windows.Forms.Label();
             this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
@@ -582,7 +582,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label10, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label33, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label34, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label4, 5, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lblKeepLiter, 5, 0);
             this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.WPNAV_RADIUS, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED_UP, 3, 1);
@@ -620,10 +620,10 @@
             resources.ApplyResources(this.label34, "label34");
             this.label34.Name = "label34";
             // 
-            // label4
+            // lblKeepLiter
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.lblKeepLiter, "lblKeepLiter");
+            this.lblKeepLiter.Name = "lblKeepLiter";
             // 
             // WPNAV_SPEED
             // 
@@ -1505,7 +1505,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblKeepLiter;
         private System.Windows.Forms.Label label10;
         private Controls.MavlinkNumericUpDown WPNAV_SPEED;
         private Controls.MavlinkNumericUpDown WPNAV_RADIUS;

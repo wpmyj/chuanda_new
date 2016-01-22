@@ -224,7 +224,7 @@ namespace ByAeroBeHero
 
         bool joystickthreadrun = false;
 
-        string strConnect = "";
+        bool strConnect = false;
         Thread httpthread;
         Thread joystickthread;
         Thread serialreaderthread;
@@ -795,7 +795,7 @@ namespace ByAeroBeHero
 
         private void CMB_serialport_Click(object sender, EventArgs e)
         {
-            if (_connectionControl.CMB_serialport.Items.Count > 0 && strConnect.Contains("ByAero"))
+            if (_connectionControl.CMB_serialport.Items.Count > 0 && strConnect)
                 this.MenuConnect.Visible = true;
             else
                 this.MenuConnect.Visible = false;
@@ -1255,7 +1255,7 @@ namespace ByAeroBeHero
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
         {
             comPortName = _connectionControl.CMB_serialport.Text;
-            if (_connectionControl.CMB_serialport.Items.Count > 0 && strConnect.Contains("ByAero"))
+            if (_connectionControl.CMB_serialport.Items.Count > 0 && strConnect)
                 this.MenuConnect.Visible = true;
             else
                 this.MenuConnect.Visible = false;
@@ -2971,17 +2971,17 @@ namespace ByAeroBeHero
 
         public void InitControl(string menuConnect) 
         {
-            this.strConnect = "ByAero";
 
-            //if (menuConnect.Contains("ByAero"))
-            //{
-            //    this.MenuConnect.Visible = true;
-            //    this.strConnect = menuConnect;
-            //}
-            //else 
-            //{
-            //    this.MenuConnect.Visible = false;
-            //}
+            if (!menuConnect.Contains("PX4"))
+            {
+                this.MenuConnect.Visible = true;
+                this.strConnect = true;
+            }
+            else
+            {
+                this.MenuConnect.Visible = false;
+                this.strConnect = false;
+            }
         }
 
     }

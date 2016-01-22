@@ -4790,11 +4790,11 @@ namespace ByAeroBeHero.GCSViews
         {
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.RETURN_TO_LAUNCH.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.RETURN_TO_LAUNCH.ToString());
 
             //Commands.Rows[selectedrow].Cells[Param1.Index].Value = time;
 
-            ChangeColumnHeader(MAVLink.MAV_CMD.RETURN_TO_LAUNCH.ToString());
+            ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.RETURN_TO_LAUNCH.ToString()));
 
             writeKML();
         }
@@ -4803,11 +4803,11 @@ namespace ByAeroBeHero.GCSViews
         {
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.LAND.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.LAND.ToString());
 
             //Commands.Rows[selectedrow].Cells[Param1.Index].Value = time;
 
-            ChangeColumnHeader(MAVLink.MAV_CMD.LAND.ToString());
+            ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.LAND.ToString()));
 
             setfromMap(MouseDownEnd.Lat, MouseDownEnd.Lng, 1);
 
@@ -4892,13 +4892,13 @@ namespace ByAeroBeHero.GCSViews
 
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.TAKEOFF.ToString();
+            Commands.Rows[selectedrow].Cells[Command.Index].Value =mavcndchange(MAVLink.MAV_CMD.TAKEOFF.ToString());
 
             Commands.Rows[selectedrow].Cells[Param1.Index].Value = topi;
 
             Commands.Rows[selectedrow].Cells[Alt.Index].Value = alti;
 
-            ChangeColumnHeader(MAVLink.MAV_CMD.TAKEOFF.ToString());
+            ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.TAKEOFF.ToString()));
 
             writeKML();
         }
@@ -5386,7 +5386,7 @@ namespace ByAeroBeHero.GCSViews
         private void modifyAltToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string altdif = "0";
-            InputBox.Show("高度设置", "请输入你需要的高度值.\n(20 = up 20, *2 = up by alt * 2)", ref altdif);
+            InputBox.Show("高度设置", "请在当前高度加上或者减去你所输入的高度值", ref altdif);
 
             int altchange = 0;
             float multiplyer = 1;

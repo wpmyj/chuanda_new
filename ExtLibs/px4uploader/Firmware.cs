@@ -101,7 +101,7 @@ namespace px4uploader
             Console.WriteLine("image_size {0} size {1}",fw.image_size,size);
 
             
-            BinaryWriter sw = new BinaryWriter(File.Open("px4fw.bin", FileMode.Create));
+            BinaryWriter sw = new BinaryWriter(File.Open("ByAerofw.bin", FileMode.Create));
 
             foreach (byte by in fw.imagebyte)
             {

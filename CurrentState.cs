@@ -1090,11 +1090,11 @@ namespace ByAeroBeHero
                             messageHigh = Strings.GeofenceBreach;
                             messageHighTime = DateTime.Now;
                         }
-                        else if (sensors_health.ahrs != sensors_enabled.ahrs && sensors_present.ahrs)
-                        {
-                            messageHigh = Strings.BadAHRS;
-                            messageHighTime = DateTime.Now;
-                        }
+                        //else if (sensors_health.ahrs != sensors_enabled.ahrs && sensors_present.ahrs)
+                        //{
+                        //    messageHigh = Strings.BadAHRS;
+                        //    messageHighTime = DateTime.Now;
+                        //}
                         else if (sensors_health.rc_receiver != sensors_enabled.rc_receiver && sensors_present.rc_receiver)
                         {
                             messageHigh = Strings.NORCReceiver;

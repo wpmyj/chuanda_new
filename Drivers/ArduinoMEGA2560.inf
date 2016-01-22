@@ -100,7 +100,7 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 [Strings]
 MFGFILENAME="CDC_vista"
 DRIVERFILENAME ="usbser"
-MFGNAME="ByAeroBeHero_USB_Driver_Circuit"
+MFGNAME="ByAeroBeHero"
 INSTDISK="ByAeroBeHero Driver Installer"
 DESCRIPTION="ByAeroBeHero Driver Installer"
 SERVICE="USB RS-232 Emulation Driver"

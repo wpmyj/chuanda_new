@@ -69,14 +69,16 @@ namespace ByAeroBeHero.Controls
             {
                 text = text + " "+ SerialPort.GetNiceName(text);
                 ByAeroBeHero.MainV2.instance.InitControl(text);
-                //if (text.Contains("ByAero")||text.Contains("PX4"))
-                //{
-                //    text = "COM3"; 
-                //}
+                if (text.Contains("ByAero") || !text.Contains("PX4"))
+                {
+                    text = text.Substring(0, 5);
+                }
+                else 
+                {
+                    text = string.Empty;
+                }
             }
             
-            
-
             e.Graphics.DrawString(text, e.Font,
                                   new SolidBrush(combo.ForeColor),
                                   new Point(e.Bounds.X, e.Bounds.Y));

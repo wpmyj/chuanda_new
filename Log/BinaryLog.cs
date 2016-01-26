@@ -53,7 +53,8 @@ namespace ByAeroBeHero.Log
             while (br.Position < br.Length)
             {
                 byte data = (byte)br.ReadByte();
-
+                //Log加密异或
+                data ^= 0xff;
                 switch (log_step)
                 {
                     case 0:
@@ -336,6 +337,11 @@ namespace ByAeroBeHero.Log
                     byte[] bytearray = new byte[len];
 
                     br.Read(bytearray, 0, bytearray.Length);
+                    //Log加密异或
+                    for (int cnt = 0; cnt < bytearray.Length;cnt++ )
+                    {
+                        bytearray[cnt] ^= 0xff;    
+                    }
 
                     IntPtr i = Marshal.AllocHGlobal(len);
 
@@ -384,7 +390,11 @@ namespace ByAeroBeHero.Log
                     byte[] data = new byte[size-3];// size - 3 = message - messagetype - (header *2)
 
                     br.Read(data,0,data.Length);
-
+                    //Log加密异或
+                    for (int cnt = 0; cnt < data.Length; cnt++)
+                    {
+                        data[cnt] ^= 0xff;
+                    }
                     return ProcessMessage(data,name,format); 
             }
         }
@@ -505,7 +515,7 @@ namespace ByAeroBeHero.Log
                         {
                             if (mode.Key == modeno)
                             {
-                                currentmode = mode.Value;
+                                currentmode = ChangeMode(mode.Value);
                                 break;
                             }
                         }
@@ -525,6 +535,23 @@ namespace ByAeroBeHero.Log
 
             line.Append("\r\n");
             return line.ToString();
+        }
+
+        /// <summary>
+        /// 汉化中文转化成可识别英文
+        /// </summary>
+        /// <param name="mode"></param>
+        /// <returns></returns>
+        public static string ChangeMode(string mode) 
+        {
+            string _mode = string.Empty;
+            if (mode == "定高") { _mode = "AltHold"; }
+            else if (mode == "定点") { _mode = "PosHold"; }
+            else if (mode == "自稳") { _mode = "Stablilize"; }
+            else if (mode == "降落") { _mode = "Land"; }
+            else if (mode == "返航") { _mode ="RTL";}
+
+            return _mode;
         }
     }
 }

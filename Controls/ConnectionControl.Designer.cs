@@ -38,7 +38,7 @@
             // cmb_Baud
             // 
             this.cmb_Baud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cmb_Baud.DropDownWidth = 150;
+            this.cmb_Baud.DropDownWidth = 108;
             this.cmb_Baud.ForeColor = System.Drawing.Color.Black;
             this.cmb_Baud.FormattingEnabled = true;
             this.cmb_Baud.Items.AddRange(new object[] {
@@ -69,7 +69,7 @@
             // 
             this.cmb_Connection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.cmb_Connection.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_Connection.DropDownWidth = 200;
+            this.cmb_Connection.DropDownWidth = 108;
             this.cmb_Connection.ForeColor = System.Drawing.Color.Black;
             this.cmb_Connection.FormattingEnabled = true;
             resources.ApplyResources(this.cmb_Connection, "cmb_Connection");

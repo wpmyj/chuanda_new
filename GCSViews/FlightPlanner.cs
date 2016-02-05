@@ -304,14 +304,15 @@ namespace ByAeroBeHero.GCSViews
                     lastbearing = MainMap.MapProvider.Projection.GetBearing(last, currentMarker.Position);
                 }
 
-                lbl_prevdist.Text = rm.GetString("lbl_prevdist.Text") + "| " + FormatDistance(lastdist, true) + "        航向角| " + lastbearing.ToString("0");
+                lbl_prevdist.Text = rm.GetString("lbl_prevdist.Text") + "| " + FormatDistance(lastdist, true);
 
+                this.lblhxj.Text = "   航向角| " + lastbearing.ToString("0") + "度";
                 // 0 is home
                 if (pointlist[0] != null)
                 {
                     double homedist = MainMap.MapProvider.Projection.GetDistance(currentMarker.Position, pointlist[0]);
 
-                    lbl_homedist.Text = rm.GetString("lbl_homedist.Text") + ": " + FormatDistance(homedist, true);
+                    lbl_homedist.Text = rm.GetString("lbl_homedist.Text") + "|" + FormatDistance(homedist, true);
                 }
             }
             catch { }
@@ -548,7 +549,8 @@ namespace ByAeroBeHero.GCSViews
             cmds.Add("降落");
             cmds.Add("起飞");
             cmds.Add("执行跳转");
-            cmds.Add("盘旋_持续");
+            cmds.Add("悬停_持续");
+            cmds.Add("速度_改变");
             cmds.Add("未知");
 
             Command.DataSource = cmds;
@@ -746,7 +748,7 @@ namespace ByAeroBeHero.GCSViews
         /// </summary>
         private void InitControl() 
         {
-          
+
         }
         void POI_POIModified(object sender, EventArgs e)
         {
@@ -1342,9 +1344,17 @@ namespace ByAeroBeHero.GCSViews
             {
                 _mode = "DO_JUMP";
             }
-            else if (mode == "盘旋_持续")
+            else if (mode == "悬停_持续")
             {
                 _mode = "LOITER_UNLIM";
+            }
+            else if (mode == "速度_改变")
+            {
+                _mode = "DO_CHANGE_SPEED";
+            }
+            else if (mode == "航向_保持")
+            {
+                _mode = "CONDITION_YAW";
             }
             else 
             {
@@ -1387,7 +1397,15 @@ namespace ByAeroBeHero.GCSViews
             }
             else if (mode == "LOITER_UNLIM") 
             {
-                _mode = "盘旋_持续";            
+                _mode = "悬停_持续";            
+            }
+            else if (mode == "DO_CHANGE_SPEED")
+            {
+                _mode = "速度_改变";
+            }
+            else if (mode == "CONDITION_YAW")
+            {
+                _mode = "航向_保持";
             }
 
             return _mode;
@@ -2281,11 +2299,13 @@ namespace ByAeroBeHero.GCSViews
         private void BUT_writePIDS_Click(object sender, EventArgs e)
         {
             var temp = (Hashtable)changes.Clone();
+
+            bool IsSetParam = false;
             foreach (string value in temp.Keys)
             {
                 try
                 {
-                    MainV2.comPort.setParam(value, (float)changes[value]);
+                     IsSetParam =MainV2.comPort.setParam(value, (float)changes[value]);
                     changes.Remove(value);
                     try
                     {
@@ -2299,6 +2319,11 @@ namespace ByAeroBeHero.GCSViews
                     catch{}
                 }
                 catch{CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR);}
+            }
+
+            if (IsSetParam)
+            {
+                CustomMessageBox.Show(Strings.SetValueSuccess, Strings.Success);
             }
         }
 
@@ -3643,8 +3668,8 @@ namespace ByAeroBeHero.GCSViews
                         string.Format((distInKM * 0.621371).ToString("0.0000 miles"));
                 case Common.distances.Meters:
                 default:
-                    return toMeterOrFeet ? string.Format((distInKM * 1000).ToString("0.00 m")) :
-                        string.Format(distInKM.ToString("0.0000 km"));
+                    return toMeterOrFeet ? string.Format((distInKM * 1000).ToString("0.00 米")) :
+                        string.Format(distInKM.ToString("0.0000 千米"));
             }
         }
 
@@ -4829,14 +4854,14 @@ namespace ByAeroBeHero.GCSViews
         {
             selectedrow = Commands.Rows.Add();
 
-            Commands.Rows[selectedrow].Cells[Command.Index].Value = cmd.ToString();
-            ChangeColumnHeader(cmd.ToString());
+            Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(cmd.ToString());
+            ChangeColumnHeader(mavcndchange(cmd.ToString()));
 
             // switch wp to spline if spline checked
             if (splinemode && cmd == MAVLink.MAV_CMD.WAYPOINT)
             {
-                Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString();
-                ChangeColumnHeader(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
+                Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
+                ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString()));
             }
 
             if (cmd == MAVLink.MAV_CMD.WAYPOINT)
@@ -5172,7 +5197,7 @@ namespace ByAeroBeHero.GCSViews
 
                 selectedrow = int.Parse(wpno);
 
-                ChangeColumnHeader(MAVLink.MAV_CMD.WAYPOINT.ToString());
+                ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.WAYPOINT.ToString()));
 
                 setfromMap(MouseDownStart.Lat, MouseDownStart.Lng, (int)float.Parse(TXT_DefaultAlt.Text));
             }
@@ -5188,7 +5213,7 @@ namespace ByAeroBeHero.GCSViews
 
             if (int.Parse(MainV2.comPort.MAV.param["RALLY_TOTAL"].ToString()) < 1)
             {
-                CustomMessageBox.Show("Rally points - Nothing to download");
+                CustomMessageBox.Show("没有集结点下载！");
                 return;
             }
 

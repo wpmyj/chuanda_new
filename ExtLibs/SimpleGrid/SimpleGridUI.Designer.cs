@@ -30,16 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUI));
             this.map = new ByAeroBeHero.Controls.myGMAP();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.lbl_distbetweenlines = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.lbl_strips = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.lblable24 = new System.Windows.Forms.Label();
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_area = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.tabSimple = new System.Windows.Forms.TabPage();
+            this.gbInfo = new System.Windows.Forms.GroupBox();
+            this.tlypInfo = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.NUM_spacing = new System.Windows.Forms.NumericUpDown();
@@ -62,8 +63,9 @@
             this.chk_markers = new System.Windows.Forms.CheckBox();
             this.chk_boundary = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.groupBox5.SuspendLayout();
             this.tabSimple.SuspendLayout();
+            this.gbInfo.SuspendLayout();
+            this.tlypInfo.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).BeginInit();
@@ -98,20 +100,6 @@
             this.map.ShowTileGridLines = false;
             this.map.Zoom = 3D;
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.lbl_distbetweenlines);
-            this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.lbl_strips);
-            this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.lbl_distance);
-            this.groupBox5.Controls.Add(this.lbl_area);
-            this.groupBox5.Controls.Add(this.label23);
-            this.groupBox5.Controls.Add(this.label22);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
-            // 
             // lbl_distbetweenlines
             // 
             resources.ApplyResources(this.lbl_distbetweenlines, "lbl_distbetweenlines");
@@ -127,10 +115,10 @@
             resources.ApplyResources(this.lbl_strips, "lbl_strips");
             this.lbl_strips.Name = "lbl_strips";
             // 
-            // label33
+            // lblable24
             // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
+            resources.ApplyResources(this.lblable24, "lblable24");
+            this.lblable24.Name = "lblable24";
             // 
             // lbl_distance
             // 
@@ -154,11 +142,32 @@
             // 
             // tabSimple
             // 
+            this.tabSimple.Controls.Add(this.gbInfo);
             this.tabSimple.Controls.Add(this.groupBox6);
             this.tabSimple.Controls.Add(this.groupBox4);
             resources.ApplyResources(this.tabSimple, "tabSimple");
             this.tabSimple.Name = "tabSimple";
             this.tabSimple.UseVisualStyleBackColor = true;
+            // 
+            // gbInfo
+            // 
+            this.gbInfo.Controls.Add(this.tlypInfo);
+            resources.ApplyResources(this.gbInfo, "gbInfo");
+            this.gbInfo.Name = "gbInfo";
+            this.gbInfo.TabStop = false;
+            // 
+            // tlypInfo
+            // 
+            resources.ApplyResources(this.tlypInfo, "tlypInfo");
+            this.tlypInfo.Controls.Add(this.lbl_area, 1, 3);
+            this.tlypInfo.Controls.Add(this.label23, 0, 0);
+            this.tlypInfo.Controls.Add(this.lbl_distbetweenlines, 1, 2);
+            this.tlypInfo.Controls.Add(this.label22, 0, 3);
+            this.tlypInfo.Controls.Add(this.lbl_strips, 1, 1);
+            this.tlypInfo.Controls.Add(this.lbl_distance, 1, 0);
+            this.tlypInfo.Controls.Add(this.lblable24, 0, 1);
+            this.tlypInfo.Controls.Add(this.label25, 0, 2);
+            this.tlypInfo.Name = "tlypInfo";
             // 
             // groupBox6
             // 
@@ -241,12 +250,12 @@
             // 
             // NUM_altitude
             // 
+            resources.ApplyResources(this.NUM_altitude, "NUM_altitude");
             this.NUM_altitude.Increment = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            resources.ApplyResources(this.NUM_altitude, "NUM_altitude");
             this.NUM_altitude.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -284,8 +293,14 @@
             // 
             // CMB_startfrom
             // 
-            this.CMB_startfrom.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_startfrom, "CMB_startfrom");
+            this.CMB_startfrom.FormattingEnabled = true;
+            this.CMB_startfrom.Items.AddRange(new object[] {
+            resources.GetString("CMB_startfrom.Items"),
+            resources.GetString("CMB_startfrom.Items1"),
+            resources.GetString("CMB_startfrom.Items2"),
+            resources.GetString("CMB_startfrom.Items3"),
+            resources.GetString("CMB_startfrom.Items4")});
             this.CMB_startfrom.Name = "CMB_startfrom";
             this.CMB_startfrom.SelectedIndexChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
             // 
@@ -389,14 +404,14 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.map);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.tabControl1);
             this.Name = "GridUI";
             this.Load += new System.EventHandler(this.GridUI_Load);
             this.Resize += new System.EventHandler(this.GridUI_Resize);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.tabSimple.ResumeLayout(false);
+            this.gbInfo.ResumeLayout(false);
+            this.tlypInfo.ResumeLayout(false);
+            this.tlypInfo.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
@@ -415,7 +430,6 @@
         #endregion
 
         private Controls.myGMAP map;
-        private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lbl_distance;
@@ -423,7 +437,7 @@
         private System.Windows.Forms.Label lbl_distbetweenlines;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lbl_strips;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lblable24;
         private System.Windows.Forms.TabPage tabSimple;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label7;
@@ -447,5 +461,7 @@
         private System.Windows.Forms.CheckBox CHK_internals;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown NUM_spacing;
+        private System.Windows.Forms.TableLayoutPanel tlypInfo;
+        private System.Windows.Forms.GroupBox gbInfo;
     }
 }

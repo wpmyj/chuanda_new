@@ -592,7 +592,6 @@ namespace ByAeroBeHero.GCSViews
             }
 
             hud1.doResize();
-            InitControl();
         }
 
         public void CheckBatteryShow()
@@ -706,9 +705,6 @@ namespace ByAeroBeHero.GCSViews
             this.Messagetabtimer.Stop();
             if (!MainV2.comPort.BaseStream.IsOpen)
                 this.Messagetabtimer.Start();
-
-            this.txt_messagebox.BackColor = Color.Black;
-            this.txt_messagebox.ForeColor = Color.Wheat;
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)
@@ -3313,6 +3309,9 @@ namespace ByAeroBeHero.GCSViews
 
                 messagecount = MainV2.comPort.MAV.cs.messages.Count;
             }
+            //控制txt_messagebox的样式wjch
+            this.txt_messagebox.BackColor = Color.Black;
+            this.txt_messagebox.ForeColor = Color.Wheat;
         }
 
         private void dropOutToolStripMenuItem_Click(object sender, EventArgs e)

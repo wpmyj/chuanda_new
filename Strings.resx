@@ -629,4 +629,10 @@ Please contact your hardware vendor about signing your hardware.</value>
   <data name="ThrottleTooHigh" xml:space="preserve">
     <value>油门过高</value>
   </data>
+  <data name="SetValueSuccess" xml:space="preserve">
+    <value>设置参数成功</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>完成</value>
+  </data>
 </root>

@@ -123,12 +123,36 @@ namespace ByAeroBeHero
             if (plugin.Host.config["distunits"] != null)
                 DistUnits = plugin.Host.config["distunits"].ToString();
 
-            CMB_startfrom.DataSource = Enum.GetNames(typeof(Grid.StartPosition));
+            //CMB_startfrom.DataSource = Enum.GetNames(typeof(Grid.StartPosition));
             CMB_startfrom.SelectedIndex = 0;
 
             // set and angle that is good
             NUM_angle.Value = (decimal)((getAngleOfLongestSide(list) + 360) % 360);
             TXT_headinghold.Text = (Math.Round(NUM_angle.Value)).ToString();
+        }
+
+        public string startForm(string postion)
+        {
+            string startPost = string.Empty;
+            if (postion == "家") { startPost = "Home"; }
+            else if (postion == "左下") { startPost = "BottomLeft"; }
+            else if (postion == "左上") { startPost = "TopLeft"; }
+            else if (postion == "右下") { startPost = "BottomRight"; }
+            else if (postion == "右上") { startPost = "TopRight"; }
+
+            return startPost;
+        }
+
+        public string loadPost(string postion)
+        {
+            string startPost = string.Empty;
+            if (postion == "Home") { startPost = "家"; }
+            else if (postion == "BottomLeft") { startPost = "左下"; }
+            else if (postion == "TopLeft") { startPost = "左上"; }
+            else if (postion == "BottomRight") { startPost = "右下"; }
+            else if (postion == "TopRight") { startPost = "右上"; }
+
+            return startPost;
         }
 
         private void GridUI_Load(object sender, EventArgs e)
@@ -146,8 +170,8 @@ namespace ByAeroBeHero
 
             TRK_zoom.Value = (float)map.Zoom;
 
-            label1.Text += " (" + CurrentState.DistanceUnit+")";
-            label24.Text += " (" + CurrentState.SpeedUnit + ")";
+            //label1.Text += " (" + CurrentState.DistanceUnit+")";
+            //label24.Text += " (" + CurrentState.SpeedUnit + ")";
         }
 
         private void GridUI_Resize(object sender, EventArgs e)
@@ -216,7 +240,7 @@ namespace ByAeroBeHero
             num_sidelap.Value = griddata.sidelap;
             NUM_spacing.Value = griddata.spacing;
 
-            CMB_startfrom.Text = griddata.startfrom;
+            CMB_startfrom.Text = loadPost(griddata.startfrom);
 
             CHK_toandland.Checked = griddata.autotakeoff;
             CHK_toandland_RTL.Checked = griddata.autotakeoff_RTL;
@@ -258,7 +282,7 @@ namespace ByAeroBeHero
             griddata.sidelap = num_sidelap.Value;
             griddata.spacing = NUM_spacing.Value;
 
-            griddata.startfrom = CMB_startfrom.Text;
+            griddata.startfrom = startForm(CMB_startfrom.Text);
 
             griddata.autotakeoff = CHK_toandland.Checked;
             griddata.autotakeoff_RTL = CHK_toandland_RTL.Checked;
@@ -370,7 +394,7 @@ namespace ByAeroBeHero
             plugin.Host.config["grid_sidelap"] = num_sidelap.Value.ToString();
             plugin.Host.config["grid_spacing"] = NUM_spacing.Value.ToString();
 
-            plugin.Host.config["grid_startfrom"] = CMB_startfrom.Text;
+            plugin.Host.config["grid_startfrom"] = startForm(CMB_startfrom.Text);
 
             plugin.Host.config["grid_autotakeoff"] = CHK_toandland.Checked.ToString();
             plugin.Host.config["grid_autotakeoff_RTL"] = CHK_toandland_RTL.Checked.ToString();
@@ -518,7 +542,7 @@ namespace ByAeroBeHero
 
             // new grid system test
 
-            grid = Grid.CreateGrid(list, CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value), (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value, (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value, (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition), CMB_startfrom.Text), false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value);
+            grid = Grid.CreateGrid(list, CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value), (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value, (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value, (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition),startForm(CMB_startfrom.Text)), false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value);
 
             List<PointLatLng> list2 = new List<PointLatLng>();
 
@@ -634,22 +658,22 @@ namespace ByAeroBeHero
             {
                 // Area
                 float area = (float)calcpolygonarea(list) * 10.7639f; // Calculate the area in square feet
-                lbl_area.Text = area.ToString("#") + " ft^2";
+                lbl_area.Text = area.ToString("#") + " 平方英尺";
                 if (area < 21780f)
                 {
-                    lbl_area.Text = area.ToString("#") + " ft^2";
+                    lbl_area.Text = area.ToString("#") + " 平方英尺";
                 }
                 else
                 {
                     area = area / 43560f;
                     if (area < 640f)
                     {
-                        lbl_area.Text = area.ToString("0.##") + " acres";
+                        lbl_area.Text = area.ToString("0.##") + " 英亩";
                     }
                     else
                     {
                         area = area / 640f;
-                        lbl_area.Text = area.ToString("0.##") + " miles^2";
+                        lbl_area.Text = area.ToString("0.##") + " 平方英里";
                     }
                 }
 
@@ -657,30 +681,30 @@ namespace ByAeroBeHero
                 float distance = routetotal * 3280.84f; // Calculate the distance in feet
                 if (distance < 5280f)
                 {
-                    lbl_distance.Text = distance.ToString("#") + " ft";
+                    lbl_distance.Text = distance.ToString("#") + " 英尺";
                 }
                 else
                 {
                     distance = distance / 5280f;
-                    lbl_distance.Text = distance.ToString("0.##") + " miles";
+                    lbl_distance.Text = distance.ToString("0.##") + " 英里";
                 }
 
-                lbl_spacing.Text = (NUM_spacing.Value * 3.2808399m).ToString("#") + " ft";
+                lbl_spacing.Text = (NUM_spacing.Value * 3.2808399m).ToString("#") + " 英尺";
                 lbl_grndres.Text = inchpixel;
-                lbl_distbetweenlines.Text = (NUM_Distance.Value * 3.2808399m).ToString("0.##") + " ft";
-                lbl_footprint.Text = feet_fovH + " x " + feet_fovV + " ft";
-                lbl_turnrad.Text = (turnrad * 2 * 3.2808399).ToString("0") + " ft";
+                lbl_distbetweenlines.Text = (NUM_Distance.Value * 3.2808399m).ToString("0.##") + " 英尺";
+                lbl_footprint.Text = feet_fovH + " x " + feet_fovV + " 英尺";
+                lbl_turnrad.Text = (turnrad * 2 * 3.2808399).ToString("0") + " 英尺";
             }
             else
             {
                 // Meters
-                lbl_area.Text = calcpolygonarea(list).ToString("#") + " m^2";
-                lbl_distance.Text = routetotal.ToString("0.##") + " km";
-                lbl_spacing.Text = NUM_spacing.Value.ToString("#") + " m";
+                lbl_area.Text = calcpolygonarea(list).ToString("#") + " 平方米";
+                lbl_distance.Text = routetotal.ToString("0.##") + " 千米";
+                lbl_spacing.Text = NUM_spacing.Value.ToString("#") + " 米";
                 lbl_grndres.Text = TXT_cmpixel.Text;
-                lbl_distbetweenlines.Text = NUM_Distance.Value.ToString("0.##") + " m";
-                lbl_footprint.Text = TXT_fovH.Text + " x " + TXT_fovV.Text + " m";
-                lbl_turnrad.Text = (turnrad * 2).ToString("0") + " m";
+                lbl_distbetweenlines.Text = NUM_Distance.Value.ToString("0.##") + " 米";
+                lbl_footprint.Text = TXT_fovH.Text + " x " + TXT_fovV.Text + " 米";
+                lbl_turnrad.Text = (turnrad * 2).ToString("0") + " 米";
             }
 
             double flyspeedms = CurrentState.fromSpeedDisplayUnit((double)NUM_UpDownFlySpeed.Value);
@@ -727,15 +751,15 @@ namespace ByAeroBeHero
 
             if (hours > 0)
             {
-                return hours + ":" + mins.ToString("00") + ":" + secs.ToString("00") + " Hours";
+                return hours + ":" + mins.ToString("00") + ":" + secs.ToString("00") + " 小时";
             }
             else if (mins > 0)
             {
-                return mins + ":" + secs.ToString("00") + " Minutes";
+                return mins + ":" + secs.ToString("00") + " 分钟";
             }
             else
             {
-                return secs.ToString("0.00") + " Seconds";
+                return secs.ToString("0.00") + " 秒";
             }
         }
 
@@ -860,9 +884,9 @@ namespace ByAeroBeHero
                 float fovv = (float)(Math.Atan(sensorheight / (2 * focallen)) * rad2deg * 2);
 
                 //    mm  / pixels * 100
-                TXT_cmpixel.Text = ((viewheight / imageheight) * 100).ToString("0.00 cm");
+                TXT_cmpixel.Text = ((viewheight / imageheight) * 100).ToString("0.00 厘米");
                 // Imperial
-                inchpixel = (((viewheight / imageheight) * 100) * 0.393701).ToString("0.00 inches");
+                inchpixel = (((viewheight / imageheight) * 100) * 0.393701).ToString("0.00 英寸");
 
                 if (CHK_camdirection.Checked)
                 {
@@ -913,11 +937,11 @@ namespace ByAeroBeHero
             string dist;
             if (DistUnits == "Feet")
             {
-                dist = ((float)item.Distance * 3280.84f).ToString("0.##") + " ft";
+                dist = ((float)item.Distance * 3280.84f).ToString("0.##") + " 英尺";
             }
             else
             {
-                dist = ((float)item.Distance * 1000f).ToString("0.##") + " m";
+                dist = ((float)item.Distance * 1000f).ToString("0.##") + " 米";
             }
             if (marker != null)
             {
@@ -1371,6 +1395,7 @@ namespace ByAeroBeHero
                     plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, (int)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed), 0, 0, 0, 0, 0);
                 }
 
+                #region
                 int i = 0;
                 grid.ForEach(plla =>
                 {
@@ -1410,6 +1435,9 @@ namespace ByAeroBeHero
                     plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 0, 0, 0, 0, 0);
                 }
 
+                #endregion
+
+                
                 if (CHK_usespeed.Checked)
                 {
                     if (MainV2.comPort.MAV.param["WPNAV_SPEED"] != null)

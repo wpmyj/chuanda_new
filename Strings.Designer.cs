@@ -1285,6 +1285,15 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
+        ///   查找类似 设置参数成功 的本地化字符串。
+        /// </summary>
+        public static string SetValueSuccess {
+            get {
+                return ResourceManager.GetString("SetValueSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Show me again? 的本地化字符串。
         /// </summary>
         public static string ShowMeAgain {
@@ -1326,6 +1335,15 @@ namespace ByAeroBeHero {
         public static string Stop {
             get {
                 return ResourceManager.GetString("Stop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 完成 的本地化字符串。
+        /// </summary>
+        public static string Success {
+            get {
+                return ResourceManager.GetString("Success", resourceCulture);
             }
         }
         

@@ -45,7 +45,6 @@ namespace ByAeroBeHero.SimpleGrid
             layerpolygons = new GMapOverlay( "polygons");
             map.Overlays.Add(layerpolygons);
 
-            CMB_startfrom.DataSource = Enum.GetNames(typeof(Grid.StartPosition));
             CMB_startfrom.SelectedIndex = 0;
 
             // set and angle that is good
@@ -53,6 +52,18 @@ namespace ByAeroBeHero.SimpleGrid
             plugin.Host.FPDrawnPolygon.Points.ForEach(x => { list.Add(x); });
             NUM_angle.Value = (decimal)((getAngleOfLongestSide(list) + 360) % 360);
 
+        }
+
+        public string startForm(string postion)
+        {
+            string startPost = string.Empty;
+            if (postion == "家") { startPost = "Home"; }
+            else if (postion == "左下") { startPost = "BottomLeft"; }
+            else if (postion == "左上") { startPost = "TopLeft"; }
+            else if (postion == "右下") { startPost = "BottomRight"; }
+            else if (postion == "右上") { startPost = "TopRight"; }
+
+            return startPost;
         }
 
         void loadsettings()
@@ -140,7 +151,7 @@ namespace ByAeroBeHero.SimpleGrid
 
             plugin.Host.FPDrawnPolygon.Points.ForEach(x => { list.Add(x); });
 
-            grid = Grid.CreateGrid(list, (double)NUM_altitude.Value, (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value, (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value, (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition), CMB_startfrom.Text), false);
+            grid = Grid.CreateGrid(list, (double)NUM_altitude.Value, (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value, (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value, (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition), startForm(CMB_startfrom.Text)), false);
 
             List<PointLatLng> list2 = new List<PointLatLng>();
 
@@ -184,7 +195,7 @@ namespace ByAeroBeHero.SimpleGrid
             }
 
             // add wp polygon
-            wppoly = new GMapPolygon(list2, "Grid");
+            wppoly = new GMapPolygon(list2, "航线规划(简单)");
             wppoly.Stroke.Color = Color.Yellow;
             wppoly.Fill = Brushes.Transparent;
             wppoly.Stroke.Width = 4;
@@ -193,13 +204,13 @@ namespace ByAeroBeHero.SimpleGrid
 
             Console.WriteLine("Poly Dist " + wppoly.Distance);
 
-            lbl_area.Text = calcpolygonarea(plugin.Host.FPDrawnPolygon.Points).ToString("#") + " m^2";
+            lbl_area.Text = calcpolygonarea(plugin.Host.FPDrawnPolygon.Points).ToString("#") + " 平方米";
 
-            lbl_distance.Text = wppoly.Distance.ToString("0.##") + " km";
+            lbl_distance.Text = wppoly.Distance.ToString("0.##") + " 千米";
 
 
             lbl_strips.Text = ((int)(strips / 2)).ToString();
-            lbl_distbetweenlines.Text = NUM_Distance.Value.ToString("0.##") + " m";
+            lbl_distbetweenlines.Text = NUM_Distance.Value.ToString("0.##") + " 米";
 
                 map.HoldInvalidation = false;
 

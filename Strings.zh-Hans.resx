@@ -254,13 +254,13 @@
     <value>单位：{0}{1}</value>
   </data>
   <data name="CONNECTc" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Disconnect" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Failclog" xml:space="preserve">
     <value>创建日志失败 - 将不会记录本次会话</value>
@@ -448,7 +448,7 @@ Mission Planner waits for 2 valid heartbeat packets before connecting</value>
     <value>停止</value>
   </data>
   <data name="Connect" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Start" xml:space="preserve">
     <value>开始</value>
@@ -533,5 +533,11 @@ Mission Planner waits for 2 valid heartbeat packets before connecting</value>
   </data>
   <data name="TrackerHome" xml:space="preserve">
     <value>追踪器的家</value>
+  </data>
+  <data name="SetValueSuccess" xml:space="preserve">
+    <value>设置参数成功</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>完成</value>
   </data>
 </root>

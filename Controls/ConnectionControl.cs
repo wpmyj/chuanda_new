@@ -51,6 +51,10 @@ namespace ByAeroBeHero.Controls
             }
         }
 
+        [System.Runtime.InteropServices.DllImport("user32.dll", EntryPoint = "SendMessageA")]
+        public static extern int SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
+        const int CB_SETDROPPEDWIDTH = 0x160;
+
         private void cmb_Connection_DrawItem(object sender, DrawItemEventArgs e)
         {
             if (e.Index < 0)
@@ -78,12 +82,13 @@ namespace ByAeroBeHero.Controls
                     text = string.Empty;
                 }
             }
-            
+
             e.Graphics.DrawString(text, e.Font,
                                   new SolidBrush(combo.ForeColor),
                                   new Point(e.Bounds.X, e.Bounds.Y));
 
             e.DrawFocusRectangle();
+
         }
 
     }

@@ -37,10 +37,10 @@ namespace ByAeroBeHero
         public static void Main(string[] args)
         {
             //给窗体添加皮肤样式 wangjicheng
-            //Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine();
-            ////skin.SkinFile = Application.StartupPath.Replace(@"\bin\Debug", "") + @"\skins\Emerald.ssk";
-            //skin.SkinFile = System.Environment.CurrentDirectory + "\\skins\\" + "SteelBlue.ssk";
-            //skin.Active = true;
+            Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine();
+            //skin.SkinFile = Application.StartupPath.Replace(@"\bin\Debug", "") + @"\skins\Emerald.ssk";
+            skin.SkinFile = System.Environment.CurrentDirectory + "\\skins\\" + "SportsBlack.ssk";
+            skin.Active = true;
 
             Program.args = args;
             Console.WriteLine("If your error is about Microsoft.DirectX.DirectInput, please install the latest directx redist from here http://www.microsoft.com/en-us/download/details.aspx?id=35 \n\n");

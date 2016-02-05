@@ -23,7 +23,7 @@ namespace ByAeroBeHero.Controls
         public bool Vertical { get; set; }
 
         double _alt = 0;
-        private string _unit = "m";
+        private string _unit = "米";
         Geographic point = new Geographic();
 
         public enum CoordsSystems
@@ -50,7 +50,7 @@ namespace ByAeroBeHero.Controls
 
             if (Sys == CoordsSystems.GEO.ToString())
             {
-               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000")+"        " +"经度|"+ Lng.ToString("0.000000")+"        " + "海拔|" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
+               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000")+"度"+"        " +"经度|"+ Lng.ToString("0.000000")+"度"+"        " + "海拔|" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
             }
             else if (Sys == CoordsSystems.UTM.ToString())
             {

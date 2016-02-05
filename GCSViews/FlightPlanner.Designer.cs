@@ -83,9 +83,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.BUT_write = new ByAeroBeHero.Controls.MyButton();
             this.BUT_read = new ByAeroBeHero.Controls.MyButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Label1 = new System.Windows.Forms.Label();
+            this.lblHAlt = new System.Windows.Forms.Label();
+            this.lbljd = new System.Windows.Forms.Label();
+            this.lblwd = new System.Windows.Forms.Label();
             this.TXT_homealt = new System.Windows.Forms.TextBox();
             this.TXT_homelng = new System.Windows.Forms.TextBox();
             this.TXT_homelat = new System.Windows.Forms.TextBox();
@@ -121,8 +121,9 @@
             this.panelMap = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_distance = new System.Windows.Forms.Label();
-            this.lbl_prevdist = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
+            this.lbl_prevdist = new System.Windows.Forms.Label();
+            this.lblhxj = new System.Windows.Forms.Label();
             this.MainMap = new ByAeroBeHero.Controls.myGMAP();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -442,20 +443,20 @@
             this.BUT_read.UseVisualStyleBackColor = true;
             this.BUT_read.Click += new System.EventHandler(this.BUT_read_Click);
             // 
-            // label3
+            // lblHAlt
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.lblHAlt, "lblHAlt");
+            this.lblHAlt.Name = "lblHAlt";
             // 
-            // label2
+            // lbljd
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.lbljd, "lbljd");
+            this.lbljd.Name = "lbljd";
             // 
-            // Label1
+            // lblwd
             // 
-            resources.ApplyResources(this.Label1, "Label1");
-            this.Label1.Name = "Label1";
+            resources.ApplyResources(this.lblwd, "lblwd");
+            this.lblwd.Name = "lblwd";
             // 
             // TXT_homealt
             // 
@@ -766,9 +767,10 @@
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
             this.tableLayoutPanel5.Controls.Add(this.lbl_distance, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.coords1, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.coords1, 4, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_homedist, 3, 0);
             this.tableLayoutPanel5.Controls.Add(this.lbl_prevdist, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lbl_homedist, 2, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lblhxj, 2, 0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             // 
             // lbl_distance
@@ -778,6 +780,13 @@
             this.lbl_distance.ForeColor = System.Drawing.Color.White;
             this.lbl_distance.Name = "lbl_distance";
             // 
+            // lbl_homedist
+            // 
+            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
+            this.lbl_homedist.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_homedist.ForeColor = System.Drawing.Color.White;
+            this.lbl_homedist.Name = "lbl_homedist";
+            // 
             // lbl_prevdist
             // 
             resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
@@ -785,12 +794,12 @@
             this.lbl_prevdist.ForeColor = System.Drawing.Color.White;
             this.lbl_prevdist.Name = "lbl_prevdist";
             // 
-            // lbl_homedist
+            // lblhxj
             // 
-            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
-            this.lbl_homedist.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_homedist.ForeColor = System.Drawing.Color.White;
-            this.lbl_homedist.Name = "lbl_homedist";
+            resources.ApplyResources(this.lblhxj, "lblhxj");
+            this.lblhxj.BackColor = System.Drawing.Color.Transparent;
+            this.lblhxj.ForeColor = System.Drawing.Color.White;
+            this.lblhxj.Name = "lblhxj";
             // 
             // MainMap
             // 
@@ -1337,10 +1346,10 @@
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.Teal;
             resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-            this.tableLayoutPanel4.Controls.Add(this.Label1, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblwd, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblHAlt, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.TXT_homealt, 2, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbljd, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.TXT_homelat, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.TXT_homelng, 1, 1);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -1394,9 +1403,9 @@
 
         private Controls.MyButton BUT_read;
         private Controls.MyButton BUT_write;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label Label1;
+        private System.Windows.Forms.Label lblHAlt;
+        private System.Windows.Forms.Label lbljd;
+        private System.Windows.Forms.Label lblwd;
         private System.Windows.Forms.TextBox TXT_homealt;
         private System.Windows.Forms.TextBox TXT_homelng;
         private System.Windows.Forms.TextBox TXT_homelat;
@@ -1531,5 +1540,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private Controls.MyButton myButton1;
+        private System.Windows.Forms.Label lblhxj;
     }
 }

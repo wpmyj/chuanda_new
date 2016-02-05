@@ -30,10 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUI));
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.lbl_turnrad = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
             this.lbl_photoevery = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.lbl_pictures = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.lbl_grndres = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.lbl_spacing = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.lbl_turnrad = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.lbl_flighttime = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.lbl_distbetweenlines = new System.Windows.Forms.Label();
@@ -41,13 +47,7 @@
             this.lbl_footprint = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.lbl_strips = new System.Windows.Forms.Label();
-            this.lbl_pictures = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.lbl_grndres = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.lbl_spacing = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_area = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -115,6 +115,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.NUM_Distance = new System.Windows.Forms.NumericUpDown();
             this.tabSimple = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.CHK_usespeed = new System.Windows.Forms.CheckBox();
             this.CHK_toandland_RTL = new System.Windows.Forms.CheckBox();
@@ -161,6 +163,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).BeginInit();
             this.tabSimple.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).BeginInit();
@@ -172,41 +176,17 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.lbl_turnrad);
-            this.groupBox5.Controls.Add(this.label36);
             this.groupBox5.Controls.Add(this.lbl_photoevery);
             this.groupBox5.Controls.Add(this.label35);
-            this.groupBox5.Controls.Add(this.lbl_flighttime);
-            this.groupBox5.Controls.Add(this.label31);
-            this.groupBox5.Controls.Add(this.lbl_distbetweenlines);
-            this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.lbl_footprint);
-            this.groupBox5.Controls.Add(this.label30);
-            this.groupBox5.Controls.Add(this.lbl_strips);
             this.groupBox5.Controls.Add(this.lbl_pictures);
-            this.groupBox5.Controls.Add(this.label33);
             this.groupBox5.Controls.Add(this.label34);
             this.groupBox5.Controls.Add(this.lbl_grndres);
             this.groupBox5.Controls.Add(this.label29);
             this.groupBox5.Controls.Add(this.lbl_spacing);
             this.groupBox5.Controls.Add(this.label27);
-            this.groupBox5.Controls.Add(this.lbl_distance);
-            this.groupBox5.Controls.Add(this.lbl_area);
-            this.groupBox5.Controls.Add(this.label23);
-            this.groupBox5.Controls.Add(this.label22);
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
-            // 
-            // lbl_turnrad
-            // 
-            resources.ApplyResources(this.lbl_turnrad, "lbl_turnrad");
-            this.lbl_turnrad.Name = "lbl_turnrad";
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
             // 
             // lbl_photoevery
             // 
@@ -217,6 +197,46 @@
             // 
             resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
+            // 
+            // lbl_pictures
+            // 
+            resources.ApplyResources(this.lbl_pictures, "lbl_pictures");
+            this.lbl_pictures.Name = "lbl_pictures";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // lbl_grndres
+            // 
+            resources.ApplyResources(this.lbl_grndres, "lbl_grndres");
+            this.lbl_grndres.Name = "lbl_grndres";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // lbl_spacing
+            // 
+            resources.ApplyResources(this.lbl_spacing, "lbl_spacing");
+            this.lbl_spacing.Name = "lbl_spacing";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // lbl_turnrad
+            // 
+            resources.ApplyResources(this.lbl_turnrad, "lbl_turnrad");
+            this.lbl_turnrad.Name = "lbl_turnrad";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
             // 
             // lbl_flighttime
             // 
@@ -253,40 +273,10 @@
             resources.ApplyResources(this.lbl_strips, "lbl_strips");
             this.lbl_strips.Name = "lbl_strips";
             // 
-            // lbl_pictures
-            // 
-            resources.ApplyResources(this.lbl_pictures, "lbl_pictures");
-            this.lbl_pictures.Name = "lbl_pictures";
-            // 
             // label33
             // 
             resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
-            // 
-            // label34
-            // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
-            // 
-            // lbl_grndres
-            // 
-            resources.ApplyResources(this.lbl_grndres, "lbl_grndres");
-            this.lbl_grndres.Name = "lbl_grndres";
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            // 
-            // lbl_spacing
-            // 
-            resources.ApplyResources(this.lbl_spacing, "lbl_spacing");
-            this.lbl_spacing.Name = "lbl_spacing";
-            // 
-            // label27
-            // 
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.Name = "label27";
             // 
             // lbl_distance
             // 
@@ -418,9 +408,7 @@
             // rad_trigdist
             // 
             resources.ApplyResources(this.rad_trigdist, "rad_trigdist");
-            this.rad_trigdist.Checked = true;
             this.rad_trigdist.Name = "rad_trigdist";
-            this.rad_trigdist.TabStop = true;
             this.rad_trigdist.Tag = "";
             this.rad_trigdist.UseVisualStyleBackColor = true;
             // 
@@ -674,12 +662,12 @@
             // NUM_copter_delay
             // 
             this.NUM_copter_delay.DecimalPlaces = 1;
+            resources.ApplyResources(this.NUM_copter_delay, "NUM_copter_delay");
             this.NUM_copter_delay.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            resources.ApplyResources(this.NUM_copter_delay, "NUM_copter_delay");
             this.NUM_copter_delay.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -774,8 +762,13 @@
             // 
             // CMB_startfrom
             // 
-            this.CMB_startfrom.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_startfrom, "CMB_startfrom");
+            this.CMB_startfrom.FormattingEnabled = true;
+            this.CMB_startfrom.Items.AddRange(new object[] {
+            resources.GetString("CMB_startfrom.Items"),
+            resources.GetString("CMB_startfrom.Items1"),
+            resources.GetString("CMB_startfrom.Items2"),
+            resources.GetString("CMB_startfrom.Items3")});
             this.CMB_startfrom.Name = "CMB_startfrom";
             this.CMB_startfrom.SelectedIndexChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
             // 
@@ -847,12 +840,39 @@
             // 
             // tabSimple
             // 
+            this.tabSimple.Controls.Add(this.groupBox8);
             this.tabSimple.Controls.Add(this.groupBox6);
             this.tabSimple.Controls.Add(this.groupBox4);
             this.tabSimple.Controls.Add(this.BUT_Accept);
             resources.ApplyResources(this.tabSimple, "tabSimple");
             this.tabSimple.Name = "tabSimple";
             this.tabSimple.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.tableLayoutPanel1);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.lbl_turnrad, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label22, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label36, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label23, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_flighttime, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_area, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_distance, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label33, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label30, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_distbetweenlines, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_footprint, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_strips, 1, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // groupBox6
             // 
@@ -875,6 +895,8 @@
             // CHK_usespeed
             // 
             resources.ApplyResources(this.CHK_usespeed, "CHK_usespeed");
+            this.CHK_usespeed.Checked = true;
+            this.CHK_usespeed.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_usespeed.Name = "CHK_usespeed";
             this.CHK_usespeed.UseVisualStyleBackColor = true;
             // 
@@ -927,8 +949,8 @@
             // 
             // CMB_camera
             // 
-            this.CMB_camera.FormattingEnabled = true;
             resources.ApplyResources(this.CMB_camera, "CMB_camera");
+            this.CMB_camera.FormattingEnabled = true;
             this.CMB_camera.Name = "CMB_camera";
             this.CMB_camera.SelectedIndexChanged += new System.EventHandler(this.CMB_camera_SelectedIndexChanged);
             // 
@@ -954,12 +976,12 @@
             // 
             // NUM_altitude
             // 
+            resources.ApplyResources(this.NUM_altitude, "NUM_altitude");
             this.NUM_altitude.Increment = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            resources.ApplyResources(this.NUM_altitude, "NUM_altitude");
             this.NUM_altitude.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1061,13 +1083,13 @@
             // 
             // map
             // 
-            resources.ApplyResources(this.map, "map");
             this.map.Bearing = 0F;
             this.map.CanDragMap = true;
             this.map.EmptyTileColor = System.Drawing.Color.Gray;
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemmory = 5;
+            resources.ApplyResources(this.map, "map");
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 19;
             this.map.MinZoom = 2;
@@ -1136,6 +1158,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
             this.tabSimple.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).EndInit();
@@ -1262,5 +1287,7 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.NumericUpDown NUM_leadin;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

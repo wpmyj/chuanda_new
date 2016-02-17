@@ -121,7 +121,16 @@ namespace ByAeroBeHero.Controls
             string value = base.Text;
             if (decimal.Parse(value) > base.Maximum)
             {
-                if (CustomMessageBox.Show(ParamName + " Value out of range\nDo you want to accept the new value?", "Out of range", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                string paramRang = string.Empty;
+                if (ParamName == "FS_THR_VALUE")
+                {
+                    paramRang="油门值";
+                }
+                if (ParamName == "FS_BATT_VOLTAGE")
+                {
+                    paramRang = "电压值";
+                }
+                if (CustomMessageBox.Show(paramRang + " 超出范围\n是否发送?", "超出范围", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     base.Maximum = decimal.Parse(value);
                     base.Value = decimal.Parse(value);

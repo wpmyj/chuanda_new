@@ -2941,6 +2941,30 @@ namespace ByAeroBeHero
             //MainMenu.BackgroundImage = ByAeroBeHero.Properties.Resources.bgdark;
         }
 
+        public void controlMainMenuColor(string MainMenuName) 
+        {
+            if(MainMenuName=="MenuFlightData")
+            {
+                MenuFlightData.BackColor = Color.Black;           
+            }
+            else if (MainMenuName == "MenuFlightPlanner") 
+            {
+                MenuFlightPlanner.BackColor = Color.Black;
+            }
+            else if (MainMenuName == "MenuInitConfig") 
+            {
+                MenuInitConfig.BackColor = Color.Black;
+            }
+            else if (MainMenuName == "MenuConfigTune") 
+            {
+                MenuConfigTune.BackColor = Color.Black;
+            }
+            else if (MainMenuName == "MenuHelp") 
+            {
+                MenuHelp.BackColor = Color.Black;
+            }
+        }
+
         private void fullScreenToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // full screen

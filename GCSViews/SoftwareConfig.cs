@@ -19,6 +19,11 @@ namespace ByAeroBeHero.GCSViews
             InitializeComponent();
         }
 
+        public bool isConnected
+        {
+            get { return MainV2.comPort.BaseStream.IsOpen; }
+        }
+
         public void Activate()
         {
         }
@@ -119,11 +124,22 @@ namespace ByAeroBeHero.GCSViews
                     backstageView.ActivatePage(start);
                    
                 }
-                    
+
+                MainV2.instance.controlMainMenuColor("MenuConfigTune");
+
+                IsShowControl(isConnected);                   
             }
             catch (Exception ex)
             {
                 log.Error(ex);
+            }
+        }
+
+        private void IsShowControl(bool isConnected)
+        {
+            if (!isConnected)
+            {
+                CustomMessageBox.Show("请使用地面站连接飞行控制器，然后在进行参数设置操作！");
             }
         }
 

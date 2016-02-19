@@ -375,6 +375,9 @@
   <data name="groupBox5.Text" xml:space="preserve">
     <value>Stats</value>
   </data>
+  <data name="groupBox5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
     <value>groupBox5</value>
   </data>

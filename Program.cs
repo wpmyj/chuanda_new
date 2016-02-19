@@ -246,7 +246,8 @@ namespace ByAeroBeHero
 
             log.Info("Th Name "+Thread.Name);
 
-            DialogResult dr = CustomMessageBox.Show("An error has occurred\n" + ex.ToString() + "\n\nReport this Error???", "Send Error", MessageBoxButtons.YesNo);
+            DialogResult dr = CustomMessageBox.Show("输入的参数格式不正确,请重新输入", "提示", MessageBoxButtons.OK);
+
             if (DialogResult.Yes == dr)
             {
                 try

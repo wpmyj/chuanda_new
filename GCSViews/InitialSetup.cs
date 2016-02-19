@@ -81,10 +81,19 @@ namespace ByAeroBeHero.GCSViews
                     backstageView.ActivatePage(page);
                     break;
                 }
-
+                
             }
-
+            MainV2.instance.controlMainMenuColor("MenuInitConfig");
+            IsShowControl(isConnected);
             ThemeManager.ApplyThemeTo(this);
+        }
+
+        public void IsShowControl(bool isConnected)
+        {
+            if (!isConnected)
+            {
+                CustomMessageBox.Show("请使用地面站连接飞行控制器，然后在进行参数设置操作！");
+            }
         }
 
         private void HardwareConfig_FormClosing(object sender, FormClosingEventArgs e)

@@ -260,7 +260,7 @@ namespace ByAeroBeHero.Controls.BackstageView
 
             pnlMenu.Controls.Add(lnkButton);
             lnkButton.Click += this.ButtonClick;
-            lnkButton.DoubleClick += lnkButton_DoubleClick;
+            //lnkButton.DoubleClick += lnkButton_DoubleClick;
 
             ButtonTopPos += lnkButton.Width;
 
@@ -388,43 +388,47 @@ namespace ByAeroBeHero.Controls.BackstageView
             }
         }
 
+        #region
         /*
          * Experimental - double clicking a button will spawn it out into a new form
          * Care must be given to lifecycle here - two pages can now be interacted with 
          * 'simultaneously'
          */
-        private void lnkButton_DoubleClick(object sender, EventArgs e)
-        {
-            var backstageViewButton = ((BackstageViewButton)sender);
-            var associatedPage = backstageViewButton.Tag as BackstageViewPage;
+        //wjch
+        //private void lnkButton_DoubleClick(object sender, EventArgs e)
+        //{
+        //    var backstageViewButton = ((BackstageViewButton)sender);
+        //    var associatedPage = backstageViewButton.Tag as BackstageViewPage;
 
-            var popoutForm = new Form();
-            popoutForm.FormClosing += popoutForm_FormClosing;
+        //    var popoutForm = new Form();
+        //    popoutForm.FormClosing += popoutForm_FormClosing;
 
-            int maxright = 0, maxdown = 0;
+        //    int maxright = 0, maxdown = 0;
 
-            foreach (Control ctl in associatedPage.Page.Controls)
-            {
-                maxright = Math.Max(ctl.Right, maxright);
-                maxdown = Math.Max(ctl.Bottom, maxdown);
-            }
+        //    foreach (Control ctl in associatedPage.Page.Controls)
+        //    {
+        //        maxright = Math.Max(ctl.Right, maxright);
+        //        maxdown = Math.Max(ctl.Bottom, maxdown);
+        //    }
 
-            // set the height to 0, so we can derive the header height in the next step
-            popoutForm.Height = 0;
+        //    // set the height to 0, so we can derive the header height in the next step
+        //    popoutForm.Height = 0;
 
-            popoutForm.Size = new Size(maxright + 20, maxdown + 20 + popoutForm.Height);
-            popoutForm.Controls.Add(associatedPage.Page);
-            popoutForm.Tag = associatedPage;
+        //    popoutForm.Size = new Size(maxright + 20, maxdown + 20 + popoutForm.Height);
+        //    popoutForm.Controls.Add(associatedPage.Page);
+        //    popoutForm.Tag = associatedPage;
 
-            popoutForm.Text = associatedPage.LinkText;
+        //    popoutForm.Text = associatedPage.LinkText;
 
-            popoutPage = associatedPage;
+        //    popoutPage = associatedPage;
 
-            popoutForm.BackColor = this.BackColor;
-            popoutForm.ForeColor = this.ForeColor;
+        //    popoutForm.BackColor = this.BackColor;
+        //    popoutForm.ForeColor = this.ForeColor;
 
-            popoutForm.Show(this);
-        }
+        //    popoutForm.Show(this);
+        //}
+
+        #endregion
 
         private void popoutForm_FormClosing(object sender, FormClosingEventArgs e)
         {

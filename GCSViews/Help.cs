@@ -22,11 +22,14 @@ namespace ByAeroBeHero.GCSViews
             this.ForeColor = System.Drawing.Color.Black;
 
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
-            this.richTextBox1.ForeColor = System.Drawing.Color.Black; 
+            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
+
+            
         }
 
         public void Activate()
         {
+            MainV2.instance.controlMainMenuColor("MenuHelp");
             try
             {
                 CHK_showconsole.Checked = MainV2.config["showconsole"].ToString() == "True";

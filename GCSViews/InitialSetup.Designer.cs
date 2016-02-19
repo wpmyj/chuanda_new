@@ -221,6 +221,7 @@
             // backstageViewPageradio
             // 
             this.backstageViewPageradio.Advanced = false;
+            this.backstageViewPageradio.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPageradio.LinkText = "Radio Calibration";
             this.backstageViewPageradio.Page = this.configRadioInput1;
             this.backstageViewPageradio.Parent = null;
@@ -251,6 +252,7 @@
             // backstageViewPagefs
             // 
             this.backstageViewPagefs.Advanced = false;
+            this.backstageViewPagefs.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPagefs.LinkText = "FailSafe";
             this.backstageViewPagefs.Page = this.configFailSafe1;
             this.backstageViewPagefs.Parent = null;

@@ -84,8 +84,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.configDefaultSettings1 = new ByAeroBeHero.Controls.DefaultSettings();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).BeginInit();
@@ -364,7 +364,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // pictureBoxWithPseudoOpacity3
             // 
             this.pictureBoxWithPseudoOpacity3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
             this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_12;
             this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
@@ -373,7 +373,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // pictureBoxWithPseudoOpacity2
             // 
             this.pictureBoxWithPseudoOpacity2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
             this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.frames_041;
             this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
@@ -382,7 +382,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // pictureBoxWithPseudoOpacity1
             // 
             this.pictureBoxWithPseudoOpacity1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
             this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.frames_0611;
             this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
@@ -505,12 +505,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Name = "label10";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label10);
@@ -525,6 +519,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel2.Controls.Add(this.rbtn7);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Name = "label10";
             // 
             // configDefaultSettings1
             // 

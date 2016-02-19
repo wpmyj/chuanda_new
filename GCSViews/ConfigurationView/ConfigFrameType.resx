@@ -978,44 +978,23 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
-    <value>groupBox5</value>
+  <data name="btnMotorTest.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
   </data>
-  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnMotorTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="btnMotorTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 17</value>
   </data>
-  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="btnMotorTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>803, 345</value>
+  <data name="btnMotorTest.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 16</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Frame Type</value>
-  </data>
-  <data name="groupBox2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="btnMotorTest.Text" xml:space="preserve">
+    <value>电机测试</value>
   </data>
   <data name="&gt;&gt;btnMotorTest.Name" xml:space="preserve">
     <value>btnMotorTest</value>
@@ -1056,35 +1035,32 @@
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnMotorTest.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>803, 345</value>
   </data>
-  <data name="btnMotorTest.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 16</value>
   </data>
-  <data name="btnMotorTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 17</value>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
   </data>
-  <data name="btnMotorTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 24</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Frame Type</value>
   </data>
-  <data name="btnMotorTest.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
+  <data name="groupBox2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="btnMotorTest.Text" xml:space="preserve">
-    <value>电机测试</value>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;btnMotorTest.Name" xml:space="preserve">
-    <value>btnMotorTest</value>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnMotorTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnMotorTest.Parent" xml:space="preserve">
-    <value>groupBox5</value>
-  </data>
-  <data name="&gt;&gt;btnMotorTest.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="RadbtnFiveRotor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1291,7 +1267,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSelectRackType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 325</value>
+    <value>321, 330</value>
   </data>
   <data name="btnSelectRackType.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 24</value>
@@ -1471,7 +1447,7 @@
     <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 119</value>
+    <value>31, 124</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>698, 205</value>
@@ -1495,111 +1471,6 @@
     <value>2</value>
   </data>
   <data name="tlpExplain.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblText1.Name" xml:space="preserve">
-    <value>lblText1</value>
-  </data>
-  <data name="&gt;&gt;lblText1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblText1.Parent" xml:space="preserve">
-    <value>tlpExplain</value>
-  </data>
-  <data name="&gt;&gt;lblText1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblText2.Name" xml:space="preserve">
-    <value>lblText2</value>
-  </data>
-  <data name="&gt;&gt;lblText2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblText2.Parent" xml:space="preserve">
-    <value>tlpExplain</value>
-  </data>
-  <data name="&gt;&gt;lblText2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblText4.Name" xml:space="preserve">
-    <value>lblText4</value>
-  </data>
-  <data name="&gt;&gt;lblText4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblText4.Parent" xml:space="preserve">
-    <value>tlpExplain</value>
-  </data>
-  <data name="&gt;&gt;lblText4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblText3.Name" xml:space="preserve">
-    <value>lblText3</value>
-  </data>
-  <data name="&gt;&gt;lblText3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblText3.Parent" xml:space="preserve">
-    <value>tlpExplain</value>
-  </data>
-  <data name="&gt;&gt;lblText3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tlpExplain.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="tlpExplain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 21</value>
-  </data>
-  <data name="tlpExplain.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tlpExplain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>587, 93</value>
-  </data>
-  <data name="tlpExplain.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tlpExplain.Name" xml:space="preserve">
-    <value>tlpExplain</value>
-  </data>
-  <data name="&gt;&gt;tlpExplain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tlpExplain.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;tlpExplain.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tlpExplain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblText1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,21.50538,Percent,19.35484,Percent,26.88172,Percent,30.61225" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, -3</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>698, 117</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>类型说明</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="lblText1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -1747,6 +1618,63 @@
   <data name="&gt;&gt;lblText3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="tlpExplain.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="tlpExplain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 21</value>
+  </data>
+  <data name="tlpExplain.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tlpExplain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>587, 93</value>
+  </data>
+  <data name="tlpExplain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.Name" xml:space="preserve">
+    <value>tlpExplain</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;tlpExplain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpExplain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblText1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText4" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblText3" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,21.50538,Percent,19.35484,Percent,26.88172,Percent,30.61225" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 5</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 117</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>类型说明</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -1770,6 +1698,36 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 11.25pt, style=Bold</value>
+  </data>
+  <data name="label10.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 33</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 19</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>2.切勿安装螺旋桨。</value>
+  </data>
+  <data name="label10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -1835,7 +1793,7 @@
     <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 353</value>
+    <value>31, 355</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>698, 134</value>
@@ -1858,48 +1816,6 @@
   <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 11.25pt, style=Bold</value>
-  </data>
-  <data name="label10.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 33</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 19</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>2.切勿安装螺旋桨。</value>
-  </data>
-  <data name="label10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="configDefaultSettings1.Location" type="System.Drawing.Point, System.Drawing">
     <value>792, 355</value>
   </data>
@@ -1916,7 +1832,7 @@
     <value>configDefaultSettings1</value>
   </data>
   <data name="&gt;&gt;configDefaultSettings1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.1.5829.32435, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.DefaultSettings, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configDefaultSettings1.Parent" xml:space="preserve">
     <value>$this</value>

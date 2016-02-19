@@ -507,6 +507,8 @@ namespace ByAeroBeHero.GCSViews
         {
             log.Info("Activate Called");
 
+            MainV2.instance.controlMainMenuColor("MenuFlightData");
+
             OnResize(new EventArgs());
 
             //if (CB_tuning.Checked)

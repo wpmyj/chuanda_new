@@ -106,8 +106,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 local.Invoke((MethodInvoker) delegate
                 {
-                    local.BUT_calib_accell.Text = Strings.Done;
-                    local.BUT_calib_accell.Enabled = false;
+                    local.BUT_calib_accell.Text = "加速度计修正";//Strings.Done;
+                    //local.BUT_calib_accell.Enabled = false;
                     
                 });
             }

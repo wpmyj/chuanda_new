@@ -337,6 +337,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction1;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Aqua;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Teal;
             }
         }
 
@@ -348,6 +351,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction4;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Aqua;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Teal;
             } 
         }
 
@@ -359,6 +365,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction5;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Aqua;
             }
         }
         #endregion
@@ -411,10 +420,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 object motor = ((RadioButton)sender).Tag;
 
+                CustomMessageBox.Show("电机测试："+((RadioButton)sender).Text, "测试电机");
+
                 int imotor = Convert.ToInt32(motor);
                 if (MainV2.comPort.doMotorTest(imotor, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
                     (int)NUM_thr_percent.Value, (int)NUM_duration.Value))
                 {
+
                 }
                 else
                 {

@@ -50,6 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnSendParam = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown2)).BeginInit();
@@ -216,10 +217,18 @@
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
+            // btnSendParam
+            // 
+            resources.ApplyResources(this.btnSendParam, "btnSendParam");
+            this.btnSendParam.Name = "btnSendParam";
+            this.btnSendParam.UseVisualStyleBackColor = true;
+            this.btnSendParam.Click += new System.EventHandler(this.btnSendParam_Click);
+            // 
             // ConfigAC_Fence
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnSendParam);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAC_Fence";
@@ -259,5 +268,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private Controls.MyButton btnSendParam;
     }
 }

@@ -748,7 +748,7 @@ namespace ByAeroBeHero.GCSViews
         /// </summary>
         private void InitControl() 
         {
-
+            MainV2.instance.controlMainMenuColor("MenuFlightPlanner");
         }
         void POI_POIModified(object sender, EventArgs e)
         {
@@ -4504,6 +4504,7 @@ namespace ByAeroBeHero.GCSViews
 
         public void Activate()
         {
+            InitControl();
             timer1.Start();
 
             if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)

@@ -154,7 +154,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             if (run)
             {
-                BUT_Calibrateradio.Text = Strings.Completed;
+                BUT_Calibrateradio.Text = "校准遥控";
                 run = false;
                 return;
             }
@@ -312,7 +312,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 "检测参数设置\n通道参数没有显示在 1500 +-2\n正常值范围 1100 | 1900\n通道:Min | Max \n" +
                 data, "Radio");
 
-            BUT_Calibrateradio.Text = Strings.Completed;
+            BUT_Calibrateradio.Text = "校准遥控";
         }
 
         private void CHK_mixmode_CheckedChanged(object sender, EventArgs e)

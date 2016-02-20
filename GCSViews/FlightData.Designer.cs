@@ -18,7 +18,6 @@
             this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
             this.quickView6 = new ByAeroBeHero.Controls.QuickView();
-            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.quickView5 = new ByAeroBeHero.Controls.QuickView();
             this.quickView4 = new ByAeroBeHero.Controls.QuickView();
             this.quickView2 = new ByAeroBeHero.Controls.QuickView();
@@ -28,43 +27,29 @@
             this.BUT_resumemis = new ByAeroBeHero.Controls.MyButton();
             this.CMB_mountmode = new System.Windows.Forms.ComboBox();
             this.BUT_mountmode = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_ARM = new ByAeroBeHero.Controls.MyButton();
             this.BUT_joystick = new ByAeroBeHero.Controls.MyButton();
             this.BUT_quickmanual = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_quickrtl = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_quickauto = new ByAeroBeHero.Controls.MyButton();
             this.CMB_setwp = new System.Windows.Forms.ComboBox();
             this.BUT_setwp = new ByAeroBeHero.Controls.MyButton();
             this.CMB_modes = new System.Windows.Forms.ComboBox();
             this.BUT_setmode = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_clear_track = new ByAeroBeHero.Controls.MyButton();
             this.CMB_action = new System.Windows.Forms.ComboBox();
             this.BUT_Homealt = new ByAeroBeHero.Controls.MyButton();
             this.BUT_RAWSensor = new ByAeroBeHero.Controls.MyButton();
             this.BUTrestartmission = new ByAeroBeHero.Controls.MyButton();
             this.BUTactiondo = new ByAeroBeHero.Controls.MyButton();
-            this.modifyandSetSpeed = new ByAeroBeHero.Controls.ModifyandSet();
-            this.modifyandSetAlt = new ByAeroBeHero.Controls.ModifyandSet();
             this.tabActionsSimple = new System.Windows.Forms.TabPage();
             this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.myButton2 = new ByAeroBeHero.Controls.MyButton();
             this.myButton3 = new ByAeroBeHero.Controls.MyButton();
             this.tabGauges = new System.Windows.Forms.TabPage();
             this.Gvspeed = new AGaugeApp.AGauge();
-            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.Gheading = new ByAeroBeHero.Controls.HSI();
             this.Galt = new AGaugeApp.AGauge();
             this.Gspeed = new AGaugeApp.AGauge();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
-            this.servoOptions1 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions2 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions3 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions4 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions5 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions6 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions7 = new ByAeroBeHero.Controls.ServoOptions();
             this.tabTLogs = new System.Windows.Forms.TabPage();
             this.tableLayoutPaneltlogs = new System.Windows.Forms.TableLayoutPanel();
             this.BUT_loadtelem = new ByAeroBeHero.Controls.MyButton();
@@ -99,13 +84,17 @@
             this.labelScriptStatus = new System.Windows.Forms.Label();
             this.BUT_select_script = new ByAeroBeHero.Controls.MyButton();
             this.tabPagemessages = new System.Windows.Forms.TabPage();
+            this.BUT_ARM = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickrtl = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickauto = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clear_track = new ByAeroBeHero.Controls.MyButton();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnWarnMessage = new System.Windows.Forms.Button();
+            this.btnMeter = new ByAeroBeHero.Controls.MyButton();
+            this.btnWarnMessage = new ByAeroBeHero.Controls.MyButton();
             this.pboxWarnMessage = new System.Windows.Forms.PictureBox();
             this.pbMeter = new System.Windows.Forms.PictureBox();
-            this.btnMeter = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -122,7 +111,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblHorizontalError = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSataCount = new System.Windows.Forms.Label();
             this.qvyaw = new ByAeroBeHero.Controls.QuickView();
             this.qvroll = new ByAeroBeHero.Controls.QuickView();
@@ -140,7 +128,6 @@
             this.setAspectRatioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.russianHudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
             this.windDir1 = new ByAeroBeHero.Controls.WindDir();
             this.gMapControl1 = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
@@ -159,6 +146,23 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
+            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
+            this.modifyandSetSpeed = new ByAeroBeHero.Controls.ModifyandSet();
+            this.modifyandSetAlt = new ByAeroBeHero.Controls.ModifyandSet();
+            this.servoOptions1 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions2 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions3 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions4 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions5 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions6 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions7 = new ByAeroBeHero.Controls.ServoOptions();
+            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel2.SuspendLayout();
@@ -170,11 +174,9 @@
             this.contextMenuStripactionstab.SuspendLayout();
             this.tabQuick.SuspendLayout();
             this.tableLayoutPanelQuick.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
             this.tabActions.SuspendLayout();
             this.tabActionsSimple.SuspendLayout();
             this.tabGauges.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             this.tabServo.SuspendLayout();
             this.flowLayoutPanelServos.SuspendLayout();
             this.tabTLogs.SuspendLayout();
@@ -194,11 +196,13 @@
             this.contextMenuStripMap.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStripHud.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -299,10 +303,6 @@
             this.quickView6.numberColor = System.Drawing.Color.Maroon;
             this.quickView6.numberformat = "0.00";
             // 
-            // bindingSourceQuickTab
-            // 
-            this.bindingSourceQuickTab.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // quickView5
             // 
             this.quickView5.BackColor = System.Drawing.Color.Teal;
@@ -365,19 +365,19 @@
             // 
             // tabActions
             // 
+            this.tabActions.Controls.Add(this.BUT_clear_track);
+            this.tabActions.Controls.Add(this.BUT_quickrtl);
+            this.tabActions.Controls.Add(this.BUT_quickauto);
+            this.tabActions.Controls.Add(this.BUT_ARM);
             this.tabActions.Controls.Add(this.BUT_resumemis);
             this.tabActions.Controls.Add(this.CMB_mountmode);
             this.tabActions.Controls.Add(this.BUT_mountmode);
-            this.tabActions.Controls.Add(this.BUT_ARM);
             this.tabActions.Controls.Add(this.BUT_joystick);
             this.tabActions.Controls.Add(this.BUT_quickmanual);
-            this.tabActions.Controls.Add(this.BUT_quickrtl);
-            this.tabActions.Controls.Add(this.BUT_quickauto);
             this.tabActions.Controls.Add(this.CMB_setwp);
             this.tabActions.Controls.Add(this.BUT_setwp);
             this.tabActions.Controls.Add(this.CMB_modes);
             this.tabActions.Controls.Add(this.BUT_setmode);
-            this.tabActions.Controls.Add(this.BUT_clear_track);
             this.tabActions.Controls.Add(this.CMB_action);
             this.tabActions.Controls.Add(this.BUT_Homealt);
             this.tabActions.Controls.Add(this.BUT_RAWSensor);
@@ -411,14 +411,6 @@
             this.BUT_mountmode.UseVisualStyleBackColor = true;
             this.BUT_mountmode.Click += new System.EventHandler(this.BUT_mountmode_Click);
             // 
-            // BUT_ARM
-            // 
-            resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
-            this.BUT_ARM.Name = "BUT_ARM";
-            this.toolTip1.SetToolTip(this.BUT_ARM, resources.GetString("BUT_ARM.ToolTip"));
-            this.BUT_ARM.UseVisualStyleBackColor = true;
-            this.BUT_ARM.Click += new System.EventHandler(this.BUT_ARM_Click);
-            // 
             // BUT_joystick
             // 
             resources.ApplyResources(this.BUT_joystick, "BUT_joystick");
@@ -434,22 +426,6 @@
             this.toolTip1.SetToolTip(this.BUT_quickmanual, resources.GetString("BUT_quickmanual.ToolTip"));
             this.BUT_quickmanual.UseVisualStyleBackColor = true;
             this.BUT_quickmanual.Click += new System.EventHandler(this.BUT_quickmanual_Click);
-            // 
-            // BUT_quickrtl
-            // 
-            resources.ApplyResources(this.BUT_quickrtl, "BUT_quickrtl");
-            this.BUT_quickrtl.Name = "BUT_quickrtl";
-            this.toolTip1.SetToolTip(this.BUT_quickrtl, resources.GetString("BUT_quickrtl.ToolTip"));
-            this.BUT_quickrtl.UseVisualStyleBackColor = true;
-            this.BUT_quickrtl.Click += new System.EventHandler(this.BUT_quickrtl_Click);
-            // 
-            // BUT_quickauto
-            // 
-            resources.ApplyResources(this.BUT_quickauto, "BUT_quickauto");
-            this.BUT_quickauto.Name = "BUT_quickauto";
-            this.toolTip1.SetToolTip(this.BUT_quickauto, resources.GetString("BUT_quickauto.ToolTip"));
-            this.BUT_quickauto.UseVisualStyleBackColor = true;
-            this.BUT_quickauto.Click += new System.EventHandler(this.BUT_quickauto_Click);
             // 
             // CMB_setwp
             // 
@@ -484,14 +460,6 @@
             this.toolTip1.SetToolTip(this.BUT_setmode, resources.GetString("BUT_setmode.ToolTip"));
             this.BUT_setmode.UseVisualStyleBackColor = true;
             this.BUT_setmode.Click += new System.EventHandler(this.BUT_setmode_Click);
-            // 
-            // BUT_clear_track
-            // 
-            resources.ApplyResources(this.BUT_clear_track, "BUT_clear_track");
-            this.BUT_clear_track.Name = "BUT_clear_track";
-            this.toolTip1.SetToolTip(this.BUT_clear_track, resources.GetString("BUT_clear_track.ToolTip"));
-            this.BUT_clear_track.UseVisualStyleBackColor = true;
-            this.BUT_clear_track.Click += new System.EventHandler(this.BUT_clear_track_Click);
             // 
             // CMB_action
             // 
@@ -532,31 +500,6 @@
             this.toolTip1.SetToolTip(this.BUTactiondo, resources.GetString("BUTactiondo.ToolTip"));
             this.BUTactiondo.UseVisualStyleBackColor = true;
             this.BUTactiondo.Click += new System.EventHandler(this.BUTactiondo_Click);
-            // 
-            // modifyandSetSpeed
-            // 
-            this.modifyandSetSpeed.ButtonText = "Change Speed";
-            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
-            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
-            this.modifyandSetSpeed.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
-            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
-            // 
-            // modifyandSetAlt
-            // 
-            this.modifyandSetAlt.ButtonText = "Change Alt";
-            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
-            this.modifyandSetAlt.Name = "modifyandSetAlt";
-            this.modifyandSetAlt.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
             // 
             // tabActionsSimple
             // 
@@ -744,10 +687,6 @@
             this.Gvspeed.Value1 = 0F;
             this.Gvspeed.Value2 = 0F;
             this.Gvspeed.Value3 = 0F;
-            // 
-            // bindingSourceGaugesTab
-            // 
-            this.bindingSourceGaugesTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // Gheading
             // 
@@ -1075,48 +1014,6 @@
             this.flowLayoutPanelServos.Controls.Add(this.servoOptions7);
             this.flowLayoutPanelServos.Name = "flowLayoutPanelServos";
             // 
-            // servoOptions1
-            // 
-            resources.ApplyResources(this.servoOptions1, "servoOptions1");
-            this.servoOptions1.Name = "servoOptions1";
-            this.servoOptions1.thisservo = 5;
-            // 
-            // servoOptions2
-            // 
-            resources.ApplyResources(this.servoOptions2, "servoOptions2");
-            this.servoOptions2.Name = "servoOptions2";
-            this.servoOptions2.thisservo = 6;
-            // 
-            // servoOptions3
-            // 
-            resources.ApplyResources(this.servoOptions3, "servoOptions3");
-            this.servoOptions3.Name = "servoOptions3";
-            this.servoOptions3.thisservo = 7;
-            // 
-            // servoOptions4
-            // 
-            resources.ApplyResources(this.servoOptions4, "servoOptions4");
-            this.servoOptions4.Name = "servoOptions4";
-            this.servoOptions4.thisservo = 8;
-            // 
-            // servoOptions5
-            // 
-            resources.ApplyResources(this.servoOptions5, "servoOptions5");
-            this.servoOptions5.Name = "servoOptions5";
-            this.servoOptions5.thisservo = 9;
-            // 
-            // servoOptions6
-            // 
-            resources.ApplyResources(this.servoOptions6, "servoOptions6");
-            this.servoOptions6.Name = "servoOptions6";
-            this.servoOptions6.thisservo = 10;
-            // 
-            // servoOptions7
-            // 
-            resources.ApplyResources(this.servoOptions7, "servoOptions7");
-            this.servoOptions7.Name = "servoOptions7";
-            this.servoOptions7.thisservo = 11;
-            // 
             // tabTLogs
             // 
             this.tabTLogs.Controls.Add(this.tableLayoutPaneltlogs);
@@ -1378,12 +1275,41 @@
             this.tabPagemessages.Name = "tabPagemessages";
             this.tabPagemessages.UseVisualStyleBackColor = true;
             // 
+            // BUT_ARM
+            // 
+            resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
+            this.BUT_ARM.Name = "BUT_ARM";
+            this.BUT_ARM.UseVisualStyleBackColor = true;
+            this.BUT_ARM.Click += new System.EventHandler(this.BUT_ARM_Click);
+            // 
+            // BUT_quickrtl
+            // 
+            resources.ApplyResources(this.BUT_quickrtl, "BUT_quickrtl");
+            this.BUT_quickrtl.Name = "BUT_quickrtl";
+            this.BUT_quickrtl.UseVisualStyleBackColor = true;
+            this.BUT_quickrtl.Click += new System.EventHandler(this.BUT_quickrtl_Click);
+            // 
+            // BUT_quickauto
+            // 
+            resources.ApplyResources(this.BUT_quickauto, "BUT_quickauto");
+            this.BUT_quickauto.Name = "BUT_quickauto";
+            this.BUT_quickauto.UseVisualStyleBackColor = true;
+            this.BUT_quickauto.Click += new System.EventHandler(this.BUT_quickauto_Click);
+            // 
+            // BUT_clear_track
+            // 
+            resources.ApplyResources(this.BUT_clear_track, "BUT_clear_track");
+            this.BUT_clear_track.Name = "BUT_clear_track";
+            this.BUT_clear_track.UseVisualStyleBackColor = true;
+            this.BUT_clear_track.Click += new System.EventHandler(this.BUT_clear_track_Click);
+            // 
             // txt_messagebox
             // 
             this.txt_messagebox.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.txt_messagebox, "txt_messagebox");
             this.txt_messagebox.ForeColor = System.Drawing.Color.White;
             this.txt_messagebox.Name = "txt_messagebox";
+            this.txt_messagebox.ReadOnly = true;
             // 
             // tableMap
             // 
@@ -1397,18 +1323,28 @@
             // panel3
             // 
             this.panel3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.panel3.Controls.Add(this.BUT_clear_track1);
+            this.panel3.Controls.Add(this.BUT_ARM1);
+            this.panel3.Controls.Add(this.BUT_quickrtl1);
+            this.panel3.Controls.Add(this.BUT_quickauto1);
+            this.panel3.Controls.Add(this.btnMeter);
             this.panel3.Controls.Add(this.btnWarnMessage);
             this.panel3.Controls.Add(this.pboxWarnMessage);
             this.panel3.Controls.Add(this.pbMeter);
-            this.panel3.Controls.Add(this.btnMeter);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.ForeColor = System.Drawing.Color.DarkGreen;
             this.panel3.Name = "panel3";
             // 
+            // btnMeter
+            // 
+            resources.ApplyResources(this.btnMeter, "btnMeter");
+            this.btnMeter.Name = "btnMeter";
+            this.btnMeter.UseVisualStyleBackColor = true;
+            this.btnMeter.Click += new System.EventHandler(this.btnMeter_Click);
+            // 
             // btnWarnMessage
             // 
             resources.ApplyResources(this.btnWarnMessage, "btnWarnMessage");
-            this.btnWarnMessage.ForeColor = System.Drawing.Color.Black;
             this.btnWarnMessage.Name = "btnWarnMessage";
             this.btnWarnMessage.UseVisualStyleBackColor = true;
             this.btnWarnMessage.Click += new System.EventHandler(this.btnWarnMessage_Click);
@@ -1426,14 +1362,6 @@
             resources.ApplyResources(this.pbMeter, "pbMeter");
             this.pbMeter.Name = "pbMeter";
             this.pbMeter.TabStop = false;
-            // 
-            // btnMeter
-            // 
-            resources.ApplyResources(this.btnMeter, "btnMeter");
-            this.btnMeter.ForeColor = System.Drawing.Color.Black;
-            this.btnMeter.Name = "btnMeter";
-            this.btnMeter.UseVisualStyleBackColor = true;
-            this.btnMeter.Click += new System.EventHandler(this.btnMeter_Click);
             // 
             // splitContainer1
             // 
@@ -1579,10 +1507,6 @@
             this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // lblSataCount
             // 
@@ -1825,17 +1749,13 @@
             resources.ApplyResources(this.russianHudToolStripMenuItem, "russianHudToolStripMenuItem");
             this.russianHudToolStripMenuItem.Click += new System.EventHandler(this.russianHudToolStripMenuItem_Click);
             // 
-            // bindingSourceHud
-            // 
-            this.bindingSourceHud.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // windDir1
             // 
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2088,6 +2008,117 @@
             this.Messagetabtimer.Interval = 200;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
             // 
+            // BUT_quickauto1
+            // 
+            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
+            this.BUT_quickauto1.Name = "BUT_quickauto1";
+            this.BUT_quickauto1.UseVisualStyleBackColor = true;
+            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
+            // 
+            // BUT_quickrtl1
+            // 
+            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
+            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
+            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
+            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
+            // 
+            // BUT_ARM1
+            // 
+            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
+            this.BUT_ARM1.Name = "BUT_ARM1";
+            this.BUT_ARM1.UseVisualStyleBackColor = true;
+            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
+            // 
+            // BUT_clear_track1
+            // 
+            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
+            this.BUT_clear_track1.Name = "BUT_clear_track1";
+            this.BUT_clear_track1.UseVisualStyleBackColor = true;
+            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // bindingSourceQuickTab
+            // 
+            this.bindingSourceQuickTab.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // bindingSourceHud
+            // 
+            this.bindingSourceHud.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // modifyandSetSpeed
+            // 
+            this.modifyandSetSpeed.ButtonText = "Change Speed";
+            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
+            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
+            this.modifyandSetSpeed.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
+            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
+            // 
+            // modifyandSetAlt
+            // 
+            this.modifyandSetAlt.ButtonText = "Change Alt";
+            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
+            this.modifyandSetAlt.Name = "modifyandSetAlt";
+            this.modifyandSetAlt.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
+            // 
+            // servoOptions1
+            // 
+            resources.ApplyResources(this.servoOptions1, "servoOptions1");
+            this.servoOptions1.Name = "servoOptions1";
+            this.servoOptions1.thisservo = 5;
+            // 
+            // servoOptions2
+            // 
+            resources.ApplyResources(this.servoOptions2, "servoOptions2");
+            this.servoOptions2.Name = "servoOptions2";
+            this.servoOptions2.thisservo = 6;
+            // 
+            // servoOptions3
+            // 
+            resources.ApplyResources(this.servoOptions3, "servoOptions3");
+            this.servoOptions3.Name = "servoOptions3";
+            this.servoOptions3.thisservo = 7;
+            // 
+            // servoOptions4
+            // 
+            resources.ApplyResources(this.servoOptions4, "servoOptions4");
+            this.servoOptions4.Name = "servoOptions4";
+            this.servoOptions4.thisservo = 8;
+            // 
+            // servoOptions5
+            // 
+            resources.ApplyResources(this.servoOptions5, "servoOptions5");
+            this.servoOptions5.Name = "servoOptions5";
+            this.servoOptions5.thisservo = 9;
+            // 
+            // servoOptions6
+            // 
+            resources.ApplyResources(this.servoOptions6, "servoOptions6");
+            this.servoOptions6.Name = "servoOptions6";
+            this.servoOptions6.thisservo = 10;
+            // 
+            // servoOptions7
+            // 
+            resources.ApplyResources(this.servoOptions7, "servoOptions7");
+            this.servoOptions7.Name = "servoOptions7";
+            this.servoOptions7.thisservo = 11;
+            // 
+            // bindingSourceGaugesTab
+            // 
+            this.bindingSourceGaugesTab.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // bindingSourceStatusTab
             // 
             this.bindingSourceStatusTab.DataSource = typeof(ByAeroBeHero.CurrentState);
@@ -2114,11 +2145,9 @@
             this.contextMenuStripactionstab.ResumeLayout(false);
             this.tabQuick.ResumeLayout(false);
             this.tableLayoutPanelQuick.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
             this.tabActions.ResumeLayout(false);
             this.tabActionsSimple.ResumeLayout(false);
             this.tabGauges.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             this.tabServo.ResumeLayout(false);
             this.flowLayoutPanelServos.ResumeLayout(false);
             this.tabTLogs.ResumeLayout(false);
@@ -2144,11 +2173,13 @@
             this.panel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStripHud.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
             this.ResumeLayout(false);
 
@@ -2291,7 +2322,6 @@
         private System.Windows.Forms.Label lblHorizontalError;
         private System.Windows.Forms.Label lblSataCount;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnMeter;
         private System.Windows.Forms.PictureBox pbMeter;
         private Controls.MyLabel mylblbat;
         private Controls.FlightInfo fiBat;
@@ -2306,7 +2336,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pboxWarnMessage;
-        private System.Windows.Forms.Button btnWarnMessage;
+        private Controls.MyButton btnWarnMessage;
+        private Controls.MyButton btnMeter;
+        private Controls.MyButton BUT_clear_track1;
+        private Controls.MyButton BUT_ARM1;
+        private Controls.MyButton BUT_quickrtl1;
+        private Controls.MyButton BUT_quickauto1;
 
     }
 }

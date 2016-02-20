@@ -309,7 +309,7 @@
     <value>47, 23</value>
   </data>
   <data name="BUT_quickrtl.Text" xml:space="preserve">
-    <value>返航</value>
+    <value>自动返航</value>
   </data>
   <data name="BUT_quickrtl.ToolTip" xml:space="preserve">
     <value>改变模式为返航</value>
@@ -321,7 +321,7 @@
     <value>47, 23</value>
   </data>
   <data name="BUT_quickauto.Text" xml:space="preserve">
-    <value>自动</value>
+    <value>自动起飞</value>
   </data>
   <data name="BUT_quickauto.ToolTip" xml:space="preserve">
     <value>更改为自动模式</value>

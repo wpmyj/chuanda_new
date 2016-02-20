@@ -2083,10 +2083,18 @@ namespace ByAeroBeHero.GCSViews
 
         private void BUT_quickauto_Click(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行自动起飞！", "提示",MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+            
             try
             {
                 ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("Auto");
+                MainV2.comPort.setMode("自动");
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
@@ -2094,10 +2102,17 @@ namespace ByAeroBeHero.GCSViews
 
         private void BUT_quickrtl_Click(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行自动返航！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
             try
             {
                 ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("RTL");
+                MainV2.comPort.setMode("返航");
             }
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
@@ -2983,7 +2998,7 @@ namespace ByAeroBeHero.GCSViews
             try
             {
                 if (MainV2.comPort.MAV.cs.armed)
-                    if (CustomMessageBox.Show("Are you sure you want to Disarm?", "Disarm?", MessageBoxButtons.YesNo) == DialogResult.No)
+                    if (CustomMessageBox.Show("确定时候对飞行器进行解锁！", "提示", MessageBoxButtons.YesNo) == DialogResult.No)
                         return;
 
                 bool ans = MainV2.comPort.doARM(!MainV2.comPort.MAV.cs.armed);

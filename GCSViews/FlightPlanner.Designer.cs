@@ -195,6 +195,7 @@
             this.splitter1 = new BSE.Windows.Forms.Splitter();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.myBtnAddPoint = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -1326,12 +1327,20 @@
             // panel6
             // 
             this.panel6.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.panel6.Controls.Add(this.myBtnAddPoint);
             this.panel6.Controls.Add(this.tableLayoutPanel6);
             this.panel6.Controls.Add(this.tableLayoutPanel4);
             this.panel6.Controls.Add(this.comboBoxMapType);
             this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
+            // 
+            // myBtnAddPoint
+            // 
+            resources.ApplyResources(this.myBtnAddPoint, "myBtnAddPoint");
+            this.myBtnAddPoint.Name = "myBtnAddPoint";
+            this.myBtnAddPoint.UseVisualStyleBackColor = true;
+            this.myBtnAddPoint.Click += new System.EventHandler(this.myBtnAddPoint_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -1541,5 +1550,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private Controls.MyButton myButton1;
         private System.Windows.Forms.Label lblhxj;
+        private Controls.MyButton myBtnAddPoint;
     }
 }

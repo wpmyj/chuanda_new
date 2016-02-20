@@ -768,7 +768,8 @@
             resources.GetString("CMB_startfrom.Items"),
             resources.GetString("CMB_startfrom.Items1"),
             resources.GetString("CMB_startfrom.Items2"),
-            resources.GetString("CMB_startfrom.Items3")});
+            resources.GetString("CMB_startfrom.Items3"),
+            resources.GetString("CMB_startfrom.Items4")});
             this.CMB_startfrom.Name = "CMB_startfrom";
             this.CMB_startfrom.SelectedIndexChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
             // 

@@ -3719,6 +3719,36 @@ namespace ByAeroBeHero.GCSViews
 
         private void addPolygonPointToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            AddPolygonPoint(MouseDownStart.Lat, MouseDownStart.Lng);
+        }
+
+        /// <summary>
+        /// wjch手动添加GPS航点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void myBtnAddPoint_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面接收器再添加区域航点。");
+            }
+            else 
+            {
+                DialogResult res = CustomMessageBox.Show("是否要添加当前区域航点？", "区域航点", MessageBoxButtons.YesNo);
+                if (res == DialogResult.Yes)
+                {
+                    AddPolygonPoint(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng);
+                }
+                else 
+                {
+                    return;
+                }
+            }
+        }
+
+        private void AddPolygonPoint(double lat,double lng) 
+        {
             if (polygongridmode == false)
             {
                 CustomMessageBox.Show("你将保持在规划工作区域模式,直到你清除工作区域或者创建/上传一个供作区域。");
@@ -3739,14 +3769,13 @@ namespace ByAeroBeHero.GCSViews
             if (drawnpolygon.Points.Count > 1 && drawnpolygon.Points[0] == drawnpolygon.Points[drawnpolygon.Points.Count - 1])
                 drawnpolygon.Points.RemoveAt(drawnpolygon.Points.Count - 1); // unmake a full loop
 
-            drawnpolygon.Points.Add(new PointLatLng(MouseDownStart.Lat, MouseDownStart.Lng));
+            drawnpolygon.Points.Add(new PointLatLng(lat, lng));
 
-            addpolygonmarkergrid(drawnpolygon.Points.Count.ToString(), MouseDownStart.Lng, MouseDownStart.Lat, 0);
+            addpolygonmarkergrid(drawnpolygon.Points.Count.ToString(), lng, lat, 0);
 
             MainMap.UpdatePolygonLocalPosition(drawnpolygon);
 
             MainMap.Invalidate();
-
         }
 
         public void redrawPolygonSurvey(List<PointLatLngAlt> list)

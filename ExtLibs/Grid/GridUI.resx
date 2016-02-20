@@ -2398,7 +2398,10 @@
     <value>左下</value>
   </data>
   <data name="CMB_startfrom.Items3" xml:space="preserve">
-    <value>右上右下</value>
+    <value>右上</value>
+  </data>
+  <data name="CMB_startfrom.Items4" xml:space="preserve">
+    <value>右下</value>
   </data>
   <data name="CMB_startfrom.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 118</value>

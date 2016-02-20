@@ -77,6 +77,8 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkCheckBox_CheckedChanged(object sender, EventArgs e)
         {
+            if (ParamName == "FENCE_ENABLE")
+                return;
             if (this.CheckedChanged != null)
                 this.CheckedChanged(sender, e);
 

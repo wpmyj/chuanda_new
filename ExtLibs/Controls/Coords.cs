@@ -50,7 +50,7 @@ namespace ByAeroBeHero.Controls
 
             if (Sys == CoordsSystems.GEO.ToString())
             {
-               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000")+"度"+"        " +"经度|"+ Lng.ToString("0.000000")+"度"+"        " + "海拔|" + Alt.ToString("0.00") + AltUnit, this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
+               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000")+"度"+"        " +"经度|"+ Lng.ToString("0.000000")+"度"+"        " + "海拔|" + Alt.ToString("0.00") + "米", this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
             }
             else if (Sys == CoordsSystems.UTM.ToString())
             {

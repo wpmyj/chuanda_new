@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Collections;
+using ByAeroBeHero.GCSViews.ConfigurationView;
 
 namespace ByAeroBeHero.Controls
 {
@@ -13,7 +14,6 @@ namespace ByAeroBeHero.Controls
 
         [System.ComponentModel.Browsable(true)]
         public string ParamName { get; set; }
-
 
         Control _control;
         Type _source;
@@ -91,6 +91,11 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (ParamName == "FENCE_TYPE" || ParamName == "FENCE_ACTION") 
+            {
+                return;
+            }
+                
             if (this.SelectedIndexChanged != null)
                 this.SelectedIndexChanged(sender,e);
 

@@ -20,6 +20,7 @@ namespace ByAeroBeHero.Controls
         public string ParamName { get; set; }
 
 
+        float iSendValue;
         Control _control;
         float _scale = 1;
 
@@ -118,6 +119,12 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
+            if (ParamName == "FENCE_ALT_MAX" || ParamName == "FENCE_RADIUS" || ParamName == "RTL_ALT") 
+            {
+                iSendValue = (float)base.Value * (float)_scale;
+                return;
+            }
+                
             string value = base.Text;
             if (decimal.Parse(value) > base.Maximum)
             {
@@ -151,6 +158,11 @@ namespace ByAeroBeHero.Controls
                     CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed,ParamName), Strings.ERROR);
             }
             catch { CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR); }
+        }
+
+        public float sendValue()
+        {
+            return iSendValue;
         }
 
     }

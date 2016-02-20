@@ -175,7 +175,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 Log.Info("Sending level command (mavlink 1.0)");
                 MainV2.comPort.doCommand(MAVLink.MAV_CMD.PREFLIGHT_CALIBRATION, 0, 0, 0, 0, 2, 0, 0);
 
-                BUT_level.Text = Strings.Completed;
+                //BUT_level.Text = Strings.Completed;
+                CustomMessageBox.Show("水平校准完成",Strings.Success);
+                BUT_level.Text = "水平修正";
             }
             catch (Exception ex)
             {

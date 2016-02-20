@@ -246,9 +246,9 @@
   <data name="Up.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAGxJREFUOE/dy0ESgCAMQ1Huf2nE9qOAbYFx3Pg2DE2S8gvROAk+FjvTWYugZ1yp
-        PxA3xhNFB6Wq+1MJURX3h3ABg2vMeRkrHss88uKChuOM4jhOo8Y80keRVMFRfTY2URV/GBdUHJSq8b8h
-        5wPkbkPZ/Kz15wAAAABJRU5ErkJggg==
+        vAAADrwBlbxySQAAAHlJREFUOE/NlEEOwCAIBP3/p9u0GqWwDCbtoRzFkQ2stONFNGDbHXRB5jpmQ1+L
+        p5HMJHhVGSn5B8xk5Be8Qzp+wPuk5QnuvZTvjlSWnhOG5l+VeTYFXGhT9JI9fSJdBVajOcuGWUd+ZBLo
+        XPZDflK5VO7+Ly2KckGd5G5D2f43NBcAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="Up.MinimumWidth" type="System.Int32, mscorlib">
@@ -266,9 +266,9 @@
   <data name="Down.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAGtJREFUOE/dy0ESgCAMQ1Huf2ms9DNDEVIdXfk2DE1S6gvzuEiUuvCnIlFtfjgW
-        R/fFmCTKo11saGyckY51qhp5xPMQK38M5xsYjGNDKFFtwsdQ2aDUzX9D8YJ4sDgZ6gOCaH11YuZUlqj1
-        AIlYQ9mY+lgaAAAAAElFTkSuQmCC
+        vAAADrwBlbxySQAAAHBJREFUOE/dlFEKwDAIQ73/pTeKMNpMk4B/9a/UVzVa4xlYABvU0Hk/czJvD//7
+        4KwIhHBrduFS5xLeNV/Sdx0icPZsDHfBrbRJ5qKiT3pnNmFCz1k1Hmj7LPNnv0r2RsNl/HJl4DL4/1Cy
+        aRgsF9QLiVhD2dit5ywAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="Down.MinimumWidth" type="System.Int32, mscorlib">
@@ -790,9 +790,9 @@
   <data name="dataGridViewImageColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAGxJREFUOE/dy0ESgCAMQ1Huf2nE9qOAbYFx3Pg2DE2S8gvROAk+FjvTWYugZ1yp
-        PxA3xhNFB6Wq+1MJURX3h3ABg2vMeRkrHss88uKChuOM4jhOo8Y80keRVMFRfTY2URV/GBdUHJSq8b8h
-        5wPkbkPZ/Kz15wAAAABJRU5ErkJggg==
+        vAAADrwBlbxySQAAAHlJREFUOE/NlEEOwCAIBP3/p9u0GqWwDCbtoRzFkQ2stONFNGDbHXRB5jpmQ1+L
+        p5HMJHhVGSn5B8xk5Be8Qzp+wPuk5QnuvZTvjlSWnhOG5l+VeTYFXGhT9JI9fSJdBVajOcuGWUd+ZBLo
+        XPZDflK5VO7+Ly2KckGd5G5D2f43NBcAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="dataGridViewImageColumn1.Width" type="System.Int32, mscorlib">
@@ -804,9 +804,9 @@
   <data name="dataGridViewImageColumn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAGtJREFUOE/dy0ESgCAMQ1Huf2ms9DNDEVIdXfk2DE1S6gvzuEiUuvCnIlFtfjgW
-        R/fFmCTKo11saGyckY51qhp5xPMQK38M5xsYjGNDKFFtwsdQ2aDUzX9D8YJ4sDgZ6gOCaH11YuZUlqj1
-        AIlYQ9mY+lgaAAAAAElFTkSuQmCC
+        vAAADrwBlbxySQAAAHBJREFUOE/dlFEKwDAIQ73/pTeKMNpMk4B/9a/UVzVa4xlYABvU0Hk/czJvD//7
+        4KwIhHBrduFS5xLeNV/Sdx0icPZsDHfBrbRJ5qKiT3pnNmFCz1k1Hmj7LPNnv0r2RsNl/HJl4DL4/1Cy
+        aRgsF9QLiVhD2dit5ywAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="dataGridViewImageColumn2.Width" type="System.Int32, mscorlib">
@@ -843,7 +843,7 @@
     <value>591, 3</value>
   </data>
   <data name="coords1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 20</value>
+    <value>390, 20</value>
   </data>
   <data name="coords1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1170,7 +1170,7 @@
     <value>WPNAV_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5891.30224, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.18280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1197,7 +1197,7 @@
     <value>WPNAV_RADIUS</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5891.30224, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.18280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1224,7 +1224,7 @@
     <value>WPNAV_SPEED_UP</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5891.30224, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.18280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1251,7 +1251,7 @@
     <value>WPNAV_SPEED_DN</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5891.30224, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.18280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1278,7 +1278,7 @@
     <value>WPNAV_LOIT_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5891.30224, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.18280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1548,7 +1548,7 @@
     <value>panel6</value>
   </data>
   <data name="&gt;&gt;comboBoxMapType.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="BUT_loadwpfile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2324,6 +2324,30 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="myBtnAddPoint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>745, 27</value>
+  </data>
+  <data name="myBtnAddPoint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 23</value>
+  </data>
+  <data name="myBtnAddPoint.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="myBtnAddPoint.Text" xml:space="preserve">
+    <value>规划区域航点</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.Name" xml:space="preserve">
+    <value>myBtnAddPoint</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tableLayoutPanel6.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -2349,7 +2373,7 @@
     <value>panel6</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BUT_write" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_loadwpfile" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_read" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_saveWPFile" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -2382,7 +2406,7 @@
     <value>panel6</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblwd" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblHAlt" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homealt" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lbljd" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homelat" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homelng" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>

@@ -292,7 +292,7 @@
     <value>mavlinkCheckBoxlong_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -313,7 +313,7 @@
     <value>NoControl</value>
   </data>
   <data name="mavlinkCheckBoxshort_fs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 93</value>
+    <value>318, 93</value>
   </data>
   <data name="mavlinkCheckBoxshort_fs.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 21</value>
@@ -334,7 +334,7 @@
     <value>mavlinkCheckBoxshort_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -355,7 +355,7 @@
     <value>NoControl</value>
   </data>
   <data name="mavlinkCheckBoxgcs_fs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 93</value>
+    <value>213, 93</value>
   </data>
   <data name="mavlinkCheckBoxgcs_fs.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 21</value>
@@ -376,7 +376,7 @@
     <value>mavlinkCheckBoxgcs_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -419,7 +419,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxthr_fs_action</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -461,7 +461,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxthr_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -494,7 +494,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownfs_thr_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
     <value>PNL_thr_fs_value</value>
@@ -527,7 +527,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownthr_fs_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
     <value>PNL_thr_fs_value</value>
@@ -563,7 +563,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkComboBox_fs_thr_enable</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -593,7 +593,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownlow_voltage</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -724,81 +724,6 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="&gt;&gt;PNL_thr_fs_value.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;lblFailSafeBegin.Name" xml:space="preserve">
-    <value>lblFailSafeBegin</value>
-  </data>
-  <data name="&gt;&gt;lblFailSafeBegin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblFailSafeBegin.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;lblFailSafeBegin.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblPC.Name" xml:space="preserve">
-    <value>lblPC</value>
-  </data>
-  <data name="&gt;&gt;lblPC.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPC.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;lblPC.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Name" xml:space="preserve">
-    <value>mavlinkComboBoxfs_batt_enable</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 70</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>657, 137</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>电池遥控器地面站保护设置</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="lblFailSafeBegin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -806,16 +731,16 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="lblFailSafeBegin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 94</value>
+    <value>18, 94</value>
   </data>
   <data name="lblFailSafeBegin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
+    <value>116, 17</value>
   </data>
   <data name="lblFailSafeBegin.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
   </data>
   <data name="lblFailSafeBegin.Text" xml:space="preserve">
-    <value>启用故障保护</value>
+    <value>启用地面站故障保护</value>
   </data>
   <data name="&gt;&gt;lblFailSafeBegin.Name" xml:space="preserve">
     <value>lblFailSafeBegin</value>
@@ -875,7 +800,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>NoControl</value>
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 93</value>
+    <value>140, 94</value>
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
@@ -890,7 +815,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -923,13 +848,40 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkComboBoxfs_batt_enable</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 70</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>657, 137</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>电池遥控器地面站保护设置</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="fiMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>422, 21</value>
@@ -1674,7 +1626,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownFS_BATT_MAH</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5884.34810, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5896.27071, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Parent" xml:space="preserve">
     <value>$this</value>

@@ -79,8 +79,8 @@ namespace ByAeroBeHero
             if (spacing < 10 && spacing != 0)
                 spacing = 10;
 
-            if (distance < 5)
-                distance = 5;
+            //if (distance < 5)
+            //    distance = 5;
 
             if (polygon.Count == 0)
                 return new List<PointLatLngAlt>();

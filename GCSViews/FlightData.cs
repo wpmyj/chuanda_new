@@ -2086,7 +2086,7 @@ namespace ByAeroBeHero.GCSViews
             if (!MainV2.comPort.BaseStream.IsOpen)
                 return;
 
-            DialogResult re = CustomMessageBox.Show("确定是否进行自动起飞！", "提示",MessageBoxButtons.YesNo);
+            DialogResult re = CustomMessageBox.Show("确定是否启用自主模式！", "提示",MessageBoxButtons.YesNo);
 
             if (re == DialogResult.No)
                 return;
@@ -2998,7 +2998,7 @@ namespace ByAeroBeHero.GCSViews
             try
             {
                 if (MainV2.comPort.MAV.cs.armed)
-                    if (CustomMessageBox.Show("确定时候对飞行器进行解锁！", "提示", MessageBoxButtons.YesNo) == DialogResult.No)
+                    if (CustomMessageBox.Show("确定对飞行器加锁！", "提示", MessageBoxButtons.YesNo) == DialogResult.No)
                         return;
 
                 bool ans = MainV2.comPort.doARM(!MainV2.comPort.MAV.cs.armed);

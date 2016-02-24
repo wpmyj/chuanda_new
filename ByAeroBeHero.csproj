@@ -6635,6 +6635,7 @@
     <Content Include="mpdesktop.ico" />
     <Content Include="ParameterMetaDataBackup.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Resources\APM_rover-firmware.png" />
     <None Include="Resources\frames-h.png" />

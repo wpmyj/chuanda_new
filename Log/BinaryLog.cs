@@ -550,7 +550,7 @@ namespace ByAeroBeHero.Log
             else if (mode == "自稳") { _mode = "Stablilize"; }
             else if (mode == "降落") { _mode = "Land"; }
             else if (mode == "返航") { _mode ="RTL";}
-
+            else if (mode == "自动") { _mode = "Auto"; }
             return _mode;
         }
     }

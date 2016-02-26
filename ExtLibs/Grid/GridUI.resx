@@ -360,6 +360,150 @@
   <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="label36.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 17</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>转弯直径:</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl_turnrad.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lbl_turnrad.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_turnrad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lbl_turnrad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_turnrad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lbl_turnrad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="lbl_turnrad.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbl_turnrad.Text" xml:space="preserve">
+    <value>Distance: </value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.Name" xml:space="preserve">
+    <value>lbl_turnrad</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_turnrad.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label30.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 17</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>轨迹:</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbl_footprint.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lbl_footprint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_footprint.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lbl_footprint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_footprint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lbl_footprint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="lbl_footprint.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="lbl_footprint.Text" xml:space="preserve">
+    <value>Distance: </value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.Name" xml:space="preserve">
+    <value>lbl_footprint</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;lbl_footprint.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="groupBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -390,78 +534,6 @@
   <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lbl_turnrad.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lbl_turnrad.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_turnrad.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lbl_turnrad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_turnrad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 164</value>
-  </data>
-  <data name="lbl_turnrad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 17</value>
-  </data>
-  <data name="lbl_turnrad.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="lbl_turnrad.Text" xml:space="preserve">
-    <value>Distance: </value>
-  </data>
-  <data name="&gt;&gt;lbl_turnrad.Name" xml:space="preserve">
-    <value>lbl_turnrad</value>
-  </data>
-  <data name="&gt;&gt;lbl_turnrad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_turnrad.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;lbl_turnrad.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label36.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 164</value>
-  </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
-  </data>
-  <data name="label36.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>转弯直径:</value>
-  </data>
-  <data name="&gt;&gt;label36.Name" xml:space="preserve">
-    <value>label36</value>
-  </data>
-  <data name="&gt;&gt;label36.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="lbl_flighttime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
@@ -475,7 +547,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_flighttime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 135</value>
+    <value>105, 160</value>
   </data>
   <data name="lbl_flighttime.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -496,7 +568,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lbl_flighttime.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="label31.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -511,7 +583,7 @@
     <value>NoControl</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 135</value>
+    <value>8, 160</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 17</value>
@@ -532,7 +604,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="lbl_distbetweenlines.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -547,7 +619,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_distbetweenlines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 109</value>
+    <value>105, 121</value>
   </data>
   <data name="lbl_distbetweenlines.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -568,7 +640,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lbl_distbetweenlines.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>7</value>
   </data>
   <data name="label25.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -583,7 +655,7 @@
     <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 109</value>
+    <value>20, 121</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 17</value>
@@ -604,79 +676,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="lbl_footprint.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lbl_footprint.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_footprint.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lbl_footprint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_footprint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 83</value>
-  </data>
-  <data name="lbl_footprint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 17</value>
-  </data>
-  <data name="lbl_footprint.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="lbl_footprint.Text" xml:space="preserve">
-    <value>Distance: </value>
-  </data>
-  <data name="&gt;&gt;lbl_footprint.Name" xml:space="preserve">
-    <value>lbl_footprint</value>
-  </data>
-  <data name="&gt;&gt;lbl_footprint.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_footprint.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;lbl_footprint.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="label30.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label30.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 83</value>
-  </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 17</value>
-  </data>
-  <data name="label30.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>轨迹:</value>
-  </data>
-  <data name="&gt;&gt;label30.Name" xml:space="preserve">
-    <value>label30</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="lbl_strips.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -691,7 +691,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_strips.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 57</value>
+    <value>105, 84</value>
   </data>
   <data name="lbl_strips.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -712,7 +712,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lbl_strips.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>9</value>
   </data>
   <data name="label33.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -727,7 +727,7 @@
     <value>NoControl</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 57</value>
+    <value>14, 84</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 17</value>
@@ -748,7 +748,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="lbl_distance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -763,7 +763,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_distance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 31</value>
+    <value>105, 47</value>
   </data>
   <data name="lbl_distance.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -784,7 +784,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lbl_distance.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="lbl_area.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -799,7 +799,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_area.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 5</value>
+    <value>105, 10</value>
   </data>
   <data name="lbl_area.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -820,7 +820,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;lbl_area.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -835,7 +835,7 @@
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 31</value>
+    <value>18, 47</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 17</value>
@@ -856,7 +856,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="label22.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -871,7 +871,7 @@
     <value>NoControl</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 5</value>
+    <value>18, 10</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 17</value>
@@ -892,7 +892,7 @@
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2653,7 +2653,7 @@
     <value>15, 20</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 190</value>
@@ -2674,7 +2674,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lbl_turnrad" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label22" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbl_flighttime" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbl_area" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbl_distance" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbl_distbetweenlines" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbl_footprint" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbl_strips" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.5,Percent,62.5" /&gt;&lt;Rows Styles="Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label22" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label23" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbl_flighttime" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbl_area" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lbl_distance" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label31" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbl_distbetweenlines" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label25" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lbl_strips" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.5,Percent,62.5" /&gt;&lt;Rows Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBox8.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt, style=Bold</value>
@@ -4601,7 +4601,7 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>航线扫描(高级)</value>
+    <value>航线扫描</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>GridUI</value>

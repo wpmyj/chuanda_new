@@ -214,7 +214,7 @@
     <value>1162, 18</value>
   </metadata>
   <data name="quickView6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 127</value>
+    <value>153, 141</value>
   </data>
   <data name="quickView6.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -238,7 +238,7 @@
     <value>0</value>
   </data>
   <data name="quickView5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 127</value>
+    <value>3, 141</value>
   </data>
   <data name="quickView5.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -262,7 +262,7 @@
     <value>1</value>
   </data>
   <data name="quickView4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 65</value>
+    <value>153, 72</value>
   </data>
   <data name="quickView4.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -310,7 +310,7 @@
     <value>3</value>
   </data>
   <data name="quickView3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 65</value>
+    <value>3, 72</value>
   </data>
   <data name="quickView3.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -370,7 +370,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanelQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 188</value>
+    <value>301, 207</value>
   </data>
   <data name="tableLayoutPanelQuick.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -400,7 +400,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>307, 213</value>
   </data>
   <data name="tabQuick.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -931,7 +931,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -952,7 +952,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -964,7 +964,7 @@
     <value>4, 22</value>
   </data>
   <data name="tabActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabActions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1078,7 +1078,7 @@
     <value>4, 22</value>
   </data>
   <data name="tabActionsSimple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabActionsSimple.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1231,7 +1231,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabGauges.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1261,7 +1261,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabStatus.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1297,7 +1297,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1318,7 +1318,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1339,7 +1339,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1360,7 +1360,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1381,7 +1381,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1402,7 +1402,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1423,7 +1423,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5894.23508, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1438,7 +1438,7 @@
     <value>3, 3</value>
   </data>
   <data name="flowLayoutPanelServos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 188</value>
+    <value>299, 188</value>
   </data>
   <data name="flowLayoutPanelServos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1462,7 +1462,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabServo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabServo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1948,7 +1948,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPaneltlogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tableLayoutPaneltlogs.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -1972,7 +1972,7 @@
     <value>4, 22</value>
   </data>
   <data name="tabTLogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabTLogs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2161,7 +2161,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tablogbrowse.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2395,7 +2395,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabScripts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabScripts.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2422,7 +2422,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPagemessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>307, 194</value>
+    <value>305, 194</value>
   </data>
   <data name="tabPagemessages.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2452,7 +2452,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlactions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 220</value>
+    <value>315, 239</value>
   </data>
   <data name="tabControlactions.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -2482,10 +2482,10 @@
     <value>1</value>
   </data>
   <data name="SubMainLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 530</value>
+    <value>317, 574</value>
   </data>
   <data name="SubMainLeft.SplitterDistance" type="System.Int32, mscorlib">
-    <value>304</value>
+    <value>329</value>
   </data>
   <data name="SubMainLeft.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2515,7 +2515,7 @@
     <value>1</value>
   </data>
   <data name="MainH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1075, 530</value>
+    <value>1075, 574</value>
   </data>
   <data name="MainH.SplitterDistance" type="System.Int32, mscorlib">
     <value>754</value>
@@ -2574,113 +2574,110 @@
   <data name="tableMap.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="BUT_clear_track1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="myButton5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BUT_clear_track1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>531, 11</value>
+  <data name="myButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 10</value>
   </data>
-  <data name="BUT_clear_track1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="myButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="BUT_clear_track1.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="BUT_clear_track1.Text" xml:space="preserve">
-    <value>清除轨迹</value>
-  </data>
-  <data name="&gt;&gt;BUT_clear_track1.Name" xml:space="preserve">
-    <value>BUT_clear_track1</value>
-  </data>
-  <data name="&gt;&gt;BUT_clear_track1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_clear_track1.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;BUT_clear_track1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BUT_ARM1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUT_ARM1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>448, 11</value>
-  </data>
-  <data name="BUT_ARM1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="BUT_ARM1.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="BUT_ARM1.Text" xml:space="preserve">
-    <value>解锁/锁定</value>
-  </data>
-  <data name="&gt;&gt;BUT_ARM1.Name" xml:space="preserve">
-    <value>BUT_ARM1</value>
-  </data>
-  <data name="&gt;&gt;BUT_ARM1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_ARM1.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;BUT_ARM1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BUT_quickrtl1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUT_quickrtl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 10</value>
-  </data>
-  <data name="BUT_quickrtl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="BUT_quickrtl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="myButton5.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
   </data>
-  <data name="BUT_quickrtl1.Text" xml:space="preserve">
-    <value>自动返航</value>
+  <data name="myButton5.Text" xml:space="preserve">
+    <value>执行命令</value>
   </data>
-  <data name="&gt;&gt;BUT_quickrtl1.Name" xml:space="preserve">
-    <value>BUT_quickrtl1</value>
+  <data name="&gt;&gt;myButton5.Name" xml:space="preserve">
+    <value>myButton5</value>
   </data>
-  <data name="&gt;&gt;BUT_quickrtl1.Type" xml:space="preserve">
+  <data name="&gt;&gt;myButton5.Type" xml:space="preserve">
     <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;BUT_quickrtl1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;myButton5.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;BUT_quickrtl1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;myButton5.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="BUT_quickauto1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="pbAction.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAnSSURBVHhe7Z17qGdTFMfHq4R0lVcN+pFEpOtR/DHMkDd/XFJkPKYGCeXnVZOGO6LkOUl5RF0a
+        5TE08sgfZJIiDY03eTSTEeKPkWdCrE9+J8dpvx/nnN/5nV2re+f+9l57rfXde+211977N/PmTW65WVT/
+        W0EfTK5J8mo+LexPMnTxnAYQQJrStBvI388U2jqv6N3hjqHOFnpjZOyf5OceGvW+NwCySNNm7ajNJvm5
+        TGjn7pgurSYYZrnQNwojMxOqhfoqd1X8bahoc6GizW/yt1VCB6VVZ/y5nWwx8CUVFU+31L+/Uv9I+ff7
+        hja3j78J02qwp7D7wWCwt+SzQ0pdXmcBBNdUlC3kl4cs9S9Iq043uK23GG1OPt9B6HCh1yx1cUWnCeHa
+        WMRN7o3P9u2GCf21MEU3DzoYzmbYkM8JDnSl09HY/qJ1Ed2oFFUtuiEG9m2jChoAaJHQhtEM8x96LW/B
+        fqIIZTHYk0LHVGQ+qqEZMluRY2/5961CP47k2Sw/hy23r5d4zAxVOMseoxw9zTQECK6ymLHT8vvHCjn+
+        6MpM0YFRdiu4DBZsX1eTsj4BBaEvhtfx7QQoqxs2dErQ4EUAsK2Xf2hZ5QUiz3sdAuWyltk3SJxLOwLI
+        A6LHVkEWaFmjLUUeUhmp3Ued/IgQy5mClpnYXxyil9fHFJRfRO5OplZmxhQQwuKxLMTytwiROxooNCCs
+        rNPNpOqLkLiaWSCndpzQNUIELq0sHCyVjUCIuEaIcw42gKYYP5XxcvFZKfJfLsTZSTWN/2Ir0RChyqmR
+        XIZR8SULQM4JqrPfcl8qj9AoTqTE6zIGI3SF0LRGY458Gc0v1ShT6w647q1B+Vekj6VCPjvlU6X+o0J/
+        ZZbvXeHPIVsrCodAHAjlnCHlBGCI0qxvJDNzynhuiGA52kwJ08cyKjtMJDTn6qqscwqQcKO47VYVNk+2
+        o1Vf5a9PrOEZwu/zhIOHA7dZofmJ5UzGjvj8nkQKE2LmKNXw3HeQFPWJKjleGIsS6x42i5a4wlyF/VEo
+        ELQjihu78/aY3NW1uZAY8T1Wfn4dAcphmeVLzn534cgoDxmFX0g73fXRlII+EigfOi1OKUhqXqwbjJhz
+        hG4UelyI/M+vgQo/nFpADb+YWy6fCc/nhe4UulhooRCDsPHC/iB1fF9XPM9ACpnBpjaEv42W2MVRpVz1
+        elBOBb/MAEpOea28cwBS5030t7sGyNoMCg2swyBdhRzyp5MugFOOGVLn2XWOGzEBZkzXJAcgJ6QTz8op
+        R27L2mnOCuxYOTEzPS/zjWSGOQUu8Wav4yubrj7Z7nVCpI1aU1CQNxkc2QJSqLL49ToKwIfKyD6LQylC
+        9DqDkGC7kOcJPSPh7L2OTVbMkTMDb+wKJ3yhI/C2zNqeJfz/jJDvwMzyJWW/o3C7SuijCIU5Zzg6qVT/
+        Mdtefn0mQjYuzt0tdHAm+ZKyPV64PRGhbHlGkRPbK6l0/zK7IZF8bwqfi4R4VNq6gs9nMd+YSNkCGKIW
+        n0sNNsNwP6x4GRXqTqvteOHL+U9rykAkIepIpWCVz5zwTnEYtET45Lqsx1FDaxZ6RnDo2YcriJzVh0Ze
+        yMcVV9e+Quu1BhCmah33dgmjVwiRNncpzCpmxYYawKCPVhXcVi53UB2xAEPKhk3ZtFBxusgMYpPGSOWc
+        JmX2wDZruHTdusItEZvgXfycM5VWhsC8RS8MzppC+uQmoRkhLpGlPlmsE1xydguEhkJcCuQIt+g/13Wl
+        JDOOtyG67w1BqTqNmKov3Tc9TI3c4yCJ5Rpgwu49lZHq5MPtlO0asFfWLnlt9OmYAgL4V2e1Ts3Md5H+
+        nhpjMACENYO0UCdKqtxRnW5K1dfTgsau447IjCgQc2WzaRCq/c/WCci0dLZWQ6FpCyKUthk1Rh7C+ZTJ
+        TiO+ZEJ1wrLHCCkAqfq6o6IfdvfsVQiJm9ynzEn/hOym3T3ysReprZjedQwjpNCBwkJZTlvz1iJm9Ia2
+        XVbSjed5pGWqvGoHA5lwVzql7osAhKZVUAC/miQEnFCjxrRTvaBdUpqxycEg2eaSITVNV8CyFYxuemfH
+        5zxV1qWpmYUxhg1tq9NtIPKwBiZ1U4WS+HGTsZiqJoUAy1Rm5EPqxIwm28NR1htul/sYHplsl+GQuZZS
+        HXEohL9Unb6VE4M6hQGtWph5pLrLbUJBKSfsVDKw+FPoc7UFGKKhQl5coe1oIPvdqioYZQU5fRuUlCO6
+        MkVCRVvaEYkUgKKozoi+oExZDIx85XDTpB/yImu5rLTw5/FOtuKSVcVghHqMJB8XQF1cAG1to44+XA//
+        WVdMclT5LLLUr17pZFZtMLTJegV0qXT8e4ChfYGx1eet4ImOw24nqXeeEFeIuPdU5n2HgsdA/ma6GcnX
+        ClYLJ4zVNq/K33hgeoCjnMHVqn7dZrwcnzNTQwr7EUYsM2yTkC5CNK05ugCGmY2uRE+1XkpACdsimQOE
+        gqfuUMcHoCmpDDi6sqYyk8r66ECEp+4AzUe2oLou0UUOUAg1Q3NfPoqyELOHqBLhc2vLrGEU5QCDtYs1
+        rC8aCxCimqKL1KCkcFWdBhN/GWJ0FlRbWKvii7uqLT09jsj53CjEmGwSi10rhiVa4RqmDziEl31RWIDU
+        gevGj4hFlRop2E7LLy67eWYNL5NckpmdBW0f0YyXq2yG7hJ6dmQ811HNSyeXUPAUqfeVowv8Weq9I8Tl
+        BmYYC/1CofmdRaGkWMgaUW7jcxoYe4ucELXzxdUtqYDb6Ole+J6pmAHQA2Ix4Auew3U3qf9dBCgTAUjM
+        iA3ZN8RcRpgIQGJc1ocy2vn/PVzLERGzg4EzEYDEzBDamhJ4VaBMV4Vc5JgIQDjFWyHEsabrXqFsPFcj
+        sU/xfZXE+cN6IRJ+vDJKemHAdVo3XY8d9rQQ2VDXvchyi9Bs9FhvXGYBZxgMEnb8qvP7pu3TaP/swF2M
+        WPh3lftin+KToGS29kVjAZfbJFXAcEvMBi4K+EZUzMg6zkLGGnCf0e06m3T1eFfYF4MFzpfPyCvFGtq1
+        /SfSF7v5vigscKj8LeY7oVxBqNYj2uPVVF9KFthGfm/y5slsj8b/LXBFjW5KNZO+lf75vzr6MvLh+PJQ
+        l5Oq3csiw349Iu7ffBOTA3MNh2u9jNZW8Nkdm26HY0x28dTDYISqLrOCNAgpEO570Zbb6KZMwLCtBmpC
+        Lh0oRF0DhUBcTLCBotrFk5tS7XN6MBRGLoPCSCZfpcstkXcyAWJ61EKea67UvgfDMAUBYOXIzZhmKvVM
+        7medwzQnoRh6wdqB/eRVMW0iYx99Tp41E2i8yuC2rkzAv2fhaQF217p1pA9fPY2ZovpiAyD9Bs/Rwv8A
+        AlVX510ZcOAAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pbAction.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pbAction.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pbAction.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BUT_quickauto1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 10</value>
+  <data name="pbAction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 4</value>
   </data>
-  <data name="BUT_quickauto1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="pbAction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 31</value>
   </data>
-  <data name="BUT_quickauto1.TabIndex" type="System.Int32, mscorlib">
+  <data name="pbAction.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
   </data>
-  <data name="BUT_quickauto1.Text" xml:space="preserve">
-    <value>自主模式</value>
+  <data name="&gt;&gt;pbAction.Name" xml:space="preserve">
+    <value>pbAction</value>
   </data>
-  <data name="&gt;&gt;BUT_quickauto1.Name" xml:space="preserve">
-    <value>BUT_quickauto1</value>
+  <data name="&gt;&gt;pbAction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BUT_quickauto1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_quickauto1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pbAction.Parent" xml:space="preserve">
     <value>panel3</value>
   </data>
-  <data name="&gt;&gt;BUT_quickauto1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;pbAction.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnMeter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2707,7 +2704,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;btnMeter.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="btnWarnMessage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2734,7 +2731,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;btnWarnMessage.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="pboxWarnMessage.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2761,7 +2758,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;pboxWarnMessage.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="pbMeter.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -2788,7 +2785,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;pbMeter.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2848,7 +2845,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.20819, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.30822, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -2964,8 +2961,89 @@
   <data name="&gt;&gt;contextMenuStripMap.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="QVSonarRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 331</value>
+  </data>
+  <data name="QVSonarRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 33</value>
+  </data>
+  <data name="QVSonarRange.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="&gt;&gt;QVSonarRange.Name" xml:space="preserve">
+    <value>QVSonarRange</value>
+  </data>
+  <data name="&gt;&gt;QVSonarRange.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;QVSonarRange.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;QVSonarRange.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnLoiterUnlim.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnLoiterUnlim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>595, 0</value>
+  </data>
+  <data name="btnLoiterUnlim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnLoiterUnlim.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="btnLoiterUnlim.Text" xml:space="preserve">
+    <value>悬停模式</value>
+  </data>
+  <data name="btnLoiterUnlim.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btnLoiterUnlim.Name" xml:space="preserve">
+    <value>btnLoiterUnlim</value>
+  </data>
+  <data name="&gt;&gt;btnLoiterUnlim.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnLoiterUnlim.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnLoiterUnlim.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BUT_clear_track1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_clear_track1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>670, 0</value>
+  </data>
+  <data name="BUT_clear_track1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BUT_clear_track1.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="BUT_clear_track1.Text" xml:space="preserve">
+    <value>清除轨迹</value>
+  </data>
+  <data name="BUT_clear_track1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_clear_track1.Name" xml:space="preserve">
+    <value>BUT_clear_track1</value>
+  </data>
+  <data name="&gt;&gt;BUT_clear_track1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_clear_track1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;BUT_clear_track1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 334</value>
+    <value>3, 375</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 106</value>
@@ -2986,7 +3064,37 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
+  </data>
+  <data name="BUT_ARM1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_ARM1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 0</value>
+  </data>
+  <data name="BUT_ARM1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BUT_ARM1.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="BUT_ARM1.Text" xml:space="preserve">
+    <value>解锁/锁定</value>
+  </data>
+  <data name="BUT_ARM1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_ARM1.Name" xml:space="preserve">
+    <value>BUT_ARM1</value>
+  </data>
+  <data name="&gt;&gt;BUT_ARM1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_ARM1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;BUT_ARM1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3088,10 +3196,40 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblHorizontalError" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblSataCount" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="BUT_quickrtl1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_quickrtl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>445, 0</value>
+  </data>
+  <data name="BUT_quickrtl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BUT_quickrtl1.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="BUT_quickrtl1.Text" xml:space="preserve">
+    <value>自动返航</value>
+  </data>
+  <data name="BUT_quickrtl1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickrtl1.Name" xml:space="preserve">
+    <value>BUT_quickrtl1</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickrtl1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickrtl1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickrtl1.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="qvyaw.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 296</value>
@@ -3112,7 +3250,37 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;qvyaw.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
+  </data>
+  <data name="BUT_quickauto1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BUT_quickauto1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 0</value>
+  </data>
+  <data name="BUT_quickauto1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="BUT_quickauto1.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="BUT_quickauto1.Text" xml:space="preserve">
+    <value>自主模式</value>
+  </data>
+  <data name="BUT_quickauto1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickauto1.Name" xml:space="preserve">
+    <value>BUT_quickauto1</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickauto1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickauto1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;BUT_quickauto1.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="qvroll.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 261</value>
@@ -3133,7 +3301,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;qvroll.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="qvpitch.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 226</value>
@@ -3154,7 +3322,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;qvpitch.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="Qvtohome.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 191</value>
@@ -3175,7 +3343,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;Qvtohome.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="Qvverspeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 156</value>
@@ -3196,7 +3364,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;Qvverspeed.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="Qvdist.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 121</value>
@@ -3217,7 +3385,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;Qvdist.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="Qvgroundspeed.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 86</value>
@@ -3238,7 +3406,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;Qvgroundspeed.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="Qvalt.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 51</value>
@@ -3259,7 +3427,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;Qvalt.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <metadata name="contextMenuStripHud.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>714, 17</value>
@@ -3349,7 +3517,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;hud1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
   <data name="windDir1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -3376,7 +3544,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;windDir1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="gMapControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3388,7 +3556,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="gMapControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1022, 440</value>
+    <value>1022, 484</value>
   </data>
   <data name="gMapControl1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3403,7 +3571,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;gMapControl1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>18</value>
   </data>
   <data name="TRK_zoom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -3418,7 +3586,7 @@
     <value>Vertical</value>
   </data>
   <data name="TRK_zoom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 440</value>
+    <value>45, 484</value>
   </data>
   <data name="TRK_zoom.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -3433,7 +3601,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;TRK_zoom.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -3448,7 +3616,7 @@
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1067, 440</value>
+    <value>1067, 484</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
     <value>210</value>
@@ -3619,7 +3787,7 @@
     <value>Fill</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 489</value>
+    <value>1, 533</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -3652,7 +3820,7 @@
     <value>3</value>
   </data>
   <data name="tableMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1075, 530</value>
+    <value>1075, 574</value>
   </data>
   <data name="tableMap.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -3715,13 +3883,25 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1075, 530</value>
+    <value>1075, 574</value>
   </data>
   <data name="&gt;&gt;dropOutToolStripMenuItem.Name" xml:space="preserve">
     <value>dropOutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;dropOutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceQuickTab.Name" xml:space="preserve">
+    <value>bindingSourceQuickTab</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceQuickTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceGaugesTab.Name" xml:space="preserve">
+    <value>bindingSourceGaugesTab</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceGaugesTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;goHereToolStripMenuItem.Name" xml:space="preserve">
     <value>goHereToolStripMenuItem</value>
@@ -3783,6 +3963,12 @@
   <data name="&gt;&gt;takeOffToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
+    <value>bindingSource1</value>
+  </data>
+  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;recordHudToAVIToolStripMenuItem.Name" xml:space="preserve">
     <value>recordHudToAVIToolStripMenuItem</value>
   </data>
@@ -3818,6 +4004,12 @@
   </data>
   <data name="&gt;&gt;russianHudToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceHud.Name" xml:space="preserve">
+    <value>bindingSourceHud</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceHud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ZedGraphTimer.Name" xml:space="preserve">
     <value>ZedGraphTimer</value>
@@ -3860,30 +4052,6 @@
   </data>
   <data name="&gt;&gt;Messagetabtimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
-    <value>bindingSource1</value>
-  </data>
-  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceQuickTab.Name" xml:space="preserve">
-    <value>bindingSourceQuickTab</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceQuickTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceHud.Name" xml:space="preserve">
-    <value>bindingSourceHud</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceHud.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceGaugesTab.Name" xml:space="preserve">
-    <value>bindingSourceGaugesTab</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceGaugesTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bindingSourceStatusTab.Name" xml:space="preserve">
     <value>bindingSourceStatusTab</value>

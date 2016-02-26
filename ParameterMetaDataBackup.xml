@@ -1134,7 +1134,7 @@
       <DisplayName>Waypoint Radius</DisplayName>
       <Description>Defines the distance from a waypoint, that when crossed indicates the wp has been hit.</Description>
       <Units>cm</Units>
-      <Range>100 1000</Range>
+      <Range>10 1000</Range>
       <Increment>1</Increment>
       <User>Standard</User>
     </WPNAV_RADIUS>

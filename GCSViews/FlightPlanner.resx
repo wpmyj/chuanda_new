@@ -314,13 +314,13 @@
     <value>70</value>
   </data>
   <data name="Commands.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 115</value>
+    <value>4, 86</value>
   </data>
   <data name="Commands.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
   <data name="Commands.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1031, 58</value>
+    <value>1031, 87</value>
   </data>
   <data name="Commands.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -347,10 +347,10 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_verifyheight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 27</value>
+    <value>8, 7</value>
   </data>
   <data name="CHK_verifyheight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 21</value>
+    <value>1, 1</value>
   </data>
   <data name="CHK_verifyheight.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -374,10 +374,10 @@
     <value>Bottom</value>
   </data>
   <data name="TXT_WPRad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 28</value>
+    <value>6, 7</value>
   </data>
   <data name="TXT_WPRad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 23</value>
+    <value>1, 23</value>
   </data>
   <data name="TXT_WPRad.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -401,10 +401,10 @@
     <value>Bottom</value>
   </data>
   <data name="TXT_DefaultAlt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 28</value>
+    <value>4, 7</value>
   </data>
   <data name="TXT_DefaultAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 23</value>
+    <value>1, 23</value>
   </data>
   <data name="TXT_DefaultAlt.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -434,10 +434,10 @@
     <value>NoControl</value>
   </data>
   <data name="LBL_WPRad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>152, 2</value>
+    <value>6, 1</value>
   </data>
   <data name="LBL_WPRad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
+    <value>1, 2</value>
   </data>
   <data name="LBL_WPRad.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -467,10 +467,10 @@
     <value>NoControl</value>
   </data>
   <data name="LBL_defalutalt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 2</value>
+    <value>4, 1</value>
   </data>
   <data name="LBL_defalutalt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
+    <value>1, 2</value>
   </data>
   <data name="LBL_defalutalt.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -494,10 +494,10 @@
     <value>Bottom</value>
   </data>
   <data name="TXT_loiterrad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 28</value>
+    <value>7, 7</value>
   </data>
   <data name="TXT_loiterrad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 23</value>
+    <value>1, 23</value>
   </data>
   <data name="TXT_loiterrad.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -527,10 +527,10 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 2</value>
+    <value>7, 1</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
+    <value>1, 2</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -864,7 +864,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 86</value>
+    <value>675, 48</value>
   </data>
   <data name="myButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -891,7 +891,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_writePIDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>677, 86</value>
+    <value>594, 48</value>
   </data>
   <data name="BUT_writePIDS.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -1170,7 +1170,7 @@
     <value>WPNAV_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5894.24465, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1197,7 +1197,7 @@
     <value>WPNAV_RADIUS</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5894.24465, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1224,7 +1224,7 @@
     <value>WPNAV_SPEED_UP</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5894.24465, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1251,7 +1251,7 @@
     <value>WPNAV_SPEED_DN</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5894.24465, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1278,7 +1278,7 @@
     <value>WPNAV_LOIT_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5894.24465, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1287,7 +1287,7 @@
     <value>11</value>
   </data>
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 25</value>
+    <value>4, 25</value>
   </data>
   <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1329,10 +1329,10 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 2</value>
+    <value>5, 1</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
+    <value>1, 2</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -1356,10 +1356,10 @@
     <value>Bottom</value>
   </data>
   <data name="TXT_altwarn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 28</value>
+    <value>5, 7</value>
   </data>
   <data name="TXT_altwarn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 23</value>
+    <value>1, 23</value>
   </data>
   <data name="TXT_altwarn.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -1380,16 +1380,19 @@
     <value>5</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
+    <value>1026, 25</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 55</value>
+    <value>10, 10</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
+  </data>
+  <data name="tableLayoutPanel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1467,7 +1470,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_Add.Location" type="System.Drawing.Point, System.Drawing">
-    <value>134, 86</value>
+    <value>782, 48</value>
   </data>
   <data name="BUT_Add.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -2502,7 +2505,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>32</value>
+    <value>207</value>
   </metadata>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>

@@ -117,6 +117,7 @@
   <ItemGroup>
     <EmbeddedResource Include="GridUI.resx">
       <DependentUpon>GridUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GridUI.zh-Hans.resx">
       <DependentUpon>GridUI.cs</DependentUpon>

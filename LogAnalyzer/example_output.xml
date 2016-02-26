@@ -97,7 +97,7 @@
   <param name="WPNAV_ACCEL" value="200.0" />
   <param name="THR_ACCEL_IMAX" value="5000.0" />
   <param name="SR3_POSITION" value="0.0" />
-  <param name="WPNAV_RADIUS" value="100.0" />
+  <param name="WPNAV_RADIUS" value="10.0" />
   <param name="WP_TOTAL" value="14.0" />
   <param name="RC8_MAX" value="1856.0" />
   <param name="OF_PIT_P" value="2.5" />

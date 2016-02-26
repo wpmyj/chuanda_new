@@ -123,7 +123,14 @@ namespace ByAeroBeHero
             if (plugin.Host.config["distunits"] != null)
                 DistUnits = plugin.Host.config["distunits"].ToString();
 
-            //CMB_startfrom.DataSource = Enum.GetNames(typeof(Grid.StartPosition));
+            //var startfrom = new List<KeyValuePair<int, string>>();
+            //startfrom.Add(new KeyValuePair<int, string>(0, "家"));
+            //startfrom.Add(new KeyValuePair<int, string>(1, "左上"));
+            //startfrom.Add(new KeyValuePair<int, string>(2, "左下"));
+            //startfrom.Add(new KeyValuePair<int, string>(3, "右上"));
+            //startfrom.Add(new KeyValuePair<int, string>(4, "右下"));
+
+            //CMB_startfrom.DataSource =  Enum.GetNames(typeof(Grid.StartPosition));
             CMB_startfrom.SelectedIndex = 0;
 
             // set and angle that is good
@@ -139,6 +146,7 @@ namespace ByAeroBeHero
             else if (postion == "左上") { startPost = "TopLeft"; }
             else if (postion == "右下") { startPost = "BottomRight"; }
             else if (postion == "右上") { startPost = "TopRight"; }
+            else { startPost = postion; }
 
             return startPost;
         }
@@ -542,7 +550,9 @@ namespace ByAeroBeHero
 
             // new grid system test
 
-            grid = Grid.CreateGrid(list, CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value), (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value, (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value, (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition),startForm(CMB_startfrom.Text)), false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value);
+            //StartPosition startpos = (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition), startForm(CMB_startfrom.Text).ToString());
+
+            grid = Grid.CreateGrid(list, CurrentState.fromDistDisplayUnit((double)NUM_altitude.Value), (double)NUM_Distance.Value, (double)NUM_spacing.Value, (double)NUM_angle.Value, (double)NUM_overshoot.Value, (double)NUM_overshoot2.Value, (Grid.StartPosition)Enum.Parse(typeof(Grid.StartPosition),startForm(CMB_startfrom.Text).ToString()), false, (float)NUM_Lane_Dist.Value, (float)NUM_leadin.Value);
 
             List<PointLatLng> list2 = new List<PointLatLng>();
 
@@ -1382,11 +1392,11 @@ namespace ByAeroBeHero
                 {
                     if (plugin.Host.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, (int)(30 * CurrentState.multiplierdist));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, (int)(10 * CurrentState.multiplierdist));
                     }
                     else
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 20, 0, 0, 0, 0, 0, (int)(30 * CurrentState.multiplierdist));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 20, 0, 0, 0, 0, 0, (int)(10 * CurrentState.multiplierdist));
                     }
                 }
 

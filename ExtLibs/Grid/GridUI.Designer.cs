@@ -38,14 +38,14 @@
             this.label29 = new System.Windows.Forms.Label();
             this.lbl_spacing = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.lbl_turnrad = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.lbl_turnrad = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.lbl_footprint = new System.Windows.Forms.Label();
             this.lbl_flighttime = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.lbl_distbetweenlines = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.lbl_footprint = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.lbl_strips = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.lbl_distance = new System.Windows.Forms.Label();
@@ -184,6 +184,10 @@
             this.groupBox5.Controls.Add(this.label29);
             this.groupBox5.Controls.Add(this.lbl_spacing);
             this.groupBox5.Controls.Add(this.label27);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.lbl_turnrad);
+            this.groupBox5.Controls.Add(this.label30);
+            this.groupBox5.Controls.Add(this.lbl_footprint);
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
@@ -228,15 +232,25 @@
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
             // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
             // lbl_turnrad
             // 
             resources.ApplyResources(this.lbl_turnrad, "lbl_turnrad");
             this.lbl_turnrad.Name = "lbl_turnrad";
             // 
-            // label36
+            // label30
             // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // lbl_footprint
+            // 
+            resources.ApplyResources(this.lbl_footprint, "lbl_footprint");
+            this.lbl_footprint.Name = "lbl_footprint";
             // 
             // lbl_flighttime
             // 
@@ -257,16 +271,6 @@
             // 
             resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
-            // 
-            // lbl_footprint
-            // 
-            resources.ApplyResources(this.lbl_footprint, "lbl_footprint");
-            this.lbl_footprint.Name = "lbl_footprint";
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
             // 
             // lbl_strips
             // 
@@ -859,19 +863,15 @@
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.lbl_turnrad, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.label22, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label36, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label23, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_flighttime, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_flighttime, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.lbl_area, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl_distance, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label33, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label30, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_distbetweenlines, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label25, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_footprint, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_distbetweenlines, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.lbl_strips, 1, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
@@ -978,18 +978,13 @@
             // NUM_altitude
             // 
             resources.ApplyResources(this.NUM_altitude, "NUM_altitude");
-            this.NUM_altitude.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             this.NUM_altitude.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.NUM_altitude.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});

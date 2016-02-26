@@ -544,7 +544,7 @@ namespace ByAeroBeHero.GCSViews
 
             cmds.Add("航点");
             cmds.Add("盘旋_圈数");
-            cmds.Add("盘旋_时间");
+            cmds.Add("悬停_时间");
             cmds.Add("返航");
             cmds.Add("降落");
             cmds.Add("起飞");
@@ -1324,7 +1324,7 @@ namespace ByAeroBeHero.GCSViews
             {
                 _mode = "LOITER_TURNS";
             }
-            else if (mode == "盘旋_时间")
+            else if (mode == "悬停_时间")
             {
                 _mode = "LOITER_TIME";
             }
@@ -1377,7 +1377,7 @@ namespace ByAeroBeHero.GCSViews
             }
             else if (mode == "LOITER_TIME")
             {
-                _mode = "盘旋_时间";
+                _mode = "悬停_时间";
             }
             else if (mode == "RETURN_TO_LAUNCH")
             {
@@ -1633,7 +1633,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (SaveFileDialog fd = new SaveFileDialog())
             {
-                fd.Filter = "Ardupilot Mission (*.txt)|*.*";
+                fd.Filter = "By Aero (*.txt)|*.*";
                 fd.DefaultExt = ".txt";
                 fd.FileName = wpfilename;
                 DialogResult result = fd.ShowDialog();
@@ -2594,7 +2594,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "All Supported Types|*.txt;*.shp|Ardupilot Mission (*.txt)|*.*|Shape file|*.shp";
+                fd.Filter = "All Supported Types|*.txt;*.shp|By Aero (*.txt)|*.*|Shape file|*.shp";
                 DialogResult result = fd.ShowDialog();
                 string file = fd.FileName;
 
@@ -5000,7 +5000,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "Ardupilot Mission (*.txt)|*.*";
+                fd.Filter = "By Aero (*.txt)|*.*";
                 fd.DefaultExt = ".txt";
                 DialogResult result = fd.ShowDialog();
                 string file = fd.FileName;

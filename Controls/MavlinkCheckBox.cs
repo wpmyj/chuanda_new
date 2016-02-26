@@ -57,7 +57,9 @@ namespace ByAeroBeHero.Controls
                 }
                 else
                 {
-                    this.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+                    if (ParamName == "RNGFND_TYPE" && paramlist[paramname].Value == 4) { this.Checked = true; }
+                    else if (ParamName == "RNGFND_TYPE" && paramlist[paramname].Value == 4) { this.Checked = false; }
+                    else { this.CheckState = System.Windows.Forms.CheckState.Indeterminate; }
                     enableControl(false);
                 }
             }
@@ -87,7 +89,11 @@ namespace ByAeroBeHero.Controls
                 enableControl(true);
                 try
                 {
-                    bool ans = MainV2.comPort.setParam(ParamName, OnValue);
+                    bool ans;
+                    if (ParamName == "RNGFND_TYPE")
+                        ans= MainV2.comPort.setParam(ParamName, 4);
+                    else
+                        ans= MainV2.comPort.setParam(ParamName, OnValue);
                     if (ans == false)
                         CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR);
                 }
@@ -98,7 +104,11 @@ namespace ByAeroBeHero.Controls
                 enableControl(false);
                 try
                 {
-                    bool ans = MainV2.comPort.setParam(ParamName, OffValue);
+                    bool ans;
+                    if (ParamName == "RNGFND_TYPE")
+                        ans = MainV2.comPort.setParam(ParamName, 0);
+                    else
+                        ans = MainV2.comPort.setParam(ParamName, OnValue);
                     if (ans == false)
                         CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed,ParamName), Strings.ERROR);
                 }

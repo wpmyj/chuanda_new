@@ -35,27 +35,27 @@ namespace ByAeroBeHero.SimpleGrid
 
         public override bool Loaded()
         {
-            Host2 = Host;
+            //Host2 = Host;
 
-            but = new ToolStripMenuItem("航线扫描(简单)");
-            but.Click += but_Click;
+            //but = new ToolStripMenuItem("航线扫描(简单)");
+            //but.Click += but_Click;
 
-            bool hit = false;
-            ToolStripItemCollection col = Host.FPMenuMap.Items;
-            int index = col.Count;
-            foreach (ToolStripItem item in col)
-            {
-                if (item.Text.Equals(Strings.AutoWP))
-                {
-                    index = col.IndexOf(item);
-                    ((ToolStripMenuItem)item).DropDownItems.Add(but);
-                    hit = true;
-                    break;
-                }
-            }
+            //bool hit = false;
+            //ToolStripItemCollection col = Host.FPMenuMap.Items;
+            //int index = col.Count;
+            //foreach (ToolStripItem item in col)
+            //{
+            //    if (item.Text.Equals(Strings.AutoWP))
+            //    {
+            //        index = col.IndexOf(item);
+            //        ((ToolStripMenuItem)item).DropDownItems.Add(but);
+            //        hit = true;
+            //        break;
+            //    }
+            //}
 
-            if (hit == false)
-                col.Add(but);
+            //if (hit == false)
+            //    col.Add(but);
 
             return true;
         }

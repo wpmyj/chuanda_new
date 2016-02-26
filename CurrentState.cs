@@ -455,6 +455,9 @@ namespace ByAeroBeHero
         [DisplayText("Sonar Range (meters)")]
         public float sonarrange { get { return (float)toDistDisplayUnit(_sonarrange); } set { _sonarrange = value; } }
         float _sonarrange = 0;
+
+        public float rngfndtype { get; set; }
+
         [DisplayText("Sonar Voltage (Volt)")]
         public float sonarvoltage { get; set; }
 

@@ -333,8 +333,8 @@
             this.backstageViewPagesonar.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPagesonar.LinkText = "Sonar";
             this.backstageViewPagesonar.Page = this.configHWSonar1;
-            this.backstageViewPagesonar.Parent = this.backstageViewPageopt;
-            this.backstageViewPagesonar.Show = false;
+            this.backstageViewPagesonar.Parent = null;
+            this.backstageViewPagesonar.Show = true;
             this.backstageViewPagesonar.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagesonar, "backstageViewPagesonar");
             // 

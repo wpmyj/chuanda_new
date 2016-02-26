@@ -669,6 +669,7 @@ namespace ByAeroBeHero
                 flightModes.Add(new KeyValuePair<int, string>(0, "自稳"));                
                 flightModes.Add(new KeyValuePair<int, string>(2, "定高"));
                 flightModes.Add(new KeyValuePair<int, string>(3, "自动"));
+                flightModes.Add(new KeyValuePair<int, string>(5, "悬停"));
                 flightModes.Add(new KeyValuePair<int, string>(6, "返航"));
                 flightModes.Add(new KeyValuePair<int, string>(9, "降落"));
                 flightModes.Add(new KeyValuePair<int, string>(16, "定点"));

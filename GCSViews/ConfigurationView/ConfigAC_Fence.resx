@@ -130,7 +130,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="mavlinkComboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 65</value>
+    <value>92, 68</value>
   </data>
   <data name="mavlinkComboBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
@@ -142,7 +142,7 @@
     <value>mavlinkComboBox2</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5893.28528, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5898.27280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -175,7 +175,7 @@
     <value>mavlinkCheckBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBox1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5893.28528, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5898.27280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -223,7 +223,7 @@
     <value>False</value>
   </data>
   <data name="mavlinkComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 34</value>
+    <value>92, 36</value>
   </data>
   <data name="mavlinkComboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
@@ -235,7 +235,7 @@
     <value>mavlinkComboBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5893.28528, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5898.27280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -427,7 +427,7 @@
     <value>mavlinkNumericUpDown1</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.28528, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.27280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown1.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -454,7 +454,7 @@
     <value>mavlinkNumericUpDown2</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.28528, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.27280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -478,7 +478,7 @@
     <value>mavlinkNumericUpDown3</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5893.28528, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.27280, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDown3.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -523,7 +523,7 @@
     <value>33, 204</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 124</value>
+    <value>654, 165</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -777,7 +777,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSendParam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 353</value>
+    <value>284, 375</value>
   </data>
   <data name="btnSendParam.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>

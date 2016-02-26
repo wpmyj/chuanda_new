@@ -24,6 +24,7 @@ using OpenTK;
 using ZedGraph;
 using LogAnalyzer = ByAeroBeHero.Utilities.LogAnalyzer;
 using ByAeroBeHero.Controls;
+using ByAeroBeHero.GCSViews.ConfigurationView;
 
 // written by michael oborne
 namespace ByAeroBeHero.GCSViews
@@ -594,6 +595,20 @@ namespace ByAeroBeHero.GCSViews
             }
 
             hud1.doResize();
+
+            IsShowSonar(); 
+        }
+
+        public void IsShowSonar() 
+        {
+            if (MainV2.comPort.MAV.param.ContainsKey("RNGFND_TYPE") && (float)MainV2.comPort.MAV.param["RNGFND_TYPE"] == 4)
+            {
+                this.QVSonarRange.Visible = true;
+            }
+            else
+            {
+                this.QVSonarRange.Visible = false;
+            }
         }
 
         public void CheckBatteryShow()
@@ -3639,6 +3654,46 @@ namespace ByAeroBeHero.GCSViews
             {
                 this.panel4.Visible=false;
                 pboxWarnMessage.Enabled = true;
+            }
+        }
+
+        private void btnLoiterUnlim_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行悬停！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+            try
+            {
+                ((Button)sender).Enabled = false;
+                MainV2.comPort.setMode("悬停");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
+        }
+
+        private void myButton5_Click(object sender, EventArgs e)
+        {
+            if (pbAction.Enabled)
+            {
+                this.BUT_quickauto1.Visible = false;
+                this.BUT_quickrtl1.Visible = false;
+                this.BUT_ARM1.Visible = false;
+                this.btnLoiterUnlim.Visible = false;
+                this.BUT_clear_track1.Visible = false;
+                pbAction.Enabled = false;
+            }
+            else
+            {
+                this.BUT_quickauto1.Visible = true;
+                this.BUT_quickrtl1.Visible = true;
+                this.BUT_ARM1.Visible = true;
+                this.btnLoiterUnlim.Visible = true;
+                this.BUT_clear_track1.Visible = true;
+                pbAction.Enabled = true;
             }
         }
     }

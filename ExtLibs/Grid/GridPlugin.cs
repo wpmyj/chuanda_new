@@ -20,12 +20,12 @@ namespace ByAeroBeHero
 
         public override string Version
         {
-            get { return "0.1"; }
+            get { return "1.0"; }
         }
 
         public override string Author
         {
-            get { return "Michael Oborne"; }
+            get { return "By Aero"; }
         }
 
         public override bool Init()

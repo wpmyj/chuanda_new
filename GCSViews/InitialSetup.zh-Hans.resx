@@ -164,7 +164,7 @@
     <value>罗盘/电机 校准</value>
   </data>
   <data name="backstageViewPagesonar.Text" xml:space="preserve">
-    <value>声呐</value>
+    <value>外部设备管理</value>
   </data>
   <data name="backstageViewPageairspeed.Text" xml:space="preserve">
     <value>空速</value>

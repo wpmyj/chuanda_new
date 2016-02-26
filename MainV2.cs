@@ -1246,6 +1246,8 @@ namespace ByAeroBeHero
             {
                 doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
             }
+
+            FlightData.Activate();
         }
         
         public static void ShowMessage() 

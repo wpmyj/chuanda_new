@@ -8,6 +8,9 @@ using log4net;
 using ByAeroBeHero.Attributes;
 using ByAeroBeHero;
 using System.Collections;
+using System.Media;
+using System.Windows.Forms;
+using System.IO;
 
 namespace ByAeroBeHero
 {
@@ -27,6 +30,7 @@ namespace ByAeroBeHero
         public static float multiplierspeed = 1;
         public static string SpeedUnit = "";
 
+        public static System.Media.SoundPlayer sp = null;
         public static double toDistDisplayUnit(double input) { return input * multiplierdist; }
         public static double toSpeedDisplayUnit(double input) { return input * multiplierspeed; }
 
@@ -169,6 +173,9 @@ namespace ByAeroBeHero
 
         [DisplayText("Failsafe")]
         public bool failsafe { get; set; }
+
+        [DisplayText("Dosage")]
+        public bool  dosage  { get; set; }
 
         [DisplayText("RX Rssi")]
         public int rxrssi { get; set; }
@@ -666,6 +673,7 @@ namespace ByAeroBeHero
             UpdateCurrentSettings(bs, updatenow, mavinterface, mavinterface.MAV);
         }
 
+        public int a = 0;
         public void UpdateCurrentSettings(System.Windows.Forms.BindingSource bs, bool updatenow, MAVLinkInterface mavinterface, MAVState MAV)
         {
             lock (this)
@@ -1033,6 +1041,21 @@ namespace ByAeroBeHero
                     if (bytearray != null)
                     {
                         var sysstatus = bytearray.ByteArrayToStructure<MAVLink.mavlink_sys_status_t>(6);
+
+                        if (sysstatus.errors_count1 == 1)
+                        {
+                            dosage = true;
+                            sp = new SoundPlayer();
+                            sp.SoundLocation = @"..\..\Sound/Waring.wav";
+                            sp.PlayLooping();
+                            a++;
+                        }
+                        else
+                        {
+                            if(sp != null)
+                                sp.Stop();
+                            dosage = false;
+                        }
 
                         load = (float)sysstatus.load / 10.0f;
 
@@ -1499,6 +1522,8 @@ namespace ByAeroBeHero
                         freemem = mem.freemem;
                         brklevel = mem.brkval;
                     }
+
+                   
                 }
 
                 try

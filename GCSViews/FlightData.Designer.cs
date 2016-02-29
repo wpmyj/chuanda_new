@@ -121,13 +121,15 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pbShowWarning = new System.Windows.Forms.PictureBox();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
             this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
             this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblHorizontalError = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSataCount = new System.Windows.Forms.Label();
             this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
             this.qvyaw = new ByAeroBeHero.Controls.QuickView();
@@ -167,7 +169,6 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel2.SuspendLayout();
             this.MainH.SuspendLayout();
@@ -201,9 +202,10 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShowWarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStripHud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
@@ -264,6 +266,7 @@
             this.contextMenuStripactionstab.BackColor = System.Drawing.Color.Teal;
             this.contextMenuStripactionstab.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             resources.ApplyResources(this.contextMenuStripactionstab, "contextMenuStripactionstab");
+            this.contextMenuStripactionstab.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripactionstab.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dropOutToolStripMenuItem});
             this.contextMenuStripactionstab.Name = "contextMenuStripactionstab";
@@ -1471,6 +1474,7 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
             this.splitContainer1.Panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
+            this.splitContainer1.Panel2.Controls.Add(this.pbShowWarning);
             this.splitContainer1.Panel2.Controls.Add(this.QVSonarRange);
             this.splitContainer1.Panel2.Controls.Add(this.btnLoiterUnlim);
             this.splitContainer1.Panel2.Controls.Add(this.BUT_clear_track1);
@@ -1508,6 +1512,7 @@
             // 
             // contextMenuStripMap
             // 
+            this.contextMenuStripMap.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goHereToolStripMenuItem,
             this.flyToHereAltToolStripMenuItem,
@@ -1583,6 +1588,31 @@
             resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
             this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
+            // pbShowWarning
+            // 
+            this.pbShowWarning.BackColor = System.Drawing.Color.Teal;
+            resources.ApplyResources(this.pbShowWarning, "pbShowWarning");
+            this.pbShowWarning.DataBindings.Add(new System.Windows.Forms.Binding("Visible", this.bindingSource1, "dosage", true));
+            this.pbShowWarning.Name = "pbShowWarning";
+            this.pbShowWarning.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbShowWarning, resources.GetString("pbShowWarning.ToolTip"));
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // QVSonarRange
+            // 
+            this.QVSonarRange.BackColor = System.Drawing.Color.Teal;
+            this.QVSonarRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.QVSonarRange.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "sonarrange", true));
+            this.QVSonarRange.desc = "超声波范围(M):";
+            resources.ApplyResources(this.QVSonarRange, "QVSonarRange");
+            this.QVSonarRange.Name = "QVSonarRange";
+            this.QVSonarRange.number = 0D;
+            this.QVSonarRange.numberColor = System.Drawing.Color.Lime;
+            this.QVSonarRange.numberformat = "0.00";
+            // 
             // btnLoiterUnlim
             // 
             resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
@@ -1625,10 +1655,6 @@
             this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // lblSataCount
             // 
@@ -1839,6 +1865,7 @@
             // 
             // contextMenuStripHud
             // 
+            this.contextMenuStripHud.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStripHud.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.recordHudToAVIToolStripMenuItem,
             this.stopRecordToolStripMenuItem,
@@ -1895,7 +1922,7 @@
             this.windDir1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2152,25 +2179,13 @@
             // 
             this.bindingSourceStatusTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
-            // QVSonarRange
-            // 
-            this.QVSonarRange.BackColor = System.Drawing.Color.Teal;
-            this.QVSonarRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.QVSonarRange.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "sonarrange", true));
-            this.QVSonarRange.desc = "超声波范围(M):";
-            resources.ApplyResources(this.QVSonarRange, "QVSonarRange");
-            this.QVSonarRange.Name = "QVSonarRange";
-            this.QVSonarRange.number = 0D;
-            this.QVSonarRange.numberColor = System.Drawing.Color.Lime;
-            this.QVSonarRange.numberformat = "0.00";
-            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableMap);
             this.Controls.Add(this.MainH);
-            this.MinimumSize = new System.Drawing.Size(1008, 426);
+            this.MinimumSize = new System.Drawing.Size(1344, 532);
             this.Name = "FlightData";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightData_FormClosing);
             this.Load += new System.EventHandler(this.FlightData_Load);
@@ -2213,11 +2228,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripMap.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbShowWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStripHud.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
@@ -2388,6 +2404,7 @@
         private System.Windows.Forms.PictureBox pbAction;
         private Controls.MyButton btnLoiterUnlim;
         private Controls.QuickView QVSonarRange;
+        private System.Windows.Forms.PictureBox pbShowWarning;
 
     }
 }

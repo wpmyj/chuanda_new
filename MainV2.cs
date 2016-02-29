@@ -1240,6 +1240,8 @@ namespace ByAeroBeHero
             // decide if this is a connect or disconnect
             if (comPort.BaseStream.IsOpen)
             {
+                if (CurrentState.sp!=null)
+                    CurrentState.sp.Stop();
                 doDisconnect(comPort);
             }
             else

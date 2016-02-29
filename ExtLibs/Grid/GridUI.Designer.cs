@@ -141,6 +141,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.map = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
+            this.label37 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox5.SuspendLayout();
             this.tabCamera.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -877,6 +879,8 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.comboBox1);
+            this.groupBox6.Controls.Add(this.label37);
             this.groupBox6.Controls.Add(this.CHK_usespeed);
             this.groupBox6.Controls.Add(this.CHK_toandland_RTL);
             this.groupBox6.Controls.Add(this.CHK_toandland);
@@ -1115,6 +1119,21 @@
             this.TRK_zoom.Value = 2F;
             this.TRK_zoom.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // GridUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1285,5 +1304,7 @@
         private System.Windows.Forms.NumericUpDown NUM_leadin;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label37;
     }
 }

@@ -132,7 +132,7 @@ namespace ByAeroBeHero
 
             //CMB_startfrom.DataSource =  Enum.GetNames(typeof(Grid.StartPosition));
             CMB_startfrom.SelectedIndex = 0;
-
+            comboBox1.SelectedIndex = 0;
             // set and angle that is good
             NUM_angle.Value = (decimal)((getAngleOfLongestSide(list) + 360) % 360);
             TXT_headinghold.Text = (Math.Round(NUM_angle.Value)).ToString();
@@ -1509,6 +1509,17 @@ namespace ByAeroBeHero
         {
             // doCalc
             domainUpDown1_ValueChanged(sender, e);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.comboBox1.SelectedIndex == 1)
+            {
+                NUM_altitude.Value = 10;
+                NUM_Distance.Value = 3;
+                CHK_copter_headinghold.Checked = true;
+            }
+            domainUpDown1_ValueChanged(null, null);
         }
     }
 }

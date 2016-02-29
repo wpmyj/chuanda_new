@@ -5128,8 +5128,8 @@ namespace ByAeroBeHero.GCSViews
             double areaha = aream2 * 1e-4;
 
             double areasqf = aream2 * 10.7639;
-
-            CustomMessageBox.Show("区域: " + aream2.ToString("0") + " m2\n\t" + areaa.ToString("0.00") + " 英亩\n\t" + areaha.ToString("0.00") + " 公顷\n\t" + areasqf.ToString("0") + " 平方英尺", "区域");
+            //+ areasqf.ToString("0") + " 平方英尺"； areaa.ToString("0.00") + " 英亩\n\t" + 
+            CustomMessageBox.Show("区域: " + aream2.ToString("0") + " 平方米\n\t" +areaha.ToString("0.00") + " 公顷\n\t" , "区域");
         }
 
         private void MainMap_Paint(object sender, PaintEventArgs e)

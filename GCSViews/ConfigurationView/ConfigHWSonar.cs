@@ -29,6 +29,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //        MainV2.comPort.MAV.cs.firmware.ToString()), "RNGFND_TYPE", MainV2.comPort.MAV.param);
 
             chbSonar.setup(1, 0, "RNGFND_TYPE", MainV2.comPort.MAV.param);
+            cb_LevelSensor.setup(1, 0, "FS_LEVEL_ENABLE", MainV2.comPort.MAV.param);
             timer1.Start();
         }
 

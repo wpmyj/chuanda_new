@@ -133,7 +133,7 @@
     <value>直升机安装</value>
   </data>
   <data name="backstageViewPageframetype.Text" xml:space="preserve">
-    <value>机架类型选择</value>
+    <value>机架类型</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="configAccelerometerCalibration.Size" type="System.Drawing.Size, System.Drawing">
@@ -149,7 +149,7 @@
     <value>飞行模式</value>
   </data>
   <data name="backstageViewPagefs.Text" xml:space="preserve">
-    <value>故障保护设置</value>
+    <value>故障保护</value>
   </data>
   <data name="backstageViewPageopt.Text" xml:space="preserve">
     <value>可选硬件</value>
@@ -164,7 +164,7 @@
     <value>罗盘/电机 校准</value>
   </data>
   <data name="backstageViewPagesonar.Text" xml:space="preserve">
-    <value>外部设备管理</value>
+    <value>外部设备</value>
   </data>
   <data name="backstageViewPageairspeed.Text" xml:space="preserve">
     <value>空速</value>

@@ -40,10 +40,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cb_LevelSensor = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.chbSonar = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.CMB_sonartype = new ByAeroBeHero.Controls.MavlinkComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -104,6 +108,28 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.cb_LevelSensor);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // cb_LevelSensor
+            // 
+            resources.ApplyResources(this.cb_LevelSensor, "cb_LevelSensor");
+            this.cb_LevelSensor.Name = "cb_LevelSensor";
+            this.cb_LevelSensor.OffValue = 0D;
+            this.cb_LevelSensor.OnValue = 1D;
+            this.cb_LevelSensor.ParamName = null;
+            this.cb_LevelSensor.UseVisualStyleBackColor = true;
+            // 
             // chbSonar
             // 
             resources.ApplyResources(this.chbSonar, "chbSonar");
@@ -131,6 +157,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LBL_volt);
@@ -144,6 +171,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +192,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private Controls.MavlinkCheckBox chbSonar;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label5;
+        private Controls.MavlinkCheckBox cb_LevelSensor;
     }
 }

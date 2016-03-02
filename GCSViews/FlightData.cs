@@ -113,6 +113,21 @@ namespace ByAeroBeHero.GCSViews
         //whether or not the output console has already started
         bool outputwindowstarted;
 
+        bool _state = false;
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public bool status
+        {
+            get
+            {
+                return _state;
+            }
+            set
+            {
+                _state = value;
+
+                this.Invalidate();
+            }
+        }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -3019,6 +3034,8 @@ namespace ByAeroBeHero.GCSViews
                 bool ans = MainV2.comPort.doARM(!MainV2.comPort.MAV.cs.armed);
                 if (ans == false)
                     CustomMessageBox.Show(Strings.ErrorRejectedByMAV, Strings.ERROR);
+                else
+                    dtBegin = DateTime.Now;
             }
             catch { CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR); }
 
@@ -3330,6 +3347,8 @@ namespace ByAeroBeHero.GCSViews
             form.Show();
         }
 
+        private int t = 0;
+        private DateTime dtBegin;
         int messagecount;
         private void Messagetabtimer_Tick(object sender, EventArgs e)
         {
@@ -3344,7 +3363,98 @@ namespace ByAeroBeHero.GCSViews
             //控制txt_messagebox的样式wjch
             this.txt_messagebox.BackColor = Color.Black;
             this.txt_messagebox.ForeColor = Color.Wheat;
+
+            if (status)
+            {
+                this.timer_time.Dispose();
+                timer_time.Enabled = true;
+            }
+            else 
+            {
+                timer_time.Enabled = false;            
+            }
         }
+
+                //计时器清零 
+        void BtnClearClick(object sender, System.EventArgs e)
+        {
+            t = 0;
+            //如何正在计时，则先停止再清零，否则直接清零 
+            if (this.timer_time.Enabled == true)
+            {
+                CustomMessageBox.Show("飞机正在飞行，不能执行清除！");
+            }
+            else
+            {
+                lblShowTime.Text = GetAllTime(t);
+            }
+            
+        }
+
+
+        private void timer_time_Tick(object sender, EventArgs e)
+        {
+             t = t + 1;//得到总的毫秒数    
+             this.lblShowTime.Text = GetAllTime(t);
+
+        }
+
+        //计时函数 
+        public string GetAllTime(int time)   
+          {
+            string hh, mm, ss, fff;
+                
+              int f = time%100; // 毫秒    
+              int s = time/100; // 转化为秒 
+              int m = s/60;     // 分 
+              int h = m/60;     // 时 
+                  s = s%60;     // 秒  
+        
+                  //毫秒格式00 
+                  if(f<10)
+                  {
+                      fff = "0" + f.ToString();
+                  }
+                  else
+                  {
+                      fff = f.ToString();
+                  }
+                  
+                  //秒格式00 
+                  if(s<10)
+                  {
+                      ss = "0" + s.ToString();
+                  }
+                  else
+                  {
+                      ss =  s.ToString();
+                  }
+                  
+                  //分格式00 
+                  if(m<10)
+                  {
+                      mm = "0" + m.ToString();
+                  }
+                  else
+                  {
+                      mm = m.ToString();
+                  }
+                  
+                  //时格式00 
+                  if(h<10)
+                  {
+                      hh = "0" + h.ToString();
+                  }
+                  else
+                  {
+                      hh = h.ToString();
+                  }
+              
+              //返回 hh:mm:ss.ff             
+              return hh + ":" + mm + ":" + ss + "." + fff;
+          }
+        
+
 
         private void dropOutToolStripMenuItem_Click(object sender, EventArgs e)
         {

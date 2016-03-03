@@ -40,7 +40,7 @@
             "MGRS"});
             this.CMB_coordsystem.Location = new System.Drawing.Point(0, 0);
             this.CMB_coordsystem.Name = "CMB_coordsystem";
-            this.CMB_coordsystem.Size = new System.Drawing.Size(54, 20);
+            this.CMB_coordsystem.Size = new System.Drawing.Size(54, 23);
             this.CMB_coordsystem.TabIndex = 0;
             this.CMB_coordsystem.Text = "GEO";
             this.CMB_coordsystem.Visible = false;
@@ -51,7 +51,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.CMB_coordsystem);
             this.Name = "Coords";
-            this.Size = new System.Drawing.Size(395, 23);
+            this.Size = new System.Drawing.Size(430, 23);
             this.ResumeLayout(false);
 
         }

@@ -3364,9 +3364,9 @@ namespace ByAeroBeHero.GCSViews
             this.txt_messagebox.BackColor = Color.Black;
             this.txt_messagebox.ForeColor = Color.Wheat;
 
-            if (status)
+            //CurrentState.isArm
+            if (CurrentState.isArm)
             {
-                this.timer_time.Dispose();
                 timer_time.Enabled = true;
             }
             else 
@@ -3382,10 +3382,11 @@ namespace ByAeroBeHero.GCSViews
             //如何正在计时，则先停止再清零，否则直接清零 
             if (this.timer_time.Enabled == true)
             {
-                CustomMessageBox.Show("飞机正在飞行，不能执行清除！");
+                CustomMessageBox.Show("飞机正在飞行，不能执行清除！","提示");
             }
             else
             {
+                this.timer_time.Dispose();
                 lblShowTime.Text = GetAllTime(t);
             }
             

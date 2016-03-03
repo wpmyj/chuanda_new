@@ -29,6 +29,7 @@ namespace ByAeroBeHero
         public static string DistanceUnit = "";
         public static float multiplierspeed = 1;
         public static string SpeedUnit = "";
+        public static bool isArm = false;
 
         public static System.Media.SoundPlayer sp = null;
         public static double toDistDisplayUnit(double input) { return input * multiplierdist; }
@@ -994,6 +995,7 @@ namespace ByAeroBeHero
                         {
                             armed = (hb.base_mode & (byte)MAVLink.MAV_MODE_FLAG.SAFETY_ARMED) == (byte)MAVLink.MAV_MODE_FLAG.SAFETY_ARMED;
 
+                            isArm = armed;
                             // for future use
                             landed = hb.system_status == (byte)MAVLink.MAV_STATE.STANDBY;
 

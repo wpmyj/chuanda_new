@@ -2667,6 +2667,12 @@
       <Values>0:禁用,1:降落,2:返航</Values>
       <User>Standard</User>
     </FS_BATT_ENABLE>
+    <FS_LEVEL_ENABLE>
+      <DisplayName>药量检测</DisplayName>
+      <Description>飞机飞行过程中药量检测</Description>
+      <Values>0:禁用,1:降落,2:返航</Values>
+      <User>Standard</User>
+    </FS_LEVEL_ENABLE>
     <FS_BATT_VOLTAGE>
       <DisplayName>Failsafe battery voltage</DisplayName>
       <Description>Battery voltage to trigger failsafe. Set to 0 to disable battery voltage failsafe. If the battery voltage drops below this voltage then the copter will RTL</Description>

@@ -290,7 +290,7 @@ namespace ByAeroBeHero.GCSViews
             // config map      
             log.Info("Map Setup");
             gMapControl1.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "gmapcache" + Path.DirectorySeparatorChar;
-            gMapControl1.MapProvider = GMapProviders.AMapStatelite;
+            gMapControl1.MapProvider = GMapProviders.GoogleChinaHybridMap;
             gMapControl1.MinZoom = 0;
             gMapControl1.MaxZoom = 24;
             gMapControl1.Zoom = 5;
@@ -3405,8 +3405,8 @@ namespace ByAeroBeHero.GCSViews
           {
             string hh, mm, ss, fff;
                 
-              int f = time%100; // 毫秒    
-              int s = time/100; // 转化为秒 
+              int f = time%60; // 毫秒    
+              int s = time/60; // 转化为秒 
               int m = s/60;     // 分 
               int h = m/60;     // 时 
                   s = s%60;     // 秒  
@@ -3452,7 +3452,7 @@ namespace ByAeroBeHero.GCSViews
                   }
               
               //返回 hh:mm:ss.ff             
-              return hh + ":" + mm + ":" + ss + "." + fff;
+              return mm + ":" + ss + ":" + fff;
           }
         
 

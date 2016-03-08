@@ -19,6 +19,7 @@ using log4net;
 using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
+using ByAeroBeHero.GCSViews;
 
 namespace ByAeroBeHero
 {
@@ -908,7 +909,6 @@ namespace ByAeroBeHero
                     NUM_spacing.Value = (decimal)((1 - (overlap / 100.0f)) * viewwidth);
                     NUM_Distance.Value = (decimal)((1 - (sidelap / 100.0f)) * viewheight);
                 }
-
             }
             catch { return; }
         }
@@ -1478,7 +1478,6 @@ namespace ByAeroBeHero
                 MainV2.instance.FlightPlanner.quickadd = false;
 
                 MainV2.instance.FlightPlanner.writeKML();
-
                 this.Close();
             }
             else

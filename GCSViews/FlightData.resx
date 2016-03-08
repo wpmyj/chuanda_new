@@ -391,7 +391,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanelQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 291</value>
+    <value>307, 291</value>
   </data>
   <data name="tableLayoutPanelQuick.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -424,7 +424,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabQuick.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1012,7 +1012,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1036,7 +1036,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1051,7 +1051,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabActions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1177,7 +1177,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabActionsSimple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabActionsSimple.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1333,7 +1333,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabGauges.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1366,7 +1366,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabStatus.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1405,7 +1405,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1429,7 +1429,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1453,7 +1453,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1477,7 +1477,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1501,7 +1501,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1525,7 +1525,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1549,7 +1549,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5905.38464, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.5909.21249, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1567,7 +1567,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="flowLayoutPanelServos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 291</value>
+    <value>307, 291</value>
   </data>
   <data name="flowLayoutPanelServos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1594,7 +1594,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabServo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabServo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2131,7 +2131,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPaneltlogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tableLayoutPaneltlogs.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -2158,7 +2158,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabTLogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabTLogs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2368,7 +2368,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tablogbrowse.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2626,7 +2626,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabScripts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabScripts.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2656,7 +2656,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPagemessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>314, 299</value>
+    <value>315, 299</value>
   </data>
   <data name="tabPagemessages.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2689,7 +2689,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlactions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>322, 328</value>
+    <value>323, 328</value>
   </data>
   <data name="tabControlactions.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -2719,7 +2719,7 @@
     <value>1</value>
   </data>
   <data name="SubMainLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 783</value>
+    <value>325, 783</value>
   </data>
   <data name="SubMainLeft.SplitterDistance" type="System.Int32, mscorlib">
     <value>448</value>
@@ -2758,7 +2758,7 @@
     <value>1433, 783</value>
   </data>
   <data name="MainH.SplitterDistance" type="System.Int32, mscorlib">
-    <value>1104</value>
+    <value>1103</value>
   </data>
   <data name="MainH.SplitterWidth" type="System.Int32, mscorlib">
     <value>5</value>
@@ -3107,7 +3107,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.18732, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.18909, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -4525,6 +4525,18 @@
   <data name="&gt;&gt;dropOutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bindingSourceQuickTab.Name" xml:space="preserve">
+    <value>bindingSourceQuickTab</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceQuickTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceGaugesTab.Name" xml:space="preserve">
+    <value>bindingSourceGaugesTab</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceGaugesTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;goHereToolStripMenuItem.Name" xml:space="preserve">
     <value>goHereToolStripMenuItem</value>
   </data>
@@ -4585,6 +4597,12 @@
   <data name="&gt;&gt;takeOffToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
+    <value>bindingSource1</value>
+  </data>
+  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;recordHudToAVIToolStripMenuItem.Name" xml:space="preserve">
     <value>recordHudToAVIToolStripMenuItem</value>
   </data>
@@ -4620,6 +4638,12 @@
   </data>
   <data name="&gt;&gt;russianHudToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceHud.Name" xml:space="preserve">
+    <value>bindingSourceHud</value>
+  </data>
+  <data name="&gt;&gt;bindingSourceHud.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ZedGraphTimer.Name" xml:space="preserve">
     <value>ZedGraphTimer</value>
@@ -4674,30 +4698,6 @@
   </data>
   <data name="&gt;&gt;fileSystemWatcher1.Type" xml:space="preserve">
     <value>System.IO.FileSystemWatcher, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
-    <value>bindingSource1</value>
-  </data>
-  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceQuickTab.Name" xml:space="preserve">
-    <value>bindingSourceQuickTab</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceQuickTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceHud.Name" xml:space="preserve">
-    <value>bindingSourceHud</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceHud.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceGaugesTab.Name" xml:space="preserve">
-    <value>bindingSourceGaugesTab</value>
-  </data>
-  <data name="&gt;&gt;bindingSourceGaugesTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bindingSourceStatusTab.Name" xml:space="preserve">
     <value>bindingSourceStatusTab</value>

@@ -57,6 +57,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             mavlinkCheckBoxshort_fs.setup(1, 0, "FS_SHORT_ACTN", MainV2.comPort.MAV.param);
             mavlinkCheckBoxlong_fs.setup(1, 0, "FS_LONG_ACTN", MainV2.comPort.MAV.param);
 
+
+            // arducopter
+            cb_FS_Level_Enable.setup(
+                ParameterMetaDataRepository.GetParameterOptionsInt("FS_LEVEL_ENABLE",
+                    MainV2.comPort.MAV.cs.firmware.ToString()), "FS_LEVEL_ENABLE", MainV2.comPort.MAV.param);
             timer.Enabled = true;
             timer.Interval = 100;
             timer.Start();

@@ -406,7 +406,7 @@
     <value>chbSonar</value>
   </data>
   <data name="&gt;&gt;chbSonar.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5904.18377, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5909.24498, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;chbSonar.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -480,6 +480,30 @@
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="mavlinkComboBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 30</value>
+  </data>
+  <data name="mavlinkComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="mavlinkComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.Name" xml:space="preserve">
+    <value>mavlinkComboBox1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5909.24498, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -511,10 +535,13 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="cb_LevelSensor.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="cb_LevelSensor.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="cb_LevelSensor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -532,13 +559,13 @@
     <value>cb_LevelSensor</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5904.18377, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5909.24498, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -554,6 +581,9 @@
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>液位传感器设备管理</value>
+  </data>
+  <data name="groupBox3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
     <value>groupBox3</value>
@@ -601,7 +631,7 @@
     <value>CMB_sonartype</value>
   </data>
   <data name="&gt;&gt;CMB_sonartype.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5904.18377, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5909.24498, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CMB_sonartype.Parent" xml:space="preserve">
     <value>$this</value>

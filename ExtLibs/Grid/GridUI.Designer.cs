@@ -118,6 +118,8 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
             this.CHK_usespeed = new System.Windows.Forms.CheckBox();
             this.CHK_toandland_RTL = new System.Windows.Forms.CheckBox();
             this.CHK_toandland = new System.Windows.Forms.CheckBox();
@@ -141,8 +143,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.map = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
-            this.label37 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox5.SuspendLayout();
             this.tabCamera.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -897,6 +897,21 @@
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
             // CHK_usespeed
             // 
             resources.ApplyResources(this.CHK_usespeed, "CHK_usespeed");
@@ -1118,21 +1133,6 @@
             this.TRK_zoom.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.TRK_zoom.Value = 2F;
             this.TRK_zoom.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // label37
-            // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // GridUI
             // 

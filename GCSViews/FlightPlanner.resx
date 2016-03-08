@@ -246,9 +246,9 @@
   <data name="Up.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHlJREFUOE/NlEEOwCAIBP3/p9u0GqWwDCbtoRzFkQ2stONFNGDbHXRB5jpmQ1+L
-        p5HMJHhVGSn5B8xk5Be8Qzp+wPuk5QnuvZTvjlSWnhOG5l+VeTYFXGhT9JI9fSJdBVajOcuGWUd+ZBLo
-        XPZDflK5VO7+Ly2KckGd5G5D2f43NBcAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGxJREFUOE/dy0ESgCAMQ1Huf2nE9qOAbYFx3Pg2DE2S8gvROAk+FjvTWYugZ1yp
+        PxA3xhNFB6Wq+1MJURX3h3ABg2vMeRkrHss88uKChuOM4jhOo8Y80keRVMFRfTY2URV/GBdUHJSq8b8h
+        5wPkbkPZ/Kz15wAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="Up.MinimumWidth" type="System.Int32, mscorlib">
@@ -266,9 +266,9 @@
   <data name="Down.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHBJREFUOE/dlFEKwDAIQ73/pTeKMNpMk4B/9a/UVzVa4xlYABvU0Hk/czJvD//7
-        4KwIhHBrduFS5xLeNV/Sdx0icPZsDHfBrbRJ5qKiT3pnNmFCz1k1Hmj7LPNnv0r2RsNl/HJl4DL4/1Cy
-        aRgsF9QLiVhD2dit5ywAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGtJREFUOE/dy0ESgCAMQ1Huf2ms9DNDEVIdXfk2DE1S6gvzuEiUuvCnIlFtfjgW
+        R/fFmCTKo11saGyckY51qhp5xPMQK38M5xsYjGNDKFFtwsdQ2aDUzX9D8YJ4sDgZ6gOCaH11YuZUlqj1
+        AIlYQ9mY+lgaAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="Down.MinimumWidth" type="System.Int32, mscorlib">
@@ -377,7 +377,7 @@
     <value>6, 7</value>
   </data>
   <data name="TXT_WPRad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 23</value>
+    <value>1, 27</value>
   </data>
   <data name="TXT_WPRad.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -404,7 +404,7 @@
     <value>4, 7</value>
   </data>
   <data name="TXT_DefaultAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 23</value>
+    <value>1, 27</value>
   </data>
   <data name="TXT_DefaultAlt.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -497,7 +497,7 @@
     <value>7, 7</value>
   </data>
   <data name="TXT_loiterrad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 23</value>
+    <value>1, 27</value>
   </data>
   <data name="TXT_loiterrad.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -614,10 +614,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblHAlt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 3</value>
+    <value>256, 2</value>
   </data>
   <data name="lblHAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 17</value>
+    <value>94, 20</value>
   </data>
   <data name="lblHAlt.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -647,10 +647,10 @@
     <value>NoControl</value>
   </data>
   <data name="lbljd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 3</value>
+    <value>150, 2</value>
   </data>
   <data name="lbljd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
+    <value>64, 20</value>
   </data>
   <data name="lbljd.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -680,10 +680,10 @@
     <value>NoControl</value>
   </data>
   <data name="lblwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 3</value>
+    <value>29, 2</value>
   </data>
   <data name="lblwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
+    <value>64, 20</value>
   </data>
   <data name="lblwd.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -713,7 +713,7 @@
     <value>246, 27</value>
   </data>
   <data name="TXT_homealt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
+    <value>115, 27</value>
   </data>
   <data name="TXT_homealt.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -740,7 +740,7 @@
     <value>125, 27</value>
   </data>
   <data name="TXT_homelng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 23</value>
+    <value>114, 27</value>
   </data>
   <data name="TXT_homelng.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -767,7 +767,7 @@
     <value>4, 27</value>
   </data>
   <data name="TXT_homelat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 23</value>
+    <value>114, 27</value>
   </data>
   <data name="TXT_homelat.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -790,9 +790,9 @@
   <data name="dataGridViewImageColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHlJREFUOE/NlEEOwCAIBP3/p9u0GqWwDCbtoRzFkQ2stONFNGDbHXRB5jpmQ1+L
-        p5HMJHhVGSn5B8xk5Be8Qzp+wPuk5QnuvZTvjlSWnhOG5l+VeTYFXGhT9JI9fSJdBVajOcuGWUd+ZBLo
-        XPZDflK5VO7+Ly2KckGd5G5D2f43NBcAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGxJREFUOE/dy0ESgCAMQ1Huf2nE9qOAbYFx3Pg2DE2S8gvROAk+FjvTWYugZ1yp
+        PxA3xhNFB6Wq+1MJURX3h3ABg2vMeRkrHss88uKChuOM4jhOo8Y80keRVMFRfTY2URV/GBdUHJSq8b8h
+        5wPkbkPZ/Kz15wAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="dataGridViewImageColumn1.Width" type="System.Int32, mscorlib">
@@ -804,9 +804,9 @@
   <data name="dataGridViewImageColumn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHBJREFUOE/dlFEKwDAIQ73/pTeKMNpMk4B/9a/UVzVa4xlYABvU0Hk/czJvD//7
-        4KwIhHBrduFS5xLeNV/Sdx0icPZsDHfBrbRJ5qKiT3pnNmFCz1k1Hmj7LPNnv0r2RsNl/HJl4DL4/1Cy
-        aRgsF9QLiVhD2dit5ywAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGtJREFUOE/dy0ESgCAMQ1Huf2ms9DNDEVIdXfk2DE1S6gvzuEiUuvCnIlFtfjgW
+        R/fFmCTKo11saGyckY51qhp5xPMQK38M5xsYjGNDKFFtwsdQ2aDUzX9D8YJ4sDgZ6gOCaH11YuZUlqj1
+        AIlYQ9mY+lgaAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="dataGridViewImageColumn2.Width" type="System.Int32, mscorlib">
@@ -920,27 +920,6 @@
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 2</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>下降速度</value>
-  </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
@@ -952,27 +931,6 @@
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 2</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>上升速度</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -986,27 +944,6 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 2</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 17</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>半径</value>
-  </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
@@ -1018,27 +955,6 @@
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 2</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 17</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>速度</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -1052,27 +968,6 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label33.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 17</value>
-  </data>
-  <data name="label33.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>航点导航(厘米/秒)</value>
-  </data>
   <data name="&gt;&gt;label33.Name" xml:space="preserve">
     <value>label33</value>
   </data>
@@ -1084,27 +979,6 @@
   </data>
   <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="label34.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 2</value>
-  </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="label34.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>高度保持</value>
   </data>
   <data name="&gt;&gt;label34.Name" xml:space="preserve">
     <value>label34</value>
@@ -1118,27 +992,6 @@
   <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="lblKeepLiter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblKeepLiter.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblKeepLiter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblKeepLiter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 2</value>
-  </data>
-  <data name="lblKeepLiter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 17</value>
-  </data>
-  <data name="lblKeepLiter.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="lblKeepLiter.Text" xml:space="preserve">
-    <value>盘旋速度</value>
-  </data>
   <data name="&gt;&gt;lblKeepLiter.Name" xml:space="preserve">
     <value>lblKeepLiter</value>
   </data>
@@ -1151,26 +1004,11 @@
   <data name="&gt;&gt;lblKeepLiter.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="WPNAV_SPEED.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="WPNAV_SPEED.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WPNAV_SPEED.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 26</value>
-  </data>
-  <data name="WPNAV_SPEED.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 23</value>
-  </data>
-  <data name="WPNAV_SPEED.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
   <data name="&gt;&gt;WPNAV_SPEED.Name" xml:space="preserve">
     <value>WPNAV_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1178,26 +1016,11 @@
   <data name="&gt;&gt;WPNAV_SPEED.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="WPNAV_RADIUS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="WPNAV_RADIUS.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WPNAV_RADIUS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 26</value>
-  </data>
-  <data name="WPNAV_RADIUS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 23</value>
-  </data>
-  <data name="WPNAV_RADIUS.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Name" xml:space="preserve">
     <value>WPNAV_RADIUS</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1205,26 +1028,11 @@
   <data name="&gt;&gt;WPNAV_RADIUS.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="WPNAV_SPEED_UP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="WPNAV_SPEED_UP.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WPNAV_SPEED_UP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>298, 26</value>
-  </data>
-  <data name="WPNAV_SPEED_UP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
-  </data>
-  <data name="WPNAV_SPEED_UP.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Name" xml:space="preserve">
     <value>WPNAV_SPEED_UP</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1232,26 +1040,11 @@
   <data name="&gt;&gt;WPNAV_SPEED_UP.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="WPNAV_SPEED_DN.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="WPNAV_SPEED_DN.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WPNAV_SPEED_DN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>394, 26</value>
-  </data>
-  <data name="WPNAV_SPEED_DN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
-  </data>
-  <data name="WPNAV_SPEED_DN.TabIndex" type="System.Int32, mscorlib">
-    <value>65</value>
-  </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Name" xml:space="preserve">
     <value>WPNAV_SPEED_DN</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1259,26 +1052,11 @@
   <data name="&gt;&gt;WPNAV_SPEED_DN.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="WPNAV_LOIT_SPEED.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="WPNAV_LOIT_SPEED.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WPNAV_LOIT_SPEED.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 26</value>
-  </data>
-  <data name="WPNAV_LOIT_SPEED.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
-  </data>
-  <data name="WPNAV_LOIT_SPEED.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Name" xml:space="preserve">
     <value>WPNAV_LOIT_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5898.30827, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1319,27 +1097,6 @@
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 1</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 2</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>高度警告</value>
-  </data>
   <data name="&gt;&gt;label17.Name" xml:space="preserve">
     <value>label17</value>
   </data>
@@ -1351,21 +1108,6 @@
   </data>
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="TXT_altwarn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="TXT_altwarn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 7</value>
-  </data>
-  <data name="TXT_altwarn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1, 23</value>
-  </data>
-  <data name="TXT_altwarn.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="TXT_altwarn.Text" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;TXT_altwarn.Name" xml:space="preserve">
     <value>TXT_altwarn</value>
@@ -1416,7 +1158,7 @@
     <value>1025, 196</value>
   </data>
   <data name="CMB_altmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 25</value>
+    <value>10, 28</value>
   </data>
   <data name="CMB_altmode.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -1446,7 +1188,7 @@
     <value>1021, 201</value>
   </data>
   <data name="CHK_splinedefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+    <value>18, 17</value>
   </data>
   <data name="CHK_splinedefault.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -1466,6 +1208,9 @@
   <data name="&gt;&gt;CHK_splinedefault.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 17</value>
+  </metadata>
   <data name="BUT_Add.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1481,9 +1226,6 @@
   <data name="BUT_Add.Text" xml:space="preserve">
     <value>添加航点</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>172, 17</value>
-  </metadata>
   <data name="BUT_Add.ToolTip" xml:space="preserve">
     <value>添加规划的航点</value>
   </data>
@@ -1529,11 +1271,437 @@
   <data name="&gt;&gt;panelWaypoints.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 1</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 19</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>下降速度</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>302, 1</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 19</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>上升速度</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 1</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 19</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>半径</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 1</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 19</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label33.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 21</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 33</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>航点导航(厘米/秒)</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label34.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 1</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 19</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>高度保持</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblKeepLiter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lblKeepLiter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblKeepLiter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblKeepLiter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 1</value>
+  </data>
+  <data name="lblKeepLiter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 19</value>
+  </data>
+  <data name="lblKeepLiter.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="lblKeepLiter.Text" xml:space="preserve">
+    <value>盘旋速度</value>
+  </data>
+  <data name="&gt;&gt;lblKeepLiter.Name" xml:space="preserve">
+    <value>lblKeepLiter</value>
+  </data>
+  <data name="&gt;&gt;lblKeepLiter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblKeepLiter.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;lblKeepLiter.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="WPNAV_SPEED.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="WPNAV_SPEED.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WPNAV_SPEED.Location" type="System.Drawing.Point, System.Drawing">
+    <value>121, 24</value>
+  </data>
+  <data name="WPNAV_SPEED.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 27</value>
+  </data>
+  <data name="WPNAV_SPEED.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED.Name" xml:space="preserve">
+    <value>WPNAV_SPEED</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="WPNAV_RADIUS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="WPNAV_RADIUS.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WPNAV_RADIUS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 24</value>
+  </data>
+  <data name="WPNAV_RADIUS.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 27</value>
+  </data>
+  <data name="WPNAV_RADIUS.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_RADIUS.Name" xml:space="preserve">
+    <value>WPNAV_RADIUS</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_RADIUS.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="WPNAV_SPEED_UP.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="WPNAV_SPEED_UP.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WPNAV_SPEED_UP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 24</value>
+  </data>
+  <data name="WPNAV_SPEED_UP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 27</value>
+  </data>
+  <data name="WPNAV_SPEED_UP.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_UP.Name" xml:space="preserve">
+    <value>WPNAV_SPEED_UP</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_UP.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="WPNAV_SPEED_DN.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="WPNAV_SPEED_DN.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WPNAV_SPEED_DN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 24</value>
+  </data>
+  <data name="WPNAV_SPEED_DN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 27</value>
+  </data>
+  <data name="WPNAV_SPEED_DN.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_DN.Name" xml:space="preserve">
+    <value>WPNAV_SPEED_DN</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_SPEED_DN.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="WPNAV_LOIT_SPEED.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="WPNAV_LOIT_SPEED.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WPNAV_LOIT_SPEED.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 24</value>
+  </data>
+  <data name="WPNAV_LOIT_SPEED.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 27</value>
+  </data>
+  <data name="WPNAV_LOIT_SPEED.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_LOIT_SPEED.Name" xml:space="preserve">
+    <value>WPNAV_LOIT_SPEED</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5909.19496, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;WPNAV_LOIT_SPEED.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 1</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 2</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>高度警告</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TXT_altwarn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="TXT_altwarn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 7</value>
+  </data>
+  <data name="TXT_altwarn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1, 27</value>
+  </data>
+  <data name="TXT_altwarn.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="TXT_altwarn.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TXT_altwarn.Name" xml:space="preserve">
+    <value>TXT_altwarn</value>
+  </data>
+  <data name="&gt;&gt;TXT_altwarn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_altwarn.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;TXT_altwarn.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="comboBoxMapType.Location" type="System.Drawing.Point, System.Drawing">
     <value>616, 26</value>
   </data>
   <data name="comboBoxMapType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 25</value>
+    <value>111, 28</value>
   </data>
   <data name="comboBoxMapType.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -1607,153 +1775,6 @@
   <data name="&gt;&gt;BUT_saveWPFile.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="lbl_distance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="lbl_distance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_distance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_distance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 4</value>
-  </data>
-  <data name="lbl_distance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 17</value>
-  </data>
-  <data name="lbl_distance.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="lbl_distance.Text" xml:space="preserve">
-    <value>航程|000.0000 千米</value>
-  </data>
-  <data name="&gt;&gt;lbl_distance.Name" xml:space="preserve">
-    <value>lbl_distance</value>
-  </data>
-  <data name="&gt;&gt;lbl_distance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_distance.Parent" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;lbl_distance.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lbl_homedist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="lbl_homedist.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_homedist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_homedist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>444, 4</value>
-  </data>
-  <data name="lbl_homedist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 17</value>
-  </data>
-  <data name="lbl_homedist.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="lbl_homedist.Text" xml:space="preserve">
-    <value>家|000000.00 米</value>
-  </data>
-  <data name="&gt;&gt;lbl_homedist.Name" xml:space="preserve">
-    <value>lbl_homedist</value>
-  </data>
-  <data name="&gt;&gt;lbl_homedist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_homedist.Parent" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;lbl_homedist.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbl_prevdist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="lbl_prevdist.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_prevdist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_prevdist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 4</value>
-  </data>
-  <data name="lbl_prevdist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 17</value>
-  </data>
-  <data name="lbl_prevdist.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="lbl_prevdist.Text" xml:space="preserve">
-    <value>前航点|000000.00 米</value>
-  </data>
-  <data name="&gt;&gt;lbl_prevdist.Name" xml:space="preserve">
-    <value>lbl_prevdist</value>
-  </data>
-  <data name="&gt;&gt;lbl_prevdist.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_prevdist.Parent" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;lbl_prevdist.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="lblhxj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="lblhxj.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblhxj.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblhxj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 4</value>
-  </data>
-  <data name="lblhxj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 17</value>
-  </data>
-  <data name="lblhxj.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="lblhxj.Text" xml:space="preserve">
-    <value>   航向角|000度</value>
-  </data>
-  <data name="&gt;&gt;lblhxj.Name" xml:space="preserve">
-    <value>lblhxj</value>
-  </data>
-  <data name="&gt;&gt;lblhxj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblhxj.Parent" xml:space="preserve">
-    <value>tableLayoutPanel5</value>
-  </data>
-  <data name="&gt;&gt;lblhxj.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>986, 26</value>
-  </data>
-  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
   <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
     <value>tableLayoutPanel5</value>
   </data>
@@ -1769,462 +1790,6 @@
   <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lbl_distance" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="coords1" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lbl_homedist" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lbl_prevdist" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblhxj" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,15,Percent,15,Percent,15,Percent,15,Percent,40" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="MainMap.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="deleteWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="deleteWPToolStripMenuItem.Text" xml:space="preserve">
-    <value>Delete WP</value>
-  </data>
-  <data name="insertWpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="insertWpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Insert Wp</value>
-  </data>
-  <data name="insertSplineWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="insertSplineWPToolStripMenuItem.Text" xml:space="preserve">
-    <value>Insert Spline WP</value>
-  </data>
-  <data name="insertSplineWPToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="loiterForeverToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
-  </data>
-  <data name="loiterForeverToolStripMenuItem.Text" xml:space="preserve">
-    <value>Forever</value>
-  </data>
-  <data name="loitertimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
-  </data>
-  <data name="loitertimeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Time</value>
-  </data>
-  <data name="loitercirclesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 22</value>
-  </data>
-  <data name="loitercirclesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Circles</value>
-  </data>
-  <data name="loiterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="loiterToolStripMenuItem.Text" xml:space="preserve">
-    <value>Loiter</value>
-  </data>
-  <data name="jumpstartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="jumpstartToolStripMenuItem.Text" xml:space="preserve">
-    <value>Start</value>
-  </data>
-  <data name="jumpwPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 22</value>
-  </data>
-  <data name="jumpwPToolStripMenuItem.Text" xml:space="preserve">
-    <value>WP #</value>
-  </data>
-  <data name="jumpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="jumpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Jump</value>
-  </data>
-  <data name="rTLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="rTLToolStripMenuItem.Text" xml:space="preserve">
-    <value>RTL</value>
-  </data>
-  <data name="landToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="landToolStripMenuItem.Text" xml:space="preserve">
-    <value>Land</value>
-  </data>
-  <data name="takeoffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="takeoffToolStripMenuItem.Text" xml:space="preserve">
-    <value>Takeoff</value>
-  </data>
-  <data name="setROIToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="setROIToolStripMenuItem.Text" xml:space="preserve">
-    <value>DO_SET_ROI</value>
-  </data>
-  <data name="setROIToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="clearMissionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="clearMissionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clear Mission</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 6</value>
-  </data>
-  <data name="addPolygonPointToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="addPolygonPointToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add Polygon Point</value>
-  </data>
-  <data name="clearPolygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="clearPolygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clear Polygon</value>
-  </data>
-  <data name="savePolygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="savePolygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>Save Polygon</value>
-  </data>
-  <data name="loadPolygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="loadPolygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>Load Polygon</value>
-  </data>
-  <data name="fromSHPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="fromSHPToolStripMenuItem.Text" xml:space="preserve">
-    <value>From SHP</value>
-  </data>
-  <data name="fromSHPToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="polygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="polygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>Draw Polygon</value>
-  </data>
-  <data name="setRallyPointToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="setRallyPointToolStripMenuItem.Text" xml:space="preserve">
-    <value>Set Rally Point</value>
-  </data>
-  <data name="getRallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="getRallyPointsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="saveRallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="saveRallyPointsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Upload</value>
-  </data>
-  <data name="clearRallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="clearRallyPointsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clear Rally Points</value>
-  </data>
-  <data name="saveToFileToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="saveToFileToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Save Rally to File</value>
-  </data>
-  <data name="loadFromFileToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
-  </data>
-  <data name="loadFromFileToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Load Rally from File</value>
-  </data>
-  <data name="loadFromFileToolStripMenuItem1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="rallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="rallyPointsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rally Points</value>
-  </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Complex</value>
-  </data>
-  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 6</value>
-  </data>
-  <data name="GeoFenceuploadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="GeoFenceuploadToolStripMenuItem.Text" xml:space="preserve">
-    <value>Upload</value>
-  </data>
-  <data name="GeoFencedownloadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="GeoFencedownloadToolStripMenuItem.Text" xml:space="preserve">
-    <value>Download</value>
-  </data>
-  <data name="setReturnLocationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="setReturnLocationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Set Return Location</value>
-  </data>
-  <data name="loadFromFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="loadFromFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Load from File</value>
-  </data>
-  <data name="saveToFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="saveToFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Save to File</value>
-  </data>
-  <data name="geoFenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="geoFenceToolStripMenuItem.Text" xml:space="preserve">
-    <value>Geo-Fence</value>
-  </data>
-  <data name="geoFenceToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="createWpCircleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="createWpCircleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Create Wp Circle</value>
-  </data>
-  <data name="areaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="areaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Area</value>
-  </data>
-  <data name="createSplineCircleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 22</value>
-  </data>
-  <data name="createSplineCircleToolStripMenuItem.Text" xml:space="preserve">
-    <value>Create Spline Circle</value>
-  </data>
-  <data name="createSplineCircleToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="autoWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="autoWPToolStripMenuItem.Text" xml:space="preserve">
-    <value>Auto WP</value>
-  </data>
-  <data name="ContextMeasure.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="ContextMeasure.Text" xml:space="preserve">
-    <value>Measure Distance</value>
-  </data>
-  <data name="rotateMapToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="rotateMapToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rotate Map</value>
-  </data>
-  <data name="rotateMapToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="zoomToToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="zoomToToolStripMenuItem.Text" xml:space="preserve">
-    <value>Zoom To</value>
-  </data>
-  <data name="zoomToToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="prefetchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="prefetchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Prefetch</value>
-  </data>
-  <data name="prefetchWPPathToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="prefetchWPPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>Prefetch WP Path</value>
-  </data>
-  <data name="prefetchWPPathToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="kMLOverlayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="kMLOverlayToolStripMenuItem.Text" xml:space="preserve">
-    <value>KML Overlay</value>
-  </data>
-  <data name="kMLOverlayToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="elevationGraphToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="elevationGraphToolStripMenuItem.Text" xml:space="preserve">
-    <value>Elevation Graph</value>
-  </data>
-  <data name="elevationGraphToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="reverseWPsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="reverseWPsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Reverse WPs</value>
-  </data>
-  <data name="reverseWPsToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mapToolToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="mapToolToolStripMenuItem.Text" xml:space="preserve">
-    <value>Map Tool</value>
-  </data>
-  <data name="loadWPFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="loadWPFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Load WP File</value>
-  </data>
-  <data name="loadAndAppendToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="loadAndAppendToolStripMenuItem.Text" xml:space="preserve">
-    <value>Load and Append</value>
-  </data>
-  <data name="saveWPFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="saveWPFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Save WP File</value>
-  </data>
-  <data name="loadKMLFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="loadKMLFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Load KML File</value>
-  </data>
-  <data name="loadKMLFileToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="loadSHPFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 22</value>
-  </data>
-  <data name="loadSHPFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Load SHP File</value>
-  </data>
-  <data name="loadSHPFileToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="fileLoadSaveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="fileLoadSaveToolStripMenuItem.Text" xml:space="preserve">
-    <value>File Load/Save</value>
-  </data>
-  <data name="poiaddToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 22</value>
-  </data>
-  <data name="poiaddToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="poideleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 22</value>
-  </data>
-  <data name="poideleteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="poieditToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 22</value>
-  </data>
-  <data name="poieditToolStripMenuItem.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="pOIToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="pOIToolStripMenuItem.Text" xml:space="preserve">
-    <value>POI</value>
-  </data>
-  <data name="pOIToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="flyToHereToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="flyToHereToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fly To Here</value>
-  </data>
-  <data name="flyToHereToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="modifyAltToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="modifyAltToolStripMenuItem.Text" xml:space="preserve">
-    <value>Modify Alt</value>
-  </data>
-  <data name="enterUTMCoordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="enterUTMCoordToolStripMenuItem.Text" xml:space="preserve">
-    <value>Enter UTM Coord</value>
-  </data>
-  <data name="enterUTMCoordToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="switchDockingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
-  </data>
-  <data name="switchDockingToolStripMenuItem.Text" xml:space="preserve">
-    <value>Switch Docking</value>
-  </data>
-  <data name="switchDockingToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 472</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MainMap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MainMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>993, 265</value>
-  </data>
-  <data name="MainMap.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
   <data name="&gt;&gt;MainMap.Name" xml:space="preserve">
     <value>MainMap</value>
   </data>
@@ -2236,24 +1801,6 @@
   </data>
   <data name="&gt;&gt;MainMap.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="trackBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="trackBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>993, 0</value>
-  </data>
-  <data name="trackBar1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 266</value>
-  </data>
-  <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
   </data>
   <data name="&gt;&gt;trackBar1.Name" xml:space="preserve">
     <value>trackBar1</value>
@@ -2297,6 +1844,768 @@
   <data name="&gt;&gt;panelMap.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="tableLayoutPanel5.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Name" xml:space="preserve">
+    <value>lbl_distance</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.Name" xml:space="preserve">
+    <value>lbl_homedist</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.Name" xml:space="preserve">
+    <value>lbl_prevdist</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.Name" xml:space="preserve">
+    <value>lblhxj</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel5.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>986, 26</value>
+  </data>
+  <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Name" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.Parent" xml:space="preserve">
+    <value>panelMap</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel5.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lbl_distance" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="coords1" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lbl_homedist" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lbl_prevdist" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblhxj" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,15,Percent,15,Percent,15,Percent,15,Percent,40" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="lbl_distance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lbl_distance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_distance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_distance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lbl_distance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 26</value>
+  </data>
+  <data name="lbl_distance.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="lbl_distance.Text" xml:space="preserve">
+    <value>航程|000.0000 千米</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Name" xml:space="preserve">
+    <value>lbl_distance</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lbl_distance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_homedist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lbl_homedist.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_homedist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_homedist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 3</value>
+  </data>
+  <data name="lbl_homedist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 20</value>
+  </data>
+  <data name="lbl_homedist.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lbl_homedist.Text" xml:space="preserve">
+    <value>家|000000.00 米</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.Name" xml:space="preserve">
+    <value>lbl_homedist</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lbl_homedist.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbl_prevdist.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lbl_prevdist.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_prevdist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_prevdist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 0</value>
+  </data>
+  <data name="lbl_prevdist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 26</value>
+  </data>
+  <data name="lbl_prevdist.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="lbl_prevdist.Text" xml:space="preserve">
+    <value>前航点|000000.00 米</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.Name" xml:space="preserve">
+    <value>lbl_prevdist</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lbl_prevdist.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblhxj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lblhxj.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblhxj.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblhxj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 3</value>
+  </data>
+  <data name="lblhxj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="lblhxj.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="lblhxj.Text" xml:space="preserve">
+    <value>   航向角|000度</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.Name" xml:space="preserve">
+    <value>lblhxj</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.Parent" xml:space="preserve">
+    <value>tableLayoutPanel5</value>
+  </data>
+  <data name="&gt;&gt;lblhxj.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="MainMap.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>212, 556</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MainMap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MainMap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>993, 265</value>
+  </data>
+  <data name="MainMap.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;MainMap.Name" xml:space="preserve">
+    <value>MainMap</value>
+  </data>
+  <data name="&gt;&gt;MainMap.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.myGMAP, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MainMap.Parent" xml:space="preserve">
+    <value>panelMap</value>
+  </data>
+  <data name="&gt;&gt;MainMap.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="deleteWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="deleteWPToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete WP</value>
+  </data>
+  <data name="insertWpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="insertWpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Insert Wp</value>
+  </data>
+  <data name="insertSplineWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="insertSplineWPToolStripMenuItem.Text" xml:space="preserve">
+    <value>Insert Spline WP</value>
+  </data>
+  <data name="insertSplineWPToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="loiterToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="loiterToolStripMenuItem.Text" xml:space="preserve">
+    <value>Loiter</value>
+  </data>
+  <data name="loiterForeverToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 26</value>
+  </data>
+  <data name="loiterForeverToolStripMenuItem.Text" xml:space="preserve">
+    <value>Forever</value>
+  </data>
+  <data name="loitertimeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 26</value>
+  </data>
+  <data name="loitertimeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="loitercirclesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 26</value>
+  </data>
+  <data name="loitercirclesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Circles</value>
+  </data>
+  <data name="jumpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="jumpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Jump</value>
+  </data>
+  <data name="jumpstartToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 26</value>
+  </data>
+  <data name="jumpstartToolStripMenuItem.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="jumpwPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 26</value>
+  </data>
+  <data name="jumpwPToolStripMenuItem.Text" xml:space="preserve">
+    <value>WP #</value>
+  </data>
+  <data name="rTLToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="rTLToolStripMenuItem.Text" xml:space="preserve">
+    <value>RTL</value>
+  </data>
+  <data name="landToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="landToolStripMenuItem.Text" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="takeoffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="takeoffToolStripMenuItem.Text" xml:space="preserve">
+    <value>Takeoff</value>
+  </data>
+  <data name="setROIToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="setROIToolStripMenuItem.Text" xml:space="preserve">
+    <value>DO_SET_ROI</value>
+  </data>
+  <data name="setROIToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="clearMissionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="clearMissionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clear Mission</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 6</value>
+  </data>
+  <data name="polygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="polygonToolStripMenuItem.Text" xml:space="preserve">
+    <value>Draw Polygon</value>
+  </data>
+  <data name="addPolygonPointToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 26</value>
+  </data>
+  <data name="addPolygonPointToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add Polygon Point</value>
+  </data>
+  <data name="clearPolygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 26</value>
+  </data>
+  <data name="clearPolygonToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clear Polygon</value>
+  </data>
+  <data name="savePolygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 26</value>
+  </data>
+  <data name="savePolygonToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save Polygon</value>
+  </data>
+  <data name="loadPolygonToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 26</value>
+  </data>
+  <data name="loadPolygonToolStripMenuItem.Text" xml:space="preserve">
+    <value>Load Polygon</value>
+  </data>
+  <data name="fromSHPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 26</value>
+  </data>
+  <data name="fromSHPToolStripMenuItem.Text" xml:space="preserve">
+    <value>From SHP</value>
+  </data>
+  <data name="fromSHPToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="rallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="rallyPointsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rally Points</value>
+  </data>
+  <data name="setRallyPointToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="setRallyPointToolStripMenuItem.Text" xml:space="preserve">
+    <value>Set Rally Point</value>
+  </data>
+  <data name="getRallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="getRallyPointsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="saveRallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="saveRallyPointsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="clearRallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="clearRallyPointsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clear Rally Points</value>
+  </data>
+  <data name="saveToFileToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="saveToFileToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Save Rally to File</value>
+  </data>
+  <data name="loadFromFileToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="loadFromFileToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Load Rally from File</value>
+  </data>
+  <data name="loadFromFileToolStripMenuItem1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="geoFenceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="geoFenceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Geo-Fence</value>
+  </data>
+  <data name="geoFenceToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="toolStripMenuItem1.Text" xml:space="preserve">
+    <value>Complex</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 6</value>
+  </data>
+  <data name="GeoFenceuploadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="GeoFenceuploadToolStripMenuItem.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="GeoFencedownloadToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="GeoFencedownloadToolStripMenuItem.Text" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="setReturnLocationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="setReturnLocationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Set Return Location</value>
+  </data>
+  <data name="loadFromFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="loadFromFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Load from File</value>
+  </data>
+  <data name="saveToFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 26</value>
+  </data>
+  <data name="saveToFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save to File</value>
+  </data>
+  <data name="autoWPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="autoWPToolStripMenuItem.Text" xml:space="preserve">
+    <value>Auto WP</value>
+  </data>
+  <data name="createWpCircleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="createWpCircleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Create Wp Circle</value>
+  </data>
+  <data name="areaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="areaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="createSplineCircleToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 26</value>
+  </data>
+  <data name="createSplineCircleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Create Spline Circle</value>
+  </data>
+  <data name="createSplineCircleToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mapToolToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="mapToolToolStripMenuItem.Text" xml:space="preserve">
+    <value>Map Tool</value>
+  </data>
+  <data name="ContextMeasure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="ContextMeasure.Text" xml:space="preserve">
+    <value>Measure Distance</value>
+  </data>
+  <data name="rotateMapToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="rotateMapToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rotate Map</value>
+  </data>
+  <data name="rotateMapToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="zoomToToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="zoomToToolStripMenuItem.Text" xml:space="preserve">
+    <value>Zoom To</value>
+  </data>
+  <data name="zoomToToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="prefetchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="prefetchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prefetch</value>
+  </data>
+  <data name="prefetchWPPathToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="prefetchWPPathToolStripMenuItem.Text" xml:space="preserve">
+    <value>Prefetch WP Path</value>
+  </data>
+  <data name="prefetchWPPathToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="kMLOverlayToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="kMLOverlayToolStripMenuItem.Text" xml:space="preserve">
+    <value>KML Overlay</value>
+  </data>
+  <data name="kMLOverlayToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="elevationGraphToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="elevationGraphToolStripMenuItem.Text" xml:space="preserve">
+    <value>Elevation Graph</value>
+  </data>
+  <data name="elevationGraphToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="reverseWPsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 26</value>
+  </data>
+  <data name="reverseWPsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Reverse WPs</value>
+  </data>
+  <data name="reverseWPsToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="fileLoadSaveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="fileLoadSaveToolStripMenuItem.Text" xml:space="preserve">
+    <value>File Load/Save</value>
+  </data>
+  <data name="loadWPFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="loadWPFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Load WP File</value>
+  </data>
+  <data name="loadAndAppendToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="loadAndAppendToolStripMenuItem.Text" xml:space="preserve">
+    <value>Load and Append</value>
+  </data>
+  <data name="saveWPFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="saveWPFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Save WP File</value>
+  </data>
+  <data name="loadKMLFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="loadKMLFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Load KML File</value>
+  </data>
+  <data name="loadKMLFileToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="loadSHPFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 26</value>
+  </data>
+  <data name="loadSHPFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Load SHP File</value>
+  </data>
+  <data name="loadSHPFileToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pOIToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="pOIToolStripMenuItem.Text" xml:space="preserve">
+    <value>POI</value>
+  </data>
+  <data name="pOIToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="poiaddToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 26</value>
+  </data>
+  <data name="poiaddToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="poideleteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 26</value>
+  </data>
+  <data name="poideleteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="poieditToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 26</value>
+  </data>
+  <data name="poieditToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="flyToHereToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="flyToHereToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fly To Here</value>
+  </data>
+  <data name="flyToHereToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="modifyAltToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="modifyAltToolStripMenuItem.Text" xml:space="preserve">
+    <value>Modify Alt</value>
+  </data>
+  <data name="enterUTMCoordToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="enterUTMCoordToolStripMenuItem.Text" xml:space="preserve">
+    <value>Enter UTM Coord</value>
+  </data>
+  <data name="enterUTMCoordToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="switchDockingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 26</value>
+  </data>
+  <data name="switchDockingToolStripMenuItem.Text" xml:space="preserve">
+    <value>Switch Docking</value>
+  </data>
+  <data name="switchDockingToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="trackBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="trackBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="trackBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>993, 0</value>
+  </data>
+  <data name="trackBar1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="trackBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 266</value>
+  </data>
+  <data name="trackBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.Name" xml:space="preserve">
+    <value>trackBar1</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyTrackBar, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.Parent" xml:space="preserve">
+    <value>panelMap</value>
+  </data>
+  <data name="&gt;&gt;trackBar1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Name" xml:space="preserve">
+    <value>splitter1</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Type" xml:space="preserve">
+    <value>BSE.Windows.Forms.Splitter, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;splitter1.Parent" xml:space="preserve">
+    <value>panelBASE</value>
+  </data>
+  <data name="&gt;&gt;splitter1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>panelBASE</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panelMap" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,60,Percent,100,Absolute,9" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panelBASE.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelBASE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panelBASE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelBASE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1039, 524</value>
+  </data>
+  <data name="panelBASE.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;panelBASE.Name" xml:space="preserve">
+    <value>panelBASE</value>
+  </data>
+  <data name="&gt;&gt;panelBASE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelBASE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelBASE.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="splitter1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -2325,6 +2634,117 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1039, 347</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>panelBASE</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panelMap" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,60,Percent,100,Absolute,9" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.Name" xml:space="preserve">
+    <value>myBtnAddPoint</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;myBtnAddPoint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.Name" xml:space="preserve">
+    <value>tableLayoutPanel6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="BUT_write" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_loadwpfile" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="BUT_read" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="BUT_saveWPFile" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Name" xml:space="preserve">
+    <value>tableLayoutPanel4</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblwd" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblHAlt" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homealt" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lbljd" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homelat" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homelng" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panel6.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1033, 54</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="panel6.Text" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="myBtnAddPoint.Location" type="System.Drawing.Point, System.Drawing">
@@ -2414,90 +2834,9 @@
   <data name="tableLayoutPanel4.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblwd" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblHAlt" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homealt" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lbljd" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homelat" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="TXT_homelng" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="panel6.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1033, 54</value>
-  </data>
-  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="panel6.Text" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1039, 347</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>panelBASE</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panelMap" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel6" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,60,Percent,100,Absolute,9" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="panelBASE.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelBASE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="panelBASE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelBASE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1039, 524</value>
-  </data>
-  <data name="panelBASE.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;panelBASE.Name" xml:space="preserve">
-    <value>panelBASE</value>
-  </data>
-  <data name="&gt;&gt;panelBASE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelBASE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelBASE.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 17</value>
+  </metadata>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>269, 17</value>
   </metadata>

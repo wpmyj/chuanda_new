@@ -39,11 +39,12 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chbSonar = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.mavlinkComboBox1 = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cb_LevelSensor = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.chbSonar = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.CMB_sonartype = new ByAeroBeHero.Controls.MavlinkComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -103,6 +104,15 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
+            // chbSonar
+            // 
+            resources.ApplyResources(this.chbSonar, "chbSonar");
+            this.chbSonar.Name = "chbSonar";
+            this.chbSonar.OffValue = 0D;
+            this.chbSonar.OnValue = 1D;
+            this.chbSonar.ParamName = null;
+            this.chbSonar.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -110,11 +120,21 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.mavlinkComboBox1);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.cb_LevelSensor);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // mavlinkComboBox1
+            // 
+            this.mavlinkComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboBox1, "mavlinkComboBox1");
+            this.mavlinkComboBox1.FormattingEnabled = true;
+            this.mavlinkComboBox1.Name = "mavlinkComboBox1";
+            this.mavlinkComboBox1.ParamName = null;
+            this.mavlinkComboBox1.SubControl = null;
             // 
             // label5
             // 
@@ -129,15 +149,6 @@
             this.cb_LevelSensor.OnValue = 1D;
             this.cb_LevelSensor.ParamName = null;
             this.cb_LevelSensor.UseVisualStyleBackColor = true;
-            // 
-            // chbSonar
-            // 
-            resources.ApplyResources(this.chbSonar, "chbSonar");
-            this.chbSonar.Name = "chbSonar";
-            this.chbSonar.OffValue = 0D;
-            this.chbSonar.OnValue = 1D;
-            this.chbSonar.ParamName = null;
-            this.chbSonar.UseVisualStyleBackColor = true;
             // 
             // CMB_sonartype
             // 
@@ -195,5 +206,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label5;
         private Controls.MavlinkCheckBox cb_LevelSensor;
+        private Controls.MavlinkComboBox mavlinkComboBox1;
     }
 }

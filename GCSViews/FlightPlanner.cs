@@ -257,7 +257,7 @@ namespace ByAeroBeHero.GCSViews
             }
 
             // Add more for other params
-            if (Commands.Columns[Param1.Index].HeaderText.Equals(cmdParamNames["航点"][1]/*"Delay"*/))
+            if (Commands.Columns[Param1.Index].HeaderText.Equals(cmdParamNames["航点"][0]/*"Delay"*/))
             {
                 cell = Commands.Rows[selectedrow].Cells[Param1.Index] as DataGridViewTextBoxCell;
                 cell.Value = p1;
@@ -397,7 +397,7 @@ namespace ByAeroBeHero.GCSViews
 
             // config map             
             MainMap.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "gmapcache" + Path.DirectorySeparatorChar;
-            MainMap.MapProvider = AMapProvider.Instance;
+            MainMap.MapProvider = GoogleChinaHybridMapProvider.Instance;
 
             // map events
             MainMap.OnPositionChanged += MainMap_OnCurrentPositionChanged;
@@ -426,11 +426,13 @@ namespace ByAeroBeHero.GCSViews
             System.Collections.ArrayList Map = new System.Collections.ArrayList();
             for (int i = 1; i < GMapProviders.List.Count; i++)
             {
-                if (GMapProviders.List[i].Id == new Guid("ef3dd303-3f74-4938-bf40-232d0595ee88")
+                if (GMapProviders.List[i].Id == new Guid("b8a2a78d-1c49-45d0-8f03-9b95c83116b7")
+                    ||GMapProviders.List[i].Id == new Guid("ef3dd303-3f74-4938-bf40-232d0595ee88")
                     || GMapProviders.List[i].Id == new Guid("fca94af4-3467-47c6-bda2-6f52e4a145bc")
                     || GMapProviders.List[i].Id == new Guid("d0ceb371-f10a-4e12-a2c1-df617d6674a8")
                     || GMapProviders.List[i].Id == new Guid("3ac742dd-966b-4cfb-b67d-33e7f82f2d37")
-                    || GMapProviders.List[i].Id == new Guid("94e2fcb4-caac-45ea-a1f9-8147c4b14970"))
+                    || GMapProviders.List[i].Id == new Guid("94e2fcb4-caac-45ea-a1f9-8147c4b14970")
+                    )
                 {
                     Map.Add(GMapProviders.List[i]);
                 }
@@ -519,7 +521,7 @@ namespace ByAeroBeHero.GCSViews
 
             // hide the map to prevent redraws when its loaded
             panelMap.Visible = false;
-            comboBoxMapType.SelectedIndex = 4;
+            comboBoxMapType.SelectedIndex = 5;
         }
 
         void updateCMDParams()
@@ -994,9 +996,9 @@ namespace ByAeroBeHero.GCSViews
             {
                 PointLatLng point = new PointLatLng(lat, lng);
                 GMarkerGoogle m = new GMarkerGoogle(point, GMarkerGoogleType.red);
-                m.ToolTipMode = MarkerTooltipMode.Never;
-                m.ToolTipText = "grid" + tag;
-                m.Tag = "grid" + tag;
+                m.ToolTipMode = MarkerTooltipMode.Always;
+                m.ToolTipText = "grid"+ tag;
+                m.Tag ="grid" + tag;
 
                 //ByAeroBeHero.GMapMarkerRectWPRad mBorders = new ByAeroBeHero.GMapMarkerRectWPRad(point, (int)float.Parse(TXT_WPRad.Text), MainMap);
                 GMapMarkerRect mBorders = new GMapMarkerRect(point);

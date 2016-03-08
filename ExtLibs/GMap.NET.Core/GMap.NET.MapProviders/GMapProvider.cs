@@ -47,6 +47,8 @@ namespace GMap.NET.MapProviders
         {
         }
 
+        //public static readonly GoogleChinaHybridMapProvider GoogleChinaHybridMap = GoogleChinaHybridMapProvider.Instance;
+
         public static readonly EmptyProvider EmptyProvider = EmptyProvider.Instance;
 
         public static readonly OpenStreetMapProvider OpenStreetMap = OpenStreetMapProvider.Instance;

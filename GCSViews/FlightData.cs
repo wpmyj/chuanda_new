@@ -343,13 +343,13 @@ namespace ByAeroBeHero.GCSViews
             //this.distanceBar1.Visible = false;
         }
 
-        void NoFly_NoFlyEvent(object sender, NoFly.NoFly.NoFlyEventArgs e)
-        {
-            foreach (var poly in e.NoFlyZones.Polygons)
-            {
-                kmlpolygons.Polygons.Add(poly);
-            }
-        }
+        //void NoFly_NoFlyEvent(object sender, NoFly.NoFly.NoFlyEventArgs e)
+        //{
+        //    foreach (var poly in e.NoFlyZones.Polygons)
+        //    {
+        //        kmlpolygons.Polygons.Add(poly);
+        //    }
+        //}
 
         void mymap_Paint(object sender, PaintEventArgs e)
         {
@@ -693,7 +693,7 @@ namespace ByAeroBeHero.GCSViews
 
             tfr.GotTFRs += tfr_GotTFRs;
 
-            NoFly.NoFly.NoFlyEvent += NoFly_NoFlyEvent;
+           // NoFly.NoFly.NoFlyEvent += NoFly_NoFlyEvent;
 
             TRK_zoom.Minimum = gMapControl1.MapProvider.MinZoom;
             TRK_zoom.Maximum = 24;
@@ -1047,7 +1047,7 @@ namespace ByAeroBeHero.GCSViews
                         //route.Stroke.Width = 5;
                         //route.Tag = "track";
 
-                        //updateClearRoutes();
+                        updateClearRoutes();
 
                         gMapControl1.UpdateRouteLocalPosition(route);
 

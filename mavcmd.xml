@@ -11,15 +11,15 @@
       <Y>纬度</Y>
       <Z>高度</Z>
     </航点>
-    <SPLINE_WAYPOINT>
-      <P1>Delay</P1>
+    <曲线航点>
+      <P1>延时</P1>
       <P2></P2>
       <P3></P3>
       <P4></P4>
-      <X>Lat</X>
-      <Y>Long</Y>
-      <Z>Alt</Z>      
-    </SPLINE_WAYPOINT>
+      <X>经度</X>
+      <Y>纬度</Y>
+      <Z>高度</Z>      
+    </曲线航点>
     <盘旋_圈数>
       <P1>圈数</P1>
       <P2></P2>

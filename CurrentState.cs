@@ -175,9 +175,13 @@ namespace ByAeroBeHero
         [DisplayText("Failsafe")]
         public bool failsafe { get; set; }
 
-        [DisplayText("Dosage")]
-        public bool  dosage  { get; set; }
-
+        public static int dosage = -1;
+        public static bool compasshealth = false;
+        public static bool gpshealth = false;
+        public static bool accelhealth = false;
+        public static bool gyrohealth = false;
+        public static bool receiverhealth = false;
+        public static bool pump = false;
         [DisplayText("RX Rssi")]
         public int rxrssi { get; set; }
         //radio
@@ -1038,26 +1042,25 @@ namespace ByAeroBeHero
                         }
                     }
 
-
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.SYS_STATUS];
                     if (bytearray != null)
                     {
                         var sysstatus = bytearray.ByteArrayToStructure<MAVLink.mavlink_sys_status_t>(6);
 
-                        if (sysstatus.errors_count1 == 1)
-                        {
-                            dosage = true;
-                            sp = new SoundPlayer();
-                            sp.SoundLocation = @"..\..\Sound/Waring.wav";
-                            sp.PlayLooping();
-                            a++;
-                        }
-                        else
-                        {
-                            if(sp != null)
-                                sp.Stop();
-                            dosage = false;
-                        }
+                        //if (sysstatus.errors_count1 == 1)
+                        //{
+                        //    dosage = false;
+                        //    sp = new SoundPlayer();
+                        //    sp.SoundLocation = @"..\..\Sound/Waring.wav";
+                        //    sp.PlayLooping();
+                        //    a++;
+                        //}
+                        //else
+                        //{
+                        //    if(sp != null)
+                        //        sp.Stop();
+                        //    dosage = true;
+                        //}
 
                         load = (float)sysstatus.load / 10.0f;
 
@@ -1128,11 +1131,57 @@ namespace ByAeroBeHero
                             messageHigh = Strings.NORCReceiver;
                             messageHighTime = DateTime.Now;
                         }
-                        
 
+                        if (sensors_health.compass != sensors_enabled.compass && sensors_present.compass)
+                            compasshealth = false;
+                        else
+                            compasshealth = true;
+
+                        if (sensors_health.gps != sensors_enabled.gps && sensors_present.gps)
+                            gpshealth = false;
+                        else
+                            gpshealth = true;
+
+                        if (sensors_health.accelerometer != sensors_enabled.accelerometer && sensors_present.accelerometer)
+                            accelhealth = false;
+                        else
+                            accelhealth = true;
+
+                        if (sensors_health.gyro != sensors_enabled.gyro && sensors_present.gyro)
+                            gyrohealth = false;
+                        else
+                            gyrohealth = true;
+
+                        if (sensors_health.rc_receiver != sensors_enabled.rc_receiver && sensors_present.rc_receiver)
+                            receiverhealth = false;
+                        else
+                            receiverhealth = true;
+                        
                         MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.SYS_STATUS] = null;
                     }
-                    
+
+                    bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.PERIPHERAL_STATUS];
+                    if (bytearray != null)
+                    {
+                        var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_peripheral_status_t>(6);
+
+
+                        if (mem.level != null)
+                        {
+                            dosage = mem.level;
+                        }
+
+                        if (mem.pump == 1)
+                        {
+                            pump = true;
+                        }
+                        else
+                        {
+                            pump = false;
+                        }
+
+                    }
+
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BATTERY2];
                     if (bytearray != null)
                     {
@@ -1523,9 +1572,7 @@ namespace ByAeroBeHero
                         var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_meminfo_t>(6);
                         freemem = mem.freemem;
                         brklevel = mem.brkval;
-                    }
-
-                   
+                    }                   
                 }
 
                 try
@@ -1593,6 +1640,7 @@ namespace ByAeroBeHero
                 catch { log.InfoFormat("CurrentState Binding error"); }
             }
         }
+
 
         public object Clone()
         {

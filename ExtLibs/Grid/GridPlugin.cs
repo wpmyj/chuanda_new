@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using GMap.NET.WindowsForms;
+using ByAeroBeHero.Controls;
 
 namespace ByAeroBeHero
 {
@@ -12,6 +13,7 @@ namespace ByAeroBeHero
         
 
         ToolStripMenuItem but;
+        MyButton button;
 
         public override string Name
         {
@@ -57,6 +59,15 @@ namespace ByAeroBeHero
                 }
             }
 
+            button = new MyButton();
+            button.Dock = DockStyle.Fill;
+            button.Width =109;
+            button.Height= 27;
+            button.Text = temp;
+            Host.FPTLPanel.Controls.Add(button);
+
+            button.Click += but_Click;
+
             if (hit == false)
                 col.Add(but);
 
@@ -68,20 +79,22 @@ namespace ByAeroBeHero
             var gridui = new GridUI(this);
             ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
 
+            int a = Host.FPDrawnPolygonLimit.Points.Count;
+
             if (Host.FPDrawnPolygon != null && Host.FPDrawnPolygon.Points.Count > 2)
             {
                 gridui.ShowDialog();
             }
             else
             {
-                if (CustomMessageBox.Show("没有定义多边形。加载文件?", "加载文件", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (CustomMessageBox.Show("没有进行区域规划。加载文件?", "加载文件", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     gridui.LoadGrid();
                     gridui.ShowDialog();
                 }
                 else
                 {
-                    CustomMessageBox.Show("请定义一个多边形.", "错误");
+                    CustomMessageBox.Show("请进行区域规划.", "错误");
                 }
             }
         }

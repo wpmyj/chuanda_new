@@ -50,7 +50,15 @@ namespace ByAeroBeHero.Controls
 
         [System.ComponentModel.Browsable(true)]
         public Color numberColor { get { return labelWithPseudoOpacity2.ForeColor; } set { if (labelWithPseudoOpacity2.ForeColor == value) return; labelWithPseudoOpacity2.ForeColor = value; } }
+       
+        [System.ComponentModel.Browsable(true)]
+        public Color backColor2 { get { return labelWithPseudoOpacity2.BackColor; } set { if (labelWithPseudoOpacity2.BackColor == value) return; labelWithPseudoOpacity2.BackColor = value; } }
 
+        [System.ComponentModel.Browsable(true)]
+        public Color backColor1 { get { return labelWithPseudoOpacity1.BackColor; } set { if (labelWithPseudoOpacity1.BackColor == value) return; labelWithPseudoOpacity1.BackColor = value; } }
+
+        [System.ComponentModel.Browsable(true)]
+        public Color backColor3 { get { return tableLayoutPanel1.BackColor; } set { if (tableLayoutPanel1.BackColor == value) return; tableLayoutPanel1.BackColor = value; } }
         public QuickView()
         {
             InitializeComponent();

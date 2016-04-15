@@ -73,6 +73,7 @@ namespace ByAeroBeHero.GCSViews
         internal static GMapOverlay geofence;
         internal static GMapOverlay rallypointoverlay;
         internal static GMapOverlay poioverlay = new GMapOverlay("POI"); // poi layer
+        internal static GMapOverlay limitpointoverlay;
 
         Dictionary<Guid, Form> formguids = new Dictionary<Guid, Form>();
 
@@ -182,6 +183,7 @@ namespace ByAeroBeHero.GCSViews
             log.Info("Ctor Start");
 
             InitializeComponent();
+
 
             log.Info("Components Done");
 
@@ -322,6 +324,9 @@ namespace ByAeroBeHero.GCSViews
 
             rallypointoverlay = new GMapOverlay("rally points");
             gMapControl1.Overlays.Add(rallypointoverlay);
+
+            limitpointoverlay = new GMapOverlay("limit points");
+            gMapControl1.Overlays.Add(limitpointoverlay);
 
             gMapControl1.Overlays.Add(poioverlay);
 
@@ -709,7 +714,7 @@ namespace ByAeroBeHero.GCSViews
             CMB_mountmode.ValueMember = "Key";
 
             if (MainV2.config["CHK_autopan"] != null)
-                //CHK_autopan.Checked = bool.Parse(MainV2.config["CHK_autopan"].ToString());
+                CHK_autopan.Checked = bool.Parse(MainV2.config["CHK_autopan"].ToString());
 
             if (MainV2.config.Contains("FlightSplitter"))
             {
@@ -1020,12 +1025,15 @@ namespace ByAeroBeHero.GCSViews
                             cnt++;
                         }
 
+                        #region 去除航线消失时间
                         // maintain route history length
                         if (route.Points.Count > int.Parse(MainV2.config["NUM_tracklength"].ToString()))
                         {
                             //  trackPoints.RemoveRange(0, trackPoints.Count - int.Parse(MainV2.config["NUM_tracklength"].ToString()));
-                            route.Points.RemoveRange(0, route.Points.Count - int.Parse(MainV2.config["NUM_tracklength"].ToString()));
+                            //route.Points.RemoveRange(0, route.Points.Count - int.Parse(MainV2.config["NUM_tracklength"].ToString()));
                         }
+                        #endregion
+
                         // add new route point
                         if (MainV2.comPort.MAV.cs.lat != 0)
                         {
@@ -1042,7 +1050,7 @@ namespace ByAeroBeHero.GCSViews
                         }
 
                         //route = new GMapRoute(route.Points, "track");
-                        //track.Stroke = Pens.Red;
+                        //route.Stroke = Pens.Yellow;
                         //route.Stroke = new Pen(Color.FromArgb(144, Color.Red));
                         //route.Stroke.Width = 5;
                         //route.Tag = "track";
@@ -1129,6 +1137,13 @@ namespace ByAeroBeHero.GCSViews
                                 rallypointoverlay.Markers.Add(new GMapMarkerRallyPt(mark));
                             }
 
+                            limitpointoverlay.Markers.Clear();
+
+                            foreach (var mark in MainV2.comPort.MAV.obstacles.Values)
+                            {
+                                limitpointoverlay.Markers.Add(new GMapMarkerLimitPt(mark));
+                            }
+
                             // optional on Flight data
                             if (MainV2.ShowAirports)
                             {
@@ -1136,8 +1151,11 @@ namespace ByAeroBeHero.GCSViews
                                 foreach (var item in Airports.getAirports(gMapControl1.Position))
                                 {
                                     rallypointoverlay.Markers.Add(new GMapMarkerAirport(item) { ToolTipText = item.Tag, ToolTipMode = MarkerTooltipMode.OnMouseOver });
+                                    limitpointoverlay.Markers.Add(new GMapMarkerAirport(item) { ToolTipText = item.Tag, ToolTipMode = MarkerTooltipMode.OnMouseOver });
                                 }
                             }
+
+
                             waypoints = DateTime.Now;
                         }
 
@@ -1191,7 +1209,7 @@ namespace ByAeroBeHero.GCSViews
                                 }
                             }
 
-                            if (route.Points[route.Points.Count - 1].Lat != 0 && (mapupdate.AddSeconds(3) < DateTime.Now))
+                            if (route.Points[route.Points.Count - 1].Lat != 0 && (mapupdate.AddSeconds(3) < DateTime.Now) && CHK_autopan.Checked)
                             {
                                 updateMapPosition(currentloc);
                                 mapupdate = DateTime.Now;
@@ -1577,9 +1595,10 @@ namespace ByAeroBeHero.GCSViews
                 wppath.Points.Add(polygonPoints[a]);
             }
 
+
             polygons.Routes.Add(homeroute);
             polygons.Routes.Add(wppath);
-
+            //routes.Routes.Add(wppath);
         }
 
         GMapOverlay polygons;
@@ -2773,7 +2792,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void CHK_autopan_CheckedChanged(object sender, EventArgs e)
         {
-            //MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
+            MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
 
                 //GCSViews.FlightPlanner.instance.autopan = CHK_autopan.Checked;
         }
@@ -3350,6 +3369,7 @@ namespace ByAeroBeHero.GCSViews
         private int t = 0;
         private DateTime dtBegin;
         int messagecount;
+        
         private void Messagetabtimer_Tick(object sender, EventArgs e)
         {
             if (messagecount != MainV2.comPort.MAV.cs.messages.Count)
@@ -3360,22 +3380,160 @@ namespace ByAeroBeHero.GCSViews
 
                 messagecount = MainV2.comPort.MAV.cs.messages.Count;
             }
+            controlInit(); 
+        }
+
+        public void controlInit() 
+        {
             //控制txt_messagebox的样式wjch
             this.txt_messagebox.BackColor = Color.Black;
             this.txt_messagebox.ForeColor = Color.Wheat;
+            this.panelAutoFly.BackColor = Color.Black;
 
+            CHK_autopan.BackColor = Color.Black;
+            CHK_autopan.ForeColor = Color.White;
             //CurrentState.isArm
             if (CurrentState.isArm)
             {
                 timer_time.Enabled = true;
             }
+            else
+            {
+                timer_time.Enabled = false;
+            }
+
+
+
+            if (this.pictureBoxAccel.Image != null) 
+            {
+                this.pictureBoxAccel.Image.Dispose();
+                this.pictureBoxAccel.Image = null;
+            }
+
+            if(this.pictureBoxGPS.Image != null)
+             {
+                 this.pictureBoxGPS.Image.Dispose();
+                 this.pictureBoxGPS.Image = null;
+             }
+
+            if (this.pictureBoxCompass.Image != null)
+            {
+                this.pictureBoxCompass.Image.Dispose();
+                this.pictureBoxCompass.Image = null;
+            }
+
+            if (this.pictureBoxLevel.Image != null)
+            {
+                this.pictureBoxLevel.Image.Dispose();
+                this.pictureBoxLevel.Image = null;
+            }
+
+            if (this.pictureBoxGyro.Image != null)
+            {
+                this.pictureBoxGyro.Image.Dispose();
+                this.pictureBoxGyro.Image = null;
+            }
+
+            if (this.pictureBoxReceiver.Image != null)
+            {
+                this.pictureBoxReceiver.Image.Dispose();
+                this.pictureBoxReceiver.Image = null;
+            }
+
+            if (this.pictureBoxPump.Image != null)
+            {
+                this.pictureBoxPump.Image.Dispose();
+                this.pictureBoxPump.Image = null;
+            }
+
+            this.panelDeviceStatus.BackColor = Color.Black;
+            if (MainV2.comPort.BaseStream.IsOpen)
+            {
+
+                if (CurrentState.accelhealth)
+                {
+
+                    this.pictureBoxAccel.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxAccel.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.compasshealth)
+                {
+                    this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.gpshealth)
+                {
+                    this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.dosage == 2)
+                {
+                    this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else if (CurrentState.dosage == 1)
+                {
+                    this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+                else 
+                {
+                    this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                
+                }
+
+                if (CurrentState.gyrohealth)
+                {
+                    this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.receiverhealth)
+                {
+                    this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+
+                if (CurrentState.pump)
+                {
+                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+            }
             else 
             {
-                timer_time.Enabled = false;            
+                this.pictureBoxAccel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.NoConnect;
             }
-        }
 
-                //计时器清零 
+        } 
+
+        //计时器清零 
         void BtnClearClick(object sender, System.EventArgs e)
         {
             t = 0;
@@ -3744,12 +3902,12 @@ namespace ByAeroBeHero.GCSViews
         {
             if (pbMeter.Enabled)
             {
-                this.hud1.Hide();
+                this.hud1.Show();
                 pbMeter.Enabled = false;
             }
             else
             {
-                this.hud1.Show();
+                this.hud1.Hide();
                 pbMeter.Enabled = true;
             }
         }
@@ -3786,26 +3944,52 @@ namespace ByAeroBeHero.GCSViews
             ((Button)sender).Enabled = true;
         }
 
+        #region 显示控件
+
+        private bool IsShowAutoBtn = false;
         private void myButton5_Click(object sender, EventArgs e)
         {
-            if (pbAction.Enabled)
+            if (IsShowAutoBtn)
             {
-                this.BUT_quickauto1.Visible = false;
-                this.BUT_quickrtl1.Visible = false;
-                this.BUT_ARM1.Visible = false;
-                this.btnLoiterUnlim.Visible = false;
-                this.BUT_clear_track1.Visible = false;
-                pbAction.Enabled = false;
+                this.panelAutoFly.Visible = false;
+                IsShowAutoBtn = false;
             }
             else
             {
-                this.BUT_quickauto1.Visible = true;
-                this.BUT_quickrtl1.Visible = true;
-                this.BUT_ARM1.Visible = true;
-                this.btnLoiterUnlim.Visible = true;
-                this.BUT_clear_track1.Visible = true;
-                pbAction.Enabled = true;
+                this.panelAutoFly.Visible = true;
+                IsShowAutoBtn = true;
             }
         }
+
+        private bool IsShowDeviceDStatus;
+        private void myButtonDeviceStatus_Click(object sender, EventArgs e)
+        {
+            if (IsShowDeviceDStatus)
+            {
+                panelDeviceStatus.Visible = false;
+                IsShowDeviceDStatus = false;
+            }
+            else 
+            {
+                panelDeviceStatus.Visible = true;
+                IsShowDeviceDStatus = true;
+            }
+        }
+
+        #endregion
+
+        #region
+        private void drawRute(GMapOverlay routesOverlay) 
+        {
+            // route.Points.Clear()
+            //route.Stroke = new Pen(Color.Yellow, 4);
+            //route.Stroke.DashStyle = DashStyle.Custom;
+
+            //for (int a = 1; a < route.Points.Count; a++)
+            //{
+            //    route.Points.Add(routesOverlay[a]);
+            //}
+        }
+        #endregion
     }
 }

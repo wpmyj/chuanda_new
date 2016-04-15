@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -102,6 +102,8 @@
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBoxDeviceStatus = new System.Windows.Forms.PictureBox();
+            this.myButtonDeviceStatus = new ByAeroBeHero.Controls.MyButton();
             this.myButton5 = new ByAeroBeHero.Controls.MyButton();
             this.pbAction = new System.Windows.Forms.PictureBox();
             this.btnMeter = new ByAeroBeHero.Controls.MyButton();
@@ -121,21 +123,38 @@
             this.flightPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setHomeHereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.takeOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbShowWarning = new System.Windows.Forms.PictureBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
-            this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelAutoFly = new System.Windows.Forms.Panel();
+            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
             this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
+            this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
+            this.panelDeviceStatus = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblPump = new System.Windows.Forms.Label();
+            this.pictureBoxPump = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLevel = new System.Windows.Forms.PictureBox();
+            this.lblCompass = new System.Windows.Forms.Label();
+            this.lblAccel = new System.Windows.Forms.Label();
+            this.lblGPS = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.pictureBoxCompass = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccel = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGPS = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGyro = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReceiver = new System.Windows.Forms.PictureBox();
+            this.lblGyro = new System.Windows.Forms.Label();
+            this.lblReceiver = new System.Windows.Forms.Label();
+            this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnClear = new ByAeroBeHero.Controls.MyButton();
             this.lblHorizontalError = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblShowTime = new System.Windows.Forms.Label();
             this.lblSataCount = new System.Windows.Forms.Label();
-            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
+            this.BtnClear = new ByAeroBeHero.Controls.MyButton();
+            this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.qvyaw = new ByAeroBeHero.Controls.QuickView();
-            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
             this.qvroll = new ByAeroBeHero.Controls.QuickView();
             this.qvpitch = new ByAeroBeHero.Controls.QuickView();
             this.Qvtohome = new ByAeroBeHero.Controls.QuickView();
@@ -198,6 +217,7 @@
             this.tabScripts.SuspendLayout();
             this.tableMap.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeviceStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxWarnMessage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).BeginInit();
@@ -206,10 +226,19 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbShowWarning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.panelAutoFly.SuspendLayout();
+            this.panelDeviceStatus.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).BeginInit();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStripHud.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
@@ -307,6 +336,9 @@
             // quickView6
             // 
             this.quickView6.BackColor = System.Drawing.Color.Teal;
+            this.quickView6.backColor1 = System.Drawing.Color.Black;
+            this.quickView6.backColor2 = System.Drawing.Color.Black;
+            this.quickView6.backColor3 = System.Drawing.Color.Black;
             this.quickView6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView6.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
             this.quickView6.desc = "到飞行器距离(m/s)";
@@ -323,6 +355,9 @@
             // quickView5
             // 
             this.quickView5.BackColor = System.Drawing.Color.Teal;
+            this.quickView5.backColor1 = System.Drawing.Color.Black;
+            this.quickView5.backColor2 = System.Drawing.Color.Black;
+            this.quickView5.backColor3 = System.Drawing.Color.Black;
             this.quickView5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView5.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
             this.quickView5.desc = "垂直速度(m/s)";
@@ -335,6 +370,9 @@
             // quickView4
             // 
             this.quickView4.BackColor = System.Drawing.Color.Teal;
+            this.quickView4.backColor1 = System.Drawing.Color.Black;
+            this.quickView4.backColor2 = System.Drawing.Color.Black;
+            this.quickView4.backColor3 = System.Drawing.Color.Black;
             this.quickView4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView4.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
             this.quickView4.desc = "偏航角(deg)";
@@ -347,6 +385,9 @@
             // quickView2
             // 
             this.quickView2.BackColor = System.Drawing.Color.Teal;
+            this.quickView2.backColor1 = System.Drawing.Color.Black;
+            this.quickView2.backColor2 = System.Drawing.Color.Black;
+            this.quickView2.backColor3 = System.Drawing.Color.Black;
             this.quickView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView2.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
             this.quickView2.desc = "地速(m/s)";
@@ -359,6 +400,9 @@
             // quickView3
             // 
             this.quickView3.BackColor = System.Drawing.Color.Teal;
+            this.quickView3.backColor1 = System.Drawing.Color.Black;
+            this.quickView3.backColor2 = System.Drawing.Color.Black;
+            this.quickView3.backColor3 = System.Drawing.Color.Black;
             this.quickView3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView3.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
             this.quickView3.desc = "到航距点距离(m/s)";
@@ -371,6 +415,9 @@
             // quickView1
             // 
             this.quickView1.BackColor = System.Drawing.Color.Teal;
+            this.quickView1.backColor1 = System.Drawing.Color.Black;
+            this.quickView1.backColor2 = System.Drawing.Color.Black;
+            this.quickView1.backColor3 = System.Drawing.Color.Black;
             this.quickView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.quickView1.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
             this.quickView1.desc = "高度(m)";
@@ -1411,6 +1458,8 @@
             // panel3
             // 
             this.panel3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.panel3.Controls.Add(this.pictureBoxDeviceStatus);
+            this.panel3.Controls.Add(this.myButtonDeviceStatus);
             this.panel3.Controls.Add(this.myButton5);
             this.panel3.Controls.Add(this.pbAction);
             this.panel3.Controls.Add(this.btnMeter);
@@ -1420,6 +1469,19 @@
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.ForeColor = System.Drawing.Color.DarkGreen;
             this.panel3.Name = "panel3";
+            // 
+            // pictureBoxDeviceStatus
+            // 
+            resources.ApplyResources(this.pictureBoxDeviceStatus, "pictureBoxDeviceStatus");
+            this.pictureBoxDeviceStatus.Name = "pictureBoxDeviceStatus";
+            this.pictureBoxDeviceStatus.TabStop = false;
+            // 
+            // myButtonDeviceStatus
+            // 
+            resources.ApplyResources(this.myButtonDeviceStatus, "myButtonDeviceStatus");
+            this.myButtonDeviceStatus.Name = "myButtonDeviceStatus";
+            this.myButtonDeviceStatus.UseVisualStyleBackColor = true;
+            this.myButtonDeviceStatus.Click += new System.EventHandler(this.myButtonDeviceStatus_Click);
             // 
             // myButton5
             // 
@@ -1479,16 +1541,12 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Teal;
             this.splitContainer1.Panel2.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
-            this.splitContainer1.Panel2.Controls.Add(this.pbShowWarning);
+            this.splitContainer1.Panel2.Controls.Add(this.panelAutoFly);
+            this.splitContainer1.Panel2.Controls.Add(this.panelDeviceStatus);
             this.splitContainer1.Panel2.Controls.Add(this.QVSonarRange);
-            this.splitContainer1.Panel2.Controls.Add(this.btnLoiterUnlim);
-            this.splitContainer1.Panel2.Controls.Add(this.BUT_clear_track1);
             this.splitContainer1.Panel2.Controls.Add(this.panel4);
-            this.splitContainer1.Panel2.Controls.Add(this.BUT_ARM1);
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Panel2.Controls.Add(this.BUT_quickrtl1);
             this.splitContainer1.Panel2.Controls.Add(this.qvyaw);
-            this.splitContainer1.Panel2.Controls.Add(this.BUT_quickauto1);
             this.splitContainer1.Panel2.Controls.Add(this.qvroll);
             this.splitContainer1.Panel2.Controls.Add(this.qvpitch);
             this.splitContainer1.Panel2.Controls.Add(this.Qvtohome);
@@ -1593,22 +1651,172 @@
             resources.ApplyResources(this.takeOffToolStripMenuItem, "takeOffToolStripMenuItem");
             this.takeOffToolStripMenuItem.Click += new System.EventHandler(this.takeOffToolStripMenuItem_Click);
             // 
-            // pbShowWarning
+            // panelAutoFly
             // 
-            this.pbShowWarning.BackColor = System.Drawing.Color.Teal;
-            resources.ApplyResources(this.pbShowWarning, "pbShowWarning");
-            this.pbShowWarning.DataBindings.Add(new System.Windows.Forms.Binding("Visible", this.bindingSource1, "dosage", true));
-            this.pbShowWarning.Name = "pbShowWarning";
-            this.pbShowWarning.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbShowWarning, resources.GetString("pbShowWarning.ToolTip"));
+            this.panelAutoFly.BackColor = System.Drawing.Color.Black;
+            this.panelAutoFly.Controls.Add(this.BUT_quickauto1);
+            this.panelAutoFly.Controls.Add(this.BUT_ARM1);
+            this.panelAutoFly.Controls.Add(this.BUT_quickrtl1);
+            this.panelAutoFly.Controls.Add(this.BUT_clear_track1);
+            this.panelAutoFly.Controls.Add(this.btnLoiterUnlim);
+            resources.ApplyResources(this.panelAutoFly, "panelAutoFly");
+            this.panelAutoFly.Name = "panelAutoFly";
             // 
-            // bindingSource1
+            // BUT_quickauto1
             // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
+            this.BUT_quickauto1.Name = "BUT_quickauto1";
+            this.BUT_quickauto1.UseVisualStyleBackColor = true;
+            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
+            // 
+            // BUT_ARM1
+            // 
+            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
+            this.BUT_ARM1.Name = "BUT_ARM1";
+            this.BUT_ARM1.UseVisualStyleBackColor = true;
+            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
+            // 
+            // BUT_quickrtl1
+            // 
+            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
+            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
+            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
+            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
+            // 
+            // BUT_clear_track1
+            // 
+            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
+            this.BUT_clear_track1.Name = "BUT_clear_track1";
+            this.BUT_clear_track1.UseVisualStyleBackColor = true;
+            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
+            // 
+            // btnLoiterUnlim
+            // 
+            resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
+            this.btnLoiterUnlim.Name = "btnLoiterUnlim";
+            this.btnLoiterUnlim.UseVisualStyleBackColor = true;
+            this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
+            // 
+            // panelDeviceStatus
+            // 
+            this.panelDeviceStatus.BackColor = System.Drawing.Color.Black;
+            this.panelDeviceStatus.Controls.Add(this.tableLayoutPanel2);
+            resources.ApplyResources(this.panelDeviceStatus, "panelDeviceStatus");
+            this.panelDeviceStatus.Name = "panelDeviceStatus";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.lblPump, 6, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxPump, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxLevel, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblCompass, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblAccel, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblGPS, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblLevel, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxCompass, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxAccel, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxGPS, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxGyro, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBoxReceiver, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lblGyro, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblReceiver, 5, 1);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // lblPump
+            // 
+            resources.ApplyResources(this.lblPump, "lblPump");
+            this.lblPump.ForeColor = System.Drawing.Color.White;
+            this.lblPump.Name = "lblPump";
+            // 
+            // pictureBoxPump
+            // 
+            resources.ApplyResources(this.pictureBoxPump, "pictureBoxPump");
+            this.pictureBoxPump.Name = "pictureBoxPump";
+            this.pictureBoxPump.TabStop = false;
+            // 
+            // pictureBoxLevel
+            // 
+            resources.ApplyResources(this.pictureBoxLevel, "pictureBoxLevel");
+            this.pictureBoxLevel.Name = "pictureBoxLevel";
+            this.pictureBoxLevel.TabStop = false;
+            // 
+            // lblCompass
+            // 
+            resources.ApplyResources(this.lblCompass, "lblCompass");
+            this.lblCompass.BackColor = System.Drawing.Color.Black;
+            this.lblCompass.ForeColor = System.Drawing.Color.White;
+            this.lblCompass.Name = "lblCompass";
+            // 
+            // lblAccel
+            // 
+            resources.ApplyResources(this.lblAccel, "lblAccel");
+            this.lblAccel.BackColor = System.Drawing.Color.Black;
+            this.lblAccel.ForeColor = System.Drawing.Color.White;
+            this.lblAccel.Name = "lblAccel";
+            // 
+            // lblGPS
+            // 
+            resources.ApplyResources(this.lblGPS, "lblGPS");
+            this.lblGPS.BackColor = System.Drawing.Color.Black;
+            this.lblGPS.ForeColor = System.Drawing.Color.White;
+            this.lblGPS.Name = "lblGPS";
+            // 
+            // lblLevel
+            // 
+            resources.ApplyResources(this.lblLevel, "lblLevel");
+            this.lblLevel.BackColor = System.Drawing.Color.Black;
+            this.lblLevel.ForeColor = System.Drawing.Color.White;
+            this.lblLevel.Name = "lblLevel";
+            // 
+            // pictureBoxCompass
+            // 
+            resources.ApplyResources(this.pictureBoxCompass, "pictureBoxCompass");
+            this.pictureBoxCompass.Name = "pictureBoxCompass";
+            this.pictureBoxCompass.TabStop = false;
+            // 
+            // pictureBoxAccel
+            // 
+            resources.ApplyResources(this.pictureBoxAccel, "pictureBoxAccel");
+            this.pictureBoxAccel.Name = "pictureBoxAccel";
+            this.pictureBoxAccel.TabStop = false;
+            // 
+            // pictureBoxGPS
+            // 
+            resources.ApplyResources(this.pictureBoxGPS, "pictureBoxGPS");
+            this.pictureBoxGPS.Name = "pictureBoxGPS";
+            this.pictureBoxGPS.TabStop = false;
+            // 
+            // pictureBoxGyro
+            // 
+            resources.ApplyResources(this.pictureBoxGyro, "pictureBoxGyro");
+            this.pictureBoxGyro.Name = "pictureBoxGyro";
+            this.pictureBoxGyro.TabStop = false;
+            // 
+            // pictureBoxReceiver
+            // 
+            resources.ApplyResources(this.pictureBoxReceiver, "pictureBoxReceiver");
+            this.pictureBoxReceiver.Name = "pictureBoxReceiver";
+            this.pictureBoxReceiver.TabStop = false;
+            // 
+            // lblGyro
+            // 
+            resources.ApplyResources(this.lblGyro, "lblGyro");
+            this.lblGyro.ForeColor = System.Drawing.Color.White;
+            this.lblGyro.Name = "lblGyro";
+            // 
+            // lblReceiver
+            // 
+            resources.ApplyResources(this.lblReceiver, "lblReceiver");
+            this.lblReceiver.ForeColor = System.Drawing.Color.White;
+            this.lblReceiver.Name = "lblReceiver";
             // 
             // QVSonarRange
             // 
             this.QVSonarRange.BackColor = System.Drawing.Color.Teal;
+            this.QVSonarRange.backColor1 = System.Drawing.Color.Black;
+            this.QVSonarRange.backColor2 = System.Drawing.Color.Black;
+            this.QVSonarRange.backColor3 = System.Drawing.Color.Black;
             this.QVSonarRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QVSonarRange.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "sonarrange", true));
             this.QVSonarRange.desc = "超声波范围(M):";
@@ -1618,49 +1826,23 @@
             this.QVSonarRange.numberColor = System.Drawing.Color.Lime;
             this.QVSonarRange.numberformat = "0.00";
             // 
-            // btnLoiterUnlim
-            // 
-            resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
-            this.btnLoiterUnlim.Name = "btnLoiterUnlim";
-            this.btnLoiterUnlim.UseVisualStyleBackColor = true;
-            this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
-            // 
-            // BUT_clear_track1
-            // 
-            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
-            this.BUT_clear_track1.Name = "BUT_clear_track1";
-            this.BUT_clear_track1.UseVisualStyleBackColor = true;
-            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.txt_messagebox);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
-            // BUT_ARM1
-            // 
-            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
-            this.BUT_ARM1.Name = "BUT_ARM1";
-            this.BUT_ARM1.UseVisualStyleBackColor = true;
-            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.BtnClear, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblHorizontalError, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblShowTime, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblSataCount, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.BtnClear, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.CHK_autopan, 4, 0);
+            this.tableLayoutPanel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // BtnClear
-            // 
-            resources.ApplyResources(this.BtnClear, "BtnClear");
-            this.BtnClear.Name = "BtnClear";
-            this.BtnClear.UseVisualStyleBackColor = true;
-            this.BtnClear.Click += new System.EventHandler(this.BtnClearClick);
             // 
             // lblHorizontalError
             // 
@@ -1669,6 +1851,10 @@
             this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // lblShowTime
             // 
@@ -1684,16 +1870,30 @@
             this.lblSataCount.ForeColor = System.Drawing.Color.White;
             this.lblSataCount.Name = "lblSataCount";
             // 
-            // BUT_quickrtl1
+            // BtnClear
             // 
-            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
-            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
-            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
-            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
+            resources.ApplyResources(this.BtnClear, "BtnClear");
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClearClick);
+            // 
+            // CHK_autopan
+            // 
+            resources.ApplyResources(this.CHK_autopan, "CHK_autopan");
+            this.CHK_autopan.BackColor = System.Drawing.Color.Black;
+            this.CHK_autopan.Checked = true;
+            this.CHK_autopan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_autopan.ForeColor = System.Drawing.Color.White;
+            this.CHK_autopan.Name = "CHK_autopan";
+            this.CHK_autopan.UseVisualStyleBackColor = false;
+            this.CHK_autopan.CheckedChanged += new System.EventHandler(this.CHK_autopan_CheckedChanged);
             // 
             // qvyaw
             // 
             this.qvyaw.BackColor = System.Drawing.Color.Teal;
+            this.qvyaw.backColor1 = System.Drawing.Color.Black;
+            this.qvyaw.backColor2 = System.Drawing.Color.Black;
+            this.qvyaw.backColor3 = System.Drawing.Color.Black;
             this.qvyaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvyaw.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
             this.qvyaw.desc = "航向角度(D):";
@@ -1703,16 +1903,12 @@
             this.qvyaw.numberColor = System.Drawing.Color.Lime;
             this.qvyaw.numberformat = "0.00";
             // 
-            // BUT_quickauto1
-            // 
-            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
-            this.BUT_quickauto1.Name = "BUT_quickauto1";
-            this.BUT_quickauto1.UseVisualStyleBackColor = true;
-            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
-            // 
             // qvroll
             // 
             this.qvroll.BackColor = System.Drawing.Color.Teal;
+            this.qvroll.backColor1 = System.Drawing.Color.Black;
+            this.qvroll.backColor2 = System.Drawing.Color.Black;
+            this.qvroll.backColor3 = System.Drawing.Color.Black;
             this.qvroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvroll.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true));
             this.qvroll.desc = "滚转角度(D):";
@@ -1725,6 +1921,9 @@
             // qvpitch
             // 
             this.qvpitch.BackColor = System.Drawing.Color.Teal;
+            this.qvpitch.backColor1 = System.Drawing.Color.Black;
+            this.qvpitch.backColor2 = System.Drawing.Color.Black;
+            this.qvpitch.backColor3 = System.Drawing.Color.Black;
             this.qvpitch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvpitch.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true));
             this.qvpitch.desc = "俯仰角度(D):";
@@ -1737,6 +1936,9 @@
             // Qvtohome
             // 
             this.Qvtohome.BackColor = System.Drawing.Color.Teal;
+            this.Qvtohome.backColor1 = System.Drawing.Color.Black;
+            this.Qvtohome.backColor2 = System.Drawing.Color.Black;
+            this.Qvtohome.backColor3 = System.Drawing.Color.Black;
             this.Qvtohome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvtohome.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
             this.Qvtohome.desc = "距离返航点(M):";
@@ -1749,6 +1951,9 @@
             // Qvverspeed
             // 
             this.Qvverspeed.BackColor = System.Drawing.Color.Teal;
+            this.Qvverspeed.backColor1 = System.Drawing.Color.Black;
+            this.Qvverspeed.backColor2 = System.Drawing.Color.Black;
+            this.Qvverspeed.backColor3 = System.Drawing.Color.Black;
             this.Qvverspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvverspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
             this.Qvverspeed.desc = "垂直速度(M/S):";
@@ -1761,6 +1966,9 @@
             // Qvdist
             // 
             this.Qvdist.BackColor = System.Drawing.Color.Teal;
+            this.Qvdist.backColor1 = System.Drawing.Color.Black;
+            this.Qvdist.backColor2 = System.Drawing.Color.Black;
+            this.Qvdist.backColor3 = System.Drawing.Color.Black;
             this.Qvdist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvdist.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
             this.Qvdist.desc = "距离目标点(M):";
@@ -1773,6 +1981,9 @@
             // Qvgroundspeed
             // 
             this.Qvgroundspeed.BackColor = System.Drawing.Color.Teal;
+            this.Qvgroundspeed.backColor1 = System.Drawing.Color.Black;
+            this.Qvgroundspeed.backColor2 = System.Drawing.Color.Black;
+            this.Qvgroundspeed.backColor3 = System.Drawing.Color.Black;
             this.Qvgroundspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvgroundspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
             this.Qvgroundspeed.desc = "水平速度(M/S):";
@@ -1785,6 +1996,9 @@
             // Qvalt
             // 
             this.Qvalt.BackColor = System.Drawing.Color.Teal;
+            this.Qvalt.backColor1 = System.Drawing.Color.Black;
+            this.Qvalt.backColor2 = System.Drawing.Color.Black;
+            this.Qvalt.backColor3 = System.Drawing.Color.Black;
             this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
             this.Qvalt.desc = "飞行器海拔(M):";
@@ -2174,8 +2388,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle5;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2183,8 +2397,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle6;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2249,6 +2463,7 @@
             this.tabScripts.PerformLayout();
             this.tableMap.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeviceStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxWarnMessage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).EndInit();
@@ -2258,12 +2473,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripMap.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbShowWarning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.panelAutoFly.ResumeLayout(false);
+            this.panelDeviceStatus.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStripHud.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
@@ -2435,11 +2660,30 @@
         private System.Windows.Forms.PictureBox pbAction;
         private Controls.MyButton btnLoiterUnlim;
         private Controls.QuickView QVSonarRange;
-        private System.Windows.Forms.PictureBox pbShowWarning;
         private System.Windows.Forms.Timer timer_time;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.Label lblShowTime;
         private Controls.MyButton BtnClear;
+        private System.Windows.Forms.Panel panelDeviceStatus;
+        private System.Windows.Forms.Label lblLevel;
+        private System.Windows.Forms.Label lblGPS;
+        private System.Windows.Forms.Label lblAccel;
+        private System.Windows.Forms.Label lblCompass;
+        private System.Windows.Forms.PictureBox pictureBoxLevel;
+        private System.Windows.Forms.PictureBox pictureBoxAccel;
+        private System.Windows.Forms.PictureBox pictureBoxGPS;
+        private System.Windows.Forms.PictureBox pictureBoxCompass;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private Controls.MyButton myButtonDeviceStatus;
+        private System.Windows.Forms.PictureBox pictureBoxDeviceStatus;
+        private System.Windows.Forms.PictureBox pictureBoxGyro;
+        private System.Windows.Forms.PictureBox pictureBoxReceiver;
+        private System.Windows.Forms.Label lblGyro;
+        private System.Windows.Forms.Label lblReceiver;
+        private System.Windows.Forms.Panel panelAutoFly;
+        private System.Windows.Forms.Label lblPump;
+        private System.Windows.Forms.PictureBox pictureBoxPump;
+        private System.Windows.Forms.CheckBox CHK_autopan;
 
     }
 }

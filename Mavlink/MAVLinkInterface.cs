@@ -3367,6 +3367,127 @@ Please check the following
             return false;
         }
 
+
+        #region 障碍点
+        public bool setObstaclePoint(byte index, PointLatLngAlt plla, float radius, UInt16 land_dir_cd, byte flags, byte obstaclepointcount)
+        {
+            mavlink_obstacle_point_t rp = new mavlink_obstacle_point_t();
+
+            rp.idx = index;
+            rp.count = obstaclepointcount;
+            rp.lat = (int)(plla.Lat * t7);
+            rp.lng = (int)(plla.Lng * t7);
+            rp.alt = (short)plla.Alt;
+            rp.radius = (short)radius;
+            rp.flags = (byte)flags;
+            rp.target_component = MAV.compid;
+            rp.target_system = MAV.sysid;
+
+            int retry = 3;
+
+            while (retry > 0)
+            {
+                generatePacket((byte)MAVLINK_MSG_ID.OBSTACLE_POINT, rp);
+                int counttemp = 0;
+                PointLatLngAlt newfp = getObstaclePoint(rp.idx, ref counttemp);
+
+                if (newfp.Lat == plla.Lat && newfp.Lng == rp.lng)
+                {
+                    Console.WriteLine("写入障碍点");
+                    return true;
+                }
+                retry--;
+            }
+
+            return false;
+        }
+
+
+        public List<PointLatLngAlt> getObstaclePoints()
+        {
+            List<PointLatLngAlt> points = new List<PointLatLngAlt>();
+
+            if (!MAV.param.ContainsKey("OBSTACLE_TOTAL"))
+                return points;
+
+            int count = int.Parse(MAV.param["OBSTACLE_TOTAL"].ToString());
+
+            for (int a = 0; a < (count - 1); a++)
+            {
+                try
+                {
+                    PointLatLngAlt plla = getObstaclePoint(a, ref count);
+                    points.Add(plla);
+                }
+                catch { return points; }
+            }
+
+            return points;
+        }
+
+        public PointLatLngAlt getObstaclePoint(int no, ref int total)
+        {
+            byte[] buffer;
+
+            giveComport = true;
+
+            PointLatLngAlt plla = new PointLatLngAlt();
+            mavlink_obstacle_fetch_point_t req = new mavlink_obstacle_fetch_point_t();
+
+            req.idx = (byte)no;
+            req.target_component = MAV.compid;
+            req.target_system = MAV.sysid;
+
+            // request point
+            generatePacket((byte)MAVLINK_MSG_ID.OBSTACLE_FETCH_POINT, req);
+
+            DateTime start = DateTime.Now;
+            int retrys = 3;
+
+            while (true)
+            {
+                if (!(start.AddMilliseconds(700) > DateTime.Now))
+                {
+                    if (retrys > 0)
+                    {
+                        log.Info("getObstaclePoint Retry " + retrys + " - giv com " + giveComport);
+                        generatePacket((byte)MAVLINK_MSG_ID.FENCE_FETCH_POINT, req);
+                        start = DateTime.Now;
+                        retrys--;
+                        continue;
+                    }
+                    giveComport = false;
+                    throw new Exception("Timeout on read - getObstaclePoint");
+                }
+
+                buffer = readPacket();
+                if (buffer.Length > 5)
+                {
+                    if (buffer[5] == (byte)MAVLINK_MSG_ID.OBSTACLE_POINT)
+                    {
+                        mavlink_obstacle_point_t fp = buffer.ByteArrayToStructure<mavlink_obstacle_point_t>(6);
+
+                        if (req.idx != fp.idx)
+                        {
+                            generatePacket((byte)MAVLINK_MSG_ID.FENCE_FETCH_POINT, req);
+                            continue;
+                        }
+
+                        plla.Lat = fp.lat / t7;
+                        plla.Lng = fp.lng / t7;
+                        plla.Tag = fp.idx.ToString();
+                        plla.Alt = fp.alt;
+                        plla.radius = fp.radius;
+                        total = fp.count;
+
+                        giveComport = false;
+
+                        return plla;
+                    }
+                }
+            }
+        }
+        #endregion
         public enum sensoroffsetsenum
         {
             gyro = 0,

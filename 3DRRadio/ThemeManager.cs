@@ -169,19 +169,19 @@ namespace ByAeroBeHero.Utilities
                 }
                 else if (ctl.GetType() == typeof(DataGridView))
                 {
-                    ctl.ForeColor = TextColor;
+                    //ctl.ForeColor = TextColor;
                     DataGridView dgv = (DataGridView)ctl;
                     dgv.EnableHeadersVisualStyles = false;
                     dgv.BorderStyle = BorderStyle.None;
-                    dgv.BackgroundColor = BGColor;
+                    //dgv.BackgroundColor = BGColor;
                     DataGridViewCellStyle rs = new DataGridViewCellStyle();
-                    rs.BackColor = ControlBGColor;
-                    rs.ForeColor = TextColor;
+                    //rs.BackColor = ControlBGColor;
+                    //rs.ForeColor = TextColor;
                     dgv.RowsDefaultCellStyle = rs;
 
                     DataGridViewCellStyle hs = new DataGridViewCellStyle(dgv.ColumnHeadersDefaultCellStyle);
-                    hs.BackColor = BGColor;
-                    hs.ForeColor = TextColor;
+                    //hs.BackColor = BGColor;
+                    //hs.ForeColor = TextColor;
 
                     dgv.ColumnHeadersDefaultCellStyle = hs;
                     dgv.RowHeadersDefaultCellStyle = hs;

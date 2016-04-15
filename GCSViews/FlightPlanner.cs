@@ -48,6 +48,7 @@ namespace ByAeroBeHero.GCSViews
         bool isonline = true;
         bool sethome;
         bool polygongridmode;
+        bool polygonlimitmode;
         Hashtable param = new Hashtable();
         bool splinemode;
         altmode currentaltmode = altmode.Relative;
@@ -150,7 +151,7 @@ namespace ByAeroBeHero.GCSViews
         /// <param name="lat"></param>
         /// <param name="lng"></param>
         /// <param name="alt"></param>
-        public void setfromMap(double lat, double lng, int alt, double p1 = 0)
+        public void setfromMap(double lat, double lng, float alt, double p1 = 0)
         {
             if (selectedrow > Commands.RowCount)
             {
@@ -276,7 +277,7 @@ namespace ByAeroBeHero.GCSViews
         /// <param name="lat"></param>
         /// <param name="lng"></param>
         /// <param name="alt"></param>
-        public void SetMouseDisplay(double lat, double lng, int alt)
+        public void SetMouseDisplay(double lat, double lng, float alt)
         {
             mouseposdisplay.Lat = lat;
             mouseposdisplay.Lng = lng;
@@ -344,8 +345,8 @@ namespace ByAeroBeHero.GCSViews
 
             if (splinemode)
             {
-                Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString();
-                ChangeColumnHeader(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
+                Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
+                ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString()));
             }
             else
             {
@@ -476,6 +477,9 @@ namespace ByAeroBeHero.GCSViews
             drawnpolygonsoverlay = new GMapOverlay("drawnpolygons");
             MainMap.Overlays.Add(drawnpolygonsoverlay);
 
+            drawnlimitpolygonsoverlay = new GMapOverlay("drawnlimitpolygons");
+            MainMap.Overlays.Add(drawnlimitpolygonsoverlay);
+
             MainMap.Overlays.Add(poioverlay);
 
             top = new GMapOverlay("top");
@@ -545,6 +549,7 @@ namespace ByAeroBeHero.GCSViews
             //cmds.Add("UNKNOWN");
 
             cmds.Add("航点");
+            cmds.Add("曲线航点");
             cmds.Add("盘旋_圈数");
             cmds.Add("悬停_时间");
             cmds.Add("返航");
@@ -708,6 +713,12 @@ namespace ByAeroBeHero.GCSViews
             drawnpolygon = new GMapPolygon(polygonPoints2, "drawnpoly");
             drawnpolygon.Stroke = new Pen(Color.Red, 2);
             drawnpolygon.Fill = Brushes.Transparent;
+
+            //setup drawnpolgon
+            List<PointLatLng> polygonPoints3 = new List<PointLatLng>();
+            drawnpolygonlimit = new GMapPolygon(polygonPoints2, "drawnpolylimit");
+            drawnpolygonlimit.Stroke = new Pen(Color.Orange, 2);
+            drawnpolygonlimit.Fill = Brushes.Transparent;
 
             updateCMDParams();
 
@@ -996,9 +1007,13 @@ namespace ByAeroBeHero.GCSViews
             {
                 PointLatLng point = new PointLatLng(lat, lng);
                 GMarkerGoogle m = new GMarkerGoogle(point, GMarkerGoogleType.red);
-                m.ToolTipMode = MarkerTooltipMode.Always;
-                m.ToolTipText = "grid"+ tag;
-                m.Tag ="grid" + tag;
+                m.ToolTipMode = MarkerTooltipMode.OnMouseOver;
+
+                string lineDistance = " |" + "距离"+ tag + "-" + (Convert.ToInt16(tag) - 1).ToString() +": " + currentDistance;
+                if (tag == "1")
+                    lineDistance = string.Empty;
+                m.ToolTipText = "区域航点" + tag + lineDistance;
+                m.Tag = "区域航点" + tag;
 
                 //ByAeroBeHero.GMapMarkerRectWPRad mBorders = new ByAeroBeHero.GMapMarkerRectWPRad(point, (int)float.Parse(TXT_WPRad.Text), MainMap);
                 GMapMarkerRect mBorders = new GMapMarkerRect(point);
@@ -1008,9 +1023,11 @@ namespace ByAeroBeHero.GCSViews
 
                 drawnpolygonsoverlay.Markers.Add(m);
                 drawnpolygonsoverlay.Markers.Add(mBorders);
+                
             }
             catch (Exception ex) { log.Info(ex.ToString()); }
         }
+
 
         void updateRowNumbers()
         {
@@ -1358,6 +1375,10 @@ namespace ByAeroBeHero.GCSViews
             {
                 _mode = "CONDITION_YAW";
             }
+            else if (mode == "曲线航点")
+            {
+                _mode = "SPLINE_WAYPOINT";
+            }
             else 
             {
                 _mode = mode;
@@ -1408,6 +1429,10 @@ namespace ByAeroBeHero.GCSViews
             else if (mode == "CONDITION_YAW")
             {
                 _mode = "航向_保持";
+            }
+            else if (mode == "SPLINE_WAYPOINT")
+            {
+                _mode = "曲线航点";
             }
 
             return _mode;
@@ -2763,7 +2788,7 @@ namespace ByAeroBeHero.GCSViews
         GMapPolygon wppolygon;
         internal GMapPolygon drawnpolygon;
         GMapPolygon geofencepolygon;
-
+        internal GMapPolygon drawnpolygonlimit;
 
         // layers
         GMapOverlay top; // not currently used
@@ -2776,6 +2801,7 @@ namespace ByAeroBeHero.GCSViews
         GMapOverlay kmlpolygonsoverlay;
         GMapOverlay geofenceoverlay;
         static GMapOverlay rallypointoverlay;
+        static GMapOverlay drawnlimitpolygonsoverlay;
 
         // etc
         readonly Random rnd = new Random();
@@ -2783,6 +2809,7 @@ namespace ByAeroBeHero.GCSViews
         GMapMarkerRect CurentRectMarker;
         GMapMarkerRallyPt CurrentRallyPt;
         GMapMarker CurrentGMapMarker;
+        GMapMarkerLimitPt CurrentLimitPt;
         bool isMouseDown;
         bool isMouseDraging;
         bool isMouseClickOffMenu;
@@ -2852,6 +2879,11 @@ namespace ByAeroBeHero.GCSViews
                 if (item is GMapMarker)
                 {
                     CurrentGMapMarker = item;
+                }
+
+                if (item is GMapMarkerLimitPt) 
+                {
+                    CurrentLimitPt = item as GMapMarkerLimitPt;
                 }
             }
         }
@@ -3147,12 +3179,22 @@ namespace ByAeroBeHero.GCSViews
 
                     if (CurentRectMarker != null)
                     {
-                        if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("grid"))
+                        if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("区域航点"))
                         {
                             try
                             {
-                                drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("grid", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
+                                drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
                                 MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+                                MainMap.Invalidate();
+                            }
+                            catch { }
+                        }
+                        else if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("障碍航点"))
+                        {
+                            try
+                            {
+                                drawnpolygonlimit.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("障碍航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
+                                MainMap.UpdatePolygonLocalPosition(drawnpolygonlimit);
                                 MainMap.Invalidate();
                             }
                             catch { }
@@ -3262,10 +3304,16 @@ namespace ByAeroBeHero.GCSViews
                     try
                     {
                         // check if this is a grid point
-                        if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("grid"))
+                        if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("区域航点"))
                         {
-                            drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("grid", "")) - 1] = new PointLatLng(point.Lat, point.Lng);
+                            drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(point.Lat, point.Lng);
                             MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+                            MainMap.Invalidate();
+                        }
+                        else if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("障碍航点")) 
+                        {
+                            drawnpolygonlimit.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("障碍航点", "")) - 1] = new PointLatLng(point.Lat, point.Lng);
+                            MainMap.UpdatePolygonLocalPosition(drawnpolygonlimit);
                             MainMap.Invalidate();
                         }
                     }
@@ -3719,9 +3767,12 @@ namespace ByAeroBeHero.GCSViews
             }
         }
 
+        private double currentLat;
+        private double currentLng;
+        private string currentDistance;
         private void addPolygonPointToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddPolygonPoint(MouseDownStart.Lat, MouseDownStart.Lng);
+            AddPolygonPoint(currentLat = MouseDownStart.Lat, currentLng=MouseDownStart.Lng);
         }
 
         /// <summary>
@@ -3740,7 +3791,7 @@ namespace ByAeroBeHero.GCSViews
                 DialogResult res = CustomMessageBox.Show("是否要添加当前区域航点？", "区域航点", MessageBoxButtons.YesNo);
                 if (res == DialogResult.Yes)
                 {
-                    AddPolygonPoint(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng);
+                    AddPolygonPoint(currentLat=MainV2.comPort.MAV.cs.lat, currentLng = MainV2.comPort.MAV.cs.lng);
                 }
                 else 
                 {
@@ -3756,6 +3807,7 @@ namespace ByAeroBeHero.GCSViews
                 CustomMessageBox.Show("你将保持在规划工作区域模式,直到你清除工作区域或者创建/上传一个供作区域。");
             }
 
+            ShowDistance(lat,lng); 
             polygongridmode = true;
 
             List<PointLatLng> polygonPoints = new List<PointLatLng>();
@@ -3778,6 +3830,19 @@ namespace ByAeroBeHero.GCSViews
             MainMap.UpdatePolygonLocalPosition(drawnpolygon);
 
             MainMap.Invalidate();
+        }
+
+        private void ShowDistance(double lat,double lng) 
+        {
+            if (startmeasure.IsEmpty)
+            {
+                startmeasure = new PointLatLng(lat, lng);
+            }
+            else
+            {
+                currentDistance = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startmeasure, new PointLatLng(currentLat, currentLng)), true);
+                startmeasure = new PointLatLng(currentLat, currentLng);
+            }
         }
 
         public void redrawPolygonSurvey(List<PointLatLngAlt> list)
@@ -3805,8 +3870,9 @@ namespace ByAeroBeHero.GCSViews
                 return;
             drawnpolygon.Points.Clear();
             drawnpolygonsoverlay.Markers.Clear();
+            startmeasure = new PointLatLng();
+            ClearRouteInfo();
             MainMap.Invalidate();
-
             writeKML();
         }
 
@@ -3887,7 +3953,7 @@ namespace ByAeroBeHero.GCSViews
                     }
                     catch { CustomMessageBox.Show("选择的航点错误,请再次尝试。"); }
                 }
-                else if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("grid", ""), out no))
+                else if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", ""), out no))
                 {
                     try
                     {
@@ -3917,6 +3983,13 @@ namespace ByAeroBeHero.GCSViews
                 MainMap.Invalidate(true);
 
                 CurrentRallyPt = null;
+            }
+            else if (CurrentLimitPt != null) 
+            {
+                drawnlimitpolygonsoverlay.Markers.Remove(CurrentLimitPt);
+                MainMap.Invalidate(true);
+
+                CurrentLimitPt = null;
             }
 
 
@@ -3985,6 +4058,8 @@ namespace ByAeroBeHero.GCSViews
         {
             try
             {
+                ControlInit();
+
                 if (isMouseDown)
                     return;
 
@@ -4035,6 +4110,8 @@ namespace ByAeroBeHero.GCSViews
                         mapupdate = DateTime.Now;
                     }
                 }
+
+                
             }
             catch (Exception ex) { log.Warn(ex); }
         }
@@ -4898,7 +4975,7 @@ namespace ByAeroBeHero.GCSViews
 
             if (cmd == MAVLink.MAV_CMD.WAYPOINT)
             {
-                setfromMap(y, x, (int)z, Math.Round(p1, 1));
+                setfromMap(y, x, (float)z, Math.Round(p1, 1));
             }
             else
             {
@@ -5031,7 +5108,7 @@ namespace ByAeroBeHero.GCSViews
                     {
                         StreamWriter sw = new StreamWriter(sf.OpenFile());
 
-                        sw.WriteLine("#saved by Mission Planner " + Application.ProductVersion);
+                        sw.WriteLine("#saved by By Aero " + Application.ProductVersion);
 
                         if (drawnpolygon.Points.Count > 0)
                         {
@@ -5289,19 +5366,19 @@ namespace ByAeroBeHero.GCSViews
         {
             string altstring = TXT_DefaultAlt.Text;
 
-            if (InputBox.Show("高度", "高度", ref altstring) == DialogResult.Cancel)
+            if (InputBox.Show("高度", "高度(米)", ref altstring) == DialogResult.Cancel)
                 return;
 
             int alt = 0;
 
             if (int.TryParse(altstring, out alt))
             {
-                PointLatLngAlt rallypt = new PointLatLngAlt(MouseDownStart.Lat, MouseDownStart.Lng, alt / CurrentState.multiplierdist, "Rally Point");
+                PointLatLngAlt rallypt = new PointLatLngAlt(MouseDownStart.Lat, MouseDownStart.Lng, alt / CurrentState.multiplierdist, "备用降落点");
                 rallypointoverlay.Markers.Add(
                         new GMapMarkerRallyPt(rallypt)
                         {
                             ToolTipMode = MarkerTooltipMode.OnMouseOver,
-                            ToolTipText = "Rally Point" + "\nAlt: " + alt,
+                            ToolTipText = "备用降落点" + "\n高度: " + alt,
                             Tag = rallypointoverlay.Markers.Count,
                             Alt = (int)rallypt.Alt
                         }
@@ -5499,7 +5576,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         using (StreamWriter sw = new StreamWriter(sf.OpenFile()))
                         {
 
-                            sw.WriteLine("#saved by Mission Planner " + Application.ProductVersion);
+                            sw.WriteLine("#saved by By Aero " + Application.ProductVersion);
 
 
                             foreach (GMapMarkerRallyPt mark in rallypointoverlay.Markers)
@@ -5764,11 +5841,11 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
                 try
                 {
-                    Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString();
+                    Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
                 }
                 catch { CustomMessageBox.Show("SPLINE_WAYPOINT command not supported."); Commands.Rows.RemoveAt(selectedrow); return; }
 
-                ChangeColumnHeader(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
+                ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString()));
 
                 setfromMap(MouseDownStart.Lat, MouseDownStart.Lng, (int)float.Parse(TXT_DefaultAlt.Text));
             }
@@ -5848,9 +5925,9 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
                     selectedrow = Commands.Rows.Add();
 
-                    Commands.Rows[selectedrow].Cells[Command.Index].Value = MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString();
+                    Commands.Rows[selectedrow].Cells[Command.Index].Value = mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
 
-                    ChangeColumnHeader(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString());
+                    ChangeColumnHeader(mavcndchange(MAVLink.MAV_CMD.SPLINE_WAYPOINT.ToString()));
 
                     float d = Radius;
                     float R = 6371000;
@@ -5969,5 +6046,305 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
         {
             Commands.AutoResizeColumns();
         }
+
+        #region 添加规划显示信息
+
+        public void showFlyInfo(string area, string distance,string strips,string distbetweenlines,string flighttime) 
+        {
+            lblArea.Text = area;
+            lblDistance.Text = distance;
+            lblStrips.Text = strips + " 条";
+            lblDistbetweenlines.Text = distbetweenlines;
+            lblFlighttime.Text = flighttime;
+        }
+
+        private void ClearRouteInfo()
+        {
+            lblArea.Text = "0亩";
+            lblDistance.Text = "0千米";
+            lblStrips.Text = " 0条";
+            lblDistbetweenlines.Text = "0米";
+            lblFlighttime.Text = "0分";
+        }
+
+        #endregion 添加规划显示信息
+
+        #region 障碍点
+
+        /// <summary>
+        /// 添加障碍点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void myBtnAddLimit_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面接收器再添加障碍航点。");
+                return;
+            }
+            string altstring = "3";
+
+            string radiusstring = "3";
+
+            if (InputBox.Show("高度", "高度(米)", ref altstring) == DialogResult.Cancel)
+                return;
+
+            if (InputBox.Show("半径", "半径(米)", ref radiusstring) == DialogResult.Cancel)
+                return;
+
+            float alt = 0;
+            float fradius = 0;
+
+            if (float.TryParse(altstring, out alt) && float.TryParse(radiusstring, out fradius))
+            {
+                PointLatLngAlt limitpt = new PointLatLngAlt(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng, alt / CurrentState.multiplierdist, "障碍行点", fradius);
+                drawnlimitpolygonsoverlay.Markers.Add(
+                        new GMapMarkerLimitPt(limitpt)
+                        {
+                            ToolTipMode = MarkerTooltipMode.OnMouseOver,
+                            ToolTipText = "障碍航点" + "\n高度: " + alt + " |半径" + fradius,
+                            Tag = drawnlimitpolygonsoverlay.Markers.Count,
+                            Alt = (float)limitpt.Alt,
+                            Radius = (float)limitpt.radius
+                        }
+                );
+            }
+            else
+            {
+                CustomMessageBox.Show(Strings.InvalidAlt, Strings.ERROR);
+            }
+        }
+
+        /// <summary>
+        /// 写入障碍航点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void myBtnSendLimitPoint_Click(object sender, EventArgs e)
+        {
+            byte count = 0;
+
+            MainV2.comPort.setParam("OBSTACLE_TOTAL", drawnlimitpolygonsoverlay.Markers.Count);
+
+            foreach (GMapMarkerLimitPt pnt in drawnlimitpolygonsoverlay.Markers)
+            {
+                try
+                {
+                    MainV2.comPort.setObstaclePoint(count, new PointLatLngAlt(pnt.Position) { Alt = pnt.Alt }, pnt.Radius, 0, 0, (byte)(float)MainV2.comPort.MAV.param["OBSTACLE_TOTAL"]);
+                    count++;
+                }
+                catch { CustomMessageBox.Show("未能保存障碍点", Strings.ERROR); return; }
+            }
+        }
+
+        /// <summary>
+        /// 读取障碍点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void getObstaclePointsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MainV2.comPort.MAV.param["OBSTACLE_TOTAL"] == null)
+            {
+                CustomMessageBox.Show("不支持！");
+                return;
+            }
+
+            if (int.Parse(MainV2.comPort.MAV.param["OBSTACLE_TOTAL"].ToString()) < 1)
+            {
+                CustomMessageBox.Show("没有障碍航点下载！");
+                return;
+            }
+
+            drawnlimitpolygonsoverlay.Markers.Clear();
+
+            int count = int.Parse(MainV2.comPort.MAV.param["OBSTACLE_TOTAL"].ToString());
+
+            for (int a = 0; a < (count); a++)
+            {
+                try
+                {
+                    PointLatLngAlt plla = MainV2.comPort.getObstaclePoint(a, ref count);
+                    drawnlimitpolygonsoverlay.Markers.Add(new GMapMarkerLimitPt(new PointLatLng(plla.Lat, plla.Lng)) { Alt = (int)plla.Alt, ToolTipMode = MarkerTooltipMode.OnMouseOver, ToolTipText = "障碍航点" + "\n高度: " + (plla.Alt * CurrentState.multiplierdist) + " |半径" + (plla.radius * CurrentState.multiplierdist) });
+                }
+                catch { CustomMessageBox.Show("获取障碍航点失败！", Strings.ERROR); return; }
+            }
+
+            MainMap.UpdateMarkerLocalPosition(drawnlimitpolygonsoverlay.Markers[0]);
+
+            MainMap.Invalidate();
+        }
+
+        /// <summary>
+        /// 清除障碍航点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void clearObstaclePointsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MainV2.comPort.setParam("OBSTACLE_TOTAL", 0);
+            }
+            catch { }
+            drawnlimitpolygonsoverlay.Markers.Clear();
+            //MainV2.comPort.MAV.obstacles.Clear();
+        }
+
+        /// <summary>
+        /// 加载障碍航点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void myButton_loadlimitpoint_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog fd = new OpenFileDialog())
+            {
+                fd.Filter = "Obstacle (*.ral)|*.ral";
+                fd.ShowDialog();
+                if (File.Exists(fd.FileName))
+                {
+                    StreamReader sr = new StreamReader(fd.OpenFile());
+
+                    int a = 0;
+
+                    while (!sr.EndOfStream)
+                    {
+                        string line = sr.ReadLine();
+                        if (line.StartsWith("#"))
+                        {
+                        }
+                        else
+                        {
+                            string[] items = line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+
+                            MAVLink.mavlink_obstacle_point_t obstacle = new MAVLink.mavlink_obstacle_point_t();
+
+                            obstacle.lat = (int)(float.Parse(items[1]) * 1e7);
+                            obstacle.lng = (int)(float.Parse(items[2]) * 1e7);
+                            obstacle.alt = (short)float.Parse(items[3]);
+                            obstacle.radius = (short)float.Parse(items[4]);
+                            obstacle.flags = byte.Parse(items[5]);
+
+                            if (a == 0)
+                            {
+                                drawnlimitpolygonsoverlay.Markers.Clear();
+
+                                drawnlimitpolygonsoverlay.Markers.Add(new GMapMarkerLimitPt(obstacle));
+                            }
+                            else
+                            {
+                                drawnlimitpolygonsoverlay.Markers.Add(new GMapMarkerLimitPt(obstacle));
+                            }
+                            a++;
+                        }
+                    }
+                    MainMap.Invalidate();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 保存障碍航点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void myButton_savelimitpoint_Click(object sender, EventArgs e)
+        {
+            if (drawnlimitpolygonsoverlay.Markers.Count == 0)
+            {
+                CustomMessageBox.Show("请设置备用降落点");
+                return;
+            }
+
+            using (SaveFileDialog sf = new SaveFileDialog())
+            {
+                sf.Filter = "Obstacle (*.ral)|*.ral";
+                sf.ShowDialog();
+                if (sf.FileName != "")
+                {
+                    try
+                    {
+                        using (StreamWriter sw = new StreamWriter(sf.OpenFile()))
+                        {
+
+                            sw.WriteLine("#saved by By Aero " + Application.ProductVersion);
+
+
+                            foreach (GMapMarkerLimitPt mark in drawnlimitpolygonsoverlay.Markers)
+                            {
+                                sw.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}", "Obstacle", mark.Position.Lat, mark.Position.Lng, mark.Alt, mark.Radius, 0);
+                            }
+                        }
+                    }
+                    catch { CustomMessageBox.Show("保存障碍点文件失败"); }
+                }
+            }
+        }
+        #endregion
+
+        #region 备用降落点
+        private void setRallyPoint_Click(object sender, EventArgs e)
+        {
+            string altstring = TXT_DefaultAlt.Text;
+
+            if (InputBox.Show("高度", "高度(米)", ref altstring) == DialogResult.Cancel)
+                return;
+
+            int alt = 0;
+
+            if (int.TryParse(altstring, out alt))
+            {
+                PointLatLngAlt rallypt = new PointLatLngAlt(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng, alt / CurrentState.multiplierdist, "备用降落点");
+                rallypointoverlay.Markers.Add(
+                        new GMapMarkerRallyPt(rallypt)
+                        {
+                            ToolTipMode = MarkerTooltipMode.OnMouseOver,
+                            ToolTipText = "备用降落点" + "\n高度: " + alt,
+                            Tag = rallypointoverlay.Markers.Count,
+                            Alt = (int)rallypt.Alt
+                        }
+                );
+            }
+            else
+            {
+                CustomMessageBox.Show(Strings.InvalidAlt, Strings.ERROR);
+            }
+        }
+        #endregion
+
+        #region 集成航点设置
+
+        private bool Isshow;
+
+        private void myBtnFunction_Click(object sender, EventArgs e)
+        {
+            if (Isshow)
+            {
+                this.panelShowPoint.Visible = false;
+                Isshow = false;
+            }
+            else
+            {
+                this.panelShowPoint.Visible = true;
+                Isshow = true;
+            }
+        }
+
+
+        private void ControlInit() 
+        {
+            panelShowPoint.BackColor = groupBoxAeroPoint.BackColor
+             = groupBoxBasePoint.BackColor = groupboxOPoint.BackColor = groupBoxRellyPoint.BackColor = Color.Black;
+            groupBoxAeroPoint.ForeColor
+                = groupBoxBasePoint.ForeColor = groupboxOPoint.ForeColor = groupBoxRellyPoint.ForeColor = Color.White;
+
+            this.panelShowInfo.BackColor = Color.Black;
+        }
+
+        #endregion
+
+
     }
 }

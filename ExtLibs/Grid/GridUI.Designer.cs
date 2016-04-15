@@ -98,6 +98,10 @@
             this.LBL_copter_delay = new System.Windows.Forms.Label();
             this.NUM_copter_delay = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numer_landhigh = new System.Windows.Forms.NumericUpDown();
+            this.label39 = new System.Windows.Forms.Label();
+            this.numer_TakeoffHigh = new System.Windows.Forms.NumericUpDown();
+            this.label38 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.NUM_leadin = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -157,6 +161,8 @@
             this.groupBox_copter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numer_landhigh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numer_TakeoffHigh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).BeginInit();
@@ -684,6 +690,10 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Controls.Add(this.numer_landhigh);
+            this.groupBox1.Controls.Add(this.label39);
+            this.groupBox1.Controls.Add(this.numer_TakeoffHigh);
+            this.groupBox1.Controls.Add(this.label38);
             this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.NUM_leadin);
             this.groupBox1.Controls.Add(this.label3);
@@ -702,6 +712,56 @@
             this.groupBox1.Controls.Add(this.NUM_Distance);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // numer_landhigh
+            // 
+            resources.ApplyResources(this.numer_landhigh, "numer_landhigh");
+            this.numer_landhigh.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.numer_landhigh.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numer_landhigh.Name = "numer_landhigh";
+            this.numer_landhigh.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // numer_TakeoffHigh
+            // 
+            resources.ApplyResources(this.numer_TakeoffHigh, "numer_TakeoffHigh");
+            this.numer_TakeoffHigh.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.numer_TakeoffHigh.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numer_TakeoffHigh.Name = "numer_TakeoffHigh";
+            this.numer_TakeoffHigh.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
             // 
             // label32
             // 
@@ -826,7 +886,13 @@
             // 
             // NUM_Distance
             // 
+            this.NUM_Distance.DecimalPlaces = 1;
             resources.ApplyResources(this.NUM_Distance, "NUM_Distance");
+            this.NUM_Distance.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.NUM_Distance.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -839,7 +905,7 @@
             0});
             this.NUM_Distance.Name = "NUM_Distance";
             this.NUM_Distance.Value = new decimal(new int[] {
-            50,
+            3,
             0,
             0,
             0});
@@ -943,7 +1009,13 @@
             // 
             // NUM_UpDownFlySpeed
             // 
+            this.NUM_UpDownFlySpeed.DecimalPlaces = 1;
             resources.ApplyResources(this.NUM_UpDownFlySpeed, "NUM_UpDownFlySpeed");
+            this.NUM_UpDownFlySpeed.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.NUM_UpDownFlySpeed.Maximum = new decimal(new int[] {
             360,
             0,
@@ -951,7 +1023,7 @@
             0});
             this.NUM_UpDownFlySpeed.Name = "NUM_UpDownFlySpeed";
             this.NUM_UpDownFlySpeed.Value = new decimal(new int[] {
-            5,
+            3,
             0,
             0,
             0});
@@ -996,7 +1068,13 @@
             // 
             // NUM_altitude
             // 
+            this.NUM_altitude.DecimalPlaces = 1;
             resources.ApplyResources(this.NUM_altitude, "NUM_altitude");
+            this.NUM_altitude.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.NUM_altitude.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -1009,7 +1087,7 @@
             0});
             this.NUM_altitude.Name = "NUM_altitude";
             this.NUM_altitude.Value = new decimal(new int[] {
-            100,
+            3,
             0,
             0,
             0});
@@ -1065,8 +1143,6 @@
             // CHK_markers
             // 
             resources.ApplyResources(this.CHK_markers, "CHK_markers");
-            this.CHK_markers.Checked = true;
-            this.CHK_markers.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_markers.Name = "CHK_markers";
             this.CHK_markers.UseVisualStyleBackColor = true;
             this.CHK_markers.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
@@ -1098,13 +1174,13 @@
             // 
             // map
             // 
+            resources.ApplyResources(this.map, "map");
             this.map.Bearing = 0F;
             this.map.CanDragMap = true;
             this.map.EmptyTileColor = System.Drawing.Color.Gray;
             this.map.GrayScaleMode = false;
             this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.map.LevelsKeepInMemmory = 5;
-            resources.ApplyResources(this.map, "map");
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 19;
             this.map.MinZoom = 2;
@@ -1125,8 +1201,8 @@
             // 
             resources.ApplyResources(this.TRK_zoom, "TRK_zoom");
             this.TRK_zoom.LargeChange = 0.005F;
-            this.TRK_zoom.Maximum = 19F;
-            this.TRK_zoom.Minimum = 2F;
+            this.TRK_zoom.Maximum = 24F;
+            this.TRK_zoom.Minimum = 1F;
             this.TRK_zoom.Name = "TRK_zoom";
             this.TRK_zoom.SmallChange = 0.001F;
             this.TRK_zoom.TickFrequency = 1F;
@@ -1165,6 +1241,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numer_landhigh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numer_TakeoffHigh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot2)).EndInit();
@@ -1306,5 +1384,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.NumericUpDown numer_TakeoffHigh;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.NumericUpDown numer_landhigh;
     }
 }

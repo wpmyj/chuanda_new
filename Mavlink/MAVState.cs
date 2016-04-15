@@ -102,6 +102,7 @@ namespace ByAeroBeHero
 
         public Dictionary<int, mavlink_fence_point_t> fencepoints = new Dictionary<int, mavlink_fence_point_t>();
 
+        public Dictionary<int, mavlink_obstacle_point_t> obstacles = new Dictionary<int, mavlink_obstacle_point_t>();
         /// <summary>
         /// Store the guided mode wp location
         /// </summary>

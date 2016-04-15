@@ -152,13 +152,13 @@ System.ComponentModel.Description("Text under Bar")]
             if (DrawLabel)
             {
                 lbl.Location = new Point(this.Location.X, this.Location.Y + this.Height + 2);
-                lbl.ClientSize = new Size(this.Width, 13);
+                lbl.ClientSize = new Size(this.Width, 30);
                 lbl.TextAlign = ContentAlignment.MiddleCenter;
                 lbl.Text = m_Text;
 
                 lbl1.Location = new Point(this.Location.X, this.Location.Y + this.Height + 15);
-                lbl1.ClientSize = new Size(this.Width, 13);
-                lbl1.TextAlign = ContentAlignment.MiddleCenter;
+                lbl1.ClientSize = new Size(this.Width, 35);
+                lbl1.TextAlign = ContentAlignment.BottomCenter;
                 lbl1.Text = Value.ToString();
             }
 

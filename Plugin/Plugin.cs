@@ -123,6 +123,8 @@ namespace ByAeroBeHero.Plugin
         /// </summary>
         public ContextMenuStrip FPMenuMap { get { return MainV2.instance.FlightPlanner.contextMenuStrip1; } }
 
+        public TableLayoutPanel FPTLPanel { get { return MainV2.instance.FlightPlanner.tableLayoutPanelRoute; } }
+
         /// <summary>
         /// The point where the menu was drawn
         /// </summary>
@@ -133,6 +135,7 @@ namespace ByAeroBeHero.Plugin
         /// </summary>
         public GMapPolygon FPDrawnPolygon { get { return new GMapPolygon(new List<PointLatLng>(MainV2.instance.FlightPlanner.drawnpolygon.Points), "Poly Copy") { Stroke = MainV2.instance.FlightPlanner.drawnpolygon.Stroke }; } }
 
+        public GMapPolygon FPDrawnPolygonLimit { get { return new GMapPolygon(new List<PointLatLng>(MainV2.instance.FlightPlanner.drawnpolygonlimit.Points), "Poly Copy Limit") { Stroke = MainV2.instance.FlightPlanner.drawnpolygonlimit.Stroke }; } }
         public void RedrawFPPolygon(List<PointLatLngAlt> list)
         {
             MainV2.instance.FlightPlanner.redrawPolygonSurvey(list);

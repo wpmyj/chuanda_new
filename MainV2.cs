@@ -394,7 +394,7 @@ namespace ByAeroBeHero
             Application.DoEvents();
 
             // set this before we reset it
-            MainV2.config["NUM_tracklength"] = "200";
+            MainV2.config["NUM_tracklength"] = "100000";
 
             // create one here - but override on load
             MainV2.config["guid"] = Guid.NewGuid().ToString();
@@ -921,6 +921,7 @@ namespace ByAeroBeHero
 
         public void doConnect(MAVLinkInterface comPort, string portname, string baud)
         {
+
             bool skipconnectcheck = false;
             log.Info("We are connecting");
             switch (portname)
@@ -1181,6 +1182,7 @@ namespace ByAeroBeHero
                     }
                 }
 
+           
                 // set connected icon
                 this.MenuConnect.Image = displayicons.disconnect;
             }
@@ -1240,8 +1242,7 @@ namespace ByAeroBeHero
             // decide if this is a connect or disconnect
             if (comPort.BaseStream.IsOpen)
             {
-                if (CurrentState.sp!=null)
-                    CurrentState.sp.Stop();
+                FlightData.controlInit();
                 doDisconnect(comPort);
             }
             else

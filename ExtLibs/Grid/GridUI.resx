@@ -619,16 +619,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_distbetweenlines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 88</value>
+    <value>117, 88</value>
   </data>
   <data name="lbl_distbetweenlines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+    <value>39, 20</value>
   </data>
   <data name="lbl_distbetweenlines.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="lbl_distbetweenlines.Text" xml:space="preserve">
-    <value>飞行距离</value>
+    <value>行距</value>
   </data>
   <data name="&gt;&gt;lbl_distbetweenlines.Name" xml:space="preserve">
     <value>lbl_distbetweenlines</value>
@@ -1846,7 +1846,7 @@
     <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 338</value>
+    <value>33, 388</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 81</value>
@@ -2089,7 +2089,7 @@
     <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox_copter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 221</value>
+    <value>33, 277</value>
   </data>
   <data name="groupBox_copter.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 101</value>
@@ -2114,6 +2114,117 @@
   </data>
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
+  </data>
+  <data name="numer_landhigh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="numer_landhigh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 223</value>
+  </data>
+  <data name="numer_landhigh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 27</value>
+  </data>
+  <data name="numer_landhigh.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;numer_landhigh.Name" xml:space="preserve">
+    <value>numer_landhigh</value>
+  </data>
+  <data name="&gt;&gt;numer_landhigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numer_landhigh.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numer_landhigh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label39.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 230</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>返航高度[米]</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numer_TakeoffHigh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="numer_TakeoffHigh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 198</value>
+  </data>
+  <data name="numer_TakeoffHigh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 27</value>
+  </data>
+  <data name="numer_TakeoffHigh.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;numer_TakeoffHigh.Name" xml:space="preserve">
+    <value>numer_TakeoffHigh</value>
+  </data>
+  <data name="&gt;&gt;numer_TakeoffHigh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numer_TakeoffHigh.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;numer_TakeoffHigh.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 201</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>起飞高度[米]</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="label32.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2146,7 +2257,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="NUM_leadin.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2170,7 +2281,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NUM_leadin.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2179,7 +2290,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 209</value>
+    <value>6, 265</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 19</value>
@@ -2203,10 +2314,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="NUM_spacing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 207</value>
+    <value>143, 260</value>
   </data>
   <data name="NUM_spacing.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 27</value>
@@ -2227,7 +2338,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NUM_spacing.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2260,7 +2371,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="NUM_overshoot2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2284,7 +2395,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NUM_overshoot2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2317,7 +2428,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2350,7 +2461,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2383,7 +2494,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="CMB_startfrom.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2422,7 +2533,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;CMB_startfrom.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="num_overlap.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2446,7 +2557,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;num_overlap.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="num_sidelap.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2470,7 +2581,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;num_sidelap.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2503,7 +2614,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
   </data>
   <data name="NUM_overshoot.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2527,7 +2638,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NUM_overshoot.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2560,7 +2671,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="NUM_Distance.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -2584,7 +2695,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NUM_Distance.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt, style=Bold</value>
@@ -2593,7 +2704,7 @@
     <value>33, 12</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 197</value>
+    <value>233, 258</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2781,6 +2892,9 @@
   <data name="CHK_usespeed.Text" xml:space="preserve">
     <value>用于此任务的速度</value>
   </data>
+  <data name="CHK_usespeed.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;CHK_usespeed.Name" xml:space="preserve">
     <value>CHK_usespeed</value>
   </data>
@@ -2814,6 +2928,9 @@
   <data name="CHK_toandland_RTL.Text" xml:space="preserve">
     <value>返航着陆</value>
   </data>
+  <data name="CHK_toandland_RTL.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;CHK_toandland_RTL.Name" xml:space="preserve">
     <value>CHK_toandland_RTL</value>
   </data>
@@ -2846,6 +2963,9 @@
   </data>
   <data name="CHK_toandland.Text" xml:space="preserve">
     <value>添加起飞和降落的航点</value>
+  </data>
+  <data name="CHK_toandland.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CHK_toandland.Name" xml:space="preserve">
     <value>CHK_toandland</value>
@@ -3136,7 +3256,7 @@
     <value>31, 177</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 215</value>
+    <value>230, 136</value>
   </data>
   <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -3367,7 +3487,7 @@
     <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 401</value>
+    <value>31, 331</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 70</value>
@@ -3397,7 +3517,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_Accept.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 477</value>
+    <value>101, 416</value>
   </data>
   <data name="BUT_Accept.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -3470,6 +3590,9 @@
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="map.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="map.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

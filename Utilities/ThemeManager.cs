@@ -528,22 +528,22 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(DataGridView))
                 {
-                    ctl.ForeColor = TextColor;
-                    DataGridView dgv = (DataGridView)ctl;
-                    dgv.EnableHeadersVisualStyles = false;
-                    dgv.BorderStyle = BorderStyle.None;
-                    dgv.BackgroundColor = BGColor;
-                    DataGridViewCellStyle rs = new DataGridViewCellStyle();
-                    rs.BackColor = ControlBGColor;
-                    rs.ForeColor = TextColor;
-                    dgv.RowsDefaultCellStyle = rs;
+                    //ctl.ForeColor = TextColor;
+                    //DataGridView dgv = (DataGridView)ctl;
+                    //dgv.EnableHeadersVisualStyles = false;
+                    //dgv.BorderStyle = BorderStyle.None;
+                    //dgv.BackgroundColor = BGColor;
+                    //DataGridViewCellStyle rs = new DataGridViewCellStyle();
+                    //rs.BackColor = ControlBGColor;
+                    //rs.ForeColor = TextColor;
+                    //dgv.RowsDefaultCellStyle = rs;
 
-                    DataGridViewCellStyle hs = new DataGridViewCellStyle(dgv.ColumnHeadersDefaultCellStyle);
-                    hs.BackColor = BGColor;
-                    hs.ForeColor = TextColor;
+                    //DataGridViewCellStyle hs = new DataGridViewCellStyle(dgv.ColumnHeadersDefaultCellStyle);
+                    //hs.BackColor = BGColor;
+                    //hs.ForeColor = TextColor;
 
-                    dgv.ColumnHeadersDefaultCellStyle = hs;
-                    dgv.RowHeadersDefaultCellStyle = hs;
+                    //dgv.ColumnHeadersDefaultCellStyle = hs;
+                    //dgv.RowHeadersDefaultCellStyle = hs;
                 }
                 else if (ctl.GetType() == typeof(CheckBox) || ctl.GetType() == typeof(MavlinkCheckBox))
                 {
@@ -771,17 +771,17 @@ mc:Ignorable=""d""
                     DataGridView dgv = (DataGridView)ctl;
                     dgv.EnableHeadersVisualStyles = false;
                     dgv.BorderStyle = BorderStyle.None;
-                    dgv.BackgroundColor = BGColor;
+                    //dgv.BackgroundColor = BGColor;
                     DataGridViewCellStyle rs = new DataGridViewCellStyle();
-                    rs.BackColor = ControlBGColor;
-                    rs.ForeColor = TextColor;
+                    //rs.BackColor = ControlBGColor;
+                    //rs.ForeColor = TextColor;
                     dgv.RowsDefaultCellStyle = rs;
 
                     dgv.AlternatingRowsDefaultCellStyle = rs;
 
                     DataGridViewCellStyle hs = new DataGridViewCellStyle(dgv.ColumnHeadersDefaultCellStyle);
-                    hs.BackColor = BGColor;
-                    hs.ForeColor = TextColor;
+                    //hs.BackColor = BGColor;
+                    //hs.ForeColor = TextColor;
 
                     dgv.ColumnHeadersDefaultCellStyle = hs;
                     dgv.RowHeadersDefaultCellStyle = hs;
@@ -992,17 +992,17 @@ mc:Ignorable=""d""
                     DataGridView dgv = (DataGridView)ctl;
                     dgv.EnableHeadersVisualStyles = false;
                     dgv.BorderStyle = BorderStyle.None;
-                    dgv.BackgroundColor = BGColor;
+                    //dgv.BackgroundColor = BGColor;
                     DataGridViewCellStyle rs = new DataGridViewCellStyle();
-                    rs.BackColor = ControlBGColor;
-                    rs.ForeColor = TextColor;
+                    //rs.BackColor = ControlBGColor;
+                    //rs.ForeColor = TextColor;
                     dgv.RowsDefaultCellStyle = rs;
 
-                    dgv.AlternatingRowsDefaultCellStyle.BackColor = BGColor;
+                    //dgv.AlternatingRowsDefaultCellStyle.BackColor = BGColor;
 
                     DataGridViewCellStyle hs = new DataGridViewCellStyle(dgv.ColumnHeadersDefaultCellStyle);
-                    hs.BackColor = BGColor;
-                    hs.ForeColor = TextColor;
+                    //hs.BackColor = BGColor;
+                    //hs.ForeColor = TextColor;
 
                     dgv.ColumnHeadersDefaultCellStyle = hs;
                     dgv.RowHeadersDefaultCellStyle = hs;

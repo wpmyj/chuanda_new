@@ -21,6 +21,7 @@ namespace ByAeroBeHero.Utilities
         public string Tag = "";
         public string Tag2 = "";
         public Color color = Color.White;
+        public double radius = 0;
 
         const float rad2deg = (float)(180 / Math.PI);
         const float deg2rad = (float)(1.0 / rad2deg);
@@ -33,6 +34,15 @@ namespace ByAeroBeHero.Utilities
             this.Lat = lat;
             this.Lng = lng;
             this.Alt = alt;
+            this.Tag = tag;
+        }
+
+        public PointLatLngAlt(double lat, double lng, double alt, string tag, double radius)
+        {
+            this.Lat = lat;
+            this.Lng = lng;
+            this.Alt = alt;
+            this.radius = radius;
             this.Tag = tag;
         }
 
@@ -73,6 +83,7 @@ namespace ByAeroBeHero.Utilities
             this.Lng = plla.Lng;
             this.Alt = plla.Alt;
             this.color = plla.color;
+            this.radius = plla.radius;
             this.Tag = plla.Tag;
         }
 

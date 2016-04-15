@@ -145,9 +145,9 @@
   <data name="Up.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHlJREFUOE/NlEEOwCAIBP3/p9u0GqWwDCbtoRzFkQ2stONFNGDbHXRB5jpmQ1+L
-        p5HMJHhVGSn5B8xk5Be8Qzp+wPuk5QnuvZTvjlSWnhOG5l+VeTYFXGhT9JI9fSJdBVajOcuGWUd+ZBLo
-        XPZDflK5VO7+Ly2KckGd5G5D2f43NBcAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGxJREFUOE/dy0ESgCAMQ1Huf2nE9qOAbYFx3Pg2DE2S8gvROAk+FjvTWYugZ1yp
+        PxA3xhNFB6Wq+1MJURX3h3ABg2vMeRkrHss88uKChuOM4jhOo8Y80keRVMFRfTY2URV/GBdUHJSq8b8h
+        5wPkbkPZ/Kz15wAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="Up.ToolTipText" xml:space="preserve">
@@ -159,9 +159,9 @@
   <data name="Down.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHBJREFUOE/dlFEKwDAIQ73/pTeKMNpMk4B/9a/UVzVa4xlYABvU0Hk/czJvD//7
-        4KwIhHBrduFS5xLeNV/Sdx0icPZsDHfBrbRJ5qKiT3pnNmFCz1k1Hmj7LPNnv0r2RsNl/HJl4DL4/1Cy
-        aRgsF9QLiVhD2dit5ywAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGtJREFUOE/dy0ESgCAMQ1Huf2ms9DNDEVIdXfk2DE1S6gvzuEiUuvCnIlFtfjgW
+        R/fFmCTKo11saGyckY51qhp5xPMQK38M5xsYjGNDKFFtwsdQ2aDUzX9D8YJ4sDgZ6gOCaH11YuZUlqj1
+        AIlYQ9mY+lgaAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="Down.ToolTipText" xml:space="preserve">
@@ -290,9 +290,9 @@
   <data name="dataGridViewImageColumn1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHlJREFUOE/NlEEOwCAIBP3/p9u0GqWwDCbtoRzFkQ2stONFNGDbHXRB5jpmQ1+L
-        p5HMJHhVGSn5B8xk5Be8Qzp+wPuk5QnuvZTvjlSWnhOG5l+VeTYFXGhT9JI9fSJdBVajOcuGWUd+ZBLo
-        XPZDflK5VO7+Ly2KckGd5G5D2f43NBcAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGxJREFUOE/dy0ESgCAMQ1Huf2nE9qOAbYFx3Pg2DE2S8gvROAk+FjvTWYugZ1yp
+        PxA3xhNFB6Wq+1MJURX3h3ABg2vMeRkrHss88uKChuOM4jhOo8Y80keRVMFRfTY2URV/GBdUHJSq8b8h
+        5wPkbkPZ/Kz15wAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="dataGridViewImageColumn2.HeaderText" xml:space="preserve">
@@ -301,9 +301,9 @@
   <data name="dataGridViewImageColumn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAAHBJREFUOE/dlFEKwDAIQ73/pTeKMNpMk4B/9a/UVzVa4xlYABvU0Hk/czJvD//7
-        4KwIhHBrduFS5xLeNV/Sdx0icPZsDHfBrbRJ5qKiT3pnNmFCz1k1Hmj7LPNnv0r2RsNl/HJl4DL4/1Cy
-        aRgsF9QLiVhD2dit5ywAAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAAGtJREFUOE/dy0ESgCAMQ1Huf2ms9DNDEVIdXfk2DE1S6gvzuEiUuvCnIlFtfjgW
+        R/fFmCTKo11saGyckY51qhp5xPMQK38M5xsYjGNDKFFtwsdQ2aDUzX9D8YJ4sDgZ6gOCaH11YuZUlqj1
+        AIlYQ9mY+lgaAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="label6.ToolTip" xml:space="preserve">
@@ -553,7 +553,7 @@
     <value>148, 22</value>
   </data>
   <data name="loadPolygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>下载</value>
+    <value>加载工作区域</value>
   </data>
   <data name="fromSHPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 22</value>
@@ -595,13 +595,13 @@
     <value>172, 22</value>
   </data>
   <data name="saveToFileToolStripMenuItem1.Text" xml:space="preserve">
-    <value>保存备用降落点至文件</value>
+    <value>保存备用降落点</value>
   </data>
   <data name="loadFromFileToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
   </data>
   <data name="loadFromFileToolStripMenuItem1.Text" xml:space="preserve">
-    <value>下载档案</value>
+    <value>加载备用降落点</value>
   </data>
   <data name="rallyPointsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 22</value>

@@ -623,6 +623,16 @@ namespace ByAeroBeHero.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap Flying {
+            get {
+                object obj = ResourceManager.GetObject("Flying", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap frames_04 {
             get {
                 object obj = ResourceManager.GetObject("frames-04", resourceCulture);
@@ -1277,6 +1287,16 @@ namespace ByAeroBeHero.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap NoConnect {
+            get {
+                object obj = ResourceManager.GetObject("NoConnect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap octo {
             get {
                 object obj = ResourceManager.GetObject("octo", resourceCulture);
@@ -1700,6 +1720,16 @@ namespace ByAeroBeHero.Properties {
         public static System.Drawing.Bitmap up {
             get {
                 object obj = ResourceManager.GetObject("up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap Waring {
+            get {
+                object obj = ResourceManager.GetObject("Waring", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

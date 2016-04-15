@@ -121,6 +121,9 @@ namespace ByAeroBeHero
             map.OnRouteLeave += new RouteLeave(map_OnRouteLeave);
 
             plugin.Host.FPDrawnPolygon.Points.ForEach(x => { list.Add(x); });
+
+            plugin.Host.FPDrawnPolygonLimit.Points.ForEach(x => { list.Add(x); });
+
             if (plugin.Host.config["distunits"] != null)
                 DistUnits = plugin.Host.config["distunits"].ToString();
 
@@ -747,7 +750,7 @@ namespace ByAeroBeHero
             }
             else
             {
-                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.WAYPOINT, 0, 0, 0, 0, Lng, Lat, (int)(Alt * CurrentState.multiplierdist));
+                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.WAYPOINT, 0, 0, 0, 0, Lng, Lat, (float)(Alt * CurrentState.multiplierdist));
             }
         }
 
@@ -1392,7 +1395,7 @@ namespace ByAeroBeHero
                 {
                     if (plugin.Host.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, (int)(10 * CurrentState.multiplierdist));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, (float)(numer_TakeoffHigh.Value));
                     }
                     else
                     {
@@ -1402,7 +1405,7 @@ namespace ByAeroBeHero
 
                 if (CHK_usespeed.Checked)
                 {
-                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, (int)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed), 0, 0, 0, 0, 0);
+                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, (float)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed), 0, 0, 0, 0, 0);
                 }
 
                 #region
@@ -1462,7 +1465,7 @@ namespace ByAeroBeHero
                 {
                     if (CHK_toandland_RTL.Checked)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, 0);
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, (double)numer_landhigh.Value);
                     }
                     else
                     {
@@ -1477,13 +1480,24 @@ namespace ByAeroBeHero
 
                 MainV2.instance.FlightPlanner.quickadd = false;
 
+                calculationParam();
+
                 MainV2.instance.FlightPlanner.writeKML();
+
                 this.Close();
+
+                MainV2.instance.FlightPlanner.writeKML();
             }
             else
             {
                 CustomMessageBox.Show("网格规划失败", "错误");
             }
+        }
+
+        private void calculationParam() 
+        {
+            string area = Math.Round((Convert.ToDouble(lbl_area.Text.Substring(0, lbl_area.Text.Length - 4)) / 666.67),2).ToString()+" 亩";
+            MainV2.instance.FlightPlanner.showFlyInfo(area, lbl_distance.Text, lbl_strips.Text, lbl_distbetweenlines.Text, lbl_flighttime.Text);
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -1514,8 +1528,9 @@ namespace ByAeroBeHero
         {
             if (this.comboBox1.SelectedIndex == 1)
             {
-                NUM_altitude.Value = 10;
+                NUM_altitude.Value = 3;
                 NUM_Distance.Value = 3;
+                NUM_UpDownFlySpeed.Value = 3;
                 CHK_copter_headinghold.Checked = true;
             }
             domainUpDown1_ValueChanged(null, null);

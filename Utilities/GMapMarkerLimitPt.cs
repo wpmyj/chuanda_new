@@ -10,33 +10,35 @@ using ByAeroBeHero.Properties;
 namespace ByAeroBeHero.Utilities
 {
     [Serializable]
-    public class GMapMarkerRallyPt : GMapMarker
+    public class GMapMarkerLimitPt : GMapMarker
    {
       public float? Bearing;
 
       static readonly System.Drawing.Size SizeSt = new System.Drawing.Size(Resources.marker_02.Width, Resources.marker_02.Height);
 
       //static Bitmap localcache1 = Resources.shadow50;
-      static Bitmap localcache2 = Resources.marker_02;
+      static Bitmap localcache2 = Resources.marker_05;
 
-      public int Alt { get; set; }
+      public float Alt { get; set; }
 
-      public GMapMarkerRallyPt(PointLatLng p)
+      public float Radius { get; set; }
+
+      public GMapMarkerLimitPt(PointLatLng p)
          : base(p)
       {
          Size = SizeSt;
          Offset = new Point(-10, -40);
       }
 
-      public GMapMarkerRallyPt(MAVLink.mavlink_rally_point_t mark)
+      public GMapMarkerLimitPt(MAVLink.mavlink_obstacle_point_t mark)
           : base(new PointLatLng(mark.lat / 1e7, mark.lng / 1e7))
       {
           Size = SizeSt;
           Offset = new Point(-10, -40);
           Alt = mark.alt;
-          Alt = (int)mark.alt; 
+          Radius = mark.radius;
           ToolTipMode = MarkerTooltipMode.OnMouseOver;
-          ToolTipText = "备用降落点" + "\n高度: " + mark.alt;
+          ToolTipText = "障碍航点" + "\n高度: " + mark.alt +" |半径" +mark.radius;
       }
 
       static readonly Point[] Arrow = new Point[] { new Point(-7, 7), new Point(0, -22), new Point(7, 7), new Point(0, 2) };
@@ -44,7 +46,7 @@ namespace ByAeroBeHero.Utilities
       public override void OnRender(Graphics g)
       {
 #if !PocketPC      
-          g.DrawImage(localcache2, LocalPosition.X, LocalPosition.Y,Size.Width,Size.Height);
+          g.DrawImage(localcache2, LocalPosition.X, LocalPosition.Y, SizeSt.Width, SizeSt.Height);
      
 #else
         //    DrawImageUnscaled(g, Resources.shadow50, LocalPosition.X, LocalPosition.Y);

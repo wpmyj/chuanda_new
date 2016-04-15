@@ -30,6 +30,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             startup = true; // flag to ignore changes while we programatically populate controls
 
+            MainV2.config["NUM_tracklength"] = "100000";
 
             CMB_osdcolor.DataSource = Enum.GetNames(typeof (KnownColor));
 
@@ -563,7 +564,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void NUM_tracklength_ValueChanged(object sender, EventArgs e)
         {
-            MainV2.config["NUM_tracklength"] = NUM_tracklength.Value.ToString();
+            MainV2.config["NUM_tracklength"] = "100000";
         }
 
         private void CHK_loadwponconnect_CheckedChanged(object sender, EventArgs e)

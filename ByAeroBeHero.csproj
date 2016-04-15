@@ -661,6 +661,7 @@
     <Compile Include="Utilities\GimbalPoint.cs" />
     <Compile Include="Utilities\GitHubContent.cs" />
     <Compile Include="Utilities\GMapMarkerAirport.cs" />
+    <Compile Include="Utilities\GMapMarkerLimitPt.cs" />
     <Compile Include="Utilities\GMapMarkerRallyPt.cs" />
     <Compile Include="Utilities\LineOffset.cs" />
     <Compile Include="Utilities\LogAnalyzer.cs" />
@@ -1182,7 +1183,9 @@
     <EmbeddedResource Include="OpenGLtest2.resx">
       <DependentUpon>OpenGLtest2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-Hans.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Radio\3DRradio.it-IT.resx">
       <DependentUpon>3DRradio.cs</DependentUpon>
     </EmbeddedResource>

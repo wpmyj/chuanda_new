@@ -583,8 +583,8 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = System.Drawing.Color.Teal;
-                    bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
+                    bsv.BackColor = System.Drawing.Color.Black;
+                    bsv.ButtonsAreaBgColor = System.Drawing.Color.LightGray;
                     bsv.HighlightColor2 = Color.Black;
                     bsv.HighlightColor1 = Color.Black;
                     bsv.SelectedTextColor = Color.White;
@@ -631,7 +631,7 @@ mc:Ignorable=""d""
             {
                 BGColor = Color.Teal; // background
                 ControlBGColor = Color.FromArgb((int)0xffe2e2e2); // editable bg color
-                TextColor = Color.Black;
+                TextColor = Color.White;
                 ButBG = Color.FromArgb((int)0xffffff99);
             }
 
@@ -846,9 +846,9 @@ mc:Ignorable=""d""
 
         private static void ApplyBurntKermitTheme(Control temp, int level)
         {
-            BGColor = Color.Teal; // background
+            BGColor = Color.Black; // background
             ControlBGColor = Color.FromArgb(0x43, 0x44, 0x45); // editable bg color
-            TextColor = Color.Black;
+            TextColor = Color.White;
 
             if (level == 0)
             {
@@ -1016,7 +1016,7 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(ComboBox) || ctl.GetType() == typeof(MavlinkComboBox))
                 {
-                    ctl.BackColor = System.Drawing.Color.White;
+                    ctl.BackColor = System.Drawing.Color.Black;
                     ctl.ForeColor = TextColor;
                     ComboBox CMB = (ComboBox)ctl;
                     CMB.FlatStyle = FlatStyle.Flat;
@@ -1045,14 +1045,14 @@ mc:Ignorable=""d""
                 {
                     var bsv = ctl as BackstageView;
 
-                    bsv.BackColor = System.Drawing.Color.Teal;
-                    bsv.ButtonsAreaBgColor = System.Drawing.Color.Teal;
-                    bsv.HighlightColor2 = Color.Black;
-                    bsv.HighlightColor1 = Color.Black;
+                    bsv.BackColor = System.Drawing.Color.LightSkyBlue;
+                    bsv.ButtonsAreaBgColor = System.Drawing.Color.Black;
+                    bsv.HighlightColor2 = Color.SkyBlue;
+                    bsv.HighlightColor1 = Color.SkyBlue;
                     bsv.SelectedTextColor = Color.White;
-                    bsv.UnSelectedTextColor = Color.Black;
-                    bsv.ButtonsAreaPencilColor = Color.DarkGray;
-                    bsv.ForeColor = Color.Black;
+                    bsv.UnSelectedTextColor = Color.White;
+                    bsv.ButtonsAreaPencilColor = Color.SkyBlue;
+                    bsv.ForeColor = Color.White;
                 }
                 else if (ctl.GetType() == typeof(HorizontalProgressBar2) || ctl.GetType() == typeof(VerticalProgressBar2))
                 {

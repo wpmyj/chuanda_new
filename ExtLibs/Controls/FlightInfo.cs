@@ -294,7 +294,7 @@ namespace ByAeroBeHero.Controls
                 }
                 else if (ch8out > 0)
                 {
-                    str = "八轴轴";
+                    str = "八轴";
                 }
                 else 
                 {

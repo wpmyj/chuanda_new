@@ -135,7 +135,7 @@ namespace ByAeroBeHero
             //startfrom.Add(new KeyValuePair<int, string>(4, "右下"));
 
             //CMB_startfrom.DataSource =  Enum.GetNames(typeof(Grid.StartPosition));
-            CMB_startfrom.SelectedIndex = 0;
+            this.CMB_startfrom.SelectedIndex = 0;
             comboBox1.SelectedIndex = 0;
             // set and angle that is good
             NUM_angle.Value = (decimal)((getAngleOfLongestSide(list) + 360) % 360);
@@ -150,7 +150,7 @@ namespace ByAeroBeHero
             else if (postion == "左上") { startPost = "TopLeft"; }
             else if (postion == "右下") { startPost = "BottomRight"; }
             else if (postion == "右上") { startPost = "TopRight"; }
-            else { startPost = postion; }
+            else { if (postion != "家") { startPost = postion; } }
 
             return startPost;
         }
@@ -252,7 +252,7 @@ namespace ByAeroBeHero
             num_sidelap.Value = griddata.sidelap;
             NUM_spacing.Value = griddata.spacing;
 
-            CMB_startfrom.Text = loadPost(griddata.startfrom);
+            //CMB_startfrom.Text = loadPost(griddata.startfrom);
 
             CHK_toandland.Checked = griddata.autotakeoff;
             CHK_toandland_RTL.Checked = griddata.autotakeoff_RTL;
@@ -336,7 +336,7 @@ namespace ByAeroBeHero
                 loadsetting("grid_sidelap", num_sidelap);
                 loadsetting("grid_spacing", NUM_spacing);
 
-                loadsetting("grid_startfrom", CMB_startfrom);
+                //loadsetting("grid_startfrom", CMB_startfrom);
 
                 loadsetting("grid_autotakeoff", CHK_toandland);
                 loadsetting("grid_autotakeoff_RTL", CHK_toandland_RTL);
@@ -1395,7 +1395,7 @@ namespace ByAeroBeHero
                 {
                     if (plugin.Host.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, (float)(numer_TakeoffHigh.Value));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, Math.Round((float)(numer_TakeoffHigh.Value),2));
                     }
                     else
                     {
@@ -1405,7 +1405,7 @@ namespace ByAeroBeHero
 
                 if (CHK_usespeed.Checked)
                 {
-                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, (float)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed), 0, 0, 0, 0, 0);
+                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, Math.Round((float)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed),2), 0, 0, 0, 0, 0);
                 }
 
                 #region
@@ -1465,7 +1465,7 @@ namespace ByAeroBeHero
                 {
                     if (CHK_toandland_RTL.Checked)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, (double)numer_landhigh.Value);
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, Math.Round((double)numer_landhigh.Value,2));
                     }
                     else
                     {
@@ -1524,14 +1524,17 @@ namespace ByAeroBeHero
             domainUpDown1_ValueChanged(sender, e);
         }
 
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.comboBox1.SelectedIndex == 1)
             {
                 NUM_altitude.Value = 3;
                 NUM_Distance.Value = 3;
-                NUM_UpDownFlySpeed.Value = 3;
+                NUM_UpDownFlySpeed.Value = 3; 
                 CHK_copter_headinghold.Checked = true;
+                numer_TakeoffHigh.Value = 3;
+                numer_landhigh.Value = 4;
             }
             domainUpDown1_ValueChanged(null, null);
         }

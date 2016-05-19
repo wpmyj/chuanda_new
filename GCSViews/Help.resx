@@ -126,10 +126,13 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 74</value>
+    <value>141, 92</value>
+  </data>
+  <data name="richTextBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 262</value>
+    <value>1032, 657</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
@@ -160,16 +163,16 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="CHK_showconsole.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 382</value>
+    <value>1240, 749</value>
+  </data>
+  <data name="CHK_showconsole.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CHK_showconsole.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 21</value>
+    <value>18, 17</value>
   </data>
   <data name="CHK_showconsole.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="CHK_showconsole.Text" xml:space="preserve">
-    <value>Show Console Window (restart)</value>
   </data>
   <data name="CHK_showconsole.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -193,10 +196,13 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="BUT_updatecheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 355</value>
+    <value>1240, 751</value>
+  </data>
+  <data name="BUT_updatecheck.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_updatecheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 27</value>
+    <value>10, 10</value>
   </data>
   <data name="BUT_updatecheck.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -229,16 +235,16 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 407</value>
+    <value>610, 778</value>
+  </data>
+  <data name="linkLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
+    <value>0, 20</value>
   </data>
   <data name="linkLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Change Log</value>
   </data>
   <data name="linkLabel1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -259,10 +265,13 @@
     <value>Top, Left, Right</value>
   </data>
   <data name="PIC_wizard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 4</value>
+    <value>584, 5</value>
+  </data>
+  <data name="PIC_wizard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="PIC_wizard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 65</value>
+    <value>129, 81</value>
   </data>
   <data name="PIC_wizard.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -292,10 +301,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_betaupdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 355</value>
+    <value>1248, 756</value>
+  </data>
+  <data name="BUT_betaupdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_betaupdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 27</value>
+    <value>10, 10</value>
   </data>
   <data name="BUT_betaupdate.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -322,13 +334,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>8, 15</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 426</value>
+    <value>1340, 801</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Help</value>

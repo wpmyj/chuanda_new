@@ -51,7 +51,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.CMB_coordsystem);
             this.Name = "Coords";
-            this.Size = new System.Drawing.Size(430, 23);
+            this.Size = new System.Drawing.Size(430, 25);
             this.ResumeLayout(false);
 
         }

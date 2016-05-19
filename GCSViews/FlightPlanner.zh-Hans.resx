@@ -352,7 +352,7 @@
     <value>添加一行到网格下</value>
   </data>
   <data name="panelWaypoints.Text" xml:space="preserve">
-    <value>航点</value>
+    <value>航点设置</value>
   </data>
   <data name="panelWaypoints.ToolTip" xml:space="preserve">
     <value />

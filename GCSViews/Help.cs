@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using ByAeroBeHero.Controls;
 using ByAeroBeHero.Properties;
 using System.Drawing;
+using System.Text;
 
 namespace ByAeroBeHero.GCSViews
 {
@@ -17,14 +18,8 @@ namespace ByAeroBeHero.GCSViews
 
         private void InitControl() 
         {
-            this.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
-            this.BackgroundImage = ByAeroBeHero.Properties.Resources.Teal;
-            this.ForeColor = System.Drawing.Color.Black;
-
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(192, 192, 225);
-            this.richTextBox1.ForeColor = System.Drawing.Color.Black;
-
-            
+            this.richTextBox1.BackColor = System.Drawing.Color.Black;
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;          
         }
 
         public void Activate()
@@ -51,7 +46,8 @@ namespace ByAeroBeHero.GCSViews
 
         private void Help_Load(object sender, EventArgs e)
         {
-            richTextBox1.Rtf = Resources.help_text;
+            string version =Resources.help_text;
+            richTextBox1.Rtf = version + "固件版本:" + CurrentState.str_firm_ware + "\\par \t 获取更多帮助请访问博鹰官网：www.byaero.com.";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

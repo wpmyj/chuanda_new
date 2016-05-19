@@ -59,7 +59,7 @@
             // 
             this.hud1.airspeed = 0F;
             this.hud1.alt = 0F;
-            this.hud1.BackColor = System.Drawing.Color.Black;
+            this.hud1.BackColor = System.Drawing.Color.Transparent;
             this.hud1.batterylevel = 0F;
             this.hud1.batteryremaining = 0F;
             this.hud1.current = 0F;
@@ -98,7 +98,7 @@
             this.hud1.groundcourse = 0F;
             this.hud1.groundspeed = 0F;
             this.hud1.heading = 0F;
-            this.hud1.hudcolor = System.Drawing.Color.White;
+            this.hud1.hudcolor = System.Drawing.Color.Transparent;
             this.hud1.linkqualitygcs = 0F;
             resources.ApplyResources(this.hud1, "hud1");
             this.hud1.mode = "Manual";

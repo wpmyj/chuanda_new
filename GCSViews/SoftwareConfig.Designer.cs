@@ -39,13 +39,12 @@
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;
             this.backstageView.Name = "backstageView";
-            this.backstageView.WidthMenu = 1337;
+            this.backstageView.WidthMenu = 1000;
             // 
             // SoftwareConfig
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::ByAeroBeHero.Properties.Resources.Teal;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.backstageView);
             resources.ApplyResources(this, "$this");
             this.MinimumSize = new System.Drawing.Size(1000, 450);

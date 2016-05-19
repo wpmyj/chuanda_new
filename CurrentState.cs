@@ -182,6 +182,20 @@ namespace ByAeroBeHero
         public static bool gyrohealth = false;
         public static bool receiverhealth = false;
         public static bool pump = false;
+        public static int breakpointstatus = 0;
+        public static int breakpointreason = 0;
+        public static double latbreak = 0;
+        public static double lonbreak = 0;
+        public static float gpscount = 0;
+        public static float gpsaccuracy = 0;
+        public static string flightmode = "";
+        public static double breakpoint_alt = 0;
+        public static double breakpoint_lat = 0;
+        public static double breakpoint_lng = 0;
+        public static double breakpoint_p1 = 0;
+        public static bool isChange = false;
+        public static string str_firm_ware = string.Empty;
+
         [DisplayText("RX Rssi")]
         public int rxrssi { get; set; }
         //radio
@@ -1021,6 +1035,7 @@ namespace ByAeroBeHero
                                         if (pair.Key == hb.custom_mode)
                                         {
                                             mode = pair.Value.ToString();
+                                            flightmode = mode;
                                             _mode = hb.custom_mode;
                                             found = true;
                                             break;
@@ -1046,21 +1061,6 @@ namespace ByAeroBeHero
                     if (bytearray != null)
                     {
                         var sysstatus = bytearray.ByteArrayToStructure<MAVLink.mavlink_sys_status_t>(6);
-
-                        //if (sysstatus.errors_count1 == 1)
-                        //{
-                        //    dosage = false;
-                        //    sp = new SoundPlayer();
-                        //    sp.SoundLocation = @"..\..\Sound/Waring.wav";
-                        //    sp.PlayLooping();
-                        //    a++;
-                        //}
-                        //else
-                        //{
-                        //    if(sp != null)
-                        //        sp.Stop();
-                        //    dosage = true;
-                        //}
 
                         load = (float)sysstatus.load / 10.0f;
 
@@ -1166,7 +1166,7 @@ namespace ByAeroBeHero
                         var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_peripheral_status_t>(6);
 
 
-                        if (mem.level != null)
+                        if (mem.level != -1)
                         {
                             dosage = mem.level;
                         }
@@ -1180,7 +1180,39 @@ namespace ByAeroBeHero
                             pump = false;
                         }
 
+                        string strfirmware =System.Text.Encoding.ASCII.GetString(mem.firmware_version);
+                        int ifirmware = strfirmware.IndexOf('\0');
+
+                        str_firm_ware = strfirmware.Substring(0, ifirmware);
+                        breakpointstatus = mem.break_point_status;
+                        breakpointreason = mem.break_point_reason;
+                            
                     }
+
+                    bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BREAK_POINT_ITEM];
+                    if (bytearray != null)
+                    {
+                        var breakpoint = bytearray.ByteArrayToStructure<MAVLink.mavlink_break_point_item_t>(6);
+                        if (breakpoint.x != (float)breakpoint_lat || breakpoint.y != (float)breakpoint_lng)
+                        {
+                            breakpoint_lat = (float)breakpoint.x;
+                            breakpoint_lng = (float)breakpoint.y;
+                            breakpoint_alt = (float)breakpoint.z;
+                            breakpoint_p1 = (float)breakpoint.param1;
+                            isChange = true;
+                        }
+                        else
+                        {
+                            isChange = false;
+                        }
+                    }
+
+                    bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BREAK_POINT_ITEM];
+                    if (bytearray!=null)
+                    {
+                        var breakpoint = bytearray.ByteArrayToStructure<MAVLink.mavlink_break_point_item_t>(6);
+                    }
+                    
 
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BATTERY2];
                     if (bytearray != null)
@@ -1289,7 +1321,11 @@ namespace ByAeroBeHero
 
                         gpshdop = (float)Math.Round((double)gps.eph / 100.0, 2);
 
+                        gpsaccuracy = gpshdop;
+
                         satcount = gps.satellites_visible;
+
+                        gpscount = satcount;
 
                         groundspeed = gps.vel * 1.0e-2f;
                         groundcourse = gps.cog * 1.0e-2f;

@@ -87,7 +87,7 @@
             // backstageView
             // 
             this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
-            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.Teal;
+            this.backstageView.ButtonsAreaBgColor = System.Drawing.Color.Black;
             this.backstageView.ButtonsAreaPencilColor = System.Drawing.Color.White;
             resources.ApplyResources(this.backstageView, "backstageView");
             this.backstageView.ForeColor = System.Drawing.Color.Black;
@@ -117,6 +117,7 @@
             this.backstageView.Pages.Add(this.backstageViewPagehwbt);
             this.backstageView.Pages.Add(this.backstageViewPageParachute);
             this.backstageView.Pages.Add(this.backstageViewPageinstfw);
+            this.backstageView.UnSelectedTextColor = System.Drawing.Color.White;
             this.backstageView.WidthMenu = 1000;
             // 
             // backstageViewPagewizard
@@ -516,10 +517,11 @@
             // InitialSetup
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.backstageView);
             this.Controls.Add(this.configAccelerometerCalibration);
             this.Controls.Add(this.configHWBT1);
+            this.ForeColor = System.Drawing.Color.White;
             this.MinimumSize = new System.Drawing.Size(1000, 450);
             this.Name = "InitialSetup";
             resources.ApplyResources(this, "$this");

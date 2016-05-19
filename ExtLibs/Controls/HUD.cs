@@ -984,15 +984,15 @@ namespace ByAeroBeHero.Controls
                 greenPen = new Pen(Color.Green, 2);
                 redPen = new Pen(Color.Red, 2);
 
-                if (!connected)
-                {
+                //if (!connected)
+                //{
                     whiteBrush.Color = Color.LightGray;
                     whitePen.Color = Color.LightGray;
-                }
-                else
-                {
-                    whitePen.Color = _hudcolor;
-                }
+                //}
+                //else
+                //{
+                //    whitePen.Color = _hudcolor;
+                //}
 
                 // draw sky
                 if (bgon == true)

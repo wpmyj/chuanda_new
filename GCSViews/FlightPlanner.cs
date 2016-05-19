@@ -63,6 +63,7 @@ namespace ByAeroBeHero.GCSViews
         public List<PointLatLngAlt> fullpointlist = new List<PointLatLngAlt>();
         public GMapRoute route = new GMapRoute("wp route");
         public GMapRoute homeroute = new GMapRoute("home route");
+        public GMapRoute flyRoute = new GMapRoute("fly route");
         static public Object thisLock = new Object();
         private ComponentResourceManager rm = new ComponentResourceManager(typeof(FlightPlanner));
 
@@ -305,15 +306,17 @@ namespace ByAeroBeHero.GCSViews
                     lastbearing = MainMap.MapProvider.Projection.GetBearing(last, currentMarker.Position);
                 }
 
-                lbl_prevdist.Text = rm.GetString("lbl_prevdist.Text") + "| " + FormatDistance(lastdist, true);
+                lbl_prevdist.Text = rm.GetString("lbl_prevdist.Text") + ":" + FormatDistance(lastdist, true);
 
-                this.lblhxj.Text = "   航向角| " + lastbearing.ToString("0") + "度";
+                this.lblhxj.Text = "航向角:" + lastbearing.ToString("0") + "度";
+
+
                 // 0 is home
                 if (pointlist[0] != null)
                 {
                     double homedist = MainMap.MapProvider.Projection.GetDistance(currentMarker.Position, pointlist[0]);
 
-                    lbl_homedist.Text = rm.GetString("lbl_homedist.Text") + "|" + FormatDistance(homedist, true);
+                    lbl_homedist.Text = rm.GetString("lbl_homedist.Text") + ":" + FormatDistance(homedist, true);
                 }
             }
             catch { }
@@ -399,7 +402,6 @@ namespace ByAeroBeHero.GCSViews
             // config map             
             MainMap.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "gmapcache" + Path.DirectorySeparatorChar;
             MainMap.MapProvider = GoogleChinaHybridMapProvider.Instance;
-
             // map events
             MainMap.OnPositionChanged += MainMap_OnCurrentPositionChanged;
             MainMap.OnTileLoadStart += MainMap_OnTileLoadStart;
@@ -449,7 +451,7 @@ namespace ByAeroBeHero.GCSViews
             //MainMap.MaxZoom = 18;
 
             // get zoom  
-            MainMap.MinZoom = 0;
+            MainMap.MinZoom = 5;
             MainMap.MaxZoom = 24;
 
             // draw this layer first
@@ -464,6 +466,9 @@ namespace ByAeroBeHero.GCSViews
 
             routesoverlay = new GMapOverlay("routes");
             MainMap.Overlays.Add(routesoverlay);
+
+            flyRoutesoverlay = new GMapOverlay("flyRoutes");
+            MainMap.Overlays.Add(flyRoutesoverlay);
 
             polygonsoverlay = new GMapOverlay("polygons");
             MainMap.Overlays.Add(polygonsoverlay);
@@ -480,7 +485,12 @@ namespace ByAeroBeHero.GCSViews
             drawnlimitpolygonsoverlay = new GMapOverlay("drawnlimitpolygons");
             MainMap.Overlays.Add(drawnlimitpolygonsoverlay);
 
+            breakploygonsoverlay = new GMapOverlay("breakploygons");
+            MainMap.Overlays.Add(breakploygonsoverlay);
+
             MainMap.Overlays.Add(poioverlay);
+
+
 
             top = new GMapOverlay("top");
             //MainMap.Overlays.Add(top);
@@ -496,6 +506,8 @@ namespace ByAeroBeHero.GCSViews
             top.Markers.Add(center);
 
             MainMap.Zoom = 3;
+
+            MainMap.Position = new PointLatLng(40.0648192363, 116.3455521063);
 
             CMB_altmode.DisplayMember = "Value";
             CMB_altmode.ValueMember = "Key";
@@ -734,8 +746,8 @@ namespace ByAeroBeHero.GCSViews
             {
                 if (TXT_homelat.Text != "")
                 {
-                    MainMap.Position = new PointLatLng(double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text));
-                    MainMap.Zoom = 7;
+                    //MainMap.Position = new PointLatLng(double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text));
+                    //MainMap.Zoom = 7;
                 }
 
             }
@@ -752,8 +764,12 @@ namespace ByAeroBeHero.GCSViews
             //{
                 switchDockingToolStripMenuItem_Click(null, null);
             //}
-            
+
+            addbreakWayPoint(true);
+
             timer1.Start();
+            timer_getbreakpoint.Start();
+            timer_time.Start();
         }
 
         /// <summary>
@@ -1285,7 +1301,7 @@ namespace ByAeroBeHero.GCSViews
                     RectLatLng? rect = MainMap.GetRectOfAllMarkers("objects");
                     if (rect.HasValue)
                     {
-                        MainMap.Position = rect.Value.LocationMiddle;
+                        //MainMap.Position = rect.Value.LocationMiddle;
                     }
 
                     //MainMap.Zoom = 17;
@@ -1319,7 +1335,7 @@ namespace ByAeroBeHero.GCSViews
                         dist += MainMap.MapProvider.Projection.GetDistance(fullpointlist[a - 1], fullpointlist[a]);
                     }
 
-                    lbl_distance.Text = rm.GetString("lbl_distance.Text") + "| " + FormatDistance(dist + homedist, false);
+                    lbl_distance.Text = rm.GetString("lbl_distance.Text") + ":" + FormatDistance(dist + homedist, false);
                 }
 
                 setgradanddistandaz();
@@ -1653,24 +1669,34 @@ namespace ByAeroBeHero.GCSViews
                 last = lla;
             }
         }
+
+        #region 分隔航点文件
         /// <summary>
         /// Saves a waypoint writer file
         /// </summary>
-        private void savewaypoints()
+        private void savewaypoints(int SplitWP)
         {
-            using (SaveFileDialog fd = new SaveFileDialog())
+            for (int i = 1; i <= SplitWP; i++) 
             {
-                fd.Filter = "By Aero (*.txt)|*.*";
-                fd.DefaultExt = ".txt";
-                fd.FileName = wpfilename;
-                DialogResult result = fd.ShowDialog();
-                string file = fd.FileName;
-                if (file != "")
+                int wpCounts = 0;
+                int iSplitedWP = 0;
+                int StartPoint = 0 ;
+
+                //分隔航点数目（除航向锁定）
+                 wpCounts = Commands.Rows.Count - 3;
+
+                //单个部分航点数目
+                 iSplitedWP = wpCounts / SplitWP;
+                
+                //文件开始循环数
+                 if (i != 1) { StartPoint = iSplitedWP * (i - 1) + 2; }
+                 
+
+                using (StreamWriter sw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\" + "ByAero" + i.ToString()+".txt"))
                 {
                     try
-                    {
-                        StreamWriter sw = new StreamWriter(file);
-                        sw.WriteLine("QGC WPL 110");
+                    { 
+                        sw.WriteLine("By Aero Save Points");
                         try
                         {
                             sw.WriteLine("0\t1\t0\t16\t0\t0\t0\t0\t" + double.Parse(TXT_homelat.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homelng.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homealt.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t1");
@@ -1679,11 +1705,24 @@ namespace ByAeroBeHero.GCSViews
                         {
                             sw.WriteLine("0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1");
                         }
-                        for (int a = 0; a < Commands.Rows.Count - 0; a++)
-                        {
-                            byte mode = (byte)(MAVLink.MAV_CMD)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(Commands.Rows[a].Cells[0].Value.ToString()));
 
-                            sw.Write((a + 1)); // seq
+                        if (i != 1)
+                        {
+                            sw.WriteLine("1\t0\t3\t22\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t5.000000\t1");
+                            sw.WriteLine("2\t0\t3\t178\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t1");
+                        }
+
+                        int icount;
+                        if (i == 1) { icount = -2; } else { icount = 0;}
+                        for (int a = StartPoint; a < Commands.Rows.Count - 0; a++)
+                        {
+
+                            if (i < SplitWP && a > iSplitedWP * i+1)
+                                break;
+
+                            byte mode = (byte)(MAVLink.MAV_CMD)Enum.Parse(typeof(MAVLink.MAV_CMD), mavcnd(Commands.Rows[a].Cells[0].Value.ToString()));
+
+                            sw.Write((icount + 3)); // seq
                             sw.Write("\t" + 0); // current
                             sw.Write("\t" + CMB_altmode.SelectedValue); //frame 
                             sw.Write("\t" + mode);
@@ -1696,6 +1735,26 @@ namespace ByAeroBeHero.GCSViews
                             sw.Write("\t" + (double.Parse(Commands.Rows[a].Cells[Alt.Index].Value.ToString()) / CurrentState.multiplierdist).ToString("0.000000", new CultureInfo("en-US")));
                             sw.Write("\t" + 1);
                             sw.WriteLine("");
+
+                            icount ++;
+
+                            if (i == SplitWP && a == Commands.Rows.Count - 0)
+                                break;
+                        }
+
+                        int seqtotal;
+                        if (i != SplitWP)
+                        {
+                            seqtotal = icount + 3;
+                        }
+                        else 
+                        {
+                            seqtotal = icount;
+                        }
+
+                        if (i != SplitWP) 
+                        {
+                            sw.WriteLine(seqtotal.ToString() + "\t0\t3\t20\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t5.000000\t1"); 
                         }
                         sw.Close();
 
@@ -1708,9 +1767,23 @@ namespace ByAeroBeHero.GCSViews
 
         private void SaveFile_Click(object sender, EventArgs e)
         {
-            savewaypoints();
+            string counts = "1";
+
+            if (DialogResult.Cancel == InputBox.Show("规划区域分割", "请输入平均分割规划区域的数量", ref counts))
+                return;
+
+            int countsi = 1;
+            if (!int.TryParse(counts, out countsi))
+            {
+                MessageBox.Show("输入格式不正确,请重新输入！");
+                return;
+            }
+
+            savewaypoints(countsi);
             writeKML();
         }
+
+        #endregion
 
         /// <summary>
         /// Reads the EEPROM from a com port
@@ -1767,12 +1840,11 @@ namespace ByAeroBeHero.GCSViews
 
                 param = port.MAV.param;
 
-                log.Info("Getting WP #");
+                log.Info("Getting Break_WP #");
 
                 ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(0, "获取航点数量");
 
                 int cmdcount = port.getWPCount();
-
                 for (ushort a = 0; a < cmdcount; a++)
                 {
                     if (((ProgressReporterDialogue)sender).doWorkArgs.CancelRequested)
@@ -1835,6 +1907,7 @@ namespace ByAeroBeHero.GCSViews
         /// <param name="e"></param>
         private void BUT_write_Click(object sender, EventArgs e)
         {
+
             if ((altmode)CMB_altmode.SelectedValue == altmode.Absolute)
             {
                 if (DialogResult.No == CustomMessageBox.Show("确认选择海拔高度?", "高度模式", MessageBoxButtons.YesNo))
@@ -1894,6 +1967,7 @@ namespace ByAeroBeHero.GCSViews
 
             frmProgressReporter.Dispose();
 
+            breakploygonsoverlay.Markers.Clear();
             MainMap.Focus();
 
         }
@@ -1947,6 +2021,11 @@ namespace ByAeroBeHero.GCSViews
                     throw new Exception("请先连接地面站!");
                 }
 
+                if(CurrentState.flightmode =="自动")
+                {
+                    CustomMessageBox.Show(("请先切换模式，在写入航点!"));
+                    return ;
+                }
                 MainV2.comPort.giveComport = true;
                 int a = 0;
 
@@ -2190,7 +2269,7 @@ namespace ByAeroBeHero.GCSViews
                 }
 
                 cell = Commands.Rows[i].Cells[Alt.Index] as DataGridViewTextBoxCell;
-                cell.Value = Math.Round((temp.alt * CurrentState.multiplierdist), 0);
+                cell.Value = Math.Round((temp.alt * CurrentState.multiplierdist), 2);
                 cell = Commands.Rows[i].Cells[Lat.Index] as DataGridViewTextBoxCell;
                 cell.Value = temp.lat;
                 cell = Commands.Rows[i].Cells[Lon.Index] as DataGridViewTextBoxCell;
@@ -2652,7 +2731,7 @@ namespace ByAeroBeHero.GCSViews
             {
                 StreamReader sr = new StreamReader(file); //"defines.h"
                 string header = sr.ReadLine();
-                if (header == null || !header.Contains("QGC WPL"))
+                if (header == null || !header.Contains("By Aero"))
                 {
                     CustomMessageBox.Show("无效的路点文件");
                     return;
@@ -2800,8 +2879,14 @@ namespace ByAeroBeHero.GCSViews
         GMapOverlay drawnpolygonsoverlay;
         GMapOverlay kmlpolygonsoverlay;
         GMapOverlay geofenceoverlay;
+        //返航断点
+        GMapOverlay breakploygonsoverlay;
+        //集结点
         static GMapOverlay rallypointoverlay;
+        //障碍点
         static GMapOverlay drawnlimitpolygonsoverlay;
+        //时时飞行航点
+        public static GMapOverlay flyRoutesoverlay;
 
         // etc
         readonly Random rnd = new Random();
@@ -2810,6 +2895,7 @@ namespace ByAeroBeHero.GCSViews
         GMapMarkerRallyPt CurrentRallyPt;
         GMapMarker CurrentGMapMarker;
         GMapMarkerLimitPt CurrentLimitPt;
+        GMapMarkerBreakPt CurrentBreakPt;
         bool isMouseDown;
         bool isMouseDraging;
         bool isMouseClickOffMenu;
@@ -2884,6 +2970,11 @@ namespace ByAeroBeHero.GCSViews
                 if (item is GMapMarkerLimitPt) 
                 {
                     CurrentLimitPt = item as GMapMarkerLimitPt;
+                }
+
+                if (item is GMapMarkerBreakPt)
+                {
+                    CurrentBreakPt = item as GMapMarkerBreakPt;
                 }
             }
         }
@@ -3140,7 +3231,8 @@ namespace ByAeroBeHero.GCSViews
                     }
                     else
                     {
-                        AddWPToMap(currentMarker.Position.Lat, currentMarker.Position.Lng, 0);
+                        //禁止鼠标添加航点
+                        //AddWPToMap(currentMarker.Position.Lat, currentMarker.Position.Lng, 0);
                     }
                 }
                 else
@@ -3183,9 +3275,9 @@ namespace ByAeroBeHero.GCSViews
                         {
                             try
                             {
-                                drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
-                                MainMap.UpdatePolygonLocalPosition(drawnpolygon);
-                                MainMap.Invalidate();
+                                //drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
+                                //MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+                                //MainMap.Invalidate();
                             }
                             catch { }
                         }
@@ -3193,9 +3285,9 @@ namespace ByAeroBeHero.GCSViews
                         {
                             try
                             {
-                                drawnpolygonlimit.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("障碍航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
-                                MainMap.UpdatePolygonLocalPosition(drawnpolygonlimit);
-                                MainMap.Invalidate();
+                                //drawnpolygonlimit.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("障碍航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
+                                //MainMap.UpdatePolygonLocalPosition(drawnpolygonlimit);
+                                //MainMap.Invalidate();
                             }
                             catch { }
                         }
@@ -3258,6 +3350,8 @@ namespace ByAeroBeHero.GCSViews
                 // update mouse pos display
                 SetMouseDisplay(point.Lat, point.Lng, 0);
             }
+
+
 
             //draging
             if (e.Button == MouseButtons.Left && isMouseDown)
@@ -3942,6 +4036,9 @@ namespace ByAeroBeHero.GCSViews
 
         private void deleteWPToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(CustomMessageBox.Show("确定是否删除航点！", "删除航点", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
             int no = 0;
             if (CurentRectMarker != null)
             {
@@ -3990,6 +4087,13 @@ namespace ByAeroBeHero.GCSViews
                 MainMap.Invalidate(true);
 
                 CurrentLimitPt = null;
+            }
+            else if (CurrentBreakPt != null) 
+            {
+                breakploygonsoverlay.Markers.Remove(CurrentBreakPt);
+                MainMap.Invalidate(true);
+
+                CurrentBreakPt = null;
             }
 
 
@@ -4101,20 +4205,21 @@ namespace ByAeroBeHero.GCSViews
                     addpolygonmarker("Guided Mode", MainV2.comPort.MAV.GuidedMode.y, MainV2.comPort.MAV.GuidedMode.x, (int)MainV2.comPort.MAV.GuidedMode.z, Color.Blue, routesoverlay);
                 }
 
-                //autopan
-                if (autopan)
-                {
-                    if (route.Points[route.Points.Count - 1].Lat != 0 && (mapupdate.AddSeconds(3) < DateTime.Now))
-                    {
-                        updateMapPosition(currentloc);
-                        mapupdate = DateTime.Now;
-                    }
-                }
 
-                
+
+                //时时飞行航线
+                routePoints(currentloc);
+
+                //页面初始化参数
+                initParams();
+               
+                //计时器
+                addTimer();
             }
             catch (Exception ex) { log.Warn(ex); }
         }
+
+
 
         /// <summary>
         /// Try to reduce the number of map position changes generated by the code
@@ -4614,6 +4719,8 @@ namespace ByAeroBeHero.GCSViews
         {
             InitControl();
             timer1.Start();
+            timer_getbreakpoint.Start();
+            timer_time.Start();
 
             if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
             {
@@ -4673,11 +4780,15 @@ namespace ByAeroBeHero.GCSViews
         {
             config(true);
             timer1.Stop();
+            timer_getbreakpoint.Stop();
+            timer_time.Stop();
         }
 
         private void FlightPlanner_FormClosing(object sender, FormClosingEventArgs e)
         {
             timer1.Stop();
+            timer_getbreakpoint.Stop();
+            timer_time.Stop();
         }
 
         private void setROIToolStripMenuItem_Click(object sender, EventArgs e)
@@ -5003,7 +5114,7 @@ namespace ByAeroBeHero.GCSViews
 
             if (!int.TryParse(alt, out alti))
             {
-                MessageBox.Show("Bad Alt");
+                MessageBox.Show("输入格式不正确,请重新输入！");
                 return;
             }
 
@@ -5153,12 +5264,15 @@ namespace ByAeroBeHero.GCSViews
                         }
                         else
                         {
-                            string[] items = line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+                            if (line != "") 
+                            {
+                                string[] items = line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
 
-                            drawnpolygon.Points.Add(new PointLatLng(double.Parse(items[0]), double.Parse(items[1])));
-                            addpolygonmarkergrid(drawnpolygon.Points.Count.ToString(), double.Parse(items[1]), double.Parse(items[0]), 0);
+                                drawnpolygon.Points.Add(new PointLatLng(double.Parse(items[0]), double.Parse(items[1])));
+                                addpolygonmarkergrid(drawnpolygon.Points.Count.ToString(), double.Parse(items[1]), double.Parse(items[0]), 0);
 
-                            a++;
+                                a++;
+                            }
                         }
                     }
 
@@ -5322,7 +5436,7 @@ namespace ByAeroBeHero.GCSViews
 
             if (int.Parse(MainV2.comPort.MAV.param["RALLY_TOTAL"].ToString()) < 1)
             {
-                CustomMessageBox.Show("没有集结点下载！");
+                CustomMessageBox.Show("没有备用降落点下载！");
                 return;
             }
 
@@ -5557,12 +5671,12 @@ namespace ByAeroBeHero.GCSViews
                 return;
             }
             /*
-Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND in the future)
- Column 2,3: Lat, lon
- Column 4: Loiter altitude
- Column 5: Break altitude (when landing from rally is implemented, this is the altitude to break out of loiter from)
- Column 6: Landing heading (also for future when landing from rally is implemented)
- Column 7: Flags (just 0 for now, also future use).
+            Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND in the future)
+             Column 2,3: Lat, lon
+             Column 4: Loiter altitude
+             Column 5: Break altitude (when landing from rally is implemented, this is the altitude to break out of loiter from)
+             Column 6: Landing heading (also for future when landing from rally is implemented)
+             Column 7: Flags (just 0 for now, also future use).
              */
 
             using (SaveFileDialog sf = new SaveFileDialog())
@@ -5810,6 +5924,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void switchDockingToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            panelWaypoints.Expand = false;
             //if (panelAction.Dock == DockStyle.Bottom)
             //{
             //    panelAction.Dock = DockStyle.Right;
@@ -6323,11 +6438,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             if (Isshow)
             {
                 this.panelShowPoint.Visible = false;
+                this.panelShowInfo.Visible = false;
                 Isshow = false;
             }
             else
             {
                 this.panelShowPoint.Visible = true;
+                this.panelShowInfo.Visible = true;
                 Isshow = true;
             }
         }
@@ -6335,14 +6452,593 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         private void ControlInit() 
         {
-            panelShowPoint.BackColor = groupBoxAeroPoint.BackColor
+            panelShowPoint.BackColor = groupBoxAeroPoint.BackColor = CHK_autopan.BackColor = breakpointgroupBox.BackColor
              = groupBoxBasePoint.BackColor = groupboxOPoint.BackColor = groupBoxRellyPoint.BackColor = Color.Black;
-            groupBoxAeroPoint.ForeColor
-                = groupBoxBasePoint.ForeColor = groupboxOPoint.ForeColor = groupBoxRellyPoint.ForeColor = Color.White;
+            groupBoxAeroPoint.ForeColor = CHK_autopan.ForeColor
+                = groupBoxBasePoint.ForeColor = groupboxOPoint.ForeColor = groupBoxRellyPoint.ForeColor = breakpointgroupBox.ForeColor
+            =Color.White;
 
             this.panelShowInfo.BackColor = Color.Black;
         }
 
+        #endregion
+
+        #region 清楚飞行时时航线
+        public void clearFlyRoute() 
+        {
+            if (flyRoute != null)
+                flyRoute.Points.Clear();
+        }
+        #endregion
+
+        #region 初始化参数
+        public void initParams() 
+        {
+            this.lblHorizontalError.Text = "GPS水平精度:"+ CurrentState.gpsaccuracy.ToString();
+            this.lblSataCount.Text = "卫星数量:" + CurrentState.gpscount.ToString();
+        }
+        #endregion
+
+        #region 追踪家的位置
+        private void CHK_autopan_CheckedChanged(object sender, EventArgs e)
+        {
+            autopan = CHK_autopan.Checked;
+        }
+        #endregion
+
+        #region 添加飞行时时轨迹
+        private void routePoints(PointLatLng currentloc)
+        {
+            //MainMap.inOnPaint = true;
+
+            MainMap.HoldInvalidation = true;
+
+            int cnt = 0;
+
+            while (MainMap.inOnPaint)
+            {
+                Thread.Sleep(1);
+                cnt++;
+            }
+
+            // add new route point
+            if (MainV2.comPort.MAV.cs.lat != 0)
+            {
+                //trackPoints.Add(currentloc);
+                flyRoute.Points.Add(currentloc);
+            }
+
+            while (MainMap.inOnPaint)
+            {
+                Thread.Sleep(1);
+                cnt++;
+            }
+
+
+            flyRoute.Stroke = new Pen(Color.FromArgb(144, Color.Purple), 5);
+            //route.Stroke.DashStyle = DashStyle.Dash;
+            flyRoute.Tag = "track";
+
+
+            //autopan
+            if (autopan)
+            {
+                if (flyRoute.Points[flyRoute.Points.Count - 1].Lat != 0 && (mapupdate.AddSeconds(3) < DateTime.Now))
+                {
+                    updateMapPosition(currentloc);
+                    mapupdate = DateTime.Now;
+                }
+            }
+
+            updateClearRoutes();
+            MainMap.UpdateRouteLocalPosition(flyRoute);
+            MainMap.Invalidate();
+        }
+
+        private void updateClearRoutes()
+        {
+            // not async
+            Invoke((MethodInvoker)delegate
+            {
+                flyRoutesoverlay.Routes.Clear();
+                flyRoutesoverlay.Routes.Add(flyRoute);
+            });
+        }
+
+
+        #endregion
+
+        #region 添加返航断点
+
+        enum LandStatus
+        {
+            断药 = 1,
+            断电 = 2,
+            正常 = 0,
+        }
+
+        private void timer_getbreakpoint_Tick(object sender, EventArgs e)
+        {
+            addbreakWayPoint(false);
+        }
+
+        public void addbreakWayPoint(bool isshowbreakpoint)
+        {
+            if (MainV2.comPort.BaseStream.IsOpen)
+            {
+                if ((CurrentState.isChange || isshowbreakpoint))
+                {
+                    Locationwp secondbreakpoint = getBreak_WP(CurrentState.breakpoint_lat, CurrentState.breakpoint_lng, CurrentState.breakpoint_alt, CurrentState.breakpoint_p1);
+                    breakploygonsoverlay.Markers.Clear();
+                    if (CurrentState.breakpoint_lat != 0 && CurrentState.breakpoint_lng != 0)
+                        addpolygonmarkerBreakPoint(secondbreakpoint);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 获取断点
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns>break_point</returns>
+        public Locationwp getBreak_WP(double breakpoint_lat, double breakpoint_lng, double breakpoint_alt, double breakpoint_p1)
+        {
+            Locationwp loc = new Locationwp();
+
+            loc.options = 3;
+            loc.id = 1;
+            loc.p1 = (float)breakpoint_p1;
+            loc.p2 = 0;
+            loc.p3 = 0;
+            loc.p4 = 0;
+
+            loc.alt = (float)((breakpoint_alt));
+            loc.lat = (float)((breakpoint_lat));
+            loc.lng = (float)((breakpoint_lng));
+            
+            return loc;
+        }
+
+        private void addpolygonmarkerBreakPoint(Locationwp break_point)
+        {
+
+            PointLatLngAlt breakpt = new PointLatLngAlt(break_point.lat, break_point.lng, break_point.alt, break_point.p1,Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString(), "返航断点");
+            breakploygonsoverlay.Markers.Add(
+                    new GMapMarkerBreakPt(breakpt)
+                    {
+                        ToolTipMode = MarkerTooltipMode.OnMouseOver,
+                        ToolTipText = "返航断点" + "\n返航原因: " + Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString(),
+                        Tag = breakploygonsoverlay.Markers.Count,
+                        Alt = (int)breakpt.Alt,
+                        BreakPointParam1 = break_point.p1
+                    }
+            );
+
+            MainMap.UpdateMarkerLocalPosition(breakploygonsoverlay.Markers[0]);
+            MainMap.Invalidate();
+        }
+
+        /// <summary>
+        /// 写入断点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void myBtn_write_break_point_Click(object sender, EventArgs e)
+        {
+            if (breakploygonsoverlay.Markers.Count <= 0)
+                return;
+
+            if (saveBreak_WPs())
+            {
+                CustomMessageBox.Show("发送飞行断点成功！");
+            }
+            else 
+            {
+                CustomMessageBox.Show("发送飞行断点失败！");
+            };
+        }
+
+        /// <summary>
+        /// 读取断点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void myBtn_read_break_point_Click(object sender, EventArgs e)
+        {
+            addbreakWayPoint(true);
+        }
+
+        //写入断点
+        private bool isSeccessSend;
+        private bool saveBreak_WPs()
+        {
+            try
+            {
+                MAVLinkInterface port = MainV2.comPort;
+
+                if (!port.BaseStream.IsOpen)
+                {
+                    throw new Exception("请先连接地面站!");
+                }
+
+                MainV2.comPort.giveComport = true;
+                int a = 1;
+                // define the break_point point
+                Locationwp break_point = new Locationwp();
+
+                foreach (GMapMarkerBreakPt pnt in breakploygonsoverlay.Markers)
+                {
+                    try
+                    {
+                        break_point.id = (byte)MAVLink.MAV_CMD.WAYPOINT;
+                        break_point.lat = pnt.Position.Lat;
+                        break_point.lng = pnt.Position.Lng;
+                        break_point.alt = pnt.Alt;
+                        break_point.p1 = pnt.BreakPointParam1;
+                    }
+                    catch 
+                    { 
+                        throw new Exception("飞行器的断点位置无效！"); 
+                    }
+                }
+
+
+                // 发送航点
+                port.setBreak_WP(break_point, (ushort)(a), MAVLink.MAV_FRAME.GLOBAL_RELATIVE_ALT, 0);
+
+                isSeccessSend = true;
+            }
+            catch (Exception ex) 
+            { 
+                log.Error(ex);
+                isSeccessSend =false;
+                MainV2.comPort.giveComport = false;
+                throw; 
+            }
+
+            MainV2.comPort.giveComport = false;
+            return isSeccessSend;
+        }
+
+        /// <summary>
+        /// 保存断点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SaveBreak_File_Click(object sender, EventArgs e)
+        {
+            savebreakwaypoints();
+            writeKML();
+        }
+
+        /// <summary>
+        /// Saves a waypoint writer file
+        /// </summary>
+        private void savebreakwaypoints()
+        {
+            using (SaveFileDialog fd = new SaveFileDialog())
+            {
+                fd.Filter = "By Aero (*.txt)|*.*";
+                fd.DefaultExt = ".txt";
+                fd.FileName = wpfilename;
+                DialogResult result = fd.ShowDialog();
+                string file = fd.FileName;
+                if (file != "")
+                {
+                    try
+                    {
+                        StreamWriter sw = new StreamWriter(file);
+                        sw.WriteLine("ByAero Break Point");
+                        foreach (GMapMarkerBreakPt pnt in breakploygonsoverlay.Markers)
+                        {
+                            try
+                            {
+                                sw.WriteLine("1\t0\t3\t16\t" + pnt.BreakPointParam1 + "\t0.000000\t0.000000\t0.000000\t" + pnt.Position.Lat.ToString("0.000000", new CultureInfo("en-US")) + "\t" + pnt.Position.Lng.ToString("0.000000", new CultureInfo("en-US")) + "\t" + pnt.Alt.ToString("0.000000", new CultureInfo("en-US")) + "\t1");
+                            }
+                            catch
+                            {
+                                sw.WriteLine("0\t1\t0\t0\t0\t0\t0\t0\t0\t0\t0\t1");
+                            }
+                        }
+                       
+                        sw.Close();
+                    }
+                    catch (Exception) { CustomMessageBox.Show(Strings.ERROR); }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 加载断点
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LoadBreak_File_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog fd = new OpenFileDialog())
+            {
+                fd.Filter = "All Supported Types|*.txt;*.shp|By Aero (*.txt)|*.*|Shape file|*.shp";
+                DialogResult result = fd.ShowDialog();
+                string file = fd.FileName;
+
+                if (File.Exists(file))
+                {
+                    wpfilename = file;
+                    readbreakwpfile(file);
+                }
+            }
+        }
+
+        public void readbreakwpfile(string file, bool append = false)
+        {
+            bool error = false;
+
+            try
+            {
+                StreamReader sr = new StreamReader(file); //"defines.h"
+                string header = sr.ReadLine();
+                if (header == null || !header.Contains("ByAero"))
+                {
+                    CustomMessageBox.Show("无效的路点文件");
+                    return;
+                }
+
+                while (!error && !sr.EndOfStream)
+                {
+                    string line = sr.ReadLine();
+                    // waypoints
+
+                    if (line.StartsWith("#"))
+                        continue;
+
+                    string[] items = line.Split(new[] { '\t', ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    if (items.Length <= 9)
+                        continue;
+
+                    try
+                    {
+
+                        Locationwp temp = new Locationwp();
+                        if (items[2] == "3")
+                        { 
+                            temp.options = 1;
+                        }
+                        else
+                        {
+                            temp.options = 0;
+                        }
+                        temp.id = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD), items[3], false);
+                        temp.p1 = float.Parse(items[4], new CultureInfo("en-US"));
+
+                        if (temp.id == 99)
+                            temp.id = 0;
+
+                        temp.alt = (float)(double.Parse(items[10], new CultureInfo("en-US")));
+                        temp.lat = (double.Parse(items[8], new CultureInfo("en-US")));
+                        temp.lng = (double.Parse(items[9], new CultureInfo("en-US")));
+
+                        temp.p2 = (float)(double.Parse(items[5], new CultureInfo("en-US")));
+                        temp.p3 = (float)(double.Parse(items[6], new CultureInfo("en-US")));
+                        temp.p4 = (float)(double.Parse(items[7], new CultureInfo("en-US")));
+                        addpolygonmarkerBreakPoint(temp);
+                    }
+                    catch { CustomMessageBox.Show("无效的行\n" + line); }
+                }
+
+                
+
+                sr.Close();
+
+                writeKML();
+
+                MainMap.ZoomAndCenterMarkers("objects");
+            }
+            catch (Exception ex)
+            {
+                CustomMessageBox.Show("不能打开当前文件! ");
+            }
+        }
+        #endregion
+
+        #region 添加飞行时间
+
+        private void addTimer() 
+        {
+            //CurrentState.isArm
+            if (CurrentState.isArm)
+            {
+                timer_time.Enabled = true;
+            }
+            else
+            {
+                timer_time.Enabled = false;
+            }
+        }
+
+        private int t = 0;
+
+        //计时器清零 
+        void BtnClearClick(object sender, System.EventArgs e)
+        {
+            t = 0;
+            //如何正在计时，则先停止再清零，否则直接清零 
+            if (this.timer_time.Enabled == true)
+            {
+                CustomMessageBox.Show("飞机正在飞行，不能执行清除！", "提示");
+            }
+            else
+            {
+                this.timer_time.Dispose();
+                lblShowTime.Text = GetAllTime(t);
+            }
+
+        }
+
+
+        private void timer_time_Tick(object sender, EventArgs e)
+        {
+            t = t + 1;//得到总的毫秒数    
+            this.lblShowTime.Text = GetAllTime(t);
+
+        }
+
+        //计时函数 
+        public string GetAllTime(int time)
+        {
+            string hh, mm, ss, fff;
+
+            int f = time % 60; // 毫秒    
+            int s = time / 60; // 转化为秒 
+            int m = s / 60;     // 分 
+            int h = m / 60;     // 时 
+            s = s % 60;     // 秒  
+
+            //毫秒格式00 
+            if (f < 10)
+            {
+                fff = "0" + f.ToString();
+            }
+            else
+            {
+                fff = f.ToString();
+            }
+
+            //秒格式00 
+            if (s < 10)
+            {
+                ss = "0" + s.ToString();
+            }
+            else
+            {
+                ss = s.ToString();
+            }
+
+            //分格式00 
+            if (m < 10)
+            {
+                mm = "0" + m.ToString();
+            }
+            else
+            {
+                mm = m.ToString();
+            }
+
+            //时格式00 
+            if (h < 10)
+            {
+                hh = "0" + h.ToString();
+            }
+            else
+            {
+                hh = h.ToString();
+            }
+
+            //返回 hh:mm:ss.ff             
+            return mm + ":" + ss + ":" + fff;
+        }
+        #endregion
+
+        #region 控件传递参数
+        public void SendInitParams(double lat ,double lon,double alt) 
+        {
+            mouseposdisplay.Lat = lat;
+            mouseposdisplay.Lng = lon;
+            mouseposdisplay.Alt = alt;
+        }
+        #endregion
+
+        #region 加解锁，自主模式，悬停模式，自动返航，清楚轨迹
+
+        private DateTime dtBegin;
+        private void BUT_ARM_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            // arm the MAV
+            try
+            {
+                if (MainV2.comPort.MAV.cs.armed)
+                    if (CustomMessageBox.Show("确定对飞行器加锁！", "提示", MessageBoxButtons.YesNo) == DialogResult.No)
+                        return;
+
+                bool ans = MainV2.comPort.doARM(!MainV2.comPort.MAV.cs.armed);
+                if (ans == false)
+                    CustomMessageBox.Show(Strings.ErrorRejectedByMAV, Strings.ERROR);
+                else
+                    dtBegin = DateTime.Now;
+            }
+            catch { CustomMessageBox.Show(Strings.ErrorNoResponce, Strings.ERROR); }
+        }
+
+        private void BUT_quickauto_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否启用自主模式！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+
+            try
+            {
+                ((Button)sender).Enabled = false;
+                MainV2.comPort.setMode("自动");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
+        }
+
+        private void btnLoiterUnlim_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行悬停！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+            try
+            {
+                ((Button)sender).Enabled = false;
+                MainV2.comPort.setMode("悬停");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
+        }
+
+        private void BUT_clear_track_Click(object sender, EventArgs e)
+        {
+            clearFlyRoute();
+        }
+
+        private void BUT_quickrtl_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行自动返航！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+            try
+            {
+                ((Button)sender).Enabled = false;
+                MainV2.comPort.setMode("返航");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
+        }
+
+        #endregion
+
+        #region 展开航点
+        private void panelWaypoints_Click(object sender, EventArgs e)
+        {
+            //panelWaypoints.Expand = true;
+        }
         #endregion
 
 

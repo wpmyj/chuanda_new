@@ -80,7 +80,7 @@ namespace ByAeroBeHero
             public override Image donate { get { return global::ByAeroBeHero.Properties.Resources.donate; } }
             public override Image connect { get { return global::ByAeroBeHero.Properties.Resources.Connection; } }
             public override Image disconnect { get { return global::ByAeroBeHero.Properties.Resources.disConnection; } }
-            public override Image bg { get { return global::ByAeroBeHero.Properties.Resources.Teal; } }
+            public override Image bg { get { return global::ByAeroBeHero.Properties.Resources.bgdark; } }
         }
 
         public class menuicons2 : menuicons
@@ -1145,15 +1145,15 @@ namespace ByAeroBeHero
                 }
 
                 // load wps on connect option.
-                if (config["loadwpsonconnect"] != null && bool.Parse(config["loadwpsonconnect"].ToString()) == true)
-                {
+                //if (config["loadwpsonconnect"] != null && bool.Parse(config["loadwpsonconnect"].ToString()) == true)
+                //{
                     // only do it if we are connected.
                     if (comPort.BaseStream.IsOpen)
                     {
-                        MenuFlightPlanner_Click(null, null);
-                        FlightPlanner.BUT_read_Click(null, null);
+                        //MenuFlightPlanner_Click(null, null);
+                        FlightPlanner.myBtn_read_break_point_Click(null, null);
                     }
-                }
+                //}
 
                 // get any rallypoints
                 if (MainV2.comPort.MAV.param.ContainsKey("RALLY_TOTAL") && int.Parse(MainV2.comPort.MAV.param["RALLY_TOTAL"].ToString()) > 0)
@@ -2934,7 +2934,7 @@ namespace ByAeroBeHero
             {
                 if (e.ClickedItem == item)
                 {
-                    item.BackColor = Color.Teal;
+                    item.BackColor = Color.Black;
                 }
                 else
                 {
@@ -2948,25 +2948,31 @@ namespace ByAeroBeHero
 
         public void controlMainMenuColor(string MainMenuName) 
         {
+            MenuFlightData.BackColor = Color.Black;
+            MenuFlightPlanner.BackColor = Color.Black;
+            MenuInitConfig.BackColor = Color.Black;
+            MenuConfigTune.BackColor = Color.Black;
+            MenuHelp.BackColor = Color.Black;
+
             if(MainMenuName=="MenuFlightData")
             {
-                MenuFlightData.BackColor = Color.Black;           
+                MenuFlightData.BackColor = Color.SkyBlue;           
             }
             else if (MainMenuName == "MenuFlightPlanner") 
             {
-                MenuFlightPlanner.BackColor = Color.Black;
+                MenuFlightPlanner.BackColor = Color.SkyBlue;
             }
             else if (MainMenuName == "MenuInitConfig") 
             {
-                MenuInitConfig.BackColor = Color.Black;
+                MenuInitConfig.BackColor = Color.SkyBlue;
             }
             else if (MainMenuName == "MenuConfigTune") 
             {
-                MenuConfigTune.BackColor = Color.Black;
+                MenuConfigTune.BackColor = Color.SkyBlue;
             }
             else if (MainMenuName == "MenuHelp") 
             {
-                MenuHelp.BackColor = Color.Black;
+                MenuHelp.BackColor = Color.SkyBlue;
             }
         }
 

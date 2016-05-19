@@ -81,8 +81,13 @@ namespace ByAeroBeHero.GCSViews
                     backstageView.ActivatePage(page);
                     break;
                 }
-                
+
+                if (page.LinkText == "机架类型")
+                {
+                    page.Show = true;
+                }
             }
+            
             MainV2.instance.controlMainMenuColor("MenuInitConfig");
             IsShowControl(isConnected);
             ThemeManager.ApplyThemeTo(this);
@@ -93,6 +98,7 @@ namespace ByAeroBeHero.GCSViews
             if (!isConnected)
             {
                 CustomMessageBox.Show("请使用地面站连接飞行控制器，然后在进行参数设置操作！");
+
             }
         }
 

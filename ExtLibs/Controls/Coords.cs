@@ -46,11 +46,15 @@ namespace ByAeroBeHero.Controls
         {
             base.OnPaint(e);
 
-            PointF text = new PointF(3, 3);
+            StringFormat drawFormat = new StringFormat();
+            drawFormat.Alignment = StringAlignment.Near;
+            drawFormat.LineAlignment = StringAlignment.Center;  
+
+            PointF text = new PointF(10, 10);
 
             if (Sys == CoordsSystems.GEO.ToString())
             {
-               e.Graphics.DrawString("纬度|"+ Lat.ToString("0.000000")+"度"+"     " +"经度|"+ Lng.ToString("0.000000")+"度"+"     " + "海拔|" + Alt.ToString("0.00") + "米", this.Font, new SolidBrush(this.ForeColor), text, StringFormat.GenericDefault);
+                e.Graphics.DrawString("纬度：" + Lat.ToString("0.000000") + "度" + "     " + "经度：" + Lng.ToString("0.000000") + "度" + "     " + "海拔：" + Alt.ToString("0.00") + "米", this.Font, new SolidBrush(this.ForeColor), text, drawFormat);
             }
             else if (Sys == CoordsSystems.UTM.ToString())
             {

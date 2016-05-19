@@ -64,9 +64,10 @@ namespace ByAeroBeHero.Stats
                 delegate
                 {
 
-            System.Windows.Forms.ToolStripMenuItem men = new System.Windows.Forms.ToolStripMenuItem() { Text = "Stats" };
-            men.Click += men_Click;
-            Host.FDMenuMap.Items.Add(men);
+            //隐藏stats
+            //System.Windows.Forms.ToolStripMenuItem men = new System.Windows.Forms.ToolStripMenuItem() { Text = "Stats" };
+            //men.Click += men_Click;
+            //Host.FDMenuMap.Items.Add(men);
             });
 
             statsoverall.appstarts++;

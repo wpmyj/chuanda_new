@@ -237,7 +237,7 @@ namespace ByAeroBeHero.GCSViews
 
             if (MainV2.config.ContainsKey("hudcolor"))
             {
-                hud1.hudcolor = System.Drawing.Color.Teal;
+                hud1.hudcolor = System.Drawing.Color.Transparent;
             }
 
             MainV2.comPort.MavChanged += comPort_MavChanged;
@@ -694,6 +694,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void FlightData_Load(object sender, EventArgs e)
         {
+            MainV2.config["CHK_autopan"] = false.ToString();
             POI.POIModified += POI_POIModified;
 
             tfr.GotTFRs += tfr_GotTFRs;
@@ -739,6 +740,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void InitControl() 
         {
+            flightPlannerToolStripMenuItem_Click(null,null);
             this.Messagetabtimer.Stop();
             if (!MainV2.comPort.BaseStream.IsOpen)
                 this.Messagetabtimer.Start();
@@ -1698,6 +1700,9 @@ namespace ByAeroBeHero.GCSViews
         {
             if (route != null)
                 route.Points.Clear();
+
+            //清楚时时飞行轨迹
+            GCSViews.FlightPlanner.instance.clearFlyRoute();
         }
 
         private void BUTactiondo_Click(object sender, EventArgs e)
@@ -2793,8 +2798,7 @@ namespace ByAeroBeHero.GCSViews
         private void CHK_autopan_CheckedChanged(object sender, EventArgs e)
         {
             MainV2.config["CHK_autopan"] = CHK_autopan.Checked.ToString();
-
-                //GCSViews.FlightPlanner.instance.autopan = CHK_autopan.Checked;
+            GCSViews.FlightPlanner.instance.autopan = CHK_autopan.Checked;
         }
 
         private void setMJPEGSourceToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2974,10 +2978,10 @@ namespace ByAeroBeHero.GCSViews
             {
                 if (sc.Name == "FlightPlanner")
                 {
-                    MyButton but = new MyButton { Location = new Point(splitContainer1.Panel2.Width / 2, 0), Text = "Close" };
-                    but.Click += but_Click;
+                    //MyButton but = new MyButton { Location = new Point(splitContainer1.Panel2.Width / 2, 0), Text = "Close" };
+                    //but.Click += but_Click;
 
-                    splitContainer1.Panel2.Controls.Add(but);
+                    //splitContainer1.Panel2.Controls.Add(but);
                     splitContainer1.Panel2.Controls.Add(sc.Control);
                     ThemeManager.ApplyThemeTo(sc.Control);
 
@@ -2989,7 +2993,7 @@ namespace ByAeroBeHero.GCSViews
                         ((IActivate)(sc.Control)).Activate();
                     }
 
-                    but.BringToFront();
+                    //but.BringToFront();
                     break;
                 }
             }
@@ -3380,6 +3384,7 @@ namespace ByAeroBeHero.GCSViews
 
                 messagecount = MainV2.comPort.MAV.cs.messages.Count;
             }
+
             controlInit(); 
         }
 
@@ -3388,10 +3393,11 @@ namespace ByAeroBeHero.GCSViews
             //控制txt_messagebox的样式wjch
             this.txt_messagebox.BackColor = Color.Black;
             this.txt_messagebox.ForeColor = Color.Wheat;
-            this.panelAutoFly.BackColor = Color.Black;
 
             CHK_autopan.BackColor = Color.Black;
             CHK_autopan.ForeColor = Color.White;
+
+            panelShowParams.BackColor = Color.Black;
             //CurrentState.isArm
             if (CurrentState.isArm)
             {
@@ -3446,7 +3452,7 @@ namespace ByAeroBeHero.GCSViews
                 this.pictureBoxPump.Image = null;
             }
 
-            this.panelDeviceStatus.BackColor = Color.Black;
+            //this.panelDeviceStatus.BackColor = Color.Black;
             if (MainV2.comPort.BaseStream.IsOpen)
             {
 
@@ -3532,6 +3538,7 @@ namespace ByAeroBeHero.GCSViews
             }
 
         } 
+
 
         //计时器清零 
         void BtnClearClick(object sender, System.EventArgs e)
@@ -3874,6 +3881,7 @@ namespace ByAeroBeHero.GCSViews
             frm.Show();
         }
 
+        #region 表盘拖拽
         int yPos;
         int xPos;
         bool MoveFlag;
@@ -3897,6 +3905,27 @@ namespace ByAeroBeHero.GCSViews
         {
             MoveFlag = false;
         }
+        #endregion
+
+        private void btnLoiterUnlim_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行悬停！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+            try
+            {
+                ((Button)sender).Enabled = false;
+                MainV2.comPort.setMode("悬停");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
+        }
+
+        #region 显示控件
 
         private void btnMeter_Click(object sender, EventArgs e)
         {
@@ -3921,30 +3950,10 @@ namespace ByAeroBeHero.GCSViews
             }
             else
             {
-                this.panel4.Visible=false;
+                this.panel4.Visible = false;
                 pboxWarnMessage.Enabled = true;
             }
         }
-
-        private void btnLoiterUnlim_Click(object sender, EventArgs e)
-        {
-            if (!MainV2.comPort.BaseStream.IsOpen)
-                return;
-
-            DialogResult re = CustomMessageBox.Show("确定是否进行悬停！", "提示", MessageBoxButtons.YesNo);
-
-            if (re == DialogResult.No)
-                return;
-            try
-            {
-                ((Button)sender).Enabled = false;
-                MainV2.comPort.setMode("悬停");
-            }
-            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
-            ((Button)sender).Enabled = true;
-        }
-
-        #region 显示控件
 
         private bool IsShowAutoBtn = false;
         private void myButton5_Click(object sender, EventArgs e)
@@ -3976,19 +3985,21 @@ namespace ByAeroBeHero.GCSViews
             }
         }
 
-        #endregion
-
-        #region
-        private void drawRute(GMapOverlay routesOverlay) 
+        private bool IsShowParamInfo =false;
+        private void myButtonShowInfo_Click(object sender, EventArgs e)
         {
-            // route.Points.Clear()
-            //route.Stroke = new Pen(Color.Yellow, 4);
-            //route.Stroke.DashStyle = DashStyle.Custom;
-
-            //for (int a = 1; a < route.Points.Count; a++)
-            //{
-            //    route.Points.Add(routesOverlay[a]);
-            //}
+            if (IsShowParamInfo)
+            {
+                panelShowParams.Visible = false;
+                //tableLayoutPanel1.Visible = false;
+                IsShowParamInfo = false;
+            }
+            else
+            {
+                panelShowParams.Visible = true;
+                //tableLayoutPanel1.Visible = true;
+                IsShowParamInfo = true;
+            }
         }
         #endregion
     }

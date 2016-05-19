@@ -1636,6 +1636,7 @@ Please check the following
                 }
             }
         }
+
         /// <summary>
         /// Gets specfied WP
         /// </summary>
@@ -3749,5 +3750,52 @@ Please check the following
             }
             
         }
+
+        #region 断点设置
+
+        /// <summary>
+        /// Save wp to eeprom
+        /// </summary>
+        /// <param name="loc">location struct</param>
+        /// <param name="index">wp no</param>
+        /// <param name="frame">global or relative</param>
+        /// <param name="current">0 = no , 2 = guided mode</param>
+        public void setBreak_WP(Locationwp loc, ushort index, MAV_FRAME frame, byte current = 0, byte autocontinue = 1)
+        {
+            mavlink_break_point_item_t req = new mavlink_break_point_item_t();
+
+            req.target_system = MAV.sysid;
+            req.target_component = MAV.compid; 
+
+            req.command = loc.id;
+
+            req.current = current;
+            req.autocontinue = autocontinue;
+
+            req.frame = (byte)frame;
+            req.y = (float)(loc.lng);
+            req.x = (float)(loc.lat);
+            req.z = (float)(loc.alt);
+
+            req.param1 = loc.p1;
+            req.param2 = loc.p2;
+            req.param3 = loc.p3;
+            req.param4 = loc.p4;
+
+            req.seq = index;
+
+            sendBreak_WP(req);
+        }
+
+        public void sendBreak_WP(mavlink_break_point_item_t req)
+        {
+            giveComport = true;
+
+            ushort index = req.seq;
+
+            // request
+            generatePacket((byte)MAVLINK_MSG_ID.BREAK_POINT_ITEM, req);
+        }
+        #endregion
     }
 }

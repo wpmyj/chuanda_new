@@ -152,6 +152,7 @@ namespace ByAeroBeHero
             y = yb1;
 
             // draw the outergrid, this is a grid that cover the entire area of the rectangle plus more.
+            //获取多边形最长的对角线/两线间距离=最大航线数
             while (lines < ((diagdist + distance * 2) / distance))
             {
                 // copy the start point to generate the end point

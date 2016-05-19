@@ -44,9 +44,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private const float DisabledOpacity = 0.2F;
         private const float EnabledOpacity = 1.0F;
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        private bool indochange;
+        //private bool indochange;
         private int iCopterType;
-        private int iMotorTest;
+        //private int iMotorTest;
 
         public ConfigFrameType()
         {
@@ -56,6 +56,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         public void Activate()
         {
+            this.BackColor = Color.Black;
             //if (!MainV2.comPort.MAV.param.ContainsKey("FRAME"))
             //{
             //    Enabled = false;
@@ -65,6 +66,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             #region
 
             var motormax = 8;
+
 
             if (!MainV2.comPort.MAV.param.ContainsKey("FRAME"))
             {
@@ -103,11 +105,26 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 motormax = 0;
             }
 
-            ControlRabtn(motormax);
+            int iCopterType = (int)(float)MainV2.comPort.MAV.param["COPTER_TYPE"];
+
+            if (iCopterType == 1) 
+            {
+                this.RadbtnFourRotor.Checked = true;
+                RadbtnFourRotor_CheckedChanged(null,null);
+            }
+            else if (iCopterType == 2)
+            {
+                this.RadbtnFiveRotor.Checked = true;
+                RadbtnFiveRotor_CheckedChanged(null, null);
+            }
+            else if (iCopterType == 3)
+            {
+                this.RadbtnSevenRotor.Checked = true;
+                RadbtnSevenRotor_CheckedChanged(null, null);
+            }
+            ControlRabtn(iCopterType);
 
             #endregion
-
-            this.BackColor = System.Drawing.Color.Teal;
             DoChange((Frame) Enum.Parse(typeof (Frame), MainV2.comPort.MAV.param["FRAME"].ToString()));
         }
 
@@ -327,6 +344,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             else  
                 CustomMessageBox.Show(string.Format(Strings.CopterTypeSetFailed, "CopterType"), Strings.CopterTypeSelected,
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
         }
 
         private void RadbtnFourRotor_CheckedChanged(object sender, EventArgs e)
@@ -338,8 +356,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
                 this.pictureBoxWithPseudoOpacity2.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Teal;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
             }
         }
 
@@ -351,9 +369,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction4;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
                 this.pictureBoxWithPseudoOpacity1.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
             } 
         }
 
@@ -365,8 +383,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lblText1.Text = Strings.CopterTypeInstruction5;
                 this.lblText3.Text = Strings.CopterTypeInstruction2;
                 this.lblText4.Text = Strings.CopterTypeInstruction3;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Teal;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Teal;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
                 this.pictureBoxWithPseudoOpacity3.BackColor = Color.Aqua;
             }
         }
@@ -386,19 +404,19 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.rbtn8.Enabled = true;
 
 
-            if (motormax == 4)
+            if (motormax == 1)
             {
                 this.rbtn5.Enabled = false;
                 this.rbtn6.Enabled = false;
                 this.rbtn7.Enabled = false;
                 this.rbtn8.Enabled = false;
             }
-            else if (motormax == 6)
+            else if (motormax == 2)
             {
                 this.rbtn7.Enabled = false;
                 this.rbtn8.Enabled = false;
             }
-            else if (motormax == 8)
+            else if (motormax == 3)
             {
 
             }

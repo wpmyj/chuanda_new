@@ -54,9 +54,9 @@ namespace ByAeroBeHero
         public void ResetColor()
         {
             if (initcolor.HasValue)
-                Color = initcolor.Value;
+                Color = Color.Transparent;
             else
-                Color = Color.White;
+                Color = Color.Transparent;
         }
 
         public GMapMarkerRect(PointLatLng p)
@@ -79,7 +79,7 @@ namespace ByAeroBeHero
 
             // if we have drawn it, then keep that color
             if (!initcolor.HasValue)
-                Color = Color.White;
+                Color = Color.Transparent;
 
             // undo autochange in mouse over
             //if (Pen.Color == Color.Blue)

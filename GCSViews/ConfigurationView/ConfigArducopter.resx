@@ -123,10 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
@@ -148,10 +151,16 @@
     <value>0</value>
   </data>
   <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 4</value>
+    <value>1, 5</value>
+  </data>
+  <data name="groupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -181,10 +190,13 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_lockrollpitch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 20</value>
+    <value>11, 25</value>
+  </data>
+  <data name="CHK_lockrollpitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CHK_lockrollpitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 16</value>
+    <value>237, 19</value>
   </data>
   <data name="CHK_lockrollpitch.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -211,10 +223,13 @@
     <value>False</value>
   </data>
   <data name="THR_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 52</value>
+    <value>154, 65</value>
+  </data>
+  <data name="THR_ALT_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="THR_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>101, 25</value>
   </data>
   <data name="THR_ALT_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -223,7 +238,7 @@
     <value>THR_ALT_P</value>
   </data>
   <data name="&gt;&gt;THR_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;THR_ALT_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -241,10 +256,13 @@
     <value>NoControl</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
+    <value>17, 38</value>
+  </data>
+  <data name="label33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 12</value>
+    <value>115, 15</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -268,10 +286,13 @@
     <value>False</value>
   </data>
   <data name="WPNAV_LOIT_SPEED.Location" type="System.Drawing.Point, System.Drawing">
-    <value>549, 28</value>
+    <value>734, 35</value>
+  </data>
+  <data name="WPNAV_LOIT_SPEED.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="WPNAV_LOIT_SPEED.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="WPNAV_LOIT_SPEED.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -280,7 +301,7 @@
     <value>WPNAV_LOIT_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -292,10 +313,13 @@
     <value>False</value>
   </data>
   <data name="WPNAV_SPEED_UP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 28</value>
+    <value>420, 35</value>
+  </data>
+  <data name="WPNAV_SPEED_UP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="WPNAV_SPEED_UP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="WPNAV_SPEED_UP.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -304,7 +328,7 @@
     <value>WPNAV_SPEED_UP</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -316,10 +340,13 @@
     <value>False</value>
   </data>
   <data name="WPNAV_SPEED_DN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 28</value>
+    <value>577, 35</value>
+  </data>
+  <data name="WPNAV_SPEED_DN.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="WPNAV_SPEED_DN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="WPNAV_SPEED_DN.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -328,7 +355,7 @@
     <value>WPNAV_SPEED_DN</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -340,10 +367,13 @@
     <value>False</value>
   </data>
   <data name="CH8_OPT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 129</value>
+    <value>154, 161</value>
+  </data>
+  <data name="CH8_OPT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CH8_OPT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 23</value>
   </data>
   <data name="CH8_OPT.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -352,7 +382,7 @@
     <value>CH8_OPT</value>
   </data>
   <data name="&gt;&gt;CH8_OPT.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CH8_OPT.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -370,10 +400,13 @@
     <value>NoControl</value>
   </data>
   <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 6</value>
+    <value>41, 8</value>
+  </data>
+  <data name="label34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+    <value>67, 15</value>
   </data>
   <data name="label34.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -400,10 +433,13 @@
     <value>NoControl</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 4</value>
+    <value>449, 5</value>
+  </data>
+  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
+    <value>91, 20</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -430,10 +466,13 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 4</value>
+    <value>761, 5</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 17</value>
+    <value>96, 21</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -457,10 +496,13 @@
     <value>False</value>
   </data>
   <data name="WPNAV_RADIUS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 28</value>
+    <value>263, 35</value>
+  </data>
+  <data name="WPNAV_RADIUS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="WPNAV_RADIUS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="WPNAV_RADIUS.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -469,7 +511,7 @@
     <value>WPNAV_RADIUS</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -484,10 +526,13 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 4</value>
+    <value>159, 5</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
+    <value>91, 20</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -511,10 +556,13 @@
     <value>False</value>
   </data>
   <data name="WPNAV_SPEED.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 28</value>
+    <value>154, 35</value>
+  </data>
+  <data name="WPNAV_SPEED.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="WPNAV_SPEED.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 21</value>
+    <value>101, 25</value>
   </data>
   <data name="WPNAV_SPEED.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -523,7 +571,7 @@
     <value>WPNAV_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -538,10 +586,13 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 4</value>
+    <value>292, 5</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
+    <value>91, 20</value>
   </data>
   <data name="label15.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -565,10 +616,13 @@
     <value>False</value>
   </data>
   <data name="TUNE_HIGH.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 75</value>
+    <value>577, 94</value>
+  </data>
+  <data name="TUNE_HIGH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="TUNE_HIGH.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 21</value>
+    <value>61, 25</value>
   </data>
   <data name="TUNE_HIGH.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -577,7 +631,7 @@
     <value>TUNE_HIGH</value>
   </data>
   <data name="&gt;&gt;TUNE_HIGH.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TUNE_HIGH.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -589,10 +643,13 @@
     <value>False</value>
   </data>
   <data name="TUNE_LOW.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 75</value>
+    <value>420, 94</value>
+  </data>
+  <data name="TUNE_LOW.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="TUNE_LOW.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 21</value>
+    <value>68, 25</value>
   </data>
   <data name="TUNE_LOW.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -601,7 +658,7 @@
     <value>TUNE_LOW</value>
   </data>
   <data name="&gt;&gt;TUNE_LOW.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TUNE_LOW.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -616,10 +673,13 @@
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 4</value>
+    <value>606, 5</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
+    <value>91, 20</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -649,10 +709,13 @@
     <value>NoControl</value>
   </data>
   <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 54</value>
+    <value>33, 68</value>
+  </data>
+  <data name="label36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>83, 15</value>
   </data>
   <data name="label36.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -682,10 +745,13 @@
     <value>NoControl</value>
   </data>
   <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 80</value>
+    <value>37, 100</value>
+  </data>
+  <data name="label37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
+    <value>75, 15</value>
   </data>
   <data name="label37.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -715,10 +781,13 @@
     <value>NoControl</value>
   </data>
   <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 107</value>
+    <value>37, 133</value>
+  </data>
+  <data name="label38.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
+    <value>75, 15</value>
   </data>
   <data name="label38.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -748,10 +817,13 @@
     <value>NoControl</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 132</value>
+    <value>37, 165</value>
+  </data>
+  <data name="label39.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
+    <value>75, 15</value>
   </data>
   <data name="label39.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -781,10 +853,13 @@
     <value>NoControl</value>
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 80</value>
+    <value>319, 100</value>
+  </data>
+  <data name="label41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+    <value>37, 15</value>
   </data>
   <data name="label41.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -808,10 +883,13 @@
     <value>False</value>
   </data>
   <data name="CH7_OPT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 103</value>
+    <value>154, 129</value>
+  </data>
+  <data name="CH7_OPT.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="CH7_OPT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 23</value>
   </data>
   <data name="CH7_OPT.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -820,7 +898,7 @@
     <value>CH7_OPT</value>
   </data>
   <data name="&gt;&gt;CH7_OPT.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CH7_OPT.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -832,10 +910,13 @@
     <value>False</value>
   </data>
   <data name="TUNE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 75</value>
+    <value>154, 94</value>
+  </data>
+  <data name="TUNE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="TUNE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 20</value>
+    <value>100, 23</value>
   </data>
   <data name="TUNE.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -844,7 +925,7 @@
     <value>TUNE</value>
   </data>
   <data name="&gt;&gt;TUNE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TUNE.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -853,13 +934,16 @@
     <value>22</value>
   </data>
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 20</value>
+    <value>11, 25</value>
+  </data>
+  <data name="tableLayoutPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>667, 151</value>
+    <value>889, 189</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -877,13 +961,19 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="THR_ALT_P" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_LOIT_SPEED" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_SPEED_UP" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_SPEED_DN" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="CH8_OPT" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_RADIUS" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_SPEED" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TUNE_HIGH" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="TUNE_LOW" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="CH7_OPT" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TUNE" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16.95514,Percent,12.36312,Percent,17.67043,Percent,17.67043,Percent,17.67043,Percent,17.67043" /&gt;&lt;Rows Styles="Percent,25,Percent,24.03846,Percent,23.07692,Percent,27.88462,Absolute,26,Absolute,24,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="THR_ALT_P" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label33" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_LOIT_SPEED" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_SPEED_UP" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_SPEED_DN" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="CH8_OPT" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label34" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label27" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label9" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_RADIUS" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label16" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="WPNAV_SPEED" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label15" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TUNE_HIGH" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="TUNE_LOW" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label13" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="label36" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label37" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label38" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label39" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label41" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="CH7_OPT" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TUNE" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,16.95514,Percent,12.36312,Percent,17.67043,Percent,17.67043,Percent,17.67043,Percent,17.67043" /&gt;&lt;Rows Styles="Percent,25,Percent,24.03846,Percent,23.07692,Percent,27.88462,Absolute,32,Absolute,30,Absolute,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 305</value>
+    <value>25, 381</value>
+  </data>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>719, 178</value>
+    <value>959, 222</value>
   </data>
   <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -907,10 +997,13 @@
     <value>NoControl</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -934,10 +1027,13 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 64</value>
+    <value>8, 80</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -961,10 +1057,13 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 85</value>
+    <value>8, 106</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>87, 15</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -988,10 +1087,13 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 42</value>
+    <value>8, 52</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1015,10 +1117,13 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 20</value>
+    <value>8, 25</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1039,10 +1144,16 @@
     <value>3</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 7</value>
+    <value>4, 9</value>
+  </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -1063,10 +1174,16 @@
     <value>1</value>
   </data>
   <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>919, 460</value>
+    <value>1225, 575</value>
+  </data>
+  <data name="groupBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 10</value>
+    <value>15, 12</value>
   </data>
   <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
@@ -1093,10 +1210,13 @@
     <value>NoControl</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1120,10 +1240,13 @@
     <value>NoControl</value>
   </data>
   <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label35.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1144,10 +1267,16 @@
     <value>0</value>
   </data>
   <data name="groupBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
+    <value>8, 8</value>
+  </data>
+  <data name="groupBox20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox20.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="groupBox20.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -1170,8 +1299,14 @@
   <data name="groupBox19.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="groupBox19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox19.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="groupBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 11</value>
+    <value>13, 14</value>
   </data>
   <data name="groupBox19.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1195,10 +1330,13 @@
     <value>NoControl</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 17</value>
+    <value>13, 21</value>
+  </data>
+  <data name="label42.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="label42.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1219,10 +1357,16 @@
     <value>0</value>
   </data>
   <data name="groupBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 466</value>
+    <value>1213, 582</value>
+  </data>
+  <data name="groupBox21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox21.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="groupBox21.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1246,10 +1390,13 @@
     <value>NoControl</value>
   </data>
   <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label46.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label46.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1273,10 +1420,13 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 58</value>
+    <value>8, 72</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1300,10 +1450,13 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 80</value>
+    <value>8, 100</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>87, 15</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1327,10 +1480,13 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
+    <value>8, 46</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1354,10 +1510,13 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1381,10 +1540,13 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 103</value>
+    <value>8, 129</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 12</value>
+    <value>91, 15</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1408,10 +1570,13 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 58</value>
+    <value>8, 72</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -1435,10 +1600,13 @@
     <value>NoControl</value>
   </data>
   <data name="label84.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 79</value>
+    <value>8, 99</value>
+  </data>
+  <data name="label84.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label84.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>87, 15</value>
   </data>
   <data name="label84.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1462,10 +1630,13 @@
     <value>NoControl</value>
   </data>
   <data name="label86.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
+    <value>8, 46</value>
+  </data>
+  <data name="label86.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label86.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label86.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1489,10 +1660,13 @@
     <value>NoControl</value>
   </data>
   <data name="label87.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label87.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label87.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label87.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1513,10 +1687,16 @@
     <value>4</value>
   </data>
   <data name="groupBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 115</value>
+    <value>11, 144</value>
+  </data>
+  <data name="groupBox24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox24.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 126</value>
+    <value>227, 158</value>
   </data>
   <data name="groupBox24.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1539,8 +1719,14 @@
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 1</value>
   </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 10</value>
+    <value>21, 12</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -1561,10 +1747,16 @@
     <value>2</value>
   </data>
   <data name="groupBox22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 2</value>
+    <value>3, 2</value>
+  </data>
+  <data name="groupBox22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox22.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 11</value>
+    <value>19, 14</value>
   </data>
   <data name="groupBox22.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1588,10 +1780,13 @@
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 104</value>
+    <value>8, 130</value>
+  </data>
+  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 12</value>
+    <value>91, 15</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -1615,10 +1810,13 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 58</value>
+    <value>8, 72</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1642,10 +1840,13 @@
     <value>NoControl</value>
   </data>
   <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 80</value>
+    <value>8, 100</value>
+  </data>
+  <data name="label47.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>87, 15</value>
   </data>
   <data name="label47.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1669,10 +1870,13 @@
     <value>NoControl</value>
   </data>
   <data name="label77.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 37</value>
+    <value>8, 46</value>
+  </data>
+  <data name="label77.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label77.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label77.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1696,10 +1900,13 @@
     <value>NoControl</value>
   </data>
   <data name="label82.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 15</value>
+    <value>8, 19</value>
+  </data>
+  <data name="label82.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label82.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label82.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1720,10 +1927,16 @@
     <value>4</value>
   </data>
   <data name="groupBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>914, 462</value>
+    <value>1219, 578</value>
+  </data>
+  <data name="groupBox23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox23.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 10</value>
+    <value>21, 12</value>
   </data>
   <data name="groupBox23.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -1747,10 +1960,16 @@
     <value>11</value>
   </data>
   <data name="groupBox25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 466</value>
+    <value>1213, 582</value>
+  </data>
+  <data name="groupBox25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox25.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="groupBox25.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1780,10 +1999,13 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 142</value>
+    <value>4, 178</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 12</value>
+    <value>68, 15</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1813,10 +2035,13 @@
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 85</value>
+    <value>31, 107</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label17.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -1843,10 +2068,13 @@
     <value>NoControl</value>
   </data>
   <data name="label88.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 112</value>
+    <value>7, 140</value>
+  </data>
+  <data name="label88.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label88.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 14</value>
+    <value>61, 18</value>
   </data>
   <data name="label88.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1876,10 +2104,13 @@
     <value>NoControl</value>
   </data>
   <data name="label90.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 57</value>
+    <value>31, 72</value>
+  </data>
+  <data name="label90.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label90.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 12</value>
+    <value>13, 15</value>
   </data>
   <data name="label90.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1906,10 +2137,13 @@
     <value>NoControl</value>
   </data>
   <data name="label91.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 29</value>
+    <value>28, 37</value>
+  </data>
+  <data name="label91.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label91.Size" type="System.Drawing.Size, System.Drawing">
-    <value>14, 12</value>
+    <value>19, 15</value>
   </data>
   <data name="label91.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1945,10 +2179,13 @@
     <value>False</value>
   </data>
   <data name="HLD_LAT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 23</value>
+    <value>519, 30</value>
+  </data>
+  <data name="HLD_LAT_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="HLD_LAT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="HLD_LAT_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1957,7 +2194,7 @@
     <value>HLD_LAT_P</value>
   </data>
   <data name="&gt;&gt;HLD_LAT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;HLD_LAT_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1972,10 +2209,13 @@
     <value>False</value>
   </data>
   <data name="STB_YAW_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 23</value>
+    <value>355, 30</value>
+  </data>
+  <data name="STB_YAW_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="STB_YAW_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="STB_YAW_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1984,7 +2224,7 @@
     <value>STB_YAW_P</value>
   </data>
   <data name="&gt;&gt;STB_YAW_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;STB_YAW_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -1999,10 +2239,13 @@
     <value>False</value>
   </data>
   <data name="STB_PIT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 23</value>
+    <value>192, 30</value>
+  </data>
+  <data name="STB_PIT_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="STB_PIT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="STB_PIT_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2011,7 +2254,7 @@
     <value>STB_PIT_P</value>
   </data>
   <data name="&gt;&gt;STB_PIT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;STB_PIT_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2029,10 +2272,13 @@
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 3</value>
+    <value>532, 4</value>
+  </data>
+  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
+    <value>77, 15</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2062,10 +2308,13 @@
     <value>NoControl</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 3</value>
+    <value>366, 4</value>
+  </data>
+  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>83, 15</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2095,10 +2344,13 @@
     <value>NoControl</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 3</value>
+    <value>203, 4</value>
+  </data>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>83, 15</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2128,10 +2380,13 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 3</value>
+    <value>40, 4</value>
+  </data>
+  <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>83, 15</value>
   </data>
   <data name="label19.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2152,13 +2407,16 @@
     <value>6</value>
   </data>
   <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 20</value>
+    <value>11, 25</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 49</value>
+    <value>653, 61</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -2185,10 +2443,13 @@
     <value>False</value>
   </data>
   <data name="STB_RLL_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, -27</value>
+    <value>11, -34</value>
+  </data>
+  <data name="STB_RLL_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="STB_RLL_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="STB_RLL_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2197,7 +2458,7 @@
     <value>STB_RLL_P</value>
   </data>
   <data name="&gt;&gt;STB_RLL_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;STB_RLL_P.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -2206,10 +2467,16 @@
     <value>1</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 3</value>
+    <value>25, 4</value>
+  </data>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>719, 80</value>
+    <value>959, 100</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -2236,10 +2503,13 @@
     <value>False</value>
   </data>
   <data name="THR_RATE_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>485, 24</value>
+    <value>650, 31</value>
+  </data>
+  <data name="THR_RATE_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="THR_RATE_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="THR_RATE_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2248,7 +2518,7 @@
     <value>THR_RATE_P</value>
   </data>
   <data name="&gt;&gt;THR_RATE_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;THR_RATE_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2260,10 +2530,13 @@
     <value>False</value>
   </data>
   <data name="THR_ACCEL_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 80</value>
+    <value>536, 101</value>
+  </data>
+  <data name="THR_ACCEL_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="THR_ACCEL_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="THR_ACCEL_D.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2272,7 +2545,7 @@
     <value>THR_ACCEL_D</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_D.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2284,10 +2557,13 @@
     <value>False</value>
   </data>
   <data name="LOITER_LAT_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 80</value>
+    <value>422, 101</value>
+  </data>
+  <data name="LOITER_LAT_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="LOITER_LAT_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="LOITER_LAT_D.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2296,7 +2572,7 @@
     <value>LOITER_LAT_D</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_D.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2308,10 +2584,13 @@
     <value>False</value>
   </data>
   <data name="THR_ACCEL_IMAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 108</value>
+    <value>536, 136</value>
+  </data>
+  <data name="THR_ACCEL_IMAX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="THR_ACCEL_IMAX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="THR_ACCEL_IMAX.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -2320,7 +2599,7 @@
     <value>THR_ACCEL_IMAX</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_IMAX.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2332,10 +2611,13 @@
     <value>False</value>
   </data>
   <data name="LOITER_LAT_IMAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 108</value>
+    <value>422, 136</value>
+  </data>
+  <data name="LOITER_LAT_IMAX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="LOITER_LAT_IMAX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="LOITER_LAT_IMAX.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2344,7 +2626,7 @@
     <value>LOITER_LAT_IMAX</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_IMAX.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2356,10 +2638,13 @@
     <value>False</value>
   </data>
   <data name="RATE_YAW_FF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 136</value>
+    <value>308, 171</value>
+  </data>
+  <data name="RATE_YAW_FF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_YAW_FF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_YAW_FF.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2368,7 +2653,7 @@
     <value>RATE_YAW_FF</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_FF.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_FF.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2380,10 +2665,13 @@
     <value>False</value>
   </data>
   <data name="RATE_PIT_FF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 136</value>
+    <value>194, 171</value>
+  </data>
+  <data name="RATE_PIT_FF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_PIT_FF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_PIT_FF.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2392,7 +2680,7 @@
     <value>RATE_PIT_FF</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_FF.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_FF.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2404,10 +2692,13 @@
     <value>False</value>
   </data>
   <data name="THR_ACCEL_I.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 52</value>
+    <value>536, 66</value>
+  </data>
+  <data name="THR_ACCEL_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="THR_ACCEL_I.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="THR_ACCEL_I.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2416,7 +2707,7 @@
     <value>THR_ACCEL_I</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_I.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2428,10 +2719,13 @@
     <value>False</value>
   </data>
   <data name="RATE_RLL_IMAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 108</value>
+    <value>80, 136</value>
+  </data>
+  <data name="RATE_RLL_IMAX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_RLL_IMAX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_RLL_IMAX.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2440,7 +2734,7 @@
     <value>RATE_RLL_IMAX</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_IMAX.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2452,10 +2746,13 @@
     <value>False</value>
   </data>
   <data name="RATE_YAW_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 80</value>
+    <value>308, 101</value>
+  </data>
+  <data name="RATE_YAW_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_YAW_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_YAW_D.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2464,7 +2761,7 @@
     <value>RATE_YAW_D</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_D.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2476,10 +2773,13 @@
     <value>False</value>
   </data>
   <data name="THR_ACCEL_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 24</value>
+    <value>536, 31</value>
+  </data>
+  <data name="THR_ACCEL_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="THR_ACCEL_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="THR_ACCEL_P.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2488,7 +2788,7 @@
     <value>THR_ACCEL_P</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;THR_ACCEL_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2500,10 +2800,13 @@
     <value>False</value>
   </data>
   <data name="LOITER_LAT_I.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 52</value>
+    <value>422, 66</value>
+  </data>
+  <data name="LOITER_LAT_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="LOITER_LAT_I.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="LOITER_LAT_I.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2512,7 +2815,7 @@
     <value>LOITER_LAT_I</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_I.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2524,10 +2827,13 @@
     <value>False</value>
   </data>
   <data name="RATE_YAW_IMAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 108</value>
+    <value>308, 136</value>
+  </data>
+  <data name="RATE_YAW_IMAX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_YAW_IMAX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_YAW_IMAX.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2536,7 +2842,7 @@
     <value>RATE_YAW_IMAX</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_IMAX.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2548,10 +2854,13 @@
     <value>False</value>
   </data>
   <data name="RATE_RLL_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 80</value>
+    <value>80, 101</value>
+  </data>
+  <data name="RATE_RLL_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_RLL_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_RLL_D.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2560,7 +2869,7 @@
     <value>RATE_RLL_D</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_D.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2572,10 +2881,13 @@
     <value>False</value>
   </data>
   <data name="LOITER_LAT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 24</value>
+    <value>422, 31</value>
+  </data>
+  <data name="LOITER_LAT_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="LOITER_LAT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="LOITER_LAT_P.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2584,7 +2896,7 @@
     <value>LOITER_LAT_P</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;LOITER_LAT_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2596,10 +2908,13 @@
     <value>False</value>
   </data>
   <data name="RATE_PIT_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 80</value>
+    <value>194, 101</value>
+  </data>
+  <data name="RATE_PIT_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_PIT_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_PIT_D.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2608,7 +2923,7 @@
     <value>RATE_PIT_D</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_D.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2620,10 +2935,13 @@
     <value>False</value>
   </data>
   <data name="RATE_PIT_IMAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 108</value>
+    <value>194, 136</value>
+  </data>
+  <data name="RATE_PIT_IMAX.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_PIT_IMAX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_PIT_IMAX.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2632,7 +2950,7 @@
     <value>RATE_PIT_IMAX</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_IMAX.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2644,10 +2962,13 @@
     <value>False</value>
   </data>
   <data name="RATE_RLL_FF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 136</value>
+    <value>80, 171</value>
+  </data>
+  <data name="RATE_RLL_FF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_RLL_FF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_RLL_FF.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2656,7 +2977,7 @@
     <value>RATE_RLL_FF</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_FF.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_FF.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2668,10 +2989,13 @@
     <value>False</value>
   </data>
   <data name="RATE_YAW_I.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 52</value>
+    <value>308, 66</value>
+  </data>
+  <data name="RATE_YAW_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_YAW_I.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_YAW_I.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2680,7 +3004,7 @@
     <value>RATE_YAW_I</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_I.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2698,10 +3022,13 @@
     <value>NoControl</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 4</value>
+    <value>548, 6</value>
+  </data>
+  <data name="label32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
+    <value>82, 15</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -2731,10 +3058,13 @@
     <value>NoControl</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 4</value>
+    <value>441, 6</value>
+  </data>
+  <data name="label30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+    <value>67, 15</value>
   </data>
   <data name="label30.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2758,10 +3088,13 @@
     <value>False</value>
   </data>
   <data name="RATE_YAW_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 24</value>
+    <value>308, 31</value>
+  </data>
+  <data name="RATE_YAW_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_YAW_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_YAW_P.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2770,7 +3103,7 @@
     <value>RATE_YAW_P</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2788,10 +3121,13 @@
     <value>NoControl</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 4</value>
+    <value>327, 6</value>
+  </data>
+  <data name="label29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+    <value>67, 15</value>
   </data>
   <data name="label29.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -2815,10 +3151,13 @@
     <value>False</value>
   </data>
   <data name="RATE_PIT_I.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 52</value>
+    <value>194, 66</value>
+  </data>
+  <data name="RATE_PIT_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_PIT_I.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_PIT_I.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2827,7 +3166,7 @@
     <value>RATE_PIT_I</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_I.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2839,10 +3178,13 @@
     <value>False</value>
   </data>
   <data name="RATE_RLL_I.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 52</value>
+    <value>80, 66</value>
+  </data>
+  <data name="RATE_RLL_I.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_RLL_I.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_RLL_I.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2851,7 +3193,7 @@
     <value>RATE_RLL_I</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_I.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2869,10 +3211,13 @@
     <value>NoControl</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 4</value>
+    <value>213, 6</value>
+  </data>
+  <data name="label28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+    <value>67, 15</value>
   </data>
   <data name="label28.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -2896,10 +3241,13 @@
     <value>False</value>
   </data>
   <data name="RATE_PIT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 24</value>
+    <value>194, 31</value>
+  </data>
+  <data name="RATE_PIT_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_PIT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_PIT_P.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2908,7 +3256,7 @@
     <value>RATE_PIT_P</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2920,10 +3268,13 @@
     <value>False</value>
   </data>
   <data name="RATE_RLL_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>60, 24</value>
+    <value>80, 31</value>
+  </data>
+  <data name="RATE_RLL_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="RATE_RLL_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>104, 25</value>
   </data>
   <data name="RATE_RLL_P.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2932,7 +3283,7 @@
     <value>RATE_RLL_P</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.1.5819.41389, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5957.22651, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_P.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -2950,10 +3301,13 @@
     <value>NoControl</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 4</value>
+    <value>99, 6</value>
+  </data>
+  <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+    <value>67, 15</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -2983,10 +3337,13 @@
     <value>NoControl</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 4</value>
+    <value>669, 6</value>
+  </data>
+  <data name="label26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
+    <value>67, 15</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -3007,13 +3364,16 @@
     <value>34</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 42</value>
+    <value>11, 52</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>570, 163</value>
+    <value>760, 204</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -3034,10 +3394,16 @@
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="THR_RATE_P" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="THR_ACCEL_D" Row="3" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="LOITER_LAT_D" Row="3" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="THR_ACCEL_IMAX" Row="4" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="LOITER_LAT_IMAX" Row="4" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="RATE_YAW_FF" Row="5" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="RATE_PIT_FF" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="THR_ACCEL_I" Row="2" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="RATE_RLL_IMAX" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="RATE_YAW_D" Row="3" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="THR_ACCEL_P" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="LOITER_LAT_I" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="RATE_YAW_IMAX" Row="4" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="RATE_RLL_D" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="LOITER_LAT_P" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="RATE_PIT_D" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RATE_PIT_IMAX" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RATE_RLL_FF" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="RATE_YAW_I" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label32" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="label30" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="RATE_YAW_P" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label29" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="RATE_PIT_I" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RATE_RLL_I" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label28" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RATE_PIT_P" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="RATE_RLL_P" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label91" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label12" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label90" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label17" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label88" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label24" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label26" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,10,Percent,15,Percent,15,Percent,15,Percent,15,Percent,15,Percent,15" /&gt;&lt;Rows Styles="Percent,13.49082,Percent,17.30184,Percent,17.30184,Percent,17.30184,Percent,17.30184,Percent,17.30184" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 89</value>
+    <value>25, 111</value>
+  </data>
+  <data name="groupBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>719, 209</value>
+    <value>959, 261</value>
   </data>
   <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -3058,10 +3424,13 @@
     <value>0</value>
   </data>
   <data name="myLabel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>914, 454</value>
+    <value>1219, 568</value>
+  </data>
+  <data name="myLabel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="myLabel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="myLabel4.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -3088,13 +3457,16 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_refreshpart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>760, 205</value>
+    <value>1013, 256</value>
+  </data>
+  <data name="BUT_refreshpart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_refreshpart.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 14, 0, 0</value>
+    <value>0, 18, 0, 0</value>
   </data>
   <data name="BUT_refreshpart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 18</value>
+    <value>137, 22</value>
   </data>
   <data name="BUT_refreshpart.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -3118,13 +3490,16 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_rerequestparams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>760, 274</value>
+    <value>1013, 342</value>
+  </data>
+  <data name="BUT_rerequestparams.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_rerequestparams.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 14, 0, 0</value>
+    <value>0, 18, 0, 0</value>
   </data>
   <data name="BUT_rerequestparams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 18</value>
+    <value>137, 22</value>
   </data>
   <data name="BUT_rerequestparams.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -3151,10 +3526,13 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_writePIDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>760, 238</value>
+    <value>1013, 298</value>
+  </data>
+  <data name="BUT_writePIDS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_writePIDS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 18</value>
+    <value>137, 22</value>
   </data>
   <data name="BUT_writePIDS.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -3175,10 +3553,13 @@
     <value>6</value>
   </data>
   <data name="myLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 454</value>
+    <value>1213, 568</value>
+  </data>
+  <data name="myLabel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="myLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="myLabel3.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -3202,10 +3583,13 @@
     <value>7</value>
   </data>
   <data name="myLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>910, 454</value>
+    <value>1213, 568</value>
+  </data>
+  <data name="myLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="myLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="myLabel2.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -3229,10 +3613,13 @@
     <value>8</value>
   </data>
   <data name="myLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>914, 454</value>
+    <value>1219, 568</value>
+  </data>
+  <data name="myLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="myLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
+    <value>13, 12</value>
   </data>
   <data name="myLabel1.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -3262,13 +3649,16 @@
     <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+    <value>8, 15</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1070, 490</value>
+    <value>1427, 612</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>

@@ -59,6 +59,7 @@ namespace ByAeroBeHero.Controls
             form.Text = title;
             label.Text = promptText;
             textBox.Text = value;
+            textBox.ForeColor = Color.Black;
 
             buttonOk.Text = "确定";
             buttonCancel.Text = "取消";

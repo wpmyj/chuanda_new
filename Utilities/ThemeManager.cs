@@ -631,7 +631,7 @@ mc:Ignorable=""d""
             {
                 BGColor = Color.Teal; // background
                 ControlBGColor = Color.FromArgb((int)0xffe2e2e2); // editable bg color
-                TextColor = Color.White;
+                TextColor = Color.Black;
                 ButBG = Color.FromArgb((int)0xffffff99);
             }
 
@@ -674,7 +674,7 @@ mc:Ignorable=""d""
                 else if (ctl.GetType() == typeof(TextBox))
                 {
                     ctl.BackColor = System.Drawing.Color.White;
-                    ctl.ForeColor = TextColor;
+                    ctl.ForeColor = Color.Black;
                     TextBox txt = (TextBox)ctl;
                     txt.BorderStyle = BorderStyle.None;
                 }
@@ -740,7 +740,7 @@ mc:Ignorable=""d""
                 else if (ctl.GetType() == typeof(RichTextBox))
                 {
                     ctl.BackColor = ControlBGColor;
-                    ctl.ForeColor = TextColor;
+                    ctl.ForeColor = Color.Black;
                     RichTextBox txtr = (RichTextBox)ctl;
                     txtr.BorderStyle = BorderStyle.None;
                 }
@@ -891,7 +891,7 @@ mc:Ignorable=""d""
                 else if (ctl.GetType() == typeof(TextBox))
                 {
                     ctl.BackColor = System.Drawing.Color.White;
-                    ctl.ForeColor = TextColor;
+                    ctl.ForeColor = Color.Black;
                     TextBox txt = (TextBox)ctl;
                     txt.BorderStyle = BorderStyle.None;
                 }

@@ -115,7 +115,11 @@ namespace ByAeroBeHero.Controls
                 ShowDoneWithError(e, doWorkArgs.ErrorMessage);
                 //this.Close();
                 Running = false;
-                DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。" + "\n" + "2.请检查串口是否选择正确。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (this.Tag !="WayPoints")
+                {
+                    DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。" + "\n" + "2.请检查串口是否选择正确。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
                 return;
             }
 

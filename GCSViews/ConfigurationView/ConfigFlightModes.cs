@@ -304,6 +304,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CMB_fmode4.BackColor = Color.Violet;
                 label1.Text = "中档";
+                label1.ForeColor = Color.Violet;
                 CMB_fmode1.Visible = false;
                 CMB_fmode4.Visible = true;
                 CMB_fmode6.Visible = false;
@@ -318,6 +319,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CMB_fmode6.BackColor = Color.GreenYellow;
                 label1.Text = "高档";
+                label1.ForeColor = Color.GreenYellow;
                 CMB_fmode1.Visible = false;
                 CMB_fmode4.Visible = false;
                 CMB_fmode6.Visible = true;
@@ -332,6 +334,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CMB_fmode1.BackColor = Color.Silver;
                 label1.Text = "低档";
+                label1.ForeColor = Color.Silver;
                 CMB_fmode1.Visible = true;
                 CMB_fmode4.Visible = false;
                 CMB_fmode6.Visible = false;

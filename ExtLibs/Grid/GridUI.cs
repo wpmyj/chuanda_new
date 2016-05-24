@@ -1191,14 +1191,14 @@ namespace ByAeroBeHero
                 TXT_headinghold.Enabled = true;
                 CHK_copter_headingholdlock.Enabled = true;
                 CHK_copter_headingholdlock.Checked = false;
-                BUT_headingholdplus.Enabled = true;
+                //BUT_headingholdplus.Enabled = true;
                 BUT_headingholdminus.Enabled = true;
             }
             else
             {
                 TXT_headinghold.Enabled = false;
                 CHK_copter_headingholdlock.Enabled = false;
-                BUT_headingholdplus.Enabled = false;
+                //BUT_headingholdplus.Enabled = false;
                 BUT_headingholdminus.Enabled = false;
             }
         }

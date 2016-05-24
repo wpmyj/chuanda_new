@@ -1674,8 +1674,11 @@ namespace ByAeroBeHero.GCSViews
         /// <summary>
         /// Saves a waypoint writer file
         /// </summary>
-        private void savewaypoints(int SplitWP)
+        private void savewaypoints(int SplitWP,string path)
         {
+            string speed = string.Empty;
+            string takeoffhight = string.Empty;
+            string rtlhigh = string.Empty;
             for (int i = 1; i <= SplitWP; i++) 
             {
                 int wpCounts = 0;
@@ -1690,9 +1693,9 @@ namespace ByAeroBeHero.GCSViews
                 
                 //文件开始循环数
                  if (i != 1) { StartPoint = iSplitedWP * (i - 1) + 2; }
-                 
 
-                using (StreamWriter sw = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "\\" + "ByAero" + i.ToString()+".txt"))
+
+                 using (StreamWriter sw = new StreamWriter(path + i.ToString() + ".txt"))
                 {
                     try
                     { 
@@ -1708,8 +1711,8 @@ namespace ByAeroBeHero.GCSViews
 
                         if (i != 1)
                         {
-                            sw.WriteLine("1\t0\t3\t22\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t5.000000\t1");
-                            sw.WriteLine("2\t0\t3\t178\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t1");
+                            sw.WriteLine("1\t0\t3\t22\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t" + takeoffhight + "\t1");
+                            sw.WriteLine("2\t0\t3\t178\t0.000000\t" + speed + "\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t1");
                         }
 
                         int icount;
@@ -1736,6 +1739,21 @@ namespace ByAeroBeHero.GCSViews
                             sw.Write("\t" + 1);
                             sw.WriteLine("");
 
+                            if (i == 1 && mode ==178) 
+                            {
+                                speed = double.Parse(Commands.Rows[a].Cells[Param2.Index].Value.ToString()).ToString("0.000000", new CultureInfo("en-US"));
+                            }
+
+                            if (i == 1 && mode == 22)
+                            {
+                                takeoffhight = (double.Parse(Commands.Rows[a].Cells[Alt.Index].Value.ToString()) / CurrentState.multiplierdist).ToString("0.000000", new CultureInfo("en-US"));
+                            }
+
+                            if (i == 1 && mode == 20)
+                            {
+                                rtlhigh = (double.Parse(Commands.Rows[a].Cells[Alt.Index].Value.ToString()) / CurrentState.multiplierdist).ToString("0.000000", new CultureInfo("en-US"));
+                            }
+
                             icount ++;
 
                             if (i == SplitWP && a == Commands.Rows.Count - 0)
@@ -1754,7 +1772,7 @@ namespace ByAeroBeHero.GCSViews
 
                         if (i != SplitWP) 
                         {
-                            sw.WriteLine(seqtotal.ToString() + "\t0\t3\t20\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t5.000000\t1"); 
+                            sw.WriteLine(seqtotal.ToString() + "\t0\t3\t20\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t0.000000\t" + rtlhigh + "\t1"); 
                         }
                         sw.Close();
 
@@ -1772,14 +1790,27 @@ namespace ByAeroBeHero.GCSViews
             if (DialogResult.Cancel == InputBox.Show("规划区域分割", "请输入平均分割规划区域的数量", ref counts))
                 return;
 
+            string path = string.Empty;  //文件路径
+            SaveFileDialog save = new SaveFileDialog();
+            if (save.ShowDialog() == DialogResult.OK)
+                path = save.FileName;
+
             int countsi = 1;
             if (!int.TryParse(counts, out countsi))
             {
                 MessageBox.Show("输入格式不正确,请重新输入！");
                 return;
             }
+            try
+            {
+                savewaypoints(countsi, path);
+                MessageBox.Show("保存航点成功！");
+            }
+            catch 
+            {
+                
+            }
 
-            savewaypoints(countsi);
             writeKML();
         }
 
@@ -1807,20 +1838,29 @@ namespace ByAeroBeHero.GCSViews
                 }
             }
 
-            ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+            try
             {
-                StartPosition = FormStartPosition.CenterScreen,
-                Text = "接收航点"
-            };
+                ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+                {
+                    StartPosition = FormStartPosition.CenterScreen,
+                    Text = "接收航点",
+                    Tag = "WayPoints"
+                };
 
-            frmProgressReporter.DoWork += getWPs;
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Receiving WP's");
+                frmProgressReporter.DoWork += getWPs;
+                frmProgressReporter.UpdateProgressAndStatus(-1, "Receiving WP's");
 
-            ThemeManager.ApplyThemeTo(frmProgressReporter);
+                ThemeManager.ApplyThemeTo(frmProgressReporter);
 
-            frmProgressReporter.RunBackgroundOperationAsync();
+                frmProgressReporter.RunBackgroundOperationAsync();
 
-            frmProgressReporter.Dispose();
+                frmProgressReporter.Dispose();
+            }
+            catch 
+            {
+                CustomMessageBox.Show("读取航点失败！");
+            }
+           
         }
 
         void getWPs(object sender, ProgressWorkerEventArgs e, object passdata = null)
@@ -1952,23 +1992,32 @@ namespace ByAeroBeHero.GCSViews
                 }
             }
 
-            ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+            try
             {
-                StartPosition = FormStartPosition.CenterScreen,
-                Text = "发送航点"
-            };
+                ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+                {
+                    StartPosition = FormStartPosition.CenterScreen,
+                    Text = "发送航点",
+                    Tag = "WayPoints"
+                };
 
-            frmProgressReporter.DoWork += saveWPs;
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Sending WP's");
+                frmProgressReporter.DoWork += saveWPs;
+                frmProgressReporter.UpdateProgressAndStatus(-1, "Sending WP's");
 
-            ThemeManager.ApplyThemeTo(frmProgressReporter);
+                ThemeManager.ApplyThemeTo(frmProgressReporter);
 
-            frmProgressReporter.RunBackgroundOperationAsync();
+                frmProgressReporter.RunBackgroundOperationAsync();
 
-            frmProgressReporter.Dispose();
+                frmProgressReporter.Dispose();
 
-            breakploygonsoverlay.Markers.Clear();
-            MainMap.Focus();
+                breakploygonsoverlay.Markers.Clear();
+                MainMap.Focus();
+            }
+            catch 
+            {
+                CustomMessageBox.Show("读取航点失败！");
+            }
+           
 
         }
 
@@ -5321,8 +5370,10 @@ namespace ByAeroBeHero.GCSViews
             double areaha = aream2 * 1e-4;
 
             double areasqf = aream2 * 10.7639;
+
+            double aremu = aream2 * 0.0015; 
             //+ areasqf.ToString("0") + " 平方英尺"； areaa.ToString("0.00") + " 英亩\n\t" + 
-            CustomMessageBox.Show("区域: " + aream2.ToString("0") + " 平方米\n\t" +areaha.ToString("0.00") + " 公顷\n\t" , "区域");
+            CustomMessageBox.Show("区域: " + aream2.ToString("0.00") + " 平方米\n\t" + "      " + aremu.ToString("0.00") + " 亩\n\t", "区域");
         }
 
         private void MainMap_Paint(object sender, PaintEventArgs e)

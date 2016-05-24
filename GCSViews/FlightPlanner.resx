@@ -590,7 +590,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblHAlt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 3</value>
+    <value>392, 3</value>
   </data>
   <data name="lblHAlt.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -623,7 +623,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbljd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 3</value>
+    <value>199, 3</value>
   </data>
   <data name="lbljd.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -656,7 +656,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 3</value>
+    <value>6, 3</value>
   </data>
   <data name="lblwd.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -686,10 +686,10 @@
     <value>False</value>
   </data>
   <data name="TXT_homealt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 4</value>
+    <value>466, 4</value>
   </data>
   <data name="TXT_homealt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 20</value>
+    <value>72, 20</value>
   </data>
   <data name="TXT_homealt.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -713,10 +713,10 @@
     <value>False</value>
   </data>
   <data name="TXT_homelng.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 4</value>
+    <value>273, 4</value>
   </data>
   <data name="TXT_homelng.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 20</value>
+    <value>110, 20</value>
   </data>
   <data name="TXT_homelng.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -740,10 +740,10 @@
     <value>False</value>
   </data>
   <data name="TXT_homelat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 4</value>
+    <value>80, 4</value>
   </data>
   <data name="TXT_homelat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 20</value>
+    <value>110, 20</value>
   </data>
   <data name="TXT_homelat.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1197,7 +1197,7 @@
     <value>WPNAV_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5983.24881, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5988.27592, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1224,7 +1224,7 @@
     <value>WPNAV_RADIUS</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5983.24881, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5988.27592, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1251,7 +1251,7 @@
     <value>WPNAV_SPEED_UP</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5983.24881, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5988.27592, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1278,7 +1278,7 @@
     <value>WPNAV_SPEED_DN</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5983.24881, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5988.27592, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1305,7 +1305,7 @@
     <value>WPNAV_LOIT_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5983.24881, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5988.27592, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -3603,10 +3603,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_quickrtl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1237, 3</value>
+    <value>954, 3</value>
   </data>
   <data name="BUT_quickrtl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 27</value>
+    <value>85, 27</value>
   </data>
   <data name="BUT_quickrtl1.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -3630,10 +3630,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_quickauto1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1007, 3</value>
+    <value>773, 3</value>
   </data>
   <data name="BUT_quickauto1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 27</value>
+    <value>85, 27</value>
   </data>
   <data name="BUT_quickauto1.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -3657,10 +3657,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnLoiterUnlim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1122, 3</value>
+    <value>864, 3</value>
   </data>
   <data name="btnLoiterUnlim.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 27</value>
+    <value>85, 27</value>
   </data>
   <data name="btnLoiterUnlim.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -3684,16 +3684,16 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_clear_track1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1352, 3</value>
+    <value>1045, 3</value>
   </data>
   <data name="BUT_clear_track1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 27</value>
+    <value>85, 27</value>
   </data>
   <data name="BUT_clear_track1.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
   </data>
   <data name="BUT_clear_track1.Text" xml:space="preserve">
-    <value>清楚轨迹</value>
+    <value>清除轨迹</value>
   </data>
   <data name="&gt;&gt;BUT_clear_track1.Name" xml:space="preserve">
     <value>BUT_clear_track1</value>
@@ -3711,10 +3711,10 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_ARM1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>892, 3</value>
+    <value>682, 3</value>
   </data>
   <data name="BUT_ARM1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 27</value>
+    <value>85, 27</value>
   </data>
   <data name="BUT_ARM1.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -3738,7 +3738,7 @@
     <value>NoControl</value>
   </data>
   <data name="myBtnFunction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>666, 3</value>
+    <value>551, 4</value>
   </data>
   <data name="myBtnFunction.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 27</value>
@@ -3774,7 +3774,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>657, 27</value>
+    <value>542, 27</value>
   </data>
   <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>

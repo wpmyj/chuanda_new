@@ -1702,7 +1702,7 @@ namespace ByAeroBeHero.GCSViews
                         sw.WriteLine("By Aero Save Points");
                         try
                         {
-                            sw.WriteLine("0\t1\t0\t16\t0\t0\t0\t0\t" + double.Parse(TXT_homelat.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homelng.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homealt.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t1");
+                            sw.WriteLine("0\t1\t0\t16\t0\t0\t0\t0\t" + double.Parse(TXT_homelat.Text).ToString("0.0000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homelng.Text).ToString("0.0000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homealt.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t1");
                         }
                         catch
                         {
@@ -1733,8 +1733,8 @@ namespace ByAeroBeHero.GCSViews
                             sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Param2.Index].Value.ToString()).ToString("0.000000", new CultureInfo("en-US")));
                             sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Param3.Index].Value.ToString()).ToString("0.000000", new CultureInfo("en-US")));
                             sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Param4.Index].Value.ToString()).ToString("0.000000", new CultureInfo("en-US")));
-                            sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Lat.Index].Value.ToString()).ToString("0.000000", new CultureInfo("en-US")));
-                            sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Lon.Index].Value.ToString()).ToString("0.000000", new CultureInfo("en-US")));
+                            sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Lat.Index].Value.ToString()).ToString("0.0000000", new CultureInfo("en-US")));
+                            sw.Write("\t" + double.Parse(Commands.Rows[a].Cells[Lon.Index].Value.ToString()).ToString("0.0000000", new CultureInfo("en-US")));
                             sw.Write("\t" + (double.Parse(Commands.Rows[a].Cells[Alt.Index].Value.ToString()) / CurrentState.multiplierdist).ToString("0.000000", new CultureInfo("en-US")));
                             sw.Write("\t" + 1);
                             sw.WriteLine("");
@@ -2084,6 +2084,7 @@ namespace ByAeroBeHero.GCSViews
                 {
                     home.id = (byte)MAVLink.MAV_CMD.WAYPOINT;
                     home.lat = (double.Parse(TXT_homelat.Text));
+                    string abcd = TXT_homelng.Text;
                     home.lng = (double.Parse(TXT_homelng.Text));
                     home.alt = (float.Parse(TXT_homealt.Text) / CurrentState.multiplierdist); // use saved home
                 }
@@ -4010,6 +4011,9 @@ namespace ByAeroBeHero.GCSViews
         {
             polygongridmode = false;
             if (drawnpolygon == null)
+                return;
+            //wjch20160527
+            if (CustomMessageBox.Show("确定清除工作区域！", "清除工作区域", MessageBoxButtons.YesNo) == DialogResult.No)
                 return;
             drawnpolygon.Points.Clear();
             drawnpolygonsoverlay.Markers.Clear();
@@ -6215,13 +6219,15 @@ namespace ByAeroBeHero.GCSViews
 
         #region 添加规划显示信息
 
-        public void showFlyInfo(string area, string distance,string strips,string distbetweenlines,string flighttime) 
+        public void showFlyInfo(string area, string distance, string strips, string distbetweenlines, string flighttime, string headinghold) 
         {
+            //wjch20160527 
             lblArea.Text = area;
             lblDistance.Text = distance;
             lblStrips.Text = strips + " 条";
             lblDistbetweenlines.Text = distbetweenlines;
             lblFlighttime.Text = flighttime;
+            lblHeadinghold.Text = headinghold + "度";
         }
 
         private void ClearRouteInfo()
@@ -6657,8 +6663,9 @@ namespace ByAeroBeHero.GCSViews
             breakploygonsoverlay.Markers.Add(
                     new GMapMarkerBreakPt(breakpt)
                     {
+                        //Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString()wjch20160527
                         ToolTipMode = MarkerTooltipMode.OnMouseOver,
-                        ToolTipText = "返航断点" + "\n返航原因: " + Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString(),
+                        ToolTipText = "返航断点" + "\n纬度:" + break_point.lat + "\n经度:" + break_point.lng + "\n高度:" + break_point.alt,
                         Tag = breakploygonsoverlay.Markers.Count,
                         Alt = (int)breakpt.Alt,
                         BreakPointParam1 = break_point.p1
@@ -6784,7 +6791,7 @@ namespace ByAeroBeHero.GCSViews
                         {
                             try
                             {
-                                sw.WriteLine("1\t0\t3\t16\t" + pnt.BreakPointParam1 + "\t0.000000\t0.000000\t0.000000\t" + pnt.Position.Lat.ToString("0.000000", new CultureInfo("en-US")) + "\t" + pnt.Position.Lng.ToString("0.000000", new CultureInfo("en-US")) + "\t" + pnt.Alt.ToString("0.000000", new CultureInfo("en-US")) + "\t1");
+                                sw.WriteLine("1\t0\t3\t16\t" + pnt.BreakPointParam1 + "\t0.000000\t0.000000\t0.000000\t" + pnt.Position.Lat.ToString("0.0000000", new CultureInfo("en-US")) + "\t" + pnt.Position.Lng.ToString("0.0000000", new CultureInfo("en-US")) + "\t" + pnt.Alt.ToString("0.000000", new CultureInfo("en-US")) + "\t1");
                             }
                             catch
                             {

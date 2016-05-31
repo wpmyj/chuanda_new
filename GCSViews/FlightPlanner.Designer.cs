@@ -163,6 +163,8 @@
             this.lblDistbetweenlines = new System.Windows.Forms.Label();
             this.lblFlyTime = new System.Windows.Forms.Label();
             this.lblFlighttime = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblHeadinghold = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
@@ -1062,6 +1064,8 @@
             this.tableLayoutPanel7.Controls.Add(this.lblDistbetweenlines, 3, 1);
             this.tableLayoutPanel7.Controls.Add(this.lblFlyTime, 0, 2);
             this.tableLayoutPanel7.Controls.Add(this.lblFlighttime, 1, 2);
+            this.tableLayoutPanel7.Controls.Add(this.label1, 2, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lblHeadinghold, 3, 2);
             this.tableLayoutPanel7.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             // 
@@ -1129,6 +1133,19 @@
             resources.ApplyResources(this.lblFlighttime, "lblFlighttime");
             this.lblFlighttime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblFlighttime.Name = "lblFlighttime";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.Name = "label1";
+            // 
+            // lblHeadinghold
+            // 
+            resources.ApplyResources(this.lblHeadinghold, "lblHeadinghold");
+            this.lblHeadinghold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblHeadinghold.Name = "lblHeadinghold";
             // 
             // tableLayoutPanel5
             // 
@@ -2133,5 +2150,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHeadinghold;
     }
 }

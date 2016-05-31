@@ -81,6 +81,8 @@
             this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
+            this.backstageViewPageSetParams = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configSetParams1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +119,7 @@
             this.backstageView.Pages.Add(this.backstageViewPagehwbt);
             this.backstageView.Pages.Add(this.backstageViewPageParachute);
             this.backstageView.Pages.Add(this.backstageViewPageinstfw);
+            this.backstageView.Pages.Add(this.backstageViewPageSetParams);
             this.backstageView.UnSelectedTextColor = System.Drawing.Color.White;
             this.backstageView.WidthMenu = 1000;
             // 
@@ -185,6 +188,7 @@
             // 
             resources.ApplyResources(this.configFrameType1, "configFrameType1");
             this.configFrameType1.BackColor = System.Drawing.Color.White;
+            this.configFrameType1.ForeColor = System.Drawing.Color.White;
             this.configFrameType1.Name = "configFrameType1";
             // 
             // backstageViewPageaccel
@@ -514,6 +518,20 @@
             resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
             this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
             // 
+            // backstageViewPageSetParams
+            // 
+            this.backstageViewPageSetParams.Advanced = false;
+            this.backstageViewPageSetParams.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
+            this.backstageViewPageSetParams.LinkText = "飞行参数设置";
+            this.backstageViewPageSetParams.Page = this.configSetParams1;
+            this.backstageViewPageSetParams.Parent = null;
+            this.backstageViewPageSetParams.Show = true;
+            this.backstageViewPageSetParams.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPageSetParams, "backstageViewPageSetParams");
+
+            resources.ApplyResources(this.configSetParams1, "configSetParams1");
+            this.configSetParams1.Name = "configSetParams1";
+            // 
             // InitialSetup
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -555,6 +573,7 @@
         private ConfigurationView.ConfigMount configMount1;
         private ConfigurationView.ConfigMotorTest configMotor1;
         private Antenna.Tracker tracker1;
+        private ConfigurationView.ConfigSetParams configSetParams1;
         private Controls.BackstageView.BackstageViewPage backstageViewPageinstfw;
         private Controls.BackstageView.BackstageViewPage backstageViewPagewizard;
         private Controls.BackstageView.BackstageViewPage backstageViewPagemand;
@@ -585,5 +604,6 @@
         private ConfigurationView.ConfigHWBT configHWBT1;
         private Controls.BackstageView.BackstageViewPage backstageViewPageParachute;
         private ConfigurationView.ConfigHWParachute configHWPa1;
+        private Controls.BackstageView.BackstageViewPage backstageViewPageSetParams;
     }
 }

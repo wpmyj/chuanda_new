@@ -1999,6 +1999,7 @@ Please check the following
 
             req.seq = index;
 
+            log.Info(req.y.ToString() + req.x.ToString());
             return setWP(req);
         }
 

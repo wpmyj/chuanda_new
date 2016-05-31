@@ -48,6 +48,7 @@ namespace ByAeroBeHero.Controls
 
             // default to first item
             this.ParamName = paramname[0];
+
             // set a new item is first item doesnt exist
             foreach (var paramn in paramname)
             {
@@ -119,12 +120,14 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            if (ParamName == "FENCE_ALT_MAX" || ParamName == "FENCE_RADIUS" || ParamName == "RTL_ALT") 
+
+            //|| ParamName == "RTL_ALT"
+            if (ParamName == "FENCE_ALT_MAX" || ParamName == "FENCE_RADIUS" )
             {
                 iSendValue = (float)base.Value * (float)_scale;
                 return;
             }
-                
+    
             string value = base.Text;
             if (decimal.Parse(value) > base.Maximum)
             {

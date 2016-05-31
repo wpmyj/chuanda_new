@@ -365,6 +365,7 @@
     </Compile>
     <Compile Include="Controls\Waypoints\Spline2.cs" />
     <Compile Include="Controls\Waypoints\Spline.cs" />
+    <Compile Include="GCSViews\ConfigSetParams.cs" />
     <Compile Include="GCSViews\ConfigurationView\ConfigAccelerometerCalibration.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -394,6 +395,12 @@
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigHWBT.Designer.cs">
       <DependentUpon>ConfigHWBT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigSetParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigSetParams.Designer.cs">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
     </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigMotorTest.cs">
       <SubType>UserControl</SubType>
@@ -947,6 +954,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWParachute.zh-Hans.resx">
       <DependentUpon>ConfigHWParachute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.de-DE.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.es-ES.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.fr.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.it-IT.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.ja-JP.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.pl.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.zh-Hans.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.zh-Hant.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.zh-TW.resx">
+      <DependentUpon>ConfigSetParams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWSonar.ja-JP.resx">
       <DependentUpon>ConfigHWSonar.cs</DependentUpon>

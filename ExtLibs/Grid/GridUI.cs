@@ -1497,7 +1497,11 @@ namespace ByAeroBeHero
         private void calculationParam() 
         {
             string area = Math.Round((Convert.ToDouble(lbl_area.Text.Substring(0, lbl_area.Text.Length - 4)) / 666.67),2).ToString()+" 亩";
-            MainV2.instance.FlightPlanner.showFlyInfo(area, lbl_distance.Text, lbl_strips.Text, lbl_distbetweenlines.Text, lbl_flighttime.Text);
+            MainV2.instance.FlightPlanner.showFlyInfo(area, lbl_distance.Text
+                                                        , lbl_strips.Text
+                                                        , lbl_distbetweenlines.Text
+                                                        , lbl_flighttime.Text
+                                                        , TXT_headinghold.Text);
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -1529,12 +1533,12 @@ namespace ByAeroBeHero
         {
             if (this.comboBox1.SelectedIndex == 1)
             {
-                NUM_altitude.Value = 3;
+                NUM_altitude.Value = Convert.ToDecimal(1.5);
                 NUM_Distance.Value = 3;
-                NUM_UpDownFlySpeed.Value = 3; 
+                NUM_UpDownFlySpeed.Value = 5; 
                 CHK_copter_headinghold.Checked = true;
-                numer_TakeoffHigh.Value = 3;
-                numer_landhigh.Value = 4;
+                numer_TakeoffHigh.Value = 2;
+                numer_landhigh.Value = 3;
             }
             domainUpDown1_ValueChanged(null, null);
         }

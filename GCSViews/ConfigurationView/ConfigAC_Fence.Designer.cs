@@ -166,7 +166,13 @@
             // 
             // mavlinkNumericUpDown3
             // 
+            this.mavlinkNumericUpDown3.DecimalPlaces = 1;
             resources.ApplyResources(this.mavlinkNumericUpDown3, "mavlinkNumericUpDown3");
+            this.mavlinkNumericUpDown3.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.mavlinkNumericUpDown3.Max = 1F;
             this.mavlinkNumericUpDown3.Min = 0F;
             this.mavlinkNumericUpDown3.Name = "mavlinkNumericUpDown3";

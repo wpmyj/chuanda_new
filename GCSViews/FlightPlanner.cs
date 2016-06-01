@@ -1025,7 +1025,10 @@ namespace ByAeroBeHero.GCSViews
                 GMarkerGoogle m = new GMarkerGoogle(point, GMarkerGoogleType.red);
                 m.ToolTipMode = MarkerTooltipMode.OnMouseOver;
 
-                string lineDistance = " |" + "距离"+ tag + "-" + (Convert.ToInt16(tag) - 1).ToString() +": " + currentDistance;
+                ShowDistance(drawnpolygon.Points); 
+
+                string lineDistance = " |" + "距离"+ tag + "-" + (Convert.ToInt16(tag) - 1).ToString() +": " + currentDistance
+                    + bearing;
                 if (tag == "1")
                     lineDistance = string.Empty;
                 m.ToolTipText = "区域航点" + tag + lineDistance;
@@ -3451,6 +3454,7 @@ namespace ByAeroBeHero.GCSViews
                         if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("区域航点"))
                         {
                             drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(point.Lat, point.Lng);
+                            updatePointsMarks(int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")));
                             MainMap.UpdatePolygonLocalPosition(drawnpolygon);
                             MainMap.Invalidate();
                         }
@@ -3914,6 +3918,7 @@ namespace ByAeroBeHero.GCSViews
         private double currentLat;
         private double currentLng;
         private string currentDistance;
+        private string bearing;
         private void addPolygonPointToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddPolygonPoint(currentLat = MouseDownStart.Lat, currentLng=MouseDownStart.Lng);
@@ -3951,7 +3956,6 @@ namespace ByAeroBeHero.GCSViews
                 CustomMessageBox.Show("你将保持在规划工作区域模式,直到你清除工作区域或者创建/上传一个供作区域。");
             }
 
-            ShowDistance(lat,lng); 
             polygongridmode = true;
 
             List<PointLatLng> polygonPoints = new List<PointLatLng>();
@@ -3976,17 +3980,21 @@ namespace ByAeroBeHero.GCSViews
             MainMap.Invalidate();
         }
 
-        private void ShowDistance(double lat,double lng) 
+        /// <summary>
+        /// 添加区域航点间的距离和航向角
+        /// </summary>
+        /// <param name="points"></param>
+        private void ShowDistance(List<PointLatLng> points) 
         {
-            if (startmeasure.IsEmpty)
-            {
-                startmeasure = new PointLatLng(lat, lng);
-            }
-            else
-            {
-                currentDistance = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startmeasure, new PointLatLng(currentLat, currentLng)), true);
-                startmeasure = new PointLatLng(currentLat, currentLng);
-            }
+            if (points.Count <= 1)
+                return;
+            PointLatLng startpoint = new PointLatLng(points[points.Count - 2].Lat, points[points.Count - 2].Lng);
+            PointLatLng endpoint = new PointLatLng(points[points.Count-1].Lat, points[points.Count-1].Lng);
+            //两点距离
+            currentDistance = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startpoint, endpoint), true);
+            //两点航向角
+            bearing = "  航向角:" + MainMap.MapProvider.Projection.GetBearing(endpoint, startpoint).ToString("0") + "度";
+
         }
 
         public void redrawPolygonSurvey(List<PointLatLngAlt> list)
@@ -5281,9 +5289,9 @@ namespace ByAeroBeHero.GCSViews
                                 sw.WriteLine(pll.Lat + " " + pll.Lng);
                             }
 
-                            PointLatLng pll2 = drawnpolygon.Points[0];
+                            //PointLatLng pll2 = drawnpolygon.Points[0];
 
-                            sw.WriteLine(pll2.Lat + " " + pll2.Lng);
+                            //sw.WriteLine(pll2.Lat + " " + pll2.Lng);
                         }
 
                         sw.Close();
@@ -7090,6 +7098,78 @@ namespace ByAeroBeHero.GCSViews
             ((Button)sender).Enabled = true;
         }
 
+        #endregion
+
+        #region 更新区域航点距离和方向
+        private void updatePointsMarks(int iPoint)
+        {
+             if (drawnpolygon.Points.Count <= 1)
+             {
+                return;
+             }
+             else if(drawnpolygon.Points.Count == 2)
+             {
+                 PointLatLng startpoint = new PointLatLng(drawnpolygon.Points[drawnpolygon.Points.Count - 2].Lat, drawnpolygon.Points[drawnpolygon.Points.Count - 2].Lng);
+                 PointLatLng endpoint = new PointLatLng(drawnpolygon.Points[drawnpolygon.Points.Count - 1].Lat, drawnpolygon.Points[drawnpolygon.Points.Count - 1].Lng);
+                 //两点距离
+                 currentDistance = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startpoint, endpoint), true);
+                 //两点航向角
+                 bearing = "  航向角:" + MainMap.MapProvider.Projection.GetBearing(startpoint, endpoint).ToString("0") + "度";
+
+                 drawnpolygonsoverlay.Markers[drawnpolygon.Points.Count].ToolTipText ="区域航点 2" +" |" + "距离 2-1: " + currentDistance
+                    + bearing;
+             }
+             else if (drawnpolygon.Points.Count >=3) 
+             {
+                 if (iPoint == 1) 
+                 {
+                     PointLatLng startpoint = new PointLatLng(drawnpolygon.Points[0].Lat, drawnpolygon.Points[0].Lng);
+                     PointLatLng endpoint = new PointLatLng(drawnpolygon.Points[1].Lat, drawnpolygon.Points[1].Lng);
+                     //两点距离
+                     currentDistance = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startpoint, endpoint), true);
+                     //两点航向角
+                     bearing = "  航向角:" + MainMap.MapProvider.Projection.GetBearing(startpoint, endpoint).ToString("0") + "度";
+
+                     drawnpolygonsoverlay.Markers[2].ToolTipText = "区域航点 2" + " |" + "距离 2-1: " + currentDistance
+                        + bearing;
+                 }
+                 else if (iPoint == drawnpolygon.Points.Count)
+                 {
+                     PointLatLng startpoint = new PointLatLng(drawnpolygon.Points[drawnpolygon.Points.Count - 2].Lat, drawnpolygon.Points[drawnpolygon.Points.Count - 2].Lng);
+                     PointLatLng endpoint = new PointLatLng(drawnpolygon.Points[drawnpolygon.Points.Count - 1].Lat, drawnpolygon.Points[drawnpolygon.Points.Count - 1].Lng);
+                     //两点距离
+                     currentDistance = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startpoint, endpoint), true);
+                     //两点航向角
+                     bearing = "  航向角:" + MainMap.MapProvider.Projection.GetBearing(endpoint, startpoint).ToString("0") + "度";
+
+                     drawnpolygonsoverlay.Markers[2*drawnpolygon.Points.Count-2].ToolTipText =  "区域航点 "+ iPoint+" |" + "距离" + iPoint + "-" + (Convert.ToInt16(iPoint) - 1).ToString() + ": " + currentDistance + bearing;
+                 }
+                 else 
+                 {
+                     PointLatLng startpoint = new PointLatLng(drawnpolygon.Points[iPoint - 2].Lat, drawnpolygon.Points[iPoint - 2].Lng);
+                     PointLatLng point = new PointLatLng(drawnpolygon.Points[iPoint - 1].Lat, drawnpolygon.Points[iPoint - 1].Lng);
+                     PointLatLng endpoint = new PointLatLng(drawnpolygon.Points[iPoint].Lat, drawnpolygon.Points[iPoint - 1].Lng);
+
+                     string startToMidDis = FormatDistance(MainMap.MapProvider.Projection.GetDistance(startpoint, point), true);
+                     //两点航向角
+                     string startToMidbearing = "  航向角:" + MainMap.MapProvider.Projection.GetBearing(point, startpoint).ToString("0") + "度";
+
+                     string startToMidDis2 = FormatDistance(MainMap.MapProvider.Projection.GetDistance(point, endpoint), true);
+                     //两点航向角
+                     string startToMidbearing2 = "  航向角:" + MainMap.MapProvider.Projection.GetBearing(endpoint, point).ToString("0") + "度";
+
+                     drawnpolygonsoverlay.Markers[iPoint * 2 - 2].ToolTipText = "区域航点 " + (iPoint) + " |" + "距离" + iPoint.ToString() + "-" + (Convert.ToInt16(iPoint) - 1).ToString() + ": " + startToMidDis + startToMidbearing;
+                     drawnpolygonsoverlay.Markers[(iPoint+1)*2 -2].ToolTipText = "区域航点 "+ (iPoint +1)+ " |" + "距离" + (iPoint + 1).ToString() + "-" + (iPoint).ToString() + ": " + startToMidDis2 + startToMidbearing2;
+                 }
+
+             }
+                
+           
+
+              
+           
+
+        }
         #endregion
 
         #region 展开航点

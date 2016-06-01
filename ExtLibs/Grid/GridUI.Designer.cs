@@ -292,7 +292,7 @@
             this.TRK_zoom.SmallChange = 0.001F;
             this.TRK_zoom.TickFrequency = 1F;
             this.TRK_zoom.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.TRK_zoom.Value = 2F;
+            this.TRK_zoom.Value = 19F;
             this.TRK_zoom.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // map

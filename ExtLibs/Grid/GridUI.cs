@@ -731,9 +731,11 @@ namespace ByAeroBeHero
             seconds = ((routetotal * 1000.0) / (flyspeedms));
             lbl_photoevery.Text = secondsToNice(((double)NUM_spacing.Value / flyspeedms));
             map.HoldInvalidation = false;
+            
             if (!isMouseDown)
                 map.ZoomAndCenterMarkers("routes");
 
+            map.Zoom = TRK_zoom.Value;
             CalcHeadingHold();
         }
 
@@ -1106,7 +1108,7 @@ namespace ByAeroBeHero
             {
                 try
                 {
-                    TRK_zoom.Value = (float)map.Zoom;
+                    map.Zoom =TRK_zoom.Value;
                 }
                 catch { }
             }

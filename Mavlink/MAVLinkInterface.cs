@@ -1705,8 +1705,9 @@ Please check the following
                         loc.p4 = (wp.param4);
 
                         loc.alt = ((wp.z));
-                        loc.lat = ((wp.x));
-                        loc.lng = ((wp.y));
+                        //wjch航点精度
+                        loc.lat = (double)(wp.x)/10000000;
+                        loc.lng = (double)(wp.y)/10000000;
                        
                         log.InfoFormat("getWP {0} {1} {2} {3} {4} opt {5}", loc.id, loc.p1, loc.alt, loc.lat, loc.lng, loc.options);
 
@@ -1988,8 +1989,9 @@ Please check the following
             req.autocontinue = autocontinue;
 
             req.frame = (byte)frame;
-            req.y = (float)(loc.lng);
-            req.x = (float)(loc.lat);
+            //wjch航点精度
+            req.y = (int)(loc.lng * 1e7);
+            req.x = (int)(loc.lat * 1e7);
             req.z = (float)(loc.alt);
 
             req.param1 = loc.p1;

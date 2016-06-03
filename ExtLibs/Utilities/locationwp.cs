@@ -20,6 +20,11 @@ namespace ByAeroBeHero.Utilities
             return this;
         }
 
+        /// <summary>
+        /// wjch精度20160601
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static implicit operator MAVLink.mavlink_mission_item_t(Locationwp input)
         {
             return new MAVLink.mavlink_mission_item_t()
@@ -29,8 +34,8 @@ namespace ByAeroBeHero.Utilities
                 param2 = input.p2,
                 param3 = input.p3,
                 param4 = input.p4,
-                x = (float)input.lat,
-                y = (float)input.lng,
+                x = (int)(input.lat * 1e7),
+                y = (int)(input.lng * 1e7),
                 z = (float)input.alt
             };
         }

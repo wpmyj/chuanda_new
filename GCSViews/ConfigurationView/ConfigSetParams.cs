@@ -4,6 +4,8 @@ using ByAeroBeHero.Controls;
 using ByAeroBeHero.Utilities;
 using System.Drawing;
 using System.Collections;
+using System.Linq;
+using System.Text;
 
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
@@ -38,9 +40,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     startup = true;
                     changes.Clear();
 
-                    RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), 1, "RTL_ALT",
+                 WP_YAW_BEHAVIOR.setup(
+                    ParameterMetaDataRepository.GetParameterOptionsInt("WP_YAW_BEHAVIOR", MainV2.comPort.MAV.cs.firmware.ToString())
+                    .ToList(), "WP_YAW_BEHAVIOR", MainV2.comPort.MAV.param);
+
+                    RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT",
                 MainV2.comPort.MAV.param);
-                    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(1), 1, "RTL_ALT_FINAL",
+                    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
                 MainV2.comPort.MAV.param);
                     startup = false;
                 }

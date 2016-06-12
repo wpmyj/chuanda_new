@@ -3776,8 +3776,8 @@ Please check the following
             req.autocontinue = autocontinue;
 
             req.frame = (byte)frame;
-            req.y = (float)(loc.lng);
-            req.x = (float)(loc.lat);
+            req.y = (int)(loc.lng * 1e7);
+            req.x = (int)(loc.lat * 1e7);
             req.z = (float)(loc.alt);
 
             req.param1 = loc.p1;

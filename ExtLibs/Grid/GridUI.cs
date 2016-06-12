@@ -737,6 +737,7 @@ namespace ByAeroBeHero
 
             map.Zoom = TRK_zoom.Value;
             CalcHeadingHold();
+            CHK_copter_headingholdlock_CheckedChanged(null,null);
         }
 
         private void AddWP(double Lng, double Lat, double Alt)

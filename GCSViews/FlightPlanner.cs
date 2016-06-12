@@ -5514,7 +5514,7 @@ namespace ByAeroBeHero.GCSViews
                     PointLatLngAlt plla = MainV2.comPort.getRallyPoint(a, ref count);
                     rallypointoverlay.Markers.Add(new GMapMarkerRallyPt(new PointLatLng(plla.Lat, plla.Lng)) { Alt = (int)plla.Alt, ToolTipMode = MarkerTooltipMode.OnMouseOver, ToolTipText = "Rally Point" + "\nAlt: " + (plla.Alt * CurrentState.multiplierdist) });
                 }
-                catch { CustomMessageBox.Show("获取备用降落点失败！", Strings.ERROR); return; }
+                catch { CustomMessageBox.Show("没有备用降落点下载！", Strings.ERROR); return; }
             }
 
             MainMap.UpdateMarkerLocalPosition(rallypointoverlay.Markers[0]);
@@ -6051,7 +6051,6 @@ namespace ByAeroBeHero.GCSViews
             string altstepin = "5";
             if (DialogResult.Cancel == InputBox.Show("起始高度", "起始高度", ref altstepin))
                 return;
-
 
             string startanglein = "0";
             if (DialogResult.Cancel == InputBox.Show("角度", "第一点角度（全度）", ref startanglein))
@@ -6617,14 +6616,17 @@ namespace ByAeroBeHero.GCSViews
 
         enum LandStatus
         {
-            断药 = 1,
-            断电 = 2,
-            正常 = 0,
+            药物喷完 = 1,
+            电量过低 = 2,
+            信号丢失 = 3,
+            手动触发 = 0
         }
 
         private void timer_getbreakpoint_Tick(object sender, EventArgs e)
         {
             addbreakWayPoint(false);
+            updatehome();
+            addTimer(); 
         }
 
         public void addbreakWayPoint(bool isshowbreakpoint)
@@ -6658,8 +6660,8 @@ namespace ByAeroBeHero.GCSViews
             loc.p4 = 0;
 
             loc.alt = (float)((breakpoint_alt));
-            loc.lat = (float)((breakpoint_lat));
-            loc.lng = (float)((breakpoint_lng));
+            loc.lat = (double)((breakpoint_lat));
+            loc.lng = (double)((breakpoint_lng));
             
             return loc;
         }
@@ -6673,7 +6675,7 @@ namespace ByAeroBeHero.GCSViews
                     {
                         //Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString()wjch20160527
                         ToolTipMode = MarkerTooltipMode.OnMouseOver,
-                        ToolTipText = "返航断点" + "\n纬度:" + break_point.lat + "\n经度:" + break_point.lng + "\n高度:" + break_point.alt,
+                        ToolTipText = "返航断点" + "\n纬度:" + break_point.lat + "\n经度:" + break_point.lng + "\n高度:" + break_point.alt + Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString(),
                         Tag = breakploygonsoverlay.Markers.Count,
                         Alt = (int)breakpt.Alt,
                         BreakPointParam1 = break_point.p1
@@ -6891,8 +6893,6 @@ namespace ByAeroBeHero.GCSViews
                     }
                     catch { CustomMessageBox.Show("无效的行\n" + line); }
                 }
-
-                
 
                 sr.Close();
 
@@ -7179,6 +7179,17 @@ namespace ByAeroBeHero.GCSViews
         }
         #endregion
 
-
+        #region 时时更新家的位置
+        private void updatehome()
+        {
+            if (MainV2.comPort.MAV.cs.armed && MainV2.comPort.MAV.cs.mode == "自动" && MainV2.instance.isupdatehome)
+            {
+                MainV2.comPort.MAV.cs.HomeLocation = new PointLatLngAlt(MainV2.comPort.getWP(0));
+                updateHome();
+                MainV2.instance.isupdatehome = false;
+                writeKML();
+            }
+        }
+        #endregion
     }
 }

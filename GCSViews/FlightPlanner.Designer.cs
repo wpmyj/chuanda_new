@@ -1222,6 +1222,7 @@
             resources.ApplyResources(this.BtnClear, "BtnClear");
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClearClick);
             // 
             // CHK_autopan
             // 
@@ -1898,6 +1899,7 @@
             // timer_time
             // 
             this.timer_time.Interval = 1000;
+            this.timer_time.Tick += new System.EventHandler(this.timer_time_Tick);
             // 
             // timer_getbreakpoint
             // 

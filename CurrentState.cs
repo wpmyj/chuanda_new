@@ -1195,8 +1195,8 @@ namespace ByAeroBeHero
                         var breakpoint = bytearray.ByteArrayToStructure<MAVLink.mavlink_break_point_item_t>(6);
                         if (breakpoint.x != (float)breakpoint_lat || breakpoint.y != (float)breakpoint_lng)
                         {
-                            breakpoint_lat = (float)breakpoint.x;
-                            breakpoint_lng = (float)breakpoint.y;
+                            breakpoint_lat = (double)breakpoint.x/10000000;
+                            breakpoint_lng = (double)breakpoint.y/10000000;
                             breakpoint_alt = (float)breakpoint.z;
                             breakpoint_p1 = (float)breakpoint.param1;
                             isChange = true;

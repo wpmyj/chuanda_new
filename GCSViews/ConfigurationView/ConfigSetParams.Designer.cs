@@ -38,6 +38,8 @@
             this.myButton2 = new ByAeroBeHero.Controls.MyButton();
             this.Btn_ = new ByAeroBeHero.Controls.MyButton();
             this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.lblYawBehavior = new System.Windows.Forms.Label();
+            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
             this.SuspendLayout();
@@ -111,10 +113,26 @@
             this.RTL_ALT_FINAL.ParamName = null;
             this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // lblYawBehavior
+            // 
+            resources.ApplyResources(this.lblYawBehavior, "lblYawBehavior");
+            this.lblYawBehavior.Name = "lblYawBehavior";
+            // 
+            // WP_YAW_BEHAVIOR
+            // 
+            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
+            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
+            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
+            this.WP_YAW_BEHAVIOR.ParamName = null;
+            this.WP_YAW_BEHAVIOR.SubControl = null;
+            // 
             // ConfigSetParams
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.WP_YAW_BEHAVIOR);
+            this.Controls.Add(this.lblYawBehavior);
             this.Controls.Add(this.lblUnit);
             this.Controls.Add(this.RTL_ALT_P);
             this.Controls.Add(this.myButton2);
@@ -140,5 +158,7 @@
         private Controls.MyButton myButton2;
         private Controls.MavlinkNumericUpDown RTL_ALT_P;
         private System.Windows.Forms.Label lblUnit;
+        private System.Windows.Forms.Label lblYawBehavior;
+        private Controls.MavlinkComboBox WP_YAW_BEHAVIOR;
     }
 }

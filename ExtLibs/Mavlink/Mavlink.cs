@@ -2581,6 +2581,12 @@ public partial class MAVLink
         public Int16 break_point_reason;
         /// <summary>断点返航状态 0：无变化 1：变化 </summary>
         public Int16 break_point_status;
+        /// <summary>家纬度 </summary>
+        public Int32 lat;
+        /// <summary> 家经度</summary>
+        public Int32 lng;
+        /// <summary>家高度</summary>
+        public Single alt;
         /// <summary>版本号 </summary>
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 50)]
         public byte[] firmware_version;
@@ -3196,9 +3202,9 @@ public partial class MAVLink
             /// <summary> PARAM4, see MAV_CMD enum </summary>
         public  Single param4;
             /// <summary> PARAM5 / local: x position, global: latitude </summary>
-        public  Single x;
+        public  Int32 x;
             /// <summary> PARAM6 / y position: global: longitude </summary>
-        public  Single y;
+        public  Int32 y;
             /// <summary> PARAM7 / z position: global: altitude (relative or absolute, depending on frame. </summary>
         public  Single z;
             /// <summary> Sequence </summary>

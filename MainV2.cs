@@ -1794,6 +1794,8 @@ namespace ByAeroBeHero
 
         ManualResetEvent SerialThreadrunner = new ManualResetEvent(false);
 
+        public bool isupdatehome;
+
         /// <summary>
         /// main serial reader thread
         /// controls
@@ -1992,6 +1994,7 @@ namespace ByAeroBeHero
                     // get home point on armed status change.
                     if (armedstatus != MainV2.comPort.MAV.cs.armed && comPort.BaseStream.IsOpen)
                     {
+                        isupdatehome = true;
                         armedstatus = MainV2.comPort.MAV.cs.armed;
                         // status just changed to armed
                         if (MainV2.comPort.MAV.cs.armed == true)

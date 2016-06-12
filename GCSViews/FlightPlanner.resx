@@ -1197,7 +1197,7 @@
     <value>WPNAV_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5996.27221, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6007.19887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1224,7 +1224,7 @@
     <value>WPNAV_RADIUS</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5996.27221, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6007.19887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_RADIUS.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1251,7 +1251,7 @@
     <value>WPNAV_SPEED_UP</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5996.27221, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6007.19887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_UP.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1278,7 +1278,7 @@
     <value>WPNAV_SPEED_DN</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5996.27221, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6007.19887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_SPEED_DN.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -1305,7 +1305,7 @@
     <value>WPNAV_LOIT_SPEED</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5996.27221, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6007.19887, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WPNAV_LOIT_SPEED.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -3669,7 +3669,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_quickrtl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>954, 3</value>
+    <value>864, 4</value>
   </data>
   <data name="BUT_quickrtl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 27</value>
@@ -3696,7 +3696,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_quickauto1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>773, 3</value>
+    <value>682, 4</value>
   </data>
   <data name="BUT_quickauto1.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 27</value>
@@ -3723,7 +3723,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnLoiterUnlim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>864, 3</value>
+    <value>773, 4</value>
   </data>
   <data name="btnLoiterUnlim.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 27</value>
@@ -3750,7 +3750,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_clear_track1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1045, 3</value>
+    <value>954, 3</value>
   </data>
   <data name="BUT_clear_track1.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 27</value>
@@ -3777,7 +3777,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_ARM1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>682, 3</value>
+    <value>1045, 3</value>
   </data>
   <data name="BUT_ARM1.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 27</value>
@@ -3787,6 +3787,9 @@
   </data>
   <data name="BUT_ARM1.Text" xml:space="preserve">
     <value>解锁/锁定</value>
+  </data>
+  <data name="BUT_ARM1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;BUT_ARM1.Name" xml:space="preserve">
     <value>BUT_ARM1</value>

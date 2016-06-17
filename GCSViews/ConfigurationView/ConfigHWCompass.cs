@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Windows.Forms;
 using ByAeroBeHero.Controls;
+using System.Drawing;
 
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
@@ -19,6 +20,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         public void Activate()
         {
+            this.BackColor = Color.Black;
             if (!MainV2.comPort.BaseStream.IsOpen)
             {
                 Enabled = false;
@@ -49,6 +51,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CHK_autodec.Checked = MainV2.comPort.MAV.param["COMPASS_AUTODEC"].ToString() == "1" ? true : false;
             }
+
+            rb_px4pixhawk.Checked = true;
 
             startup = false;
         }

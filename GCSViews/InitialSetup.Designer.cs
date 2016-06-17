@@ -78,11 +78,11 @@
             this.configHWPa1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute();
             this.backstageViewPageinstfw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmware1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware();
+            this.backstageViewPageSetParams = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.configSetParams1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams();
             this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
-            this.backstageViewPageSetParams = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
-            this.configSetParams1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -210,10 +210,11 @@
             // backstageViewPagecompass
             // 
             this.backstageViewPagecompass.Advanced = false;
+            this.backstageViewPagecompass.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
             this.backstageViewPagecompass.LinkText = "Compass";
             this.backstageViewPagecompass.Page = this.configHWCompass1;
             this.backstageViewPagecompass.Parent = null;
-            this.backstageViewPagecompass.Show = false;
+            this.backstageViewPagecompass.Show = true;
             this.backstageViewPagecompass.Spacing = 30;
             resources.ApplyResources(this.backstageViewPagecompass, "backstageViewPagecompass");
             // 
@@ -491,6 +492,22 @@
             resources.ApplyResources(this.configFirmware1, "configFirmware1");
             this.configFirmware1.Name = "configFirmware1";
             // 
+            // backstageViewPageSetParams
+            // 
+            this.backstageViewPageSetParams.Advanced = false;
+            this.backstageViewPageSetParams.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
+            this.backstageViewPageSetParams.LinkText = "飞行参数设置";
+            this.backstageViewPageSetParams.Page = this.configSetParams1;
+            this.backstageViewPageSetParams.Parent = null;
+            this.backstageViewPageSetParams.Show = true;
+            this.backstageViewPageSetParams.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPageSetParams, "backstageViewPageSetParams");
+            // 
+            // configSetParams1
+            // 
+            resources.ApplyResources(this.configSetParams1, "configSetParams1");
+            this.configSetParams1.Name = "configSetParams1";
+            // 
             // backstageViewPagefw
             // 
             this.backstageViewPagefw.Advanced = false;
@@ -517,20 +534,6 @@
             // 
             resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
             this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
-            // 
-            // backstageViewPageSetParams
-            // 
-            this.backstageViewPageSetParams.Advanced = false;
-            this.backstageViewPageSetParams.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
-            this.backstageViewPageSetParams.LinkText = "飞行参数设置";
-            this.backstageViewPageSetParams.Page = this.configSetParams1;
-            this.backstageViewPageSetParams.Parent = null;
-            this.backstageViewPageSetParams.Show = true;
-            this.backstageViewPageSetParams.Spacing = 30;
-            resources.ApplyResources(this.backstageViewPageSetParams, "backstageViewPageSetParams");
-
-            resources.ApplyResources(this.configSetParams1, "configSetParams1");
-            this.configSetParams1.Name = "configSetParams1";
             // 
             // InitialSetup
             // 

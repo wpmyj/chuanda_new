@@ -6677,7 +6677,7 @@ namespace ByAeroBeHero.GCSViews
                         ToolTipMode = MarkerTooltipMode.OnMouseOver,
                         ToolTipText = "返航断点" + "\n纬度:" + break_point.lat + "\n经度:" + break_point.lng + "\n高度:" + break_point.alt + Enum.Parse(typeof(LandStatus), CurrentState.breakpointreason.ToString()).ToString(),
                         Tag = breakploygonsoverlay.Markers.Count,
-                        Alt = (int)breakpt.Alt,
+                        Alt = (float)breakpt.Alt,
                         BreakPointParam1 = break_point.p1
                     }
             );

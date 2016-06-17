@@ -147,10 +147,9 @@ namespace ByAeroBeHero
 
             ProgressReporterSphere prd = new ProgressReporterSphere();
 
-            prd.btnCancel.Text = "Done";
-
             Utilities.ThemeManager.ApplyThemeTo(prd);
 
+            prd.btnCancel.Text = "完成";
             prd.DoWork += prd_DoWork;
 
             prd.RunBackgroundOperationAsync();
@@ -251,7 +250,7 @@ namespace ByAeroBeHero
             return true;
         }
 
-        static void prd_DoWork(object sender, ProgressWorkerEventArgs e, object passdata = null)
+        static void prd_DoWork(object sender, ProgressWorkerEventArgs2 e, object passdata = null)
         {
             // turn learning off
             MainV2.comPort.setParam("COMPASS_LEARN", 0);
@@ -318,7 +317,7 @@ namespace ByAeroBeHero
                 // slow down execution
                 System.Threading.Thread.Sleep(10);
 
-                ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(-1, "Got " + datacompass1.Count + " Samples\ncompass 1 error:" +error  + "\ncompass 2 error:" +error2 +"\n"+ extramsg);
+                ((ProgressReporterDialogue2)sender).UpdateProgressAndStatus(-1, "Got " + datacompass1.Count + " Samples\ncompass 1 error:" +error  + "\ncompass 2 error:" +error2 +"\n"+ extramsg);
 
                 if (e.CancelRequested)
                 {
@@ -974,11 +973,11 @@ namespace ByAeroBeHero
                     return;
                 }
 
-                CustomMessageBox.Show("设置新的偏移量 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\nThese have been saved for you.", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量 " + "X:"+ofs[0].ToString("0") + " " + "Y:"+ofs[1].ToString("0") + " " + "Z:"+ofs[2].ToString("0"), "偏移量设置");
             }
             else
             {
-                CustomMessageBox.Show("设置新的偏移量 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0"), "偏移量设置");
             }
         }
 
@@ -1009,11 +1008,11 @@ namespace ByAeroBeHero
                     return;
                 }
 
-                CustomMessageBox.Show("设置新的偏移量2 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\nThese have been saved for you.", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量2 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0") + "\nThese have been saved for you.", "偏移量设置");
             }
             else
             {
-                CustomMessageBox.Show("设置新的偏移量2 " + ofs[0].ToString("0") + " " + ofs[1].ToString("0") + " " + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "New Mag Offsets");
+                CustomMessageBox.Show("设置新的偏移量2 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "偏移量设置");
             }
         }
         /// <summary>

@@ -192,6 +192,8 @@ namespace ByAeroBeHero
         public static double breakpoint_alt = 0;
         public static double breakpoint_lat = 0;
         public static double breakpoint_lng = 0;
+        public static int ibreakpoint_lat = 0;
+        public static int ibreakpoint_lng = 0;
         public static double breakpoint_p1 = 0;
         public static bool isChange = false;
         public static string str_firm_ware = string.Empty;
@@ -1193,8 +1195,10 @@ namespace ByAeroBeHero
                     if (bytearray != null)
                     {
                         var breakpoint = bytearray.ByteArrayToStructure<MAVLink.mavlink_break_point_item_t>(6);
-                        if (breakpoint.x != (float)breakpoint_lat || breakpoint.y != (float)breakpoint_lng)
+                        if (breakpoint.x != ibreakpoint_lat || breakpoint.y != ibreakpoint_lng)
                         {
+                            ibreakpoint_lat = breakpoint.x;
+                            ibreakpoint_lng = breakpoint.y;
                             breakpoint_lat = (double)breakpoint.x/10000000;
                             breakpoint_lng = (double)breakpoint.y/10000000;
                             breakpoint_alt = (float)breakpoint.z;

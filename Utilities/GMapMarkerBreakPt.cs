@@ -19,7 +19,7 @@ namespace ByAeroBeHero.Utilities
       //static Bitmap localcache1 = Resources.shadow50;
       static Bitmap localcache2 = Resources.marker_05;
 
-      public int Alt { get; set; }
+      public float Alt { get; set; }
 
       public float BreakPointParam1 { get; set; }
 

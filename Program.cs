@@ -94,7 +94,7 @@ namespace ByAeroBeHero
             WebRequest.DefaultWebProxy = WebRequest.GetSystemWebProxy();
             WebRequest.DefaultWebProxy.Credentials = CredentialCache.DefaultNetworkCredentials;
 
-            string name = "ByAero,BeHero 地面站 v1.1.0_20160523_beta";
+            string name = "ByAero,BeHero 地面站 v1.2.0_20160617_beta";
 
             if (File.Exists(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt"))
                 name = File.ReadAllText(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt", Encoding.UTF8);
@@ -145,7 +145,7 @@ namespace ByAeroBeHero
             {
                 // kill sim background process if its still running
                 if (Controls.SITL.simulator != null)
-                    Controls.SITL.simulator.Kill();
+                    Controls.SITL.simulator.Kill();4
             }
             catch { }
         }

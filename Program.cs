@@ -145,7 +145,7 @@ namespace ByAeroBeHero
             {
                 // kill sim background process if its still running
                 if (Controls.SITL.simulator != null)
-                    Controls.SITL.simulator.Kill();4
+                    Controls.SITL.simulator.Kill();
             }
             catch { }
         }

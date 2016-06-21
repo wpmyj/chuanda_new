@@ -34,12 +34,13 @@
             this.lbl_RTL_ALT = new System.Windows.Forms.Label();
             this.lbl_RTL_ALT_F = new System.Windows.Forms.Label();
             this.lblUnit = new System.Windows.Forms.Label();
-            this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.lblYawBehavior = new System.Windows.Forms.Label();
             this.myButton2 = new ByAeroBeHero.Controls.MyButton();
             this.Btn_ = new ByAeroBeHero.Controls.MyButton();
-            this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.lblYawBehavior = new System.Windows.Forms.Label();
             this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +65,36 @@
             resources.ApplyResources(this.lblUnit, "lblUnit");
             this.lblUnit.Name = "lblUnit";
             // 
+            // lblYawBehavior
+            // 
+            resources.ApplyResources(this.lblYawBehavior, "lblYawBehavior");
+            this.lblYawBehavior.Name = "lblYawBehavior";
+            // 
+            // myButton2
+            // 
+            resources.ApplyResources(this.myButton2, "myButton2");
+            this.myButton2.Name = "myButton2";
+            this.myButton2.UseVisualStyleBackColor = true;
+            this.myButton2.Click += new System.EventHandler(this.BUT_refreshpart_Click);
+            // 
+            // Btn_
+            // 
+            resources.ApplyResources(this.Btn_, "Btn_");
+            this.Btn_.Name = "Btn_";
+            this.Btn_.UseVisualStyleBackColor = true;
+            this.Btn_.Click += new System.EventHandler(this.BUT_writePIDS_Click);
+            // 
+            // WP_YAW_BEHAVIOR
+            // 
+            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
+            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
+            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
+            this.WP_YAW_BEHAVIOR.ParamName = null;
+            this.WP_YAW_BEHAVIOR.SubControl = null;
+            this.WP_YAW_BEHAVIOR.Tag = "";
+            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
+            // 
             // RTL_ALT_P
             // 
             this.RTL_ALT_P.DecimalPlaces = 1;
@@ -84,20 +115,6 @@
             this.RTL_ALT_P.ParamName = null;
             this.RTL_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
-            // myButton2
-            // 
-            resources.ApplyResources(this.myButton2, "myButton2");
-            this.myButton2.Name = "myButton2";
-            this.myButton2.UseVisualStyleBackColor = true;
-            this.myButton2.Click += new System.EventHandler(this.BUT_refreshpart_Click);
-            // 
-            // Btn_
-            // 
-            resources.ApplyResources(this.Btn_, "Btn_");
-            this.Btn_.Name = "Btn_";
-            this.Btn_.UseVisualStyleBackColor = true;
-            this.Btn_.Click += new System.EventHandler(this.BUT_writePIDS_Click);
-            // 
             // RTL_ALT_FINAL
             // 
             this.RTL_ALT_FINAL.DecimalPlaces = 1;
@@ -112,20 +129,6 @@
             this.RTL_ALT_FINAL.Name = "RTL_ALT_FINAL";
             this.RTL_ALT_FINAL.ParamName = null;
             this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // lblYawBehavior
-            // 
-            resources.ApplyResources(this.lblYawBehavior, "lblYawBehavior");
-            this.lblYawBehavior.Name = "lblYawBehavior";
-            // 
-            // WP_YAW_BEHAVIOR
-            // 
-            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
-            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
-            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
-            this.WP_YAW_BEHAVIOR.ParamName = null;
-            this.WP_YAW_BEHAVIOR.SubControl = null;
             // 
             // ConfigSetParams
             // 
@@ -160,5 +163,6 @@
         private System.Windows.Forms.Label lblUnit;
         private System.Windows.Forms.Label lblYawBehavior;
         private Controls.MavlinkComboBox WP_YAW_BEHAVIOR;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

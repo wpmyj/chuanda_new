@@ -222,32 +222,38 @@
   <data name="&gt;&gt;lblUnit.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="RTL_ALT_P.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="lblYawBehavior.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="RTL_ALT_P.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10.2pt</value>
+  <data name="lblYawBehavior.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
   </data>
-  <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 48</value>
+  <data name="lblYawBehavior.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 30</value>
+  <data name="lblYawBehavior.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 112</value>
   </data>
-  <data name="RTL_ALT_P.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
+  <data name="lblYawBehavior.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_P.Name" xml:space="preserve">
-    <value>RTL_ALT_P</value>
+  <data name="lblYawBehavior.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6001.19071, Culture=neutral, PublicKeyToken=null</value>
+  <data name="lblYawBehavior.Text" xml:space="preserve">
+    <value>偏航朝向：</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblYawBehavior.Name" xml:space="preserve">
+    <value>lblYawBehavior</value>
+  </data>
+  <data name="&gt;&gt;lblYawBehavior.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblYawBehavior.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_P.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;lblYawBehavior.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="myButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -309,6 +315,63 @@
   <data name="&gt;&gt;Btn_.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 109</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 23</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <data name="WP_YAW_BEHAVIOR.ToolTip" xml:space="preserve">
+    <value>模式一:航向锁定,模式二:指向下一航点,模式三:除返航模式，指向下一行点。</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
+    <value>WP_YAW_BEHAVIOR</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6015.31376, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RTL_ALT_P.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RTL_ALT_P.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.2pt</value>
+  </data>
+  <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 48</value>
+  </data>
+  <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 30</value>
+  </data>
+  <data name="RTL_ALT_P.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_P.Name" xml:space="preserve">
+    <value>RTL_ALT_P</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6015.31376, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_P.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -328,70 +391,13 @@
     <value>RTL_ALT_FINAL</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6001.19071, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6015.31376, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="lblYawBehavior.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblYawBehavior.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblYawBehavior.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblYawBehavior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 112</value>
-  </data>
-  <data name="lblYawBehavior.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 20</value>
-  </data>
-  <data name="lblYawBehavior.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="lblYawBehavior.Text" xml:space="preserve">
-    <value>飞行器偏航朝向：</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.Name" xml:space="preserve">
-    <value>lblYawBehavior</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 112</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
-    <value>WP_YAW_BEHAVIOR</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6001.19071, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -410,6 +416,12 @@
   </data>
   <data name="&gt;&gt;timer1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigSetParams</value>

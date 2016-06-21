@@ -2747,7 +2747,7 @@
     <WP_YAW_BEHAVIOR>
       <DisplayName>飞行器的偏航朝向</DisplayName>
       <Description>自驾仪如何在任务中以及返航(RTL)模式时控制飞行器的偏航朝向(YAW)</Description>
-      <Values>0:航向锁定,1:指向下一航点,2:除返航模式，指向下一行点</Values>
+      <Values>0:模式一,1:模式二,2:模式三</Values>
       <User>Standard</User>
     </WP_YAW_BEHAVIOR>
     <RTL_LOIT_TIME>

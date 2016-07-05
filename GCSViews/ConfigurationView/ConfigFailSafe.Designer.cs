@@ -218,7 +218,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             0,
             65536});
             this.mavlinkNumericUpDownlow_voltage.Max = 99F;
-            this.mavlinkNumericUpDownlow_voltage.Min = 6F;
+            this.mavlinkNumericUpDownlow_voltage.Min = 3F;
             this.mavlinkNumericUpDownlow_voltage.Name = "mavlinkNumericUpDownlow_voltage";
             this.mavlinkNumericUpDownlow_voltage.ParamName = null;
             this.toolTip1.SetToolTip(this.mavlinkNumericUpDownlow_voltage, resources.GetString("mavlinkNumericUpDownlow_voltage.ToolTip"));
@@ -765,7 +765,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private Controls.MyLabel lbl_gpslock;
         private System.Windows.Forms.Panel PNL_thr_fs_value;
         private Controls.MavlinkComboBox mavlinkComboBox_fs_thr_enable;
-        private Controls.MavlinkNumericUpDown mavlinkNumericUpDownlow_voltage;
         private Controls.MavlinkNumericUpDown mavlinkNumericUpDownfs_thr_value;
         private System.Windows.Forms.Panel PNL_low_bat;
         private System.Windows.Forms.Label label4;
@@ -785,5 +784,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label lblFailSafeBegin;
         private MavlinkComboBox cb_FS_Level_Enable;
         private System.Windows.Forms.Label lblLevel;
+        private MavlinkNumericUpDown mavlinkNumericUpDownlow_voltage;
     }
 }

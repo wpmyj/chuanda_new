@@ -496,6 +496,8 @@ namespace ByAeroBeHero
         public float brklevel { get; set; }
         public bool armed { get; set; }
 
+        public int GoToPoints { get; set; }
+
         // 3dr radio
         [DisplayText("3DR Radio rssi")]
         public float rssi { get; set; }
@@ -1188,7 +1190,8 @@ namespace ByAeroBeHero
                         str_firm_ware = strfirmware.Substring(0, ifirmware);
                         breakpointstatus = mem.break_point_status;
                         breakpointreason = mem.break_point_reason;
-                            
+
+                        GoToPoints = mem.cmd_index;
                     }
 
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BREAK_POINT_ITEM];

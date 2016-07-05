@@ -35,11 +35,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // low battery
             if (MainV2.comPort.MAV.param.ContainsKey("LOW_VOLT"))
             {
-                mavlinkNumericUpDownlow_voltage.setup(6, 99, 1, 0.1f, "LOW_VOLT", MainV2.comPort.MAV.param, PNL_low_bat);
+                mavlinkNumericUpDownlow_voltage.setup(3, 99, 1, 0.1f, "LOW_VOLT", MainV2.comPort.MAV.param, PNL_low_bat);
             }
             else
             {
-                mavlinkNumericUpDownlow_voltage.setup(6, 99, 1, 0.1f, "FS_BATT_VOLTAGE", MainV2.comPort.MAV.param,
+                mavlinkNumericUpDownlow_voltage.setup(3, 99, 1, 0.1f, "FS_BATT_VOLTAGE", MainV2.comPort.MAV.param,
                     PNL_low_bat);
             }
 

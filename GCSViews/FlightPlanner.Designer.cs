@@ -153,6 +153,11 @@
             this.groupBoxBasePoint = new System.Windows.Forms.GroupBox();
             this.panelShowInfo = new System.Windows.Forms.Panel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblDoneArea1 = new System.Windows.Forms.Label();
+            this.lblDoneArea = new System.Windows.Forms.Label();
+            this.lblBearToHome1 = new System.Windows.Forms.Label();
+            this.lblBearToHome = new System.Windows.Forms.Label();
+            this.lblDisToHome1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.lblArea = new System.Windows.Forms.Label();
             this.lblAero = new System.Windows.Forms.Label();
@@ -165,6 +170,7 @@
             this.lblFlighttime = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblHeadinghold = new System.Windows.Forms.Label();
+            this.lblDisToHome = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
@@ -1054,6 +1060,11 @@
             // 
             this.tableLayoutPanel7.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
+            this.tableLayoutPanel7.Controls.Add(this.lblDoneArea1, 5, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lblDoneArea, 4, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lblBearToHome1, 5, 1);
+            this.tableLayoutPanel7.Controls.Add(this.lblBearToHome, 4, 1);
+            this.tableLayoutPanel7.Controls.Add(this.lblDisToHome1, 5, 0);
             this.tableLayoutPanel7.Controls.Add(this.label15, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.lblArea, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.lblAero, 0, 0);
@@ -1066,8 +1077,39 @@
             this.tableLayoutPanel7.Controls.Add(this.lblFlighttime, 1, 2);
             this.tableLayoutPanel7.Controls.Add(this.label1, 2, 2);
             this.tableLayoutPanel7.Controls.Add(this.lblHeadinghold, 3, 2);
+            this.tableLayoutPanel7.Controls.Add(this.lblDisToHome, 4, 0);
             this.tableLayoutPanel7.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            // 
+            // lblDoneArea1
+            // 
+            resources.ApplyResources(this.lblDoneArea1, "lblDoneArea1");
+            this.lblDoneArea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDoneArea1.Name = "lblDoneArea1";
+            // 
+            // lblDoneArea
+            // 
+            resources.ApplyResources(this.lblDoneArea, "lblDoneArea");
+            this.lblDoneArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDoneArea.Name = "lblDoneArea";
+            // 
+            // lblBearToHome1
+            // 
+            resources.ApplyResources(this.lblBearToHome1, "lblBearToHome1");
+            this.lblBearToHome1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblBearToHome1.Name = "lblBearToHome1";
+            // 
+            // lblBearToHome
+            // 
+            resources.ApplyResources(this.lblBearToHome, "lblBearToHome");
+            this.lblBearToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblBearToHome.Name = "lblBearToHome";
+            // 
+            // lblDisToHome1
+            // 
+            resources.ApplyResources(this.lblDisToHome1, "lblDisToHome1");
+            this.lblDisToHome1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDisToHome1.Name = "lblDisToHome1";
             // 
             // label15
             // 
@@ -1146,6 +1188,12 @@
             resources.ApplyResources(this.lblHeadinghold, "lblHeadinghold");
             this.lblHeadinghold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHeadinghold.Name = "lblHeadinghold";
+            // 
+            // lblDisToHome
+            // 
+            resources.ApplyResources(this.lblDisToHome, "lblDisToHome");
+            this.lblDisToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDisToHome.Name = "lblDisToHome";
             // 
             // tableLayoutPanel5
             // 
@@ -2154,5 +2202,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblHeadinghold;
+        private System.Windows.Forms.Label lblDoneArea;
+        private System.Windows.Forms.Label lblBearToHome;
+        private System.Windows.Forms.Label lblDisToHome;
+        private System.Windows.Forms.Label lblDoneArea1;
+        private System.Windows.Forms.Label lblBearToHome1;
+        private System.Windows.Forms.Label lblDisToHome1;
     }
 }

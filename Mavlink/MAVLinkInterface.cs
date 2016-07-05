@@ -529,7 +529,8 @@ Please check the following
                     messageType == (byte)MAVLink.MAVLINK_MSG_ID.PARAM_REQUEST_LIST || 
                     messageType == (byte)MAVLink.MAVLINK_MSG_ID.PARAM_REQUEST_READ ||
                     messageType == (byte)MAVLink.MAVLINK_MSG_ID.RALLY_FETCH_POINT ||
-                    messageType == (byte)MAVLink.MAVLINK_MSG_ID.FENCE_FETCH_POINT
+                    messageType == (byte)MAVLink.MAVLINK_MSG_ID.FENCE_FETCH_POINT ||
+                    messageType == (byte)MAVLink.MAVLINK_MSG_ID.AREA_REQUEST
                     )
                 {
 
@@ -542,6 +543,7 @@ Please check the following
 
             lock (objlock)
             {
+
                 byte[] data;
 
                 data = MavlinkUtil.StructureToByteArray(indata);
@@ -3798,6 +3800,131 @@ Please check the following
 
             // request
             generatePacket((byte)MAVLINK_MSG_ID.BREAK_POINT_ITEM, req);
+        }
+        #endregion
+
+        #region 写入区域航点
+        /// <summary>
+        /// Save wp to eeprom
+        /// </summary>
+        public void setAP(PointLatLngAlt loc, ushort index)
+        {
+            mavlink_area_item_t req = new mavlink_area_item_t();
+
+
+
+            //wjch航点精度
+            req.y = (int)(loc.Lng * 1e7);
+            req.x = (int)(loc.Lat * 1e7);
+            req.z = (float)(loc.Alt);
+            req.seq = index;
+
+            req.target_system = MAV.sysid;
+            req.target_component = MAV.compid;
+
+            log.InfoFormat("工作区域坐标{0}，{1}，{2}", req.y, req.x,index);
+
+            setAP(req);
+        }
+
+        public void setAP(mavlink_area_item_t req)
+        {
+            giveComport = true;
+
+            ushort index = req.seq;
+
+            // request
+            generatePacket((byte)MAVLINK_MSG_ID.AREA_ITEM, req);
+
+            DateTime start = DateTime.Now;
+            //int retrys = 10;
+
+            //while (true)
+            //{
+            //    if (!(start.AddMilliseconds(400) > DateTime.Now))
+            //    {
+            //        if (retrys > 0)
+            //        {
+            //            generatePacket((byte)MAVLINK_MSG_ID.AREA_ITEM, req);
+
+            //            start = DateTime.Now;
+            //            retrys--;
+            //            continue;
+            //        }
+            //        giveComport = false;
+            //        throw new Exception("Timeout on read - setAP");
+            //    }
+            //}
+        }
+        #endregion
+
+        #region 读取区域航点
+
+        public PointLatLngAlt getAeraPoint(ushort no, ref int total)
+        {
+            while (giveComport)
+                System.Threading.Thread.Sleep(100);
+
+            giveComport = true;
+            PointLatLngAlt plla = new PointLatLngAlt();
+            mavlink_area_request_t req = new mavlink_area_request_t();
+
+            req.target_system = MAV.sysid;
+            req.target_component = MAV.compid;
+
+            req.seq = no;
+
+            // request
+            generatePacket((byte)MAVLINK_MSG_ID.AREA_REQUEST, req);
+
+            DateTime start = DateTime.Now;
+            int retrys =5;
+
+            while (true)
+            {
+                if (!(start.AddMilliseconds(800) > DateTime.Now)) // apm times out after 1000ms
+                {
+                    if (retrys > 0)
+                    {
+                        log.Info("getWP Retry " + retrys);
+                        generatePacket((byte)MAVLINK_MSG_ID.AREA_REQUEST, req);
+                        start = DateTime.Now;
+                        retrys--;
+                        continue;
+                    }
+                    giveComport = false;
+                    throw new Exception("Timeout on read - getWP");
+                }
+
+                byte[] buffer = readPacket();
+                if (buffer.Length > 5)
+                {
+                    if (buffer[5] == (byte)MAVLINK_MSG_ID.AREA_ITEM)
+                    {
+
+                        var wp = buffer.ByteArrayToStructure<mavlink_area_item_t>(6);
+                        if (req.seq != wp.seq)
+                        {
+                            generatePacket((byte)MAVLINK_MSG_ID.AREA_REQUEST, req);
+                            continue;
+                        }
+
+                        plla.Tag = wp.seq.ToString();
+                        plla.Alt = ((wp.z));
+                        //wjch航点精度
+                        plla.Lat = (double)(wp.x) / 10000000;
+                        plla.Lng = (double)(wp.y) / 10000000;
+
+                        break;
+                    }
+                    else
+                    {
+                        log.Info(DateTime.Now + " PC getap " + buffer[5]);
+                    }
+                }
+            }
+            giveComport = false;
+            return plla;
         }
         #endregion
     }

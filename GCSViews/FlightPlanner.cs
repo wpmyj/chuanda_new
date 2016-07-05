@@ -1017,7 +1017,7 @@ namespace ByAeroBeHero.GCSViews
             catch (Exception) { }
         }
 
-        private void addpolygonmarkergrid(string tag, double lng, double lat, int alt)
+        private void addpolygonmarkergrid(string tag, double lng, double lat, double alt)
         {
             try
             {
@@ -1349,6 +1349,7 @@ namespace ByAeroBeHero.GCSViews
             }
 
             Debug.WriteLine(DateTime.Now);
+
         }
 
         private  string mavcnd(string mode)
@@ -1826,6 +1827,7 @@ namespace ByAeroBeHero.GCSViews
         /// <param name="e"></param>
         internal void BUT_read_Click(object sender, EventArgs e)
         {
+
             if (Commands.Rows.Count > 0)
             {
                 if (sender is FlightData)
@@ -1859,11 +1861,16 @@ namespace ByAeroBeHero.GCSViews
 
                 frmProgressReporter.Dispose();
             }
-            catch 
+            catch
             {
                 CustomMessageBox.Show("读取航点失败！");
             }
-           
+
+            try 
+            {
+                ReadAeroPoints();
+            }
+            catch { CustomMessageBox.Show("读取区域航点失败！"); }
         }
 
         void getWPs(object sender, ProgressWorkerEventArgs e, object passdata = null)
@@ -1959,6 +1966,12 @@ namespace ByAeroBeHero.GCSViews
                 }
             }
 
+            if (drawnpolygon.Points.Count <= 0)
+            {
+                CustomMessageBox.Show(("请上传与飞行航点对应的工作区域!"));
+                return;
+            }
+
             // check for invalid grid data
             for (int a = 0; a < Commands.Rows.Count - 0; a++)
             {
@@ -1980,7 +1993,7 @@ namespace ByAeroBeHero.GCSViews
                     if (Commands.Rows[a].Cells[Command.Index].Value.ToString().Contains("未知"))
                         continue;
 
-                    byte cmd = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(Commands.Rows[a].Cells[Command.Index].Value.ToString()), false);
+                    byte cmd = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD), mavcnd(Commands.Rows[a].Cells[Command.Index].Value.ToString()), false);
 
                     if (cmd < (byte)MAVLink.MAV_CMD.LAST && double.Parse(Commands[Alt.Index, a].Value.ToString()) < double.Parse(TXT_altwarn.Text))
                     {
@@ -2016,11 +2029,19 @@ namespace ByAeroBeHero.GCSViews
                 breakploygonsoverlay.Markers.Clear();
                 MainMap.Focus();
             }
+            catch
+            {
+                CustomMessageBox.Show("写入航点失败！");
+            }
+
+            try
+            {
+                SendAeroPoints();
+            }
             catch 
             {
-                CustomMessageBox.Show("读取航点失败！");
+                CustomMessageBox.Show("写入区域航点失败！");
             }
-           
 
         }
 
@@ -2078,6 +2099,7 @@ namespace ByAeroBeHero.GCSViews
                     CustomMessageBox.Show(("请先切换模式，在写入航点!"));
                     return ;
                 }
+
                 MainV2.comPort.giveComport = true;
                 int a = 0;
 
@@ -4276,6 +4298,9 @@ namespace ByAeroBeHero.GCSViews
                
                 //计时器
                 addTimer();
+
+                //计算区域信息及其飞行参数
+                addAnyTimeInfo();
             }
             catch (Exception ex) { log.Warn(ex); }
         }
@@ -7191,5 +7216,286 @@ namespace ByAeroBeHero.GCSViews
             }
         }
         #endregion
+
+        #region 发送区域航点的坐标
+        private void SendAeroPoints()
+        {
+            try
+            {
+                ProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
+                {
+                    StartPosition = FormStartPosition.CenterScreen,
+                    Text = "发送区域航点",
+                    Tag = "AeroPoints"
+                };
+
+                if (MainV2.comPort.MAV.param.ContainsKey("AERAPOINT_TOTAL"))
+                {
+                    int a = int.Parse(MainV2.comPort.MAV.param["AERAPOINT_TOTAL"].ToString());
+                }
+
+                frmProgressReporter.DoWork += saveAeroPoints;
+                frmProgressReporter.UpdateProgressAndStatus(-1, "Sending AeroPoints");
+
+                ThemeManager.ApplyThemeTo(frmProgressReporter);
+
+                frmProgressReporter.RunBackgroundOperationAsync();
+
+                frmProgressReporter.Dispose();
+
+                breakploygonsoverlay.Markers.Clear();
+                MainMap.Focus();
+            }
+            catch
+            {
+                CustomMessageBox.Show("写入航点失败！");
+            }
+        }
+
+        void saveAeroPoints(object sender, ProgressWorkerEventArgs e, object passdata = null)
+        {
+            try
+            {
+                MainV2.comPort.setParam("AERAPOINT_TOTAL", drawnpolygon.Points.Count);
+
+                int a = 1;
+                // process commandlist to the mav
+                foreach (var temp in drawnpolygon.Points)
+                {
+
+                    ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(a * 100 / drawnpolygon.Points.Count, "Setting AP " + a);
+
+                    // try send the wp
+                    MainV2.comPort.setAP(temp, (ushort)(a - 1));
+                    a++;
+                }
+
+                ((ProgressReporterDialogue)sender).UpdateProgressAndStatus(100, "Done.");
+            }
+            catch (Exception ex) { log.Error(ex); MainV2.comPort.giveComport = false; throw; }
+
+            MainV2.comPort.giveComport = false;
+        }
+        #endregion
+
+        #region 读取区域航点的坐标
+        private void ReadAeroPoints()
+        {
+
+            if (MainV2.comPort.MAV.param["AREAPOINT_TOTAL"] == null)
+            {
+                CustomMessageBox.Show("不支持区域航点下载！");
+                return;
+            }
+
+            if (int.Parse(MainV2.comPort.MAV.param["AREAPOINT_TOTAL"].ToString()) < 1)
+            {
+                CustomMessageBox.Show("没有区域航点下载！");
+                return;
+            }
+
+            drawnpolygonsoverlay.Markers.Clear();
+
+            int count = int.Parse(MainV2.comPort.MAV.param["AREAPOINT_TOTAL"].ToString());
+
+            for (ushort a = 0; a < (count); a++)
+            {
+                try
+                {
+                    PointLatLngAlt plla = MainV2.comPort.getAeraPoint(a, ref count);
+                    //addpolygonmarkergrid(a.ToString(), plla.Lng, plla.Lat, plla.Alt);
+                    AddAeraPoints(plla.Lat, plla.Lng);
+                }
+                catch { CustomMessageBox.Show("没有区域航点下载！", Strings.ERROR); return; }
+            }
+
+
+            MainMap.UpdateMarkerLocalPosition(drawnpolygonsoverlay.Markers[0]);
+
+            MainMap.Invalidate();
+
+            getAreaInfo(wppolygon.Points, drawnpolygon.Points);
+        }
+
+        private void  AddAeraPoints(double lat,double lng)
+        {
+            polygongridmode = true;
+
+            List<PointLatLng> polygonPoints = new List<PointLatLng>();
+            if (drawnpolygonsoverlay.Polygons.Count == 0)
+            {
+                drawnpolygon.Points.Clear();
+                drawnpolygonsoverlay.Polygons.Add(drawnpolygon);
+            }
+
+            drawnpolygon.Fill = Brushes.Transparent;
+
+            // remove full loop is exists
+            if (drawnpolygon.Points.Count > 1 && drawnpolygon.Points[0] == drawnpolygon.Points[drawnpolygon.Points.Count - 1])
+                drawnpolygon.Points.RemoveAt(drawnpolygon.Points.Count - 1); // unmake a full loop
+
+            drawnpolygon.Points.Add(new PointLatLng(lat, lng));
+
+            addpolygonmarkergrid(drawnpolygon.Points.Count.ToString(), lng, lat, 0);
+
+            MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+            MainMap.Invalidate();
+            MainMap.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);
+        }
+        #endregion
+
+        #region 下载区域航点显示区域信息 
+
+        private double dist = 0;
+        private double Area = 0;
+        private void getAreaInfo(List<PointLatLng> WayPoints,List<PointLatLng> AreaPoints) 
+        {
+            if(drawnpolygon.Points.Count <= 0)
+                return;
+
+            lblArea.Text = Math.Round((double)(calcpolygonarea(AreaPoints) / 666.67),2).ToString("#") + "亩";//区域面积
+            lblStrips.Text = ((int)((Commands.RowCount - 3) / 4)).ToString() + " 条";//轨迹数
+            Area = Math.Round((double)(calcpolygonarea(AreaPoints) / 666.67), 2);
+           
+            for (int a = 1; a <= fullpointlist.Count - 3; a++)
+            {
+                dist += MainMap.MapProvider.Projection.GetDistance(fullpointlist[a], fullpointlist[a + 1]);
+            }
+            lblDistance.Text = Math.Round(dist,2).ToString() + "千米";
+
+            lblDistbetweenlines.Text = Math.Round((MainMap.MapProvider.Projection.GetDistance(fullpointlist[2], fullpointlist[3])*1000),1).ToString() +"米";
+
+            float speed = (float)Commands.Rows[1].Cells[2].Value;
+
+            double seconds = ((dist * 1000.0) / ((speed) * 0.8));
+
+            lblFlighttime.Text = secondsToNice(seconds);
+
+            lblHeadinghold.Text = Commands.Rows[2].Cells[1].Value +"度";
+        }
+
+        /// <summary>
+        /// 计算区域面积
+        /// </summary>
+        /// <param name="polygon"></param>
+        /// <returns></returns>
+        double calcpolygonarea(List<PointLatLngAlt> polygon)
+        {
+            // should be a closed polygon
+            // coords are in lat long
+            // need utm to calc area
+
+            if (polygon.Count == 0)
+            {
+                CustomMessageBox.Show("请定义一个多边形!");
+                return 0;
+            }
+
+            // close the polygon
+            if (polygon[0] != polygon[polygon.Count - 1])
+                polygon.Add(polygon[0]); // make a full loop
+
+            CoordinateTransformationFactory ctfac = new CoordinateTransformationFactory();
+
+            GeographicCoordinateSystem wgs84 = GeographicCoordinateSystem.WGS84;
+
+            int utmzone = (int)((polygon[0].Lng - -186.0) / 6.0);
+
+            IProjectedCoordinateSystem utm = ProjectedCoordinateSystem.WGS84_UTM(utmzone, polygon[0].Lat < 0 ? false : true);
+
+            ICoordinateTransformation trans = ctfac.CreateFromCoordinateSystems(wgs84, utm);
+
+            double prod1 = 0;
+            double prod2 = 0;
+
+            for (int a = 0; a < (polygon.Count - 1); a++)
+            {
+                double[] pll1 = { polygon[a].Lng, polygon[a].Lat };
+                double[] pll2 = { polygon[a + 1].Lng, polygon[a + 1].Lat };
+
+                double[] p1 = trans.MathTransform.Transform(pll1);
+                double[] p2 = trans.MathTransform.Transform(pll2);
+
+                prod1 += p1[0] * p2[1];
+                prod2 += p1[1] * p2[0];
+            }
+
+            double answer = (prod1 - prod2) / 2;
+
+            if (polygon[0] == polygon[polygon.Count - 1])
+                polygon.RemoveAt(polygon.Count - 1); // unmake a full loop
+
+            return Math.Abs(answer);
+        }
+
+        //飞行时间
+        string secondsToNice(double seconds)
+        {
+            if (seconds < 0)
+                return "Infinity Seconds";
+
+            double secs = seconds % 60;
+            int mins = (int)(seconds / 60) % 60;
+            int hours = (int)(seconds / 3600) % 24;
+
+            if (hours > 0)
+            {
+                return hours + ":" + mins.ToString("00") + ":" + secs.ToString("00") + " 小时";
+            }
+            else if (mins > 0)
+            {
+                return mins + ":" + secs.ToString("00") + " 分钟";
+            }
+            else
+            {
+                return secs.ToString("0.00") + " 秒";
+            }
+        }
+        #endregion
+
+        #region 添加飞机和区域信息时时信息
+        private void addAnyTimeInfo() 
+        {
+            if (MainV2.comPort.MAV.cs.lat == 0 || MainV2.comPort.MAV.cs.lng == 0)
+                return;
+
+            PointLatLng homeloc =new PointLatLng();
+            if (pointlist[0] != null)
+            {
+                homeloc = pointlist[0];            
+            }
+            else
+            {
+                homeloc = new PointLatLng(double.Parse(TXT_homelat.Text), double.Parse(TXT_homelng.Text));
+            }
+
+            PointLatLng currentloc = new PointLatLng(MainV2.comPort.MAV.cs.lat, MainV2.comPort.MAV.cs.lng);
+            // home至飞机位置距离时时变化　
+            double homedist = MainMap.MapProvider.Projection.GetDistance(currentloc, homeloc);
+
+            //两点航向角
+            string BearHomeToCurrentF = MainMap.MapProvider.Projection.GetBearing(currentloc, homeloc).ToString("0.0") + "度";
+            lblDisToHome1.Text = FormatDistance(homedist, true);
+            lblBearToHome1.Text = BearHomeToCurrentF;
+
+
+            double FlyDist = 0;
+            double CurrentDist = 0;
+            if (MainV2.comPort.MAV.cs.armed && MainV2.comPort.MAV.cs.mode == "自动" && fullpointlist.Count >= 0 && MainV2.comPort.MAV.cs.GoToPoints >= 3)
+            {
+                for (int a = 1; a <= MainV2.comPort.MAV.cs.GoToPoints - 2; a++)
+                {
+                    FlyDist += MainMap.MapProvider.Projection.GetDistance(fullpointlist[a], fullpointlist[a + 1]);
+                }
+                CurrentDist = MainMap.MapProvider.Projection.GetDistance(currentloc, fullpointlist[MainV2.comPort.MAV.cs.GoToPoints - 1]);
+
+                double persent = Math.Round(((FlyDist + CurrentDist) / float.Parse(lblDistance.Text.Replace("千米", ""))), 2);
+
+                lblDoneArea1.Text = (persent * 100).ToString() + "% /" + (Area * persent).ToString("0.0") + "亩";
+            }
+        }
+
+        #endregion
+
     }
 }

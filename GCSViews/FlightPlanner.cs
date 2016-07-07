@@ -2963,10 +2963,11 @@ namespace ByAeroBeHero.GCSViews
         //时时飞行航点
         public static GMapOverlay flyRoutesoverlay;
 
+         
         // etc
         readonly Random rnd = new Random();
         string mobileGpsLog = string.Empty;
-        GMapMarkerRect CurentRectMarker;
+        public static  GMapMarkerRect CurentRectMarker;
         GMapMarkerRallyPt CurrentRallyPt;
         GMapMarker CurrentGMapMarker;
         GMapMarkerLimitPt CurrentLimitPt;
@@ -3350,9 +3351,9 @@ namespace ByAeroBeHero.GCSViews
                         {
                             try
                             {
-                                //drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
-                                //MainMap.UpdatePolygonLocalPosition(drawnpolygon);
-                                //MainMap.Invalidate();
+                                drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = new PointLatLng(MouseDownEnd.Lat, MouseDownEnd.Lng);
+                                MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+                                MainMap.Invalidate();
                             }
                             catch { }
                         }
@@ -7188,12 +7189,7 @@ namespace ByAeroBeHero.GCSViews
                  }
 
              }
-                
-           
-
-              
-           
-
+        
         }
         #endregion
 
@@ -7229,9 +7225,9 @@ namespace ByAeroBeHero.GCSViews
                     Tag = "AeroPoints"
                 };
 
-                if (MainV2.comPort.MAV.param.ContainsKey("AERAPOINT_TOTAL"))
+                if (MainV2.comPort.MAV.param.ContainsKey("AREAPOINT_TOTAL"))
                 {
-                    int a = int.Parse(MainV2.comPort.MAV.param["AERAPOINT_TOTAL"].ToString());
+                    int a = int.Parse(MainV2.comPort.MAV.param["AREAPOINT_TOTAL"].ToString());
                 }
 
                 frmProgressReporter.DoWork += saveAeroPoints;
@@ -7256,7 +7252,7 @@ namespace ByAeroBeHero.GCSViews
         {
             try
             {
-                MainV2.comPort.setParam("AERAPOINT_TOTAL", drawnpolygon.Points.Count);
+                MainV2.comPort.setParam("AREAPOINT_TOTAL", drawnpolygon.Points.Count);
 
                 int a = 1;
                 // process commandlist to the mav
@@ -7277,7 +7273,7 @@ namespace ByAeroBeHero.GCSViews
             MainV2.comPort.giveComport = false;
         }
         #endregion
-
+      
         #region 读取区域航点的坐标
         private void ReadAeroPoints()
         {
@@ -7497,5 +7493,93 @@ namespace ByAeroBeHero.GCSViews
 
         #endregion
 
+        #region 坐标平移
+
+        enum MoveDirection
+        {
+            向上移动 = 1,
+            向下移动 = 2,
+            向左移动 = 3,
+            向右移动 = 4 
+        }
+
+        private void movePointsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string moveDirection = Convert.ToString(((ToolStripMenuItem)sender).Tag);
+
+            string moveDistance = "0.5";
+
+            //if (DialogResult.Cancel == InputBox.Show("坐标平移", "请输入航点"+Enum.Parse(typeof(MoveDirection),moveDirection).ToString() +"平移距离(米)", ref moveDistance))
+            //    return;
+
+            int no = 0;
+            if (CurentRectMarker != null)
+            {
+                PointLatLng movePoint = MovingPoints(CurentRectMarker.Position, float.Parse(moveDistance), moveDirection);
+
+                if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString(), out no))
+                {
+                    try
+                    {
+                        callMeDrag(CurentRectMarker.InnerMarker.Tag.ToString(), movePoint.Lat, movePoint.Lng, -1);
+                    }
+                    catch { CustomMessageBox.Show("航点平移失败，请再次尝试。"); }
+                }
+                else if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", ""), out no))
+                {
+                    try
+                    {
+                        drawnpolygon.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")) - 1] = movePoint;
+                        updatePointsMarks(int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("区域航点", "")));
+
+                        drawnpolygonsoverlay.Markers.Clear();
+                        int a = 1;
+                        foreach (PointLatLng pnt in drawnpolygon.Points)
+                        {
+                            addpolygonmarkergrid(a.ToString(), pnt.Lng, pnt.Lat, 0);
+                            a++;
+                        }
+
+
+                        MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+                        MainMap.Invalidate();
+                    }
+                    catch
+                    {
+                        CustomMessageBox.Show("区域航点平移失败，请再次尝试。");
+                    }
+                }
+            }
+
+            if (currentMarker != null)
+                CurentRectMarker = null;
+
+            writeKML();
+        }
+
+        private PointLatLng MovingPoints(PointLatLng movePoint,float moveDistance,string MoveDirection)
+        {
+            List<PointLatLngAlt> polygon = new List<PointLatLngAlt>();
+            polygon.Add(movePoint);
+
+            // utm zone distance calcs will be done in
+            int utmzone = polygon[0].GetUTMZone();
+
+            List<utmpos> utmpositions = utmpos.ToList(PointLatLngAlt.ToUTM(utmzone, polygon), utmzone);
+
+            polygon.Clear();
+
+            float dx = 0;
+            float dy = 0;
+            if (MoveDirection == "1") { dy = moveDistance; }
+            else if (MoveDirection == "2") { dy = -moveDistance; }
+            else if (MoveDirection == "3") { dx = -moveDistance; }
+            else if (MoveDirection == "4") { dx = moveDistance; }
+
+            polygon.Add((new utmpos(utmpositions[0].x + dx, utmpositions[0].y + dy, utmzone) { Tag = "M" }));
+
+            return polygon[0];
+        }
+        #endregion
     }
 }

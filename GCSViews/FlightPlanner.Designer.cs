@@ -199,6 +199,11 @@
             this.takeoffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setROIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movePointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moveToUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moveToDownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moveToLeftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.moveToRightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.polygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addPolygonPointToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1322,6 +1327,7 @@
             this.takeoffToolStripMenuItem,
             this.setROIToolStripMenuItem,
             this.clearMissionToolStripMenuItem,
+            this.movePointsToolStripMenuItem,
             this.toolStripSeparator1,
             this.polygonToolStripMenuItem,
             this.rallyPointsToolStripMenuItem,
@@ -1436,6 +1442,44 @@
             this.clearMissionToolStripMenuItem.Name = "clearMissionToolStripMenuItem";
             resources.ApplyResources(this.clearMissionToolStripMenuItem, "clearMissionToolStripMenuItem");
             this.clearMissionToolStripMenuItem.Click += new System.EventHandler(this.clearMissionToolStripMenuItem_Click);
+            // 
+            // movePointsToolStripMenuItem
+            // 
+            this.movePointsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.moveToUpToolStripMenuItem,
+            this.moveToDownToolStripMenuItem,
+            this.moveToLeftToolStripMenuItem,
+            this.moveToRightToolStripMenuItem});
+            this.movePointsToolStripMenuItem.Name = "movePointsToolStripMenuItem";
+            resources.ApplyResources(this.movePointsToolStripMenuItem, "movePointsToolStripMenuItem");
+            // 
+            // moveToUpToolStripMenuItem
+            // 
+            this.moveToUpToolStripMenuItem.Name = "moveToUpToolStripMenuItem";
+            resources.ApplyResources(this.moveToUpToolStripMenuItem, "moveToUpToolStripMenuItem");
+            this.moveToUpToolStripMenuItem.Tag = "1";
+            this.moveToUpToolStripMenuItem.Click += new System.EventHandler(this.movePointsToolStripMenuItem_Click);
+            // 
+            // moveToDownToolStripMenuItem
+            // 
+            this.moveToDownToolStripMenuItem.Name = "moveToDownToolStripMenuItem";
+            resources.ApplyResources(this.moveToDownToolStripMenuItem, "moveToDownToolStripMenuItem");
+            this.moveToDownToolStripMenuItem.Tag = "2";
+            this.moveToDownToolStripMenuItem.Click += new System.EventHandler(this.movePointsToolStripMenuItem_Click);
+            // 
+            // moveToLeftToolStripMenuItem
+            // 
+            this.moveToLeftToolStripMenuItem.Name = "moveToLeftToolStripMenuItem";
+            resources.ApplyResources(this.moveToLeftToolStripMenuItem, "moveToLeftToolStripMenuItem");
+            this.moveToLeftToolStripMenuItem.Tag = "3";
+            this.moveToLeftToolStripMenuItem.Click += new System.EventHandler(this.movePointsToolStripMenuItem_Click);
+            // 
+            // moveToRightToolStripMenuItem
+            // 
+            this.moveToRightToolStripMenuItem.Name = "moveToRightToolStripMenuItem";
+            resources.ApplyResources(this.moveToRightToolStripMenuItem, "moveToRightToolStripMenuItem");
+            this.moveToRightToolStripMenuItem.Tag = "4";
+            this.moveToRightToolStripMenuItem.Click += new System.EventHandler(this.movePointsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -2208,5 +2252,10 @@
         private System.Windows.Forms.Label lblDoneArea1;
         private System.Windows.Forms.Label lblBearToHome1;
         private System.Windows.Forms.Label lblDisToHome1;
+        private System.Windows.Forms.ToolStripMenuItem movePointsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moveToUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moveToDownToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moveToLeftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem moveToRightToolStripMenuItem;
     }
 }

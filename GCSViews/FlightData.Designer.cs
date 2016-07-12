@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
@@ -18,7 +18,6 @@
             this.tabQuick = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelQuick = new System.Windows.Forms.TableLayoutPanel();
             this.quickView6 = new ByAeroBeHero.Controls.QuickView();
-            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
             this.quickView5 = new ByAeroBeHero.Controls.QuickView();
             this.quickView4 = new ByAeroBeHero.Controls.QuickView();
             this.quickView2 = new ByAeroBeHero.Controls.QuickView();
@@ -43,28 +42,18 @@
             this.BUT_RAWSensor = new ByAeroBeHero.Controls.MyButton();
             this.BUTrestartmission = new ByAeroBeHero.Controls.MyButton();
             this.BUTactiondo = new ByAeroBeHero.Controls.MyButton();
-            this.modifyandSetSpeed = new ByAeroBeHero.Controls.ModifyandSet();
-            this.modifyandSetAlt = new ByAeroBeHero.Controls.ModifyandSet();
             this.tabActionsSimple = new System.Windows.Forms.TabPage();
             this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.myButton2 = new ByAeroBeHero.Controls.MyButton();
             this.myButton3 = new ByAeroBeHero.Controls.MyButton();
             this.tabGauges = new System.Windows.Forms.TabPage();
             this.Gvspeed = new AGaugeApp.AGauge();
-            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.Gheading = new ByAeroBeHero.Controls.HSI();
             this.Galt = new AGaugeApp.AGauge();
             this.Gspeed = new AGaugeApp.AGauge();
             this.tabStatus = new System.Windows.Forms.TabPage();
             this.tabServo = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelServos = new System.Windows.Forms.FlowLayoutPanel();
-            this.servoOptions1 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions2 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions3 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions4 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions5 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions6 = new ByAeroBeHero.Controls.ServoOptions();
-            this.servoOptions7 = new ByAeroBeHero.Controls.ServoOptions();
             this.tabTLogs = new System.Windows.Forms.TabPage();
             this.tableLayoutPaneltlogs = new System.Windows.Forms.TableLayoutPanel();
             this.BUT_loadtelem = new ByAeroBeHero.Controls.MyButton();
@@ -144,7 +133,6 @@
             this.panelShowParams = new System.Windows.Forms.Panel();
             this.Qvverspeed = new ByAeroBeHero.Controls.QuickView();
             this.Qvalt = new ByAeroBeHero.Controls.QuickView();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.Qvgroundspeed = new ByAeroBeHero.Controls.QuickView();
             this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
             this.Qvdist = new ByAeroBeHero.Controls.QuickView();
@@ -160,7 +148,6 @@
             this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblHorizontalError = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.BtnClear = new ByAeroBeHero.Controls.MyButton();
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.lblSataCount = new System.Windows.Forms.Label();
@@ -173,7 +160,6 @@
             this.setAspectRatioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.russianHudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
             this.windDir1 = new ByAeroBeHero.Controls.WindDir();
             this.gMapControl1 = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
@@ -194,6 +180,20 @@
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.bindingSourceQuickTab = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSourceHud = new System.Windows.Forms.BindingSource(this.components);
+            this.modifyandSetSpeed = new ByAeroBeHero.Controls.ModifyandSet();
+            this.modifyandSetAlt = new ByAeroBeHero.Controls.ModifyandSet();
+            this.servoOptions1 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions2 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions3 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions4 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions5 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions6 = new ByAeroBeHero.Controls.ServoOptions();
+            this.servoOptions7 = new ByAeroBeHero.Controls.ServoOptions();
+            this.bindingSourceGaugesTab = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel2.SuspendLayout();
@@ -205,11 +205,9 @@
             this.contextMenuStripactionstab.SuspendLayout();
             this.tabQuick.SuspendLayout();
             this.tableLayoutPanelQuick.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
             this.tabActions.SuspendLayout();
             this.tabActionsSimple.SuspendLayout();
             this.tabGauges.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             this.tabServo.SuspendLayout();
             this.flowLayoutPanelServos.SuspendLayout();
             this.tabTLogs.SuspendLayout();
@@ -240,15 +238,17 @@
             this.splitContainer1.SuspendLayout();
             this.contextMenuStripMap.SuspendLayout();
             this.panelShowParams.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panelAutoFly.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStripHud.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
             this.SuspendLayout();
             // 
@@ -348,10 +348,6 @@
             this.quickView6.number = 0D;
             this.quickView6.numberColor = System.Drawing.Color.Maroon;
             this.quickView6.numberformat = "0.00";
-            // 
-            // bindingSourceQuickTab
-            // 
-            this.bindingSourceQuickTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // quickView5
             // 
@@ -594,31 +590,6 @@
             this.BUTactiondo.UseVisualStyleBackColor = true;
             this.BUTactiondo.Click += new System.EventHandler(this.BUTactiondo_Click);
             // 
-            // modifyandSetSpeed
-            // 
-            this.modifyandSetSpeed.ButtonText = "Change Speed";
-            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
-            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
-            this.modifyandSetSpeed.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
-            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
-            // 
-            // modifyandSetAlt
-            // 
-            this.modifyandSetAlt.ButtonText = "Change Alt";
-            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
-            this.modifyandSetAlt.Name = "modifyandSetAlt";
-            this.modifyandSetAlt.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
-            // 
             // tabActionsSimple
             // 
             this.tabActionsSimple.Controls.Add(this.myButton1);
@@ -805,10 +776,6 @@
             this.Gvspeed.Value1 = 0F;
             this.Gvspeed.Value2 = 0F;
             this.Gvspeed.Value3 = 0F;
-            // 
-            // bindingSourceGaugesTab
-            // 
-            this.bindingSourceGaugesTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // Gheading
             // 
@@ -1135,48 +1102,6 @@
             this.flowLayoutPanelServos.Controls.Add(this.servoOptions6);
             this.flowLayoutPanelServos.Controls.Add(this.servoOptions7);
             this.flowLayoutPanelServos.Name = "flowLayoutPanelServos";
-            // 
-            // servoOptions1
-            // 
-            resources.ApplyResources(this.servoOptions1, "servoOptions1");
-            this.servoOptions1.Name = "servoOptions1";
-            this.servoOptions1.thisservo = 5;
-            // 
-            // servoOptions2
-            // 
-            resources.ApplyResources(this.servoOptions2, "servoOptions2");
-            this.servoOptions2.Name = "servoOptions2";
-            this.servoOptions2.thisservo = 6;
-            // 
-            // servoOptions3
-            // 
-            resources.ApplyResources(this.servoOptions3, "servoOptions3");
-            this.servoOptions3.Name = "servoOptions3";
-            this.servoOptions3.thisservo = 7;
-            // 
-            // servoOptions4
-            // 
-            resources.ApplyResources(this.servoOptions4, "servoOptions4");
-            this.servoOptions4.Name = "servoOptions4";
-            this.servoOptions4.thisservo = 8;
-            // 
-            // servoOptions5
-            // 
-            resources.ApplyResources(this.servoOptions5, "servoOptions5");
-            this.servoOptions5.Name = "servoOptions5";
-            this.servoOptions5.thisservo = 9;
-            // 
-            // servoOptions6
-            // 
-            resources.ApplyResources(this.servoOptions6, "servoOptions6");
-            this.servoOptions6.Name = "servoOptions6";
-            this.servoOptions6.thisservo = 10;
-            // 
-            // servoOptions7
-            // 
-            resources.ApplyResources(this.servoOptions7, "servoOptions7");
-            this.servoOptions7.Name = "servoOptions7";
-            this.servoOptions7.thisservo = 11;
             // 
             // tabTLogs
             // 
@@ -1773,22 +1698,15 @@
             // panelShowParams
             // 
             this.panelShowParams.BackColor = System.Drawing.Color.Black;
-            this.panelShowParams.Controls.Add(this.Qvverspeed);
-            this.panelShowParams.Controls.Add(this.Qvalt);
-            this.panelShowParams.Controls.Add(this.panel4);
-            this.panelShowParams.Controls.Add(this.Qvgroundspeed);
-            this.panelShowParams.Controls.Add(this.QVSonarRange);
-            this.panelShowParams.Controls.Add(this.Qvdist);
-            this.panelShowParams.Controls.Add(this.Qvtohome);
-            this.panelShowParams.Controls.Add(this.qvpitch);
-            this.panelShowParams.Controls.Add(this.qvyaw);
-            this.panelShowParams.Controls.Add(this.qvroll);
+            this.panelShowParams.Controls.Add(this.tableLayoutPanel3);
             resources.ApplyResources(this.panelShowParams, "panelShowParams");
             this.panelShowParams.Name = "panelShowParams";
+            this.panelShowParams.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowParams_MouseDown);
+            this.panelShowParams.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowParams_MouseMove);
+            this.panelShowParams.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowParams_MouseUp);
             // 
             // Qvverspeed
             // 
-            resources.ApplyResources(this.Qvverspeed, "Qvverspeed");
             this.Qvverspeed.BackColor = System.Drawing.Color.Black;
             this.Qvverspeed.backColor1 = System.Drawing.Color.Black;
             this.Qvverspeed.backColor2 = System.Drawing.Color.Black;
@@ -1796,6 +1714,7 @@
             this.Qvverspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvverspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "verticalspeed", true));
             this.Qvverspeed.desc = "垂直速度(M/S):";
+            resources.ApplyResources(this.Qvverspeed, "Qvverspeed");
             this.Qvverspeed.Name = "Qvverspeed";
             this.Qvverspeed.number = 0D;
             this.Qvverspeed.numberColor = System.Drawing.Color.Lime;
@@ -1803,7 +1722,6 @@
             // 
             // Qvalt
             // 
-            resources.ApplyResources(this.Qvalt, "Qvalt");
             this.Qvalt.BackColor = System.Drawing.Color.Black;
             this.Qvalt.backColor1 = System.Drawing.Color.Black;
             this.Qvalt.backColor2 = System.Drawing.Color.Black;
@@ -1811,21 +1729,14 @@
             this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "alt", true));
             this.Qvalt.desc = "高度(M):";
+            resources.ApplyResources(this.Qvalt, "Qvalt");
             this.Qvalt.Name = "Qvalt";
             this.Qvalt.number = 0D;
             this.Qvalt.numberColor = System.Drawing.Color.Lime;
             this.Qvalt.numberformat = "0.00";
             // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.txt_messagebox);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
             // Qvgroundspeed
             // 
-            resources.ApplyResources(this.Qvgroundspeed, "Qvgroundspeed");
             this.Qvgroundspeed.BackColor = System.Drawing.Color.Black;
             this.Qvgroundspeed.backColor1 = System.Drawing.Color.Black;
             this.Qvgroundspeed.backColor2 = System.Drawing.Color.Black;
@@ -1833,6 +1744,7 @@
             this.Qvgroundspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvgroundspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "groundspeed", true));
             this.Qvgroundspeed.desc = "速度(M/S):";
+            resources.ApplyResources(this.Qvgroundspeed, "Qvgroundspeed");
             this.Qvgroundspeed.Name = "Qvgroundspeed";
             this.Qvgroundspeed.number = 0D;
             this.Qvgroundspeed.numberColor = System.Drawing.Color.Lime;
@@ -1840,7 +1752,6 @@
             // 
             // QVSonarRange
             // 
-            resources.ApplyResources(this.QVSonarRange, "QVSonarRange");
             this.QVSonarRange.BackColor = System.Drawing.Color.Black;
             this.QVSonarRange.backColor1 = System.Drawing.Color.Black;
             this.QVSonarRange.backColor2 = System.Drawing.Color.Black;
@@ -1848,6 +1759,7 @@
             this.QVSonarRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QVSonarRange.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "sonarrange", true));
             this.QVSonarRange.desc = "超声波范围(M):";
+            resources.ApplyResources(this.QVSonarRange, "QVSonarRange");
             this.QVSonarRange.Name = "QVSonarRange";
             this.QVSonarRange.number = 0D;
             this.QVSonarRange.numberColor = System.Drawing.Color.Lime;
@@ -1855,7 +1767,6 @@
             // 
             // Qvdist
             // 
-            resources.ApplyResources(this.Qvdist, "Qvdist");
             this.Qvdist.BackColor = System.Drawing.Color.Black;
             this.Qvdist.backColor1 = System.Drawing.Color.Black;
             this.Qvdist.backColor2 = System.Drawing.Color.Black;
@@ -1863,6 +1774,7 @@
             this.Qvdist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvdist.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "wp_dist", true));
             this.Qvdist.desc = "距离目标点(M):";
+            resources.ApplyResources(this.Qvdist, "Qvdist");
             this.Qvdist.Name = "Qvdist";
             this.Qvdist.number = 0D;
             this.Qvdist.numberColor = System.Drawing.Color.Lime;
@@ -1870,7 +1782,6 @@
             // 
             // Qvtohome
             // 
-            resources.ApplyResources(this.Qvtohome, "Qvtohome");
             this.Qvtohome.BackColor = System.Drawing.Color.Black;
             this.Qvtohome.backColor1 = System.Drawing.Color.Black;
             this.Qvtohome.backColor2 = System.Drawing.Color.Black;
@@ -1878,6 +1789,7 @@
             this.Qvtohome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Qvtohome.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "DistToHome", true));
             this.Qvtohome.desc = "距离返航点(M):";
+            resources.ApplyResources(this.Qvtohome, "Qvtohome");
             this.Qvtohome.Name = "Qvtohome";
             this.Qvtohome.number = 0D;
             this.Qvtohome.numberColor = System.Drawing.Color.Lime;
@@ -1885,7 +1797,6 @@
             // 
             // qvpitch
             // 
-            resources.ApplyResources(this.qvpitch, "qvpitch");
             this.qvpitch.BackColor = System.Drawing.Color.Black;
             this.qvpitch.backColor1 = System.Drawing.Color.Black;
             this.qvpitch.backColor2 = System.Drawing.Color.Black;
@@ -1893,6 +1804,7 @@
             this.qvpitch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvpitch.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "pitch", true));
             this.qvpitch.desc = "俯仰角度(D):";
+            resources.ApplyResources(this.qvpitch, "qvpitch");
             this.qvpitch.Name = "qvpitch";
             this.qvpitch.number = 0D;
             this.qvpitch.numberColor = System.Drawing.Color.Lime;
@@ -1900,7 +1812,6 @@
             // 
             // qvyaw
             // 
-            resources.ApplyResources(this.qvyaw, "qvyaw");
             this.qvyaw.BackColor = System.Drawing.Color.Black;
             this.qvyaw.backColor1 = System.Drawing.Color.Black;
             this.qvyaw.backColor2 = System.Drawing.Color.Black;
@@ -1908,6 +1819,7 @@
             this.qvyaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvyaw.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "yaw", true));
             this.qvyaw.desc = "航向角度(D):";
+            resources.ApplyResources(this.qvyaw, "qvyaw");
             this.qvyaw.Name = "qvyaw";
             this.qvyaw.number = 0D;
             this.qvyaw.numberColor = System.Drawing.Color.Lime;
@@ -1915,7 +1827,6 @@
             // 
             // qvroll
             // 
-            resources.ApplyResources(this.qvroll, "qvroll");
             this.qvroll.BackColor = System.Drawing.Color.Black;
             this.qvroll.backColor1 = System.Drawing.Color.Black;
             this.qvroll.backColor2 = System.Drawing.Color.Black;
@@ -1923,6 +1834,7 @@
             this.qvroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.qvroll.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "roll", true));
             this.qvroll.desc = "滚转角度(D):";
+            resources.ApplyResources(this.qvroll, "qvroll");
             this.qvroll.Name = "qvroll";
             this.qvroll.number = 0D;
             this.qvroll.numberColor = System.Drawing.Color.Lime;
@@ -1993,10 +1905,6 @@
             this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS 水平误差: 0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // BtnClear
             // 
@@ -2166,16 +2074,12 @@
             this.russianHudToolStripMenuItem.Name = "russianHudToolStripMenuItem";
             this.russianHudToolStripMenuItem.Click += new System.EventHandler(this.russianHudToolStripMenuItem_Click);
             // 
-            // bindingSourceHud
-            // 
-            this.bindingSourceHud.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // windDir1
             // 
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2407,8 +2311,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2416,8 +2320,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2437,6 +2341,104 @@
             // 
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // tableLayoutPanel3
+            // 
+            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
+            this.tableLayoutPanel3.Controls.Add(this.txt_messagebox, 0, 9);
+            this.tableLayoutPanel3.Controls.Add(this.Qvgroundspeed, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.QVSonarRange, 0, 8);
+            this.tableLayoutPanel3.Controls.Add(this.Qvverspeed, 0, 5);
+            this.tableLayoutPanel3.Controls.Add(this.Qvalt, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.Qvdist, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.qvpitch, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.Qvtohome, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.qvyaw, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.qvroll, 0, 4);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            // 
+            // bindingSourceQuickTab
+            // 
+            this.bindingSourceQuickTab.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // bindingSourceHud
+            // 
+            this.bindingSourceHud.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // modifyandSetSpeed
+            // 
+            this.modifyandSetSpeed.ButtonText = "Change Speed";
+            resources.ApplyResources(this.modifyandSetSpeed, "modifyandSetSpeed");
+            this.modifyandSetSpeed.Name = "modifyandSetSpeed";
+            this.modifyandSetSpeed.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetSpeed.Click += new System.EventHandler(this.modifyandSetSpeed_Click);
+            this.modifyandSetSpeed.ParentChanged += new System.EventHandler(this.modifyandSetSpeed_ParentChanged);
+            // 
+            // modifyandSetAlt
+            // 
+            this.modifyandSetAlt.ButtonText = "Change Alt";
+            resources.ApplyResources(this.modifyandSetAlt, "modifyandSetAlt");
+            this.modifyandSetAlt.Name = "modifyandSetAlt";
+            this.modifyandSetAlt.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.modifyandSetAlt.Click += new System.EventHandler(this.modifyandSetAlt_Click);
+            // 
+            // servoOptions1
+            // 
+            resources.ApplyResources(this.servoOptions1, "servoOptions1");
+            this.servoOptions1.Name = "servoOptions1";
+            this.servoOptions1.thisservo = 5;
+            // 
+            // servoOptions2
+            // 
+            resources.ApplyResources(this.servoOptions2, "servoOptions2");
+            this.servoOptions2.Name = "servoOptions2";
+            this.servoOptions2.thisservo = 6;
+            // 
+            // servoOptions3
+            // 
+            resources.ApplyResources(this.servoOptions3, "servoOptions3");
+            this.servoOptions3.Name = "servoOptions3";
+            this.servoOptions3.thisservo = 7;
+            // 
+            // servoOptions4
+            // 
+            resources.ApplyResources(this.servoOptions4, "servoOptions4");
+            this.servoOptions4.Name = "servoOptions4";
+            this.servoOptions4.thisservo = 8;
+            // 
+            // servoOptions5
+            // 
+            resources.ApplyResources(this.servoOptions5, "servoOptions5");
+            this.servoOptions5.Name = "servoOptions5";
+            this.servoOptions5.thisservo = 9;
+            // 
+            // servoOptions6
+            // 
+            resources.ApplyResources(this.servoOptions6, "servoOptions6");
+            this.servoOptions6.Name = "servoOptions6";
+            this.servoOptions6.thisservo = 10;
+            // 
+            // servoOptions7
+            // 
+            resources.ApplyResources(this.servoOptions7, "servoOptions7");
+            this.servoOptions7.Name = "servoOptions7";
+            this.servoOptions7.thisservo = 11;
+            // 
+            // bindingSourceGaugesTab
+            // 
+            this.bindingSourceGaugesTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // bindingSourceStatusTab
             // 
@@ -2464,11 +2466,9 @@
             this.contextMenuStripactionstab.ResumeLayout(false);
             this.tabQuick.ResumeLayout(false);
             this.tableLayoutPanelQuick.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
             this.tabActions.ResumeLayout(false);
             this.tabActionsSimple.ResumeLayout(false);
             this.tabGauges.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             this.tabServo.ResumeLayout(false);
             this.flowLayoutPanelServos.ResumeLayout(false);
             this.tabTLogs.ResumeLayout(false);
@@ -2504,17 +2504,19 @@
             this.splitContainer1.ResumeLayout(false);
             this.contextMenuStripMap.ResumeLayout(false);
             this.panelShowParams.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panelAutoFly.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStripHud.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceQuickTab)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceGaugesTab)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
             this.ResumeLayout(false);
 
@@ -2668,7 +2670,6 @@
         private Controls.QuickView qvpitch;
         private Controls.QuickView qvyaw;
         private Controls.FlightInfo fiType;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pboxWarnMessage;
         private Controls.MyButton btnWarnMessage;
         private Controls.MyButton btnMeter;
@@ -2708,6 +2709,7 @@
         private Controls.MyButton myButtonShowInfo;
         private System.Windows.Forms.Panel panelShowParams;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
 
     }
 }

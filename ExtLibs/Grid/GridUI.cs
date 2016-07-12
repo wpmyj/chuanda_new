@@ -138,7 +138,9 @@ namespace ByAeroBeHero
             this.CMB_startfrom.SelectedIndex = 0;
             comboBox1.SelectedIndex = 0;
             // set and angle that is good//获取
-            NUM_angle.Value = (decimal)map.MapProvider.Projection.GetBearing(list[0], list[1]); //((getAngleOfLongestSide(list) + 360) % 360);
+            if (list.Count > 0)
+               NUM_angle.Value = (decimal)map.MapProvider.Projection.GetBearing(list[0], list[1]);
+            //((getAngleOfLongestSide(list) + 360) % 360);
             TXT_headinghold.Text = (Math.Round(NUM_angle.Value)).ToString();
         }
 

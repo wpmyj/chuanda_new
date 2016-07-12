@@ -3398,6 +3398,8 @@ namespace ByAeroBeHero.GCSViews
             CHK_autopan.ForeColor = Color.White;
 
             panelShowParams.BackColor = Color.Black;
+            panelShowParams.Size = new Size(270, 400);
+            tableLayoutPanel3.Size = new Size(244, 382);
             //CurrentState.isArm
             if (CurrentState.isArm)
             {
@@ -3945,12 +3947,12 @@ namespace ByAeroBeHero.GCSViews
         {
             if (this.pboxWarnMessage.Enabled)
             {
-                this.panel4.Visible = true;
+                //this.panel4.Visible = true;
                 pboxWarnMessage.Enabled = false;
             }
             else
             {
-                this.panel4.Visible = false;
+                //this.panel4.Visible = false;
                 pboxWarnMessage.Enabled = true;
             }
         }
@@ -4000,6 +4002,32 @@ namespace ByAeroBeHero.GCSViews
                 //tableLayoutPanel1.Visible = true;
                 IsShowParamInfo = true;
             }
+        }
+        #endregion
+
+        #region 参数列表拖拽
+        int yPosP;
+        int xPosP;
+        bool MoveFlagM;
+        private void panelShowParams_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlagM = true;//已经按下.    
+            xPosP = e.X;//当前x坐标.    
+            yPosP = e.Y;//当前y坐标.
+        }
+
+        private void panelShowParams_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlagM)
+            {
+                panelShowParams.Left += Convert.ToInt16(e.X - xPosP);//设置x坐标.        
+                panelShowParams.Top += Convert.ToInt16(e.Y - yPosP);//设置y坐标.    
+            }
+        }
+
+        private void panelShowParams_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlagM = false;
         }
         #endregion
     }

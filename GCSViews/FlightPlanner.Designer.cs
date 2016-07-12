@@ -211,6 +211,7 @@
             this.savePolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fromSHPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exchangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setRallyPointToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getRallyPointsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1493,7 +1494,8 @@
             this.clearPolygonToolStripMenuItem,
             this.savePolygonToolStripMenuItem,
             this.loadPolygonToolStripMenuItem,
-            this.fromSHPToolStripMenuItem});
+            this.fromSHPToolStripMenuItem,
+            this.exchangeToolStripMenuItem});
             this.polygonToolStripMenuItem.Name = "polygonToolStripMenuItem";
             resources.ApplyResources(this.polygonToolStripMenuItem, "polygonToolStripMenuItem");
             // 
@@ -1526,6 +1528,12 @@
             this.fromSHPToolStripMenuItem.Name = "fromSHPToolStripMenuItem";
             resources.ApplyResources(this.fromSHPToolStripMenuItem, "fromSHPToolStripMenuItem");
             this.fromSHPToolStripMenuItem.Click += new System.EventHandler(this.fromSHPToolStripMenuItem_Click);
+            // 
+            // exchangeToolStripMenuItem
+            // 
+            this.exchangeToolStripMenuItem.Name = "exchangeToolStripMenuItem";
+            resources.ApplyResources(this.exchangeToolStripMenuItem, "exchangeToolStripMenuItem");
+            this.exchangeToolStripMenuItem.Click += new System.EventHandler(this.exchangeToolStripMenuItem_Click);
             // 
             // rallyPointsToolStripMenuItem
             // 
@@ -2257,5 +2265,6 @@
         private System.Windows.Forms.ToolStripMenuItem moveToDownToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem moveToLeftToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem moveToRightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exchangeToolStripMenuItem;
     }
 }

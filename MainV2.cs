@@ -396,6 +396,8 @@ namespace ByAeroBeHero
             // set this before we reset it
             MainV2.config["NUM_tracklength"] = "100000";
 
+            MainV2.config["NUM_movelength"] = "0.5";
+
             // create one here - but override on load
             MainV2.config["guid"] = Guid.NewGuid().ToString();
 

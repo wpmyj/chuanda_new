@@ -15,10 +15,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public ConfigSetParams()
         {
             InitializeComponent();
+            
         }
 
         public void Activate()
         {
+            NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
             setWPParams();
 
             timer1.Start();
@@ -169,6 +171,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void RTL_ALT_ValueChanged(object sender, EventArgs e)
         {
             EEPROM_View_float_TextChanged(sender, e);
+        }
+
+        private void NUM_movelength_ValueChanged(object sender, EventArgs e)
+        {
+            MainV2.config["NUM_movelength"] = NUM_movelength.Value;
         }
     }
 }

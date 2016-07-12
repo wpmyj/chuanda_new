@@ -7507,7 +7507,7 @@ namespace ByAeroBeHero.GCSViews
         {
             string moveDirection = Convert.ToString(((ToolStripMenuItem)sender).Tag);
 
-            string moveDistance = "0.5";
+            string moveDistance = MainV2.config["NUM_movelength"].ToString();
 
             //if (DialogResult.Cancel == InputBox.Show("坐标平移", "请输入航点"+Enum.Parse(typeof(MoveDirection),moveDirection).ToString() +"平移距离(米)", ref moveDistance))
             //    return;
@@ -7579,6 +7579,47 @@ namespace ByAeroBeHero.GCSViews
             polygon.Add((new utmpos(utmpositions[0].x + dx, utmpositions[0].y + dy, utmzone) { Tag = "M" }));
 
             return polygon[0];
+        }
+        #endregion
+
+        #region 区域航点交换
+        private void exchangeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string exchangePoints = "";
+            if (DialogResult.Cancel == InputBox.Show("区域航点交换", "请输入航点，格式：x/y", ref exchangePoints))
+                return;
+            if (exchangePoints != "" || exchangePoints != null || exchangePoints.Contains("/"))
+            {
+                int p = exchangePoints.IndexOf("/");
+
+                int ixpoint = int.Parse(exchangePoints.Substring(0, p));
+                int iypoint = int.Parse(exchangePoints.Substring(exchangePoints.Length-p,p ));
+
+                PointLatLng xpoint = drawnpolygon.Points[ixpoint - 1];
+                PointLatLng ypoint = drawnpolygon.Points[iypoint - 1];
+
+                drawnpolygon.Points[ixpoint - 1] = ypoint;
+                drawnpolygon.Points[iypoint - 1] = xpoint;
+
+                updatePointsMarks(ixpoint);
+                updatePointsMarks(iypoint);
+
+                drawnpolygonsoverlay.Markers.Clear();
+                int a = 1;
+                foreach (PointLatLng pnt in drawnpolygon.Points)
+                {
+                    addpolygonmarkergrid(a.ToString(), pnt.Lng, pnt.Lat, 0);
+                    a++;
+                }
+
+
+                MainMap.UpdatePolygonLocalPosition(drawnpolygon);
+                MainMap.Invalidate();
+            }
+            else 
+            {
+                CustomMessageBox.Show("输入区域航点格式不正确，请重新输入！");
+            }
         }
         #endregion
     }

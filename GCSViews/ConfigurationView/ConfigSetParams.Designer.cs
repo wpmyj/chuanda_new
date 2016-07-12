@@ -41,8 +41,11 @@
             this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.NUM_movelength = new System.Windows.Forms.NumericUpDown();
+            this.lblMoveDistance = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -130,10 +133,40 @@
             this.RTL_ALT_FINAL.ParamName = null;
             this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // NUM_movelength
+            // 
+            this.NUM_movelength.BackColor = System.Drawing.SystemColors.Window;
+            this.NUM_movelength.DecimalPlaces = 1;
+            resources.ApplyResources(this.NUM_movelength, "NUM_movelength");
+            this.NUM_movelength.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.NUM_movelength.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.NUM_movelength.Name = "NUM_movelength";
+            this.NUM_movelength.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.NUM_movelength.ValueChanged += new System.EventHandler(this.NUM_movelength_ValueChanged);
+            // 
+            // lblMoveDistance
+            // 
+            resources.ApplyResources(this.lblMoveDistance, "lblMoveDistance");
+            this.lblMoveDistance.Name = "lblMoveDistance";
+            // 
             // ConfigSetParams
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblMoveDistance);
+            this.Controls.Add(this.NUM_movelength);
             this.Controls.Add(this.WP_YAW_BEHAVIOR);
             this.Controls.Add(this.lblYawBehavior);
             this.Controls.Add(this.lblUnit);
@@ -146,6 +179,7 @@
             this.Name = "ConfigSetParams";
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +198,7 @@
         private System.Windows.Forms.Label lblYawBehavior;
         private Controls.MavlinkComboBox WP_YAW_BEHAVIOR;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.NumericUpDown NUM_movelength;
+        private System.Windows.Forms.Label lblMoveDistance;
     }
 }

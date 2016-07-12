@@ -137,8 +137,8 @@ namespace ByAeroBeHero
             //CMB_startfrom.DataSource =  Enum.GetNames(typeof(Grid.StartPosition));
             this.CMB_startfrom.SelectedIndex = 0;
             comboBox1.SelectedIndex = 0;
-            // set and angle that is good
-            NUM_angle.Value = (decimal)((getAngleOfLongestSide(list) + 360) % 360);
+            // set and angle that is good//获取
+            NUM_angle.Value = (decimal)map.MapProvider.Projection.GetBearing(list[0], list[1]); //((getAngleOfLongestSide(list) + 360) % 360);
             TXT_headinghold.Text = (Math.Round(NUM_angle.Value)).ToString();
         }
 
@@ -863,7 +863,7 @@ namespace ByAeroBeHero
                 }
                 last = item;
             }
-
+            
             return (angle + 360) % 360;
         }
 

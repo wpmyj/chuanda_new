@@ -108,7 +108,7 @@ namespace ByAeroBeHero.Controls
                     if (ParamName == "RNGFND_TYPE")
                         ans = MainV2.comPort.setParam(ParamName, 0);
                     else
-                        ans = MainV2.comPort.setParam(ParamName, OnValue);
+                        ans = MainV2.comPort.setParam(ParamName, OffValue);
                     if (ans == false)
                         CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed,ParamName), Strings.ERROR);
                 }

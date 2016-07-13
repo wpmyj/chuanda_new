@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 using GMap.NET.WindowsForms;
 using ByAeroBeHero.Controls;
+using ByAeroBeHero.GCSViews;
 
 namespace ByAeroBeHero
 {
@@ -77,6 +78,7 @@ namespace ByAeroBeHero
         void but_Click(object sender, EventArgs e)
         {
             var gridui = new GridUI(this);
+
             ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
 
             int a = Host.FPDrawnPolygonLimit.Points.Count;

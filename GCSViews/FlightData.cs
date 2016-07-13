@@ -3909,6 +3909,7 @@ namespace ByAeroBeHero.GCSViews
         }
         #endregion
 
+        #region 按钮事件
         private void btnLoiterUnlim_Click(object sender, EventArgs e)
         {
             if (!MainV2.comPort.BaseStream.IsOpen)
@@ -3926,6 +3927,7 @@ namespace ByAeroBeHero.GCSViews
             catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
             ((Button)sender).Enabled = true;
         }
+        #endregion
 
         #region 显示控件
 
@@ -4028,6 +4030,23 @@ namespace ByAeroBeHero.GCSViews
         private void panelShowParams_MouseUp(object sender, MouseEventArgs e)
         {
             MoveFlagM = false;
+        }
+        #endregion
+
+        #region
+        public void FillToGridUI(var gridui)
+        {
+
+            splitContainer1.Panel2.Controls.Add(sc.Control);
+            ThemeManager.ApplyThemeTo(sc.Control);
+
+            sc.Control.Dock = DockStyle.Fill;
+            sc.Control.Visible = true;
+
+            if (sc.Control is IActivate)
+            {
+                ((IActivate)(sc.Control)).Activate();
+            }
         }
         #endregion
     }

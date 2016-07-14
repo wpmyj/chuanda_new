@@ -4034,20 +4034,6 @@ namespace ByAeroBeHero.GCSViews
         #endregion
 
         #region
-        public void FillToGridUI(var gridui)
-        {
-
-            splitContainer1.Panel2.Controls.Add(sc.Control);
-            ThemeManager.ApplyThemeTo(sc.Control);
-
-            sc.Control.Dock = DockStyle.Fill;
-            sc.Control.Visible = true;
-
-            if (sc.Control is IActivate)
-            {
-                ((IActivate)(sc.Control)).Activate();
-            }
-        }
         #endregion
     }
 }

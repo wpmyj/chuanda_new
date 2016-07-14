@@ -895,6 +895,9 @@
             this.panelShowPoint.Controls.Add(this.groupBoxBasePoint);
             resources.ApplyResources(this.panelShowPoint, "panelShowPoint");
             this.panelShowPoint.Name = "panelShowPoint";
+            this.panelShowPoint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseDown);
+            this.panelShowPoint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseMove);
+            this.panelShowPoint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseUp);
             // 
             // breakpointgroupBox
             // 

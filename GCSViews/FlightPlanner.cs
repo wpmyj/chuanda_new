@@ -6528,13 +6528,13 @@ namespace ByAeroBeHero.GCSViews
             if (Isshow)
             {
                 this.panelShowPoint.Visible = false;
-                this.panelShowInfo.Visible = false;
+                //this.panelShowInfo.Visible = false;
                 Isshow = false;
             }
             else
             {
                 this.panelShowPoint.Visible = true;
-                this.panelShowInfo.Visible = true;
+                //this.panelShowInfo.Visible = true;
                 Isshow = true;
             }
         }
@@ -7622,5 +7622,33 @@ namespace ByAeroBeHero.GCSViews
             }
         }
         #endregion
+
+        #region 参数列表拖拽
+
+        int yPosPa;
+        int xPosPa;
+        bool MoveFlagM;
+        private void panelShowPoint_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlagM = true;//已经按下.    
+            xPosPa = e.X;//当前x坐标.    
+            yPosPa = e.Y;//当前y坐标.
+        }
+
+        private void panelShowPoint_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlagM)
+            {
+                panelShowPoint.Left += Convert.ToInt16(e.X - xPosPa);//设置x坐标.        
+                panelShowPoint.Top += Convert.ToInt16(e.Y - yPosPa);//设置y坐标.    
+            }
+        }
+
+        private void panelShowPoint_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlagM = false;
+        }
+        #endregion
+
     }
 }

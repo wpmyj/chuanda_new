@@ -50,10 +50,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 MainV2.comPort.MAV.param);
                     RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
                 MainV2.comPort.MAV.param);
+
+
+                    //语音播报
+                    SetCheckboxFromConfig("speechenable", CHK_enablespeech);
+                    SetCheckboxFromConfig("speechwaypointenabled", CHK_speechwaypoint);
                     startup = false;
                 }
             }
             catch (Exception ex) { }
+        }
+
+        private static void SetCheckboxFromConfig(string configKey, CheckBox chk)
+        {
+            if (MainV2.config[configKey] != null)
+                chk.Checked = bool.Parse(MainV2.config[configKey].ToString());
         }
 
         #region
@@ -176,6 +187,83 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void NUM_movelength_ValueChanged(object sender, EventArgs e)
         {
             MainV2.config["NUM_movelength"] = NUM_movelength.Value;
+        }
+
+        private void CHK_enablespeech_CheckedChanged(object sender, EventArgs e)
+        {
+            MainV2.speechEnable = CHK_enablespeech.Checked;
+            MainV2.config["speechenable"] = CHK_enablespeech.Checked;
+            if (MainV2.speechEngine != null)
+                MainV2.speechEngine.SpeakAsyncCancelAll();
+
+            if (CHK_enablespeech.Checked)
+            {
+                CHK_speechwaypoint.Visible = true;
+                CHK_speechflightParams.Visible = true;
+                CHK_speechotherParams.Visible = true;
+            }
+            else
+            {
+                CHK_speechwaypoint.Visible = false;
+                CHK_speechflightParams.Visible = false;
+                CHK_speechotherParams.Visible = false;
+            }
+        }
+
+        private void CHK_speechwaypoint_CheckedChanged(object sender, EventArgs e)
+        {
+            if (startup)
+                return;
+            MainV2.config["speechwaypointenabled"] = ((CheckBox)sender).Checked.ToString();
+
+            if (((CheckBox)sender).Checked)
+            {
+                var speechstring = "正在飞往航点 {wpn}";
+                if (MainV2.config["speechwaypoint"] != null)
+                    speechstring = MainV2.config["speechwaypoint"].ToString();
+                if (DialogResult.Cancel ==
+                    CustomMessageBox.Show("是否进行语音播报?", "提示"))
+                    return;
+                MainV2.config["speechwaypoint"] = speechstring;
+            }
+        }
+
+        private void CHK_speechflightParams_CheckedChanged(object sender, EventArgs e)
+        {
+            if (startup)
+                return;
+            MainV2.config["speechflightparamsabled"] = ((CheckBox)sender).Checked.ToString();
+
+            //MainV2.config["speechflightparams"] = string.Empty;
+            if (((CheckBox)sender).Checked)
+            {
+                var speechstring = "当前高度{alt}米,速度 {gsp}米每秒,电压{batv}伏";
+                if (MainV2.config["speechflightparams"] != null)
+                    speechstring = MainV2.config["speechflightparams"].ToString();
+                if (DialogResult.Cancel ==
+                    CustomMessageBox.Show("是否进行语音播报?", "提示"))
+                    return;
+                MainV2.config["speechflightparams"] = speechstring;
+            }
+        }
+
+        private void CHK_speechotherParams_CheckedChanged(object sender, EventArgs e)
+        {
+            if (startup)
+                return;
+            MainV2.config["speecharmenabled"] = ((CheckBox)sender).Checked.ToString();
+            MainV2.config["speechmodeenabled"] = ((CheckBox)sender).Checked.ToString();
+
+            if (((CheckBox)sender).Checked)
+            {
+                var speechstring = "飞行模式{mode}";
+                if (MainV2.config["speechmode"] != null)
+                    speechstring = MainV2.config["speechmode"].ToString();
+                if (DialogResult.Cancel ==
+                    CustomMessageBox.Show("是否进行语音播报", "提示?"))
+                    return;
+                MainV2.config["speechmode"] = speechstring;
+            }
         }
     }
 }

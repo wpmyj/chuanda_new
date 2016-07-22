@@ -700,14 +700,14 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             if (((CheckBox) sender).Checked)
             {
-                var speechstring = "Armed";
+                var speechstring = "加锁";
                 if (MainV2.config["speecharm"] != null)
                     speechstring = MainV2.config["speecharm"].ToString();
                 if (DialogResult.Cancel == InputBox.Show("Arm", "What do you want it to say?", ref speechstring))
                     return;
                 MainV2.config["speecharm"] = speechstring;
 
-                speechstring = "Disarmed";
+                speechstring = "解锁";
                 if (MainV2.config["speechdisarm"] != null)
                     speechstring = MainV2.config["speechdisarm"].ToString();
                 if (DialogResult.Cancel == InputBox.Show("Disarmed", "What do you want it to say?", ref speechstring))

@@ -43,10 +43,19 @@
             this.label30 = new System.Windows.Forms.Label();
             this.lbl_footprint = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
-            this.map = new ByAeroBeHero.Controls.myGMAP();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BUT_Accept = new ByAeroBeHero.Controls.MyButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.lbl_flighttime = new System.Windows.Forms.Label();
+            this.lbl_area = new System.Windows.Forms.Label();
+            this.lbl_distance = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.lbl_distbetweenlines = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.lbl_strips = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.CHK_advanced = new System.Windows.Forms.CheckBox();
             this.CHK_footprints = new System.Windows.Forms.CheckBox();
@@ -85,18 +94,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.NUM_Distance = new System.Windows.Forms.NumericUpDown();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.lbl_flighttime = new System.Windows.Forms.Label();
-            this.lbl_area = new System.Windows.Forms.Label();
-            this.lbl_distance = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.lbl_distbetweenlines = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.lbl_strips = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabSimple = new System.Windows.Forms.TabPage();
             this.tabGrid = new System.Windows.Forms.TabPage();
@@ -130,7 +127,6 @@
             this.rad_repeatservo = new System.Windows.Forms.RadioButton();
             this.rad_trigdist = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.BUT_samplephoto = new ByAeroBeHero.Controls.MyButton();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -148,14 +144,20 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.myButtonCanle = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_Accept = new ByAeroBeHero.Controls.MyButton();
+            this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
+            this.map = new ByAeroBeHero.Controls.myGMAP();
+            this.BUT_samplephoto = new ByAeroBeHero.Controls.MyButton();
             this.BUT_save = new ByAeroBeHero.Controls.MyButton();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox_copter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).BeginInit();
@@ -166,8 +168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabGrid.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -186,6 +186,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_focallength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox5
@@ -269,74 +270,101 @@
             // splitContainer1
             // 
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
-            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.TRK_zoom);
-            this.splitContainer1.Panel1.Controls.Add(this.map);
+            this.splitContainer1.Panel1.Controls.Add(this.panel3);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.panel1);
+            this.splitContainer1.Panel2.Controls.Add(this.TRK_zoom);
+            this.splitContainer1.Panel2.Controls.Add(this.map);
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
             // 
-            // TRK_zoom
+            // panel3
             // 
-            resources.ApplyResources(this.TRK_zoom, "TRK_zoom");
-            this.TRK_zoom.LargeChange = 0.005F;
-            this.TRK_zoom.Maximum = 24F;
-            this.TRK_zoom.Minimum = 1F;
-            this.TRK_zoom.Name = "TRK_zoom";
-            this.TRK_zoom.SmallChange = 0.001F;
-            this.TRK_zoom.TickFrequency = 1F;
-            this.TRK_zoom.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.TRK_zoom.Value = 19F;
-            this.TRK_zoom.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.panel3.Controls.Add(this.myButtonCanle);
+            this.panel3.Controls.Add(this.BUT_Accept);
+            this.panel3.Controls.Add(this.groupBox8);
+            this.panel3.Controls.Add(this.groupBox4);
+            this.panel3.Controls.Add(this.groupBox_copter);
+            this.panel3.Controls.Add(this.groupBox6);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
-            // map
+            // groupBox8
             // 
-            resources.ApplyResources(this.map, "map");
-            this.map.Bearing = 0F;
-            this.map.CanDragMap = true;
-            this.map.EmptyTileColor = System.Drawing.Color.Gray;
-            this.map.GrayScaleMode = false;
-            this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.map.LevelsKeepInMemmory = 5;
-            this.map.MarkersEnabled = true;
-            this.map.MaxZoom = 22;
-            this.map.MinZoom = 2;
-            this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.map.Name = "map";
-            this.map.NegativeMode = false;
-            this.map.PolygonsEnabled = true;
-            this.map.RetryLoadTile = 0;
-            this.map.RoutesEnabled = true;
-            this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
-            this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.map.ShowTileGridLines = false;
-            this.map.Zoom = 3D;
-            this.map.MouseDown += new System.Windows.Forms.MouseEventHandler(this.map_MouseDown);
-            this.map.MouseMove += new System.Windows.Forms.MouseEventHandler(this.map_MouseMove);
+            this.groupBox8.Controls.Add(this.tableLayoutPanel1);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
             // 
-            // panel1
+            // tableLayoutPanel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.BUT_Accept);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox_copter);
-            this.panel1.Controls.Add(this.groupBox6);
-            this.panel1.Controls.Add(this.groupBox8);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.label22, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label23, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_flighttime, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_area, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_distance, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label33, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_distbetweenlines, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbl_strips, 1, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // BUT_Accept
+            // label22
             // 
-            resources.ApplyResources(this.BUT_Accept, "BUT_Accept");
-            this.BUT_Accept.Name = "BUT_Accept";
-            this.BUT_Accept.UseVisualStyleBackColor = true;
-            this.BUT_Accept.Click += new System.EventHandler(this.BUT_Accept_Click);
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // lbl_flighttime
+            // 
+            resources.ApplyResources(this.lbl_flighttime, "lbl_flighttime");
+            this.lbl_flighttime.Name = "lbl_flighttime";
+            // 
+            // lbl_area
+            // 
+            resources.ApplyResources(this.lbl_area, "lbl_area");
+            this.lbl_area.Name = "lbl_area";
+            // 
+            // lbl_distance
+            // 
+            resources.ApplyResources(this.lbl_distance, "lbl_distance");
+            this.lbl_distance.Name = "lbl_distance";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
+            // 
+            // lbl_distbetweenlines
+            // 
+            resources.ApplyResources(this.lbl_distbetweenlines, "lbl_distbetweenlines");
+            this.lbl_distbetweenlines.Name = "lbl_distbetweenlines";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // lbl_strips
+            // 
+            resources.ApplyResources(this.lbl_strips, "lbl_strips");
+            this.lbl_strips.Name = "lbl_strips";
             // 
             // groupBox4
             // 
@@ -747,78 +775,6 @@
             0});
             this.NUM_Distance.ValueChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
             // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.tableLayoutPanel1);
-            resources.ApplyResources(this.groupBox8, "groupBox8");
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.TabStop = false;
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.label22, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label23, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_flighttime, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_area, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_distance, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label33, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label31, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_distbetweenlines, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label25, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_strips, 1, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
-            // 
-            // label23
-            // 
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            // 
-            // lbl_flighttime
-            // 
-            resources.ApplyResources(this.lbl_flighttime, "lbl_flighttime");
-            this.lbl_flighttime.Name = "lbl_flighttime";
-            // 
-            // lbl_area
-            // 
-            resources.ApplyResources(this.lbl_area, "lbl_area");
-            this.lbl_area.Name = "lbl_area";
-            // 
-            // lbl_distance
-            // 
-            resources.ApplyResources(this.lbl_distance, "lbl_distance");
-            this.lbl_distance.Name = "lbl_distance";
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.Name = "label33";
-            // 
-            // label31
-            // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.Name = "label31";
-            // 
-            // lbl_distbetweenlines
-            // 
-            resources.ApplyResources(this.lbl_distbetweenlines, "lbl_distbetweenlines");
-            this.lbl_distbetweenlines.Name = "lbl_distbetweenlines";
-            // 
-            // label25
-            // 
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.Name = "label25";
-            // 
-            // lbl_strips
-            // 
-            resources.ApplyResources(this.lbl_strips, "lbl_strips");
-            this.lbl_strips.Name = "lbl_strips";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabSimple);
@@ -1133,13 +1089,6 @@
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
-            // BUT_samplephoto
-            // 
-            resources.ApplyResources(this.BUT_samplephoto, "BUT_samplephoto");
-            this.BUT_samplephoto.Name = "BUT_samplephoto";
-            this.BUT_samplephoto.UseVisualStyleBackColor = true;
-            this.BUT_samplephoto.Click += new System.EventHandler(this.BUT_samplephoto_Click);
-            // 
             // label21
             // 
             resources.ApplyResources(this.label21, "label21");
@@ -1251,6 +1200,65 @@
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
+            // myButtonCanle
+            // 
+            resources.ApplyResources(this.myButtonCanle, "myButtonCanle");
+            this.myButtonCanle.Name = "myButtonCanle";
+            this.myButtonCanle.UseVisualStyleBackColor = true;
+            this.myButtonCanle.Click += new System.EventHandler(this.myButtonCanle_Click);
+            // 
+            // BUT_Accept
+            // 
+            resources.ApplyResources(this.BUT_Accept, "BUT_Accept");
+            this.BUT_Accept.Name = "BUT_Accept";
+            this.BUT_Accept.UseVisualStyleBackColor = true;
+            this.BUT_Accept.Click += new System.EventHandler(this.BUT_Accept_Click);
+            // 
+            // TRK_zoom
+            // 
+            resources.ApplyResources(this.TRK_zoom, "TRK_zoom");
+            this.TRK_zoom.LargeChange = 0.005F;
+            this.TRK_zoom.Maximum = 24F;
+            this.TRK_zoom.Minimum = 1F;
+            this.TRK_zoom.Name = "TRK_zoom";
+            this.TRK_zoom.SmallChange = 0.001F;
+            this.TRK_zoom.TickFrequency = 1F;
+            this.TRK_zoom.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.TRK_zoom.Value = 19F;
+            this.TRK_zoom.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // map
+            // 
+            resources.ApplyResources(this.map, "map");
+            this.map.Bearing = 0F;
+            this.map.CanDragMap = true;
+            this.map.EmptyTileColor = System.Drawing.Color.Gray;
+            this.map.GrayScaleMode = false;
+            this.map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.map.LevelsKeepInMemmory = 5;
+            this.map.MarkersEnabled = true;
+            this.map.MaxZoom = 22;
+            this.map.MinZoom = 2;
+            this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.map.Name = "map";
+            this.map.NegativeMode = false;
+            this.map.PolygonsEnabled = true;
+            this.map.RetryLoadTile = 0;
+            this.map.RoutesEnabled = true;
+            this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
+            this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.map.ShowTileGridLines = false;
+            this.map.Zoom = 3D;
+            this.map.MouseDown += new System.Windows.Forms.MouseEventHandler(this.map_MouseDown);
+            this.map.MouseMove += new System.Windows.Forms.MouseEventHandler(this.map_MouseMove);
+            // 
+            // BUT_samplephoto
+            // 
+            resources.ApplyResources(this.BUT_samplephoto, "BUT_samplephoto");
+            this.BUT_samplephoto.Name = "BUT_samplephoto";
+            this.BUT_samplephoto.UseVisualStyleBackColor = true;
+            this.BUT_samplephoto.Click += new System.EventHandler(this.BUT_samplephoto_Click);
+            // 
             // BUT_save
             // 
             resources.ApplyResources(this.BUT_save, "BUT_save");
@@ -1261,21 +1269,23 @@
             // GridUI
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.groupBox5);
             this.Name = "GridUI";
+            resources.ApplyResources(this, "$this");
             this.Load += new System.EventHandler(this.GridUI_Load);
             this.Resize += new System.EventHandler(this.GridUI_Resize);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox_copter.ResumeLayout(false);
@@ -1289,9 +1299,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabGrid.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -1314,13 +1321,13 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_focallength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Controls.myGMAP map;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -1439,6 +1446,8 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.NumericUpDown numer_landhigh;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Panel panel1;
+        private Controls.MyButton myButtonCanle;
+        private System.Windows.Forms.Panel panel3;
+        private Controls.myGMAP map;
     }
 }

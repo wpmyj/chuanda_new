@@ -36,6 +36,9 @@ namespace ByAeroBeHero
         [STAThread]
         public static void Main(string[] args)
         {
+            //Speech speechEngine = new Speech();
+            //MainV2.speechEngine.SpeakAsync("你好");
+
             //给窗体添加皮肤样式 wangjicheng
             Sunisoft.IrisSkin.SkinEngine skin = new Sunisoft.IrisSkin.SkinEngine();
             //skin.SkinFile = Application.StartupPath.Replace(@"\bin\Debug", "") + @"\skins\Emerald.ssk";
@@ -94,7 +97,7 @@ namespace ByAeroBeHero
             WebRequest.DefaultWebProxy = WebRequest.GetSystemWebProxy();
             WebRequest.DefaultWebProxy.Credentials = CredentialCache.DefaultNetworkCredentials;
 
-            string name = "ByAero,BeHero 地面站 v1.2.2_20160705_PC_Beta";
+            string name = "ByAero,BeHero 地面站 v1.3.0_20160719_PC_Beta";
 
             if (File.Exists(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt"))
                 name = File.ReadAllText(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt", Encoding.UTF8);

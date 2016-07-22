@@ -43,7 +43,7 @@ namespace ByAeroBeHero
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridUI));
             var temp = (string)(resources.GetObject("$this.Text"));
 
-            but = new ToolStripMenuItem(temp);
+            but = new ToolStripMenuItem("航线扫描");
             but.Click += but_Click;
 
             bool hit = false;
@@ -64,7 +64,7 @@ namespace ByAeroBeHero
             button.Dock = DockStyle.Fill;
             button.Width =109;
             button.Height= 27;
-            button.Text = temp;
+            button.Text = "航线扫描";
             Host.FPTLPanel.Controls.Add(button);
 
             button.Click += but_Click;
@@ -79,27 +79,65 @@ namespace ByAeroBeHero
         {
             var gridui = new GridUI(this);
 
-            ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
-
             int a = Host.FPDrawnPolygonLimit.Points.Count;
-
             if (Host.FPDrawnPolygon != null && Host.FPDrawnPolygon.Points.Count > 2)
             {
-                gridui.ShowDialog();
+                foreach (Control ctl in Host.splitContainer1.Panel2.Controls)
+                {
+                    ctl.Visible = false;
+                }
+
+                Host.splitContainer1.Panel2.Controls.Add(gridui);
+
+                ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(gridui);
+
+                gridui.Dock = DockStyle.Fill;
+                gridui.Invalidate();
+
+                gridui.Show();
+                gridui.Visible = true;
             }
             else
             {
-                if (CustomMessageBox.Show("没有进行区域规划。加载文件?", "加载文件", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    gridui.LoadGrid();
-                    gridui.ShowDialog();
-                }
-                else
-                {
-                    CustomMessageBox.Show("请进行区域规划.", "错误");
-                }
+
+                ShowFliahtPlanner(); 
+                gridui.Hide();
+                gridui.Visible = false;
+                CustomMessageBox.Show("请加载区域工作文件，再进行规划。", "提示");
+
+                //if (CustomMessageBox.Show("没有进行区域规划。加载文件?", "加载文件", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                //{
+                //    gridui.LoadGrid();
+                //    gridui.Show();
+                //}
+                //else
+                //{
+                //    CustomMessageBox.Show("请进行区域规划.", "错误");
+                //}
             }
             
+        }
+
+        public void ShowFliahtPlanner() 
+        {
+            foreach (MainSwitcher.Screen sc in MainV2.View.screens)
+            {
+                if (sc.Name == "FlightPlanner")
+                {
+                    Host.splitContainer1.Panel2.Controls.Add(sc.Control);
+                    ByAeroBeHero.Utilities.ThemeManager.ApplyThemeTo(sc.Control);
+
+                    sc.Control.Dock = DockStyle.Fill;
+                    sc.Control.Visible = true;
+
+                    if (sc.Control is IActivate)
+                    {
+                        ((IActivate)(sc.Control)).Activate();
+                    }
+
+                    break;
+                }
+            }
         }
 
         public override bool Exit()

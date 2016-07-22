@@ -269,13 +269,13 @@ DON'T DO THIS IF YOU ARE IN THE AIR
     <value>Sucessfully programmed</value>
   </data>
   <data name="CONNECTc" xml:space="preserve">
-    <value>连接</value>
+    <value></value>
   </data>
   <data name="Disconnect" xml:space="preserve">
-    <value>断开</value>
+    <value></value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value>断开</value>
+    <value></value>
   </data>
   <data name="Failclog" xml:space="preserve">
     <value>创建日志失败-不会登录这个会话</value>
@@ -450,7 +450,7 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>Stop</value>
   </data>
   <data name="Connect" xml:space="preserve">
-    <value>连接</value>
+    <value></value>
   </data>
   <data name="Start" xml:space="preserve">
     <value>Start</value>

@@ -265,7 +265,7 @@ namespace ByAeroBeHero.Controls
             string str =string.Empty;
             if (this.Name == "fiBat")
             {
-                str = _batterylevel.ToString("0.00v") + " " + _current.ToString("0.0 A") + " " + (_batteryremaining) + "%";
+                str = _batterylevel.ToString("0.00v");// +" " + _current.ToString("0.0 A") + " " + (_batteryremaining) + "%";
             }
             else if(this.Name == "fiGPS")
             {

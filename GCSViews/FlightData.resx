@@ -220,7 +220,7 @@
     <value>1162, 18</value>
   </metadata>
   <data name="quickView6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 176</value>
+    <value>181, 176</value>
   </data>
   <data name="quickView6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -274,7 +274,7 @@
     <value>1</value>
   </data>
   <data name="quickView4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 90</value>
+    <value>181, 90</value>
   </data>
   <data name="quickView4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -301,7 +301,7 @@
     <value>2</value>
   </data>
   <data name="quickView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 4</value>
+    <value>181, 4</value>
   </data>
   <data name="quickView2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -397,7 +397,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanelQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>347, 260</value>
+    <value>355, 260</value>
   </data>
   <data name="tableLayoutPanelQuick.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -430,7 +430,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabQuick.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabQuick.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1018,7 +1018,7 @@
     <value>modifyandSetSpeed</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetSpeed.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1042,7 +1042,7 @@
     <value>modifyandSetAlt</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ModifyandSet, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;modifyandSetAlt.Parent" xml:space="preserve">
     <value>tabActions</value>
@@ -1057,7 +1057,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabActions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1183,7 +1183,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabActionsSimple.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabActionsSimple.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -1339,7 +1339,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabGauges.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1372,7 +1372,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabStatus.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1411,7 +1411,7 @@
     <value>servoOptions1</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions1.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1435,7 +1435,7 @@
     <value>servoOptions2</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions2.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1459,7 +1459,7 @@
     <value>servoOptions3</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions3.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1483,7 +1483,7 @@
     <value>servoOptions4</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions4.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1507,7 +1507,7 @@
     <value>servoOptions5</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions5.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1531,7 +1531,7 @@
     <value>servoOptions6</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions6.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1555,7 +1555,7 @@
     <value>servoOptions7</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6037.21681, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.ServoOptions, ByAeroBeHero, Version=1.0.6043.29722, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;servoOptions7.Parent" xml:space="preserve">
     <value>flowLayoutPanelServos</value>
@@ -1573,7 +1573,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="flowLayoutPanelServos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>347, 260</value>
+    <value>355, 260</value>
   </data>
   <data name="flowLayoutPanelServos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1600,7 +1600,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabServo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabServo.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2137,7 +2137,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPaneltlogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tableLayoutPaneltlogs.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -2164,7 +2164,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabTLogs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabTLogs.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2374,7 +2374,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tablogbrowse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tablogbrowse.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2632,7 +2632,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabScripts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabScripts.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2662,7 +2662,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPagemessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 268</value>
+    <value>363, 268</value>
   </data>
   <data name="tabPagemessages.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -2695,7 +2695,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControlactions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 297</value>
+    <value>371, 297</value>
   </data>
   <data name="tabControlactions.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -2725,7 +2725,7 @@
     <value>1</value>
   </data>
   <data name="SubMainLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 783</value>
+    <value>373, 783</value>
   </data>
   <data name="SubMainLeft.SplitterDistance" type="System.Int32, mscorlib">
     <value>479</value>
@@ -2764,7 +2764,7 @@
     <value>1433, 783</value>
   </data>
   <data name="MainH.SplitterDistance" type="System.Int32, mscorlib">
-    <value>1063</value>
+    <value>1055</value>
   </data>
   <data name="MainH.SplitterWidth" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2791,7 +2791,7 @@
     <value>微软雅黑, 7.8pt</value>
   </data>
   <data name="txt_messagebox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 276</value>
+    <value>6, 294</value>
   </data>
   <data name="txt_messagebox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -2803,7 +2803,7 @@
     <value>Vertical</value>
   </data>
   <data name="txt_messagebox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 86</value>
+    <value>218, 73</value>
   </data>
   <data name="txt_messagebox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2818,7 +2818,7 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;txt_messagebox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>9</value>
   </data>
   <data name="tableMap.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
     <value>Single</value>
@@ -3103,7 +3103,7 @@
     <value>Top, Right</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="lblPump.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -3118,7 +3118,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblPump.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 34</value>
+    <value>356, 34</value>
   </data>
   <data name="lblPump.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
@@ -3148,7 +3148,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxPump.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 3</value>
+    <value>356, 3</value>
   </data>
   <data name="pictureBoxPump.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3178,7 +3178,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 3</value>
+    <value>71, 3</value>
   </data>
   <data name="pictureBoxLevel.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3214,7 +3214,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 31</value>
+    <value>177, 31</value>
   </data>
   <data name="lblCompass.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 17</value>
@@ -3250,7 +3250,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblAccel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 31</value>
+    <value>120, 31</value>
   </data>
   <data name="lblAccel.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 17</value>
@@ -3286,7 +3286,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblGPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 31</value>
+    <value>13, 31</value>
   </data>
   <data name="lblGPS.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 17</value>
@@ -3316,7 +3316,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxCompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 3</value>
+    <value>185, 3</value>
   </data>
   <data name="pictureBoxCompass.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3346,7 +3346,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxAccel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 3</value>
+    <value>128, 3</value>
   </data>
   <data name="pictureBoxAccel.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3376,7 +3376,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxGPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 3</value>
+    <value>14, 3</value>
   </data>
   <data name="pictureBoxGPS.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3406,7 +3406,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxGyro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>278, 3</value>
+    <value>242, 3</value>
   </data>
   <data name="pictureBoxGyro.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3436,7 +3436,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxReceiver.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 3</value>
+    <value>299, 3</value>
   </data>
   <data name="pictureBoxReceiver.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -3472,7 +3472,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblGyro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 34</value>
+    <value>236, 34</value>
   </data>
   <data name="lblGyro.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
@@ -3508,7 +3508,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblReceiver.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 34</value>
+    <value>293, 34</value>
   </data>
   <data name="lblReceiver.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
@@ -3544,7 +3544,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 31</value>
+    <value>69, 31</value>
   </data>
   <data name="lblLevel.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 17</value>
@@ -3566,6 +3566,72 @@
   </data>
   <data name="&gt;&gt;lblLevel.ZOrder" xml:space="preserve">
     <value>13</value>
+  </data>
+  <data name="pictureBoxvibez.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="pictureBoxvibez.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxvibez.Location" type="System.Drawing.Point, System.Drawing">
+    <value>414, 3</value>
+  </data>
+  <data name="pictureBoxvibez.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 24</value>
+  </data>
+  <data name="pictureBoxvibez.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBoxvibez.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxvibez.Name" xml:space="preserve">
+    <value>pictureBoxvibez</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxvibez.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxvibez.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxvibez.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblvibez.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="lblvibez.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblvibez.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 6.60000038pt</value>
+  </data>
+  <data name="lblvibez.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblvibez.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 34</value>
+  </data>
+  <data name="lblvibez.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="lblvibez.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="lblvibez.Text" xml:space="preserve">
+    <value>振动</value>
+  </data>
+  <data name="&gt;&gt;lblvibez.Name" xml:space="preserve">
+    <value>lblvibez</value>
+  </data>
+  <data name="&gt;&gt;lblvibez.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblvibez.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;lblvibez.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3595,7 +3661,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblPump" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxPump" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxLevel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompass" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblAccel" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblGPS" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxCompass" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxAccel" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGPS" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGyro" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxReceiver" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblGyro" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblReceiver" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblLevel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571,Percent,14.28571" /&gt;&lt;Rows Styles="Percent,60,Percent,40" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblPump" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxPump" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxLevel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCompass" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblAccel" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblGPS" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxCompass" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxAccel" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGPS" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGyro" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxReceiver" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblGyro" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblReceiver" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblLevel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxvibez" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblvibez" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5" /&gt;&lt;Rows Styles="Percent,60,Percent,40" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panelDeviceStatus.Location" type="System.Drawing.Point, System.Drawing">
     <value>610, 1</value>
@@ -4295,7 +4361,7 @@
     <value>zg1</value>
   </data>
   <data name="&gt;&gt;zg1.Type" xml:space="preserve">
-    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.17471, Culture=neutral, PublicKeyToken=null</value>
+    <value>ZedGraph.ZedGraphControl, ZedGraph, Version=5.1.5.26604, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;zg1.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
@@ -4438,6 +4504,9 @@
   <data name="&gt;&gt;contextMenuStripMap.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="tableLayoutPanel3.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
     <value>Inset</value>
   </data>
@@ -4454,7 +4523,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Qvgroundspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="Qvgroundspeed.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -4469,19 +4538,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;Qvgroundspeed.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="QVSonarRange.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="QVSonarRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 246</value>
+    <value>6, 262</value>
   </data>
   <data name="QVSonarRange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="QVSonarRange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="QVSonarRange.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -4496,19 +4565,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;QVSonarRange.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="Qvverspeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="Qvverspeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 156</value>
+    <value>6, 166</value>
   </data>
   <data name="Qvverspeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Qvverspeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="Qvverspeed.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -4523,19 +4592,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;Qvverspeed.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="Qvalt.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="Qvalt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 36</value>
+    <value>6, 38</value>
   </data>
   <data name="Qvalt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Qvalt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="Qvalt.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -4550,19 +4619,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;Qvalt.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="Qvdist.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="Qvdist.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 216</value>
+    <value>6, 230</value>
   </data>
   <data name="Qvdist.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Qvdist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="Qvdist.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -4577,19 +4646,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;Qvdist.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="qvpitch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="qvpitch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 66</value>
+    <value>6, 70</value>
   </data>
   <data name="qvpitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="qvpitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="qvpitch.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -4604,19 +4673,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;qvpitch.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="Qvtohome.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="Qvtohome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 186</value>
+    <value>6, 198</value>
   </data>
   <data name="Qvtohome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="Qvtohome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="Qvtohome.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -4631,19 +4700,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;Qvtohome.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="qvyaw.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="qvyaw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 96</value>
+    <value>6, 102</value>
   </data>
   <data name="qvyaw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="qvyaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="qvyaw.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -4658,19 +4727,19 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;qvyaw.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="qvroll.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="qvroll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 126</value>
+    <value>6, 134</value>
   </data>
   <data name="qvroll.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="qvroll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
+    <value>218, 22</value>
   </data>
   <data name="qvroll.TabIndex" type="System.Int32, mscorlib">
     <value>85</value>
@@ -4685,16 +4754,16 @@
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;qvroll.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 11</value>
+    <value>8, 7</value>
   </data>
   <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 368</value>
+    <value>230, 373</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -4712,16 +4781,13 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txt_messagebox" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvgroundspeed" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="QVSonarRange" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvverspeed" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvalt" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvdist" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="qvpitch" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvtohome" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="qvyaw" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="qvroll" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,8.324975,Percent,25.07522" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Qvgroundspeed" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="QVSonarRange" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvverspeed" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvalt" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvdist" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="qvpitch" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Qvtohome" Row="6" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="qvyaw" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="qvroll" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txt_messagebox" Row="9" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,8.68812,Percent,21.80692,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="panelShowParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1063, 60</value>
-  </data>
-  <data name="panelShowParams.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>249, 387</value>
+    <value>1042, 149</value>
   </data>
   <data name="panelShowParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 387</value>
+    <value>249, 392</value>
   </data>
   <data name="panelShowParams.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>

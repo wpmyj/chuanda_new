@@ -3379,7 +3379,12 @@ namespace ByAeroBeHero.GCSViews
             if (messagecount != MainV2.comPort.MAV.cs.messages.Count)
             {
                 StringBuilder message = new StringBuilder();
-                MainV2.comPort.MAV.cs.messages.ForEach(x => { message.AppendLine(x); });
+                //MainV2.comPort.MAV.cs.messages.ForEach(x => { message.AppendLine(x); });
+                for (int i = MainV2.comPort.MAV.cs.messages.Count - 1; i >= 0 ; i-- )
+                {
+                    message.AppendLine(MainV2.comPort.MAV.cs.messages[i]);
+
+                }
                 txt_messagebox.Text = message.ToString();
 
                 messagecount = MainV2.comPort.MAV.cs.messages.Count;
@@ -3399,7 +3404,7 @@ namespace ByAeroBeHero.GCSViews
 
             panelShowParams.BackColor = Color.Black;
             panelShowParams.Size = new Size(270, 400);
-            tableLayoutPanel3.Size = new Size(244, 382);
+            tableLayoutPanel3.Size = new Size(235, 382);
             //CurrentState.isArm
             if (CurrentState.isArm)
             {
@@ -3454,6 +3459,12 @@ namespace ByAeroBeHero.GCSViews
                 this.pictureBoxPump.Image = null;
             }
 
+            if (this.pictureBoxvibez.Image != null)
+            {
+                this.pictureBoxvibez.Image.Dispose();
+                this.pictureBoxvibez.Image = null;
+            }
+
             //this.panelDeviceStatus.BackColor = Color.Black;
             if (MainV2.comPort.BaseStream.IsOpen)
             {
@@ -3477,9 +3488,13 @@ namespace ByAeroBeHero.GCSViews
                     this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Waring;
                 }
 
-                if (CurrentState.gpshealth)
+                if (CurrentState.gpshealth && MainV2.comPort.MAV.cs.gpsstatus > 1)
                 {
                     this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else if (MainV2.comPort.MAV.cs.gpsstatus == 0)
+                {
+                    this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 }
                 else
                 {
@@ -3527,6 +3542,19 @@ namespace ByAeroBeHero.GCSViews
                 {
                     this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Waring;
                 }
+
+                if (MainV2.comPort.MAV.cs.vibez <= 5)
+                {
+                    this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else if (5 < MainV2.comPort.MAV.cs.vibez && MainV2.comPort.MAV.cs.vibez <= 10)
+                {
+                    this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Alerted;
+                }
+                else 
+                {
+                    this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
             }
             else 
             {
@@ -3537,6 +3565,8 @@ namespace ByAeroBeHero.GCSViews
                 this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+
             }
 
         } 
@@ -4031,9 +4061,6 @@ namespace ByAeroBeHero.GCSViews
         {
             MoveFlagM = false;
         }
-        #endregion
-
-        #region
         #endregion
     }
 }

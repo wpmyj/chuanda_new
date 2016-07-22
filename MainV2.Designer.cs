@@ -181,7 +181,7 @@ namespace ByAeroBeHero
             // toolStripConnectionControl
             // 
             this.toolStripConnectionControl.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripConnectionControl.BackColor = System.Drawing.Color.Teal;
+            this.toolStripConnectionControl.BackColor = System.Drawing.Color.Black;
             this.toolStripConnectionControl.ForeColor = System.Drawing.Color.Black;
             this.toolStripConnectionControl.Margin = new System.Windows.Forms.Padding(0);
             this.toolStripConnectionControl.Name = "toolStripConnectionControl";

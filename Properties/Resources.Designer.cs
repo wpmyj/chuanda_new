@@ -123,6 +123,16 @@ namespace ByAeroBeHero.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap Alerted {
+            get {
+                object obj = ResourceManager.GetObject("Alerted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap Antenna_Tracker_01 {
             get {
                 object obj = ResourceManager.GetObject("Antenna Tracker-01", resourceCulture);

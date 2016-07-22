@@ -1870,7 +1870,8 @@ namespace ByAeroBeHero.GCSViews
             {
                 ReadAeroPoints();
             }
-            catch { CustomMessageBox.Show("读取区域航点失败！"); }
+            catch { }
+            //CustomMessageBox.Show("读取区域航点失败！"); 
         }
 
         void getWPs(object sender, ProgressWorkerEventArgs e, object passdata = null)
@@ -1968,7 +1969,13 @@ namespace ByAeroBeHero.GCSViews
 
             if (drawnpolygon.Points.Count <= 0)
             {
-                CustomMessageBox.Show(("请上传与飞行航点对应的工作区域!"));
+                CustomMessageBox.Show("请上传与飞行航点对应的工作区域!","提示");
+                return;
+            }
+
+            if (Commands.Rows.Count <= 0)
+            {
+                CustomMessageBox.Show("请确定与工作区域对应的航点规划!", "提示");
                 return;
             }
 
@@ -4056,13 +4063,18 @@ namespace ByAeroBeHero.GCSViews
 
         private void clearMissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            clearPoints();
+        }
+
+        public void clearPoints() 
+        {
             quickadd = true;
 
             // mono fix
             Commands.CurrentCell = null;
 
             Commands.Rows.Clear();
-
+            ClearRouteInfo();
             selectedrow = 0;
             quickadd = false;
             writeKML();
@@ -5376,6 +5388,15 @@ namespace ByAeroBeHero.GCSViews
                     MainMap.Invalidate();
 
                     MainMap.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);
+
+                    if (drawnpolygon.Points.Count <= 0)
+                        return;
+
+                    double aream2 = Math.Abs(calcpolygonarea(drawnpolygon.Points));
+                    double aremu = aream2 * 0.0015;
+                    lblArea.Text = aremu.ToString("0.00") + " 亩";
+
+                    //lblArea.Text = Math.Round((double)(calcpolygonarea(drawnpolygon.Points) / 666.67), 2).ToString("#") + "亩";//区域面积
                 }
             }
         }
@@ -7290,7 +7311,13 @@ namespace ByAeroBeHero.GCSViews
                 return;
             }
 
-            drawnpolygonsoverlay.Markers.Clear();
+
+            if (drawnpolygon.Points.Count >0)
+            {
+                drawnpolygonsoverlay.Markers.Clear();
+                polygonsoverlay.Markers.Clear();
+                drawnpolygon.Points.Clear();
+            }
 
             int count = int.Parse(MainV2.comPort.MAV.param["AREAPOINT_TOTAL"].ToString());
 
@@ -7342,14 +7369,21 @@ namespace ByAeroBeHero.GCSViews
 
         #region 下载区域航点显示区域信息 
 
-        private double dist = 0;
-        private double Area = 0;
+        //private 
+        //private 
         private void getAreaInfo(List<PointLatLng> WayPoints,List<PointLatLng> AreaPoints) 
         {
+            double Area = 0;
+            double dist = 0;
             if(drawnpolygon.Points.Count <= 0)
                 return;
 
-            lblArea.Text = Math.Round((double)(calcpolygonarea(AreaPoints) / 666.67),2).ToString("#") + "亩";//区域面积
+            //lblArea.Text = Math.Round((double)(calcpolygonarea(AreaPoints) / 666.67),2).ToString("#") + "亩";//区域面积
+
+            double aream2 = Math.Abs(calcpolygonarea(drawnpolygon.Points));
+            double aremu = aream2 * 0.0015;
+            lblArea.Text = aremu.ToString("0.00") + " 亩";
+
             lblStrips.Text = ((int)((Commands.RowCount - 3) / 4)).ToString() + " 条";//轨迹数
             Area = Math.Round((double)(calcpolygonarea(AreaPoints) / 666.67), 2);
            
@@ -7477,17 +7511,30 @@ namespace ByAeroBeHero.GCSViews
 
             double FlyDist = 0;
             double CurrentDist = 0;
-            if (MainV2.comPort.MAV.cs.armed && MainV2.comPort.MAV.cs.mode == "自动" && fullpointlist.Count >= 0 && MainV2.comPort.MAV.cs.GoToPoints >= 3)
+            if (MainV2.comPort.MAV.cs.armed && MainV2.comPort.MAV.cs.mode == "自动" && fullpointlist.Count >= 0 && MainV2.comPort.MAV.cs.GoToPoints >= 6)
             {
-                for (int a = 1; a <= MainV2.comPort.MAV.cs.GoToPoints - 2; a++)
+                int iGoToPoints = MainV2.comPort.MAV.cs.GoToPoints;
+
+                for (int a = 6; a <iGoToPoints ; a++)
                 {
-                    FlyDist += MainMap.MapProvider.Projection.GetDistance(fullpointlist[a], fullpointlist[a + 1]);
+                    FlyDist += double.Parse(Commands.Rows[a].Cells[Dist.Index].Value.ToString());
                 }
-                CurrentDist = MainMap.MapProvider.Projection.GetDistance(currentloc, fullpointlist[MainV2.comPort.MAV.cs.GoToPoints - 1]);
 
-                double persent = Math.Round(((FlyDist + CurrentDist) / float.Parse(lblDistance.Text.Replace("千米", ""))), 2);
+                int iPoint = 0;
+                if ( iGoToPoints% 2 == 0) 
+                {
+                    iPoint = ((iGoToPoints - 2) / 2) - 1;
+                }
+                else
+                {
+                    iPoint = ((iGoToPoints - 1) / 2) - 1;
+                }
 
-                lblDoneArea1.Text = (persent * 100).ToString() + "% /" + (Area * persent).ToString("0.0") + "亩";
+                CurrentDist = MainMap.MapProvider.Projection.GetDistance(currentloc, fullpointlist[iPoint])*1000;
+
+                double persent = Math.Round((((FlyDist + CurrentDist)/1000) / float.Parse(lblDistance.Text.Replace("千米", ""))), 4);
+
+                lblDoneArea1.Text = (persent * 100).ToString() + "% /" + (float.Parse(lblArea.Text.Replace("亩", "")) * persent).ToString("0.0") + "亩";
             }
         }
 

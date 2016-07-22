@@ -1700,7 +1700,7 @@ namespace ByAeroBeHero
                         {
                             this.MenuConnect.Image = displayicons.disconnect;
                             this.MenuConnect.Image.Tag = "Disconnect";
-                            this.MenuConnect.Text = Strings.DISCONNECTc;
+                            //this.MenuConnect.Text = Strings.DISCONNECTc;
                             _connectionControl.IsConnected(true);
                         });
                     }
@@ -1713,7 +1713,7 @@ namespace ByAeroBeHero
                         {
                             this.MenuConnect.Image = displayicons.connect;
                             this.MenuConnect.Image.Tag = "Connect";
-                            this.MenuConnect.Text = Strings.CONNECTc;
+                            //this.MenuConnect.Text = Strings.CONNECTc;
                             _connectionControl.IsConnected(false);
                             if (_connectionStats != null)
                             {
@@ -1830,6 +1830,8 @@ namespace ByAeroBeHero
 
             DateTime linkqualitytime = DateTime.Now;
 
+            DateTime speechflightparamstime = DateTime.Now;
+
             while (serialThread)
             {
                 try
@@ -1929,6 +1931,20 @@ namespace ByAeroBeHero
                         }
                     }
 
+                    if (speechEnable && speechEngine != null && (DateTime.Now - speechflightparamstime).TotalSeconds > 10 && (MainV2.comPort.logreadmode || comPort.BaseStream.IsOpen))
+                    {
+                        if (MainV2.speechEngine.State == SynthesizerState.Ready)
+                        {
+                            if (MainV2.getConfig("speechflightparamsabled") == "True")
+                            {
+                                MainV2.speechEngine.SpeakAsync(Common.speechConversion(MainV2.getConfig("speechflightparams")));
+                            }
+
+                            speechflightparamstime = DateTime.Now;
+                        }
+
+                    }
+
                     // speech altitude warning - message high warning
                     if (speechEnable && speechEngine != null && (MainV2.comPort.logreadmode || comPort.BaseStream.IsOpen))
                     {
@@ -2022,9 +2038,9 @@ namespace ByAeroBeHero
                             if (MainV2.getConfig("speecharmenabled") == "True")
                             {
                                 if (armedstatus)
-                                    MainV2.speechEngine.SpeakAsync(Common.speechConversion(MainV2.getConfig("speecharm")));
+                                    MainV2.speechEngine.SpeakAsync("已加锁");
                                 else
-                                    MainV2.speechEngine.SpeakAsync(Common.speechConversion(MainV2.getConfig("speechdisarm")));
+                                    MainV2.speechEngine.SpeakAsync("已解锁");
                             }
                         }
                     }

@@ -20,10 +20,11 @@ using ByAeroBeHero.Utilities;
 using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 using ByAeroBeHero.GCSViews;
+using ByAeroBeHero.Controls;
 
 namespace ByAeroBeHero
 {
-    public partial class GridUI : Form
+    public partial class GridUI : UserControl
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -1392,6 +1393,10 @@ namespace ByAeroBeHero
 
         private void BUT_Accept_Click(object sender, EventArgs e)
         {
+            plugin.ShowFliahtPlanner();
+
+            MainV2.instance.FlightPlanner.clearPoints();
+ 
             if (grid != null && grid.Count > 0)
             {
                 MainV2.instance.FlightPlanner.quickadd = true;
@@ -1489,7 +1494,7 @@ namespace ByAeroBeHero
 
                 MainV2.instance.FlightPlanner.writeKML();
 
-                this.Close();
+                this.Hide();
 
                 MainV2.instance.FlightPlanner.writeKML();
             }
@@ -1547,5 +1552,12 @@ namespace ByAeroBeHero
             }
             domainUpDown1_ValueChanged(null, null);
         }
+
+        private void myButtonCanle_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            plugin.ShowFliahtPlanner();
+        } 
+
     }
 }

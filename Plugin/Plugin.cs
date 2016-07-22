@@ -125,6 +125,8 @@ namespace ByAeroBeHero.Plugin
 
         public TableLayoutPanel FPTLPanel { get { return MainV2.instance.FlightPlanner.tableLayoutPanelRoute; } }
 
+        public SplitContainer splitContainer1 { get { return MainV2.instance.FlightData.splitContainer1; } }
+
         /// <summary>
         /// The point where the menu was drawn
         /// </summary>

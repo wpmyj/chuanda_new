@@ -223,7 +223,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.mavlinkNumericUpDownlow_voltage.ParamName = null;
             this.toolTip1.SetToolTip(this.mavlinkNumericUpDownlow_voltage, resources.GetString("mavlinkNumericUpDownlow_voltage.ToolTip"));
             this.mavlinkNumericUpDownlow_voltage.Value = new decimal(new int[] {
-            131,
+            35,
             0,
             0,
             65536});

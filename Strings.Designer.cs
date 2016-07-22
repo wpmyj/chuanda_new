@@ -305,7 +305,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 连接 的本地化字符串。
+        ///   查找类似  的本地化字符串。
         /// </summary>
         public static string Connect {
             get {
@@ -314,7 +314,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 连接 的本地化字符串。
+        ///   查找类似  的本地化字符串。
         /// </summary>
         public static string CONNECTc {
             get {
@@ -449,7 +449,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 断开 的本地化字符串。
+        ///   查找类似  的本地化字符串。
         /// </summary>
         public static string Disconnect {
             get {
@@ -458,7 +458,7 @@ namespace ByAeroBeHero {
         }
         
         /// <summary>
-        ///   查找类似 断开 的本地化字符串。
+        ///   查找类似  的本地化字符串。
         /// </summary>
         public static string DISCONNECTc {
             get {

@@ -145,7 +145,7 @@
     <value>参数设置</value>
   </data>
   <data name="MenuConnect.Text" xml:space="preserve">
-    <value>连接</value>
+    <value></value>
   </data>
   <data name="MenuFlightPlanner.ToolTipText" xml:space="preserve">
     <value>飞行计划器</value>

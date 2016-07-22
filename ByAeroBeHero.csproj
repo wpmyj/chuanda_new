@@ -3133,6 +3133,7 @@
     <Content Include="LogAnalyzer\UnitTest.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\Alerted.png" />
     <Content Include="Sound\Waring.wav" />
     <None Include="Resources\Parachute.png" />
     <None Include="Resources\frames-041.png" />

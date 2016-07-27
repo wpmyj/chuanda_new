@@ -2038,9 +2038,9 @@ namespace ByAeroBeHero
                             if (MainV2.getConfig("speecharmenabled") == "True")
                             {
                                 if (armedstatus)
-                                    MainV2.speechEngine.SpeakAsync("已加锁");
-                                else
                                     MainV2.speechEngine.SpeakAsync("已解锁");
+                                else
+                                    MainV2.speechEngine.SpeakAsync("已加锁");
                             }
                         }
                     }

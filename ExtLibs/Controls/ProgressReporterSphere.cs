@@ -81,8 +81,6 @@ namespace ByAeroBeHero.Controls
             // chk_auto
             // 
             resources.ApplyResources(this.chk_auto, "chk_auto");
-            this.chk_auto.Checked = true;
-            this.chk_auto.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chk_auto.ForeColor = System.Drawing.Color.White;
             this.chk_auto.Name = "chk_auto";
             this.chk_auto.UseVisualStyleBackColor = true;

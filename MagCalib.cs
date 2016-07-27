@@ -1008,11 +1008,11 @@ namespace ByAeroBeHero
                     return;
                 }
 
-                CustomMessageBox.Show("设置新的偏移量2 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0") + "\nThese have been saved for you.", "偏移量设置");
+                CustomMessageBox.Show("设置新的偏移量2 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0")+"。", "偏移量设置");
             }
             else
             {
-                CustomMessageBox.Show("设置新的偏移量2 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0") + "\n\nPlease write these down for manual entry", "偏移量设置");
+                CustomMessageBox.Show("设置新的偏移量2 " + "X:" + ofs[0].ToString("0") + " " + "Y:" + ofs[1].ToString("0") + " " + "Z:" + ofs[2].ToString("0")+"。", "偏移量设置");
             }
         }
         /// <summary>

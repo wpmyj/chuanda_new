@@ -59,7 +59,7 @@
   <ItemGroup>
     <Compile Include="Grid.cs" />
     <Compile Include="GridUI.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GridUI.Designer.cs">
       <DependentUpon>GridUI.cs</DependentUpon>

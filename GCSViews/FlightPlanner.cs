@@ -7534,7 +7534,8 @@ namespace ByAeroBeHero.GCSViews
 
                 double persent = Math.Round((((FlyDist + CurrentDist)/1000) / float.Parse(lblDistance.Text.Replace("千米", ""))), 4);
 
-                lblDoneArea1.Text = (persent * 100).ToString() + "% /" + (float.Parse(lblArea.Text.Replace("亩", "")) * persent).ToString("0.0") + "亩";
+                lblDoneArea1.Text = (persent * 100).ToString() + "%";
+                //+(float.Parse(lblArea.Text.Replace("亩", "")) * persent).ToString("0.0") + "亩";
             }
         }
 

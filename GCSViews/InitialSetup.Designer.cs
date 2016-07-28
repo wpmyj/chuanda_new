@@ -80,9 +80,11 @@
             this.configFirmware1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware();
             this.backstageViewPageSetParams = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configSetParams1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams();
+            this.backstageViewPageMotorblance = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
+            this.ConfigMotorbalance1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorbalance();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,6 +122,7 @@
             this.backstageView.Pages.Add(this.backstageViewPageParachute);
             this.backstageView.Pages.Add(this.backstageViewPageinstfw);
             this.backstageView.Pages.Add(this.backstageViewPageSetParams);
+            this.backstageView.Pages.Add(this.backstageViewPageMotorblance);
             this.backstageView.UnSelectedTextColor = System.Drawing.Color.White;
             this.backstageView.WidthMenu = 1000;
             // 
@@ -500,13 +503,24 @@
             this.backstageViewPageSetParams.Page = this.configSetParams1;
             this.backstageViewPageSetParams.Parent = null;
             this.backstageViewPageSetParams.Show = true;
-            this.backstageViewPageSetParams.Spacing = 30;
+            this.backstageViewPageSetParams.Spacing = 40;
             resources.ApplyResources(this.backstageViewPageSetParams, "backstageViewPageSetParams");
             // 
             // configSetParams1
             // 
             resources.ApplyResources(this.configSetParams1, "configSetParams1");
             this.configSetParams1.Name = "configSetParams1";
+            // 
+            // backstageViewPageMotorblance
+            // 
+            this.backstageViewPageMotorblance.Advanced = false;
+            this.backstageViewPageMotorblance.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
+            this.backstageViewPageMotorblance.LinkText = "动平衡校准";
+            this.backstageViewPageMotorblance.Page = this.ConfigMotorbalance1;
+            this.backstageViewPageMotorblance.Parent = null;
+            this.backstageViewPageMotorblance.Show = true;
+            this.backstageViewPageMotorblance.Spacing = 30;
+            resources.ApplyResources(this.backstageViewPageMotorblance, "backstageViewPageMotorblance");
             // 
             // backstageViewPagefw
             // 
@@ -534,6 +548,11 @@
             // 
             resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
             this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
+            // 
+            // ConfigMotorbalance1
+            // 
+            resources.ApplyResources(this.ConfigMotorbalance1, "ConfigMotorbalance1");
+            this.ConfigMotorbalance1.Name = "ConfigMotorbalance1";
             // 
             // InitialSetup
             // 
@@ -608,5 +627,7 @@
         private Controls.BackstageView.BackstageViewPage backstageViewPageParachute;
         private ConfigurationView.ConfigHWParachute configHWPa1;
         private Controls.BackstageView.BackstageViewPage backstageViewPageSetParams;
+        private ConfigurationView.ConfigMotorbalance ConfigMotorbalance1;
+        private Controls.BackstageView.BackstageViewPage backstageViewPageMotorblance;
     }
 }

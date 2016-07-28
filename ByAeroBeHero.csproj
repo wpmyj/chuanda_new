@@ -395,6 +395,12 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigHWBT.Designer.cs">
       <DependentUpon>ConfigHWBT.cs</DependentUpon>
     </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigMotorbalance .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigMotorbalance .Designer.cs">
+      <DependentUpon>ConfigMotorbalance .cs</DependentUpon>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigSetParams.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -953,6 +959,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWParachute.zh-Hans.resx">
       <DependentUpon>ConfigHWParachute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigMotorbalance .ja-JP.resx">
+      <DependentUpon>ConfigMotorbalance .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigMotorbalance .resx">
+      <DependentUpon>ConfigMotorbalance .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigMotorbalance .zh-Hans.resx">
+      <DependentUpon>ConfigMotorbalance .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigSetParams.de-DE.resx">
       <DependentUpon>ConfigSetParams.cs</DependentUpon>

@@ -97,7 +97,7 @@ namespace ByAeroBeHero
             WebRequest.DefaultWebProxy = WebRequest.GetSystemWebProxy();
             WebRequest.DefaultWebProxy.Credentials = CredentialCache.DefaultNetworkCredentials;
 
-            string name = "ByAero,BeHero 地面站 v1.3.1_20160719_PC_Build";
+            string name = "ByAero,BeHero 地面站 v1.3.1_20160729_PC_Build";
 
             if (File.Exists(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt"))
                 name = File.ReadAllText(Application.StartupPath + Path.DirectorySeparatorChar + "logo.txt", Encoding.UTF8);

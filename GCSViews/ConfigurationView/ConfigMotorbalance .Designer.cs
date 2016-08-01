@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigMotorbalance));
             this.BtnChenckbalance = new ByAeroBeHero.Controls.MyButton();
             this.progressBar = new System.Windows.Forms.ProgressBar();
@@ -41,6 +42,7 @@
             this.lblDiff = new System.Windows.Forms.Label();
             this.lblDiff1 = new System.Windows.Forms.Label();
             this.lblCheckReson1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // BtnChenckbalance
@@ -78,6 +80,7 @@
             resources.ApplyResources(this.lblPositive1, "lblPositive1");
             this.lblPositive1.ForeColor = System.Drawing.Color.White;
             this.lblPositive1.Name = "lblPositive1";
+            this.toolTip1.SetToolTip(this.lblPositive1, resources.GetString("lblPositive1.ToolTip"));
             // 
             // lblPositive
             // 
@@ -90,6 +93,7 @@
             resources.ApplyResources(this.lblNegative1, "lblNegative1");
             this.lblNegative1.ForeColor = System.Drawing.Color.White;
             this.lblNegative1.Name = "lblNegative1";
+            this.toolTip1.SetToolTip(this.lblNegative1, resources.GetString("lblNegative1.ToolTip"));
             // 
             // lblNegative
             // 
@@ -108,6 +112,7 @@
             resources.ApplyResources(this.lblDiff1, "lblDiff1");
             this.lblDiff1.ForeColor = System.Drawing.Color.White;
             this.lblDiff1.Name = "lblDiff1";
+            this.toolTip1.SetToolTip(this.lblDiff1, resources.GetString("lblDiff1.ToolTip"));
             // 
             // lblCheckReson1
             // 
@@ -151,6 +156,7 @@
         private System.Windows.Forms.Label lblDiff;
         private System.Windows.Forms.Label lblDiff1;
         private System.Windows.Forms.Label lblCheckReson1;
+        private System.Windows.Forms.ToolTip toolTip1;
 
     }
 }

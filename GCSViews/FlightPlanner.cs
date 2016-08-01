@@ -7530,11 +7530,22 @@ namespace ByAeroBeHero.GCSViews
                     iPoint = ((iGoToPoints - 1) / 2) - 1;
                 }
 
-                CurrentDist = MainMap.MapProvider.Projection.GetDistance(currentloc, fullpointlist[iPoint])*1000;
+                if (CurrentState.breakpoint_lat != 0 & CurrentState.breakpoint_lng != 0)
+                {
+                    PointLatLng breakpoint = new PointLatLng(CurrentState.breakpoint_lat, CurrentState.breakpoint_lng);
+                    CurrentDist = MainMap.MapProvider.Projection.GetDistance(breakpoint, fullpointlist[iPoint]) * 1000;
+                }
+                else
+                {
+                    CurrentDist = MainMap.MapProvider.Projection.GetDistance(currentloc, fullpointlist[iPoint]) * 1000;
+                }
 
                 double persent = Math.Round((((FlyDist + CurrentDist)/1000) / float.Parse(lblDistance.Text.Replace("千米", ""))), 4);
 
-                lblDoneArea1.Text = (persent * 100).ToString() + "%";
+                if (iGoToPoints == 999)
+                    lblDoneArea1.Text = "100%";
+                else
+                    lblDoneArea1.Text = (persent * 100).ToString() + "%";
                 //+(float.Parse(lblArea.Text.Replace("亩", "")) * persent).ToString("0.0") + "亩";
             }
         }

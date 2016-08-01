@@ -109,27 +109,27 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
                if (iCopterType == 1)
                {
-                   Positivedirection = ch1out + ch3out;
-                   Negativedirection = ch2out + ch4out;
+                   Negativedirection = ch1out + ch3out;
+                   Positivedirection = ch2out + ch4out;
                    iFType = 4;
                }
                else if (iCopterType == 2)
                {
-                   Positivedirection = ch1out + ch3out + ch5out;
-                   Negativedirection = ch2out + ch4out + ch6out;
+                    Negativedirection= ch1out + ch3out + ch5out;
+                    Positivedirection = ch2out + ch4out + ch6out;
                    iFType = 6;
                }
                else
                {
-                   Positivedirection = ch1out + ch3out + ch5out + ch7out;
-                   Negativedirection = ch2out + ch4out + ch6out + ch8out;
+                   Negativedirection = ch1out + ch3out + ch5out + ch7out;
+                   Positivedirection = ch2out + ch4out + ch6out + ch8out;
                    iFType = 8;
                };
 
-               float fPositivedirection = (Positivedirection / (iFType / 2))/60;
-               float fNegativedirection = (Negativedirection / (iFType / 2))/60;
+               float fNegativedirection = (Negativedirection / (iFType / 2)) / 60;
+               float fPositivedirection= (Positivedirection / (iFType / 2))/60;
 
-               float iDifference = (Positivedirection - Negativedirection) / (iFType / 2);
+               float iDifference = (Negativedirection - Positivedirection) / (iFType / 2);
 
                this.lblPositive.Text = fPositivedirection.ToString("f2");
                this.lblNegative.Text = fNegativedirection.ToString("f2");

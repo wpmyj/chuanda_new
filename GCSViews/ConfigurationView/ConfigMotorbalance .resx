@@ -249,6 +249,9 @@
   <data name="&gt;&gt;lblprogress1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lblPositive1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -263,6 +266,9 @@
   </data>
   <data name="lblPositive1.Text" xml:space="preserve">
     <value>正转平均值：</value>
+  </data>
+  <data name="lblPositive1.ToolTip" xml:space="preserve">
+    <value>正转输出通道的平均值，四轴：2、4通道；六轴：2、4、6轴通道；八轴：2、4、6、8通道</value>
   </data>
   <data name="&gt;&gt;lblPositive1.Name" xml:space="preserve">
     <value>lblPositive1</value>
@@ -303,6 +309,9 @@
   <data name="&gt;&gt;lblPositive.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lblNegative1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -320,6 +329,9 @@
   </data>
   <data name="lblNegative1.Text" xml:space="preserve">
     <value>反转平均值：</value>
+  </data>
+  <data name="lblNegative1.ToolTip" xml:space="preserve">
+    <value>反转输出通道的平均值，四轴：1、3通道；六轴：1、3、5轴通道；八轴：1、3、5、7通道</value>
   </data>
   <data name="&gt;&gt;lblNegative1.Name" xml:space="preserve">
     <value>lblNegative1</value>
@@ -408,6 +420,12 @@
   <data name="lblDiff1.Text" xml:space="preserve">
     <value>正反差值：</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lblDiff1.ToolTip" xml:space="preserve">
+    <value>正反差值=逆转输出平均值-正传输出平均值</value>
+  </data>
   <data name="&gt;&gt;lblDiff1.Name" xml:space="preserve">
     <value>lblDiff1</value>
   </data>
@@ -455,6 +473,12 @@
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>751, 305</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigMotorbalance</value>

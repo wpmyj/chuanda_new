@@ -22,7 +22,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
             setWPParams();
-
+            CHK_enablespeech_CheckedChanged(null,null);
             timer1.Start();
         }
 

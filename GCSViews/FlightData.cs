@@ -3482,6 +3482,10 @@ namespace ByAeroBeHero.GCSViews
                 if (CurrentState.compasshealth)
                 {
                     this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Flying;
+                    if ((MainV2.comPort.MAV.cs.mx2 == 0 && MainV2.comPort.MAV.cs.my2 == 0 && MainV2.comPort.MAV.cs.mz2 == 0) || IsChangeIMU2())
+                    {
+                        this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Alerted;
+                    }
                 }
                 else
                 {
@@ -4060,6 +4064,32 @@ namespace ByAeroBeHero.GCSViews
         private void panelShowParams_MouseUp(object sender, MouseEventArgs e)
         {
             MoveFlagM = false;
+        }
+        #endregion
+
+        #region
+        private int iIMU = 0;
+        public static float difimux = 0;
+        public static float difimuy = 0;
+        public static float difimuz = 0;
+        public bool IsChangeIMU2() 
+        {
+            if (difimux != MainV2.comPort.MAV.cs.mx2 || difimuy != MainV2.comPort.MAV.cs.my2 || difimuz != MainV2.comPort.MAV.cs.mz2)
+            {
+                difimux = MainV2.comPort.MAV.cs.mx2;
+                difimuy = MainV2.comPort.MAV.cs.my2;
+                difimuz = MainV2.comPort.MAV.cs.mz2;
+                iIMU = 0;
+                return false;
+            }
+            else 
+            {
+                iIMU++;
+                if (iIMU > 10)
+                    return true;
+                else
+                    return false;
+            }
         }
         #endregion
     }

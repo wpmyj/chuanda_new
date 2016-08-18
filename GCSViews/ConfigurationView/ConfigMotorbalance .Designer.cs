@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigMotorbalance));
-            this.BtnChenckbalance = new ByAeroBeHero.Controls.MyButton();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lblCheckReson = new System.Windows.Forms.Label();
             this.lblprogress = new System.Windows.Forms.Label();
@@ -43,14 +42,8 @@
             this.lblDiff1 = new System.Windows.Forms.Label();
             this.lblCheckReson1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.BtnChenckbalance = new ByAeroBeHero.Controls.MyButton();
             this.SuspendLayout();
-            // 
-            // BtnChenckbalance
-            // 
-            resources.ApplyResources(this.BtnChenckbalance, "BtnChenckbalance");
-            this.BtnChenckbalance.Name = "BtnChenckbalance";
-            this.BtnChenckbalance.UseVisualStyleBackColor = true;
-            this.BtnChenckbalance.Click += new System.EventHandler(this.BtnChenckbalance_Click);
             // 
             // progressBar
             // 
@@ -119,6 +112,13 @@
             resources.ApplyResources(this.lblCheckReson1, "lblCheckReson1");
             this.lblCheckReson1.ForeColor = System.Drawing.Color.White;
             this.lblCheckReson1.Name = "lblCheckReson1";
+            // 
+            // BtnChenckbalance
+            // 
+            resources.ApplyResources(this.BtnChenckbalance, "BtnChenckbalance");
+            this.BtnChenckbalance.Name = "BtnChenckbalance";
+            this.BtnChenckbalance.UseVisualStyleBackColor = true;
+            this.BtnChenckbalance.Click += new System.EventHandler(this.BtnChenckbalance_Click);
             // 
             // ConfigMotorbalance
             // 

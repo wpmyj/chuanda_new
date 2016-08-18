@@ -12,10 +12,112 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private const float rad2deg = (float) (180/Math.PI);
         private const float deg2rad = (float) (1.0/rad2deg);
         private bool startup;
+        private readonly Timer timer = new Timer();
 
         public ConfigHWCompass()
         {
+            this.BackColor = Color.Black;
             InitializeComponent();
+            timer.Tick += timer_Tick;
+        }
+
+        public void Deactivate()
+        {
+            timer.Stop();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            ShowIMUState(); 
+            // update all linked controls - 10hz
+            try
+            {
+                MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSource1);
+            }
+            catch
+            {
+            }
+        }
+
+        private int iIMU2 = 0;
+        private void ShowIMUState() 
+        {
+            if (CurrentState.compasshealth)
+            {
+                if ((MainV2.comPort.MAV.cs.mx == 0 && MainV2.comPort.MAV.cs.my == 0 && MainV2.comPort.MAV.cs.mz == 0) || IsChangeIMU())
+                {
+                    this.lblIMUState.Text = "断开";
+                }
+                else
+                {
+                    this.lblIMUState.Text = "连接";
+                }
+            }
+            else 
+            {
+                this.lblIMUState.Text = "不健康";
+            }
+
+
+            if ((MainV2.comPort.MAV.cs.mx2 == 0 && MainV2.comPort.MAV.cs.my2 == 0 && MainV2.comPort.MAV.cs.mz2 == 0)|| IsChangeIMU2())
+            {
+                iIMU2++;
+                if (iIMU2 > 10)
+                    this.lblIMU2State.Text = "断开";
+            }
+            else 
+            {
+                iIMU2 = 0;
+                this.lblIMU2State.Text = "连接";
+            }
+        }
+
+        private int iIMU1 = 0;
+        public static float difimux = 0;
+        public static float difimuy = 0;
+        public static float difimuz = 0;
+        public bool IsChangeIMU()
+        {
+            if (difimux != MainV2.comPort.MAV.cs.mx || difimuy != MainV2.comPort.MAV.cs.my || difimuz != MainV2.comPort.MAV.cs.mz)
+            {
+                difimux = MainV2.comPort.MAV.cs.mx;
+                difimuy = MainV2.comPort.MAV.cs.my;
+                difimuz = MainV2.comPort.MAV.cs.mz;
+                iIMU1 = 0;
+                return false;
+            }
+            else
+            {
+                iIMU1++;
+                if (iIMU > 10)
+                    return true;
+                else
+                    return false;
+            }
+        }
+
+        private int iIMU = 0;
+        public static float difimux2 = 0;
+        public static float difimuy2 = 0;
+        public static float difimuz2 = 0;
+        public bool IsChangeIMU2()
+        {
+            if (difimux2 != MainV2.comPort.MAV.cs.mx2 || difimuy2 != MainV2.comPort.MAV.cs.my2 || difimuz2 != MainV2.comPort.MAV.cs.mz2)
+            {
+                difimux = MainV2.comPort.MAV.cs.mx2;
+                difimuy = MainV2.comPort.MAV.cs.my2;
+                difimuz = MainV2.comPort.MAV.cs.mz2;
+                iIMU = 0;
+                return false;
+            }
+            else
+            {
+                iIMU++;
+                if (iIMU > 10)
+                    return true;
+                else
+                    return false;
+            }
         }
 
         public void Activate()
@@ -55,6 +157,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             rb_px4pixhawk.Checked = true;
 
             startup = false;
+
+            timer.Enabled = true;
+            timer.Interval = 100;
+            timer.Start();
         }
 
         private void BUT_MagCalibration_Click(object sender, EventArgs e)

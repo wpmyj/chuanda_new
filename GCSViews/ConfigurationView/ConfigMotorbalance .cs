@@ -23,6 +23,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         DateTime dt;    //记时  
         private void BtnChenckbalance_Click(object sender, EventArgs e)
         {
+            initControl();
             if (!MainV2.comPort.BaseStream.IsOpen)
             {
                 CustomMessageBox.Show("请连接地面站!", "提示");
@@ -54,6 +55,14 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             myThread.IsBackground = true;
             myThread.Start(60); //线程开始  
             dt = DateTime.Now;  //开始记录当前时间 
+        }
+
+        private void initControl()
+        {
+            this.lblPositive.Text = "";
+            this.lblNegative.Text = "";
+            this.lblDiff.Text = "";
+            this.lblCheckReson1.Text = "";
         }
 
         private delegate void DoDataDelegate(object number);  
@@ -129,16 +138,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                float fNegativedirection = (Negativedirection / (iFType / 2)) / 60;
                float fPositivedirection= (Positivedirection / (iFType / 2))/60;
 
-               float iDifference = (Negativedirection - Positivedirection) / (iFType / 2);
+               float iDifference = fNegativedirection - fPositivedirection;
 
                this.lblPositive.Text = fPositivedirection.ToString("f2");
                this.lblNegative.Text = fNegativedirection.ToString("f2");
-               this.lblDiff.Text = iDifference.ToString("f2");
+               this.lblDiff.Text = (-iDifference).ToString("f2");
 
                string strs = "";
                if (iDifference > 50)
                {
-                   strs += "检测原因：飞机航向存在偏差，需要将电机逆时针旋转（从飞机侧面正对电机），提供顺时针的补偿力矩";
+                   strs += "飞机航向存在偏差，需要将电机逆时针旋转（从飞机侧面正对电机），提供顺时针的补偿力矩";
                }
                else if (iDifference < -50)
                {

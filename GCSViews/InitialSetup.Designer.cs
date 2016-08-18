@@ -81,10 +81,10 @@
             this.backstageViewPageSetParams = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configSetParams1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams();
             this.backstageViewPageMotorblance = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
+            this.ConfigMotorbalance1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorbalance();
             this.backstageViewPagefw = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.backstageViewPagefwdisabled = new ByAeroBeHero.Controls.BackstageView.BackstageViewPage();
             this.configFirmwareDisabled1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled();
-            this.ConfigMotorbalance1 = new ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorbalance();
             ((System.ComponentModel.ISupportInitialize)(this.initialSetupBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -499,7 +499,7 @@
             // 
             this.backstageViewPageSetParams.Advanced = false;
             this.backstageViewPageSetParams.DataBindings.Add(new System.Windows.Forms.Binding("Show", this.initialSetupBindingSource, "isConnected", true));
-            this.backstageViewPageSetParams.LinkText = "飞行参数设置";
+            this.backstageViewPageSetParams.LinkText = "参数设置";
             this.backstageViewPageSetParams.Page = this.configSetParams1;
             this.backstageViewPageSetParams.Parent = null;
             this.backstageViewPageSetParams.Show = true;
@@ -521,6 +521,11 @@
             this.backstageViewPageMotorblance.Show = true;
             this.backstageViewPageMotorblance.Spacing = 30;
             resources.ApplyResources(this.backstageViewPageMotorblance, "backstageViewPageMotorblance");
+            // 
+            // ConfigMotorbalance1
+            // 
+            resources.ApplyResources(this.ConfigMotorbalance1, "ConfigMotorbalance1");
+            this.ConfigMotorbalance1.Name = "ConfigMotorbalance1";
             // 
             // backstageViewPagefw
             // 
@@ -548,11 +553,6 @@
             // 
             resources.ApplyResources(this.configFirmwareDisabled1, "configFirmwareDisabled1");
             this.configFirmwareDisabled1.Name = "configFirmwareDisabled1";
-            // 
-            // ConfigMotorbalance1
-            // 
-            resources.ApplyResources(this.ConfigMotorbalance1, "ConfigMotorbalance1");
-            this.ConfigMotorbalance1.Name = "ConfigMotorbalance1";
             // 
             // InitialSetup
             // 

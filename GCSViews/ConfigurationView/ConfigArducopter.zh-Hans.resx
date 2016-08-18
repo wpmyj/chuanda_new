@@ -476,7 +476,7 @@
     <value />
   </data>
   <data name="BUT_refreshpart.Text" xml:space="preserve">
-    <value>刷新屏幕</value>
+    <value>刷新</value>
   </data>
   <data name="BUT_refreshpart.ToolTip" xml:space="preserve">
     <value />

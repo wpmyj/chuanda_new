@@ -21,6 +21,28 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public ConfigArducopter()
         {
             InitializeComponent();
+            this.tableLayoutPanel1.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
+            this.tableLayoutPanel2.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
+            this.tableLayoutPanel3.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
+            initcontrol();
+        }
+
+        private void initcontrol() 
+        {
+            this.label13.ForeColor = this.label15.ForeColor = this.label16.ForeColor = this.label9.ForeColor = this.label29.ForeColor = this.label19.ForeColor =
+                this.label20.ForeColor = this.label21.ForeColor = this.label23.ForeColor = this.label24.ForeColor = this.label28.ForeColor =
+                this.label30.ForeColor = this.label32.ForeColor = this.label26.ForeColor = this.label34.ForeColor = this.label27.ForeColor = Color.Black;
+        }
+
+        void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        {
+            if (e.Row == 0)
+            {
+                //.FromArgb(0, 192, 192)
+                Graphics g = e.Graphics;
+                Rectangle r = e.CellBounds;
+                g.FillRectangle(new SolidBrush(System.Drawing.Color.LightGray), r);
+            }
         }
 
         public void Activate()
@@ -364,10 +386,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             EEPROM_View_float_TextChanged(sender, e);
         }
 
-        private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
-        {
-            // 重绘
-            //e.Graphics.DrawRectangle(new Pen(Color.Black), e.CellBounds.X, e.CellBounds.Y, e.CellBounds.X + e.CellBounds.Width - 1, e.CellBounds.Y + e.CellBounds.Height - 1); 
-        }
+        //private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
+        //{
+        //    // 重绘
+        //    //e.Graphics.DrawRectangle(new Pen(Color.Black), e.CellBounds.X, e.CellBounds.Y, e.CellBounds.X + e.CellBounds.Width - 1, e.CellBounds.Y + e.CellBounds.Height - 1); 
+        //}
     }
 }

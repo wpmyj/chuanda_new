@@ -37,6 +37,7 @@ using Feature = SharpKml.Dom.Feature;
 using ILog = log4net.ILog;
 using Placemark = SharpKml.Dom.Placemark;
 using Point = System.Drawing.Point;
+using System.IO.Ports;
 
 namespace ByAeroBeHero.GCSViews
 {
@@ -73,6 +74,8 @@ namespace ByAeroBeHero.GCSViews
         List<List<Locationwp>> history = new List<List<Locationwp>>();
 
         List<int> groupmarkers = new List<int>();
+
+        public SerialPort serialPort { get { return MainV2.instance.serialPort1; } }
 
         public enum altmode
         {
@@ -372,6 +375,10 @@ namespace ByAeroBeHero.GCSViews
                     var pop = history[no];
                     history.RemoveAt(no);
                     WPtoScreen(pop);
+
+                    MainMap.UpdateMarkerLocalPosition(drawnpolygonsoverlay.Markers[0]);
+                    MainMap.Invalidate();
+                    MainMap.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);
                 }
                 return true;
             }
@@ -393,6 +400,7 @@ namespace ByAeroBeHero.GCSViews
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
+        private SerialPort SerDataMap;
         public FlightPlanner()
         {
             instance = this;
@@ -546,19 +554,6 @@ namespace ByAeroBeHero.GCSViews
             cmdParamNames = readCMDXML();
 
             List<string> cmds = new List<string>();
-
-            //foreach (string item in cmdParamNames.Keys)
-            //{
-            //    cmds.Add(item);
-            //}
-            //cmds.Add("WAYPOINT");
-            //cmds.Add("LOITER_TURNS");
-            //cmds.Add("LOITER_TIME");
-            //cmds.Add("RETURN_TO_LAUNCH");
-            //cmds.Add("LAND");
-            //cmds.Add("TAKEOFF");
-            //cmds.Add("DO_JUMP");
-            //cmds.Add("UNKNOWN");
 
             cmds.Add("航点");
             cmds.Add("曲线航点");
@@ -770,6 +765,7 @@ namespace ByAeroBeHero.GCSViews
             timer1.Start();
             timer_getbreakpoint.Start();
             timer_time.Start();
+            timer_GetMapPoint.Start();
         }
 
         /// <summary>
@@ -2331,7 +2327,8 @@ namespace ByAeroBeHero.GCSViews
                         break;
                     }
                 }
-
+                if (i == cmds.Count - 1)
+                    cellcmd.Value = "返航";
                 // from ap_common.h
                 if (temp.id < (byte)MAVLink.MAV_CMD.LAST || temp.id == (byte)MAVLink.MAV_CMD.DO_SET_HOME)
                 {
@@ -2400,6 +2397,13 @@ namespace ByAeroBeHero.GCSViews
             }
 
             quickadd = false;
+
+
+            MainMap.SelectedArea = RectLatLng.Empty;
+
+            groupmarkers.Clear();
+
+            CurentRectMarker = null;
 
             writeKML();
 
@@ -3320,37 +3324,39 @@ namespace ByAeroBeHero.GCSViews
                 }
                 else
                 {
-                    if (groupmarkers.Count > 0)
-                    {
-                        Dictionary<string, PointLatLng> dest = new Dictionary<string, PointLatLng>();
+                    #region 禁止移动
+                    //if (groupmarkers.Count > 0)
+                    //{
+                    //    Dictionary<string, PointLatLng> dest = new Dictionary<string, PointLatLng>();
 
-                        foreach (var markerid in groupmarkers)
-                        {
-                            for (int a = 0; a < objectsoverlay.Markers.Count; a++)
-                            {
-                                var marker = objectsoverlay.Markers[a];
+                    //    foreach (var markerid in groupmarkers)
+                    //    {
+                    //        for (int a = 0; a < objectsoverlay.Markers.Count; a++)
+                    //        {
+                    //            var marker = objectsoverlay.Markers[a];
 
-                                if (marker.Tag != null && marker.Tag.ToString() == markerid.ToString())
-                                {
-                                    dest[marker.Tag.ToString()] = marker.Position;
-                                    break;
-                                }
-                            }
-                        }
+                    //            if (marker.Tag != null && marker.Tag.ToString() == markerid.ToString())
+                    //            {
+                    //                dest[marker.Tag.ToString()] = marker.Position;
+                    //                break;
+                    //            }
+                    //        }
+                    //    }
 
-                        foreach (KeyValuePair<string, PointLatLng> item in dest)
-                        {
-                            var value = item.Value;
-                            callMeDrag(item.Key, value.Lat, value.Lng, -1);
-                        }
+                    //    foreach (KeyValuePair<string, PointLatLng> item in dest)
+                    //    {
+                    //        var value = item.Value;
+                    //        callMeDrag(item.Key, value.Lat, value.Lng, -1);
+                    //    }
 
-                        MainMap.SelectedArea = RectLatLng.Empty;
-                        groupmarkers.Clear();
-                        // redraw to remove selection
-                        writeKML();
+                    //    MainMap.SelectedArea = RectLatLng.Empty;
+                    //    groupmarkers.Clear();
+                    //    // redraw to remove selection
+                    //    writeKML();
 
-                        CurentRectMarker = null;
-                    }
+                    //    CurentRectMarker = null;
+                    //}
+                    #endregion
 
                     if (CurentRectMarker != null)
                     {
@@ -3419,6 +3425,7 @@ namespace ByAeroBeHero.GCSViews
         // move current marker with left holding
         void MainMap_MouseMove(object sender, MouseEventArgs e)
         {
+
             PointLatLng point = MainMap.FromLocalToLatLng(e.X, e.Y);
 
             if (MouseDownStart == point)
@@ -3436,6 +3443,7 @@ namespace ByAeroBeHero.GCSViews
 
 
 
+            #region
             //draging
             if (e.Button == MouseButtons.Left && isMouseDown)
             {
@@ -3488,7 +3496,7 @@ namespace ByAeroBeHero.GCSViews
                             MainMap.UpdatePolygonLocalPosition(drawnpolygon);
                             MainMap.Invalidate();
                         }
-                        else if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("障碍航点")) 
+                        else if (CurentRectMarker.InnerMarker.Tag.ToString().Contains("障碍航点"))
                         {
                             drawnpolygonlimit.Points[int.Parse(CurentRectMarker.InnerMarker.Tag.ToString().Replace("障碍航点", "")) - 1] = new PointLatLng(point.Lat, point.Lng);
                             MainMap.UpdatePolygonLocalPosition(drawnpolygonlimit);
@@ -3562,6 +3570,7 @@ namespace ByAeroBeHero.GCSViews
                     catch { }
                 }
             }
+            #endregion
         }
 
         // MapZoomChanged
@@ -3961,21 +3970,28 @@ namespace ByAeroBeHero.GCSViews
         /// <param name="e"></param>
         private void myBtnAddPoint_Click(object sender, EventArgs e)
         {
-            if (!MainV2.comPort.BaseStream.IsOpen)
+
+            if (MainV2.instance.serialPort1.IsOpen || MainV2.comPort.BaseStream.IsOpen)
             {
-                CustomMessageBox.Show("请连接地面接收器再添加区域航点。");
-            }
-            else 
-            {
+                if (MainV2.comPort.MAV.cs.lat == 0 || MainV2.comPort.MAV.cs.lng == 0)
+                {
+                    CustomMessageBox.Show("区域航点无效！","提示");
+                    return;
+                }
+
                 DialogResult res = CustomMessageBox.Show("是否要添加当前区域航点？", "区域航点", MessageBoxButtons.YesNo);
                 if (res == DialogResult.Yes)
                 {
-                    AddPolygonPoint(currentLat=MainV2.comPort.MAV.cs.lat, currentLng = MainV2.comPort.MAV.cs.lng);
+                    AddPolygonPoint(currentLat = MainV2.comPort.MAV.cs.lat, currentLng = MainV2.comPort.MAV.cs.lng);
                 }
-                else 
+                else
                 {
                     return;
                 }
+            }
+            else 
+            {
+                CustomMessageBox.Show("请连接设备再添加区域航点。");
             }
         }
 
@@ -4064,6 +4080,7 @@ namespace ByAeroBeHero.GCSViews
         private void clearMissionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             clearPoints();
+            ClearPolyPoints();
         }
 
         public void clearPoints() 
@@ -4077,6 +4094,19 @@ namespace ByAeroBeHero.GCSViews
             ClearRouteInfo();
             selectedrow = 0;
             quickadd = false;
+        }
+
+        private void ClearPolyPoints() 
+        {
+            if (drawnpolygon != null) 
+            {
+                polygongridmode = false;
+                drawnpolygon.Points.Clear();
+                drawnpolygonsoverlay.Markers.Clear();
+                startmeasure = new PointLatLng();
+                ClearRouteInfo();
+                MainMap.Invalidate();
+            }
             writeKML();
         }
 
@@ -4820,6 +4850,7 @@ namespace ByAeroBeHero.GCSViews
             timer1.Start();
             timer_getbreakpoint.Start();
             timer_time.Start();
+            timer_GetMapPoint.Start();
 
             if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
             {
@@ -4881,6 +4912,7 @@ namespace ByAeroBeHero.GCSViews
             timer1.Stop();
             timer_getbreakpoint.Stop();
             timer_time.Stop();
+            timer_GetMapPoint.Stop();
         }
 
         private void FlightPlanner_FormClosing(object sender, FormClosingEventArgs e)
@@ -4888,6 +4920,7 @@ namespace ByAeroBeHero.GCSViews
             timer1.Stop();
             timer_getbreakpoint.Stop();
             timer_time.Stop();
+            timer_GetMapPoint.Stop();
         }
 
         private void setROIToolStripMenuItem_Click(object sender, EventArgs e)
@@ -6570,6 +6603,18 @@ namespace ByAeroBeHero.GCSViews
             =Color.White;
 
             this.panelShowInfo.BackColor = Color.Black;
+            if (MainV2.comPort.BaseStream.IsOpen)
+            {
+                if (SerDataMap.IsOpen)
+                    return;
+                SerDataMap.Open();
+                SerDataMap.ReceivedBytesThreshold = 1;
+            }
+            else 
+            {
+                SerDataMap.Close();
+            }
+                
         }
 
         #endregion
@@ -7572,7 +7617,37 @@ namespace ByAeroBeHero.GCSViews
             //    return;
 
             int no = 0;
-            if (CurentRectMarker != null)
+            if(groupmarkers.Count > 0)
+            {
+                // group drag
+                Hashtable seen = new Hashtable();
+
+                foreach (var markerid in groupmarkers)
+                {
+                    if (seen.ContainsKey(markerid))
+                        continue;
+
+                    seen[markerid] = 1;
+                    for (int a = 0; a < objectsoverlay.Markers.Count; a++)
+                    {
+                        var marker = objectsoverlay.Markers[a];
+
+                        if (marker.Tag != null && marker.Tag.ToString() == markerid.ToString())
+                        {
+                            PointLatLng movePoint = MovingPoints(marker.Position, float.Parse(moveDistance), moveDirection);
+                            callMeDrag(marker.Tag.ToString(), movePoint.Lat, movePoint.Lng, -1);
+                        }
+                    }
+                }
+
+                MainMap.SelectedArea = RectLatLng.Empty;
+                groupmarkers.Clear();
+                // redraw to remove selection
+                writeKML();
+
+                CurentRectMarker = null;
+            }
+            else if(CurentRectMarker != null)
             {
                 PointLatLng movePoint = MovingPoints(CurentRectMarker.Position, float.Parse(moveDistance), moveDirection);
 
@@ -7608,6 +7683,10 @@ namespace ByAeroBeHero.GCSViews
                         CustomMessageBox.Show("区域航点平移失败，请再次尝试。");
                     }
                 }
+            }
+            else if (groupmarkers.Count > 0)
+            {
+               
             }
 
             if (currentMarker != null)
@@ -7708,6 +7787,5 @@ namespace ByAeroBeHero.GCSViews
             MoveFlagM = false;
         }
         #endregion
-
     }
 }

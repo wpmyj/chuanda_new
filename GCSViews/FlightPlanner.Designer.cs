@@ -280,6 +280,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
+            this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -2269,5 +2270,6 @@
         private System.Windows.Forms.ToolStripMenuItem moveToLeftToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem moveToRightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exchangeToolStripMenuItem;
+        private System.Windows.Forms.Timer timer_GetMapPoint;
     }
 }

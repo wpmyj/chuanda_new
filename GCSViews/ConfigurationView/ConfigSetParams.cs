@@ -21,6 +21,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public void Activate()
         {
             NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
+            chb_AllMove.Checked = bool.Parse(MainV2.config["CHB_AllMove"].ToString());
             setWPParams();
             CHK_enablespeech_CheckedChanged(null,null);
             timer1.Start();
@@ -264,6 +265,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     return;
                 MainV2.config["speechmode"] = speechstring;
             }
+        }
+
+        private void chb_AllMove_CheckedChanged(object sender, EventArgs e)
+        {
+            MainV2.config["CHB_AllMove"] = chb_AllMove.Checked;
         }
     }
 }

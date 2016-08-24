@@ -11,6 +11,7 @@ using System.Collections;
 using System.Media;
 using System.Windows.Forms;
 using System.IO;
+using GMap.NET;
 
 namespace ByAeroBeHero
 {
@@ -697,6 +698,7 @@ namespace ByAeroBeHero
         }
 
         public int a = 0;
+        private int diff = 0;
         public void UpdateCurrentSettings(System.Windows.Forms.BindingSource bs, bool updatenow, MAVLinkInterface mavinterface, MAVState MAV)
         {
             lock (this)
@@ -1567,6 +1569,7 @@ namespace ByAeroBeHero
                         mx2 = imu2.xmag;
                         my2 = imu2.ymag;
                         mz2 = imu2.zmag;
+
                     }
 
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.PID_TUNING];
@@ -1615,7 +1618,7 @@ namespace ByAeroBeHero
                         var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_meminfo_t>(6);
                         freemem = mem.freemem;
                         brklevel = mem.brkval;
-                    }                   
+                    }
                 }
 
                 try
@@ -1684,7 +1687,14 @@ namespace ByAeroBeHero
             }
         }
 
-
+        public void SetMapPoints(PointLatLng MapPoint) 
+        {
+            if (MapPoint.Lat != 0 && MapPoint.Lng != 0)
+            {
+                lat = MapPoint.Lat;
+                lng = MapPoint.Lng;
+            }
+        }
         public object Clone()
         {
             return this.MemberwiseClone();

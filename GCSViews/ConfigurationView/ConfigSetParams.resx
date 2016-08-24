@@ -199,7 +199,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 36</value>
+    <value>422, 36</value>
   </data>
   <data name="lblUnit.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -337,7 +337,7 @@
     <value>WP_YAW_BEHAVIOR</value>
   </data>
   <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6047.16742, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6078.16707, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -345,9 +345,6 @@
   <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="NUM_movelength.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10.2pt</value>
   </data>
@@ -366,6 +363,9 @@
   <data name="NUM_movelength.ToolTip" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
   <data name="NUM_movelength.ToolTip1" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
@@ -379,7 +379,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;NUM_movelength.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblMoveDistance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -412,7 +412,7 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lblMoveDistance.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="lblDSM.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -424,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblDSM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 42</value>
+    <value>422, 42</value>
   </data>
   <data name="lblDSM.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -445,13 +445,28 @@
     <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;lblDSM.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.2pt</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 32</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 30</value>
+  </data>
+  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
     <value>RTL_ALT_FINAL</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6047.16742, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6078.16707, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -459,11 +474,26 @@
   <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="RTL_ALT_P.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RTL_ALT_P.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.2pt</value>
+  </data>
+  <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 32</value>
+  </data>
+  <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 30</value>
+  </data>
+  <data name="RTL_ALT_P.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
   <data name="&gt;&gt;RTL_ALT_P.Name" xml:space="preserve">
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6047.16742, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6078.16707, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -498,59 +528,65 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
+  <data name="lblAllMove.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAllMove.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblAllMove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 42</value>
+  </data>
+  <data name="lblAllMove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="lblAllMove.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="lblAllMove.Text" xml:space="preserve">
+    <value>整体平移：</value>
+  </data>
+  <data name="lblAllMove.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10.2pt</value>
+  <data name="&gt;&gt;lblAllMove.Name" xml:space="preserve">
+    <value>lblAllMove</value>
   </data>
-  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 32</value>
+  <data name="&gt;&gt;lblAllMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 30</value>
+  <data name="&gt;&gt;lblAllMove.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
+  <data name="&gt;&gt;lblAllMove.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
-    <value>RTL_ALT_FINAL</value>
+  <data name="chb_AllMove.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6047.16742, Culture=neutral, PublicKeyToken=null</value>
+  <data name="chb_AllMove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 45</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="chb_AllMove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
   </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="chb_AllMove.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
   </data>
-  <data name="RTL_ALT_P.Enabled" type="System.Boolean, mscorlib">
+  <data name="chb_AllMove.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="RTL_ALT_P.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10.2pt</value>
+  <data name="&gt;&gt;chb_AllMove.Name" xml:space="preserve">
+    <value>chb_AllMove</value>
   </data>
-  <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 32</value>
+  <data name="&gt;&gt;chb_AllMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 30</value>
+  <data name="&gt;&gt;chb_AllMove.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="RTL_ALT_P.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_P.Name" xml:space="preserve">
-    <value>RTL_ALT_P</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6047.16742, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_P.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;chb_AllMove.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt, style=Bold</value>
@@ -639,9 +675,6 @@
   <data name="&gt;&gt;CHK_enablespeech.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="CHK_speechwaypoint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>

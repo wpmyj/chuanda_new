@@ -21,12 +21,14 @@ namespace ByAeroBeHero.Controls
                                                  ShowLinkStats.Invoke(this, EventArgs.Empty);
                                          };
             this.cmb_Connection.Text = "";
+            this.cmb_flightmode.SelectedIndex = 0;
         }
 
         public event EventHandler ShowLinkStats;
         public ComboBox CMB_baudrate { get { return this.cmb_Baud; } }
         public ComboBox CMB_serialport { get { return this.cmb_Connection; } }
         public ComboBox TOOL_APMFirmware { get { return this.cmb_ConnectionType; } }
+        public ComboBox CMB_flightmode { get { return this.cmb_flightmode; } }
 
         /// <summary>
         /// Called from the main form - set whether we are connected or not currently.
@@ -38,6 +40,7 @@ namespace ByAeroBeHero.Controls
             this.linkLabel1.Visible = false;
             cmb_Baud.Enabled = !isConnected;
             cmb_Connection.Enabled = !isConnected;
+            cmb_flightmode.Enabled = !isConnected;
         }
 
         private void ConnectionControl_MouseClick(object sender, MouseEventArgs e)

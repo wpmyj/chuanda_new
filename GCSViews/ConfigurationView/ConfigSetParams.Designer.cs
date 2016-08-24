@@ -46,13 +46,15 @@
             this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblAllMove = new System.Windows.Forms.Label();
+            this.chb_AllMove = new System.Windows.Forms.CheckBox();
             this.lblCheckSpeech = new System.Windows.Forms.Label();
             this.CHK_enablespeech = new System.Windows.Forms.CheckBox();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.CHK_speechwaypoint = new System.Windows.Forms.CheckBox();
             this.groupBoxSetP = new System.Windows.Forms.GroupBox();
-            this.CHK_speechflightParams = new System.Windows.Forms.CheckBox();
             this.CHK_speechotherParams = new System.Windows.Forms.CheckBox();
+            this.CHK_speechflightParams = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
@@ -198,12 +200,26 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblAllMove);
+            this.groupBox2.Controls.Add(this.chb_AllMove);
             this.groupBox2.Controls.Add(this.lblDSM);
             this.groupBox2.Controls.Add(this.NUM_movelength);
             this.groupBox2.Controls.Add(this.lblMoveDistance);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // lblAllMove
+            // 
+            resources.ApplyResources(this.lblAllMove, "lblAllMove");
+            this.lblAllMove.Name = "lblAllMove";
+            // 
+            // chb_AllMove
+            // 
+            resources.ApplyResources(this.chb_AllMove, "chb_AllMove");
+            this.chb_AllMove.Name = "chb_AllMove";
+            this.chb_AllMove.UseVisualStyleBackColor = true;
+            this.chb_AllMove.CheckedChanged += new System.EventHandler(this.chb_AllMove_CheckedChanged);
             // 
             // lblCheckSpeech
             // 
@@ -235,19 +251,19 @@
             this.groupBoxSetP.Name = "groupBoxSetP";
             this.groupBoxSetP.TabStop = false;
             // 
-            // CHK_speechflightParams
-            // 
-            resources.ApplyResources(this.CHK_speechflightParams, "CHK_speechflightParams");
-            this.CHK_speechflightParams.Name = "CHK_speechflightParams";
-            this.CHK_speechflightParams.UseVisualStyleBackColor = true;
-            this.CHK_speechflightParams.CheckedChanged += new System.EventHandler(this.CHK_speechflightParams_CheckedChanged);
-            // 
             // CHK_speechotherParams
             // 
             resources.ApplyResources(this.CHK_speechotherParams, "CHK_speechotherParams");
             this.CHK_speechotherParams.Name = "CHK_speechotherParams";
             this.CHK_speechotherParams.UseVisualStyleBackColor = true;
             this.CHK_speechotherParams.CheckedChanged += new System.EventHandler(this.CHK_speechotherParams_CheckedChanged);
+            // 
+            // CHK_speechflightParams
+            // 
+            resources.ApplyResources(this.CHK_speechflightParams, "CHK_speechflightParams");
+            this.CHK_speechflightParams.Name = "CHK_speechflightParams";
+            this.CHK_speechflightParams.UseVisualStyleBackColor = true;
+            this.CHK_speechflightParams.CheckedChanged += new System.EventHandler(this.CHK_speechflightParams_CheckedChanged);
             // 
             // ConfigSetParams
             // 
@@ -295,5 +311,7 @@
         private System.Windows.Forms.GroupBox groupBoxSetP;
         private System.Windows.Forms.CheckBox CHK_speechflightParams;
         private System.Windows.Forms.CheckBox CHK_speechotherParams;
+        private System.Windows.Forms.Label lblAllMove;
+        private System.Windows.Forms.CheckBox chb_AllMove;
     }
 }

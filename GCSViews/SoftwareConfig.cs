@@ -55,11 +55,11 @@ namespace ByAeroBeHero.GCSViews
                     if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                         AddBackstageViewPage(new ConfigAC_Fence(), Strings.GeoFence);
 
-                    //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
-                    //{
-                    //    AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
-                    //    //start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
-                    //}
+                    if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
+                    {
+                        //AddBackstageViewPage(new ConfigSimplePids(), Strings.BasicTuning);
+                        start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
+                    }
 
                     //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane)
                     //{

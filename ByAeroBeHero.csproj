@@ -434,6 +434,7 @@
     <Compile Include="Georefimage.Designer.cs">
       <DependentUpon>georefimage.cs</DependentUpon>
     </Compile>
+    <Compile Include="GPSRevieveData.cs" />
     <Compile Include="HIL\QuadCopter.cs" />
     <Compile Include="Joystick\Joy_Do_Repeat_Servo.cs">
       <SubType>Form</SubType>

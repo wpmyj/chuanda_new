@@ -17,6 +17,8 @@ using ByAeroBeHero.Controls;
 using ByAeroBeHero.Comms;
 using Transitions;
 using System.Speech.Synthesis;
+using GoogleMapViewer;
+using GMap.NET;
 
 namespace ByAeroBeHero
 {
@@ -154,6 +156,10 @@ namespace ByAeroBeHero
         public static MAVLinkInterface comPort = new MAVLinkInterface();
 
         /// <summary>
+        /// 实例化串口
+        /// </summary>
+
+        /// <summary>
         /// passive comports
         /// </summary>
         public static List<MAVLinkInterface> Comports = new List<MAVLinkInterface>();
@@ -174,6 +180,10 @@ namespace ByAeroBeHero
         /// Comport name
         /// </summary>
         public static string comPortName = "";
+        /// <summary>
+        /// 选择模式
+        /// </summary>
+        public static string modeName = "";
         /// <summary>
         /// use to store all internal config
         /// </summary>
@@ -353,6 +363,7 @@ namespace ByAeroBeHero
             _connectionControl.CMB_serialport.SelectedIndexChanged += this.CMB_serialport_SelectedIndexChanged;
             _connectionControl.CMB_serialport.Click += this.CMB_serialport_Click;
             _connectionControl.TOOL_APMFirmware.SelectedIndexChanged += this.TOOL_APMFirmware_SelectedIndexChanged;
+            _connectionControl.CMB_flightmode.SelectedIndexChanged += this.CMB_flightmode_SelectedIndexChanged;
 
             _connectionControl.ShowLinkStats += (sender, e) => ShowConnectionStatsForm();
             srtm.datadirectory = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "srtm";
@@ -397,6 +408,7 @@ namespace ByAeroBeHero
             MainV2.config["NUM_tracklength"] = "100000";
 
             MainV2.config["NUM_movelength"] = "0.5";
+            MainV2.config["CHB_AllMove"] = true.ToString();
 
             // create one here - but override on load
             MainV2.config["guid"] = Guid.NewGuid().ToString();
@@ -945,7 +957,7 @@ namespace ByAeroBeHero
                     break;
                 case "AUTO":
                 default:
-                    comPort.BaseStream = new SerialPort();
+                     comPort.BaseStream= new SerialPort();
                     break;
             }
 
@@ -1034,7 +1046,7 @@ namespace ByAeroBeHero
                 connecttime = DateTime.Now;
 
                 // do the connect
-                comPort.Open(false, skipconnectcheck);
+                comPort.Open(false, skipconnectcheck, _connectionControl.CMB_flightmode.SelectedIndex);
 
                 if (!comPort.BaseStream.IsOpen)
                 {
@@ -1048,6 +1060,13 @@ namespace ByAeroBeHero
                     catch { }
                     return;
                 }
+
+                if (_connectionControl.CMB_flightmode.SelectedIndex == 1) 
+                {
+                    this.MenuConnect.Image = displayicons.disconnect;
+                    return;
+                }
+                    
 
                 // 3dr radio is hidden as no hb packet is ever emitted
                 if (comPort.sysidseen.Count > 1)
@@ -1207,6 +1226,7 @@ namespace ByAeroBeHero
             }
         }
 
+        private bool IsMapPoint;
         private void MenuConnect_Click(object sender, EventArgs e)
         {
             comPort.giveComport = false;
@@ -1240,21 +1260,180 @@ namespace ByAeroBeHero
 
             comPort.logfile = null;
             comPort.rawlogfile = null;
-
-            // decide if this is a connect or disconnect
-            if (comPort.BaseStream.IsOpen)
+            if (IsMapPoint)
             {
-                FlightData.controlInit();
-                doDisconnect(comPort);
+                if (serialPort1.IsOpen)
+                {
+                    FlightData.controlInit();
+                    doMapDisconnect();
+                }
+                else
+                {
+                    doMapConnect(_connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                }
             }
-            else
+            else 
             {
-                doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                // decide if this is a connect or disconnect
+                if (comPort.BaseStream.IsOpen)
+                {
+                    FlightData.controlInit();
+                    doDisconnect(comPort);
+                }
+                else
+                {
+                    doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                }
             }
-
             FlightData.Activate();
         }
-        
+
+        #region 接受测绘数据
+
+        /// <summary>
+        /// 接收测绘数据
+        /// </summary>
+        /// <param name="comPort"></param>
+        /// <param name="portname"></param>
+        /// <param name="baud"></param>
+        public void doMapConnect(string portname, string baud)
+        {
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Close();
+            }
+            try
+            {
+
+                //timer2.Enabled = true;
+                serialPort1.BaudRate = int.Parse(baud);
+                serialPort1.PortName = portname;
+                serialPort1.DataBits = 8;
+                //switch (setSerialDlg.parity1)
+                //{
+                //    case 0: serialPort1.Parity = System.IO.Ports.Parity.None; break;
+                //    case 1: serialPort1.Parity = System.IO.Ports.Parity.Odd; break;
+                //    case 2: serialPort1.Parity = System.IO.Ports.Parity.Even; break;
+
+                //}
+                //switch (setSerialDlg.stop1)
+                //{
+                //    case 0: serialPort1.StopBits = System.IO.Ports.StopBits.One; break;
+                //    case 1: serialPort1.StopBits = System.IO.Ports.StopBits.OnePointFive; break;
+                //    case 2: serialPort1.StopBits = System.IO.Ports.StopBits.Two; break;
+                //}
+                serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(DataReceived);
+                serialPort1.Open();
+
+                //链接显示
+                _connectionControl.IsConnected(true);
+
+                if (!serialPort1.IsOpen)
+                {
+                    try
+                    {
+                        _connectionControl.IsConnected(false);
+                        UpdateConnectIcon();
+                        comPort.Close();
+                    }
+                    catch { }
+                    return;
+                }
+                this.MenuConnect.Image = displayicons.disconnect;
+            }
+            catch
+            {
+                try
+                {
+                    _connectionControl.IsConnected(false);
+                    UpdateConnectIcon();
+                    comPort.Close();
+                }
+                catch (Exception ex2)
+                {
+                    log.Warn(ex2);
+                }
+                return;
+            }
+        }
+
+        private void DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
+        {
+            try
+            {
+                string strRecv;
+                string[] strGPS;
+
+                strRecv = serialPort1.ReadLine();
+                int index = strRecv.IndexOf('$');
+                if (index == -1)
+                {
+                    return;
+                }
+                else
+                    strRecv.Remove(0, index);
+
+                strGPS = strRecv.Replace('*', ',').Split(',');
+                switch (strGPS[0])
+                {
+                    case "$GNGGA":
+                        {
+                            if (strGPS.Length < 13)
+                            {
+                                return;
+                            }
+                            GNGGA gpgga = new GNGGA();
+                            ReadGNGGA(strGPS, gpgga);
+                            break;
+                        }
+                    default:
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                _connectionControl.IsConnected(false);
+                UpdateConnectIcon();
+                comPort.Close();
+                return;
+            }
+            
+        }
+
+        private static void ReadGNGGA(string[] strGPS, GNGGA gpgga)
+        {
+            string lat = (string.IsNullOrEmpty(strGPS[2]) ? 0 : Convert.ToDouble(strGPS[2])).ToString().Replace(".","");
+            string lng = (string.IsNullOrEmpty(strGPS[4]) ? 0 : Convert.ToDouble(strGPS[4])).ToString().Replace(".", ""); ;
+            if (lat == "0" || lng == "0")
+                return;
+            double newLat = Double.Parse((lat.Substring(0, 2) + "." + (Double.Parse(lat.Substring(2, lat.Length - 2)) / 600000).ToString().Replace(".", "")));
+            double newlng = Double.Parse((lng.Substring(0, 3) + "." + (Double.Parse(lng.Substring(3, lng.Length - 3)) / 6000).ToString().Replace(".", "")));
+
+            MainV2.comPort.MAV.cs.SetMapPoints(new PointLatLng(newLat, newlng));
+        }
+
+        /// <summary>
+        /// 断开接收数据
+        /// </summary>
+        /// <param name="serialPort"></param>
+        public void doMapDisconnect()
+        {
+            try
+            {
+                _connectionControl.IsConnected(false);
+                UpdateConnectIcon();
+                serialPort1.DtrEnable = false;
+                serialPort1.Close();
+            }
+            catch (Exception ex)
+            {
+                log.Error(ex);
+            }
+            this.MenuConnect.Image = global::ByAeroBeHero.Properties.Resources.disConnection;
+        }
+
+        #endregion
+
         public static void ShowMessage() 
         {
             DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。"+"\n"+"2.请检查串口是否选择正确。","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -1304,7 +1483,18 @@ namespace ByAeroBeHero
             catch { }
         }
 
-
+        private void CMB_flightmode_SelectedIndexChanged(object sender, EventArgs e) 
+        {
+            modeName = _connectionControl.CMB_flightmode.Text;
+            if (modeName =="飞行模式")
+            {
+                IsMapPoint = false;
+            }
+            else if (modeName == "测绘模式")
+            {
+                IsMapPoint = true;
+            }
+        }
 
         /// <summary>
         /// overriding the OnCLosing is a bit cleaner than handling the event, since it 
@@ -1691,7 +1881,6 @@ namespace ByAeroBeHero
         {
             if ((DateTime.Now - connectButtonUpdate).Milliseconds > 500)
             {
-                //                        Console.WriteLine(DateTime.Now.Millisecond);
                 if (comPort.BaseStream.IsOpen)
                 {
                     if ((string)this.MenuConnect.Image.Tag != "Disconnect")
@@ -1810,6 +1999,7 @@ namespace ByAeroBeHero
         /// </summary>
         private void SerialReader()
         {
+
             if (serialThread == true)
                 return;
             serialThread = true;
@@ -1832,6 +2022,7 @@ namespace ByAeroBeHero
 
             DateTime speechflightparamstime = DateTime.Now;
 
+
             while (serialThread)
             {
                 try
@@ -1853,7 +2044,8 @@ namespace ByAeroBeHero
                     catch { }
 
                     // update connect/disconnect button and info stats
-                    UpdateConnectIcon();
+                    if (!IsMapPoint) 
+                        UpdateConnectIcon();
 
                     // 30 seconds interval speech options
                     if (speechEnable && speechEngine != null && (DateTime.Now - speechcustomtime).TotalSeconds > 30 &&

@@ -33,6 +33,7 @@
             this.cmb_ConnectionType = new System.Windows.Forms.ComboBox();
             this.cmb_Connection = new System.Windows.Forms.ComboBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.cmb_flightmode = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cmb_Baud
@@ -85,11 +86,23 @@
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.TabStop = true;
             // 
+            // cmb_flightmode
+            // 
+            this.cmb_flightmode.BackColor = System.Drawing.Color.Black;
+            this.cmb_flightmode.ForeColor = System.Drawing.Color.White;
+            this.cmb_flightmode.FormattingEnabled = true;
+            this.cmb_flightmode.Items.AddRange(new object[] {
+            resources.GetString("cmb_flightmode.Items"),
+            resources.GetString("cmb_flightmode.Items1")});
+            resources.ApplyResources(this.cmb_flightmode, "cmb_flightmode");
+            this.cmb_flightmode.Name = "cmb_flightmode";
+            // 
             // ConnectionControl
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.cmb_flightmode);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cmb_Connection);
             this.Controls.Add(this.cmb_ConnectionType);
@@ -107,5 +120,6 @@
         private System.Windows.Forms.ComboBox cmb_ConnectionType;
         private System.Windows.Forms.ComboBox cmb_Connection;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ComboBox cmb_flightmode;
     }
 }

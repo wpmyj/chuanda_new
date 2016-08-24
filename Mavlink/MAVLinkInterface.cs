@@ -18,6 +18,7 @@ using ByAeroBeHero.Comms;
 using ByAeroBeHero.Utilities;
 using System.Windows.Forms;
 using ByAeroBeHero.HIL;
+using GMap.NET;
 
 namespace ByAeroBeHero
 {
@@ -219,18 +220,19 @@ namespace ByAeroBeHero
             Open(false);
         }
 
-        public void Open(bool getparams, bool skipconnectedcheck = false)
+        public void Open(bool getparams, bool skipconnectedcheck = false, int flightmode = 0)
         {
+      
             if (BaseStream.IsOpen && !skipconnectedcheck)
                 return;
 
             sysidseen.Clear();
 
             frmProgressReporter = new ProgressReporterDialogue
-                                      {
-                                          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen,
-                                          Text = string.Empty
-                                      };
+            {
+                StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen,
+                Text = string.Empty
+            };
 
             if (getparams)
             {

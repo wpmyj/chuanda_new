@@ -52,6 +52,7 @@ namespace ByAeroBeHero
             this.MenuDonate = new System.Windows.Forms.ToolStripMenuItem();
             this.menu = new ByAeroBeHero.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.MainMenu.SuspendLayout();
             this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -267,5 +268,6 @@ namespace ByAeroBeHero
         private System.Windows.Forms.ToolStripMenuItem fullScreenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem readonlyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem connectionOptionsToolStripMenuItem;
+        public System.IO.Ports.SerialPort serialPort1;
     }
 }

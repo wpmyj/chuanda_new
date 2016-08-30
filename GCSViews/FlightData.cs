@@ -3382,8 +3382,9 @@ namespace ByAeroBeHero.GCSViews
                 //MainV2.comPort.MAV.cs.messages.ForEach(x => { message.AppendLine(x); });
                 for (int i = MainV2.comPort.MAV.cs.messages.Count - 1; i >= 0 ; i-- )
                 {
+                    if (MainV2.comPort.MAV.cs.messages[i].Contains("保持") || MainV2.comPort.MAV.cs.messages[i].Contains("翻转"))
+                        continue;
                     message.AppendLine(MainV2.comPort.MAV.cs.messages[i]);
-
                 }
                 txt_messagebox.Text = message.ToString();
 

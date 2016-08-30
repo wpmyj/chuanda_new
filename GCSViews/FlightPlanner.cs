@@ -6600,21 +6600,7 @@ namespace ByAeroBeHero.GCSViews
              = groupBoxBasePoint.BackColor = groupboxOPoint.BackColor = groupBoxRellyPoint.BackColor = Color.Black;
             groupBoxAeroPoint.ForeColor = CHK_autopan.ForeColor
                 = groupBoxBasePoint.ForeColor = groupboxOPoint.ForeColor = groupBoxRellyPoint.ForeColor = breakpointgroupBox.ForeColor
-            =Color.White;
-
-            this.panelShowInfo.BackColor = Color.Black;
-            if (MainV2.comPort.BaseStream.IsOpen)
-            {
-                if (SerDataMap.IsOpen)
-                    return;
-                SerDataMap.Open();
-                SerDataMap.ReceivedBytesThreshold = 1;
-            }
-            else 
-            {
-                SerDataMap.Close();
-            }
-                
+            =Color.White;              
         }
 
         #endregion

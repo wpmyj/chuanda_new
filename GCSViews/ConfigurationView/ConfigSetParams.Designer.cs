@@ -35,16 +35,11 @@
             this.lbl_RTL_ALT_F = new System.Windows.Forms.Label();
             this.lblUnit = new System.Windows.Forms.Label();
             this.lblYawBehavior = new System.Windows.Forms.Label();
-            this.myButton2 = new ByAeroBeHero.Controls.MyButton();
-            this.Btn_ = new ByAeroBeHero.Controls.MyButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.NUM_movelength = new System.Windows.Forms.NumericUpDown();
             this.lblMoveDistance = new System.Windows.Forms.Label();
             this.lblDSM = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblAllMove = new System.Windows.Forms.Label();
             this.chb_AllMove = new System.Windows.Forms.CheckBox();
@@ -55,12 +50,17 @@
             this.groupBoxSetP = new System.Windows.Forms.GroupBox();
             this.CHK_speechotherParams = new System.Windows.Forms.CheckBox();
             this.CHK_speechflightParams = new System.Windows.Forms.CheckBox();
+            this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.myButton2 = new ByAeroBeHero.Controls.MyButton();
+            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.Btn_ = new ByAeroBeHero.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBoxSetP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -87,31 +87,6 @@
             // 
             resources.ApplyResources(this.lblYawBehavior, "lblYawBehavior");
             this.lblYawBehavior.Name = "lblYawBehavior";
-            // 
-            // myButton2
-            // 
-            resources.ApplyResources(this.myButton2, "myButton2");
-            this.myButton2.Name = "myButton2";
-            this.myButton2.UseVisualStyleBackColor = true;
-            this.myButton2.Click += new System.EventHandler(this.BUT_refreshpart_Click);
-            // 
-            // Btn_
-            // 
-            resources.ApplyResources(this.Btn_, "Btn_");
-            this.Btn_.Name = "Btn_";
-            this.Btn_.UseVisualStyleBackColor = true;
-            this.Btn_.Click += new System.EventHandler(this.BUT_writePIDS_Click);
-            // 
-            // WP_YAW_BEHAVIOR
-            // 
-            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
-            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
-            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
-            this.WP_YAW_BEHAVIOR.ParamName = null;
-            this.WP_YAW_BEHAVIOR.SubControl = null;
-            this.WP_YAW_BEHAVIOR.Tag = "";
-            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
             // 
             // NUM_movelength
             // 
@@ -162,41 +137,6 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            // 
-            // RTL_ALT_FINAL
-            // 
-            this.RTL_ALT_FINAL.DecimalPlaces = 1;
-            resources.ApplyResources(this.RTL_ALT_FINAL, "RTL_ALT_FINAL");
-            this.RTL_ALT_FINAL.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.RTL_ALT_FINAL.Max = 1F;
-            this.RTL_ALT_FINAL.Min = 0F;
-            this.RTL_ALT_FINAL.Name = "RTL_ALT_FINAL";
-            this.RTL_ALT_FINAL.ParamName = null;
-            this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RTL_ALT_P
-            // 
-            this.RTL_ALT_P.DecimalPlaces = 1;
-            resources.ApplyResources(this.RTL_ALT_P, "RTL_ALT_P");
-            this.RTL_ALT_P.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.RTL_ALT_P.Max = 1F;
-            this.RTL_ALT_P.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.RTL_ALT_P.Min = 0F;
-            this.RTL_ALT_P.Name = "RTL_ALT_P";
-            this.RTL_ALT_P.ParamName = null;
-            this.RTL_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // groupBox2
             // 
@@ -265,6 +205,73 @@
             this.CHK_speechflightParams.UseVisualStyleBackColor = true;
             this.CHK_speechflightParams.CheckedChanged += new System.EventHandler(this.CHK_speechflightParams_CheckedChanged);
             // 
+            // RTL_ALT_FINAL
+            // 
+            this.RTL_ALT_FINAL.DecimalPlaces = 1;
+            resources.ApplyResources(this.RTL_ALT_FINAL, "RTL_ALT_FINAL");
+            this.RTL_ALT_FINAL.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.RTL_ALT_FINAL.Max = 1F;
+            this.RTL_ALT_FINAL.Min = 0F;
+            this.RTL_ALT_FINAL.Name = "RTL_ALT_FINAL";
+            this.RTL_ALT_FINAL.ParamName = null;
+            this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RTL_ALT_P
+            // 
+            this.RTL_ALT_P.DecimalPlaces = 1;
+            resources.ApplyResources(this.RTL_ALT_P, "RTL_ALT_P");
+            this.RTL_ALT_P.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.RTL_ALT_P.Max = 1F;
+            this.RTL_ALT_P.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.RTL_ALT_P.Min = 0F;
+            this.RTL_ALT_P.Name = "RTL_ALT_P";
+            this.RTL_ALT_P.ParamName = null;
+            this.toolTip1.SetToolTip(this.RTL_ALT_P, resources.GetString("RTL_ALT_P.ToolTip"));
+            this.toolTip2.SetToolTip(this.RTL_ALT_P, resources.GetString("RTL_ALT_P.ToolTip1"));
+            this.RTL_ALT_P.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.RTL_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // myButton2
+            // 
+            resources.ApplyResources(this.myButton2, "myButton2");
+            this.myButton2.Name = "myButton2";
+            this.myButton2.UseVisualStyleBackColor = true;
+            this.myButton2.Click += new System.EventHandler(this.BUT_refreshpart_Click);
+            // 
+            // WP_YAW_BEHAVIOR
+            // 
+            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
+            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
+            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
+            this.WP_YAW_BEHAVIOR.ParamName = null;
+            this.WP_YAW_BEHAVIOR.SubControl = null;
+            this.WP_YAW_BEHAVIOR.Tag = "";
+            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
+            // 
+            // Btn_
+            // 
+            resources.ApplyResources(this.Btn_, "Btn_");
+            this.Btn_.Name = "Btn_";
+            this.Btn_.UseVisualStyleBackColor = true;
+            this.Btn_.Click += new System.EventHandler(this.BUT_writePIDS_Click);
+            // 
             // ConfigSetParams
             // 
             resources.ApplyResources(this, "$this");
@@ -276,12 +283,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBoxSetP.ResumeLayout(false);
             this.groupBoxSetP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -182,6 +182,7 @@ namespace ByAeroBeHero
         public static bool accelhealth = false;
         public static bool gyrohealth = false;
         public static bool receiverhealth = false;
+        public static bool lidarhealth = false;
         public static bool pump = false;
         public static int breakpointstatus = 0;
         public static int breakpointreason = 0;
@@ -1157,12 +1158,17 @@ namespace ByAeroBeHero
                             gyrohealth = false;
                         else
                             gyrohealth = true;
-
+                        
                         if (sensors_health.rc_receiver != sensors_enabled.rc_receiver && sensors_present.rc_receiver)
                             receiverhealth = false;
                         else
                             receiverhealth = true;
                         
+                        if (sensors_health.LASER_POSITION != sensors_enabled.LASER_POSITION && sensors_present.LASER_POSITION)
+                            lidarhealth = false;
+                        else
+                            lidarhealth = true;
+
                         MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.SYS_STATUS] = null;
                     }
 
@@ -1749,7 +1755,17 @@ namespace ByAeroBeHero
                 bitArray = new BitArray(new int[] { (int)p});
             }
 
-            public bool gyro { get { return bitArray[0]; } set { bitArray[0] = value; } }
+            public bool gyro 
+            {
+                get 
+                { 
+                    return bitArray[0]; 
+                }
+                set 
+                {
+                    bitArray[0] = value; 
+                }
+            }
             public bool accelerometer { get { return bitArray[1]; } set { bitArray[1] = value; } }
             public bool compass { get { return bitArray[2]; } set { bitArray[2] = value; } }
             public bool barometer { get { return bitArray[3]; } set { bitArray[3] = value; } }

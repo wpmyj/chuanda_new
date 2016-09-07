@@ -152,7 +152,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                         {
                             lbl_Accel_user.Text = "校准失败";
                         }
-                        else if (MainV2.comPort.MAV.cs.message.Contains("完成")) 
+                        else if (MainV2.comPort.MAV.cs.message.Contains("成功")) 
                         {
                             lbl_Accel_user.Text = "校准完成";
                         }

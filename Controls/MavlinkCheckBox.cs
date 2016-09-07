@@ -57,8 +57,8 @@ namespace ByAeroBeHero.Controls
                 }
                 else
                 {
-                    if (ParamName == "RNGFND_TYPE" && paramlist[paramname].Value == 4) { this.Checked = true; }
-                    else if (ParamName == "RNGFND_TYPE" && paramlist[paramname].Value == 4) { this.Checked = false; }
+                    if (ParamName == "RNGFND_TYPE" && paramlist[paramname].Value != 0) { this.Checked = true; }
+                    else if (ParamName == "RNGFND_TYPE" && paramlist[paramname].Value == 0) { this.Checked = false; }
                     else { this.CheckState = System.Windows.Forms.CheckState.Indeterminate; }
                     enableControl(false);
                 }

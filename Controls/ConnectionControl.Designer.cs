@@ -39,22 +39,12 @@
             // cmb_Baud
             // 
             this.cmb_Baud.BackColor = System.Drawing.Color.Black;
-            this.cmb_Baud.DropDownWidth = 108;
+            this.cmb_Baud.DropDownWidth = 90;
             this.cmb_Baud.ForeColor = System.Drawing.Color.White;
             this.cmb_Baud.FormattingEnabled = true;
             this.cmb_Baud.Items.AddRange(new object[] {
             resources.GetString("cmb_Baud.Items"),
-            resources.GetString("cmb_Baud.Items1"),
-            resources.GetString("cmb_Baud.Items2"),
-            resources.GetString("cmb_Baud.Items3"),
-            resources.GetString("cmb_Baud.Items4"),
-            resources.GetString("cmb_Baud.Items5"),
-            resources.GetString("cmb_Baud.Items6"),
-            resources.GetString("cmb_Baud.Items7"),
-            resources.GetString("cmb_Baud.Items8"),
-            resources.GetString("cmb_Baud.Items9"),
-            resources.GetString("cmb_Baud.Items10"),
-            resources.GetString("cmb_Baud.Items11")});
+            resources.GetString("cmb_Baud.Items1")});
             resources.ApplyResources(this.cmb_Baud, "cmb_Baud");
             this.cmb_Baud.Name = "cmb_Baud";
             // 
@@ -70,7 +60,7 @@
             // 
             this.cmb_Connection.BackColor = System.Drawing.Color.Black;
             this.cmb_Connection.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_Connection.DropDownWidth = 108;
+            this.cmb_Connection.DropDownWidth = 105;
             this.cmb_Connection.ForeColor = System.Drawing.Color.White;
             this.cmb_Connection.FormattingEnabled = true;
             resources.ApplyResources(this.cmb_Connection, "cmb_Connection");

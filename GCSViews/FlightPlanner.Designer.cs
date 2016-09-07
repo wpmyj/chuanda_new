@@ -269,6 +269,7 @@
             this.panelBASE = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.myButtonLand = new ByAeroBeHero.Controls.MyButton();
             this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
             this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
             this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
@@ -1929,6 +1930,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.myButtonLand);
             this.panel6.Controls.Add(this.BUT_quickrtl1);
             this.panel6.Controls.Add(this.BUT_quickauto1);
             this.panel6.Controls.Add(this.btnLoiterUnlim);
@@ -1940,6 +1942,13 @@
             this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
+            // 
+            // myButtonLand
+            // 
+            resources.ApplyResources(this.myButtonLand, "myButtonLand");
+            this.myButtonLand.Name = "myButtonLand";
+            this.myButtonLand.UseVisualStyleBackColor = true;
+            this.myButtonLand.Click += new System.EventHandler(this.myButtonLand_Click);
             // 
             // BUT_quickrtl1
             // 
@@ -2271,5 +2280,6 @@
         private System.Windows.Forms.ToolStripMenuItem moveToRightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exchangeToolStripMenuItem;
         private System.Windows.Forms.Timer timer_GetMapPoint;
+        private Controls.MyButton myButtonLand;
     }
 }

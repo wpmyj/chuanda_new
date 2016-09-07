@@ -1557,7 +1557,64 @@ namespace ByAeroBeHero
         {
             this.Hide();
             plugin.ShowFliahtPlanner();
-        } 
+        }
 
+        #region 保存或加载区域规划设置参数
+
+        private void myBtnSaveAeroInfo_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sf = new SaveFileDialog())
+            {
+                sf.Filter = "(*.txt)|*.txt";
+                sf.ShowDialog();
+                if (sf.FileName != "")
+                {
+                    try
+                    {
+                        StreamWriter sw = new StreamWriter(sf.OpenFile());
+
+                        sw.WriteLine("#Save Area Info " + Application.ProductVersion);
+                        sw.WriteLine(NUM_altitude.Value + "," + NUM_UpDownFlySpeed.Value + "," + NUM_Distance.Value + "," + numer_TakeoffHigh.Value
+                            + "," + numer_landhigh.Value + "," + NUM_copter_delay.Value + "," + startForm(CMB_startfrom.Text));
+
+                        sw.Close();
+                    }
+                    catch { CustomMessageBox.Show("保存文件失败！"); }
+                }
+            }
+        }
+
+        private void myBtnLoadAeroInfo_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog fd = new OpenFileDialog())
+            {
+                fd.Filter = "(*.txt)|*.txt";
+                fd.ShowDialog();
+                if (File.Exists(fd.FileName))
+                {
+                    StreamReader sr = new StreamReader(fd.OpenFile());
+
+                    while (!sr.EndOfStream)
+                    {
+                        string line = sr.ReadLine();
+                        if (line.StartsWith("#"))
+                        {
+                        }
+                        else
+                        {
+                            string[] items = line.Split(',');
+                            NUM_altitude.Value = Convert.ToDecimal(items[0]);
+                            NUM_UpDownFlySpeed.Value = Convert.ToDecimal(items[1]);
+                            NUM_Distance.Value = Convert.ToDecimal(items[2]);
+                            numer_TakeoffHigh.Value = Convert.ToDecimal(items[3]);
+                            numer_landhigh.Value = Convert.ToDecimal(items[4]);
+                            NUM_copter_delay.Value = Convert.ToDecimal(items[5]);
+                        }
+                    }
+                }
+                domainUpDown1_ValueChanged(null, null);
+            }
+        }
+        #endregion
     }
 }

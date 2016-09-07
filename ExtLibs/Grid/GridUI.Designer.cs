@@ -44,6 +44,8 @@
             this.lbl_footprint = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.myBtnLoadAeroInfo = new ByAeroBeHero.Controls.MyButton();
+            this.myBtnSaveAeroInfo = new ByAeroBeHero.Controls.MyButton();
             this.myButtonCanle = new ByAeroBeHero.Controls.MyButton();
             this.BUT_Accept = new ByAeroBeHero.Controls.MyButton();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -285,6 +287,8 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.myBtnLoadAeroInfo);
+            this.panel3.Controls.Add(this.myBtnSaveAeroInfo);
             this.panel3.Controls.Add(this.myButtonCanle);
             this.panel3.Controls.Add(this.BUT_Accept);
             this.panel3.Controls.Add(this.groupBox8);
@@ -293,6 +297,20 @@
             this.panel3.Controls.Add(this.groupBox6);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            // 
+            // myBtnLoadAeroInfo
+            // 
+            resources.ApplyResources(this.myBtnLoadAeroInfo, "myBtnLoadAeroInfo");
+            this.myBtnLoadAeroInfo.Name = "myBtnLoadAeroInfo";
+            this.myBtnLoadAeroInfo.UseVisualStyleBackColor = true;
+            this.myBtnLoadAeroInfo.Click += new System.EventHandler(this.myBtnLoadAeroInfo_Click);
+            // 
+            // myBtnSaveAeroInfo
+            // 
+            resources.ApplyResources(this.myBtnSaveAeroInfo, "myBtnSaveAeroInfo");
+            this.myBtnSaveAeroInfo.Name = "myBtnSaveAeroInfo";
+            this.myBtnSaveAeroInfo.UseVisualStyleBackColor = true;
+            this.myBtnSaveAeroInfo.Click += new System.EventHandler(this.myBtnSaveAeroInfo_Click);
             // 
             // myButtonCanle
             // 
@@ -1449,5 +1467,7 @@
         private Controls.MyButton myButtonCanle;
         private System.Windows.Forms.Panel panel3;
         private Controls.myGMAP map;
+        private Controls.MyButton myBtnLoadAeroInfo;
+        private Controls.MyButton myBtnSaveAeroInfo;
     }
 }

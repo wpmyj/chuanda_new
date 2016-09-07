@@ -15,7 +15,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public ConfigSetParams()
         {
             InitializeComponent();
-            
+
+            RTL_ALT_FINAL.Visible = false;
         }
 
         public void Activate()
@@ -47,10 +48,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     ParameterMetaDataRepository.GetParameterOptionsInt("WP_YAW_BEHAVIOR", MainV2.comPort.MAV.cs.firmware.ToString())
                     .ToList(), "WP_YAW_BEHAVIOR", MainV2.comPort.MAV.param);
 
-                    RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT",
+                 RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_CLIMB_MIN",
                 MainV2.comPort.MAV.param);
-                    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
-                MainV2.comPort.MAV.param);
+                //    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
+                //MainV2.comPort.MAV.param);
 
 
                     //语音播报

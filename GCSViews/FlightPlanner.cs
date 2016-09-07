@@ -7176,6 +7176,24 @@ namespace ByAeroBeHero.GCSViews
             ((Button)sender).Enabled = true;
         }
 
+        private void myButtonLand_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            DialogResult re = CustomMessageBox.Show("确定是否进行降落！", "提示", MessageBoxButtons.YesNo);
+
+            if (re == DialogResult.No)
+                return;
+            try
+            {
+                ((Button)sender).Enabled = false;
+                MainV2.comPort.setMode("降落");
+            }
+            catch { CustomMessageBox.Show(Strings.CommandFailed, Strings.ERROR); }
+            ((Button)sender).Enabled = true;
+        }
+
         #endregion
 
         #region 更新区域航点距离和方向
@@ -7773,5 +7791,6 @@ namespace ByAeroBeHero.GCSViews
             MoveFlagM = false;
         }
         #endregion
+
     }
 }

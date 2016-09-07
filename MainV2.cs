@@ -396,7 +396,7 @@ namespace ByAeroBeHero
             PopulateSerialportList();
             if (_connectionControl.CMB_serialport.Items.Count > 0)
             {
-                _connectionControl.CMB_baudrate.SelectedIndex = 8;
+                _connectionControl.CMB_baudrate.SelectedIndex = 0;
                 _connectionControl.CMB_serialport.SelectedIndex = 0;
             }
             // ** Done
@@ -816,8 +816,8 @@ namespace ByAeroBeHero
 
             string oldport = _connectionControl.CMB_serialport.Text;
             PopulateSerialportList();
-            if (_connectionControl.CMB_serialport.Items.Contains(oldport))
-                _connectionControl.CMB_serialport.Text = oldport;
+            //if (_connectionControl.CMB_serialport.Items.Contains(oldport))
+            //    _connectionControl.CMB_serialport.Text = oldport;
         }
 
         private void PopulateSerialportList()
@@ -997,7 +997,11 @@ namespace ByAeroBeHero
                     }
 
                     _connectionControl.CMB_serialport.Text = portname = Comms.CommsSerialScan.portinterface.PortName;
-                    _connectionControl.CMB_baudrate.Text = baud = Comms.CommsSerialScan.portinterface.BaudRate.ToString();
+                    if (baud == "57600")
+                        _connectionControl.CMB_baudrate.Text = "数传";
+                    if (baud == "115200")
+                        _connectionControl.CMB_baudrate.Text = "USB";
+                     baud = Comms.CommsSerialScan.portinterface.BaudRate.ToString();
                 }
 
                 log.Info("Set Portname");
@@ -1151,7 +1155,15 @@ namespace ByAeroBeHero
                 ByAeroBeHero.Utilities.Tracking.AddEvent("Connect", "Baud", comPort.BaseStream.BaudRate.ToString(), "");
 
                 // save the baudrate for this port
-                config[_connectionControl.CMB_serialport.Text + "_BAUD"] = _connectionControl.CMB_baudrate.Text;
+                if(_connectionControl.CMB_baudrate.Text =="数传")
+                {
+                    config[_connectionControl.CMB_serialport.Text + "_BAUD"] ="57600" ;
+                }
+                else
+                {
+                    config[_connectionControl.CMB_serialport.Text + "_BAUD"] = "115200";
+                }
+                
 
                 this.Text = titlebar;
                 //+" " + comPort.MAV.VersionString;
@@ -1257,6 +1269,16 @@ namespace ByAeroBeHero
                 CustomMessageBox.Show(Strings.ErrorClosingLogFile + ex.Message, Strings.ERROR);
                 //ShowMessage();
             }
+            string strbaudrate = string.Empty;
+            if(_connectionControl.CMB_baudrate.Text =="数传")
+            {
+                strbaudrate ="57600";
+            }
+            else
+            {
+                strbaudrate ="115200";
+            }
+
 
             comPort.logfile = null;
             comPort.rawlogfile = null;
@@ -1269,7 +1291,7 @@ namespace ByAeroBeHero
                 }
                 else
                 {
-                    doMapConnect(_connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                    doMapConnect(_connectionControl.CMB_serialport.Text, strbaudrate);
                 }
             }
             else 
@@ -1282,7 +1304,7 @@ namespace ByAeroBeHero
                 }
                 else
                 {
-                    doConnect(comPort, _connectionControl.CMB_serialport.Text, _connectionControl.CMB_baudrate.Text);
+                    doConnect(comPort, _connectionControl.CMB_serialport.Text, strbaudrate);
                 }
             }
             FlightData.Activate();
@@ -1471,13 +1493,23 @@ namespace ByAeroBeHero
             {
                 if (!String.IsNullOrEmpty(_connectionControl.CMB_serialport.Text))
                     comPort.BaseStream.PortName = _connectionControl.CMB_serialport.Text;
-
-                MainV2.comPort.BaseStream.BaudRate = int.Parse(_connectionControl.CMB_baudrate.Text);
+                if (_connectionControl.CMB_baudrate.Text =="数传")
+                    MainV2.comPort.BaseStream.BaudRate = 57600;
+                else
+                    MainV2.comPort.BaseStream.BaudRate = 115200;
 
                 // check for saved baud rate and restore
                 if (config[_connectionControl.CMB_serialport.Text + "_BAUD"] != null)
                 {
-                    _connectionControl.CMB_baudrate.Text = config[_connectionControl.CMB_serialport.Text + "_BAUD"].ToString();
+                    if (config[_connectionControl.CMB_serialport.Text + "_BAUD"].ToString() == "57600")
+                    {
+                        _connectionControl.CMB_baudrate.Text = "数传";
+                    }
+                    else 
+                    {
+                        _connectionControl.CMB_baudrate.Text = "USB";
+                    }
+
                 }
             }
             catch { }
@@ -1663,7 +1695,13 @@ namespace ByAeroBeHero
 
                     xmlwriter.WriteElementString("comport", comPortName);
 
-                    xmlwriter.WriteElementString("baudrate", _connectionControl.CMB_baudrate.Text);
+                    string strbaudrate =string.Empty;
+                    if(_connectionControl.CMB_baudrate.Text == "数传")
+                        strbaudrate ="57600";
+                    else
+                        strbaudrate ="115200";
+
+                    xmlwriter.WriteElementString("baudrate", strbaudrate);
 
                     xmlwriter.WriteElementString("APMFirmware", MainV2.comPort.MAV.cs.firmware.ToString());
 
@@ -1717,7 +1755,10 @@ namespace ByAeroBeHero
                                         _connectionControl.CMB_baudrate.SelectedIndex = _connectionControl.CMB_baudrate.FindString(temp2);
                                         if (_connectionControl.CMB_baudrate.SelectedIndex == -1)
                                         {
-                                            _connectionControl.CMB_baudrate.Text = temp2;
+                                            if(temp2 == "57600")
+                                                _connectionControl.CMB_baudrate.Text = "数传";
+                                            else
+                                                _connectionControl.CMB_baudrate.Text = "USB";
                                             //CMB_baudrate.SelectedIndex = CMB_baudrate.FindString("57600"); ; // must exist
                                         }
                                         //bau = int.Parse(CMB_baudrate.Text);
@@ -2887,16 +2928,22 @@ namespace ByAeroBeHero
         {
             var sb = new StringBuilder();
             int baud = 0;
-            for (int i = 0; i < _connectionControl.CMB_baudrate.Text.Length; i++)
-                if (char.IsDigit(_connectionControl.CMB_baudrate.Text[i]))
-                {
-                    sb.Append(_connectionControl.CMB_baudrate.Text[i]);
-                    baud = baud * 10 + _connectionControl.CMB_baudrate.Text[i] - '0';
-                }
-            if (_connectionControl.CMB_baudrate.Text != sb.ToString())
-            {
-                _connectionControl.CMB_baudrate.Text = sb.ToString();
-            }
+            //for (int i = 0; i < _connectionControl.CMB_baudrate.Text.Length; i++)
+            //    if (char.IsDigit(_connectionControl.CMB_baudrate.Text[i]))
+            //    {
+            //        sb.Append(_connectionControl.CMB_baudrate.Text[i]);
+            //        baud = baud * 10 + _connectionControl.CMB_baudrate.Text[i] - '0';
+            //    }
+            //if (_connectionControl.CMB_baudrate.Text != sb.ToString())
+            //{
+            //    _connectionControl.CMB_baudrate.Text = sb.ToString();
+            //}
+
+            if (_connectionControl.CMB_baudrate.Text == "USB")
+                baud = 115200;
+            if (_connectionControl.CMB_baudrate.Text == "数传")
+                baud = 57600;
+            
             try
             {
                 if (baud > 0 && comPort.BaseStream.BaudRate != baud)
@@ -3231,6 +3278,5 @@ namespace ByAeroBeHero
                 this.strConnect = false;
             }
         }
-
     }
 }

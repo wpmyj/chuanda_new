@@ -105,7 +105,6 @@
             this.myButtonShowInfo = new ByAeroBeHero.Controls.MyButton();
             this.pictureBoxShowParam = new System.Windows.Forms.PictureBox();
             this.panelDeviceStatus = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblPump = new System.Windows.Forms.Label();
             this.pictureBoxPump = new System.Windows.Forms.PictureBox();
             this.pictureBoxLevel = new System.Windows.Forms.PictureBox();
@@ -197,6 +196,9 @@
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBoxLD = new System.Windows.Forms.PictureBox();
+            this.lblLD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
             this.MainH.Panel2.SuspendLayout();
             this.MainH.SuspendLayout();
@@ -224,7 +226,6 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowParam)).BeginInit();
             this.panelDeviceStatus.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
@@ -253,6 +254,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).BeginInit();
             this.SuspendLayout();
             // 
             // MainH
@@ -1494,29 +1497,8 @@
             // 
             resources.ApplyResources(this.panelDeviceStatus, "panelDeviceStatus");
             this.panelDeviceStatus.BackColor = System.Drawing.Color.Black;
-            this.panelDeviceStatus.Controls.Add(this.tableLayoutPanel2);
+            this.panelDeviceStatus.Controls.Add(this.tableLayoutPanel4);
             this.panelDeviceStatus.Name = "panelDeviceStatus";
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.lblPump, 6, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxPump, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxLevel, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblCompass, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblAccel, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblGPS, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxCompass, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxAccel, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxGPS, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxGyro, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxReceiver, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblGyro, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblReceiver, 5, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblLevel, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBoxvibez, 7, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lblvibez, 7, 1);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // lblPump
             // 
@@ -1835,7 +1817,7 @@
             this.QVSonarRange.backColor3 = System.Drawing.Color.Black;
             this.QVSonarRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QVSonarRange.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSourceQuickTab, "sonarrange", true));
-            this.QVSonarRange.desc = "超声波范围(M):";
+            this.QVSonarRange.desc = "雷达范围(M):";
             resources.ApplyResources(this.QVSonarRange, "QVSonarRange");
             this.QVSonarRange.Name = "QVSonarRange";
             this.QVSonarRange.number = 0D;
@@ -2194,7 +2176,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2461,6 +2443,42 @@
             // 
             this.bindingSourceStatusTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
+            // tableLayoutPanel4
+            // 
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.Controls.Add(this.lblLD, 8, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblvibez, 7, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblPump, 6, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxLD, 8, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblReceiver, 5, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblGyro, 4, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblCompass, 3, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxGPS, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblAccel, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxPump, 6, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblGPS, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxLevel, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblLevel, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxAccel, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxReceiver, 5, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxvibez, 7, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxGyro, 4, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxCompass, 3, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // pictureBoxLD
+            // 
+            resources.ApplyResources(this.pictureBoxLD, "pictureBoxLD");
+            this.pictureBoxLD.Name = "pictureBoxLD";
+            this.pictureBoxLD.TabStop = false;
+            // 
+            // lblLD
+            // 
+            resources.ApplyResources(this.lblLD, "lblLD");
+            this.lblLD.BackColor = System.Drawing.Color.Black;
+            this.lblLD.ForeColor = System.Drawing.Color.White;
+            this.lblLD.Name = "lblLD";
+            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
@@ -2503,8 +2521,6 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowParam)).EndInit();
             this.panelDeviceStatus.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
@@ -2536,6 +2552,9 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2712,7 +2731,6 @@
         private System.Windows.Forms.PictureBox pictureBoxAccel;
         private System.Windows.Forms.PictureBox pictureBoxGPS;
         private System.Windows.Forms.PictureBox pictureBoxCompass;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Controls.MyButton myButtonDeviceStatus;
         private System.Windows.Forms.PictureBox pictureBoxDeviceStatus;
         private System.Windows.Forms.PictureBox pictureBoxGyro;
@@ -2730,6 +2748,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.PictureBox pictureBoxvibez;
         private System.Windows.Forms.Label lblvibez;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.PictureBox pictureBoxLD;
+        private System.Windows.Forms.Label lblLD;
 
     }
 }

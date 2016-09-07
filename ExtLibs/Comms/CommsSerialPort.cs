@@ -177,7 +177,16 @@ namespace ByAeroBeHero.Comms
                 if (ports != null)
                     allPorts.AddRange(ports);
 
-                return allPorts.ToArray();
+                List<string> list = new List<string>();
+                for (int i = 0; i < allPorts.Count; i++)
+                {
+                    if (!list.Contains(allPorts[i]))
+                    {   //查看新集合中是否有指定的元素，如果没有则加入
+                        list.Add(allPorts[i]);
+                    }
+                }
+
+                return list.ToArray();
             }
         }
 

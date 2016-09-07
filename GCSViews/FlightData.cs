@@ -621,14 +621,14 @@ namespace ByAeroBeHero.GCSViews
 
         public void IsShowSonar() 
         {
-            if (MainV2.comPort.MAV.param.ContainsKey("RNGFND_TYPE") && (float)MainV2.comPort.MAV.param["RNGFND_TYPE"] == 4)
-            {
-                this.QVSonarRange.Visible = true;
-            }
-            else
-            {
-                this.QVSonarRange.Visible = false;
-            }
+            //if (MainV2.comPort.MAV.param.ContainsKey("RNGFND_TYPE") && (float)MainV2.comPort.MAV.param["RNGFND_TYPE"] == 4)
+            //{
+            //    this.QVSonarRange.Visible = true;
+            //}
+            //else
+            //{
+            //    this.QVSonarRange.Visible = false;
+            //}
         }
 
         public void CheckBatteryShow()
@@ -3404,8 +3404,8 @@ namespace ByAeroBeHero.GCSViews
             CHK_autopan.ForeColor = Color.White;
 
             panelShowParams.BackColor = Color.Black;
-            panelShowParams.Size = new Size(270, 400);
-            tableLayoutPanel3.Size = new Size(235, 382);
+            panelShowParams.Size = new Size(290, 400);
+            tableLayoutPanel3.Size = new Size(265, 382);
             //CurrentState.isArm
             if (CurrentState.isArm)
             {
@@ -3415,8 +3415,6 @@ namespace ByAeroBeHero.GCSViews
             {
                 timer_time.Enabled = false;
             }
-
-
 
             if (this.pictureBoxAccel.Image != null) 
             {
@@ -3464,6 +3462,12 @@ namespace ByAeroBeHero.GCSViews
             {
                 this.pictureBoxvibez.Image.Dispose();
                 this.pictureBoxvibez.Image = null;
+            }
+
+            if (this.pictureBoxLD.Image != null)
+            {
+                this.pictureBoxLD.Image.Dispose();
+                this.pictureBoxLD.Image = null;
             }
 
             //this.panelDeviceStatus.BackColor = Color.Black;
@@ -3560,6 +3564,15 @@ namespace ByAeroBeHero.GCSViews
                 {
                     this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Waring;
                 }
+
+                if ((MainV2.comPort.MAV.param.ContainsKey("RNGFND_TYPE") && (float)MainV2.comPort.MAV.param["RNGFND_TYPE"] != 0) && CurrentState.lidarhealth)
+                {
+                    this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
             }
             else 
             {
@@ -3571,9 +3584,8 @@ namespace ByAeroBeHero.GCSViews
                 this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.NoConnect;
-
+                this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.NoConnect;
             }
-
         } 
 
 

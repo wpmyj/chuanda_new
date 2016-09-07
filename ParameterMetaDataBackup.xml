@@ -1841,7 +1841,7 @@
     <FENCE_ACTION>
       <DisplayName>Fence Action</DisplayName>
       <Description>What action should be taken when fence is breached</Description>
-      <Values>0:仅通知,1:返航或降落</Values>
+      <Values>0:仅通知,1:返航或悬停</Values>
       <User>Standard</User>
     </FENCE_ACTION>
     <FENCE_ALT_MAX>

@@ -118,51 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cmb_Baud.Items" xml:space="preserve">
-    <value>1200</value>
+    <value>USB</value>
   </data>
   <data name="cmb_Baud.Items1" xml:space="preserve">
-    <value>2400</value>
-  </data>
-  <data name="cmb_Baud.Items2" xml:space="preserve">
-    <value>4800</value>
-  </data>
-  <data name="cmb_Baud.Items3" xml:space="preserve">
-    <value>9600</value>
-  </data>
-  <data name="cmb_Baud.Items4" xml:space="preserve">
-    <value>19200</value>
-  </data>
-  <data name="cmb_Baud.Items5" xml:space="preserve">
-    <value>38400</value>
-  </data>
-  <data name="cmb_Baud.Items6" xml:space="preserve">
-    <value>57600</value>
-  </data>
-  <data name="cmb_Baud.Items7" xml:space="preserve">
-    <value>111100</value>
-  </data>
-  <data name="cmb_Baud.Items8" xml:space="preserve">
-    <value>115200</value>
-  </data>
-  <data name="cmb_Baud.Items9" xml:space="preserve">
-    <value>500000</value>
-  </data>
-  <data name="cmb_Baud.Items10" xml:space="preserve">
-    <value>921600</value>
-  </data>
-  <data name="cmb_Baud.Items11" xml:space="preserve">
-    <value>1500000</value>
+    <value>数传</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmb_Baud.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 6</value>
+    <value>113, 7</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmb_Baud.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="cmb_Baud.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 23</value>
+    <value>90, 23</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="cmb_Baud.TabIndex" type="System.Int32, mscorlib">
@@ -208,13 +178,13 @@
     <value>3</value>
   </data>
   <data name="cmb_Connection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 5</value>
+    <value>4, 6</value>
   </data>
   <data name="cmb_Connection.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="cmb_Connection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 26</value>
+    <value>105, 26</value>
   </data>
   <data name="cmb_Connection.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -283,10 +253,10 @@
     <value>测绘模式</value>
   </data>
   <data name="cmb_flightmode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 6</value>
+    <value>207, 7</value>
   </data>
   <data name="cmb_flightmode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 23</value>
+    <value>90, 23</value>
   </data>
   <data name="cmb_flightmode.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -313,7 +283,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 36</value>
+    <value>302, 36</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConnectionControl</value>

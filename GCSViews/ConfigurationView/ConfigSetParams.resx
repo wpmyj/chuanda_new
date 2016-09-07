@@ -133,16 +133,16 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_RTL_ALT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 39</value>
+    <value>7, 39</value>
   </data>
   <data name="lbl_RTL_ALT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
+    <value>114, 20</value>
   </data>
   <data name="lbl_RTL_ALT.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
   </data>
   <data name="lbl_RTL_ALT.Text" xml:space="preserve">
-    <value>返航高度：</value>
+    <value>返航高度增量：</value>
   </data>
   <data name="&gt;&gt;lbl_RTL_ALT.Name" xml:space="preserve">
     <value>lbl_RTL_ALT</value>
@@ -166,7 +166,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_RTL_ALT_F.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 39</value>
+    <value>242, 39</value>
   </data>
   <data name="lbl_RTL_ALT_F.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -176,6 +176,9 @@
   </data>
   <data name="lbl_RTL_ALT_F.Text" xml:space="preserve">
     <value>悬停高度：</value>
+  </data>
+  <data name="lbl_RTL_ALT_F.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;lbl_RTL_ALT_F.Name" xml:space="preserve">
     <value>lbl_RTL_ALT_F</value>
@@ -255,96 +258,12 @@
   <data name="&gt;&gt;lblYawBehavior.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="myButton2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="myButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="myButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 165</value>
-  </data>
-  <data name="myButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="myButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="myButton2.Text" xml:space="preserve">
-    <value>刷新参数</value>
-  </data>
-  <data name="&gt;&gt;myButton2.Name" xml:space="preserve">
-    <value>myButton2</value>
-  </data>
-  <data name="&gt;&gt;myButton2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;myButton2.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;myButton2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Btn_.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="Btn_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Btn_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 165</value>
-  </data>
-  <data name="Btn_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Btn_.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="Btn_.Text" xml:space="preserve">
-    <value>写入参数</value>
-  </data>
-  <data name="&gt;&gt;Btn_.Name" xml:space="preserve">
-    <value>Btn_</value>
-  </data>
-  <data name="&gt;&gt;Btn_.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Btn_.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;Btn_.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
   </metadata>
-  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 93</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 27</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.ToolTip" xml:space="preserve">
-    <value>模式一:航向锁定,模式二:指向下一航点,模式三:除返航模式，指向下一行点。</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
-    <value>WP_YAW_BEHAVIOR</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6078.16707, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
   <data name="NUM_movelength.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10.2pt</value>
   </data>
@@ -363,9 +282,6 @@
   <data name="NUM_movelength.ToolTip" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="NUM_movelength.ToolTip1" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
@@ -454,7 +370,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 32</value>
+    <value>332, 32</value>
   </data>
   <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
@@ -462,11 +378,14 @@
   <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
   </data>
+  <data name="RTL_ALT_FINAL.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
     <value>RTL_ALT_FINAL</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6078.16707, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6087.23287, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -481,7 +400,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 32</value>
+    <value>127, 32</value>
   </data>
   <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
@@ -489,17 +408,113 @@
   <data name="RTL_ALT_P.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
   </data>
+  <data name="RTL_ALT_P.ToolTip" xml:space="preserve">
+    <value>返航高度：当前飞行高度+返航高度增量</value>
+  </data>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
+  <data name="RTL_ALT_P.ToolTip1" xml:space="preserve">
+    <value>返航高度：当前飞行高度+返航高度增量</value>
+  </data>
   <data name="&gt;&gt;RTL_ALT_P.Name" xml:space="preserve">
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6078.16707, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6087.23287, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="myButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="myButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="myButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 165</value>
+  </data>
+  <data name="myButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="myButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="myButton2.Text" xml:space="preserve">
+    <value>刷新参数</value>
+  </data>
+  <data name="&gt;&gt;myButton2.Name" xml:space="preserve">
+    <value>myButton2</value>
+  </data>
+  <data name="&gt;&gt;myButton2.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myButton2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;myButton2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 94</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 27</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.ToolTip" xml:space="preserve">
+    <value>模式一:航向锁定,模式二:指向下一航点,模式三:除返航模式，指向下一行点。</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
+    <value>WP_YAW_BEHAVIOR</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6087.23287, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Btn_.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="Btn_.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Btn_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 165</value>
+  </data>
+  <data name="Btn_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Btn_.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="Btn_.Text" xml:space="preserve">
+    <value>写入参数</value>
+  </data>
+  <data name="&gt;&gt;Btn_.Name" xml:space="preserve">
+    <value>Btn_</value>
+  </data>
+  <data name="&gt;&gt;Btn_.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Btn_.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;Btn_.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt, style=Bold</value>
@@ -528,27 +543,6 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblAllMove.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblAllMove.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblAllMove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 42</value>
-  </data>
-  <data name="lblAllMove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
-  </data>
-  <data name="lblAllMove.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
-  </data>
-  <data name="lblAllMove.Text" xml:space="preserve">
-    <value>整体平移：</value>
-  </data>
-  <data name="lblAllMove.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;lblAllMove.Name" xml:space="preserve">
     <value>lblAllMove</value>
   </data>
@@ -560,21 +554,6 @@
   </data>
   <data name="&gt;&gt;lblAllMove.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="chb_AllMove.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chb_AllMove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 45</value>
-  </data>
-  <data name="chb_AllMove.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 17</value>
-  </data>
-  <data name="chb_AllMove.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="chb_AllMove.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;chb_AllMove.Name" xml:space="preserve">
     <value>chb_AllMove</value>
@@ -615,11 +594,80 @@
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="lblAllMove.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAllMove.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblAllMove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAllMove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>220, 42</value>
+  </data>
+  <data name="lblAllMove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 20</value>
+  </data>
+  <data name="lblAllMove.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="lblAllMove.Text" xml:space="preserve">
+    <value>整体平移：</value>
+  </data>
+  <data name="lblAllMove.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblAllMove.Name" xml:space="preserve">
+    <value>lblAllMove</value>
+  </data>
+  <data name="&gt;&gt;lblAllMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAllMove.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;lblAllMove.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chb_AllMove.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chb_AllMove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chb_AllMove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 45</value>
+  </data>
+  <data name="chb_AllMove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="chb_AllMove.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="chb_AllMove.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chb_AllMove.Name" xml:space="preserve">
+    <value>chb_AllMove</value>
+  </data>
+  <data name="&gt;&gt;chb_AllMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chb_AllMove.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chb_AllMove.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="lblCheckSpeech.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="lblCheckSpeech.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblCheckSpeech.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblCheckSpeech.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 44</value>
@@ -651,6 +699,9 @@
   <data name="CHK_enablespeech.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>
   </data>
+  <data name="CHK_enablespeech.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="CHK_enablespeech.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 47</value>
   </data>
@@ -681,6 +732,9 @@
   <data name="CHK_speechwaypoint.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>
   </data>
+  <data name="CHK_speechwaypoint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="CHK_speechwaypoint.Location" type="System.Drawing.Point, System.Drawing">
     <value>176, 47</value>
   </data>
@@ -705,24 +759,6 @@
   <data name="&gt;&gt;CHK_speechwaypoint.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="CHK_speechotherParams.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CHK_speechotherParams.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt</value>
-  </data>
-  <data name="CHK_speechotherParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 46</value>
-  </data>
-  <data name="CHK_speechotherParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 19</value>
-  </data>
-  <data name="CHK_speechotherParams.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="CHK_speechotherParams.Text" xml:space="preserve">
-    <value>模式、加/解锁</value>
-  </data>
   <data name="&gt;&gt;CHK_speechotherParams.Name" xml:space="preserve">
     <value>CHK_speechotherParams</value>
   </data>
@@ -734,24 +770,6 @@
   </data>
   <data name="&gt;&gt;CHK_speechotherParams.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="CHK_speechflightParams.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CHK_speechflightParams.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt</value>
-  </data>
-  <data name="CHK_speechflightParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 46</value>
-  </data>
-  <data name="CHK_speechflightParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 19</value>
-  </data>
-  <data name="CHK_speechflightParams.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
-  </data>
-  <data name="CHK_speechflightParams.Text" xml:space="preserve">
-    <value>飞行数据</value>
   </data>
   <data name="&gt;&gt;CHK_speechflightParams.Name" xml:space="preserve">
     <value>CHK_speechflightParams</value>
@@ -791,6 +809,72 @@
   </data>
   <data name="&gt;&gt;groupBoxSetP.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="CHK_speechotherParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CHK_speechotherParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="CHK_speechotherParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CHK_speechotherParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 46</value>
+  </data>
+  <data name="CHK_speechotherParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 19</value>
+  </data>
+  <data name="CHK_speechotherParams.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="CHK_speechotherParams.Text" xml:space="preserve">
+    <value>模式、加/解锁</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechotherParams.Name" xml:space="preserve">
+    <value>CHK_speechotherParams</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechotherParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechotherParams.Parent" xml:space="preserve">
+    <value>groupBoxSetP</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechotherParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CHK_speechflightParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CHK_speechflightParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
+  </data>
+  <data name="CHK_speechflightParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CHK_speechflightParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 46</value>
+  </data>
+  <data name="CHK_speechflightParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 19</value>
+  </data>
+  <data name="CHK_speechflightParams.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="CHK_speechflightParams.Text" xml:space="preserve">
+    <value>飞行数据</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechflightParams.Name" xml:space="preserve">
+    <value>CHK_speechflightParams</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechflightParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechflightParams.Parent" xml:space="preserve">
+    <value>groupBoxSetP</value>
+  </data>
+  <data name="&gt;&gt;CHK_speechflightParams.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

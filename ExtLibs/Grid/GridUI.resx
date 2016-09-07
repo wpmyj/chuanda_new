@@ -540,11 +540,62 @@
   <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
+  <data name="myBtnLoadAeroInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="myBtnLoadAeroInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1141, 85</value>
+  </data>
+  <data name="myBtnLoadAeroInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="myBtnLoadAeroInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="myBtnLoadAeroInfo.Text" xml:space="preserve">
+    <value>加载</value>
+  </data>
+  <data name="&gt;&gt;myBtnLoadAeroInfo.Name" xml:space="preserve">
+    <value>myBtnLoadAeroInfo</value>
+  </data>
+  <data name="&gt;&gt;myBtnLoadAeroInfo.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myBtnLoadAeroInfo.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;myBtnLoadAeroInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="myBtnSaveAeroInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1060, 85</value>
+  </data>
+  <data name="myBtnSaveAeroInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="myBtnSaveAeroInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="myBtnSaveAeroInfo.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="&gt;&gt;myBtnSaveAeroInfo.Name" xml:space="preserve">
+    <value>myBtnSaveAeroInfo</value>
+  </data>
+  <data name="&gt;&gt;myBtnSaveAeroInfo.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;myBtnSaveAeroInfo.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;myBtnSaveAeroInfo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="myButtonCanle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="myButtonCanle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1059, 99</value>
+    <value>1141, 49</value>
   </data>
   <data name="myButtonCanle.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 21</value>
@@ -565,13 +616,13 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;myButtonCanle.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="BUT_Accept.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BUT_Accept.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1059, 31</value>
+    <value>1060, 49</value>
   </data>
   <data name="BUT_Accept.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -592,7 +643,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;BUT_Accept.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="tableLayoutPanel1.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
     <value>Single</value>
@@ -1018,7 +1069,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="CHK_advanced.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1252,7 +1303,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="TXT_headinghold.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1492,7 +1543,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;groupBox_copter.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="numer_landhigh.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10.2pt</value>
@@ -2203,7 +2254,7 @@
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

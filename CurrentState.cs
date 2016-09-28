@@ -23,7 +23,7 @@ namespace ByAeroBeHero
 
         internal MAVState parent;
 
-        internal int lastautowp =-1;
+        internal int lastautowp = -1;
 
         // multipliers
         public static float multiplierdist = 1;
@@ -304,7 +304,7 @@ namespace ByAeroBeHero
         public string mode { get; set; }
         uint _mode = 99999;
         [DisplayText("ClimbRate (speed)")]
-        public float climbrate { get { return _climbrate * multiplierspeed; } set {_climbrate = value;} }
+        public float climbrate { get { return _climbrate * multiplierspeed; } set { _climbrate = value; } }
 
 
         /// <summary>
@@ -313,7 +313,7 @@ namespace ByAeroBeHero
         [DisplayText("Time over Target (sec)")]
         public int tot { get { if (groundspeed <= 0) return 0; return (int)(wp_dist / groundspeed); } }
         [DisplayText("Time over Home (sec)")]
-        public int toh { get { if (groundspeed <= 0) return 0; return (int)(DistToHome  / groundspeed); } }
+        public int toh { get { if (groundspeed <= 0) return 0; return (int)(DistToHome / groundspeed); } }
         [DisplayText("Dist Traveled (dist)")]
         public float distTraveled { get; set; }
         [DisplayText("Time in Air (sec)")]
@@ -341,7 +341,7 @@ namespace ByAeroBeHero
         //message
         public List<string> messages { get; set; }
         internal string message { get { if (messages.Count == 0) return ""; return messages[messages.Count - 1]; } }
-        public string messageHigh { get {return _messagehigh;} set {_messagehigh = value;} }
+        public string messageHigh { get { return _messagehigh; } set { _messagehigh = value; } }
         private string _messagehigh;
         public DateTime messageHighTime { get; set; }
 
@@ -418,7 +418,7 @@ namespace ByAeroBeHero
             }
         }
 
-     [DisplayText("Elevation to Mav (deg)")]
+        [DisplayText("Elevation to Mav (deg)")]
         public float ELToMAV
         {
             get
@@ -436,7 +436,7 @@ namespace ByAeroBeHero
             }
         }
 
-         [DisplayText("Bearing to Mav (deg)")]
+        [DisplayText("Bearing to Mav (deg)")]
         public float AZToMAV
         {
             get
@@ -521,7 +521,8 @@ namespace ByAeroBeHero
         [DisplayText("3DR Radio remote snr")]
         public float remotesnrdb { get { if (lastremrssi.AddSeconds(1) > DateTime.Now) { return _remotesnrdb; } lastremrssi = DateTime.Now; _remotesnrdb = ((remrssi - remnoise) / 1.9f) * 0.5f + _remotesnrdb * 0.5f; return _remotesnrdb; } }
         [DisplayText("3DR Radio est dist (m)")]
-        public float DistRSSIRemain {
+        public float DistRSSIRemain
+        {
             get
             {
                 float work = 0;
@@ -563,7 +564,7 @@ namespace ByAeroBeHero
         public float servovoltage { get; set; }
         [DisplayText("Voltage Flags")]
         public MAVLink.MAV_POWER_STATUS voltageflag { get; set; }
-        
+
         public ushort i2cerrors { get; set; }
 
         // requested stream rates
@@ -782,7 +783,7 @@ namespace ByAeroBeHero
                         hilch7 = hil.chan7_scaled;
                         hilch8 = hil.chan8_scaled;
 
-                       // Console.WriteLine("RC_CHANNELS_SCALED Packet");
+                        // Console.WriteLine("RC_CHANNELS_SCALED Packet");
 
                         MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.RC_CHANNELS_SCALED] = null;
                     }
@@ -874,7 +875,7 @@ namespace ByAeroBeHero
                         DateTime date1 = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
                         try
                         {
-                            date1 = date1.AddMilliseconds(systime.time_unix_usec/1000);
+                            date1 = date1.AddMilliseconds(systime.time_unix_usec / 1000);
 
                             gpstime = date1;
                         }
@@ -910,7 +911,7 @@ namespace ByAeroBeHero
 
                         ekfstatus = (int)Math.Max(ekfvelv,
                             Math.Max(ekfcompv, Math.Max(ekfposhor, Math.Max(ekfposvert, ekfteralt))));
-                       
+
                         #region
                         //if (ekfvelv >= 1)
                         //{
@@ -987,9 +988,9 @@ namespace ByAeroBeHero
                         boardvoltage = power.Vcc;
                         servovoltage = power.Vservo;
 
-                        voltageflag = (MAVLink.MAV_POWER_STATUS) power.flags;
+                        voltageflag = (MAVLink.MAV_POWER_STATUS)power.flags;
                     }
-                    
+
 
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.WIND];
                     if (bytearray != null)
@@ -1112,7 +1113,7 @@ namespace ByAeroBeHero
                         {
                             messageHigh = Strings.BadLiDARHealth;
                             messageHighTime = DateTime.Now;
-                        }                            
+                        }
                         else if (sensors_health.optical_flow != sensors_enabled.optical_flow && sensors_present.optical_flow)
                         {
                             messageHigh = Strings.BadOptFlowHealth;
@@ -1158,12 +1159,12 @@ namespace ByAeroBeHero
                             gyrohealth = false;
                         else
                             gyrohealth = true;
-                        
+
                         if (sensors_health.rc_receiver != sensors_enabled.rc_receiver && sensors_present.rc_receiver)
                             receiverhealth = false;
                         else
                             receiverhealth = true;
-                        
+
                         if (sensors_health.LASER_POSITION != sensors_enabled.LASER_POSITION && sensors_present.LASER_POSITION)
                             lidarhealth = false;
                         else
@@ -1192,7 +1193,7 @@ namespace ByAeroBeHero
                             pump = false;
                         }
 
-                        string strfirmware =System.Text.Encoding.ASCII.GetString(mem.firmware_version);
+                        string strfirmware = System.Text.Encoding.ASCII.GetString(mem.firmware_version);
                         int ifirmware = strfirmware.IndexOf('\0');
 
                         str_firm_ware = strfirmware.Substring(0, ifirmware);
@@ -1210,8 +1211,8 @@ namespace ByAeroBeHero
                         {
                             ibreakpoint_lat = breakpoint.x;
                             ibreakpoint_lng = breakpoint.y;
-                            breakpoint_lat = (double)breakpoint.x/10000000;
-                            breakpoint_lng = (double)breakpoint.y/10000000;
+                            breakpoint_lat = (double)breakpoint.x / 10000000;
+                            breakpoint_lng = (double)breakpoint.y / 10000000;
                             breakpoint_alt = (float)breakpoint.z;
                             breakpoint_p1 = (float)breakpoint.param1;
                             isChange = true;
@@ -1223,11 +1224,11 @@ namespace ByAeroBeHero
                     }
 
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BREAK_POINT_ITEM];
-                    if (bytearray!=null)
+                    if (bytearray != null)
                     {
                         var breakpoint = bytearray.ByteArrayToStructure<MAVLink.mavlink_break_point_item_t>(6);
                     }
-                    
+
 
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.BATTERY2];
                     if (bytearray != null)
@@ -1458,7 +1459,7 @@ namespace ByAeroBeHero
 
                         //MAVLink.packets[(byte)MAVLink.MSG_NAMES.RC_CHANNELS_RAW] = null;
                     }
-                    
+
                     bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.RC_CHANNELS];
                     if (bytearray != null)
                     {
@@ -1523,7 +1524,7 @@ namespace ByAeroBeHero
                         my = imu.ymag;
                         mz = imu.zmag;
 
-                        var timesec = imu.time_usec*1.0e-6;
+                        var timesec = imu.time_usec * 1.0e-6;
 
                         var deltawall = (DateTime.Now - lastimutime).TotalSeconds;
 
@@ -1613,7 +1614,7 @@ namespace ByAeroBeHero
 
                         // heading = vfr.heading;
 
- 
+
 
                         //MAVLink.packets[(byte)MAVLink.MSG_NAMES.VFR_HUD] = null;
                     }
@@ -1693,13 +1694,16 @@ namespace ByAeroBeHero
             }
         }
 
-        public void SetMapPoints(PointLatLng MapPoint) 
+        public void SetMapPoints(PointLatLng MapPoint, float mapgps, float fstacount)
         {
             if (MapPoint.Lat != 0 && MapPoint.Lng != 0)
             {
                 lat = MapPoint.Lat;
                 lng = MapPoint.Lng;
             }
+
+            gpshdop = mapgps;
+            satcount = fstacount;
         }
         public object Clone()
         {
@@ -1752,18 +1756,18 @@ namespace ByAeroBeHero
 
             public Mavlink_Sensors(uint p)
             {
-                bitArray = new BitArray(new int[] { (int)p});
+                bitArray = new BitArray(new int[] { (int)p });
             }
 
-            public bool gyro 
+            public bool gyro
             {
-                get 
-                { 
-                    return bitArray[0]; 
-                }
-                set 
+                get
                 {
-                    bitArray[0] = value; 
+                    return bitArray[0];
+                }
+                set
+                {
+                    bitArray[0] = value;
                 }
             }
             public bool accelerometer { get { return bitArray[1]; } set { bitArray[1] = value; } }
@@ -1798,7 +1802,7 @@ namespace ByAeroBeHero
                     bitArray.CopyTo(array, 0);
                     return array[0];
                 }
-                set 
+                set
                 {
                     bitArray = new BitArray(value);
                 }
@@ -1819,7 +1823,7 @@ namespace ByAeroBeHero
 
         public bool landed { get; set; }
 
-        public  bool terrainactive { get; set; }
+        public bool terrainactive { get; set; }
 
         float _ter_curalt;
         public float ter_curalt { get { return _ter_curalt * multiplierdist; } set { _ter_curalt = value; } }
@@ -1885,5 +1889,5 @@ namespace ByAeroBeHero
 
         public float vibez { get; set; }
 
-    }    
+    }
 }

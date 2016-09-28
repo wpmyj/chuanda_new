@@ -6616,8 +6616,8 @@ namespace ByAeroBeHero.GCSViews
         #region 初始化参数
         public void initParams() 
         {
-            this.lblHorizontalError.Text = "GPS水平精度:"+ CurrentState.gpsaccuracy.ToString();
-            this.lblSataCount.Text = "卫星数量:" + CurrentState.gpscount.ToString();
+            this.lblHorizontalError.Text = "GPS水平精度:" + MainV2.comPort.MAV.cs.gpshdop.ToString();
+            this.lblSataCount.Text = "卫星数量:" + MainV2.comPort.MAV.cs.satcount.ToString();
         }
         #endregion
 

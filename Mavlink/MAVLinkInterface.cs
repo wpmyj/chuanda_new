@@ -233,21 +233,34 @@ namespace ByAeroBeHero
                 StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen,
                 Text = string.Empty
             };
-
-            if (getparams)
+            if (flightmode == 0)
             {
-                frmProgressReporter.DoWork += FrmProgressReporterDoWorkAndParams;
+                 if (getparams)
+                {
+                    frmProgressReporter.DoWork += FrmProgressReporterDoWorkAndParams;
+                }
+                else
+                {
+                    frmProgressReporter.DoWork += FrmProgressReporterDoWorkNOParams;
+                }
+                 frmProgressReporter.UpdateProgressAndStatus(-1, Strings.MavlinkConnecting);
+                 ThemeManager.ApplyThemeTo(frmProgressReporter);
+
+                 frmProgressReporter.RunBackgroundOperationAsync();
+
+                 frmProgressReporter.Dispose();
             }
             else
             {
-                frmProgressReporter.DoWork += FrmProgressReporterDoWorkNOParams;
+                frmProgressReporter.UpdateProgressAndStatus(-1, Strings.MavlinkConnecting);
+                ThemeManager.ApplyThemeTo(frmProgressReporter);
+                Thread.Sleep(2000);
+                frmProgressReporter.RunBackgroundOperationAsync();
+
+                frmProgressReporter.Dispose();
             }
-            frmProgressReporter.UpdateProgressAndStatus(-1, Strings.MavlinkConnecting);
-            ThemeManager.ApplyThemeTo(frmProgressReporter);
+           
 
-            frmProgressReporter.RunBackgroundOperationAsync();
-
-            frmProgressReporter.Dispose();
 
             if (ParamListChanged != null)
             {

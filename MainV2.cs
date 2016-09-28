@@ -58,16 +58,16 @@ namespace ByAeroBeHero
         public abstract class menuicons
         {
             public abstract Image fd { get; }
-            public abstract Image fp { get;  }
-            public abstract Image initsetup { get;  }
-            public abstract Image config_tuning { get;  }
-            public abstract Image sim { get;  }
-            public abstract Image terminal { get;  }
-            public abstract Image help { get;  }
-            public abstract Image donate { get;  }
-            public abstract Image connect { get;  }
-            public abstract Image disconnect { get;  }
-            public abstract Image bg { get;  }
+            public abstract Image fp { get; }
+            public abstract Image initsetup { get; }
+            public abstract Image config_tuning { get; }
+            public abstract Image sim { get; }
+            public abstract Image terminal { get; }
+            public abstract Image help { get; }
+            public abstract Image donate { get; }
+            public abstract Image connect { get; }
+            public abstract Image disconnect { get; }
+            public abstract Image bg { get; }
         }
 
         public class menuicons1 : menuicons
@@ -212,14 +212,14 @@ namespace ByAeroBeHero
         /// <summary>
         /// determine if we are running sitl
         /// </summary>
-        public static bool sitl 
-        { 
-            get 
-            { 
+        public static bool sitl
+        {
+            get
+            {
                 if (ByAeroBeHero.Controls.SITL.SITLSEND == null) return false;
                 if (ByAeroBeHero.Controls.SITL.SITLSEND.Client.Connected) return true;
                 return false;
-            } 
+            }
         }
         /// <summary>
         /// hud background image grabber from a video stream - not realy that efficent. ie no hardware overlays etc.
@@ -957,7 +957,7 @@ namespace ByAeroBeHero
                     break;
                 case "AUTO":
                 default:
-                     comPort.BaseStream= new SerialPort();
+                    comPort.BaseStream = new SerialPort();
                     break;
             }
 
@@ -1001,7 +1001,7 @@ namespace ByAeroBeHero
                         _connectionControl.CMB_baudrate.Text = "数传";
                     if (baud == "115200")
                         _connectionControl.CMB_baudrate.Text = "USB";
-                     baud = Comms.CommsSerialScan.portinterface.BaudRate.ToString();
+                    baud = Comms.CommsSerialScan.portinterface.BaudRate.ToString();
                 }
 
                 log.Info("Set Portname");
@@ -1065,12 +1065,12 @@ namespace ByAeroBeHero
                     return;
                 }
 
-                if (_connectionControl.CMB_flightmode.SelectedIndex == 1) 
+                if (_connectionControl.CMB_flightmode.SelectedIndex == 1)
                 {
                     this.MenuConnect.Image = displayicons.disconnect;
                     return;
                 }
-                    
+
 
                 // 3dr radio is hidden as no hb packet is ever emitted
                 if (comPort.sysidseen.Count > 1)
@@ -1155,15 +1155,15 @@ namespace ByAeroBeHero
                 ByAeroBeHero.Utilities.Tracking.AddEvent("Connect", "Baud", comPort.BaseStream.BaudRate.ToString(), "");
 
                 // save the baudrate for this port
-                if(_connectionControl.CMB_baudrate.Text =="数传")
+                if (_connectionControl.CMB_baudrate.Text == "数传")
                 {
-                    config[_connectionControl.CMB_serialport.Text + "_BAUD"] ="57600" ;
+                    config[_connectionControl.CMB_serialport.Text + "_BAUD"] = "57600";
                 }
                 else
                 {
                     config[_connectionControl.CMB_serialport.Text + "_BAUD"] = "115200";
                 }
-                
+
 
                 this.Text = titlebar;
                 //+" " + comPort.MAV.VersionString;
@@ -1180,12 +1180,12 @@ namespace ByAeroBeHero
                 // load wps on connect option.
                 //if (config["loadwpsonconnect"] != null && bool.Parse(config["loadwpsonconnect"].ToString()) == true)
                 //{
-                    // only do it if we are connected.
-                    if (comPort.BaseStream.IsOpen)
-                    {
-                        //MenuFlightPlanner_Click(null, null);
-                        FlightPlanner.myBtn_read_break_point_Click(null, null);
-                    }
+                // only do it if we are connected.
+                if (comPort.BaseStream.IsOpen)
+                {
+                    //MenuFlightPlanner_Click(null, null);
+                    FlightPlanner.myBtn_read_break_point_Click(null, null);
+                }
                 //}
 
                 // get any rallypoints
@@ -1215,7 +1215,7 @@ namespace ByAeroBeHero
                     }
                 }
 
-           
+
                 // set connected icon
                 this.MenuConnect.Image = displayicons.disconnect;
             }
@@ -1228,7 +1228,7 @@ namespace ByAeroBeHero
                     UpdateConnectIcon();
                     comPort.Close();
                 }
-                catch (Exception ex2) 
+                catch (Exception ex2)
                 {
                     log.Warn(ex2);
                 }
@@ -1270,13 +1270,13 @@ namespace ByAeroBeHero
                 //ShowMessage();
             }
             string strbaudrate = string.Empty;
-            if(_connectionControl.CMB_baudrate.Text =="数传")
+            if (_connectionControl.CMB_baudrate.Text == "数传")
             {
-                strbaudrate ="57600";
+                strbaudrate = "57600";
             }
             else
             {
-                strbaudrate ="115200";
+                strbaudrate = "115200";
             }
 
 
@@ -1294,7 +1294,7 @@ namespace ByAeroBeHero
                     doMapConnect(_connectionControl.CMB_serialport.Text, strbaudrate);
                 }
             }
-            else 
+            else
             {
                 // decide if this is a connect or disconnect
                 if (comPort.BaseStream.IsOpen)
@@ -1326,6 +1326,7 @@ namespace ByAeroBeHero
             }
             try
             {
+                comPort.Open(false, false, _connectionControl.CMB_flightmode.SelectedIndex);
 
                 //timer2.Enabled = true;
                 serialPort1.BaudRate = int.Parse(baud);
@@ -1383,34 +1384,7 @@ namespace ByAeroBeHero
         {
             try
             {
-                string strRecv;
-                string[] strGPS;
-
-                strRecv = serialPort1.ReadLine();
-                int index = strRecv.IndexOf('$');
-                if (index == -1)
-                {
-                    return;
-                }
-                else
-                    strRecv.Remove(0, index);
-
-                strGPS = strRecv.Replace('*', ',').Split(',');
-                switch (strGPS[0])
-                {
-                    case "$GNGGA":
-                        {
-                            if (strGPS.Length < 13)
-                            {
-                                return;
-                            }
-                            GNGGA gpgga = new GNGGA();
-                            ReadGNGGA(strGPS, gpgga);
-                            break;
-                        }
-                    default:
-                        break;
-                }
+                getGPSPoints();
             }
             catch (Exception ex)
             {
@@ -1419,19 +1393,55 @@ namespace ByAeroBeHero
                 comPort.Close();
                 return;
             }
-            
+
+        }
+
+        private void getGPSPoints()
+        {
+            string strRecv;
+            string[] strGPS;
+
+            strRecv = serialPort1.ReadLine();
+            int index = strRecv.IndexOf('$');
+            if (index == -1)
+            {
+                return;
+            }
+            else
+                strRecv.Remove(0, index);
+
+            strGPS = strRecv.Replace('*', ',').Split(',');
+            switch (strGPS[0])
+            {
+                case "$GNGGA":
+                    {
+                        if (strGPS.Length < 13)
+                        {
+                            return;
+                        }
+                        GNGGA gpgga = new GNGGA();
+                        ReadGNGGA(strGPS, gpgga);
+                        break;
+                    }
+                default:
+                    break;
+            }
         }
 
         private static void ReadGNGGA(string[] strGPS, GNGGA gpgga)
         {
-            string lat = (string.IsNullOrEmpty(strGPS[2]) ? 0 : Convert.ToDouble(strGPS[2])).ToString().Replace(".","");
-            string lng = (string.IsNullOrEmpty(strGPS[4]) ? 0 : Convert.ToDouble(strGPS[4])).ToString().Replace(".", ""); ;
+            string lat = (string.IsNullOrEmpty(strGPS[2]) ? 0 : Convert.ToDouble(strGPS[2])).ToString().Replace(".", "");
+            string lng = (string.IsNullOrEmpty(strGPS[4]) ? 0 : Convert.ToDouble(strGPS[4])).ToString().Replace(".", "");
+
+            string smapgps = (string.IsNullOrEmpty(strGPS[8]) ? 0 : Convert.ToDouble(strGPS[8])).ToString();
+            string smapcount = (string.IsNullOrEmpty(strGPS[7]) ? 0 : Convert.ToDouble(strGPS[7])).ToString();
+
             if (lat == "0" || lng == "0")
                 return;
             double newLat = Double.Parse((lat.Substring(0, 2) + "." + (Double.Parse(lat.Substring(2, lat.Length - 2)) / 600000).ToString().Replace(".", "")));
             double newlng = Double.Parse((lng.Substring(0, 3) + "." + (Double.Parse(lng.Substring(3, lng.Length - 3)) / 6000).ToString().Replace(".", "")));
 
-            MainV2.comPort.MAV.cs.SetMapPoints(new PointLatLng(newLat, newlng));
+            MainV2.comPort.MAV.cs.SetMapPoints(new PointLatLng(newLat, newlng), float.Parse(smapgps), float.Parse(smapcount));
         }
 
         /// <summary>
@@ -1442,23 +1452,24 @@ namespace ByAeroBeHero
         {
             try
             {
+                serialPort1.Close();
+                Thread.Sleep(2000);
                 _connectionControl.IsConnected(false);
                 UpdateConnectIcon();
                 serialPort1.DtrEnable = false;
-                serialPort1.Close();
             }
             catch (Exception ex)
             {
                 log.Error(ex);
             }
-            this.MenuConnect.Image = global::ByAeroBeHero.Properties.Resources.disConnection;
+            this.MenuConnect.Image = global::ByAeroBeHero.Properties.Resources.Connection;
         }
 
         #endregion
 
-        public static void ShowMessage() 
+        public static void ShowMessage()
         {
-            DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。"+"\n"+"2.请检查串口是否选择正确。","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            DialogResult a = MessageBox.Show("1.请检查飞行器与地面站的连接状态。" + "\n" + "2.请检查串口是否选择正确。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void CMB_serialport_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1493,7 +1504,7 @@ namespace ByAeroBeHero
             {
                 if (!String.IsNullOrEmpty(_connectionControl.CMB_serialport.Text))
                     comPort.BaseStream.PortName = _connectionControl.CMB_serialport.Text;
-                if (_connectionControl.CMB_baudrate.Text =="数传")
+                if (_connectionControl.CMB_baudrate.Text == "数传")
                     MainV2.comPort.BaseStream.BaudRate = 57600;
                 else
                     MainV2.comPort.BaseStream.BaudRate = 115200;
@@ -1505,7 +1516,7 @@ namespace ByAeroBeHero
                     {
                         _connectionControl.CMB_baudrate.Text = "数传";
                     }
-                    else 
+                    else
                     {
                         _connectionControl.CMB_baudrate.Text = "USB";
                     }
@@ -1515,10 +1526,10 @@ namespace ByAeroBeHero
             catch { }
         }
 
-        private void CMB_flightmode_SelectedIndexChanged(object sender, EventArgs e) 
+        private void CMB_flightmode_SelectedIndexChanged(object sender, EventArgs e)
         {
             modeName = _connectionControl.CMB_flightmode.Text;
-            if (modeName =="飞行模式")
+            if (modeName == "飞行模式")
             {
                 IsMapPoint = false;
             }
@@ -1695,11 +1706,11 @@ namespace ByAeroBeHero
 
                     xmlwriter.WriteElementString("comport", comPortName);
 
-                    string strbaudrate =string.Empty;
-                    if(_connectionControl.CMB_baudrate.Text == "数传")
-                        strbaudrate ="57600";
+                    string strbaudrate = string.Empty;
+                    if (_connectionControl.CMB_baudrate.Text == "数传")
+                        strbaudrate = "57600";
                     else
-                        strbaudrate ="115200";
+                        strbaudrate = "115200";
 
                     xmlwriter.WriteElementString("baudrate", strbaudrate);
 
@@ -1755,7 +1766,7 @@ namespace ByAeroBeHero
                                         _connectionControl.CMB_baudrate.SelectedIndex = _connectionControl.CMB_baudrate.FindString(temp2);
                                         if (_connectionControl.CMB_baudrate.SelectedIndex == -1)
                                         {
-                                            if(temp2 == "57600")
+                                            if (temp2 == "57600")
                                                 _connectionControl.CMB_baudrate.Text = "数传";
                                             else
                                                 _connectionControl.CMB_baudrate.Text = "USB";
@@ -2085,7 +2096,7 @@ namespace ByAeroBeHero
                     catch { }
 
                     // update connect/disconnect button and info stats
-                    if (!IsMapPoint) 
+                    if (!IsMapPoint)
                         UpdateConnectIcon();
 
                     // 30 seconds interval speech options
@@ -2508,7 +2519,7 @@ namespace ByAeroBeHero
                 {
                     // set the cached kindex
                     if (MainV2.getConfig("kindex") != "")
-                        KIndex_KIndex(int.Parse(MainV2.getConfig("kindex")),null);
+                        KIndex_KIndex(int.Parse(MainV2.getConfig("kindex")), null);
                 }
                 else
                 {
@@ -2760,7 +2771,7 @@ namespace ByAeroBeHero
             }
             if (keyData == (Keys.Control | Keys.L)) // limits
             {
-                
+
 
                 return true;
             }
@@ -2943,7 +2954,7 @@ namespace ByAeroBeHero
                 baud = 115200;
             if (_connectionControl.CMB_baudrate.Text == "数传")
                 baud = 57600;
-            
+
             try
             {
                 if (baud > 0 && comPort.BaseStream.BaudRate != baud)
@@ -3206,7 +3217,7 @@ namespace ByAeroBeHero
             //MainMenu.BackgroundImage = ByAeroBeHero.Properties.Resources.bgdark;
         }
 
-        public void controlMainMenuColor(string MainMenuName) 
+        public void controlMainMenuColor(string MainMenuName)
         {
             MenuFlightData.BackColor = Color.Black;
             MenuFlightPlanner.BackColor = Color.Black;
@@ -3214,23 +3225,23 @@ namespace ByAeroBeHero
             MenuConfigTune.BackColor = Color.Black;
             MenuHelp.BackColor = Color.Black;
 
-            if(MainMenuName=="MenuFlightData")
+            if (MainMenuName == "MenuFlightData")
             {
-                MenuFlightData.BackColor = Color.SkyBlue;           
+                MenuFlightData.BackColor = Color.SkyBlue;
             }
-            else if (MainMenuName == "MenuFlightPlanner") 
+            else if (MainMenuName == "MenuFlightPlanner")
             {
                 MenuFlightPlanner.BackColor = Color.SkyBlue;
             }
-            else if (MainMenuName == "MenuInitConfig") 
+            else if (MainMenuName == "MenuInitConfig")
             {
                 MenuInitConfig.BackColor = Color.SkyBlue;
             }
-            else if (MainMenuName == "MenuConfigTune") 
+            else if (MainMenuName == "MenuConfigTune")
             {
                 MenuConfigTune.BackColor = Color.SkyBlue;
             }
-            else if (MainMenuName == "MenuHelp") 
+            else if (MainMenuName == "MenuHelp")
             {
                 MenuHelp.BackColor = Color.SkyBlue;
             }
@@ -3264,7 +3275,7 @@ namespace ByAeroBeHero
             new ConnectionOptions().Show(this);
         }
 
-        public void InitControl(string menuConnect) 
+        public void InitControl(string menuConnect)
         {
 
             if (!menuConnect.Contains("PX4"))

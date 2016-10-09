@@ -118,6 +118,11 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.lblKeepLiter = new System.Windows.Forms.Label();
+            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.TXT_altwarn = new System.Windows.Forms.TextBox();
             this.CMB_altmode = new System.Windows.Forms.ComboBox();
             this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
@@ -173,6 +178,7 @@
             this.lbl_prevdist = new System.Windows.Forms.Label();
             this.lblhxj = new System.Windows.Forms.Label();
             this.lblHorizontalError = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblSataCount = new System.Windows.Forms.Label();
             this.lblShowTime = new System.Windows.Forms.Label();
             this.BtnClear = new ByAeroBeHero.Controls.MyButton();
@@ -277,16 +283,15 @@
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
             this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
             this.panelMap.SuspendLayout();
             this.panelShowPoint.SuspendLayout();
             this.breakpointgroupBox.SuspendLayout();
@@ -297,18 +302,13 @@
             this.panelShowInfo.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panelBASE.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
             this.SuspendLayout();
             // 
             // Commands
@@ -784,6 +784,51 @@
             resources.ApplyResources(this.lblKeepLiter, "lblKeepLiter");
             this.lblKeepLiter.Name = "lblKeepLiter";
             // 
+            // WPNAV_SPEED
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
+            this.WPNAV_SPEED.Max = 1F;
+            this.WPNAV_SPEED.Min = 0F;
+            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
+            this.WPNAV_SPEED.ParamName = null;
+            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_RADIUS
+            // 
+            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
+            this.WPNAV_RADIUS.Max = 1F;
+            this.WPNAV_RADIUS.Min = 0F;
+            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
+            this.WPNAV_RADIUS.ParamName = null;
+            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED_UP
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
+            this.WPNAV_SPEED_UP.Max = 1F;
+            this.WPNAV_SPEED_UP.Min = 0F;
+            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
+            this.WPNAV_SPEED_UP.ParamName = null;
+            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED_DN
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
+            this.WPNAV_SPEED_DN.Max = 1F;
+            this.WPNAV_SPEED_DN.Min = 0F;
+            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
+            this.WPNAV_SPEED_DN.ParamName = null;
+            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_LOIT_SPEED
+            // 
+            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
+            this.WPNAV_LOIT_SPEED.Max = 1F;
+            this.WPNAV_LOIT_SPEED.Min = 0F;
+            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
+            this.WPNAV_LOIT_SPEED.ParamName = null;
+            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // TXT_altwarn
             // 
             resources.ApplyResources(this.TXT_altwarn, "TXT_altwarn");
@@ -1227,6 +1272,10 @@
             this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS水平误差: 0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // lblSataCount
             // 
@@ -1985,55 +2034,6 @@
             this.timer_getbreakpoint.Interval = 10;
             this.timer_getbreakpoint.Tick += new System.EventHandler(this.timer_getbreakpoint_Tick);
             // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
-            // WPNAV_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
-            this.WPNAV_SPEED.Max = 1F;
-            this.WPNAV_SPEED.Min = 0F;
-            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
-            this.WPNAV_SPEED.ParamName = null;
-            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_RADIUS
-            // 
-            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
-            this.WPNAV_RADIUS.Max = 1F;
-            this.WPNAV_RADIUS.Min = 0F;
-            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
-            this.WPNAV_RADIUS.ParamName = null;
-            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED_UP
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
-            this.WPNAV_SPEED_UP.Max = 1F;
-            this.WPNAV_SPEED_UP.Min = 0F;
-            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
-            this.WPNAV_SPEED_UP.ParamName = null;
-            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED_DN
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
-            this.WPNAV_SPEED_DN.Max = 1F;
-            this.WPNAV_SPEED_DN.Min = 0F;
-            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
-            this.WPNAV_SPEED_DN.ParamName = null;
-            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_LOIT_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
-            this.WPNAV_LOIT_SPEED.Max = 1F;
-            this.WPNAV_LOIT_SPEED.Min = 0F;
-            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
-            this.WPNAV_LOIT_SPEED.ParamName = null;
-            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2051,6 +2051,11 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
             this.panelMap.ResumeLayout(false);
             this.panelMap.PerformLayout();
             this.panelShowPoint.ResumeLayout(false);
@@ -2064,6 +2069,7 @@
             this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panelBASE.ResumeLayout(false);
@@ -2071,12 +2077,6 @@
             this.panel6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
             this.ResumeLayout(false);
 
         }

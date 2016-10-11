@@ -59,12 +59,18 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.btnSelectRackType = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.RadbtnSevenRotorT = new System.Windows.Forms.RadioButton();
+            this.RadbtnFiveRotorT = new System.Windows.Forms.RadioButton();
             this.RadbtnSevenRotor = new System.Windows.Forms.RadioButton();
             this.RadbtnFiveRotor = new System.Windows.Forms.RadioButton();
             this.pictureBoxWithPseudoOpacity1 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.RadbtnFourRotor = new System.Windows.Forms.RadioButton();
             this.pictureBoxWithPseudoOpacity3 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.pictureBoxWithPseudoOpacity2 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity4 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity5 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.pictureBoxWithPseudoOpacity6 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
+            this.RadbtnFourRotorT = new System.Windows.Forms.RadioButton();
             this.pictureBoxH = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.pictureBoxV = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -101,6 +107,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -324,13 +333,35 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.RadbtnSevenRotorT, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.RadbtnFiveRotorT, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.RadbtnSevenRotor, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.RadbtnFiveRotor, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.RadbtnFourRotor, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity5, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity6, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.RadbtnFourRotorT, 3, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // RadbtnSevenRotorT
+            // 
+            resources.ApplyResources(this.RadbtnSevenRotorT, "RadbtnSevenRotorT");
+            this.RadbtnSevenRotorT.Name = "RadbtnSevenRotorT";
+            this.RadbtnSevenRotorT.TabStop = true;
+            this.RadbtnSevenRotorT.UseVisualStyleBackColor = true;
+            this.RadbtnSevenRotorT.CheckedChanged += new System.EventHandler(this.RadbtnSevenRotorT_CheckedChanged);
+            // 
+            // RadbtnFiveRotorT
+            // 
+            resources.ApplyResources(this.RadbtnFiveRotorT, "RadbtnFiveRotorT");
+            this.RadbtnFiveRotorT.Name = "RadbtnFiveRotorT";
+            this.RadbtnFiveRotorT.TabStop = true;
+            this.RadbtnFiveRotorT.UseVisualStyleBackColor = true;
+            this.RadbtnFiveRotorT.CheckedChanged += new System.EventHandler(this.RadbtnFiveRotorT_CheckedChanged);
             // 
             // RadbtnSevenRotor
             // 
@@ -353,7 +384,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.pictureBoxWithPseudoOpacity1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
-            this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.frames_0611;
             this.pictureBoxWithPseudoOpacity1.Name = "pictureBoxWithPseudoOpacity1";
             this.pictureBoxWithPseudoOpacity1.TabStop = false;
             // 
@@ -370,7 +400,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.pictureBoxWithPseudoOpacity3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
-            this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.FW_icons_2013_logos_12;
             this.pictureBoxWithPseudoOpacity3.Name = "pictureBoxWithPseudoOpacity3";
             this.pictureBoxWithPseudoOpacity3.TabStop = false;
             // 
@@ -379,9 +408,37 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.pictureBoxWithPseudoOpacity2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
-            this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.frames_041;
             this.pictureBoxWithPseudoOpacity2.Name = "pictureBoxWithPseudoOpacity2";
             this.pictureBoxWithPseudoOpacity2.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity4
+            // 
+            this.pictureBoxWithPseudoOpacity4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity4, "pictureBoxWithPseudoOpacity4");
+            this.pictureBoxWithPseudoOpacity4.Name = "pictureBoxWithPseudoOpacity4";
+            this.pictureBoxWithPseudoOpacity4.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity5
+            // 
+            this.pictureBoxWithPseudoOpacity5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity5, "pictureBoxWithPseudoOpacity5");
+            this.pictureBoxWithPseudoOpacity5.Name = "pictureBoxWithPseudoOpacity5";
+            this.pictureBoxWithPseudoOpacity5.TabStop = false;
+            // 
+            // pictureBoxWithPseudoOpacity6
+            // 
+            this.pictureBoxWithPseudoOpacity6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.pictureBoxWithPseudoOpacity6, "pictureBoxWithPseudoOpacity6");
+            this.pictureBoxWithPseudoOpacity6.Name = "pictureBoxWithPseudoOpacity6";
+            this.pictureBoxWithPseudoOpacity6.TabStop = false;
+            // 
+            // RadbtnFourRotorT
+            // 
+            resources.ApplyResources(this.RadbtnFourRotorT, "RadbtnFourRotorT");
+            this.RadbtnFourRotorT.Name = "RadbtnFourRotorT";
+            this.RadbtnFourRotorT.TabStop = true;
+            this.RadbtnFourRotorT.UseVisualStyleBackColor = true;
+            this.RadbtnFourRotorT.CheckedChanged += new System.EventHandler(this.RadbtnFourRotorT_CheckedChanged);
             // 
             // pictureBoxH
             // 
@@ -586,6 +643,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -658,5 +718,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton RadbtnSevenRotorT;
+        private System.Windows.Forms.RadioButton RadbtnFiveRotorT;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity4;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity5;
+        private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity6;
+        private System.Windows.Forms.RadioButton RadbtnFourRotorT;
     }
 }

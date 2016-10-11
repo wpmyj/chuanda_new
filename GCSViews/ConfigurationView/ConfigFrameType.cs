@@ -47,6 +47,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         //private bool indochange;
         private int iCopterType;
         //private int iMotorTest;
+        private int iShapeType;
 
         public ConfigFrameType()
         {
@@ -107,20 +108,35 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             int iCopterType = (int)(float)MainV2.comPort.MAV.param["COPTER_TYPE"];
 
-            if (iCopterType == 1) 
+            if (iCopterType == 1 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 1) 
             {
                 this.RadbtnFourRotor.Checked = true;
                 RadbtnFourRotor_CheckedChanged(null,null);
             }
-            else if (iCopterType == 2)
+            else if (iCopterType == 2 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 1)
             {
                 this.RadbtnFiveRotor.Checked = true;
                 RadbtnFiveRotor_CheckedChanged(null, null);
             }
-            else if (iCopterType == 3)
+            else if (iCopterType == 3 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 1)
             {
                 this.RadbtnSevenRotor.Checked = true;
                 RadbtnSevenRotor_CheckedChanged(null, null);
+            }
+            else if (iCopterType == 1 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 0)
+            {
+                this.RadbtnFourRotorT.Checked = true;
+                RadbtnFourRotorT_CheckedChanged(null, null);
+            }
+            else if (iCopterType == 2 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 0)
+            {
+                this.RadbtnFiveRotorT.Checked = true;
+                RadbtnFiveRotorT_CheckedChanged(null, null);
+            }
+            else if (iCopterType == 3 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 0)
+            {
+                this.RadbtnSevenRotorT.Checked = true;
+                RadbtnSevenRotorT_CheckedChanged(null, null);
             }
             ControlRabtn(iCopterType);
 
@@ -252,11 +268,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //indochange = false;
         }
 
-        private void SetFrameParam(Frame frame)
+        private void SetFrameParam(int frame)
         {
             try
             {
-                MainV2.comPort.setParam("FRAME", (int) frame);
+                MainV2.comPort.setParam("FRAME", frame);
             }
             catch
             {
@@ -332,60 +348,142 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             DoChange(Frame.VTail);
         }
 
-#endregion
+        #endregion
 
         #region 选择机架类型
         private void btnSelectRackType_Click(object sender, EventArgs e)
         {
             string paramName = "COPTER_TYPE";
             if (iCopterType != 0 && MainV2.comPort.setParams(paramName, iCopterType))
+            {
+            
                 CustomMessageBox.Show(string.Format(Strings.CopterTypeSetSuccessed, "CopterType"), Strings.CopterTypeSelected,
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SetFrameParam(iShapeType);
+            }
             else  
                 CustomMessageBox.Show(string.Format(Strings.CopterTypeSetFailed, "CopterType"), Strings.CopterTypeSelected,
                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
 
+        /// <summary>
+        /// X四轴
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RadbtnFourRotor_CheckedChanged(object sender, EventArgs e)
         {
             if (this.RadbtnFourRotor.Checked) 
             {
                 this.iCopterType = (int)CopterType.Four;
-                this.lblText1.Text = Strings.CopterTypeInstruction1;
-                this.lblText3.Text = Strings.CopterTypeInstruction2;
-                this.lblText4.Text = Strings.CopterTypeInstruction3;
+                this.iShapeType = 1;
                 this.pictureBoxWithPseudoOpacity2.BackColor = Color.Aqua;
                 this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
                 this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
             }
         }
 
+        /// <summary>
+        /// X六轴
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RadbtnFiveRotor_CheckedChanged(object sender, EventArgs e)
         {
             if (this.RadbtnFiveRotor.Checked) 
             {
+                this.iShapeType = 1;
                 this.iCopterType = (int)CopterType.Six;
-                this.lblText1.Text = Strings.CopterTypeInstruction4;
-                this.lblText3.Text = Strings.CopterTypeInstruction2;
-                this.lblText4.Text = Strings.CopterTypeInstruction3;
                 this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
                 this.pictureBoxWithPseudoOpacity1.BackColor = Color.Aqua;
                 this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
             } 
         }
 
+        /// <summary>
+        /// X8轴
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RadbtnSevenRotor_CheckedChanged(object sender, EventArgs e)
         {
             if (this.RadbtnSevenRotor.Checked) 
             {
+                this.iShapeType = 1;
                 this.iCopterType = (int)CopterType.Eight;
-                this.lblText1.Text = Strings.CopterTypeInstruction5;
-                this.lblText3.Text = Strings.CopterTypeInstruction2;
-                this.lblText4.Text = Strings.CopterTypeInstruction3;
                 this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
                 this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
                 this.pictureBoxWithPseudoOpacity3.BackColor = Color.Aqua;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
+            }
+        }
+
+        /// <summary>
+        /// 十4轴
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RadbtnFourRotorT_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.RadbtnFourRotorT.Checked)
+            {
+                this.iShapeType = 0;
+                this.iCopterType = (int)CopterType.Four;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Aqua;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
+            }
+        }
+
+        /// <summary>
+        /// 十6轴
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RadbtnFiveRotorT_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.RadbtnFiveRotorT.Checked)
+            {
+                this.iShapeType = 0;
+                this.iCopterType = (int)CopterType.Six;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Aqua;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
+            }
+        }
+
+        /// <summary>
+        /// 十8轴
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RadbtnSevenRotorT_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.RadbtnSevenRotorT.Checked)
+            {
+                this.iCopterType = (int)CopterType.Eight;
+                this.iShapeType = 0;
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Aqua;
             }
         }
         #endregion
@@ -457,6 +555,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
         }
         #endregion
+
+
 
 
     }

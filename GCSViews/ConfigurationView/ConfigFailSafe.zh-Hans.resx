@@ -227,7 +227,7 @@
     <value>41, 12</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>低电压</value>
+    <value>电池电压保护</value>
   </data>
   <data name="label4.ToolTip" xml:space="preserve">
     <value />

@@ -2800,8 +2800,8 @@
     </THR_MAX>
     <FS_THR_ENABLE>
       <DisplayName>Throttle Failsafe Enable</DisplayName>
-      <Description>The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel</Description>
-      <Values>0:禁用,1:启用总是返航,2:启用自动模式继续任务,3:启用总是降落</Values>
+      <Description>0:禁用The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel</Description>
+      <Values>1:启用总是返航,2:启用自动模式继续任务,3:启用总是降落</Values>
       <User>Standard</User>
     </FS_THR_ENABLE>
     <FS_THR_VALUE>

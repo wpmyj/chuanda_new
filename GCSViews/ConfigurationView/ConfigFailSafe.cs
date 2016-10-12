@@ -47,7 +47,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             // removed at randys request
             //mavlinkCheckBoxfs_gps_enable.setup(1, 0, "FS_GPS_ENABLE", MainV2.comPort.MAV.param);
-            mavlinkCheckBoxFS_GCS_ENABLE.setup(1, 0, "FS_GCS_ENABLE", MainV2.comPort.MAV.param);
+            //mavlinkCheckBoxFS_GCS_ENABLE.setup(1, 0, "FS_GCS_ENABLE", MainV2.comPort.MAV.param);
+
+            mavlinkComboFS_GCS_ENABLE.setup(
+               ParameterMetaDataRepository.GetParameterOptionsInt("FS_GCS_ENABLE",
+                   MainV2.comPort.MAV.cs.firmware.ToString()), "FS_GCS_ENABLE", MainV2.comPort.MAV.param);
 
             // plane
             mavlinkCheckBoxthr_fs.setup(1, 0, "THR_FAILSAFE", MainV2.comPort.MAV.param, mavlinkNumericUpDownthr_fs_value);

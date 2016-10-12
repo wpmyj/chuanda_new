@@ -267,373 +267,6 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>214, 17</value>
   </metadata>
-  <data name="mavlinkCheckBoxlong_fs.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 116</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 24</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.TabIndex" type="System.Int32, mscorlib">
-    <value>146</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Text" xml:space="preserve">
-    <value>FailSafe Long (20 sec)</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.ToolTip" xml:space="preserve">
-    <value>Off, no Action, On, RTL</value>
-  </data>
-  <data name="mavlinkCheckBoxlong_fs.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxlong_fs</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>424, 116</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 24</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.TabIndex" type="System.Int32, mscorlib">
-    <value>145</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Text" xml:space="preserve">
-    <value>FailSafe Short (1 sec)</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.ToolTip" xml:space="preserve">
-    <value>Off, no Action, On, RTL</value>
-  </data>
-  <data name="mavlinkCheckBoxshort_fs.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxshort_fs</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 116</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 24</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.TabIndex" type="System.Int32, mscorlib">
-    <value>144</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Text" xml:space="preserve">
-    <value>GCS FailSafe</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.ToolTip" xml:space="preserve">
-    <value>Enable Failsafe on GCS loss of communication</value>
-  </data>
-  <data name="mavlinkCheckBoxgcs_fs.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxgcs_fs</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Location" type="System.Drawing.Point, System.Drawing">
-    <value>629, 76</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 24</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.TabIndex" type="System.Int32, mscorlib">
-    <value>147</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Text" xml:space="preserve">
-    <value>Throttle Failsafe Action</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.ToolTip" xml:space="preserve">
-    <value>Arducopter Auto: Off, no Action, On, RTL
-Arducopter Other: if have gps, RTL, Otherwise Land</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs_action.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxthr_fs_action</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 76</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 24</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.TabIndex" type="System.Int32, mscorlib">
-    <value>141</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Text" xml:space="preserve">
-    <value>Throttle FailSafe</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.ToolTip" xml:space="preserve">
-    <value>Enable Failsafe on low throttle pwm</value>
-  </data>
-  <data name="mavlinkCheckBoxthr_fs.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxthr_fs</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-126, 0</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.ToolTip" xml:space="preserve">
-    <value>Trigger Throttle Pwm</value>
-  </data>
-  <data name="mavlinkNumericUpDownfs_thr_value.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDownfs_thr_value</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
-    <value>PNL_thr_fs_value</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 0</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.ToolTip" xml:space="preserve">
-    <value>Trigger Throttle Pwm</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDownthr_fs_value</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
-    <value>PNL_thr_fs_value</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>293, 74</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 8</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 28</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.TabIndex" type="System.Int32, mscorlib">
-    <value>151</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.ToolTip" xml:space="preserve">
-    <value>Failsafe mode on low pwm</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Name" xml:space="preserve">
-    <value>mavlinkComboBox_fs_thr_enable</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 32</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.ToolTip" xml:space="preserve">
-    <value>Low Voltage Trigger</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDownlow_voltage</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -670,23 +303,26 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 2</value>
+    <value>24, 32</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 20</value>
+    <value>99, 20</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>154</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>低电池</value>
+    <value>电池电压保护</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -695,52 +331,46 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>PNL_low_bat</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PNL_low_bat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="PNL_low_bat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 35</value>
-  </data>
-  <data name="PNL_low_bat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="PNL_low_bat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 26</value>
-  </data>
-  <data name="PNL_low_bat.TabIndex" type="System.Int32, mscorlib">
-    <value>154</value>
-  </data>
-  <data name="PNL_low_bat.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PNL_low_bat.Name" xml:space="preserve">
-    <value>PNL_low_bat</value>
-  </data>
-  <data name="&gt;&gt;PNL_low_bat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PNL_low_bat.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;PNL_low_bat.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownfs_thr_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
+    <value>PNL_thr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownthr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
+    <value>PNL_thr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="PNL_thr_fs_value.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="PNL_thr_fs_value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 74</value>
+    <value>160, 67</value>
   </data>
   <data name="PNL_thr_fs_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="PNL_thr_fs_value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 29</value>
+    <value>131, 27</value>
   </data>
   <data name="PNL_thr_fs_value.TabIndex" type="System.Int32, mscorlib">
     <value>149</value>
@@ -755,34 +385,208 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;PNL_thr_fs_value.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
-  <data name="cb_FS_Level_Enable.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Name" xml:space="preserve">
+    <value>mavlinkComboFS_GCS_ENABLE</value>
   </data>
-  <data name="cb_FS_Level_Enable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="cb_FS_Level_Enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>552, 35</value>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="cb_FS_Level_Enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 28</value>
-  </data>
-  <data name="cb_FS_Level_Enable.TabIndex" type="System.Int32, mscorlib">
-    <value>160</value>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Name" xml:space="preserve">
     <value>cb_FS_Level_Enable</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblLevel.Name" xml:space="preserve">
+    <value>lblLevel</value>
+  </data>
+  <data name="&gt;&gt;lblLevel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLevel.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;lblLevel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblFailSafeBegin.Name" xml:space="preserve">
+    <value>lblFailSafeBegin</value>
+  </data>
+  <data name="&gt;&gt;lblFailSafeBegin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFailSafeBegin.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;lblFailSafeBegin.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblPC.Name" xml:space="preserve">
+    <value>lblPC</value>
+  </data>
+  <data name="&gt;&gt;lblPC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPC.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;lblPC.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxlong_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxshort_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxgcs_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxthr_fs_action</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxthr_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Name" xml:space="preserve">
+    <value>mavlinkComboBox_fs_thr_enable</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Name" xml:space="preserve">
+    <value>mavlinkComboBoxfs_batt_enable</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownlow_voltage</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 88</value>
+  </data>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>876, 137</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>电池遥控器地面站保护设置</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="lblLevel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -794,7 +598,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>NoControl</value>
   </data>
   <data name="lblLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 37</value>
+    <value>491, 37</value>
   </data>
   <data name="lblLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -818,7 +622,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lblLevel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblFailSafeBegin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -830,19 +634,19 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>NoControl</value>
   </data>
   <data name="lblFailSafeBegin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 118</value>
+    <value>24, 107</value>
   </data>
   <data name="lblFailSafeBegin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="lblFailSafeBegin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 20</value>
+    <value>129, 20</value>
   </data>
   <data name="lblFailSafeBegin.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
   </data>
   <data name="lblFailSafeBegin.Text" xml:space="preserve">
-    <value>启用地面站故障保护</value>
+    <value>数据链路故障保护</value>
   </data>
   <data name="&gt;&gt;lblFailSafeBegin.Name" xml:space="preserve">
     <value>lblFailSafeBegin</value>
@@ -854,7 +658,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lblFailSafeBegin.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="lblPC.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -866,7 +670,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>NoControl</value>
   </data>
   <data name="lblPC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 76</value>
+    <value>24, 69</value>
   </data>
   <data name="lblPC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -890,112 +694,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;lblPC.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 118</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 17</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.TabIndex" type="System.Int32, mscorlib">
-    <value>156</value>
-  </data>
-  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Name" xml:space="preserve">
-    <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 34</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 8</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 28</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.TabIndex" type="System.Int32, mscorlib">
-    <value>158</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Name" xml:space="preserve">
-    <value>mavlinkComboBoxfs_batt_enable</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 88</value>
-  </data>
-  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>876, 171</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>电池遥控器地面站保护设置</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="fiMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>563, 26</value>
@@ -1730,11 +1429,41 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="&gt;&gt;lblinfo1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="PNL_low_bat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="PNL_low_bat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>869, 137</value>
+  </data>
+  <data name="PNL_low_bat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="PNL_low_bat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="PNL_low_bat.TabIndex" type="System.Int32, mscorlib">
+    <value>154</value>
+  </data>
+  <data name="PNL_low_bat.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PNL_low_bat.Name" xml:space="preserve">
+    <value>PNL_low_bat</value>
+  </data>
+  <data name="&gt;&gt;PNL_low_bat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PNL_low_bat.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;PNL_low_bat.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 294</value>
+    <value>24, 233</value>
   </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1743,7 +1472,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>4, 4, 4, 4</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>873, 154</value>
+    <value>876, 154</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>157</value>
@@ -1785,13 +1514,506 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkNumericUpDownFS_BATT_MAH</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6058.32558, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mavlinkComboFS_GCS_ENABLE.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 100</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 27</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.TabIndex" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Name" xml:space="preserve">
+    <value>mavlinkComboFS_GCS_ENABLE</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cb_FS_Level_Enable.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_FS_Level_Enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="cb_FS_Level_Enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 35</value>
+  </data>
+  <data name="cb_FS_Level_Enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
+  </data>
+  <data name="cb_FS_Level_Enable.TabIndex" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="&gt;&gt;cb_FS_Level_Enable.Name" xml:space="preserve">
+    <value>cb_FS_Level_Enable</value>
+  </data>
+  <data name="&gt;&gt;cb_FS_Level_Enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cb_FS_Level_Enable.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;cb_FS_Level_Enable.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 224</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 24</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.TabIndex" type="System.Int32, mscorlib">
+    <value>146</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Text" xml:space="preserve">
+    <value>FailSafe Long (20 sec)</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.ToolTip" xml:space="preserve">
+    <value>Off, no Action, On, RTL</value>
+  </data>
+  <data name="mavlinkCheckBoxlong_fs.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxlong_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxlong_fs.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 224</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 24</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.TabIndex" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Text" xml:space="preserve">
+    <value>FailSafe Short (1 sec)</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.ToolTip" xml:space="preserve">
+    <value>Off, no Action, On, RTL</value>
+  </data>
+  <data name="mavlinkCheckBoxshort_fs.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxshort_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxshort_fs.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 224</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 24</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.TabIndex" type="System.Int32, mscorlib">
+    <value>144</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Text" xml:space="preserve">
+    <value>GCS FailSafe</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.ToolTip" xml:space="preserve">
+    <value>Enable Failsafe on GCS loss of communication</value>
+  </data>
+  <data name="mavlinkCheckBoxgcs_fs.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxgcs_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>264, 188</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.TabIndex" type="System.Int32, mscorlib">
+    <value>156</value>
+  </data>
+  <data name="mavlinkCheckBoxFS_GCS_ENABLE.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 184</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 24</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.TabIndex" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Text" xml:space="preserve">
+    <value>Throttle Failsafe Action</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.ToolTip" xml:space="preserve">
+    <value>Arducopter Auto: Off, no Action, On, RTL
+Arducopter Other: if have gps, RTL, Otherwise Land</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs_action.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxthr_fs_action</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>429, 184</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 24</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.TabIndex" type="System.Int32, mscorlib">
+    <value>141</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Text" xml:space="preserve">
+    <value>Throttle FailSafe</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.ToolTip" xml:space="preserve">
+    <value>Enable Failsafe on low throttle pwm</value>
+  </data>
+  <data name="mavlinkCheckBoxthr_fs.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Name" xml:space="preserve">
+    <value>mavlinkCheckBoxthr_fs</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBoxthr_fs.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-128, 0</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.ToolTip" xml:space="preserve">
+    <value>Trigger Throttle Pwm</value>
+  </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownfs_thr_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
+    <value>PNL_thr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-4, 0</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.ToolTip" xml:space="preserve">
+    <value>Trigger Throttle Pwm</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownthr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
+    <value>PNL_thr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 66</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 8</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 28</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.TabIndex" type="System.Int32, mscorlib">
+    <value>151</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.ToolTip" xml:space="preserve">
+    <value>Failsafe mode on low pwm</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Name" xml:space="preserve">
+    <value>mavlinkComboBox_fs_thr_enable</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>338, 34</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 8</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 28</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.TabIndex" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Name" xml:space="preserve">
+    <value>mavlinkComboBoxfs_batt_enable</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 32</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.ToolTip" xml:space="preserve">
+    <value>Low Voltage Trigger</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownlow_voltage</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6129.18460, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1808,17 +2030,17 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1317, 924</value>
   </data>
-  <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
-    <value>currentStateBindingSource</value>
-  </data>
-  <data name="&gt;&gt;currentStateBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
   <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
+    <value>currentStateBindingSource</value>
+  </data>
+  <data name="&gt;&gt;currentStateBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigFailSafe</value>

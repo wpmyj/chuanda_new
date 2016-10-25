@@ -64,7 +64,12 @@ namespace ByAeroBeHero
             button.Dock = DockStyle.Fill;
             button.Width =109;
             button.Height= 27;
+            button.BGGradBot = System.Drawing.Color.White;
+            button.BGGradTop = System.Drawing.Color.White;
+            button.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular);
             button.Text = "航线扫描";
+           
+            
             Host.FPTLPanel.Controls.Add(button);
 
             button.Click += but_Click;

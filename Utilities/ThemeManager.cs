@@ -867,7 +867,7 @@ mc:Ignorable=""d""
                 } 
                 else if (ctl.GetType() == typeof(Panel))
                 {
-                    ctl.BackColor = BGColor;
+                    //ctl.BackColor = Color.Transparent;
                     ctl.ForeColor = TextColor;
                 }
                 else if (ctl.GetType() == typeof(GroupBox))
@@ -950,8 +950,8 @@ mc:Ignorable=""d""
                 }
                 else if (ctl.GetType() == typeof(BSE.Windows.Forms.Panel) || ctl.GetType() == typeof(SplitterPanel))
                 {
-                    ctl.BackColor = BGColor;
-                    ctl.ForeColor = TextColor;// Color.FromArgb(0xe6, 0xe8, 0xea);
+                    //ctl.BackColor = Color.Transparent;
+                    //ctl.ForeColor = TextColor;// Color.FromArgb(0xe6, 0xe8, 0xea);
                 }
                 else if (ctl.GetType() == typeof(Form))
                 {

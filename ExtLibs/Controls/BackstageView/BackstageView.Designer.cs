@@ -39,6 +39,7 @@
             // pnlPages
             // 
             this.pnlPages.AutoScroll = true;
+            this.pnlPages.BackColor = System.Drawing.Color.Black;
             this.pnlPages.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPages.Location = new System.Drawing.Point(0, 0);
             this.pnlPages.Margin = new System.Windows.Forms.Padding(4);
@@ -80,7 +81,7 @@
             // BackstageView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BackstageView";

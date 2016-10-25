@@ -34,7 +34,7 @@
             // 
             // backstageView
             // 
-            this.backstageView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(225)))));
+            this.backstageView.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.backstageView, "backstageView");
             this.backstageView.HighlightColor1 = System.Drawing.SystemColors.Highlight;
             this.backstageView.HighlightColor2 = System.Drawing.SystemColors.MenuHighlight;

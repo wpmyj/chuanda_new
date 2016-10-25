@@ -38,6 +38,7 @@ using ILog = log4net.ILog;
 using Placemark = SharpKml.Dom.Placemark;
 using Point = System.Drawing.Point;
 using System.IO.Ports;
+using System.Text;
 
 namespace ByAeroBeHero.GCSViews
 {
@@ -76,6 +77,8 @@ namespace ByAeroBeHero.GCSViews
         List<int> groupmarkers = new List<int>();
 
         public SerialPort serialPort { get { return MainV2.instance.serialPort1; } }
+
+        Thread thisthread;
 
         public enum altmode
         {
@@ -761,6 +764,11 @@ namespace ByAeroBeHero.GCSViews
             //}
 
             addbreakWayPoint(true);
+
+            //thisthread = new Thread(mainloop);
+            //thisthread.Name = "FD Mainloop";
+            //thisthread.IsBackground = true;
+            //thisthread.Start();
 
             timer1.Start();
             timer_getbreakpoint.Start();
@@ -6596,11 +6604,20 @@ namespace ByAeroBeHero.GCSViews
 
         private void ControlInit() 
         {
-            panelShowPoint.BackColor = groupBoxAeroPoint.BackColor = CHK_autopan.BackColor = breakpointgroupBox.BackColor
-             = groupBoxBasePoint.BackColor = groupboxOPoint.BackColor = groupBoxRellyPoint.BackColor = Color.Black;
-            groupBoxAeroPoint.ForeColor = CHK_autopan.ForeColor
-                = groupBoxBasePoint.ForeColor = groupboxOPoint.ForeColor = groupBoxRellyPoint.ForeColor = breakpointgroupBox.ForeColor
-            =Color.White;              
+            //groupBoxAeroPoint.BackColor  = breakpointgroupBox.BackColor = groupBoxBasePoint.BackColor = groupboxOPoint.BackColor = groupBoxRellyPoint.BackColor = 
+            panel15.BackColor = panel2.BackColor = panel14.BackColor = txt_messagebox.BackColor
+             = panel4.BackColor = panel5.BackColor = panel7.BackColor = panel8.BackColor = panel9.BackColor = panel10.BackColor = panel11.BackColor = panel12.BackColor = panel13.BackColor 
+             = Color.Black;
+            groupBoxAeroPoint.ForeColor
+                = groupBoxBasePoint.ForeColor = groupboxOPoint.ForeColor = groupBoxRellyPoint.ForeColor = breakpointgroupBox.ForeColor = Color.Black;
+                panelWaypoints.ForeColor
+                =Color.White;
+
+                tableLayoutPanelRoute.BackColor = Color.Transparent;
+            lblStaCount.ForeColor = lblHorizontal.ForeColor = lblTime.ForeColor =label1.ForeColor 
+                = lblDisToHome.ForeColor = lblBearToHome.ForeColor = lblDoneArea.ForeColor =Color.Black;
+
+            controlInit();
         }
 
         #endregion
@@ -6616,15 +6633,28 @@ namespace ByAeroBeHero.GCSViews
         #region 初始化参数
         public void initParams() 
         {
-            this.lblHorizontalError.Text = "GPS水平精度:" + MainV2.comPort.MAV.cs.gpshdop.ToString();
-            this.lblSataCount.Text = "卫星数量:" + MainV2.comPort.MAV.cs.satcount.ToString();
+            this.lblHorizontalError.Text = MainV2.comPort.MAV.cs.gpshdop.ToString();
+            this.lblSataCount.Text = MainV2.comPort.MAV.cs.satcount.ToString();
         }
         #endregion
 
         #region 追踪家的位置
-        private void CHK_autopan_CheckedChanged(object sender, EventArgs e)
+
+        private bool IsAutoPan = false;
+        private void btnAutoPan_Click(object sender, EventArgs e)
         {
-            autopan = CHK_autopan.Checked;
+            if (IsAutoPan)
+            {
+                IsAutoPan = false;
+                this.btnAutoPan.Text = "取消追踪";
+            }
+            else
+            {
+                IsAutoPan = true;
+                this.btnAutoPan.Text = "追踪飞机";
+            }
+            autopan = IsAutoPan;
+
         }
         #endregion
 
@@ -7765,8 +7795,34 @@ namespace ByAeroBeHero.GCSViews
         }
         #endregion
 
-        #region 参数列表拖拽
+        #region 飞行信息拖拽
 
+        int yPosFlyingInfo;
+        int xPosFlyingInfo;
+        bool MoveFlagFlyingInfo;
+        private void panelShowFlyigInfo_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlagFlyingInfo = true;//已经按下.    
+            xPosFlyingInfo = e.X;//当前x坐标.    
+            yPosFlyingInfo = e.Y;//当前y坐标.
+        }
+
+        private void panelShowFlyigInfo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlagFlyingInfo)
+            {
+                ebsPanelFlyingInfo.Left += Convert.ToInt16(e.X - xPosFlyingInfo);//设置x坐标.        
+                ebsPanelFlyingInfo.Top += Convert.ToInt16(e.Y - yPosFlyingInfo);//设置y坐标.    
+            }
+        }
+
+        private void panelShowFlyigInfo_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlagFlyingInfo = false;
+        }
+        #endregion
+
+        #region 航点设置拖拽
         int yPosPa;
         int xPosPa;
         bool MoveFlagM;
@@ -7791,6 +7847,402 @@ namespace ByAeroBeHero.GCSViews
             MoveFlagM = false;
         }
         #endregion
+
+        #region 警告信息拖拽
+        int yPosWarningInfo;
+        int xPosWarningInfo;
+        bool MoveFlagWarn;
+        private void panelShowWarningInfo_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlagWarn = true;//已经按下.    
+            xPosWarningInfo = e.X;//当前x坐标.    
+            yPosWarningInfo = e.Y;//当前y坐标.
+        }
+
+        private void panelShowWarningInfo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlagWarn)
+            {
+                ebsPanelWarning.Left += Convert.ToInt16(e.X - xPosWarningInfo);//设置x坐标.        
+                ebsPanelWarning.Top += Convert.ToInt16(e.Y - yPosWarningInfo);//设置y坐标.    
+            }
+        }
+
+        private void panelShowWarningInfo_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlagWarn = false;
+        }
+        #endregion
+
+        #region 规划信息拖拽
+        int yPosPlanInfo;
+        int xPosPlanInfo;
+        bool MoveFlagPlan;
+        private void panelShowPlan_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlagPlan = true;//已经按下.    
+            xPosPlanInfo = e.X;//当前x坐标.    
+            yPosPlanInfo = e.Y;//当前y坐标.
+        }
+
+        private void panelShowPlan_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlagPlan)
+            {
+                ebsPanelPlanInfo.Left += Convert.ToInt16(e.X - xPosPlanInfo);//设置x坐标.        
+                ebsPanelPlanInfo.Top += Convert.ToInt16(e.Y - yPosPlanInfo);//设置y坐标.    
+            }
+        }
+
+        private void panelShowPlan_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlagPlan = false;
+        }
+        #endregion
+
+        #region 仪表拖拽
+        int yPosPoints;
+        int xPosPoints;
+        bool MoveFlagPints;
+        private void panelShowMeter_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveFlagPints = true;//已经按下.    
+            xPosPoints = e.X;//当前x坐标.    
+            yPosPoints = e.Y;//当前y坐标.
+        }
+
+        private void panelShowMeter_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (MoveFlagPints)
+            {
+                ebsPanelMeter.Left += Convert.ToInt16(e.X - xPosPoints);//设置x坐标.        
+                ebsPanelMeter.Top += Convert.ToInt16(e.Y - yPosPoints);//设置y坐标.    
+            }
+        }
+
+        private void panelShowMeter_MouseUp(object sender, MouseEventArgs e)
+        {
+            MoveFlagPints = false;
+        }
+        #endregion
+
+        #region 警示灯信息
+        public void controlInit()
+        {
+            if (CurrentState.isArm)
+            {
+                timer_time.Enabled = true;
+            }
+            else
+            {
+                timer_time.Enabled = false;
+            }
+
+            if (this.pictureBoxAccel.Image != null)
+            {
+                this.pictureBoxAccel.Image.Dispose();
+                this.pictureBoxAccel.Image = null;
+            }
+
+            if (this.pictureBoxGPS.Image != null)
+            {
+                this.pictureBoxGPS.Image.Dispose();
+                this.pictureBoxGPS.Image = null;
+            }
+
+            if (this.pictureBoxCompass.Image != null)
+            {
+                this.pictureBoxCompass.Image.Dispose();
+                this.pictureBoxCompass.Image = null;
+            }
+
+            if (this.pictureBoxLevel.Image != null)
+            {
+                this.pictureBoxLevel.Image.Dispose();
+                this.pictureBoxLevel.Image = null;
+            }
+
+            if (this.pictureBoxGyro.Image != null)
+            {
+                this.pictureBoxGyro.Image.Dispose();
+                this.pictureBoxGyro.Image = null;
+            }
+
+            if (this.pictureBoxReceiver.Image != null)
+            {
+                this.pictureBoxReceiver.Image.Dispose();
+                this.pictureBoxReceiver.Image = null;
+            }
+
+            if (this.pictureBoxPump.Image != null)
+            {
+                this.pictureBoxPump.Image.Dispose();
+                this.pictureBoxPump.Image = null;
+            }
+
+            if (this.pictureBoxvibez.Image != null)
+            {
+                this.pictureBoxvibez.Image.Dispose();
+                this.pictureBoxvibez.Image = null;
+            }
+
+            if (this.pictureBoxLD.Image != null)
+            {
+                this.pictureBoxLD.Image.Dispose();
+                this.pictureBoxLD.Image = null;
+            }
+
+            //this.panelDeviceStatus.BackColor = Color.Black;
+            if (MainV2.comPort.BaseStream.IsOpen)
+            {
+
+                if (CurrentState.accelhealth)
+                {
+
+                    this.pictureBoxAccel.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxAccel.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.compasshealth)
+                {
+                    this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Flying;
+                    if ((MainV2.comPort.MAV.cs.mx2 == 0 && MainV2.comPort.MAV.cs.my2 == 0 && MainV2.comPort.MAV.cs.mz2 == 0) || IsChangeIMU2())
+                    {
+                        this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Alerted;
+                    }
+                }
+                else
+                {
+                    this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.gpshealth && MainV2.comPort.MAV.cs.gpsstatus > 1)
+                {
+                    this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else if (MainV2.comPort.MAV.cs.gpsstatus == 0)
+                {
+                    this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                }
+                else
+                {
+                    this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.dosage == 2)
+                {
+                    this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else if (CurrentState.dosage == 1)
+                {
+                    this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+                else
+                {
+                    this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+
+                }
+
+                if (CurrentState.gyrohealth)
+                {
+                    this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (CurrentState.receiverhealth)
+                {
+                    this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+
+                if (CurrentState.pump)
+                {
+                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if (MainV2.comPort.MAV.cs.vibez <= 5)
+                {
+                    this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else if (5 < MainV2.comPort.MAV.cs.vibez && MainV2.comPort.MAV.cs.vibez <= 10)
+                {
+                    this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Alerted;
+                }
+                else
+                {
+                    this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+
+                if ((MainV2.comPort.MAV.param.ContainsKey("RNGFND_TYPE") && (float)MainV2.comPort.MAV.param["RNGFND_TYPE"] != 0) && CurrentState.lidarhealth)
+                {
+                    this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.Flying;
+                }
+                else
+                {
+                    this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.Waring;
+                }
+            }
+            else
+            {
+                this.pictureBoxAccel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxGPS.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxCompass.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+                this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.NoConnect;
+            }
+        } 
+        #endregion
+
+        #region 罗盘判断
+        private int iIMU = 0;
+        public static float difimux = 0;
+        public static float difimuy = 0;
+        public static float difimuz = 0;
+        public bool IsChangeIMU2()
+        {
+            if (difimux != MainV2.comPort.MAV.cs.mx2 || difimuy != MainV2.comPort.MAV.cs.my2 || difimuz != MainV2.comPort.MAV.cs.mz2)
+            {
+                difimux = MainV2.comPort.MAV.cs.mx2;
+                difimuy = MainV2.comPort.MAV.cs.my2;
+                difimuz = MainV2.comPort.MAV.cs.mz2;
+                iIMU = 0;
+                return false;
+            }
+            else
+            {
+                iIMU++;
+                if (iIMU > 10)
+                    return true;
+                else
+                    return false;
+            }
+        }
+        #endregion
+
+        #region 警告信息
+        int messagecount;
+        private void Messagetabtimer_Tick(object sender, EventArgs e)
+        {
+            if (messagecount != MainV2.comPort.MAV.cs.messages.Count)
+            {
+                StringBuilder message = new StringBuilder();
+                //MainV2.comPort.MAV.cs.messages.ForEach(x => { message.AppendLine(x); });
+                for (int i = MainV2.comPort.MAV.cs.messages.Count - 1; i >= 0; i--)
+                {
+                    if (MainV2.comPort.MAV.cs.messages[i].Contains("保持") || MainV2.comPort.MAV.cs.messages[i].Contains("翻转"))
+                        continue;
+                    message.AppendLine(MainV2.comPort.MAV.cs.messages[i]);
+                }
+                txt_messagebox.Text = message.ToString();
+
+                messagecount = MainV2.comPort.MAV.cs.messages.Count;
+            }
+            txt_messagebox.ForeColor = Color.White;
+
+            updateBindingSource();
+        }
+
+        public void ControlMessageTimer(bool isStart) 
+        {
+            if (isStart)
+                Messagetabtimer.Start();
+            else
+                Messagetabtimer.Stop();
+        }
+        #endregion
+
+        #region 数据绑定
+        private void updateBindingSource()
+        {
+           MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSource1);
+        }
+        #endregion
+
+        #region 控件显示
+        private bool IsShowWarnning = false;
+        private void btnWarnning_Click(object sender, EventArgs e)
+        {
+            if (IsShowWarnning)
+            {
+                ebsPanelWarning.Visible = false;
+                IsShowWarnning =false;
+            }
+            else
+            {
+                ebsPanelWarning.Visible = true;
+                IsShowWarnning =true;
+            }
+        }
+
+        private bool IsShowPlanInfo = false;
+        private void btnPlanInfo_Click(object sender, EventArgs e)
+        {
+            if (IsShowPlanInfo)
+            {
+                ebsPanelPlanInfo.Visible = false;
+                IsShowPlanInfo = false;
+
+                if (panelShowPoint.Visible) 
+                {
+                    this.panelShowPoint.Visible = false;
+                    Isshow = false;
+                }                     
+            }
+            else
+            {
+                ebsPanelPlanInfo.Visible = true;
+                IsShowPlanInfo = true;
+            }
+        }
+
+        private bool IsShowMeterInfo = false;
+        private void btnMeterInfo_Click(object sender, EventArgs e)
+        {
+            if (IsShowMeterInfo)
+            {
+                ebsPanelMeter.Visible = false;
+                IsShowMeterInfo = false;
+            }
+            else
+            {
+                ebsPanelMeter.Visible = true;
+                IsShowMeterInfo = true;
+            }
+        }
+        private bool IsFlyingInfo = false;
+        private void btnFlyingInfo_Click(object sender, EventArgs e)
+        {
+            if (IsFlyingInfo)
+            {
+                ebsPanelFlyingInfo.Visible = false;
+                IsFlyingInfo = false;
+            }
+            else
+            {
+                ebsPanelFlyingInfo.Visible = true;
+                IsFlyingInfo = true;
+            }
+        }
+        #endregion
+
 
     }
 }

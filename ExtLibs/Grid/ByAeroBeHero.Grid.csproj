@@ -79,9 +79,8 @@
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\Controls\ByAeroBeHero.Controls.csproj">
-      <Project>{C8B88795-6D01-494D-83AD-6944BD4C5023}</Project>
+      <Project>{c8b88795-6d01-494d-83ad-6944bd4c5023}</Project>
       <Name>ByAeroBeHero.Controls</Name>
-      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\GeoUtility\GeoUtility.csproj">
       <Project>{7F7994CE-823F-4A04-BBEA-D0A3808FF56D}</Project>

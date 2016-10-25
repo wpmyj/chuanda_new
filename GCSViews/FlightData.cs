@@ -738,12 +738,18 @@ namespace ByAeroBeHero.GCSViews
             thisthread.Start();
         }
 
+        private bool isStart;
         private void InitControl() 
         {
             flightPlannerToolStripMenuItem_Click(null,null);
             this.Messagetabtimer.Stop();
+            isStart = false;
             if (!MainV2.comPort.BaseStream.IsOpen)
+            {
                 this.Messagetabtimer.Start();
+                isStart = true;
+            }
+            GCSViews.FlightPlanner.instance.ControlMessageTimer(isStart);
         }
 
         void tfr_GotTFRs(object sender, EventArgs e)
@@ -3376,20 +3382,20 @@ namespace ByAeroBeHero.GCSViews
         
         private void Messagetabtimer_Tick(object sender, EventArgs e)
         {
-            if (messagecount != MainV2.comPort.MAV.cs.messages.Count)
-            {
-                StringBuilder message = new StringBuilder();
-                //MainV2.comPort.MAV.cs.messages.ForEach(x => { message.AppendLine(x); });
-                for (int i = MainV2.comPort.MAV.cs.messages.Count - 1; i >= 0 ; i-- )
-                {
-                    if (MainV2.comPort.MAV.cs.messages[i].Contains("保持") || MainV2.comPort.MAV.cs.messages[i].Contains("翻转"))
-                        continue;
-                    message.AppendLine(MainV2.comPort.MAV.cs.messages[i]);
-                }
-                txt_messagebox.Text = message.ToString();
+            //if (messagecount != MainV2.comPort.MAV.cs.messages.Count)
+            //{
+            //    StringBuilder message = new StringBuilder();
+            //    //MainV2.comPort.MAV.cs.messages.ForEach(x => { message.AppendLine(x); });
+            //    for (int i = MainV2.comPort.MAV.cs.messages.Count - 1; i >= 0 ; i-- )
+            //    {
+            //        if (MainV2.comPort.MAV.cs.messages[i].Contains("保持") || MainV2.comPort.MAV.cs.messages[i].Contains("翻转"))
+            //            continue;
+            //        message.AppendLine(MainV2.comPort.MAV.cs.messages[i]);
+            //    }
+            //    txt_messagebox.Text = message.ToString();
 
-                messagecount = MainV2.comPort.MAV.cs.messages.Count;
-            }
+            //    messagecount = MainV2.comPort.MAV.cs.messages.Count;
+            //}
 
             controlInit(); 
         }

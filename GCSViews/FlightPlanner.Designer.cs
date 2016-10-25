@@ -1,4 +1,5 @@
-﻿namespace ByAeroBeHero.GCSViews
+﻿using System.Drawing;
+namespace ByAeroBeHero.GCSViews
 {
     partial class FlightPlanner
     {
@@ -109,6 +110,16 @@
             this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl_distance = new System.Windows.Forms.Label();
+            this.lbl_homedist = new System.Windows.Forms.Label();
+            this.lbl_prevdist = new System.Windows.Forms.Label();
+            this.lblhxj = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBoxMapType = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -118,28 +129,14 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.lblKeepLiter = new System.Windows.Forms.Label();
-            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.TXT_altwarn = new System.Windows.Forms.TextBox();
             this.CMB_altmode = new System.Windows.Forms.ComboBox();
             this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
             this.BUT_Add = new ByAeroBeHero.Controls.MyButton();
-            this.comboBoxMapType = new System.Windows.Forms.ComboBox();
             this.BUT_loadwpfile = new ByAeroBeHero.Controls.MyButton();
             this.BUT_saveWPFile = new ByAeroBeHero.Controls.MyButton();
             this.panelMap = new System.Windows.Forms.Panel();
-            this.panelShowPoint = new System.Windows.Forms.Panel();
-            this.breakpointgroupBox = new System.Windows.Forms.GroupBox();
-            this.myBtn_write_break_point = new ByAeroBeHero.Controls.MyButton();
-            this.myBtn_read_break_point = new ByAeroBeHero.Controls.MyButton();
-            this.groupBoxRellyPoint = new System.Windows.Forms.GroupBox();
-            this.myButtonDonwloadRallyPoint = new ByAeroBeHero.Controls.MyButton();
-            this.myButton_loadRallypoint = new ByAeroBeHero.Controls.MyButton();
-            this.myButton2 = new ByAeroBeHero.Controls.MyButton();
-            this.myBtnSetRallyPoint = new ByAeroBeHero.Controls.MyButton();
+            this.panelShowPoint = new BSE.Windows.Forms.Panel();
             this.groupboxOPoint = new System.Windows.Forms.GroupBox();
             this.myButton_savelimitpoint = new ByAeroBeHero.Controls.MyButton();
             this.myButton_loadlimitpoint = new ByAeroBeHero.Controls.MyButton();
@@ -147,42 +144,101 @@
             this.myButtonClearLimitPoint = new ByAeroBeHero.Controls.MyButton();
             this.myBtnLimit = new ByAeroBeHero.Controls.MyButton();
             this.myBtnSendPoint = new ByAeroBeHero.Controls.MyButton();
+            this.breakpointgroupBox = new System.Windows.Forms.GroupBox();
+            this.myBtn_write_break_point = new ByAeroBeHero.Controls.MyButton();
+            this.myBtn_read_break_point = new ByAeroBeHero.Controls.MyButton();
+            this.groupBoxBasePoint = new System.Windows.Forms.GroupBox();
+            this.groupBoxRellyPoint = new System.Windows.Forms.GroupBox();
+            this.myButtonDonwloadRallyPoint = new ByAeroBeHero.Controls.MyButton();
+            this.myButton_loadRallypoint = new ByAeroBeHero.Controls.MyButton();
+            this.myButton2 = new ByAeroBeHero.Controls.MyButton();
+            this.myBtnSetRallyPoint = new ByAeroBeHero.Controls.MyButton();
             this.groupBoxAeroPoint = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelRoute = new System.Windows.Forms.TableLayoutPanel();
             this.myBtnLoadAeroPoint = new ByAeroBeHero.Controls.MyButton();
             this.myBtnAddPoint = new ByAeroBeHero.Controls.MyButton();
-            this.groupBoxBasePoint = new System.Windows.Forms.GroupBox();
-            this.panelShowInfo = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblDoneArea1 = new System.Windows.Forms.Label();
-            this.lblDoneArea = new System.Windows.Forms.Label();
-            this.lblBearToHome1 = new System.Windows.Forms.Label();
-            this.lblBearToHome = new System.Windows.Forms.Label();
-            this.lblDisToHome1 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lblArea = new System.Windows.Forms.Label();
-            this.lblAero = new System.Windows.Forms.Label();
-            this.lblStrips = new System.Windows.Forms.Label();
-            this.lblStrip = new System.Windows.Forms.Label();
-            this.lblDistance = new System.Windows.Forms.Label();
-            this.lblDistance1 = new System.Windows.Forms.Label();
-            this.lblDistbetweenlines = new System.Windows.Forms.Label();
-            this.lblFlyTime = new System.Windows.Forms.Label();
+            this.btnMeterInfo = new ByAeroBeHero.Controls.MyButton();
+            this.btnWarnning = new ByAeroBeHero.Controls.MyButton();
+            this.btnPlanInfo = new ByAeroBeHero.Controls.MyButton();
+            this.btnFlyingInfo = new ByAeroBeHero.Controls.MyButton();
+            this.btnAutoPan = new ByAeroBeHero.Controls.MyButton();
+            this.ebsPanelMeter = new BSE.Windows.Forms.Panel();
+            this.hud1 = new ByAeroBeHero.Controls.HUD();
+            this.ebsPanelFlyingInfo = new BSE.Windows.Forms.Panel();
+            this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
+            this.Qvtohome = new ByAeroBeHero.Controls.QuickView();
+            this.Qvdist = new ByAeroBeHero.Controls.QuickView();
+            this.Qvgroundspeed = new ByAeroBeHero.Controls.QuickView();
+            this.Qvverspeed = new ByAeroBeHero.Controls.QuickView();
+            this.Qvalt = new ByAeroBeHero.Controls.QuickView();
+            this.qvpitch = new ByAeroBeHero.Controls.QuickView();
+            this.qvyaw = new ByAeroBeHero.Controls.QuickView();
+            this.qvroll = new ByAeroBeHero.Controls.QuickView();
+            this.ebsPanelPlanInfo = new BSE.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.lblFlighttime = new System.Windows.Forms.Label();
+            this.lblDoneArea = new System.Windows.Forms.Label();
+            this.lblFlyTime = new System.Windows.Forms.Label();
+            this.lblDistance1 = new System.Windows.Forms.Label();
+            this.lblStrip = new System.Windows.Forms.Label();
+            this.lblAero = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lblStrips = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.lblHeadinghold = new System.Windows.Forms.Label();
+            this.lblBearToHome = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.lblDistance = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblDoneArea1 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblBearToHome1 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.lblDisToHome1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblDistbetweenlines = new System.Windows.Forms.Label();
+            this.myButtonLand = new ByAeroBeHero.Controls.MyButton();
+            this.myBtnFunction = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
+            this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
             this.lblDisToHome = new System.Windows.Forms.Label();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_distance = new System.Windows.Forms.Label();
-            this.lbl_homedist = new System.Windows.Forms.Label();
-            this.lbl_prevdist = new System.Windows.Forms.Label();
-            this.lblhxj = new System.Windows.Forms.Label();
+            this.ebsPanelWarning = new BSE.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.lblHorizontalError = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.lblSataCount = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.lblShowTime = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSataCount = new System.Windows.Forms.Label();
             this.BtnClear = new ByAeroBeHero.Controls.MyButton();
-            this.CHK_autopan = new System.Windows.Forms.CheckBox();
+            this.lblStaCount = new System.Windows.Forms.Label();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblLD = new System.Windows.Forms.Label();
+            this.lblvibez = new System.Windows.Forms.Label();
+            this.lblPump = new System.Windows.Forms.Label();
+            this.pictureBoxLD = new System.Windows.Forms.PictureBox();
+            this.lblReceiver = new System.Windows.Forms.Label();
+            this.lblGyro = new System.Windows.Forms.Label();
+            this.lblCompass = new System.Windows.Forms.Label();
+            this.pictureBoxGPS = new System.Windows.Forms.PictureBox();
+            this.lblAccel = new System.Windows.Forms.Label();
+            this.pictureBoxPump = new System.Windows.Forms.PictureBox();
+            this.lblGPS = new System.Windows.Forms.Label();
+            this.pictureBoxLevel = new System.Windows.Forms.PictureBox();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.pictureBoxAccel = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReceiver = new System.Windows.Forms.PictureBox();
+            this.pictureBoxvibez = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGyro = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCompass = new System.Windows.Forms.PictureBox();
+            this.lblHorizontal = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.txt_messagebox = new System.Windows.Forms.TextBox();
+            this.trackBar1 = new ByAeroBeHero.Controls.MyTrackBar();
             this.MainMap = new ByAeroBeHero.Controls.myGMAP();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -266,49 +322,56 @@
             this.modifyAltToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enterUTMCoordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.switchDockingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trackBar1 = new ByAeroBeHero.Controls.MyTrackBar();
-            this.panelBASE = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.myButtonLand = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
-            this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
-            this.myBtnFunction = new ByAeroBeHero.Controls.MyButton();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
             this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
+            this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
-            this.panelMap.SuspendLayout();
-            this.panelShowPoint.SuspendLayout();
-            this.breakpointgroupBox.SuspendLayout();
-            this.groupBoxRellyPoint.SuspendLayout();
-            this.groupboxOPoint.SuspendLayout();
-            this.groupBoxAeroPoint.SuspendLayout();
-            this.groupBoxBasePoint.SuspendLayout();
-            this.panelShowInfo.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.panelBASE.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.panelMap.SuspendLayout();
+            this.panelShowPoint.SuspendLayout();
+            this.groupboxOPoint.SuspendLayout();
+            this.breakpointgroupBox.SuspendLayout();
+            this.groupBoxBasePoint.SuspendLayout();
+            this.groupBoxRellyPoint.SuspendLayout();
+            this.groupBoxAeroPoint.SuspendLayout();
+            this.ebsPanelMeter.SuspendLayout();
+            this.ebsPanelFlyingInfo.SuspendLayout();
+            this.ebsPanelPlanInfo.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.ebsPanelWarning.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Commands
@@ -322,7 +385,7 @@
             this.Commands.BackgroundColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -346,7 +409,7 @@
             this.AZ});
             dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("微软雅黑", 9F);
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -357,7 +420,7 @@
             this.Commands.Name = "Commands";
             dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("微软雅黑", 9F);
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle17.Format = "N0";
             dataGridViewCellStyle17.NullValue = "0";
@@ -560,8 +623,8 @@
             // 
             // BUT_write
             // 
-            this.BUT_write.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_write.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_write.BGGradBot = System.Drawing.Color.White;
+            this.BUT_write.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.BUT_write, "BUT_write");
             this.BUT_write.Name = "BUT_write";
             this.BUT_write.UseVisualStyleBackColor = true;
@@ -569,8 +632,8 @@
             // 
             // BUT_read
             // 
-            this.BUT_read.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_read.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_read.BGGradBot = System.Drawing.Color.White;
+            this.BUT_read.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.BUT_read, "BUT_read");
             this.BUT_read.Name = "BUT_read";
             this.BUT_read.UseVisualStyleBackColor = true;
@@ -653,6 +716,7 @@
             // 
             this.panelWaypoints.AssociatedSplitter = this.splitter1;
             this.panelWaypoints.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panelWaypoints, "panelWaypoints");
             this.panelWaypoints.CaptionFont = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelWaypoints.CaptionHeight = 27;
             this.panelWaypoints.Controls.Add(this.myButton1);
@@ -674,9 +738,9 @@
             this.panelWaypoints.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
             this.panelWaypoints.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.panelWaypoints.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.panelWaypoints, "panelWaypoints");
-            this.panelWaypoints.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelWaypoints.ForeColor = System.Drawing.Color.White;
             this.panelWaypoints.Image = null;
+            this.panelWaypoints.LinearGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.panelWaypoints.Name = "panelWaypoints";
             this.panelWaypoints.ShowExpandIcon = true;
             this.panelWaypoints.ToolTipTextCloseIcon = null;
@@ -714,6 +778,8 @@
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.panel6, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.LBL_defalutalt, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 4, 0);
@@ -725,6 +791,91 @@
             this.tableLayoutPanel2.Controls.Add(this.TXT_WPRad, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.TXT_DefaultAlt, 0, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
+            this.tableLayoutPanel5.Controls.Add(this.lbl_distance, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_homedist, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_prevdist, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.coords1, 4, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lblhxj, 2, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            // 
+            // lbl_distance
+            // 
+            resources.ApplyResources(this.lbl_distance, "lbl_distance");
+            this.lbl_distance.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_distance.ForeColor = System.Drawing.Color.White;
+            this.lbl_distance.Name = "lbl_distance";
+            // 
+            // lbl_homedist
+            // 
+            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
+            this.lbl_homedist.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_homedist.ForeColor = System.Drawing.Color.White;
+            this.lbl_homedist.Name = "lbl_homedist";
+            // 
+            // lbl_prevdist
+            // 
+            resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
+            this.lbl_prevdist.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_prevdist.ForeColor = System.Drawing.Color.White;
+            this.lbl_prevdist.Name = "lbl_prevdist";
+            // 
+            // lblhxj
+            // 
+            resources.ApplyResources(this.lblhxj, "lblhxj");
+            this.lblhxj.BackColor = System.Drawing.Color.Transparent;
+            this.lblhxj.ForeColor = System.Drawing.Color.White;
+            this.lblhxj.Name = "lblhxj";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.BUT_quickrtl1);
+            this.panel6.Controls.Add(this.BUT_ARM1);
+            this.panel6.Controls.Add(this.tableLayoutPanel4);
+            this.panel6.Controls.Add(this.comboBoxMapType);
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // BUT_quickrtl1
+            // 
+            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
+            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
+            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
+            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
+            // 
+            // BUT_ARM1
+            // 
+            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
+            this.BUT_ARM1.Name = "BUT_ARM1";
+            this.BUT_ARM1.UseVisualStyleBackColor = true;
+            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.Controls.Add(this.lblwd, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbljd, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblHAlt, 4, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TXT_homelng, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TXT_homealt, 5, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TXT_homelat, 1, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // comboBoxMapType
+            // 
+            this.comboBoxMapType.BackColor = System.Drawing.Color.Black;
+            this.comboBoxMapType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMapType.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxMapType, "comboBoxMapType");
+            this.comboBoxMapType.Name = "comboBoxMapType";
+            this.toolTip1.SetToolTip(this.comboBoxMapType, resources.GetString("comboBoxMapType.ToolTip"));
             // 
             // label17
             // 
@@ -742,11 +893,6 @@
             this.tableLayoutPanel3.Controls.Add(this.label33, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label34, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.lblKeepLiter, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_RADIUS, 2, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED_UP, 3, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED_DN, 4, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_LOIT_SPEED, 5, 1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
             // label7
@@ -784,51 +930,6 @@
             resources.ApplyResources(this.lblKeepLiter, "lblKeepLiter");
             this.lblKeepLiter.Name = "lblKeepLiter";
             // 
-            // WPNAV_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
-            this.WPNAV_SPEED.Max = 1F;
-            this.WPNAV_SPEED.Min = 0F;
-            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
-            this.WPNAV_SPEED.ParamName = null;
-            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_RADIUS
-            // 
-            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
-            this.WPNAV_RADIUS.Max = 1F;
-            this.WPNAV_RADIUS.Min = 0F;
-            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
-            this.WPNAV_RADIUS.ParamName = null;
-            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED_UP
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
-            this.WPNAV_SPEED_UP.Max = 1F;
-            this.WPNAV_SPEED_UP.Min = 0F;
-            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
-            this.WPNAV_SPEED_UP.ParamName = null;
-            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED_DN
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
-            this.WPNAV_SPEED_DN.Max = 1F;
-            this.WPNAV_SPEED_DN.Min = 0F;
-            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
-            this.WPNAV_SPEED_DN.ParamName = null;
-            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_LOIT_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
-            this.WPNAV_LOIT_SPEED.Max = 1F;
-            this.WPNAV_LOIT_SPEED.Min = 0F;
-            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
-            this.WPNAV_LOIT_SPEED.ParamName = null;
-            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
             // TXT_altwarn
             // 
             resources.ApplyResources(this.TXT_altwarn, "TXT_altwarn");
@@ -854,22 +955,13 @@
             // 
             // BUT_Add
             // 
-            this.BUT_Add.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_Add.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_Add.BGGradBot = System.Drawing.Color.White;
+            this.BUT_Add.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.BUT_Add, "BUT_Add");
             this.BUT_Add.Name = "BUT_Add";
             this.toolTip1.SetToolTip(this.BUT_Add, resources.GetString("BUT_Add.ToolTip"));
             this.BUT_Add.UseVisualStyleBackColor = true;
             this.BUT_Add.Click += new System.EventHandler(this.BUT_Add_Click);
-            // 
-            // comboBoxMapType
-            // 
-            this.comboBoxMapType.BackColor = System.Drawing.Color.Black;
-            this.comboBoxMapType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxMapType.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxMapType, "comboBoxMapType");
-            this.comboBoxMapType.Name = "comboBoxMapType";
-            this.toolTip1.SetToolTip(this.comboBoxMapType, resources.GetString("comboBoxMapType.ToolTip"));
             // 
             // BUT_loadwpfile
             // 
@@ -891,12 +983,19 @@
             // 
             // panelMap
             // 
-            this.panelMap.BackColor = System.Drawing.Color.Black;
-            this.panelMap.Controls.Add(this.panelShowPoint);
-            this.panelMap.Controls.Add(this.panelShowInfo);
-            this.panelMap.Controls.Add(this.tableLayoutPanel5);
-            this.panelMap.Controls.Add(this.MainMap);
+            this.panelMap.BackColor = System.Drawing.Color.Transparent;
             this.panelMap.Controls.Add(this.trackBar1);
+            this.panelMap.Controls.Add(this.panelShowPoint);
+            this.panelMap.Controls.Add(this.btnMeterInfo);
+            this.panelMap.Controls.Add(this.btnWarnning);
+            this.panelMap.Controls.Add(this.btnPlanInfo);
+            this.panelMap.Controls.Add(this.btnFlyingInfo);
+            this.panelMap.Controls.Add(this.btnAutoPan);
+            this.panelMap.Controls.Add(this.ebsPanelMeter);
+            this.panelMap.Controls.Add(this.ebsPanelFlyingInfo);
+            this.panelMap.Controls.Add(this.ebsPanelPlanInfo);
+            this.panelMap.Controls.Add(this.ebsPanelWarning);
+            this.panelMap.Controls.Add(this.MainMap);
             resources.ApplyResources(this.panelMap, "panelMap");
             this.panelMap.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelMap.Name = "panelMap";
@@ -904,80 +1003,38 @@
             // 
             // panelShowPoint
             // 
-            this.panelShowPoint.BackColor = System.Drawing.Color.Black;
-            this.panelShowPoint.Controls.Add(this.breakpointgroupBox);
-            this.panelShowPoint.Controls.Add(this.groupBoxRellyPoint);
-            this.panelShowPoint.Controls.Add(this.groupboxOPoint);
-            this.panelShowPoint.Controls.Add(this.groupBoxAeroPoint);
-            this.panelShowPoint.Controls.Add(this.groupBoxBasePoint);
+            this.panelShowPoint.AssociatedSplitter = null;
+            this.panelShowPoint.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.panelShowPoint, "panelShowPoint");
+            this.panelShowPoint.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.panelShowPoint.CaptionHeight = 27;
+            this.panelShowPoint.Controls.Add(this.groupboxOPoint);
+            this.panelShowPoint.Controls.Add(this.breakpointgroupBox);
+            this.panelShowPoint.Controls.Add(this.groupBoxBasePoint);
+            this.panelShowPoint.Controls.Add(this.groupBoxRellyPoint);
+            this.panelShowPoint.Controls.Add(this.groupBoxAeroPoint);
+            this.panelShowPoint.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panelShowPoint.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panelShowPoint.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panelShowPoint.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panelShowPoint.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panelShowPoint.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panelShowPoint.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panelShowPoint.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panelShowPoint.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panelShowPoint.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panelShowPoint.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panelShowPoint.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panelShowPoint.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panelShowPoint.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panelShowPoint.Image = null;
             this.panelShowPoint.Name = "panelShowPoint";
+            this.panelShowPoint.ToolTipTextCloseIcon = null;
+            this.panelShowPoint.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panelShowPoint.ToolTipTextExpandIconPanelExpanded = null;
             this.panelShowPoint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseDown);
             this.panelShowPoint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseMove);
             this.panelShowPoint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseUp);
-            // 
-            // breakpointgroupBox
-            // 
-            this.breakpointgroupBox.Controls.Add(this.myBtn_write_break_point);
-            this.breakpointgroupBox.Controls.Add(this.myBtn_read_break_point);
-            this.breakpointgroupBox.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.breakpointgroupBox, "breakpointgroupBox");
-            this.breakpointgroupBox.Name = "breakpointgroupBox";
-            this.breakpointgroupBox.TabStop = false;
-            // 
-            // myBtn_write_break_point
-            // 
-            resources.ApplyResources(this.myBtn_write_break_point, "myBtn_write_break_point");
-            this.myBtn_write_break_point.Name = "myBtn_write_break_point";
-            this.myBtn_write_break_point.UseVisualStyleBackColor = true;
-            this.myBtn_write_break_point.Click += new System.EventHandler(this.myBtn_write_break_point_Click);
-            // 
-            // myBtn_read_break_point
-            // 
-            resources.ApplyResources(this.myBtn_read_break_point, "myBtn_read_break_point");
-            this.myBtn_read_break_point.Name = "myBtn_read_break_point";
-            this.myBtn_read_break_point.UseVisualStyleBackColor = true;
-            this.myBtn_read_break_point.Click += new System.EventHandler(this.myBtn_read_break_point_Click);
-            // 
-            // groupBoxRellyPoint
-            // 
-            this.groupBoxRellyPoint.BackColor = System.Drawing.Color.Black;
-            this.groupBoxRellyPoint.Controls.Add(this.myButtonDonwloadRallyPoint);
-            this.groupBoxRellyPoint.Controls.Add(this.myButton_loadRallypoint);
-            this.groupBoxRellyPoint.Controls.Add(this.myButton2);
-            this.groupBoxRellyPoint.Controls.Add(this.myBtnSetRallyPoint);
-            this.groupBoxRellyPoint.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBoxRellyPoint, "groupBoxRellyPoint");
-            this.groupBoxRellyPoint.Name = "groupBoxRellyPoint";
-            this.groupBoxRellyPoint.TabStop = false;
-            // 
-            // myButtonDonwloadRallyPoint
-            // 
-            resources.ApplyResources(this.myButtonDonwloadRallyPoint, "myButtonDonwloadRallyPoint");
-            this.myButtonDonwloadRallyPoint.Name = "myButtonDonwloadRallyPoint";
-            this.myButtonDonwloadRallyPoint.UseVisualStyleBackColor = true;
-            this.myButtonDonwloadRallyPoint.Click += new System.EventHandler(this.getRallyPointsToolStripMenuItem_Click);
-            // 
-            // myButton_loadRallypoint
-            // 
-            resources.ApplyResources(this.myButton_loadRallypoint, "myButton_loadRallypoint");
-            this.myButton_loadRallypoint.Name = "myButton_loadRallypoint";
-            this.myButton_loadRallypoint.UseVisualStyleBackColor = true;
-            this.myButton_loadRallypoint.Click += new System.EventHandler(this.loadFromFileToolStripMenuItem1_Click);
-            // 
-            // myButton2
-            // 
-            resources.ApplyResources(this.myButton2, "myButton2");
-            this.myButton2.Name = "myButton2";
-            this.myButton2.UseVisualStyleBackColor = true;
-            this.myButton2.Click += new System.EventHandler(this.saveRallyPointsToolStripMenuItem_Click);
-            // 
-            // myBtnSetRallyPoint
-            // 
-            resources.ApplyResources(this.myBtnSetRallyPoint, "myBtnSetRallyPoint");
-            this.myBtnSetRallyPoint.Name = "myBtnSetRallyPoint";
-            this.myBtnSetRallyPoint.UseVisualStyleBackColor = true;
-            this.myBtnSetRallyPoint.Click += new System.EventHandler(this.setRallyPoint_Click);
             // 
             // groupboxOPoint
             // 
@@ -1034,13 +1091,98 @@
             this.myBtnSendPoint.UseVisualStyleBackColor = true;
             this.myBtnSendPoint.Click += new System.EventHandler(this.myBtnSendLimitPoint_Click);
             // 
+            // breakpointgroupBox
+            // 
+            resources.ApplyResources(this.breakpointgroupBox, "breakpointgroupBox");
+            this.breakpointgroupBox.Controls.Add(this.myBtn_write_break_point);
+            this.breakpointgroupBox.Controls.Add(this.myBtn_read_break_point);
+            this.breakpointgroupBox.ForeColor = System.Drawing.Color.Black;
+            this.breakpointgroupBox.Name = "breakpointgroupBox";
+            this.breakpointgroupBox.TabStop = false;
+            // 
+            // myBtn_write_break_point
+            // 
+            this.myBtn_write_break_point.BGGradBot = System.Drawing.Color.White;
+            this.myBtn_write_break_point.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myBtn_write_break_point, "myBtn_write_break_point");
+            this.myBtn_write_break_point.Name = "myBtn_write_break_point";
+            this.myBtn_write_break_point.UseVisualStyleBackColor = true;
+            this.myBtn_write_break_point.Click += new System.EventHandler(this.myBtn_write_break_point_Click);
+            // 
+            // myBtn_read_break_point
+            // 
+            this.myBtn_read_break_point.BGGradBot = System.Drawing.Color.White;
+            this.myBtn_read_break_point.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myBtn_read_break_point, "myBtn_read_break_point");
+            this.myBtn_read_break_point.Name = "myBtn_read_break_point";
+            this.myBtn_read_break_point.UseVisualStyleBackColor = true;
+            this.myBtn_read_break_point.Click += new System.EventHandler(this.myBtn_read_break_point_Click);
+            // 
+            // groupBoxBasePoint
+            // 
+            resources.ApplyResources(this.groupBoxBasePoint, "groupBoxBasePoint");
+            this.groupBoxBasePoint.Controls.Add(this.BUT_loadwpfile);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_write);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_read);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_saveWPFile);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_Add);
+            this.groupBoxBasePoint.ForeColor = System.Drawing.Color.Black;
+            this.groupBoxBasePoint.Name = "groupBoxBasePoint";
+            this.groupBoxBasePoint.TabStop = false;
+            // 
+            // groupBoxRellyPoint
+            // 
+            this.groupBoxRellyPoint.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.groupBoxRellyPoint, "groupBoxRellyPoint");
+            this.groupBoxRellyPoint.Controls.Add(this.myButtonDonwloadRallyPoint);
+            this.groupBoxRellyPoint.Controls.Add(this.myButton_loadRallypoint);
+            this.groupBoxRellyPoint.Controls.Add(this.myButton2);
+            this.groupBoxRellyPoint.Controls.Add(this.myBtnSetRallyPoint);
+            this.groupBoxRellyPoint.ForeColor = System.Drawing.Color.Black;
+            this.groupBoxRellyPoint.Name = "groupBoxRellyPoint";
+            this.groupBoxRellyPoint.TabStop = false;
+            // 
+            // myButtonDonwloadRallyPoint
+            // 
+            this.myButtonDonwloadRallyPoint.BGGradBot = System.Drawing.Color.White;
+            this.myButtonDonwloadRallyPoint.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myButtonDonwloadRallyPoint, "myButtonDonwloadRallyPoint");
+            this.myButtonDonwloadRallyPoint.Name = "myButtonDonwloadRallyPoint";
+            this.myButtonDonwloadRallyPoint.UseVisualStyleBackColor = true;
+            this.myButtonDonwloadRallyPoint.Click += new System.EventHandler(this.getRallyPointsToolStripMenuItem_Click);
+            // 
+            // myButton_loadRallypoint
+            // 
+            resources.ApplyResources(this.myButton_loadRallypoint, "myButton_loadRallypoint");
+            this.myButton_loadRallypoint.Name = "myButton_loadRallypoint";
+            this.myButton_loadRallypoint.UseVisualStyleBackColor = true;
+            this.myButton_loadRallypoint.Click += new System.EventHandler(this.loadFromFileToolStripMenuItem1_Click);
+            // 
+            // myButton2
+            // 
+            this.myButton2.BGGradBot = System.Drawing.Color.White;
+            this.myButton2.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myButton2, "myButton2");
+            this.myButton2.Name = "myButton2";
+            this.myButton2.UseVisualStyleBackColor = true;
+            this.myButton2.Click += new System.EventHandler(this.saveRallyPointsToolStripMenuItem_Click);
+            // 
+            // myBtnSetRallyPoint
+            // 
+            this.myBtnSetRallyPoint.BGGradBot = System.Drawing.Color.White;
+            this.myBtnSetRallyPoint.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myBtnSetRallyPoint, "myBtnSetRallyPoint");
+            this.myBtnSetRallyPoint.Name = "myBtnSetRallyPoint";
+            this.myBtnSetRallyPoint.UseVisualStyleBackColor = true;
+            this.myBtnSetRallyPoint.Click += new System.EventHandler(this.setRallyPoint_Click);
+            // 
             // groupBoxAeroPoint
             // 
+            resources.ApplyResources(this.groupBoxAeroPoint, "groupBoxAeroPoint");
             this.groupBoxAeroPoint.Controls.Add(this.tableLayoutPanelRoute);
             this.groupBoxAeroPoint.Controls.Add(this.myBtnLoadAeroPoint);
             this.groupBoxAeroPoint.Controls.Add(this.myBtnAddPoint);
-            this.groupBoxAeroPoint.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBoxAeroPoint, "groupBoxAeroPoint");
+            this.groupBoxAeroPoint.ForeColor = System.Drawing.Color.Black;
             this.groupBoxAeroPoint.Name = "groupBoxAeroPoint";
             this.groupBoxAeroPoint.TabStop = false;
             // 
@@ -1058,60 +1200,415 @@
             // 
             // myBtnAddPoint
             // 
+            this.myBtnAddPoint.BGGradBot = System.Drawing.Color.White;
+            this.myBtnAddPoint.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myBtnAddPoint, "myBtnAddPoint");
             this.myBtnAddPoint.Name = "myBtnAddPoint";
             this.myBtnAddPoint.UseVisualStyleBackColor = true;
             this.myBtnAddPoint.Click += new System.EventHandler(this.myBtnAddPoint_Click);
             // 
-            // groupBoxBasePoint
+            // btnMeterInfo
             // 
-            this.groupBoxBasePoint.Controls.Add(this.BUT_loadwpfile);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_write);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_read);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_saveWPFile);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_Add);
-            this.groupBoxBasePoint.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBoxBasePoint, "groupBoxBasePoint");
-            this.groupBoxBasePoint.Name = "groupBoxBasePoint";
-            this.groupBoxBasePoint.TabStop = false;
+            this.btnMeterInfo.BGGradBot = System.Drawing.Color.White;
+            this.btnMeterInfo.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnMeterInfo, "btnMeterInfo");
+            this.btnMeterInfo.Name = "btnMeterInfo";
+            this.btnMeterInfo.Tag = "";
+            this.btnMeterInfo.UseVisualStyleBackColor = true;
+            this.btnMeterInfo.Click += new System.EventHandler(this.btnMeterInfo_Click);
             // 
-            // panelShowInfo
+            // btnWarnning
             // 
-            this.panelShowInfo.BackColor = System.Drawing.Color.Black;
-            this.panelShowInfo.Controls.Add(this.tableLayoutPanel7);
-            resources.ApplyResources(this.panelShowInfo, "panelShowInfo");
-            this.panelShowInfo.Name = "panelShowInfo";
+            this.btnWarnning.BGGradBot = System.Drawing.Color.White;
+            this.btnWarnning.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnWarnning, "btnWarnning");
+            this.btnWarnning.Name = "btnWarnning";
+            this.btnWarnning.Tag = "";
+            this.btnWarnning.UseVisualStyleBackColor = true;
+            this.btnWarnning.Click += new System.EventHandler(this.btnWarnning_Click);
             // 
-            // tableLayoutPanel7
+            // btnPlanInfo
             // 
-            this.tableLayoutPanel7.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tableLayoutPanel7, "tableLayoutPanel7");
-            this.tableLayoutPanel7.Controls.Add(this.lblDoneArea1, 5, 2);
-            this.tableLayoutPanel7.Controls.Add(this.lblDoneArea, 4, 2);
-            this.tableLayoutPanel7.Controls.Add(this.lblBearToHome1, 5, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblBearToHome, 4, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblDisToHome1, 5, 0);
-            this.tableLayoutPanel7.Controls.Add(this.label15, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblArea, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.lblAero, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.lblStrips, 1, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblStrip, 2, 0);
-            this.tableLayoutPanel7.Controls.Add(this.lblDistance, 3, 0);
-            this.tableLayoutPanel7.Controls.Add(this.lblDistance1, 2, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblDistbetweenlines, 3, 1);
-            this.tableLayoutPanel7.Controls.Add(this.lblFlyTime, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.lblFlighttime, 1, 2);
-            this.tableLayoutPanel7.Controls.Add(this.label1, 2, 2);
-            this.tableLayoutPanel7.Controls.Add(this.lblHeadinghold, 3, 2);
-            this.tableLayoutPanel7.Controls.Add(this.lblDisToHome, 4, 0);
-            this.tableLayoutPanel7.ForeColor = System.Drawing.Color.White;
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.btnPlanInfo.BGGradBot = System.Drawing.Color.White;
+            this.btnPlanInfo.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnPlanInfo, "btnPlanInfo");
+            this.btnPlanInfo.Name = "btnPlanInfo";
+            this.btnPlanInfo.Tag = "";
+            this.btnPlanInfo.UseVisualStyleBackColor = true;
+            this.btnPlanInfo.Click += new System.EventHandler(this.btnPlanInfo_Click);
             // 
-            // lblDoneArea1
+            // btnFlyingInfo
             // 
-            resources.ApplyResources(this.lblDoneArea1, "lblDoneArea1");
-            this.lblDoneArea1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDoneArea1.Name = "lblDoneArea1";
+            this.btnFlyingInfo.BGGradBot = System.Drawing.Color.White;
+            this.btnFlyingInfo.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnFlyingInfo, "btnFlyingInfo");
+            this.btnFlyingInfo.Name = "btnFlyingInfo";
+            this.btnFlyingInfo.Tag = "";
+            this.btnFlyingInfo.UseVisualStyleBackColor = true;
+            this.btnFlyingInfo.Click += new System.EventHandler(this.btnFlyingInfo_Click);
+            // 
+            // btnAutoPan
+            // 
+            resources.ApplyResources(this.btnAutoPan, "btnAutoPan");
+            this.btnAutoPan.BGGradBot = System.Drawing.Color.White;
+            this.btnAutoPan.BGGradTop = System.Drawing.Color.White;
+            this.btnAutoPan.Name = "btnAutoPan";
+            this.btnAutoPan.Tag = "";
+            this.btnAutoPan.UseVisualStyleBackColor = true;
+            this.btnAutoPan.Click += new System.EventHandler(this.btnAutoPan_Click);
+            // 
+            // ebsPanelMeter
+            // 
+            this.ebsPanelMeter.AssociatedSplitter = null;
+            this.ebsPanelMeter.BackColor = System.Drawing.Color.Transparent;
+            this.ebsPanelMeter.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ebsPanelMeter.CaptionHeight = 27;
+            this.ebsPanelMeter.Controls.Add(this.hud1);
+            this.ebsPanelMeter.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.ebsPanelMeter.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelMeter.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelMeter.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelMeter.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelMeter.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.ebsPanelMeter.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelMeter.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelMeter.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelMeter.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelMeter.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelMeter.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelMeter.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.ebsPanelMeter.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelMeter.Image = null;
+            resources.ApplyResources(this.ebsPanelMeter, "ebsPanelMeter");
+            this.ebsPanelMeter.Name = "ebsPanelMeter";
+            this.ebsPanelMeter.ToolTipTextCloseIcon = null;
+            this.ebsPanelMeter.ToolTipTextExpandIconPanelCollapsed = null;
+            this.ebsPanelMeter.ToolTipTextExpandIconPanelExpanded = null;
+            this.ebsPanelMeter.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowMeter_MouseDown);
+            this.ebsPanelMeter.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowMeter_MouseMove);
+            this.ebsPanelMeter.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowMeter_MouseUp);
+            // 
+            // hud1
+            // 
+            this.hud1.airspeed = 0F;
+            this.hud1.alt = 0F;
+            this.hud1.BackColor = System.Drawing.Color.Transparent;
+            this.hud1.batterylevel = 0F;
+            this.hud1.batteryremaining = 0F;
+            this.hud1.connected = false;
+            this.hud1.current = 0F;
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("airspeed", this.bindingSource1, "airspeed", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("alt", this.bindingSource1, "alt", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("batterylevel", this.bindingSource1, "battery_voltage", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("batteryremaining", this.bindingSource1, "battery_remaining", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("connected", this.bindingSource1, "connected", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("current", this.bindingSource1, "current", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("datetime", this.bindingSource1, "datetime", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("disttowp", this.bindingSource1, "wp_dist", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("ekfstatus", this.bindingSource1, "ekfstatus", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("failsafe", this.bindingSource1, "failsafe", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.bindingSource1, "gpsstatus", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("gpshdop", this.bindingSource1, "gpshdop", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("groundalt", this.bindingSource1, "HomeAlt", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("groundcourse", this.bindingSource1, "groundcourse", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("groundspeed", this.bindingSource1, "groundspeed", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("heading", this.bindingSource1, "yaw", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("linkqualitygcs", this.bindingSource1, "linkqualitygcs", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("messagetime", this.bindingSource1, "messageHighTime", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("navpitch", this.bindingSource1, "nav_pitch", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("navroll", this.bindingSource1, "nav_roll", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("pitch", this.bindingSource1, "pitch", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("roll", this.bindingSource1, "roll", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("targetalt", this.bindingSource1, "targetalt", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("targetheading", this.bindingSource1, "nav_bearing", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("targetspeed", this.bindingSource1, "targetairspeed", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("turnrate", this.bindingSource1, "turnrate", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("verticalspeed", this.bindingSource1, "verticalspeed", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("vibex", this.bindingSource1, "vibex", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("vibey", this.bindingSource1, "vibey", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("vibez", this.bindingSource1, "vibez", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("wpno", this.bindingSource1, "wpno", true));
+            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("xtrack_error", this.bindingSource1, "xtrack_error", true));
+            this.hud1.datetime = new System.DateTime(((long)(0)));
+            this.hud1.disttowp = 0F;
+            resources.ApplyResources(this.hud1, "hud1");
+            this.hud1.ekfstatus = 0F;
+            this.hud1.failsafe = false;
+            this.hud1.gpsfix = 0F;
+            this.hud1.gpshdop = 0F;
+            this.hud1.groundalt = 0F;
+            this.hud1.groundcourse = 0F;
+            this.hud1.groundspeed = 0F;
+            this.hud1.heading = 0F;
+            this.hud1.hudcolor = System.Drawing.Color.Transparent;
+            this.hud1.linkqualitygcs = 0F;
+            this.hud1.lowairspeed = false;
+            this.hud1.lowgroundspeed = false;
+            this.hud1.lowvoltagealert = false;
+            this.hud1.message = "";
+            this.hud1.messagetime = new System.DateTime(((long)(0)));
+            this.hud1.mode = "";
+            this.hud1.Name = "hud1";
+            this.hud1.navpitch = 0F;
+            this.hud1.navroll = 0F;
+            this.hud1.opengl = true;
+            this.hud1.pitch = 0F;
+            this.hud1.roll = 0F;
+            this.hud1.Russian = false;
+            this.hud1.status = false;
+            this.hud1.streamjpg = null;
+            this.hud1.targetalt = 0F;
+            this.hud1.targetheading = 0F;
+            this.hud1.targetspeed = 0F;
+            this.hud1.turnrate = 0F;
+            this.hud1.UseOpenGL = true;
+            this.hud1.verticalspeed = 0F;
+            this.hud1.vibex = 0F;
+            this.hud1.vibey = 0F;
+            this.hud1.vibez = 0F;
+            this.hud1.VSync = false;
+            this.hud1.wpno = 0;
+            this.hud1.xtrack_error = 0F;
+            // 
+            // ebsPanelFlyingInfo
+            // 
+            resources.ApplyResources(this.ebsPanelFlyingInfo, "ebsPanelFlyingInfo");
+            this.ebsPanelFlyingInfo.AssociatedSplitter = null;
+            this.ebsPanelFlyingInfo.BackColor = System.Drawing.Color.Transparent;
+            this.ebsPanelFlyingInfo.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ebsPanelFlyingInfo.CaptionHeight = 27;
+            this.ebsPanelFlyingInfo.Controls.Add(this.QVSonarRange);
+            this.ebsPanelFlyingInfo.Controls.Add(this.Qvtohome);
+            this.ebsPanelFlyingInfo.Controls.Add(this.Qvdist);
+            this.ebsPanelFlyingInfo.Controls.Add(this.Qvgroundspeed);
+            this.ebsPanelFlyingInfo.Controls.Add(this.Qvverspeed);
+            this.ebsPanelFlyingInfo.Controls.Add(this.Qvalt);
+            this.ebsPanelFlyingInfo.Controls.Add(this.qvpitch);
+            this.ebsPanelFlyingInfo.Controls.Add(this.qvyaw);
+            this.ebsPanelFlyingInfo.Controls.Add(this.qvroll);
+            this.ebsPanelFlyingInfo.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.ebsPanelFlyingInfo.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelFlyingInfo.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelFlyingInfo.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelFlyingInfo.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelFlyingInfo.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.ebsPanelFlyingInfo.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelFlyingInfo.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelFlyingInfo.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelFlyingInfo.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelFlyingInfo.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelFlyingInfo.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelFlyingInfo.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.ebsPanelFlyingInfo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelFlyingInfo.Image = null;
+            this.ebsPanelFlyingInfo.Name = "ebsPanelFlyingInfo";
+            this.ebsPanelFlyingInfo.ToolTipTextCloseIcon = null;
+            this.ebsPanelFlyingInfo.ToolTipTextExpandIconPanelCollapsed = null;
+            this.ebsPanelFlyingInfo.ToolTipTextExpandIconPanelExpanded = null;
+            this.ebsPanelFlyingInfo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowFlyigInfo_MouseDown);
+            this.ebsPanelFlyingInfo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowFlyigInfo_MouseMove);
+            this.ebsPanelFlyingInfo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowFlyigInfo_MouseUp);
+            // 
+            // QVSonarRange
+            // 
+            this.QVSonarRange.BackColor = System.Drawing.Color.Transparent;
+            this.QVSonarRange.backColor1 = System.Drawing.Color.Transparent;
+            this.QVSonarRange.backColor2 = System.Drawing.Color.Black;
+            this.QVSonarRange.backColor3 = System.Drawing.Color.Transparent;
+            this.QVSonarRange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.QVSonarRange.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "sonarrange", true));
+            this.QVSonarRange.desc = "雷达范围(M):";
+            resources.ApplyResources(this.QVSonarRange, "QVSonarRange");
+            this.QVSonarRange.Name = "QVSonarRange";
+            this.QVSonarRange.number = 0D;
+            this.QVSonarRange.numberColor = System.Drawing.Color.Lime;
+            this.QVSonarRange.numberformat = "0.00";
+            // 
+            // Qvtohome
+            // 
+            this.Qvtohome.BackColor = System.Drawing.Color.Transparent;
+            this.Qvtohome.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvtohome.backColor2 = System.Drawing.Color.Black;
+            this.Qvtohome.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvtohome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvtohome.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "DistToHome", true));
+            this.Qvtohome.desc = "距离返航点(M):";
+            resources.ApplyResources(this.Qvtohome, "Qvtohome");
+            this.Qvtohome.Name = "Qvtohome";
+            this.Qvtohome.number = 0D;
+            this.Qvtohome.numberColor = System.Drawing.Color.Lime;
+            this.Qvtohome.numberformat = "0.00";
+            // 
+            // Qvdist
+            // 
+            this.Qvdist.BackColor = System.Drawing.Color.Transparent;
+            this.Qvdist.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvdist.backColor2 = System.Drawing.Color.Black;
+            this.Qvdist.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvdist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvdist.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "wp_dist", true));
+            this.Qvdist.desc = "距离目标点(M):";
+            resources.ApplyResources(this.Qvdist, "Qvdist");
+            this.Qvdist.Name = "Qvdist";
+            this.Qvdist.number = 0D;
+            this.Qvdist.numberColor = System.Drawing.Color.Lime;
+            this.Qvdist.numberformat = "0.00";
+            // 
+            // Qvgroundspeed
+            // 
+            this.Qvgroundspeed.BackColor = System.Drawing.Color.Transparent;
+            this.Qvgroundspeed.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvgroundspeed.backColor2 = System.Drawing.Color.Black;
+            this.Qvgroundspeed.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvgroundspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvgroundspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "groundspeed", true));
+            this.Qvgroundspeed.desc = "速度(M/S):";
+            resources.ApplyResources(this.Qvgroundspeed, "Qvgroundspeed");
+            this.Qvgroundspeed.Name = "Qvgroundspeed";
+            this.Qvgroundspeed.number = 0D;
+            this.Qvgroundspeed.numberColor = System.Drawing.Color.Lime;
+            this.Qvgroundspeed.numberformat = "0.00";
+            // 
+            // Qvverspeed
+            // 
+            this.Qvverspeed.BackColor = System.Drawing.Color.Transparent;
+            this.Qvverspeed.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvverspeed.backColor2 = System.Drawing.Color.Black;
+            this.Qvverspeed.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvverspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvverspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "verticalspeed", true));
+            this.Qvverspeed.desc = "垂直速度(M/S):";
+            resources.ApplyResources(this.Qvverspeed, "Qvverspeed");
+            this.Qvverspeed.Name = "Qvverspeed";
+            this.Qvverspeed.number = 0D;
+            this.Qvverspeed.numberColor = System.Drawing.Color.Lime;
+            this.Qvverspeed.numberformat = "0.00";
+            // 
+            // Qvalt
+            // 
+            this.Qvalt.BackColor = System.Drawing.Color.Transparent;
+            this.Qvalt.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvalt.backColor2 = System.Drawing.Color.Black;
+            this.Qvalt.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "alt", true));
+            this.Qvalt.desc = "高度(M):";
+            resources.ApplyResources(this.Qvalt, "Qvalt");
+            this.Qvalt.Name = "Qvalt";
+            this.Qvalt.number = 0D;
+            this.Qvalt.numberColor = System.Drawing.Color.Lime;
+            this.Qvalt.numberformat = "0.00";
+            // 
+            // qvpitch
+            // 
+            this.qvpitch.BackColor = System.Drawing.Color.Transparent;
+            this.qvpitch.backColor1 = System.Drawing.Color.Transparent;
+            this.qvpitch.backColor2 = System.Drawing.Color.Black;
+            this.qvpitch.backColor3 = System.Drawing.Color.Transparent;
+            this.qvpitch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qvpitch.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "pitch", true));
+            this.qvpitch.desc = "俯仰角度(D):";
+            resources.ApplyResources(this.qvpitch, "qvpitch");
+            this.qvpitch.Name = "qvpitch";
+            this.qvpitch.number = 0D;
+            this.qvpitch.numberColor = System.Drawing.Color.Lime;
+            this.qvpitch.numberformat = "0.00";
+            // 
+            // qvyaw
+            // 
+            this.qvyaw.BackColor = System.Drawing.Color.Transparent;
+            this.qvyaw.backColor1 = System.Drawing.Color.Transparent;
+            this.qvyaw.backColor2 = System.Drawing.Color.Black;
+            this.qvyaw.backColor3 = System.Drawing.Color.Transparent;
+            this.qvyaw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qvyaw.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "yaw", true));
+            this.qvyaw.desc = "航向角度(D):";
+            resources.ApplyResources(this.qvyaw, "qvyaw");
+            this.qvyaw.Name = "qvyaw";
+            this.qvyaw.number = 0D;
+            this.qvyaw.numberColor = System.Drawing.Color.Lime;
+            this.qvyaw.numberformat = "0.00";
+            // 
+            // qvroll
+            // 
+            this.qvroll.BackColor = System.Drawing.Color.Transparent;
+            this.qvroll.backColor1 = System.Drawing.Color.Transparent;
+            this.qvroll.backColor2 = System.Drawing.Color.Black;
+            this.qvroll.backColor3 = System.Drawing.Color.Transparent;
+            this.qvroll.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qvroll.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "roll", true));
+            this.qvroll.desc = "滚转角度(D):";
+            resources.ApplyResources(this.qvroll, "qvroll");
+            this.qvroll.Name = "qvroll";
+            this.qvroll.number = 0D;
+            this.qvroll.numberColor = System.Drawing.Color.Lime;
+            this.qvroll.numberformat = "0.00";
+            // 
+            // ebsPanelPlanInfo
+            // 
+            resources.ApplyResources(this.ebsPanelPlanInfo, "ebsPanelPlanInfo");
+            this.ebsPanelPlanInfo.AssociatedSplitter = null;
+            this.ebsPanelPlanInfo.BackColor = System.Drawing.Color.Transparent;
+            this.ebsPanelPlanInfo.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ebsPanelPlanInfo.CaptionHeight = 27;
+            this.ebsPanelPlanInfo.Controls.Add(this.panel13);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblDoneArea);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblFlyTime);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblDistance1);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblStrip);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblAero);
+            this.ebsPanelPlanInfo.Controls.Add(this.label1);
+            this.ebsPanelPlanInfo.Controls.Add(this.label15);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel9);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel11);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblBearToHome);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel10);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel5);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel8);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel7);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel12);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel4);
+            this.ebsPanelPlanInfo.Controls.Add(this.myButtonLand);
+            this.ebsPanelPlanInfo.Controls.Add(this.myBtnFunction);
+            this.ebsPanelPlanInfo.Controls.Add(this.BUT_quickauto1);
+            this.ebsPanelPlanInfo.Controls.Add(this.BUT_clear_track1);
+            this.ebsPanelPlanInfo.Controls.Add(this.btnLoiterUnlim);
+            this.ebsPanelPlanInfo.Controls.Add(this.lblDisToHome);
+            this.ebsPanelPlanInfo.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.ebsPanelPlanInfo.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelPlanInfo.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelPlanInfo.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelPlanInfo.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelPlanInfo.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.ebsPanelPlanInfo.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelPlanInfo.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelPlanInfo.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelPlanInfo.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelPlanInfo.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelPlanInfo.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelPlanInfo.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.ebsPanelPlanInfo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelPlanInfo.Image = null;
+            this.ebsPanelPlanInfo.Name = "ebsPanelPlanInfo";
+            this.ebsPanelPlanInfo.ToolTipTextCloseIcon = null;
+            this.ebsPanelPlanInfo.ToolTipTextExpandIconPanelCollapsed = null;
+            this.ebsPanelPlanInfo.ToolTipTextExpandIconPanelExpanded = null;
+            this.ebsPanelPlanInfo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowPlan_MouseDown);
+            this.ebsPanelPlanInfo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowPlan_MouseMove);
+            this.ebsPanelPlanInfo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowPlan_MouseUp);
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Controls.Add(this.lblFlighttime);
+            resources.ApplyResources(this.panel13, "panel13");
+            this.panel13.Name = "panel13";
+            // 
+            // lblFlighttime
+            // 
+            resources.ApplyResources(this.lblFlighttime, "lblFlighttime");
+            this.lblFlighttime.ForeColor = System.Drawing.Color.White;
+            this.lblFlighttime.Name = "lblFlighttime";
             // 
             // lblDoneArea
             // 
@@ -1119,88 +1616,33 @@
             this.lblDoneArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDoneArea.Name = "lblDoneArea";
             // 
-            // lblBearToHome1
+            // lblFlyTime
             // 
-            resources.ApplyResources(this.lblBearToHome1, "lblBearToHome1");
-            this.lblBearToHome1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblBearToHome1.Name = "lblBearToHome1";
-            // 
-            // lblBearToHome
-            // 
-            resources.ApplyResources(this.lblBearToHome, "lblBearToHome");
-            this.lblBearToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblBearToHome.Name = "lblBearToHome";
-            // 
-            // lblDisToHome1
-            // 
-            resources.ApplyResources(this.lblDisToHome1, "lblDisToHome1");
-            this.lblDisToHome1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDisToHome1.Name = "lblDisToHome1";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Name = "label15";
-            // 
-            // lblArea
-            // 
-            resources.ApplyResources(this.lblArea, "lblArea");
-            this.lblArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblArea.Name = "lblArea";
-            // 
-            // lblAero
-            // 
-            resources.ApplyResources(this.lblAero, "lblAero");
-            this.lblAero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAero.ForeColor = System.Drawing.Color.White;
-            this.lblAero.Name = "lblAero";
-            // 
-            // lblStrips
-            // 
-            resources.ApplyResources(this.lblStrips, "lblStrips");
-            this.lblStrips.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStrips.Name = "lblStrips";
-            // 
-            // lblStrip
-            // 
-            resources.ApplyResources(this.lblStrip, "lblStrip");
-            this.lblStrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblStrip.ForeColor = System.Drawing.Color.White;
-            this.lblStrip.Name = "lblStrip";
-            // 
-            // lblDistance
-            // 
-            resources.ApplyResources(this.lblDistance, "lblDistance");
-            this.lblDistance.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDistance.Name = "lblDistance";
+            resources.ApplyResources(this.lblFlyTime, "lblFlyTime");
+            this.lblFlyTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblFlyTime.ForeColor = System.Drawing.Color.Black;
+            this.lblFlyTime.Name = "lblFlyTime";
             // 
             // lblDistance1
             // 
             resources.ApplyResources(this.lblDistance1, "lblDistance1");
             this.lblDistance1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDistance1.ForeColor = System.Drawing.Color.White;
+            this.lblDistance1.ForeColor = System.Drawing.Color.Black;
             this.lblDistance1.Name = "lblDistance1";
             // 
-            // lblDistbetweenlines
+            // lblStrip
             // 
-            resources.ApplyResources(this.lblDistbetweenlines, "lblDistbetweenlines");
-            this.lblDistbetweenlines.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDistbetweenlines.Name = "lblDistbetweenlines";
+            resources.ApplyResources(this.lblStrip, "lblStrip");
+            this.lblStrip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblStrip.ForeColor = System.Drawing.Color.Black;
+            this.lblStrip.Name = "lblStrip";
             // 
-            // lblFlyTime
+            // lblAero
             // 
-            resources.ApplyResources(this.lblFlyTime, "lblFlyTime");
-            this.lblFlyTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblFlyTime.ForeColor = System.Drawing.Color.White;
-            this.lblFlyTime.Name = "lblFlyTime";
-            // 
-            // lblFlighttime
-            // 
-            resources.ApplyResources(this.lblFlighttime, "lblFlighttime");
-            this.lblFlighttime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblFlighttime.Name = "lblFlighttime";
+            resources.ApplyResources(this.lblAero, "lblAero");
+            this.lblAero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblAero.ForeColor = System.Drawing.Color.Black;
+            this.lblAero.Name = "lblAero";
             // 
             // label1
             // 
@@ -1209,11 +1651,168 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Name = "label1";
             // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Name = "label15";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Black;
+            this.panel9.Controls.Add(this.lblStrips);
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.Name = "panel9";
+            // 
+            // lblStrips
+            // 
+            resources.ApplyResources(this.lblStrips, "lblStrips");
+            this.lblStrips.ForeColor = System.Drawing.Color.White;
+            this.lblStrips.Name = "lblStrips";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Black;
+            this.panel11.Controls.Add(this.lblHeadinghold);
+            this.panel11.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel11, "panel11");
+            this.panel11.Name = "panel11";
+            // 
             // lblHeadinghold
             // 
             resources.ApplyResources(this.lblHeadinghold, "lblHeadinghold");
-            this.lblHeadinghold.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHeadinghold.Name = "lblHeadinghold";
+            // 
+            // lblBearToHome
+            // 
+            resources.ApplyResources(this.lblBearToHome, "lblBearToHome");
+            this.lblBearToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblBearToHome.Name = "lblBearToHome";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Black;
+            this.panel10.Controls.Add(this.lblDistance);
+            this.panel10.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
+            // 
+            // lblDistance
+            // 
+            resources.ApplyResources(this.lblDistance, "lblDistance");
+            this.lblDistance.Name = "lblDistance";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Controls.Add(this.lblDoneArea1);
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.Name = "panel5";
+            // 
+            // lblDoneArea1
+            // 
+            resources.ApplyResources(this.lblDoneArea1, "lblDoneArea1");
+            this.lblDoneArea1.BackColor = System.Drawing.Color.Transparent;
+            this.lblDoneArea1.Name = "lblDoneArea1";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.Controls.Add(this.lblArea);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // lblArea
+            // 
+            resources.ApplyResources(this.lblArea, "lblArea");
+            this.lblArea.ForeColor = System.Drawing.Color.White;
+            this.lblArea.Name = "lblArea";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.lblBearToHome1);
+            this.panel7.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // lblBearToHome1
+            // 
+            resources.ApplyResources(this.lblBearToHome1, "lblBearToHome1");
+            this.lblBearToHome1.Name = "lblBearToHome1";
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Black;
+            this.panel12.Controls.Add(this.lblDisToHome1);
+            this.panel12.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel12, "panel12");
+            this.panel12.Name = "panel12";
+            // 
+            // lblDisToHome1
+            // 
+            resources.ApplyResources(this.lblDisToHome1, "lblDisToHome1");
+            this.lblDisToHome1.Name = "lblDisToHome1";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.lblDistbetweenlines);
+            this.panel4.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // lblDistbetweenlines
+            // 
+            resources.ApplyResources(this.lblDistbetweenlines, "lblDistbetweenlines");
+            this.lblDistbetweenlines.Name = "lblDistbetweenlines";
+            // 
+            // myButtonLand
+            // 
+            this.myButtonLand.BGGradBot = System.Drawing.Color.White;
+            this.myButtonLand.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myButtonLand, "myButtonLand");
+            this.myButtonLand.Name = "myButtonLand";
+            this.myButtonLand.UseVisualStyleBackColor = true;
+            this.myButtonLand.Click += new System.EventHandler(this.myButtonLand_Click);
+            // 
+            // myBtnFunction
+            // 
+            this.myBtnFunction.BGGradBot = System.Drawing.Color.White;
+            this.myBtnFunction.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myBtnFunction, "myBtnFunction");
+            this.myBtnFunction.Name = "myBtnFunction";
+            this.myBtnFunction.UseVisualStyleBackColor = true;
+            this.myBtnFunction.Click += new System.EventHandler(this.myBtnFunction_Click);
+            // 
+            // BUT_quickauto1
+            // 
+            this.BUT_quickauto1.BGGradBot = System.Drawing.Color.White;
+            this.BUT_quickauto1.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
+            this.BUT_quickauto1.Name = "BUT_quickauto1";
+            this.BUT_quickauto1.UseVisualStyleBackColor = true;
+            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
+            // 
+            // BUT_clear_track1
+            // 
+            this.BUT_clear_track1.BGGradBot = System.Drawing.Color.White;
+            this.BUT_clear_track1.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
+            this.BUT_clear_track1.Name = "BUT_clear_track1";
+            this.BUT_clear_track1.UseVisualStyleBackColor = true;
+            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
+            // 
+            // btnLoiterUnlim
+            // 
+            this.btnLoiterUnlim.BGGradBot = System.Drawing.Color.White;
+            this.btnLoiterUnlim.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
+            this.btnLoiterUnlim.Name = "btnLoiterUnlim";
+            this.btnLoiterUnlim.UseVisualStyleBackColor = true;
+            this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
             // 
             // lblDisToHome
             // 
@@ -1221,49 +1820,51 @@
             this.lblDisToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDisToHome.Name = "lblDisToHome";
             // 
-            // tableLayoutPanel5
+            // ebsPanelWarning
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tableLayoutPanel5, "tableLayoutPanel5");
-            this.tableLayoutPanel5.Controls.Add(this.lbl_distance, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lbl_homedist, 3, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lbl_prevdist, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.coords1, 4, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lblhxj, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lblHorizontalError, 5, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lblSataCount, 6, 0);
-            this.tableLayoutPanel5.Controls.Add(this.lblShowTime, 7, 0);
-            this.tableLayoutPanel5.Controls.Add(this.BtnClear, 8, 0);
-            this.tableLayoutPanel5.Controls.Add(this.CHK_autopan, 9, 0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            resources.ApplyResources(this.ebsPanelWarning, "ebsPanelWarning");
+            this.ebsPanelWarning.AssociatedSplitter = null;
+            this.ebsPanelWarning.BackColor = System.Drawing.Color.Transparent;
+            this.ebsPanelWarning.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ebsPanelWarning.CaptionHeight = 27;
+            this.ebsPanelWarning.Controls.Add(this.panel14);
+            this.ebsPanelWarning.Controls.Add(this.panel15);
+            this.ebsPanelWarning.Controls.Add(this.panel2);
+            this.ebsPanelWarning.Controls.Add(this.BtnClear);
+            this.ebsPanelWarning.Controls.Add(this.lblStaCount);
+            this.ebsPanelWarning.Controls.Add(this.tableLayoutPanel6);
+            this.ebsPanelWarning.Controls.Add(this.lblHorizontal);
+            this.ebsPanelWarning.Controls.Add(this.lblTime);
+            this.ebsPanelWarning.Controls.Add(this.txt_messagebox);
+            this.ebsPanelWarning.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.ebsPanelWarning.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelWarning.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelWarning.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelWarning.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelWarning.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.ebsPanelWarning.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelWarning.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.ebsPanelWarning.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelWarning.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelWarning.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.ebsPanelWarning.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.ebsPanelWarning.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.ebsPanelWarning.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ebsPanelWarning.Image = null;
+            this.ebsPanelWarning.Name = "ebsPanelWarning";
+            this.ebsPanelWarning.ToolTipTextCloseIcon = null;
+            this.ebsPanelWarning.ToolTipTextExpandIconPanelCollapsed = null;
+            this.ebsPanelWarning.ToolTipTextExpandIconPanelExpanded = null;
+            this.ebsPanelWarning.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowWarningInfo_MouseDown);
+            this.ebsPanelWarning.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowWarningInfo_MouseMove);
+            this.ebsPanelWarning.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowWarningInfo_MouseUp);
             // 
-            // lbl_distance
+            // panel14
             // 
-            resources.ApplyResources(this.lbl_distance, "lbl_distance");
-            this.lbl_distance.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_distance.ForeColor = System.Drawing.Color.White;
-            this.lbl_distance.Name = "lbl_distance";
-            // 
-            // lbl_homedist
-            // 
-            resources.ApplyResources(this.lbl_homedist, "lbl_homedist");
-            this.lbl_homedist.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_homedist.ForeColor = System.Drawing.Color.White;
-            this.lbl_homedist.Name = "lbl_homedist";
-            // 
-            // lbl_prevdist
-            // 
-            resources.ApplyResources(this.lbl_prevdist, "lbl_prevdist");
-            this.lbl_prevdist.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_prevdist.ForeColor = System.Drawing.Color.White;
-            this.lbl_prevdist.Name = "lbl_prevdist";
-            // 
-            // lblhxj
-            // 
-            resources.ApplyResources(this.lblhxj, "lblhxj");
-            this.lblhxj.BackColor = System.Drawing.Color.Transparent;
-            this.lblhxj.ForeColor = System.Drawing.Color.White;
-            this.lblhxj.Name = "lblhxj";
+            this.panel14.BackColor = System.Drawing.Color.Black;
+            this.panel14.Controls.Add(this.lblHorizontalError);
+            resources.ApplyResources(this.panel14, "panel14");
+            this.panel14.Name = "panel14";
             // 
             // lblHorizontalError
             // 
@@ -1273,9 +1874,26 @@
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
             // 
-            // bindingSource1
+            // panel15
             // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            this.panel15.BackColor = System.Drawing.Color.Black;
+            this.panel15.Controls.Add(this.lblShowTime);
+            resources.ApplyResources(this.panel15, "panel15");
+            this.panel15.Name = "panel15";
+            // 
+            // lblShowTime
+            // 
+            resources.ApplyResources(this.lblShowTime, "lblShowTime");
+            this.lblShowTime.BackColor = System.Drawing.Color.Black;
+            this.lblShowTime.ForeColor = System.Drawing.Color.White;
+            this.lblShowTime.Name = "lblShowTime";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblSataCount);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
             // 
             // lblSataCount
             // 
@@ -1285,39 +1903,203 @@
             this.lblSataCount.ForeColor = System.Drawing.Color.White;
             this.lblSataCount.Name = "lblSataCount";
             // 
-            // lblShowTime
-            // 
-            resources.ApplyResources(this.lblShowTime, "lblShowTime");
-            this.lblShowTime.ForeColor = System.Drawing.Color.White;
-            this.lblShowTime.Name = "lblShowTime";
-            // 
             // BtnClear
             // 
             resources.ApplyResources(this.BtnClear, "BtnClear");
+            this.BtnClear.BGGradBot = System.Drawing.Color.White;
+            this.BtnClear.BGGradTop = System.Drawing.Color.White;
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.UseVisualStyleBackColor = true;
             this.BtnClear.Click += new System.EventHandler(this.BtnClearClick);
             // 
-            // CHK_autopan
+            // lblStaCount
             // 
-            resources.ApplyResources(this.CHK_autopan, "CHK_autopan");
-            this.CHK_autopan.ForeColor = System.Drawing.Color.White;
-            this.CHK_autopan.Name = "CHK_autopan";
-            this.CHK_autopan.UseVisualStyleBackColor = true;
-            this.CHK_autopan.CheckedChanged += new System.EventHandler(this.CHK_autopan_CheckedChanged);
+            resources.ApplyResources(this.lblStaCount, "lblStaCount");
+            this.lblStaCount.Name = "lblStaCount";
+            // 
+            // tableLayoutPanel6
+            // 
+            resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
+            this.tableLayoutPanel6.Controls.Add(this.lblLD, 8, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblvibez, 7, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblPump, 6, 1);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxLD, 8, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblReceiver, 5, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblGyro, 4, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblCompass, 3, 1);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxGPS, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblAccel, 2, 1);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxPump, 6, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblGPS, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxLevel, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblLevel, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxAccel, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxReceiver, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxvibez, 7, 0);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxGyro, 4, 0);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxCompass, 3, 0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            // 
+            // lblLD
+            // 
+            resources.ApplyResources(this.lblLD, "lblLD");
+            this.lblLD.BackColor = System.Drawing.Color.Transparent;
+            this.lblLD.ForeColor = System.Drawing.Color.Black;
+            this.lblLD.Name = "lblLD";
+            // 
+            // lblvibez
+            // 
+            resources.ApplyResources(this.lblvibez, "lblvibez");
+            this.lblvibez.BackColor = System.Drawing.Color.Transparent;
+            this.lblvibez.ForeColor = System.Drawing.Color.Black;
+            this.lblvibez.Name = "lblvibez";
+            // 
+            // lblPump
+            // 
+            resources.ApplyResources(this.lblPump, "lblPump");
+            this.lblPump.BackColor = System.Drawing.Color.Transparent;
+            this.lblPump.ForeColor = System.Drawing.Color.Black;
+            this.lblPump.Name = "lblPump";
+            // 
+            // pictureBoxLD
+            // 
+            resources.ApplyResources(this.pictureBoxLD, "pictureBoxLD");
+            this.pictureBoxLD.Name = "pictureBoxLD";
+            this.pictureBoxLD.TabStop = false;
+            // 
+            // lblReceiver
+            // 
+            resources.ApplyResources(this.lblReceiver, "lblReceiver");
+            this.lblReceiver.BackColor = System.Drawing.Color.Transparent;
+            this.lblReceiver.ForeColor = System.Drawing.Color.Black;
+            this.lblReceiver.Name = "lblReceiver";
+            // 
+            // lblGyro
+            // 
+            resources.ApplyResources(this.lblGyro, "lblGyro");
+            this.lblGyro.BackColor = System.Drawing.Color.Transparent;
+            this.lblGyro.ForeColor = System.Drawing.Color.Black;
+            this.lblGyro.Name = "lblGyro";
+            // 
+            // lblCompass
+            // 
+            resources.ApplyResources(this.lblCompass, "lblCompass");
+            this.lblCompass.BackColor = System.Drawing.Color.Transparent;
+            this.lblCompass.ForeColor = System.Drawing.Color.Black;
+            this.lblCompass.Name = "lblCompass";
+            // 
+            // pictureBoxGPS
+            // 
+            resources.ApplyResources(this.pictureBoxGPS, "pictureBoxGPS");
+            this.pictureBoxGPS.Name = "pictureBoxGPS";
+            this.pictureBoxGPS.TabStop = false;
+            // 
+            // lblAccel
+            // 
+            resources.ApplyResources(this.lblAccel, "lblAccel");
+            this.lblAccel.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccel.ForeColor = System.Drawing.Color.Black;
+            this.lblAccel.Name = "lblAccel";
+            // 
+            // pictureBoxPump
+            // 
+            resources.ApplyResources(this.pictureBoxPump, "pictureBoxPump");
+            this.pictureBoxPump.Name = "pictureBoxPump";
+            this.pictureBoxPump.TabStop = false;
+            // 
+            // lblGPS
+            // 
+            resources.ApplyResources(this.lblGPS, "lblGPS");
+            this.lblGPS.BackColor = System.Drawing.Color.Transparent;
+            this.lblGPS.ForeColor = System.Drawing.Color.Black;
+            this.lblGPS.Name = "lblGPS";
+            // 
+            // pictureBoxLevel
+            // 
+            resources.ApplyResources(this.pictureBoxLevel, "pictureBoxLevel");
+            this.pictureBoxLevel.Name = "pictureBoxLevel";
+            this.pictureBoxLevel.TabStop = false;
+            // 
+            // lblLevel
+            // 
+            resources.ApplyResources(this.lblLevel, "lblLevel");
+            this.lblLevel.BackColor = System.Drawing.Color.Transparent;
+            this.lblLevel.ForeColor = System.Drawing.Color.Black;
+            this.lblLevel.Name = "lblLevel";
+            // 
+            // pictureBoxAccel
+            // 
+            resources.ApplyResources(this.pictureBoxAccel, "pictureBoxAccel");
+            this.pictureBoxAccel.Name = "pictureBoxAccel";
+            this.pictureBoxAccel.TabStop = false;
+            // 
+            // pictureBoxReceiver
+            // 
+            resources.ApplyResources(this.pictureBoxReceiver, "pictureBoxReceiver");
+            this.pictureBoxReceiver.Name = "pictureBoxReceiver";
+            this.pictureBoxReceiver.TabStop = false;
+            // 
+            // pictureBoxvibez
+            // 
+            resources.ApplyResources(this.pictureBoxvibez, "pictureBoxvibez");
+            this.pictureBoxvibez.Name = "pictureBoxvibez";
+            this.pictureBoxvibez.TabStop = false;
+            // 
+            // pictureBoxGyro
+            // 
+            resources.ApplyResources(this.pictureBoxGyro, "pictureBoxGyro");
+            this.pictureBoxGyro.Name = "pictureBoxGyro";
+            this.pictureBoxGyro.TabStop = false;
+            // 
+            // pictureBoxCompass
+            // 
+            resources.ApplyResources(this.pictureBoxCompass, "pictureBoxCompass");
+            this.pictureBoxCompass.Name = "pictureBoxCompass";
+            this.pictureBoxCompass.TabStop = false;
+            // 
+            // lblHorizontal
+            // 
+            resources.ApplyResources(this.lblHorizontal, "lblHorizontal");
+            this.lblHorizontal.Name = "lblHorizontal";
+            // 
+            // lblTime
+            // 
+            resources.ApplyResources(this.lblTime, "lblTime");
+            this.lblTime.Name = "lblTime";
+            // 
+            // txt_messagebox
+            // 
+            this.txt_messagebox.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.txt_messagebox, "txt_messagebox");
+            this.txt_messagebox.ForeColor = System.Drawing.Color.White;
+            this.txt_messagebox.Name = "txt_messagebox";
+            this.txt_messagebox.ReadOnly = true;
+            // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.BackColor = System.Drawing.Color.Black;
+            this.trackBar1.LargeChange = 0.005F;
+            this.trackBar1.Maximum = 24F;
+            this.trackBar1.Minimum = 1F;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.SmallChange = 0.001F;
+            this.trackBar1.TickFrequency = 1F;
+            this.trackBar1.Value = 2F;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // MainMap
             // 
-            this.MainMap.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.MainMap, "MainMap");
+            this.MainMap.BackColor = System.Drawing.Color.Transparent;
             this.MainMap.Bearing = 0F;
             this.MainMap.CanDragMap = true;
             this.MainMap.ContextMenuStrip = this.contextMenuStrip1;
             this.MainMap.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MainMap.EmptyTileColor = System.Drawing.Color.Gray;
+            this.MainMap.EmptyTileColor = System.Drawing.Color.Transparent;
             this.MainMap.GrayScaleMode = false;
             this.MainMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.MainMap.LevelsKeepInMemmory = 5;
-            resources.ApplyResources(this.MainMap, "MainMap");
             this.MainMap.MarkersEnabled = true;
             this.MainMap.MaxZoom = 24;
             this.MainMap.MinZoom = 5;
@@ -1327,7 +2109,7 @@
             this.MainMap.PolygonsEnabled = true;
             this.MainMap.RetryLoadTile = 0;
             this.MainMap.RoutesEnabled = true;
-            this.MainMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Fractional;
+            this.MainMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MainMap.ShowTileGridLines = false;
             this.MainMap.Zoom = 5D;
@@ -1911,114 +2693,6 @@
             resources.ApplyResources(this.switchDockingToolStripMenuItem, "switchDockingToolStripMenuItem");
             this.switchDockingToolStripMenuItem.Click += new System.EventHandler(this.switchDockingToolStripMenuItem_Click);
             // 
-            // trackBar1
-            // 
-            resources.ApplyResources(this.trackBar1, "trackBar1");
-            this.trackBar1.BackColor = System.Drawing.Color.Black;
-            this.trackBar1.LargeChange = 0.005F;
-            this.trackBar1.Maximum = 24F;
-            this.trackBar1.Minimum = 1F;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.SmallChange = 0.001F;
-            this.trackBar1.TickFrequency = 1F;
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.trackBar1.Value = 2F;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
-            // panelBASE
-            // 
-            this.panelBASE.BackColor = System.Drawing.Color.Black;
-            this.panelBASE.Controls.Add(this.splitter1);
-            this.panelBASE.Controls.Add(this.tableLayoutPanel1);
-            this.panelBASE.Controls.Add(this.panelWaypoints);
-            resources.ApplyResources(this.panelBASE, "panelBASE");
-            this.panelBASE.Name = "panelBASE";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.panelMap, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Controls.Add(this.myButtonLand);
-            this.panel6.Controls.Add(this.BUT_quickrtl1);
-            this.panel6.Controls.Add(this.BUT_quickauto1);
-            this.panel6.Controls.Add(this.btnLoiterUnlim);
-            this.panel6.Controls.Add(this.BUT_clear_track1);
-            this.panel6.Controls.Add(this.BUT_ARM1);
-            this.panel6.Controls.Add(this.myBtnFunction);
-            this.panel6.Controls.Add(this.tableLayoutPanel4);
-            this.panel6.Controls.Add(this.comboBoxMapType);
-            this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            // 
-            // myButtonLand
-            // 
-            resources.ApplyResources(this.myButtonLand, "myButtonLand");
-            this.myButtonLand.Name = "myButtonLand";
-            this.myButtonLand.UseVisualStyleBackColor = true;
-            this.myButtonLand.Click += new System.EventHandler(this.myButtonLand_Click);
-            // 
-            // BUT_quickrtl1
-            // 
-            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
-            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
-            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
-            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
-            // 
-            // BUT_quickauto1
-            // 
-            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
-            this.BUT_quickauto1.Name = "BUT_quickauto1";
-            this.BUT_quickauto1.UseVisualStyleBackColor = true;
-            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
-            // 
-            // btnLoiterUnlim
-            // 
-            resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
-            this.btnLoiterUnlim.Name = "btnLoiterUnlim";
-            this.btnLoiterUnlim.UseVisualStyleBackColor = true;
-            this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
-            // 
-            // BUT_clear_track1
-            // 
-            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
-            this.BUT_clear_track1.Name = "BUT_clear_track1";
-            this.BUT_clear_track1.UseVisualStyleBackColor = true;
-            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
-            // 
-            // BUT_ARM1
-            // 
-            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
-            this.BUT_ARM1.Name = "BUT_ARM1";
-            this.BUT_ARM1.UseVisualStyleBackColor = true;
-            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
-            // 
-            // myBtnFunction
-            // 
-            resources.ApplyResources(this.myBtnFunction, "myBtnFunction");
-            this.myBtnFunction.Name = "myBtnFunction";
-            this.myBtnFunction.UseVisualStyleBackColor = true;
-            this.myBtnFunction.Click += new System.EventHandler(this.myBtnFunction_Click);
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-            this.tableLayoutPanel4.Controls.Add(this.lblwd, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lbljd, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblHAlt, 4, 0);
-            this.tableLayoutPanel4.Controls.Add(this.TXT_homelng, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.TXT_homealt, 5, 0);
-            this.tableLayoutPanel4.Controls.Add(this.TXT_homelat, 1, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1200;
@@ -2034,11 +2708,22 @@
             this.timer_getbreakpoint.Interval = 10;
             this.timer_getbreakpoint.Tick += new System.EventHandler(this.timer_getbreakpoint_Tick);
             // 
+            // Messagetabtimer
+            // 
+            this.Messagetabtimer.Interval = 1000;
+            this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.panelBASE);
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.panelWaypoints);
+            this.Controls.Add(this.panelMap);
             resources.ApplyResources(this, "$this");
             this.Name = "FlightPlanner";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightPlanner_FormClosing);
@@ -2049,34 +2734,65 @@
             this.panelWaypoints.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
-            this.panelMap.ResumeLayout(false);
-            this.panelMap.PerformLayout();
-            this.panelShowPoint.ResumeLayout(false);
-            this.breakpointgroupBox.ResumeLayout(false);
-            this.groupBoxRellyPoint.ResumeLayout(false);
-            this.groupboxOPoint.ResumeLayout(false);
-            this.groupBoxAeroPoint.ResumeLayout(false);
-            this.groupBoxBasePoint.ResumeLayout(false);
-            this.panelShowInfo.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.panelBASE.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.panelMap.ResumeLayout(false);
+            this.panelMap.PerformLayout();
+            this.panelShowPoint.ResumeLayout(false);
+            this.groupboxOPoint.ResumeLayout(false);
+            this.breakpointgroupBox.ResumeLayout(false);
+            this.groupBoxBasePoint.ResumeLayout(false);
+            this.groupBoxRellyPoint.ResumeLayout(false);
+            this.groupBoxAeroPoint.ResumeLayout(false);
+            this.ebsPanelMeter.ResumeLayout(false);
+            this.ebsPanelFlyingInfo.ResumeLayout(false);
+            this.ebsPanelPlanInfo.ResumeLayout(false);
+            this.ebsPanelPlanInfo.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.ebsPanelWarning.ResumeLayout(false);
+            this.ebsPanelWarning.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2109,7 +2825,6 @@
         private Controls.MyTrackBar trackBar1;
         private System.Windows.Forms.Label lbl_distance;
         private System.Windows.Forms.Label lbl_prevdist;
-        private System.Windows.Forms.Panel panelBASE;
         private System.Windows.Forms.Label lbl_homedist;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolStripMenuItem clearMissionToolStripMenuItem;
@@ -2187,7 +2902,6 @@
         private System.Windows.Forms.ComboBox CMB_altmode;
         private System.Windows.Forms.ToolStripMenuItem fromSHPToolStripMenuItem;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private BSE.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -2210,8 +2924,6 @@
         private System.Windows.Forms.Label lblhxj;
         private Controls.MyButton myBtnAddPoint;
         private Controls.MyButton myBtnLimit;
-        private System.Windows.Forms.Panel panelShowInfo;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label lblFlighttime;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblDistbetweenlines;
@@ -2226,7 +2938,6 @@
         private Controls.MyButton myBtnSendPoint;
         private Controls.MyButton myBtnLoadAeroPoint;
         private Controls.MyButton myBtnSetRallyPoint;
-        private System.Windows.Forms.Panel panelShowPoint;
         private System.Windows.Forms.GroupBox groupBoxRellyPoint;
         private Controls.MyButton myButton2;
         private System.Windows.Forms.GroupBox groupboxOPoint;
@@ -2250,7 +2961,6 @@
         private System.Windows.Forms.Label lblShowTime;
         private System.Windows.Forms.BindingSource bindingSource1;
         private Controls.MyButton BtnClear;
-        private System.Windows.Forms.CheckBox CHK_autopan;
         private System.Windows.Forms.Timer timer_time;
         private Controls.MyButton BUT_quickauto1;
         private Controls.MyButton btnLoiterUnlim;
@@ -2266,20 +2976,6 @@
         private System.Windows.Forms.ToolStripMenuItem SavebreakpointtoolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadbreakpointtoolStripMenuItem;
         private System.Windows.Forms.Timer timer_getbreakpoint;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Command;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Param1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Param2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Param3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Param4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Alt;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewImageColumn Up;
-        private System.Windows.Forms.DataGridViewImageColumn Down;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblHeadinghold;
         private System.Windows.Forms.Label lblDoneArea;
@@ -2296,5 +2992,75 @@
         private System.Windows.Forms.ToolStripMenuItem exchangeToolStripMenuItem;
         private System.Windows.Forms.Timer timer_GetMapPoint;
         private Controls.MyButton myButtonLand;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label lblLD;
+        private System.Windows.Forms.Label lblvibez;
+        private System.Windows.Forms.Label lblPump;
+        private System.Windows.Forms.PictureBox pictureBoxLD;
+        private System.Windows.Forms.Label lblReceiver;
+        private System.Windows.Forms.Label lblGyro;
+        private System.Windows.Forms.Label lblCompass;
+        private System.Windows.Forms.PictureBox pictureBoxGPS;
+        private System.Windows.Forms.Label lblAccel;
+        private System.Windows.Forms.PictureBox pictureBoxPump;
+        private System.Windows.Forms.Label lblGPS;
+        private System.Windows.Forms.PictureBox pictureBoxLevel;
+        private System.Windows.Forms.Label lblLevel;
+        private System.Windows.Forms.PictureBox pictureBoxAccel;
+        private System.Windows.Forms.PictureBox pictureBoxReceiver;
+        private System.Windows.Forms.PictureBox pictureBoxvibez;
+        private System.Windows.Forms.PictureBox pictureBoxGyro;
+        private System.Windows.Forms.PictureBox pictureBoxCompass;
+        private System.Windows.Forms.Label lblStaCount;
+        private System.Windows.Forms.Label lblHorizontal;
+        private System.Windows.Forms.Label lblTime;
+        private BSE.Windows.Forms.Panel ebsPanelWarning;
+        private BSE.Windows.Forms.Panel ebsPanelPlanInfo;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel2;
+        private Controls.QuickView Qvgroundspeed;
+        private Controls.QuickView QVSonarRange;
+        private Controls.QuickView Qvverspeed;
+        private Controls.QuickView Qvalt;
+        private Controls.QuickView Qvdist;
+        private Controls.QuickView qvpitch;
+        private Controls.QuickView Qvtohome;
+        private Controls.QuickView qvyaw;
+        private Controls.QuickView qvroll;
+        private System.Windows.Forms.TextBox txt_messagebox;
+        private BSE.Windows.Forms.Panel ebsPanelFlyingInfo;
+        private System.Windows.Forms.Timer Messagetabtimer;
+        private Controls.HUD hud1;
+        private BSE.Windows.Forms.Panel ebsPanelMeter;
+        private Controls.MyButton btnAutoPan;
+        private Controls.MyButton btnMeterInfo;
+        private Controls.MyButton btnWarnning;
+        private Controls.MyButton btnPlanInfo;
+        private Controls.MyButton btnFlyingInfo;
+        private BSE.Windows.Forms.Panel panelShowPoint;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Command;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Param1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Param2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Param3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Param4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Alt;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewImageColumn Up;
+        private System.Windows.Forms.DataGridViewImageColumn Down;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
     }
 }

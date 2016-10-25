@@ -230,6 +230,7 @@ namespace ByAeroBeHero
         public float ch6out { get; set; }
         public float ch7out { get; set; }
         public float ch8out { get; set; }
+        public int frame { get; set; }
         public float ch3percent
         {
             get
@@ -1625,6 +1626,11 @@ namespace ByAeroBeHero
                         var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_meminfo_t>(6);
                         freemem = mem.freemem;
                         brklevel = mem.brkval;
+                    }
+
+                    if (MainV2.comPort.MAV.param.ContainsKey("FRAME") && MainV2.comPort.MAV.param["FRAME"].ToString() != null)
+                    {
+                        frame = int.Parse(MainV2.comPort.MAV.param["FRAME"].ToString());
                     }
                 }
 

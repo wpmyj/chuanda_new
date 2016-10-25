@@ -8,9 +8,40 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.myButtonShowInfo = new ByAeroBeHero.Controls.MyButton();
+            this.pictureBoxShowParam = new System.Windows.Forms.PictureBox();
+            this.panelDeviceStatus = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblLD = new System.Windows.Forms.Label();
+            this.lblvibez = new System.Windows.Forms.Label();
+            this.lblPump = new System.Windows.Forms.Label();
+            this.pictureBoxLD = new System.Windows.Forms.PictureBox();
+            this.lblReceiver = new System.Windows.Forms.Label();
+            this.lblGyro = new System.Windows.Forms.Label();
+            this.lblCompass = new System.Windows.Forms.Label();
+            this.pictureBoxGPS = new System.Windows.Forms.PictureBox();
+            this.lblAccel = new System.Windows.Forms.Label();
+            this.pictureBoxPump = new System.Windows.Forms.PictureBox();
+            this.lblGPS = new System.Windows.Forms.Label();
+            this.pictureBoxLevel = new System.Windows.Forms.PictureBox();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.pictureBoxAccel = new System.Windows.Forms.PictureBox();
+            this.pictureBoxReceiver = new System.Windows.Forms.PictureBox();
+            this.pictureBoxvibez = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGyro = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCompass = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDeviceStatus = new System.Windows.Forms.PictureBox();
+            this.myButtonDeviceStatus = new ByAeroBeHero.Controls.MyButton();
+            this.myButton5 = new ByAeroBeHero.Controls.MyButton();
+            this.pbAction = new System.Windows.Forms.PictureBox();
+            this.btnMeter = new ByAeroBeHero.Controls.MyButton();
+            this.btnWarnMessage = new ByAeroBeHero.Controls.MyButton();
+            this.pboxWarnMessage = new System.Windows.Forms.PictureBox();
+            this.pbMeter = new System.Windows.Forms.PictureBox();
             this.SubMainLeft = new System.Windows.Forms.SplitContainer();
             this.tabControlactions = new System.Windows.Forms.TabControl();
             this.contextMenuStripactionstab = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -101,34 +132,6 @@
             this.tabPagemessages = new System.Windows.Forms.TabPage();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
             this.tableMap = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.myButtonShowInfo = new ByAeroBeHero.Controls.MyButton();
-            this.pictureBoxShowParam = new System.Windows.Forms.PictureBox();
-            this.panelDeviceStatus = new System.Windows.Forms.Panel();
-            this.lblPump = new System.Windows.Forms.Label();
-            this.pictureBoxPump = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLevel = new System.Windows.Forms.PictureBox();
-            this.lblCompass = new System.Windows.Forms.Label();
-            this.lblAccel = new System.Windows.Forms.Label();
-            this.lblGPS = new System.Windows.Forms.Label();
-            this.pictureBoxCompass = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAccel = new System.Windows.Forms.PictureBox();
-            this.pictureBoxGPS = new System.Windows.Forms.PictureBox();
-            this.pictureBoxGyro = new System.Windows.Forms.PictureBox();
-            this.pictureBoxReceiver = new System.Windows.Forms.PictureBox();
-            this.lblGyro = new System.Windows.Forms.Label();
-            this.lblReceiver = new System.Windows.Forms.Label();
-            this.lblLevel = new System.Windows.Forms.Label();
-            this.pictureBoxvibez = new System.Windows.Forms.PictureBox();
-            this.lblvibez = new System.Windows.Forms.Label();
-            this.pictureBoxDeviceStatus = new System.Windows.Forms.PictureBox();
-            this.myButtonDeviceStatus = new ByAeroBeHero.Controls.MyButton();
-            this.myButton5 = new ByAeroBeHero.Controls.MyButton();
-            this.pbAction = new System.Windows.Forms.PictureBox();
-            this.btnMeter = new ByAeroBeHero.Controls.MyButton();
-            this.btnWarnMessage = new ByAeroBeHero.Controls.MyButton();
-            this.pboxWarnMessage = new System.Windows.Forms.PictureBox();
-            this.pbMeter = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.zg1 = new ZedGraph.ZedGraphControl();
             this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -179,12 +182,13 @@
             this.gMapControl1 = new ByAeroBeHero.Controls.myGMAP();
             this.TRK_zoom = new ByAeroBeHero.Controls.MyTrackBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.fiType = new ByAeroBeHero.Controls.FlightInfo();
             this.fiBad = new ByAeroBeHero.Controls.FlightInfo();
-            this.fiState = new ByAeroBeHero.Controls.FlightInfo();
-            this.fiMode = new ByAeroBeHero.Controls.FlightInfo();
-            this.fiGPS = new ByAeroBeHero.Controls.FlightInfo();
             this.fiBat = new ByAeroBeHero.Controls.FlightInfo();
+            this.fiGPS = new ByAeroBeHero.Controls.FlightInfo();
+            this.fiMode = new ByAeroBeHero.Controls.FlightInfo();
+            this.fiState = new ByAeroBeHero.Controls.FlightInfo();
             this.mylblbat = new ByAeroBeHero.Controls.MyLabel();
             this.ZedGraphTimer = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -196,12 +200,27 @@
             this.timer_time = new System.Windows.Forms.Timer(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             this.bindingSourceStatusTab = new System.Windows.Forms.BindingSource(this.components);
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBoxLD = new System.Windows.Forms.PictureBox();
-            this.lblLD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).BeginInit();
+            this.MainH.Panel1.SuspendLayout();
             this.MainH.Panel2.SuspendLayout();
             this.MainH.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowParam)).BeginInit();
+            this.panelDeviceStatus.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeviceStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxWarnMessage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SubMainLeft)).BeginInit();
             this.SubMainLeft.Panel2.SuspendLayout();
             this.SubMainLeft.SuspendLayout();
@@ -223,21 +242,6 @@
             this.tablogbrowse.SuspendLayout();
             this.tabScripts.SuspendLayout();
             this.tableMap.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowParam)).BeginInit();
-            this.panelDeviceStatus.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeviceStatus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAction)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxWarnMessage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -252,15 +256,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
             this.panel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).BeginInit();
             this.SuspendLayout();
             // 
             // MainH
             // 
-            this.MainH.BackColor = System.Drawing.Color.Black;
+            this.MainH.BackColor = System.Drawing.Color.Transparent;
             this.MainH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.MainH, "MainH");
             this.MainH.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
@@ -269,11 +272,239 @@
             // MainH.Panel1
             // 
             this.MainH.Panel1.BackColor = System.Drawing.Color.Black;
+            this.MainH.Panel1.Controls.Add(this.panel3);
             resources.ApplyResources(this.MainH.Panel1, "MainH.Panel1");
             // 
             // MainH.Panel2
             // 
             this.MainH.Panel2.Controls.Add(this.SubMainLeft);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.myButtonShowInfo);
+            this.panel3.Controls.Add(this.pictureBoxShowParam);
+            this.panel3.Controls.Add(this.panelDeviceStatus);
+            this.panel3.Controls.Add(this.pictureBoxDeviceStatus);
+            this.panel3.Controls.Add(this.myButtonDeviceStatus);
+            this.panel3.Controls.Add(this.myButton5);
+            this.panel3.Controls.Add(this.pbAction);
+            this.panel3.Controls.Add(this.btnMeter);
+            this.panel3.Controls.Add(this.btnWarnMessage);
+            this.panel3.Controls.Add(this.pboxWarnMessage);
+            this.panel3.Controls.Add(this.pbMeter);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.ForeColor = System.Drawing.Color.DarkGreen;
+            this.panel3.Name = "panel3";
+            // 
+            // myButtonShowInfo
+            // 
+            resources.ApplyResources(this.myButtonShowInfo, "myButtonShowInfo");
+            this.myButtonShowInfo.Name = "myButtonShowInfo";
+            this.myButtonShowInfo.UseVisualStyleBackColor = true;
+            this.myButtonShowInfo.Click += new System.EventHandler(this.myButtonShowInfo_Click);
+            // 
+            // pictureBoxShowParam
+            // 
+            resources.ApplyResources(this.pictureBoxShowParam, "pictureBoxShowParam");
+            this.pictureBoxShowParam.Name = "pictureBoxShowParam";
+            this.pictureBoxShowParam.TabStop = false;
+            // 
+            // panelDeviceStatus
+            // 
+            resources.ApplyResources(this.panelDeviceStatus, "panelDeviceStatus");
+            this.panelDeviceStatus.BackColor = System.Drawing.Color.Black;
+            this.panelDeviceStatus.Controls.Add(this.tableLayoutPanel4);
+            this.panelDeviceStatus.Name = "panelDeviceStatus";
+            // 
+            // tableLayoutPanel4
+            // 
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.Controls.Add(this.lblLD, 8, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblvibez, 7, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblPump, 6, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxLD, 8, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblReceiver, 5, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblGyro, 4, 1);
+            this.tableLayoutPanel4.Controls.Add(this.lblCompass, 3, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxGPS, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblAccel, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxPump, 6, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblGPS, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxLevel, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblLevel, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxAccel, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxReceiver, 5, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxvibez, 7, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxGyro, 4, 0);
+            this.tableLayoutPanel4.Controls.Add(this.pictureBoxCompass, 3, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // lblLD
+            // 
+            resources.ApplyResources(this.lblLD, "lblLD");
+            this.lblLD.BackColor = System.Drawing.Color.Black;
+            this.lblLD.ForeColor = System.Drawing.Color.White;
+            this.lblLD.Name = "lblLD";
+            // 
+            // lblvibez
+            // 
+            resources.ApplyResources(this.lblvibez, "lblvibez");
+            this.lblvibez.ForeColor = System.Drawing.Color.White;
+            this.lblvibez.Name = "lblvibez";
+            // 
+            // lblPump
+            // 
+            resources.ApplyResources(this.lblPump, "lblPump");
+            this.lblPump.ForeColor = System.Drawing.Color.White;
+            this.lblPump.Name = "lblPump";
+            // 
+            // pictureBoxLD
+            // 
+            resources.ApplyResources(this.pictureBoxLD, "pictureBoxLD");
+            this.pictureBoxLD.Name = "pictureBoxLD";
+            this.pictureBoxLD.TabStop = false;
+            // 
+            // lblReceiver
+            // 
+            resources.ApplyResources(this.lblReceiver, "lblReceiver");
+            this.lblReceiver.ForeColor = System.Drawing.Color.White;
+            this.lblReceiver.Name = "lblReceiver";
+            // 
+            // lblGyro
+            // 
+            resources.ApplyResources(this.lblGyro, "lblGyro");
+            this.lblGyro.ForeColor = System.Drawing.Color.White;
+            this.lblGyro.Name = "lblGyro";
+            // 
+            // lblCompass
+            // 
+            resources.ApplyResources(this.lblCompass, "lblCompass");
+            this.lblCompass.BackColor = System.Drawing.Color.Black;
+            this.lblCompass.ForeColor = System.Drawing.Color.White;
+            this.lblCompass.Name = "lblCompass";
+            // 
+            // pictureBoxGPS
+            // 
+            resources.ApplyResources(this.pictureBoxGPS, "pictureBoxGPS");
+            this.pictureBoxGPS.Name = "pictureBoxGPS";
+            this.pictureBoxGPS.TabStop = false;
+            // 
+            // lblAccel
+            // 
+            resources.ApplyResources(this.lblAccel, "lblAccel");
+            this.lblAccel.BackColor = System.Drawing.Color.Black;
+            this.lblAccel.ForeColor = System.Drawing.Color.White;
+            this.lblAccel.Name = "lblAccel";
+            // 
+            // pictureBoxPump
+            // 
+            resources.ApplyResources(this.pictureBoxPump, "pictureBoxPump");
+            this.pictureBoxPump.Name = "pictureBoxPump";
+            this.pictureBoxPump.TabStop = false;
+            // 
+            // lblGPS
+            // 
+            resources.ApplyResources(this.lblGPS, "lblGPS");
+            this.lblGPS.BackColor = System.Drawing.Color.Black;
+            this.lblGPS.ForeColor = System.Drawing.Color.White;
+            this.lblGPS.Name = "lblGPS";
+            // 
+            // pictureBoxLevel
+            // 
+            resources.ApplyResources(this.pictureBoxLevel, "pictureBoxLevel");
+            this.pictureBoxLevel.Name = "pictureBoxLevel";
+            this.pictureBoxLevel.TabStop = false;
+            // 
+            // lblLevel
+            // 
+            resources.ApplyResources(this.lblLevel, "lblLevel");
+            this.lblLevel.BackColor = System.Drawing.Color.Black;
+            this.lblLevel.ForeColor = System.Drawing.Color.White;
+            this.lblLevel.Name = "lblLevel";
+            // 
+            // pictureBoxAccel
+            // 
+            resources.ApplyResources(this.pictureBoxAccel, "pictureBoxAccel");
+            this.pictureBoxAccel.Name = "pictureBoxAccel";
+            this.pictureBoxAccel.TabStop = false;
+            // 
+            // pictureBoxReceiver
+            // 
+            resources.ApplyResources(this.pictureBoxReceiver, "pictureBoxReceiver");
+            this.pictureBoxReceiver.Name = "pictureBoxReceiver";
+            this.pictureBoxReceiver.TabStop = false;
+            // 
+            // pictureBoxvibez
+            // 
+            resources.ApplyResources(this.pictureBoxvibez, "pictureBoxvibez");
+            this.pictureBoxvibez.Name = "pictureBoxvibez";
+            this.pictureBoxvibez.TabStop = false;
+            // 
+            // pictureBoxGyro
+            // 
+            resources.ApplyResources(this.pictureBoxGyro, "pictureBoxGyro");
+            this.pictureBoxGyro.Name = "pictureBoxGyro";
+            this.pictureBoxGyro.TabStop = false;
+            // 
+            // pictureBoxCompass
+            // 
+            resources.ApplyResources(this.pictureBoxCompass, "pictureBoxCompass");
+            this.pictureBoxCompass.Name = "pictureBoxCompass";
+            this.pictureBoxCompass.TabStop = false;
+            // 
+            // pictureBoxDeviceStatus
+            // 
+            resources.ApplyResources(this.pictureBoxDeviceStatus, "pictureBoxDeviceStatus");
+            this.pictureBoxDeviceStatus.Name = "pictureBoxDeviceStatus";
+            this.pictureBoxDeviceStatus.TabStop = false;
+            // 
+            // myButtonDeviceStatus
+            // 
+            resources.ApplyResources(this.myButtonDeviceStatus, "myButtonDeviceStatus");
+            this.myButtonDeviceStatus.Name = "myButtonDeviceStatus";
+            this.myButtonDeviceStatus.UseVisualStyleBackColor = true;
+            this.myButtonDeviceStatus.Click += new System.EventHandler(this.myButtonDeviceStatus_Click);
+            // 
+            // myButton5
+            // 
+            resources.ApplyResources(this.myButton5, "myButton5");
+            this.myButton5.Name = "myButton5";
+            this.myButton5.UseVisualStyleBackColor = true;
+            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
+            // 
+            // pbAction
+            // 
+            resources.ApplyResources(this.pbAction, "pbAction");
+            this.pbAction.Name = "pbAction";
+            this.pbAction.TabStop = false;
+            // 
+            // btnMeter
+            // 
+            resources.ApplyResources(this.btnMeter, "btnMeter");
+            this.btnMeter.Name = "btnMeter";
+            this.btnMeter.UseVisualStyleBackColor = true;
+            this.btnMeter.Click += new System.EventHandler(this.btnMeter_Click);
+            // 
+            // btnWarnMessage
+            // 
+            resources.ApplyResources(this.btnWarnMessage, "btnWarnMessage");
+            this.btnWarnMessage.Name = "btnWarnMessage";
+            this.btnWarnMessage.UseVisualStyleBackColor = true;
+            this.btnWarnMessage.Click += new System.EventHandler(this.btnWarnMessage_Click);
+            // 
+            // pboxWarnMessage
+            // 
+            this.pboxWarnMessage.BackgroundImage = global::ByAeroBeHero.Properties.Resources._2__1_;
+            resources.ApplyResources(this.pboxWarnMessage, "pboxWarnMessage");
+            this.pboxWarnMessage.Name = "pboxWarnMessage";
+            this.pboxWarnMessage.TabStop = false;
+            // 
+            // pbMeter
+            // 
+            resources.ApplyResources(this.pbMeter, "pbMeter");
+            this.pbMeter.Name = "pbMeter";
+            this.pbMeter.TabStop = false;
             // 
             // SubMainLeft
             // 
@@ -1455,207 +1686,15 @@
             // 
             // tableMap
             // 
-            this.tableMap.BackgroundImage = global::ByAeroBeHero.Properties.Resources.bgdark;
+            this.tableMap.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.tableMap, "tableMap");
-            this.tableMap.Controls.Add(this.panel3, 0, 0);
-            this.tableMap.Controls.Add(this.splitContainer1, 0, 1);
-            this.tableMap.Controls.Add(this.panel1, 0, 2);
+            this.tableMap.Controls.Add(this.splitContainer1, 0, 0);
+            this.tableMap.Controls.Add(this.panel1, 0, 1);
             this.tableMap.Name = "tableMap";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.myButtonShowInfo);
-            this.panel3.Controls.Add(this.pictureBoxShowParam);
-            this.panel3.Controls.Add(this.panelDeviceStatus);
-            this.panel3.Controls.Add(this.pictureBoxDeviceStatus);
-            this.panel3.Controls.Add(this.myButtonDeviceStatus);
-            this.panel3.Controls.Add(this.myButton5);
-            this.panel3.Controls.Add(this.pbAction);
-            this.panel3.Controls.Add(this.btnMeter);
-            this.panel3.Controls.Add(this.btnWarnMessage);
-            this.panel3.Controls.Add(this.pboxWarnMessage);
-            this.panel3.Controls.Add(this.pbMeter);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.panel3.Name = "panel3";
-            // 
-            // myButtonShowInfo
-            // 
-            resources.ApplyResources(this.myButtonShowInfo, "myButtonShowInfo");
-            this.myButtonShowInfo.Name = "myButtonShowInfo";
-            this.myButtonShowInfo.UseVisualStyleBackColor = true;
-            this.myButtonShowInfo.Click += new System.EventHandler(this.myButtonShowInfo_Click);
-            // 
-            // pictureBoxShowParam
-            // 
-            resources.ApplyResources(this.pictureBoxShowParam, "pictureBoxShowParam");
-            this.pictureBoxShowParam.Name = "pictureBoxShowParam";
-            this.pictureBoxShowParam.TabStop = false;
-            // 
-            // panelDeviceStatus
-            // 
-            resources.ApplyResources(this.panelDeviceStatus, "panelDeviceStatus");
-            this.panelDeviceStatus.BackColor = System.Drawing.Color.Black;
-            this.panelDeviceStatus.Controls.Add(this.tableLayoutPanel4);
-            this.panelDeviceStatus.Name = "panelDeviceStatus";
-            // 
-            // lblPump
-            // 
-            resources.ApplyResources(this.lblPump, "lblPump");
-            this.lblPump.ForeColor = System.Drawing.Color.White;
-            this.lblPump.Name = "lblPump";
-            // 
-            // pictureBoxPump
-            // 
-            resources.ApplyResources(this.pictureBoxPump, "pictureBoxPump");
-            this.pictureBoxPump.Name = "pictureBoxPump";
-            this.pictureBoxPump.TabStop = false;
-            // 
-            // pictureBoxLevel
-            // 
-            resources.ApplyResources(this.pictureBoxLevel, "pictureBoxLevel");
-            this.pictureBoxLevel.Name = "pictureBoxLevel";
-            this.pictureBoxLevel.TabStop = false;
-            // 
-            // lblCompass
-            // 
-            resources.ApplyResources(this.lblCompass, "lblCompass");
-            this.lblCompass.BackColor = System.Drawing.Color.Black;
-            this.lblCompass.ForeColor = System.Drawing.Color.White;
-            this.lblCompass.Name = "lblCompass";
-            // 
-            // lblAccel
-            // 
-            resources.ApplyResources(this.lblAccel, "lblAccel");
-            this.lblAccel.BackColor = System.Drawing.Color.Black;
-            this.lblAccel.ForeColor = System.Drawing.Color.White;
-            this.lblAccel.Name = "lblAccel";
-            // 
-            // lblGPS
-            // 
-            resources.ApplyResources(this.lblGPS, "lblGPS");
-            this.lblGPS.BackColor = System.Drawing.Color.Black;
-            this.lblGPS.ForeColor = System.Drawing.Color.White;
-            this.lblGPS.Name = "lblGPS";
-            // 
-            // pictureBoxCompass
-            // 
-            resources.ApplyResources(this.pictureBoxCompass, "pictureBoxCompass");
-            this.pictureBoxCompass.Name = "pictureBoxCompass";
-            this.pictureBoxCompass.TabStop = false;
-            // 
-            // pictureBoxAccel
-            // 
-            resources.ApplyResources(this.pictureBoxAccel, "pictureBoxAccel");
-            this.pictureBoxAccel.Name = "pictureBoxAccel";
-            this.pictureBoxAccel.TabStop = false;
-            // 
-            // pictureBoxGPS
-            // 
-            resources.ApplyResources(this.pictureBoxGPS, "pictureBoxGPS");
-            this.pictureBoxGPS.Name = "pictureBoxGPS";
-            this.pictureBoxGPS.TabStop = false;
-            // 
-            // pictureBoxGyro
-            // 
-            resources.ApplyResources(this.pictureBoxGyro, "pictureBoxGyro");
-            this.pictureBoxGyro.Name = "pictureBoxGyro";
-            this.pictureBoxGyro.TabStop = false;
-            // 
-            // pictureBoxReceiver
-            // 
-            resources.ApplyResources(this.pictureBoxReceiver, "pictureBoxReceiver");
-            this.pictureBoxReceiver.Name = "pictureBoxReceiver";
-            this.pictureBoxReceiver.TabStop = false;
-            // 
-            // lblGyro
-            // 
-            resources.ApplyResources(this.lblGyro, "lblGyro");
-            this.lblGyro.ForeColor = System.Drawing.Color.White;
-            this.lblGyro.Name = "lblGyro";
-            // 
-            // lblReceiver
-            // 
-            resources.ApplyResources(this.lblReceiver, "lblReceiver");
-            this.lblReceiver.ForeColor = System.Drawing.Color.White;
-            this.lblReceiver.Name = "lblReceiver";
-            // 
-            // lblLevel
-            // 
-            resources.ApplyResources(this.lblLevel, "lblLevel");
-            this.lblLevel.BackColor = System.Drawing.Color.Black;
-            this.lblLevel.ForeColor = System.Drawing.Color.White;
-            this.lblLevel.Name = "lblLevel";
-            // 
-            // pictureBoxvibez
-            // 
-            resources.ApplyResources(this.pictureBoxvibez, "pictureBoxvibez");
-            this.pictureBoxvibez.Name = "pictureBoxvibez";
-            this.pictureBoxvibez.TabStop = false;
-            // 
-            // lblvibez
-            // 
-            resources.ApplyResources(this.lblvibez, "lblvibez");
-            this.lblvibez.ForeColor = System.Drawing.Color.White;
-            this.lblvibez.Name = "lblvibez";
-            // 
-            // pictureBoxDeviceStatus
-            // 
-            resources.ApplyResources(this.pictureBoxDeviceStatus, "pictureBoxDeviceStatus");
-            this.pictureBoxDeviceStatus.Name = "pictureBoxDeviceStatus";
-            this.pictureBoxDeviceStatus.TabStop = false;
-            // 
-            // myButtonDeviceStatus
-            // 
-            resources.ApplyResources(this.myButtonDeviceStatus, "myButtonDeviceStatus");
-            this.myButtonDeviceStatus.Name = "myButtonDeviceStatus";
-            this.myButtonDeviceStatus.UseVisualStyleBackColor = true;
-            this.myButtonDeviceStatus.Click += new System.EventHandler(this.myButtonDeviceStatus_Click);
-            // 
-            // myButton5
-            // 
-            resources.ApplyResources(this.myButton5, "myButton5");
-            this.myButton5.Name = "myButton5";
-            this.myButton5.UseVisualStyleBackColor = true;
-            this.myButton5.Click += new System.EventHandler(this.myButton5_Click);
-            // 
-            // pbAction
-            // 
-            resources.ApplyResources(this.pbAction, "pbAction");
-            this.pbAction.Name = "pbAction";
-            this.pbAction.TabStop = false;
-            // 
-            // btnMeter
-            // 
-            resources.ApplyResources(this.btnMeter, "btnMeter");
-            this.btnMeter.Name = "btnMeter";
-            this.btnMeter.UseVisualStyleBackColor = true;
-            this.btnMeter.Click += new System.EventHandler(this.btnMeter_Click);
-            // 
-            // btnWarnMessage
-            // 
-            resources.ApplyResources(this.btnWarnMessage, "btnWarnMessage");
-            this.btnWarnMessage.Name = "btnWarnMessage";
-            this.btnWarnMessage.UseVisualStyleBackColor = true;
-            this.btnWarnMessage.Click += new System.EventHandler(this.btnWarnMessage_Click);
-            // 
-            // pboxWarnMessage
-            // 
-            this.pboxWarnMessage.BackgroundImage = global::ByAeroBeHero.Properties.Resources._2__1_;
-            resources.ApplyResources(this.pboxWarnMessage, "pboxWarnMessage");
-            this.pboxWarnMessage.Name = "pboxWarnMessage";
-            this.pboxWarnMessage.TabStop = false;
-            // 
-            // pbMeter
-            // 
-            resources.ApplyResources(this.pbMeter, "pbMeter");
-            this.pbMeter.Name = "pbMeter";
-            this.pbMeter.TabStop = false;
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BackColor = System.Drawing.Color.Black;
+            this.splitContainer1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -1667,7 +1706,7 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Black;
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Panel2.ContextMenuStrip = this.contextMenuStripMap;
             this.splitContainer1.Panel2.Controls.Add(this.panelShowParams);
             this.splitContainer1.Panel2.Controls.Add(this.panelAutoFly);
@@ -2184,11 +2223,11 @@
             // gMapControl1
             // 
             resources.ApplyResources(this.gMapControl1, "gMapControl1");
-            this.gMapControl1.BackColor = System.Drawing.Color.Black;
+            this.gMapControl1.BackColor = System.Drawing.Color.Transparent;
             this.gMapControl1.Bearing = 0F;
             this.gMapControl1.CanDragMap = true;
             this.gMapControl1.ContextMenuStrip = this.contextMenuStripMap;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Gray;
+            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Transparent;
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
@@ -2228,16 +2267,22 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::ByAeroBeHero.Properties.Resources.bgdark;
-            this.panel1.Controls.Add(this.fiType);
-            this.panel1.Controls.Add(this.fiBad);
-            this.panel1.Controls.Add(this.fiState);
-            this.panel1.Controls.Add(this.fiMode);
-            this.panel1.Controls.Add(this.fiGPS);
-            this.panel1.Controls.Add(this.fiBat);
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Controls.Add(this.mylblbat);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.ForeColor = System.Drawing.Color.DarkGreen;
             this.panel1.Name = "panel1";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.fiType, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.fiBad, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.fiBat, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.fiGPS, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.fiMode, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.fiState, 3, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // fiType
             // 
@@ -2250,11 +2295,12 @@
             this.fiType.current = 0F;
             this.fiType.DataBindings.Add(new System.Windows.Forms.Binding("ch8out", this.bindingSourceHud, "ch8out", true));
             this.fiType.DataBindings.Add(new System.Windows.Forms.Binding("ch6out", this.bindingSourceHud, "ch6out", true));
+            this.fiType.DataBindings.Add(new System.Windows.Forms.Binding("frame", this.bindingSourceHud, "frame", true));
             this.fiType.desc = "机型|";
+            resources.ApplyResources(this.fiType, "fiType");
             this.fiType.failsafe = false;
             this.fiType.ForeColor = System.Drawing.Color.White;
             this.fiType.gpsfix = 0F;
-            resources.ApplyResources(this.fiType, "fiType");
             this.fiType.message = "";
             this.fiType.messagetime = new System.DateTime(((long)(0)));
             this.fiType.mode = "Manual";
@@ -2275,10 +2321,10 @@
             this.fiBad.DataBindings.Add(new System.Windows.Forms.Binding("message", this.bindingSourceHud, "messageHigh", true));
             this.fiBad.DataBindings.Add(new System.Windows.Forms.Binding("messagetime", this.bindingSourceHud, "messageHighTime", true));
             this.fiBad.desc = "消息|";
+            resources.ApplyResources(this.fiBad, "fiBad");
             this.fiBad.failsafe = false;
             this.fiBad.ForeColor = System.Drawing.Color.White;
             this.fiBad.gpsfix = 0F;
-            resources.ApplyResources(this.fiBad, "fiBad");
             this.fiBad.message = "";
             this.fiBad.messagetime = new System.DateTime(((long)(0)));
             this.fiBad.mode = "Manual";
@@ -2286,76 +2332,6 @@
             this.fiBad.numberColor = System.Drawing.Color.Red;
             this.fiBad.status = false;
             this.fiBad.text = "";
-            // 
-            // fiState
-            // 
-            this.fiState.BackColor = System.Drawing.Color.Black;
-            this.fiState.batterylevel = 0F;
-            this.fiState.batteryremaining = 0F;
-            this.fiState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fiState.ch6out = 0F;
-            this.fiState.ch8out = 0F;
-            this.fiState.current = 0F;
-            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("status", this.bindingSourceHud, "armed", true));
-            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("failsafe", this.bindingSourceHud, "failsafe", true));
-            this.fiState.desc = "状态|";
-            this.fiState.failsafe = false;
-            this.fiState.ForeColor = System.Drawing.Color.White;
-            this.fiState.gpsfix = 0F;
-            resources.ApplyResources(this.fiState, "fiState");
-            this.fiState.message = "";
-            this.fiState.messagetime = new System.DateTime(((long)(0)));
-            this.fiState.mode = "Manual";
-            this.fiState.Name = "fiState";
-            this.fiState.numberColor = System.Drawing.Color.White;
-            this.fiState.status = false;
-            this.fiState.text = "";
-            // 
-            // fiMode
-            // 
-            this.fiMode.BackColor = System.Drawing.Color.Black;
-            this.fiMode.batterylevel = 0F;
-            this.fiMode.batteryremaining = 0F;
-            this.fiMode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fiMode.ch6out = 0F;
-            this.fiMode.ch8out = 0F;
-            this.fiMode.current = 0F;
-            this.fiMode.DataBindings.Add(new System.Windows.Forms.Binding("mode", this.bindingSourceHud, "mode", true));
-            this.fiMode.desc = "模式|";
-            this.fiMode.failsafe = false;
-            this.fiMode.ForeColor = System.Drawing.Color.White;
-            this.fiMode.gpsfix = 0F;
-            resources.ApplyResources(this.fiMode, "fiMode");
-            this.fiMode.message = "";
-            this.fiMode.messagetime = new System.DateTime(((long)(0)));
-            this.fiMode.mode = "Manual";
-            this.fiMode.Name = "fiMode";
-            this.fiMode.numberColor = System.Drawing.Color.White;
-            this.fiMode.status = false;
-            this.fiMode.text = "";
-            // 
-            // fiGPS
-            // 
-            this.fiGPS.BackColor = System.Drawing.Color.Black;
-            this.fiGPS.batterylevel = 0F;
-            this.fiGPS.batteryremaining = 0F;
-            this.fiGPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fiGPS.ch6out = 0F;
-            this.fiGPS.ch8out = 0F;
-            this.fiGPS.current = 0F;
-            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.bindingSourceHud, "gpsstatus", true));
-            this.fiGPS.desc = "GPS|";
-            this.fiGPS.failsafe = false;
-            this.fiGPS.ForeColor = System.Drawing.Color.White;
-            this.fiGPS.gpsfix = 0F;
-            resources.ApplyResources(this.fiGPS, "fiGPS");
-            this.fiGPS.message = "";
-            this.fiGPS.messagetime = new System.DateTime(((long)(0)));
-            this.fiGPS.mode = "Manual";
-            this.fiGPS.Name = "fiGPS";
-            this.fiGPS.numberColor = System.Drawing.Color.White;
-            this.fiGPS.status = false;
-            this.fiGPS.text = "";
             // 
             // fiBat
             // 
@@ -2370,10 +2346,10 @@
             this.fiBat.DataBindings.Add(new System.Windows.Forms.Binding("batteryremaining", this.bindingSourceHud, "battery_remaining", true));
             this.fiBat.DataBindings.Add(new System.Windows.Forms.Binding("current", this.bindingSourceHud, "current", true));
             this.fiBat.desc = "电池|";
+            resources.ApplyResources(this.fiBat, "fiBat");
             this.fiBat.failsafe = false;
             this.fiBat.ForeColor = System.Drawing.Color.White;
             this.fiBat.gpsfix = 0F;
-            resources.ApplyResources(this.fiBat, "fiBat");
             this.fiBat.message = "";
             this.fiBat.messagetime = new System.DateTime(((long)(0)));
             this.fiBat.mode = "Manual";
@@ -2381,6 +2357,76 @@
             this.fiBat.numberColor = System.Drawing.Color.White;
             this.fiBat.status = false;
             this.fiBat.text = "";
+            // 
+            // fiGPS
+            // 
+            this.fiGPS.BackColor = System.Drawing.Color.Black;
+            this.fiGPS.batterylevel = 0F;
+            this.fiGPS.batteryremaining = 0F;
+            this.fiGPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiGPS.ch6out = 0F;
+            this.fiGPS.ch8out = 0F;
+            this.fiGPS.current = 0F;
+            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.bindingSourceHud, "gpsstatus", true));
+            this.fiGPS.desc = "GPS|";
+            resources.ApplyResources(this.fiGPS, "fiGPS");
+            this.fiGPS.failsafe = false;
+            this.fiGPS.ForeColor = System.Drawing.Color.White;
+            this.fiGPS.gpsfix = 0F;
+            this.fiGPS.message = "";
+            this.fiGPS.messagetime = new System.DateTime(((long)(0)));
+            this.fiGPS.mode = "Manual";
+            this.fiGPS.Name = "fiGPS";
+            this.fiGPS.numberColor = System.Drawing.Color.White;
+            this.fiGPS.status = false;
+            this.fiGPS.text = "";
+            // 
+            // fiMode
+            // 
+            this.fiMode.BackColor = System.Drawing.Color.Black;
+            this.fiMode.batterylevel = 0F;
+            this.fiMode.batteryremaining = 0F;
+            this.fiMode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiMode.ch6out = 0F;
+            this.fiMode.ch8out = 0F;
+            this.fiMode.current = 0F;
+            this.fiMode.DataBindings.Add(new System.Windows.Forms.Binding("mode", this.bindingSourceHud, "mode", true));
+            this.fiMode.desc = "模式|";
+            resources.ApplyResources(this.fiMode, "fiMode");
+            this.fiMode.failsafe = false;
+            this.fiMode.ForeColor = System.Drawing.Color.White;
+            this.fiMode.gpsfix = 0F;
+            this.fiMode.message = "";
+            this.fiMode.messagetime = new System.DateTime(((long)(0)));
+            this.fiMode.mode = "Manual";
+            this.fiMode.Name = "fiMode";
+            this.fiMode.numberColor = System.Drawing.Color.White;
+            this.fiMode.status = false;
+            this.fiMode.text = "";
+            // 
+            // fiState
+            // 
+            this.fiState.BackColor = System.Drawing.Color.Black;
+            this.fiState.batterylevel = 0F;
+            this.fiState.batteryremaining = 0F;
+            this.fiState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fiState.ch6out = 0F;
+            this.fiState.ch8out = 0F;
+            this.fiState.current = 0F;
+            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("status", this.bindingSourceHud, "armed", true));
+            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("failsafe", this.bindingSourceHud, "failsafe", true));
+            this.fiState.desc = "状态|";
+            resources.ApplyResources(this.fiState, "fiState");
+            this.fiState.failsafe = false;
+            this.fiState.ForeColor = System.Drawing.Color.White;
+            this.fiState.gpsfix = 0F;
+            this.fiState.message = "";
+            this.fiState.messagetime = new System.DateTime(((long)(0)));
+            this.fiState.mode = "Manual";
+            this.fiState.Name = "fiState";
+            this.fiState.numberColor = System.Drawing.Color.White;
+            this.fiState.status = false;
+            this.fiState.text = "";
             // 
             // mylblbat
             // 
@@ -2408,8 +2454,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2417,8 +2463,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2443,46 +2489,11 @@
             // 
             this.bindingSourceStatusTab.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
-            // tableLayoutPanel4
-            // 
-            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-            this.tableLayoutPanel4.Controls.Add(this.lblLD, 8, 1);
-            this.tableLayoutPanel4.Controls.Add(this.lblvibez, 7, 1);
-            this.tableLayoutPanel4.Controls.Add(this.lblPump, 6, 1);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxLD, 8, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblReceiver, 5, 1);
-            this.tableLayoutPanel4.Controls.Add(this.lblGyro, 4, 1);
-            this.tableLayoutPanel4.Controls.Add(this.lblCompass, 3, 1);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxGPS, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblAccel, 2, 1);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxPump, 6, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblGPS, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxLevel, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblLevel, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxAccel, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxReceiver, 5, 0);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxvibez, 7, 0);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxGyro, 4, 0);
-            this.tableLayoutPanel4.Controls.Add(this.pictureBoxCompass, 3, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            // 
-            // pictureBoxLD
-            // 
-            resources.ApplyResources(this.pictureBoxLD, "pictureBoxLD");
-            this.pictureBoxLD.Name = "pictureBoxLD";
-            this.pictureBoxLD.TabStop = false;
-            // 
-            // lblLD
-            // 
-            resources.ApplyResources(this.lblLD, "lblLD");
-            this.lblLD.BackColor = System.Drawing.Color.Black;
-            this.lblLD.ForeColor = System.Drawing.Color.White;
-            this.lblLD.Name = "lblLD";
-            // 
             // FlightData
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableMap);
             this.Controls.Add(this.MainH);
             this.MinimumSize = new System.Drawing.Size(1344, 532);
@@ -2491,9 +2502,28 @@
             this.Load += new System.EventHandler(this.FlightData_Load);
             this.Resize += new System.EventHandler(this.FlightData_Resize);
             this.ParentChanged += new System.EventHandler(this.FlightData_ParentChanged);
+            this.MainH.Panel1.ResumeLayout(false);
             this.MainH.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainH)).EndInit();
             this.MainH.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowParam)).EndInit();
+            this.panelDeviceStatus.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeviceStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxWarnMessage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).EndInit();
             this.SubMainLeft.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SubMainLeft)).EndInit();
             this.SubMainLeft.ResumeLayout(false);
@@ -2518,21 +2548,6 @@
             this.tabScripts.ResumeLayout(false);
             this.tabScripts.PerformLayout();
             this.tableMap.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowParam)).EndInit();
-            this.panelDeviceStatus.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDeviceStatus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAction)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxWarnMessage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMeter)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
@@ -2550,11 +2565,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceHud)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceStatusTab)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2751,6 +2764,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.PictureBox pictureBoxLD;
         private System.Windows.Forms.Label lblLD;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
 
     }
 }

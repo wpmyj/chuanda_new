@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -24,25 +23,25 @@ namespace ByAeroBeHero.Controls
             {
                 if (lblName.Text == value)
                     return;
-                
+
                 lblName.Text = value;
             }
         }
         [System.ComponentModel.Browsable(true)]
 
-        public string text 
-        { 
-            get 
-            { 
-                return lblData.Text; 
-            } 
-            set 
+        public string text
+        {
+            get
             {
-                if (lblData.Text == value) 
+                return lblData.Text;
+            }
+            set
+            {
+                if (lblData.Text == value)
                     return;
                 lblData.Text = value;
 
-                this.Invalidate(); 
+                this.Invalidate();
             }
         }
 
@@ -56,118 +55,119 @@ namespace ByAeroBeHero.Controls
         string _message = "";
         float _ch6out = 0;
         float _ch8out = 0;
+        float _frame = 0;
 
         [System.ComponentModel.Browsable(true)]
-        public Color numberColor 
-        { 
-            get 
-            { 
-                return lblData.ForeColor; 
-            } 
-            set 
-            { 
-                if (lblData.ForeColor == value) 
-                    return; lblData.ForeColor = value; 
+        public Color numberColor
+        {
+            get
+            {
+                return lblData.ForeColor;
+            }
+            set
+            {
+                if (lblData.ForeColor == value)
+                    return; lblData.ForeColor = value;
             }
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public float batterylevel 
-        { 
-            get 
-            { 
-                return _batterylevel; 
-            } 
-            set 
-            { 
-                if (_batterylevel != value) 
-                { 
+        public float batterylevel
+        {
+            get
+            {
+                return _batterylevel;
+            }
+            set
+            {
+                if (_batterylevel != value)
+                {
                     _batterylevel = value;
 
-                    this.Invalidate(); 
-                } 
-            } 
+                    this.Invalidate();
+                }
+            }
         }
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public float batteryremaining 
-        { 
-            get 
-            { 
-                return _batteryremaining; 
-            } 
-            set 
-            { 
-                if (_batteryremaining != value) 
-                { 
+        public float batteryremaining
+        {
+            get
+            {
+                return _batteryremaining;
+            }
+            set
+            {
+                if (_batteryremaining != value)
+                {
                     _batteryremaining = value;
 
-                    this.Invalidate(); 
-                } 
-            } 
+                    this.Invalidate();
+                }
+            }
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public float current 
-        { 
-            get 
-            { 
-                return _current; 
-            } 
-            set 
-            { 
+        public float current
+        {
+            get
+            {
+                return _current;
+            }
+            set
+            {
                 if (_current != value)
                 {
-                    _current = value; 
-                    
-                    this.Invalidate(); 
+                    _current = value;
+
+                    this.Invalidate();
                     //if (_current > 0) 
                     //    batteryon = true; 
-                } 
-            } 
+                }
+            }
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public float gpsfix 
+        public float gpsfix
         {
-            get 
-            { 
-                return _gpsfix; 
-            } 
-            set 
-            { 
+            get
+            {
+                return _gpsfix;
+            }
+            set
+            {
                 if (_gpsfix != value)
-                { 
+                {
                     _gpsfix = value;
-                    this.Invalidate(); 
-                } 
-            } 
+                    this.Invalidate();
+                }
+            }
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public string mode 
-        { 
-            get 
-            { 
-                return _mode; 
-            } 
-            set 
-            { 
-                if (_mode != value) 
-                { 
-                    _mode = value; 
-                    this.Invalidate(); 
-                } 
-            } 
-        }
-
-        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public bool status 
+        public string mode
         {
-            get 
+            get
+            {
+                return _mode;
+            }
+            set
+            {
+                if (_mode != value)
+                {
+                    _mode = value;
+                    this.Invalidate();
+                }
+            }
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public bool status
+        {
+            get
             {
                 return _state;
             }
-            set 
+            set
             {
                 _state = value;
 
@@ -176,13 +176,13 @@ namespace ByAeroBeHero.Controls
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public bool failsafe 
+        public bool failsafe
         {
-            get 
+            get
             {
                 return _failsafe;
             }
-            set 
+            set
             {
                 _failsafe = value;
                 this.Invalidate();
@@ -190,8 +190,8 @@ namespace ByAeroBeHero.Controls
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
-        public string message 
-        { 
+        public string message
+        {
             get
             {
                 return _message;
@@ -200,7 +200,7 @@ namespace ByAeroBeHero.Controls
             {
                 _message = value;
                 this.Invalidate();
-            } 
+            }
         }
 
         [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
@@ -238,6 +238,20 @@ namespace ByAeroBeHero.Controls
             }
         }
 
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public float frame
+        {
+            get
+            {
+                return _frame;
+            }
+            set
+            {
+                _frame = value;
+                this.Invalidate();
+            }
+        }
+
         bool statuslast = false;
         DateTime armedtimer = DateTime.MinValue;
 
@@ -263,43 +277,46 @@ namespace ByAeroBeHero.Controls
             if (this.Visible)
                 base.OnPaint(e);
 
-            string str =string.Empty;
+            string str = string.Empty;
             if (this.Name == "fiBat")
             {
                 str = _batterylevel.ToString("0.00v");// +" " + _current.ToString("0.0 A") + " " + (_batteryremaining) + "%";
             }
-            else if(this.Name == "fiGPS")
+            else if (this.Name == "fiGPS")
             {
                 str = strGPRS();
             }
-            else if(this.Name == "fiMode")
+            else if (this.Name == "fiMode")
             {
-                str =mode;
+                str = mode;
             }
-            else if (this.Name == "fiState") 
+            else if (this.Name == "fiState")
             {
                 str = strFiState();
             }
-            else if(this.Name == "fiBad")
+            else if (this.Name == "fiBad")
             {
                 if (message != "" && messagetime.AddSeconds(10) > DateTime.Now)
                 {
                     str = message;
                 }
             }
-            else if(this.Name =="fiType")
+            else if (this.Name == "fiType")
             {
-                if(ch6out>0 && ch8out ==0)
+                string strFrame = string.Empty;
+                if (frame == 0) { strFrame = "十形"; }
+                else if (frame == 1) { strFrame = "X形"; }
+                if (ch6out > 0 && ch8out == 0)
                 {
-                    str = "六轴";
+                    str = strFrame + "六轴";
                 }
                 else if (ch8out > 0)
                 {
-                    str = "八轴";
+                    str = strFrame + "八轴";
                 }
-                else 
+                else
                 {
-                    str = "四轴";
+                    str = strFrame + "四轴";
                 }
             }
 
@@ -312,15 +329,15 @@ namespace ByAeroBeHero.Controls
 
             if (_gpsfix == 0)
             {
-               gps = (HUDT.GPS0);
-             }
+                gps = (HUDT.GPS0);
+            }
             else if (_gpsfix == 1)
             {
                 gps = (HUDT.GPS1);
             }
             else if (_gpsfix == 2)
             {
-            gps = (HUDT.GPS2);
+                gps = (HUDT.GPS2);
             }
             else if (_gpsfix == 3)
             {
@@ -333,14 +350,14 @@ namespace ByAeroBeHero.Controls
             else if (_gpsfix == 5)
             {
                 gps = (HUDT.GPS5);
-            } 
-            
+            }
+
             return gps;
         }
 
-        private string strFiState() 
+        private string strFiState()
         {
-            string state = string.Empty; 
+            string state = string.Empty;
             if (status != statuslast)
             {
                 armedtimer = DateTime.Now;

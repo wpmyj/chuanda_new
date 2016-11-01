@@ -3150,6 +3150,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Alerted.png" />
+    <Content Include="Resources\backgroudp.png" />
+    <Content Include="Resources\white.png" />
     <Content Include="Sound\Waring.wav" />
     <None Include="Resources\Parachute.png" />
     <None Include="Resources\frames-041.png" />

@@ -122,7 +122,8 @@ namespace ByAeroBeHero.Controls
         {
 
             //|| ParamName == "RTL_ALT"
-            if (ParamName == "FENCE_ALT_MAX" || ParamName == "FENCE_RADIUS" )
+            if (ParamName == "FENCE_ALT_MAX" || ParamName == "FENCE_RADIUS" ||
+               ParamName == "SPRAY_RATE_MAX" || ParamName == "SPRAY_RATE_MIN" || ParamName == "SPRAY_SPEED_MIN" || ParamName == "SPRAY_SPEED_MAX")
             {
                 iSendValue = (float)base.Value * (float)_scale;
                 return;

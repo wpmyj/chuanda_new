@@ -136,6 +136,7 @@ namespace ByAeroBeHero.GCSViews
             this.BUT_loadwpfile = new ByAeroBeHero.Controls.MyButton();
             this.BUT_saveWPFile = new ByAeroBeHero.Controls.MyButton();
             this.panelMap = new System.Windows.Forms.Panel();
+            this.trackBar1 = new ByAeroBeHero.Controls.MyTrackBar();
             this.panelShowPoint = new BSE.Windows.Forms.Panel();
             this.groupboxOPoint = new System.Windows.Forms.GroupBox();
             this.myButton_savelimitpoint = new ByAeroBeHero.Controls.MyButton();
@@ -164,6 +165,7 @@ namespace ByAeroBeHero.GCSViews
             this.btnAutoPan = new ByAeroBeHero.Controls.MyButton();
             this.ebsPanelMeter = new BSE.Windows.Forms.Panel();
             this.hud1 = new ByAeroBeHero.Controls.HUD();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ebsPanelFlyingInfo = new BSE.Windows.Forms.Panel();
             this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
             this.Qvtohome = new ByAeroBeHero.Controls.QuickView();
@@ -238,7 +240,6 @@ namespace ByAeroBeHero.GCSViews
             this.lblHorizontal = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
-            this.trackBar1 = new ByAeroBeHero.Controls.MyTrackBar();
             this.MainMap = new ByAeroBeHero.Controls.myGMAP();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -328,7 +329,6 @@ namespace ByAeroBeHero.GCSViews
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
             this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -337,6 +337,7 @@ namespace ByAeroBeHero.GCSViews
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panelMap.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panelShowPoint.SuspendLayout();
             this.groupboxOPoint.SuspendLayout();
             this.breakpointgroupBox.SuspendLayout();
@@ -344,6 +345,7 @@ namespace ByAeroBeHero.GCSViews
             this.groupBoxRellyPoint.SuspendLayout();
             this.groupBoxAeroPoint.SuspendLayout();
             this.ebsPanelMeter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.ebsPanelFlyingInfo.SuspendLayout();
             this.ebsPanelPlanInfo.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -369,9 +371,7 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Commands
@@ -1001,6 +1001,19 @@ namespace ByAeroBeHero.GCSViews
             this.panelMap.Name = "panelMap";
             this.panelMap.Resize += new System.EventHandler(this.panelMap_Resize);
             // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.BackColor = System.Drawing.Color.Black;
+            this.trackBar1.LargeChange = 0.005F;
+            this.trackBar1.Maximum = 24F;
+            this.trackBar1.Minimum = 1F;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.SmallChange = 0.001F;
+            this.trackBar1.TickFrequency = 1F;
+            this.trackBar1.Value = 2F;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
             // panelShowPoint
             // 
             this.panelShowPoint.AssociatedSplitter = null;
@@ -1369,6 +1382,10 @@ namespace ByAeroBeHero.GCSViews
             this.hud1.VSync = false;
             this.hud1.wpno = 0;
             this.hud1.xtrack_error = 0F;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // ebsPanelFlyingInfo
             // 
@@ -2075,19 +2092,6 @@ namespace ByAeroBeHero.GCSViews
             this.txt_messagebox.Name = "txt_messagebox";
             this.txt_messagebox.ReadOnly = true;
             // 
-            // trackBar1
-            // 
-            resources.ApplyResources(this.trackBar1, "trackBar1");
-            this.trackBar1.BackColor = System.Drawing.Color.Black;
-            this.trackBar1.LargeChange = 0.005F;
-            this.trackBar1.Maximum = 24F;
-            this.trackBar1.Minimum = 1F;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.SmallChange = 0.001F;
-            this.trackBar1.TickFrequency = 1F;
-            this.trackBar1.Value = 2F;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-            // 
             // MainMap
             // 
             resources.ApplyResources(this.MainMap, "MainMap");
@@ -2713,10 +2717,6 @@ namespace ByAeroBeHero.GCSViews
             this.Messagetabtimer.Interval = 1000;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
             // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2743,6 +2743,7 @@ namespace ByAeroBeHero.GCSViews
             this.tableLayoutPanel3.PerformLayout();
             this.panelMap.ResumeLayout(false);
             this.panelMap.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panelShowPoint.ResumeLayout(false);
             this.groupboxOPoint.ResumeLayout(false);
             this.breakpointgroupBox.ResumeLayout(false);
@@ -2750,6 +2751,7 @@ namespace ByAeroBeHero.GCSViews
             this.groupBoxRellyPoint.ResumeLayout(false);
             this.groupBoxAeroPoint.ResumeLayout(false);
             this.ebsPanelMeter.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ebsPanelFlyingInfo.ResumeLayout(false);
             this.ebsPanelPlanInfo.ResumeLayout(false);
             this.ebsPanelPlanInfo.PerformLayout();
@@ -2790,9 +2792,7 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

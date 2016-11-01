@@ -21,9 +21,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public ConfigArducopter()
         {
             InitializeComponent();
-            this.tableLayoutPanel1.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
-            this.tableLayoutPanel2.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
-            this.tableLayoutPanel3.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
+            //this.panel1.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
+            //this.tableLayoutPanel2.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
+            //this.tableLayoutPanel3.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
             initcontrol();
         }
 
@@ -31,7 +31,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             this.label13.ForeColor = this.label15.ForeColor = this.label16.ForeColor = this.label9.ForeColor = this.label29.ForeColor = this.label19.ForeColor =
                 this.label20.ForeColor = this.label21.ForeColor = this.label23.ForeColor = this.label24.ForeColor = this.label28.ForeColor =
-                this.label30.ForeColor = this.label32.ForeColor = this.label26.ForeColor = this.label34.ForeColor = this.label27.ForeColor = Color.Black;
+                this.label30.ForeColor = this.label32.ForeColor = this.label26.ForeColor = this.label34.ForeColor = this.label27.ForeColor =
+                CHK_lockrollpitch.ForeColor = Color.Black;
         }
 
         void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)

@@ -36,10 +36,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.CHK_elevonch2rev = new System.Windows.Forms.CheckBox();
             this.CHK_elevonrev = new System.Windows.Forms.CheckBox();
             this.CHK_elevonch1rev = new System.Windows.Forms.CheckBox();
-            this.CHK_revch3 = new System.Windows.Forms.CheckBox();
-            this.CHK_revch4 = new System.Windows.Forms.CheckBox();
-            this.CHK_revch2 = new System.Windows.Forms.CheckBox();
-            this.CHK_revch1 = new System.Windows.Forms.CheckBox();
             this.BUT_BindDSM8 = new ByAeroBeHero.Controls.MyButton();
             this.BUT_BindDSMX = new ByAeroBeHero.Controls.MyButton();
             this.BUT_BindDSM2 = new ByAeroBeHero.Controls.MyButton();
@@ -53,18 +49,50 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BARpitch = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.BARthrottle = new ByAeroBeHero.Controls.HorizontalProgressBar2();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new BSE.Windows.Forms.Panel();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,34 +134,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.CHK_elevonch1rev.UseVisualStyleBackColor = true;
             this.CHK_elevonch1rev.CheckedChanged += new System.EventHandler(this.CHK_elevonch1rev_CheckedChanged);
             // 
-            // CHK_revch3
-            // 
-            resources.ApplyResources(this.CHK_revch3, "CHK_revch3");
-            this.CHK_revch3.Name = "CHK_revch3";
-            this.CHK_revch3.UseVisualStyleBackColor = true;
-            this.CHK_revch3.CheckedChanged += new System.EventHandler(this.CHK_revch3_CheckedChanged);
-            // 
-            // CHK_revch4
-            // 
-            resources.ApplyResources(this.CHK_revch4, "CHK_revch4");
-            this.CHK_revch4.Name = "CHK_revch4";
-            this.CHK_revch4.UseVisualStyleBackColor = true;
-            this.CHK_revch4.CheckedChanged += new System.EventHandler(this.CHK_revch4_CheckedChanged);
-            // 
-            // CHK_revch2
-            // 
-            resources.ApplyResources(this.CHK_revch2, "CHK_revch2");
-            this.CHK_revch2.Name = "CHK_revch2";
-            this.CHK_revch2.UseVisualStyleBackColor = true;
-            this.CHK_revch2.CheckedChanged += new System.EventHandler(this.CHK_revch2_CheckedChanged);
-            // 
-            // CHK_revch1
-            // 
-            resources.ApplyResources(this.CHK_revch1, "CHK_revch1");
-            this.CHK_revch1.Name = "CHK_revch1";
-            this.CHK_revch1.UseVisualStyleBackColor = true;
-            this.CHK_revch1.CheckedChanged += new System.EventHandler(this.CHK_revch1_CheckedChanged);
-            // 
             // BUT_BindDSM8
             // 
             resources.ApplyResources(this.BUT_BindDSM8, "BUT_BindDSM8");
@@ -157,9 +157,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // BUT_Calibrateradio
             // 
+            this.BUT_Calibrateradio.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_Calibrateradio.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_Calibrateradio.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.BUT_Calibrateradio, "BUT_Calibrateradio");
             this.BUT_Calibrateradio.Name = "BUT_Calibrateradio";
-            this.BUT_Calibrateradio.UseVisualStyleBackColor = true;
+            this.BUT_Calibrateradio.UseVisualStyleBackColor = false;
             this.BUT_Calibrateradio.Click += new System.EventHandler(this.BUT_Calibrateradio_Click);
             // 
             // BAR8
@@ -176,6 +179,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BAR8.Name = "BAR8";
             this.BAR8.Value = 1500;
             this.BAR8.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.BAR8.Click += new System.EventHandler(this.BAR8_Click);
             // 
             // BAR7
             // 
@@ -292,39 +296,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.BARthrottle.Value = 1500;
             this.BARthrottle.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.BAR5);
-            this.groupBox2.Controls.Add(this.BAR6);
-            this.groupBox2.Controls.Add(this.BAR7);
-            this.groupBox2.Controls.Add(this.BAR8);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.BARthrottle);
-            this.groupBox3.Controls.Add(this.BARroll);
-            this.groupBox3.Controls.Add(this.BARyaw);
-            this.groupBox3.Controls.Add(this.BARpitch);
-            this.groupBox3.Controls.Add(this.CHK_revch1);
-            this.groupBox3.Controls.Add(this.CHK_revch2);
-            this.groupBox3.Controls.Add(this.CHK_revch3);
-            this.groupBox3.Controls.Add(this.CHK_revch4);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.label1);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -334,6 +305,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Name = "label2";
             // 
             // label1
@@ -341,28 +313,280 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // panel1
+            // 
+            this.panel1.AssociatedSplitter = null;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.lbl8);
+            this.panel1.Controls.Add(this.lbl7);
+            this.panel1.Controls.Add(this.lbl6);
+            this.panel1.Controls.Add(this.lbl5);
+            this.panel1.Controls.Add(this.lbl4);
+            this.panel1.Controls.Add(this.lbl3);
+            this.panel1.Controls.Add(this.lbl2);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.lbl1);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.BAR8);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.BAR7);
+            this.panel1.Controls.Add(this.BUT_Calibrateradio);
+            this.panel1.Controls.Add(this.BAR6);
+            this.panel1.Controls.Add(this.BAR5);
+            this.panel1.Controls.Add(this.BARyaw);
+            this.panel1.Controls.Add(this.BARthrottle);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.BARroll);
+            this.panel1.Controls.Add(this.BARpitch);
+            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Image = null;
+            this.panel1.Name = "panel1";
+            this.panel1.ToolTipTextCloseIcon = null;
+            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
+            this.panel1.CloseClick += new System.EventHandler<System.EventArgs>(this.panel1_CloseClick);
+            // 
+            // lbl8
+            // 
+            resources.ApplyResources(this.lbl8, "lbl8");
+            this.lbl8.Name = "lbl8";
+            // 
+            // lbl7
+            // 
+            resources.ApplyResources(this.lbl7, "lbl7");
+            this.lbl7.Name = "lbl7";
+            // 
+            // lbl6
+            // 
+            resources.ApplyResources(this.lbl6, "lbl6");
+            this.lbl6.Name = "lbl6";
+            // 
+            // lbl5
+            // 
+            resources.ApplyResources(this.lbl5, "lbl5");
+            this.lbl5.Name = "lbl5";
+            // 
+            // lbl4
+            // 
+            resources.ApplyResources(this.lbl4, "lbl4");
+            this.lbl4.Name = "lbl4";
+            // 
+            // lbl3
+            // 
+            resources.ApplyResources(this.lbl3, "lbl3");
+            this.lbl3.Name = "lbl3";
+            // 
+            // lbl2
+            // 
+            resources.ApplyResources(this.lbl2, "lbl2");
+            this.lbl2.Name = "lbl2";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Name = "label13";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label10
+            // 
+            resources.ApplyResources(this.label10, "label10");
+            this.label10.Name = "label10";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // lbl1
+            // 
+            resources.ApplyResources(this.lbl1, "lbl1");
+            this.lbl1.Name = "lbl1";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Name = "label5";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Name = "label4";
+            // 
             // currentStateBindingSource
             // 
             this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.Name = "label17";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.Name = "label18";
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // label27
+            // 
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.Name = "label31";
             // 
             // ConfigRadioInput
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.BUT_Calibrateradio);
             this.Name = "ConfigRadioInput";
             this.groupBoxElevons.ResumeLayout(false);
             this.groupBoxElevons.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -375,10 +599,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.CheckBox CHK_elevonch2rev;
         private System.Windows.Forms.CheckBox CHK_elevonrev;
         private System.Windows.Forms.CheckBox CHK_elevonch1rev;
-        private System.Windows.Forms.CheckBox CHK_revch3;
-        private System.Windows.Forms.CheckBox CHK_revch4;
-        private System.Windows.Forms.CheckBox CHK_revch2;
-        private System.Windows.Forms.CheckBox CHK_revch1;
         private Controls.MyButton BUT_Calibrateradio;
         private HorizontalProgressBar2 BAR8;
         private HorizontalProgressBar2 BAR7;
@@ -393,11 +613,45 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.GroupBox groupBox1;
         private HorizontalProgressBar2 BARpitch;
         private HorizontalProgressBar2 BARthrottle;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private BSE.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
     }
 }

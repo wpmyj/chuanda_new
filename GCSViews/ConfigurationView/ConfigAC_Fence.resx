@@ -117,89 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="mavlinkComboBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mavlinkComboBox2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="mavlinkComboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 86</value>
-  </data>
-  <data name="mavlinkComboBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkComboBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 28</value>
-  </data>
-  <data name="mavlinkComboBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>85</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox2.Name" xml:space="preserve">
-    <value>mavlinkComboBox2</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5995.16568, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mavlinkCheckBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mavlinkCheckBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mavlinkCheckBox1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkCheckBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mavlinkCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 11</value>
-  </data>
-  <data name="mavlinkCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 17</value>
-  </data>
-  <data name="mavlinkCheckBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBox1.Name" xml:space="preserve">
-    <value>mavlinkCheckBox1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBox1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.5995.16568, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBox1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkCheckBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="label3enable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label3enable.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label3enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
   </data>
   <data name="label3enable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 9</value>
+    <value>47, 51</value>
   </data>
   <data name="label3enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -220,40 +154,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3enable.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label3enable.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="mavlinkComboBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mavlinkComboBox1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>123, 47</value>
-  </data>
-  <data name="mavlinkComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkComboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 28</value>
-  </data>
-  <data name="mavlinkComboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox1.Name" xml:space="preserve">
-    <value>mavlinkComboBox1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.5995.16568, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label4type.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -261,11 +165,14 @@
   <data name="label4type.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label4type.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="label4type.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label4type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 48</value>
+    <value>329, 53</value>
   </data>
   <data name="label4type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -286,10 +193,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label4type.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label4type.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="label5action.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -297,11 +204,14 @@
   <data name="label5action.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label5action.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="label5action.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5action.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 88</value>
+    <value>573, 53</value>
   </data>
   <data name="label5action.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -322,10 +232,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label5action.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label5action.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label6maxalt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -333,11 +243,14 @@
   <data name="label6maxalt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label6maxalt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="label6maxalt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label6maxalt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 9</value>
+    <value>24, 84</value>
   </data>
   <data name="label6maxalt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -358,10 +271,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6maxalt.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label6maxalt.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="label7maxrad.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -369,11 +282,14 @@
   <data name="label7maxrad.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label7maxrad.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="label7maxrad.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label7maxrad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 48</value>
+    <value>284, 87</value>
   </data>
   <data name="label7maxrad.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -394,10 +310,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7maxrad.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label7maxrad.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>3</value>
   </data>
   <data name="label2rtlalt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -405,11 +321,14 @@
   <data name="label2rtlalt.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label2rtlalt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="label2rtlalt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2rtlalt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 88</value>
+    <value>547, 87</value>
   </data>
   <data name="label2rtlalt.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -430,163 +349,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2rtlalt.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;label2rtlalt.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>5</value>
   </data>
-  <data name="mavlinkNumericUpDown1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mavlinkNumericUpDown1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 6</value>
-  </data>
-  <data name="mavlinkNumericUpDown1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDown1.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown1.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDown1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5995.16568, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="mavlinkNumericUpDown2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="mavlinkNumericUpDown2.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDown2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 45</value>
-  </data>
-  <data name="mavlinkNumericUpDown2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDown2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDown2.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown2.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDown2</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5995.16568, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown2.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="mavlinkNumericUpDown3.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDown3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 82</value>
-  </data>
-  <data name="mavlinkNumericUpDown3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDown3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDown3.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown3.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDown3</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown3.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.5995.16568, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown3.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDown3.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="tableLayoutPanel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 30</value>
-  </data>
-  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>788, 118</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="mavlinkComboBox2" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="mavlinkCheckBox1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label3enable" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="mavlinkComboBox1" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label4type" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5action" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label6maxalt" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label7maxrad" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label2rtlalt" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="mavlinkNumericUpDown1" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="mavlinkNumericUpDown2" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="mavlinkNumericUpDown3" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,15.15152,Percent,34.84848,Percent,15.15152,Percent,34.84848" /&gt;&lt;Rows Styles="Percent,33.33334,Percent,33.33334,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 255</value>
-  </data>
-  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>872, 206</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>参数设置</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="tableLayoutPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -601,7 +376,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 129</value>
+    <value>4, 146</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -637,7 +412,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 102</value>
+    <value>4, 116</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -673,19 +448,19 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 75</value>
+    <value>4, 86</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 20</value>
+    <value>352, 20</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>动      作：飞行器超出限定区域后执行的飞行动作。</value>
+    <value>动       作：飞行器超出限定区域后执行的飞行动作。</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -709,21 +484,21 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 6</value>
+    <value>4, 10</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>667, 60</value>
+    <value>683, 60</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>类      型：1.“高度”表示在限定区域内高度受到限制。
-               2.“半径”表示在限定区域内飞行半径受到限制。
-               3.“高度和半径”表示在限定区域内高度和半径都收到限制，类似于在“圆柱体内飞行“。</value>
+    <value>类       型： 1.“高度”表示在限定区域内高度受到限制。
+                   2.“半径”表示在限定区域内飞行半径受到限制。
+                   3.“高度和半径”表示在限定区域内高度和半径都收到限制，类似于在“圆柱体内飞行“。</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -747,7 +522,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 156</value>
+    <value>4, 177</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -773,11 +548,14 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tableLayoutPanel2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 28</value>
+    <value>1, 28</value>
   </data>
   <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -786,7 +564,7 @@
     <value>5</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>788, 180</value>
+    <value>881, 204</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -798,46 +576,13 @@
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="label7" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label5" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label3" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,40,Percent,15,Percent,15,Percent,15,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 29</value>
-  </data>
-  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>872, 219</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>设置参数说明</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="btnSendParam.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -846,13 +591,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnSendParam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 469</value>
+    <value>373, 128</value>
   </data>
   <data name="btnSendParam.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="btnSendParam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 29</value>
+    <value>166, 23</value>
   </data>
   <data name="btnSendParam.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -867,9 +612,273 @@
     <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnSendParam.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;btnSendParam.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 47</value>
+  </data>
+  <data name="panel1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>883, 233</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="panel1.Text" xml:space="preserve">
+    <value>参数设置说明</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mavlinkComboBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mavlinkComboBox2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkComboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>658, 48</value>
+  </data>
+  <data name="mavlinkComboBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkComboBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 28</value>
+  </data>
+  <data name="mavlinkComboBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox2.Name" xml:space="preserve">
+    <value>mavlinkComboBox2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox2.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6146.22403, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 82</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDown1.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown1.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDown1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6146.22403, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 82</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDown2.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown2.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDown2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown2.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6146.22403, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mavlinkComboBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mavlinkComboBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 48</value>
+  </data>
+  <data name="mavlinkComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 28</value>
+  </data>
+  <data name="mavlinkComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.Name" xml:space="preserve">
+    <value>mavlinkComboBox1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6146.22403, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="mavlinkNumericUpDown3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDown3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkNumericUpDown3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>658, 81</value>
+  </data>
+  <data name="mavlinkNumericUpDown3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDown3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDown3.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown3.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDown3</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown3.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6146.22403, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown3.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDown3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="mavlinkCheckBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mavlinkCheckBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mavlinkCheckBox1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkCheckBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkCheckBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mavlinkCheckBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 51</value>
+  </data>
+  <data name="mavlinkCheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkCheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="mavlinkCheckBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBox1.Name" xml:space="preserve">
+    <value>mavlinkCheckBox1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBox1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6146.22403, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;mavlinkCheckBox1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 303</value>
+  </data>
+  <data name="panel2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>882, 167</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="panel2.Text" xml:space="preserve">
+    <value>参数设置</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -878,11 +887,170 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>
   </data>
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        RudN65tdA8sHzg46DF645Xrr8m2v29fvrLwzMBQydHc4cnjkLvvu5L2key/vZ9yff7DpIfph4SOpR+WP
+        lR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aTp6fcp24+W/1s/Hnq8/npgp+l
+        f65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfzc4Vv5d8efcd41/s+7P3EfOYH7IeK
+        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAGXhJREFUeF7t1wENAAAM
+        w6CLnX8N19EEXHADAACgzOsAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoGx7vxIru+2/VRAAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1035, 549</value>
+    <value>1035, 706</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigAC_Fence</value>

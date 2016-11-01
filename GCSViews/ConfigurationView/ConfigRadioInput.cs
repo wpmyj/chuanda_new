@@ -110,21 +110,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
                 if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduCopter2)
                 {
-                    CHK_revch1.Visible = false;
-                    CHK_revch2.Visible = false;
-                    CHK_revch3.Visible = false;
-                    CHK_revch4.Visible = false;
+                    //CHK_revch1.Visible = false;
+                    //CHK_revch2.Visible = false;
+                    //CHK_revch3.Visible = false;
+                    //CHK_revch4.Visible = false;
                 }
             }
             try
             {
-                CHK_revch1.Checked = MainV2.comPort.MAV.param["RC1_REV"].ToString() == "-1";
-                CHK_revch2.Checked = MainV2.comPort.MAV.param["RC2_REV"].ToString() == "-1";
-                if (MainV2.comPort.MAV.param.ContainsKey("RC3_REV"))
-                {
-                    CHK_revch3.Checked = MainV2.comPort.MAV.param["RC3_REV"].ToString() == "-1";
-                    CHK_revch4.Checked = MainV2.comPort.MAV.param["RC4_REV"].ToString() == "-1";
-                }
+                //CHK_revch1.Checked = MainV2.comPort.MAV.param["RC1_REV"].ToString() == "-1";
+                //CHK_revch2.Checked = MainV2.comPort.MAV.param["RC2_REV"].ToString() == "-1";
+                //if (MainV2.comPort.MAV.param.ContainsKey("RC3_REV"))
+                //{
+                //    CHK_revch3.Checked = MainV2.comPort.MAV.param["RC3_REV"].ToString() == "-1";
+                //    CHK_revch4.Checked = MainV2.comPort.MAV.param["RC4_REV"].ToString() == "-1";
+                //}
             }
             catch
             {
@@ -143,12 +143,23 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             try
             {
                 MainV2.comPort.MAV.cs.UpdateCurrentSettings(currentStateBindingSource);
+
+                this.lbl1.Text = MainV2.comPort.MAV.cs.ch1in.ToString();
+                this.lbl2.Text = MainV2.comPort.MAV.cs.ch2in.ToString();
+                this.lbl3.Text = MainV2.comPort.MAV.cs.ch3in.ToString();
+                this.lbl4.Text = MainV2.comPort.MAV.cs.ch4in.ToString();
+                this.lbl5.Text = MainV2.comPort.MAV.cs.ch5in.ToString();
+                this.lbl6.Text = MainV2.comPort.MAV.cs.ch6in.ToString();
+                this.lbl7.Text = MainV2.comPort.MAV.cs.ch7in.ToString();
+                this.lbl8.Text = MainV2.comPort.MAV.cs.ch8in.ToString();
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
         }
+
+        
 
         private void BUT_Calibrateradio_Click(object sender, EventArgs e)
         {
@@ -488,6 +499,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 CustomMessageBox.Show(Strings.Put_the_transmitter_in_bind_mode__Receiver_is_waiting);
             }
             catch { CustomMessageBox.Show(Strings.Error_binding); }
+        }
+
+        private void panel1_CloseClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BAR8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

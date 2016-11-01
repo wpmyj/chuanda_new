@@ -146,7 +146,7 @@
     <value>138, 16</value>
   </data>
   <data name="CHK_lockrollpitch.Text" xml:space="preserve">
-    <value>锁定Pitch和Roll的值</value>
+    <value />
   </data>
   <data name="CHK_lockrollpitch.ToolTip" xml:space="preserve">
     <value />

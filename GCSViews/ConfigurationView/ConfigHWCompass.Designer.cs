@@ -44,28 +44,36 @@
             this.rb_px4pixhawk = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.imageLabel1 = new ByAeroBeHero.Controls.ImageLabel();
             this.TXT_declination_min = new System.Windows.Forms.TextBox();
             this.radioButtonmanual = new System.Windows.Forms.RadioButton();
             this.radioButton_external = new System.Windows.Forms.RadioButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.radioButton_onboard = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblIMU2z = new System.Windows.Forms.Label();
             this.lblIMU2y = new System.Windows.Forms.Label();
             this.lblIMU2x = new System.Windows.Forms.Label();
             this.lblIMUz = new System.Windows.Forms.Label();
             this.lblIMUy = new System.Windows.Forms.Label();
             this.lblIMUx = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblState = new System.Windows.Forms.Label();
             this.lblIMU2State = new System.Windows.Forms.Label();
             this.lblIMUState = new System.Windows.Forms.Label();
-            this.imageLabel1 = new ByAeroBeHero.Controls.ImageLabel();
             this.BUT_MagCalibrationLive = new ByAeroBeHero.Controls.MyButton();
+            this.panel1 = new BSE.Windows.Forms.Panel();
+            this.lblx = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.CHK_enablecompass = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.CMB_compass_orient = new ByAeroBeHero.Controls.MavlinkComboBox();
@@ -75,7 +83,15 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -195,6 +211,12 @@
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
+            // imageLabel1
+            // 
+            this.imageLabel1.Image = ((System.Drawing.Image)(resources.GetObject("imageLabel1.Image")));
+            resources.ApplyResources(this.imageLabel1, "imageLabel1");
+            this.imageLabel1.Name = "imageLabel1";
+            // 
             // TXT_declination_min
             // 
             resources.ApplyResources(this.TXT_declination_min, "TXT_declination_min");
@@ -232,31 +254,6 @@
             this.radioButton_onboard.Name = "radioButton_onboard";
             this.radioButton_onboard.UseVisualStyleBackColor = true;
             this.radioButton_onboard.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Name = "label4";
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.lblIMU2z, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMU2y, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMU2x, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMUz, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMUy, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMUx, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblState, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMU2State, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblIMUState, 4, 1);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // lblIMU2z
             // 
@@ -300,36 +297,6 @@
             this.lblIMUx.ForeColor = System.Drawing.Color.White;
             this.lblIMUx.Name = "lblIMUx";
             // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Name = "label11";
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Name = "label10";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Name = "label8";
-            // 
-            // lblState
-            // 
-            resources.ApplyResources(this.lblState, "lblState");
-            this.lblState.ForeColor = System.Drawing.Color.White;
-            this.lblState.Name = "lblState";
-            // 
             // lblIMU2State
             // 
             resources.ApplyResources(this.lblIMU2State, "lblIMU2State");
@@ -342,22 +309,152 @@
             this.lblIMUState.ForeColor = System.Drawing.Color.White;
             this.lblIMUState.Name = "lblIMUState";
             // 
-            // imageLabel1
-            // 
-            this.imageLabel1.Image = ((System.Drawing.Image)(resources.GetObject("imageLabel1.Image")));
-            resources.ApplyResources(this.imageLabel1, "imageLabel1");
-            this.imageLabel1.Name = "imageLabel1";
-            // 
             // BUT_MagCalibrationLive
             // 
-            this.BUT_MagCalibrationLive.BackColor = System.Drawing.Color.Black;
-            this.BUT_MagCalibrationLive.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_MagCalibrationLive.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BUT_MagCalibrationLive.ForeColor = System.Drawing.Color.White;
+            this.BUT_MagCalibrationLive.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.BUT_MagCalibrationLive, "BUT_MagCalibrationLive");
+            this.BUT_MagCalibrationLive.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_MagCalibrationLive.BGGradTop = System.Drawing.Color.Transparent;
+            this.BUT_MagCalibrationLive.ForeColor = System.Drawing.Color.White;
             this.BUT_MagCalibrationLive.Name = "BUT_MagCalibrationLive";
             this.BUT_MagCalibrationLive.UseVisualStyleBackColor = false;
             this.BUT_MagCalibrationLive.Click += new System.EventHandler(this.BUT_MagCalibration_Click);
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.AssociatedSplitter = null;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
+            this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel9);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.lblx);
+            this.panel1.Controls.Add(this.BUT_MagCalibrationLive);
+            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
+            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
+            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel1.ForeColor = System.Drawing.Color.Black;
+            this.panel1.Image = null;
+            this.panel1.Name = "panel1";
+            this.panel1.ToolTipTextCloseIcon = null;
+            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // lblx
+            // 
+            resources.ApplyResources(this.lblx, "lblx");
+            this.lblx.Name = "lblx";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblIMU2State);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.ForeColor = System.Drawing.Color.White;
+            this.panel2.Name = "panel2";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.lblIMUState);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Name = "panel3";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.lblIMU2z);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.ForeColor = System.Drawing.Color.White;
+            this.panel4.Name = "panel4";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Controls.Add(this.lblIMU2x);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Name = "panel5";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.lblIMUz);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.ForeColor = System.Drawing.Color.White;
+            this.panel6.Name = "panel6";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.lblIMU2y);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.ForeColor = System.Drawing.Color.White;
+            this.panel7.Name = "panel7";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.Controls.Add(this.lblIMUy);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.ForeColor = System.Drawing.Color.White;
+            this.panel8.Name = "panel8";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Black;
+            this.panel9.Controls.Add(this.lblIMUx);
+            resources.ApplyResources(this.panel9, "panel9");
+            this.panel9.ForeColor = System.Drawing.Color.White;
+            this.panel9.Name = "panel9";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
             // 
             // bindingSource1
             // 
@@ -388,10 +485,9 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.BUT_MagCalibrationLive);
             this.Name = "ConfigHWCompass";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -400,8 +496,24 @@
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
@@ -432,21 +544,29 @@
         private System.Windows.Forms.RadioButton rb_px4pixhawk;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblIMU2z;
         private System.Windows.Forms.Label lblIMU2y;
         private System.Windows.Forms.Label lblIMU2x;
         private System.Windows.Forms.Label lblIMUz;
         private System.Windows.Forms.Label lblIMUy;
         private System.Windows.Forms.Label lblIMUx;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.Label lblState;
         private System.Windows.Forms.Label lblIMU2State;
         private System.Windows.Forms.Label lblIMUState;
+        private BSE.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblx;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }

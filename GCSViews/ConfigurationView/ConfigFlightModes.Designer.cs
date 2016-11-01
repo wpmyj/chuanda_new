@@ -62,36 +62,32 @@
             this.chk_ss1 = new System.Windows.Forms.CheckBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.linkLabel1_ss = new System.Windows.Forms.LinkLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.CMB_fmode6 = new System.Windows.Forms.ComboBox();
             this.CMB_fmode4 = new System.Windows.Forms.ComboBox();
             this.CMB_fmode1 = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CMB_fmode6 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel5 = new BSE.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel8 = new BSE.Windows.Forms.Panel();
+            this.panel1 = new BSE.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // CB_simple6
@@ -138,6 +134,7 @@
             // LBL_flightmodepwm
             // 
             resources.ApplyResources(this.LBL_flightmodepwm, "LBL_flightmodepwm");
+            this.LBL_flightmodepwm.ForeColor = System.Drawing.Color.White;
             this.LBL_flightmodepwm.Name = "LBL_flightmodepwm";
             // 
             // label13
@@ -149,6 +146,7 @@
             // 
             resources.ApplyResources(this.lbl_currentmode, "lbl_currentmode");
             this.lbl_currentmode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currentStateBindingSource, "mode", true));
+            this.lbl_currentmode.ForeColor = System.Drawing.Color.White;
             this.lbl_currentmode.Name = "lbl_currentmode";
             // 
             // currentStateBindingSource
@@ -232,11 +230,12 @@
             // 
             // BUT_SaveModes
             // 
-            this.BUT_SaveModes.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_SaveModes.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_SaveModes.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_SaveModes.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_SaveModes.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.BUT_SaveModes, "BUT_SaveModes");
             this.BUT_SaveModes.Name = "BUT_SaveModes";
-            this.BUT_SaveModes.UseVisualStyleBackColor = true;
+            this.BUT_SaveModes.UseVisualStyleBackColor = false;
             this.BUT_SaveModes.Click += new System.EventHandler(this.BUT_SaveModes_Click);
             // 
             // chk_ss6
@@ -305,55 +304,12 @@
             this.linkLabel1_ss.Name = "linkLabel1_ss";
             this.linkLabel1_ss.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_ss_LinkClicked);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tableLayoutPanel2);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel3, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel4, 3, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label1);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.CMB_fmode6);
-            this.panel2.Controls.Add(this.CMB_fmode4);
-            this.panel2.Controls.Add(this.CMB_fmode1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // CMB_fmode6
-            // 
-            resources.ApplyResources(this.CMB_fmode6, "CMB_fmode6");
-            this.CMB_fmode6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CMB_fmode6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CMB_fmode6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CMB_fmode6.FormattingEnabled = true;
-            this.CMB_fmode6.Name = "CMB_fmode6";
-            // 
             // CMB_fmode4
             // 
             resources.ApplyResources(this.CMB_fmode4, "CMB_fmode4");
             this.CMB_fmode4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CMB_fmode4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode4.BackColor = System.Drawing.Color.Black;
             this.CMB_fmode4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMB_fmode4.FormattingEnabled = true;
             this.CMB_fmode4.Name = "CMB_fmode4";
@@ -363,112 +319,220 @@
             resources.ApplyResources(this.CMB_fmode1, "CMB_fmode1");
             this.CMB_fmode1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CMB_fmode1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode1.BackColor = System.Drawing.Color.Black;
             this.CMB_fmode1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode1.ForeColor = System.Drawing.Color.White;
             this.CMB_fmode1.FormattingEnabled = true;
             this.CMB_fmode1.Name = "CMB_fmode1";
             // 
-            // panel3
+            // label1
             // 
-            this.panel3.Controls.Add(this.CB_simple4);
-            this.panel3.Controls.Add(this.CB_simple6);
-            this.panel3.Controls.Add(this.CB_simple1);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
-            // panel4
+            // CMB_fmode6
             // 
-            this.panel4.Controls.Add(this.chk_ss4);
-            this.panel4.Controls.Add(this.chk_ss6);
-            this.panel4.Controls.Add(this.chk_ss1);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label2);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
+            resources.ApplyResources(this.CMB_fmode6, "CMB_fmode6");
+            this.CMB_fmode6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMB_fmode6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMB_fmode6.BackColor = System.Drawing.Color.Black;
+            this.CMB_fmode6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMB_fmode6.FormattingEnabled = true;
+            this.CMB_fmode6.Name = "CMB_fmode6";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label3);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.label4);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.label5);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
-            // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
+            // panel5
+            // 
+            this.panel5.AssociatedSplitter = null;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel5.CaptionHeight = 27;
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.label13);
+            this.panel5.Controls.Add(this.label14);
+            this.panel5.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel5.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel5.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel5.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel5.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel5.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel5.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel5.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel5.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel5.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel5.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel5.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel5.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel5.Image = null;
+            this.panel5.Name = "panel5";
+            this.panel5.ToolTipTextCloseIcon = null;
+            this.panel5.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel5.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.LBL_flightmodepwm);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.lbl_currentmode);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // panel8
+            // 
+            this.panel8.AssociatedSplitter = null;
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel8.CaptionHeight = 27;
+            this.panel8.Controls.Add(this.chk_ss1);
+            this.panel8.Controls.Add(this.chk_ss6);
+            this.panel8.Controls.Add(this.chk_ss4);
+            this.panel8.Controls.Add(this.CB_simple1);
+            this.panel8.Controls.Add(this.CB_simple6);
+            this.panel8.Controls.Add(this.CB_simple4);
+            this.panel8.Controls.Add(this.CMB_fmode1);
+            this.panel8.Controls.Add(this.BUT_SaveModes);
+            this.panel8.Controls.Add(this.CMB_fmode4);
+            this.panel8.Controls.Add(this.CMB_fmode6);
+            this.panel8.Controls.Add(this.label1);
+            this.panel8.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel8.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel8.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel8.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel8.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel8.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel8.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel8.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel8.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel8.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel8.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel8.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel8.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel8.Image = null;
+            this.panel8.Name = "panel8";
+            this.panel8.ToolTipTextCloseIcon = null;
+            this.panel8.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel8.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // panel1
+            // 
+            this.panel1.AssociatedSplitter = null;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Image = null;
+            this.panel1.Name = "panel1";
+            this.panel1.ToolTipTextCloseIcon = null;
+            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
+            // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
             // ConfigFlightModes
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.LBL_flightmodepwm);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.lbl_currentmode);
-            this.Controls.Add(this.BUT_SaveModes);
             this.Name = "ConfigFlightModes";
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -506,23 +570,24 @@
         private System.Windows.Forms.CheckBox chk_ss1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.LinkLabel linkLabel1_ss;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox CMB_fmode1;
         private System.Windows.Forms.ComboBox CMB_fmode4;
         private System.Windows.Forms.ComboBox CMB_fmode6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label5;
+        private BSE.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private BSE.Windows.Forms.Panel panel8;
+        private BSE.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }

@@ -17,6 +17,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             InitializeComponent();
 
             RTL_ALT_FINAL.Visible = false;
+            panelArmCheck.Visible = false;
+
+            InitControl(); 
+        }
+
+        private void InitControl() 
+        {
+            this.lblArmCheck.ForeColor = 
+                CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor = CHK_speechotherParams.ForeColor = Color.Black;
+
         }
 
         public void Activate()
@@ -24,7 +34,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
             chb_AllMove.Checked = bool.Parse(MainV2.config["CHB_AllMove"].ToString());
             setWPParams();
-            CHK_enablespeech_CheckedChanged(null,null);
+            CHK_enablespeech_CheckedChanged(null, null);
             timer1.Start();
         }
 
@@ -44,14 +54,17 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     startup = true;
                     changes.Clear();
 
-                 WP_YAW_BEHAVIOR.setup(
-                    ParameterMetaDataRepository.GetParameterOptionsInt("WP_YAW_BEHAVIOR", MainV2.comPort.MAV.cs.firmware.ToString())
-                    .ToList(), "WP_YAW_BEHAVIOR", MainV2.comPort.MAV.param);
+                    WP_YAW_BEHAVIOR.setup(
+                       ParameterMetaDataRepository.GetParameterOptionsInt("WP_YAW_BEHAVIOR", MainV2.comPort.MAV.cs.firmware.ToString())
+                       .ToList(), "WP_YAW_BEHAVIOR", MainV2.comPort.MAV.param);
+                    ARMING_CHECK.setup(
+                       ParameterMetaDataRepository.GetParameterOptionsInt("ARMING_CHECK", MainV2.comPort.MAV.cs.firmware.ToString())
+                       .ToList(), "ARMING_CHECK", MainV2.comPort.MAV.param);
 
-                 RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_CLIMB_MIN",
-                MainV2.comPort.MAV.param);
-                //    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
-                //MainV2.comPort.MAV.param);
+                    RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_CLIMB_MIN",
+                   MainV2.comPort.MAV.param);
+                    //    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
+                    //MainV2.comPort.MAV.param);
 
 
                     //语音播报
@@ -122,11 +135,49 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     value = ((MAVLinkParamChanged)e).value;
                     changes[name] = value;
                 }
+                else if (sender.GetType() == typeof(MavlinkComboBox))
+                {
+                    value = ((MAVLinkParamChanged)e).value;
+                    changes[name] = value;
+                }
                 ((Control)sender).BackColor = Color.Green;
             }
             catch (Exception)
             {
                 ((Control)sender).BackColor = Color.Red;
+            }
+
+            try
+            {
+                // keep nav_lat and nav_lon paired
+                if (name.Contains("NAV_LAT_"))
+                {
+                    var newname = name.Replace("NAV_LAT_", "NAV_LON_");
+                    var arr = Controls.Find(newname, true);
+                    changes[newname] = value;
+
+                    if (arr.Length > 0)
+                    {
+                        arr[0].Text = ((Control)sender).Text;
+                        arr[0].BackColor = Color.Green;
+                    }
+                }
+                // keep loiter_lat and loiter_lon paired
+                if (name.Contains("LOITER_LAT_"))
+                {
+                    var newname = name.Replace("LOITER_LAT_", "LOITER_LON_");
+                    var arr = Controls.Find(newname, true);
+                    changes[newname] = value;
+
+                    if (arr.Length > 0)
+                    {
+                        arr[0].Text = ((Control)sender).Text;
+                        arr[0].BackColor = Color.Green;
+                    }
+                }
+            }
+            catch
+            {
             }
         }
 
@@ -178,7 +229,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            InitControl(); 
         }
 
         private void RTL_ALT_ValueChanged(object sender, EventArgs e)
@@ -271,6 +322,19 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void chb_AllMove_CheckedChanged(object sender, EventArgs e)
         {
             MainV2.config["CHB_AllMove"] = chb_AllMove.Checked;
+        }
+
+        private void myButtonSetNo_Click(object sender, EventArgs e)
+        {
+            if (this.textBox1.Text == "Byaero.com123")
+            {
+                panelArmCheck.Visible = true;
+            }
+            else
+            {
+                panelArmCheck.Visible = false;
+            }
+
         }
     }
 }

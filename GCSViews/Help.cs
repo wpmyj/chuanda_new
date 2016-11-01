@@ -17,9 +17,7 @@ namespace ByAeroBeHero.GCSViews
         }
 
         private void InitControl() 
-        {
-            this.richTextBox1.BackColor = System.Drawing.Color.Black;
-            this.richTextBox1.ForeColor = System.Drawing.Color.White;          
+        {      
         }
 
         public void Activate()
@@ -46,8 +44,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void Help_Load(object sender, EventArgs e)
         {
-            string version =Resources.help_text;
-            richTextBox1.Rtf = version + "固件版本:" + CurrentState.str_firm_ware + "\\par \t 获取更多帮助请访问博鹰官网：www.byaero.com.";
+            lblframType.Text = CurrentState.str_firm_ware;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -57,9 +54,6 @@ namespace ByAeroBeHero.GCSViews
 
         private void PIC_wizard_Click(object sender, EventArgs e)
         {
-            //var cfg = new Wizard.Wizard();
-
-            //cfg.ShowDialog(this);
         }
 
         private void BUT_betaupdate_Click(object sender, EventArgs e)

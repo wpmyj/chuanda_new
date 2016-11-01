@@ -53,6 +53,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             InitializeComponent();
             //configDefaultSettings1.OnChange += configDefaultSettings1_OnChange;
+            InitControl();
+        }
+
+        private void InitControl()
+        {
+            label8.ForeColor = lblDuration.ForeColor = Color.Black;
         }
 
         public void Activate()
@@ -110,32 +116,26 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             if (iCopterType == 1 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 1) 
             {
-                this.RadbtnFourRotor.Checked = true;
                 RadbtnFourRotor_CheckedChanged(null,null);
             }
             else if (iCopterType == 2 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 1)
             {
-                this.RadbtnFiveRotor.Checked = true;
                 RadbtnFiveRotor_CheckedChanged(null, null);
             }
             else if (iCopterType == 3 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 1)
             {
-                this.RadbtnSevenRotor.Checked = true;
                 RadbtnSevenRotor_CheckedChanged(null, null);
             }
             else if (iCopterType == 1 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 0)
             {
-                this.RadbtnFourRotorT.Checked = true;
                 RadbtnFourRotorT_CheckedChanged(null, null);
             }
             else if (iCopterType == 2 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 0)
             {
-                this.RadbtnFiveRotorT.Checked = true;
                 RadbtnFiveRotorT_CheckedChanged(null, null);
             }
             else if (iCopterType == 3 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 0)
             {
-                this.RadbtnSevenRotorT.Checked = true;
                 RadbtnSevenRotorT_CheckedChanged(null, null);
             }
             ControlRabtn(iCopterType);
@@ -374,17 +374,23 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         /// <param name="e"></param>
         private void RadbtnFourRotor_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnFourRotor.Checked) 
-            {
+            //if (this.RadbtnFourRotor.Checked) 
+            //{
                 this.iCopterType = (int)CopterType.Four;
                 this.iShapeType = 1;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
-            }
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.White;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+                this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+                this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            //}
         }
 
         /// <summary>
@@ -394,17 +400,23 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         /// <param name="e"></param>
         private void RadbtnFiveRotor_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnFiveRotor.Checked) 
-            {
+            //if (this.RadbtnFiveRotor.Checked) 
+            //{
                 this.iShapeType = 1;
                 this.iCopterType = (int)CopterType.Six;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
-            } 
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.White;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+                this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+                this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            //} 
         }
 
         /// <summary>
@@ -414,17 +426,24 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         /// <param name="e"></param>
         private void RadbtnSevenRotor_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnSevenRotor.Checked) 
-            {
+            //if (this.RadbtnSevenRotor.Checked) 
+            //{
                 this.iShapeType = 1;
                 this.iCopterType = (int)CopterType.Eight;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
-            }
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.White;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+                this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+                this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+
+            //}
         }
 
         /// <summary>
@@ -434,17 +453,23 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         /// <param name="e"></param>
         private void RadbtnFourRotorT_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnFourRotorT.Checked)
-            {
+            //if (this.RadbtnFourRotorT.Checked)
+            //{
                 this.iShapeType = 0;
                 this.iCopterType = (int)CopterType.Four;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
-            }
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.White;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+                this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+                this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            //}
         }
 
         /// <summary>
@@ -454,17 +479,23 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         /// <param name="e"></param>
         private void RadbtnFiveRotorT_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnFiveRotorT.Checked)
-            {
+            //if (this.RadbtnFiveRotorT.Checked)
+            //{
                 this.iShapeType = 0;
                 this.iCopterType = (int)CopterType.Six;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Aqua;
-                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Black;
-            }
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.White;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+                this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+                this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            //}
         }
 
         /// <summary>
@@ -474,17 +505,23 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         /// <param name="e"></param>
         private void RadbtnSevenRotorT_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.RadbtnSevenRotorT.Checked)
-            {
+            //if (this.RadbtnSevenRotorT.Checked)
+            //{
                 this.iCopterType = (int)CopterType.Eight;
                 this.iShapeType = 0;
-                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Black;
-                this.pictureBoxWithPseudoOpacity6.BackColor = Color.Aqua;
-            }
+                this.pictureBoxWithPseudoOpacity2.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity1.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity3.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity6.BackColor = Color.White;
+                this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+            //}
         }
         #endregion
 
@@ -492,27 +529,26 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void ControlRabtn(int motormax)
         {
-            this.rbtn1.Enabled = true;
-            this.rbtn2.Enabled = true;
-            this.rbtn3.Enabled = true;
-            this.rbtn4.Enabled = true;
-            this.rbtn5.Enabled = true;
-            this.rbtn6.Enabled = true;
-            this.rbtn7.Enabled = true;
-            this.rbtn8.Enabled = true;
-
+            this.button1.Enabled = true;
+            this.button2.Enabled = true;
+            this.button3.Enabled = true;
+            this.button4.Enabled = true;
+            this.button5.Enabled = true;
+            this.button6.Enabled = true;
+            this.button7.Enabled = true;
+            this.button8.Enabled = true;
 
             if (motormax == 1)
             {
-                this.rbtn5.Enabled = false;
-                this.rbtn6.Enabled = false;
-                this.rbtn7.Enabled = false;
-                this.rbtn8.Enabled = false;
+                this.button5.Enabled = false;
+                this.button6.Enabled = false;
+                this.button7.Enabled = false;
+                this.button8.Enabled = false;
             }
             else if (motormax == 2)
             {
-                this.rbtn7.Enabled = false;
-                this.rbtn8.Enabled = false;
+                this.button7.Enabled = false;
+                this.button8.Enabled = false;
             }
             else if (motormax == 3)
             {
@@ -520,25 +556,43 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
             else
             {
-                this.rbtn1.Enabled = false;
-                this.rbtn2.Enabled = false;
-                this.rbtn3.Enabled = false;
-                this.rbtn4.Enabled = false;
-                this.rbtn5.Enabled = false;
-                this.rbtn6.Enabled = false;
-                this.rbtn7.Enabled = false;
-                this.rbtn8.Enabled = false;
+                this.button1.Enabled = false;
+                this.button2.Enabled = false;
+                this.button3.Enabled = false;
+                this.button4.Enabled = false;
+                this.button5.Enabled = false;
+                this.button6.Enabled = false;
+                this.button7.Enabled = false;
+                this.button8.Enabled = false;
             }
         }
         private void but_Click(object sender, EventArgs e)
         {
+            this.button1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button2.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button3.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button4.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button5.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button6.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button7.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.button8.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp; 
+
             try
             {
-                object motor = ((RadioButton)sender).Tag;
+                object motor = ((Button)sender).Tag;
 
-                CustomMessageBox.Show("电机测试："+((RadioButton)sender).Text, "测试电机");
+                CustomMessageBox.Show("电机测试："+((Button)sender).Text, "测试电机");
 
                 int imotor = Convert.ToInt32(motor);
+                if (imotor == 1) { this.button1.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 2) { this.button2.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 3) { this.button3.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 4) { this.button4.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 5) { this.button5.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 6) { this.button6.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 7) { this.button7.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                else if (imotor == 8) { this.button8.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+
                 if (MainV2.comPort.doMotorTest(imotor, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
                     (int)NUM_thr_percent.Value, (int)NUM_duration.Value))
                 {
@@ -546,12 +600,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 }
                 else
                 {
-                    CustomMessageBox.Show("测试电机失败!");
+                    CustomMessageBox.Show("测试电机失败!","电机测试");
                 }
             }
             catch (Exception ex)
             {
-                CustomMessageBox.Show("测试电机失败!");
+                CustomMessageBox.Show("测试电机失败!", "电机测试");
             }
         }
         #endregion

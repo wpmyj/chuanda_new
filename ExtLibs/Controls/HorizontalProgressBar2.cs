@@ -155,11 +155,13 @@ System.ComponentModel.Description("Text under Bar")]
                 lbl.ClientSize = new Size(this.Width, 30);
                 lbl.TextAlign = ContentAlignment.MiddleCenter;
                 lbl.Text = m_Text;
+                lbl.Visible = false;
 
                 lbl1.Location = new Point(this.Location.X, this.Location.Y + this.Height + 15);
                 lbl1.ClientSize = new Size(this.Width, 35);
-                lbl1.TextAlign = ContentAlignment.BottomCenter;
+                lbl1.TextAlign = ContentAlignment.TopRight;
                 lbl1.Text = Value.ToString();
+                lbl1.Visible = false;
             }
 
             if (minline != 0 && maxline != 0)

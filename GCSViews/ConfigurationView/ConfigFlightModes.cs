@@ -314,6 +314,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 chk_ss1.Visible = false;
                 chk_ss4.Visible = true;
                 chk_ss6.Visible = false;
+
+                CB_simple4.ForeColor = Color.Black;
+                chk_ss4.ForeColor = Color.Black;
             }
             else if (pulsewidth >= 1750)
             {
@@ -329,12 +332,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 chk_ss1.Visible = false;
                 chk_ss4.Visible = false;
                 chk_ss6.Visible = true;
+
+                CB_simple6.ForeColor = Color.Black;
+                chk_ss6.ForeColor = Color.Black;
             }
             else 
             {
-                CMB_fmode1.BackColor = Color.Silver;
+                CMB_fmode1.BackColor = Color.Black;
                 label1.Text = "低档";
-                label1.ForeColor = Color.Silver;
+                label1.ForeColor = Color.Black;
                 CMB_fmode1.Visible = true;
                 CMB_fmode4.Visible = false;
                 CMB_fmode6.Visible = false;
@@ -344,6 +350,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 chk_ss1.Visible = true;
                 chk_ss4.Visible = false;
                 chk_ss6.Visible = false;
+
+                CB_simple1.ForeColor = Color.Black;
+                chk_ss1.ForeColor = Color.Black;
             }
         }
 

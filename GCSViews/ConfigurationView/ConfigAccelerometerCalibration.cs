@@ -17,6 +17,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         public ConfigAccelerometerCalibration()
         {
             InitializeComponent();
+            InitControl();
+        }
+
+        private void InitControl() 
+        {
+            this.lblCalibate.ForeColor = lblCalibrate.ForeColor = System.Drawing.Color.Black;
         }
 
         public void Activate()

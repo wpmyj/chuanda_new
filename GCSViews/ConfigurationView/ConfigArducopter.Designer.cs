@@ -34,8 +34,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.CHK_lockrollpitch = new System.Windows.Forms.CheckBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -54,6 +52,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
@@ -80,26 +79,21 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label23 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label32 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.myLabel4 = new ByAeroBeHero.Controls.MyLabel();
             this.BUT_refreshpart = new ByAeroBeHero.Controls.MyButton();
             this.BUT_rerequestparams = new ByAeroBeHero.Controls.MyButton();
@@ -107,6 +101,16 @@
             this.myLabel3 = new ByAeroBeHero.Controls.MyLabel();
             this.myLabel2 = new ByAeroBeHero.Controls.MyLabel();
             this.myLabel1 = new ByAeroBeHero.Controls.MyLabel();
+            this.panel1 = new BSE.Windows.Forms.Panel();
+            this.panel2 = new BSE.Windows.Forms.Panel();
+            this.panel3 = new BSE.Windows.Forms.Panel();
+            this.panel4 = new BSE.Windows.Forms.Panel();
+            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.THR_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.THR_RATE_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.THR_ACCEL_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.LOITER_LAT_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
@@ -115,29 +119,23 @@
             this.THR_ACCEL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_RLL_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_YAW_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.THR_ACCEL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.LOITER_LAT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_YAW_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_RLL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_RLL_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_PIT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.LOITER_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_PIT_D = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.RATE_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_PIT_IMAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_YAW_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RATE_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RATE_PIT_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RATE_RLL_I = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RATE_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RATE_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.HLD_LAT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.STB_RLL_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.STB_YAW_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.STB_PIT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.THR_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_LOIT_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED_UP = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED_DN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_RADIUS = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WPNAV_SPEED = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.TUNE_HIGH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.TUNE = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.TUNE_LOW = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
@@ -146,9 +144,8 @@
             this.CH7_OPT = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.RATE_RLL_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.RATE_PIT_FF = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.lblPitchRoll = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox19.SuspendLayout();
@@ -158,10 +155,16 @@
             this.groupBox1.SuspendLayout();
             this.groupBox24.SuspendLayout();
             this.groupBox23.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_RATE_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_D)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_D)).BeginInit();
@@ -170,29 +173,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_I)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_IMAX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_P)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_I)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_IMAX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_IMAX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HLD_LAT_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STB_RLL_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STB_YAW_P)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STB_PIT_P)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TUNE_HIGH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TUNE_LOW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_FF)).BeginInit();
@@ -228,36 +225,11 @@
             // CHK_lockrollpitch
             // 
             resources.ApplyResources(this.CHK_lockrollpitch, "CHK_lockrollpitch");
+            this.CHK_lockrollpitch.BackColor = System.Drawing.Color.Gainsboro;
             this.CHK_lockrollpitch.Checked = true;
             this.CHK_lockrollpitch.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CHK_lockrollpitch.Name = "CHK_lockrollpitch";
-            this.CHK_lockrollpitch.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.tableLayoutPanel3);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
-            // tableLayoutPanel3
-            // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.label33, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_LOIT_SPEED, 5, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED_UP, 3, 1);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED_DN, 4, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label34, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label27, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label9, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_RADIUS, 2, 1);
-            this.tableLayoutPanel3.Controls.Add(this.label16, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label15, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label13, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label36, 0, 2);
-            this.tableLayoutPanel3.Controls.Add(this.WPNAV_SPEED, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.THR_ALT_P, 1, 2);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.CHK_lockrollpitch.UseVisualStyleBackColor = false;
             // 
             // label33
             // 
@@ -267,37 +239,37 @@
             // label34
             // 
             resources.ApplyResources(this.label34, "label34");
-            this.label34.BackColor = System.Drawing.Color.LightGray;
+            this.label34.BackColor = System.Drawing.Color.Gainsboro;
             this.label34.Name = "label34";
             // 
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
-            this.label27.BackColor = System.Drawing.Color.LightGray;
+            this.label27.BackColor = System.Drawing.Color.Gainsboro;
             this.label27.Name = "label27";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
-            this.label9.BackColor = System.Drawing.Color.LightGray;
+            this.label9.BackColor = System.Drawing.Color.Gainsboro;
             this.label9.Name = "label9";
             // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
-            this.label16.BackColor = System.Drawing.Color.LightGray;
+            this.label16.BackColor = System.Drawing.Color.Gainsboro;
             this.label16.Name = "label16";
             // 
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
-            this.label15.BackColor = System.Drawing.Color.LightGray;
+            this.label15.BackColor = System.Drawing.Color.Gainsboro;
             this.label15.Name = "label15";
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
-            this.label13.BackColor = System.Drawing.Color.LightGray;
+            this.label13.BackColor = System.Drawing.Color.Gainsboro;
             this.label13.Name = "label13";
             // 
             // label36
@@ -364,6 +336,11 @@
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Name = "label12";
             // 
             // groupBox19
             // 
@@ -528,11 +505,6 @@
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.TabStop = false;
             // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
-            // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
@@ -559,130 +531,65 @@
             this.toolTip1.InitialDelay = 500;
             this.toolTip1.ReshowDelay = 100;
             // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.HLD_LAT_P, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.STB_RLL_P, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.STB_YAW_P, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.STB_PIT_P, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label23, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label21, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label20, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label19, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.CellPaint += new System.Windows.Forms.TableLayoutCellPaintEventHandler(this.tableLayoutPanel1_CellPaint);
-            // 
             // label23
             // 
             resources.ApplyResources(this.label23, "label23");
-            this.label23.BackColor = System.Drawing.Color.LightGray;
+            this.label23.BackColor = System.Drawing.Color.Gainsboro;
             this.label23.Name = "label23";
             // 
             // label21
             // 
             resources.ApplyResources(this.label21, "label21");
-            this.label21.BackColor = System.Drawing.Color.LightGray;
+            this.label21.BackColor = System.Drawing.Color.Gainsboro;
             this.label21.Name = "label21";
             // 
             // label20
             // 
             resources.ApplyResources(this.label20, "label20");
-            this.label20.BackColor = System.Drawing.Color.LightGray;
+            this.label20.BackColor = System.Drawing.Color.Gainsboro;
             this.label20.Name = "label20";
             // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
-            this.label19.BackColor = System.Drawing.Color.LightGray;
+            this.label19.BackColor = System.Drawing.Color.Gainsboro;
             this.label19.Name = "label19";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.tableLayoutPanel1);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.THR_RATE_P, 6, 1);
-            this.tableLayoutPanel2.Controls.Add(this.THR_ACCEL_D, 5, 3);
-            this.tableLayoutPanel2.Controls.Add(this.LOITER_LAT_D, 4, 3);
-            this.tableLayoutPanel2.Controls.Add(this.THR_ACCEL_IMAX, 5, 4);
-            this.tableLayoutPanel2.Controls.Add(this.LOITER_LAT_IMAX, 4, 4);
-            this.tableLayoutPanel2.Controls.Add(this.THR_ACCEL_I, 5, 2);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_RLL_IMAX, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_YAW_D, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.THR_ACCEL_P, 5, 1);
-            this.tableLayoutPanel2.Controls.Add(this.LOITER_LAT_I, 4, 2);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_YAW_IMAX, 3, 4);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_RLL_D, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.LOITER_LAT_P, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_PIT_D, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_PIT_IMAX, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_YAW_I, 3, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label32, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label30, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_YAW_P, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label29, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_PIT_I, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_RLL_I, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label28, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_PIT_P, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.RATE_RLL_P, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label91, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label90, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label17, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label88, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.label24, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label26, 6, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
             // label32
             // 
             resources.ApplyResources(this.label32, "label32");
-            this.label32.BackColor = System.Drawing.Color.LightGray;
+            this.label32.BackColor = System.Drawing.Color.Gainsboro;
             this.label32.Name = "label32";
             // 
             // label30
             // 
             resources.ApplyResources(this.label30, "label30");
-            this.label30.BackColor = System.Drawing.Color.LightGray;
+            this.label30.BackColor = System.Drawing.Color.Gainsboro;
             this.label30.Name = "label30";
             // 
             // label29
             // 
             resources.ApplyResources(this.label29, "label29");
-            this.label29.BackColor = System.Drawing.Color.LightGray;
+            this.label29.BackColor = System.Drawing.Color.Gainsboro;
             this.label29.Name = "label29";
             // 
             // label28
             // 
             resources.ApplyResources(this.label28, "label28");
-            this.label28.BackColor = System.Drawing.Color.LightGray;
+            this.label28.BackColor = System.Drawing.Color.Gainsboro;
             this.label28.Name = "label28";
             // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
-            this.label24.BackColor = System.Drawing.Color.LightGray;
+            this.label24.BackColor = System.Drawing.Color.Gainsboro;
             this.label24.Name = "label24";
             // 
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
-            this.label26.BackColor = System.Drawing.Color.LightGray;
+            this.label26.BackColor = System.Drawing.Color.Gainsboro;
             this.label26.Name = "label26";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.tableLayoutPanel2);
-            this.groupBox6.Controls.Add(this.CHK_lockrollpitch);
-            resources.ApplyResources(this.groupBox6, "groupBox6");
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.TabStop = false;
             // 
             // myLabel4
             // 
@@ -692,29 +599,32 @@
             // 
             // BUT_refreshpart
             // 
-            this.BUT_refreshpart.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_refreshpart.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_refreshpart.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_refreshpart.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_refreshpart.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.BUT_refreshpart, "BUT_refreshpart");
             this.BUT_refreshpart.Name = "BUT_refreshpart";
-            this.BUT_refreshpart.UseVisualStyleBackColor = true;
+            this.BUT_refreshpart.UseVisualStyleBackColor = false;
             this.BUT_refreshpart.Click += new System.EventHandler(this.BUT_refreshpart_Click);
             // 
             // BUT_rerequestparams
             // 
-            this.BUT_rerequestparams.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_rerequestparams.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_rerequestparams.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_rerequestparams.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_rerequestparams.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.BUT_rerequestparams, "BUT_rerequestparams");
             this.BUT_rerequestparams.Name = "BUT_rerequestparams";
-            this.BUT_rerequestparams.UseVisualStyleBackColor = true;
+            this.BUT_rerequestparams.UseVisualStyleBackColor = false;
             this.BUT_rerequestparams.Click += new System.EventHandler(this.BUT_rerequestparams_Click);
             // 
             // BUT_writePIDS
             // 
-            this.BUT_writePIDS.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_writePIDS.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BUT_writePIDS.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_writePIDS.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_writePIDS.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.BUT_writePIDS, "BUT_writePIDS");
             this.BUT_writePIDS.Name = "BUT_writePIDS";
-            this.BUT_writePIDS.UseVisualStyleBackColor = true;
+            this.BUT_writePIDS.UseVisualStyleBackColor = false;
             this.BUT_writePIDS.Click += new System.EventHandler(this.BUT_writePIDS_Click);
             // 
             // myLabel3
@@ -734,6 +644,226 @@
             resources.ApplyResources(this.myLabel1, "myLabel1");
             this.myLabel1.Name = "myLabel1";
             this.myLabel1.resize = false;
+            // 
+            // panel1
+            // 
+            this.panel1.AssociatedSplitter = null;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.HLD_LAT_P);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.STB_RLL_P);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.STB_YAW_P);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.STB_PIT_P);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Image = null;
+            this.panel1.Name = "panel1";
+            this.panel1.ToolTipTextCloseIcon = null;
+            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // panel2
+            // 
+            this.panel2.AssociatedSplitter = null;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel2.CaptionHeight = 27;
+            this.panel2.Controls.Add(this.lblPitchRoll);
+            this.panel2.Controls.Add(this.THR_RATE_P);
+            this.panel2.Controls.Add(this.CHK_lockrollpitch);
+            this.panel2.Controls.Add(this.THR_ACCEL_D);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.LOITER_LAT_D);
+            this.panel2.Controls.Add(this.label26);
+            this.panel2.Controls.Add(this.THR_ACCEL_IMAX);
+            this.panel2.Controls.Add(this.label88);
+            this.panel2.Controls.Add(this.LOITER_LAT_IMAX);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.THR_ACCEL_I);
+            this.panel2.Controls.Add(this.label90);
+            this.panel2.Controls.Add(this.RATE_RLL_IMAX);
+            this.panel2.Controls.Add(this.label91);
+            this.panel2.Controls.Add(this.RATE_YAW_D);
+            this.panel2.Controls.Add(this.RATE_RLL_P);
+            this.panel2.Controls.Add(this.THR_ACCEL_P);
+            this.panel2.Controls.Add(this.RATE_PIT_P);
+            this.panel2.Controls.Add(this.LOITER_LAT_I);
+            this.panel2.Controls.Add(this.label28);
+            this.panel2.Controls.Add(this.RATE_YAW_IMAX);
+            this.panel2.Controls.Add(this.RATE_RLL_I);
+            this.panel2.Controls.Add(this.RATE_RLL_D);
+            this.panel2.Controls.Add(this.RATE_PIT_I);
+            this.panel2.Controls.Add(this.LOITER_LAT_P);
+            this.panel2.Controls.Add(this.label29);
+            this.panel2.Controls.Add(this.RATE_PIT_D);
+            this.panel2.Controls.Add(this.RATE_YAW_P);
+            this.panel2.Controls.Add(this.RATE_PIT_IMAX);
+            this.panel2.Controls.Add(this.label30);
+            this.panel2.Controls.Add(this.RATE_YAW_I);
+            this.panel2.Controls.Add(this.label32);
+            this.panel2.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel2.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel2.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel2.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel2.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel2.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel2.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel2.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel2.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel2.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel2.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel2.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel2.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel2.Image = null;
+            this.panel2.Name = "panel2";
+            this.panel2.ToolTipTextCloseIcon = null;
+            this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel2.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // panel3
+            // 
+            this.panel3.AssociatedSplitter = null;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.panel3.CaptionHeight = 27;
+            this.panel3.Controls.Add(this.label33);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.WPNAV_LOIT_SPEED);
+            this.panel3.Controls.Add(this.THR_ALT_P);
+            this.panel3.Controls.Add(this.WPNAV_SPEED_UP);
+            this.panel3.Controls.Add(this.WPNAV_SPEED);
+            this.panel3.Controls.Add(this.WPNAV_SPEED_DN);
+            this.panel3.Controls.Add(this.label36);
+            this.panel3.Controls.Add(this.label34);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.WPNAV_RADIUS);
+            this.panel3.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel3.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel3.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel3.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel3.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel3.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel3.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel3.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel3.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel3.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel3.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel3.Image = null;
+            this.panel3.Name = "panel3";
+            this.panel3.ToolTipTextCloseIcon = null;
+            this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel3.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // panel4
+            // 
+            this.panel4.AssociatedSplitter = null;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.panel4.CaptionHeight = 27;
+            this.panel4.Controls.Add(this.BUT_writePIDS);
+            this.panel4.Controls.Add(this.BUT_rerequestparams);
+            this.panel4.Controls.Add(this.BUT_refreshpart);
+            this.panel4.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.panel4.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.panel4.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.panel4.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel4.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.panel4.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.panel4.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel4.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.panel4.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel4.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.panel4.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.panel4.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.panel4.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.panel4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel4.Image = null;
+            this.panel4.Name = "panel4";
+            this.panel4.ToolTipTextCloseIcon = null;
+            this.panel4.ToolTipTextExpandIconPanelCollapsed = null;
+            this.panel4.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // WPNAV_LOIT_SPEED
+            // 
+            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
+            this.WPNAV_LOIT_SPEED.Max = 1F;
+            this.WPNAV_LOIT_SPEED.Min = 0F;
+            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
+            this.WPNAV_LOIT_SPEED.ParamName = null;
+            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // THR_ALT_P
+            // 
+            resources.ApplyResources(this.THR_ALT_P, "THR_ALT_P");
+            this.THR_ALT_P.Max = 1F;
+            this.THR_ALT_P.Min = 0F;
+            this.THR_ALT_P.Name = "THR_ALT_P";
+            this.THR_ALT_P.ParamName = null;
+            this.THR_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED_UP
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
+            this.WPNAV_SPEED_UP.Max = 1F;
+            this.WPNAV_SPEED_UP.Min = 0F;
+            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
+            this.WPNAV_SPEED_UP.ParamName = null;
+            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
+            this.WPNAV_SPEED.Max = 1F;
+            this.WPNAV_SPEED.Min = 0F;
+            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
+            this.WPNAV_SPEED.ParamName = null;
+            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_SPEED_DN
+            // 
+            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
+            this.WPNAV_SPEED_DN.Max = 1F;
+            this.WPNAV_SPEED_DN.Min = 0F;
+            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
+            this.WPNAV_SPEED_DN.ParamName = null;
+            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // WPNAV_RADIUS
+            // 
+            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
+            this.WPNAV_RADIUS.Max = 1F;
+            this.WPNAV_RADIUS.Min = 0F;
+            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
+            this.WPNAV_RADIUS.ParamName = null;
+            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // THR_RATE_P
             // 
@@ -812,6 +942,15 @@
             this.RATE_YAW_D.ParamName = null;
             this.RATE_YAW_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // RATE_RLL_P
+            // 
+            resources.ApplyResources(this.RATE_RLL_P, "RATE_RLL_P");
+            this.RATE_RLL_P.Max = 1F;
+            this.RATE_RLL_P.Min = 0F;
+            this.RATE_RLL_P.Name = "RATE_RLL_P";
+            this.RATE_RLL_P.ParamName = null;
+            this.RATE_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // THR_ACCEL_P
             // 
             resources.ApplyResources(this.THR_ACCEL_P, "THR_ACCEL_P");
@@ -820,6 +959,15 @@
             this.THR_ACCEL_P.Name = "THR_ACCEL_P";
             this.THR_ACCEL_P.ParamName = null;
             this.THR_ACCEL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_P
+            // 
+            resources.ApplyResources(this.RATE_PIT_P, "RATE_PIT_P");
+            this.RATE_PIT_P.Max = 1F;
+            this.RATE_PIT_P.Min = 0F;
+            this.RATE_PIT_P.Name = "RATE_PIT_P";
+            this.RATE_PIT_P.ParamName = null;
+            this.RATE_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // LOITER_LAT_I
             // 
@@ -839,6 +987,15 @@
             this.RATE_YAW_IMAX.ParamName = null;
             this.RATE_YAW_IMAX.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // RATE_RLL_I
+            // 
+            resources.ApplyResources(this.RATE_RLL_I, "RATE_RLL_I");
+            this.RATE_RLL_I.Max = 1F;
+            this.RATE_RLL_I.Min = 0F;
+            this.RATE_RLL_I.Name = "RATE_RLL_I";
+            this.RATE_RLL_I.ParamName = null;
+            this.RATE_RLL_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // RATE_RLL_D
             // 
             resources.ApplyResources(this.RATE_RLL_D, "RATE_RLL_D");
@@ -847,6 +1004,15 @@
             this.RATE_RLL_D.Name = "RATE_RLL_D";
             this.RATE_RLL_D.ParamName = null;
             this.RATE_RLL_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
+            // RATE_PIT_I
+            // 
+            resources.ApplyResources(this.RATE_PIT_I, "RATE_PIT_I");
+            this.RATE_PIT_I.Max = 1F;
+            this.RATE_PIT_I.Min = 0F;
+            this.RATE_PIT_I.Name = "RATE_PIT_I";
+            this.RATE_PIT_I.ParamName = null;
+            this.RATE_PIT_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // LOITER_LAT_P
             // 
@@ -866,6 +1032,15 @@
             this.RATE_PIT_D.ParamName = null;
             this.RATE_PIT_D.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // RATE_YAW_P
+            // 
+            resources.ApplyResources(this.RATE_YAW_P, "RATE_YAW_P");
+            this.RATE_YAW_P.Max = 1F;
+            this.RATE_YAW_P.Min = 0F;
+            this.RATE_YAW_P.Name = "RATE_YAW_P";
+            this.RATE_YAW_P.ParamName = null;
+            this.RATE_YAW_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // RATE_PIT_IMAX
             // 
             resources.ApplyResources(this.RATE_PIT_IMAX, "RATE_PIT_IMAX");
@@ -883,51 +1058,6 @@
             this.RATE_YAW_I.Name = "RATE_YAW_I";
             this.RATE_YAW_I.ParamName = null;
             this.RATE_YAW_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RATE_YAW_P
-            // 
-            resources.ApplyResources(this.RATE_YAW_P, "RATE_YAW_P");
-            this.RATE_YAW_P.Max = 1F;
-            this.RATE_YAW_P.Min = 0F;
-            this.RATE_YAW_P.Name = "RATE_YAW_P";
-            this.RATE_YAW_P.ParamName = null;
-            this.RATE_YAW_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RATE_PIT_I
-            // 
-            resources.ApplyResources(this.RATE_PIT_I, "RATE_PIT_I");
-            this.RATE_PIT_I.Max = 1F;
-            this.RATE_PIT_I.Min = 0F;
-            this.RATE_PIT_I.Name = "RATE_PIT_I";
-            this.RATE_PIT_I.ParamName = null;
-            this.RATE_PIT_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RATE_RLL_I
-            // 
-            resources.ApplyResources(this.RATE_RLL_I, "RATE_RLL_I");
-            this.RATE_RLL_I.Max = 1F;
-            this.RATE_RLL_I.Min = 0F;
-            this.RATE_RLL_I.Name = "RATE_RLL_I";
-            this.RATE_RLL_I.ParamName = null;
-            this.RATE_RLL_I.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RATE_PIT_P
-            // 
-            resources.ApplyResources(this.RATE_PIT_P, "RATE_PIT_P");
-            this.RATE_PIT_P.Max = 1F;
-            this.RATE_PIT_P.Min = 0F;
-            this.RATE_PIT_P.Name = "RATE_PIT_P";
-            this.RATE_PIT_P.ParamName = null;
-            this.RATE_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RATE_RLL_P
-            // 
-            resources.ApplyResources(this.RATE_RLL_P, "RATE_RLL_P");
-            this.RATE_RLL_P.Max = 1F;
-            this.RATE_RLL_P.Min = 0F;
-            this.RATE_RLL_P.Name = "RATE_RLL_P";
-            this.RATE_RLL_P.ParamName = null;
-            this.RATE_RLL_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // HLD_LAT_P
             // 
@@ -964,60 +1094,6 @@
             this.STB_PIT_P.Name = "STB_PIT_P";
             this.STB_PIT_P.ParamName = null;
             this.STB_PIT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // THR_ALT_P
-            // 
-            resources.ApplyResources(this.THR_ALT_P, "THR_ALT_P");
-            this.THR_ALT_P.Max = 1F;
-            this.THR_ALT_P.Min = 0F;
-            this.THR_ALT_P.Name = "THR_ALT_P";
-            this.THR_ALT_P.ParamName = null;
-            this.THR_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_LOIT_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_LOIT_SPEED, "WPNAV_LOIT_SPEED");
-            this.WPNAV_LOIT_SPEED.Max = 1F;
-            this.WPNAV_LOIT_SPEED.Min = 0F;
-            this.WPNAV_LOIT_SPEED.Name = "WPNAV_LOIT_SPEED";
-            this.WPNAV_LOIT_SPEED.ParamName = null;
-            this.WPNAV_LOIT_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED_UP
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_UP, "WPNAV_SPEED_UP");
-            this.WPNAV_SPEED_UP.Max = 1F;
-            this.WPNAV_SPEED_UP.Min = 0F;
-            this.WPNAV_SPEED_UP.Name = "WPNAV_SPEED_UP";
-            this.WPNAV_SPEED_UP.ParamName = null;
-            this.WPNAV_SPEED_UP.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED_DN
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED_DN, "WPNAV_SPEED_DN");
-            this.WPNAV_SPEED_DN.Max = 1F;
-            this.WPNAV_SPEED_DN.Min = 0F;
-            this.WPNAV_SPEED_DN.Name = "WPNAV_SPEED_DN";
-            this.WPNAV_SPEED_DN.ParamName = null;
-            this.WPNAV_SPEED_DN.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_RADIUS
-            // 
-            resources.ApplyResources(this.WPNAV_RADIUS, "WPNAV_RADIUS");
-            this.WPNAV_RADIUS.Max = 1F;
-            this.WPNAV_RADIUS.Min = 0F;
-            this.WPNAV_RADIUS.Name = "WPNAV_RADIUS";
-            this.WPNAV_RADIUS.ParamName = null;
-            this.WPNAV_RADIUS.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WPNAV_SPEED
-            // 
-            resources.ApplyResources(this.WPNAV_SPEED, "WPNAV_SPEED");
-            this.WPNAV_SPEED.Max = 1F;
-            this.WPNAV_SPEED.Min = 0F;
-            this.WPNAV_SPEED.Name = "WPNAV_SPEED";
-            this.WPNAV_SPEED.ParamName = null;
-            this.WPNAV_SPEED.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
             // TUNE_HIGH
             // 
@@ -1097,17 +1173,20 @@
             this.RATE_PIT_FF.ParamName = null;
             this.RATE_PIT_FF.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
             // 
+            // lblPitchRoll
+            // 
+            resources.ApplyResources(this.lblPitchRoll, "lblPitchRoll");
+            this.lblPitchRoll.Name = "lblPitchRoll";
+            // 
             // ConfigArducopter
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.myLabel4);
-            this.Controls.Add(this.BUT_refreshpart);
-            this.Controls.Add(this.BUT_rerequestparams);
-            this.Controls.Add(this.BUT_writePIDS);
             this.Controls.Add(this.myLabel3);
             this.Controls.Add(this.myLabel2);
             this.Controls.Add(this.myLabel1);
@@ -1120,9 +1199,6 @@
             this.Name = "ConfigArducopter";
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
@@ -1132,13 +1208,19 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox24.ResumeLayout(false);
             this.groupBox23.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_RATE_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_D)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_D)).EndInit();
@@ -1147,29 +1229,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_I)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_IMAX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.THR_ACCEL_P)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_I)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_IMAX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LOITER_LAT_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_IMAX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_I)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_PIT_P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RATE_RLL_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HLD_LAT_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STB_RLL_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STB_YAW_P)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STB_PIT_P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.THR_ALT_P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_LOIT_SPEED)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_UP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED_DN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_RADIUS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WPNAV_SPEED)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TUNE_HIGH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TUNE_LOW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RATE_YAW_FF)).EndInit();
@@ -1195,7 +1271,6 @@
         private Controls.MavlinkNumericUpDown THR_RATE_P;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.CheckBox CHK_lockrollpitch;
-        private System.Windows.Forms.GroupBox groupBox4;
         private Controls.MavlinkNumericUpDown WPNAV_SPEED_UP;
         private System.Windows.Forms.Label label27;
         private Controls.MavlinkNumericUpDown WPNAV_LOIT_SPEED;
@@ -1278,21 +1353,16 @@
         private System.Windows.Forms.Label label14;
         private Controls.MavlinkNumericUpDown RATE_RLL_FF;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label36;
@@ -1300,5 +1370,10 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label41;
+        private BSE.Windows.Forms.Panel panel1;
+        private BSE.Windows.Forms.Panel panel2;
+        private BSE.Windows.Forms.Panel panel3;
+        private BSE.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblPitchRoll;
     }
 }

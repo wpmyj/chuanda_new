@@ -382,6 +382,192 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rb_px4pixhawk.Name" xml:space="preserve">
+    <value>rb_px4pixhawk</value>
+  </data>
+  <data name="&gt;&gt;rb_px4pixhawk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rb_px4pixhawk.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;rb_px4pixhawk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.Name" xml:space="preserve">
+    <value>imageLabel1</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.ImageLabel, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;imageLabel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TXT_declination_min.Name" xml:space="preserve">
+    <value>TXT_declination_min</value>
+  </data>
+  <data name="&gt;&gt;TXT_declination_min.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_declination_min.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;TXT_declination_min.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;radioButtonmanual.Name" xml:space="preserve">
+    <value>radioButtonmanual</value>
+  </data>
+  <data name="&gt;&gt;radioButtonmanual.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonmanual.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButtonmanual.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;radioButton_external.Name" xml:space="preserve">
+    <value>radioButton_external</value>
+  </data>
+  <data name="&gt;&gt;radioButton_external.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_external.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_external.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.Name" xml:space="preserve">
+    <value>CHK_enablecompass</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6145.17503, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.Name" xml:space="preserve">
+    <value>CMB_compass_orient</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6145.17503, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;radioButton_onboard.Name" xml:space="preserve">
+    <value>radioButton_onboard</value>
+  </data>
+  <data name="&gt;&gt;radioButton_onboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButton_onboard.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;radioButton_onboard.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 590</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>179, 26</value>
   </data>
@@ -690,39 +876,6 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="&gt;&gt;radioButton_external.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="CHK_enablecompass.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="CHK_enablecompass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CHK_enablecompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 24</value>
-  </data>
-  <data name="CHK_enablecompass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="CHK_enablecompass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 20</value>
-  </data>
-  <data name="CHK_enablecompass.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="CHK_enablecompass.Text" xml:space="preserve">
-    <value>Enable</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.Name" xml:space="preserve">
-    <value>CHK_enablecompass</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6059.18197, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;CHK_enablecompass.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="pictureBox3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -759,33 +912,6 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="CMB_compass_orient.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="CMB_compass_orient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 312</value>
-  </data>
-  <data name="CMB_compass_orient.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="CMB_compass_orient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 23</value>
-  </data>
-  <data name="CMB_compass_orient.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass_orient.Name" xml:space="preserve">
-    <value>CMB_compass_orient</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass_orient.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6059.18197, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass_orient.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;CMB_compass_orient.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="radioButton_onboard.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -819,92 +945,23 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="&gt;&gt;radioButton_onboard.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 590</value>
-  </data>
-  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Orientation</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 32</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>罗盘一：</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="tableLayoutPanel1.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
-    <value>Single</value>
-  </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
+  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lblIMU2z.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
   <data name="lblIMU2z.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="lblIMU2z.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblIMU2z.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 59</value>
+    <value>49, 7</value>
   </data>
   <data name="lblIMU2z.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+    <value>18, 20</value>
   </data>
   <data name="lblIMU2z.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
@@ -919,7 +976,7 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMU2z.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;lblIMU2z.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -934,10 +991,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="lblIMU2y.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 59</value>
+    <value>50, 9</value>
   </data>
   <data name="lblIMU2y.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+    <value>18, 20</value>
   </data>
   <data name="lblIMU2y.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
@@ -952,10 +1009,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMU2y.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel7</value>
   </data>
   <data name="&gt;&gt;lblIMU2y.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="lblIMU2x.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -967,10 +1024,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="lblIMU2x.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 59</value>
+    <value>49, 10</value>
   </data>
   <data name="lblIMU2x.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+    <value>18, 20</value>
   </data>
   <data name="lblIMU2x.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
@@ -985,10 +1042,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMU2x.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel5</value>
   </data>
   <data name="&gt;&gt;lblIMU2x.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="lblIMUz.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1000,10 +1057,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="lblIMUz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 32</value>
+    <value>51, 8</value>
   </data>
   <data name="lblIMUz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+    <value>18, 20</value>
   </data>
   <data name="lblIMUz.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -1018,10 +1075,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMUz.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel6</value>
   </data>
   <data name="&gt;&gt;lblIMUz.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="lblIMUy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1033,10 +1090,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="lblIMUy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 32</value>
+    <value>50, 8</value>
   </data>
   <data name="lblIMUy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+    <value>18, 20</value>
   </data>
   <data name="lblIMUy.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -1051,10 +1108,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMUy.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel8</value>
   </data>
   <data name="&gt;&gt;lblIMUy.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="lblIMUx.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1066,10 +1123,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>NoControl</value>
   </data>
   <data name="lblIMUx.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 32</value>
+    <value>50, 10</value>
   </data>
   <data name="lblIMUx.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 15</value>
+    <value>18, 20</value>
   </data>
   <data name="lblIMUx.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -1084,175 +1141,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMUx.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel9</value>
   </data>
   <data name="&gt;&gt;lblIMUx.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>419, 6</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 15</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Z轴</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 6</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 15</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Y轴</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 59</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 15</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>罗盘二：</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 6</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 15</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>X轴</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="lblState.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblState.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblState.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblState.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 6</value>
-  </data>
-  <data name="lblState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 15</value>
-  </data>
-  <data name="lblState.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="lblState.Text" xml:space="preserve">
-    <value>状态</value>
-  </data>
-  <data name="&gt;&gt;lblState.Name" xml:space="preserve">
-    <value>lblState</value>
-  </data>
-  <data name="&gt;&gt;lblState.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblState.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;lblState.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>0</value>
   </data>
   <data name="lblIMU2State.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1260,14 +1152,17 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="lblIMU2State.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblIMU2State.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="lblIMU2State.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblIMU2State.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 59</value>
+    <value>32, 9</value>
   </data>
   <data name="lblIMU2State.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 15</value>
+    <value>39, 20</value>
   </data>
   <data name="lblIMU2State.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
@@ -1282,10 +1177,10 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMU2State.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;lblIMU2State.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>0</value>
   </data>
   <data name="lblIMUState.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1293,14 +1188,17 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="lblIMUState.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblIMUState.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="lblIMUState.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lblIMUState.Location" type="System.Drawing.Point, System.Drawing">
-    <value>540, 32</value>
+    <value>31, 7</value>
   </data>
   <data name="lblIMUState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 15</value>
+    <value>39, 20</value>
   </data>
   <data name="lblIMUState.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
@@ -1315,49 +1213,31 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIMUState.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
+    <value>panel3</value>
   </data>
   <data name="&gt;&gt;lblIMUState.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 35</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>622, 81</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblIMU2z" Row="2" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblIMU2y" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblIMU2x" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblIMUz" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="lblIMUy" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblIMUx" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label11" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="label10" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="label4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label7" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label8" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblState" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblIMU2State" Row="2" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblIMUState" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,20,Percent,20,Percent,20,Percent,20,Percent,20" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="BUT_MagCalibrationLive.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="BUT_MagCalibrationLive.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BUT_MagCalibrationLive.Location" type="System.Drawing.Point, System.Drawing">
-    <value>269, 147</value>
+    <value>234, 188</value>
   </data>
   <data name="BUT_MagCalibrationLive.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_MagCalibrationLive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 31</value>
+    <value>217, 31</value>
   </data>
   <data name="BUT_MagCalibrationLive.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -1372,10 +1252,502 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
     <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_MagCalibrationLive.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;BUT_MagCalibrationLive.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 62</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Y轴</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 62</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 20</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Z轴</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>494, 62</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 20</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 99</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>罗盘一</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 138</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>罗盘二</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 93</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 132</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 132</value>
+  </data>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="panel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 93</value>
+  </data>
+  <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel8.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 93</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 132</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="panel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 93</value>
+  </data>
+  <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel9.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;panel9.Name" xml:space="preserve">
+    <value>panel9</value>
+  </data>
+  <data name="&gt;&gt;panel9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel9.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel9.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="panel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 132</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblx.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblx.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblx.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 62</value>
+  </data>
+  <data name="lblx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 20</value>
+  </data>
+  <data name="lblx.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="lblx.Text" xml:space="preserve">
+    <value>X轴</value>
+  </data>
+  <data name="&gt;&gt;lblx.Name" xml:space="preserve">
+    <value>lblx</value>
+  </data>
+  <data name="&gt;&gt;lblx.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblx.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblx.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 18</value>
+  </data>
+  <data name="panel1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>764, 269</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="panel1.Text" xml:space="preserve">
+    <value>罗盘校准</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="CHK_enablecompass.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CHK_enablecompass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CHK_enablecompass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 24</value>
+  </data>
+  <data name="CHK_enablecompass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CHK_enablecompass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 20</value>
+  </data>
+  <data name="CHK_enablecompass.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="CHK_enablecompass.Text" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.Name" xml:space="preserve">
+    <value>CHK_enablecompass</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6145.17503, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;CHK_enablecompass.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="CMB_compass_orient.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CMB_compass_orient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 312</value>
+  </data>
+  <data name="CMB_compass_orient.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="CMB_compass_orient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 23</value>
+  </data>
+  <data name="CMB_compass_orient.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.Name" xml:space="preserve">
+    <value>CMB_compass_orient</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6145.17503, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;CMB_compass_orient.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1383,11 +1755,170 @@ PX4 with onboard or external Compass: ROTATION_NONE</value>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>
   </data>
+  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        RudN65tdA8sHzg46DF645Xrr8m2v29fvrLwzMBQydHc4cnjkLvvu5L2key/vZ9yff7DpIfph4SOpR+WP
+        lR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aTp6fcp24+W/1s/Hnq8/npgp+l
+        f65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfzc4Vv5d8efcd41/s+7P3EfOYH7IeK
+        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAGXhJREFUeF7t1wENAAAM
+        w6CLnX8N19EEXHADAACgzOsAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
+        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
+        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
+        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
+        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
+        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
+        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
+        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
+        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
+        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
+        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
+        AACgzesAAADavA4AAKDN6wAAANq8DgAAoGx7vxIru+2/VRAAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>867, 350</value>
+    <value>867, 439</value>
   </data>
   <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
     <value>bindingSource1</value>

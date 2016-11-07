@@ -680,9 +680,9 @@ namespace ByAeroBeHero.GCSViews
         {
             inlogview = true;
             Thread.Sleep(300);
-            Form Log = new LogDownload();
+            LogDownload Log = new LogDownload();
             ThemeManager.ApplyThemeTo(Log);
-            Log.ShowDialog();
+            //Log.ShowDialog();
             inlogview = false;
         }
 

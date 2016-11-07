@@ -481,7 +481,7 @@
     <Compile Include="Localizations.cs" />
     <Compile Include="Log\CollectionBuffer.cs" />
     <Compile Include="Log\LogDownloadMavLink.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Log\LogDownloadMavLink.Designer.cs">
       <DependentUpon>LogDownloadMavLink.cs</DependentUpon>

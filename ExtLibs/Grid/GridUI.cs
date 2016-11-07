@@ -743,20 +743,23 @@ namespace ByAeroBeHero
             CHK_copter_headingholdlock_CheckedChanged(null,null);
         }
 
+        private int waypno = 0;
         private void AddWP(double Lng, double Lat, double Alt)
         {
             if (CHK_copter_headinghold.Checked)
             {
-                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.CONDITION_YAW, Convert.ToInt32(TXT_headinghold.Text), 0, 0, 0, 0, 0, 0);
+                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.CONDITION_YAW, Convert.ToInt32(TXT_headinghold.Text), 0, 0, 0, 0, 0, 0,0);
             }
 
             if (NUM_copter_delay.Value > 0)
             {
-                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.WAYPOINT, (double)NUM_copter_delay.Value, 0, 0, 0, Lng, Lat, Alt * CurrentState.multiplierdist);
+                waypno++;
+                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.WAYPOINT, (double)NUM_copter_delay.Value, 0, 0, 0, Lng, Lat, Alt * CurrentState.multiplierdist,waypno);
             }
             else
             {
-                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.WAYPOINT, 0, 0, 0, 0, Lng, Lat, (float)(Alt * CurrentState.multiplierdist));
+                waypno++;
+                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.WAYPOINT, 0, 0, 0, 0, Lng, Lat, (float)(Alt * CurrentState.multiplierdist), waypno);
             }
         }
 
@@ -1405,17 +1408,17 @@ namespace ByAeroBeHero
                 {
                     if (plugin.Host.cs.firmware == MainV2.Firmwares.ArduCopter2)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, Math.Round((float)(numer_TakeoffHigh.Value),2));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 0, 0, 0, 0, 0, 0, Math.Round((float)(numer_TakeoffHigh.Value),2),0);
                     }
                     else
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 20, 0, 0, 0, 0, 0, (int)(10 * CurrentState.multiplierdist));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.TAKEOFF, 20, 0, 0, 0, 0, 0, (int)(10 * CurrentState.multiplierdist), 0);
                     }
                 }
 
                 if (CHK_usespeed.Checked)
                 {
-                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, Math.Round((float)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed),2), 0, 0, 0, 0, 0);
+                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, Math.Round((float)((float)NUM_UpDownFlySpeed.Value / CurrentState.multiplierspeed), 2), 0, 0, 0, 0, 0, 0);
                 }
 
                 #region
@@ -1429,12 +1432,12 @@ namespace ByAeroBeHero
                             if (rad_repeatservo.Checked)
                             {
                                 AddWP(plla.Lng, plla.Lat, plla.Alt);
-                                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_REPEAT_SERVO, (float)NUM_reptservo.Value, (float)num_reptpwm.Value, 999, (float)NUM_repttime.Value, 0, 0, 0);
+                                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_REPEAT_SERVO, (float)NUM_reptservo.Value, (float)num_reptpwm.Value, 999, (float)NUM_repttime.Value, 0, 0, 0, 0);
                             }
                             if (rad_digicam.Checked)
                             {
                                 AddWP(plla.Lng, plla.Lat, plla.Alt);
-                                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_DIGICAM_CONTROL, 0, 0, 0, 0, 0, 0, 0);
+                                plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_DIGICAM_CONTROL, 0, 0, 0, 0, 0, 0, 0, 0);
                             }
                         }
                         else
@@ -1447,7 +1450,7 @@ namespace ByAeroBeHero
                         AddWP(plla.Lng, plla.Lat, plla.Alt);
                         if (rad_trigdist.Checked)
                         {
-                            plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, (float)NUM_spacing.Value, 0, 0, 0, 0, 0, 0);
+                            plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, (float)NUM_spacing.Value, 0, 0, 0, 0, 0, 0, 0);
                         }
                     }
                     ++i;
@@ -1455,7 +1458,7 @@ namespace ByAeroBeHero
 
                 if (rad_trigdist.Checked)
                 {
-                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 0, 0, 0, 0, 0);
+                    plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_SET_CAM_TRIGG_DIST, 0, 0, 0, 0, 0, 0, 0, 0);
                 }
 
                 #endregion
@@ -1467,7 +1470,7 @@ namespace ByAeroBeHero
                     {
                         double speed = MainV2.comPort.MAV.param["WPNAV_SPEED"].Value;
                         speed = speed / 100;
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, speed, 0, 0, 0, 0, 0);
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.DO_CHANGE_SPEED, 0, speed, 0, 0, 0, 0, 0, 0);
                     }
                 }
 
@@ -1475,11 +1478,11 @@ namespace ByAeroBeHero
                 {
                     if (CHK_toandland_RTL.Checked)
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, Math.Round((double)numer_landhigh.Value,2));
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.RETURN_TO_LAUNCH, 0, 0, 0, 0, 0, 0, Math.Round((double)numer_landhigh.Value, 2), 0);
                     }
                     else
                     {
-                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.LAND, 0, 0, 0, 0, plugin.Host.cs.HomeLocation.Lng, plugin.Host.cs.HomeLocation.Lat, 0);
+                        plugin.Host.AddWPtoList(MAVLink.MAV_CMD.LAND, 0, 0, 0, 0, plugin.Host.cs.HomeLocation.Lng, plugin.Host.cs.HomeLocation.Lat, 0, 0);
                     }
                 }
 

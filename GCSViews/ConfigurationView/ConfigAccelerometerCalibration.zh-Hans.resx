@@ -134,7 +134,7 @@
     <value />
   </data>
   <data name="BUT_calib_accell.Text" xml:space="preserve">
-    <value>加速度计修正</value>
+    <value>加速度计校准</value>
   </data>
   <data name="BUT_level.Text" xml:space="preserve">
     <value>水平修正</value>

@@ -121,13 +121,13 @@
     <value>日志</value>
   </data>
   <data name="BUT_DLall.Text" xml:space="preserve">
-    <value>下载全部日志</value>
+    <value>下载全部</value>
   </data>
   <data name="BUT_redokml.Text" xml:space="preserve">
     <value>重建KML</value>
   </data>
   <data name="BUT_DLthese.Text" xml:space="preserve">
-    <value>下载这些日志</value>
+    <value>选定下载</value>
   </data>
   <data name="BUT_clearlogs.Text" xml:space="preserve">
     <value>清空日志</value>

@@ -19,17 +19,20 @@ using ICSharpCode.SharpZipLib.Core;
 using log4net;
 using ByAeroBeHero.Comms;
 using ByAeroBeHero.Utilities;
+using ByAeroBeHero.Controls;
+using System.Threading;
 
 
 namespace ByAeroBeHero.Log
 {
-    public partial class LogDownloadMavLink : Form
+    public partial class LogDownloadMavLink : MyUserControl
     {
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        serialstatus status = serialstatus.Connecting;
+        serialstatus status = serialstatus.连接中;
         int currentlog = 0;
         string logfile = "";
         int receivedbytes = 0;
+        int receibedbytestotal = 0;
 
         //List<Model> orientation = new List<Model>();
 
@@ -38,29 +41,53 @@ namespace ByAeroBeHero.Log
 
         enum serialstatus
         {
-            Connecting,
-            Createfile,
-            Closefile,
-            Reading,
-            Waiting,
-            Done
+            连接中,
+            创建文件,
+            关闭文件,
+            读取,
+            等待,
+            完成
         }
 
         public LogDownloadMavLink()
         {
             InitializeComponent();
 
-            ThemeManager.ApplyThemeTo(this);
-
+            //ThemeManager.ApplyThemeTo(this);
             ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
         }
 
-        private void Log_Load(object sender, EventArgs e)
+        public void Log_Load(object sender, EventArgs e)
         {
+
+        }
+
+        public void ShowLog(bool ienable) 
+        {
+            CHK_logs.ForeColor = TXT_seriallog.ForeColor = Color.White;
+            CHK_logs.BackColor = TXT_seriallog.BackColor = Color.Black;
+            BUT_DLall.BackgroundImage = BUT_DLthese.BackgroundImage = BUT_clearlogs.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+
+            if (ienable)
+            {
+                BUT_DLall.Enabled = true;
+                BUT_DLthese.Enabled = true;
+                BUT_clearlogs.Enabled = true;
+            }
+            else 
+            {
+                BUT_DLall.Enabled = false;
+                BUT_DLthese.Enabled = false;
+                BUT_clearlogs.Enabled = false;
+            }
+
             if (!MainV2.comPort.BaseStream.IsOpen)
             {
+
+                CHK_logs.Text = string.Empty;
+                TXT_seriallog.Text = string.Empty;
                 this.Close();
-                CustomMessageBox.Show("Please Connect");
+
                 return;
             }
 
@@ -72,17 +99,18 @@ namespace ByAeroBeHero.Log
                 {
                     genchkcombo(item.id);
 
-                    TXT_seriallog.AppendText(item.id + "\t" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(item.time_utc).ToLocalTime() + "\test size:\t" + item.size +"\r\n");
+                    //receibedbytestotal = (int)item.size;
+                    TXT_seriallog.AppendText(item.id + "\t" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(item.time_utc).ToLocalTime() + "\t  大小:\t" + item.size + "\r\n");
                 }
 
                 if (list.Count == 0)
                 {
-                    TXT_seriallog.AppendText("No logs to download");
+                    TXT_seriallog.AppendText("没有日志下载！");
                 }
             }
             catch { CustomMessageBox.Show(Strings.ErrorLogList, Strings.ERROR); this.Close(); }
 
-            status = serialstatus.Done;
+            status = serialstatus.完成;
         }
 
         void genchkcombo(int logcount)
@@ -113,25 +141,26 @@ namespace ByAeroBeHero.Log
             if (start.Second != DateTime.Now.Second)
             {
                 this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate()
-{
-    try
-    {
+                {
+                    try
+                    {
 
-        TXT_status.Text = status.ToString() + " " + receivedbytes;
-    }
-    catch { }
-});
+                        TXT_status.Text = status.ToString() + " " + receivedbytes + "----" + receibedbytestotal;
+                        progressBar1.Value = (int)Math.Floor((double)(receivedbytes / receibedbytestotal) * 100);
+                    }
+                    catch { }
+                });
                 start = DateTime.Now;
             }
         }
       
         private void BUT_DLall_Click(object sender, EventArgs e)
         {
-            if (status == serialstatus.Done)
+            if (status == serialstatus.完成)
             {
                 if (CHK_logs.Items.Count == 0)
                 {
-                    CustomMessageBox.Show("Nothing to download");
+                    CustomMessageBox.Show("没有日志下载");
                     return;
                 }
 
@@ -143,14 +172,16 @@ namespace ByAeroBeHero.Log
 
         string GetLog(ushort no)
         {
+            receibedbytestotal = (int)MainV2.comPort.GetLogList()[no - 1].size;
+
             MainV2.comPort.Progress += comPort_Progress;
 
-            status = serialstatus.Reading;
+            status = serialstatus.读取;
 
             // get df log from mav
             var ms = MainV2.comPort.GetLog(no);
 
-            status = serialstatus.Done;
+            status = serialstatus.完成;
             updateDisplay();
 
             MainV2.comPort.Progress -= comPort_Progress;
@@ -159,9 +190,23 @@ namespace ByAeroBeHero.Log
             byte[] hbpacket = MainV2.comPort.getHeartBeat();
 
             MAVLink.mavlink_heartbeat_t hb = (MAVLink.mavlink_heartbeat_t)MainV2.comPort.DebugPacket(hbpacket);
-
+            //QUADROTOR四轴         HEXAROTOR六轴        OCTOROTOR八轴
+            string aptype;
+            if (MainV2.comPort.MAV.aptype.ToString() == "QUADROTOR") 
+            {
+                aptype = "四轴";
+            }
+            else if (MainV2.comPort.MAV.aptype.ToString() == "HEXAROTOR")
+            {
+                aptype = "六轴";
+            }
+            else 
+            {
+                aptype = "八轴";
+            }
+                
             logfile = MainV2.LogDir + Path.DirectorySeparatorChar
-             + MainV2.comPort.MAV.aptype.ToString() + Path.DirectorySeparatorChar
+             + aptype + Path.DirectorySeparatorChar
              + hbpacket[3] + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
 
             // make log dir
@@ -173,30 +218,30 @@ namespace ByAeroBeHero.Log
                 bw.Write(ms.ToArray());
             }
 
-            // create ascii log
-            BinaryLog.ConvertBin(logfile, logfile + ".log");
+            //// create ascii log
+            //BinaryLog.ConvertBin(logfile, logfile + ".log");
 
-            //update the new filename
-            logfile = logfile + ".log";
+            ////update the new filename
+            //logfile = logfile + ".log";
 
-            // get gps time of assci log
-            DateTime logtime = DFLog.GetFirstGpsTime(logfile);
+            //// get gps time of assci log
+            //DateTime logtime = DFLog.GetFirstGpsTime(logfile);
 
-            // rename log is we have a valid gps time
-            if (logtime != DateTime.MinValue)
-            {
-                string newlogfilename = MainV2.LogDir + Path.DirectorySeparatorChar
-             + MainV2.comPort.MAV.aptype.ToString() + Path.DirectorySeparatorChar
-             + hbpacket[3] + Path.DirectorySeparatorChar + logtime.ToString("yyyy-MM-dd HH-mm-ss") + ".log";
-                try
-                {
-                    File.Move(logfile, newlogfilename);
-                    // rename bin as well
-                    File.Move(logfile.Replace(".log", ""), newlogfilename.Replace(".log", ".bin"));
-                    logfile = newlogfilename;
-                }
-                catch  { CustomMessageBox.Show(Strings.ErrorRenameFile+ " " + logfile + "\nto " + newlogfilename, Strings.ERROR); }
-            }
+            //// rename log is we have a valid gps time
+            //if (logtime != DateTime.MinValue)
+            //{
+            //    string newlogfilename = MainV2.LogDir + Path.DirectorySeparatorChar
+            // + MainV2.comPort.MAV.aptype.ToString() + Path.DirectorySeparatorChar
+            // + hbpacket[3] + Path.DirectorySeparatorChar + logtime.ToString("yyyy-MM-dd HH-mm-ss") + ".log";
+            //    try
+            //    {
+            //        File.Move(logfile, newlogfilename);
+            //        // rename bin as well
+            //        File.Move(logfile.Replace(".log", ""), newlogfilename.Replace(".log", ".bin"));
+            //        logfile = newlogfilename;
+            //    }
+            //    catch  { CustomMessageBox.Show(Strings.ErrorRenameFile+ " " + logfile + "\nto " + newlogfilename, Strings.ERROR); }
+            //}
 
             return logfile;
         }
@@ -214,7 +259,7 @@ namespace ByAeroBeHero.Log
 
             this.Invoke((System.Windows.Forms.MethodInvoker)delegate()
             {
-                TXT_seriallog.AppendText("Creating KML for " + logfile + "\n");
+                TXT_seriallog.AppendText("日志文件保存位置：" + logfile + "\n");
             });
 
             LogOutput lo = new LogOutput();
@@ -226,12 +271,12 @@ namespace ByAeroBeHero.Log
 
             tr.Close();
 
-            try
-            {
-                lo.writeKML(logfile + ".kml");
-            }
-            catch { } // usualy invalid lat long error
-            status = serialstatus.Done;
+            //try
+            //{
+            //    lo.writeKML(logfile + ".kml");
+            //}
+            //catch { } // usualy invalid lat long error
+            status = serialstatus.完成;
             updateDisplay();
         }
 
@@ -257,7 +302,7 @@ namespace ByAeroBeHero.Log
                     }
                 }
 
-                status = serialstatus.Done;
+                status = serialstatus.完成;
                 updateDisplay();
 
                 Console.Beep();
@@ -289,7 +334,7 @@ namespace ByAeroBeHero.Log
                     }
                 }
 
-                status = serialstatus.Done;
+                status = serialstatus.完成;
                 updateDisplay();
 
                 Console.Beep();
@@ -299,7 +344,7 @@ namespace ByAeroBeHero.Log
 
         private void BUT_DLthese_Click(object sender, EventArgs e)
         {
-            if (status == serialstatus.Done)
+            if (status == serialstatus.完成)
             {
                 System.Threading.Thread t11 = new System.Threading.Thread(delegate() { downloadsinglethread(); });
                 t11.Name = "Log download single thread";
@@ -309,13 +354,13 @@ namespace ByAeroBeHero.Log
 
         private void BUT_clearlogs_Click(object sender, EventArgs e)
         {
-            if (CustomMessageBox.Show("Are you sure?", "sure", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            if (CustomMessageBox.Show("确定是否清除日志文件?", "提示", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
                 try
                 {
                     MainV2.comPort.EraseLog();
-                    TXT_seriallog.AppendText("!!Allow 30-90 seconds for erase\n");
-                    status = serialstatus.Done;
+                    TXT_seriallog.AppendText("!!允许30-90秒删除！\n");
+                    status = serialstatus.完成;
                     updateDisplay();
                     CHK_logs.Items.Clear();
                 }
@@ -341,7 +386,7 @@ namespace ByAeroBeHero.Log
                 {
                     foreach (string logfile in openFileDialog1.FileNames)
                     {
-                        TXT_seriallog.AppendText("\n\nProcessing " + logfile + "\n");
+                        TXT_seriallog.AppendText("\n\n处理..." + logfile + "\n");
                         this.Refresh();
                         LogOutput lo = new LogOutput();
                         try
@@ -355,11 +400,11 @@ namespace ByAeroBeHero.Log
 
                             tr.Close();
                         }
-                        catch (Exception ex) { CustomMessageBox.Show("Error processing file. Make sure the file is not in use.\n" + ex.ToString()); }
+                        catch (Exception ex) { CustomMessageBox.Show("处理文件错误. 确保文件没有在使用中.\n" + ex.ToString()); }
 
-                        lo.writeKML(logfile + ".kml");
+                        //lo.writeKML(logfile + ".kml");
 
-                        TXT_seriallog.AppendText("Done\n");
+                        TXT_seriallog.AppendText("完成\n");
                     }
                 }
             }
@@ -384,7 +429,7 @@ namespace ByAeroBeHero.Log
                 {
                     foreach (string logfile in openFileDialog1.FileNames)
                     {
-                        TXT_seriallog.AppendText("\n\nProcessing " + logfile + "\n");
+                        TXT_seriallog.AppendText("\n\n处理... " + logfile + "\n");
                         this.Refresh();
 
                         LogOutput lo = new LogOutput();
@@ -400,11 +445,11 @@ namespace ByAeroBeHero.Log
 
                             tr.Close();
                         }
-                        catch (Exception ex) { CustomMessageBox.Show("Error processing log. Is it still downloading? " + ex.Message); continue; }
+                        catch (Exception ex) { CustomMessageBox.Show("处理日志错误. 是否要继续下载? "); continue; }
 
                         lo.writeKMLFirstPerson(logfile + "-fp.kml");
 
-                        TXT_seriallog.AppendText("Done\n");
+                        TXT_seriallog.AppendText("完成\n");
                     }
                 }
             }
@@ -438,6 +483,6 @@ namespace ByAeroBeHero.Log
         private void chk_droneshare_CheckedChanged(object sender, EventArgs e)
         {
 
-        }
+        } 
     }
 }

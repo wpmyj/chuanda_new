@@ -158,7 +158,7 @@ namespace ByAeroBeHero.GCSViews
         /// <param name="lat"></param>
         /// <param name="lng"></param>
         /// <param name="alt"></param>
-        public void setfromMap(double lat, double lng, float alt, double p1 = 0)
+        public void setfromMap(double lat, double lng, float alt, double p1 = 0,int waypno =0)
         {
             if (selectedrow > Commands.RowCount)
             {
@@ -262,6 +262,13 @@ namespace ByAeroBeHero.GCSViews
                     cell.Style.BackColor = Color.Red;
                 }
 
+            }
+
+            if (Commands.Columns[Waypno.Index].HeaderText.Equals("航点编号"))
+            {
+                cell = Commands.Rows[selectedrow].Cells[Waypno.Index] as DataGridViewTextBoxCell;
+                cell.Value = waypno.ToString();
+                cell.DataGridView.EndEdit();
             }
 
             // Add more for other params
@@ -549,6 +556,8 @@ namespace ByAeroBeHero.GCSViews
             // hide the map to prevent redraws when its loaded
             panelMap.Visible = false;
             comboBoxMapType.SelectedIndex = 5;
+
+            //this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true); 
         }
 
         void updateCMDParams()
@@ -1057,6 +1066,7 @@ namespace ByAeroBeHero.GCSViews
             // number rows 
             Thread t1 = new Thread(delegate()
             {
+                int i = 1;
                 // thread for updateing row numbers
                 for (int a = 0; a < Commands.Rows.Count - 0; a++)
                 {
@@ -1075,6 +1085,15 @@ namespace ByAeroBeHero.GCSViews
                             {
                                 // this code is where the delay is when deleting.
                                 Commands.Rows[a].HeaderCell.Value = (a + 1).ToString();
+                            }
+
+                            
+                            string commandValue = Commands.Rows[a].Cells[Command.Index].Value.ToString();
+                            int command = (byte)(int)Enum.Parse(typeof(MAVLink.MAV_CMD),mavcnd(commandValue) , false);
+                            if (command == 16)
+                            {
+                                Commands.Rows[a].Cells[Waypno.Index].Value = i.ToString();
+                                i++;
                             }
                         }
                         catch (Exception) { }
@@ -1221,7 +1240,7 @@ namespace ByAeroBeHero.GCSViews
                             {
                                 pointlist.Add(new PointLatLngAlt(double.Parse(cell3), double.Parse(cell4), (int)double.Parse(cell2) + homealt, (a + 1).ToString()));
                                 fullpointlist.Add(pointlist[pointlist.Count - 1]);
-                                addpolygonmarker((a + 1).ToString(), double.Parse(cell4), double.Parse(cell3), (int)double.Parse(cell2), null);
+                                addpolygonmarker(Commands.Rows[a].Cells[Waypno.Index].Value.ToString(), double.Parse(cell4), double.Parse(cell3), (int)double.Parse(cell2), null);
                             }
 
                             avglong += double.Parse(Commands.Rows[a].Cells[Lon.Index].Value.ToString());
@@ -4176,11 +4195,20 @@ namespace ByAeroBeHero.GCSViews
             int no = 0;
             if (CurentRectMarker != null)
             {
+                int wayno = 0 ;
+                for (int a = 0; a < Commands.Rows.Count - 0; a++)
+                {
+                    if (Commands.Rows[a].Cells[Waypno.Index].Value.ToString() == CurentRectMarker.InnerMarker.Tag.ToString())
+                    {
+                        wayno = a;
+                    }
+                }
+
                 if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString(), out no))
                 {
                     try
                     {
-                        Commands.Rows.RemoveAt(no - 1); // home is 0
+                        Commands.Rows.RemoveAt(wayno); // home is 0
                     }
                     catch { CustomMessageBox.Show("选择的航点错误,请再次尝试。"); }
                 }
@@ -5210,7 +5238,7 @@ namespace ByAeroBeHero.GCSViews
             writeKML();
         }
 
-        public void AddCommand(MAVLink.MAV_CMD cmd, double p1, double p2, double p3, double p4, double x, double y, double z)
+        public void AddCommand(MAVLink.MAV_CMD cmd, double p1, double p2, double p3, double p4, double x, double y, double z,int waypno)
         {
             selectedrow = Commands.Rows.Add();
 
@@ -5226,7 +5254,7 @@ namespace ByAeroBeHero.GCSViews
 
             if (cmd == MAVLink.MAV_CMD.WAYPOINT)
             {
-                setfromMap(y, x, (float)z, Math.Round(p1, 1));
+                setfromMap(y, x, (float)z, Math.Round(p1, 1),waypno);
             }
             else
             {
@@ -6057,7 +6085,8 @@ namespace ByAeroBeHero.GCSViews
 
                 foreach (var item in wplist)
                 {
-                    AddCommand(MAVLink.MAV_CMD.WAYPOINT, 0, 0, 0, 0, item.Lat, item.Lng, item.Alt);
+                    //wjch20161101
+                    AddCommand(MAVLink.MAV_CMD.WAYPOINT, 0, 0, 0, 0, item.Lat, item.Lng, item.Alt,0);
                 }
 
                 quickadd = false;
@@ -6178,7 +6207,8 @@ namespace ByAeroBeHero.GCSViews
 
             quickadd = true;
 
-            AddCommand(MAVLink.MAV_CMD.DO_SET_ROI, 0, 0, 0, 0, MouseDownStart.Lng, MouseDownStart.Lat, 0);
+            //wjch20161101
+            AddCommand(MAVLink.MAV_CMD.DO_SET_ROI, 0, 0, 0, 0, MouseDownStart.Lng, MouseDownStart.Lat, 0,0);
 
             bool startup = true;
 
@@ -6646,12 +6676,12 @@ namespace ByAeroBeHero.GCSViews
             if (IsAutoPan)
             {
                 IsAutoPan = false;
-                this.btnAutoPan.Text = "取消追踪";
+                this.btnAutoPan.Text = "追踪飞机";
             }
             else
             {
                 IsAutoPan = true;
-                this.btnAutoPan.Text = "追踪飞机";
+                this.btnAutoPan.Text = "取消追踪";
             }
             autopan = IsAutoPan;
 
@@ -7685,11 +7715,20 @@ namespace ByAeroBeHero.GCSViews
             {
                 PointLatLng movePoint = MovingPoints(CurentRectMarker.Position, float.Parse(moveDistance), moveDirection);
 
-                if (int.TryParse(CurentRectMarker.InnerMarker.Tag.ToString(), out no))
+                int wayno = 0;
+                for (int a = 0; a < Commands.Rows.Count - 0; a++)
+                {
+                    if (Commands.Rows[a].Cells[Waypno.Index].Value.ToString() == CurentRectMarker.InnerMarker.Tag.ToString())
+                    {
+                        wayno = a;
+                    }
+                }
+
+                if (int.TryParse((wayno + 1).ToString(), out no))
                 {
                     try
                     {
-                        callMeDrag(CurentRectMarker.InnerMarker.Tag.ToString(), movePoint.Lat, movePoint.Lng, -1);
+                        callMeDrag((wayno + 1).ToString(), movePoint.Lat, movePoint.Lng, -1);
                     }
                     catch { CustomMessageBox.Show("航点平移失败，请再次尝试。"); }
                 }

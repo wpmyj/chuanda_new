@@ -5,19 +5,16 @@ using ByAeroBeHero.Controls;
 using ByAeroBeHero.Properties;
 using System.Drawing;
 using System.Text;
+using ByAeroBeHero.Log;
 
 namespace ByAeroBeHero.GCSViews
 {
     public partial class Help : MyUserControl, IActivate
     {
+        private LogDownloadMavLink form = new LogDownloadMavLink();
         public Help()
         {
             InitializeComponent();
-            InitControl();
-        }
-
-        private void InitControl() 
-        {      
         }
 
         public void Activate()
@@ -30,6 +27,8 @@ namespace ByAeroBeHero.GCSViews
             catch
             {
             }
+            this.panel2.Visible = false;
+            this.IsShow = true;
         }
 
         public void BUT_updatecheck_Click(object sender, EventArgs e)
@@ -60,6 +59,36 @@ namespace ByAeroBeHero.GCSViews
         {
             Utilities.Update.dobeta = true;
             Utilities.Update.DoUpdate();
+        }
+
+        private bool IsShow = false; 
+        private void myBtnDownloadlog_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen) 
+            {
+                this.panel2.Visible = false;
+                CustomMessageBox.Show("请连接地面站再进行日志下载！", "提示");
+                return;
+            }
+
+            if (IsShow)
+            {
+                this.panel2.Visible = true;
+                this.IsShow = false;
+                this.logDownloadMavLink1.ShowLog(true);
+                timer1.Start();
+            }
+            else 
+            {
+                timer1.Stop();
+                this.panel2.Visible = false;
+                this.IsShow = true;
+                this.logDownloadMavLink1.ShowLog(false);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
         }
     }
 }

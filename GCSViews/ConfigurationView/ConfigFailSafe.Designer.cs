@@ -34,25 +34,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label2 = new System.Windows.Forms.Label();
             this.pnlmah = new System.Windows.Forms.Label();
             this.lbl_currentmode = new System.Windows.Forms.Label();
-            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.LNK_wiki = new System.Windows.Forms.LinkLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.mavlinkNumericUpDownlow_voltage = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDownfs_thr_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.mavlinkNumericUpDownthr_fs_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.mavlinkComboBox_fs_thr_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.mavlinkCheckBoxlong_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkCheckBoxshort_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkCheckBoxgcs_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkCheckBoxthr_fs_action = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.mavlinkCheckBoxthr_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.PNL_thr_fs_value = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.PNL_low_bat = new System.Windows.Forms.Panel();
-            this.mavlinkNumericUpDownFS_BATT_MAH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.mavlinkCheckBoxFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.lbl_gpslock = new ByAeroBeHero.Controls.MyLabel();
             this.lbl_armed = new ByAeroBeHero.Controls.MyLabel();
             this.horizontalProgressBar1 = new ByAeroBeHero.Controls.HorizontalProgressBar();
@@ -82,20 +70,32 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lblinfo1 = new System.Windows.Forms.Label();
             this.panel1 = new BSE.Windows.Forms.Panel();
             this.panel2 = new BSE.Windows.Forms.Panel();
+            this.panel3 = new BSE.Windows.Forms.Panel();
             this.mavlinkComboFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.cb_FS_Level_Enable = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.mavlinkNumericUpDownlow_voltage = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDownfs_thr_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkNumericUpDownthr_fs_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkComboBoxfs_batt_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.panel3 = new BSE.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownthr_fs_value)).BeginInit();
+            this.mavlinkComboBox_fs_thr_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mavlinkCheckBoxlong_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxshort_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxgcs_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkNumericUpDownFS_BATT_MAH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.mavlinkCheckBoxFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxthr_fs_action = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkCheckBoxthr_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.PNL_thr_fs_value.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownFS_BATT_MAH)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownthr_fs_value)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownFS_BATT_MAH)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -115,10 +115,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lbl_currentmode.Name = "lbl_currentmode";
             this.lbl_currentmode.TextChanged += new System.EventHandler(this.lbl_currentmode_TextChanged);
             // 
-            // currentStateBindingSource
-            // 
-            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // LNK_wiki
             // 
             resources.ApplyResources(this.LNK_wiki, "LNK_wiki");
@@ -133,110 +129,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.toolTip1.AutoPopDelay = 20000;
             this.toolTip1.InitialDelay = 500;
             this.toolTip1.ReshowDelay = 100;
-            // 
-            // mavlinkNumericUpDownlow_voltage
-            // 
-            this.mavlinkNumericUpDownlow_voltage.BackColor = System.Drawing.Color.Black;
-            this.mavlinkNumericUpDownlow_voltage.DecimalPlaces = 1;
-            resources.ApplyResources(this.mavlinkNumericUpDownlow_voltage, "mavlinkNumericUpDownlow_voltage");
-            this.mavlinkNumericUpDownlow_voltage.ForeColor = System.Drawing.Color.White;
-            this.mavlinkNumericUpDownlow_voltage.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.mavlinkNumericUpDownlow_voltage.Max = 99F;
-            this.mavlinkNumericUpDownlow_voltage.Min = 3F;
-            this.mavlinkNumericUpDownlow_voltage.Name = "mavlinkNumericUpDownlow_voltage";
-            this.mavlinkNumericUpDownlow_voltage.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkNumericUpDownlow_voltage, resources.GetString("mavlinkNumericUpDownlow_voltage.ToolTip"));
-            this.mavlinkNumericUpDownlow_voltage.Value = new decimal(new int[] {
-            35,
-            0,
-            0,
-            65536});
-            // 
-            // mavlinkNumericUpDownfs_thr_value
-            // 
-            resources.ApplyResources(this.mavlinkNumericUpDownfs_thr_value, "mavlinkNumericUpDownfs_thr_value");
-            this.mavlinkNumericUpDownfs_thr_value.Max = 1F;
-            this.mavlinkNumericUpDownfs_thr_value.Min = 0F;
-            this.mavlinkNumericUpDownfs_thr_value.Name = "mavlinkNumericUpDownfs_thr_value";
-            this.mavlinkNumericUpDownfs_thr_value.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkNumericUpDownfs_thr_value, resources.GetString("mavlinkNumericUpDownfs_thr_value.ToolTip"));
-            // 
-            // mavlinkNumericUpDownthr_fs_value
-            // 
-            this.mavlinkNumericUpDownthr_fs_value.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.mavlinkNumericUpDownthr_fs_value, "mavlinkNumericUpDownthr_fs_value");
-            this.mavlinkNumericUpDownthr_fs_value.ForeColor = System.Drawing.Color.White;
-            this.mavlinkNumericUpDownthr_fs_value.Max = 1F;
-            this.mavlinkNumericUpDownthr_fs_value.Min = 0F;
-            this.mavlinkNumericUpDownthr_fs_value.Name = "mavlinkNumericUpDownthr_fs_value";
-            this.mavlinkNumericUpDownthr_fs_value.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkNumericUpDownthr_fs_value, resources.GetString("mavlinkNumericUpDownthr_fs_value.ToolTip"));
-            // 
-            // mavlinkComboBox_fs_thr_enable
-            // 
-            this.mavlinkComboBox_fs_thr_enable.BackColor = System.Drawing.Color.Black;
-            this.mavlinkComboBox_fs_thr_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.mavlinkComboBox_fs_thr_enable, "mavlinkComboBox_fs_thr_enable");
-            this.mavlinkComboBox_fs_thr_enable.ForeColor = System.Drawing.Color.White;
-            this.mavlinkComboBox_fs_thr_enable.FormattingEnabled = true;
-            this.mavlinkComboBox_fs_thr_enable.Name = "mavlinkComboBox_fs_thr_enable";
-            this.mavlinkComboBox_fs_thr_enable.ParamName = null;
-            this.mavlinkComboBox_fs_thr_enable.SubControl = null;
-            this.toolTip1.SetToolTip(this.mavlinkComboBox_fs_thr_enable, resources.GetString("mavlinkComboBox_fs_thr_enable.ToolTip"));
-            // 
-            // mavlinkCheckBoxlong_fs
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxlong_fs, "mavlinkCheckBoxlong_fs");
-            this.mavlinkCheckBoxlong_fs.Name = "mavlinkCheckBoxlong_fs";
-            this.mavlinkCheckBoxlong_fs.OffValue = 0D;
-            this.mavlinkCheckBoxlong_fs.OnValue = 1D;
-            this.mavlinkCheckBoxlong_fs.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxlong_fs, resources.GetString("mavlinkCheckBoxlong_fs.ToolTip"));
-            this.mavlinkCheckBoxlong_fs.UseVisualStyleBackColor = true;
-            // 
-            // mavlinkCheckBoxshort_fs
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxshort_fs, "mavlinkCheckBoxshort_fs");
-            this.mavlinkCheckBoxshort_fs.Name = "mavlinkCheckBoxshort_fs";
-            this.mavlinkCheckBoxshort_fs.OffValue = 0D;
-            this.mavlinkCheckBoxshort_fs.OnValue = 1D;
-            this.mavlinkCheckBoxshort_fs.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxshort_fs, resources.GetString("mavlinkCheckBoxshort_fs.ToolTip"));
-            this.mavlinkCheckBoxshort_fs.UseVisualStyleBackColor = true;
-            // 
-            // mavlinkCheckBoxgcs_fs
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxgcs_fs, "mavlinkCheckBoxgcs_fs");
-            this.mavlinkCheckBoxgcs_fs.Name = "mavlinkCheckBoxgcs_fs";
-            this.mavlinkCheckBoxgcs_fs.OffValue = 0D;
-            this.mavlinkCheckBoxgcs_fs.OnValue = 1D;
-            this.mavlinkCheckBoxgcs_fs.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxgcs_fs, resources.GetString("mavlinkCheckBoxgcs_fs.ToolTip"));
-            this.mavlinkCheckBoxgcs_fs.UseVisualStyleBackColor = true;
-            // 
-            // mavlinkCheckBoxthr_fs_action
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxthr_fs_action, "mavlinkCheckBoxthr_fs_action");
-            this.mavlinkCheckBoxthr_fs_action.Name = "mavlinkCheckBoxthr_fs_action";
-            this.mavlinkCheckBoxthr_fs_action.OffValue = 0D;
-            this.mavlinkCheckBoxthr_fs_action.OnValue = 1D;
-            this.mavlinkCheckBoxthr_fs_action.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs_action, resources.GetString("mavlinkCheckBoxthr_fs_action.ToolTip"));
-            this.mavlinkCheckBoxthr_fs_action.UseVisualStyleBackColor = true;
-            // 
-            // mavlinkCheckBoxthr_fs
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxthr_fs, "mavlinkCheckBoxthr_fs");
-            this.mavlinkCheckBoxthr_fs.Name = "mavlinkCheckBoxthr_fs";
-            this.mavlinkCheckBoxthr_fs.OffValue = 0D;
-            this.mavlinkCheckBoxthr_fs.OnValue = 1D;
-            this.mavlinkCheckBoxthr_fs.ParamName = null;
-            this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs, resources.GetString("mavlinkCheckBoxthr_fs.ToolTip"));
-            this.mavlinkCheckBoxthr_fs.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -293,34 +185,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.PNL_low_bat, "PNL_low_bat");
             this.PNL_low_bat.Name = "PNL_low_bat";
-            // 
-            // mavlinkNumericUpDownFS_BATT_MAH
-            // 
-            this.mavlinkNumericUpDownFS_BATT_MAH.DecimalPlaces = 1;
-            resources.ApplyResources(this.mavlinkNumericUpDownFS_BATT_MAH, "mavlinkNumericUpDownFS_BATT_MAH");
-            this.mavlinkNumericUpDownFS_BATT_MAH.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.mavlinkNumericUpDownFS_BATT_MAH.Max = 99999F;
-            this.mavlinkNumericUpDownFS_BATT_MAH.Min = 1000F;
-            this.mavlinkNumericUpDownFS_BATT_MAH.Name = "mavlinkNumericUpDownFS_BATT_MAH";
-            this.mavlinkNumericUpDownFS_BATT_MAH.ParamName = null;
-            this.mavlinkNumericUpDownFS_BATT_MAH.Value = new decimal(new int[] {
-            131,
-            0,
-            0,
-            65536});
-            // 
-            // mavlinkCheckBoxFS_GCS_ENABLE
-            // 
-            resources.ApplyResources(this.mavlinkCheckBoxFS_GCS_ENABLE, "mavlinkCheckBoxFS_GCS_ENABLE");
-            this.mavlinkCheckBoxFS_GCS_ENABLE.Name = "mavlinkCheckBoxFS_GCS_ENABLE";
-            this.mavlinkCheckBoxFS_GCS_ENABLE.OffValue = 0D;
-            this.mavlinkCheckBoxFS_GCS_ENABLE.OnValue = 1D;
-            this.mavlinkCheckBoxFS_GCS_ENABLE.ParamName = null;
-            this.mavlinkCheckBoxFS_GCS_ENABLE.UseVisualStyleBackColor = true;
             // 
             // lbl_gpslock
             // 
@@ -745,39 +609,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel2.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // mavlinkComboFS_GCS_ENABLE
-            // 
-            this.mavlinkComboFS_GCS_ENABLE.BackColor = System.Drawing.Color.Black;
-            this.mavlinkComboFS_GCS_ENABLE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.mavlinkComboFS_GCS_ENABLE, "mavlinkComboFS_GCS_ENABLE");
-            this.mavlinkComboFS_GCS_ENABLE.ForeColor = System.Drawing.Color.White;
-            this.mavlinkComboFS_GCS_ENABLE.FormattingEnabled = true;
-            this.mavlinkComboFS_GCS_ENABLE.Name = "mavlinkComboFS_GCS_ENABLE";
-            this.mavlinkComboFS_GCS_ENABLE.ParamName = null;
-            this.mavlinkComboFS_GCS_ENABLE.SubControl = null;
-            // 
-            // cb_FS_Level_Enable
-            // 
-            this.cb_FS_Level_Enable.BackColor = System.Drawing.Color.Black;
-            this.cb_FS_Level_Enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.cb_FS_Level_Enable, "cb_FS_Level_Enable");
-            this.cb_FS_Level_Enable.ForeColor = System.Drawing.Color.White;
-            this.cb_FS_Level_Enable.FormattingEnabled = true;
-            this.cb_FS_Level_Enable.Name = "cb_FS_Level_Enable";
-            this.cb_FS_Level_Enable.ParamName = null;
-            this.cb_FS_Level_Enable.SubControl = null;
-            // 
-            // mavlinkComboBoxfs_batt_enable
-            // 
-            this.mavlinkComboBoxfs_batt_enable.BackColor = System.Drawing.Color.Black;
-            this.mavlinkComboBoxfs_batt_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.mavlinkComboBoxfs_batt_enable, "mavlinkComboBoxfs_batt_enable");
-            this.mavlinkComboBoxfs_batt_enable.ForeColor = System.Drawing.Color.White;
-            this.mavlinkComboBoxfs_batt_enable.FormattingEnabled = true;
-            this.mavlinkComboBoxfs_batt_enable.Name = "mavlinkComboBoxfs_batt_enable";
-            this.mavlinkComboBoxfs_batt_enable.ParamName = null;
-            this.mavlinkComboBoxfs_batt_enable.SubControl = null;
-            // 
             // panel3
             // 
             this.panel3.AssociatedSplitter = null;
@@ -808,6 +639,175 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel3.ToolTipTextExpandIconPanelExpanded = null;
             // 
+            // mavlinkComboFS_GCS_ENABLE
+            // 
+            this.mavlinkComboFS_GCS_ENABLE.BackColor = System.Drawing.Color.Black;
+            this.mavlinkComboFS_GCS_ENABLE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboFS_GCS_ENABLE, "mavlinkComboFS_GCS_ENABLE");
+            this.mavlinkComboFS_GCS_ENABLE.ForeColor = System.Drawing.Color.White;
+            this.mavlinkComboFS_GCS_ENABLE.FormattingEnabled = true;
+            this.mavlinkComboFS_GCS_ENABLE.Name = "mavlinkComboFS_GCS_ENABLE";
+            this.mavlinkComboFS_GCS_ENABLE.ParamName = null;
+            this.mavlinkComboFS_GCS_ENABLE.SubControl = null;
+            // 
+            // cb_FS_Level_Enable
+            // 
+            this.cb_FS_Level_Enable.BackColor = System.Drawing.Color.Black;
+            this.cb_FS_Level_Enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.cb_FS_Level_Enable, "cb_FS_Level_Enable");
+            this.cb_FS_Level_Enable.ForeColor = System.Drawing.Color.White;
+            this.cb_FS_Level_Enable.FormattingEnabled = true;
+            this.cb_FS_Level_Enable.Name = "cb_FS_Level_Enable";
+            this.cb_FS_Level_Enable.ParamName = null;
+            this.cb_FS_Level_Enable.SubControl = null;
+            // 
+            // mavlinkNumericUpDownlow_voltage
+            // 
+            this.mavlinkNumericUpDownlow_voltage.BackColor = System.Drawing.Color.Black;
+            this.mavlinkNumericUpDownlow_voltage.DecimalPlaces = 1;
+            resources.ApplyResources(this.mavlinkNumericUpDownlow_voltage, "mavlinkNumericUpDownlow_voltage");
+            this.mavlinkNumericUpDownlow_voltage.ForeColor = System.Drawing.Color.White;
+            this.mavlinkNumericUpDownlow_voltage.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.mavlinkNumericUpDownlow_voltage.Max = 99F;
+            this.mavlinkNumericUpDownlow_voltage.Min = 3F;
+            this.mavlinkNumericUpDownlow_voltage.Name = "mavlinkNumericUpDownlow_voltage";
+            this.mavlinkNumericUpDownlow_voltage.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkNumericUpDownlow_voltage, resources.GetString("mavlinkNumericUpDownlow_voltage.ToolTip"));
+            this.mavlinkNumericUpDownlow_voltage.Value = new decimal(new int[] {
+            35,
+            0,
+            0,
+            65536});
+            // 
+            // mavlinkNumericUpDownfs_thr_value
+            // 
+            resources.ApplyResources(this.mavlinkNumericUpDownfs_thr_value, "mavlinkNumericUpDownfs_thr_value");
+            this.mavlinkNumericUpDownfs_thr_value.Max = 1F;
+            this.mavlinkNumericUpDownfs_thr_value.Min = 0F;
+            this.mavlinkNumericUpDownfs_thr_value.Name = "mavlinkNumericUpDownfs_thr_value";
+            this.mavlinkNumericUpDownfs_thr_value.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkNumericUpDownfs_thr_value, resources.GetString("mavlinkNumericUpDownfs_thr_value.ToolTip"));
+            // 
+            // mavlinkNumericUpDownthr_fs_value
+            // 
+            this.mavlinkNumericUpDownthr_fs_value.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.mavlinkNumericUpDownthr_fs_value, "mavlinkNumericUpDownthr_fs_value");
+            this.mavlinkNumericUpDownthr_fs_value.ForeColor = System.Drawing.Color.White;
+            this.mavlinkNumericUpDownthr_fs_value.Max = 1F;
+            this.mavlinkNumericUpDownthr_fs_value.Min = 0F;
+            this.mavlinkNumericUpDownthr_fs_value.Name = "mavlinkNumericUpDownthr_fs_value";
+            this.mavlinkNumericUpDownthr_fs_value.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkNumericUpDownthr_fs_value, resources.GetString("mavlinkNumericUpDownthr_fs_value.ToolTip"));
+            // 
+            // mavlinkComboBoxfs_batt_enable
+            // 
+            this.mavlinkComboBoxfs_batt_enable.BackColor = System.Drawing.Color.Black;
+            this.mavlinkComboBoxfs_batt_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboBoxfs_batt_enable, "mavlinkComboBoxfs_batt_enable");
+            this.mavlinkComboBoxfs_batt_enable.ForeColor = System.Drawing.Color.White;
+            this.mavlinkComboBoxfs_batt_enable.FormattingEnabled = true;
+            this.mavlinkComboBoxfs_batt_enable.Name = "mavlinkComboBoxfs_batt_enable";
+            this.mavlinkComboBoxfs_batt_enable.ParamName = null;
+            this.mavlinkComboBoxfs_batt_enable.SubControl = null;
+            // 
+            // mavlinkComboBox_fs_thr_enable
+            // 
+            this.mavlinkComboBox_fs_thr_enable.BackColor = System.Drawing.Color.Black;
+            this.mavlinkComboBox_fs_thr_enable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboBox_fs_thr_enable, "mavlinkComboBox_fs_thr_enable");
+            this.mavlinkComboBox_fs_thr_enable.ForeColor = System.Drawing.Color.White;
+            this.mavlinkComboBox_fs_thr_enable.FormattingEnabled = true;
+            this.mavlinkComboBox_fs_thr_enable.Name = "mavlinkComboBox_fs_thr_enable";
+            this.mavlinkComboBox_fs_thr_enable.ParamName = null;
+            this.mavlinkComboBox_fs_thr_enable.SubControl = null;
+            this.toolTip1.SetToolTip(this.mavlinkComboBox_fs_thr_enable, resources.GetString("mavlinkComboBox_fs_thr_enable.ToolTip"));
+            // 
+            // currentStateBindingSource
+            // 
+            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
+            // mavlinkCheckBoxlong_fs
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxlong_fs, "mavlinkCheckBoxlong_fs");
+            this.mavlinkCheckBoxlong_fs.Name = "mavlinkCheckBoxlong_fs";
+            this.mavlinkCheckBoxlong_fs.OffValue = 0D;
+            this.mavlinkCheckBoxlong_fs.OnValue = 1D;
+            this.mavlinkCheckBoxlong_fs.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxlong_fs, resources.GetString("mavlinkCheckBoxlong_fs.ToolTip"));
+            this.mavlinkCheckBoxlong_fs.UseVisualStyleBackColor = true;
+            // 
+            // mavlinkCheckBoxshort_fs
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxshort_fs, "mavlinkCheckBoxshort_fs");
+            this.mavlinkCheckBoxshort_fs.Name = "mavlinkCheckBoxshort_fs";
+            this.mavlinkCheckBoxshort_fs.OffValue = 0D;
+            this.mavlinkCheckBoxshort_fs.OnValue = 1D;
+            this.mavlinkCheckBoxshort_fs.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxshort_fs, resources.GetString("mavlinkCheckBoxshort_fs.ToolTip"));
+            this.mavlinkCheckBoxshort_fs.UseVisualStyleBackColor = true;
+            // 
+            // mavlinkCheckBoxgcs_fs
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxgcs_fs, "mavlinkCheckBoxgcs_fs");
+            this.mavlinkCheckBoxgcs_fs.Name = "mavlinkCheckBoxgcs_fs";
+            this.mavlinkCheckBoxgcs_fs.OffValue = 0D;
+            this.mavlinkCheckBoxgcs_fs.OnValue = 1D;
+            this.mavlinkCheckBoxgcs_fs.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxgcs_fs, resources.GetString("mavlinkCheckBoxgcs_fs.ToolTip"));
+            this.mavlinkCheckBoxgcs_fs.UseVisualStyleBackColor = true;
+            // 
+            // mavlinkNumericUpDownFS_BATT_MAH
+            // 
+            this.mavlinkNumericUpDownFS_BATT_MAH.DecimalPlaces = 1;
+            resources.ApplyResources(this.mavlinkNumericUpDownFS_BATT_MAH, "mavlinkNumericUpDownFS_BATT_MAH");
+            this.mavlinkNumericUpDownFS_BATT_MAH.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.mavlinkNumericUpDownFS_BATT_MAH.Max = 99999F;
+            this.mavlinkNumericUpDownFS_BATT_MAH.Min = 1000F;
+            this.mavlinkNumericUpDownFS_BATT_MAH.Name = "mavlinkNumericUpDownFS_BATT_MAH";
+            this.mavlinkNumericUpDownFS_BATT_MAH.ParamName = null;
+            this.mavlinkNumericUpDownFS_BATT_MAH.Value = new decimal(new int[] {
+            131,
+            0,
+            0,
+            65536});
+            // 
+            // mavlinkCheckBoxFS_GCS_ENABLE
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxFS_GCS_ENABLE, "mavlinkCheckBoxFS_GCS_ENABLE");
+            this.mavlinkCheckBoxFS_GCS_ENABLE.Name = "mavlinkCheckBoxFS_GCS_ENABLE";
+            this.mavlinkCheckBoxFS_GCS_ENABLE.OffValue = 0D;
+            this.mavlinkCheckBoxFS_GCS_ENABLE.OnValue = 1D;
+            this.mavlinkCheckBoxFS_GCS_ENABLE.ParamName = null;
+            this.mavlinkCheckBoxFS_GCS_ENABLE.UseVisualStyleBackColor = true;
+            // 
+            // mavlinkCheckBoxthr_fs_action
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxthr_fs_action, "mavlinkCheckBoxthr_fs_action");
+            this.mavlinkCheckBoxthr_fs_action.Name = "mavlinkCheckBoxthr_fs_action";
+            this.mavlinkCheckBoxthr_fs_action.OffValue = 0D;
+            this.mavlinkCheckBoxthr_fs_action.OnValue = 1D;
+            this.mavlinkCheckBoxthr_fs_action.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs_action, resources.GetString("mavlinkCheckBoxthr_fs_action.ToolTip"));
+            this.mavlinkCheckBoxthr_fs_action.UseVisualStyleBackColor = true;
+            // 
+            // mavlinkCheckBoxthr_fs
+            // 
+            resources.ApplyResources(this.mavlinkCheckBoxthr_fs, "mavlinkCheckBoxthr_fs");
+            this.mavlinkCheckBoxthr_fs.Name = "mavlinkCheckBoxthr_fs";
+            this.mavlinkCheckBoxthr_fs.OffValue = 0D;
+            this.mavlinkCheckBoxthr_fs.OnValue = 1D;
+            this.mavlinkCheckBoxthr_fs.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs, resources.GetString("mavlinkCheckBoxthr_fs.ToolTip"));
+            this.mavlinkCheckBoxthr_fs.UseVisualStyleBackColor = true;
+            // 
             // ConfigFailSafe
             // 
             resources.ApplyResources(this, "$this");
@@ -820,19 +820,19 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlmah);
             this.Name = "ConfigFailSafe";
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownthr_fs_value)).EndInit();
             this.PNL_thr_fs_value.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownFS_BATT_MAH)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownthr_fs_value)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownFS_BATT_MAH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

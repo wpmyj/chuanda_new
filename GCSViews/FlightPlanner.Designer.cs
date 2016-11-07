@@ -81,6 +81,7 @@ namespace ByAeroBeHero.GCSViews
             this.Lat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Alt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Waypno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Up = new System.Windows.Forms.DataGridViewImageColumn();
             this.Down = new System.Windows.Forms.DataGridViewImageColumn();
@@ -107,19 +108,14 @@ namespace ByAeroBeHero.GCSViews
             this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.panelWaypoints = new BSE.Windows.Forms.Panel();
             this.splitter1 = new BSE.Windows.Forms.Splitter();
-            this.myButton1 = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.CMB_altmode = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
             this.lbl_prevdist = new System.Windows.Forms.Label();
             this.lblhxj = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxMapType = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -130,8 +126,14 @@ namespace ByAeroBeHero.GCSViews
             this.label34 = new System.Windows.Forms.Label();
             this.lblKeepLiter = new System.Windows.Forms.Label();
             this.TXT_altwarn = new System.Windows.Forms.TextBox();
-            this.CMB_altmode = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
+            this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBoxMapType = new System.Windows.Forms.ComboBox();
+            this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
+            this.BUT_writePIDS = new ByAeroBeHero.Controls.MyButton();
             this.BUT_Add = new ByAeroBeHero.Controls.MyButton();
             this.BUT_loadwpfile = new ByAeroBeHero.Controls.MyButton();
             this.BUT_saveWPFile = new ByAeroBeHero.Controls.MyButton();
@@ -165,7 +167,6 @@ namespace ByAeroBeHero.GCSViews
             this.btnAutoPan = new ByAeroBeHero.Controls.MyButton();
             this.ebsPanelMeter = new BSE.Windows.Forms.Panel();
             this.hud1 = new ByAeroBeHero.Controls.HUD();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ebsPanelFlyingInfo = new BSE.Windows.Forms.Panel();
             this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
             this.Qvtohome = new ByAeroBeHero.Controls.QuickView();
@@ -329,13 +330,15 @@ namespace ByAeroBeHero.GCSViews
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
             this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.panelMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panelShowPoint.SuspendLayout();
@@ -345,7 +348,6 @@ namespace ByAeroBeHero.GCSViews
             this.groupBoxRellyPoint.SuspendLayout();
             this.groupBoxAeroPoint.SuspendLayout();
             this.ebsPanelMeter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.ebsPanelFlyingInfo.SuspendLayout();
             this.ebsPanelPlanInfo.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -372,6 +374,7 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Commands
@@ -401,6 +404,7 @@ namespace ByAeroBeHero.GCSViews
             this.Lat,
             this.Lon,
             this.Alt,
+            this.Waypno,
             this.Delete,
             this.Up,
             this.Down,
@@ -510,6 +514,11 @@ namespace ByAeroBeHero.GCSViews
             resources.ApplyResources(this.Alt, "Alt");
             this.Alt.Name = "Alt";
             this.Alt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Waypno
+            // 
+            resources.ApplyResources(this.Waypno, "Waypno");
+            this.Waypno.Name = "Waypno";
             // 
             // Delete
             // 
@@ -719,11 +728,7 @@ namespace ByAeroBeHero.GCSViews
             resources.ApplyResources(this.panelWaypoints, "panelWaypoints");
             this.panelWaypoints.CaptionFont = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelWaypoints.CaptionHeight = 27;
-            this.panelWaypoints.Controls.Add(this.myButton1);
-            this.panelWaypoints.Controls.Add(this.BUT_writePIDS);
-            this.panelWaypoints.Controls.Add(this.tableLayoutPanel2);
-            this.panelWaypoints.Controls.Add(this.CMB_altmode);
-            this.panelWaypoints.Controls.Add(this.CHK_splinedefault);
+            this.panelWaypoints.Controls.Add(this.panel1);
             this.panelWaypoints.Controls.Add(this.Commands);
             this.panelWaypoints.CustomColors.BorderColor = System.Drawing.Color.Black;
             this.panelWaypoints.CustomColors.CaptionCloseIcon = System.Drawing.Color.White;
@@ -757,29 +762,29 @@ namespace ByAeroBeHero.GCSViews
             this.splitter1.Name = "splitter1";
             this.splitter1.TabStop = false;
             // 
-            // myButton1
+            // panel1
             // 
-            this.myButton1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.myButton1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.myButton1, "myButton1");
-            this.myButton1.Name = "myButton1";
-            this.myButton1.UseVisualStyleBackColor = true;
-            this.myButton1.Click += new System.EventHandler(this.BUT_refreshpart_Click);
+            this.panel1.Controls.Add(this.CMB_altmode);
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.myButton1);
+            this.panel1.Controls.Add(this.CHK_splinedefault);
+            this.panel1.Controls.Add(this.BUT_writePIDS);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
             // 
-            // BUT_writePIDS
+            // CMB_altmode
             // 
-            this.BUT_writePIDS.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BUT_writePIDS.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.BUT_writePIDS, "BUT_writePIDS");
-            this.BUT_writePIDS.Name = "BUT_writePIDS";
-            this.BUT_writePIDS.UseVisualStyleBackColor = true;
-            this.BUT_writePIDS.Click += new System.EventHandler(this.BUT_writePIDS_Click);
+            this.CMB_altmode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.CMB_altmode, "CMB_altmode");
+            this.CMB_altmode.FormattingEnabled = true;
+            this.CMB_altmode.Name = "CMB_altmode";
+            this.CMB_altmode.SelectedIndexChanged += new System.EventHandler(this.CMB_altmode_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.panel6, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.LBL_defalutalt, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label17, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 4, 0);
@@ -830,52 +835,6 @@ namespace ByAeroBeHero.GCSViews
             this.lblhxj.BackColor = System.Drawing.Color.Transparent;
             this.lblhxj.ForeColor = System.Drawing.Color.White;
             this.lblhxj.Name = "lblhxj";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Controls.Add(this.BUT_quickrtl1);
-            this.panel6.Controls.Add(this.BUT_ARM1);
-            this.panel6.Controls.Add(this.tableLayoutPanel4);
-            this.panel6.Controls.Add(this.comboBoxMapType);
-            this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.Name = "panel6";
-            // 
-            // BUT_quickrtl1
-            // 
-            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
-            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
-            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
-            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
-            // 
-            // BUT_ARM1
-            // 
-            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
-            this.BUT_ARM1.Name = "BUT_ARM1";
-            this.BUT_ARM1.UseVisualStyleBackColor = true;
-            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
-            this.tableLayoutPanel4.Controls.Add(this.lblwd, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lbljd, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.lblHAlt, 4, 0);
-            this.tableLayoutPanel4.Controls.Add(this.TXT_homelng, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.TXT_homealt, 5, 0);
-            this.tableLayoutPanel4.Controls.Add(this.TXT_homelat, 1, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            // 
-            // comboBoxMapType
-            // 
-            this.comboBoxMapType.BackColor = System.Drawing.Color.Black;
-            this.comboBoxMapType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxMapType.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBoxMapType, "comboBoxMapType");
-            this.comboBoxMapType.Name = "comboBoxMapType";
-            this.toolTip1.SetToolTip(this.comboBoxMapType, resources.GetString("comboBoxMapType.ToolTip"));
             // 
             // label17
             // 
@@ -937,13 +896,60 @@ namespace ByAeroBeHero.GCSViews
             this.TXT_altwarn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXT_altwarn.Name = "TXT_altwarn";
             // 
-            // CMB_altmode
+            // panel6
             // 
-            this.CMB_altmode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            resources.ApplyResources(this.CMB_altmode, "CMB_altmode");
-            this.CMB_altmode.FormattingEnabled = true;
-            this.CMB_altmode.Name = "CMB_altmode";
-            this.CMB_altmode.SelectedIndexChanged += new System.EventHandler(this.CMB_altmode_SelectedIndexChanged);
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.BUT_quickrtl1);
+            this.panel6.Controls.Add(this.BUT_ARM1);
+            this.panel6.Controls.Add(this.tableLayoutPanel4);
+            this.panel6.Controls.Add(this.comboBoxMapType);
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // BUT_quickrtl1
+            // 
+            resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
+            this.BUT_quickrtl1.Name = "BUT_quickrtl1";
+            this.BUT_quickrtl1.UseVisualStyleBackColor = true;
+            this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
+            // 
+            // BUT_ARM1
+            // 
+            resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
+            this.BUT_ARM1.Name = "BUT_ARM1";
+            this.BUT_ARM1.UseVisualStyleBackColor = true;
+            this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.tableLayoutPanel4, "tableLayoutPanel4");
+            this.tableLayoutPanel4.Controls.Add(this.lblwd, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lbljd, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.lblHAlt, 4, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TXT_homelng, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TXT_homealt, 5, 0);
+            this.tableLayoutPanel4.Controls.Add(this.TXT_homelat, 1, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // comboBoxMapType
+            // 
+            this.comboBoxMapType.BackColor = System.Drawing.Color.Black;
+            this.comboBoxMapType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMapType.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBoxMapType, "comboBoxMapType");
+            this.comboBoxMapType.Name = "comboBoxMapType";
+            this.toolTip1.SetToolTip(this.comboBoxMapType, resources.GetString("comboBoxMapType.ToolTip"));
+            // 
+            // myButton1
+            // 
+            this.myButton1.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.myButton1.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.myButton1, "myButton1");
+            this.myButton1.Name = "myButton1";
+            this.myButton1.UseVisualStyleBackColor = true;
+            this.myButton1.Click += new System.EventHandler(this.BUT_refreshpart_Click);
             // 
             // CHK_splinedefault
             // 
@@ -952,6 +958,15 @@ namespace ByAeroBeHero.GCSViews
             this.CHK_splinedefault.Name = "CHK_splinedefault";
             this.CHK_splinedefault.UseVisualStyleBackColor = false;
             this.CHK_splinedefault.CheckedChanged += new System.EventHandler(this.CHK_splinedefault_CheckedChanged);
+            // 
+            // BUT_writePIDS
+            // 
+            this.BUT_writePIDS.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BUT_writePIDS.BGGradTop = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            resources.ApplyResources(this.BUT_writePIDS, "BUT_writePIDS");
+            this.BUT_writePIDS.Name = "BUT_writePIDS";
+            this.BUT_writePIDS.UseVisualStyleBackColor = true;
+            this.BUT_writePIDS.Click += new System.EventHandler(this.BUT_writePIDS_Click);
             // 
             // BUT_Add
             // 
@@ -1382,10 +1397,6 @@ namespace ByAeroBeHero.GCSViews
             this.hud1.VSync = false;
             this.hud1.wpno = 0;
             this.hud1.xtrack_error = 0F;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // ebsPanelFlyingInfo
             // 
@@ -1887,7 +1898,7 @@ namespace ByAeroBeHero.GCSViews
             // 
             resources.ApplyResources(this.lblHorizontalError, "lblHorizontalError");
             this.lblHorizontalError.BackColor = System.Drawing.Color.Black;
-            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "GPS水平误差: 0.0"));
+            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
             // 
@@ -1916,7 +1927,7 @@ namespace ByAeroBeHero.GCSViews
             // 
             resources.ApplyResources(this.lblSataCount, "lblSataCount");
             this.lblSataCount.BackColor = System.Drawing.Color.Black;
-            this.lblSataCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "卫星数量: 0"));
+            this.lblSataCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "0"));
             this.lblSataCount.ForeColor = System.Drawing.Color.White;
             this.lblSataCount.Name = "lblSataCount";
             // 
@@ -2717,6 +2728,10 @@ namespace ByAeroBeHero.GCSViews
             this.Messagetabtimer.Interval = 1000;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2731,16 +2746,17 @@ namespace ByAeroBeHero.GCSViews
             this.Resize += new System.EventHandler(this.Planner_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).EndInit();
             this.panelWaypoints.ResumeLayout(false);
-            this.panelWaypoints.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
             this.panelMap.ResumeLayout(false);
             this.panelMap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -2751,7 +2767,6 @@ namespace ByAeroBeHero.GCSViews
             this.groupBoxRellyPoint.ResumeLayout(false);
             this.groupBoxAeroPoint.ResumeLayout(false);
             this.ebsPanelMeter.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ebsPanelFlyingInfo.ResumeLayout(false);
             this.ebsPanelPlanInfo.ResumeLayout(false);
             this.ebsPanelPlanInfo.PerformLayout();
@@ -2793,6 +2808,7 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3048,6 +3064,7 @@ namespace ByAeroBeHero.GCSViews
         private Controls.MyButton btnPlanInfo;
         private Controls.MyButton btnFlyingInfo;
         private BSE.Windows.Forms.Panel panelShowPoint;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewComboBoxColumn Command;
         private System.Windows.Forms.DataGridViewTextBoxColumn Param1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Param2;
@@ -3056,6 +3073,7 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.DataGridViewTextBoxColumn Lat;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Alt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Waypno;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.DataGridViewImageColumn Up;
         private System.Windows.Forms.DataGridViewImageColumn Down;

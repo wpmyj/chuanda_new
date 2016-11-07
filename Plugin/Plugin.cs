@@ -154,9 +154,9 @@ namespace ByAeroBeHero.Plugin
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <param name="z"></param>
-        public void AddWPtoList(MAVLink.MAV_CMD cmd, double p1, double p2, double p3, double p4, double x, double y, double z)
+        public void AddWPtoList(MAVLink.MAV_CMD cmd, double p1, double p2, double p3, double p4, double x, double y, double z,int waypno)
         {
-            MainV2.instance.FlightPlanner.AddCommand(cmd, p1, p2, p3, p4, x, y, z);
+            MainV2.instance.FlightPlanner.AddCommand(cmd, p1, p2, p3, p4, x, y, z,waypno);
         }
 
         /// <summary>

@@ -611,7 +611,7 @@
     <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>	欢迎使用北京博鹰通航地面站 v1.5.0_20160901_PC_Build，本软件可以为无人机规划任务:</value>
+    <value>	欢迎使用北京博鹰通航地面站 v1.6.0_20161108_PC_Build，本软件可以为无人机规划任务:</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -689,7 +689,7 @@
     <value>logDownloadMavLink1</value>
   </data>
   <data name="&gt;&gt;logDownloadMavLink1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Log.LogDownloadMavLink, ByAeroBeHero, Version=1.0.6152.22856, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Log.LogDownloadMavLink, ByAeroBeHero, Version=1.0.6156.25941, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;logDownloadMavLink1.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -899,7 +899,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1316, 777</value>
+    <value>1312, 773</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

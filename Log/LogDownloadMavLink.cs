@@ -158,19 +158,29 @@ namespace ByAeroBeHero.Log
         {
             if (status == serialstatus.完成)
             {
+                string path = string.Empty;
+                FolderBrowserDialog BrowDialog = new FolderBrowserDialog();
+                BrowDialog.ShowNewFolderButton = true;
+                BrowDialog.Description = "请选择文件保存位置";
+                BrowDialog.ShowDialog();
+                path = BrowDialog.SelectedPath;
+
+                if (path == string.Empty || path == "")
+                    return;
+
                 if (CHK_logs.Items.Count == 0)
                 {
                     CustomMessageBox.Show("没有日志下载");
                     return;
                 }
 
-                System.Threading.Thread t11 = new System.Threading.Thread(delegate() { downloadthread(int.Parse(CHK_logs.Items[0].ToString()), int.Parse(CHK_logs.Items[CHK_logs.Items.Count - 1].ToString())); });
+                System.Threading.Thread t11 = new System.Threading.Thread(delegate() { downloadthread(int.Parse(CHK_logs.Items[0].ToString()), int.Parse(CHK_logs.Items[CHK_logs.Items.Count - 1].ToString()), path); });
                 t11.Name = "Log Download All thread";
                 t11.Start();
             }
         }
 
-        string GetLog(ushort no)
+        string GetLog(ushort no,string path)
         {
             receibedbytestotal = (int)MainV2.comPort.GetLogList()[no - 1].size;
 
@@ -205,9 +215,11 @@ namespace ByAeroBeHero.Log
                 aptype = "八轴";
             }
                 
-            logfile = MainV2.LogDir + Path.DirectorySeparatorChar
-             + aptype + Path.DirectorySeparatorChar
-             + hbpacket[3] + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
+            //logfile = MainV2.LogDir + Path.DirectorySeparatorChar
+            // + aptype + Path.DirectorySeparatorChar
+            // + hbpacket[3] + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
+
+            logfile = path + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
 
             // make log dir
             Directory.CreateDirectory(Path.GetDirectoryName(logfile));
@@ -280,15 +292,16 @@ namespace ByAeroBeHero.Log
             updateDisplay();
         }
 
-        private void downloadthread(int startlognum, int endlognum)
+        private void downloadthread(int startlognum, int endlognum,string path)
         {
             try
             {
+
                 for (int a = startlognum; a <= endlognum; a++)
                 {
                     currentlog = a;
 
-                    var logname = GetLog((ushort)a);
+                    var logname = GetLog((ushort)a,path);
 
                     CreateLog(logname);
 
@@ -310,17 +323,18 @@ namespace ByAeroBeHero.Log
             catch (Exception ex) { CustomMessageBox.Show(ex.Message, "Error in log " + currentlog); }
         }
 
-        private void downloadsinglethread()
+        private void downloadsinglethread(string path)
         {
             try
             {
+
                 for (int i = 0; i < CHK_logs.CheckedItems.Count; ++i)
                 {
                     int a = (int)CHK_logs.CheckedItems[i];
 
                     currentlog = a;
 
-                    var logname = GetLog((ushort)a);
+                    var logname = GetLog((ushort)a, path);
 
                     CreateLog(logname);
 
@@ -346,7 +360,18 @@ namespace ByAeroBeHero.Log
         {
             if (status == serialstatus.完成)
             {
-                System.Threading.Thread t11 = new System.Threading.Thread(delegate() { downloadsinglethread(); });
+                string path = string.Empty;  //文件路径
+
+                FolderBrowserDialog BrowDialog = new FolderBrowserDialog();
+                BrowDialog.ShowNewFolderButton = true;
+                BrowDialog.Description = "请选择文件保存位置";
+                BrowDialog.ShowDialog();
+                path = BrowDialog.SelectedPath;
+
+                if (path == string.Empty || path == "")
+                    return;
+
+                System.Threading.Thread t11 = new System.Threading.Thread(delegate() { downloadsinglethread(path); });
                 t11.Name = "Log download single thread";
                 t11.Start();
             }
@@ -447,7 +472,7 @@ namespace ByAeroBeHero.Log
                         }
                         catch (Exception ex) { CustomMessageBox.Show("处理日志错误. 是否要继续下载? "); continue; }
 
-                        lo.writeKMLFirstPerson(logfile + "-fp.kml");
+                        //lo.writeKMLFirstPerson(logfile + "-fp.kml");
 
                         TXT_seriallog.AppendText("完成\n");
                     }

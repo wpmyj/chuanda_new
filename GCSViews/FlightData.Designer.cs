@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.myButtonShowInfo = new ByAeroBeHero.Controls.MyButton();
@@ -2215,7 +2215,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 360D;
+            this.windDir1.Direction = 180D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2300,6 +2300,7 @@
             resources.ApplyResources(this.fiType, "fiType");
             this.fiType.failsafe = false;
             this.fiType.ForeColor = System.Drawing.Color.White;
+            this.fiType.frame = 0F;
             this.fiType.gpsfix = 0F;
             this.fiType.message = "";
             this.fiType.messagetime = new System.DateTime(((long)(0)));
@@ -2324,6 +2325,7 @@
             resources.ApplyResources(this.fiBad, "fiBad");
             this.fiBad.failsafe = false;
             this.fiBad.ForeColor = System.Drawing.Color.White;
+            this.fiBad.frame = 0F;
             this.fiBad.gpsfix = 0F;
             this.fiBad.message = "";
             this.fiBad.messagetime = new System.DateTime(((long)(0)));
@@ -2349,6 +2351,7 @@
             resources.ApplyResources(this.fiBat, "fiBat");
             this.fiBat.failsafe = false;
             this.fiBat.ForeColor = System.Drawing.Color.White;
+            this.fiBat.frame = 0F;
             this.fiBat.gpsfix = 0F;
             this.fiBat.message = "";
             this.fiBat.messagetime = new System.DateTime(((long)(0)));
@@ -2372,6 +2375,7 @@
             resources.ApplyResources(this.fiGPS, "fiGPS");
             this.fiGPS.failsafe = false;
             this.fiGPS.ForeColor = System.Drawing.Color.White;
+            this.fiGPS.frame = 0F;
             this.fiGPS.gpsfix = 0F;
             this.fiGPS.message = "";
             this.fiGPS.messagetime = new System.DateTime(((long)(0)));
@@ -2395,6 +2399,7 @@
             resources.ApplyResources(this.fiMode, "fiMode");
             this.fiMode.failsafe = false;
             this.fiMode.ForeColor = System.Drawing.Color.White;
+            this.fiMode.frame = 0F;
             this.fiMode.gpsfix = 0F;
             this.fiMode.message = "";
             this.fiMode.messagetime = new System.DateTime(((long)(0)));
@@ -2419,6 +2424,7 @@
             resources.ApplyResources(this.fiState, "fiState");
             this.fiState.failsafe = false;
             this.fiState.ForeColor = System.Drawing.Color.White;
+            this.fiState.frame = 0F;
             this.fiState.gpsfix = 0F;
             this.fiState.message = "";
             this.fiState.messagetime = new System.DateTime(((long)(0)));
@@ -2454,8 +2460,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2463,8 +2469,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2496,7 +2502,6 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableMap);
             this.Controls.Add(this.MainH);
-            this.MinimumSize = new System.Drawing.Size(1344, 532);
             this.Name = "FlightData";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FlightData_FormClosing);
             this.Load += new System.EventHandler(this.FlightData_Load);

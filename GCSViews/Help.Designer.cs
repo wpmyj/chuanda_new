@@ -47,8 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new BSE.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.logDownloadMavLink1 = new ByAeroBeHero.Log.LogDownloadMavLink();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -210,15 +210,15 @@
             this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel2.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // logDownloadMavLink1
             // 
             resources.ApplyResources(this.logDownloadMavLink1, "logDownloadMavLink1");
             this.logDownloadMavLink1.Name = "logDownloadMavLink1";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Help
             // 

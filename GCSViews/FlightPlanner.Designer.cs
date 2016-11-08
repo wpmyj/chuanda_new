@@ -167,13 +167,15 @@ namespace ByAeroBeHero.GCSViews
             this.btnAutoPan = new ByAeroBeHero.Controls.MyButton();
             this.ebsPanelMeter = new BSE.Windows.Forms.Panel();
             this.hud1 = new ByAeroBeHero.Controls.HUD();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ebsPanelFlyingInfo = new BSE.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Qvalt = new ByAeroBeHero.Controls.QuickView();
+            this.Qvverspeed = new ByAeroBeHero.Controls.QuickView();
+            this.Qvgroundspeed = new ByAeroBeHero.Controls.QuickView();
             this.QVSonarRange = new ByAeroBeHero.Controls.QuickView();
             this.Qvtohome = new ByAeroBeHero.Controls.QuickView();
             this.Qvdist = new ByAeroBeHero.Controls.QuickView();
-            this.Qvgroundspeed = new ByAeroBeHero.Controls.QuickView();
-            this.Qvverspeed = new ByAeroBeHero.Controls.QuickView();
-            this.Qvalt = new ByAeroBeHero.Controls.QuickView();
             this.qvpitch = new ByAeroBeHero.Controls.QuickView();
             this.qvyaw = new ByAeroBeHero.Controls.QuickView();
             this.qvroll = new ByAeroBeHero.Controls.QuickView();
@@ -330,7 +332,6 @@ namespace ByAeroBeHero.GCSViews
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
             this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -348,7 +349,9 @@ namespace ByAeroBeHero.GCSViews
             this.groupBoxRellyPoint.SuspendLayout();
             this.groupBoxAeroPoint.SuspendLayout();
             this.ebsPanelMeter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.ebsPanelFlyingInfo.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.ebsPanelPlanInfo.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -374,7 +377,6 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Commands
@@ -1398,6 +1400,10 @@ namespace ByAeroBeHero.GCSViews
             this.hud1.wpno = 0;
             this.hud1.xtrack_error = 0F;
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // ebsPanelFlyingInfo
             // 
             resources.ApplyResources(this.ebsPanelFlyingInfo, "ebsPanelFlyingInfo");
@@ -1405,15 +1411,7 @@ namespace ByAeroBeHero.GCSViews
             this.ebsPanelFlyingInfo.BackColor = System.Drawing.Color.Transparent;
             this.ebsPanelFlyingInfo.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
             this.ebsPanelFlyingInfo.CaptionHeight = 27;
-            this.ebsPanelFlyingInfo.Controls.Add(this.QVSonarRange);
-            this.ebsPanelFlyingInfo.Controls.Add(this.Qvtohome);
-            this.ebsPanelFlyingInfo.Controls.Add(this.Qvdist);
-            this.ebsPanelFlyingInfo.Controls.Add(this.Qvgroundspeed);
-            this.ebsPanelFlyingInfo.Controls.Add(this.Qvverspeed);
-            this.ebsPanelFlyingInfo.Controls.Add(this.Qvalt);
-            this.ebsPanelFlyingInfo.Controls.Add(this.qvpitch);
-            this.ebsPanelFlyingInfo.Controls.Add(this.qvyaw);
-            this.ebsPanelFlyingInfo.Controls.Add(this.qvroll);
+            this.ebsPanelFlyingInfo.Controls.Add(this.tableLayoutPanel1);
             this.ebsPanelFlyingInfo.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.ebsPanelFlyingInfo.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
             this.ebsPanelFlyingInfo.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
@@ -1436,6 +1434,65 @@ namespace ByAeroBeHero.GCSViews
             this.ebsPanelFlyingInfo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelShowFlyigInfo_MouseDown);
             this.ebsPanelFlyingInfo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowFlyigInfo_MouseMove);
             this.ebsPanelFlyingInfo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowFlyigInfo_MouseUp);
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.Qvalt, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Qvverspeed, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.Qvgroundspeed, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.QVSonarRange, 0, 8);
+            this.tableLayoutPanel1.Controls.Add(this.Qvtohome, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.Qvdist, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.qvpitch, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.qvyaw, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.qvroll, 0, 5);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // Qvalt
+            // 
+            this.Qvalt.BackColor = System.Drawing.Color.Transparent;
+            this.Qvalt.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvalt.backColor2 = System.Drawing.Color.Black;
+            this.Qvalt.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "alt", true));
+            this.Qvalt.desc = "高度(M):";
+            resources.ApplyResources(this.Qvalt, "Qvalt");
+            this.Qvalt.Name = "Qvalt";
+            this.Qvalt.number = 0D;
+            this.Qvalt.numberColor = System.Drawing.Color.Lime;
+            this.Qvalt.numberformat = "0.00";
+            // 
+            // Qvverspeed
+            // 
+            this.Qvverspeed.BackColor = System.Drawing.Color.Transparent;
+            this.Qvverspeed.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvverspeed.backColor2 = System.Drawing.Color.Black;
+            this.Qvverspeed.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvverspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvverspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "verticalspeed", true));
+            this.Qvverspeed.desc = "垂直速度(M/S):";
+            resources.ApplyResources(this.Qvverspeed, "Qvverspeed");
+            this.Qvverspeed.Name = "Qvverspeed";
+            this.Qvverspeed.number = 0D;
+            this.Qvverspeed.numberColor = System.Drawing.Color.Lime;
+            this.Qvverspeed.numberformat = "0.00";
+            // 
+            // Qvgroundspeed
+            // 
+            this.Qvgroundspeed.BackColor = System.Drawing.Color.Transparent;
+            this.Qvgroundspeed.backColor1 = System.Drawing.Color.Transparent;
+            this.Qvgroundspeed.backColor2 = System.Drawing.Color.Black;
+            this.Qvgroundspeed.backColor3 = System.Drawing.Color.Transparent;
+            this.Qvgroundspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Qvgroundspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "groundspeed", true));
+            this.Qvgroundspeed.desc = "速度(M/S):";
+            resources.ApplyResources(this.Qvgroundspeed, "Qvgroundspeed");
+            this.Qvgroundspeed.Name = "Qvgroundspeed";
+            this.Qvgroundspeed.number = 0D;
+            this.Qvgroundspeed.numberColor = System.Drawing.Color.Lime;
+            this.Qvgroundspeed.numberformat = "0.00";
             // 
             // QVSonarRange
             // 
@@ -1481,51 +1538,6 @@ namespace ByAeroBeHero.GCSViews
             this.Qvdist.number = 0D;
             this.Qvdist.numberColor = System.Drawing.Color.Lime;
             this.Qvdist.numberformat = "0.00";
-            // 
-            // Qvgroundspeed
-            // 
-            this.Qvgroundspeed.BackColor = System.Drawing.Color.Transparent;
-            this.Qvgroundspeed.backColor1 = System.Drawing.Color.Transparent;
-            this.Qvgroundspeed.backColor2 = System.Drawing.Color.Black;
-            this.Qvgroundspeed.backColor3 = System.Drawing.Color.Transparent;
-            this.Qvgroundspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Qvgroundspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "groundspeed", true));
-            this.Qvgroundspeed.desc = "速度(M/S):";
-            resources.ApplyResources(this.Qvgroundspeed, "Qvgroundspeed");
-            this.Qvgroundspeed.Name = "Qvgroundspeed";
-            this.Qvgroundspeed.number = 0D;
-            this.Qvgroundspeed.numberColor = System.Drawing.Color.Lime;
-            this.Qvgroundspeed.numberformat = "0.00";
-            // 
-            // Qvverspeed
-            // 
-            this.Qvverspeed.BackColor = System.Drawing.Color.Transparent;
-            this.Qvverspeed.backColor1 = System.Drawing.Color.Transparent;
-            this.Qvverspeed.backColor2 = System.Drawing.Color.Black;
-            this.Qvverspeed.backColor3 = System.Drawing.Color.Transparent;
-            this.Qvverspeed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Qvverspeed.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "verticalspeed", true));
-            this.Qvverspeed.desc = "垂直速度(M/S):";
-            resources.ApplyResources(this.Qvverspeed, "Qvverspeed");
-            this.Qvverspeed.Name = "Qvverspeed";
-            this.Qvverspeed.number = 0D;
-            this.Qvverspeed.numberColor = System.Drawing.Color.Lime;
-            this.Qvverspeed.numberformat = "0.00";
-            // 
-            // Qvalt
-            // 
-            this.Qvalt.BackColor = System.Drawing.Color.Transparent;
-            this.Qvalt.backColor1 = System.Drawing.Color.Transparent;
-            this.Qvalt.backColor2 = System.Drawing.Color.Black;
-            this.Qvalt.backColor3 = System.Drawing.Color.Transparent;
-            this.Qvalt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Qvalt.DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, "alt", true));
-            this.Qvalt.desc = "高度(M):";
-            resources.ApplyResources(this.Qvalt, "Qvalt");
-            this.Qvalt.Name = "Qvalt";
-            this.Qvalt.number = 0D;
-            this.Qvalt.numberColor = System.Drawing.Color.Lime;
-            this.Qvalt.numberformat = "0.00";
             // 
             // qvpitch
             // 
@@ -1735,8 +1747,8 @@ namespace ByAeroBeHero.GCSViews
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.lblDoneArea1);
-            this.panel5.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Name = "panel5";
             // 
             // lblDoneArea1
@@ -1762,8 +1774,8 @@ namespace ByAeroBeHero.GCSViews
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.lblBearToHome1);
-            this.panel7.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.ForeColor = System.Drawing.Color.White;
             this.panel7.Name = "panel7";
             // 
             // lblBearToHome1
@@ -2728,10 +2740,6 @@ namespace ByAeroBeHero.GCSViews
             this.Messagetabtimer.Interval = 1000;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
             // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2767,7 +2775,9 @@ namespace ByAeroBeHero.GCSViews
             this.groupBoxRellyPoint.ResumeLayout(false);
             this.groupBoxAeroPoint.ResumeLayout(false);
             this.ebsPanelMeter.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ebsPanelFlyingInfo.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ebsPanelPlanInfo.ResumeLayout(false);
             this.ebsPanelPlanInfo.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -2808,7 +2818,6 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3080,5 +3089,6 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

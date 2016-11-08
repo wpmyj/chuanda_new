@@ -304,7 +304,7 @@ namespace ByAeroBeHero.Log
 
                             try
                             {
-                                lo.writeKML(logfile + ".kml");
+                                //lo.writeKML(logfile + ".kml");
                             }
                             catch { } // usualy invalid lat long error
                             status = serialstatus.Done;
@@ -541,7 +541,7 @@ namespace ByAeroBeHero.Log
                         }
                         catch (Exception ex) { CustomMessageBox.Show("Error processing file. Make sure the file is not in use.\n" + ex.ToString()); }
 
-                        lo.writeKML(logfile + ".kml");
+                        //lo.writeKML(logfile + ".kml");
 
                         TXT_seriallog.AppendText("Done\n");
                     }
@@ -588,7 +588,7 @@ namespace ByAeroBeHero.Log
                         }
                         catch (Exception ex) { CustomMessageBox.Show("Error processing log. Is it still downloading? " + ex.Message); continue; }
 
-                        lo.writeKMLFirstPerson(logfile + "-fp.kml");
+                        //lo.writeKMLFirstPerson(logfile + "-fp.kml");
 
                         TXT_seriallog.AppendText("Done\n");
                     }

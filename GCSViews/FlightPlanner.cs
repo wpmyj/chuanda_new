@@ -558,6 +558,18 @@ namespace ByAeroBeHero.GCSViews
             comboBoxMapType.SelectedIndex = 5;
 
             //this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true); 
+
+            System.Drawing.Rectangle rect = System.Windows.Forms.Screen.PrimaryScreen.Bounds;
+            if (rect.Width == 1366)
+            {
+                foreach (Control ctr in this.Controls)
+                {
+                    if (ctr.GetType() == typeof(BSE.Windows.Forms.Panel))
+                    {
+                        //ctr.Height = 
+                    }
+                }
+            }
         }
 
         void updateCMDParams()

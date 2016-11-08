@@ -3362,7 +3362,7 @@ namespace ByAeroBeHero.GCSViews
                         }
                         catch (Exception ex) { CustomMessageBox.Show("Error processing file. Make sure the file is not in use.\n" + ex); }
 
-                        lo.writeKML(logfile + ".kml");
+                        //lo.writeKML(logfile + ".kml");
 
                     }
                 }

@@ -1035,16 +1035,16 @@ namespace ByAeroBeHero
                 comPort.giveComport = false;
 
                 // setup to record new logs
-                try
-                {
-                    Directory.CreateDirectory(MainV2.LogDir);
-                    comPort.logfile = new BufferedStream(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
+                //try
+                //{
+                //    Directory.CreateDirectory(MainV2.LogDir);
+                //    comPort.logfile = new BufferedStream(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
 
-                    comPort.rawlogfile = new BufferedStream(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".rlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
+                //    comPort.rawlogfile = new BufferedStream(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".rlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
 
-                    log.Info("creating logfile " + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog");
-                }
-                catch (Exception exp2) { log.Error(exp2); CustomMessageBox.Show(Strings.Failclog); } // soft fail
+                //    log.Info("creating logfile " + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog");
+                //}
+                //catch (Exception exp2) { log.Error(exp2); CustomMessageBox.Show(Strings.Failclog); } // soft fail
 
                 // reset connect time - for timeout functions
                 connecttime = DateTime.Now;

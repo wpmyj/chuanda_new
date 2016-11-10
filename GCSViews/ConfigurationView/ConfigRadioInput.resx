@@ -833,7 +833,7 @@
     <value>160</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>左偏行</value>
+    <value>左偏航</value>
   </data>
   <data name="&gt;&gt;label31.Name" xml:space="preserve">
     <value>label31</value>
@@ -1358,7 +1358,7 @@
     <value>144</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>做滚转</value>
+    <value>左滚转</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>

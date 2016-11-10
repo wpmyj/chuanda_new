@@ -4140,8 +4140,12 @@ namespace ByAeroBeHero.GCSViews
             if (drawnpolygon != null) 
             {
                 polygongridmode = false;
+                drawnpolygon.Clear();
                 drawnpolygon.Points.Clear();
+                //drawnpolygon.Stroke.Dispose();
                 drawnpolygonsoverlay.Markers.Clear();
+                drawnpolygonsoverlay.Routes.Clear();
+                drawnpolygonsoverlay.Clear();
                 startmeasure = new PointLatLng();
                 ClearRouteInfo();
                 MainMap.Invalidate();

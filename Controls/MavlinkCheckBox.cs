@@ -79,6 +79,12 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkCheckBox_CheckedChanged(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen) 
+            {
+                CustomMessageBox.Show("请连接地面站在进行参数设置。", "提示");
+                return;
+            }
+
             if (ParamName == "FENCE_ENABLE")
                 return;
             if (this.CheckedChanged != null)

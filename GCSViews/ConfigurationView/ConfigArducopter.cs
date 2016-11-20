@@ -17,22 +17,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private readonly Hashtable changes = new Hashtable();
         internal bool startup = true;
 
+        
 
         public ConfigArducopter()
         {
             InitializeComponent();
-            //this.panel1.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
-            //this.tableLayoutPanel2.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
-            //this.tableLayoutPanel3.CellPaint += new TableLayoutCellPaintEventHandler(tableLayoutPanel1_CellPaint);
-            initcontrol();
-        }
-
-        private void initcontrol() 
-        {
-            this.label13.ForeColor = this.label15.ForeColor = this.label16.ForeColor = this.label9.ForeColor = this.label29.ForeColor = this.label19.ForeColor =
-                this.label20.ForeColor = this.label21.ForeColor = this.label23.ForeColor = this.label24.ForeColor = this.label28.ForeColor =
-                this.label30.ForeColor = this.label32.ForeColor = this.label26.ForeColor = this.label34.ForeColor = this.label27.ForeColor =
-                CHK_lockrollpitch.ForeColor = Color.Black;
         }
 
         void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
@@ -127,7 +116,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CHK_lockrollpitch.Checked = false;
             }
-
+            Btn_refParam(); 
             startup = false;
         }
 
@@ -280,40 +269,67 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void BUT_writePIDS_Click(object sender, EventArgs e)
         {
-            var temp = (Hashtable) changes.Clone();
+            //var temp = (Hashtable)changes.Clone();
 
-            foreach (string value in temp.Keys)
-            {
-                try
-                {
-                    if ((float) changes[value] > (float) MainV2.comPort.MAV.param[value]*2.0f)
-                        if (
-                            CustomMessageBox.Show(value + " 比最后的输入值大一倍多. 是否确定?",
-                                "参数设置", MessageBoxButtons.YesNo) == DialogResult.No)
-                            return;
+            //foreach (string value in temp.Keys)
+            //{
+            //    try
+            //    {
+            //        if ((float)changes[value] > (float)MainV2.comPort.MAV.param[value] * 2.0f)
+            //            if (
+            //                CustomMessageBox.Show(value + " 比最后的输入值大一倍多. 是否确定?",
+            //                    "参数设置", MessageBoxButtons.YesNo) == DialogResult.No)
+            //                return;
 
-                    MainV2.comPort.setParam(value, (float) changes[value]);
+            //        MainV2.comPort.setParam(value, (float)changes[value]);
 
-                    changes.Remove(value);
+            //        changes.Remove(value);
 
-                    try
-                    {
-                        // set control as well
-                        var textControls = Controls.Find(value, true);
-                        if (textControls.Length > 0)
-                        {
-                            textControls[0].BackColor = Color.FromArgb(0x43, 0x44, 0x45);
-                        }
-                    }
-                    catch
-                    {
-                    }
-                }
-                catch
-                {
-                    CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR);
-                }
+            //        try
+            //        {
+            //            // set control as well
+            //            var textControls = Controls.Find(value, true);
+            //            if (textControls.Length > 0)
+            //            {
+            //                textControls[0].BackColor = Color.FromArgb(0x43, 0x44, 0x45);
+            //            }
+            //        }
+            //        catch
+            //        {
+            //        }
+            //    }
+            //    catch
+            //    {
+            //        CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR);
+            //    }
+            //}
+
+            if (!MainV2.comPort.BaseStream.IsOpen)
+                return;
+
+            try {
+
+                VerificationParams(); 
+
+                MainV2.comPort.setParam("STB_YAW_P", STB_YAW_P1);
+                MainV2.comPort.setParam("STB_RLL_P", STB_RLL_P1);
+                MainV2.comPort.setParam("STB_PIT_P", STB_PIT_P1);
+                MainV2.comPort.setParam("RATE_YAW_P", RATE_YAW_P1);
+                MainV2.comPort.setParam("RATE_RLL_P", RATE_RLL_P1);
+                MainV2.comPort.setParam("RATE_PIT_P", RATE_PIT_P1);
+                MainV2.comPort.setParam("RATE_YAW_I", RATE_YAW_I1);
+                MainV2.comPort.setParam("RATE_RLL_I", RATE_RLL_I1);
+                MainV2.comPort.setParam("RATE_PIT_I", RATE_PIT_I1);
+                MainV2.comPort.setParam("RATE_YAW_D", RATE_YAW_D1);
+                MainV2.comPort.setParam("RATE_RLL_D", RATE_RLL_D1);
+                MainV2.comPort.setParam("RATE_PIT_D", RATE_PIT_D1);
+                MainV2.comPort.setParam("RATE_YAW_IMAX", RATE_YAW_IMAX1);
+                MainV2.comPort.setParam("RATE_RLL_IMAX", RATE_RLL_IMAX1);
+                MainV2.comPort.setParam("RATE_PIT_IMAX", RATE_PIT_IMAX1);
+            
+                
             }
+            catch { }
         }
 
         /// <summary>
@@ -349,15 +365,39 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             if (!MainV2.comPort.BaseStream.IsOpen)
                 return;
 
-            ((Control) sender).Enabled = false;
+            //((Control)sender).Enabled = false;
 
 
-            updateparam(this);
+            //updateparam(this);
 
-            ((Control) sender).Enabled = true;
-
+            //((Control)sender).Enabled = true;
 
             Activate();
+            ByAeroBeHero.MainV2.instance.refParams();
+        }
+
+        private void Btn_refParam() 
+        {
+            STB_YAW_P_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["STB_YAW_P"].ToString()) - 1.5) / 4 * 100;
+            STB_RLL_P_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["STB_RLL_P"].ToString()) - 2.5) / 4 * 100;
+            STB_PIT_P_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["STB_PIT_P"].ToString()) - 2.5) / 4 * 100;
+
+            RATE_YAW_P_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_YAW_P"].ToString()) - 0.25) / 4 * 1000;
+            RATE_RLL_P_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_P"].ToString()) - 0.1) / 19 * 10000;
+            RATE_PIT_P_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_P"].ToString()) - 0.1) / 19 * 10000;
+
+            RATE_YAW_I_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_YAW_I"].ToString()) - 0.01) / 4 * 10000;
+            RATE_RLL_I_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_I"].ToString()) - 0.1) / 14 * 10000;
+            RATE_PIT_I_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_I"].ToString()) - 0.1) / 14 * 10000;
+
+            RATE_YAW_D_1.Value = 0;
+            RATE_RLL_D_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_D"].ToString()) - 0.001) / 6 * 100000;
+            RATE_PIT_D_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_D"].ToString()) - 0.001) / 6 * 100000;
+
+            RATE_YAW_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_YAW_IMAX"].ToString()))/20;
+            RATE_RLL_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_IMAX"].ToString()))/20;
+            RATE_PIT_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_IMAX"].ToString()))/20;
+        
         }
 
         private void updateparam(Control parentctl)
@@ -386,6 +426,136 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             EEPROM_View_float_TextChanged(sender, e);
         }
+
+        private float STB_YAW_P1 =0;
+        private float STB_RLL_P1 = 0;
+        private float STB_PIT_P1= 0;
+        private float RATE_YAW_P1 = 0;
+        private float RATE_RLL_P1 = 0;
+        private float RATE_PIT_P1 = 0;
+        private float RATE_YAW_I1 = 0;
+        private float RATE_RLL_I1 = 0;
+        private float RATE_PIT_I1 = 0;
+        private float RATE_YAW_D1 = 0;
+        private float RATE_RLL_D1 = 0;
+        private float RATE_PIT_D1 = 0;
+        private float RATE_YAW_IMAX1 = 0;
+        private float RATE_RLL_IMAX1 = 0;
+        private float RATE_PIT_IMAX1 = 0;
+        private void adjustmentParameters_ValueChanged(object sender, EventArgs e)
+        {
+
+            VerificationParams(); 
+            STB_YAW_P1 = (float)STB_YAW_P_1.Value * 4 /100 + (float)1.5;
+            STB_RLL_P1 = (float)STB_RLL_P_1.Value * 4 / 100 + (float)2.5;
+            STB_PIT_P1 = (float)STB_PIT_P_1.Value * 4 / 100 + (float)2.5;
+
+            RATE_YAW_P1 = (float)RATE_YAW_P_1.Value * 4 / 1000 + (float)0.25;
+            RATE_RLL_P1 = (float)RATE_RLL_P_1.Value * 19 / 10000 + (float)0.1;
+            RATE_PIT_P1 = (float)RATE_PIT_P_1.Value * 19 / 10000 + (float)0.1;
+
+            RATE_YAW_I1 = (float)RATE_YAW_I_1.Value * 4 / 10000 + (float)0.01;
+            RATE_RLL_I1 = (float)RATE_RLL_I_1.Value * 14 / 10000 + (float)0.1;
+            RATE_PIT_I1 = (float)RATE_PIT_I_1.Value * 14 / 10000 + (float)0.1;
+
+            RATE_YAW_D1 = 0;
+            RATE_RLL_D1 = (float)RATE_RLL_D_1.Value * 6 / 100000 + (float)0.001;
+            RATE_PIT_D1 = (float)RATE_PIT_D_1.Value * 6 / 100000 + (float)0.001;
+
+            RATE_YAW_IMAX1 = (float)RATE_YAW_IMAX_1.Value * 20 ;
+            RATE_RLL_IMAX1 = (float)RATE_RLL_IMAX_1.Value * 20;
+            RATE_PIT_IMAX1 = (float)RATE_PIT_IMAX_1.Value * 20;
+        }
+
+        private void noticeInfo() 
+        {
+            CustomMessageBox.Show("参数值应该在20-100之间", "提示");
+        }
+
+        private void VerificationParams() 
+        {
+            if (STB_YAW_P_1.Value < 20 || STB_YAW_P_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (STB_RLL_P_1.Value < 20 || STB_RLL_P_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (STB_PIT_P_1.Value < 20 || STB_PIT_P_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_YAW_P_1.Value < 20 || RATE_YAW_P_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_RLL_P_1.Value < 0 || RATE_RLL_P_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_PIT_P_1.Value < 0 || RATE_PIT_P_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_YAW_I_1.Value < 0 || RATE_YAW_I_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_RLL_I_1.Value < 0 || RATE_RLL_I_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_PIT_I_1.Value < 0 || RATE_PIT_I_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+
+            if (RATE_RLL_D_1.Value < 0 || RATE_RLL_D_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_YAW_IMAX_1.Value < 0 || RATE_YAW_IMAX_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_RLL_IMAX_1.Value < 0 || RATE_RLL_IMAX_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+
+            if (RATE_PIT_IMAX_1.Value < 0 || RATE_PIT_IMAX_1.Value > 100)
+            {
+                noticeInfo();
+                return;
+            }
+        }
+
+
+
 
         //private void tableLayoutPanel1_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         //{

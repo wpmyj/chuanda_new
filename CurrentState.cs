@@ -199,6 +199,7 @@ namespace ByAeroBeHero
         public static double breakpoint_p1 = 0;
         public static bool isChange = false;
         public static string str_firm_ware = string.Empty;
+        public static int icompletionpercent = 0;
 
         [DisplayText("RX Rssi")]
         public int rxrssi { get; set; }
@@ -1632,6 +1633,15 @@ namespace ByAeroBeHero
                     {
                         frame = int.Parse(MainV2.comPort.MAV.param["FRAME"].ToString());
                     }
+
+
+                    bytearray = MAV.packets[(byte)MAVLink.MAVLINK_MSG_ID.MAG_CAL_PROGRESS];
+                    if (bytearray != null)
+                    {
+                        var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_mag_cal_progress_t>(6);
+                        icompletionpercent = mem.completion_pct;
+                    }
+
                 }
 
                 try

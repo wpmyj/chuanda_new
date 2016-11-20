@@ -340,7 +340,7 @@
     <value>chbSonar</value>
   </data>
   <data name="&gt;&gt;chbSonar.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;chbSonar.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -397,7 +397,7 @@
     <value>mavlinkComboBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -460,7 +460,7 @@
     <value>cb_LevelSensor</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -532,7 +532,7 @@
     <value>CMB_sonartype</value>
   </data>
   <data name="&gt;&gt;CMB_sonartype.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;CMB_sonartype.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -757,7 +757,7 @@
     <value>SPRAY_SPEED_MIN</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MIN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MIN.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -784,7 +784,7 @@
     <value>SPRAY_RATE_MAX</value>
   </data>
   <data name="&gt;&gt;SPRAY_RATE_MAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_RATE_MAX.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -811,7 +811,7 @@
     <value>SPRAY_SPEED_MAX</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MAX.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -838,7 +838,7 @@
     <value>SPRAY_RATE_MIN</value>
   </data>
   <data name="&gt;&gt;SPRAY_RATE_MIN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_RATE_MIN.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -868,7 +868,7 @@
     <value>SPRAY_SPEEN_EN</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEEN_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.22005, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6165.31033, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEEN_EN.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -910,7 +910,7 @@
 </value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 47</value>
+    <value>37, 8</value>
   </data>
   <data name="panel2.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>
@@ -946,7 +946,7 @@
 </value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 147</value>
+    <value>37, 83</value>
   </data>
   <data name="panel3.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>
@@ -1141,7 +1141,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>860, 389</value>
+    <value>860, 301</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

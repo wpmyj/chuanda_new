@@ -128,11 +128,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CB_simple6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="CB_simple6.Font" type="System.Drawing.Font, System.Drawing">
@@ -155,6 +155,9 @@
   </data>
   <data name="CB_simple6.Text" xml:space="preserve">
     <value>Simple Mode</value>
+  </data>
+  <data name="CB_simple6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CB_simple6.Name" xml:space="preserve">
     <value>CB_simple6</value>
@@ -212,11 +215,11 @@
   </data>
   <data name="CB_simple4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="CB_simple4.Font" type="System.Drawing.Font, System.Drawing">
@@ -239,6 +242,9 @@
   </data>
   <data name="CB_simple4.Text" xml:space="preserve">
     <value>Simple Mode</value>
+  </data>
+  <data name="CB_simple4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CB_simple4.Name" xml:space="preserve">
     <value>CB_simple4</value>
@@ -332,11 +338,11 @@
   </data>
   <data name="CB_simple1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="CB_simple1.Font" type="System.Drawing.Font, System.Drawing">
@@ -359,6 +365,9 @@
   </data>
   <data name="CB_simple1.Text" xml:space="preserve">
     <value>Simple Mode</value>
+  </data>
+  <data name="CB_simple1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;CB_simple1.Name" xml:space="preserve">
     <value>CB_simple1</value>
@@ -995,11 +1004,11 @@
   </data>
   <data name="chk_ss6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="chk_ss6.Font" type="System.Drawing.Font, System.Drawing">
@@ -1022,6 +1031,9 @@
   </data>
   <data name="chk_ss6.Text" xml:space="preserve">
     <value>Super Simple Mode</value>
+  </data>
+  <data name="chk_ss6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;chk_ss6.Name" xml:space="preserve">
     <value>chk_ss6</value>
@@ -1079,11 +1091,11 @@
   </data>
   <data name="chk_ss4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="chk_ss4.Font" type="System.Drawing.Font, System.Drawing">
@@ -1106,6 +1118,9 @@
   </data>
   <data name="chk_ss4.Text" xml:space="preserve">
     <value>Super Simple Mode</value>
+  </data>
+  <data name="chk_ss4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;chk_ss4.Name" xml:space="preserve">
     <value>chk_ss4</value>
@@ -1199,11 +1214,11 @@
   </data>
   <data name="chk_ss1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="chk_ss1.Font" type="System.Drawing.Font, System.Drawing">
@@ -1226,6 +1241,9 @@
   </data>
   <data name="chk_ss1.Text" xml:space="preserve">
     <value>Super Simple Mode</value>
+  </data>
+  <data name="chk_ss1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;chk_ss1.Name" xml:space="preserve">
     <value>chk_ss1</value>
@@ -1471,13 +1489,13 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 20</value>
+    <value>408, 20</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>通道7通道返航并降落模式开关，需映射成两段开关，高档触发。</value>
+    <value>通道7返航并降落模式开关，需映射成两段开关，高档触发。</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -1507,13 +1525,13 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>393, 20</value>
+    <value>363, 20</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>通道8通道两段开关，反复波动一次，即可添加一个断点。</value>
+    <value>通道8两段开关，反复波动一次，即可添加一个断点。</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -1712,13 +1730,13 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>607, 20</value>
+    <value>573, 20</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="label16.Text" xml:space="preserve">
-    <value>通道 9通道映射成三段开关，低档：无效，中档：航向锁定模式，高档：返航点锁定模式。</value>
+    <value>通道9映射成三段开关，低档：无效，中档：航向锁定模式，高档：返航点锁定模式。</value>
   </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>

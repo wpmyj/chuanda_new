@@ -4279,6 +4279,7 @@ namespace ByAeroBeHero.GCSViews
                 CurentRectMarker = null;
 
             writeKML();
+            writeKML();
         }
 
         private void loitertimeToolStripMenuItem_Click(object sender, EventArgs e)

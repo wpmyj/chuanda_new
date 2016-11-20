@@ -170,6 +170,7 @@
             resources.ApplyResources(this.MBtnSendSaray, "MBtnSendSaray");
             this.MBtnSendSaray.Name = "MBtnSendSaray";
             this.MBtnSendSaray.UseVisualStyleBackColor = false;
+            this.MBtnSendSaray.Click += new System.EventHandler(this.MBtnSendSaray_Click);
             // 
             // label9
             // 

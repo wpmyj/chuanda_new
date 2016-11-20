@@ -158,8 +158,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                    strs += "飞机航向正常，不需要补偿";
                }
 
-               this.lblCheckReson1.Text = strs;
-
+               this.lblCheckReson.Text = strs;
                this.BtnChenckbalance.Text = "检测完成";
             }  
         }  

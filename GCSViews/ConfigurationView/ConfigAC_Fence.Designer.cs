@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigAC_Fence));
             this.label3enable = new System.Windows.Forms.Label();
             this.label4type = new System.Windows.Forms.Label();
@@ -35,23 +36,15 @@
             this.label6maxalt = new System.Windows.Forms.Label();
             this.label7maxrad = new System.Windows.Forms.Label();
             this.label2rtlalt = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnSendParam = new ByAeroBeHero.Controls.MyButton();
-            this.panel1 = new BSE.Windows.Forms.Panel();
             this.panel2 = new BSE.Windows.Forms.Panel();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.mavlinkComboBox2 = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.mavlinkNumericUpDown1 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkNumericUpDown2 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkComboBox1 = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.mavlinkNumericUpDown3 = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkCheckBox1 = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown2)).BeginInit();
@@ -88,41 +81,6 @@
             resources.ApplyResources(this.label2rtlalt, "label2rtlalt");
             this.label2rtlalt.Name = "label2rtlalt";
             // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label8, 0, 4);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
             // btnSendParam
             // 
             this.btnSendParam.BackColor = System.Drawing.SystemColors.Control;
@@ -133,39 +91,11 @@
             this.btnSendParam.UseVisualStyleBackColor = false;
             this.btnSendParam.Click += new System.EventHandler(this.btnSendParam_Click);
             // 
-            // panel1
-            // 
-            this.panel1.AssociatedSplitter = null;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel1.CaptionHeight = 27;
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Image = null;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            this.panel1.ToolTipTextCloseIcon = null;
-            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
-            // 
             // panel2
             // 
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.AssociatedSplitter = null;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panel2.CaptionHeight = 27;
             this.panel2.Controls.Add(this.label6maxalt);
@@ -211,6 +141,7 @@
             this.mavlinkComboBox2.Name = "mavlinkComboBox2";
             this.mavlinkComboBox2.ParamName = null;
             this.mavlinkComboBox2.SubControl = null;
+            this.toolTip1.SetToolTip(this.mavlinkComboBox2, resources.GetString("mavlinkComboBox2.ToolTip"));
             this.mavlinkComboBox2.TextChanged += new System.EventHandler(this.mavlinkComboBox2_TextChanged);
             // 
             // mavlinkNumericUpDown1
@@ -222,6 +153,7 @@
             this.mavlinkNumericUpDown1.Min = 0F;
             this.mavlinkNumericUpDown1.Name = "mavlinkNumericUpDown1";
             this.mavlinkNumericUpDown1.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkNumericUpDown1, resources.GetString("mavlinkNumericUpDown1.ToolTip"));
             this.mavlinkNumericUpDown1.ValueChanged += new System.EventHandler(this.mavlinkNumericUpDown1_ValueChanged);
             // 
             // mavlinkNumericUpDown2
@@ -238,6 +170,7 @@
             0});
             this.mavlinkNumericUpDown2.Name = "mavlinkNumericUpDown2";
             this.mavlinkNumericUpDown2.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkNumericUpDown2, resources.GetString("mavlinkNumericUpDown2.ToolTip"));
             this.mavlinkNumericUpDown2.Value = new decimal(new int[] {
             30,
             0,
@@ -255,13 +188,14 @@
             this.mavlinkComboBox1.Name = "mavlinkComboBox1";
             this.mavlinkComboBox1.ParamName = null;
             this.mavlinkComboBox1.SubControl = null;
+            this.toolTip1.SetToolTip(this.mavlinkComboBox1, resources.GetString("mavlinkComboBox1.ToolTip"));
             this.mavlinkComboBox1.TextChanged += new System.EventHandler(this.mavlinkComboBox1_TextChanged);
             // 
             // mavlinkNumericUpDown3
             // 
+            resources.ApplyResources(this.mavlinkNumericUpDown3, "mavlinkNumericUpDown3");
             this.mavlinkNumericUpDown3.BackColor = System.Drawing.Color.Black;
             this.mavlinkNumericUpDown3.DecimalPlaces = 1;
-            resources.ApplyResources(this.mavlinkNumericUpDown3, "mavlinkNumericUpDown3");
             this.mavlinkNumericUpDown3.ForeColor = System.Drawing.Color.White;
             this.mavlinkNumericUpDown3.Increment = new decimal(new int[] {
             1,
@@ -272,6 +206,7 @@
             this.mavlinkNumericUpDown3.Min = 0F;
             this.mavlinkNumericUpDown3.Name = "mavlinkNumericUpDown3";
             this.mavlinkNumericUpDown3.ParamName = null;
+            this.toolTip1.SetToolTip(this.mavlinkNumericUpDown3, resources.GetString("mavlinkNumericUpDown3.ToolTip"));
             this.mavlinkNumericUpDown3.ValueChanged += new System.EventHandler(this.mavlinkNumericUpDown3_ValueChanged);
             // 
             // mavlinkCheckBox1
@@ -290,11 +225,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "ConfigAC_Fence";
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDown1)).EndInit();
@@ -318,14 +249,8 @@
         private System.Windows.Forms.Label label7maxrad;
         private System.Windows.Forms.Label label2rtlalt;
         private Controls.MavlinkNumericUpDown mavlinkNumericUpDown3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
         private Controls.MyButton btnSendParam;
-        private BSE.Windows.Forms.Panel panel1;
         private BSE.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

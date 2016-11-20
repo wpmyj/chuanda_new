@@ -6,6 +6,7 @@ using ByAeroBeHero.Controls;
 using Transitions;
 using ByAeroBeHero.HIL;
 using System.Drawing;
+using System.Threading;
 
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
@@ -609,6 +610,22 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
         }
         #endregion
+
+        private void btnTestSAll_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                for(int i =1 ;i<=8;i++)
+                {
+                    MainV2.comPort.doMotorTest(i, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
+                        (int)NUM_thr_percent.Value, (int)NUM_duration.Value);
+                    Thread.Sleep((int)((NUM_duration.Value+1) * 1000));
+                }
+            }
+            catch
+            {
+            }
+        }
 
 
 

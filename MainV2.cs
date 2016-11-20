@@ -3289,5 +3289,11 @@ namespace ByAeroBeHero
                 this.strConnect = false;
             }
         }
+
+        public void refParams() 
+        {
+            MainMenu_ItemClicked(this, new ToolStripItemClickedEventArgs(MenuConfigTune));
+            MenuTuning_Click(null,null);
+        }
     }
 }

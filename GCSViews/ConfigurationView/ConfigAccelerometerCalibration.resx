@@ -245,19 +245,19 @@ This will ask you to place your autopilot on each edge.</value>
     <value>NoControl</value>
   </data>
   <data name="BUT_level.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 40</value>
+    <value>133, 44</value>
   </data>
   <data name="BUT_level.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="BUT_level.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 27</value>
+    <value>136, 23</value>
   </data>
   <data name="BUT_level.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
   </data>
   <data name="BUT_level.Text" xml:space="preserve">
-    <value>Calibrate Level</value>
+    <value>水平修正</value>
   </data>
   <data name="&gt;&gt;BUT_level.Name" xml:space="preserve">
     <value>BUT_level</value>
@@ -269,7 +269,7 @@ This will ask you to place your autopilot on each edge.</value>
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;BUT_level.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lblCalibate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -437,19 +437,58 @@ This will ask you to place your autopilot on each edge.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="&gt;&gt;lblWarnInfo.Name" xml:space="preserve">
+    <value>lblWarnInfo</value>
+  </data>
+  <data name="&gt;&gt;lblWarnInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWarnInfo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblWarnInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 73</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>868, 77</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblWarnInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -490,56 +529,8 @@ This will ask you to place your autopilot on each edge.</value>
   <data name="&gt;&gt;lblWarnInfo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 113</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>868, 77</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="panCalibrate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
-  </data>
-  <data name="lblCalibrate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCalibrate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblCalibrate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 26</value>
-  </data>
-  <data name="lblCalibrate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblCalibrate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 20</value>
-  </data>
-  <data name="lblCalibrate.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblCalibrate.Text" xml:space="preserve">
-    <value>修正飞控安装时的水平误差。</value>
   </data>
   <data name="&gt;&gt;lblCalibrate.Name" xml:space="preserve">
     <value>lblCalibrate</value>
@@ -575,6 +566,39 @@ This will ask you to place your autopilot on each edge.</value>
     <value>panel3</value>
   </data>
   <data name="&gt;&gt;panCalibrate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblCalibrate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCalibrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblCalibrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 26</value>
+  </data>
+  <data name="lblCalibrate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblCalibrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <data name="lblCalibrate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCalibrate.Text" xml:space="preserve">
+    <value>修正飞控安装时的水平误差。</value>
+  </data>
+  <data name="&gt;&gt;lblCalibrate.Name" xml:space="preserve">
+    <value>lblCalibrate</value>
+  </data>
+  <data name="&gt;&gt;lblCalibrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCalibrate.Parent" xml:space="preserve">
+    <value>panCalibrate</value>
+  </data>
+  <data name="&gt;&gt;lblCalibrate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -582,15 +606,15 @@ This will ask you to place your autopilot on each edge.</value>
   </data>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 40</value>
+    <value>100, 180</value>
   </data>
   <data name="panel2.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>
@@ -604,6 +628,9 @@ This will ask you to place your autopilot on each edge.</value>
   <data name="panel2.Text" xml:space="preserve">
     <value>校准</value>
   </data>
+  <data name="panel2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
   </data>
@@ -614,22 +641,49 @@ This will ask you to place your autopilot on each edge.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnShowCalibrate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="btnShowCalibrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>322, 44</value>
+  </data>
+  <data name="btnShowCalibrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="btnShowCalibrate.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="btnShowCalibrate.Text" xml:space="preserve">
+    <value>加速度计校准</value>
+  </data>
+  <data name="&gt;&gt;btnShowCalibrate.Name" xml:space="preserve">
+    <value>btnShowCalibrate</value>
+  </data>
+  <data name="&gt;&gt;btnShowCalibrate.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnShowCalibrate.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;btnShowCalibrate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 220</value>
+    <value>100, 15</value>
   </data>
   <data name="panel3.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>

@@ -154,7 +154,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lbl_RTL_ALT.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="lbl_RTL_ALT_F.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -235,7 +235,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblYawBehavior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 54</value>
+    <value>0, 0</value>
   </data>
   <data name="lblYawBehavior.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -246,6 +246,9 @@
   <data name="lblYawBehavior.Text" xml:space="preserve">
     <value>偏航朝向：</value>
   </data>
+  <data name="lblYawBehavior.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;lblYawBehavior.Name" xml:space="preserve">
     <value>lblYawBehavior</value>
   </data>
@@ -253,13 +256,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblYawBehavior.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panelArmCheck</value>
   </data>
   <data name="&gt;&gt;lblYawBehavior.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>1</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
+  </metadata>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
   </metadata>
   <data name="NUM_movelength.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10.2pt</value>
@@ -279,9 +285,6 @@
   <data name="NUM_movelength.ToolTip" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="NUM_movelength.ToolTip1" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
@@ -296,6 +299,33 @@
   </data>
   <data name="&gt;&gt;NUM_movelength.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="tboxWriteV.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="tboxWriteV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>379, 54</value>
+  </data>
+  <data name="tboxWriteV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 27</value>
+  </data>
+  <data name="tboxWriteV.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="tboxWriteV.ToolTip" xml:space="preserve">
+    <value>输入电压值计算电压系数</value>
+  </data>
+  <data name="&gt;&gt;tboxWriteV.Name" xml:space="preserve">
+    <value>tboxWriteV</value>
+  </data>
+  <data name="&gt;&gt;tboxWriteV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tboxWriteV.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;tboxWriteV.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblMoveDistance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -330,29 +360,11 @@
   <data name="&gt;&gt;lblMoveDistance.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10.2pt</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 32</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 30</value>
-  </data>
-  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
     <value>RTL_ALT_FINAL</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6145.28727, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -390,29 +402,62 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="ARMING_CHECK.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
+    <value>WP_YAW_BEHAVIOR</value>
   </data>
-  <data name="ARMING_CHECK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 12</value>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="ARMING_CHECK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 23</value>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
+    <value>panelArmCheck</value>
   </data>
-  <data name="ARMING_CHECK.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ARMING_CHECK.Name" xml:space="preserve">
     <value>ARMING_CHECK</value>
   </data>
   <data name="&gt;&gt;ARMING_CHECK.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6145.28727, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ARMING_CHECK.Parent" xml:space="preserve">
     <value>panelArmCheck</value>
   </data>
   <data name="&gt;&gt;ARMING_CHECK.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.Name" xml:space="preserve">
+    <value>lblArmCheck</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.Parent" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelArmCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 95</value>
+  </data>
+  <data name="panelArmCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="panelArmCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.Name" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lblArmCheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,28 +490,7 @@
     <value>panelArmCheck</value>
   </data>
   <data name="&gt;&gt;lblArmCheck.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelArmCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 38</value>
-  </data>
-  <data name="panelArmCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 42</value>
-  </data>
-  <data name="panelArmCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Name" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="myButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -496,7 +520,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;myButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="Btn_.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -526,7 +550,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="lblAllMove.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -669,16 +693,19 @@
   <data name="&gt;&gt;CHK_enablespeech.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
   <data name="CHK_speechwaypoint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="CHK_speechwaypoint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="CHK_speechwaypoint.Font" type="System.Drawing.Font, System.Drawing">
@@ -716,11 +743,11 @@
   </data>
   <data name="CHK_speechotherParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="CHK_speechotherParams.Font" type="System.Drawing.Font, System.Drawing">
@@ -758,11 +785,11 @@
   </data>
   <data name="CHK_speechflightParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="CHK_speechflightParams.Font" type="System.Drawing.Font, System.Drawing">
@@ -888,6 +915,72 @@
         oyb5zYI8AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="lblVNo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblVNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblVNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblVNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 54</value>
+  </data>
+  <data name="lblVNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 20</value>
+  </data>
+  <data name="lblVNo.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="lblVNo.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblVNo.Name" xml:space="preserve">
+    <value>lblVNo</value>
+  </data>
+  <data name="&gt;&gt;lblVNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVNo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblVNo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblVVNo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblVVNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblVVNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblVVNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 55</value>
+  </data>
+  <data name="lblVVNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="lblVVNo.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="lblVVNo.Text" xml:space="preserve">
+    <value>电压调整系数：</value>
+  </data>
+  <data name="&gt;&gt;lblVVNo.Name" xml:space="preserve">
+    <value>lblVVNo</value>
+  </data>
+  <data name="&gt;&gt;lblVVNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVVNo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblVVNo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="RTL_ALT_P.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -913,39 +1006,12 @@
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6145.28727, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 52</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 23</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.ToolTip" xml:space="preserve">
-    <value>模式一:航向锁定,模式二:指向下一航点,模式三:除返航模式，指向下一行点。</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
-    <value>WP_YAW_BEHAVIOR</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6145.28727, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
@@ -1071,6 +1137,9 @@
   <data name="panel4.Text" xml:space="preserve">
     <value>其它功能</value>
   </data>
+  <data name="panel4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;panel4.Name" xml:space="preserve">
     <value>panel4</value>
   </data>
@@ -1082,6 +1151,90 @@
   </data>
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 23</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.ToolTip" xml:space="preserve">
+    <value>模式一:航向锁定,模式二:指向下一航点,模式三:除返航模式，指向下一行点。</value>
+  </data>
+  <data name="WP_YAW_BEHAVIOR.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
+    <value>WP_YAW_BEHAVIOR</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ARMING_CHECK.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ARMING_CHECK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 12</value>
+  </data>
+  <data name="ARMING_CHECK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 23</value>
+  </data>
+  <data name="ARMING_CHECK.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.Name" xml:space="preserve">
+    <value>ARMING_CHECK</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.Parent" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.2pt</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 32</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 30</value>
+  </data>
+  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
+    <value>RTL_ALT_FINAL</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6164.18047, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

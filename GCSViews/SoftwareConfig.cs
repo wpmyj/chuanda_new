@@ -61,6 +61,8 @@ namespace ByAeroBeHero.GCSViews
                         start = AddBackstageViewPage(new ConfigArducopter(), Strings.ExtendedTuning);
                     }
 
+                    AddBackstageViewPage(new ConfigLogDownload(), "日志下载");
+
                     //if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane)
                     //{
                     //    start = AddBackstageViewPage(new ConfigArduplane(), Strings.BasicTuning);

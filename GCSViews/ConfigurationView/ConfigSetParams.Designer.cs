@@ -37,6 +37,7 @@
             this.lblYawBehavior = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.NUM_movelength = new System.Windows.Forms.NumericUpDown();
+            this.tboxWriteV = new System.Windows.Forms.TextBox();
             this.lblMoveDistance = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelArmCheck = new System.Windows.Forms.Panel();
@@ -55,12 +56,14 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblOther = new System.Windows.Forms.Label();
             this.panel1 = new BSE.Windows.Forms.Panel();
+            this.lblVVNo = new System.Windows.Forms.Label();
             this.panel2 = new BSE.Windows.Forms.Panel();
             this.panel3 = new BSE.Windows.Forms.Panel();
             this.panel4 = new BSE.Windows.Forms.Panel();
+            this.lblVNo = new System.Windows.Forms.Label();
+            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.ARMING_CHECK = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -123,6 +126,14 @@
             65536});
             this.NUM_movelength.ValueChanged += new System.EventHandler(this.NUM_movelength_ValueChanged);
             // 
+            // tboxWriteV
+            // 
+            resources.ApplyResources(this.tboxWriteV, "tboxWriteV");
+            this.tboxWriteV.Name = "tboxWriteV";
+            this.toolTip1.SetToolTip(this.tboxWriteV, resources.GetString("tboxWriteV.ToolTip"));
+            this.tboxWriteV.TextChanged += new System.EventHandler(this.tboxWriteV_TextChanged);
+            this.tboxWriteV.Resize += new System.EventHandler(this.tboxWriteV_Resize);
+            // 
             // lblMoveDistance
             // 
             resources.ApplyResources(this.lblMoveDistance, "lblMoveDistance");
@@ -140,6 +151,8 @@
             // panelArmCheck
             // 
             this.panelArmCheck.BackColor = System.Drawing.Color.Transparent;
+            this.panelArmCheck.Controls.Add(this.WP_YAW_BEHAVIOR);
+            this.panelArmCheck.Controls.Add(this.lblYawBehavior);
             this.panelArmCheck.Controls.Add(this.ARMING_CHECK);
             this.panelArmCheck.Controls.Add(this.lblArmCheck);
             resources.ApplyResources(this.panelArmCheck, "panelArmCheck");
@@ -246,13 +259,14 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.lblVNo);
+            this.panel1.Controls.Add(this.tboxWriteV);
+            this.panel1.Controls.Add(this.lblVVNo);
             this.panel1.Controls.Add(this.panelArmCheck);
             this.panel1.Controls.Add(this.lbl_RTL_ALT);
             this.panel1.Controls.Add(this.myButton2);
             this.panel1.Controls.Add(this.RTL_ALT_P);
             this.panel1.Controls.Add(this.Btn_);
-            this.panel1.Controls.Add(this.lblYawBehavior);
-            this.panel1.Controls.Add(this.WP_YAW_BEHAVIOR);
             this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
             this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
@@ -272,6 +286,11 @@
             this.panel1.ToolTipTextCloseIcon = null;
             this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel1.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // lblVVNo
+            // 
+            resources.ApplyResources(this.lblVVNo, "lblVVNo");
+            this.lblVVNo.Name = "lblVVNo";
             // 
             // panel2
             // 
@@ -366,6 +385,24 @@
             this.panel4.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel4.ToolTipTextExpandIconPanelExpanded = null;
             // 
+            // lblVNo
+            // 
+            resources.ApplyResources(this.lblVNo, "lblVNo");
+            this.lblVNo.Name = "lblVNo";
+            // 
+            // WP_YAW_BEHAVIOR
+            // 
+            this.WP_YAW_BEHAVIOR.BackColor = System.Drawing.Color.Black;
+            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
+            this.WP_YAW_BEHAVIOR.ForeColor = System.Drawing.Color.White;
+            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
+            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
+            this.WP_YAW_BEHAVIOR.ParamName = null;
+            this.WP_YAW_BEHAVIOR.SubControl = null;
+            this.WP_YAW_BEHAVIOR.Tag = "";
+            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
+            // 
             // ARMING_CHECK
             // 
             this.ARMING_CHECK.BackColor = System.Drawing.Color.Black;
@@ -406,19 +443,6 @@
             0,
             0});
             this.RTL_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // WP_YAW_BEHAVIOR
-            // 
-            this.WP_YAW_BEHAVIOR.BackColor = System.Drawing.Color.Black;
-            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
-            this.WP_YAW_BEHAVIOR.ForeColor = System.Drawing.Color.White;
-            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
-            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
-            this.WP_YAW_BEHAVIOR.ParamName = null;
-            this.WP_YAW_BEHAVIOR.SubControl = null;
-            this.WP_YAW_BEHAVIOR.Tag = "";
-            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
             // 
             // RTL_ALT_FINAL
             // 
@@ -498,5 +522,8 @@
         private BSE.Windows.Forms.Panel panel2;
         private BSE.Windows.Forms.Panel panel3;
         private BSE.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblVVNo;
+        private System.Windows.Forms.TextBox tboxWriteV;
+        private System.Windows.Forms.Label lblVNo;
     }
 }

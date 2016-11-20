@@ -143,7 +143,7 @@ namespace ByAeroBeHero
             error2 = 99;
 
             if (dointro)
-                CustomMessageBox.Show(Strings.MagCalibMsg);
+                CustomMessageBox.Show("请单击确认并且将飞行控制器绕所有轴做圆周运动", "提示");
 
             ProgressReporterSphere prd = new ProgressReporterSphere();
 

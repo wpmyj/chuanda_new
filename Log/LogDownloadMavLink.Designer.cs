@@ -42,6 +42,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnLoadLog = new ByAeroBeHero.Controls.MyButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,8 +56,8 @@
             // 
             // BUT_DLall
             // 
-            this.BUT_DLall.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.BUT_DLall, "BUT_DLall");
+            this.BUT_DLall.BackColor = System.Drawing.Color.White;
             this.BUT_DLall.BGGradBot = System.Drawing.Color.Transparent;
             this.BUT_DLall.BGGradTop = System.Drawing.Color.Transparent;
             this.BUT_DLall.Name = "BUT_DLall";
@@ -65,8 +66,8 @@
             // 
             // BUT_DLthese
             // 
-            this.BUT_DLthese.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.BUT_DLthese, "BUT_DLthese");
+            this.BUT_DLthese.BackColor = System.Drawing.Color.White;
             this.BUT_DLthese.BGGradBot = System.Drawing.Color.Transparent;
             this.BUT_DLthese.BGGradTop = System.Drawing.Color.Transparent;
             this.BUT_DLthese.Name = "BUT_DLthese";
@@ -140,6 +141,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.BtnLoadLog);
             this.panel1.Controls.Add(this.BUT_DLall);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.BUT_DLthese);
@@ -150,6 +152,16 @@
             this.panel1.Controls.Add(this.BUT_clearlogs);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // BtnLoadLog
+            // 
+            this.BtnLoadLog.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.BtnLoadLog, "BtnLoadLog");
+            this.BtnLoadLog.BGGradBot = System.Drawing.Color.Transparent;
+            this.BtnLoadLog.BGGradTop = System.Drawing.Color.Transparent;
+            this.BtnLoadLog.Name = "BtnLoadLog";
+            this.BtnLoadLog.UseVisualStyleBackColor = false;
+            this.BtnLoadLog.Click += new System.EventHandler(this.BtnLoadLog_Click);
             // 
             // LogDownloadMavLink
             // 
@@ -184,5 +196,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private Controls.MyButton BtnLoadLog;
     }
 }

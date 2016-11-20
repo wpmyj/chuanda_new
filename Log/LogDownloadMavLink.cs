@@ -55,6 +55,11 @@ namespace ByAeroBeHero.Log
 
             //ThemeManager.ApplyThemeTo(this);
             ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
+
+            CHK_logs.ForeColor = TXT_seriallog.ForeColor = Color.White;
+            CHK_logs.BackColor = TXT_seriallog.BackColor = label1.ForeColor = Color.Black;
+            this.label1.BackColor = Color.Transparent;
+            BUT_DLall.BackgroundImage = BUT_DLthese.BackgroundImage = BUT_clearlogs.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
         }
 
         public void Log_Load(object sender, EventArgs e)
@@ -144,9 +149,17 @@ namespace ByAeroBeHero.Log
                 {
                     try
                     {
+                        this.label1.ForeColor = Color.Black; this.BackColor = Color.Transparent;
 
-                        TXT_status.Text = status.ToString() + " " + receivedbytes + "----" + receibedbytestotal;
-                        progressBar1.Value = (int)Math.Floor((double)(receivedbytes / receibedbytestotal) * 100);
+                        TXT_status.Text = status.ToString() + " " + receivedbytes + "----" + receibedbytestotal + "---" + Math.Floor((double)(receivedbytes / receibedbytestotal) * 100).ToString();
+                        
+                        if ((int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100) > 95 || status.ToString() =="完成")
+                            progressBar1.Value = 100;
+                        else
+                            progressBar1.Value = (int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100);
+
+                        this.label1.Text = progressBar1.Value + "%";
+
                     }
                     catch { }
                 });
@@ -384,7 +397,8 @@ namespace ByAeroBeHero.Log
                 try
                 {
                     MainV2.comPort.EraseLog();
-                    TXT_seriallog.AppendText("!!允许30-90秒删除！\n");
+                    TXT_seriallog.Text = string.Empty;
+                    TXT_seriallog.AppendText("已经清空日志！\n");
                     status = serialstatus.完成;
                     updateDisplay();
                     CHK_logs.Items.Clear();
@@ -508,6 +522,11 @@ namespace ByAeroBeHero.Log
         private void chk_droneshare_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnLoadLog_Click(object sender, EventArgs e)
+        {
+            ShowLog(true); 
         } 
     }
 }

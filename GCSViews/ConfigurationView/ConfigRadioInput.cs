@@ -9,9 +9,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigRadioInput : UserControl, IActivate, IDeactivate
     {
-        private readonly float[] rcmax = new float[8];
-        private readonly float[] rcmin = new float[8];
-        private readonly float[] rctrim = new float[8];
+        private readonly float[] rcmax = new float[14];
+        private readonly float[] rcmin = new float[14];
+        private readonly float[] rctrim = new float[14];
         private readonly Timer timer = new Timer();
         private int chpitch = -1;
         private int chroll = -1;
@@ -67,6 +67,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             BAR6.DataBindings.Clear();
             BAR7.DataBindings.Clear();
             BAR8.DataBindings.Clear();
+            BAR9.DataBindings.Clear();
+            BAR10.DataBindings.Clear();
+            BAR11.DataBindings.Clear();
+            BAR12.DataBindings.Clear();
+            BAR13.DataBindings.Clear();
+            BAR14.DataBindings.Clear();
 
             BARroll.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch" + chroll + "in", true));
             BARpitch.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch" + chpitch + "in", true));
@@ -78,6 +84,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             BAR6.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch6in", true));
             BAR7.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch7in", true));
             BAR8.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch8in", true));
+
+            BAR9.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch9in", true));
+            BAR10.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch10in", true));
+            BAR11.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch11in", true));
+            BAR12.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch12in", true));
+            BAR13.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch13in", true));
+            BAR14.DataBindings.Add(new Binding("Value", currentStateBindingSource, "ch14in", true));
 
             try
             {
@@ -152,6 +165,14 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.lbl6.Text = MainV2.comPort.MAV.cs.ch6in.ToString();
                 this.lbl7.Text = MainV2.comPort.MAV.cs.ch7in.ToString();
                 this.lbl8.Text = MainV2.comPort.MAV.cs.ch8in.ToString();
+                this.lbl9.Text = MainV2.comPort.MAV.cs.ch9in.ToString();
+                this.lbl10.Text = MainV2.comPort.MAV.cs.ch10in.ToString();
+                this.lbl11.Text = MainV2.comPort.MAV.cs.ch11in.ToString();
+                this.lbl12.Text = MainV2.comPort.MAV.cs.ch12in.ToString();
+                this.lbl13.Text = MainV2.comPort.MAV.cs.ch13in.ToString();
+                this.lbl14.Text = MainV2.comPort.MAV.cs.ch14in.ToString();
+
+                this.panel2.ForeColor = Color.Black; 
             }
             catch (Exception ex)
             {
@@ -234,6 +255,24 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     rcmin[7] = Math.Min(rcmin[7], MainV2.comPort.MAV.cs.ch8in);
                     rcmax[7] = Math.Max(rcmax[7], MainV2.comPort.MAV.cs.ch8in);
 
+                    rcmin[8] = Math.Min(rcmin[8], MainV2.comPort.MAV.cs.ch9in);
+                    rcmax[8] = Math.Max(rcmax[8], MainV2.comPort.MAV.cs.ch9in);
+
+                    rcmin[9] = Math.Min(rcmin[9], MainV2.comPort.MAV.cs.ch10in);
+                    rcmax[9] = Math.Max(rcmax[9], MainV2.comPort.MAV.cs.ch10in);
+
+                    rcmin[10] = Math.Min(rcmin[10], MainV2.comPort.MAV.cs.ch11in);
+                    rcmax[10] = Math.Max(rcmax[10], MainV2.comPort.MAV.cs.ch11in);
+
+                    rcmin[11] = Math.Min(rcmin[11], MainV2.comPort.MAV.cs.ch12in);
+                    rcmax[11] = Math.Max(rcmax[11], MainV2.comPort.MAV.cs.ch12in);
+
+                    rcmin[12] = Math.Min(rcmin[12], MainV2.comPort.MAV.cs.ch13in);
+                    rcmax[12] = Math.Max(rcmax[12], MainV2.comPort.MAV.cs.ch13in);
+
+                    rcmin[13] = Math.Min(rcmin[13], MainV2.comPort.MAV.cs.ch14in);
+                    rcmax[13] = Math.Max(rcmax[13], MainV2.comPort.MAV.cs.ch14in);
+
                     BARroll.minline = (int) rcmin[chroll - 1];
                     BARroll.maxline = (int) rcmax[chroll - 1];
 
@@ -257,6 +296,24 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
                     BAR8.minline = (int) rcmin[7];
                     BAR8.maxline = (int) rcmax[7];
+
+                    BAR9.minline = (int)rcmin[8];
+                    BAR9.maxline = (int)rcmax[8];
+
+                    BAR10.minline = (int)rcmin[9];
+                    BAR10.maxline = (int)rcmax[9];
+
+                    BAR11.minline = (int)rcmin[10];
+                    BAR11.maxline = (int)rcmax[10];
+
+                    BAR12.minline = (int)rcmin[11];
+                    BAR12.maxline = (int)rcmax[11];
+
+                    BAR13.minline = (int)rcmin[12];
+                    BAR13.maxline = (int)rcmax[12];
+
+                    BAR14.minline = (int)rcmin[13];
+                    BAR14.maxline = (int)rcmax[13];
                 }
             }
 
@@ -281,6 +338,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             rctrim[5] = MainV2.comPort.MAV.cs.ch6in;
             rctrim[6] = MainV2.comPort.MAV.cs.ch7in;
             rctrim[7] = MainV2.comPort.MAV.cs.ch8in;
+            rctrim[8] = MainV2.comPort.MAV.cs.ch9in;
+            rctrim[9] = MainV2.comPort.MAV.cs.ch10in;
+            rctrim[10] = MainV2.comPort.MAV.cs.ch11in;
+            rctrim[11] = MainV2.comPort.MAV.cs.ch12in;
+            rctrim[12] = MainV2.comPort.MAV.cs.ch13in;
+            rctrim[13] = MainV2.comPort.MAV.cs.ch14in;
 
             var data = "---------------\n";
 
@@ -509,6 +572,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void BAR8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private bool isShowOther = false;
+        private void btnOtherCalibrate_Click(object sender, EventArgs e)
+        {
+            if (isShowOther)
+            {
+                isShowOther = false;
+                this.panel2.Visible = false;
+            }
+            else
+            {
+                isShowOther = true;
+                this.panel2.Visible = true;
+            }
         }
     }
 }

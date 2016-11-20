@@ -3074,6 +3074,7 @@ namespace ByAeroBeHero.GCSViews
         private Controls.MyButton btnFlyingInfo;
         private BSE.Windows.Forms.Panel panelShowPoint;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridViewComboBoxColumn Command;
         private System.Windows.Forms.DataGridViewTextBoxColumn Param1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Param2;
@@ -3089,6 +3090,5 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

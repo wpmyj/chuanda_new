@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Collections;
 using System.Linq;
 using System.Text;
+using System.Runtime.InteropServices;
 
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
@@ -26,7 +27,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             this.lblArmCheck.ForeColor = 
                 CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor = CHK_speechotherParams.ForeColor = Color.Black;
-
         }
 
         public void Activate()
@@ -34,6 +34,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
             chb_AllMove.Checked = bool.Parse(MainV2.config["CHB_AllMove"].ToString());
             setWPParams();
+            this.lblVNo .Text= MainV2.comPort.MAV.param["BATT_VOLT_MULT"].ToString();
             CHK_enablespeech_CheckedChanged(null, null);
             timer1.Start();
         }
@@ -92,6 +93,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             var temp = (Hashtable)changes.Clone();
 
+            MainV2.comPort.setParam(new string[] { "VOLT_DIVIDER", "BATT_VOLT_MULT" }, float.Parse(lblVNo.Text));
             bool IsSetParam = false;
             foreach (string value in temp.Keys)
             {
@@ -335,6 +337,36 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 panelArmCheck.Visible = false;
             }
 
+        }
+
+        private void tBoxVNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tboxWriteV_Resize(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(this.tboxWriteV.Text))
+                return;
+
+            //算法
+            float voltage = MainV2.comPort.MAV.cs.battery_voltage;
+            float actualvoltage = float.Parse(this.tboxWriteV.Text);
+            float control = float.Parse(MainV2.comPort.MAV.param["BATT_VOLT_MULT"].ToString());
+            float newcontrol = actualvoltage / (voltage / control);
+            this.lblVNo.Text = newcontrol.ToString();
+        }
+
+        private void tboxWriteV_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(this.tboxWriteV.Text) || MainV2.comPort.MAV.cs.battery_voltage == 0)
+                return;
+            //算法
+            float voltage = MainV2.comPort.MAV.cs.battery_voltage;
+            float actualvoltage = float.Parse(this.tboxWriteV.Text);
+            float control = float.Parse(MainV2.comPort.MAV.param["BATT_VOLT_MULT"].ToString());
+            float newcontrol = actualvoltage / (voltage / control);
+            this.lblVNo.Text = newcontrol.ToString();
         }
     }
 }

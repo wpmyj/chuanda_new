@@ -143,7 +143,7 @@
     <value />
   </data>
   <data name="mavlinkNumericUpDownlow_voltage.ToolTip" xml:space="preserve">
-    <value>低电压触发器</value>
+    <value>低电压保护触发</value>
   </data>
   <data name="mavlinkCheckBoxlong_fs.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 16</value>
@@ -182,7 +182,7 @@
     <value>Arducopter自动：关，无动作，开，返航 Arducopter其他：如果有GPS，返航，否则降落</value>
   </data>
   <data name="mavlinkNumericUpDownfs_thr_value.ToolTip" xml:space="preserve">
-    <value>触发器油门Pwm</value>
+    <value>遥控器保护触发</value>
   </data>
   <data name="mavlinkNumericUpDownthr_fs_value.ToolTip" xml:space="preserve">
     <value>触发器油门Pwm</value>
@@ -197,16 +197,19 @@
     <value>在低油门pwm时启用故障保护</value>
   </data>
   <data name="mavlinkComboBox_fs_thr_enable.ToolTip" xml:space="preserve">
-    <value>触发器油门Pwm</value>
+    <value>遥控器失控保护：
+       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
+       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
+       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”</value>
   </data>
   <data name="mavlinkComboBoxfs_batt_enable.ToolTip" xml:space="preserve">
-    <value />
+    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 16</value>
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.Text" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="mavlinkCheckBoxFS_GCS_ENABLE.ToolTip" xml:space="preserve">
     <value />

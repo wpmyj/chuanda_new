@@ -65,6 +65,7 @@
             // lblCheckReson
             // 
             resources.ApplyResources(this.lblCheckReson, "lblCheckReson");
+            this.lblCheckReson.BackColor = System.Drawing.Color.Black;
             this.lblCheckReson.ForeColor = System.Drawing.Color.White;
             this.lblCheckReson.Name = "lblCheckReson";
             // 
@@ -184,6 +185,7 @@
             this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.lblCheckReson);
             resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Name = "panel5";
             // 
             // panel3

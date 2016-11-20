@@ -217,9 +217,6 @@
   <data name="Waypno.HeaderText" xml:space="preserve">
     <value>航点编号</value>
   </data>
-  <data name="Waypno.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <metadata name="Delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -311,7 +308,7 @@
     <value>60</value>
   </data>
   <data name="Commands.Size" type="System.Drawing.Size, System.Drawing">
-    <value>980, 754</value>
+    <value>1033, 754</value>
   </data>
   <data name="Commands.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -840,7 +837,7 @@
     <value>NoControl</value>
   </data>
   <data name="splitter1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>982, 0</value>
+    <value>1035, 0</value>
   </data>
   <data name="splitter1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1, 783</value>
@@ -1710,7 +1707,7 @@
     <value>27, 27</value>
   </data>
   <data name="panelWaypoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 783</value>
+    <value>1035, 783</value>
   </data>
   <data name="panelWaypoints.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>

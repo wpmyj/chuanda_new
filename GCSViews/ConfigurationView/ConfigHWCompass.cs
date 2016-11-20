@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using ByAeroBeHero.Controls;
 using System.Drawing;
-
+                
 namespace ByAeroBeHero.GCSViews.ConfigurationView
 {
     public partial class ConfigHWCompass : UserControl, IActivate
@@ -28,7 +28,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            ShowIMUState(); 
+            ShowIMUState();
+
+            compassCalibrate();
+
+            ControlCompassPress();
             // update all linked controls - 10hz
             try
             {
@@ -37,6 +41,67 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             catch
             {
             }
+        }
+
+        private void ControlCompassPress()
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen) 
+            {
+                progressBar1.Value = 0;
+                lblPressCount.Text = "0%";
+            }
+
+            if (CurrentState.icompletionpercent <= 102)
+            {
+                if (CurrentState.icompletionpercent < 100)
+                {
+                    progressBar1.Value = CurrentState.icompletionpercent;
+                    lblPressCount.Text = CurrentState.icompletionpercent + "%";
+                    this.lblReason.Text = string.Empty;
+                }
+                else 
+                {
+                    progressBar1.Value = 100;
+                    lblPressCount.Text = "100%";
+                }
+            }
+
+            if (CurrentState.icompletionpercent == 201 || (100<= CurrentState.icompletionpercent&&  CurrentState.icompletionpercent<=102) )
+            {
+                progressBar1.Value = 100;
+                lblPressCount.Text = "100%";
+                this.lblReason.Text = "成功";
+                //CustomMessageBox.Show("校准成功！", "提示");
+            }
+
+            if (CurrentState.icompletionpercent == 202)
+            {
+                progressBar1.Value = 0;
+                lblPressCount.Text = "0%";
+                this.lblReason.Text = "失败";
+                //CustomMessageBox.Show("校准失败！", "提示");
+            }
+        }
+
+        private int compassprocess = 0;
+        private void compassCalibrate() 
+        {
+            if (MainV2.comPort.MAV.param["COMPASS_PROCESS "] != null)
+            {
+                compassprocess = (int)MainV2.comPort.MAV.param["COMPASS_DEC"].Value;
+
+            }
+
+            if (compassprocess == 100) 
+            {
+                if (MainV2.comPort.MAV.param["COMPASS_CALIBRATE"] != null)
+                {
+                    MainV2.comPort.setParam("COMPASS_CALIBRATE", 0);
+                }
+
+                BUT_MagCalibrationLive.Text = "校准完成";
+            }
+
         }
 
         private int iIMU2 = 0;
@@ -165,7 +230,25 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void BUT_MagCalibration_Click(object sender, EventArgs e)
         {
-            MagCalib.DoGUIMagCalib();
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                return;
+            }
+
+            this.lblReason.Text = string.Empty;
+
+            try {
+                MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_START_MAG_CAL, 0, 0, 1, 1 * 1.0e-4f, 0, 0, 0);
+            }
+            catch { }
+
+
+            //if (MainV2.comPort.MAV.param["COMPASS_CALIBRATE"] != null)
+            //{
+            //    MainV2.comPort.setParam("COMPASS_CALIBRATE", 1);
+            //}
+
+            //MagCalib.DoGUIMagCalib();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -363,6 +446,20 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 CustomMessageBox.Show(Strings.ErrorSettingParameter, Strings.ERROR);
             }
+        }
+
+        private void btnCanelPress_Click(object sender, EventArgs e)
+        {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                return;
+            }
+
+            try
+            {
+                MainV2.comPort.doCommand(MAVLink.MAV_CMD.DO_CANCEL_MAG_CAL, 0, 0, 0, 0, 0, 0, 0);
+            }
+            catch { }
         }
     }
 }

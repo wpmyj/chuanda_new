@@ -291,6 +291,9 @@
   <data name="myBtnDownloadlog.Text" xml:space="preserve">
     <value>日志下载</value>
   </data>
+  <data name="myBtnDownloadlog.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;myBtnDownloadlog.Name" xml:space="preserve">
     <value>myBtnDownloadlog</value>
   </data>
@@ -689,7 +692,7 @@
     <value>logDownloadMavLink1</value>
   </data>
   <data name="&gt;&gt;logDownloadMavLink1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Log.LogDownloadMavLink, ByAeroBeHero, Version=1.0.6156.25941, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Log.LogDownloadMavLink, ByAeroBeHero, Version=1.0.6158.26289, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;logDownloadMavLink1.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -899,7 +902,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1312, 773</value>
+    <value>1308, 769</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

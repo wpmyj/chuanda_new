@@ -191,5 +191,20 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 CustomMessageBox.Show("水平校准失败", Strings.ERROR);
             }
         }
+
+        private bool Isshow =false;
+        private void btnShowCalibrate_Click(object sender, EventArgs e)
+        {
+            if (Isshow)
+            {
+                panel2.Visible = false;
+                Isshow = false;
+            }
+            else 
+            {
+                panel2.Visible = true;
+                Isshow = true;
+            }
+        }
     }
 }

@@ -62,15 +62,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblFailSafeBegin = new System.Windows.Forms.Label();
             this.lblPC = new System.Windows.Forms.Label();
-            this.fiMode = new ByAeroBeHero.Controls.FlightInfo();
-            this.fiState = new ByAeroBeHero.Controls.FlightInfo();
-            this.fiGPS = new ByAeroBeHero.Controls.FlightInfo();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblinfo2 = new System.Windows.Forms.Label();
-            this.lblinfo1 = new System.Windows.Forms.Label();
-            this.panel1 = new BSE.Windows.Forms.Panel();
             this.panel2 = new BSE.Windows.Forms.Panel();
-            this.panel3 = new BSE.Windows.Forms.Panel();
             this.mavlinkComboFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.cb_FS_Level_Enable = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.mavlinkNumericUpDownlow_voltage = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
@@ -78,24 +70,22 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.mavlinkNumericUpDownthr_fs_value = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkComboBoxfs_batt_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.mavlinkComboBox_fs_thr_enable = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mavlinkCheckBoxlong_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.mavlinkCheckBoxshort_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.mavlinkCheckBoxgcs_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.mavlinkNumericUpDownFS_BATT_MAH = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.mavlinkCheckBoxFS_GCS_ENABLE = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.mavlinkCheckBoxthr_fs_action = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mavlinkCheckBoxthr_fs = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.PNL_thr_fs_value.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownthr_fs_value)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownFS_BATT_MAH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -451,126 +441,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this.lblFailSafeBegin, "lblFailSafeBegin");
             this.lblFailSafeBegin.Name = "lblFailSafeBegin";
+            this.toolTip1.SetToolTip(this.lblFailSafeBegin, resources.GetString("lblFailSafeBegin.ToolTip"));
             // 
             // lblPC
             // 
             resources.ApplyResources(this.lblPC, "lblPC");
             this.lblPC.Name = "lblPC";
-            // 
-            // fiMode
-            // 
-            this.fiMode.BackColor = System.Drawing.Color.Black;
-            this.fiMode.batterylevel = 0F;
-            this.fiMode.batteryremaining = 0F;
-            this.fiMode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fiMode.ch6out = 0F;
-            this.fiMode.ch8out = 0F;
-            this.fiMode.current = 0F;
-            this.fiMode.DataBindings.Add(new System.Windows.Forms.Binding("mode", this.currentStateBindingSource, "mode", true));
-            this.fiMode.desc = "模式：";
-            this.fiMode.failsafe = false;
-            this.fiMode.frame = 0F;
-            this.fiMode.gpsfix = 0F;
-            resources.ApplyResources(this.fiMode, "fiMode");
-            this.fiMode.message = "";
-            this.fiMode.messagetime = new System.DateTime(((long)(0)));
-            this.fiMode.mode = "Manual";
-            this.fiMode.Name = "fiMode";
-            this.fiMode.numberColor = System.Drawing.Color.White;
-            this.fiMode.status = false;
-            this.fiMode.text = "";
-            // 
-            // fiState
-            // 
-            this.fiState.BackColor = System.Drawing.Color.Black;
-            this.fiState.batterylevel = 0F;
-            this.fiState.batteryremaining = 0F;
-            this.fiState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fiState.ch6out = 0F;
-            this.fiState.ch8out = 0F;
-            this.fiState.current = 0F;
-            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("status", this.currentStateBindingSource, "armed", true));
-            this.fiState.DataBindings.Add(new System.Windows.Forms.Binding("failsafe", this.currentStateBindingSource, "failsafe", true));
-            this.fiState.desc = "状态：";
-            this.fiState.failsafe = false;
-            this.fiState.frame = 0F;
-            this.fiState.gpsfix = 0F;
-            resources.ApplyResources(this.fiState, "fiState");
-            this.fiState.message = "";
-            this.fiState.messagetime = new System.DateTime(((long)(0)));
-            this.fiState.mode = "Manual";
-            this.fiState.Name = "fiState";
-            this.fiState.numberColor = System.Drawing.Color.White;
-            this.fiState.status = false;
-            this.fiState.text = "";
-            // 
-            // fiGPS
-            // 
-            this.fiGPS.BackColor = System.Drawing.Color.Black;
-            this.fiGPS.batterylevel = 0F;
-            this.fiGPS.batteryremaining = 0F;
-            this.fiGPS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fiGPS.ch6out = 0F;
-            this.fiGPS.ch8out = 0F;
-            this.fiGPS.current = 0F;
-            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.currentStateBindingSource, "gpsstatus", true));
-            this.fiGPS.desc = "GPS：";
-            this.fiGPS.failsafe = false;
-            this.fiGPS.frame = 0F;
-            this.fiGPS.gpsfix = 0F;
-            resources.ApplyResources(this.fiGPS, "fiGPS");
-            this.fiGPS.message = "";
-            this.fiGPS.messagetime = new System.DateTime(((long)(0)));
-            this.fiGPS.mode = "Manual";
-            this.fiGPS.Name = "fiGPS";
-            this.fiGPS.numberColor = System.Drawing.Color.White;
-            this.fiGPS.status = false;
-            this.fiGPS.text = "";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // lblinfo2
-            // 
-            resources.ApplyResources(this.lblinfo2, "lblinfo2");
-            this.lblinfo2.Name = "lblinfo2";
-            // 
-            // lblinfo1
-            // 
-            resources.ApplyResources(this.lblinfo1, "lblinfo1");
-            this.lblinfo1.Name = "lblinfo1";
-            // 
-            // panel1
-            // 
-            this.panel1.AssociatedSplitter = null;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel1.CaptionHeight = 27;
-            this.panel1.Controls.Add(this.fiState);
-            this.panel1.Controls.Add(this.fiGPS);
-            this.panel1.Controls.Add(this.fiMode);
-            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Image = null;
-            this.panel1.Name = "panel1";
-            this.panel1.ToolTipTextCloseIcon = null;
-            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
             // 
             // panel2
             // 
@@ -609,36 +485,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel2.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // panel3
-            // 
-            this.panel3.AssociatedSplitter = null;
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.CaptionFont = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel3.CaptionHeight = 27;
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.lblinfo1);
-            this.panel3.Controls.Add(this.lblinfo2);
-            this.panel3.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel3.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel3.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel3.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel3.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel3.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel3.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Image = null;
-            this.panel3.Name = "panel3";
-            this.panel3.ToolTipTextCloseIcon = null;
-            this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel3.ToolTipTextExpandIconPanelExpanded = null;
-            // 
             // mavlinkComboFS_GCS_ENABLE
             // 
             this.mavlinkComboFS_GCS_ENABLE.BackColor = System.Drawing.Color.Black;
@@ -649,6 +495,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.mavlinkComboFS_GCS_ENABLE.Name = "mavlinkComboFS_GCS_ENABLE";
             this.mavlinkComboFS_GCS_ENABLE.ParamName = null;
             this.mavlinkComboFS_GCS_ENABLE.SubControl = null;
+            this.toolTip1.SetToolTip(this.mavlinkComboFS_GCS_ENABLE, resources.GetString("mavlinkComboFS_GCS_ENABLE.ToolTip"));
             // 
             // cb_FS_Level_Enable
             // 
@@ -713,6 +560,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.mavlinkComboBoxfs_batt_enable.Name = "mavlinkComboBoxfs_batt_enable";
             this.mavlinkComboBoxfs_batt_enable.ParamName = null;
             this.mavlinkComboBoxfs_batt_enable.SubControl = null;
+            this.toolTip1.SetToolTip(this.mavlinkComboBoxfs_batt_enable, resources.GetString("mavlinkComboBoxfs_batt_enable.ToolTip"));
             // 
             // mavlinkComboBox_fs_thr_enable
             // 
@@ -725,10 +573,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.mavlinkComboBox_fs_thr_enable.ParamName = null;
             this.mavlinkComboBox_fs_thr_enable.SubControl = null;
             this.toolTip1.SetToolTip(this.mavlinkComboBox_fs_thr_enable, resources.GetString("mavlinkComboBox_fs_thr_enable.ToolTip"));
-            // 
-            // currentStateBindingSource
-            // 
-            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // mavlinkCheckBoxlong_fs
             // 
@@ -798,6 +642,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.toolTip1.SetToolTip(this.mavlinkCheckBoxthr_fs_action, resources.GetString("mavlinkCheckBoxthr_fs_action.ToolTip"));
             this.mavlinkCheckBoxthr_fs_action.UseVisualStyleBackColor = true;
             // 
+            // currentStateBindingSource
+            // 
+            this.currentStateBindingSource.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // mavlinkCheckBoxthr_fs
             // 
             resources.ApplyResources(this.mavlinkCheckBoxthr_fs, "mavlinkCheckBoxthr_fs");
@@ -812,9 +660,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.LNK_wiki);
             this.Controls.Add(this.label2);
@@ -823,16 +669,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.PNL_thr_fs_value.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownlow_voltage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownfs_thr_value)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownthr_fs_value)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mavlinkNumericUpDownFS_BATT_MAH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -879,21 +722,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private MavlinkNumericUpDown mavlinkNumericUpDownFS_BATT_MAH;
         private MavlinkComboBox mavlinkComboBoxfs_batt_enable;
         private System.Windows.Forms.GroupBox groupBox4;
-        private FlightInfo fiGPS;
-        private FlightInfo fiState;
-        private FlightInfo fiMode;
         private System.Windows.Forms.Label lblPC;
-        private System.Windows.Forms.Label lblinfo1;
-        private System.Windows.Forms.Label lblinfo2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblFailSafeBegin;
         private MavlinkComboBox cb_FS_Level_Enable;
         private System.Windows.Forms.Label lblLevel;
         private MavlinkNumericUpDown mavlinkNumericUpDownlow_voltage;
         private MavlinkComboBox mavlinkComboFS_GCS_ENABLE;
-        private BSE.Windows.Forms.Panel panel1;
         private BSE.Windows.Forms.Panel panel2;
-        private BSE.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel PNL_low_bat;
     }
 }

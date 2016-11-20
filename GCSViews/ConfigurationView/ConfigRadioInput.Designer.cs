@@ -53,6 +53,38 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new BSE.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.BAR9 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.lbl14 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.BAR14 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BAR10 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.lbl10 = new System.Windows.Forms.Label();
+            this.lbl13 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.BAR13 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.BAR11 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.lbl11 = new System.Windows.Forms.Label();
+            this.lbl12 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.BAR12 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
+            this.btnOtherCalibrate = new ByAeroBeHero.Controls.MyButton();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -93,6 +125,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -320,6 +353,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnOtherCalibrate);
             this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.label30);
             this.panel1.Controls.Add(this.label29);
@@ -388,6 +423,261 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel1.ToolTipTextExpandIconPanelExpanded = null;
             this.panel1.CloseClick += new System.EventHandler<System.EventArgs>(this.panel1_CloseClick);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.BAR9);
+            this.panel2.Controls.Add(this.label52);
+            this.panel2.Controls.Add(this.label35);
+            this.panel2.Controls.Add(this.label53);
+            this.panel2.Controls.Add(this.lbl9);
+            this.panel2.Controls.Add(this.lbl14);
+            this.panel2.Controls.Add(this.label33);
+            this.panel2.Controls.Add(this.label55);
+            this.panel2.Controls.Add(this.label32);
+            this.panel2.Controls.Add(this.BAR14);
+            this.panel2.Controls.Add(this.BAR10);
+            this.panel2.Controls.Add(this.label48);
+            this.panel2.Controls.Add(this.label39);
+            this.panel2.Controls.Add(this.label49);
+            this.panel2.Controls.Add(this.lbl10);
+            this.panel2.Controls.Add(this.lbl13);
+            this.panel2.Controls.Add(this.label37);
+            this.panel2.Controls.Add(this.label51);
+            this.panel2.Controls.Add(this.label36);
+            this.panel2.Controls.Add(this.BAR13);
+            this.panel2.Controls.Add(this.BAR11);
+            this.panel2.Controls.Add(this.label44);
+            this.panel2.Controls.Add(this.label43);
+            this.panel2.Controls.Add(this.label45);
+            this.panel2.Controls.Add(this.lbl11);
+            this.panel2.Controls.Add(this.lbl12);
+            this.panel2.Controls.Add(this.label41);
+            this.panel2.Controls.Add(this.label47);
+            this.panel2.Controls.Add(this.label40);
+            this.panel2.Controls.Add(this.BAR12);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // BAR9
+            // 
+            this.BAR9.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BAR9.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BAR9.DrawLabel = true;
+            resources.ApplyResources(this.BAR9, "BAR9");
+            this.BAR9.Label = "滚转";
+            this.BAR9.Maximum = 2200;
+            this.BAR9.maxline = 0;
+            this.BAR9.Minimum = 800;
+            this.BAR9.minline = 0;
+            this.BAR9.Name = "BAR9";
+            this.BAR9.Value = 1500;
+            this.BAR9.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // label52
+            // 
+            resources.ApplyResources(this.label52, "label52");
+            this.label52.Name = "label52";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
+            // 
+            // label53
+            // 
+            resources.ApplyResources(this.label53, "label53");
+            this.label53.Name = "label53";
+            // 
+            // lbl9
+            // 
+            resources.ApplyResources(this.lbl9, "lbl9");
+            this.lbl9.Name = "lbl9";
+            // 
+            // lbl14
+            // 
+            resources.ApplyResources(this.lbl14, "lbl14");
+            this.lbl14.Name = "lbl14";
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.Name = "label33";
+            // 
+            // label55
+            // 
+            resources.ApplyResources(this.label55, "label55");
+            this.label55.Name = "label55";
+            // 
+            // label32
+            // 
+            resources.ApplyResources(this.label32, "label32");
+            this.label32.Name = "label32";
+            // 
+            // BAR14
+            // 
+            this.BAR14.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BAR14.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BAR14.DrawLabel = true;
+            resources.ApplyResources(this.BAR14, "BAR14");
+            this.BAR14.Label = "滚转";
+            this.BAR14.Maximum = 2200;
+            this.BAR14.maxline = 0;
+            this.BAR14.Minimum = 800;
+            this.BAR14.minline = 0;
+            this.BAR14.Name = "BAR14";
+            this.BAR14.Value = 1500;
+            this.BAR14.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // BAR10
+            // 
+            this.BAR10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BAR10.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BAR10.DrawLabel = true;
+            resources.ApplyResources(this.BAR10, "BAR10");
+            this.BAR10.Label = "滚转";
+            this.BAR10.Maximum = 2200;
+            this.BAR10.maxline = 0;
+            this.BAR10.Minimum = 800;
+            this.BAR10.minline = 0;
+            this.BAR10.Name = "BAR10";
+            this.BAR10.Value = 1500;
+            this.BAR10.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // label48
+            // 
+            resources.ApplyResources(this.label48, "label48");
+            this.label48.Name = "label48";
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // label49
+            // 
+            resources.ApplyResources(this.label49, "label49");
+            this.label49.Name = "label49";
+            // 
+            // lbl10
+            // 
+            resources.ApplyResources(this.lbl10, "lbl10");
+            this.lbl10.Name = "lbl10";
+            // 
+            // lbl13
+            // 
+            resources.ApplyResources(this.lbl13, "lbl13");
+            this.lbl13.Name = "lbl13";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            // 
+            // BAR13
+            // 
+            this.BAR13.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BAR13.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BAR13.DrawLabel = true;
+            resources.ApplyResources(this.BAR13, "BAR13");
+            this.BAR13.Label = "滚转";
+            this.BAR13.Maximum = 2200;
+            this.BAR13.maxline = 0;
+            this.BAR13.Minimum = 800;
+            this.BAR13.minline = 0;
+            this.BAR13.Name = "BAR13";
+            this.BAR13.Value = 1500;
+            this.BAR13.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // BAR11
+            // 
+            this.BAR11.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BAR11.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BAR11.DrawLabel = true;
+            resources.ApplyResources(this.BAR11, "BAR11");
+            this.BAR11.Label = "滚转";
+            this.BAR11.Maximum = 2200;
+            this.BAR11.maxline = 0;
+            this.BAR11.Minimum = 800;
+            this.BAR11.minline = 0;
+            this.BAR11.Name = "BAR11";
+            this.BAR11.Value = 1500;
+            this.BAR11.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // label43
+            // 
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // lbl11
+            // 
+            resources.ApplyResources(this.lbl11, "lbl11");
+            this.lbl11.Name = "lbl11";
+            // 
+            // lbl12
+            // 
+            resources.ApplyResources(this.lbl12, "lbl12");
+            this.lbl12.Name = "lbl12";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            // 
+            // label47
+            // 
+            resources.ApplyResources(this.label47, "label47");
+            this.label47.Name = "label47";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            // 
+            // BAR12
+            // 
+            this.BAR12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(255)))));
+            this.BAR12.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BAR12.DrawLabel = true;
+            resources.ApplyResources(this.BAR12, "BAR12");
+            this.BAR12.Label = "滚转";
+            this.BAR12.Maximum = 2200;
+            this.BAR12.maxline = 0;
+            this.BAR12.Minimum = 800;
+            this.BAR12.minline = 0;
+            this.BAR12.Name = "BAR12";
+            this.BAR12.Value = 1500;
+            this.BAR12.ValueColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            // 
+            // btnOtherCalibrate
+            // 
+            this.btnOtherCalibrate.BackColor = System.Drawing.SystemColors.Control;
+            this.btnOtherCalibrate.BGGradBot = System.Drawing.Color.Transparent;
+            this.btnOtherCalibrate.BGGradTop = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnOtherCalibrate, "btnOtherCalibrate");
+            this.btnOtherCalibrate.Name = "btnOtherCalibrate";
+            this.btnOtherCalibrate.UseVisualStyleBackColor = false;
+            this.btnOtherCalibrate.Click += new System.EventHandler(this.btnOtherCalibrate_Click);
             // 
             // label31
             // 
@@ -587,6 +877,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -653,5 +945,37 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
+        private MyButton btnOtherCalibrate;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label lbl14;
+        private System.Windows.Forms.Label label55;
+        private HorizontalProgressBar2 BAR14;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label lbl13;
+        private System.Windows.Forms.Label label51;
+        private HorizontalProgressBar2 BAR13;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label lbl12;
+        private System.Windows.Forms.Label label47;
+        private HorizontalProgressBar2 BAR12;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label lbl11;
+        private System.Windows.Forms.Label label43;
+        private HorizontalProgressBar2 BAR11;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label lbl10;
+        private System.Windows.Forms.Label label39;
+        private HorizontalProgressBar2 BAR10;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label lbl9;
+        private System.Windows.Forms.Label label35;
+        private HorizontalProgressBar2 BAR9;
+        private System.Windows.Forms.Panel panel2;
     }
 }

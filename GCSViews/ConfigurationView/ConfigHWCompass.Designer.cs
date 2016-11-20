@@ -48,9 +48,12 @@
             this.TXT_declination_min = new System.Windows.Forms.TextBox();
             this.radioButtonmanual = new System.Windows.Forms.RadioButton();
             this.radioButton_external = new System.Windows.Forms.RadioButton();
+            this.CHK_enablecompass = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.CMB_compass_orient = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.radioButton_onboard = new System.Windows.Forms.RadioButton();
             this.lblIMU2z = new System.Windows.Forms.Label();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblIMU2y = new System.Windows.Forms.Label();
             this.lblIMU2x = new System.Windows.Forms.Label();
             this.lblIMUz = new System.Windows.Forms.Label();
@@ -60,39 +63,41 @@
             this.lblIMUState = new System.Windows.Forms.Label();
             this.BUT_MagCalibrationLive = new ByAeroBeHero.Controls.MyButton();
             this.panel1 = new BSE.Windows.Forms.Panel();
-            this.lblx = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCanelPress = new ByAeroBeHero.Controls.MyButton();
+            this.lblPressCount = new System.Windows.Forms.Label();
+            this.lblConpassPress = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.CHK_enablecompass = new ByAeroBeHero.Controls.MavlinkCheckBox();
-            this.CMB_compass_orient = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblx = new System.Windows.Forms.Label();
+            this.lblReason = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkLabelmagdec
@@ -239,6 +244,18 @@
             this.radioButton_external.UseVisualStyleBackColor = true;
             this.radioButton_external.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // CHK_enablecompass
+            // 
+            this.CHK_enablecompass.Checked = true;
+            this.CHK_enablecompass.CheckState = System.Windows.Forms.CheckState.Checked;
+            resources.ApplyResources(this.CHK_enablecompass, "CHK_enablecompass");
+            this.CHK_enablecompass.Name = "CHK_enablecompass";
+            this.CHK_enablecompass.OffValue = 0D;
+            this.CHK_enablecompass.OnValue = 1D;
+            this.CHK_enablecompass.ParamName = null;
+            this.CHK_enablecompass.UseVisualStyleBackColor = true;
+            this.CHK_enablecompass.CheckedChanged += new System.EventHandler(this.CHK_enablecompass_CheckedChanged);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::ByAeroBeHero.Properties.Resources.maggps;
@@ -246,6 +263,15 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
+            // 
+            // CMB_compass_orient
+            // 
+            this.CMB_compass_orient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.CMB_compass_orient, "CMB_compass_orient");
+            this.CMB_compass_orient.FormattingEnabled = true;
+            this.CMB_compass_orient.Name = "CMB_compass_orient";
+            this.CMB_compass_orient.ParamName = null;
+            this.CMB_compass_orient.SubControl = null;
             // 
             // radioButton_onboard
             // 
@@ -261,6 +287,10 @@
             this.lblIMU2z.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "mz2", true));
             this.lblIMU2z.ForeColor = System.Drawing.Color.White;
             this.lblIMU2z.Name = "lblIMU2z";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // lblIMU2y
             // 
@@ -327,6 +357,11 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
             this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.lblReason);
+            this.panel1.Controls.Add(this.btnCanelPress);
+            this.panel1.Controls.Add(this.lblPressCount);
+            this.panel1.Controls.Add(this.lblConpassPress);
+            this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -362,18 +397,56 @@
             this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel1.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // lblx
+            // btnCanelPress
             // 
-            resources.ApplyResources(this.lblx, "lblx");
-            this.lblx.Name = "lblx";
+            this.btnCanelPress.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.btnCanelPress, "btnCanelPress");
+            this.btnCanelPress.BGGradBot = System.Drawing.Color.Transparent;
+            this.btnCanelPress.BGGradTop = System.Drawing.Color.Transparent;
+            this.btnCanelPress.ForeColor = System.Drawing.Color.White;
+            this.btnCanelPress.Name = "btnCanelPress";
+            this.btnCanelPress.UseVisualStyleBackColor = false;
+            this.btnCanelPress.Click += new System.EventHandler(this.btnCanelPress_Click);
             // 
-            // panel2
+            // lblPressCount
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.lblIMU2State);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Name = "panel2";
+            resources.ApplyResources(this.lblPressCount, "lblPressCount");
+            this.lblPressCount.Name = "lblPressCount";
+            // 
+            // lblConpassPress
+            // 
+            resources.ApplyResources(this.lblConpassPress, "lblConpassPress");
+            this.lblConpassPress.Name = "lblConpassPress";
+            // 
+            // progressBar1
+            // 
+            resources.ApplyResources(this.progressBar1, "progressBar1");
+            this.progressBar1.Name = "progressBar1";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
             // panel3
             // 
@@ -391,22 +464,6 @@
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Name = "panel4";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Controls.Add(this.lblIMU2x);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Name = "panel5";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Controls.Add(this.lblIMUz);
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Name = "panel6";
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
@@ -423,6 +480,22 @@
             this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Name = "panel8";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Black;
+            this.panel6.Controls.Add(this.lblIMUz);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.ForeColor = System.Drawing.Color.White;
+            this.panel6.Name = "panel6";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Controls.Add(this.lblIMU2x);
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Name = "panel5";
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Black;
@@ -431,55 +504,23 @@
             this.panel9.ForeColor = System.Drawing.Color.White;
             this.panel9.Name = "panel9";
             // 
-            // label4
+            // panel2
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblIMU2State);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.ForeColor = System.Drawing.Color.White;
+            this.panel2.Name = "panel2";
             // 
-            // label6
+            // lblx
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.lblx, "lblx");
+            this.lblx.Name = "lblx";
             // 
-            // label7
+            // lblReason
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
-            // CHK_enablecompass
-            // 
-            this.CHK_enablecompass.Checked = true;
-            this.CHK_enablecompass.CheckState = System.Windows.Forms.CheckState.Checked;
-            resources.ApplyResources(this.CHK_enablecompass, "CHK_enablecompass");
-            this.CHK_enablecompass.Name = "CHK_enablecompass";
-            this.CHK_enablecompass.OffValue = 0D;
-            this.CHK_enablecompass.OnValue = 1D;
-            this.CHK_enablecompass.ParamName = null;
-            this.CHK_enablecompass.UseVisualStyleBackColor = true;
-            this.CHK_enablecompass.CheckedChanged += new System.EventHandler(this.CHK_enablecompass_CheckedChanged);
-            // 
-            // CMB_compass_orient
-            // 
-            this.CMB_compass_orient.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.CMB_compass_orient, "CMB_compass_orient");
-            this.CMB_compass_orient.FormattingEnabled = true;
-            this.CMB_compass_orient.Name = "CMB_compass_orient";
-            this.CMB_compass_orient.ParamName = null;
-            this.CMB_compass_orient.SubControl = null;
+            resources.ApplyResources(this.lblReason, "lblReason");
+            this.lblReason.Name = "lblReason";
             // 
             // ConfigHWCompass
             // 
@@ -496,25 +537,25 @@
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -568,5 +609,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblConpassPress;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblPressCount;
+        private Controls.MyButton btnCanelPress;
+        private System.Windows.Forms.Label lblReason;
     }
 }

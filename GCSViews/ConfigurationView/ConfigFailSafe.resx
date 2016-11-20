@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="pnlmah.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnlmah.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <metadata name="currentStateBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LNK_wiki.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>214, 17</value>
@@ -364,7 +364,7 @@
     <value>mavlinkNumericUpDownfs_thr_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
     <value>PNL_thr_fs_value</value>
@@ -391,7 +391,11 @@
     <value>142</value>
   </data>
   <data name="mavlinkNumericUpDownthr_fs_value.ToolTip" xml:space="preserve">
-    <value>Trigger Throttle Pwm</value>
+    <value>遥控器失控保护：
+       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
+       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
+       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”
+</value>
   </data>
   <data name="mavlinkNumericUpDownthr_fs_value.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -400,7 +404,7 @@
     <value>mavlinkNumericUpDownthr_fs_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
     <value>PNL_thr_fs_value</value>
@@ -412,7 +416,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="PNL_thr_fs_value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 92</value>
+    <value>319, 92</value>
   </data>
   <data name="PNL_thr_fs_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -502,7 +506,7 @@
     <value>mavlinkCheckBoxlong_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxlong_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -547,7 +551,7 @@
     <value>mavlinkCheckBoxshort_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxshort_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -592,7 +596,7 @@
     <value>mavlinkCheckBoxgcs_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxgcs_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -622,7 +626,7 @@
     <value>mavlinkNumericUpDownFS_BATT_MAH</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownFS_BATT_MAH.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -661,7 +665,7 @@
     <value>mavlinkCheckBoxFS_GCS_ENABLE</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxFS_GCS_ENABLE.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -707,7 +711,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxthr_fs_action</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs_action.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -788,7 +792,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkCheckBoxthr_fs</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkCheckBoxthr_fs.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -1346,7 +1350,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="lblLevel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1358,7 +1362,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>NoControl</value>
   </data>
   <data name="lblLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>519, 60</value>
+    <value>77, 131</value>
   </data>
   <data name="lblLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1394,7 +1398,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>NoControl</value>
   </data>
   <data name="lblFailSafeBegin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 99</value>
+    <value>19, 165</value>
   </data>
   <data name="lblFailSafeBegin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1407,6 +1411,9 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   </data>
   <data name="lblFailSafeBegin.Text" xml:space="preserve">
     <value>数据链路故障保护</value>
+  </data>
+  <data name="lblFailSafeBegin.ToolTip" xml:space="preserve">
+    <value>3.地面站失控保护：当地面站连接并且出现中断，将触发保护机制。</value>
   </data>
   <data name="&gt;&gt;lblFailSafeBegin.Name" xml:space="preserve">
     <value>lblFailSafeBegin</value>
@@ -1456,224 +1463,6 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="&gt;&gt;lblPC.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="fiMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>584, 46</value>
-  </data>
-  <data name="fiMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="fiMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 34</value>
-  </data>
-  <data name="fiMode.TabIndex" type="System.Int32, mscorlib">
-    <value>156</value>
-  </data>
-  <data name="&gt;&gt;fiMode.Name" xml:space="preserve">
-    <value>fiMode</value>
-  </data>
-  <data name="&gt;&gt;fiMode.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.FlightInfo, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;fiMode.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;fiMode.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="fiState.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 46</value>
-  </data>
-  <data name="fiState.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="fiState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 34</value>
-  </data>
-  <data name="fiState.TabIndex" type="System.Int32, mscorlib">
-    <value>155</value>
-  </data>
-  <data name="&gt;&gt;fiState.Name" xml:space="preserve">
-    <value>fiState</value>
-  </data>
-  <data name="&gt;&gt;fiState.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.FlightInfo, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;fiState.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;fiState.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="fiGPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 46</value>
-  </data>
-  <data name="fiGPS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="fiGPS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 34</value>
-  </data>
-  <data name="fiGPS.TabIndex" type="System.Int32, mscorlib">
-    <value>154</value>
-  </data>
-  <data name="&gt;&gt;fiGPS.Name" xml:space="preserve">
-    <value>fiGPS</value>
-  </data>
-  <data name="&gt;&gt;fiGPS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.FlightInfo, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;fiGPS.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;fiGPS.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 152</value>
-  </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>457, 20</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>160</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>3.地面站失控保护：当地面站连接并且出现中断，将触发保护机制。</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblinfo2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblinfo2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblinfo2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblinfo2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 83</value>
-  </data>
-  <data name="lblinfo2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblinfo2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>853, 60</value>
-  </data>
-  <data name="lblinfo2.TabIndex" type="System.Int32, mscorlib">
-    <value>159</value>
-  </data>
-  <data name="lblinfo2.Text" xml:space="preserve">
-    <value>2.遥控器失控保护：遥控器失控保护有两种，第一种当遥控器实际油门低于设置的保护油门时触发保护机制；第二种当遥控器支
-                                  持S.BU安全机制时，遥控器丢失信号时触发保护机制；当保护机制设置为“自主模式继续执行任务”时，表
-                                  示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”</value>
-  </data>
-  <data name="&gt;&gt;lblinfo2.Name" xml:space="preserve">
-    <value>lblinfo2</value>
-  </data>
-  <data name="&gt;&gt;lblinfo2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblinfo2.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;lblinfo2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblinfo1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblinfo1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblinfo1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblinfo1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 54</value>
-  </data>
-  <data name="lblinfo1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="lblinfo1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>517, 20</value>
-  </data>
-  <data name="lblinfo1.TabIndex" type="System.Int32, mscorlib">
-    <value>158</value>
-  </data>
-  <data name="lblinfo1.Text" xml:space="preserve">
-    <value>1.低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
-  </data>
-  <data name="&gt;&gt;lblinfo1.Name" xml:space="preserve">
-    <value>lblinfo1</value>
-  </data>
-  <data name="&gt;&gt;lblinfo1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblinfo1.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;lblinfo1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 17</value>
-  </data>
-  <data name="panel1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>874, 100</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>158</value>
-  </data>
-  <data name="panel1.Text" xml:space="preserve">
-    <value>飞行状态</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
@@ -1687,19 +1476,22 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>False</value>
   </data>
   <data name="mavlinkComboFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 94</value>
+    <value>162, 163</value>
   </data>
   <data name="mavlinkComboFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
+    <value>135, 23</value>
   </data>
   <data name="mavlinkComboFS_GCS_ENABLE.TabIndex" type="System.Int32, mscorlib">
     <value>161</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.ToolTip" xml:space="preserve">
+    <value>地面站失控保护：当地面站连接并且出现中断，将触发保护机制。</value>
   </data>
   <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Name" xml:space="preserve">
     <value>mavlinkComboFS_GCS_ENABLE</value>
   </data>
   <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1714,10 +1506,10 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="cb_FS_Level_Enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 55</value>
+    <value>162, 126</value>
   </data>
   <data name="cb_FS_Level_Enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 28</value>
+    <value>135, 28</value>
   </data>
   <data name="cb_FS_Level_Enable.TabIndex" type="System.Int32, mscorlib">
     <value>160</value>
@@ -1726,7 +1518,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>cb_FS_Level_Enable</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1741,7 +1533,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="mavlinkNumericUpDownlow_voltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 57</value>
+    <value>319, 59</value>
   </data>
   <data name="mavlinkNumericUpDownlow_voltage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1753,13 +1545,13 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>153</value>
   </data>
   <data name="mavlinkNumericUpDownlow_voltage.ToolTip" xml:space="preserve">
-    <value>Low Voltage Trigger</value>
+    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Name" xml:space="preserve">
     <value>mavlinkNumericUpDownlow_voltage</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1774,7 +1566,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="mavlinkComboBoxfs_batt_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 57</value>
+    <value>162, 58</value>
   </data>
   <data name="mavlinkComboBoxfs_batt_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 8</value>
@@ -1785,6 +1577,9 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
   <data name="mavlinkComboBoxfs_batt_enable.TabIndex" type="System.Int32, mscorlib">
     <value>158</value>
   </data>
+  <data name="mavlinkComboBoxfs_batt_enable.ToolTip" xml:space="preserve">
+    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
+  </data>
   <data name="mavlinkComboBoxfs_batt_enable.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -1792,7 +1587,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkComboBoxfs_batt_enable</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1807,7 +1602,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="mavlinkComboBox_fs_thr_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 91</value>
+    <value>162, 92</value>
   </data>
   <data name="mavlinkComboBox_fs_thr_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 8</value>
@@ -1819,7 +1614,10 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>151</value>
   </data>
   <data name="mavlinkComboBox_fs_thr_enable.ToolTip" xml:space="preserve">
-    <value>Failsafe mode on low pwm</value>
+    <value>遥控器失控保护：
+       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
+       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
+       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”</value>
   </data>
   <data name="mavlinkComboBox_fs_thr_enable.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1828,7 +1626,7 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>mavlinkComboBox_fs_thr_enable</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6150.20959, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6162.30693, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -1837,13 +1635,13 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>9</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 123</value>
+    <value>37, 17</value>
   </data>
   <data name="panel2.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>874, 162</value>
+    <value>874, 226</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
@@ -1861,42 +1659,6 @@ Arducopter Other: if have gps, RTL, Otherwise Land</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 291</value>
-  </data>
-  <data name="panel3.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>874, 210</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>160</value>
-  </data>
-  <data name="panel3.Text" xml:space="preserve">
-    <value>故障保护措施触发条件</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

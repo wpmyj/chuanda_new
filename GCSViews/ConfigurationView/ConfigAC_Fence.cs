@@ -17,8 +17,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             InitializeComponent();
 
-            label6maxalt.Text += "["+"米"+"]";
-            label7maxrad.Text += "[" + "米" + "]";
+            label6maxalt.Text += "("+"米"+"）";
+            label7maxrad.Text += "(" + "米" + "）";
+            label2rtlalt.Text += "(" + "米" + "）";
         }
 
         public void Activate()

@@ -46,6 +46,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lblCalibrate = new System.Windows.Forms.Label();
             this.panel2 = new BSE.Windows.Forms.Panel();
             this.panel3 = new BSE.Windows.Forms.Panel();
+            this.btnShowCalibrate = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -151,6 +152,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel2.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
             this.panel2.CaptionHeight = 27;
             this.panel2.Controls.Add(this.BUT_calib_accell);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.panel2.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
             this.panel2.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
@@ -178,6 +180,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
             this.panel3.CaptionHeight = 27;
+            this.panel3.Controls.Add(this.btnShowCalibrate);
             this.panel3.Controls.Add(this.panCalibrate);
             this.panel3.Controls.Add(this.BUT_level);
             this.panel3.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
@@ -200,12 +203,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel3.ToolTipTextExpandIconPanelExpanded = null;
             // 
+            // btnShowCalibrate
+            // 
+            this.btnShowCalibrate.BackColor = System.Drawing.SystemColors.Control;
+            this.btnShowCalibrate.BGGradBot = System.Drawing.Color.Transparent;
+            this.btnShowCalibrate.BGGradTop = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnShowCalibrate, "btnShowCalibrate");
+            this.btnShowCalibrate.Name = "btnShowCalibrate";
+            this.btnShowCalibrate.UseVisualStyleBackColor = false;
+            this.btnShowCalibrate.Click += new System.EventHandler(this.btnShowCalibrate_Click);
+            // 
             // ConfigAccelerometerCalibration
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigAccelerometerCalibration";
@@ -239,5 +251,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label lblCalibrate;
         private BSE.Windows.Forms.Panel panel2;
         private BSE.Windows.Forms.Panel panel3;
+        private MyButton btnShowCalibrate;
     }
 }

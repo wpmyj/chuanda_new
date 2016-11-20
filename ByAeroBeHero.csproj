@@ -395,6 +395,12 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigHWBT.Designer.cs">
       <DependentUpon>ConfigHWBT.cs</DependentUpon>
     </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigLogDownload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\ConfigurationView\ConfigLogDownload.Designer.cs">
+      <DependentUpon>ConfigLogDownload.cs</DependentUpon>
+    </Compile>
     <Compile Include="GCSViews\ConfigurationView\ConfigMotorbalance .cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -960,6 +966,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigHWParachute.zh-Hans.resx">
       <DependentUpon>ConfigHWParachute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigLogDownload.ja-JP.resx">
+      <DependentUpon>ConfigLogDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigLogDownload.resx">
+      <DependentUpon>ConfigLogDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigLogDownload.zh-Hans.resx">
+      <DependentUpon>ConfigLogDownload.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigMotorbalance .ja-JP.resx">
       <DependentUpon>ConfigMotorbalance .cs</DependentUpon>

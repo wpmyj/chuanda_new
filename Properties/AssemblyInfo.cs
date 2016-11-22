@@ -7,12 +7,12 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("ByAero BeHero")]
-[assembly: AssemblyDescription("ByAero BeHero")]
+[assembly: AssemblyTitle("博鹰地面站")]
+[assembly: AssemblyDescription("博鹰地面站1.6.1")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ByAero BeHero")]
-[assembly: AssemblyProduct("ByAero BeHero")]
-[assembly: AssemblyCopyright("Copyright © Michael Oborne 2010-2015")]
+[assembly: AssemblyCompany("北京博鹰通航科技有限公")]
+[assembly: AssemblyProduct("博鹰地面站")]
+[assembly: AssemblyCopyright("Copyright © 北京博鹰通航科技有限公司2015-2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -37,8 +37,8 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyFileVersion("1.0.0")]
+[assembly: AssemblyVersion("1.6.*")]
+[assembly: AssemblyFileVersion("1.6.1")]
 [assembly: NeutralResourcesLanguageAttribute("")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]

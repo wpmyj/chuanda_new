@@ -3548,16 +3548,6 @@ namespace ByAeroBeHero.GCSViews
                     this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.Waring;
                 }
 
-
-                if (CurrentState.pump)
-                {
-                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Flying;
-                }
-                else
-                {
-                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Waring;
-                }
-
                 if (MainV2.comPort.MAV.cs.vibez <= 5)
                 {
                     this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Flying;

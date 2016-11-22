@@ -46,11 +46,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new BSE.Windows.Forms.Panel();
-            this.logDownloadMavLink1 = new ByAeroBeHero.Log.LogDownloadMavLink();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // CHK_showconsole
@@ -182,39 +179,6 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // panel2
-            // 
-            this.panel2.AssociatedSplitter = null;
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel2.CaptionHeight = 27;
-            this.panel2.Controls.Add(this.logDownloadMavLink1);
-            this.panel2.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel2.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel2.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel2.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel2.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel2.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel2.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Image = null;
-            this.panel2.Name = "panel2";
-            this.panel2.ToolTipTextCloseIcon = null;
-            this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel2.ToolTipTextExpandIconPanelExpanded = null;
-            // 
-            // logDownloadMavLink1
-            // 
-            resources.ApplyResources(this.logDownloadMavLink1, "logDownloadMavLink1");
-            this.logDownloadMavLink1.Name = "logDownloadMavLink1";
-            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -226,7 +190,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BUT_betaupdate);
             this.Controls.Add(this.linkLabel1);
@@ -236,7 +199,6 @@
             this.Load += new System.EventHandler(this.Help_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,9 +222,7 @@
         private System.Windows.Forms.Label lblframType;
         private System.Windows.Forms.Label label9;
         private Controls.MyButton myBtnDownloadlog;
-        private BSE.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Timer timer1;
-        private Log.LogDownloadMavLink logDownloadMavLink1;
 
     }
 }

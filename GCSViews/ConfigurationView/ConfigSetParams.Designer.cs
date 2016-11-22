@@ -38,9 +38,13 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.NUM_movelength = new System.Windows.Forms.NumericUpDown();
             this.tboxWriteV = new System.Windows.Forms.TextBox();
+            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.lblMoveDistance = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.panelArmCheck = new System.Windows.Forms.Panel();
+            this.ARMING_CHECK = new ByAeroBeHero.Controls.MavlinkComboBox();
             this.lblArmCheck = new System.Windows.Forms.Label();
             this.myButton2 = new ByAeroBeHero.Controls.MyButton();
             this.Btn_ = new ByAeroBeHero.Controls.MyButton();
@@ -52,28 +56,21 @@
             this.CHK_speechwaypoint = new System.Windows.Forms.CheckBox();
             this.CHK_speechotherParams = new System.Windows.Forms.CheckBox();
             this.CHK_speechflightParams = new System.Windows.Forms.CheckBox();
-            this.myButtonSetNo = new ByAeroBeHero.Controls.MyButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblOther = new System.Windows.Forms.Label();
             this.panel1 = new BSE.Windows.Forms.Panel();
+            this.lblVNo = new System.Windows.Forms.Label();
             this.lblVVNo = new System.Windows.Forms.Label();
             this.panel2 = new BSE.Windows.Forms.Panel();
             this.panel3 = new BSE.Windows.Forms.Panel();
-            this.panel4 = new BSE.Windows.Forms.Panel();
-            this.lblVNo = new System.Windows.Forms.Label();
-            this.WP_YAW_BEHAVIOR = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.ARMING_CHECK = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.RTL_ALT_P = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
-            this.RTL_ALT_FINAL = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.lblChangeRow = new System.Windows.Forms.Label();
+            this.SPRAY_WRAP_EN = new ByAeroBeHero.Controls.MavlinkCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
             this.panelArmCheck.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -134,6 +131,48 @@
             this.tboxWriteV.TextChanged += new System.EventHandler(this.tboxWriteV_TextChanged);
             this.tboxWriteV.Resize += new System.EventHandler(this.tboxWriteV_Resize);
             // 
+            // WP_YAW_BEHAVIOR
+            // 
+            this.WP_YAW_BEHAVIOR.BackColor = System.Drawing.Color.Black;
+            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
+            this.WP_YAW_BEHAVIOR.ForeColor = System.Drawing.Color.White;
+            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
+            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
+            this.WP_YAW_BEHAVIOR.ParamName = null;
+            this.WP_YAW_BEHAVIOR.SubControl = null;
+            this.WP_YAW_BEHAVIOR.Tag = "";
+            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
+            // 
+            // RTL_ALT_P
+            // 
+            this.RTL_ALT_P.BackColor = System.Drawing.Color.Black;
+            this.RTL_ALT_P.DecimalPlaces = 1;
+            resources.ApplyResources(this.RTL_ALT_P, "RTL_ALT_P");
+            this.RTL_ALT_P.ForeColor = System.Drawing.Color.White;
+            this.RTL_ALT_P.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.RTL_ALT_P.Max = 1F;
+            this.RTL_ALT_P.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.RTL_ALT_P.Min = 0F;
+            this.RTL_ALT_P.Name = "RTL_ALT_P";
+            this.RTL_ALT_P.ParamName = null;
+            this.toolTip1.SetToolTip(this.RTL_ALT_P, resources.GetString("RTL_ALT_P.ToolTip"));
+            this.toolTip2.SetToolTip(this.RTL_ALT_P, resources.GetString("RTL_ALT_P.ToolTip1"));
+            this.RTL_ALT_P.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.RTL_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // lblMoveDistance
             // 
             resources.ApplyResources(this.lblMoveDistance, "lblMoveDistance");
@@ -148,6 +187,21 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // RTL_ALT_FINAL
+            // 
+            this.RTL_ALT_FINAL.DecimalPlaces = 1;
+            resources.ApplyResources(this.RTL_ALT_FINAL, "RTL_ALT_FINAL");
+            this.RTL_ALT_FINAL.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.RTL_ALT_FINAL.Max = 1F;
+            this.RTL_ALT_FINAL.Min = 0F;
+            this.RTL_ALT_FINAL.Name = "RTL_ALT_FINAL";
+            this.RTL_ALT_FINAL.ParamName = null;
+            this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            // 
             // panelArmCheck
             // 
             this.panelArmCheck.BackColor = System.Drawing.Color.Transparent;
@@ -157,6 +211,18 @@
             this.panelArmCheck.Controls.Add(this.lblArmCheck);
             resources.ApplyResources(this.panelArmCheck, "panelArmCheck");
             this.panelArmCheck.Name = "panelArmCheck";
+            // 
+            // ARMING_CHECK
+            // 
+            this.ARMING_CHECK.BackColor = System.Drawing.Color.Black;
+            this.ARMING_CHECK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.ARMING_CHECK, "ARMING_CHECK");
+            this.ARMING_CHECK.ForeColor = System.Drawing.Color.White;
+            this.ARMING_CHECK.FormattingEnabled = true;
+            this.ARMING_CHECK.Name = "ARMING_CHECK";
+            this.ARMING_CHECK.ParamName = null;
+            this.ARMING_CHECK.SubControl = null;
+            this.ARMING_CHECK.Tag = "";
             // 
             // lblArmCheck
             // 
@@ -232,26 +298,6 @@
             this.CHK_speechflightParams.UseVisualStyleBackColor = false;
             this.CHK_speechflightParams.CheckedChanged += new System.EventHandler(this.CHK_speechflightParams_CheckedChanged);
             // 
-            // myButtonSetNo
-            // 
-            this.myButtonSetNo.BackColor = System.Drawing.SystemColors.Control;
-            this.myButtonSetNo.BGGradBot = System.Drawing.Color.Transparent;
-            this.myButtonSetNo.BGGradTop = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.myButtonSetNo, "myButtonSetNo");
-            this.myButtonSetNo.Name = "myButtonSetNo";
-            this.myButtonSetNo.UseVisualStyleBackColor = false;
-            this.myButtonSetNo.Click += new System.EventHandler(this.myButtonSetNo_Click);
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // lblOther
-            // 
-            resources.ApplyResources(this.lblOther, "lblOther");
-            this.lblOther.Name = "lblOther";
-            // 
             // panel1
             // 
             this.panel1.AssociatedSplitter = null;
@@ -259,10 +305,11 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panel1.CaptionHeight = 27;
+            this.panel1.Controls.Add(this.SPRAY_WRAP_EN);
+            this.panel1.Controls.Add(this.lblChangeRow);
             this.panel1.Controls.Add(this.lblVNo);
             this.panel1.Controls.Add(this.tboxWriteV);
             this.panel1.Controls.Add(this.lblVVNo);
-            this.panel1.Controls.Add(this.panelArmCheck);
             this.panel1.Controls.Add(this.lbl_RTL_ALT);
             this.panel1.Controls.Add(this.myButton2);
             this.panel1.Controls.Add(this.RTL_ALT_P);
@@ -286,6 +333,11 @@
             this.panel1.ToolTipTextCloseIcon = null;
             this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel1.ToolTipTextExpandIconPanelExpanded = null;
+            // 
+            // lblVNo
+            // 
+            resources.ApplyResources(this.lblVNo, "lblVNo");
+            this.lblVNo.Name = "lblVNo";
             // 
             // lblVVNo
             // 
@@ -355,123 +407,35 @@
             this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel3.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // panel4
+            // lblChangeRow
             // 
-            this.panel4.AssociatedSplitter = null;
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel4.CaptionHeight = 27;
-            this.panel4.Controls.Add(this.myButtonSetNo);
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.lblOther);
-            this.panel4.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel4.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel4.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel4.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel4.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel4.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel4.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel4.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel4.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel4.Image = null;
-            this.panel4.Name = "panel4";
-            this.panel4.ToolTipTextCloseIcon = null;
-            this.panel4.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel4.ToolTipTextExpandIconPanelExpanded = null;
+            resources.ApplyResources(this.lblChangeRow, "lblChangeRow");
+            this.lblChangeRow.Name = "lblChangeRow";
             // 
-            // lblVNo
+            // SPRAY_WRAP_EN
             // 
-            resources.ApplyResources(this.lblVNo, "lblVNo");
-            this.lblVNo.Name = "lblVNo";
-            // 
-            // WP_YAW_BEHAVIOR
-            // 
-            this.WP_YAW_BEHAVIOR.BackColor = System.Drawing.Color.Black;
-            this.WP_YAW_BEHAVIOR.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.WP_YAW_BEHAVIOR, "WP_YAW_BEHAVIOR");
-            this.WP_YAW_BEHAVIOR.ForeColor = System.Drawing.Color.White;
-            this.WP_YAW_BEHAVIOR.FormattingEnabled = true;
-            this.WP_YAW_BEHAVIOR.Name = "WP_YAW_BEHAVIOR";
-            this.WP_YAW_BEHAVIOR.ParamName = null;
-            this.WP_YAW_BEHAVIOR.SubControl = null;
-            this.WP_YAW_BEHAVIOR.Tag = "";
-            this.toolTip1.SetToolTip(this.WP_YAW_BEHAVIOR, resources.GetString("WP_YAW_BEHAVIOR.ToolTip"));
-            // 
-            // ARMING_CHECK
-            // 
-            this.ARMING_CHECK.BackColor = System.Drawing.Color.Black;
-            this.ARMING_CHECK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.ARMING_CHECK, "ARMING_CHECK");
-            this.ARMING_CHECK.ForeColor = System.Drawing.Color.White;
-            this.ARMING_CHECK.FormattingEnabled = true;
-            this.ARMING_CHECK.Name = "ARMING_CHECK";
-            this.ARMING_CHECK.ParamName = null;
-            this.ARMING_CHECK.SubControl = null;
-            this.ARMING_CHECK.Tag = "";
-            // 
-            // RTL_ALT_P
-            // 
-            this.RTL_ALT_P.BackColor = System.Drawing.Color.Black;
-            this.RTL_ALT_P.DecimalPlaces = 1;
-            resources.ApplyResources(this.RTL_ALT_P, "RTL_ALT_P");
-            this.RTL_ALT_P.ForeColor = System.Drawing.Color.White;
-            this.RTL_ALT_P.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.RTL_ALT_P.Max = 1F;
-            this.RTL_ALT_P.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.RTL_ALT_P.Min = 0F;
-            this.RTL_ALT_P.Name = "RTL_ALT_P";
-            this.RTL_ALT_P.ParamName = null;
-            this.toolTip1.SetToolTip(this.RTL_ALT_P, resources.GetString("RTL_ALT_P.ToolTip"));
-            this.toolTip2.SetToolTip(this.RTL_ALT_P, resources.GetString("RTL_ALT_P.ToolTip1"));
-            this.RTL_ALT_P.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.RTL_ALT_P.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
-            // 
-            // RTL_ALT_FINAL
-            // 
-            this.RTL_ALT_FINAL.DecimalPlaces = 1;
-            resources.ApplyResources(this.RTL_ALT_FINAL, "RTL_ALT_FINAL");
-            this.RTL_ALT_FINAL.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.RTL_ALT_FINAL.Max = 1F;
-            this.RTL_ALT_FINAL.Min = 0F;
-            this.RTL_ALT_FINAL.Name = "RTL_ALT_FINAL";
-            this.RTL_ALT_FINAL.ParamName = null;
-            this.RTL_ALT_FINAL.ValueUpdated += new System.EventHandler(this.numeric_ValueUpdated);
+            resources.ApplyResources(this.SPRAY_WRAP_EN, "SPRAY_WRAP_EN");
+            this.SPRAY_WRAP_EN.Name = "SPRAY_WRAP_EN";
+            this.SPRAY_WRAP_EN.OffValue = 0D;
+            this.SPRAY_WRAP_EN.OnValue = 1D;
+            this.SPRAY_WRAP_EN.ParamName = null;
+            this.SPRAY_WRAP_EN.UseVisualStyleBackColor = true;
             // 
             // ConfigSetParams
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelArmCheck);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigSetParams";
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).EndInit();
             this.panelArmCheck.ResumeLayout(false);
             this.panelArmCheck.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -480,10 +444,6 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_FINAL)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -512,18 +472,16 @@
         private System.Windows.Forms.CheckBox CHK_speechotherParams;
         private System.Windows.Forms.Label lblAllMove;
         private System.Windows.Forms.CheckBox chb_AllMove;
-        private Controls.MyButton myButtonSetNo;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblOther;
         private System.Windows.Forms.Panel panelArmCheck;
         private Controls.MavlinkComboBox ARMING_CHECK;
         private System.Windows.Forms.Label lblArmCheck;
         private BSE.Windows.Forms.Panel panel1;
         private BSE.Windows.Forms.Panel panel2;
         private BSE.Windows.Forms.Panel panel3;
-        private BSE.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblVVNo;
         private System.Windows.Forms.TextBox tboxWriteV;
         private System.Windows.Forms.Label lblVNo;
+        private System.Windows.Forms.Label lblChangeRow;
+        private Controls.MavlinkCheckBox SPRAY_WRAP_EN;
     }
 }

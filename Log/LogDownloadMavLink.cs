@@ -33,6 +33,7 @@ namespace ByAeroBeHero.Log
         string logfile = "";
         int receivedbytes = 0;
         int receibedbytestotal = 0;
+        string receiveStatu = string.Empty;
 
         //List<Model> orientation = new List<Model>();
 
@@ -70,7 +71,7 @@ namespace ByAeroBeHero.Log
         public void ShowLog(bool ienable) 
         {
             CHK_logs.ForeColor = TXT_seriallog.ForeColor = Color.White;
-            CHK_logs.BackColor = TXT_seriallog.BackColor = Color.Black;
+            lblNInfo.ForeColor = CHK_logs.BackColor = TXT_seriallog.BackColor = Color.Black;
             BUT_DLall.BackgroundImage = BUT_DLthese.BackgroundImage = BUT_clearlogs.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
 
             if (ienable)
@@ -138,6 +139,7 @@ namespace ByAeroBeHero.Log
             }
         }
 
+        private int SecondReceiveByte = 0;
         void updateDisplay()
         {
             if (this.IsDisposed)
@@ -147,17 +149,30 @@ namespace ByAeroBeHero.Log
             {
                 this.BeginInvoke((System.Windows.Forms.MethodInvoker)delegate()
                 {
+                    lblNInfo.BackColor = Color.Transparent;
                     try
                     {
                         this.label1.ForeColor = Color.Black; this.BackColor = Color.Transparent;
 
                         TXT_status.Text = status.ToString() + " " + receivedbytes + "----" + receibedbytestotal + "---" + Math.Floor((double)(receivedbytes / receibedbytestotal) * 100).ToString();
-                        
-                        if ((int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100) > 95 || status.ToString() =="完成")
-                            progressBar1.Value = 100;
-                        else
-                            progressBar1.Value = (int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100);
 
+                        if ((int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100) > 90 || status.ToString() == "完成")
+                        {
+                            SecondReceiveByte = receibedbytestotal;
+                            progressBar1.Value = 100;
+                        }
+                        else 
+                        {
+                            progressBar1.Value = (int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100);
+                        }
+                        if (receiveStatu == "1")
+                        {
+                            lblNInfo.Text = "下载数据..";
+                        }
+                        else if (receiveStatu == "2") 
+                        {
+                            lblNInfo.Text = "生成日志..";
+                        }
                         this.label1.Text = progressBar1.Value + "%";
 
                     }
@@ -274,6 +289,7 @@ namespace ByAeroBeHero.Log
         void comPort_Progress(int progress, string status)
         {
             receivedbytes = progress;
+            receiveStatu = status;
             updateDisplay();
         }
 
@@ -343,6 +359,7 @@ namespace ByAeroBeHero.Log
 
                 for (int i = 0; i < CHK_logs.CheckedItems.Count; ++i)
                 {
+                    SecondReceiveByte = 0;
                     int a = (int)CHK_logs.CheckedItems[i];
 
                     currentlog = a;

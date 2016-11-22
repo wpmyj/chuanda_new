@@ -56,6 +56,8 @@ namespace ByAeroBeHero.Controls
         float _ch6out = 0;
         float _ch8out = 0;
         float _frame = 0;
+        float _gpshdop = 0;
+        int _satcount = 0;
 
         [System.ComponentModel.Browsable(true)]
         public Color numberColor
@@ -252,6 +254,34 @@ namespace ByAeroBeHero.Controls
             }
         }
 
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public int satcount
+        {
+            get
+            {
+                return _satcount;
+            }
+            set
+            {
+                _satcount = value;
+                this.Invalidate();
+            }
+        }
+
+        [System.ComponentModel.Browsable(true), System.ComponentModel.Category("Values")]
+        public float gpshdop
+        {
+            get
+            {
+                return _gpshdop;
+            }
+            set
+            {
+                _gpshdop = value;
+                this.Invalidate();
+            }
+        }
+
         bool statuslast = false;
         DateTime armedtimer = DateTime.MinValue;
 
@@ -352,7 +382,7 @@ namespace ByAeroBeHero.Controls
                 gps = (HUDT.GPS5);
             }
 
-            return gps;
+            return gps + "-" + satcount.ToString() + "-" + gpshdop.ToString(); ;
         }
 
         private string strFiState()

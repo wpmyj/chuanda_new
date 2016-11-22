@@ -611,15 +611,28 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         }
         #endregion
 
+        private int loop = 0;
         private void btnTestSAll_Click(object sender, EventArgs e)
         {
             try
             {
-                for(int i =1 ;i<=8;i++)
+                if ((int)(float)MainV2.comPort.MAV.param["COPTER_TYPE"] == 1) 
+                {
+                    loop = 4;
+                }
+                else if ((int)(float)MainV2.comPort.MAV.param["COPTER_TYPE"] == 2)
+                {
+                    loop = 6;
+                }
+                else 
+                {
+                    loop = 8;
+                }
+                for (int i = 1; i <= loop; i++)
                 {
                     MainV2.comPort.doMotorTest(i, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
                         (int)NUM_thr_percent.Value, (int)NUM_duration.Value);
-                    Thread.Sleep((int)((NUM_duration.Value+1) * 1000));
+                    Thread.Sleep((int)((NUM_duration.Value) * 1000));
                 }
             }
             catch

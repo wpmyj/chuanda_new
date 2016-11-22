@@ -3036,7 +3036,7 @@ Please check the following
                         {
                             if (Progress != null)
                             {
-                                Progress((int)req.ofs, "");
+                                Progress((int)req.ofs, "1");
                             }
 
                             //Console.WriteLine("log dl bps: " + bps.ToString());
@@ -3124,7 +3124,7 @@ Please check the following
                         {
                             if (Progress != null)
                             {
-                                Progress((int)req.ofs, "");
+                                Progress((int)req.ofs, "2");
                             }
 
                             //Console.WriteLine("log dl bps: " + bps.ToString());

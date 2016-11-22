@@ -183,7 +183,7 @@ namespace ByAeroBeHero
         public static bool gyrohealth = false;
         public static bool receiverhealth = false;
         public static bool lidarhealth = false;
-        public static bool pump = false;
+        public static int pump = 0;
         public static int breakpointstatus = 0;
         public static int breakpointreason = 0;
         public static double latbreak = 0;
@@ -1186,14 +1186,7 @@ namespace ByAeroBeHero
                             dosage = mem.level;
                         }
 
-                        if (mem.pump == 1)
-                        {
-                            pump = true;
-                        }
-                        else
-                        {
-                            pump = false;
-                        }
+                        pump = mem.pump;
 
                         string strfirmware = System.Text.Encoding.ASCII.GetString(mem.firmware_version);
                         int ifirmware = strfirmware.IndexOf('\0');

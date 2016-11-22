@@ -41,7 +41,7 @@ using System.Security.Permissions;
     [assembly: AssemblyProduct("GeoUtility Library")]
     [assembly: AssemblyConfiguration("Retail")]
     [assembly: AssemblyCompany("Steffen Habermehl")]
-    [assembly: AssemblyCopyright("Copyright © 2008-2010 (geoutility@freenet.de)")]
+    [assembly: AssemblyCopyright("Copyright © 2008-2010")]
     [assembly: AssemblyTrademark("GeoUtility Library")]
     [assembly: AssemblyCulture("")]
 #endif

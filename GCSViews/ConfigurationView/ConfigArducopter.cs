@@ -320,7 +320,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 MainV2.comPort.setParam("RATE_YAW_I", RATE_YAW_I1);
                 MainV2.comPort.setParam("RATE_RLL_I", RATE_RLL_I1);
                 MainV2.comPort.setParam("RATE_PIT_I", RATE_PIT_I1);
-                MainV2.comPort.setParam("RATE_YAW_D", RATE_YAW_D1);
+                //MainV2.comPort.setParam("RATE_YAW_D", RATE_YAW_D1);
                 MainV2.comPort.setParam("RATE_RLL_D", RATE_RLL_D1);
                 MainV2.comPort.setParam("RATE_PIT_D", RATE_PIT_D1);
                 MainV2.comPort.setParam("RATE_YAW_IMAX", RATE_YAW_IMAX1);
@@ -390,13 +390,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             RATE_RLL_I_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_I"].ToString()) - 0.1) / 14 * 10000;
             RATE_PIT_I_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_I"].ToString()) - 0.1) / 14 * 10000;
 
-            RATE_YAW_D_1.Value = 0;
+            RATE_YAW_D_1.Value = 50;
             RATE_RLL_D_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_D"].ToString()) - 0.001) / 6 * 100000;
             RATE_PIT_D_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_D"].ToString()) - 0.001) / 6 * 100000;
 
             RATE_YAW_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_YAW_IMAX"].ToString()))/20;
-            RATE_RLL_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_IMAX"].ToString()))/20;
-            RATE_PIT_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_IMAX"].ToString()))/20;
+            RATE_RLL_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_RLL_IMAX"].ToString()) - 500)/30;
+            RATE_PIT_IMAX_1.Value = (decimal)(float.Parse(MainV2.comPort.MAV.param["RATE_PIT_IMAX"].ToString()) - 500)/30;
         
         }
 
@@ -458,13 +458,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             RATE_RLL_I1 = (float)RATE_RLL_I_1.Value * 14 / 10000 + (float)0.1;
             RATE_PIT_I1 = (float)RATE_PIT_I_1.Value * 14 / 10000 + (float)0.1;
 
-            RATE_YAW_D1 = 0;
+            RATE_YAW_D1 = 50;
             RATE_RLL_D1 = (float)RATE_RLL_D_1.Value * 6 / 100000 + (float)0.001;
             RATE_PIT_D1 = (float)RATE_PIT_D_1.Value * 6 / 100000 + (float)0.001;
 
             RATE_YAW_IMAX1 = (float)RATE_YAW_IMAX_1.Value * 20 ;
-            RATE_RLL_IMAX1 = (float)RATE_RLL_IMAX_1.Value * 20;
-            RATE_PIT_IMAX1 = (float)RATE_PIT_IMAX_1.Value * 20;
+            RATE_RLL_IMAX1 = (float)RATE_RLL_IMAX_1.Value * 30 + 500;
+            RATE_PIT_IMAX1 = (float)RATE_PIT_IMAX_1.Value * 30 + 500;
         }
 
         private void noticeInfo() 

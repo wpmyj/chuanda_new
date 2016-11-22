@@ -224,14 +224,12 @@ namespace ByAeroBeHero.GCSViews
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblLD = new System.Windows.Forms.Label();
             this.lblvibez = new System.Windows.Forms.Label();
-            this.lblPump = new System.Windows.Forms.Label();
             this.pictureBoxLD = new System.Windows.Forms.PictureBox();
             this.lblReceiver = new System.Windows.Forms.Label();
             this.lblGyro = new System.Windows.Forms.Label();
             this.lblCompass = new System.Windows.Forms.Label();
             this.pictureBoxGPS = new System.Windows.Forms.PictureBox();
             this.lblAccel = new System.Windows.Forms.Label();
-            this.pictureBoxPump = new System.Windows.Forms.PictureBox();
             this.lblGPS = new System.Windows.Forms.Label();
             this.pictureBoxLevel = new System.Windows.Forms.PictureBox();
             this.lblLevel = new System.Windows.Forms.Label();
@@ -369,7 +367,6 @@ namespace ByAeroBeHero.GCSViews
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).BeginInit();
@@ -1910,7 +1907,6 @@ namespace ByAeroBeHero.GCSViews
             // 
             resources.ApplyResources(this.lblHorizontalError, "lblHorizontalError");
             this.lblHorizontalError.BackColor = System.Drawing.Color.Black;
-            this.lblHorizontalError.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "gpshdop", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "0.0"));
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
             // 
@@ -1939,7 +1935,6 @@ namespace ByAeroBeHero.GCSViews
             // 
             resources.ApplyResources(this.lblSataCount, "lblSataCount");
             this.lblSataCount.BackColor = System.Drawing.Color.Black;
-            this.lblSataCount.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "satcount", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "0"));
             this.lblSataCount.ForeColor = System.Drawing.Color.White;
             this.lblSataCount.Name = "lblSataCount";
             // 
@@ -1960,22 +1955,20 @@ namespace ByAeroBeHero.GCSViews
             // tableLayoutPanel6
             // 
             resources.ApplyResources(this.tableLayoutPanel6, "tableLayoutPanel6");
-            this.tableLayoutPanel6.Controls.Add(this.lblLD, 8, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lblvibez, 7, 1);
-            this.tableLayoutPanel6.Controls.Add(this.lblPump, 6, 1);
-            this.tableLayoutPanel6.Controls.Add(this.pictureBoxLD, 8, 0);
+            this.tableLayoutPanel6.Controls.Add(this.lblLD, 7, 1);
+            this.tableLayoutPanel6.Controls.Add(this.lblvibez, 6, 1);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxLD, 7, 0);
             this.tableLayoutPanel6.Controls.Add(this.lblReceiver, 5, 1);
             this.tableLayoutPanel6.Controls.Add(this.lblGyro, 4, 1);
             this.tableLayoutPanel6.Controls.Add(this.lblCompass, 3, 1);
             this.tableLayoutPanel6.Controls.Add(this.pictureBoxGPS, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.lblAccel, 2, 1);
-            this.tableLayoutPanel6.Controls.Add(this.pictureBoxPump, 6, 0);
             this.tableLayoutPanel6.Controls.Add(this.lblGPS, 0, 1);
             this.tableLayoutPanel6.Controls.Add(this.pictureBoxLevel, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.lblLevel, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.pictureBoxAccel, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.pictureBoxReceiver, 5, 0);
-            this.tableLayoutPanel6.Controls.Add(this.pictureBoxvibez, 7, 0);
+            this.tableLayoutPanel6.Controls.Add(this.pictureBoxvibez, 6, 0);
             this.tableLayoutPanel6.Controls.Add(this.pictureBoxGyro, 4, 0);
             this.tableLayoutPanel6.Controls.Add(this.pictureBoxCompass, 3, 0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -1993,13 +1986,6 @@ namespace ByAeroBeHero.GCSViews
             this.lblvibez.BackColor = System.Drawing.Color.Transparent;
             this.lblvibez.ForeColor = System.Drawing.Color.Black;
             this.lblvibez.Name = "lblvibez";
-            // 
-            // lblPump
-            // 
-            resources.ApplyResources(this.lblPump, "lblPump");
-            this.lblPump.BackColor = System.Drawing.Color.Transparent;
-            this.lblPump.ForeColor = System.Drawing.Color.Black;
-            this.lblPump.Name = "lblPump";
             // 
             // pictureBoxLD
             // 
@@ -2040,12 +2026,6 @@ namespace ByAeroBeHero.GCSViews
             this.lblAccel.BackColor = System.Drawing.Color.Transparent;
             this.lblAccel.ForeColor = System.Drawing.Color.Black;
             this.lblAccel.Name = "lblAccel";
-            // 
-            // pictureBoxPump
-            // 
-            resources.ApplyResources(this.pictureBoxPump, "pictureBoxPump");
-            this.pictureBoxPump.Name = "pictureBoxPump";
-            this.pictureBoxPump.TabStop = false;
             // 
             // lblGPS
             // 
@@ -2139,7 +2119,7 @@ namespace ByAeroBeHero.GCSViews
             this.MainMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.MainMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.MainMap.ShowTileGridLines = false;
-            this.MainMap.Zoom = 5D;
+            this.MainMap.Zoom = 20D;
             this.MainMap.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMap_Paint);
             // 
             // contextMenuStrip1
@@ -2810,7 +2790,6 @@ namespace ByAeroBeHero.GCSViews
             this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPump)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReceiver)).EndInit();
@@ -3020,14 +2999,12 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label lblLD;
         private System.Windows.Forms.Label lblvibez;
-        private System.Windows.Forms.Label lblPump;
         private System.Windows.Forms.PictureBox pictureBoxLD;
         private System.Windows.Forms.Label lblReceiver;
         private System.Windows.Forms.Label lblGyro;
         private System.Windows.Forms.Label lblCompass;
         private System.Windows.Forms.PictureBox pictureBoxGPS;
         private System.Windows.Forms.Label lblAccel;
-        private System.Windows.Forms.PictureBox pictureBoxPump;
         private System.Windows.Forms.Label lblGPS;
         private System.Windows.Forms.PictureBox pictureBoxLevel;
         private System.Windows.Forms.Label lblLevel;

@@ -2371,6 +2371,8 @@
             this.fiGPS.ch8out = 0F;
             this.fiGPS.current = 0F;
             this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.bindingSourceHud, "gpsstatus", true));
+            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("satcount", this.bindingSourceHud, "satcount", true));
+            this.fiGPS.DataBindings.Add(new System.Windows.Forms.Binding("gpshdop", this.bindingSourceHud, "gpshdop", true));
             this.fiGPS.desc = "GPS|";
             resources.ApplyResources(this.fiGPS, "fiGPS");
             this.fiGPS.failsafe = false;

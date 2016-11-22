@@ -67,6 +67,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     //    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
                     //MainV2.comPort.MAV.param);
 
+                    SPRAY_WRAP_EN.setup(1, 0, "SPRAY_WRAP_EN", MainV2.comPort.MAV.param);
 
                     //语音播报
                     SetCheckboxFromConfig("speechenable", CHK_enablespeech);
@@ -324,19 +325,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void chb_AllMove_CheckedChanged(object sender, EventArgs e)
         {
             MainV2.config["CHB_AllMove"] = chb_AllMove.Checked;
-        }
-
-        private void myButtonSetNo_Click(object sender, EventArgs e)
-        {
-            if (this.textBox1.Text == "Byaero.com123")
-            {
-                panelArmCheck.Visible = true;
-            }
-            else
-            {
-                panelArmCheck.Visible = false;
-            }
-
         }
 
         private void tBoxVNo_TextChanged(object sender, EventArgs e)

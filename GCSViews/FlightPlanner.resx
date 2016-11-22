@@ -217,6 +217,9 @@
   <data name="Waypno.HeaderText" xml:space="preserve">
     <value>航点编号</value>
   </data>
+  <data name="Waypno.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <metadata name="Delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -308,7 +311,7 @@
     <value>60</value>
   </data>
   <data name="Commands.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1033, 754</value>
+    <value>1014, 754</value>
   </data>
   <data name="Commands.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -837,7 +840,7 @@
     <value>NoControl</value>
   </data>
   <data name="splitter1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1035, 0</value>
+    <value>1016, 0</value>
   </data>
   <data name="splitter1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1, 783</value>
@@ -1707,7 +1710,7 @@
     <value>27, 27</value>
   </data>
   <data name="panelWaypoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1035, 783</value>
+    <value>1016, 783</value>
   </data>
   <data name="panelWaypoints.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -4077,13 +4080,13 @@
     <value>0, 0</value>
   </data>
   <data name="lblHorizontalError.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 15</value>
+    <value>15, 15</value>
   </data>
   <data name="lblHorizontalError.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
   </data>
   <data name="lblHorizontalError.Text" xml:space="preserve">
-    <value>0.0</value>
+    <value>0</value>
   </data>
   <data name="lblHorizontalError.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -4275,16 +4278,16 @@
     <value>NoControl</value>
   </data>
   <data name="lblStaCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 166</value>
+    <value>15, 169</value>
   </data>
   <data name="lblStaCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 15</value>
+    <value>90, 15</value>
   </data>
   <data name="lblStaCount.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
   <data name="lblStaCount.Text" xml:space="preserve">
-    <value>卫星数量：</value>
+    <value>水泵开度%：</value>
   </data>
   <data name="&gt;&gt;lblStaCount.Name" xml:space="preserve">
     <value>lblStaCount</value>
@@ -4302,7 +4305,7 @@
     <value>Top</value>
   </data>
   <data name="tableLayoutPanel6.ColumnCount" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="lblLD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4353,7 +4356,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblvibez.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 34</value>
+    <value>356, 34</value>
   </data>
   <data name="lblvibez.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
@@ -4375,42 +4378,6 @@
   </data>
   <data name="&gt;&gt;lblvibez.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="lblPump.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="lblPump.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblPump.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 6.60000038pt</value>
-  </data>
-  <data name="lblPump.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblPump.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 34</value>
-  </data>
-  <data name="lblPump.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
-  </data>
-  <data name="lblPump.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="lblPump.Text" xml:space="preserve">
-    <value>水泵</value>
-  </data>
-  <data name="&gt;&gt;lblPump.Name" xml:space="preserve">
-    <value>lblPump</value>
-  </data>
-  <data name="&gt;&gt;lblPump.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPump.Parent" xml:space="preserve">
-    <value>tableLayoutPanel6</value>
-  </data>
-  <data name="&gt;&gt;lblPump.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="pictureBoxLD.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4440,7 +4407,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxLD.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="lblReceiver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4455,7 +4422,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblReceiver.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 34</value>
+    <value>293, 34</value>
   </data>
   <data name="lblReceiver.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
@@ -4476,7 +4443,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;lblReceiver.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="lblGyro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4491,7 +4458,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblGyro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>204, 34</value>
+    <value>236, 34</value>
   </data>
   <data name="lblGyro.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
@@ -4512,7 +4479,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;lblGyro.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="lblCompass.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4527,7 +4494,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 31</value>
+    <value>177, 31</value>
   </data>
   <data name="lblCompass.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 17</value>
@@ -4548,7 +4515,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;lblCompass.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="pictureBoxGPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4557,7 +4524,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxGPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 3</value>
+    <value>14, 3</value>
   </data>
   <data name="pictureBoxGPS.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4578,7 +4545,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxGPS.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="lblAccel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4593,7 +4560,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblAccel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 31</value>
+    <value>120, 31</value>
   </data>
   <data name="lblAccel.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 17</value>
@@ -4614,37 +4581,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;lblAccel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="pictureBoxPump.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="pictureBoxPump.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBoxPump.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 3</value>
-  </data>
-  <data name="pictureBoxPump.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 24</value>
-  </data>
-  <data name="pictureBoxPump.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBoxPump.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxPump.Name" xml:space="preserve">
-    <value>pictureBoxPump</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxPump.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxPump.Parent" xml:space="preserve">
-    <value>tableLayoutPanel6</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxPump.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="lblGPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4659,7 +4596,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblGPS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 31</value>
+    <value>13, 31</value>
   </data>
   <data name="lblGPS.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 17</value>
@@ -4680,7 +4617,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;lblGPS.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="pictureBoxLevel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4689,7 +4626,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 3</value>
+    <value>71, 3</value>
   </data>
   <data name="pictureBoxLevel.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4710,7 +4647,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxLevel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="lblLevel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4725,7 +4662,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>59, 31</value>
+    <value>69, 31</value>
   </data>
   <data name="lblLevel.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 17</value>
@@ -4746,7 +4683,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;lblLevel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="pictureBoxAccel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4755,7 +4692,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxAccel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 3</value>
+    <value>128, 3</value>
   </data>
   <data name="pictureBoxAccel.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4776,7 +4713,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxAccel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="pictureBoxReceiver.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4785,7 +4722,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxReceiver.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 3</value>
+    <value>299, 3</value>
   </data>
   <data name="pictureBoxReceiver.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4806,7 +4743,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxReceiver.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
   </data>
   <data name="pictureBoxvibez.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4815,7 +4752,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxvibez.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 3</value>
+    <value>356, 3</value>
   </data>
   <data name="pictureBoxvibez.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4836,7 +4773,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxvibez.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="pictureBoxGyro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4845,7 +4782,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxGyro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 3</value>
+    <value>242, 3</value>
   </data>
   <data name="pictureBoxGyro.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4866,7 +4803,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxGyro.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="pictureBoxCompass.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -4875,7 +4812,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBoxCompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 3</value>
+    <value>185, 3</value>
   </data>
   <data name="pictureBoxCompass.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 24</value>
@@ -4896,7 +4833,7 @@
     <value>tableLayoutPanel6</value>
   </data>
   <data name="&gt;&gt;pictureBoxCompass.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>15</value>
   </data>
   <data name="tableLayoutPanel6.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 40</value>
@@ -4923,7 +4860,7 @@
     <value>5</value>
   </data>
   <data name="tableLayoutPanel6.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblLD" Row="1" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblvibez" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblPump" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxLD" Row="0" RowSpan="1" Column="8" ColumnSpan="1" /&gt;&lt;Control Name="lblReceiver" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblGyro" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompass" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGPS" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblAccel" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxPump" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="lblGPS" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxLevel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLevel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxAccel" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxReceiver" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxvibez" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGyro" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxCompass" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111,Percent,11.11111" /&gt;&lt;Rows Styles="Percent,60,Percent,40" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="lblLD" Row="1" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblvibez" Row="1" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxLD" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="lblReceiver" Row="1" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="lblGyro" Row="1" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="lblCompass" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGPS" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblAccel" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="lblGPS" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxLevel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblLevel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxAccel" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxReceiver" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxvibez" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxGyro" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="pictureBoxCompass" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Percent,12.5,Absolute,20" /&gt;&lt;Rows Styles="Percent,60,Percent,40" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="lblHorizontal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -4935,16 +4872,16 @@
     <value>NoControl</value>
   </data>
   <data name="lblHorizontal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 166</value>
+    <value>234, 168</value>
   </data>
   <data name="lblHorizontal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 15</value>
+    <value>75, 15</value>
   </data>
   <data name="lblHorizontal.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
   </data>
   <data name="lblHorizontal.Text" xml:space="preserve">
-    <value>GPS水平精度：</value>
+    <value>油门量%：</value>
   </data>
   <data name="&gt;&gt;lblHorizontal.Name" xml:space="preserve">
     <value>lblHorizontal</value>
@@ -5025,7 +4962,7 @@
     <value>8</value>
   </data>
   <data name="ebsPanelWarning.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 559</value>
+    <value>33, 562</value>
   </data>
   <data name="ebsPanelWarning.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>

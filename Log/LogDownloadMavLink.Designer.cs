@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnLoadLog = new ByAeroBeHero.Controls.MyButton();
+            this.lblNInfo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,6 +142,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblNInfo);
             this.panel1.Controls.Add(this.BtnLoadLog);
             this.panel1.Controls.Add(this.BUT_DLall);
             this.panel1.Controls.Add(this.label1);
@@ -162,6 +164,12 @@
             this.BtnLoadLog.Name = "BtnLoadLog";
             this.BtnLoadLog.UseVisualStyleBackColor = false;
             this.BtnLoadLog.Click += new System.EventHandler(this.BtnLoadLog_Click);
+            // 
+            // lblNInfo
+            // 
+            resources.ApplyResources(this.lblNInfo, "lblNInfo");
+            this.lblNInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblNInfo.Name = "lblNInfo";
             // 
             // LogDownloadMavLink
             // 
@@ -197,5 +205,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private Controls.MyButton BtnLoadLog;
+        private System.Windows.Forms.Label lblNInfo;
     }
 }

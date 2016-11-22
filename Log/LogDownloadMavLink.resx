@@ -157,7 +157,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;TXT_seriallog.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="BUT_DLall.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -200,7 +200,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BUT_DLall.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="BUT_DLthese.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -243,7 +243,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BUT_DLthese.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="BUT_clearlogs.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -283,7 +283,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BUT_clearlogs.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="CHK_logs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -316,7 +316,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;CHK_logs.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="TXT_status.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -346,7 +346,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;TXT_status.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="BUT_redokml.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 376</value>
@@ -463,10 +463,10 @@
     <value>Bottom</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 294</value>
+    <value>289, 294</value>
   </data>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>640, 23</value>
+    <value>566, 23</value>
   </data>
   <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -481,7 +481,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -514,7 +514,34 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="lblNInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="lblNInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 305</value>
+  </data>
+  <data name="lblNInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="lblNInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;lblNInfo.Name" xml:space="preserve">
+    <value>lblNInfo</value>
+  </data>
+  <data name="&gt;&gt;lblNInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNInfo.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lblNInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="BtnLoadLog.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -551,7 +578,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BtnLoadLog.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

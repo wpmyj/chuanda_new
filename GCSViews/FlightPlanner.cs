@@ -523,10 +523,6 @@ namespace ByAeroBeHero.GCSViews
             center = new GMarkerGoogle(MainMap.Position, GMarkerGoogleType.none);
             top.Markers.Add(center);
 
-            MainMap.Zoom = 3;
-
-            MainMap.Position = new PointLatLng(40.0648192363, 116.3455521063);
-
             CMB_altmode.DisplayMember = "Value";
             CMB_altmode.ValueMember = "Key";
             CMB_altmode.DataSource = EnumTranslator.EnumToList<altmode>();
@@ -570,6 +566,10 @@ namespace ByAeroBeHero.GCSViews
                     }
                 }
             }
+
+            MainMap.Zoom = 15;
+
+            MainMap.Position = new PointLatLng(40.0648192363, 116.3455521063);
         }
 
         void updateCMDParams()
@@ -721,8 +721,9 @@ namespace ByAeroBeHero.GCSViews
             if (MainV2.config["WMSserver"] != null)
                 WMSProvider.CustomWMSURL = MainV2.config["WMSserver"].ToString();
 
-            trackBar1.Value = (int)MainMap.Zoom;
-
+            trackBar1.Value = 20 ;//(int)MainMap.Zoom;
+            MainMap.Position = new PointLatLng(40.0635968, 116.3389895);
+            center.Position = new PointLatLng(40.0635968, 116.3389895);
             // check for net and set offline if needed
             try
             {
@@ -4343,6 +4344,9 @@ namespace ByAeroBeHero.GCSViews
             {
                 ControlInit();
 
+                //页面初始化参数
+                initParams();
+
                 if (isMouseDown)
                     return;
 
@@ -4388,9 +4392,6 @@ namespace ByAeroBeHero.GCSViews
 
                 //时时飞行航线
                 routePoints(currentloc);
-
-                //页面初始化参数
-                initParams();
                
                 //计时器
                 addTimer();
@@ -6680,8 +6681,10 @@ namespace ByAeroBeHero.GCSViews
         #region 初始化参数
         public void initParams() 
         {
-            this.lblHorizontalError.Text = MainV2.comPort.MAV.cs.gpshdop.ToString();
-            this.lblSataCount.Text = MainV2.comPort.MAV.cs.satcount.ToString();
+            
+            this.lblSataCount.Text = CurrentState.pump.ToString();
+            this.lblHorizontalError.Text = MainV2.comPort.MAV.cs.ch3percent.ToString();
+
         }
         #endregion
 
@@ -8030,12 +8033,6 @@ namespace ByAeroBeHero.GCSViews
                 this.pictureBoxReceiver.Image = null;
             }
 
-            if (this.pictureBoxPump.Image != null)
-            {
-                this.pictureBoxPump.Image.Dispose();
-                this.pictureBoxPump.Image = null;
-            }
-
             if (this.pictureBoxvibez.Image != null)
             {
                 this.pictureBoxvibez.Image.Dispose();
@@ -8120,16 +8117,6 @@ namespace ByAeroBeHero.GCSViews
                     this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.Waring;
                 }
 
-
-                if (CurrentState.pump)
-                {
-                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Flying;
-                }
-                else
-                {
-                    this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.Waring;
-                }
-
                 if (MainV2.comPort.MAV.cs.vibez <= 5)
                 {
                     this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Flying;
@@ -8160,7 +8147,6 @@ namespace ByAeroBeHero.GCSViews
                 this.pictureBoxLevel.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxGyro.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxReceiver.Image = ByAeroBeHero.Properties.Resources.NoConnect;
-                this.pictureBoxPump.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.NoConnect;
                 this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.NoConnect;
             }

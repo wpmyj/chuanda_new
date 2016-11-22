@@ -27,7 +27,6 @@ namespace ByAeroBeHero.GCSViews
             catch
             {
             }
-            this.panel2.Visible = false;
             this.IsShow = true;
         }
 
@@ -64,27 +63,6 @@ namespace ByAeroBeHero.GCSViews
         private bool IsShow = false; 
         private void myBtnDownloadlog_Click(object sender, EventArgs e)
         {
-            if (!MainV2.comPort.BaseStream.IsOpen) 
-            {
-                this.panel2.Visible = false;
-                CustomMessageBox.Show("请连接地面站再进行日志下载！", "提示");
-                return;
-            }
-
-            if (IsShow)
-            {
-                this.panel2.Visible = true;
-                this.IsShow = false;
-                this.logDownloadMavLink1.ShowLog(true);
-                timer1.Start();
-            }
-            else 
-            {
-                timer1.Stop();
-                this.panel2.Visible = false;
-                this.IsShow = true;
-                this.logDownloadMavLink1.ShowLog(false);
-            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)

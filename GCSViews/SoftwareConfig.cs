@@ -142,7 +142,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if (!isConnected)
             {
-                CustomMessageBox.Show("请使用地面站连接飞行控制器，然后在进行参数设置操作！","提示");
+                CustomMessageBox.Show("请使用地面站连接飞行控制器，然后再进行参数设置操作！","提示");
             }
         }
 

@@ -2027,6 +2027,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Wizard\6CompassCalib.zh-Hans.resx">
       <DependentUpon>6CompassCalib.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Wizard\7BatteryMonitor.resx">
       <DependentUpon>7BatteryMonitor.cs</DependentUpon>
@@ -3164,6 +3165,13 @@
     <Content Include="LogAnalyzer\UnitTest.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\1.png" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\3.png" />
+    <Content Include="Resources\4.png" />
+    <Content Include="Resources\5.png" />
+    <Content Include="Resources\6.png" />
+    <Content Include="Resources\7.png" />
     <Content Include="Resources\Alerted.png" />
     <Content Include="Resources\backgroudp.png" />
     <Content Include="Resources\white.png" />

@@ -120,16 +120,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             startup = false;
         }
 
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == (Keys.Control | Keys.S))
-            {
-                BUT_writePIDS_Click(null, null);
-                return true;
-            }
 
-            return false;
-        }
 
         private static string AddNewLinesForTooltip(string text)
         {
@@ -553,6 +544,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 return;
             }
         }
+
 
 
 

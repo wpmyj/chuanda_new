@@ -988,7 +988,7 @@
     <value>BUT_SaveModes</value>
   </data>
   <data name="&gt;&gt;BUT_SaveModes.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_SaveModes.Parent" xml:space="preserve">
     <value>panel8</value>

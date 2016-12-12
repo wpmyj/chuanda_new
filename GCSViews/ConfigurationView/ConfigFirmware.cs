@@ -60,16 +60,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             //CTRL+O moved to CMB_history_label_Click
             //CTRL+C moved to Custom_firmware_label_Click
 
-            if (keyData == (Keys.Control | Keys.Q))
-            {
-                CustomMessageBox.Show(Strings.TrunkWarning, Strings.Trunk);
-                firmwareurl = "https://raw.github.com/diydrones/binary/master/dev/firmwarelatest.xml";
-                softwares.Clear();
-                UpdateFWList();
-                CMB_history.Visible = false;
-            }
+            //if (keyData == (Keys.Control | Keys.Q))
+            //{
+            //    CustomMessageBox.Show(Strings.TrunkWarning, Strings.Trunk);
+            //    firmwareurl = "https://raw.github.com/diydrones/binary/master/dev/firmwarelatest.xml";
+            //    softwares.Clear();
+            //    UpdateFWList();
+            //    CMB_history.Visible = false;
+            //}
 
-            return base.ProcessCmdKey(ref msg, keyData);
+            return false;
         }
 
         private void UpdateFWList()

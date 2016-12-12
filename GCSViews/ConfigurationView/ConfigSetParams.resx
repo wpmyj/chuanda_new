@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_RTL_ALT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 99</value>
+    <value>26, 99</value>
   </data>
   <data name="lbl_RTL_ALT.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 20</value>
@@ -264,6 +264,9 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
   </metadata>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
   <data name="NUM_movelength.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10.2pt</value>
   </data>
@@ -282,9 +285,6 @@
   <data name="NUM_movelength.ToolTip" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="NUM_movelength.ToolTip1" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
@@ -304,7 +304,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="tboxWriteV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 98</value>
+    <value>511, 96</value>
   </data>
   <data name="tboxWriteV.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 27</value>
@@ -349,7 +349,7 @@
     <value>WP_YAW_BEHAVIOR</value>
   </data>
   <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6170.18368, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
     <value>panelArmCheck</value>
@@ -364,7 +364,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 95</value>
+    <value>176, 95</value>
   </data>
   <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
@@ -382,7 +382,7 @@
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6170.18368, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -423,29 +423,11 @@
   <data name="&gt;&gt;lblMoveDistance.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10.2pt</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 32</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 30</value>
-  </data>
-  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
     <value>RTL_ALT_FINAL</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.0.6170.18368, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -481,6 +463,81 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10.2pt</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 32</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 30</value>
+  </data>
+  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="RTL_ALT_FINAL.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
+    <value>RTL_ALT_FINAL</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.Name" xml:space="preserve">
+    <value>ARMING_CHECK</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.Parent" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;ARMING_CHECK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.Name" xml:space="preserve">
+    <value>lblArmCheck</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.Parent" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;lblArmCheck.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panelArmCheck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 512</value>
+  </data>
+  <data name="panelArmCheck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="panelArmCheck.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.Name" xml:space="preserve">
+    <value>panelArmCheck</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelArmCheck.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="ARMING_CHECK.Enabled" type="System.Boolean, mscorlib">
@@ -499,7 +556,7 @@
     <value>ARMING_CHECK</value>
   </data>
   <data name="&gt;&gt;ARMING_CHECK.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.0.6170.18368, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ARMING_CHECK.Parent" xml:space="preserve">
     <value>panelArmCheck</value>
@@ -540,27 +597,6 @@
   <data name="&gt;&gt;lblArmCheck.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panelArmCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 512</value>
-  </data>
-  <data name="panelArmCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="panelArmCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Name" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="myButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
@@ -583,7 +619,7 @@
     <value>myButton2</value>
   </data>
   <data name="&gt;&gt;myButton2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton2.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -613,7 +649,7 @@
     <value>Btn_</value>
   </data>
   <data name="&gt;&gt;Btn_.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Btn_.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -762,6 +798,9 @@
   <data name="&gt;&gt;CHK_enablespeech.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
   <data name="CHK_speechwaypoint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -904,7 +943,7 @@
     <value>False</value>
   </data>
   <data name="SPRAY_WRAP_EN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 53</value>
+    <value>179, 53</value>
   </data>
   <data name="SPRAY_WRAP_EN.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 17</value>
@@ -916,7 +955,7 @@
     <value>SPRAY_WRAP_EN</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.0.6170.18368, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -934,7 +973,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblChangeRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 53</value>
+    <value>66, 53</value>
   </data>
   <data name="lblChangeRow.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -967,7 +1006,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 100</value>
+    <value>566, 98</value>
   </data>
   <data name="lblVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 20</value>
@@ -1000,7 +1039,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 101</value>
+    <value>402, 99</value>
   </data>
   <data name="lblVVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 20</value>
@@ -1048,7 +1087,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1084,7 +1123,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1120,6 +1159,87 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pSetParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="chbShow_AllParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chbShow_AllParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
+        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
+        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
+        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="chbShow_AllParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="chbShow_AllParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chbShow_AllParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 42</value>
+  </data>
+  <data name="chbShow_AllParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 24</value>
+  </data>
+  <data name="chbShow_AllParams.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chbShow_AllParams.Text" xml:space="preserve">
+    <value>显示全部参数</value>
+  </data>
+  <data name="&gt;&gt;chbShow_AllParams.Name" xml:space="preserve">
+    <value>chbShow_AllParams</value>
+  </data>
+  <data name="&gt;&gt;chbShow_AllParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chbShow_AllParams.Parent" xml:space="preserve">
+    <value>pSetParams</value>
+  </data>
+  <data name="&gt;&gt;chbShow_AllParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pSetParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 417</value>
+  </data>
+  <data name="pSetParams.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="pSetParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>679, 88</value>
+  </data>
+  <data name="pSetParams.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="pSetParams.Text" xml:space="preserve">
+    <value>显示全部参数</value>
+  </data>
+  <data name="pSetParams.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pSetParams.Name" xml:space="preserve">
+    <value>pSetParams</value>
+  </data>
+  <data name="&gt;&gt;pSetParams.Type" xml:space="preserve">
+    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+  </data>
+  <data name="&gt;&gt;pSetParams.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pSetParams.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -57,12 +57,14 @@
             this.CHK_speechotherParams = new System.Windows.Forms.CheckBox();
             this.CHK_speechflightParams = new System.Windows.Forms.CheckBox();
             this.panel1 = new BSE.Windows.Forms.Panel();
+            this.SPRAY_WRAP_EN = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.lblChangeRow = new System.Windows.Forms.Label();
             this.lblVNo = new System.Windows.Forms.Label();
             this.lblVVNo = new System.Windows.Forms.Label();
             this.panel2 = new BSE.Windows.Forms.Panel();
             this.panel3 = new BSE.Windows.Forms.Panel();
-            this.lblChangeRow = new System.Windows.Forms.Label();
-            this.SPRAY_WRAP_EN = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.pSetParams = new BSE.Windows.Forms.Panel();
+            this.chbShow_AllParams = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_movelength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RTL_ALT_P)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -71,6 +73,7 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.pSetParams.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -334,6 +337,20 @@
             this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel1.ToolTipTextExpandIconPanelExpanded = null;
             // 
+            // SPRAY_WRAP_EN
+            // 
+            resources.ApplyResources(this.SPRAY_WRAP_EN, "SPRAY_WRAP_EN");
+            this.SPRAY_WRAP_EN.Name = "SPRAY_WRAP_EN";
+            this.SPRAY_WRAP_EN.OffValue = 0D;
+            this.SPRAY_WRAP_EN.OnValue = 1D;
+            this.SPRAY_WRAP_EN.ParamName = null;
+            this.SPRAY_WRAP_EN.UseVisualStyleBackColor = true;
+            // 
+            // lblChangeRow
+            // 
+            resources.ApplyResources(this.lblChangeRow, "lblChangeRow");
+            this.lblChangeRow.Name = "lblChangeRow";
+            // 
             // lblVNo
             // 
             resources.ApplyResources(this.lblVNo, "lblVNo");
@@ -407,24 +424,46 @@
             this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
             this.panel3.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // lblChangeRow
+            // pSetParams
             // 
-            resources.ApplyResources(this.lblChangeRow, "lblChangeRow");
-            this.lblChangeRow.Name = "lblChangeRow";
+            this.pSetParams.AssociatedSplitter = null;
+            this.pSetParams.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.pSetParams, "pSetParams");
+            this.pSetParams.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.pSetParams.CaptionHeight = 27;
+            this.pSetParams.Controls.Add(this.chbShow_AllParams);
+            this.pSetParams.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.pSetParams.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
+            this.pSetParams.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
+            this.pSetParams.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pSetParams.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
+            this.pSetParams.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
+            this.pSetParams.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.pSetParams.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
+            this.pSetParams.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
+            this.pSetParams.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
+            this.pSetParams.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
+            this.pSetParams.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.pSetParams.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
+            this.pSetParams.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pSetParams.Image = null;
+            this.pSetParams.Name = "pSetParams";
+            this.pSetParams.ToolTipTextCloseIcon = null;
+            this.pSetParams.ToolTipTextExpandIconPanelCollapsed = null;
+            this.pSetParams.ToolTipTextExpandIconPanelExpanded = null;
             // 
-            // SPRAY_WRAP_EN
+            // chbShow_AllParams
             // 
-            resources.ApplyResources(this.SPRAY_WRAP_EN, "SPRAY_WRAP_EN");
-            this.SPRAY_WRAP_EN.Name = "SPRAY_WRAP_EN";
-            this.SPRAY_WRAP_EN.OffValue = 0D;
-            this.SPRAY_WRAP_EN.OnValue = 1D;
-            this.SPRAY_WRAP_EN.ParamName = null;
-            this.SPRAY_WRAP_EN.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.chbShow_AllParams, "chbShow_AllParams");
+            this.chbShow_AllParams.Name = "chbShow_AllParams";
+            this.chbShow_AllParams.UseVisualStyleBackColor = true;
+            this.chbShow_AllParams.CheckedChanged += new System.EventHandler(this.chbShow_AllParams_CheckedChanged);
             // 
             // ConfigSetParams
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pSetParams);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -444,6 +483,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.pSetParams.ResumeLayout(false);
+            this.pSetParams.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -483,5 +524,7 @@
         private System.Windows.Forms.Label lblVNo;
         private System.Windows.Forms.Label lblChangeRow;
         private Controls.MavlinkCheckBox SPRAY_WRAP_EN;
+        private BSE.Windows.Forms.Panel pSetParams;
+        private System.Windows.Forms.CheckBox chbShow_AllParams;
     }
 }

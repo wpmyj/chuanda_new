@@ -26,7 +26,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void InitControl() 
         {
             this.lblArmCheck.ForeColor = 
-                CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor = CHK_speechotherParams.ForeColor = Color.Black;
+                CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor 
+                =chbShow_AllParams.ForeColor= CHK_speechotherParams.ForeColor = Color.Black;
         }
 
         public void Activate()
@@ -34,7 +35,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
             chb_AllMove.Checked = bool.Parse(MainV2.config["CHB_AllMove"].ToString());
             setWPParams();
-            this.lblVNo .Text= MainV2.comPort.MAV.param["BATT_VOLT_MULT"].ToString();
+            this.lblVNo .Text= MainV2.comPort.MAV.param["BATT_VOLT_MULT"].ToString().Substring(0,5);
+            this.chbShow_AllParams.Checked = bool.Parse(MainV2.config["Show_AllParams"].ToString());
             CHK_enablespeech_CheckedChanged(null, null);
             timer1.Start();
         }
@@ -356,5 +358,34 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             float newcontrol = actualvoltage / (voltage / control);
             this.lblVNo.Text = newcontrol.ToString();
         }
+
+
+        private bool isShowPanel = false;
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Control | Keys.P))
+            {
+                if (isShowPanel)
+                {
+                    this.pSetParams.Visible = false;
+                    isShowPanel = false;
+                }
+                else
+                {
+                    this.pSetParams.Visible = true;
+                    isShowPanel = true;
+                }
+
+                return true;
+            }
+
+            return false;
+        }
+
+        private void chbShow_AllParams_CheckedChanged(object sender, EventArgs e)
+        {
+            MainV2.config["Show_AllParams"] = this.chbShow_AllParams.Checked;
+        }
+
     }
 }

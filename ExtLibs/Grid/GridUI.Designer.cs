@@ -300,6 +300,8 @@
             // 
             // myBtnLoadAeroInfo
             // 
+            this.myBtnLoadAeroInfo.BGGradBot = System.Drawing.Color.Transparent;
+            this.myBtnLoadAeroInfo.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.myBtnLoadAeroInfo, "myBtnLoadAeroInfo");
             this.myBtnLoadAeroInfo.Name = "myBtnLoadAeroInfo";
             this.myBtnLoadAeroInfo.UseVisualStyleBackColor = true;
@@ -307,6 +309,8 @@
             // 
             // myBtnSaveAeroInfo
             // 
+            this.myBtnSaveAeroInfo.BGGradBot = System.Drawing.Color.Transparent;
+            this.myBtnSaveAeroInfo.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.myBtnSaveAeroInfo, "myBtnSaveAeroInfo");
             this.myBtnSaveAeroInfo.Name = "myBtnSaveAeroInfo";
             this.myBtnSaveAeroInfo.UseVisualStyleBackColor = true;
@@ -314,6 +318,8 @@
             // 
             // myButtonCanle
             // 
+            this.myButtonCanle.BGGradBot = System.Drawing.Color.Transparent;
+            this.myButtonCanle.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.myButtonCanle, "myButtonCanle");
             this.myButtonCanle.Name = "myButtonCanle";
             this.myButtonCanle.UseVisualStyleBackColor = true;
@@ -321,6 +327,8 @@
             // 
             // BUT_Accept
             // 
+            this.BUT_Accept.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_Accept.BGGradTop = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.BUT_Accept, "BUT_Accept");
             this.BUT_Accept.Name = "BUT_Accept";
             this.BUT_Accept.UseVisualStyleBackColor = true;
@@ -670,7 +678,7 @@
             0,
             65536});
             this.NUM_UpDownFlySpeed.Maximum = new decimal(new int[] {
-            360,
+            10,
             0,
             0,
             0});

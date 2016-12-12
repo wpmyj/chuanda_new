@@ -2124,7 +2124,7 @@ namespace ByAeroBeHero.GCSViews
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.contextMenuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteWPToolStripMenuItem,

@@ -101,12 +101,14 @@ namespace ByAeroBeHero.Log
             {
                 var list = MainV2.comPort.GetLogList();
 
+                TXT_seriallog.Text = string.Empty;
+
                 foreach (var item in list)
                 {
                     genchkcombo(item.id);
 
                     //receibedbytestotal = (int)item.size;
-                    TXT_seriallog.AppendText(item.id + "\t" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(item.time_utc).ToLocalTime() + "\t  大小:\t" + item.size + "\r\n");
+                    TXT_seriallog.AppendText(item.id + "\t" + "BOYING-" + CurrentState.str_firm_ware.ToString().Split('-')[1].Replace(".", "") + "-" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(item.time_utc).ToLocalTime().ToString("yyyyMMdd-HHmm") + "\t       大小:\t" + (int)(item.size / 1024) + "MB" + "\r\n");
                 }
 
                 if (list.Count == 0)
@@ -167,7 +169,7 @@ namespace ByAeroBeHero.Log
                         }
                         if (receiveStatu == "1")
                         {
-                            lblNInfo.Text = "下载数据..";
+                            lblNInfo.Text = "生成日志..";
                         }
                         else if (receiveStatu == "2") 
                         {
@@ -247,7 +249,7 @@ namespace ByAeroBeHero.Log
             // + aptype + Path.DirectorySeparatorChar
             // + hbpacket[3] + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
 
-            logfile = path + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
+            logfile = path + Path.DirectorySeparatorChar + "BOYING-" + CurrentState.str_firm_ware.Split('-')[1].Replace(".", "") + " " + "-" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(MainV2.comPort.GetLogList()[no - 1].time_utc).ToLocalTime().ToString("yyyyMMdd-HHmm") + " " + no + ".bylg";
 
             // make log dir
             Directory.CreateDirectory(Path.GetDirectoryName(logfile));

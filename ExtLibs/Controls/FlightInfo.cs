@@ -334,20 +334,29 @@ namespace ByAeroBeHero.Controls
             else if (this.Name == "fiType")
             {
                 string strFrame = string.Empty;
-                if (frame == 0) { strFrame = "十形"; }
-                else if (frame == 1) { strFrame = "X形"; }
-                if (ch6out > 0 && ch8out == 0)
+                if (frame == 0) { strFrame = "十"; }
+                else if (frame == 1) { strFrame = "X"; }
+                else if (frame == 6) { strFrame = "4+2"; }
+                if (frame == 6)
                 {
-                    str = strFrame + "六轴";
-                }
-                else if (ch8out > 0)
-                {
-                    str = strFrame + "八轴";
+                    str = "4+2 型";
                 }
                 else
                 {
-                    str = strFrame + "四轴";
+                     if (ch6out > 0 && ch8out == 0)
+                    {
+                        str = strFrame + "6 型";
+                    }
+                    else if (ch8out > 0)
+                    {
+                        str = strFrame + "8 型";
+                    }
+                    else
+                    {
+                        str = strFrame + "4 型";
+                    }
                 }
+
             }
 
             this.text = str;

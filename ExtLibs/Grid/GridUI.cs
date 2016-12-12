@@ -1519,20 +1519,20 @@ namespace ByAeroBeHero
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == (Keys.Control | Keys.O))
-            {
-                LoadGrid();
+            //if (keyData == (Keys.Control | Keys.O))
+            //{
+            //    LoadGrid();
 
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.S))
-            {
-                SaveGrid();
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.S))
+            //{
+            //    SaveGrid();
 
-                return true;
-            }
+            //    return true;
+            //}
 
-            return base.ProcessCmdKey(ref msg, keyData);
+            return false;
         }
 
         private void NUM_Lane_Dist_ValueChanged(object sender, EventArgs e)
@@ -1568,7 +1568,7 @@ namespace ByAeroBeHero
         {
             using (SaveFileDialog sf = new SaveFileDialog())
             {
-                sf.Filter = "(*.txt)|*.txt";
+                sf.Filter = "(*.ps)|*.ps";
                 sf.ShowDialog();
                 if (sf.FileName != "")
                 {
@@ -1576,7 +1576,7 @@ namespace ByAeroBeHero
                     {
                         StreamWriter sw = new StreamWriter(sf.OpenFile());
 
-                        sw.WriteLine("#Save Area Info " + Application.ProductVersion);
+                        sw.WriteLine("@saved by BOYING,PARAMETERSET");
                         sw.WriteLine(NUM_altitude.Value + "," + NUM_UpDownFlySpeed.Value + "," + NUM_Distance.Value + "," + numer_TakeoffHigh.Value
                             + "," + numer_landhigh.Value + "," + NUM_copter_delay.Value + "," + startForm(CMB_startfrom.Text));
 
@@ -1591,7 +1591,7 @@ namespace ByAeroBeHero
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "(*.txt)|*.txt";
+                fd.Filter = "(*.ps)|*.ps";
                 fd.ShowDialog();
                 if (File.Exists(fd.FileName))
                 {
@@ -1600,7 +1600,7 @@ namespace ByAeroBeHero
                     while (!sr.EndOfStream)
                     {
                         string line = sr.ReadLine();
-                        if (line.StartsWith("#"))
+                        if (line.StartsWith("@saved by BOYING,PARAMETERSET"))
                         {
                         }
                         else

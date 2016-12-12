@@ -195,11 +195,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == (Keys.Control | Keys.S))
-            {
-                BUT_SaveModes_Click(null, null);
-                return true;
-            }
+            //if (keyData == (Keys.Control | Keys.S))
+            //{
+            //    BUT_SaveModes_Click(null, null);
+            //    return true;
+            //}
 
             return false;
         }
@@ -309,10 +309,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 CMB_fmode4.Visible = true;
                 CMB_fmode6.Visible = false;
                 CB_simple1.Visible = false;
-                CB_simple4.Visible = true;
+                CB_simple4.Visible = false;
                 CB_simple6.Visible = false;
                 chk_ss1.Visible = false;
-                chk_ss4.Visible = true;
+                chk_ss4.Visible = false;
                 chk_ss6.Visible = false;
 
                 CB_simple4.ForeColor = Color.Black;
@@ -328,10 +328,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 CMB_fmode6.Visible = true;
                 CB_simple1.Visible = false;
                 CB_simple4.Visible = false;
-                CB_simple6.Visible = true;
+                CB_simple6.Visible = false;
                 chk_ss1.Visible = false;
                 chk_ss4.Visible = false;
-                chk_ss6.Visible = true;
+                chk_ss6.Visible = false;
 
                 CB_simple6.ForeColor = Color.Black;
                 chk_ss6.ForeColor = Color.Black;
@@ -344,10 +344,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 CMB_fmode1.Visible = true;
                 CMB_fmode4.Visible = false;
                 CMB_fmode6.Visible = false;
-                CB_simple1.Visible = true;
+                CB_simple1.Visible = false;
                 CB_simple4.Visible = false;
                 CB_simple6.Visible = false;
-                chk_ss1.Visible = true;
+                chk_ss1.Visible = false;
                 chk_ss4.Visible = false;
                 chk_ss6.Visible = false;
 

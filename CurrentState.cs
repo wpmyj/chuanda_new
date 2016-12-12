@@ -1632,7 +1632,10 @@ namespace ByAeroBeHero
                     if (bytearray != null)
                     {
                         var mem = bytearray.ByteArrayToStructure<MAVLink.mavlink_mag_cal_progress_t>(6);
-                        icompletionpercent = mem.completion_pct;
+                        if (mem.compass_id == 1)
+                        {
+                            icompletionpercent = mem.completion_pct;
+                        }
                     }
 
                 }

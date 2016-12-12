@@ -410,6 +410,8 @@ namespace ByAeroBeHero
             MainV2.config["NUM_movelength"] = "0.5";
             MainV2.config["CHB_AllMove"] = true.ToString();
 
+            MainV2.config["Show_AllParams"] = false.ToString();
+
             // create one here - but override on load
             MainV2.config["guid"] = Guid.NewGuid().ToString();
 
@@ -2713,124 +2715,124 @@ namespace ByAeroBeHero
         /// <returns></returns>
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.F12)
-            {
-                MenuConnect_Click(null, null);
-                return true;
-            }
+            //if (keyData == Keys.F12)
+            //{
+            //    MenuConnect_Click(null, null);
+            //    return true;
+            //}
 
-            if (keyData == Keys.F2)
-            {
-                MenuFlightData_Click(null, null);
-                return true;
-            }
-            if (keyData == Keys.F3)
-            {
-                MenuFlightPlanner_Click(null, null);
-                return true;
-            }
-            if (keyData == Keys.F4)
-            {
-                MenuTuning_Click(null, null);
-                return true;
-            }
+            //if (keyData == Keys.F2)
+            //{
+            //    MenuFlightData_Click(null, null);
+            //    return true;
+            //}
+            //if (keyData == Keys.F3)
+            //{
+            //    MenuFlightPlanner_Click(null, null);
+            //    return true;
+            //}
+            //if (keyData == Keys.F4)
+            //{
+            //    MenuTuning_Click(null, null);
+            //    return true;
+            //}
 
-            if (keyData == Keys.F5)
-            {
-                comPort.getParamList();
-                MyView.ShowScreen(MyView.current.Name);
-                return true;
-            }
+            //if (keyData == Keys.F5)
+            //{
+            //    comPort.getParamList();
+            //    MyView.ShowScreen(MyView.current.Name);
+            //    return true;
+            //}
 
-            if (keyData == (Keys.Control | Keys.F)) // temp
-            {
-                Form frm = new temp();
-                ThemeManager.ApplyThemeTo(frm);
-                frm.Show();
-                return true;
-            }
-            /*if (keyData == (Keys.Control | Keys.S)) // screenshot
-            {
-                ScreenShot();
-                return true;
-            }*/
-            if (keyData == (Keys.Control | Keys.G)) // nmea out
-            {
-                Form frm = new SerialOutputNMEA();
-                ThemeManager.ApplyThemeTo(frm);
-                frm.Show();
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.X)) // select sysid
-            {
-                ByAeroBeHero.Controls.SysidSelector id = new SysidSelector();
-                id.TopMost = true;
-                id.Show();
+            //if (keyData == (Keys.Control | Keys.F)) // temp
+            //{
+            //    Form frm = new temp();
+            //    ThemeManager.ApplyThemeTo(frm);
+            //    frm.Show();
+            //    return true;
+            //}
+            ///*if (keyData == (Keys.Control | Keys.S)) // screenshot
+            //{
+            //    ScreenShot();
+            //    return true;
+            //}*/
+            //if (keyData == (Keys.Control | Keys.G)) // nmea out
+            //{
+            //    Form frm = new SerialOutputNMEA();
+            //    ThemeManager.ApplyThemeTo(frm);
+            //    frm.Show();
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.X)) // select sysid
+            //{
+            //    ByAeroBeHero.Controls.SysidSelector id = new SysidSelector();
+            //    id.TopMost = true;
+            //    id.Show();
 
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.L)) // limits
-            {
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.L)) // limits
+            //{
 
 
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.W)) // test ac config
-            {
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.W)) // test ac config
+            //{
 
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.Z))
-            {
-                ByAeroBeHero.GenOTP otp = new ByAeroBeHero.GenOTP();
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.Z))
+            //{
+            //    ByAeroBeHero.GenOTP otp = new ByAeroBeHero.GenOTP();
 
-                otp.ShowDialog(this);
+            //    otp.ShowDialog(this);
 
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.T)) // for override connect
-            {
-                try
-                {
-                    MainV2.comPort.Open(false);
-                }
-                catch (Exception ex) { CustomMessageBox.Show(ex.ToString()); }
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.Y)) // for ryan beall and ollyw42
-            {
-                // write
-                try
-                {
-                    MainV2.comPort.doCommand(MAVLink.MAV_CMD.PREFLIGHT_STORAGE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-                }
-                catch { CustomMessageBox.Show("Invalid command"); return true; }
-                //read
-                ///////MainV2.comPort.doCommand(MAVLink09.MAV_CMD.PREFLIGHT_STORAGE, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
-                CustomMessageBox.Show("Done MAV_ACTION_STORAGE_WRITE");
-                return true;
-            }
-            if (keyData == (Keys.Control | Keys.J))
-            {
-                /*
-                var test = MainV2.comPort.GetLogList();
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.T)) // for override connect
+            //{
+            //    try
+            //    {
+            //        MainV2.comPort.Open(false);
+            //    }
+            //    catch (Exception ex) { CustomMessageBox.Show(ex.ToString()); }
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.Y)) // for ryan beall and ollyw42
+            //{
+            //    // write
+            //    try
+            //    {
+            //        MainV2.comPort.doCommand(MAVLink.MAV_CMD.PREFLIGHT_STORAGE, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+            //    }
+            //    catch { CustomMessageBox.Show("Invalid command"); return true; }
+            //    //read
+            //    ///////MainV2.comPort.doCommand(MAVLink09.MAV_CMD.PREFLIGHT_STORAGE, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+            //    CustomMessageBox.Show("Done MAV_ACTION_STORAGE_WRITE");
+            //    return true;
+            //}
+            //if (keyData == (Keys.Control | Keys.J))
+            //{
+            //    /*
+            //    var test = MainV2.comPort.GetLogList();
 
-                foreach (var item in test)
-                {
-                    var ms = comPort.GetLog(item.id);
+            //    foreach (var item in test)
+            //    {
+            //        var ms = comPort.GetLog(item.id);
 
-                    using (BinaryWriter bw = new BinaryWriter(File.OpenWrite("test" + item.id + ".bin")))
-                    {
-                        bw.Write(ms.ToArray());
-                    }
+            //        using (BinaryWriter bw = new BinaryWriter(File.OpenWrite("test" + item.id + ".bin")))
+            //        {
+            //            bw.Write(ms.ToArray());
+            //        }
 
-                    var temp1 = Log.BinaryLog.ReadLog("test" + item.id + ".bin");
+            //        var temp1 = Log.BinaryLog.ReadLog("test" + item.id + ".bin");
 
-                    File.WriteAllLines("test" + item.id + ".log", temp1);
-                }*/
-                return true;
-            }
-            return base.ProcessCmdKey(ref msg, keyData);
+            //        File.WriteAllLines("test" + item.id + ".log", temp1);
+            //    }*/
+            //    return true;
+            //}
+            return false;
         }
 
         public void changelanguage(CultureInfo ci)

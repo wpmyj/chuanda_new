@@ -84,7 +84,8 @@ namespace ByAeroBeHero.GCSViews
                     //AddBackstageViewPage(
                     //    new ConfigFriendlyParams {ParameterMode = ParameterMetaDataConstants.Advanced},
                     //    Strings.AdvancedParams, null, true);
-                    //AddBackstageViewPage(new ConfigRawParams(), Strings.FullParameterList, null, true);
+                    if (MainV2.config["Show_AllParams"].ToString() == true.ToString())
+                        AddBackstageViewPage(new ConfigRawParams(), Strings.FullParameterList, null, true);
 
                     //AddBackstageViewPage(new ConfigRawParamsTree(), Strings.FullParameterTree, null, true);
 
@@ -141,7 +142,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if (!isConnected)
             {
-                CustomMessageBox.Show("请使用地面站连接飞行控制器，然后在进行参数设置操作！");
+                CustomMessageBox.Show("请使用地面站连接飞行控制器，然后在进行参数设置操作！","提示");
             }
         }
 
@@ -152,5 +153,6 @@ namespace ByAeroBeHero.GCSViews
 
             backstageView.Close();
         }
+
     }
 }

@@ -563,7 +563,7 @@
     <value>BUT_write</value>
   </data>
   <data name="&gt;&gt;BUT_write.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_write.Parent" xml:space="preserve">
     <value>groupBoxBasePoint</value>
@@ -593,7 +593,7 @@
     <value>BUT_read</value>
   </data>
   <data name="&gt;&gt;BUT_read.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_read.Parent" xml:space="preserve">
     <value>groupBoxBasePoint</value>
@@ -828,7 +828,7 @@
     <value>coords1</value>
   </data>
   <data name="&gt;&gt;coords1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.Coords, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.Coords, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;coords1.Parent" xml:space="preserve">
     <value>tableLayoutPanel5</value>
@@ -1455,7 +1455,7 @@
     <value>BUT_quickrtl1</value>
   </data>
   <data name="&gt;&gt;BUT_quickrtl1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_quickrtl1.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1485,7 +1485,7 @@
     <value>BUT_ARM1</value>
   </data>
   <data name="&gt;&gt;BUT_ARM1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_ARM1.Parent" xml:space="preserve">
     <value>panel6</value>
@@ -1608,7 +1608,7 @@
     <value>myButton1</value>
   </data>
   <data name="&gt;&gt;myButton1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1668,7 +1668,7 @@
     <value>BUT_writePIDS</value>
   </data>
   <data name="&gt;&gt;BUT_writePIDS.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_writePIDS.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1755,7 +1755,7 @@
     <value>BUT_Add</value>
   </data>
   <data name="&gt;&gt;BUT_Add.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_Add.Parent" xml:space="preserve">
     <value>groupBoxBasePoint</value>
@@ -1785,7 +1785,7 @@
     <value>BUT_loadwpfile</value>
   </data>
   <data name="&gt;&gt;BUT_loadwpfile.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_loadwpfile.Parent" xml:space="preserve">
     <value>groupBoxBasePoint</value>
@@ -1815,7 +1815,7 @@
     <value>BUT_saveWPFile</value>
   </data>
   <data name="&gt;&gt;BUT_saveWPFile.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_saveWPFile.Parent" xml:space="preserve">
     <value>groupBoxBasePoint</value>
@@ -1848,7 +1848,7 @@
     <value>trackBar1</value>
   </data>
   <data name="&gt;&gt;trackBar1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyTrackBar, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyTrackBar, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;trackBar1.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -1887,7 +1887,7 @@
     <value>myButton_savelimitpoint</value>
   </data>
   <data name="&gt;&gt;myButton_savelimitpoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton_savelimitpoint.Parent" xml:space="preserve">
     <value>groupboxOPoint</value>
@@ -1917,7 +1917,7 @@
     <value>myButton_loadlimitpoint</value>
   </data>
   <data name="&gt;&gt;myButton_loadlimitpoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton_loadlimitpoint.Parent" xml:space="preserve">
     <value>groupboxOPoint</value>
@@ -1947,7 +1947,7 @@
     <value>myButtonReadLimitPoint</value>
   </data>
   <data name="&gt;&gt;myButtonReadLimitPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButtonReadLimitPoint.Parent" xml:space="preserve">
     <value>groupboxOPoint</value>
@@ -1977,7 +1977,7 @@
     <value>myButtonClearLimitPoint</value>
   </data>
   <data name="&gt;&gt;myButtonClearLimitPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButtonClearLimitPoint.Parent" xml:space="preserve">
     <value>groupboxOPoint</value>
@@ -2007,7 +2007,7 @@
     <value>myBtnLimit</value>
   </data>
   <data name="&gt;&gt;myBtnLimit.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtnLimit.Parent" xml:space="preserve">
     <value>groupboxOPoint</value>
@@ -2037,7 +2037,7 @@
     <value>myBtnSendPoint</value>
   </data>
   <data name="&gt;&gt;myBtnSendPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtnSendPoint.Parent" xml:space="preserve">
     <value>groupboxOPoint</value>
@@ -2100,7 +2100,7 @@
     <value>myBtn_write_break_point</value>
   </data>
   <data name="&gt;&gt;myBtn_write_break_point.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtn_write_break_point.Parent" xml:space="preserve">
     <value>breakpointgroupBox</value>
@@ -2130,7 +2130,7 @@
     <value>myBtn_read_break_point</value>
   </data>
   <data name="&gt;&gt;myBtn_read_break_point.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtn_read_break_point.Parent" xml:space="preserve">
     <value>breakpointgroupBox</value>
@@ -2226,7 +2226,7 @@
     <value>myButtonDonwloadRallyPoint</value>
   </data>
   <data name="&gt;&gt;myButtonDonwloadRallyPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButtonDonwloadRallyPoint.Parent" xml:space="preserve">
     <value>groupBoxRellyPoint</value>
@@ -2256,7 +2256,7 @@
     <value>myButton_loadRallypoint</value>
   </data>
   <data name="&gt;&gt;myButton_loadRallypoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton_loadRallypoint.Parent" xml:space="preserve">
     <value>groupBoxRellyPoint</value>
@@ -2286,7 +2286,7 @@
     <value>myButton2</value>
   </data>
   <data name="&gt;&gt;myButton2.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton2.Parent" xml:space="preserve">
     <value>groupBoxRellyPoint</value>
@@ -2316,7 +2316,7 @@
     <value>myBtnSetRallyPoint</value>
   </data>
   <data name="&gt;&gt;myBtnSetRallyPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtnSetRallyPoint.Parent" xml:space="preserve">
     <value>groupBoxRellyPoint</value>
@@ -2406,7 +2406,7 @@
     <value>myBtnLoadAeroPoint</value>
   </data>
   <data name="&gt;&gt;myBtnLoadAeroPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtnLoadAeroPoint.Parent" xml:space="preserve">
     <value>groupBoxAeroPoint</value>
@@ -2436,7 +2436,7 @@
     <value>myBtnAddPoint</value>
   </data>
   <data name="&gt;&gt;myBtnAddPoint.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtnAddPoint.Parent" xml:space="preserve">
     <value>groupBoxAeroPoint</value>
@@ -2517,7 +2517,7 @@
     <value>btnMeterInfo</value>
   </data>
   <data name="&gt;&gt;btnMeterInfo.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnMeterInfo.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -2544,7 +2544,7 @@
     <value>btnWarnning</value>
   </data>
   <data name="&gt;&gt;btnWarnning.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnWarnning.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -2571,7 +2571,7 @@
     <value>btnPlanInfo</value>
   </data>
   <data name="&gt;&gt;btnPlanInfo.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnPlanInfo.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -2598,7 +2598,7 @@
     <value>btnFlyingInfo</value>
   </data>
   <data name="&gt;&gt;btnFlyingInfo.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnFlyingInfo.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -2628,7 +2628,7 @@
     <value>btnAutoPan</value>
   </data>
   <data name="&gt;&gt;btnAutoPan.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnAutoPan.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -2658,7 +2658,7 @@
     <value>hud1</value>
   </data>
   <data name="&gt;&gt;hud1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.HUD, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.HUD, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hud1.Parent" xml:space="preserve">
     <value>ebsPanelMeter</value>
@@ -2730,7 +2730,7 @@
     <value>Qvalt</value>
   </data>
   <data name="&gt;&gt;Qvalt.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Qvalt.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2757,7 +2757,7 @@
     <value>Qvverspeed</value>
   </data>
   <data name="&gt;&gt;Qvverspeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Qvverspeed.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2787,7 +2787,7 @@
     <value>Qvgroundspeed</value>
   </data>
   <data name="&gt;&gt;Qvgroundspeed.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Qvgroundspeed.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2814,7 +2814,7 @@
     <value>QVSonarRange</value>
   </data>
   <data name="&gt;&gt;QVSonarRange.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;QVSonarRange.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2841,7 +2841,7 @@
     <value>Qvtohome</value>
   </data>
   <data name="&gt;&gt;Qvtohome.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Qvtohome.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2868,7 +2868,7 @@
     <value>Qvdist</value>
   </data>
   <data name="&gt;&gt;Qvdist.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Qvdist.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2895,7 +2895,7 @@
     <value>qvpitch</value>
   </data>
   <data name="&gt;&gt;qvpitch.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;qvpitch.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2922,7 +2922,7 @@
     <value>qvyaw</value>
   </data>
   <data name="&gt;&gt;qvyaw.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;qvyaw.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2949,7 +2949,7 @@
     <value>qvroll</value>
   </data>
   <data name="&gt;&gt;qvroll.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.QuickView, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;qvroll.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -3873,7 +3873,7 @@
     <value>myButtonLand</value>
   </data>
   <data name="&gt;&gt;myButtonLand.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButtonLand.Parent" xml:space="preserve">
     <value>ebsPanelPlanInfo</value>
@@ -3900,7 +3900,7 @@
     <value>myBtnFunction</value>
   </data>
   <data name="&gt;&gt;myBtnFunction.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myBtnFunction.Parent" xml:space="preserve">
     <value>ebsPanelPlanInfo</value>
@@ -3927,7 +3927,7 @@
     <value>BUT_quickauto1</value>
   </data>
   <data name="&gt;&gt;BUT_quickauto1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_quickauto1.Parent" xml:space="preserve">
     <value>ebsPanelPlanInfo</value>
@@ -3954,7 +3954,7 @@
     <value>BUT_clear_track1</value>
   </data>
   <data name="&gt;&gt;BUT_clear_track1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_clear_track1.Parent" xml:space="preserve">
     <value>ebsPanelPlanInfo</value>
@@ -3981,7 +3981,7 @@
     <value>btnLoiterUnlim</value>
   </data>
   <data name="&gt;&gt;btnLoiterUnlim.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btnLoiterUnlim.Parent" xml:space="preserve">
     <value>ebsPanelPlanInfo</value>
@@ -4260,7 +4260,7 @@
     <value>BtnClear</value>
   </data>
   <data name="&gt;&gt;BtnClear.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnClear.Parent" xml:space="preserve">
     <value>ebsPanelWarning</value>
@@ -4994,6 +4994,15 @@
   <data name="MainMap.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="MainMap.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
+        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
+        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
+        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
+        oyb5zYI8AAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -5589,7 +5598,7 @@
     <value>MainMap</value>
   </data>
   <data name="&gt;&gt;MainMap.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.myGMAP, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.myGMAP, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MainMap.Parent" xml:space="preserve">
     <value>panelMap</value>
@@ -6288,6 +6297,6 @@
     <value>FlightPlanner</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

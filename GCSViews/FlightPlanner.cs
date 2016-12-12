@@ -377,35 +377,35 @@ namespace ByAeroBeHero.GCSViews
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             // undo
-            if (keyData == (Keys.Control | Keys.Z))
-            {
-                if (history.Count > 0)
-                {
-                    int no = history.Count - 1;
-                    var pop = history[no];
-                    history.RemoveAt(no);
-                    WPtoScreen(pop);
+            //if (keyData == (Keys.Control | Keys.Z))
+            //{
+            //    if (history.Count > 0)
+            //    {
+            //        int no = history.Count - 1;
+            //        var pop = history[no];
+            //        history.RemoveAt(no);
+            //        WPtoScreen(pop);
 
-                    MainMap.UpdateMarkerLocalPosition(drawnpolygonsoverlay.Markers[0]);
-                    MainMap.Invalidate();
-                    MainMap.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);
-                }
-                return true;
-            }
+            //        MainMap.UpdateMarkerLocalPosition(drawnpolygonsoverlay.Markers[0]);
+            //        MainMap.Invalidate();
+            //        MainMap.ZoomAndCenterMarkers(drawnpolygonsoverlay.Id);
+            //    }
+            //    return true;
+            //}
 
-            // open wp file
-            if (keyData == (Keys.Control | Keys.O))
-            {
-                loadWPFileToolStripMenuItem_Click(null, null);
-                return true;
-            }
+            //// open wp file
+            //if (keyData == (Keys.Control | Keys.O))
+            //{
+            //    loadWPFileToolStripMenuItem_Click(null, null);
+            //    return true;
+            //}
 
-            // save wp file
-            if (keyData == (Keys.Control | Keys.S))
-            {
-                saveWPFileToolStripMenuItem_Click(null, null);
-                return true;
-            }
+            //// save wp file
+            //if (keyData == (Keys.Control | Keys.S))
+            //{
+            //    saveWPFileToolStripMenuItem_Click(null, null);
+            //    return true;
+            //}
 
             return base.ProcessCmdKey(ref msg, keyData);
         }
@@ -1735,11 +1735,11 @@ namespace ByAeroBeHero.GCSViews
                  if (i != 1) { StartPoint = iSplitedWP * (i - 1) + 2; }
 
 
-                 using (StreamWriter sw = new StreamWriter(path + i.ToString() + ".txt"))
+                 using (StreamWriter sw = new StreamWriter(path + i.ToString() + ".wp"))
                 {
                     try
-                    { 
-                        sw.WriteLine("By Aero Save Points");
+                    {
+                        sw.WriteLine("@Saved by BOYING,WAYPOINT");
                         try
                         {
                             sw.WriteLine("0\t1\t0\t16\t0\t0\t0\t0\t" + double.Parse(TXT_homelat.Text).ToString("0.0000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homelng.Text).ToString("0.0000000", new CultureInfo("en-US")) + "\t" + double.Parse(TXT_homealt.Text).ToString("0.000000", new CultureInfo("en-US")) + "\t1");
@@ -1832,19 +1832,27 @@ namespace ByAeroBeHero.GCSViews
 
             string path = string.Empty;  //文件路径
             SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "(*.wp)|*.wp";
             if (save.ShowDialog() == DialogResult.OK)
-                path = save.FileName;
+            {
 
+                path = save.FileName;
+            }
+            else 
+            {
+                return;
+            }
+                
             int countsi = 1;
             if (!int.TryParse(counts, out countsi))
             {
-                MessageBox.Show("输入格式不正确,请重新输入！");
+                CustomMessageBox.Show("输入格式不正确,请重新输入！","提示");
                 return;
             }
             try
             {
                 savewaypoints(countsi, path);
-                MessageBox.Show("保存航点成功！");
+                CustomMessageBox.Show("保存航点成功！", "提示");
             }
             catch 
             {
@@ -2826,7 +2834,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "All Supported Types|*.txt;*.shp|By Aero (*.txt)|*.*|Shape file|*.shp";
+                fd.Filter = "(*.wp) |*.wp";
                 DialogResult result = fd.ShowDialog();
                 string file = fd.FileName;
 
@@ -2857,7 +2865,7 @@ namespace ByAeroBeHero.GCSViews
             {
                 StreamReader sr = new StreamReader(file); //"defines.h"
                 string header = sr.ReadLine();
-                if (header == null || !header.Contains("By Aero"))
+                if (header == null || !header.Contains("@Saved by BOYING,WAYPOINT"))
                 {
                     CustomMessageBox.Show("无效的路点文件");
                     return;
@@ -2868,7 +2876,7 @@ namespace ByAeroBeHero.GCSViews
                     string line = sr.ReadLine();
                     // waypoints
 
-                    if (line.StartsWith("#"))
+                    if (line.StartsWith("@Saved by BOYING,WAYPOINT"))
                         continue;
 
                     string[] items = line.Split(new[] { '\t', ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
@@ -4122,7 +4130,7 @@ namespace ByAeroBeHero.GCSViews
             clearPoints();
             ClearPolyPoints();
         }
-
+         
         public void clearPoints() 
         {
             quickadd = true;
@@ -5397,7 +5405,7 @@ namespace ByAeroBeHero.GCSViews
 
             using (SaveFileDialog sf = new SaveFileDialog())
             {
-                sf.Filter = "Polygon (*.poly)|*.poly";
+                sf.Filter = "(*.ws)|*.ws";
                 sf.ShowDialog();
                 if (sf.FileName != "")
                 {
@@ -5405,7 +5413,7 @@ namespace ByAeroBeHero.GCSViews
                     {
                         StreamWriter sw = new StreamWriter(sf.OpenFile());
 
-                        sw.WriteLine("#saved by By Aero " + Application.ProductVersion);
+                        sw.WriteLine("@Saved by BOYING,WORKSPACE");
 
                         if (drawnpolygon.Points.Count > 0)
                         {
@@ -5421,7 +5429,7 @@ namespace ByAeroBeHero.GCSViews
 
                         sw.Close();
                     }
-                    catch { CustomMessageBox.Show("Failed to write fence file"); }
+                    catch { CustomMessageBox.Show("保存工作区域失败!"); }
                 }
             }
         }
@@ -5430,7 +5438,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "Polygon (*.poly)|*.poly";
+                fd.Filter = "(*.ws)|*.ws";
                 fd.ShowDialog();
                 if (File.Exists(fd.FileName))
                 {
@@ -5445,7 +5453,7 @@ namespace ByAeroBeHero.GCSViews
                     while (!sr.EndOfStream)
                     {
                         string line = sr.ReadLine();
-                        if (line.StartsWith("#"))
+                        if (line.StartsWith("@Saved by BOYING,WORKSPACE"))
                         {
                         }
                         else
@@ -5625,15 +5633,21 @@ namespace ByAeroBeHero.GCSViews
 
         public void getRallyPointsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面接收器再去读取备用降落点。", "提示");
+                return;
+            }
+
             if (MainV2.comPort.MAV.param["RALLY_TOTAL"] == null)
             {
-                CustomMessageBox.Show("不支持！");
+                CustomMessageBox.Show("不支持！","提示");
                 return;
             }
 
             if (int.Parse(MainV2.comPort.MAV.param["RALLY_TOTAL"].ToString()) < 1)
             {
-                CustomMessageBox.Show("没有备用降落点下载！");
+                CustomMessageBox.Show("没有备用降落点下载！", "提示");
                 return;
             }
 
@@ -5658,24 +5672,40 @@ namespace ByAeroBeHero.GCSViews
 
         private void saveRallyPointsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面接收器再去写入备用降落点。","提示");
+                return;
+            }
+
             byte count = 0;
 
             MainV2.comPort.setParam("RALLY_TOTAL", rallypointoverlay.Markers.Count);
-
-            foreach (GMapMarkerRallyPt pnt in rallypointoverlay.Markers)
+            try
             {
-                try
+                foreach (GMapMarkerRallyPt pnt in rallypointoverlay.Markers)
                 {
-                    MainV2.comPort.setRallyPoint(count, new PointLatLngAlt(pnt.Position) { Alt = pnt.Alt }, 0, 0, 0, (byte)(float)MainV2.comPort.MAV.param["RALLY_TOTAL"]);
-                    count++;
+                    try
+                    {
+                        MainV2.comPort.setRallyPoint(count, new PointLatLngAlt(pnt.Position) { Alt = pnt.Alt }, 0, 0, 0, (byte)(float)MainV2.comPort.MAV.param["RALLY_TOTAL"]);
+                        count++;
+                    }
+                    catch { CustomMessageBox.Show("未能保存备用降落点", "提示"); return; }
                 }
-                catch { CustomMessageBox.Show("未能保存备用降落点", Strings.ERROR); return; }
+
+                if (rallypointoverlay.Markers.Count > 0)
+                    CustomMessageBox.Show("写入备用降落点成功！","提示");
             }
+            catch 
+            {
+                CustomMessageBox.Show("未能保存备用降落点", "提示");
+            }
+
         }
 
         private void setRallyPointToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string altstring = TXT_DefaultAlt.Text;
+            string altstring = "5";
 
             if (InputBox.Show("高度", "高度(米)", ref altstring) == DialogResult.Cancel)
                 return;
@@ -5878,7 +5908,7 @@ namespace ByAeroBeHero.GCSViews
 
             using (SaveFileDialog sf = new SaveFileDialog())
             {
-                sf.Filter = "Rally (*.ral)|*.ral";
+                sf.Filter = "(*.rp)|*.rp";
                 sf.ShowDialog();
                 if (sf.FileName != "")
                 {
@@ -5887,12 +5917,12 @@ namespace ByAeroBeHero.GCSViews
                         using (StreamWriter sw = new StreamWriter(sf.OpenFile()))
                         {
 
-                            sw.WriteLine("#saved by By Aero " + Application.ProductVersion);
+                            sw.WriteLine("@Saved by BOYING,RALLYPOINTS");
 
 
                             foreach (GMapMarkerRallyPt mark in rallypointoverlay.Markers)
                             {
-                                sw.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", "RALLY", mark.Position.Lat, mark.Position.Lng, mark.Alt, 0, 0, 0);
+                                sw.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", "rp", mark.Position.Lat, mark.Position.Lng, mark.Alt, 0, 0, 0);
                             }
                         }
                     }
@@ -5905,7 +5935,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "Rally (*.ral)|*.ral";
+                fd.Filter = "(*.rp)|*.rp";
                 fd.ShowDialog();
                 if (File.Exists(fd.FileName))
                 {
@@ -5916,7 +5946,7 @@ namespace ByAeroBeHero.GCSViews
                     while (!sr.EndOfStream)
                     {
                         string line = sr.ReadLine();
-                        if (line.StartsWith("#"))
+                        if (line.StartsWith("@Saved by BOYING,RALLYPOINTS"))
                         {
                         }
                         else
@@ -6395,7 +6425,7 @@ namespace ByAeroBeHero.GCSViews
         {
             if (!MainV2.comPort.BaseStream.IsOpen)
             {
-                CustomMessageBox.Show("请连接地面接收器再添加障碍航点。");
+                CustomMessageBox.Show("请连接地面接收器再添加障碍航点。", "提示");
                 return;
             }
             string altstring = "3";
@@ -6516,7 +6546,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "Obstacle (*.ral)|*.ral";
+                fd.Filter = "(*.os)|*.os";
                 fd.ShowDialog();
                 if (File.Exists(fd.FileName))
                 {
@@ -6575,7 +6605,7 @@ namespace ByAeroBeHero.GCSViews
 
             using (SaveFileDialog sf = new SaveFileDialog())
             {
-                sf.Filter = "Obstacle (*.ral)|*.ral";
+                sf.Filter = "(*.os)|*.os";
                 sf.ShowDialog();
                 if (sf.FileName != "")
                 {
@@ -6584,7 +6614,7 @@ namespace ByAeroBeHero.GCSViews
                         using (StreamWriter sw = new StreamWriter(sf.OpenFile()))
                         {
 
-                            sw.WriteLine("#saved by By Aero " + Application.ProductVersion);
+                            sw.WriteLine("@saved by BOYING,OBSTACLESPACE");
 
 
                             foreach (GMapMarkerLimitPt mark in drawnlimitpolygonsoverlay.Markers)
@@ -6736,8 +6766,20 @@ namespace ByAeroBeHero.GCSViews
                 cnt++;
             }
 
+            Color col = new Color();
+            col = Color.FromArgb(144, Color.Purple); 
+            //if (MainV2.comPort.MAV.cs.mode =="自动")
+            //{
+            //    col = Color.FromArgb(144, Color.Green); 
+            //}
+            //else if (MainV2.comPort.MAV.cs.mode == "自稳") { col = Color.FromArgb(144, Color.Magenta); }
+            //else if (MainV2.comPort.MAV.cs.mode == "定高") { col = Color.FromArgb(144, Color.White); }
+            //else if (MainV2.comPort.MAV.cs.mode == "悬停") { col = Color.FromArgb(144, Color.Blue); }
+            //else if (MainV2.comPort.MAV.cs.mode == "返航") { col = Color.FromArgb(144, Color.Red); }
+            //else if (MainV2.comPort.MAV.cs.mode == "定点") { col = Color.FromArgb(144, Color.Yellow); }
+            //else if (MainV2.comPort.MAV.cs.mode == "降落") { col = Color.FromArgb(144, Color.Gray); }
 
-            flyRoute.Stroke = new Pen(Color.FromArgb(144, Color.Purple), 5);
+            flyRoute.Stroke = new Pen(col, 4);
             //route.Stroke.DashStyle = DashStyle.Dash;
             flyRoute.Tag = "track";
 
@@ -6777,6 +6819,7 @@ namespace ByAeroBeHero.GCSViews
             药物喷完 = 1,
             电量过低 = 2,
             信号丢失 = 3,
+            GPS故障  =4,
             手动触发 = 0
         }
 
@@ -6944,8 +6987,8 @@ namespace ByAeroBeHero.GCSViews
         {
             using (SaveFileDialog fd = new SaveFileDialog())
             {
-                fd.Filter = "By Aero (*.txt)|*.*";
-                fd.DefaultExt = ".txt";
+                fd.Filter = "(*.bp)|*.bp";
+                fd.DefaultExt = ".bp";
                 fd.FileName = wpfilename;
                 DialogResult result = fd.ShowDialog();
                 string file = fd.FileName;
@@ -6954,7 +6997,7 @@ namespace ByAeroBeHero.GCSViews
                     try
                     {
                         StreamWriter sw = new StreamWriter(file);
-                        sw.WriteLine("ByAero Break Point");
+                        sw.WriteLine("@Saved by BOYING,BREAKPOINT");
                         foreach (GMapMarkerBreakPt pnt in breakploygonsoverlay.Markers)
                         {
                             try
@@ -6983,7 +7026,7 @@ namespace ByAeroBeHero.GCSViews
         {
             using (OpenFileDialog fd = new OpenFileDialog())
             {
-                fd.Filter = "All Supported Types|*.txt;*.shp|By Aero (*.txt)|*.*|Shape file|*.shp";
+                fd.Filter = "(*.bp)|*.bp";
                 DialogResult result = fd.ShowDialog();
                 string file = fd.FileName;
 
@@ -7014,7 +7057,7 @@ namespace ByAeroBeHero.GCSViews
                     string line = sr.ReadLine();
                     // waypoints
 
-                    if (line.StartsWith("#"))
+                    if (line.StartsWith("@Saved by BOYING,BREAKPOINT"))
                         continue;
 
                     string[] items = line.Split(new[] { '\t', ' ', ',' }, StringSplitOptions.RemoveEmptyEntries);
@@ -8129,9 +8172,9 @@ namespace ByAeroBeHero.GCSViews
                 {
                     this.pictureBoxvibez.Image = ByAeroBeHero.Properties.Resources.Waring;
                 }
-
                 if ((MainV2.comPort.MAV.param.ContainsKey("RNGFND_TYPE") && (float)MainV2.comPort.MAV.param["RNGFND_TYPE"] != 0) && CurrentState.lidarhealth)
                 {
+
                     this.pictureBoxLD.Image = ByAeroBeHero.Properties.Resources.Flying;
                 }
                 else

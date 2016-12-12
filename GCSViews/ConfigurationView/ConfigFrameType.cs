@@ -139,6 +139,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 RadbtnSevenRotorT_CheckedChanged(null, null);
             }
+            else if (iCopterType == 2 && (int)(float)MainV2.comPort.MAV.param["FRAME"] == 6)
+            {
+                RadbtnSpSixRotorT_CheckedChanged(null,null);
+            }
             ControlRabtn(iCopterType);
 
             #endregion
@@ -385,12 +389,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
                 this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
                 this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+                this.pictureBoxWithPseudoOpacity7.BackColor = Color.Transparent;
                 this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
                 this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+
             //}
         }
 
@@ -417,6 +424,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.pictureBoxWithPseudoOpacity7.BackColor = Color.Transparent;
+                this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
             //} 
         }
 
@@ -443,6 +452,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.pictureBoxWithPseudoOpacity7.BackColor = Color.Transparent;
+                this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
 
             //}
         }
@@ -470,6 +481,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
                 this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.pictureBoxWithPseudoOpacity7.BackColor = Color.Transparent;
+                this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
             //}
         }
 
@@ -496,6 +509,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
                 this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+                this.pictureBoxWithPseudoOpacity7.BackColor = Color.Transparent;
+                this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
             //}
         }
 
@@ -522,7 +537,34 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
                 this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
+                this.pictureBoxWithPseudoOpacity7.BackColor = Color.Transparent;
+                this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
             //}
+        }
+
+        /// <summary>
+        /// 十型六轴特殊
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RadbtnSpSixRotorT_CheckedChanged(object sender, EventArgs e)
+        {
+            this.iShapeType = 6;
+            this.iCopterType = (int)CopterType.Six;
+            this.pictureBoxWithPseudoOpacity2.BackColor = Color.Transparent;
+            this.pictureBoxWithPseudoOpacity1.BackColor = Color.Transparent;
+            this.pictureBoxWithPseudoOpacity3.BackColor = Color.Transparent;
+            this.pictureBoxWithPseudoOpacity4.BackColor = Color.Transparent;
+            this.pictureBoxWithPseudoOpacity5.BackColor = Color.Transparent;
+            this.pictureBoxWithPseudoOpacity6.BackColor = Color.Transparent;
+            this.RadbtnFourRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.RadbtnFiveRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.RadbtnSevenRotor1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.RadbtnFourRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.RadbtnFiveRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.RadbtnSevenRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.backgroudp;
+            this.pictureBoxWithPseudoOpacity7.BackColor = Color.White;
+            this.RadbtnSpSixRotorT1.BackgroundImage = ByAeroBeHero.Properties.Resources.white;
         }
         #endregion
 
@@ -601,7 +643,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 }
                 else
                 {
-                    CustomMessageBox.Show("测试电机失败!","电机测试");
+                    CustomMessageBox.Show("测试电机失败!", "电机测试");
                 }
             }
             catch (Exception ex)
@@ -640,8 +682,5 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
         }
 
-
-
-
     }
-}
+}            

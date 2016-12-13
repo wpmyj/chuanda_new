@@ -1574,9 +1574,6 @@
     <None Include="Drivers\vrubrain.cat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="flightgear.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="Lib\site-packages\scipy\fftpack\tests\fftw_double_ref.npz" />
     <None Include="Lib\site-packages\scipy\fftpack\tests\fftw_single_ref.npz" />
     <None Include="Lib\site-packages\scipy\fftpack\tests\test.npz" />
@@ -3099,9 +3096,6 @@
     <Content Include="camerasBuiltin.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ChangeLog.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="LogAnalyzer\DataflashLog.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -3257,7 +3251,7 @@
     <Content Include="Drivers\vrubrain.inf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="FirmwareHistory.txt">
+    <Content Include="ByaeroFWHistory.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="hud.html">

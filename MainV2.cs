@@ -2553,7 +2553,7 @@ namespace ByAeroBeHero
                             var fw = new Firmware();
                             var list = fw.getFWList();
                             if (list.Count > 1)
-                                Firmware.SaveSoftwares(list);
+                                //Firmware.SaveSoftwares(list);
 
                             config["fw_check"] = DateTime.Now.ToShortDateString();
                         }

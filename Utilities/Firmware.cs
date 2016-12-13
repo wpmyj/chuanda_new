@@ -106,11 +106,10 @@ namespace ByAeroBeHero.Utilities
         /// </summary>
         public Firmware()
         {
-            string file = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "FirmwareHistory.txt";
+            string file = Path.GetDirectoryName(Application.ExecutablePath) + Path.DirectorySeparatorChar + "ByaeroFWHistory.txt";
 
             if (!File.Exists(file))
             {
-                //CustomMessageBox.Show("Missing FirmwareHistory.txt file");
                 return;
             }
 
@@ -343,29 +342,29 @@ namespace ByAeroBeHero.Utilities
 
         public static void SaveSoftwares(List<software> list)
         {
-            System.Xml.Serialization.XmlSerializer writer = new System.Xml.Serialization.XmlSerializer(typeof(List<software>), new Type[] { typeof(software) });
+            //System.Xml.Serialization.XmlSerializer writer = new System.Xml.Serialization.XmlSerializer(typeof(List<software>), new Type[] { typeof(software) });
 
-            using (StreamWriter sw = new StreamWriter(Application.StartupPath + Path.DirectorySeparatorChar + "fwversions.xml"))
-            {
-                writer.Serialize(sw, list);
-            }
+            //using (StreamWriter sw = new StreamWriter(Application.StartupPath + Path.DirectorySeparatorChar + "fwversions.xml"))
+            //{
+            //    writer.Serialize(sw, list);
+            //}
         }
 
         public static List<software> LoadSoftwares()
         {
-            try
-            {
-                System.Xml.Serialization.XmlSerializer reader = new System.Xml.Serialization.XmlSerializer(typeof(List<software>), new Type[] { typeof(software) });
+            //try
+            //{
+            //    System.Xml.Serialization.XmlSerializer reader = new System.Xml.Serialization.XmlSerializer(typeof(List<software>), new Type[] { typeof(software) });
 
-                using (StreamReader sr = new StreamReader(Application.StartupPath + Path.DirectorySeparatorChar + "fwversions.xml"))
-                {
-                    return (List<software>)reader.Deserialize(sr);
-                }
-            }
-            catch (Exception ex) 
-            { 
-                log.Error(ex);
-            }
+            //    using (StreamReader sr = new StreamReader(Application.StartupPath + Path.DirectorySeparatorChar + "fwversions.xml"))
+            //    {
+            //        return (List<software>)reader.Deserialize(sr);
+            //    }
+            //}
+            //catch (Exception ex) 
+            //{ 
+            //    log.Error(ex);
+            //}
 
             return new List<software>();
         }

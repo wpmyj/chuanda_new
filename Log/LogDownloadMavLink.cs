@@ -108,7 +108,7 @@ namespace ByAeroBeHero.Log
                     genchkcombo(item.id);
 
                     //receibedbytestotal = (int)item.size;
-                    TXT_seriallog.AppendText(item.id + "\t" + "BOYING-" + CurrentState.str_firm_ware.ToString().Split('-')[1].Replace(".", "") + "-" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(item.time_utc).ToLocalTime().ToString("yyyyMMdd-HHmm") + "\t       大小:\t" + (int)(item.size / 1024) + "MB" + "\r\n");
+                    TXT_seriallog.AppendText(item.id + "\t" + "BOYING-" + CurrentState.str_firm_ware.ToString().Split('-')[1].Replace(".", "") + "-" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(item.time_utc).ToLocalTime().ToString("yyyyMMdd-HHmm") + "\t       大小:\t" + Math.Round((decimal)(item.size / 1024 / 1024),2).ToString() + "MB" + "\r\n");
                 }
 
                 if (list.Count == 0)

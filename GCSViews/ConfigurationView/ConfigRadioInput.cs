@@ -39,6 +39,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         public void Activate()
         {
+            InitControl();
             timer.Enabled = true;
             timer.Interval = 100;
             timer.Start();
@@ -143,6 +144,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
             } //(Exception ex) { CustomMessageBox.Show("Missing RC rev Param " + ex.ToString()); }
             startup = false;
+        }
+
+        private void InitControl() 
+        {
+        
         }
 
         public void Deactivate()
@@ -473,26 +479,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
         }
 
-        private void CHK_revch1_CheckedChanged(object sender, EventArgs e)
-        {
-            reverseChannel("RC1_REV", ((CheckBox) sender).Checked, BARroll);
-        }
-
-        private void CHK_revch2_CheckedChanged(object sender, EventArgs e)
-        {
-            reverseChannel("RC2_REV", ((CheckBox) sender).Checked, BARpitch);
-        }
-
-        private void CHK_revch3_CheckedChanged(object sender, EventArgs e)
-        {
-            reverseChannel("RC3_REV", ((CheckBox) sender).Checked, BARthrottle);
-        }
-
-        private void CHK_revch4_CheckedChanged(object sender, EventArgs e)
-        {
-            reverseChannel("RC4_REV", ((CheckBox) sender).Checked, BARyaw);
-        }
-
         private void reverseChannel(string name, bool normalreverse, Control progressbar)
         {
             if (normalreverse)
@@ -564,10 +550,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             catch { CustomMessageBox.Show(Strings.Error_binding); }
         }
 
-        private void panel1_CloseClick(object sender, EventArgs e)
-        {
-
-        }
 
         private void BAR8_Click(object sender, EventArgs e)
         {

@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_RTL_ALT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 99</value>
+    <value>58, 72</value>
   </data>
   <data name="lbl_RTL_ALT.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 20</value>
@@ -151,115 +151,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_RTL_ALT.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;lbl_RTL_ALT.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 32</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.Text" xml:space="preserve">
-    <value>悬停高度：</value>
-  </data>
-  <data name="lbl_RTL_ALT_F.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lbl_RTL_ALT_F.Name" xml:space="preserve">
-    <value>lbl_RTL_ALT_F</value>
-  </data>
-  <data name="&gt;&gt;lbl_RTL_ALT_F.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_RTL_ALT_F.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;lbl_RTL_ALT_F.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblUnit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblUnit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblUnit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblUnit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 36</value>
-  </data>
-  <data name="lblUnit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
-  </data>
-  <data name="lblUnit.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="lblUnit.Text" xml:space="preserve">
-    <value>单位：米</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.Name" xml:space="preserve">
-    <value>lblUnit</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;lblUnit.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblYawBehavior.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblYawBehavior.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblYawBehavior.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblYawBehavior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="lblYawBehavior.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
-  </data>
-  <data name="lblYawBehavior.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
-  </data>
-  <data name="lblYawBehavior.Text" xml:space="preserve">
-    <value>偏航朝向：</value>
-  </data>
-  <data name="lblYawBehavior.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.Name" xml:space="preserve">
-    <value>lblYawBehavior</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.Parent" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;lblYawBehavior.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
@@ -271,7 +166,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="NUM_movelength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 39</value>
+    <value>208, 42</value>
   </data>
   <data name="NUM_movelength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -295,16 +190,16 @@
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;NUM_movelength.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;NUM_movelength.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="tboxWriteV.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="tboxWriteV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 96</value>
+    <value>543, 69</value>
   </data>
   <data name="tboxWriteV.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 27</value>
@@ -322,40 +217,10 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tboxWriteV.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;tboxWriteV.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 23</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.ToolTip" xml:space="preserve">
-    <value>模式一:航向锁定,模式二:指向下一航点,模式三:除返航模式，指向下一行点。</value>
-  </data>
-  <data name="WP_YAW_BEHAVIOR.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Name" xml:space="preserve">
-    <value>WP_YAW_BEHAVIOR</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.Parent" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;WP_YAW_BEHAVIOR.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>5</value>
   </data>
   <data name="RTL_ALT_P.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -364,7 +229,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 95</value>
+    <value>208, 68</value>
   </data>
   <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
@@ -382,13 +247,13 @@
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6193.18143, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="lblMoveDistance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -400,7 +265,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblMoveDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 43</value>
+    <value>57, 46</value>
   </data>
   <data name="lblMoveDistance.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 20</value>
@@ -418,184 +283,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblMoveDistance.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblMoveDistance.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
-    <value>RTL_ALT_FINAL</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>956, 647</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>飞控参数设置</value>
-  </data>
-  <data name="groupBox1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10.2pt</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 32</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 30</value>
-  </data>
-  <data name="RTL_ALT_FINAL.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="RTL_ALT_FINAL.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Name" xml:space="preserve">
-    <value>RTL_ALT_FINAL</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;RTL_ALT_FINAL.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.Name" xml:space="preserve">
-    <value>ARMING_CHECK</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.Parent" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.Name" xml:space="preserve">
-    <value>lblArmCheck</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.Parent" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panelArmCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 512</value>
-  </data>
-  <data name="panelArmCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="panelArmCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Name" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelArmCheck.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ARMING_CHECK.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="ARMING_CHECK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 12</value>
-  </data>
-  <data name="ARMING_CHECK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 23</value>
-  </data>
-  <data name="ARMING_CHECK.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.Name" xml:space="preserve">
-    <value>ARMING_CHECK</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.Parent" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;ARMING_CHECK.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblArmCheck.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblArmCheck.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="lblArmCheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblArmCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 14</value>
-  </data>
-  <data name="lblArmCheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 20</value>
-  </data>
-  <data name="lblArmCheck.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="lblArmCheck.Text" xml:space="preserve">
-    <value>解锁检查：</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.Name" xml:space="preserve">
-    <value>lblArmCheck</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.Parent" xml:space="preserve">
-    <value>panelArmCheck</value>
-  </data>
-  <data name="&gt;&gt;lblArmCheck.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="myButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -604,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 142</value>
+    <value>349, 112</value>
   </data>
   <data name="myButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -622,10 +313,10 @@
     <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;myButton2.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;myButton2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="Btn_.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -634,7 +325,7 @@
     <value>NoControl</value>
   </data>
   <data name="Btn_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 142</value>
+    <value>242, 112</value>
   </data>
   <data name="Btn_.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -652,10 +343,10 @@
     <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;Btn_.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;Btn_.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="lblAllMove.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -667,7 +358,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblAllMove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>271, 43</value>
+    <value>301, 46</value>
   </data>
   <data name="lblAllMove.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -688,10 +379,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblAllMove.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblAllMove.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="chb_AllMove.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -700,7 +391,7 @@
     <value>NoControl</value>
   </data>
   <data name="chb_AllMove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 46</value>
+    <value>391, 49</value>
   </data>
   <data name="chb_AllMove.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 17</value>
@@ -718,10 +409,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chb_AllMove.Parent" xml:space="preserve">
-    <value>panel2</value>
+    <value>panel1</value>
   </data>
   <data name="&gt;&gt;chb_AllMove.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lblCheckSpeech.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -733,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCheckSpeech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 51</value>
+    <value>73, 48</value>
   </data>
   <data name="lblCheckSpeech.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -751,22 +442,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblCheckSpeech.Parent" xml:space="preserve">
-    <value>panel3</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;lblCheckSpeech.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="CHK_enablespeech.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="CHK_enablespeech.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="CHK_enablespeech.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -775,7 +457,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_enablespeech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 50</value>
+    <value>163, 47</value>
   </data>
   <data name="CHK_enablespeech.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 24</value>
@@ -793,7 +475,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CHK_enablespeech.Parent" xml:space="preserve">
-    <value>panel3</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;CHK_enablespeech.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -804,15 +486,6 @@
   <data name="CHK_speechwaypoint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="CHK_speechwaypoint.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="CHK_speechwaypoint.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
@@ -820,7 +493,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_speechwaypoint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 50</value>
+    <value>228, 47</value>
   </data>
   <data name="CHK_speechwaypoint.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 24</value>
@@ -838,22 +511,13 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CHK_speechwaypoint.Parent" xml:space="preserve">
-    <value>panel3</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;CHK_speechwaypoint.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="CHK_speechotherParams.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="CHK_speechotherParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="CHK_speechotherParams.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -862,7 +526,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_speechotherParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 49</value>
+    <value>390, 46</value>
   </data>
   <data name="CHK_speechotherParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 24</value>
@@ -880,22 +544,13 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CHK_speechotherParams.Parent" xml:space="preserve">
-    <value>panel3</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;CHK_speechotherParams.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="CHK_speechflightParams.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="CHK_speechflightParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="CHK_speechflightParams.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -904,7 +559,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_speechflightParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 49</value>
+    <value>294, 46</value>
   </data>
   <data name="CHK_speechflightParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 24</value>
@@ -922,46 +577,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CHK_speechflightParams.Parent" xml:space="preserve">
-    <value>panel3</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;CHK_speechflightParams.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 53</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 17</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.Name" xml:space="preserve">
-    <value>SPRAY_WRAP_EN</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6184.17150, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="lblChangeRow.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -973,7 +592,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblChangeRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 53</value>
+    <value>98, 38</value>
   </data>
   <data name="lblChangeRow.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -991,10 +610,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblChangeRow.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;lblChangeRow.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lblVNo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1006,7 +625,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 98</value>
+    <value>598, 71</value>
   </data>
   <data name="lblVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 20</value>
@@ -1024,10 +643,10 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblVNo.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;lblVNo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="lblVVNo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1039,7 +658,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>402, 99</value>
+    <value>434, 72</value>
   </data>
   <data name="lblVVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 20</value>
@@ -1057,130 +676,13 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblVVNo.Parent" xml:space="preserve">
-    <value>panel1</value>
+    <value>panel4</value>
   </data>
   <data name="&gt;&gt;lblVVNo.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 26</value>
-  </data>
-  <data name="panel1.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>679, 183</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="panel1.Text" xml:space="preserve">
-    <value>飞控参数设置</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 215</value>
-  </data>
-  <data name="panel2.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>679, 74</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="panel2.Text" xml:space="preserve">
-    <value>地面站参数设置</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 294</value>
-  </data>
-  <data name="panel3.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>679, 100</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
-  </data>
-  <data name="panel3.Text" xml:space="preserve">
-    <value>系统功能设置</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pSetParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAABGdBTUEAALGPC/xhBQAAALlJREFUeF7t
-        0jEBADAMBKH6t/hiUhW3MeCAt+2gIhgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMl
-        GCnBSAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnB
-        SAlGSjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGKHdB8Kl
-        oyb5zYI8AAAAAElFTkSuQmCC
-</value>
+    <value>7</value>
   </data>
   <data name="chbShow_AllParams.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="chbShow_AllParams.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJgAAABCCAYAAACrZx9oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC5SURBVHhe7dIxAQAwDASh+rf4YlIVtzHggLftoCIYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlG
-        SjBSgpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBS
-        gpESjJRgpAQjJRgpwUgJRkowUoKREoyUYKQEIyUYKcFICUZKMFKCkRKMlGCkBCMlGCnBSAlGSjBSgpES
-        jJRgpAQjJRih3QfCpaMm+c2CPAAAAABJRU5ErkJggg==
-</value>
   </data>
   <data name="chbShow_AllParams.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -1189,7 +691,7 @@
     <value>NoControl</value>
   </data>
   <data name="chbShow_AllParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 42</value>
+    <value>79, 46</value>
   </data>
   <data name="chbShow_AllParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
@@ -1210,22 +712,391 @@
     <value>pSetParams</value>
   </data>
   <data name="&gt;&gt;chbShow_AllParams.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.Name" xml:space="preserve">
+    <value>SPRAY_WRAP_EN</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6193.18143, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>679, 164</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 41</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.Name" xml:space="preserve">
+    <value>SPRAY_WRAP_EN</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6193.18143, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_WRAP_EN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Name" xml:space="preserve">
+    <value>lblControlParams</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 26</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblControlParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblControlParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblControlParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblControlParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 0</value>
+  </data>
+  <data name="lblControlParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="lblControlParams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblControlParams.Text" xml:space="preserve">
+    <value>飞控参数设置</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Name" xml:space="preserve">
+    <value>lblControlParams</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 183</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 100</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.Name" xml:space="preserve">
+    <value>lblPCParams</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 26</value>
+  </data>
+  <data name="panel6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblPCParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPCParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblPCParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPCParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 1</value>
+  </data>
+  <data name="lblPCParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
+  </data>
+  <data name="lblPCParams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPCParams.Text" xml:space="preserve">
+    <value>地面站参数设置</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.Name" xml:space="preserve">
+    <value>lblPCParams</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.Parent" xml:space="preserve">
+    <value>panel6</value>
+  </data>
+  <data name="&gt;&gt;lblPCParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 289</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 100</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.Name" xml:space="preserve">
+    <value>lblSDParams</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt</value>
+  </data>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-1, 0</value>
+  </data>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 26</value>
+  </data>
+  <data name="panel7.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblSDParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSDParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblSDParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSDParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 1</value>
+  </data>
+  <data name="lblSDParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="lblSDParams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblSDParams.Text" xml:space="preserve">
+    <value>系统功能设置</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.Name" xml:space="preserve">
+    <value>lblSDParams</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.Parent" xml:space="preserve">
+    <value>panel7</value>
+  </data>
+  <data name="&gt;&gt;lblSDParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.Name" xml:space="preserve">
+    <value>lblShowParams</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 26</value>
+  </data>
+  <data name="panel8.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel8.Name" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;panel8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel8.Parent" xml:space="preserve">
+    <value>pSetParams</value>
+  </data>
+  <data name="&gt;&gt;panel8.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="pSetParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 417</value>
-  </data>
-  <data name="pSetParams.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
+    <value>34, 396</value>
   </data>
   <data name="pSetParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>679, 88</value>
+    <value>677, 100</value>
   </data>
   <data name="pSetParams.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="pSetParams.Text" xml:space="preserve">
-    <value>显示全部参数</value>
+    <value>108</value>
   </data>
   <data name="pSetParams.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1234,12 +1105,45 @@
     <value>pSetParams</value>
   </data>
   <data name="&gt;&gt;pSetParams.Type" xml:space="preserve">
-    <value>BSE.Windows.Forms.Panel, BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pSetParams.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pSetParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblShowParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblShowParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblShowParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblShowParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 0</value>
+  </data>
+  <data name="lblShowParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="lblShowParams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblShowParams.Text" xml:space="preserve">
+    <value>系统功能设置</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.Name" xml:space="preserve">
+    <value>lblShowParams</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.Parent" xml:space="preserve">
+    <value>panel8</value>
+  </data>
+  <data name="&gt;&gt;lblShowParams.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1248,170 +1152,11 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>
   </data>
-  <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        RudN65tdA8sHzg46DF645Xrr8m2v29fvrLwzMBQydHc4cnjkLvvu5L2key/vZ9yff7DpIfph4SOpR+WP
-        lR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aTp6fcp24+W/1s/Hnq8/npgp+l
-        f65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfzc4Vv5d8efcd41/s+7P3EfOYH7IeK
-        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAAuIwAALiMBeKU/dgAAGXhJREFUeF7t1wENAAAM
-        w6CLnX8N19EEXHADAACgzOsAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3r
-        AAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8
-        DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN
-        6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADa
-        vA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACg
-        zesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA
-        2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAA
-        oM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAA
-        ANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4A
-        AKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesA
-        AADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwOAACgzesAAADavA4AAKDN6wAAANq8DgAAoM3rAAAA2rwO
-        AACgzesAAADavA4AAKDN6wAAANq8DgAAoGx7vxIru+2/VRAAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1040, 591</value>
+    <value>752, 536</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

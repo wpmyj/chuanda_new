@@ -31,34 +31,28 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigAccelerometerCalibration));
-            this.label4 = new System.Windows.Forms.Label();
             this.lbl_Accel_user = new System.Windows.Forms.Label();
-            this.BUT_calib_accell = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_level = new ByAeroBeHero.Controls.MyButton();
             this.lblCalibate = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblWarnInfo = new System.Windows.Forms.Label();
             this.panCalibrate = new System.Windows.Forms.Panel();
             this.lblCalibrate = new System.Windows.Forms.Label();
-            this.panel2 = new BSE.Windows.Forms.Panel();
-            this.panel3 = new BSE.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnShowCalibrate = new ByAeroBeHero.Controls.MyButton();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblCorrectA = new System.Windows.Forms.Label();
+            this.BUT_level = new ByAeroBeHero.Controls.MyButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblCalibrateAccel = new System.Windows.Forms.Label();
+            this.BUT_calib_accell = new ByAeroBeHero.Controls.MyButton();
             this.panel1.SuspendLayout();
             this.panCalibrate.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
             // 
             // lbl_Accel_user
             // 
@@ -67,56 +61,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lbl_Accel_user.ForeColor = System.Drawing.Color.Red;
             this.lbl_Accel_user.Name = "lbl_Accel_user";
             // 
-            // BUT_calib_accell
-            // 
-            resources.ApplyResources(this.BUT_calib_accell, "BUT_calib_accell");
-            this.BUT_calib_accell.BackColor = System.Drawing.SystemColors.Control;
-            this.BUT_calib_accell.BGGradBot = System.Drawing.Color.Transparent;
-            this.BUT_calib_accell.BGGradTop = System.Drawing.Color.Transparent;
-            this.BUT_calib_accell.Name = "BUT_calib_accell";
-            this.BUT_calib_accell.UseVisualStyleBackColor = false;
-            this.BUT_calib_accell.Click += new System.EventHandler(this.BUT_calib_accell_Click);
-            // 
-            // BUT_level
-            // 
-            resources.ApplyResources(this.BUT_level, "BUT_level");
-            this.BUT_level.BackColor = System.Drawing.SystemColors.Control;
-            this.BUT_level.BGGradBot = System.Drawing.Color.Transparent;
-            this.BUT_level.BGGradTop = System.Drawing.Color.Transparent;
-            this.BUT_level.Name = "BUT_level";
-            this.BUT_level.UseVisualStyleBackColor = false;
-            this.BUT_level.Click += new System.EventHandler(this.BUT_level_Click);
-            // 
             // lblCalibate
             // 
             resources.ApplyResources(this.lblCalibate, "lblCalibate");
             this.lblCalibate.BackColor = System.Drawing.Color.Transparent;
             this.lblCalibate.Name = "lblCalibate";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -136,6 +85,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // panCalibrate
             // 
             resources.ApplyResources(this.panCalibrate, "panCalibrate");
+            this.panCalibrate.BackColor = System.Drawing.Color.Transparent;
             this.panCalibrate.Controls.Add(this.lblCalibrate);
             this.panCalibrate.Name = "panCalibrate";
             // 
@@ -144,64 +94,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             resources.ApplyResources(this.lblCalibrate, "lblCalibrate");
             this.lblCalibrate.Name = "lblCalibrate";
             // 
-            // panel2
+            // panel4
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.AssociatedSplitter = null;
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
-            this.panel2.CaptionHeight = 27;
-            this.panel2.Controls.Add(this.BUT_calib_accell);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel2.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel2.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel2.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            this.panel2.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            this.panel2.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel2.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel2.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel2.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Image = null;
-            this.panel2.Name = "panel2";
-            this.panel2.ToolTipTextCloseIcon = null;
-            this.panel2.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel2.ToolTipTextExpandIconPanelExpanded = null;
-            // 
-            // panel3
-            // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.AssociatedSplitter = null;
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
-            this.panel3.CaptionHeight = 27;
-            this.panel3.Controls.Add(this.btnShowCalibrate);
-            this.panel3.Controls.Add(this.panCalibrate);
-            this.panel3.Controls.Add(this.BUT_level);
-            this.panel3.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel3.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel3.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel3.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            this.panel3.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            this.panel3.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel3.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel3.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Image = null;
-            this.panel3.Name = "panel3";
-            this.panel3.ToolTipTextCloseIcon = null;
-            this.panel3.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel3.ToolTipTextExpandIconPanelExpanded = null;
+            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.Controls.Add(this.panCalibrate);
+            this.panel4.Controls.Add(this.btnShowCalibrate);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.BUT_level);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
             // 
             // btnShowCalibrate
             // 
@@ -213,44 +114,99 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.btnShowCalibrate.UseVisualStyleBackColor = false;
             this.btnShowCalibrate.Click += new System.EventHandler(this.btnShowCalibrate_Click);
             // 
+            // panel5
+            // 
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.lblCorrectA);
+            this.panel5.Name = "panel5";
+            // 
+            // lblCorrectA
+            // 
+            resources.ApplyResources(this.lblCorrectA, "lblCorrectA");
+            this.lblCorrectA.BackColor = System.Drawing.Color.Transparent;
+            this.lblCorrectA.Name = "lblCorrectA";
+            // 
+            // BUT_level
+            // 
+            resources.ApplyResources(this.BUT_level, "BUT_level");
+            this.BUT_level.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_level.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_level.BGGradTop = System.Drawing.Color.Transparent;
+            this.BUT_level.Name = "BUT_level";
+            this.BUT_level.UseVisualStyleBackColor = false;
+            this.BUT_level.Click += new System.EventHandler(this.BUT_level_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.BUT_calib_accell);
+            this.panel3.Controls.Add(this.panel1);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // panel6
+            // 
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.lblCalibrateAccel);
+            this.panel6.Name = "panel6";
+            // 
+            // lblCalibrateAccel
+            // 
+            resources.ApplyResources(this.lblCalibrateAccel, "lblCalibrateAccel");
+            this.lblCalibrateAccel.BackColor = System.Drawing.Color.Transparent;
+            this.lblCalibrateAccel.Name = "lblCalibrateAccel";
+            // 
+            // BUT_calib_accell
+            // 
+            resources.ApplyResources(this.BUT_calib_accell, "BUT_calib_accell");
+            this.BUT_calib_accell.BackColor = System.Drawing.SystemColors.Control;
+            this.BUT_calib_accell.BGGradBot = System.Drawing.Color.Transparent;
+            this.BUT_calib_accell.BGGradTop = System.Drawing.Color.Transparent;
+            this.BUT_calib_accell.Name = "BUT_calib_accell";
+            this.BUT_calib_accell.UseVisualStyleBackColor = false;
+            this.BUT_calib_accell.Click += new System.EventHandler(this.BUT_calib_accell_Click);
+            // 
             // ConfigAccelerometerCalibration
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel4);
             this.Name = "ConfigAccelerometerCalibration";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panCalibrate.ResumeLayout(false);
             this.panCalibrate.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label4;
         private MyButton BUT_calib_accell;
         private System.Windows.Forms.Label lbl_Accel_user;
         private MyButton BUT_level;
         private System.Windows.Forms.Label lblCalibate;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblWarnInfo;
         private System.Windows.Forms.Panel panCalibrate;
         private System.Windows.Forms.Label lblCalibrate;
-        private BSE.Windows.Forms.Panel panel2;
-        private BSE.Windows.Forms.Panel panel3;
         private MyButton btnShowCalibrate;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblCorrectA;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lblCalibrateAccel;
     }
 }

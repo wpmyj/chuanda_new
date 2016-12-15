@@ -59,6 +59,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void initControl()
         {
+            lblMotorbalance.ForeColor = Color.Black;
             this.lblPositive.Text = "";
             this.lblNegative.Text = "";
             this.lblDiff.Text = "";

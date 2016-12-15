@@ -11,62 +11,30 @@ namespace ByAeroBeHero.GCSViews
 {
     public partial class Help : MyUserControl, IActivate
     {
-        private LogDownloadMavLink form = new LogDownloadMavLink();
         public Help()
         {
             InitializeComponent();
+            InintControl(); 
         }
 
         public void Activate()
         {
+            this.BackColor = Color.DimGray;
             MainV2.instance.controlMainMenuColor("MenuHelp");
-            try
-            {
-                CHK_showconsole.Checked = MainV2.config["showconsole"].ToString() == "True";
-            }
-            catch
-            {
-            }
-            this.IsShow = true;
         }
 
-        public void BUT_updatecheck_Click(object sender, EventArgs e)
+        private void InintControl() 
         {
-            Utilities.Update.DoUpdate();
-        }
-
-        private void CHK_showconsole_CheckedChanged(object sender, EventArgs e)
-        {
-            MainV2.config["showconsole"] = CHK_showconsole.Checked.ToString();
+            this.BackColor = Color.DimGray;
+            this.label1.ForeColor = label2.ForeColor = label3.ForeColor = label4.ForeColor = label5.ForeColor = label6.ForeColor =
+                label7.ForeColor = label8.ForeColor = label9.ForeColor = label10.ForeColor = lblframType.ForeColor = System.Drawing.Color.Black;        
         }
 
         private void Help_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.DimGray;
             lblframType.Text = CurrentState.str_firm_ware;
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("http://firmware.diydrones.com/Tools/ByAeroBeHero/upgrade/ChangeLog.txt");
-        }
-
-        private void PIC_wizard_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void BUT_betaupdate_Click(object sender, EventArgs e)
-        {
-            Utilities.Update.dobeta = true;
-            Utilities.Update.DoUpdate();
-        }
-
-        private bool IsShow = false; 
-        private void myBtnDownloadlog_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
+            this.lblframType.ForeColor = System.Drawing.Color.Black;  
         }
     }
 }

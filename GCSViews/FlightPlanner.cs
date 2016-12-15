@@ -6665,6 +6665,7 @@ namespace ByAeroBeHero.GCSViews
 
         private void myBtnFunction_Click(object sender, EventArgs e)
         {
+            this.groupBoxBasePoint.BackColor = groupBoxAeroPoint.BackColor = groupBoxRellyPoint.BackColor = breakpointgroupBox.BackColor = Color.LightGray;
             if (Isshow)
             {
                 this.panelShowPoint.Visible = false;
@@ -7046,7 +7047,7 @@ namespace ByAeroBeHero.GCSViews
             {
                 StreamReader sr = new StreamReader(file); //"defines.h"
                 string header = sr.ReadLine();
-                if (header == null || !header.Contains("ByAero"))
+                if (header == null || !header.Contains("@Saved by BOYING,BREAKPOINT"))
                 {
                     CustomMessageBox.Show("无效的路点文件");
                     return;

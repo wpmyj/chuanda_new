@@ -17,17 +17,13 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             InitializeComponent();
 
-            RTL_ALT_FINAL.Visible = false;
-            panelArmCheck.Visible = false;
-
             InitControl(); 
         }
 
         private void InitControl() 
         {
-            this.lblArmCheck.ForeColor = 
-                CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor 
-                =chbShow_AllParams.ForeColor= CHK_speechotherParams.ForeColor = Color.Black;
+                //CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor 
+                //=chbShow_AllParams.ForeColor= CHK_speechotherParams.ForeColor = Color.Black;
         }
 
         public void Activate()
@@ -50,24 +46,14 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 if (!MainV2.comPort.BaseStream.IsOpen)
                 {
                     RTL_ALT_P.Enabled = false;
-                    RTL_ALT_FINAL.Enabled = false;
                 }
                 else
                 {
                     startup = true;
                     changes.Clear();
 
-                    WP_YAW_BEHAVIOR.setup(
-                       ParameterMetaDataRepository.GetParameterOptionsInt("WP_YAW_BEHAVIOR", MainV2.comPort.MAV.cs.firmware.ToString())
-                       .ToList(), "WP_YAW_BEHAVIOR", MainV2.comPort.MAV.param);
-                    ARMING_CHECK.setup(
-                       ParameterMetaDataRepository.GetParameterOptionsInt("ARMING_CHECK", MainV2.comPort.MAV.cs.firmware.ToString())
-                       .ToList(), "ARMING_CHECK", MainV2.comPort.MAV.param);
-
                     RTL_ALT_P.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_CLIMB_MIN",
-                   MainV2.comPort.MAV.param);
-                    //    RTL_ALT_FINAL.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT_FINAL",
-                    //MainV2.comPort.MAV.param);
+                    MainV2.comPort.MAV.param);
 
                     SPRAY_WRAP_EN.setup(1, 0, "SPRAY_WRAP_EN", MainV2.comPort.MAV.param);
 
@@ -237,11 +223,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             InitControl(); 
         }
 
-        private void RTL_ALT_ValueChanged(object sender, EventArgs e)
-        {
-            EEPROM_View_float_TextChanged(sender, e);
-        }
-
         private void NUM_movelength_ValueChanged(object sender, EventArgs e)
         {
             MainV2.config["NUM_movelength"] = NUM_movelength.Value;
@@ -327,11 +308,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private void chb_AllMove_CheckedChanged(object sender, EventArgs e)
         {
             MainV2.config["CHB_AllMove"] = chb_AllMove.Checked;
-        }
-
-        private void tBoxVNo_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void tboxWriteV_Resize(object sender, EventArgs e)

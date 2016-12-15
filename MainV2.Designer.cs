@@ -35,11 +35,6 @@ namespace ByAeroBeHero
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainV2));
             this.MainMenu = new System.Windows.Forms.MenuStrip();
-            this.CTX_mainmenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.autoHideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fullScreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.readonlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectionOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuFlightData = new System.Windows.Forms.ToolStripButton();
             this.MenuFlightPlanner = new System.Windows.Forms.ToolStripButton();
             this.MenuInitConfig = new System.Windows.Forms.ToolStripButton();
@@ -50,18 +45,15 @@ namespace ByAeroBeHero
             this.toolStripConnectionControl = new ByAeroBeHero.Controls.ToolStripConnectionControl();
             this.MenuConnect = new System.Windows.Forms.ToolStripButton();
             this.MenuDonate = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu = new ByAeroBeHero.Controls.MyButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.MainMenu.SuspendLayout();
-            this.CTX_mainmenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainMenu
             // 
             this.MainMenu.BackColor = System.Drawing.Color.Black;
-            this.MainMenu.ContextMenuStrip = this.CTX_mainmenu;
             this.MainMenu.GripMargin = new System.Windows.Forms.Padding(0);
             this.MainMenu.ImageScalingSize = new System.Drawing.Size(0, 0);
             this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -80,44 +72,6 @@ namespace ByAeroBeHero
             this.MainMenu.Stretch = false;
             this.MainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MainMenu_ItemClicked);
             this.MainMenu.MouseLeave += new System.EventHandler(this.MainMenu_MouseLeave);
-            // 
-            // CTX_mainmenu
-            // 
-            this.CTX_mainmenu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.CTX_mainmenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.autoHideToolStripMenuItem,
-            this.fullScreenToolStripMenuItem,
-            this.readonlyToolStripMenuItem,
-            this.connectionOptionsToolStripMenuItem});
-            this.CTX_mainmenu.Name = "CTX_mainmenu";
-            resources.ApplyResources(this.CTX_mainmenu, "CTX_mainmenu");
-            // 
-            // autoHideToolStripMenuItem
-            // 
-            this.autoHideToolStripMenuItem.CheckOnClick = true;
-            this.autoHideToolStripMenuItem.Name = "autoHideToolStripMenuItem";
-            resources.ApplyResources(this.autoHideToolStripMenuItem, "autoHideToolStripMenuItem");
-            this.autoHideToolStripMenuItem.Click += new System.EventHandler(this.autoHideToolStripMenuItem_Click);
-            // 
-            // fullScreenToolStripMenuItem
-            // 
-            this.fullScreenToolStripMenuItem.CheckOnClick = true;
-            this.fullScreenToolStripMenuItem.Name = "fullScreenToolStripMenuItem";
-            resources.ApplyResources(this.fullScreenToolStripMenuItem, "fullScreenToolStripMenuItem");
-            this.fullScreenToolStripMenuItem.Click += new System.EventHandler(this.fullScreenToolStripMenuItem_Click);
-            // 
-            // readonlyToolStripMenuItem
-            // 
-            this.readonlyToolStripMenuItem.CheckOnClick = true;
-            this.readonlyToolStripMenuItem.Name = "readonlyToolStripMenuItem";
-            resources.ApplyResources(this.readonlyToolStripMenuItem, "readonlyToolStripMenuItem");
-            this.readonlyToolStripMenuItem.Click += new System.EventHandler(this.readonlyToolStripMenuItem_Click);
-            // 
-            // connectionOptionsToolStripMenuItem
-            // 
-            this.connectionOptionsToolStripMenuItem.Name = "connectionOptionsToolStripMenuItem";
-            resources.ApplyResources(this.connectionOptionsToolStripMenuItem, "connectionOptionsToolStripMenuItem");
-            this.connectionOptionsToolStripMenuItem.Click += new System.EventHandler(this.connectionOptionsToolStripMenuItem_Click);
             // 
             // MenuFlightData
             // 
@@ -207,17 +161,6 @@ namespace ByAeroBeHero
             this.MenuDonate.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.MenuDonate.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // menu
-            // 
-            this.menu.BGGradBot = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.menu.BGGradTop = System.Drawing.Color.Teal;
-            resources.ApplyResources(this.menu, "menu");
-            this.menu.Name = "menu";
-            this.menu.Outline = System.Drawing.Color.Transparent;
-            this.menu.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.menu.UseVisualStyleBackColor = true;
-            this.menu.MouseEnter += new System.EventHandler(this.menu_MouseEnter);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -232,7 +175,6 @@ namespace ByAeroBeHero
             this.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menu);
             this.KeyPreview = true;
             this.MainMenuStrip = this.MainMenu;
             this.Name = "MainV2";
@@ -240,7 +182,6 @@ namespace ByAeroBeHero
             this.Resize += new System.EventHandler(this.MainV2_Resize);
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();
-            this.CTX_mainmenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -259,15 +200,9 @@ namespace ByAeroBeHero
 
         private System.Windows.Forms.ToolStripButton MenuHelp;
         private Controls.ToolStripConnectionControl toolStripConnectionControl;
-        private Controls.MyButton menu;
         public System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ContextMenuStrip CTX_mainmenu;
-        private System.Windows.Forms.ToolStripMenuItem autoHideToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuDonate;
         public System.Windows.Forms.MenuStrip MainMenu;
-        private System.Windows.Forms.ToolStripMenuItem fullScreenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem readonlyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem connectionOptionsToolStripMenuItem;
         public System.IO.Ports.SerialPort serialPort1;
     }
 }

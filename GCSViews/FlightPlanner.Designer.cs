@@ -89,23 +89,13 @@ namespace ByAeroBeHero.GCSViews
             this.Dist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CHK_verifyheight = new System.Windows.Forms.CheckBox();
-            this.TXT_WPRad = new System.Windows.Forms.TextBox();
-            this.TXT_DefaultAlt = new System.Windows.Forms.TextBox();
-            this.LBL_WPRad = new System.Windows.Forms.Label();
-            this.LBL_defalutalt = new System.Windows.Forms.Label();
-            this.TXT_loiterrad = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.BUT_write = new ByAeroBeHero.Controls.MyButton();
             this.BUT_read = new ByAeroBeHero.Controls.MyButton();
-            this.lblHAlt = new System.Windows.Forms.Label();
-            this.lbljd = new System.Windows.Forms.Label();
-            this.lblwd = new System.Windows.Forms.Label();
             this.TXT_homealt = new System.Windows.Forms.TextBox();
             this.TXT_homelng = new System.Windows.Forms.TextBox();
             this.TXT_homelat = new System.Windows.Forms.TextBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.panelWaypoints = new BSE.Windows.Forms.Panel();
             this.splitter1 = new BSE.Windows.Forms.Splitter();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -115,7 +105,9 @@ namespace ByAeroBeHero.GCSViews
             this.lbl_distance = new System.Windows.Forms.Label();
             this.lbl_homedist = new System.Windows.Forms.Label();
             this.lbl_prevdist = new System.Windows.Forms.Label();
+            this.coords1 = new ByAeroBeHero.Controls.Coords();
             this.lblhxj = new System.Windows.Forms.Label();
+            this.LBL_defalutalt = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -125,11 +117,19 @@ namespace ByAeroBeHero.GCSViews
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.lblKeepLiter = new System.Windows.Forms.Label();
+            this.TXT_loiterrad = new System.Windows.Forms.TextBox();
+            this.LBL_WPRad = new System.Windows.Forms.Label();
             this.TXT_altwarn = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TXT_WPRad = new System.Windows.Forms.TextBox();
+            this.TXT_DefaultAlt = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.BUT_quickrtl1 = new ByAeroBeHero.Controls.MyButton();
             this.BUT_ARM1 = new ByAeroBeHero.Controls.MyButton();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblwd = new System.Windows.Forms.Label();
+            this.lbljd = new System.Windows.Forms.Label();
+            this.lblHAlt = new System.Windows.Forms.Label();
             this.comboBoxMapType = new System.Windows.Forms.ComboBox();
             this.myButton1 = new ByAeroBeHero.Controls.MyButton();
             this.CHK_splinedefault = new System.Windows.Forms.CheckBox();
@@ -140,6 +140,7 @@ namespace ByAeroBeHero.GCSViews
             this.panelMap = new System.Windows.Forms.Panel();
             this.trackBar1 = new ByAeroBeHero.Controls.MyTrackBar();
             this.panelShowPoint = new BSE.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.groupboxOPoint = new System.Windows.Forms.GroupBox();
             this.myButton_savelimitpoint = new ByAeroBeHero.Controls.MyButton();
             this.myButton_loadlimitpoint = new ByAeroBeHero.Controls.MyButton();
@@ -147,19 +148,19 @@ namespace ByAeroBeHero.GCSViews
             this.myButtonClearLimitPoint = new ByAeroBeHero.Controls.MyButton();
             this.myBtnLimit = new ByAeroBeHero.Controls.MyButton();
             this.myBtnSendPoint = new ByAeroBeHero.Controls.MyButton();
+            this.groupBoxBasePoint = new System.Windows.Forms.GroupBox();
+            this.groupBoxAeroPoint = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanelRoute = new System.Windows.Forms.TableLayoutPanel();
+            this.myBtnLoadAeroPoint = new ByAeroBeHero.Controls.MyButton();
+            this.myBtnAddPoint = new ByAeroBeHero.Controls.MyButton();
             this.breakpointgroupBox = new System.Windows.Forms.GroupBox();
             this.myBtn_write_break_point = new ByAeroBeHero.Controls.MyButton();
             this.myBtn_read_break_point = new ByAeroBeHero.Controls.MyButton();
-            this.groupBoxBasePoint = new System.Windows.Forms.GroupBox();
             this.groupBoxRellyPoint = new System.Windows.Forms.GroupBox();
             this.myButtonDonwloadRallyPoint = new ByAeroBeHero.Controls.MyButton();
             this.myButton_loadRallypoint = new ByAeroBeHero.Controls.MyButton();
             this.myButton2 = new ByAeroBeHero.Controls.MyButton();
             this.myBtnSetRallyPoint = new ByAeroBeHero.Controls.MyButton();
-            this.groupBoxAeroPoint = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanelRoute = new System.Windows.Forms.TableLayoutPanel();
-            this.myBtnLoadAeroPoint = new ByAeroBeHero.Controls.MyButton();
-            this.myBtnAddPoint = new ByAeroBeHero.Controls.MyButton();
             this.btnMeterInfo = new ByAeroBeHero.Controls.MyButton();
             this.btnWarnning = new ByAeroBeHero.Controls.MyButton();
             this.btnPlanInfo = new ByAeroBeHero.Controls.MyButton();
@@ -180,47 +181,43 @@ namespace ByAeroBeHero.GCSViews
             this.qvyaw = new ByAeroBeHero.Controls.QuickView();
             this.qvroll = new ByAeroBeHero.Controls.QuickView();
             this.ebsPanelPlanInfo = new BSE.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.lblFlighttime = new System.Windows.Forms.Label();
+            this.myBtnFunction = new ByAeroBeHero.Controls.MyButton();
             this.lblDoneArea = new System.Windows.Forms.Label();
+            this.lblDisToHome = new System.Windows.Forms.Label();
             this.lblFlyTime = new System.Windows.Forms.Label();
+            this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
             this.lblDistance1 = new System.Windows.Forms.Label();
+            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
             this.lblStrip = new System.Windows.Forms.Label();
+            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
             this.lblAero = new System.Windows.Forms.Label();
+            this.myButtonLand = new ByAeroBeHero.Controls.MyButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lblStrips = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.lblHeadinghold = new System.Windows.Forms.Label();
-            this.lblBearToHome = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.lblDistance = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lblDoneArea1 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.lblArea = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.lblBearToHome1 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.lblDisToHome1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblDistbetweenlines = new System.Windows.Forms.Label();
-            this.myButtonLand = new ByAeroBeHero.Controls.MyButton();
-            this.myBtnFunction = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_quickauto1 = new ByAeroBeHero.Controls.MyButton();
-            this.BUT_clear_track1 = new ByAeroBeHero.Controls.MyButton();
-            this.btnLoiterUnlim = new ByAeroBeHero.Controls.MyButton();
-            this.lblDisToHome = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.lblDisToHome1 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lblStrips = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblBearToHome1 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.lblHeadinghold = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.lblBearToHome = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblDoneArea1 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.lblDistance = new System.Windows.Forms.Label();
             this.ebsPanelWarning = new BSE.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.lblHorizontalError = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.lblShowTime = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblSataCount = new System.Windows.Forms.Label();
-            this.BtnClear = new ByAeroBeHero.Controls.MyButton();
-            this.lblStaCount = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.lblLD = new System.Windows.Forms.Label();
             this.lblvibez = new System.Windows.Forms.Label();
@@ -238,9 +235,15 @@ namespace ByAeroBeHero.GCSViews
             this.pictureBoxvibez = new System.Windows.Forms.PictureBox();
             this.pictureBoxGyro = new System.Windows.Forms.PictureBox();
             this.pictureBoxCompass = new System.Windows.Forms.PictureBox();
-            this.lblHorizontal = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.lblShowTime = new System.Windows.Forms.Label();
             this.txt_messagebox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblSataCount = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.BtnClear = new ByAeroBeHero.Controls.MyButton();
+            this.lblHorizontal = new System.Windows.Forms.Label();
+            this.lblStaCount = new System.Windows.Forms.Label();
             this.MainMap = new ByAeroBeHero.Controls.myGMAP();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteWPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -341,29 +344,30 @@ namespace ByAeroBeHero.GCSViews
             this.panelMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panelShowPoint.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.groupboxOPoint.SuspendLayout();
-            this.breakpointgroupBox.SuspendLayout();
             this.groupBoxBasePoint.SuspendLayout();
-            this.groupBoxRellyPoint.SuspendLayout();
             this.groupBoxAeroPoint.SuspendLayout();
+            this.breakpointgroupBox.SuspendLayout();
+            this.groupBoxRellyPoint.SuspendLayout();
             this.ebsPanelMeter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.ebsPanelFlyingInfo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.ebsPanelPlanInfo.SuspendLayout();
+            this.panel17.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.ebsPanelWarning.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGPS)).BeginInit();
@@ -373,6 +377,8 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).BeginInit();
+            this.panel15.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -583,52 +589,6 @@ namespace ByAeroBeHero.GCSViews
             this.CHK_verifyheight.Name = "CHK_verifyheight";
             this.CHK_verifyheight.UseVisualStyleBackColor = false;
             // 
-            // TXT_WPRad
-            // 
-            resources.ApplyResources(this.TXT_WPRad, "TXT_WPRad");
-            this.TXT_WPRad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.TXT_WPRad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TXT_WPRad.Name = "TXT_WPRad";
-            this.TXT_WPRad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_WPRad_KeyPress);
-            this.TXT_WPRad.Leave += new System.EventHandler(this.TXT_WPRad_Leave);
-            // 
-            // TXT_DefaultAlt
-            // 
-            resources.ApplyResources(this.TXT_DefaultAlt, "TXT_DefaultAlt");
-            this.TXT_DefaultAlt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.TXT_DefaultAlt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TXT_DefaultAlt.Name = "TXT_DefaultAlt";
-            this.TXT_DefaultAlt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_DefaultAlt_KeyPress);
-            this.TXT_DefaultAlt.Leave += new System.EventHandler(this.TXT_DefaultAlt_Leave);
-            // 
-            // LBL_WPRad
-            // 
-            resources.ApplyResources(this.LBL_WPRad, "LBL_WPRad");
-            this.LBL_WPRad.BackColor = System.Drawing.Color.Black;
-            this.LBL_WPRad.Name = "LBL_WPRad";
-            // 
-            // LBL_defalutalt
-            // 
-            resources.ApplyResources(this.LBL_defalutalt, "LBL_defalutalt");
-            this.LBL_defalutalt.BackColor = System.Drawing.Color.Black;
-            this.LBL_defalutalt.Name = "LBL_defalutalt";
-            // 
-            // TXT_loiterrad
-            // 
-            resources.ApplyResources(this.TXT_loiterrad, "TXT_loiterrad");
-            this.TXT_loiterrad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.TXT_loiterrad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TXT_loiterrad.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TXT_loiterrad.Name = "TXT_loiterrad";
-            this.TXT_loiterrad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_loiterrad_KeyPress);
-            this.TXT_loiterrad.Leave += new System.EventHandler(this.TXT_loiterrad_Leave);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Name = "label5";
-            // 
             // BUT_write
             // 
             this.BUT_write.BGGradBot = System.Drawing.Color.White;
@@ -646,24 +606,6 @@ namespace ByAeroBeHero.GCSViews
             this.BUT_read.Name = "BUT_read";
             this.BUT_read.UseVisualStyleBackColor = true;
             this.BUT_read.Click += new System.EventHandler(this.BUT_read_Click);
-            // 
-            // lblHAlt
-            // 
-            resources.ApplyResources(this.lblHAlt, "lblHAlt");
-            this.lblHAlt.ForeColor = System.Drawing.Color.White;
-            this.lblHAlt.Name = "lblHAlt";
-            // 
-            // lbljd
-            // 
-            resources.ApplyResources(this.lbljd, "lbljd");
-            this.lbljd.ForeColor = System.Drawing.Color.White;
-            this.lbljd.Name = "lbljd";
-            // 
-            // lblwd
-            // 
-            resources.ApplyResources(this.lblwd, "lblwd");
-            this.lblwd.ForeColor = System.Drawing.Color.White;
-            this.lblwd.Name = "lblwd";
             // 
             // TXT_homealt
             // 
@@ -707,18 +649,6 @@ namespace ByAeroBeHero.GCSViews
             this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            // 
-            // coords1
-            // 
-            this.coords1.Alt = 0D;
-            this.coords1.AltUnit = "m";
-            this.coords1.BackColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.coords1, "coords1");
-            this.coords1.ForeColor = System.Drawing.Color.White;
-            this.coords1.Lat = 0D;
-            this.coords1.Lng = 0D;
-            this.coords1.Name = "coords1";
-            this.coords1.Vertical = true;
             // 
             // panelWaypoints
             // 
@@ -828,12 +758,30 @@ namespace ByAeroBeHero.GCSViews
             this.lbl_prevdist.ForeColor = System.Drawing.Color.White;
             this.lbl_prevdist.Name = "lbl_prevdist";
             // 
+            // coords1
+            // 
+            this.coords1.Alt = 0D;
+            this.coords1.AltUnit = "m";
+            this.coords1.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.coords1, "coords1");
+            this.coords1.ForeColor = System.Drawing.Color.White;
+            this.coords1.Lat = 0D;
+            this.coords1.Lng = 0D;
+            this.coords1.Name = "coords1";
+            this.coords1.Vertical = true;
+            // 
             // lblhxj
             // 
             resources.ApplyResources(this.lblhxj, "lblhxj");
             this.lblhxj.BackColor = System.Drawing.Color.Transparent;
             this.lblhxj.ForeColor = System.Drawing.Color.White;
             this.lblhxj.Name = "lblhxj";
+            // 
+            // LBL_defalutalt
+            // 
+            resources.ApplyResources(this.LBL_defalutalt, "LBL_defalutalt");
+            this.LBL_defalutalt.BackColor = System.Drawing.Color.Black;
+            this.LBL_defalutalt.Name = "LBL_defalutalt";
             // 
             // label17
             // 
@@ -888,12 +836,52 @@ namespace ByAeroBeHero.GCSViews
             resources.ApplyResources(this.lblKeepLiter, "lblKeepLiter");
             this.lblKeepLiter.Name = "lblKeepLiter";
             // 
+            // TXT_loiterrad
+            // 
+            resources.ApplyResources(this.TXT_loiterrad, "TXT_loiterrad");
+            this.TXT_loiterrad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.TXT_loiterrad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TXT_loiterrad.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TXT_loiterrad.Name = "TXT_loiterrad";
+            this.TXT_loiterrad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_loiterrad_KeyPress);
+            this.TXT_loiterrad.Leave += new System.EventHandler(this.TXT_loiterrad_Leave);
+            // 
+            // LBL_WPRad
+            // 
+            resources.ApplyResources(this.LBL_WPRad, "LBL_WPRad");
+            this.LBL_WPRad.BackColor = System.Drawing.Color.Black;
+            this.LBL_WPRad.Name = "LBL_WPRad";
+            // 
             // TXT_altwarn
             // 
             resources.ApplyResources(this.TXT_altwarn, "TXT_altwarn");
             this.TXT_altwarn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.TXT_altwarn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TXT_altwarn.Name = "TXT_altwarn";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.Name = "label5";
+            // 
+            // TXT_WPRad
+            // 
+            resources.ApplyResources(this.TXT_WPRad, "TXT_WPRad");
+            this.TXT_WPRad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.TXT_WPRad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TXT_WPRad.Name = "TXT_WPRad";
+            this.TXT_WPRad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_WPRad_KeyPress);
+            this.TXT_WPRad.Leave += new System.EventHandler(this.TXT_WPRad_Leave);
+            // 
+            // TXT_DefaultAlt
+            // 
+            resources.ApplyResources(this.TXT_DefaultAlt, "TXT_DefaultAlt");
+            this.TXT_DefaultAlt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.TXT_DefaultAlt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TXT_DefaultAlt.Name = "TXT_DefaultAlt";
+            this.TXT_DefaultAlt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TXT_DefaultAlt_KeyPress);
+            this.TXT_DefaultAlt.Leave += new System.EventHandler(this.TXT_DefaultAlt_Leave);
             // 
             // panel6
             // 
@@ -931,6 +919,24 @@ namespace ByAeroBeHero.GCSViews
             this.tableLayoutPanel4.Controls.Add(this.TXT_homealt, 5, 0);
             this.tableLayoutPanel4.Controls.Add(this.TXT_homelat, 1, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            // 
+            // lblwd
+            // 
+            resources.ApplyResources(this.lblwd, "lblwd");
+            this.lblwd.ForeColor = System.Drawing.Color.White;
+            this.lblwd.Name = "lblwd";
+            // 
+            // lbljd
+            // 
+            resources.ApplyResources(this.lbljd, "lbljd");
+            this.lbljd.ForeColor = System.Drawing.Color.White;
+            this.lbljd.Name = "lbljd";
+            // 
+            // lblHAlt
+            // 
+            resources.ApplyResources(this.lblHAlt, "lblHAlt");
+            this.lblHAlt.ForeColor = System.Drawing.Color.White;
+            this.lblHAlt.Name = "lblHAlt";
             // 
             // comboBoxMapType
             // 
@@ -1032,14 +1038,9 @@ namespace ByAeroBeHero.GCSViews
             // 
             this.panelShowPoint.AssociatedSplitter = null;
             this.panelShowPoint.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panelShowPoint, "panelShowPoint");
-            this.panelShowPoint.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.panelShowPoint.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panelShowPoint.CaptionHeight = 27;
-            this.panelShowPoint.Controls.Add(this.groupboxOPoint);
-            this.panelShowPoint.Controls.Add(this.breakpointgroupBox);
-            this.panelShowPoint.Controls.Add(this.groupBoxBasePoint);
-            this.panelShowPoint.Controls.Add(this.groupBoxRellyPoint);
-            this.panelShowPoint.Controls.Add(this.groupBoxAeroPoint);
+            this.panelShowPoint.Controls.Add(this.panel3);
             this.panelShowPoint.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.panelShowPoint.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
             this.panelShowPoint.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
@@ -1055,6 +1056,7 @@ namespace ByAeroBeHero.GCSViews
             this.panelShowPoint.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
             this.panelShowPoint.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelShowPoint.Image = null;
+            resources.ApplyResources(this.panelShowPoint, "panelShowPoint");
             this.panelShowPoint.Name = "panelShowPoint";
             this.panelShowPoint.ToolTipTextCloseIcon = null;
             this.panelShowPoint.ToolTipTextExpandIconPanelCollapsed = null;
@@ -1063,15 +1065,27 @@ namespace ByAeroBeHero.GCSViews
             this.panelShowPoint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseMove);
             this.panelShowPoint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowPoint_MouseUp);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.groupboxOPoint);
+            this.panel3.Controls.Add(this.groupBoxBasePoint);
+            this.panel3.Controls.Add(this.groupBoxAeroPoint);
+            this.panel3.Controls.Add(this.breakpointgroupBox);
+            this.panel3.Controls.Add(this.groupBoxRellyPoint);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
             // groupboxOPoint
             // 
+            this.groupboxOPoint.BackColor = System.Drawing.Color.LightGray;
             this.groupboxOPoint.Controls.Add(this.myButton_savelimitpoint);
             this.groupboxOPoint.Controls.Add(this.myButton_loadlimitpoint);
             this.groupboxOPoint.Controls.Add(this.myButtonReadLimitPoint);
             this.groupboxOPoint.Controls.Add(this.myButtonClearLimitPoint);
             this.groupboxOPoint.Controls.Add(this.myBtnLimit);
             this.groupboxOPoint.Controls.Add(this.myBtnSendPoint);
-            this.groupboxOPoint.ForeColor = System.Drawing.Color.White;
+            this.groupboxOPoint.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.groupboxOPoint, "groupboxOPoint");
             this.groupboxOPoint.Name = "groupboxOPoint";
             this.groupboxOPoint.TabStop = false;
@@ -1092,6 +1106,8 @@ namespace ByAeroBeHero.GCSViews
             // 
             // myButtonReadLimitPoint
             // 
+            this.myButtonReadLimitPoint.BGGradBot = System.Drawing.Color.White;
+            this.myButtonReadLimitPoint.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myButtonReadLimitPoint, "myButtonReadLimitPoint");
             this.myButtonReadLimitPoint.Name = "myButtonReadLimitPoint";
             this.myButtonReadLimitPoint.UseVisualStyleBackColor = true;
@@ -1106,6 +1122,8 @@ namespace ByAeroBeHero.GCSViews
             // 
             // myBtnLimit
             // 
+            this.myBtnLimit.BGGradBot = System.Drawing.Color.White;
+            this.myBtnLimit.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myBtnLimit, "myBtnLimit");
             this.myBtnLimit.Name = "myBtnLimit";
             this.myBtnLimit.UseVisualStyleBackColor = true;
@@ -1113,17 +1131,65 @@ namespace ByAeroBeHero.GCSViews
             // 
             // myBtnSendPoint
             // 
+            this.myBtnSendPoint.BGGradBot = System.Drawing.Color.White;
+            this.myBtnSendPoint.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myBtnSendPoint, "myBtnSendPoint");
             this.myBtnSendPoint.Name = "myBtnSendPoint";
             this.myBtnSendPoint.UseVisualStyleBackColor = true;
             this.myBtnSendPoint.Click += new System.EventHandler(this.myBtnSendLimitPoint_Click);
             // 
+            // groupBoxBasePoint
+            // 
+            this.groupBoxBasePoint.BackColor = System.Drawing.Color.LightGray;
+            this.groupBoxBasePoint.Controls.Add(this.BUT_loadwpfile);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_write);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_read);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_saveWPFile);
+            this.groupBoxBasePoint.Controls.Add(this.BUT_Add);
+            this.groupBoxBasePoint.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.groupBoxBasePoint, "groupBoxBasePoint");
+            this.groupBoxBasePoint.Name = "groupBoxBasePoint";
+            this.groupBoxBasePoint.TabStop = false;
+            // 
+            // groupBoxAeroPoint
+            // 
+            this.groupBoxAeroPoint.BackColor = System.Drawing.Color.LightGray;
+            this.groupBoxAeroPoint.Controls.Add(this.tableLayoutPanelRoute);
+            this.groupBoxAeroPoint.Controls.Add(this.myBtnLoadAeroPoint);
+            this.groupBoxAeroPoint.Controls.Add(this.myBtnAddPoint);
+            this.groupBoxAeroPoint.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.groupBoxAeroPoint, "groupBoxAeroPoint");
+            this.groupBoxAeroPoint.Name = "groupBoxAeroPoint";
+            this.groupBoxAeroPoint.TabStop = false;
+            // 
+            // tableLayoutPanelRoute
+            // 
+            resources.ApplyResources(this.tableLayoutPanelRoute, "tableLayoutPanelRoute");
+            this.tableLayoutPanelRoute.Name = "tableLayoutPanelRoute";
+            // 
+            // myBtnLoadAeroPoint
+            // 
+            resources.ApplyResources(this.myBtnLoadAeroPoint, "myBtnLoadAeroPoint");
+            this.myBtnLoadAeroPoint.Name = "myBtnLoadAeroPoint";
+            this.myBtnLoadAeroPoint.UseVisualStyleBackColor = true;
+            this.myBtnLoadAeroPoint.Click += new System.EventHandler(this.loadPolygonToolStripMenuItem_Click);
+            // 
+            // myBtnAddPoint
+            // 
+            this.myBtnAddPoint.BGGradBot = System.Drawing.Color.White;
+            this.myBtnAddPoint.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myBtnAddPoint, "myBtnAddPoint");
+            this.myBtnAddPoint.Name = "myBtnAddPoint";
+            this.myBtnAddPoint.UseVisualStyleBackColor = true;
+            this.myBtnAddPoint.Click += new System.EventHandler(this.myBtnAddPoint_Click);
+            // 
             // breakpointgroupBox
             // 
-            resources.ApplyResources(this.breakpointgroupBox, "breakpointgroupBox");
+            this.breakpointgroupBox.BackColor = System.Drawing.Color.LightGray;
             this.breakpointgroupBox.Controls.Add(this.myBtn_write_break_point);
             this.breakpointgroupBox.Controls.Add(this.myBtn_read_break_point);
             this.breakpointgroupBox.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.breakpointgroupBox, "breakpointgroupBox");
             this.breakpointgroupBox.Name = "breakpointgroupBox";
             this.breakpointgroupBox.TabStop = false;
             // 
@@ -1145,27 +1211,15 @@ namespace ByAeroBeHero.GCSViews
             this.myBtn_read_break_point.UseVisualStyleBackColor = true;
             this.myBtn_read_break_point.Click += new System.EventHandler(this.myBtn_read_break_point_Click);
             // 
-            // groupBoxBasePoint
-            // 
-            resources.ApplyResources(this.groupBoxBasePoint, "groupBoxBasePoint");
-            this.groupBoxBasePoint.Controls.Add(this.BUT_loadwpfile);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_write);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_read);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_saveWPFile);
-            this.groupBoxBasePoint.Controls.Add(this.BUT_Add);
-            this.groupBoxBasePoint.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxBasePoint.Name = "groupBoxBasePoint";
-            this.groupBoxBasePoint.TabStop = false;
-            // 
             // groupBoxRellyPoint
             // 
-            this.groupBoxRellyPoint.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.groupBoxRellyPoint, "groupBoxRellyPoint");
+            this.groupBoxRellyPoint.BackColor = System.Drawing.Color.LightGray;
             this.groupBoxRellyPoint.Controls.Add(this.myButtonDonwloadRallyPoint);
             this.groupBoxRellyPoint.Controls.Add(this.myButton_loadRallypoint);
             this.groupBoxRellyPoint.Controls.Add(this.myButton2);
             this.groupBoxRellyPoint.Controls.Add(this.myBtnSetRallyPoint);
             this.groupBoxRellyPoint.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.groupBoxRellyPoint, "groupBoxRellyPoint");
             this.groupBoxRellyPoint.Name = "groupBoxRellyPoint";
             this.groupBoxRellyPoint.TabStop = false;
             // 
@@ -1202,37 +1256,6 @@ namespace ByAeroBeHero.GCSViews
             this.myBtnSetRallyPoint.Name = "myBtnSetRallyPoint";
             this.myBtnSetRallyPoint.UseVisualStyleBackColor = true;
             this.myBtnSetRallyPoint.Click += new System.EventHandler(this.setRallyPoint_Click);
-            // 
-            // groupBoxAeroPoint
-            // 
-            resources.ApplyResources(this.groupBoxAeroPoint, "groupBoxAeroPoint");
-            this.groupBoxAeroPoint.Controls.Add(this.tableLayoutPanelRoute);
-            this.groupBoxAeroPoint.Controls.Add(this.myBtnLoadAeroPoint);
-            this.groupBoxAeroPoint.Controls.Add(this.myBtnAddPoint);
-            this.groupBoxAeroPoint.ForeColor = System.Drawing.Color.Black;
-            this.groupBoxAeroPoint.Name = "groupBoxAeroPoint";
-            this.groupBoxAeroPoint.TabStop = false;
-            // 
-            // tableLayoutPanelRoute
-            // 
-            resources.ApplyResources(this.tableLayoutPanelRoute, "tableLayoutPanelRoute");
-            this.tableLayoutPanelRoute.Name = "tableLayoutPanelRoute";
-            // 
-            // myBtnLoadAeroPoint
-            // 
-            resources.ApplyResources(this.myBtnLoadAeroPoint, "myBtnLoadAeroPoint");
-            this.myBtnLoadAeroPoint.Name = "myBtnLoadAeroPoint";
-            this.myBtnLoadAeroPoint.UseVisualStyleBackColor = true;
-            this.myBtnLoadAeroPoint.Click += new System.EventHandler(this.loadPolygonToolStripMenuItem_Click);
-            // 
-            // myBtnAddPoint
-            // 
-            this.myBtnAddPoint.BGGradBot = System.Drawing.Color.White;
-            this.myBtnAddPoint.BGGradTop = System.Drawing.Color.White;
-            resources.ApplyResources(this.myBtnAddPoint, "myBtnAddPoint");
-            this.myBtnAddPoint.Name = "myBtnAddPoint";
-            this.myBtnAddPoint.UseVisualStyleBackColor = true;
-            this.myBtnAddPoint.Click += new System.EventHandler(this.myBtnAddPoint_Click);
             // 
             // btnMeterInfo
             // 
@@ -1434,6 +1457,7 @@ namespace ByAeroBeHero.GCSViews
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.Qvalt, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.Qvverspeed, 0, 1);
@@ -1586,31 +1610,9 @@ namespace ByAeroBeHero.GCSViews
             resources.ApplyResources(this.ebsPanelPlanInfo, "ebsPanelPlanInfo");
             this.ebsPanelPlanInfo.AssociatedSplitter = null;
             this.ebsPanelPlanInfo.BackColor = System.Drawing.Color.Transparent;
-            this.ebsPanelPlanInfo.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ebsPanelPlanInfo.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ebsPanelPlanInfo.CaptionHeight = 27;
-            this.ebsPanelPlanInfo.Controls.Add(this.panel13);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblDoneArea);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblFlyTime);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblDistance1);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblStrip);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblAero);
-            this.ebsPanelPlanInfo.Controls.Add(this.label1);
-            this.ebsPanelPlanInfo.Controls.Add(this.label15);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel9);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel11);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblBearToHome);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel10);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel5);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel8);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel7);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel12);
-            this.ebsPanelPlanInfo.Controls.Add(this.panel4);
-            this.ebsPanelPlanInfo.Controls.Add(this.myButtonLand);
-            this.ebsPanelPlanInfo.Controls.Add(this.myBtnFunction);
-            this.ebsPanelPlanInfo.Controls.Add(this.BUT_quickauto1);
-            this.ebsPanelPlanInfo.Controls.Add(this.BUT_clear_track1);
-            this.ebsPanelPlanInfo.Controls.Add(this.btnLoiterUnlim);
-            this.ebsPanelPlanInfo.Controls.Add(this.lblDisToHome);
+            this.ebsPanelPlanInfo.Controls.Add(this.panel17);
             this.ebsPanelPlanInfo.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.ebsPanelPlanInfo.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
             this.ebsPanelPlanInfo.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
@@ -1634,6 +1636,35 @@ namespace ByAeroBeHero.GCSViews
             this.ebsPanelPlanInfo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowPlan_MouseMove);
             this.ebsPanelPlanInfo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowPlan_MouseUp);
             // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.LightGray;
+            this.panel17.Controls.Add(this.panel13);
+            this.panel17.Controls.Add(this.myBtnFunction);
+            this.panel17.Controls.Add(this.lblDoneArea);
+            this.panel17.Controls.Add(this.lblDisToHome);
+            this.panel17.Controls.Add(this.lblFlyTime);
+            this.panel17.Controls.Add(this.btnLoiterUnlim);
+            this.panel17.Controls.Add(this.lblDistance1);
+            this.panel17.Controls.Add(this.BUT_clear_track1);
+            this.panel17.Controls.Add(this.lblStrip);
+            this.panel17.Controls.Add(this.BUT_quickauto1);
+            this.panel17.Controls.Add(this.lblAero);
+            this.panel17.Controls.Add(this.myButtonLand);
+            this.panel17.Controls.Add(this.label1);
+            this.panel17.Controls.Add(this.panel4);
+            this.panel17.Controls.Add(this.label15);
+            this.panel17.Controls.Add(this.panel12);
+            this.panel17.Controls.Add(this.panel9);
+            this.panel17.Controls.Add(this.panel7);
+            this.panel17.Controls.Add(this.panel11);
+            this.panel17.Controls.Add(this.panel8);
+            this.panel17.Controls.Add(this.lblBearToHome);
+            this.panel17.Controls.Add(this.panel5);
+            this.panel17.Controls.Add(this.panel10);
+            resources.ApplyResources(this.panel17, "panel17");
+            this.panel17.Name = "panel17";
+            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Black;
@@ -1647,11 +1678,26 @@ namespace ByAeroBeHero.GCSViews
             this.lblFlighttime.ForeColor = System.Drawing.Color.White;
             this.lblFlighttime.Name = "lblFlighttime";
             // 
+            // myBtnFunction
+            // 
+            this.myBtnFunction.BGGradBot = System.Drawing.Color.White;
+            this.myBtnFunction.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myBtnFunction, "myBtnFunction");
+            this.myBtnFunction.Name = "myBtnFunction";
+            this.myBtnFunction.UseVisualStyleBackColor = true;
+            this.myBtnFunction.Click += new System.EventHandler(this.myBtnFunction_Click);
+            // 
             // lblDoneArea
             // 
             resources.ApplyResources(this.lblDoneArea, "lblDoneArea");
             this.lblDoneArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDoneArea.Name = "lblDoneArea";
+            // 
+            // lblDisToHome
+            // 
+            resources.ApplyResources(this.lblDisToHome, "lblDisToHome");
+            this.lblDisToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDisToHome.Name = "lblDisToHome";
             // 
             // lblFlyTime
             // 
@@ -1660,12 +1706,30 @@ namespace ByAeroBeHero.GCSViews
             this.lblFlyTime.ForeColor = System.Drawing.Color.Black;
             this.lblFlyTime.Name = "lblFlyTime";
             // 
+            // btnLoiterUnlim
+            // 
+            this.btnLoiterUnlim.BGGradBot = System.Drawing.Color.White;
+            this.btnLoiterUnlim.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
+            this.btnLoiterUnlim.Name = "btnLoiterUnlim";
+            this.btnLoiterUnlim.UseVisualStyleBackColor = true;
+            this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
+            // 
             // lblDistance1
             // 
             resources.ApplyResources(this.lblDistance1, "lblDistance1");
             this.lblDistance1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDistance1.ForeColor = System.Drawing.Color.Black;
             this.lblDistance1.Name = "lblDistance1";
+            // 
+            // BUT_clear_track1
+            // 
+            this.BUT_clear_track1.BGGradBot = System.Drawing.Color.White;
+            this.BUT_clear_track1.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
+            this.BUT_clear_track1.Name = "BUT_clear_track1";
+            this.BUT_clear_track1.UseVisualStyleBackColor = true;
+            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
             // 
             // lblStrip
             // 
@@ -1674,12 +1738,30 @@ namespace ByAeroBeHero.GCSViews
             this.lblStrip.ForeColor = System.Drawing.Color.Black;
             this.lblStrip.Name = "lblStrip";
             // 
+            // BUT_quickauto1
+            // 
+            this.BUT_quickauto1.BGGradBot = System.Drawing.Color.White;
+            this.BUT_quickauto1.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
+            this.BUT_quickauto1.Name = "BUT_quickauto1";
+            this.BUT_quickauto1.UseVisualStyleBackColor = true;
+            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
+            // 
             // lblAero
             // 
             resources.ApplyResources(this.lblAero, "lblAero");
             this.lblAero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblAero.ForeColor = System.Drawing.Color.Black;
             this.lblAero.Name = "lblAero";
+            // 
+            // myButtonLand
+            // 
+            this.myButtonLand.BGGradBot = System.Drawing.Color.White;
+            this.myButtonLand.BGGradTop = System.Drawing.Color.White;
+            resources.ApplyResources(this.myButtonLand, "myButtonLand");
+            this.myButtonLand.Name = "myButtonLand";
+            this.myButtonLand.UseVisualStyleBackColor = true;
+            this.myButtonLand.Click += new System.EventHandler(this.myButtonLand_Click);
             // 
             // label1
             // 
@@ -1688,12 +1770,38 @@ namespace ByAeroBeHero.GCSViews
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Name = "label1";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.lblDistbetweenlines);
+            this.panel4.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // lblDistbetweenlines
+            // 
+            resources.ApplyResources(this.lblDistbetweenlines, "lblDistbetweenlines");
+            this.lblDistbetweenlines.Name = "lblDistbetweenlines";
+            // 
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Name = "label15";
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Black;
+            this.panel12.Controls.Add(this.lblDisToHome1);
+            this.panel12.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel12, "panel12");
+            this.panel12.Name = "panel12";
+            // 
+            // lblDisToHome1
+            // 
+            resources.ApplyResources(this.lblDisToHome1, "lblDisToHome1");
+            this.lblDisToHome1.Name = "lblDisToHome1";
             // 
             // panel9
             // 
@@ -1708,6 +1816,19 @@ namespace ByAeroBeHero.GCSViews
             this.lblStrips.ForeColor = System.Drawing.Color.White;
             this.lblStrips.Name = "lblStrips";
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Black;
+            this.panel7.Controls.Add(this.lblBearToHome1);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.ForeColor = System.Drawing.Color.White;
+            this.panel7.Name = "panel7";
+            // 
+            // lblBearToHome1
+            // 
+            resources.ApplyResources(this.lblBearToHome1, "lblBearToHome1");
+            this.lblBearToHome1.Name = "lblBearToHome1";
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Black;
@@ -1721,24 +1842,24 @@ namespace ByAeroBeHero.GCSViews
             resources.ApplyResources(this.lblHeadinghold, "lblHeadinghold");
             this.lblHeadinghold.Name = "lblHeadinghold";
             // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.Controls.Add(this.lblArea);
+            resources.ApplyResources(this.panel8, "panel8");
+            this.panel8.Name = "panel8";
+            // 
+            // lblArea
+            // 
+            resources.ApplyResources(this.lblArea, "lblArea");
+            this.lblArea.ForeColor = System.Drawing.Color.White;
+            this.lblArea.Name = "lblArea";
+            // 
             // lblBearToHome
             // 
             resources.ApplyResources(this.lblBearToHome, "lblBearToHome");
             this.lblBearToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblBearToHome.Name = "lblBearToHome";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Black;
-            this.panel10.Controls.Add(this.lblDistance);
-            this.panel10.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.panel10, "panel10");
-            this.panel10.Name = "panel10";
-            // 
-            // lblDistance
-            // 
-            resources.ApplyResources(this.lblDistance, "lblDistance");
-            this.lblDistance.Name = "lblDistance";
             // 
             // panel5
             // 
@@ -1754,125 +1875,27 @@ namespace ByAeroBeHero.GCSViews
             this.lblDoneArea1.BackColor = System.Drawing.Color.Transparent;
             this.lblDoneArea1.Name = "lblDoneArea1";
             // 
-            // panel8
+            // panel10
             // 
-            this.panel8.BackColor = System.Drawing.Color.Black;
-            this.panel8.Controls.Add(this.lblArea);
-            resources.ApplyResources(this.panel8, "panel8");
-            this.panel8.Name = "panel8";
+            this.panel10.BackColor = System.Drawing.Color.Black;
+            this.panel10.Controls.Add(this.lblDistance);
+            this.panel10.ForeColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel10, "panel10");
+            this.panel10.Name = "panel10";
             // 
-            // lblArea
+            // lblDistance
             // 
-            resources.ApplyResources(this.lblArea, "lblArea");
-            this.lblArea.ForeColor = System.Drawing.Color.White;
-            this.lblArea.Name = "lblArea";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Black;
-            this.panel7.Controls.Add(this.lblBearToHome1);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Name = "panel7";
-            // 
-            // lblBearToHome1
-            // 
-            resources.ApplyResources(this.lblBearToHome1, "lblBearToHome1");
-            this.lblBearToHome1.Name = "lblBearToHome1";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Black;
-            this.panel12.Controls.Add(this.lblDisToHome1);
-            this.panel12.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.panel12, "panel12");
-            this.panel12.Name = "panel12";
-            // 
-            // lblDisToHome1
-            // 
-            resources.ApplyResources(this.lblDisToHome1, "lblDisToHome1");
-            this.lblDisToHome1.Name = "lblDisToHome1";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.lblDistbetweenlines);
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
-            // lblDistbetweenlines
-            // 
-            resources.ApplyResources(this.lblDistbetweenlines, "lblDistbetweenlines");
-            this.lblDistbetweenlines.Name = "lblDistbetweenlines";
-            // 
-            // myButtonLand
-            // 
-            this.myButtonLand.BGGradBot = System.Drawing.Color.White;
-            this.myButtonLand.BGGradTop = System.Drawing.Color.White;
-            resources.ApplyResources(this.myButtonLand, "myButtonLand");
-            this.myButtonLand.Name = "myButtonLand";
-            this.myButtonLand.UseVisualStyleBackColor = true;
-            this.myButtonLand.Click += new System.EventHandler(this.myButtonLand_Click);
-            // 
-            // myBtnFunction
-            // 
-            this.myBtnFunction.BGGradBot = System.Drawing.Color.White;
-            this.myBtnFunction.BGGradTop = System.Drawing.Color.White;
-            resources.ApplyResources(this.myBtnFunction, "myBtnFunction");
-            this.myBtnFunction.Name = "myBtnFunction";
-            this.myBtnFunction.UseVisualStyleBackColor = true;
-            this.myBtnFunction.Click += new System.EventHandler(this.myBtnFunction_Click);
-            // 
-            // BUT_quickauto1
-            // 
-            this.BUT_quickauto1.BGGradBot = System.Drawing.Color.White;
-            this.BUT_quickauto1.BGGradTop = System.Drawing.Color.White;
-            resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
-            this.BUT_quickauto1.Name = "BUT_quickauto1";
-            this.BUT_quickauto1.UseVisualStyleBackColor = true;
-            this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
-            // 
-            // BUT_clear_track1
-            // 
-            this.BUT_clear_track1.BGGradBot = System.Drawing.Color.White;
-            this.BUT_clear_track1.BGGradTop = System.Drawing.Color.White;
-            resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
-            this.BUT_clear_track1.Name = "BUT_clear_track1";
-            this.BUT_clear_track1.UseVisualStyleBackColor = true;
-            this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
-            // 
-            // btnLoiterUnlim
-            // 
-            this.btnLoiterUnlim.BGGradBot = System.Drawing.Color.White;
-            this.btnLoiterUnlim.BGGradTop = System.Drawing.Color.White;
-            resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
-            this.btnLoiterUnlim.Name = "btnLoiterUnlim";
-            this.btnLoiterUnlim.UseVisualStyleBackColor = true;
-            this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
-            // 
-            // lblDisToHome
-            // 
-            resources.ApplyResources(this.lblDisToHome, "lblDisToHome");
-            this.lblDisToHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDisToHome.Name = "lblDisToHome";
+            resources.ApplyResources(this.lblDistance, "lblDistance");
+            this.lblDistance.Name = "lblDistance";
             // 
             // ebsPanelWarning
             // 
             resources.ApplyResources(this.ebsPanelWarning, "ebsPanelWarning");
             this.ebsPanelWarning.AssociatedSplitter = null;
             this.ebsPanelWarning.BackColor = System.Drawing.Color.Transparent;
-            this.ebsPanelWarning.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ebsPanelWarning.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ebsPanelWarning.CaptionHeight = 27;
-            this.ebsPanelWarning.Controls.Add(this.panel14);
-            this.ebsPanelWarning.Controls.Add(this.panel15);
-            this.ebsPanelWarning.Controls.Add(this.panel2);
-            this.ebsPanelWarning.Controls.Add(this.BtnClear);
-            this.ebsPanelWarning.Controls.Add(this.lblStaCount);
-            this.ebsPanelWarning.Controls.Add(this.tableLayoutPanel6);
-            this.ebsPanelWarning.Controls.Add(this.lblHorizontal);
-            this.ebsPanelWarning.Controls.Add(this.lblTime);
-            this.ebsPanelWarning.Controls.Add(this.txt_messagebox);
+            this.ebsPanelWarning.Controls.Add(this.panel16);
             this.ebsPanelWarning.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.ebsPanelWarning.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
             this.ebsPanelWarning.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
@@ -1896,6 +1919,21 @@ namespace ByAeroBeHero.GCSViews
             this.ebsPanelWarning.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelShowWarningInfo_MouseMove);
             this.ebsPanelWarning.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelShowWarningInfo_MouseUp);
             // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.LightGray;
+            this.panel16.Controls.Add(this.panel14);
+            this.panel16.Controls.Add(this.tableLayoutPanel6);
+            this.panel16.Controls.Add(this.panel15);
+            this.panel16.Controls.Add(this.txt_messagebox);
+            this.panel16.Controls.Add(this.panel2);
+            this.panel16.Controls.Add(this.lblTime);
+            this.panel16.Controls.Add(this.BtnClear);
+            this.panel16.Controls.Add(this.lblHorizontal);
+            this.panel16.Controls.Add(this.lblStaCount);
+            resources.ApplyResources(this.panel16, "panel16");
+            this.panel16.Name = "panel16";
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Black;
@@ -1909,48 +1947,6 @@ namespace ByAeroBeHero.GCSViews
             this.lblHorizontalError.BackColor = System.Drawing.Color.Black;
             this.lblHorizontalError.ForeColor = System.Drawing.Color.White;
             this.lblHorizontalError.Name = "lblHorizontalError";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Black;
-            this.panel15.Controls.Add(this.lblShowTime);
-            resources.ApplyResources(this.panel15, "panel15");
-            this.panel15.Name = "panel15";
-            // 
-            // lblShowTime
-            // 
-            resources.ApplyResources(this.lblShowTime, "lblShowTime");
-            this.lblShowTime.BackColor = System.Drawing.Color.Black;
-            this.lblShowTime.ForeColor = System.Drawing.Color.White;
-            this.lblShowTime.Name = "lblShowTime";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.lblSataCount);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // lblSataCount
-            // 
-            resources.ApplyResources(this.lblSataCount, "lblSataCount");
-            this.lblSataCount.BackColor = System.Drawing.Color.Black;
-            this.lblSataCount.ForeColor = System.Drawing.Color.White;
-            this.lblSataCount.Name = "lblSataCount";
-            // 
-            // BtnClear
-            // 
-            resources.ApplyResources(this.BtnClear, "BtnClear");
-            this.BtnClear.BGGradBot = System.Drawing.Color.White;
-            this.BtnClear.BGGradTop = System.Drawing.Color.White;
-            this.BtnClear.Name = "BtnClear";
-            this.BtnClear.UseVisualStyleBackColor = true;
-            this.BtnClear.Click += new System.EventHandler(this.BtnClearClick);
-            // 
-            // lblStaCount
-            // 
-            resources.ApplyResources(this.lblStaCount, "lblStaCount");
-            this.lblStaCount.Name = "lblStaCount";
             // 
             // tableLayoutPanel6
             // 
@@ -2077,15 +2073,19 @@ namespace ByAeroBeHero.GCSViews
             this.pictureBoxCompass.Name = "pictureBoxCompass";
             this.pictureBoxCompass.TabStop = false;
             // 
-            // lblHorizontal
+            // panel15
             // 
-            resources.ApplyResources(this.lblHorizontal, "lblHorizontal");
-            this.lblHorizontal.Name = "lblHorizontal";
+            this.panel15.BackColor = System.Drawing.Color.Black;
+            this.panel15.Controls.Add(this.lblShowTime);
+            resources.ApplyResources(this.panel15, "panel15");
+            this.panel15.Name = "panel15";
             // 
-            // lblTime
+            // lblShowTime
             // 
-            resources.ApplyResources(this.lblTime, "lblTime");
-            this.lblTime.Name = "lblTime";
+            resources.ApplyResources(this.lblShowTime, "lblShowTime");
+            this.lblShowTime.BackColor = System.Drawing.Color.Black;
+            this.lblShowTime.ForeColor = System.Drawing.Color.White;
+            this.lblShowTime.Name = "lblShowTime";
             // 
             // txt_messagebox
             // 
@@ -2095,10 +2095,48 @@ namespace ByAeroBeHero.GCSViews
             this.txt_messagebox.Name = "txt_messagebox";
             this.txt_messagebox.ReadOnly = true;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblSataCount);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // lblSataCount
+            // 
+            resources.ApplyResources(this.lblSataCount, "lblSataCount");
+            this.lblSataCount.BackColor = System.Drawing.Color.Black;
+            this.lblSataCount.ForeColor = System.Drawing.Color.White;
+            this.lblSataCount.Name = "lblSataCount";
+            // 
+            // lblTime
+            // 
+            resources.ApplyResources(this.lblTime, "lblTime");
+            this.lblTime.Name = "lblTime";
+            // 
+            // BtnClear
+            // 
+            resources.ApplyResources(this.BtnClear, "BtnClear");
+            this.BtnClear.BGGradBot = System.Drawing.Color.White;
+            this.BtnClear.BGGradTop = System.Drawing.Color.White;
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClearClick);
+            // 
+            // lblHorizontal
+            // 
+            resources.ApplyResources(this.lblHorizontal, "lblHorizontal");
+            this.lblHorizontal.Name = "lblHorizontal";
+            // 
+            // lblStaCount
+            // 
+            resources.ApplyResources(this.lblStaCount, "lblStaCount");
+            this.lblStaCount.Name = "lblStaCount";
+            // 
             // MainMap
             // 
             resources.ApplyResources(this.MainMap, "MainMap");
-            this.MainMap.BackColor = System.Drawing.Color.Transparent;
+            this.MainMap.BackColor = System.Drawing.Color.LightGray;
             this.MainMap.Bearing = 0F;
             this.MainMap.CanDragMap = true;
             this.MainMap.ContextMenuStrip = this.contextMenuStrip1;
@@ -2749,43 +2787,42 @@ namespace ByAeroBeHero.GCSViews
             this.panelMap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.panelShowPoint.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.groupboxOPoint.ResumeLayout(false);
-            this.breakpointgroupBox.ResumeLayout(false);
             this.groupBoxBasePoint.ResumeLayout(false);
-            this.groupBoxRellyPoint.ResumeLayout(false);
             this.groupBoxAeroPoint.ResumeLayout(false);
+            this.breakpointgroupBox.ResumeLayout(false);
+            this.groupBoxRellyPoint.ResumeLayout(false);
             this.ebsPanelMeter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ebsPanelFlyingInfo.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ebsPanelPlanInfo.ResumeLayout(false);
-            this.ebsPanelPlanInfo.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ebsPanelWarning.ResumeLayout(false);
-            this.ebsPanelWarning.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLD)).EndInit();
@@ -2796,6 +2833,10 @@ namespace ByAeroBeHero.GCSViews
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxvibez)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGyro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCompass)).EndInit();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -2806,9 +2847,6 @@ namespace ByAeroBeHero.GCSViews
 
         private Controls.MyButton BUT_read;
         private Controls.MyButton BUT_write;
-        private System.Windows.Forms.Label lblHAlt;
-        private System.Windows.Forms.Label lbljd;
-        private System.Windows.Forms.Label lblwd;
         private System.Windows.Forms.TextBox TXT_homealt;
         private System.Windows.Forms.TextBox TXT_homelng;
         private System.Windows.Forms.TextBox TXT_homelat;
@@ -2817,19 +2855,10 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.DataGridView Commands;
         private System.Windows.Forms.CheckBox CHK_verifyheight;
         private Controls.MyButton BUT_Add;
-        private System.Windows.Forms.TextBox TXT_WPRad;
-        private System.Windows.Forms.TextBox TXT_DefaultAlt;
-        private System.Windows.Forms.Label LBL_WPRad;
-        private System.Windows.Forms.Label LBL_defalutalt;
-        private System.Windows.Forms.TextBox TXT_loiterrad;
-        private System.Windows.Forms.Label label5;
         private BSE.Windows.Forms.Panel panelWaypoints;
         private System.Windows.Forms.Panel panelMap;
         private Controls.myGMAP MainMap;
         private Controls.MyTrackBar trackBar1;
-        private System.Windows.Forms.Label lbl_distance;
-        private System.Windows.Forms.Label lbl_prevdist;
-        private System.Windows.Forms.Label lbl_homedist;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolStripMenuItem clearMissionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem polygonToolStripMenuItem;
@@ -2888,15 +2917,12 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.ToolStripMenuItem saveToFileToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem loadFromFileToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem prefetchWPPathToolStripMenuItem;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox TXT_altwarn;
         private System.Windows.Forms.ToolStripMenuItem pOIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem poiaddToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem poideleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem poieditToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem enterUTMCoordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadSHPFileToolStripMenuItem;
-        private Controls.Coords coords1;
         private Controls.MyButton BUT_loadwpfile;
         private Controls.MyButton BUT_saveWPFile;
         private System.Windows.Forms.ToolStripMenuItem switchDockingToolStripMenuItem;
@@ -2905,27 +2931,13 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.ToolStripMenuItem createSplineCircleToolStripMenuItem;
         private System.Windows.Forms.ComboBox CMB_altmode;
         private System.Windows.Forms.ToolStripMenuItem fromSHPToolStripMenuItem;
-        private System.Windows.Forms.Panel panel6;
         private BSE.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblKeepLiter;
-        private System.Windows.Forms.Label label10;
         private Controls.MavlinkNumericUpDown WPNAV_SPEED;
         private Controls.MavlinkNumericUpDown WPNAV_RADIUS;
         private Controls.MavlinkNumericUpDown WPNAV_SPEED_UP;
         private Controls.MavlinkNumericUpDown WPNAV_SPEED_DN;
         private Controls.MavlinkNumericUpDown WPNAV_LOIT_SPEED;
         private Controls.MyButton BUT_writePIDS;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private Controls.MyButton myButton1;
-        private System.Windows.Forms.Label lblhxj;
         private Controls.MyButton myBtnAddPoint;
         private Controls.MyButton myBtnLimit;
         private System.Windows.Forms.Label lblFlighttime;
@@ -2969,8 +2981,6 @@ namespace ByAeroBeHero.GCSViews
         private Controls.MyButton BUT_quickauto1;
         private Controls.MyButton btnLoiterUnlim;
         private Controls.MyButton BUT_clear_track1;
-        private Controls.MyButton BUT_ARM1;
-        private Controls.MyButton BUT_quickrtl1;
         private System.Windows.Forms.GroupBox breakpointgroupBox;
         private Controls.MyButton myBtn_write_break_point;
         private Controls.MyButton myBtn_read_break_point;
@@ -3067,5 +3077,39 @@ namespace ByAeroBeHero.GCSViews
         private System.Windows.Forms.DataGridViewTextBoxColumn Grad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dist;
         private System.Windows.Forms.DataGridViewTextBoxColumn AZ;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label lbl_distance;
+        private System.Windows.Forms.Label lbl_homedist;
+        private System.Windows.Forms.Label lbl_prevdist;
+        private Controls.Coords coords1;
+        private System.Windows.Forms.Label lblhxj;
+        private System.Windows.Forms.Label LBL_defalutalt;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lblKeepLiter;
+        private System.Windows.Forms.TextBox TXT_loiterrad;
+        private System.Windows.Forms.Label LBL_WPRad;
+        private System.Windows.Forms.TextBox TXT_altwarn;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TXT_WPRad;
+        private System.Windows.Forms.TextBox TXT_DefaultAlt;
+        private System.Windows.Forms.Panel panel6;
+        private Controls.MyButton BUT_quickrtl1;
+        private Controls.MyButton BUT_ARM1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label lblwd;
+        private System.Windows.Forms.Label lbljd;
+        private System.Windows.Forms.Label lblHAlt;
+        private Controls.MyButton myButton1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
     }
 }

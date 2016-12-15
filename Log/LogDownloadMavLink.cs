@@ -156,8 +156,6 @@ namespace ByAeroBeHero.Log
                     {
                         this.label1.ForeColor = Color.Black; this.BackColor = Color.Transparent;
 
-                        TXT_status.Text = status.ToString() + " " + receivedbytes + "----" + receibedbytestotal + "---" + Math.Floor((double)(receivedbytes / receibedbytestotal) * 100).ToString();
-
                         if ((int)Math.Floor((float)receivedbytes / (float)receibedbytestotal * 100) > 90 || status.ToString() == "完成")
                         {
                             SecondReceiveByte = receibedbytestotal;
@@ -335,15 +333,6 @@ namespace ByAeroBeHero.Log
                     var logname = GetLog((ushort)a,path);
 
                     CreateLog(logname);
-
-                    if (chk_droneshare.Checked)
-                    {
-                        try
-                        {
-                            Utilities.DroneApi.droneshare.doUpload(logname);
-                        }
-                        catch (Exception ex) { CustomMessageBox.Show("Droneshare upload failed " + ex.ToString()); }
-                    }
                 }
 
                 status = serialstatus.完成;
@@ -369,15 +358,6 @@ namespace ByAeroBeHero.Log
                     var logname = GetLog((ushort)a, path);
 
                     CreateLog(logname);
-
-                    if (chk_droneshare.Checked)
-                    {
-                        try
-                        {
-                            Utilities.DroneApi.droneshare.doUpload(logname);
-                        }
-                        catch (Exception ex) { CustomMessageBox.Show("Droneshare upload failed " + ex.ToString()); }
-                    }
                 }
 
                 status = serialstatus.完成;

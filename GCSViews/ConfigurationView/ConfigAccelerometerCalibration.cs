@@ -22,7 +22,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void InitControl() 
         {
-            this.lblCalibate.ForeColor = lblCalibrate.ForeColor = System.Drawing.Color.Black;
+            this.lblCalibate.ForeColor = lblCalibrate.ForeColor = lblCorrectA.ForeColor = lblCalibrateAccel.ForeColor = System.Drawing.Color.Black;
         }
 
         public void Activate()
@@ -58,7 +58,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 count = 0;
 
-                Log.Info("Sending accel command (mavlink 1.0)");
                 MainV2.comPort.giveComport = true;
 
                 MainV2.comPort.Write("\n\n\n\n\n\n\n\n\n\n\n");
@@ -197,12 +196,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             if (Isshow)
             {
-                panel2.Visible = false;
+                panel3.Visible = false;
                 Isshow = false;
             }
             else 
             {
-                panel2.Visible = true;
+                panel3.Visible = true;
                 Isshow = true;
             }
         }

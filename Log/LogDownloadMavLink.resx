@@ -139,7 +139,7 @@
     <value>Vertical</value>
   </data>
   <data name="TXT_seriallog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>697, 247</value>
+    <value>697, 231</value>
   </data>
   <data name="TXT_seriallog.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -157,26 +157,16 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;TXT_seriallog.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="BUT_DLall.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
-  </data>
-  <data name="BUT_DLall.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIQAAACDCAYAAABMQbMfAAAABGdBTUEAALGPC/xhBQAAAR9JREFUeF7t
-        0jEBADAQA6H6N52ufx5AA29wCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCMGxffHYMZTP5oWnAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="BUT_DLall.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="BUT_DLall.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 290</value>
+    <value>20, 282</value>
   </data>
   <data name="BUT_DLall.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -194,7 +184,7 @@
     <value>BUT_DLall</value>
   </data>
   <data name="&gt;&gt;BUT_DLall.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_DLall.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -205,21 +195,11 @@
   <data name="BUT_DLthese.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="BUT_DLthese.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIQAAACDCAYAAABMQbMfAAAABGdBTUEAALGPC/xhBQAAAR9JREFUeF7t
-        0jEBADAQA6H6N52ufx5AA29wCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCMGxffHYMZTP5oWnAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="BUT_DLthese.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="BUT_DLthese.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 290</value>
+    <value>101, 282</value>
   </data>
   <data name="BUT_DLthese.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 3, 4, 3</value>
@@ -237,23 +217,13 @@
     <value>BUT_DLthese</value>
   </data>
   <data name="&gt;&gt;BUT_DLthese.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_DLthese.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BUT_DLthese.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="BUT_clearlogs.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIQAAACDCAYAAABMQbMfAAAABGdBTUEAALGPC/xhBQAAAR9JREFUeF7t
-        0jEBADAQA6H6N52ufx5AA29wCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCMGxffHYMZTP5oWnAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="BUT_clearlogs.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -277,13 +247,13 @@
     <value>BUT_clearlogs</value>
   </data>
   <data name="&gt;&gt;BUT_clearlogs.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BUT_clearlogs.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;BUT_clearlogs.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="CHK_logs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -318,152 +288,11 @@
   <data name="&gt;&gt;CHK_logs.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="TXT_status.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TXT_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 11</value>
-  </data>
-  <data name="TXT_status.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="TXT_status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 25</value>
-  </data>
-  <data name="TXT_status.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="TXT_status.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;TXT_status.Name" xml:space="preserve">
-    <value>TXT_status</value>
-  </data>
-  <data name="&gt;&gt;TXT_status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TXT_status.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;TXT_status.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="BUT_redokml.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 376</value>
-  </data>
-  <data name="BUT_redokml.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="BUT_redokml.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="BUT_redokml.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="BUT_redokml.Text" xml:space="preserve">
-    <value>Recreate KML</value>
-  </data>
-  <data name="&gt;&gt;BUT_redokml.Name" xml:space="preserve">
-    <value>BUT_redokml</value>
-  </data>
-  <data name="&gt;&gt;BUT_redokml.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_redokml.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BUT_redokml.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="BUT_firstperson.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 342</value>
-  </data>
-  <data name="BUT_firstperson.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="BUT_firstperson.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="BUT_firstperson.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="BUT_firstperson.Text" xml:space="preserve">
-    <value>First Person KML</value>
-  </data>
-  <data name="&gt;&gt;BUT_firstperson.Name" xml:space="preserve">
-    <value>BUT_firstperson</value>
-  </data>
-  <data name="&gt;&gt;BUT_firstperson.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_firstperson.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BUT_firstperson.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="BUT_bintolog.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUT_bintolog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 409</value>
-  </data>
-  <data name="BUT_bintolog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="BUT_bintolog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 10</value>
-  </data>
-  <data name="BUT_bintolog.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="BUT_bintolog.Text" xml:space="preserve">
-    <value>.bin to .log</value>
-  </data>
-  <data name="&gt;&gt;BUT_bintolog.Name" xml:space="preserve">
-    <value>BUT_bintolog</value>
-  </data>
-  <data name="&gt;&gt;BUT_bintolog.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_bintolog.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BUT_bintolog.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="chk_droneshare.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chk_droneshare.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 300</value>
-  </data>
-  <data name="chk_droneshare.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="chk_droneshare.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 17</value>
-  </data>
-  <data name="chk_droneshare.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;chk_droneshare.Name" xml:space="preserve">
-    <value>chk_droneshare</value>
-  </data>
-  <data name="&gt;&gt;chk_droneshare.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chk_droneshare.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chk_droneshare.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="progressBar1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
   </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 294</value>
+    <value>289, 286</value>
   </data>
   <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>566, 23</value>
@@ -493,7 +322,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>845, 294</value>
+    <value>845, 289</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 20</value>
@@ -523,7 +352,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="lblNInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>202, 305</value>
+    <value>202, 297</value>
   </data>
   <data name="lblNInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 20</value>
@@ -542,16 +371,6 @@
   </data>
   <data name="&gt;&gt;lblNInfo.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="BtnLoadLog.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIQAAACDCAYAAABMQbMfAAAABGdBTUEAALGPC/xhBQAAAR9JREFUeF7t
-        0jEBADAQA6H6N52ufx5AA29wCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhB
-        CEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCEEIQQhBCMGxffHYMZTP5oWnAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="BtnLoadLog.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -572,7 +391,7 @@
     <value>BtnLoadLog</value>
   </data>
   <data name="&gt;&gt;BtnLoadLog.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnLoadLog.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -629,6 +448,6 @@
     <value>LogDownloadMavLink</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>System.Windows.Forms.MyUserControl, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

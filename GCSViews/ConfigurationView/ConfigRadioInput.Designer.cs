@@ -52,7 +52,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new BSE.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BAR9 = new ByAeroBeHero.Controls.HorizontalProgressBar2();
             this.label52 = new System.Windows.Forms.Label();
@@ -121,11 +120,17 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBoxElevons.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -338,91 +343,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Name = "label2";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Name = "label1";
-            // 
-            // panel1
-            // 
-            this.panel1.AssociatedSplitter = null;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel1.CaptionHeight = 27;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btnOtherCalibrate);
-            this.panel1.Controls.Add(this.label31);
-            this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label28);
-            this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.label25);
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.lbl8);
-            this.panel1.Controls.Add(this.lbl7);
-            this.panel1.Controls.Add(this.lbl6);
-            this.panel1.Controls.Add(this.lbl5);
-            this.panel1.Controls.Add(this.lbl4);
-            this.panel1.Controls.Add(this.lbl3);
-            this.panel1.Controls.Add(this.lbl2);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.lbl1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.BAR8);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.BAR7);
-            this.panel1.Controls.Add(this.BUT_Calibrateradio);
-            this.panel1.Controls.Add(this.BAR6);
-            this.panel1.Controls.Add(this.BAR5);
-            this.panel1.Controls.Add(this.BARyaw);
-            this.panel1.Controls.Add(this.BARthrottle);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.BARroll);
-            this.panel1.Controls.Add(this.BARpitch);
-            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Image = null;
-            this.panel1.Name = "panel1";
-            this.panel1.ToolTipTextCloseIcon = null;
-            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
-            this.panel1.CloseClick += new System.EventHandler<System.EventArgs>(this.panel1_CloseClick);
             // 
             // panel2
             // 
@@ -477,41 +407,49 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label52
             // 
             resources.ApplyResources(this.label52, "label52");
+            this.label52.BackColor = System.Drawing.Color.Transparent;
             this.label52.Name = "label52";
             // 
             // label35
             // 
             resources.ApplyResources(this.label35, "label35");
+            this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Name = "label35";
             // 
             // label53
             // 
             resources.ApplyResources(this.label53, "label53");
+            this.label53.BackColor = System.Drawing.Color.Transparent;
             this.label53.Name = "label53";
             // 
             // lbl9
             // 
             resources.ApplyResources(this.lbl9, "lbl9");
+            this.lbl9.BackColor = System.Drawing.Color.Transparent;
             this.lbl9.Name = "lbl9";
             // 
             // lbl14
             // 
             resources.ApplyResources(this.lbl14, "lbl14");
+            this.lbl14.BackColor = System.Drawing.Color.Transparent;
             this.lbl14.Name = "lbl14";
             // 
             // label33
             // 
             resources.ApplyResources(this.label33, "label33");
+            this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Name = "label33";
             // 
             // label55
             // 
             resources.ApplyResources(this.label55, "label55");
+            this.label55.BackColor = System.Drawing.Color.Transparent;
             this.label55.Name = "label55";
             // 
             // label32
             // 
             resources.ApplyResources(this.label32, "label32");
+            this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Name = "label32";
             // 
             // BAR14
@@ -547,41 +485,49 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label48
             // 
             resources.ApplyResources(this.label48, "label48");
+            this.label48.BackColor = System.Drawing.Color.Transparent;
             this.label48.Name = "label48";
             // 
             // label39
             // 
             resources.ApplyResources(this.label39, "label39");
+            this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Name = "label39";
             // 
             // label49
             // 
             resources.ApplyResources(this.label49, "label49");
+            this.label49.BackColor = System.Drawing.Color.Transparent;
             this.label49.Name = "label49";
             // 
             // lbl10
             // 
             resources.ApplyResources(this.lbl10, "lbl10");
+            this.lbl10.BackColor = System.Drawing.Color.Transparent;
             this.lbl10.Name = "lbl10";
             // 
             // lbl13
             // 
             resources.ApplyResources(this.lbl13, "lbl13");
+            this.lbl13.BackColor = System.Drawing.Color.Transparent;
             this.lbl13.Name = "lbl13";
             // 
             // label37
             // 
             resources.ApplyResources(this.label37, "label37");
+            this.label37.BackColor = System.Drawing.Color.Transparent;
             this.label37.Name = "label37";
             // 
             // label51
             // 
             resources.ApplyResources(this.label51, "label51");
+            this.label51.BackColor = System.Drawing.Color.Transparent;
             this.label51.Name = "label51";
             // 
             // label36
             // 
             resources.ApplyResources(this.label36, "label36");
+            this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Name = "label36";
             // 
             // BAR13
@@ -617,41 +563,49 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label44
             // 
             resources.ApplyResources(this.label44, "label44");
+            this.label44.BackColor = System.Drawing.Color.Transparent;
             this.label44.Name = "label44";
             // 
             // label43
             // 
             resources.ApplyResources(this.label43, "label43");
+            this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Name = "label43";
             // 
             // label45
             // 
             resources.ApplyResources(this.label45, "label45");
+            this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Name = "label45";
             // 
             // lbl11
             // 
             resources.ApplyResources(this.lbl11, "lbl11");
+            this.lbl11.BackColor = System.Drawing.Color.Transparent;
             this.lbl11.Name = "lbl11";
             // 
             // lbl12
             // 
             resources.ApplyResources(this.lbl12, "lbl12");
+            this.lbl12.BackColor = System.Drawing.Color.Transparent;
             this.lbl12.Name = "lbl12";
             // 
             // label41
             // 
             resources.ApplyResources(this.label41, "label41");
+            this.label41.BackColor = System.Drawing.Color.Transparent;
             this.label41.Name = "label41";
             // 
             // label47
             // 
             resources.ApplyResources(this.label47, "label47");
+            this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Name = "label47";
             // 
             // label40
             // 
             resources.ApplyResources(this.label40, "label40");
+            this.label40.BackColor = System.Drawing.Color.Transparent;
             this.label40.Name = "label40";
             // 
             // BAR12
@@ -682,184 +636,331 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label31
             // 
             resources.ApplyResources(this.label31, "label31");
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.ForeColor = System.Drawing.Color.Black;
             this.label31.Name = "label31";
             // 
             // label30
             // 
             resources.ApplyResources(this.label30, "label30");
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.ForeColor = System.Drawing.Color.Black;
             this.label30.Name = "label30";
             // 
             // label29
             // 
             resources.ApplyResources(this.label29, "label29");
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.ForeColor = System.Drawing.Color.Black;
             this.label29.Name = "label29";
             // 
             // label28
             // 
             resources.ApplyResources(this.label28, "label28");
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.ForeColor = System.Drawing.Color.Black;
             this.label28.Name = "label28";
             // 
             // label27
             // 
             resources.ApplyResources(this.label27, "label27");
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.ForeColor = System.Drawing.Color.Black;
             this.label27.Name = "label27";
             // 
             // label26
             // 
             resources.ApplyResources(this.label26, "label26");
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.ForeColor = System.Drawing.Color.Black;
             this.label26.Name = "label26";
             // 
             // label25
             // 
             resources.ApplyResources(this.label25, "label25");
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.ForeColor = System.Drawing.Color.Black;
             this.label25.Name = "label25";
             // 
             // label24
             // 
             resources.ApplyResources(this.label24, "label24");
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.ForeColor = System.Drawing.Color.Black;
             this.label24.Name = "label24";
             // 
             // label23
             // 
             resources.ApplyResources(this.label23, "label23");
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.ForeColor = System.Drawing.Color.Black;
             this.label23.Name = "label23";
             // 
             // label22
             // 
             resources.ApplyResources(this.label22, "label22");
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Name = "label22";
             // 
             // label21
             // 
             resources.ApplyResources(this.label21, "label21");
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Name = "label21";
             // 
             // label20
             // 
             resources.ApplyResources(this.label20, "label20");
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Name = "label20";
             // 
             // label19
             // 
             resources.ApplyResources(this.label19, "label19");
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Name = "label19";
             // 
             // label18
             // 
             resources.ApplyResources(this.label18, "label18");
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Name = "label18";
             // 
             // label17
             // 
             resources.ApplyResources(this.label17, "label17");
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Name = "label17";
             // 
             // label16
             // 
             resources.ApplyResources(this.label16, "label16");
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Name = "label16";
             // 
             // label15
             // 
             resources.ApplyResources(this.label15, "label15");
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Name = "label15";
             // 
             // lbl8
             // 
             resources.ApplyResources(this.lbl8, "lbl8");
+            this.lbl8.BackColor = System.Drawing.Color.Transparent;
+            this.lbl8.ForeColor = System.Drawing.Color.Black;
             this.lbl8.Name = "lbl8";
             // 
             // lbl7
             // 
             resources.ApplyResources(this.lbl7, "lbl7");
+            this.lbl7.BackColor = System.Drawing.Color.Transparent;
+            this.lbl7.ForeColor = System.Drawing.Color.Black;
             this.lbl7.Name = "lbl7";
             // 
             // lbl6
             // 
             resources.ApplyResources(this.lbl6, "lbl6");
+            this.lbl6.BackColor = System.Drawing.Color.Transparent;
+            this.lbl6.ForeColor = System.Drawing.Color.Black;
             this.lbl6.Name = "lbl6";
             // 
             // lbl5
             // 
             resources.ApplyResources(this.lbl5, "lbl5");
+            this.lbl5.BackColor = System.Drawing.Color.Transparent;
+            this.lbl5.ForeColor = System.Drawing.Color.Black;
             this.lbl5.Name = "lbl5";
             // 
             // lbl4
             // 
             resources.ApplyResources(this.lbl4, "lbl4");
+            this.lbl4.BackColor = System.Drawing.Color.Transparent;
+            this.lbl4.ForeColor = System.Drawing.Color.Black;
             this.lbl4.Name = "lbl4";
             // 
             // lbl3
             // 
             resources.ApplyResources(this.lbl3, "lbl3");
+            this.lbl3.BackColor = System.Drawing.Color.Transparent;
+            this.lbl3.ForeColor = System.Drawing.Color.Black;
             this.lbl3.Name = "lbl3";
             // 
             // lbl2
             // 
             resources.ApplyResources(this.lbl2, "lbl2");
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2.ForeColor = System.Drawing.Color.Black;
             this.lbl2.Name = "lbl2";
             // 
             // label14
             // 
             resources.ApplyResources(this.label14, "label14");
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Name = "label14";
             // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Name = "label13";
             // 
             // label12
             // 
             resources.ApplyResources(this.label12, "label12");
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Name = "label12";
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Name = "label11";
             // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Name = "label10";
             // 
             // label9
             // 
             resources.ApplyResources(this.label9, "label9");
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Name = "label9";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Name = "label8";
             // 
             // lbl1
             // 
             resources.ApplyResources(this.lbl1, "lbl1");
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.ForeColor = System.Drawing.Color.Black;
             this.lbl1.Name = "lbl1";
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Name = "label7";
             // 
             // label6
             // 
             resources.ApplyResources(this.label6, "label6");
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Name = "label6";
             // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Name = "label5";
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Name = "label4";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.btnOtherCalibrate);
+            this.panel3.Controls.Add(this.BUT_Calibrateradio);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label6);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.lbl2);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.lbl3);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.BARpitch);
+            this.panel1.Controls.Add(this.lbl4);
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.BARroll);
+            this.panel1.Controls.Add(this.lbl5);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.lbl6);
+            this.panel1.Controls.Add(this.label29);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.BARthrottle);
+            this.panel1.Controls.Add(this.lbl7);
+            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.BARyaw);
+            this.panel1.Controls.Add(this.lbl8);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.BAR5);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.BAR6);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label25);
+            this.panel1.Controls.Add(this.lbl1);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label24);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.BAR7);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.BAR8);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label34);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.ForeColor = System.Drawing.Color.Black;
+            this.label34.Name = "label34";
             // 
             // currentStateBindingSource
             // 
@@ -869,16 +970,21 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.groupBox1);
             this.Name = "ConfigRadioInput";
             this.groupBoxElevons.ResumeLayout(false);
             this.groupBoxElevons.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -908,7 +1014,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private BSE.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -977,5 +1082,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Label label35;
         private HorizontalProgressBar2 BAR9;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Panel panel1;
     }
 }

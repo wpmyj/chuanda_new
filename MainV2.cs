@@ -2979,34 +2979,14 @@ namespace ByAeroBeHero
             this.ResumeLayout();
         }
 
-        void menu_MouseEnter(object sender, EventArgs e)
-        {
-            this.SuspendLayout();
-            panel1.Location = new Point(0, 0);
-            panel1.Width = menu.Width;
-            panel1.BringToFront();
-            panel1.Visible = true;
-            this.ResumeLayout();
-        }
-
-        private void autoHideToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AutoHideMenu(autoHideToolStripMenuItem.Checked);
-
-            config["menu_autohide"] = autoHideToolStripMenuItem.Checked.ToString();
-        }
-
         void AutoHideMenu(bool hide)
         {
-            autoHideToolStripMenuItem.Checked = hide;
-
             if (!hide)
             {
                 this.SuspendLayout();
                 panel1.Dock = DockStyle.Top;
                 panel1.SendToBack();
                 panel1.Visible = true;
-                menu.Visible = false;
                 MainMenu.MouseLeave -= MainMenu_MouseLeave;
                 panel1.MouseLeave -= MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave -= MainMenu_MouseLeave;
@@ -3020,8 +3000,6 @@ namespace ByAeroBeHero
                 MainMenu.MouseLeave += MainMenu_MouseLeave;
                 panel1.MouseLeave += MainMenu_MouseLeave;
                 toolStripConnectionControl.MouseLeave += MainMenu_MouseLeave;
-                menu.Visible = true;
-                menu.SendToBack();
                 this.ResumeLayout(false);
             }
         }
@@ -3087,8 +3065,6 @@ namespace ByAeroBeHero
                         Int32 size = 0;
 
                         // frmMy is the form that will receive device-change messages.
-
-
                         size = Marshal.SizeOf(devBroadcastDeviceInterface);
                         devBroadcastDeviceInterface.dbcc_size = size;
                         devBroadcastDeviceInterface.dbcc_devicetype = DBT_DEVTYP_DEVICEINTERFACE;
@@ -3142,9 +3118,6 @@ namespace ByAeroBeHero
 
                         }
                         catch { }
-
-                        //string port = Marshal.PtrToStringAuto((IntPtr)((long)m.LParam + 12));
-                        //Console.WriteLine("Added port {0}",port);
                     }
                     log.InfoFormat("Device Change {0} {1} {2}", m.Msg, (WM_DEVICECHANGE_enum)m.WParam, m.LParam);
 
@@ -3212,11 +3185,9 @@ namespace ByAeroBeHero
                 else
                 {
                     item.BackColor = Color.Transparent;
-                    item.BackgroundImage = displayicons.bg;//.BackColor = Color.Black;
+                    item.BackgroundImage = displayicons.bg;
                 }
             }
-            //MainMenu.BackColor = Color.Black;
-            //MainMenu.BackgroundImage = ByAeroBeHero.Properties.Resources.bgdark;
         }
 
         public void controlMainMenuColor(string MainMenuName)
@@ -3247,34 +3218,6 @@ namespace ByAeroBeHero
             {
                 MenuHelp.BackColor = Color.SkyBlue;
             }
-        }
-
-        private void fullScreenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // full screen
-            if (fullScreenToolStripMenuItem.Checked)
-            {
-                this.TopMost = true;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-                this.WindowState = FormWindowState.Normal;
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.TopMost = false;
-                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-                this.WindowState = FormWindowState.Maximized;
-            }
-        }
-
-        private void readonlyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MainV2.comPort.ReadOnly = readonlyToolStripMenuItem.Checked;
-        }
-
-        private void connectionOptionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new ConnectionOptions().Show(this);
         }
 
         public void InitControl(string menuConnect)

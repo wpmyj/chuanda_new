@@ -24,6 +24,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         public void Activate()
         {
+            initControl();
             mavlinkCheckBox1.setup(1, 0, "FENCE_ENABLE", MainV2.comPort.MAV.param);
 
             mavlinkComboBox1.setup(
@@ -45,6 +46,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             mavlinkNumericUpDown3.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT",
                 MainV2.comPort.MAV.param);
+
+
+        }
+
+        private void initControl() 
+        {
+            this.label3enable.ForeColor = this.label1.ForeColor = this.label4type.ForeColor = this.label5action.ForeColor = this.label6maxalt.ForeColor =
+                this.label7maxrad.ForeColor = this.label2rtlalt.ForeColor = System.Drawing.Color.Black;
+        
         }
 
 

@@ -32,8 +32,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigFrameType));
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -42,7 +40,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnTestSAll = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lblDuration = new System.Windows.Forms.Label();
@@ -50,6 +47,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.NUM_thr_percent = new System.Windows.Forms.NumericUpDown();
             this.btnSelectRackType = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.RadbtnSpSixRotorT1 = new System.Windows.Forms.Button();
             this.pictureBoxWithPseudoOpacity1 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.pictureBoxWithPseudoOpacity3 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.pictureBoxWithPseudoOpacity2 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
@@ -62,37 +60,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.RadbtnFourRotorT1 = new System.Windows.Forms.Button();
             this.RadbtnFiveRotorT1 = new System.Windows.Forms.Button();
             this.RadbtnSevenRotorT1 = new System.Windows.Forms.Button();
-            this.pictureBoxH = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.pictureBoxV = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBoxX = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btnMotorTest = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBoxVTail = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.label5 = new System.Windows.Forms.Label();
-            this.radioButton_VTail = new System.Windows.Forms.RadioButton();
-            this.pictureBoxY = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBoxPlus = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.radioButton_Y = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton_V = new System.Windows.Forms.RadioButton();
-            this.radioButton_H = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel4 = new BSE.Windows.Forms.Panel();
-            this.panel5 = new BSE.Windows.Forms.Panel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBoxWithPseudoOpacity7 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
-            this.RadbtnSpSixRotorT1 = new System.Windows.Forms.Button();
-            this.configDefaultSettings1 = new ByAeroBeHero.Controls.DefaultSettings();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lblSelectCpterType = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblMotorTest = new System.Windows.Forms.Label();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_duration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -102,117 +78,98 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity7)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button8, "button8");
+            this.button8.ForeColor = System.Drawing.Color.Black;
             this.button8.Name = "button8";
             this.button8.Tag = "8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.but_Click);
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button7, "button7");
+            this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.Name = "button7";
             this.button7.Tag = "7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.but_Click);
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button6, "button6");
+            this.button6.ForeColor = System.Drawing.Color.Black;
             this.button6.Name = "button6";
             this.button6.Tag = "6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.but_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button5, "button5");
+            this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Name = "button5";
             this.button5.Tag = "5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.but_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button4, "button4");
+            this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Name = "button4";
             this.button4.Tag = "4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.but_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Name = "button3";
             this.button3.Tag = "3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.but_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button2, "button2");
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Name = "button2";
             this.button2.Tag = "2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.but_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Name = "button1";
             this.button1.Tag = "1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.but_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnTestSAll);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.lblDuration);
-            this.panel1.Controls.Add(this.NUM_duration);
-            this.panel1.Controls.Add(this.NUM_thr_percent);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
             // 
             // btnTestSAll
             // 
             resources.ApplyResources(this.btnTestSAll, "btnTestSAll");
+            this.btnTestSAll.ForeColor = System.Drawing.Color.Black;
             this.btnTestSAll.Name = "btnTestSAll";
             this.btnTestSAll.Tag = "1";
             this.btnTestSAll.UseVisualStyleBackColor = true;
@@ -221,11 +178,15 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Name = "label8";
             // 
             // lblDuration
             // 
             resources.ApplyResources(this.lblDuration, "lblDuration");
+            this.lblDuration.BackColor = System.Drawing.Color.Transparent;
+            this.lblDuration.ForeColor = System.Drawing.Color.Black;
             this.lblDuration.Name = "lblDuration";
             // 
             // NUM_duration
@@ -252,6 +213,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             this.btnSelectRackType.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.btnSelectRackType, "btnSelectRackType");
+            this.btnSelectRackType.ForeColor = System.Drawing.Color.Black;
             this.btnSelectRackType.Name = "btnSelectRackType";
             this.btnSelectRackType.UseVisualStyleBackColor = false;
             this.btnSelectRackType.Click += new System.EventHandler(this.btnSelectRackType_Click);
@@ -273,10 +235,19 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.tableLayoutPanel1.Controls.Add(this.RadbtnFiveRotorT1, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.RadbtnSevenRotorT1, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.pictureBoxWithPseudoOpacity7, 6, 0);
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Black;
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // RadbtnSpSixRotorT1
+            // 
+            resources.ApplyResources(this.RadbtnSpSixRotorT1, "RadbtnSpSixRotorT1");
+            this.RadbtnSpSixRotorT1.Name = "RadbtnSpSixRotorT1";
+            this.RadbtnSpSixRotorT1.UseVisualStyleBackColor = true;
+            this.RadbtnSpSixRotorT1.Click += new System.EventHandler(this.RadbtnSpSixRotorT_CheckedChanged);
             // 
             // pictureBoxWithPseudoOpacity1
             // 
+            this.pictureBoxWithPseudoOpacity1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxWithPseudoOpacity1.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity1, "pictureBoxWithPseudoOpacity1");
             this.pictureBoxWithPseudoOpacity1.Image = global::ByAeroBeHero.Properties.Resources.Bx6;
@@ -285,6 +256,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // pictureBoxWithPseudoOpacity3
             // 
+            this.pictureBoxWithPseudoOpacity3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxWithPseudoOpacity3.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity3, "pictureBoxWithPseudoOpacity3");
             this.pictureBoxWithPseudoOpacity3.Image = global::ByAeroBeHero.Properties.Resources.Bx8;
@@ -293,6 +265,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // pictureBoxWithPseudoOpacity2
             // 
+            this.pictureBoxWithPseudoOpacity2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxWithPseudoOpacity2.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity2, "pictureBoxWithPseudoOpacity2");
             this.pictureBoxWithPseudoOpacity2.Image = global::ByAeroBeHero.Properties.Resources.Bx4;
@@ -301,6 +274,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // pictureBoxWithPseudoOpacity4
             // 
+            this.pictureBoxWithPseudoOpacity4.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity4, "pictureBoxWithPseudoOpacity4");
             this.pictureBoxWithPseudoOpacity4.Image = global::ByAeroBeHero.Properties.Resources.Bt4;
             this.pictureBoxWithPseudoOpacity4.Name = "pictureBoxWithPseudoOpacity4";
@@ -308,6 +282,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // pictureBoxWithPseudoOpacity5
             // 
+            this.pictureBoxWithPseudoOpacity5.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity5, "pictureBoxWithPseudoOpacity5");
             this.pictureBoxWithPseudoOpacity5.Image = global::ByAeroBeHero.Properties.Resources.Bt6;
             this.pictureBoxWithPseudoOpacity5.Name = "pictureBoxWithPseudoOpacity5";
@@ -315,6 +290,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // pictureBoxWithPseudoOpacity6
             // 
+            this.pictureBoxWithPseudoOpacity6.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity6, "pictureBoxWithPseudoOpacity6");
             this.pictureBoxWithPseudoOpacity6.Image = global::ByAeroBeHero.Properties.Resources.Bt8;
             this.pictureBoxWithPseudoOpacity6.Name = "pictureBoxWithPseudoOpacity6";
@@ -362,233 +338,70 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.RadbtnSevenRotorT1.UseVisualStyleBackColor = true;
             this.RadbtnSevenRotorT1.Click += new System.EventHandler(this.RadbtnSevenRotorT_CheckedChanged);
             // 
-            // pictureBoxH
-            // 
-            this.pictureBoxH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxH.Image = global::ByAeroBeHero.Properties.Resources.frames_h;
-            resources.ApplyResources(this.pictureBoxH, "pictureBoxH");
-            this.pictureBoxH.Name = "pictureBoxH";
-            this.pictureBoxH.TabStop = false;
-            // 
-            // pictureBoxV
-            // 
-            this.pictureBoxV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxV.Image = global::ByAeroBeHero.Properties.Resources.new_3DR_04;
-            resources.ApplyResources(this.pictureBoxV, "pictureBoxV");
-            this.pictureBoxV.Name = "pictureBoxV";
-            this.pictureBoxV.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.pictureBoxX);
-            this.groupBox2.Controls.Add(this.groupBox5);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label4);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
-            // 
-            // pictureBoxX
-            // 
-            this.pictureBoxX.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxX.Image = global::ByAeroBeHero.Properties.Resources.frames_x;
-            resources.ApplyResources(this.pictureBoxX, "pictureBoxX");
-            this.pictureBoxX.Name = "pictureBoxX";
-            this.pictureBoxX.TabStop = false;
-            this.pictureBoxX.Click += new System.EventHandler(this.pictureBoxX_Click);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.btnMotorTest);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
-            // 
-            // btnMotorTest
-            // 
-            this.btnMotorTest.BackColor = System.Drawing.Color.Turquoise;
-            resources.ApplyResources(this.btnMotorTest, "btnMotorTest");
-            this.btnMotorTest.Name = "btnMotorTest";
-            this.btnMotorTest.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // groupBox1
-            // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // pictureBoxVTail
-            // 
-            this.pictureBoxVTail.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.pictureBoxVTail, "pictureBoxVTail");
-            this.pictureBoxVTail.Name = "pictureBoxVTail";
-            this.pictureBoxVTail.TabStop = false;
-            this.pictureBoxVTail.Click += new System.EventHandler(this.pictureBoxVTail_Click);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // radioButton_VTail
-            // 
-            resources.ApplyResources(this.radioButton_VTail, "radioButton_VTail");
-            this.radioButton_VTail.Name = "radioButton_VTail";
-            this.radioButton_VTail.TabStop = true;
-            this.radioButton_VTail.UseVisualStyleBackColor = true;
-            this.radioButton_VTail.CheckedChanged += new System.EventHandler(this.radioButton_VTail_CheckedChanged);
-            // 
-            // pictureBoxY
-            // 
-            this.pictureBoxY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxY.Image = global::ByAeroBeHero.Properties.Resources.y6b;
-            resources.ApplyResources(this.pictureBoxY, "pictureBoxY");
-            this.pictureBoxY.Name = "pictureBoxY";
-            this.pictureBoxY.TabStop = false;
-            this.pictureBoxY.Click += new System.EventHandler(this.pictureBoxY_Click);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // pictureBoxPlus
-            // 
-            this.pictureBoxPlus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxPlus.Image = global::ByAeroBeHero.Properties.Resources.frames_plus;
-            resources.ApplyResources(this.pictureBoxPlus, "pictureBoxPlus");
-            this.pictureBoxPlus.Name = "pictureBoxPlus";
-            this.pictureBoxPlus.TabStop = false;
-            this.pictureBoxPlus.Click += new System.EventHandler(this.pictureBoxPlus_Click);
-            // 
-            // radioButton_Y
-            // 
-            resources.ApplyResources(this.radioButton_Y, "radioButton_Y");
-            this.radioButton_Y.Name = "radioButton_Y";
-            this.radioButton_Y.TabStop = true;
-            this.radioButton_Y.UseVisualStyleBackColor = true;
-            this.radioButton_Y.CheckedChanged += new System.EventHandler(this.radioButton_Y_CheckedChanged);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // radioButton_V
-            // 
-            resources.ApplyResources(this.radioButton_V, "radioButton_V");
-            this.radioButton_V.Name = "radioButton_V";
-            this.radioButton_V.TabStop = true;
-            this.radioButton_V.UseVisualStyleBackColor = true;
-            this.radioButton_V.CheckedChanged += new System.EventHandler(this.radioButton_V_CheckedChanged);
-            // 
-            // radioButton_H
-            // 
-            resources.ApplyResources(this.radioButton_H, "radioButton_H");
-            this.radioButton_H.Name = "radioButton_H";
-            this.radioButton_H.TabStop = true;
-            this.radioButton_H.UseVisualStyleBackColor = true;
-            this.radioButton_H.CheckedChanged += new System.EventHandler(this.radioButton_H_CheckedChanged);
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // panel4
-            // 
-            this.panel4.AssociatedSplitter = null;
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold);
-            this.panel4.CaptionHeight = 27;
-            this.panel4.Controls.Add(this.tableLayoutPanel1);
-            this.panel4.Controls.Add(this.btnSelectRackType);
-            this.panel4.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel4.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel4.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel4.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel4.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel4.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel4.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel4.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel4.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel4.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel4.Image = null;
-            this.panel4.Name = "panel4";
-            this.toolTip1.SetToolTip(this.panel4, resources.GetString("panel4.ToolTip"));
-            this.panel4.ToolTipTextCloseIcon = null;
-            this.panel4.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel4.ToolTipTextExpandIconPanelExpanded = null;
-            // 
-            // panel5
-            // 
-            this.panel5.AssociatedSplitter = null;
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel5.CaptionHeight = 27;
-            this.panel5.Controls.Add(this.tableLayoutPanel2);
-            this.panel5.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel5.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel5.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel5.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel5.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel5.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel5.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel5.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel5.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel5.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel5.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel5.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel5.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel5.Image = null;
-            this.panel5.Name = "panel5";
-            this.toolTip1.SetToolTip(this.panel5, resources.GetString("panel5.ToolTip"));
-            this.panel5.ToolTipTextCloseIcon = null;
-            this.panel5.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel5.ToolTipTextExpandIconPanelExpanded = null;
-            // 
             // pictureBoxWithPseudoOpacity7
             // 
+            this.pictureBoxWithPseudoOpacity7.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.pictureBoxWithPseudoOpacity7, "pictureBoxWithPseudoOpacity7");
             this.pictureBoxWithPseudoOpacity7.Image = global::ByAeroBeHero.Properties.Resources.Bs6;
             this.pictureBoxWithPseudoOpacity7.Name = "pictureBoxWithPseudoOpacity7";
             this.pictureBoxWithPseudoOpacity7.TabStop = false;
             // 
-            // RadbtnSpSixRotorT1
+            // panel3
             // 
-            resources.ApplyResources(this.RadbtnSpSixRotorT1, "RadbtnSpSixRotorT1");
-            this.RadbtnSpSixRotorT1.Name = "RadbtnSpSixRotorT1";
-            this.RadbtnSpSixRotorT1.UseVisualStyleBackColor = true;
-            this.RadbtnSpSixRotorT1.Click += new System.EventHandler(this.RadbtnSpSixRotorT_CheckedChanged);
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.btnSelectRackType);
+            this.panel3.Controls.Add(this.tableLayoutPanel1);
+            this.panel3.Controls.Add(this.panel6);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
-            // configDefaultSettings1
+            // panel6
             // 
-            this.configDefaultSettings1.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.configDefaultSettings1, "configDefaultSettings1");
-            this.configDefaultSettings1.Name = "configDefaultSettings1";
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.lblSelectCpterType);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // lblSelectCpterType
+            // 
+            resources.ApplyResources(this.lblSelectCpterType, "lblSelectCpterType");
+            this.lblSelectCpterType.BackColor = System.Drawing.Color.Transparent;
+            this.lblSelectCpterType.ForeColor = System.Drawing.Color.Black;
+            this.lblSelectCpterType.Name = "lblSelectCpterType";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.Controls.Add(this.button8);
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Controls.Add(this.btnTestSAll);
+            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.lblDuration);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.NUM_duration);
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.NUM_thr_percent);
+            this.panel4.Controls.Add(this.button1);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.lblMotorTest);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // lblMotorTest
+            // 
+            resources.ApplyResources(this.lblMotorTest, "lblMotorTest");
+            this.lblMotorTest.BackColor = System.Drawing.Color.Transparent;
+            this.lblMotorTest.ForeColor = System.Drawing.Color.Black;
+            this.lblMotorTest.Name = "lblMotorTest";
             // 
             // currentStateBindingSource
             // 
@@ -598,32 +411,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.panel5);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.pictureBoxH);
-            this.Controls.Add(this.pictureBoxV);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.configDefaultSettings1);
-            this.Controls.Add(this.pictureBoxVTail);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.radioButton_VTail);
-            this.Controls.Add(this.pictureBoxY);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBoxPlus);
-            this.Controls.Add(this.radioButton_Y);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton_V);
-            this.Controls.Add(this.radioButton_H);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel3);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "ConfigFrameType";
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_duration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -633,65 +425,34 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxX)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVTail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlus)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity7)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private PictureBoxWithPseudoOpacity pictureBoxX;
-        private PictureBoxWithPseudoOpacity pictureBoxPlus;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton_V;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton_H;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton radioButton_Y;
-        private PictureBoxWithPseudoOpacity pictureBoxY;
-        private System.Windows.Forms.Label label7;
-        private DefaultSettings configDefaultSettings1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton_VTail;
-        private PictureBoxWithPseudoOpacity pictureBoxVTail;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity3;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity2;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity1;
         private System.Windows.Forms.Button btnSelectRackType;
-        private PictureBoxWithPseudoOpacity pictureBoxV;
-        private PictureBoxWithPseudoOpacity pictureBoxH;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btnMotorTest;
         private System.Windows.Forms.BindingSource currentStateBindingSource;
         private System.Windows.Forms.NumericUpDown NUM_duration;
         private System.Windows.Forms.NumericUpDown NUM_thr_percent;
         private System.Windows.Forms.Label lblDuration;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity4;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity5;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity6;
-        private BSE.Windows.Forms.Panel panel4;
-        private BSE.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button RadbtnFourRotor1;
         private System.Windows.Forms.Button RadbtnFiveRotor1;
         private System.Windows.Forms.Button RadbtnSevenRotor1;
@@ -710,5 +471,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         private System.Windows.Forms.Button btnTestSAll;
         private System.Windows.Forms.Button RadbtnSpSixRotorT1;
         private PictureBoxWithPseudoOpacity pictureBoxWithPseudoOpacity7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lblSelectCpterType;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label lblMotorTest;
     }
 }

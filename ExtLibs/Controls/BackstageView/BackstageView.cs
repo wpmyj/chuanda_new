@@ -96,7 +96,7 @@ namespace ByAeroBeHero.Controls.BackstageView
         {
             get
             {
-                return System.Drawing.Color.FromArgb(192, 192, 225)
+                return System.Drawing.Color.Black;
 ;
             }
             set

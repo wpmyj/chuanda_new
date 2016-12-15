@@ -53,8 +53,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            LBL_dist.Text = MainV2.comPort.MAV.cs.sonarrange.ToString();
-            LBL_volt.Text = MainV2.comPort.MAV.cs.sonarvoltage.ToString();
 
             if (MainV2.comPort.MAV.param.ContainsKey("SPRAY_SPEED_EN") && MainV2.comPort.MAV.param["SPRAY_SPEED_EN"].ToString() == "1")
             {

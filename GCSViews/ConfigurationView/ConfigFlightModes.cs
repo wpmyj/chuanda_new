@@ -44,6 +44,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         public void Activate()
         {
+            initControl();
             if (MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.ArduPlane ||
                 MainV2.comPort.MAV.cs.firmware == MainV2.Firmwares.Ateryx) // APM
             {
@@ -60,8 +61,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 chk_ss4.Visible = false;
                 chk_ss5.Visible = false;
                 chk_ss6.Visible = false;
-
-                linkLabel1_ss.Visible = false;
 
                 try
                 {
@@ -99,8 +98,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 chk_ss4.Visible = false;
                 chk_ss5.Visible = false;
                 chk_ss6.Visible = false;
-
-                linkLabel1_ss.Visible = false;
 
                 try
                 {
@@ -186,6 +183,14 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             timer.Enabled = true;
             timer.Interval = 100;
             timer.Start();
+        }
+
+        private void initControl() 
+        {
+            this.label2.ForeColor = label11.ForeColor = label3.ForeColor = label12.ForeColor = label4.ForeColor = label15.ForeColor
+                = label16.ForeColor = label17.ForeColor = label18.ForeColor = label19.ForeColor = label9.ForeColor = label5.ForeColor
+                = label6.ForeColor = label13.ForeColor = label14.ForeColor = System.Drawing.Color.Black;
+        
         }
 
         public void Deactivate()
@@ -425,19 +430,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     .ToList();
             ctl.DisplayMember = "Value";
             ctl.ValueMember = "Key";
-        }
-
-        private void linkLabel1_ss_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            try
-            {
-                Process.Start("http://copter.ardupilot.com/wiki/flight-modes/simpleandsuper-simple-modes/");
-            }
-            catch
-            {
-                CustomMessageBox.Show(Strings.ERROR +
-                                      " http://copter.ardupilot.com/wiki/flight-modes/simpleandsuper-simple-modes/");
-            }
         }
 
         private void flightmode_SelectedIndexChanged(object sender, EventArgs e)

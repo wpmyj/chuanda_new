@@ -43,17 +43,20 @@
             this.lblCheckReson1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.BtnChenckbalance = new ByAeroBeHero.Controls.MyButton();
-            this.panel1 = new BSE.Windows.Forms.Panel();
             this.lblR = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.lblMotorbalance = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // progressBar
@@ -72,18 +75,21 @@
             // lblprogress
             // 
             resources.ApplyResources(this.lblprogress, "lblprogress");
+            this.lblprogress.BackColor = System.Drawing.Color.Transparent;
             this.lblprogress.ForeColor = System.Drawing.Color.Black;
             this.lblprogress.Name = "lblprogress";
             // 
             // lblprogress1
             // 
             resources.ApplyResources(this.lblprogress1, "lblprogress1");
+            this.lblprogress1.BackColor = System.Drawing.Color.Transparent;
             this.lblprogress1.ForeColor = System.Drawing.Color.Black;
             this.lblprogress1.Name = "lblprogress1";
             // 
             // lblPositive1
             // 
             resources.ApplyResources(this.lblPositive1, "lblPositive1");
+            this.lblPositive1.BackColor = System.Drawing.Color.Transparent;
             this.lblPositive1.ForeColor = System.Drawing.Color.Black;
             this.lblPositive1.Name = "lblPositive1";
             this.toolTip1.SetToolTip(this.lblPositive1, resources.GetString("lblPositive1.ToolTip"));
@@ -97,6 +103,7 @@
             // lblNegative1
             // 
             resources.ApplyResources(this.lblNegative1, "lblNegative1");
+            this.lblNegative1.BackColor = System.Drawing.Color.Transparent;
             this.lblNegative1.ForeColor = System.Drawing.Color.Black;
             this.lblNegative1.Name = "lblNegative1";
             this.toolTip1.SetToolTip(this.lblNegative1, resources.GetString("lblNegative1.ToolTip"));
@@ -116,6 +123,7 @@
             // lblDiff1
             // 
             resources.ApplyResources(this.lblDiff1, "lblDiff1");
+            this.lblDiff1.BackColor = System.Drawing.Color.Transparent;
             this.lblDiff1.ForeColor = System.Drawing.Color.Black;
             this.lblDiff1.Name = "lblDiff1";
             this.toolTip1.SetToolTip(this.lblDiff1, resources.GetString("lblDiff1.ToolTip"));
@@ -129,55 +137,18 @@
             // BtnChenckbalance
             // 
             this.BtnChenckbalance.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.BtnChenckbalance, "BtnChenckbalance");
             this.BtnChenckbalance.BGGradBot = System.Drawing.Color.Transparent;
             this.BtnChenckbalance.BGGradTop = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.BtnChenckbalance, "BtnChenckbalance");
             this.BtnChenckbalance.Name = "BtnChenckbalance";
             this.BtnChenckbalance.UseVisualStyleBackColor = false;
             this.BtnChenckbalance.Click += new System.EventHandler(this.BtnChenckbalance_Click);
             // 
-            // panel1
-            // 
-            this.panel1.AssociatedSplitter = null;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.CaptionFont = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panel1.CaptionHeight = 27;
-            this.panel1.Controls.Add(this.lblR);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.progressBar);
-            this.panel1.Controls.Add(this.BtnChenckbalance);
-            this.panel1.Controls.Add(this.lblprogress);
-            this.panel1.Controls.Add(this.lblDiff1);
-            this.panel1.Controls.Add(this.lblprogress1);
-            this.panel1.Controls.Add(this.lblPositive1);
-            this.panel1.Controls.Add(this.lblNegative1);
-            this.panel1.CustomColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.panel1.CustomColors.CaptionCloseIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionExpandIcon = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.CaptionGradientEnd = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.CaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(248)))));
-            this.panel1.CustomColors.CaptionSelectedGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionSelectedGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(215)))), ((int)(((byte)(243)))));
-            this.panel1.CustomColors.CaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.CollapsedCaptionText = System.Drawing.SystemColors.ControlText;
-            this.panel1.CustomColors.ContentGradientBegin = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.CustomColors.ContentGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.panel1.CustomColors.InnerBorderColor = System.Drawing.SystemColors.Window;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel1.Image = null;
-            this.panel1.Name = "panel1";
-            this.panel1.ToolTipTextCloseIcon = null;
-            this.panel1.ToolTipTextExpandIconPanelCollapsed = null;
-            this.panel1.ToolTipTextExpandIconPanelExpanded = null;
-            // 
             // lblR
             // 
             resources.ApplyResources(this.lblR, "lblR");
+            this.lblR.BackColor = System.Drawing.Color.Transparent;
+            this.lblR.ForeColor = System.Drawing.Color.Black;
             this.lblR.Name = "lblR";
             // 
             // panel5
@@ -209,15 +180,47 @@
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.LightGray;
+            this.panel6.Controls.Add(this.lblR);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.panel5);
+            this.panel6.Controls.Add(this.lblDiff1);
+            this.panel6.Controls.Add(this.panel3);
+            this.panel6.Controls.Add(this.lblNegative1);
+            this.panel6.Controls.Add(this.panel4);
+            this.panel6.Controls.Add(this.lblPositive1);
+            this.panel6.Controls.Add(this.panel2);
+            this.panel6.Controls.Add(this.lblprogress1);
+            this.panel6.Controls.Add(this.progressBar);
+            this.panel6.Controls.Add(this.lblprogress);
+            this.panel6.Controls.Add(this.BtnChenckbalance);
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.Name = "panel6";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.lblMotorbalance);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            // 
+            // lblMotorbalance
+            // 
+            resources.ApplyResources(this.lblMotorbalance, "lblMotorbalance");
+            this.lblMotorbalance.BackColor = System.Drawing.Color.Transparent;
+            this.lblMotorbalance.ForeColor = System.Drawing.Color.Black;
+            this.lblMotorbalance.Name = "lblMotorbalance";
+            // 
             // ConfigMotorbalance
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.lblCheckReson1);
             this.Name = "ConfigMotorbalance";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -226,6 +229,10 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,12 +253,14 @@
         private System.Windows.Forms.Label lblDiff1;
         private System.Windows.Forms.Label lblCheckReson1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private BSE.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblR;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label lblMotorbalance;
 
     }
 }

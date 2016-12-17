@@ -361,6 +361,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel6.Controls.Add(this.lblSelectCpterType);
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
+            this.toolTip1.SetToolTip(this.panel6, resources.GetString("panel6.ToolTip"));
             // 
             // lblSelectCpterType
             // 
@@ -395,6 +396,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel7.Controls.Add(this.lblMotorTest);
             resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
+            this.toolTip1.SetToolTip(this.panel7, resources.GetString("panel7.ToolTip"));
             // 
             // lblMotorTest
             // 

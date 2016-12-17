@@ -62,6 +62,7 @@
             this.lblReason = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lblCheckCompass = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -311,6 +312,7 @@
             this.panel11.Controls.Add(this.lblCheckCompass);
             resources.ApplyResources(this.panel11, "panel11");
             this.panel11.Name = "panel11";
+            this.toolTip1.SetToolTip(this.panel11, resources.GetString("panel11.ToolTip"));
             // 
             // lblCheckCompass
             // 
@@ -384,5 +386,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label lblCheckCompass;
         private System.Windows.Forms.Label lblReason;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

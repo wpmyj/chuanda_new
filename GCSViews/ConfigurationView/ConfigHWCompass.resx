@@ -978,6 +978,27 @@
   <data name="&gt;&gt;lblReason.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lblCheckCompass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCheckCompass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblCheckCompass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCheckCompass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 0</value>
+  </data>
+  <data name="lblCheckCompass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 24</value>
+  </data>
+  <data name="lblCheckCompass.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCheckCompass.Text" xml:space="preserve">
+    <value>罗盘校准</value>
+  </data>
   <data name="&gt;&gt;lblCheckCompass.Name" xml:space="preserve">
     <value>lblCheckCompass</value>
   </data>
@@ -998,6 +1019,15 @@
   </data>
   <data name="panel11.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>190, 17</value>
+  </metadata>
+  <data name="panel11.ToolTip" xml:space="preserve">
+    <value>1.首先尽量将飞机水平举起，然后将飞机机头朝向一个方向然后保持机头方向不变旋转360度。
+2.将机头方向按顺时针或逆时针旋转90度，后继续保持机头方向不变旋转360度。
+3.以此类推直到机头已经旋转360度后，将机头朝下再旋转360度。
+4.如果此时校准还未完成则继续重复第一步到第三步。</value>
   </data>
   <data name="&gt;&gt;panel11.Name" xml:space="preserve">
     <value>panel11</value>
@@ -1032,39 +1062,6 @@
   <data name="&gt;&gt;panel10.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblCheckCompass.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCheckCompass.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
-  </data>
-  <data name="lblCheckCompass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblCheckCompass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 0</value>
-  </data>
-  <data name="lblCheckCompass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 24</value>
-  </data>
-  <data name="lblCheckCompass.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblCheckCompass.Text" xml:space="preserve">
-    <value>罗盘校准</value>
-  </data>
-  <data name="&gt;&gt;lblCheckCompass.Name" xml:space="preserve">
-    <value>lblCheckCompass</value>
-  </data>
-  <data name="&gt;&gt;lblCheckCompass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCheckCompass.Parent" xml:space="preserve">
-    <value>panel11</value>
-  </data>
-  <data name="&gt;&gt;lblCheckCompass.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1082,6 +1079,12 @@
   </data>
   <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigHWCompass</value>

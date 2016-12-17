@@ -1098,6 +1098,12 @@
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="panel6.ToolTip" xml:space="preserve">
+    <value>  欢迎使用BY多旋翼飞行控制器，您可根据自己的情况在此页面进行相应的设置。
+      1.进行软件调参之前，请确保您已根据《飞控系统用户手册》正确安装飞行器。
+      2.每个类型选择图中标记的M1至M8与主控器输出端口M1至M8相对应，箭头表示电机和桨的旋转方向。
+      3. 奇数号电机逆时针旋转，偶数号电机顺时针旋转。</value>
+  </data>
   <data name="&gt;&gt;panel6.Name" xml:space="preserve">
     <value>panel6</value>
   </data>
@@ -1173,6 +1179,12 @@
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="panel7.ToolTip" xml:space="preserve">
+    <value>注意：
+        1.通过电机测试功能，检查电机连接和转向是否正常。
+        2.奇数号电机逆时针旋转，偶数号电机顺时针旋转。
+        3.切勿安装螺旋桨。</value>
+  </data>
   <data name="&gt;&gt;panel7.Name" xml:space="preserve">
     <value>panel7</value>
   </data>
@@ -1213,7 +1225,7 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>136</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>

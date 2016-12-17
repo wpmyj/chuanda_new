@@ -197,8 +197,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 return;
             }
 
-            CustomMessageBox.Show(
-                "确保你的遥控器和接收机连接电源，并且电机没有连接电源。");
+            CustomMessageBox.Show("确保你的遥控器和接收机连接电源，并且电机没有连接电源。","提示");
 
             var oldrc = MainV2.comPort.MAV.cs.raterc;
             var oldatt = MainV2.comPort.MAV.cs.rateattitude;
@@ -220,8 +219,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
             BUT_Calibrateradio.Text = Strings.Click_when_Done;
 
-            CustomMessageBox.Show(
-                "确保你遥控器所有摇杆的位置达到红线位置");
+            CustomMessageBox.Show("确保你遥控器所有摇杆的位置达到红线位置","提示");
 
             run = true;
 
@@ -328,11 +326,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
             else
             {
-                CustomMessageBox.Show("错误的通道1");
+                CustomMessageBox.Show("错误的通道！","提示");
                 return;
             }
 
-            CustomMessageBox.Show("确保遥控器的摇杆和油门都是居中的，然后点击确定继续");
+            CustomMessageBox.Show("确保遥控器的摇杆和油门都是居中的，然后点击确定继续。","提示");
 
             MainV2.comPort.MAV.cs.UpdateCurrentSettings(currentStateBindingSource, true, MainV2.comPort);
 
@@ -369,7 +367,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 }
                 catch
                 {
-                    CustomMessageBox.Show("设置通道失败 " + (a + 1));
+                    CustomMessageBox.Show("设置通道失败 " + (a + 1),"提示");
                 }
 
                 data = data + "CH" + (a + 1) + " " + rcmin[a] + " | " + rcmax[a] + "\n";
@@ -388,9 +386,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
             }
 
-            CustomMessageBox.Show(
-                "检测参数设置\n通道参数没有显示在 1500 +-2\n正常值范围 1100 | 1900\n通道:Min | Max \n" +
-                data, "Radio");
+            CustomMessageBox.Show("正常值范围 1100 | 1900\n通道:最小 | 最大 \n" + data , "遥控器校准");
 
             BUT_Calibrateradio.Text = "校准遥控";
         }

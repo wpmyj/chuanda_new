@@ -159,9 +159,6 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
   </metadata>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="NUM_movelength.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10.2pt</value>
   </data>
@@ -180,6 +177,9 @@
   <data name="NUM_movelength.ToolTip" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>240, 17</value>
+  </metadata>
   <data name="NUM_movelength.ToolTip1" xml:space="preserve">
     <value>提示：航点移动距离是航点（区域航点，飞行航点）在航线规划页面中上、下、左、右移动的单位距离。</value>
   </data>
@@ -199,7 +199,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="tboxWriteV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>543, 69</value>
+    <value>515, 69</value>
   </data>
   <data name="tboxWriteV.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 27</value>
@@ -247,7 +247,7 @@
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6193.18143, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6195.26112, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -295,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 112</value>
+    <value>364, 112</value>
   </data>
   <data name="myButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -325,7 +325,7 @@
     <value>NoControl</value>
   </data>
   <data name="Btn_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 112</value>
+    <value>257, 112</value>
   </data>
   <data name="Btn_.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -480,9 +480,6 @@
   <data name="&gt;&gt;CHK_enablespeech.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>240, 17</value>
-  </metadata>
   <data name="CHK_speechwaypoint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -625,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 71</value>
+    <value>570, 71</value>
   </data>
   <data name="lblVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 20</value>
@@ -658,7 +655,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 72</value>
+    <value>406, 72</value>
   </data>
   <data name="lblVVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 20</value>
@@ -714,16 +711,76 @@
   <data name="&gt;&gt;chbShow_AllParams.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="SPRAY_WRAP_EN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 41</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="SPRAY_WRAP_EN.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Name" xml:space="preserve">
     <value>SPRAY_WRAP_EN</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6193.18143, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6195.26112, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
     <value>panel4</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblControlParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblControlParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblControlParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblControlParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 0</value>
+  </data>
+  <data name="lblControlParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="lblControlParams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblControlParams.Text" xml:space="preserve">
+    <value>飞控参数设置</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Name" xml:space="preserve">
+    <value>lblControlParams</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.Parent" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;lblControlParams.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 0</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 26</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;panel5.Name" xml:space="preserve">
@@ -759,134 +816,26 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="SPRAY_WRAP_EN.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblPCParams.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="SPRAY_WRAP_EN.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 41</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 17</value>
-  </data>
-  <data name="SPRAY_WRAP_EN.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.Name" xml:space="preserve">
-    <value>SPRAY_WRAP_EN</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6193.18143, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_WRAP_EN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.Name" xml:space="preserve">
-    <value>lblControlParams</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 0</value>
-  </data>
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 26</value>
-  </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblControlParams.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblControlParams.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblPCParams.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10pt, style=Bold</value>
   </data>
-  <data name="lblControlParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblPCParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblControlParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 0</value>
+  <data name="lblPCParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 1</value>
   </data>
-  <data name="lblControlParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
+  <data name="lblPCParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 24</value>
   </data>
-  <data name="lblControlParams.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblPCParams.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="lblControlParams.Text" xml:space="preserve">
-    <value>飞控参数设置</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.Name" xml:space="preserve">
-    <value>lblControlParams</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;lblControlParams.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel6.Name" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;panel6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 183</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 100</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="lblPCParams.Text" xml:space="preserve">
+    <value>地面站参数设置</value>
   </data>
   <data name="&gt;&gt;lblPCParams.Name" xml:space="preserve">
     <value>lblPCParams</value>
@@ -921,71 +870,47 @@
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lblPCParams.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 183</value>
   </data>
-  <data name="lblPCParams.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>678, 100</value>
   </data>
-  <data name="lblPCParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
   </data>
-  <data name="lblPCParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 1</value>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="lblPCParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
-  </data>
-  <data name="lblPCParams.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblPCParams.Text" xml:space="preserve">
-    <value>地面站参数设置</value>
-  </data>
-  <data name="&gt;&gt;lblPCParams.Name" xml:space="preserve">
-    <value>lblPCParams</value>
-  </data>
-  <data name="&gt;&gt;lblPCParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPCParams.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;lblPCParams.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;panel7.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 289</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>677, 100</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblSDParams.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSDParams.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblSDParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSDParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 1</value>
+  </data>
+  <data name="lblSDParams.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="lblSDParams.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblSDParams.Text" xml:space="preserve">
+    <value>系统功能设置</value>
   </data>
   <data name="&gt;&gt;lblSDParams.Name" xml:space="preserve">
     <value>lblSDParams</value>
@@ -1023,38 +948,47 @@
   <data name="&gt;&gt;panel7.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="lblSDParams.AutoSize" type="System.Boolean, mscorlib">
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 289</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 100</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblShowParams.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblSDParams.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblShowParams.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10pt, style=Bold</value>
   </data>
-  <data name="lblSDParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblShowParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblSDParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 1</value>
+  <data name="lblShowParams.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 0</value>
   </data>
-  <data name="lblSDParams.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblShowParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 24</value>
   </data>
-  <data name="lblSDParams.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblShowParams.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="lblSDParams.Text" xml:space="preserve">
+  <data name="lblShowParams.Text" xml:space="preserve">
     <value>系统功能设置</value>
-  </data>
-  <data name="&gt;&gt;lblSDParams.Name" xml:space="preserve">
-    <value>lblSDParams</value>
-  </data>
-  <data name="&gt;&gt;lblSDParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSDParams.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;lblSDParams.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;lblShowParams.Name" xml:space="preserve">
     <value>lblShowParams</value>
@@ -1111,39 +1045,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pSetParams.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblShowParams.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblShowParams.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
-  </data>
-  <data name="lblShowParams.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblShowParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 0</value>
-  </data>
-  <data name="lblShowParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
-  </data>
-  <data name="lblShowParams.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblShowParams.Text" xml:space="preserve">
-    <value>系统功能设置</value>
-  </data>
-  <data name="&gt;&gt;lblShowParams.Name" xml:space="preserve">
-    <value>lblShowParams</value>
-  </data>
-  <data name="&gt;&gt;lblShowParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblShowParams.Parent" xml:space="preserve">
-    <value>panel8</value>
-  </data>
-  <data name="&gt;&gt;lblShowParams.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

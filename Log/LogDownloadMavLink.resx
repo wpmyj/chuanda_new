@@ -144,9 +144,6 @@
   <data name="TXT_seriallog.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="TXT_seriallog.Text" xml:space="preserve">
-    <value>`</value>
-  </data>
   <data name="&gt;&gt;TXT_seriallog.Name" xml:space="preserve">
     <value>TXT_seriallog</value>
   </data>

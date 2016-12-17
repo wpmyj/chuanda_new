@@ -167,6 +167,7 @@ namespace ByAeroBeHero.GCSViews
             this.btnAutoPan = new ByAeroBeHero.Controls.MyButton();
             this.ebsPanelMeter = new BSE.Windows.Forms.Panel();
             this.hud1 = new ByAeroBeHero.Controls.HUD();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ebsPanelFlyingInfo = new BSE.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Qvalt = new ByAeroBeHero.Controls.QuickView();
@@ -331,7 +332,6 @@ namespace ByAeroBeHero.GCSViews
             this.timer_getbreakpoint = new System.Windows.Forms.Timer(this.components);
             this.timer_GetMapPoint = new System.Windows.Forms.Timer(this.components);
             this.Messagetabtimer = new System.Windows.Forms.Timer(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Commands)).BeginInit();
             this.panelWaypoints.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -350,6 +350,7 @@ namespace ByAeroBeHero.GCSViews
             this.breakpointgroupBox.SuspendLayout();
             this.groupBoxRellyPoint.SuspendLayout();
             this.ebsPanelMeter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.ebsPanelFlyingInfo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.ebsPanelPlanInfo.SuspendLayout();
@@ -378,7 +379,6 @@ namespace ByAeroBeHero.GCSViews
             this.panel15.SuspendLayout();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Commands
@@ -1421,6 +1421,10 @@ namespace ByAeroBeHero.GCSViews
             this.hud1.VSync = false;
             this.hud1.wpno = 0;
             this.hud1.xtrack_error = 0F;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // ebsPanelFlyingInfo
             // 
@@ -2756,10 +2760,6 @@ namespace ByAeroBeHero.GCSViews
             this.Messagetabtimer.Interval = 1000;
             this.Messagetabtimer.Tick += new System.EventHandler(this.Messagetabtimer_Tick);
             // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
-            // 
             // FlightPlanner
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2796,6 +2796,7 @@ namespace ByAeroBeHero.GCSViews
             this.breakpointgroupBox.ResumeLayout(false);
             this.groupBoxRellyPoint.ResumeLayout(false);
             this.ebsPanelMeter.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ebsPanelFlyingInfo.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ebsPanelPlanInfo.ResumeLayout(false);
@@ -2839,7 +2840,6 @@ namespace ByAeroBeHero.GCSViews
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

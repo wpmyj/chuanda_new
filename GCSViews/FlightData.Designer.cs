@@ -8,8 +8,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlightData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainH = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.myButtonShowInfo = new ByAeroBeHero.Controls.MyButton();
@@ -169,7 +169,6 @@
             this.CHK_autopan = new System.Windows.Forms.CheckBox();
             this.lblSataCount = new System.Windows.Forms.Label();
             this.lblShowTime = new System.Windows.Forms.Label();
-            this.hud1 = new ByAeroBeHero.Controls.HUD();
             this.contextMenuStripHud = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.recordHudToAVIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -299,6 +298,8 @@
             // 
             // myButtonShowInfo
             // 
+            this.myButtonShowInfo.BGGradBot = System.Drawing.Color.LightGray;
+            this.myButtonShowInfo.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.myButtonShowInfo, "myButtonShowInfo");
             this.myButtonShowInfo.Name = "myButtonShowInfo";
             this.myButtonShowInfo.UseVisualStyleBackColor = true;
@@ -461,6 +462,8 @@
             // 
             // myButtonDeviceStatus
             // 
+            this.myButtonDeviceStatus.BGGradBot = System.Drawing.Color.LightGray;
+            this.myButtonDeviceStatus.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.myButtonDeviceStatus, "myButtonDeviceStatus");
             this.myButtonDeviceStatus.Name = "myButtonDeviceStatus";
             this.myButtonDeviceStatus.UseVisualStyleBackColor = true;
@@ -468,6 +471,8 @@
             // 
             // myButton5
             // 
+            this.myButton5.BGGradBot = System.Drawing.Color.LightGray;
+            this.myButton5.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.myButton5, "myButton5");
             this.myButton5.Name = "myButton5";
             this.myButton5.UseVisualStyleBackColor = true;
@@ -481,6 +486,8 @@
             // 
             // btnMeter
             // 
+            this.btnMeter.BGGradBot = System.Drawing.Color.LightGray;
+            this.btnMeter.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.btnMeter, "btnMeter");
             this.btnMeter.Name = "btnMeter";
             this.btnMeter.UseVisualStyleBackColor = true;
@@ -488,6 +495,8 @@
             // 
             // btnWarnMessage
             // 
+            this.btnWarnMessage.BGGradBot = System.Drawing.Color.LightGray;
+            this.btnWarnMessage.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.btnWarnMessage, "btnWarnMessage");
             this.btnWarnMessage.Name = "btnWarnMessage";
             this.btnWarnMessage.UseVisualStyleBackColor = true;
@@ -693,6 +702,8 @@
             // 
             // BUT_clear_track
             // 
+            this.BUT_clear_track.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_clear_track.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_clear_track, "BUT_clear_track");
             this.BUT_clear_track.Name = "BUT_clear_track";
             this.BUT_clear_track.UseVisualStyleBackColor = true;
@@ -700,6 +711,8 @@
             // 
             // BUT_quickrtl
             // 
+            this.BUT_quickrtl.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_quickrtl.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_quickrtl, "BUT_quickrtl");
             this.BUT_quickrtl.Name = "BUT_quickrtl";
             this.BUT_quickrtl.UseVisualStyleBackColor = true;
@@ -707,6 +720,8 @@
             // 
             // BUT_quickauto
             // 
+            this.BUT_quickauto.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_quickauto.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_quickauto, "BUT_quickauto");
             this.BUT_quickauto.Name = "BUT_quickauto";
             this.BUT_quickauto.UseVisualStyleBackColor = true;
@@ -714,6 +729,8 @@
             // 
             // BUT_ARM
             // 
+            this.BUT_ARM.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_ARM.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_ARM, "BUT_ARM");
             this.BUT_ARM.Name = "BUT_ARM";
             this.BUT_ARM.UseVisualStyleBackColor = true;
@@ -721,6 +738,8 @@
             // 
             // BUT_resumemis
             // 
+            this.BUT_resumemis.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_resumemis.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_resumemis, "BUT_resumemis");
             this.BUT_resumemis.Name = "BUT_resumemis";
             this.BUT_resumemis.UseVisualStyleBackColor = true;
@@ -735,6 +754,8 @@
             // 
             // BUT_mountmode
             // 
+            this.BUT_mountmode.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_mountmode.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_mountmode, "BUT_mountmode");
             this.BUT_mountmode.Name = "BUT_mountmode";
             this.toolTip1.SetToolTip(this.BUT_mountmode, resources.GetString("BUT_mountmode.ToolTip"));
@@ -743,6 +764,8 @@
             // 
             // BUT_joystick
             // 
+            this.BUT_joystick.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_joystick.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_joystick, "BUT_joystick");
             this.BUT_joystick.Name = "BUT_joystick";
             this.toolTip1.SetToolTip(this.BUT_joystick, resources.GetString("BUT_joystick.ToolTip"));
@@ -751,6 +774,8 @@
             // 
             // BUT_quickmanual
             // 
+            this.BUT_quickmanual.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_quickmanual.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_quickmanual, "BUT_quickmanual");
             this.BUT_quickmanual.Name = "BUT_quickmanual";
             this.toolTip1.SetToolTip(this.BUT_quickmanual, resources.GetString("BUT_quickmanual.ToolTip"));
@@ -769,6 +794,8 @@
             // 
             // BUT_setwp
             // 
+            this.BUT_setwp.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_setwp.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_setwp, "BUT_setwp");
             this.BUT_setwp.Name = "BUT_setwp";
             this.toolTip1.SetToolTip(this.BUT_setwp, resources.GetString("BUT_setwp.ToolTip"));
@@ -785,6 +812,8 @@
             // 
             // BUT_setmode
             // 
+            this.BUT_setmode.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_setmode.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_setmode, "BUT_setmode");
             this.BUT_setmode.Name = "BUT_setmode";
             this.toolTip1.SetToolTip(this.BUT_setmode, resources.GetString("BUT_setmode.ToolTip"));
@@ -801,6 +830,8 @@
             // 
             // BUT_Homealt
             // 
+            this.BUT_Homealt.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_Homealt.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_Homealt, "BUT_Homealt");
             this.BUT_Homealt.Name = "BUT_Homealt";
             this.toolTip1.SetToolTip(this.BUT_Homealt, resources.GetString("BUT_Homealt.ToolTip"));
@@ -809,6 +840,8 @@
             // 
             // BUT_RAWSensor
             // 
+            this.BUT_RAWSensor.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_RAWSensor.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_RAWSensor, "BUT_RAWSensor");
             this.BUT_RAWSensor.Name = "BUT_RAWSensor";
             this.toolTip1.SetToolTip(this.BUT_RAWSensor, resources.GetString("BUT_RAWSensor.ToolTip"));
@@ -817,6 +850,8 @@
             // 
             // BUTrestartmission
             // 
+            this.BUTrestartmission.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUTrestartmission.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUTrestartmission, "BUTrestartmission");
             this.BUTrestartmission.Name = "BUTrestartmission";
             this.toolTip1.SetToolTip(this.BUTrestartmission, resources.GetString("BUTrestartmission.ToolTip"));
@@ -825,6 +860,8 @@
             // 
             // BUTactiondo
             // 
+            this.BUTactiondo.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUTactiondo.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUTactiondo, "BUTactiondo");
             this.BUTactiondo.Name = "BUTactiondo";
             this.toolTip1.SetToolTip(this.BUTactiondo, resources.GetString("BUTactiondo.ToolTip"));
@@ -867,6 +904,8 @@
             // 
             // myButton1
             // 
+            this.myButton1.BGGradBot = System.Drawing.Color.LightGray;
+            this.myButton1.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.myButton1, "myButton1");
             this.myButton1.Name = "myButton1";
             this.toolTip1.SetToolTip(this.myButton1, resources.GetString("myButton1.ToolTip"));
@@ -875,6 +914,8 @@
             // 
             // myButton2
             // 
+            this.myButton2.BGGradBot = System.Drawing.Color.LightGray;
+            this.myButton2.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.myButton2, "myButton2");
             this.myButton2.Name = "myButton2";
             this.toolTip1.SetToolTip(this.myButton2, resources.GetString("myButton2.ToolTip"));
@@ -883,6 +924,8 @@
             // 
             // myButton3
             // 
+            this.myButton3.BGGradBot = System.Drawing.Color.LightGray;
+            this.myButton3.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.myButton3, "myButton3");
             this.myButton3.Name = "myButton3";
             this.toolTip1.SetToolTip(this.myButton3, resources.GetString("myButton3.ToolTip"));
@@ -1437,6 +1480,8 @@
             // 
             // BUT_loadtelem
             // 
+            this.BUT_loadtelem.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_loadtelem.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_loadtelem, "BUT_loadtelem");
             this.BUT_loadtelem.Name = "BUT_loadtelem";
             this.BUT_loadtelem.UseVisualStyleBackColor = true;
@@ -1471,6 +1516,8 @@
             // 
             // BUT_log2kml
             // 
+            this.BUT_log2kml.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_log2kml.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_log2kml, "BUT_log2kml");
             this.BUT_log2kml.Name = "BUT_log2kml";
             this.BUT_log2kml.UseVisualStyleBackColor = true;
@@ -1478,6 +1525,8 @@
             // 
             // BUT_playlog
             // 
+            this.BUT_playlog.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_playlog.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_playlog, "BUT_playlog");
             this.BUT_playlog.Name = "BUT_playlog";
             this.BUT_playlog.UseVisualStyleBackColor = true;
@@ -1503,6 +1552,8 @@
             // 
             // BUT_speed10
             // 
+            this.BUT_speed10.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed10.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed10, "BUT_speed10");
             this.BUT_speed10.Name = "BUT_speed10";
             this.BUT_speed10.Tag = "10";
@@ -1511,6 +1562,8 @@
             // 
             // BUT_speed5
             // 
+            this.BUT_speed5.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed5.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed5, "BUT_speed5");
             this.BUT_speed5.Name = "BUT_speed5";
             this.BUT_speed5.Tag = "5";
@@ -1519,6 +1572,8 @@
             // 
             // BUT_speed2
             // 
+            this.BUT_speed2.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed2.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed2, "BUT_speed2");
             this.BUT_speed2.Name = "BUT_speed2";
             this.BUT_speed2.Tag = "2";
@@ -1527,6 +1582,8 @@
             // 
             // BUT_speed1
             // 
+            this.BUT_speed1.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed1.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed1, "BUT_speed1");
             this.BUT_speed1.Name = "BUT_speed1";
             this.BUT_speed1.Tag = "1";
@@ -1535,6 +1592,8 @@
             // 
             // BUT_speed1_2
             // 
+            this.BUT_speed1_2.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed1_2.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed1_2, "BUT_speed1_2");
             this.BUT_speed1_2.Name = "BUT_speed1_2";
             this.BUT_speed1_2.Tag = "0.5";
@@ -1543,6 +1602,8 @@
             // 
             // BUT_speed1_4
             // 
+            this.BUT_speed1_4.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed1_4.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed1_4, "BUT_speed1_4");
             this.BUT_speed1_4.Name = "BUT_speed1_4";
             this.BUT_speed1_4.Tag = "0.25";
@@ -1551,6 +1612,8 @@
             // 
             // BUT_speed1_10
             // 
+            this.BUT_speed1_10.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_speed1_10.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_speed1_10, "BUT_speed1_10");
             this.BUT_speed1_10.Name = "BUT_speed1_10";
             this.BUT_speed1_10.Tag = "0.1";
@@ -1571,6 +1634,8 @@
             // 
             // BUT_loganalysis
             // 
+            this.BUT_loganalysis.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_loganalysis.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_loganalysis, "BUT_loganalysis");
             this.BUT_loganalysis.Name = "BUT_loganalysis";
             this.BUT_loganalysis.UseVisualStyleBackColor = true;
@@ -1578,6 +1643,8 @@
             // 
             // BUT_DFMavlink
             // 
+            this.BUT_DFMavlink.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_DFMavlink.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_DFMavlink, "BUT_DFMavlink");
             this.BUT_DFMavlink.Name = "BUT_DFMavlink";
             this.BUT_DFMavlink.UseVisualStyleBackColor = true;
@@ -1585,6 +1652,8 @@
             // 
             // but_dflogtokml
             // 
+            this.but_dflogtokml.BGGradBot = System.Drawing.Color.LightGray;
+            this.but_dflogtokml.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.but_dflogtokml, "but_dflogtokml");
             this.but_dflogtokml.Name = "but_dflogtokml";
             this.but_dflogtokml.UseVisualStyleBackColor = true;
@@ -1592,6 +1661,8 @@
             // 
             // but_bintolog
             // 
+            this.but_bintolog.BGGradBot = System.Drawing.Color.LightGray;
+            this.but_bintolog.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.but_bintolog, "but_bintolog");
             this.but_bintolog.Name = "but_bintolog";
             this.but_bintolog.UseVisualStyleBackColor = true;
@@ -1599,6 +1670,8 @@
             // 
             // BUT_matlab
             // 
+            this.BUT_matlab.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_matlab.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_matlab, "BUT_matlab");
             this.BUT_matlab.Name = "BUT_matlab";
             this.BUT_matlab.UseVisualStyleBackColor = true;
@@ -1606,6 +1679,8 @@
             // 
             // BUT_logbrowse
             // 
+            this.BUT_logbrowse.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_logbrowse.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_logbrowse, "BUT_logbrowse");
             this.BUT_logbrowse.Name = "BUT_logbrowse";
             this.BUT_logbrowse.UseVisualStyleBackColor = true;
@@ -1634,6 +1709,8 @@
             // 
             // BUT_edit_selected
             // 
+            this.BUT_edit_selected.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_edit_selected.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_edit_selected, "BUT_edit_selected");
             this.BUT_edit_selected.Name = "BUT_edit_selected";
             this.BUT_edit_selected.UseVisualStyleBackColor = true;
@@ -1646,6 +1723,8 @@
             // 
             // BUT_run_script
             // 
+            this.BUT_run_script.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_run_script.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_run_script, "BUT_run_script");
             this.BUT_run_script.Name = "BUT_run_script";
             this.BUT_run_script.UseVisualStyleBackColor = true;
@@ -1653,6 +1732,8 @@
             // 
             // BUT_abort_script
             // 
+            this.BUT_abort_script.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_abort_script.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_abort_script, "BUT_abort_script");
             this.BUT_abort_script.Name = "BUT_abort_script";
             this.BUT_abort_script.UseVisualStyleBackColor = true;
@@ -1665,6 +1746,8 @@
             // 
             // BUT_select_script
             // 
+            this.BUT_select_script.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_select_script.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_select_script, "BUT_select_script");
             this.BUT_select_script.Name = "BUT_select_script";
             this.BUT_select_script.UseVisualStyleBackColor = true;
@@ -1711,7 +1794,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.panelShowParams);
             this.splitContainer1.Panel2.Controls.Add(this.panelAutoFly);
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Panel2.Controls.Add(this.hud1);
             this.splitContainer1.Panel2.Controls.Add(this.windDir1);
             this.splitContainer1.Panel2.Controls.Add(this.gMapControl1);
             this.splitContainer1.Panel2.Controls.Add(this.TRK_zoom);
@@ -1982,6 +2064,8 @@
             // BUT_quickauto1
             // 
             resources.ApplyResources(this.BUT_quickauto1, "BUT_quickauto1");
+            this.BUT_quickauto1.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_quickauto1.BGGradTop = System.Drawing.Color.LightGray;
             this.BUT_quickauto1.Name = "BUT_quickauto1";
             this.BUT_quickauto1.UseVisualStyleBackColor = true;
             this.BUT_quickauto1.Click += new System.EventHandler(this.BUT_quickauto_Click);
@@ -1989,6 +2073,8 @@
             // BUT_ARM1
             // 
             resources.ApplyResources(this.BUT_ARM1, "BUT_ARM1");
+            this.BUT_ARM1.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_ARM1.BGGradTop = System.Drawing.Color.LightGray;
             this.BUT_ARM1.Name = "BUT_ARM1";
             this.BUT_ARM1.UseVisualStyleBackColor = true;
             this.BUT_ARM1.Click += new System.EventHandler(this.BUT_ARM_Click);
@@ -1996,6 +2082,8 @@
             // BUT_quickrtl1
             // 
             resources.ApplyResources(this.BUT_quickrtl1, "BUT_quickrtl1");
+            this.BUT_quickrtl1.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_quickrtl1.BGGradTop = System.Drawing.Color.LightGray;
             this.BUT_quickrtl1.Name = "BUT_quickrtl1";
             this.BUT_quickrtl1.UseVisualStyleBackColor = true;
             this.BUT_quickrtl1.Click += new System.EventHandler(this.BUT_quickrtl_Click);
@@ -2003,6 +2091,8 @@
             // BUT_clear_track1
             // 
             resources.ApplyResources(this.BUT_clear_track1, "BUT_clear_track1");
+            this.BUT_clear_track1.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_clear_track1.BGGradTop = System.Drawing.Color.LightGray;
             this.BUT_clear_track1.Name = "BUT_clear_track1";
             this.BUT_clear_track1.UseVisualStyleBackColor = true;
             this.BUT_clear_track1.Click += new System.EventHandler(this.BUT_clear_track_Click);
@@ -2010,6 +2100,8 @@
             // btnLoiterUnlim
             // 
             resources.ApplyResources(this.btnLoiterUnlim, "btnLoiterUnlim");
+            this.btnLoiterUnlim.BGGradBot = System.Drawing.Color.LightGray;
+            this.btnLoiterUnlim.BGGradTop = System.Drawing.Color.LightGray;
             this.btnLoiterUnlim.Name = "btnLoiterUnlim";
             this.btnLoiterUnlim.UseVisualStyleBackColor = true;
             this.btnLoiterUnlim.Click += new System.EventHandler(this.btnLoiterUnlim_Click);
@@ -2040,6 +2132,8 @@
             // 
             // BtnClear
             // 
+            this.BtnClear.BGGradBot = System.Drawing.Color.LightGray;
+            this.BtnClear.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BtnClear, "BtnClear");
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.UseVisualStyleBackColor = true;
@@ -2067,95 +2161,6 @@
             resources.ApplyResources(this.lblShowTime, "lblShowTime");
             this.lblShowTime.ForeColor = System.Drawing.Color.White;
             this.lblShowTime.Name = "lblShowTime";
-            // 
-            // hud1
-            // 
-            this.hud1.airspeed = 0F;
-            this.hud1.alt = 0F;
-            this.hud1.BackColor = System.Drawing.Color.Transparent;
-            this.hud1.batterylevel = 0F;
-            this.hud1.batteryremaining = 0F;
-            this.hud1.connected = false;
-            this.hud1.ContextMenuStrip = this.contextMenuStripHud;
-            this.hud1.current = 0F;
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("airspeed", this.bindingSourceHud, "airspeed", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("alt", this.bindingSourceHud, "alt", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("batterylevel", this.bindingSourceHud, "battery_voltage", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("batteryremaining", this.bindingSourceHud, "battery_remaining", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("connected", this.bindingSourceHud, "connected", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("current", this.bindingSourceHud, "current", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("datetime", this.bindingSourceHud, "datetime", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("disttowp", this.bindingSourceHud, "wp_dist", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("ekfstatus", this.bindingSourceHud, "ekfstatus", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("failsafe", this.bindingSourceHud, "failsafe", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("gpsfix", this.bindingSourceHud, "gpsstatus", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("gpshdop", this.bindingSourceHud, "gpshdop", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("groundalt", this.bindingSourceHud, "HomeAlt", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("groundcourse", this.bindingSourceHud, "groundcourse", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("groundspeed", this.bindingSourceHud, "groundspeed", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("heading", this.bindingSourceHud, "yaw", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("linkqualitygcs", this.bindingSourceHud, "linkqualitygcs", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("messagetime", this.bindingSourceHud, "messageHighTime", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("navpitch", this.bindingSourceHud, "nav_pitch", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("navroll", this.bindingSourceHud, "nav_roll", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("pitch", this.bindingSourceHud, "pitch", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("roll", this.bindingSourceHud, "roll", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("targetalt", this.bindingSourceHud, "targetalt", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("targetheading", this.bindingSourceHud, "nav_bearing", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("targetspeed", this.bindingSourceHud, "targetairspeed", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("turnrate", this.bindingSourceHud, "turnrate", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("verticalspeed", this.bindingSourceHud, "verticalspeed", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("vibex", this.bindingSourceHud, "vibex", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("vibey", this.bindingSourceHud, "vibey", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("vibez", this.bindingSourceHud, "vibez", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("wpno", this.bindingSourceHud, "wpno", true));
-            this.hud1.DataBindings.Add(new System.Windows.Forms.Binding("xtrack_error", this.bindingSourceHud, "xtrack_error", true));
-            this.hud1.datetime = new System.DateTime(((long)(0)));
-            this.hud1.disttowp = 0F;
-            this.hud1.ekfstatus = 0F;
-            this.hud1.failsafe = false;
-            this.hud1.gpsfix = 0F;
-            this.hud1.gpshdop = 0F;
-            this.hud1.groundalt = 0F;
-            this.hud1.groundcourse = 0F;
-            this.hud1.groundspeed = 0F;
-            this.hud1.heading = 0F;
-            this.hud1.hudcolor = System.Drawing.Color.Transparent;
-            this.hud1.linkqualitygcs = 0F;
-            resources.ApplyResources(this.hud1, "hud1");
-            this.hud1.lowairspeed = false;
-            this.hud1.lowgroundspeed = false;
-            this.hud1.lowvoltagealert = false;
-            this.hud1.message = "";
-            this.hud1.messagetime = new System.DateTime(((long)(0)));
-            this.hud1.mode = "";
-            this.hud1.Name = "hud1";
-            this.hud1.navpitch = 0F;
-            this.hud1.navroll = 0F;
-            this.hud1.opengl = true;
-            this.hud1.pitch = 0F;
-            this.hud1.roll = 0F;
-            this.hud1.Russian = false;
-            this.hud1.status = false;
-            this.hud1.streamjpg = null;
-            this.hud1.targetalt = 0F;
-            this.hud1.targetheading = 0F;
-            this.hud1.targetspeed = 0F;
-            this.hud1.turnrate = 0F;
-            this.hud1.UseOpenGL = true;
-            this.hud1.verticalspeed = 0F;
-            this.hud1.vibex = 0F;
-            this.hud1.vibey = 0F;
-            this.hud1.vibez = 0F;
-            this.hud1.VSync = false;
-            this.hud1.wpno = 0;
-            this.hud1.xtrack_error = 0F;
-            this.hud1.ekfclick += new System.EventHandler(this.hud1_ekfclick);
-            this.hud1.vibeclick += new System.EventHandler(this.hud1_vibeclick);
-            this.hud1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hud1_MouseDown);
-            this.hud1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.hud1_MouseMove);
-            this.hud1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hud1_MouseUp);
-            this.hud1.Resize += new System.EventHandler(this.hud1_Resize);
             // 
             // contextMenuStripHud
             // 
@@ -2215,7 +2220,7 @@
             this.windDir1.BackColor = System.Drawing.Color.Transparent;
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Direction", this.bindingSource1, "wind_dir", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.windDir1.DataBindings.Add(new System.Windows.Forms.Binding("Speed", this.bindingSource1, "wind_vel", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.windDir1.Direction = 180D;
+            this.windDir1.Direction = 360D;
             resources.ApplyResources(this.windDir1, "windDir1");
             this.windDir1.Name = "windDir1";
             this.windDir1.Speed = 0D;
@@ -2302,11 +2307,13 @@
             this.fiType.ForeColor = System.Drawing.Color.White;
             this.fiType.frame = 0F;
             this.fiType.gpsfix = 0F;
+            this.fiType.gpshdop = 0F;
             this.fiType.message = "";
             this.fiType.messagetime = new System.DateTime(((long)(0)));
             this.fiType.mode = "Manual";
             this.fiType.Name = "fiType";
             this.fiType.numberColor = System.Drawing.Color.White;
+            this.fiType.satcount = 0;
             this.fiType.status = false;
             this.fiType.text = "";
             // 
@@ -2327,11 +2334,13 @@
             this.fiBad.ForeColor = System.Drawing.Color.White;
             this.fiBad.frame = 0F;
             this.fiBad.gpsfix = 0F;
+            this.fiBad.gpshdop = 0F;
             this.fiBad.message = "";
             this.fiBad.messagetime = new System.DateTime(((long)(0)));
             this.fiBad.mode = "Manual";
             this.fiBad.Name = "fiBad";
             this.fiBad.numberColor = System.Drawing.Color.Red;
+            this.fiBad.satcount = 0;
             this.fiBad.status = false;
             this.fiBad.text = "";
             // 
@@ -2353,11 +2362,13 @@
             this.fiBat.ForeColor = System.Drawing.Color.White;
             this.fiBat.frame = 0F;
             this.fiBat.gpsfix = 0F;
+            this.fiBat.gpshdop = 0F;
             this.fiBat.message = "";
             this.fiBat.messagetime = new System.DateTime(((long)(0)));
             this.fiBat.mode = "Manual";
             this.fiBat.Name = "fiBat";
             this.fiBat.numberColor = System.Drawing.Color.White;
+            this.fiBat.satcount = 0;
             this.fiBat.status = false;
             this.fiBat.text = "";
             // 
@@ -2379,11 +2390,13 @@
             this.fiGPS.ForeColor = System.Drawing.Color.White;
             this.fiGPS.frame = 0F;
             this.fiGPS.gpsfix = 0F;
+            this.fiGPS.gpshdop = 0F;
             this.fiGPS.message = "";
             this.fiGPS.messagetime = new System.DateTime(((long)(0)));
             this.fiGPS.mode = "Manual";
             this.fiGPS.Name = "fiGPS";
             this.fiGPS.numberColor = System.Drawing.Color.White;
+            this.fiGPS.satcount = 0;
             this.fiGPS.status = false;
             this.fiGPS.text = "";
             // 
@@ -2403,11 +2416,13 @@
             this.fiMode.ForeColor = System.Drawing.Color.White;
             this.fiMode.frame = 0F;
             this.fiMode.gpsfix = 0F;
+            this.fiMode.gpshdop = 0F;
             this.fiMode.message = "";
             this.fiMode.messagetime = new System.DateTime(((long)(0)));
             this.fiMode.mode = "Manual";
             this.fiMode.Name = "fiMode";
             this.fiMode.numberColor = System.Drawing.Color.White;
+            this.fiMode.satcount = 0;
             this.fiMode.status = false;
             this.fiMode.text = "";
             // 
@@ -2428,11 +2443,13 @@
             this.fiState.ForeColor = System.Drawing.Color.White;
             this.fiState.frame = 0F;
             this.fiState.gpsfix = 0F;
+            this.fiState.gpshdop = 0F;
             this.fiState.message = "";
             this.fiState.messagetime = new System.DateTime(((long)(0)));
             this.fiState.mode = "Manual";
             this.fiState.Name = "fiState";
             this.fiState.numberColor = System.Drawing.Color.White;
+            this.fiState.satcount = 0;
             this.fiState.status = false;
             this.fiState.text = "";
             // 
@@ -2462,8 +2479,8 @@
             // 
             // dataGridViewImageColumn1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn1.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
             this.dataGridViewImageColumn1.Image = global::ByAeroBeHero.Properties.Resources.up;
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2471,8 +2488,8 @@
             // 
             // dataGridViewImageColumn2
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewImageColumn2.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
             this.dataGridViewImageColumn2.Image = global::ByAeroBeHero.Properties.Resources.down;
             this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
@@ -2588,7 +2605,6 @@
         private System.Windows.Forms.SplitContainer MainH;
         private System.Windows.Forms.SplitContainer SubMainLeft;
         private System.Windows.Forms.ToolStripMenuItem goHereToolStripMenuItem;
-        private Controls.HUD hud1;
         private Controls.MyButton BUT_clear_track;
         private Controls.MyButton BUT_RAWSensor;
         private Controls.MyButton BUTactiondo;

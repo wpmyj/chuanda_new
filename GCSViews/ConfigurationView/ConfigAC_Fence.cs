@@ -62,6 +62,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             StringBuilder errorMessage = new StringBuilder();
 
+            if(!MainV2.comPort.BaseStream.IsOpen)
+            {
+                return errorMessage.Append("请连接地面站，再进行操作设置！").ToString();
+            }
+
+
             if (!MainV2.comPort.setParam(mavlinkComboBox1.ParamName, iFenceType))
             {
                 errorMessage.Append(label4type.Text + " ,");
@@ -108,16 +114,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 if (sendParam().Length > 0)
                 {
-                    CustomMessageBox.Show(sendParam(), Strings.ERROR);
+                    CustomMessageBox.Show(sendParam(), "提示");
                 }
                 else 
                 {
-                    CustomMessageBox.Show("成功写入参数", Strings.Success);
+                    CustomMessageBox.Show("成功写入参数", "提示");
                 } 
             }
             catch
             {
-                CustomMessageBox.Show(sendParam(), Strings.ERROR);
+                CustomMessageBox.Show(sendParam(), "提示");
             }
             
 

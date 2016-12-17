@@ -154,12 +154,12 @@ namespace ByAeroBeHero.GCSViews
             base.Dispose(disposing);
 
             MainV2.comPort.logreadmode = false;
-            try
-            {
-                if (hud1 != null)
-                    MainV2.config["FlightSplitter"] = hud1.Width;
-            }
-            catch { }
+            //try
+            //{
+            //    if (hud1 != null)
+            //        MainV2.config["FlightSplitter"] = hud1.Width;
+            //}
+            //catch { }
 
             if (polygons != null)
                 polygons.Dispose();
@@ -193,7 +193,7 @@ namespace ByAeroBeHero.GCSViews
             //    dockContainer1.PreviewRenderer = new PreviewRenderer();
             //
             mymap = gMapControl1;
-            myhud = hud1;
+            //myhud = hud1;
             MainHcopy = MainH;
 
             mymap.Paint += mymap_Paint;
@@ -235,10 +235,10 @@ namespace ByAeroBeHero.GCSViews
                 }
             }
 
-            if (MainV2.config.ContainsKey("hudcolor"))
-            {
-                hud1.hudcolor = System.Drawing.Color.Transparent;
-            }
+            //if (MainV2.config.ContainsKey("hudcolor"))
+            //{
+            //    hud1.hudcolor = System.Drawing.Color.Transparent;
+            //}
 
             MainV2.comPort.MavChanged += comPort_MavChanged;
 
@@ -537,12 +537,12 @@ namespace ByAeroBeHero.GCSViews
 
             if (MainV2.MONO)
             {
-                if (!hud1.Visible)
-                    hud1.Visible = true;
-                if (!hud1.Enabled)
-                    hud1.Enabled = true;
+                //if (!hud1.Visible)
+                //    hud1.Visible = true;
+                //if (!hud1.Enabled)
+                //    hud1.Enabled = true;
 
-                hud1.Dock = DockStyle.Fill;
+                //hud1.Dock = DockStyle.Fill;
             }
 
            
@@ -614,7 +614,7 @@ namespace ByAeroBeHero.GCSViews
                 catch { }
             }
 
-            hud1.doResize();
+            //hud1.doResize();
 
             IsShowSonar(); 
         }
@@ -633,25 +633,25 @@ namespace ByAeroBeHero.GCSViews
 
         public void CheckBatteryShow()
         {
-            // ensure battery display is on - also set in hud if current is updated
-            if (MainV2.comPort.MAV.param.ContainsKey("BATT_MONITOR") && (float)MainV2.comPort.MAV.param["BATT_MONITOR"] != 0)
-            {
-                hud1.batteryon = true;
-            }
-            else
-            {
-                hud1.batteryon = false;
-            }
+            //// ensure battery display is on - also set in hud if current is updated
+            //if (MainV2.comPort.MAV.param.ContainsKey("BATT_MONITOR") && (float)MainV2.comPort.MAV.param["BATT_MONITOR"] != 0)
+            //{
+            //    hud1.batteryon = true;
+            //}
+            //else
+            //{
+            //    hud1.batteryon = false;
+            //}
         }
 
         public void Deactivate()
         {
             if (MainV2.MONO)
             {
-                hud1.Dock = DockStyle.None;
-                hud1.Size = new Size(5, 5);
-                hud1.Enabled = false;
-                hud1.Visible = false;
+                //hud1.Dock = DockStyle.None;
+                //hud1.Size = new Size(5, 5);
+                //hud1.Enabled = false;
+                //hud1.Visible = false;
             }
             //     hud1.Location = new Point(-1000,-1000);
 
@@ -722,12 +722,12 @@ namespace ByAeroBeHero.GCSViews
                 MainH.SplitterDistance = int.Parse(MainV2.config["FlightSplitter"].ToString());
             }
 
-            if (MainV2.config.Contains("russian_hud"))
-            {
-                hud1.Russian = bool.Parse(MainV2.config["russian_hud"].ToString());
-            }
+            //if (MainV2.config.Contains("russian_hud"))
+            //{
+            //    hud1.Russian = bool.Parse(MainV2.config["russian_hud"].ToString());
+            //}
 
-            hud1.doResize();
+            //hud1.doResize();
             
             //控制信息显示
             InitControl();
@@ -819,13 +819,13 @@ namespace ByAeroBeHero.GCSViews
                     {
                         vidrec = DateTime.Now;
 
-                        hud1.streamjpgenable = true;
+                        //hud1.streamjpgenable = true;
 
-                        //aviwriter.avi_start("test.avi");
-                        // add a frame
-                        aviwriter.avi_add(hud1.streamjpg.ToArray(), (uint)hud1.streamjpg.Length);
-                        // write header - so even partial files will play
-                        aviwriter.avi_end(hud1.Width, hud1.Height, 10);
+                        ////aviwriter.avi_start("test.avi");
+                        //// add a frame
+                        //aviwriter.avi_add(hud1.streamjpg.ToArray(), (uint)hud1.streamjpg.Length);
+                        //// write header - so even partial files will play
+                        //aviwriter.avi_end(hud1.Width, hud1.Height, 10);
                     }
                 }
                 catch { log.Error("Failed to write avi"); }
@@ -949,18 +949,18 @@ namespace ByAeroBeHero.GCSViews
                     float warnpercent = 0;
                     float.TryParse(MainV2.getConfig("speechbatterypercent"), out warnpercent);
 
-                    if (MainV2.comPort.MAV.cs.battery_voltage <= warnvolt)
-                    {
-                        hud1.lowvoltagealert = true;
-                    }
-                    else if ((MainV2.comPort.MAV.cs.battery_remaining) < warnpercent)
-                    {
-                        hud1.lowvoltagealert = true;
-                    }
-                    else
-                    {
-                        hud1.lowvoltagealert = false;
-                    }
+                    //if (MainV2.comPort.MAV.cs.battery_voltage <= warnvolt)
+                    //{
+                    //    hud1.lowvoltagealert = true;
+                    //}
+                    //else if ((MainV2.comPort.MAV.cs.battery_remaining) < warnpercent)
+                    //{
+                    //    hud1.lowvoltagealert = true;
+                    //}
+                    //else
+                    //{
+                    //    hud1.lowvoltagealert = false;
+                    //}
 
                     // update opengltest
                     if (OpenGLtest.instance != null)
@@ -1908,7 +1908,7 @@ namespace ByAeroBeHero.GCSViews
 
         void cam_camimage(Image camimage)
         {
-            hud1.bgimage = camimage;
+            //hud1.bgimage = camimage;
         }
 
         private void BUT_Homealt_Click(object sender, EventArgs e)
@@ -2221,9 +2221,9 @@ namespace ByAeroBeHero.GCSViews
 
             SubMainLeft.Panel1Collapsed = true;
             Form dropout = new Form();
-            dropout.Size = new Size(hud1.Width, hud1.Height + 20);
-            SubMainLeft.Panel1.Controls.Remove(hud1);
-            dropout.Controls.Add(hud1);
+            //dropout.Size = new Size(hud1.Width, hud1.Height + 20);
+            //SubMainLeft.Panel1.Controls.Remove(hud1);
+            //dropout.Controls.Add(hud1);
             dropout.Resize += dropout_Resize;
             dropout.FormClosed += dropout_FormClosed;
             dropout.Show();
@@ -2233,7 +2233,7 @@ namespace ByAeroBeHero.GCSViews
         void dropout_FormClosed(object sender, FormClosedEventArgs e)
         {
             //GetFormFromGuid(GetOrCreateGuid("fd_hud_guid")).Controls.Add(hud1);
-            SubMainLeft.Panel1.Controls.Add(hud1);
+            //SubMainLeft.Panel1.Controls.Add(hud1);
             SubMainLeft.Panel1Collapsed = false;
             huddropout = false;
         }
@@ -2245,24 +2245,24 @@ namespace ByAeroBeHero.GCSViews
 
             huddropoutresize = true;
 
-            int hudw = hud1.Width;
-            int hudh = hud1.Height;
+            //int hudw = hud1.Width;
+            //int hudh = hud1.Height;
 
             int formh = ((Form)sender).Height - 30;
             int formw = ((Form)sender).Width;
 
-            if (((Form)sender).Height < hudh)
-            {
-                if (((Form)sender).WindowState == FormWindowState.Maximized)
-                {
-                    Point tl = ((Form)sender).DesktopLocation;
-                    ((Form)sender).WindowState = FormWindowState.Normal;
-                    ((Form)sender).Location = tl;
-                }
-                ((Form)sender).Width = (int)(formh * 1.333f);
-                ((Form)sender).Height = formh + 20;
-            }
-            hud1.Refresh();
+            //if (((Form)sender).Height < hudh)
+            //{
+            //    if (((Form)sender).WindowState == FormWindowState.Maximized)
+            //    {
+            //        Point tl = ((Form)sender).DesktopLocation;
+            //        ((Form)sender).WindowState = FormWindowState.Normal;
+            //        ((Form)sender).Location = tl;
+            //    }
+            //    ((Form)sender).Width = (int)(formh * 1.333f);
+            //    ((Form)sender).Height = formh + 20;
+            //}
+            //hud1.Refresh();
             huddropoutresize = false;
         }
 
@@ -2535,7 +2535,7 @@ namespace ByAeroBeHero.GCSViews
                     Tag = sender,
                     Location = new Point(5 + (i / row_count) * (max_length + 5), 2 + (i % row_count) * row_height),
                     Size = new Size(max_length, row_height),
-                    Checked = hud1.CustomItems.ContainsKey(fields[i])
+                    //Checked = hud1.CustomItems.ContainsKey(fields[i])
                 };
                 chk_box.CheckedChanged += chk_box_hud_UserItem_CheckedChanged;
                 if (chk_box.Checked)
@@ -2551,9 +2551,9 @@ namespace ByAeroBeHero.GCSViews
         {
             setupPropertyInfo(ref cust.Item, (sender).Name, MainV2.comPort.MAV.cs);
 
-            hud1.CustomItems[(sender).Name] = cust;
+            //hud1.CustomItems[(sender).Name] = cust;
 
-            hud1.Invalidate();
+            //hud1.Invalidate();
         }
 
         void chk_box_hud_UserItem_CheckedChanged(object sender, EventArgs e)
@@ -2587,11 +2587,11 @@ namespace ByAeroBeHero.GCSViews
             {
                 checkbox.BackColor = Color.Transparent;
 
-                if (hud1.CustomItems.ContainsKey(checkbox.Name))
-                    hud1.CustomItems.Remove(checkbox.Name);
+                //if (hud1.CustomItems.ContainsKey(checkbox.Name))
+                //    hud1.CustomItems.Remove(checkbox.Name);
 
-                MainV2.config.Remove("hud1_useritem_" + checkbox.Name);
-                hud1.Invalidate();
+                //MainV2.config.Remove("hud1_useritem_" + checkbox.Name);
+                //hud1.Invalidate();
             }
         }
 
@@ -2837,8 +2837,8 @@ namespace ByAeroBeHero.GCSViews
 
         private void setAspectRatioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            hud1.SixteenXNine = !hud1.SixteenXNine;
-            hud1.doResize();
+            //hud1.SixteenXNine = !hud1.SixteenXNine;
+            //hud1.doResize();
         }
 
         private void quickView_DoubleClick(object sender, EventArgs e)
@@ -3038,9 +3038,9 @@ namespace ByAeroBeHero.GCSViews
 
         private void hud1_Resize(object sender, EventArgs e)
         {
-            Console.WriteLine("HUD resize " + hud1.Width + " " + hud1.Height);// +"\n"+ System.Environment.StackTrace);
+            //Console.WriteLine("HUD resize " + hud1.Width + " " + hud1.Height);// +"\n"+ System.Environment.StackTrace);
 
-            SubMainLeft.SplitterDistance = hud1.Height;
+            //SubMainLeft.SplitterDistance = hud1.Height;
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3273,8 +3273,8 @@ namespace ByAeroBeHero.GCSViews
 
         private void russianHudToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            hud1.Russian = !hud1.Russian;
-            MainV2.config["russian_hud"] = hud1.Russian.ToString();
+            //hud1.Russian = !hud1.Russian;
+            //MainV2.config["russian_hud"] = hud1.Russian.ToString();
         }
 
         private void setHomeHereToolStripMenuItem_Click(object sender, EventArgs e)
@@ -3941,8 +3941,8 @@ namespace ByAeroBeHero.GCSViews
         {
             if (MoveFlag)
             {
-                hud1.Left += Convert.ToInt16(e.X - xPos);//设置x坐标.        
-                hud1.Top += Convert.ToInt16(e.Y - yPos);//设置y坐标.    
+                //hud1.Left += Convert.ToInt16(e.X - xPos);//设置x坐标.        
+                //hud1.Top += Convert.ToInt16(e.Y - yPos);//设置y坐标.    
             }
         }
 
@@ -3978,12 +3978,12 @@ namespace ByAeroBeHero.GCSViews
         {
             if (pbMeter.Enabled)
             {
-                this.hud1.Show();
+                //this.hud1.Show();
                 pbMeter.Enabled = false;
             }
             else
             {
-                this.hud1.Hide();
+                //this.hud1.Hide();
                 pbMeter.Enabled = true;
             }
         }

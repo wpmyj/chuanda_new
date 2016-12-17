@@ -35,8 +35,6 @@ namespace ByAeroBeHero.Log
         int receibedbytestotal = 0;
         string receiveStatu = string.Empty;
 
-        //List<Model> orientation = new List<Model>();
-
         Object thisLock = new Object();
         DateTime start = DateTime.Now;
 
@@ -54,7 +52,6 @@ namespace ByAeroBeHero.Log
         {
             InitializeComponent();
 
-            //ThemeManager.ApplyThemeTo(this);
             ByAeroBeHero.Utilities.Tracking.AddPage(this.GetType().ToString(), this.Text);
 
             CHK_logs.ForeColor = TXT_seriallog.ForeColor = Color.White;
@@ -125,8 +122,6 @@ namespace ByAeroBeHero.Log
         {
             MethodInvoker m = delegate()
             {
-                //CHK_logs.Items.Clear();
-                //for (int a = 1; a <= logcount; a++)
                 if (!CHK_logs.Items.Contains(logcount))
                 {
                     CHK_logs.Items.Add(logcount);
@@ -243,10 +238,6 @@ namespace ByAeroBeHero.Log
                 aptype = "八轴";
             }
                 
-            //logfile = MainV2.LogDir + Path.DirectorySeparatorChar
-            // + aptype + Path.DirectorySeparatorChar
-            // + hbpacket[3] + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + " " + no + ".bin";
-
             logfile = path + Path.DirectorySeparatorChar + "BOYING-" + CurrentState.str_firm_ware.Split('-')[1].Replace(".", "") + " " + "-" + new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddSeconds(MainV2.comPort.GetLogList()[no - 1].time_utc).ToLocalTime().ToString("yyyyMMdd-HHmm") + " " + no + ".bylg";
 
             // make log dir
@@ -257,32 +248,6 @@ namespace ByAeroBeHero.Log
             {
                 bw.Write(ms.ToArray());
             }
-
-            //// create ascii log
-            //BinaryLog.ConvertBin(logfile, logfile + ".log");
-
-            ////update the new filename
-            //logfile = logfile + ".log";
-
-            //// get gps time of assci log
-            //DateTime logtime = DFLog.GetFirstGpsTime(logfile);
-
-            //// rename log is we have a valid gps time
-            //if (logtime != DateTime.MinValue)
-            //{
-            //    string newlogfilename = MainV2.LogDir + Path.DirectorySeparatorChar
-            // + MainV2.comPort.MAV.aptype.ToString() + Path.DirectorySeparatorChar
-            // + hbpacket[3] + Path.DirectorySeparatorChar + logtime.ToString("yyyy-MM-dd HH-mm-ss") + ".log";
-            //    try
-            //    {
-            //        File.Move(logfile, newlogfilename);
-            //        // rename bin as well
-            //        File.Move(logfile.Replace(".log", ""), newlogfilename.Replace(".log", ".bin"));
-            //        logfile = newlogfilename;
-            //    }
-            //    catch  { CustomMessageBox.Show(Strings.ErrorRenameFile+ " " + logfile + "\nto " + newlogfilename, Strings.ERROR); }
-            //}
-
             return logfile;
         }
 
@@ -312,11 +277,6 @@ namespace ByAeroBeHero.Log
 
             tr.Close();
 
-            //try
-            //{
-            //    lo.writeKML(logfile + ".kml");
-            //}
-            //catch { } // usualy invalid lat long error
             status = serialstatus.完成;
             updateDisplay();
         }
@@ -391,6 +351,13 @@ namespace ByAeroBeHero.Log
 
         private void BUT_clearlogs_Click(object sender, EventArgs e)
         {
+            if(!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面站再进行日志清除操作！", "提示");
+                return;
+            }
+
+
             if (CustomMessageBox.Show("确定是否清除日志文件?", "提示", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
                 try
@@ -401,131 +368,22 @@ namespace ByAeroBeHero.Log
                     status = serialstatus.完成;
                     updateDisplay();
                     CHK_logs.Items.Clear();
+                    BtnLoadLog.Text = "加载日志";
                 }
                 catch (Exception ex) { CustomMessageBox.Show(ex.Message, Strings.ERROR); }
             }
         }
 
-        private void BUT_redokml_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
-            {
-                openFileDialog1.Filter = "*.log|*.log";
-                openFileDialog1.FilterIndex = 2;
-                openFileDialog1.RestoreDirectory = true;
-                openFileDialog1.Multiselect = true;
-                try
-                {
-                    openFileDialog1.InitialDirectory = MainV2.LogDir + Path.DirectorySeparatorChar;
-                }
-                catch { } // incase dir doesnt exist
-
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    foreach (string logfile in openFileDialog1.FileNames)
-                    {
-                        TXT_seriallog.AppendText("\n\n处理..." + logfile + "\n");
-                        this.Refresh();
-                        LogOutput lo = new LogOutput();
-                        try
-                        {
-                            TextReader tr = new StreamReader(logfile);
-
-                            while (tr.Peek() != -1)
-                            {
-                                lo.processLine(tr.ReadLine());
-                            }
-
-                            tr.Close();
-                        }
-                        catch (Exception ex) { CustomMessageBox.Show("处理文件错误. 确保文件没有在使用中.\n" + ex.ToString()); }
-
-                        //lo.writeKML(logfile + ".kml");
-
-                        TXT_seriallog.AppendText("完成\n");
-                    }
-                }
-            }
-        }
-
-
-        private void BUT_firstperson_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
-            {
-                openFileDialog1.Filter = "*.log|*.log";
-                openFileDialog1.FilterIndex = 2;
-                openFileDialog1.RestoreDirectory = true;
-                openFileDialog1.Multiselect = true;
-                try
-                {
-                    openFileDialog1.InitialDirectory = MainV2.LogDir + Path.DirectorySeparatorChar;
-                }
-                catch { } // incase dir doesnt exist
-
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    foreach (string logfile in openFileDialog1.FileNames)
-                    {
-                        TXT_seriallog.AppendText("\n\n处理... " + logfile + "\n");
-                        this.Refresh();
-
-                        LogOutput lo = new LogOutput();
-
-                        try
-                        {
-                            TextReader tr = new StreamReader(logfile);
-
-                            while (tr.Peek() != -1)
-                            {
-                                lo.processLine(tr.ReadLine());
-                            }
-
-                            tr.Close();
-                        }
-                        catch (Exception ex) { CustomMessageBox.Show("处理日志错误. 是否要继续下载? "); continue; }
-
-                        //lo.writeKMLFirstPerson(logfile + "-fp.kml");
-
-                        TXT_seriallog.AppendText("完成\n");
-                    }
-                }
-            }
-        }
-
-        private void BUT_bintolog_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "Binary Log|*.bin";
-
-                ofd.ShowDialog();
-
-                if (File.Exists(ofd.FileName))
-                {
-                    using (SaveFileDialog sfd = new SaveFileDialog())
-                    {
-                        sfd.Filter = "log|*.log";
-
-                        DialogResult res = sfd.ShowDialog();
-
-                        if (res == System.Windows.Forms.DialogResult.OK)
-                        {
-                            BinaryLog.ConvertBin(ofd.FileName, sfd.FileName);
-                        }
-                    }
-                }
-            }
-        }
-
-        private void chk_droneshare_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnLoadLog_Click(object sender, EventArgs e)
         {
-            ShowLog(true); 
+            try
+            {
+                ShowLog(true);
+            }
+            catch 
+            {
+                BtnLoadLog.Text = "加载失败";
+            }
         } 
     }
 }

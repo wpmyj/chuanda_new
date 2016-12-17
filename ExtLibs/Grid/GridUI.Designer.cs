@@ -300,38 +300,42 @@
             // 
             // myBtnLoadAeroInfo
             // 
-            this.myBtnLoadAeroInfo.BGGradBot = System.Drawing.Color.Transparent;
-            this.myBtnLoadAeroInfo.BGGradTop = System.Drawing.Color.Transparent;
+            this.myBtnLoadAeroInfo.BackColor = System.Drawing.Color.White;
+            this.myBtnLoadAeroInfo.BGGradBot = System.Drawing.Color.White;
+            this.myBtnLoadAeroInfo.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myBtnLoadAeroInfo, "myBtnLoadAeroInfo");
             this.myBtnLoadAeroInfo.Name = "myBtnLoadAeroInfo";
-            this.myBtnLoadAeroInfo.UseVisualStyleBackColor = true;
+            this.myBtnLoadAeroInfo.UseVisualStyleBackColor = false;
             this.myBtnLoadAeroInfo.Click += new System.EventHandler(this.myBtnLoadAeroInfo_Click);
             // 
             // myBtnSaveAeroInfo
             // 
-            this.myBtnSaveAeroInfo.BGGradBot = System.Drawing.Color.Transparent;
-            this.myBtnSaveAeroInfo.BGGradTop = System.Drawing.Color.Transparent;
+            this.myBtnSaveAeroInfo.BackColor = System.Drawing.Color.White;
+            this.myBtnSaveAeroInfo.BGGradBot = System.Drawing.Color.White;
+            this.myBtnSaveAeroInfo.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myBtnSaveAeroInfo, "myBtnSaveAeroInfo");
             this.myBtnSaveAeroInfo.Name = "myBtnSaveAeroInfo";
-            this.myBtnSaveAeroInfo.UseVisualStyleBackColor = true;
+            this.myBtnSaveAeroInfo.UseVisualStyleBackColor = false;
             this.myBtnSaveAeroInfo.Click += new System.EventHandler(this.myBtnSaveAeroInfo_Click);
             // 
             // myButtonCanle
             // 
-            this.myButtonCanle.BGGradBot = System.Drawing.Color.Transparent;
-            this.myButtonCanle.BGGradTop = System.Drawing.Color.Transparent;
+            this.myButtonCanle.BackColor = System.Drawing.Color.White;
+            this.myButtonCanle.BGGradBot = System.Drawing.Color.White;
+            this.myButtonCanle.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.myButtonCanle, "myButtonCanle");
             this.myButtonCanle.Name = "myButtonCanle";
-            this.myButtonCanle.UseVisualStyleBackColor = true;
+            this.myButtonCanle.UseVisualStyleBackColor = false;
             this.myButtonCanle.Click += new System.EventHandler(this.myButtonCanle_Click);
             // 
             // BUT_Accept
             // 
-            this.BUT_Accept.BGGradBot = System.Drawing.Color.Transparent;
-            this.BUT_Accept.BGGradTop = System.Drawing.Color.Transparent;
+            this.BUT_Accept.BackColor = System.Drawing.Color.White;
+            this.BUT_Accept.BGGradBot = System.Drawing.Color.White;
+            this.BUT_Accept.BGGradTop = System.Drawing.Color.White;
             resources.ApplyResources(this.BUT_Accept, "BUT_Accept");
             this.BUT_Accept.Name = "BUT_Accept";
-            this.BUT_Accept.UseVisualStyleBackColor = true;
+            this.BUT_Accept.UseVisualStyleBackColor = false;
             this.BUT_Accept.Click += new System.EventHandler(this.BUT_Accept_Click);
             // 
             // groupBox8
@@ -1169,6 +1173,8 @@
             // 
             // BUT_samplephoto
             // 
+            this.BUT_samplephoto.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_samplephoto.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_samplephoto, "BUT_samplephoto");
             this.BUT_samplephoto.Name = "BUT_samplephoto";
             this.BUT_samplephoto.UseVisualStyleBackColor = true;
@@ -1287,6 +1293,8 @@
             // 
             // BUT_save
             // 
+            this.BUT_save.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_save.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_save, "BUT_save");
             this.BUT_save.Name = "BUT_save";
             this.BUT_save.UseVisualStyleBackColor = true;

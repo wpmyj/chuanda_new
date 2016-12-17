@@ -818,18 +818,12 @@ namespace ByAeroBeHero
 
             string oldport = _connectionControl.CMB_serialport.Text;
             PopulateSerialportList();
-            //if (_connectionControl.CMB_serialport.Items.Contains(oldport))
-            //    _connectionControl.CMB_serialport.Text = oldport;
         }
 
         private void PopulateSerialportList()
         {
             _connectionControl.CMB_serialport.Items.Clear();
-            //_connectionControl.CMB_serialport.Items.Add("AUTO");
             _connectionControl.CMB_serialport.Items.AddRange(SerialPort.GetPortNames());
-            //_connectionControl.CMB_serialport.Items.Add("TCP");
-            //_connectionControl.CMB_serialport.Items.Add("UDP");
-            //_connectionControl.CMB_serialport.Items.Add("UDPCl");
         }
 
         private void MenuFlightData_Click(object sender, EventArgs e)
@@ -1035,18 +1029,6 @@ namespace ByAeroBeHero
                 }
 
                 comPort.giveComport = false;
-
-                // setup to record new logs
-                //try
-                //{
-                //    Directory.CreateDirectory(MainV2.LogDir);
-                //    comPort.logfile = new BufferedStream(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
-
-                //    comPort.rawlogfile = new BufferedStream(File.Open(MainV2.LogDir + Path.DirectorySeparatorChar + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".rlog", FileMode.CreateNew, FileAccess.ReadWrite, FileShare.None));
-
-                //    log.Info("creating logfile " + DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".tlog");
-                //}
-                //catch (Exception exp2) { log.Error(exp2); CustomMessageBox.Show(Strings.Failclog); } // soft fail
 
                 // reset connect time - for timeout functions
                 connecttime = DateTime.Now;
@@ -2234,7 +2216,7 @@ namespace ByAeroBeHero
                             linkqualitytime = DateTime.Now;
 
                             // force redraw is no other packets are being read
-                            GCSViews.FlightData.myhud.Invalidate();
+                           // GCSViews.FlightData.myhud.Invalidate();
                         }
                     }
 

@@ -198,17 +198,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             timer.Stop();
         }
 
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            //if (keyData == (Keys.Control | Keys.S))
-            //{
-            //    BUT_SaveModes_Click(null, null);
-            //    return true;
-            //}
-
-            return false;
-        }
-
         private void timer_Tick(object sender, EventArgs e)
         {
             try
@@ -415,10 +404,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     if (MainV2.comPort.MAV.param.ContainsKey("SUPER_SIMPLE"))
                         MainV2.comPort.setParam("SUPER_SIMPLE", value);
                 }
+                CustomMessageBox.Show("设置飞行模式成功!", "提示");
             }
             catch
             {
-                CustomMessageBox.Show(Strings.ErrorSettingParameter, Strings.ERROR);
+                CustomMessageBox.Show("设置飞行模式失败!", "提示");
             }
             //BUT_SaveModes.Text = "完成";
         }
@@ -445,10 +435,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     currentmode.Contains("poshold") || currentmode.Contains("rtl") ||
                     currentmode.Contains("sport") || currentmode.Contains("stabilize"))
                 {
-                    //CMB_fmode1
-                    //CB_simple1
-                    //chk_ss1
-
                     var number = sender2.Name.Substring(sender2.Name.Length - 1);
 
                     findandenableordisable("CB_simple" + number, true);
@@ -473,64 +459,5 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 items[0].Enabled = enable;
             }
         }
-        #region
-        //private void mBSave_Click(object sender, EventArgs e)
-        //{
-        //    var temp = (Hashtable) changes.Clone();
-
-        //    foreach (string value in temp.Keys)
-        //    {
-        //        try
-        //        {
-        //            MainV2.comPort.setParam(value, (float) changes[value]);
-
-        //            changes.Remove(value);
-
-        //            try
-        //            {
-        //                //set control as well
-        //                var textControls = Controls.Find(value, true);
-        //                if (textControls.Length > 0)
-        //                {
-        //                    textControls[0].BackColor = Color.FromArgb(0x43, 0x44, 0x45);
-        //                }
-        //            }
-        //            catch
-        //            {
-        //            }
-        //        }
-        //        catch
-        //        {
-        //            CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR);
-        //        }
-        //    }
-        //}
-
-        //private void numeric_ValueUpdated(object sender, EventArgs e)
-        //{
-        //    EEPROM_View_float_TextChanged(sender, e);
-        //}
-
-        //internal void EEPROM_View_float_TextChanged(object sender, EventArgs e)
-        //{
-        //    if (startup)
-        //        return;
-
-        //    float value = 0;
-        //    var name = ((Control)sender).Name;
-
-        //    // do domainupdown state check
-        //    try
-        //    {
-        //        value = ((MAVLinkParamChanged)e).value;
-        //        changes[name] = value;
-        //        ((Control)sender).BackColor = Color.Green;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        ((Control)sender).BackColor = Color.Red;
-        //    }
-        //}
-        #endregion
     }
 }

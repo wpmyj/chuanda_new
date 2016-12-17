@@ -425,26 +425,31 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             {
                 object motor = ((Button)sender).Tag;
 
-                CustomMessageBox.Show("电机测试："+((Button)sender).Text, "测试电机");
-
-                int imotor = Convert.ToInt32(motor);
-                if (imotor == 1) { this.button1.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 2) { this.button2.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 3) { this.button3.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 4) { this.button4.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 5) { this.button5.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 6) { this.button6.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 7) { this.button7.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-                else if (imotor == 8) { this.button8.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
-
-                if (MainV2.comPort.doMotorTest(imotor, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
-                    (int)NUM_thr_percent.Value, (int)NUM_duration.Value))
+                if (DialogResult.Yes == CustomMessageBox.Show("电机测试：" + ((Button)sender).Text, "测试电机", MessageBoxButtons.YesNo))
                 {
+                    int imotor = Convert.ToInt32(motor);
+                    if (imotor == 1) { this.button1.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 2) { this.button2.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 3) { this.button3.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 4) { this.button4.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 5) { this.button5.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 6) { this.button6.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 7) { this.button7.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
+                    else if (imotor == 8) { this.button8.BackgroundImage = ByAeroBeHero.Properties.Resources.white; }
 
+                    if (MainV2.comPort.doMotorTest(imotor, MAVLink.MOTOR_TEST_THROTTLE_TYPE.MOTOR_TEST_THROTTLE_PERCENT,
+                        (int)NUM_thr_percent.Value, (int)NUM_duration.Value))
+                    {
+
+                    }
+                    else
+                    {
+                        CustomMessageBox.Show("测试电机失败!", "电机测试");
+                    }
                 }
-                else
+                else 
                 {
-                    CustomMessageBox.Show("测试电机失败!", "电机测试");
+                    return;
                 }
             }
             catch (Exception ex)

@@ -311,7 +311,7 @@
     <value>60</value>
   </data>
   <data name="Commands.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 754</value>
+    <value>1034, 754</value>
   </data>
   <data name="Commands.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -534,7 +534,7 @@
     <value>NoControl</value>
   </data>
   <data name="splitter1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1097, 0</value>
+    <value>1036, 0</value>
   </data>
   <data name="splitter1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1, 783</value>
@@ -1710,7 +1710,7 @@
     <value>27, 27</value>
   </data>
   <data name="panelWaypoints.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1097, 783</value>
+    <value>1036, 783</value>
   </data>
   <data name="panelWaypoints.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -1729,39 +1729,6 @@
   </data>
   <data name="&gt;&gt;panelWaypoints.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="BUT_Add.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="BUT_Add.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BUT_Add.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 43</value>
-  </data>
-  <data name="BUT_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 20</value>
-  </data>
-  <data name="BUT_Add.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="BUT_Add.Text" xml:space="preserve">
-    <value>添加航点</value>
-  </data>
-  <data name="BUT_Add.ToolTip" xml:space="preserve">
-    <value>添加规划的航点</value>
-  </data>
-  <data name="&gt;&gt;BUT_Add.Name" xml:space="preserve">
-    <value>BUT_Add</value>
-  </data>
-  <data name="&gt;&gt;BUT_Add.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MyButton, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;BUT_Add.Parent" xml:space="preserve">
-    <value>groupBoxBasePoint</value>
-  </data>
-  <data name="&gt;&gt;BUT_Add.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="BUT_loadwpfile.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2064,7 +2031,7 @@
     <value>2, 3</value>
   </data>
   <data name="groupBoxBasePoint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 67</value>
+    <value>241, 52</value>
   </data>
   <data name="groupBoxBasePoint.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -2172,7 +2139,7 @@
     <value>2</value>
   </data>
   <data name="groupBoxAeroPoint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 75</value>
+    <value>2, 56</value>
   </data>
   <data name="groupBoxAeroPoint.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 51</value>
@@ -2256,7 +2223,7 @@
     <value>1</value>
   </data>
   <data name="breakpointgroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 210</value>
+    <value>2, 185</value>
   </data>
   <data name="breakpointgroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 55</value>
@@ -2400,7 +2367,7 @@
     <value>3</value>
   </data>
   <data name="groupBoxRellyPoint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 132</value>
+    <value>1, 110</value>
   </data>
   <data name="groupBoxRellyPoint.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 72</value>
@@ -2430,7 +2397,7 @@
     <value>1, 28</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 267</value>
+    <value>245, 242</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2454,7 +2421,7 @@
     <value>27, 27</value>
   </data>
   <data name="panelShowPoint.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 296</value>
+    <value>247, 271</value>
   </data>
   <data name="panelShowPoint.TabIndex" type="System.Int32, mscorlib">
     <value>110</value>
@@ -5756,12 +5723,6 @@
   <data name="&gt;&gt;dataGridViewImageColumn2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
-    <value>bindingSource1</value>
-  </data>
-  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;deleteWPToolStripMenuItem.Name" xml:space="preserve">
     <value>deleteWPToolStripMenuItem</value>
   </data>
@@ -6283,6 +6244,12 @@
   </data>
   <data name="&gt;&gt;Messagetabtimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
+    <value>bindingSource1</value>
+  </data>
+  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FlightPlanner</value>

@@ -35,6 +35,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                ParameterMetaDataRepository.GetParameterOptionsInt("FS_GCS_ENABLE",
                    MainV2.comPort.MAV.cs.firmware.ToString()), "FS_GCS_ENABLE", MainV2.comPort.MAV.param);
 
+            mavlinkNumericUpDownlow_voltage.setup(3, 99, 1, 0.1f, "FS_BATT_VOLTAGE", MainV2.comPort.MAV.param);
+
             // arducopter
             cb_FS_Level_Enable.setup(
                 ParameterMetaDataRepository.GetParameterOptionsInt("FS_LEVEL_ENABLE",

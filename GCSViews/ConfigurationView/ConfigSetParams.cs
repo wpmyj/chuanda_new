@@ -22,12 +22,16 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
         private void InitControl() 
         {
-                //CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor 
-                //=chbShow_AllParams.ForeColor= CHK_speechotherParams.ForeColor = Color.Black;
+            CHK_enablespeech.BackColor = CHK_speechwaypoint.BackColor = CHK_speechflightParams.BackColor
+            = chbShow_AllParams.BackColor = CHK_speechotherParams.BackColor = Color.LightGray;
+
+            CHK_enablespeech.ForeColor = CHK_speechwaypoint.ForeColor = CHK_speechflightParams.ForeColor
+            = chbShow_AllParams.ForeColor = CHK_speechotherParams.ForeColor = Color.Black;
         }
 
         public void Activate()
         {
+            InitControl(); 
             NUM_movelength.Value = decimal.Parse(MainV2.config["NUM_movelength"].ToString());
             chb_AllMove.Checked = bool.Parse(MainV2.config["CHB_AllMove"].ToString());
             setWPParams();
@@ -57,9 +61,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
 
                     SPRAY_WRAP_EN.setup(1, 0, "SPRAY_WRAP_EN", MainV2.comPort.MAV.param);
 
-                    //语音播报
+                    //语音播报 
                     SetCheckboxFromConfig("speechenable", CHK_enablespeech);
                     SetCheckboxFromConfig("speechwaypointenabled", CHK_speechwaypoint);
+                    SetCheckboxFromConfig("speechflightparamsabled", CHK_speechflightParams);
+                    SetCheckboxFromConfig("speechmodeenabled", CHK_speechotherParams);
                     startup = false;
                 }
             }
@@ -83,7 +89,9 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             var temp = (Hashtable)changes.Clone();
 
             MainV2.comPort.setParam(new string[] { "VOLT_DIVIDER", "BATT_VOLT_MULT" }, float.Parse(lblVNo.Text));
+
             bool IsSetParam = false;
+
             foreach (string value in temp.Keys)
             {
                 try
@@ -101,12 +109,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                     }
                     catch { }
                 }
-                catch { CustomMessageBox.Show(string.Format(Strings.ErrorSetValueFailed, value), Strings.ERROR); }
+                catch { CustomMessageBox.Show("设置参数失败!", "提示"); }
             }
 
             if (IsSetParam)
             {
-                CustomMessageBox.Show(Strings.SetValueSuccess, Strings.Success);
+                CustomMessageBox.Show(Strings.SetValueSuccess,"提示");
             }
         }
 
@@ -232,6 +240,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
         {
             MainV2.speechEnable = CHK_enablespeech.Checked;
             MainV2.config["speechenable"] = CHK_enablespeech.Checked;
+
             if (MainV2.speechEngine != null)
                 MainV2.speechEngine.SpeakAsyncCancelAll();
 

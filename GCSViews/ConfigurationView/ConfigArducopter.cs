@@ -176,10 +176,11 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
                 MainV2.comPort.setParam("RATE_YAW_IMAX", RATE_YAW_IMAX1);
                 MainV2.comPort.setParam("RATE_RLL_IMAX", RATE_RLL_IMAX1);
                 MainV2.comPort.setParam("RATE_PIT_IMAX", RATE_PIT_IMAX1);
-            
+
+                CustomMessageBox.Show("设置飞行模式成功!", "提示");
                 
             }
-            catch { }
+            catch { CustomMessageBox.Show("设置飞行模式失败!", "提示"); }
         }
 
         /// <summary>

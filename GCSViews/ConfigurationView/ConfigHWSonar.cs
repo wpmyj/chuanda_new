@@ -24,10 +24,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             }
             Enabled = true;
 
-            //CMB_sonartype.setup(
-            //    ParameterMetaDataRepository.GetParameterOptionsInt("RNGFND_TYPE",
-            //        MainV2.comPort.MAV.cs.firmware.ToString()), "RNGFND_TYPE", MainV2.comPort.MAV.param);
-
             chbSonar.setup(1, 0, "RNGFND_TYPE", MainV2.comPort.MAV.param);
             cb_LevelSensor.setup(1, 0, "FS_LEVEL_ENABLE", MainV2.comPort.MAV.param);
             SPRAY_RATE_MAX.setup(1, 100, 1, (float)1, "SPRAY_RATE_MAX",

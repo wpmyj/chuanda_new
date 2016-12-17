@@ -120,8 +120,12 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面站在进行参数设置！", "提示");
+                return;
+            }
 
-            //|| ParamName == "RTL_ALT"
             if (ParamName == "FENCE_ALT_MAX" || ParamName == "FENCE_RADIUS" ||
                ParamName == "SPRAY_RATE_MAX" || ParamName == "SPRAY_RATE_MIN" || ParamName == "SPRAY_SPEED_MIN" || ParamName == "SPRAY_SPEED_MAX")
             {
@@ -159,9 +163,9 @@ namespace ByAeroBeHero.Controls
             {
                 bool ans = MainV2.comPort.setParam(ParamName, (float)base.Value * (float)_scale);
                 if (ans == false)
-                    CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed,ParamName), Strings.ERROR);
+                    CustomMessageBox.Show("设置参数失败！", "提示");
             }
-            catch { CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR); }
+            catch { CustomMessageBox.Show("设置参数失败！", "提示"); }
         }
 
         public float sendValue()

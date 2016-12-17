@@ -81,7 +81,7 @@ namespace ByAeroBeHero.Controls
         {
             if (!MainV2.comPort.BaseStream.IsOpen) 
             {
-                CustomMessageBox.Show("请连接地面站在进行参数设置。", "提示");
+                CustomMessageBox.Show("请连接地面站在进行参数设置！", "提示");
                 return;
             }
 
@@ -101,9 +101,9 @@ namespace ByAeroBeHero.Controls
                     else
                         ans= MainV2.comPort.setParam(ParamName, OnValue);
                     if (ans == false)
-                        CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR);
+                        CustomMessageBox.Show("设置参数失败！", "提示");
                 }
-                catch { CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR); }
+                catch { CustomMessageBox.Show("设置参数失败！", "提示"); }
             }
             else
             {
@@ -116,9 +116,9 @@ namespace ByAeroBeHero.Controls
                     else
                         ans = MainV2.comPort.setParam(ParamName, OffValue);
                     if (ans == false)
-                        CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed,ParamName), Strings.ERROR);
+                        CustomMessageBox.Show("设置参数失败！", "提示");
                 }
-                catch { CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR); }
+                catch { CustomMessageBox.Show("设置参数失败！", "提示"); }
             }
         }
 

@@ -91,6 +91,12 @@ namespace ByAeroBeHero.Controls
 
         void MavlinkComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (!MainV2.comPort.BaseStream.IsOpen)
+            {
+                CustomMessageBox.Show("请连接地面站在进行参数设置！", "提示");
+                return;
+            }
+
             if (ParamName == "FENCE_TYPE" || ParamName == "FENCE_ACTION") 
             {
                 return;
@@ -111,18 +117,18 @@ namespace ByAeroBeHero.Controls
 
                     if (!MainV2.comPort.setParam(ParamName, (float)(Int32)Enum.Parse(_source, this.Text)))
                     {
-                        CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR);
+                        CustomMessageBox.Show("设置参数失败！","提示");
                     }
 
                     if (paramname2 != "")
                     {
                         if (!MainV2.comPort.setParam(paramname2, (float)(Int32)Enum.Parse(_source, this.Text) > 0 ? 1 : 0))
                         {
-                            CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, paramname2), Strings.ERROR);
+                            CustomMessageBox.Show("设置参数失败！", "提示");
                         }
                     }
                 }
-                catch { CustomMessageBox.Show(String.Format(Strings.ErrorSetValueFailed, ParamName), Strings.ERROR); }
+                catch { CustomMessageBox.Show("设置参数失败！", "提示"); }
             }
             else if (_source2 != null)
             {
@@ -136,18 +142,18 @@ namespace ByAeroBeHero.Controls
 
                     if (!MainV2.comPort.setParam(ParamName, (float)(int)((MavlinkComboBox)sender).SelectedValue))
                     {
-                        CustomMessageBox.Show("Set " + ParamName + " Failed!", Strings.ERROR);
+                        CustomMessageBox.Show("设置参数失败！", "提示");
                     }
 
                     if (paramname2 != "")
                     {
                         if (!MainV2.comPort.setParam(paramname2, (float)(int)((MavlinkComboBox)sender).SelectedValue > 0 ? 1 : 0))
                         {
-                            CustomMessageBox.Show("Set " + paramname2 + " Failed!", Strings.ERROR);
+                            CustomMessageBox.Show("设置参数失败！", "提示");
                         }
                     }
                 }
-                catch { CustomMessageBox.Show("Set " + ParamName + " Failed!", Strings.ERROR); }
+                catch { CustomMessageBox.Show("设置参数失败！", "提示"); }
             }
         }
     }

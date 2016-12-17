@@ -46,8 +46,8 @@ namespace ByAeroBeHero.Controls
 
          public MyButton()
          {
-             _BGGradTop = Color.FromArgb(192, 255, 255);
-             _BGGradBot = Color.FromArgb(0, 192, 192);
+             _BGGradTop = Color.LightGray;
+             _BGGradBot = Color.LightGray;
              _TextColor = Color.FromArgb(0x40, 0x57, 0x04);
              _Outline = Color.FromArgb(0x79, 0x94, 0x29);
          }

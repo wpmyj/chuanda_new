@@ -47,7 +47,7 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             mavlinkNumericUpDown3.setup(1, 500, (float)CurrentState.fromDistDisplayUnit(100), (float)0.1, "RTL_ALT",
                 MainV2.comPort.MAV.param);
 
-
+            this.mavlinkComboBox2.Enabled = false;
         }
 
         private void initControl() 

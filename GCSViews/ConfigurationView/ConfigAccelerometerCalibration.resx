@@ -208,7 +208,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 79</value>
+    <value>104, 79</value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -286,7 +286,7 @@
     <value>0</value>
   </data>
   <data name="panCalibrate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 79</value>
+    <value>106, 79</value>
   </data>
   <data name="panCalibrate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -352,7 +352,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnShowCalibrate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 40</value>
+    <value>539, 41</value>
   </data>
   <data name="btnShowCalibrate.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 23</value>
@@ -394,7 +394,7 @@
     <value>0, 0</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>878, 26</value>
+    <value>1080, 26</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -421,7 +421,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_level.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 41</value>
+    <value>345, 41</value>
   </data>
   <data name="BUT_level.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -448,10 +448,10 @@
     <value>3</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 13</value>
+    <value>100, 62</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>878, 150</value>
+    <value>1080, 150</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -478,7 +478,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCorrectA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 1</value>
+    <value>518, 1</value>
   </data>
   <data name="lblCorrectA.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 24</value>
@@ -520,7 +520,7 @@
     <value>2, 1</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>873, 26</value>
+    <value>1076, 26</value>
   </data>
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -556,7 +556,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_calib_accell.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 44</value>
+    <value>417, 44</value>
   </data>
   <data name="BUT_calib_accell.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -583,10 +583,10 @@
     <value>1</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 180</value>
+    <value>100, 229</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>877, 170</value>
+    <value>1080, 170</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -616,7 +616,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCalibrateAccel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 0</value>
+    <value>518, 0</value>
   </data>
   <data name="lblCalibrateAccel.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 24</value>
@@ -649,7 +649,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1072, 390</value>
+    <value>1274, 568</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ConfigAccelerometerCalibration</value>

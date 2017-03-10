@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigHWCompass));
             this.lblIMU2z = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblIMU2y = new System.Windows.Forms.Label();
             this.lblIMU2x = new System.Windows.Forms.Label();
             this.lblIMUz = new System.Windows.Forms.Label();
@@ -63,7 +62,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.lblCheckCompass = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -74,6 +73,7 @@
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblIMU2z
@@ -82,10 +82,6 @@
             this.lblIMU2z.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bindingSource1, "mz2", true));
             this.lblIMU2z.ForeColor = System.Drawing.Color.White;
             this.lblIMU2z.Name = "lblIMU2z";
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
             // 
             // lblIMU2y
             // 
@@ -320,6 +316,10 @@
             this.lblCheckCompass.BackColor = System.Drawing.Color.Transparent;
             this.lblCheckCompass.Name = "lblCheckCompass";
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = typeof(ByAeroBeHero.CurrentState);
+            // 
             // ConfigHWCompass
             // 
             resources.ApplyResources(this, "$this");
@@ -327,7 +327,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.panel10);
             this.Name = "ConfigHWCompass";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -348,6 +347,7 @@
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }

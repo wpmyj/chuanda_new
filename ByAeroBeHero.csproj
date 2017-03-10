@@ -437,6 +437,12 @@
     <Compile Include="GCSViews\ConfigurationView\ConfigWizard.Designer.cs">
       <DependentUpon>ConfigWizard.cs</DependentUpon>
     </Compile>
+    <Compile Include="GCSViews\FlightPlanner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GCSViews\FlightPlanner.Designer.cs">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Georefimage.Designer.cs">
       <DependentUpon>georefimage.cs</DependentUpon>
     </Compile>
@@ -689,6 +695,8 @@
     <Compile Include="Utilities\NGEN.cs" />
     <Compile Include="Utilities\ParameterMetaDataRepositoryAutoTest.cs" />
     <Compile Include="Utilities\Firmware.cs" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Utilities\ImageOverFilter.cs" />
     <EmbeddedResource Include="Antenna\Tracker.zh-Hant.resx">
       <DependentUpon>Tracker.cs</DependentUpon>
@@ -1133,8 +1141,35 @@
     <EmbeddedResource Include="GCSViews\FlightData.zh-TW.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.de-DE.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.es-ES.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.fr.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.it-IT.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightPlanner.ja-JP.resx">
       <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.pl.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.ru-RU.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GCSViews\FlightPlanner.zh-Hans.resx">
+      <DependentUpon>FlightPlanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightPlanner.zh-Hant.resx">
       <DependentUpon>FlightPlanner.cs</DependentUpon>
@@ -2271,9 +2306,6 @@
     <Compile Include="GCSViews\FlightData.Designer.cs">
       <DependentUpon>FlightData.cs</DependentUpon>
     </Compile>
-    <Compile Include="GCSViews\FlightPlanner.Designer.cs">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
-    </Compile>
     <Compile Include="Joystick\Joystick.cs" />
     <Compile Include="Joystick\JoystickSetup.cs">
       <SubType>Form</SubType>
@@ -2316,9 +2348,6 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GCSViews\FlightData.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GCSViews\FlightPlanner.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GCSViews\Simulation.cs">
@@ -2525,10 +2554,6 @@
     <EmbeddedResource Include="GCSViews\FlightData.de-DE.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.de-DE.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Help.de-DE.resx">
       <DependentUpon>Help.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -2640,6 +2665,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigPlanner.resx">
       <DependentUpon>ConfigPlanner.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\ConfigurationView\ConfigPlanner.zh-Hans.resx">
       <DependentUpon>ConfigPlanner.cs</DependentUpon>
@@ -2705,9 +2731,6 @@
     <EmbeddedResource Include="GCSViews\FlightData.es-ES.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.es-ES.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Help.es-ES.resx">
       <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
@@ -2763,15 +2786,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.pl.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.fr.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.it-IT.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.pl.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Help.fr.resx">
       <DependentUpon>Help.cs</DependentUpon>
@@ -2866,9 +2880,6 @@
     <EmbeddedResource Include="GCSViews\FlightData.ru-RU.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.ru-RU.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Help.ru-RU.resx">
       <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
@@ -2900,10 +2911,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.zh-Hans.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.zh-Hans.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\Help.resx">
@@ -2942,10 +2949,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GCSViews\FlightPlanner.resx">
-      <DependentUpon>FlightPlanner.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ElevationProfile.resx">
@@ -3007,12 +3010,14 @@
     </Content>
     <Content Include="aircraft\ByAeroCopter\arducopter-set.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="aircraft\ByAeroCopter\arducopter.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="aircraft\ByAeroCopter\arducopter.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="aircraft\ByAeroCopter\data\arducopter_half_step.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3031,15 +3036,18 @@
     </Content>
     <Content Include="aircraft\ByAeroCopter\Models\arducopter.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="aircraft\ByAeroCopter\Models\plus_quad2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="aircraft\ByAeroCopter\plus_quad2-set.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="aircraft\ByAeroCopter\plus_quad2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="aircraft\Rascal\Dialogs\config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

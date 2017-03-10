@@ -75,7 +75,7 @@ namespace ByAeroBeHero.Controls
             this.labelWithPseudoOpacity2.BackColor = System.Drawing.Color.Black;
             this.labelWithPseudoOpacity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelWithPseudoOpacity2.Font = new System.Drawing.Font("微软雅黑", 10F);
-            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.White;
+            this.labelWithPseudoOpacity2.ForeColor = System.Drawing.Color.Lime;
             this.labelWithPseudoOpacity2.Location = new System.Drawing.Point(94, 0);
             this.labelWithPseudoOpacity2.Name = "labelWithPseudoOpacity2";
             this.labelWithPseudoOpacity2.Size = new System.Drawing.Size(55, 43);

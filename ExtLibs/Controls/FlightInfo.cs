@@ -423,6 +423,11 @@ namespace ByAeroBeHero.Controls
                 statuslast = status;
             }
 
+            if (state == "DISARMED")
+                state = "已锁定";
+            else
+                state = "已解锁";
+
             return state;
         }
 

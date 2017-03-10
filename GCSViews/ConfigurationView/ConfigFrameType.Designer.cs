@@ -62,12 +62,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.RadbtnSevenRotorT1 = new System.Windows.Forms.Button();
             this.pictureBoxWithPseudoOpacity7 = new ByAeroBeHero.Controls.PictureBoxWithPseudoOpacity();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblSelectCpterType = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lblMotorTest = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.currentStateBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.NUM_duration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).BeginInit();
@@ -79,10 +79,10 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity7)).BeginInit();
-            this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -346,15 +346,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.pictureBoxWithPseudoOpacity7.Name = "pictureBoxWithPseudoOpacity7";
             this.pictureBoxWithPseudoOpacity7.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Controls.Add(this.btnSelectRackType);
-            this.panel3.Controls.Add(this.tableLayoutPanel1);
-            this.panel3.Controls.Add(this.panel6);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -369,6 +360,30 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.lblSelectCpterType.BackColor = System.Drawing.Color.Transparent;
             this.lblSelectCpterType.ForeColor = System.Drawing.Color.Black;
             this.lblSelectCpterType.Name = "lblSelectCpterType";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.lblMotorTest);
+            resources.ApplyResources(this.panel7, "panel7");
+            this.panel7.Name = "panel7";
+            this.toolTip1.SetToolTip(this.panel7, resources.GetString("panel7.ToolTip"));
+            // 
+            // lblMotorTest
+            // 
+            this.lblMotorTest.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lblMotorTest, "lblMotorTest");
+            this.lblMotorTest.ForeColor = System.Drawing.Color.Black;
+            this.lblMotorTest.Name = "lblMotorTest";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGray;
+            this.panel3.Controls.Add(this.btnSelectRackType);
+            this.panel3.Controls.Add(this.tableLayoutPanel1);
+            this.panel3.Controls.Add(this.panel6);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
             // 
             // panel4
             // 
@@ -389,21 +404,6 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             this.panel4.Controls.Add(this.button1);
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.lblMotorTest);
-            resources.ApplyResources(this.panel7, "panel7");
-            this.panel7.Name = "panel7";
-            this.toolTip1.SetToolTip(this.panel7, resources.GetString("panel7.ToolTip"));
-            // 
-            // lblMotorTest
-            // 
-            resources.ApplyResources(this.lblMotorTest, "lblMotorTest");
-            this.lblMotorTest.BackColor = System.Drawing.Color.Transparent;
-            this.lblMotorTest.ForeColor = System.Drawing.Color.Black;
-            this.lblMotorTest.Name = "lblMotorTest";
             // 
             // currentStateBindingSource
             // 
@@ -428,13 +428,12 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWithPseudoOpacity7)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.currentStateBindingSource)).EndInit();
             this.ResumeLayout(false);
 

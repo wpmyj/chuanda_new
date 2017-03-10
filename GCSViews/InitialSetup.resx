@@ -151,10 +151,10 @@
     <value>0, 0</value>
   </data>
   <data name="configFrameType1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4805, 3, 4805</value>
+    <value>3, 15188, 3, 15188</value>
   </data>
   <data name="configFrameType1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11909, 65535</value>
+    <value>19077, 65535</value>
   </data>
   <data name="configFrameType1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -163,10 +163,10 @@
     <value>configFrameType1</value>
   </data>
   <data name="&gt;&gt;configFrameType1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFrameType, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageframetype.Text" xml:space="preserve">
-    <value>Frame Type</value>
+    <value>机架类型</value>
   </data>
   <metadata name="backstageViewPageaccel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -190,7 +190,7 @@
     <value>configAccelerometerCalibration</value>
   </data>
   <data name="&gt;&gt;configAccelerometerCalibration.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigAccelerometerCalibration, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigAccelerometerCalibration, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;configAccelerometerCalibration.Parent" xml:space="preserve">
     <value>$this</value>
@@ -199,7 +199,7 @@
     <value>1</value>
   </data>
   <data name="backstageViewPageaccel.Text" xml:space="preserve">
-    <value>Accel Calibration</value>
+    <value>加速度计校准</value>
   </data>
   <metadata name="backstageViewPagecompass.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 55</value>
@@ -211,10 +211,10 @@
     <value>0, 0</value>
   </data>
   <data name="configHWCompass1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 85, 3, 85</value>
+    <value>3, 357, 3, 357</value>
   </data>
   <data name="configHWCompass1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2743, 13556</value>
+    <value>4943, 57125</value>
   </data>
   <data name="configHWCompass1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -223,10 +223,10 @@
     <value>configHWCompass1</value>
   </data>
   <data name="&gt;&gt;configHWCompass1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWCompass, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWCompass, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagecompass.Text" xml:space="preserve">
-    <value>Compass</value>
+    <value>罗盘校准</value>
   </data>
   <metadata name="backstageViewPageradio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>287, 56</value>
@@ -256,10 +256,10 @@
     <value>configRadioInput1</value>
   </data>
   <data name="&gt;&gt;configRadioInput1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigRadioInput, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigRadioInput, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageradio.Text" xml:space="preserve">
-    <value>Radio Calibration</value>
+    <value>遥控器校准</value>
   </data>
   <metadata name="backstageViewPagefs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>535, 22</value>
@@ -274,10 +274,10 @@
     <value>0, 0</value>
   </data>
   <data name="configFailSafe1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2399, 3, 2399</value>
+    <value>3, 10111, 3, 10111</value>
   </data>
   <data name="configFailSafe1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12169, 65535</value>
+    <value>21928, 65535</value>
   </data>
   <data name="configFailSafe1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -286,10 +286,10 @@
     <value>configFailSafe1</value>
   </data>
   <data name="&gt;&gt;configFailSafe1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFailSafe, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFailSafe, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagefs.Text" xml:space="preserve">
-    <value>FailSafe</value>
+    <value>失控保护</value>
   </data>
   <metadata name="backstageViewPagesonar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1262, 55</value>
@@ -301,10 +301,10 @@
     <value>0, 0</value>
   </data>
   <data name="configHWSonar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 65, 4, 65</value>
+    <value>4, 276, 4, 276</value>
   </data>
   <data name="configHWSonar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2109, 2069</value>
+    <value>3802, 8720</value>
   </data>
   <data name="configHWSonar1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -313,10 +313,10 @@
     <value>configHWSonar1</value>
   </data>
   <data name="&gt;&gt;configHWSonar1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWSonar, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWSonar, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagesonar.Text" xml:space="preserve">
-    <value>Sonar</value>
+    <value>雷达</value>
   </data>
   <metadata name="backstageViewPageinstfw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>274, 16</value>
@@ -340,7 +340,7 @@
     <value>configFirmware1</value>
   </data>
   <data name="&gt;&gt;configFirmware1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmware, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageinstfw.Text" xml:space="preserve">
     <value>安装固件</value>
@@ -355,10 +355,10 @@
     <value>0, 0</value>
   </data>
   <data name="configSetParams1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 37, 4, 37</value>
+    <value>4, 155, 4, 155</value>
   </data>
   <data name="configSetParams1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2207, 3349</value>
+    <value>3977, 14111</value>
   </data>
   <data name="configSetParams1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -367,7 +367,7 @@
     <value>configSetParams1</value>
   </data>
   <data name="&gt;&gt;configSetParams1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigSetParams, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageSetParams.Text" xml:space="preserve">
     <value>参数设置</value>
@@ -382,10 +382,10 @@
     <value>0, 0</value>
   </data>
   <data name="ConfigMotorbalance1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 16, 4, 16</value>
+    <value>4, 65, 4, 65</value>
   </data>
   <data name="ConfigMotorbalance1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1354, 1287</value>
+    <value>2439, 5424</value>
   </data>
   <data name="ConfigMotorbalance1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -394,10 +394,64 @@
     <value>ConfigMotorbalance1</value>
   </data>
   <data name="&gt;&gt;ConfigMotorbalance1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorbalance, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorbalance, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPageMotorblance.Text" xml:space="preserve">
     <value>动平衡校准</value>
+  </data>
+  <metadata name="backstageViewPageGFlightModes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>555, 94</value>
+  </metadata>
+  <data name="configFlightModes1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="configFlightModes1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="configFlightModes1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 37, 3, 37</value>
+  </data>
+  <data name="configFlightModes1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1724, 3348</value>
+  </data>
+  <data name="configFlightModes1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;configFlightModes1.Name" xml:space="preserve">
+    <value>configFlightModes1</value>
+  </data>
+  <data name="&gt;&gt;configFlightModes1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFlightModes, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="backstageViewPageGFlightModes.Text" xml:space="preserve">
+    <value>飞行模式</value>
+  </data>
+  <metadata name="backstageViewPageTune.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>858, 94</value>
+  </metadata>
+  <data name="configArducopter1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="configArducopter1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="configArducopter1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="configArducopter1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1130, 384</value>
+  </data>
+  <data name="configArducopter1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;configArducopter1.Name" xml:space="preserve">
+    <value>configArducopter1</value>
+  </data>
+  <data name="&gt;&gt;configArducopter1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigArducopter, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="backstageViewPageTune.Text" xml:space="preserve">
+    <value>扩展协调</value>
   </data>
   <data name="backstageView.Size" type="System.Drawing.Size, System.Drawing">
     <value>1000, 450</value>
@@ -417,47 +471,74 @@
   <data name="&gt;&gt;backstageView.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="configWizard1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="configOptional1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="configWizard1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="configOptional1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="configWizard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 6</value>
+  <data name="configOptional1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="configWizard1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>661, 514</value>
+  <data name="configOptional1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 300</value>
   </data>
-  <data name="configWizard1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="configOptional1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;configWizard1.Name" xml:space="preserve">
-    <value>configWizard1</value>
+  <data name="&gt;&gt;configOptional1.Name" xml:space="preserve">
+    <value>configOptional1</value>
   </data>
-  <data name="&gt;&gt;configWizard1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;configOptional1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigOptional, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="configMandatory1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="configHWBT1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="configMandatory1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="configHWBT1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="configMandatory1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 6</value>
+  <data name="configHWBT1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="configMandatory1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 514</value>
+  <data name="configHWBT1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 450</value>
   </data>
-  <data name="configMandatory1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="configHWBT1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;configMandatory1.Name" xml:space="preserve">
-    <value>configMandatory1</value>
+  <data name="&gt;&gt;configHWBT1.Name" xml:space="preserve">
+    <value>configHWBT1</value>
   </data>
-  <data name="&gt;&gt;configMandatory1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMandatory, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;configHWBT1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;configHWBT1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;configHWBT1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tracker1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tracker1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tracker1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tracker1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>660, 353</value>
+  </data>
+  <data name="tracker1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;tracker1.Name" xml:space="preserve">
+    <value>tracker1</value>
+  </data>
+  <data name="&gt;&gt;tracker1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Antenna.Tracker, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configTradHeli1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -478,49 +559,49 @@
     <value>configTradHeli1</value>
   </data>
   <data name="&gt;&gt;configTradHeli1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigTradHeli, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigTradHeli, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="configFlightModes1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="configWizard1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="configFlightModes1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="configWizard1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="configFlightModes1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 16, 3, 16</value>
+  <data name="configWizard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 6, 3, 6</value>
   </data>
-  <data name="configFlightModes1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1211, 1412</value>
+  <data name="configWizard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>661, 514</value>
   </data>
-  <data name="configFlightModes1.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="configWizard1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;configFlightModes1.Name" xml:space="preserve">
-    <value>configFlightModes1</value>
+  <data name="&gt;&gt;configWizard1.Name" xml:space="preserve">
+    <value>configWizard1</value>
   </data>
-  <data name="&gt;&gt;configFlightModes1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFlightModes, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;configWizard1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigWizard, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="configOptional1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="configMandatory1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="configOptional1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="configMandatory1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="configOptional1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
+  <data name="configMandatory1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 6, 3, 6</value>
   </data>
-  <data name="configOptional1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 225</value>
+  <data name="configMandatory1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 514</value>
   </data>
-  <data name="configOptional1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="configMandatory1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;configOptional1.Name" xml:space="preserve">
-    <value>configOptional1</value>
+  <data name="&gt;&gt;configMandatory1.Name" xml:space="preserve">
+    <value>configMandatory1</value>
   </data>
-  <data name="&gt;&gt;configOptional1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigOptional, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;configMandatory1.Type" xml:space="preserve">
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMandatory, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="_3DRradio1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -544,7 +625,7 @@
     <value>_3DRradio1</value>
   </data>
   <data name="&gt;&gt;_3DRradio1.Type" xml:space="preserve">
-    <value>ByAeroBeHero._3DRradio, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero._3DRradio, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configBatteryMonitoring1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -565,7 +646,7 @@
     <value>configBatteryMonitoring1</value>
   </data>
   <data name="&gt;&gt;configBatteryMonitoring1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigBatteryMonitoring, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigBatteryMonitoring, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configCompassMot1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -586,7 +667,7 @@
     <value>configCompassMot1</value>
   </data>
   <data name="&gt;&gt;configCompassMot1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigCompassMot, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigCompassMot, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configHWAirspeed1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -607,7 +688,7 @@
     <value>configHWAirspeed1</value>
   </data>
   <data name="&gt;&gt;configHWAirspeed1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWAirspeed, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWAirspeed, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configHWOptFlow1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -628,7 +709,7 @@
     <value>configHWOptFlow1</value>
   </data>
   <data name="&gt;&gt;configHWOptFlow1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOptFlow, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOptFlow, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configHWOSD1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -649,7 +730,7 @@
     <value>configHWOSD1</value>
   </data>
   <data name="&gt;&gt;configHWOSD1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOSD, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWOSD, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configMount1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -667,28 +748,7 @@
     <value>configMount1</value>
   </data>
   <data name="&gt;&gt;configMount1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMount, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="tracker1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tracker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tracker1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 3, 4, 3</value>
-  </data>
-  <data name="tracker1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>587, 265</value>
-  </data>
-  <data name="tracker1.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;tracker1.Name" xml:space="preserve">
-    <value>tracker1</value>
-  </data>
-  <data name="&gt;&gt;tracker1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Antenna.Tracker, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMount, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configMotor1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -709,34 +769,7 @@
     <value>configMotor1</value>
   </data>
   <data name="&gt;&gt;configMotor1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorTest, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="configHWBT1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="configHWBT1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="configHWBT1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="configHWBT1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 450</value>
-  </data>
-  <data name="configHWBT1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;configHWBT1.Name" xml:space="preserve">
-    <value>configHWBT1</value>
-  </data>
-  <data name="&gt;&gt;configHWBT1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWBT, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;configHWBT1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;configHWBT1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigMotorTest, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="configHWPa1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -757,7 +790,7 @@
     <value>configHWPa1</value>
   </data>
   <data name="&gt;&gt;configHWPa1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigHWParachute, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <metadata name="backstageViewPagefw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>526, 58</value>
@@ -787,7 +820,7 @@
     <value>configFirmwareDisabled1</value>
   </data>
   <data name="&gt;&gt;configFirmwareDisabled1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled, ByAeroBeHero, Version=1.6.6193.20793, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.GCSViews.ConfigurationView.ConfigFirmwareDisabled, ByAeroBeHero, Version=1.6.6256.36880, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="backstageViewPagefwdisabled.Text" xml:space="preserve">
     <value>Install Firmware</value>
@@ -801,17 +834,17 @@
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>1000, 450</value>
   </data>
-  <data name="&gt;&gt;initialSetupBindingSource.Name" xml:space="preserve">
-    <value>initialSetupBindingSource</value>
-  </data>
-  <data name="&gt;&gt;initialSetupBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;backstageViewPageframetype.Name" xml:space="preserve">
     <value>backstageViewPageframetype</value>
   </data>
   <data name="&gt;&gt;backstageViewPageframetype.Type" xml:space="preserve">
     <value>ByAeroBeHero.Controls.BackstageView.BackstageViewPage, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;initialSetupBindingSource.Name" xml:space="preserve">
+    <value>initialSetupBindingSource</value>
+  </data>
+  <data name="&gt;&gt;initialSetupBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;backstageViewPageaccel.Name" xml:space="preserve">
     <value>backstageViewPageaccel</value>
@@ -859,6 +892,18 @@
     <value>backstageViewPageMotorblance</value>
   </data>
   <data name="&gt;&gt;backstageViewPageMotorblance.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.BackstageView.BackstageViewPage, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageGFlightModes.Name" xml:space="preserve">
+    <value>backstageViewPageGFlightModes</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageGFlightModes.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.BackstageView.BackstageViewPage, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageTune.Name" xml:space="preserve">
+    <value>backstageViewPageTune</value>
+  </data>
+  <data name="&gt;&gt;backstageViewPageTune.Type" xml:space="preserve">
     <value>ByAeroBeHero.Controls.BackstageView.BackstageViewPage, ByAeroBeHero.Controls, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;backstageViewPagefw.Name" xml:space="preserve">

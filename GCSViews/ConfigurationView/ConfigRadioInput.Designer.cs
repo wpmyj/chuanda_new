@@ -174,6 +174,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // BUT_BindDSM8
             // 
+            this.BUT_BindDSM8.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_BindDSM8.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_BindDSM8, "BUT_BindDSM8");
             this.BUT_BindDSM8.Name = "BUT_BindDSM8";
             this.BUT_BindDSM8.UseVisualStyleBackColor = true;
@@ -181,6 +183,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // BUT_BindDSMX
             // 
+            this.BUT_BindDSMX.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_BindDSMX.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_BindDSMX, "BUT_BindDSMX");
             this.BUT_BindDSMX.Name = "BUT_BindDSMX";
             this.BUT_BindDSMX.UseVisualStyleBackColor = true;
@@ -188,6 +192,8 @@ namespace ByAeroBeHero.GCSViews.ConfigurationView
             // 
             // BUT_BindDSM2
             // 
+            this.BUT_BindDSM2.BGGradBot = System.Drawing.Color.LightGray;
+            this.BUT_BindDSM2.BGGradTop = System.Drawing.Color.LightGray;
             resources.ApplyResources(this.BUT_BindDSM2, "BUT_BindDSM2");
             this.BUT_BindDSM2.Name = "BUT_BindDSM2";
             this.BUT_BindDSM2.UseVisualStyleBackColor = true;

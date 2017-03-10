@@ -39,6 +39,7 @@ using Placemark = SharpKml.Dom.Placemark;
 using Point = System.Drawing.Point;
 using System.IO.Ports;
 using System.Text;
+using ZedGraph;
 
 namespace ByAeroBeHero.GCSViews
 {
@@ -56,6 +57,41 @@ namespace ByAeroBeHero.GCSViews
         altmode currentaltmode = altmode.Relative;
 
         bool grid;
+
+        public static bool threadrun = false;
+        int tickStart = 0;
+        RollingPointPairList list1 = new RollingPointPairList(1200);
+        RollingPointPairList list2 = new RollingPointPairList(1200);
+        RollingPointPairList list3 = new RollingPointPairList(1200);
+        RollingPointPairList list4 = new RollingPointPairList(1200);
+        RollingPointPairList list5 = new RollingPointPairList(1200);
+        RollingPointPairList list6 = new RollingPointPairList(1200);
+        RollingPointPairList list7 = new RollingPointPairList(1200);
+        RollingPointPairList list8 = new RollingPointPairList(1200);
+        RollingPointPairList list9 = new RollingPointPairList(1200);
+        RollingPointPairList list10 = new RollingPointPairList(1200);
+
+        System.Reflection.PropertyInfo list1item = null;
+        System.Reflection.PropertyInfo list2item = null;
+        System.Reflection.PropertyInfo list3item = null;
+        System.Reflection.PropertyInfo list4item = null;
+        System.Reflection.PropertyInfo list5item = null;
+        System.Reflection.PropertyInfo list6item = null;
+        System.Reflection.PropertyInfo list7item = null;
+        System.Reflection.PropertyInfo list8item = null;
+        System.Reflection.PropertyInfo list9item = null;
+        System.Reflection.PropertyInfo list10item = null;
+
+        CurveItem list1curve;
+        CurveItem list2curve;
+        CurveItem list3curve;
+        CurveItem list4curve;
+        CurveItem list5curve;
+        CurveItem list6curve;
+        CurveItem list7curve;
+        CurveItem list8curve;
+        CurveItem list9curve;
+        CurveItem list10curve;
 
         public static FlightPlanner instance;
 
@@ -553,7 +589,34 @@ namespace ByAeroBeHero.GCSViews
             panelMap.Visible = false;
             comboBoxMapType.SelectedIndex = 5;
 
-            //this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true); 
+            //this.SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
+            #region 创建zedGraphControl1控件的内容
+
+            log.Info("Tunning Graph Settings");
+            // setup default tuning graph
+            if (MainV2.config["Tuning_Graph_Selected"] != null)
+            {
+                string line = MainV2.config["Tuning_Graph_Selected"].ToString();
+                string[] lines = line.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (string option in lines)
+                {
+                    chk_box_CheckedChanged((object)(new CheckBox() { Name = option, Checked = true }), new EventArgs());
+                }
+                //chk_box_CheckedChanged((object)(new CheckBox() { Name = "roll", Checked = true }), new EventArgs());
+                //chk_box_CheckedChanged((object)(new CheckBox() { Name = "pitch", Checked = true }), new EventArgs());
+                //chk_box_CheckedChanged((object)(new CheckBox() { Name = "nav_roll", Checked = true }), new EventArgs());
+                //chk_box_CheckedChanged((object)(new CheckBox() { Name = "nav_pitch", Checked = true }), new EventArgs());
+            }
+            else
+            {
+                chk_box_CheckedChanged((object)(new CheckBox() { Name = "roll", Checked = true }), new EventArgs());
+                chk_box_CheckedChanged((object)(new CheckBox() { Name = "pitch", Checked = true }), new EventArgs());
+                chk_box_CheckedChanged((object)(new CheckBox() { Name = "nav_roll", Checked = true }), new EventArgs());
+                chk_box_CheckedChanged((object)(new CheckBox() { Name = "nav_pitch", Checked = true }), new EventArgs());
+            }
+            //创建图表
+            CreateChart(zedGraphControl1);
+            #endregion
 
             System.Drawing.Rectangle rect = System.Windows.Forms.Screen.PrimaryScreen.Bounds;
             if (rect.Width == 1366)
@@ -796,6 +859,10 @@ namespace ByAeroBeHero.GCSViews
             timer_getbreakpoint.Start();
             timer_time.Start();
             timer_GetMapPoint.Start();
+            //zedGraphControl1控件的时钟
+            zedGraphControlTimer.Enabled = true;
+            zedGraphControlTimer.Start();
+            zedGraphControl1.Refresh();
         }
 
         /// <summary>
@@ -4931,6 +4998,8 @@ namespace ByAeroBeHero.GCSViews
 
             updateCMDParams();
 
+            zedGraphControl1.Refresh();
+
             try
             {
                 int.Parse(TXT_DefaultAlt.Text);
@@ -4975,6 +5044,7 @@ namespace ByAeroBeHero.GCSViews
             timer_getbreakpoint.Stop();
             timer_time.Stop();
             timer_GetMapPoint.Stop();
+            zedGraphControlTimer.Stop();
         }
 
         private void FlightPlanner_FormClosing(object sender, FormClosingEventArgs e)
@@ -4983,6 +5053,7 @@ namespace ByAeroBeHero.GCSViews
             timer_getbreakpoint.Stop();
             timer_time.Stop();
             timer_GetMapPoint.Stop();
+            zedGraphControlTimer.Stop();
         }
 
         private void setROIToolStripMenuItem_Click(object sender, EventArgs e)
@@ -7962,14 +8033,14 @@ namespace ByAeroBeHero.GCSViews
             yPosWarningInfo = e.Y;//当前y坐标.
         }
 
-        private void panelShowWarningInfo_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (MoveFlagWarn)
-            {
-                ebsPanelWarning.Left += Convert.ToInt16(e.X - xPosWarningInfo);//设置x坐标.        
-                ebsPanelWarning.Top += Convert.ToInt16(e.Y - yPosWarningInfo);//设置y坐标.    
-            }
-        }
+        //private void panelShowWarningInfo_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    if (MoveFlagWarn)
+        //    {
+        //        ebsPanelWarning.Left += Convert.ToInt16(e.X - xPosWarningInfo);//设置x坐标.        
+        //        ebsPanelWarning.Top += Convert.ToInt16(e.Y - yPosWarningInfo);//设置y坐标.    
+        //    }
+        //}
 
         private void panelShowWarningInfo_MouseUp(object sender, MouseEventArgs e)
         {
@@ -8026,6 +8097,34 @@ namespace ByAeroBeHero.GCSViews
         private void panelShowMeter_MouseUp(object sender, MouseEventArgs e)
         {
             MoveFlagPints = false;
+        }
+        #endregion
+
+        #region 实时数据拖拽
+        int yInstantData;
+        int xInstantData;
+        bool MoveFlagInstantData;
+
+        private void panelShowInstantData_MouseDown(object sender,MouseEventArgs e)
+        {
+            MoveFlagInstantData = true;
+            xInstantData = e.X;
+            yInstantData = e.Y;
+        }
+
+        private void panelShowInstantData_MouseMove(object sender,MouseEventArgs e)
+        {
+            if(MoveFlagInstantData)
+            {
+                ebsPanelInstantData.Left += Convert.ToInt16(e.X - xInstantData);
+                ebsPanelInstantData.Top += Convert.ToInt16(e.Y - yInstantData);
+            }
+        }
+
+
+        private void panelShowInstantData_MouseUp(object sender,MouseEventArgs e)
+        {
+            MoveFlagInstantData = false;
         }
         #endregion
 
@@ -8259,24 +8358,26 @@ namespace ByAeroBeHero.GCSViews
         private void updateBindingSource()
         {
            MainV2.comPort.MAV.cs.UpdateCurrentSettings(bindingSource1);
+           fuzhi();
         }
         #endregion
 
         #region 控件显示
         private bool IsShowWarnning = false;
-        private void btnWarnning_Click(object sender, EventArgs e)
-        {
-            if (IsShowWarnning)
-            {
-                ebsPanelWarning.Visible = false;
-                IsShowWarnning =false;
-            }
-            else
-            {
-                ebsPanelWarning.Visible = true;
-                IsShowWarnning =true;
-            }
-        }
+        //private void btnWarnning_Click(object sender, EventArgs e)
+        //{
+        //    if (IsShowWarnning)
+        //    {
+        //        //ebsPanelWarning.Visible = false;
+        //        ebsPanelWarning.Visible = true;
+        //        IsShowWarnning =false;
+        //    }
+        //    else
+        //    {
+        //        ebsPanelWarning.Visible = true;
+        //        IsShowWarnning =true;
+        //    }
+        //}
 
         private bool IsShowPlanInfo = false;
         private void btnPlanInfo_Click(object sender, EventArgs e)
@@ -8328,6 +8429,766 @@ namespace ByAeroBeHero.GCSViews
             }
         }
         #endregion
+
+        
+        #region 双击quickview切换显示的数据
+        private void quickView_DoubleClick(object sender, EventArgs e)
+        {
+            QuickView qv = (QuickView)sender;
+            int x = 10;
+            int y = 10;
+            //AutoSize = true,
+            Form selectform = new Form()
+            {
+                Name = "select",
+                Width = 60,
+                Height = 230,
+                Text = "可显示的参数",
+
+                StartPosition = FormStartPosition.CenterParent,
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+            ThemeManager.ApplyThemeTo(selectform);
+
+            object thisBoxed = MainV2.comPort.MAV.cs;
+            Type test = thisBoxed.GetType();
+
+            int max_length = 0;
+            List<string> fields = new List<string>();
+            //想要显示的数据
+            Dictionary<string, string> WTS = new Dictionary<string, string>();
+            WTS.Add("accel_cal_x", "x轴加速度计偏置");
+            WTS.Add("accel_cal_y", "y轴加速度计偏置");
+            WTS.Add("accel_cal_z", "z轴加速度计偏置");
+            WTS.Add("airspeed", "空速（米/秒）");
+            WTS.Add("alt", "高度（米）");
+            WTS.Add("ax", "x轴加速度（米/秒²）");
+            WTS.Add("ay", "y轴加速度（米/秒²）");
+            WTS.Add("az", "z轴加速度（米/秒²）");
+            WTS.Add("battery_voltage", "电池电压（V）");
+            WTS.Add("battery_voltage2", "电池2电压（V）");
+            WTS.Add("boardvoltage", "飞控供电电压（V）");
+            WTS.Add("ch10in", "遥控输入通道10");
+            WTS.Add("ch11in", "遥控输入通道11");
+            WTS.Add("ch12in", "遥控输入通道12");
+            WTS.Add("ch13in", "遥控输入通道13");
+            WTS.Add("ch14in", "遥控输入通道14");
+            WTS.Add("ch15in", "遥控输入通道15");
+            WTS.Add("ch16in", "遥控输入通道16");
+            WTS.Add("ch1in", "遥控输入通道1");
+            WTS.Add("ch1out", "电机控制通道1");
+            WTS.Add("ch2in", "遥控输入通道2");
+            WTS.Add("ch2out", "电机控制通道2");
+            WTS.Add("ch3in", "遥控输入通道3");
+            WTS.Add("ch3out", "电机控制通道3");
+            WTS.Add("ch3percent", "遥控输入通道1");
+            WTS.Add("ch4in", "遥控输入通道4");
+            WTS.Add("ch4out", "电机控制通道4");
+            WTS.Add("ch5in", "遥控输入通道5");
+            WTS.Add("ch5out", "电机控制通道5");
+            WTS.Add("ch6in", "遥控输入通道6");
+            WTS.Add("ch6out", "电机控制通道6");
+            WTS.Add("ch7in", "遥控输入通道7");
+            WTS.Add("ch7out", "电机控制通道7");
+            WTS.Add("ch8in", "遥控输入通道8");
+            WTS.Add("ch8out", "电机控制通道8");
+            WTS.Add("ch9in", "遥控输入通道9");
+            WTS.Add("climbrate", "爬升率（米/秒）");
+            WTS.Add("current", "电流（A）");
+            WTS.Add("DistToHome", "离家坐标距离（米）");
+            WTS.Add("gpsstatus", "GPS1状态");
+            WTS.Add("gpsstatus2", "GPS2状态");
+            WTS.Add("gx", "x轴陀螺");
+            WTS.Add("gy", "y轴陀螺");
+            WTS.Add("gyro_cal_x", "x轴陀螺偏置");
+            WTS.Add("gyro_cal_y", "y轴陀螺偏置");
+            WTS.Add("gyro_cal_z", "z轴陀螺偏置");
+            WTS.Add("gz", "z轴陀螺");
+            WTS.Add("lat", "GPS1纬度（°）");
+            WTS.Add("lat2", "GPS2纬度（°）");
+            WTS.Add("linkqualitygcs", "数传连接质量");
+            WTS.Add("lng", "GPS1经度（°）");
+            WTS.Add("lng2", "GPS2经度（°）");
+            WTS.Add("mag_ofs_x", "x轴罗盘偏置");
+            WTS.Add("mag_ofs_y", "y轴罗盘偏置");
+            WTS.Add("mag_ofs_z", "z轴罗盘偏置");
+            WTS.Add("mx", "罗盘x轴");
+            WTS.Add("mx2", "罗盘2x轴");
+            WTS.Add("my", "罗盘y轴");
+            WTS.Add("my2", "罗盘2y轴");
+            WTS.Add("mz", "罗盘z轴");
+            WTS.Add("mz2", "罗盘2z轴");
+            WTS.Add("pitch", "俯仰角（°）");
+            WTS.Add("roll", "滚转角（°）");
+            WTS.Add("servovoltage", "备用电源电压（V）");
+            WTS.Add("yaw", "航偏角（°）");
+            //***********************************************************
+            //WTS.Add("高度", "alt");
+            //WTS.Add("导航点距离", "wp_dist");
+            //WTS.Add("垂直速度", "verticalspeed");
+            //WTS.Add("地速", "groundspeed");
+            //WTS.Add("到飞行器距离", "DistToHome");
+            //WTS.Add("偏航角", "yaw");
+            //WTS.Add("俯仰角", "pitch");
+            //WTS.Add("横滚角", "roll");
+            foreach (var field in test.GetProperties())
+            {
+                if (WTS.ContainsKey(field.Name))
+                {
+                    // field.Name has the field's name.
+                    object fieldValue = field.GetValue(thisBoxed, null); // Get value
+                    if (fieldValue == null)
+                        continue;
+
+                    // Get the TypeCode enumeration. Multiple types get mapped to a common typecode.
+                    TypeCode typeCode = Type.GetTypeCode(fieldValue.GetType());
+
+                    if (!(typeCode == TypeCode.Single || typeCode == TypeCode.Double || typeCode == TypeCode.Int32 || typeCode == TypeCode.UInt16))
+                        continue;
+
+                    max_length = Math.Max(max_length, TextRenderer.MeasureText(field.Name, selectform.Font).Width);
+                    fields.Add(field.Name);
+                }
+
+            }
+            max_length += 15;
+            //fields.Sort();
+
+            int col_count = (int)(Screen.FromControl(this).Bounds.Width * 0.8f) / max_length;
+            int row_count = fields.Count / col_count + ((fields.Count % col_count == 0) ? 0 : 1);
+            int row_height = 20;
+            //设置quickview可选参数的窗口的最小值
+            selectform.MinimumSize = new Size(col_count * max_length + 60, row_count * row_height);
+
+            for (int i = 0; i < fields.Count; i++)
+            {
+                
+                string NameT = fields[i];
+                string TextT = WTS[NameT];
+                CheckBox chk_box = new CheckBox()
+                {
+                    // dont change to ToString() = null exception
+                    Checked = qv.Tag != null && qv.Tag.ToString() == fields[i],
+                    Text = TextT,
+                    Name = NameT,
+                    Tag = qv,
+                    //横向排列参数列表内的CheckBox
+                    Location = new Point(5 + (i / row_count) * (max_length + 5), 2 + (i % row_count) * row_height),
+                    //Location = new Point(x, y),
+
+                    Size = new System.Drawing.Size(max_length, row_height)
+                };
+                x += 0;
+                y += 20;
+
+                chk_box.CheckedChanged += new EventHandler(chk_box_quickview_CheckedChanged);
+                if (chk_box.Checked)
+                    chk_box.BackColor = Color.Green;
+                selectform.Controls.Add(chk_box);
+                Application.DoEvents();
+            }
+            if (y > selectform.Height - 50)
+            {
+                x += 100;
+                y = 10;
+
+                selectform.Width = x + 100;
+            }
+            selectform.ShowDialog(this);
+        }
+        #endregion
+        void chk_box_quickview_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkbox = (CheckBox)sender;
+
+            if (checkbox.Checked)
+            {
+                // save settings
+                MainV2.config[((QuickView)checkbox.Tag).Name] = checkbox.Name;
+
+                // set description
+                string desc = checkbox.Text;
+                ((QuickView)checkbox.Tag).Tag = desc;
+
+                desc = MainV2.comPort.MAV.cs.GetNameandUnit(desc);
+
+                ((QuickView)checkbox.Tag).desc = desc;
+
+                // set databinding for value
+                ((QuickView)checkbox.Tag).DataBindings.Clear();
+                ((QuickView)checkbox.Tag).DataBindings.Add(new System.Windows.Forms.Binding("number", this.bindingSource1, checkbox.Name, true));
+
+                // close selection form
+                ((Form)checkbox.Parent).Close();
+            }
+        }
+
+        //createchart方法
+        public void CreateChart(ZedGraphControl zgc1)
+        {
+            GraphPane myPane = zgc1.GraphPane;
+
+            // Set the titles and axis labels
+            myPane.Title.Text = "实时曲线显示";
+            myPane.XAxis.Title.Text = "时间 (s)";
+            myPane.YAxis.Title.Text = "值（1）";
+
+            // Show the x axis grid
+            myPane.XAxis.MajorGrid.IsVisible = true;
+
+            myPane.XAxis.Scale.Min = 0;
+            myPane.XAxis.Scale.Max = 5;
+
+            // Make the Y axis scale red
+            myPane.YAxis.Scale.FontSpec.FontColor = Color.White;
+            myPane.YAxis.Title.FontSpec.FontColor = Color.White;
+            // turn off the opposite tics so the Y tics don't show up on the Y2 axis
+            myPane.YAxis.MajorTic.IsOpposite = false;
+            myPane.YAxis.MinorTic.IsOpposite = false;
+            // Don't display the Y zero line
+            myPane.YAxis.MajorGrid.IsZeroLine = true;
+            // Align the Y axis labels so they are flush to the axis
+            myPane.YAxis.Scale.Align = AlignP.Inside;
+            // Manually set the axis range
+            //myPane.YAxis.Scale.Min = -1;
+            //myPane.YAxis.Scale.Max = 1;
+            myPane.YAxis.Scale.MinAuto = true;
+            myPane.YAxis.Scale.MaxAuto = true;
+
+            // Fill the axis background with a gradient
+            //myPane.Chart.Fill = new Fill(Color.White, Color.LightGray, 45.0f);
+
+            // Sample at 50ms intervals
+            zedGraphControlTimer.Interval = 200;
+            //timer1.Enabled = true;
+            //timer1.Start();
+
+
+            // Calculate the Axis Scale Ranges
+            zgc1.AxisChange();
+
+            tickStart = Environment.TickCount;
+
+
+        }
+
+        //实时刷新数据已达到画出的曲线连续的目的
+        private void Zedtimer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                // Make sure that the curvelist has at least one curve
+                if (zedGraphControl1.GraphPane.CurveList.Count <= 0)
+                    return;
+
+                // Get the first CurveItem in the graph
+                LineItem curve = zedGraphControl1.GraphPane.CurveList[0] as LineItem;
+                if (curve == null)
+                    return;
+
+                // Get the PointPairList
+                IPointListEdit list = curve.Points as IPointListEdit;
+                // If this is null, it means the reference at curve.Points does not
+                // support IPointListEdit, so we won't be able to modify it
+                if (list == null)
+                    return;
+
+                // Time is measured in seconds
+                double time = (Environment.TickCount - tickStart) / 1000.0;
+
+                // Keep the X scale at a rolling 30 second interval, with one
+                // major step between the max X value and the end of the axis
+                ZedGraph.Scale xScale = zedGraphControl1.GraphPane.XAxis.Scale;
+                if (time > xScale.Max - xScale.MajorStep)
+                {
+                    xScale.Max = time + xScale.MajorStep;
+                    xScale.Min = xScale.Max - 10.0;
+
+                }
+
+                // Make sure the Y axis is rescaled to accommodate actual data
+                //fuzhi();
+                zedGraphControl1.AxisChange();
+
+
+                // Force a redraw
+
+                zedGraphControl1.Invalidate();
+            }
+            catch { }
+
+        }
+
+        //双击绘图栏之后，弹出所有参数，选择想要绘制的参数
+        void chk_box_CheckedChanged(object sender, EventArgs e)
+        {
+            if (((CheckBox)sender).Checked)
+            {
+                ((CheckBox)sender).BackColor = Color.Green;
+
+                if (list1item == null)
+                {
+                    if (setupPropertyInfo(ref list1item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list1.Clear();
+                        list1curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list1, Color.Red, SymbolType.Diamond);
+                    }
+                }
+                else if (list2item == null)
+                {
+                    if (setupPropertyInfo(ref list2item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list2.Clear();
+                        list2curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list2, Color.Blue, SymbolType.None);
+                    }
+                }
+                else if (list3item == null)
+                {
+                    if (setupPropertyInfo(ref list3item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list3.Clear();
+                        list3curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list3, Color.Green, SymbolType.None);
+                    }
+                }
+                else if (list4item == null)
+                {
+                    if (setupPropertyInfo(ref list4item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list4.Clear();
+                        list4curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list4, Color.Orange, SymbolType.None);
+                    }
+                }
+                else if (list5item == null)
+                {
+                    if (setupPropertyInfo(ref list5item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list5.Clear();
+                        list5curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list5, Color.Yellow, SymbolType.None);
+                    }
+                }
+                else if (list6item == null)
+                {
+                    if (setupPropertyInfo(ref list6item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list6.Clear();
+                        list6curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list6, Color.Magenta, SymbolType.None);
+                    }
+                }
+                else if (list7item == null)
+                {
+                    if (setupPropertyInfo(ref list7item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list7.Clear();
+                        list7curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list7, Color.Purple, SymbolType.None);
+                    }
+                }
+                else if (list8item == null)
+                {
+                    if (setupPropertyInfo(ref list8item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list8.Clear();
+                        list8curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list8, Color.LimeGreen, SymbolType.None);
+                    }
+                }
+                else if (list9item == null)
+                {
+                    if (setupPropertyInfo(ref list9item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list9.Clear();
+                        list9curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list9, Color.Cyan, SymbolType.None);
+                    }
+                }
+                else if (list10item == null)
+                {
+                    if (setupPropertyInfo(ref list10item, ((CheckBox)sender).Name, MainV2.comPort.MAV.cs))
+                    {
+                        list10.Clear();
+                        list10curve = zedGraphControl1.GraphPane.AddCurve(((CheckBox)sender).Text, list10, Color.Violet, SymbolType.None);
+                    }
+                }
+                else
+                {
+                    CustomMessageBox.Show("Max 10 at a time.");
+                    ((CheckBox)sender).Checked = false;
+                }
+                ThemeManager.ApplyThemeTo(this);
+
+                string selected = "";
+                try
+                {
+                    foreach (var curve in zedGraphControl1.GraphPane.CurveList)
+                    {
+                        selected = selected + curve.Label.Text + "|";
+                    }
+                }
+                catch { }
+                MainV2.config["Tuning_Graph_Selected"] = selected;
+            }
+            else
+            {
+                ((CheckBox)sender).BackColor = Color.Transparent;
+
+                // reset old stuff
+                if (list1item != null && list1item.Name == ((CheckBox)sender).Name)
+                {
+                    list1item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list1curve);
+                }
+                if (list2item != null && list2item.Name == ((CheckBox)sender).Name)
+                {
+                    list2item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list2curve);
+                }
+                if (list3item != null && list3item.Name == ((CheckBox)sender).Name)
+                {
+                    list3item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list3curve);
+                }
+                if (list4item != null && list4item.Name == ((CheckBox)sender).Name)
+                {
+                    list4item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list4curve);
+                }
+                if (list5item != null && list5item.Name == ((CheckBox)sender).Name)
+                {
+                    list5item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list5curve);
+                }
+                if (list6item != null && list6item.Name == ((CheckBox)sender).Name)
+                {
+                    list6item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list6curve);
+                }
+                if (list7item != null && list7item.Name == ((CheckBox)sender).Name)
+                {
+                    list7item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list7curve);
+                }
+                if (list8item != null && list8item.Name == ((CheckBox)sender).Name)
+                {
+                    list8item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list8curve);
+                }
+                if (list9item != null && list9item.Name == ((CheckBox)sender).Name)
+                {
+                    list9item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list9curve);
+                }
+                if (list10item != null && list10item.Name == ((CheckBox)sender).Name)
+                {
+                    list10item = null;
+                    zedGraphControl1.GraphPane.CurveList.Remove(list10curve);
+                }
+            }
+        }
+        bool setupPropertyInfo(ref System.Reflection.PropertyInfo input, string name, object source)
+        {
+            Type test = source.GetType();
+
+            foreach (var field in test.GetProperties())
+            {
+                if (field.Name == name)
+                {
+                    input = field;
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        //双击zedGraphControl1事件
+        private void zedGraphControl1_DoubleClick(object sender, EventArgs e)
+        {
+            Form selectform = new Form()
+            {
+                Name = "select",
+                Width = 100,
+                Height = 250,
+                StartPosition = FormStartPosition.CenterScreen,
+                Text = "可显示的参数",
+                MaximizeBox = false,
+                MinimizeBox = false
+            };
+
+            int x = 10;
+            int y = 10;
+
+            //{
+            //    CheckBox chk_box = new CheckBox();
+            //    chk_box.Text = "Logarithmic";
+            //    chk_box.Name = "Logarithmic";
+            //    chk_box.Location = new Point(x, y);
+            //    chk_box.Size = new System.Drawing.Size(100, 20);
+            //    chk_box.CheckedChanged += new EventHandler(chk_log_CheckedChanged);
+
+            //    selectform.Controls.Add(chk_box);
+            //}
+
+            ThemeManager.ApplyThemeTo(selectform);
+
+            //为logarithmic CheckBox空出位置
+            //y += 20;
+
+            object thisBoxed = MainV2.comPort.MAV.cs;
+            Type test = thisBoxed.GetType();
+            //想要显示的数据
+            Dictionary<string, string> WTS = new Dictionary<string, string>();
+            WTS.Add("accel_cal_x", "x轴加速度计偏置");
+            WTS.Add("accel_cal_y", "y轴加速度计偏置");
+            WTS.Add("accel_cal_z", "z轴加速度计偏置");
+            WTS.Add("airspeed", "空速（米/秒）");
+            WTS.Add("alt", "高度（米）");
+            WTS.Add("ax", "x轴加速度（米/秒²）");
+            WTS.Add("ay", "y轴加速度（米/秒²）");
+            WTS.Add("az", "z轴加速度（米/秒²）");
+            WTS.Add("battery_voltage", "电池电压（V）");
+            WTS.Add("battery_voltage2", "电池2电压（V）");
+            WTS.Add("boardvoltage", "飞控供电电压（V）");
+            WTS.Add("ch10in", "遥控输入通道10");
+            WTS.Add("ch11in", "遥控输入通道11");
+            WTS.Add("ch12in", "遥控输入通道12");
+            WTS.Add("ch13in", "遥控输入通道13");
+            WTS.Add("ch14in", "遥控输入通道14");
+            WTS.Add("ch15in", "遥控输入通道15");
+            WTS.Add("ch16in", "遥控输入通道16");
+            WTS.Add("ch1in", "遥控输入通道1");
+            WTS.Add("ch1out", "电机控制通道1");
+            WTS.Add("ch2in", "遥控输入通道2");
+            WTS.Add("ch2out", "电机控制通道2");
+            WTS.Add("ch3in", "遥控输入通道3");
+            WTS.Add("ch3out", "电机控制通道3");
+            WTS.Add("ch3percent", "遥控输入通道1");
+            WTS.Add("ch4in", "遥控输入通道4");
+            WTS.Add("ch4out", "电机控制通道4");
+            WTS.Add("ch5in", "遥控输入通道5");
+            WTS.Add("ch5out", "电机控制通道5");
+            WTS.Add("ch6in", "遥控输入通道6");
+            WTS.Add("ch6out", "电机控制通道6");
+            WTS.Add("ch7in", "遥控输入通道7");
+            WTS.Add("ch7out", "电机控制通道7");
+            WTS.Add("ch8in", "遥控输入通道8");
+            WTS.Add("ch8out", "电机控制通道8");
+            WTS.Add("ch9in", "遥控输入通道9");
+            WTS.Add("climbrate", "爬升率（米/秒）");
+            WTS.Add("current", "电流（A）");
+            WTS.Add("DistToHome", "离家坐标距离（米）");
+            WTS.Add("gpsstatus", "GPS1状态");
+            WTS.Add("gpsstatus2", "GPS2状态");
+            WTS.Add("gx", "x轴陀螺");
+            WTS.Add("gy", "y轴陀螺");
+            WTS.Add("gyro_cal_x", "x轴陀螺偏置");
+            WTS.Add("gyro_cal_y", "y轴陀螺偏置");
+            WTS.Add("gyro_cal_z", "z轴陀螺偏置");
+            WTS.Add("gz", "z轴陀螺");
+            WTS.Add("lat", "GPS1纬度（°）");
+            WTS.Add("lat2", "GPS2纬度（°）");
+            WTS.Add("linkqualitygcs", "数传连接质量");
+            WTS.Add("lng", "GPS1经度（°）");
+            WTS.Add("lng2", "GPS2经度（°）");
+            WTS.Add("mag_ofs_x", "x轴罗盘偏置");
+            WTS.Add("mag_ofs_y", "y轴罗盘偏置");
+            WTS.Add("mag_ofs_z", "z轴罗盘偏置");
+            WTS.Add("mx", "罗盘x轴");
+            WTS.Add("mx2", "罗盘2x轴");
+            WTS.Add("my", "罗盘y轴");
+            WTS.Add("my2", "罗盘2y轴");
+            WTS.Add("mz", "罗盘z轴");
+            WTS.Add("mz2", "罗盘2z轴");
+            WTS.Add("pitch", "俯仰角（°）");
+            WTS.Add("roll", "滚转角（°）");
+            WTS.Add("servovoltage", "备用电源电压（V）");
+            WTS.Add("yaw", "航偏角（°）");
+            //***********************************************************************
+            //WTS.Add("高度", "alt");
+            //WTS.Add("导航点距离", "wp_dist");
+            //WTS.Add("垂直速度", "verticalspeed");
+            //WTS.Add("地速", "groundspeed");
+            //WTS.Add("到飞行器距离", "DistToHome");
+            //WTS.Add("偏航角", "yaw");
+            //WTS.Add("nav偏航角", "nav_yaw");
+            //WTS.Add("俯仰角", "pitch");
+            //WTS.Add("nav俯仰角", "nav_pitch");
+            //WTS.Add("横滚角", "roll");
+            //WTS.Add("nav横滚角", "nav_roll");
+            foreach (var field in test.GetProperties())
+            {
+                if (WTS.ContainsKey(field.Name))
+                {
+                    // field.Name has the field's name.
+                    object fieldValue;
+                    TypeCode typeCode;
+                    try
+                    {
+                        fieldValue = field.GetValue(thisBoxed, null); // Get value
+
+                        if (fieldValue == null)
+                            continue;
+
+                        // Get the TypeCode enumeration. Multiple types get mapped to a common typecode.
+                        typeCode = Type.GetTypeCode(fieldValue.GetType());
+
+                    }
+                    catch { continue; }
+
+                    if (!(typeCode == TypeCode.Single || typeCode == TypeCode.Double || typeCode == TypeCode.Int32 || typeCode == TypeCode.UInt16))
+                        continue;
+
+                    CheckBox chk_box = new CheckBox();
+
+                    ThemeManager.ApplyThemeTo(chk_box);
+
+                    if (list1item != null && list1item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list2item != null && list2item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list3item != null && list3item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list4item != null && list4item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list5item != null && list5item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list6item != null && list6item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list7item != null && list7item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list8item != null && list8item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list9item != null && list9item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+                    if (list10item != null && list10item.Name == field.Name)
+                    {
+                        chk_box.Checked = true;
+                        chk_box.BackColor = Color.Green;
+                    }
+
+                    //chk_box.Text = field.Name;
+                    //显示中文
+                    chk_box.Text = WTS[field.Name];
+                    chk_box.Name = field.Name;
+                    chk_box.Location = new Point(x, y);
+                    chk_box.Size = new System.Drawing.Size(116, 20);
+                    chk_box.CheckedChanged += new EventHandler(chk_box_CheckedChanged);
+
+                    selectform.Controls.Add(chk_box);
+
+                    Application.DoEvents();
+
+                    x += 0;
+                    y += 20;
+
+                    if (y > selectform.Height - 120)
+                    {
+                        x += 116;
+                        y = 10;
+
+                        selectform.Width = x + 100;
+                    }
+                }
+
+            }
+            selectform.Width += 30;
+            //selectform.Show();
+            selectform.ShowDialog();
+        }
+
+        void chk_log_CheckedChanged(object sender, EventArgs e)
+        {
+            if (((CheckBox)sender).Checked)
+            {
+                zedGraphControl1.GraphPane.YAxis.Type = AxisType.Log;
+            }
+            else
+            {
+                zedGraphControl1.GraphPane.YAxis.Type = AxisType.Linear;
+            }
+        }
+
+        //通过飞控赋值
+        public void fuzhi()
+        {
+            //DateTime tunning = DateTime.Now.AddSeconds(0);
+            //if (tunning.AddMilliseconds(50) < DateTime.Now)
+            if (true)
+            {
+
+                double time = (Environment.TickCount - tickStart) / 1000.0;
+                if (list1item != null)
+                    list1.Add(time, ConvertToDouble(list1item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list2item != null)
+                    list2.Add(time, ConvertToDouble(list2item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list3item != null)
+                    list3.Add(time, ConvertToDouble(list3item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list4item != null)
+                    list4.Add(time, ConvertToDouble(list4item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list5item != null)
+                    list5.Add(time, ConvertToDouble(list5item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list6item != null)
+                    list6.Add(time, ConvertToDouble(list6item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list7item != null)
+                    list7.Add(time, ConvertToDouble(list7item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list8item != null)
+                    list8.Add(time, ConvertToDouble(list8item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list9item != null)
+                    list9.Add(time, ConvertToDouble(list9item.GetValue(MainV2.comPort.MAV.cs, null)));
+                if (list10item != null)
+                    list10.Add(time, ConvertToDouble(list10item.GetValue(MainV2.comPort.MAV.cs, null)));
+            }
+        }
+
+        private double ConvertToDouble(object input)
+        {
+            if (input.GetType() == typeof(float))
+            {
+                return (double)(float)input;
+            }
+            if (input.GetType() == typeof(double))
+            {
+                return (double)input;
+            }
+            if (input.GetType() == typeof(int))
+            {
+                return (double)(int)input;
+            }
+            if (input.GetType() == typeof(ushort))
+            {
+                return (double)(ushort)input;
+            }
+            if (input.GetType() == typeof(bool))
+            {
+                return (bool)input ? 1 : 0;
+            }
+
+            throw new Exception("Bad Type");
+        }
 
 
     }

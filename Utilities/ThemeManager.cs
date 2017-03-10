@@ -914,8 +914,12 @@ mc:Ignorable=""d""
                 else if (ctl.GetType() == typeof(ZedGraph.ZedGraphControl))
                 {
                     var zg1 = (ZedGraph.ZedGraphControl)ctl;
-                    zg1.GraphPane.Chart.Fill = new ZedGraph.Fill(Color.FromArgb(0x1f, 0x1f, 0x20));
-                    zg1.GraphPane.Fill = new ZedGraph.Fill(Color.FromArgb(0x37, 0x37, 0x38));
+                    //zg1.GraphPane.Chart.Fill = new ZedGraph.Fill(Color.FromArgb(0x1f, 0x1f, 0x20));
+                    //zg1.GraphPane.Fill = new ZedGraph.Fill(Color.FromArgb(0x37, 0x37, 0x38));
+                    //表格内填充色
+                    zg1.GraphPane.Chart.Fill = new ZedGraph.Fill(Color.White);
+                    //表格外填充色
+                    zg1.GraphPane.Fill = new ZedGraph.Fill(Color.LightGray);
 
                     try
                     {
@@ -924,26 +928,47 @@ mc:Ignorable=""d""
                     }
                     catch { }
 
-                    zg1.GraphPane.Title.FontSpec.FontColor = TextColor;
+                    //zg1.GraphPane.Title.FontSpec.FontColor = TextColor;
+                    zg1.GraphPane.Title.FontSpec.FontColor = Color.Black;
 
-                    zg1.GraphPane.XAxis.MajorTic.Color = Color.White;
-                    zg1.GraphPane.XAxis.MinorTic.Color = Color.White;
-                    zg1.GraphPane.YAxis.MajorTic.Color = Color.White;
-                    zg1.GraphPane.YAxis.MinorTic.Color = Color.White;
-                    zg1.GraphPane.Y2Axis.MajorTic.Color = Color.White;
-                    zg1.GraphPane.Y2Axis.MinorTic.Color = Color.White;
 
-                    zg1.GraphPane.XAxis.MajorGrid.Color = Color.White;
-                    zg1.GraphPane.YAxis.MajorGrid.Color = Color.White;
-                    zg1.GraphPane.Y2Axis.MajorGrid.Color = Color.White;
+                    //zg1.GraphPane.XAxis.MajorTic.Color = Color.White;
+                    //zg1.GraphPane.XAxis.MinorTic.Color = Color.White;
+                    //zg1.GraphPane.YAxis.MajorTic.Color = Color.White;
+                    //zg1.GraphPane.YAxis.MinorTic.Color = Color.White;
+                    //zg1.GraphPane.Y2Axis.MajorTic.Color = Color.White;
+                    //zg1.GraphPane.Y2Axis.MinorTic.Color = Color.White;
 
-                    zg1.GraphPane.YAxis.Scale.FontSpec.FontColor = Color.White;
-                    zg1.GraphPane.YAxis.Title.FontSpec.FontColor = Color.White;
-                    zg1.GraphPane.Y2Axis.Title.FontSpec.FontColor = Color.White;
-                    zg1.GraphPane.Y2Axis.Scale.FontSpec.FontColor = Color.White;
+                    zg1.GraphPane.XAxis.MajorTic.Color = Color.Black;
+                    zg1.GraphPane.XAxis.MinorTic.Color = Color.Black;
+                    zg1.GraphPane.YAxis.MajorTic.Color = Color.Black;
+                    zg1.GraphPane.YAxis.MinorTic.Color = Color.Black;
+                    zg1.GraphPane.Y2Axis.MajorTic.Color = Color.Black;
+                    zg1.GraphPane.Y2Axis.MinorTic.Color = Color.Black;
 
-                    zg1.GraphPane.XAxis.Scale.FontSpec.FontColor = Color.White;
-                    zg1.GraphPane.XAxis.Title.FontSpec.FontColor = Color.White;
+                    //zg1.GraphPane.XAxis.MajorGrid.Color = Color.White;
+                    //zg1.GraphPane.YAxis.MajorGrid.Color = Color.White;
+                    //zg1.GraphPane.Y2Axis.MajorGrid.Color = Color.White;
+                    //图表内线条颜色
+                    zg1.GraphPane.XAxis.MajorGrid.Color = Color.Black;
+                    zg1.GraphPane.YAxis.MajorGrid.Color = Color.Black;
+                    zg1.GraphPane.Y2Axis.MajorGrid.Color = Color.Black;
+
+                    //zg1.GraphPane.YAxis.Scale.FontSpec.FontColor = Color.White;
+                    //zg1.GraphPane.YAxis.Title.FontSpec.FontColor = Color.White;
+                    //zg1.GraphPane.Y2Axis.Title.FontSpec.FontColor = Color.White;
+                    //zg1.GraphPane.Y2Axis.Scale.FontSpec.FontColor = Color.White;
+                    //纵轴相关文字颜色
+                    zg1.GraphPane.YAxis.Scale.FontSpec.FontColor = Color.Black;
+                    zg1.GraphPane.YAxis.Title.FontSpec.FontColor = Color.Black;
+                    zg1.GraphPane.Y2Axis.Title.FontSpec.FontColor = Color.Black;
+                    zg1.GraphPane.Y2Axis.Scale.FontSpec.FontColor = Color.Black;
+
+                    //zg1.GraphPane.XAxis.Scale.FontSpec.FontColor = Color.White;
+                    //zg1.GraphPane.XAxis.Title.FontSpec.FontColor = Color.White;
+
+                    zg1.GraphPane.XAxis.Scale.FontSpec.FontColor = Color.Black;
+                    zg1.GraphPane.XAxis.Title.FontSpec.FontColor = Color.Black;
 
                     zg1.GraphPane.Legend.Fill = new ZedGraph.Fill(Color.FromArgb(0x85, 0x84, 0x83));
                     zg1.GraphPane.Legend.FontSpec.FontColor = TextColor;

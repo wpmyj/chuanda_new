@@ -38,6 +38,7 @@ namespace ByAeroBeHero.Controls
             doWorkArgs = new ProgressWorkerEventArgs();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.btnClose.Visible = false;
+            this.btnCancel.Visible = false;
 
         }
 
@@ -197,6 +198,7 @@ namespace ByAeroBeHero.Controls
                     this.progressBar1.Style = ProgressBarStyle.Continuous;
                     this.progressBar1.Value = 100;
                     this.btnCancel.Visible = false;
+
                     this.btnClose.Visible = false;
                 });
 
@@ -311,7 +313,8 @@ namespace ByAeroBeHero.Controls
             lock (locker)
             {
                 pgv = _progress;
-                lblProgressMessage.Text = _status;
+                //隐藏连接状态消息label
+                //lblProgressMessage.Text = _status;
             }
             if (pgv == -1)
             {

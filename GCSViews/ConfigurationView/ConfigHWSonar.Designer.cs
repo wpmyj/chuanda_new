@@ -33,8 +33,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.mavlinkComboBox1 = new ByAeroBeHero.Controls.MavlinkComboBox();
-            this.cb_LevelSensor = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.MBtnSendSaray = new ByAeroBeHero.Controls.MyButton();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -42,7 +40,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.chbSonar = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -53,6 +50,9 @@
             this.SPRAY_SPEED_MAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.SPRAY_RATE_MAX = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
             this.SPRAY_SPEED_MIN = new ByAeroBeHero.Controls.MavlinkNumericUpDown();
+            this.chbSonar = new ByAeroBeHero.Controls.MavlinkCheckBox();
+            this.mavlinkComboBox1 = new ByAeroBeHero.Controls.MavlinkComboBox();
+            this.cb_LevelSensor = new ByAeroBeHero.Controls.MavlinkCheckBox();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -83,24 +83,6 @@
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
-            // 
-            // mavlinkComboBox1
-            // 
-            this.mavlinkComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.mavlinkComboBox1, "mavlinkComboBox1");
-            this.mavlinkComboBox1.FormattingEnabled = true;
-            this.mavlinkComboBox1.Name = "mavlinkComboBox1";
-            this.mavlinkComboBox1.ParamName = null;
-            this.mavlinkComboBox1.SubControl = null;
-            // 
-            // cb_LevelSensor
-            // 
-            resources.ApplyResources(this.cb_LevelSensor, "cb_LevelSensor");
-            this.cb_LevelSensor.Name = "cb_LevelSensor";
-            this.cb_LevelSensor.OffValue = 0D;
-            this.cb_LevelSensor.OnValue = 1D;
-            this.cb_LevelSensor.ParamName = null;
-            this.cb_LevelSensor.UseVisualStyleBackColor = true;
             // 
             // MBtnSendSaray
             // 
@@ -155,15 +137,6 @@
             this.panel1.Controls.Add(this.label3);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // chbSonar
-            // 
-            resources.ApplyResources(this.chbSonar, "chbSonar");
-            this.chbSonar.Name = "chbSonar";
-            this.chbSonar.OffValue = 0D;
-            this.chbSonar.OnValue = 1D;
-            this.chbSonar.ParamName = null;
-            this.chbSonar.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -302,6 +275,33 @@
             0,
             65536});
             this.SPRAY_SPEED_MIN.ValueChanged += new System.EventHandler(this.SPRAY_ValueChanged);
+            // 
+            // chbSonar
+            // 
+            resources.ApplyResources(this.chbSonar, "chbSonar");
+            this.chbSonar.Name = "chbSonar";
+            this.chbSonar.OffValue = 0D;
+            this.chbSonar.OnValue = 1D;
+            this.chbSonar.ParamName = null;
+            this.chbSonar.UseVisualStyleBackColor = true;
+            // 
+            // mavlinkComboBox1
+            // 
+            this.mavlinkComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.mavlinkComboBox1, "mavlinkComboBox1");
+            this.mavlinkComboBox1.FormattingEnabled = true;
+            this.mavlinkComboBox1.Name = "mavlinkComboBox1";
+            this.mavlinkComboBox1.ParamName = null;
+            this.mavlinkComboBox1.SubControl = null;
+            // 
+            // cb_LevelSensor
+            // 
+            resources.ApplyResources(this.cb_LevelSensor, "cb_LevelSensor");
+            this.cb_LevelSensor.Name = "cb_LevelSensor";
+            this.cb_LevelSensor.OffValue = 0D;
+            this.cb_LevelSensor.OnValue = 1D;
+            this.cb_LevelSensor.ParamName = null;
+            this.cb_LevelSensor.UseVisualStyleBackColor = true;
             // 
             // ConfigHWSonar
             // 

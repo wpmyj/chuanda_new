@@ -1232,6 +1232,7 @@ namespace ByAeroBeHero
             // sanity check
             if (comPort.BaseStream.IsOpen && MainV2.comPort.MAV.cs.groundspeed > 4)
             {
+                //if (DialogResult.No == CustomMessageBox.Show(Strings.Stillmoving, Strings.Disconnect, MessageBoxButtons.YesNo))
                 if (DialogResult.No == CustomMessageBox.Show(Strings.Stillmoving, Strings.Disconnect, MessageBoxButtons.YesNo))
                 {
                     return;
@@ -1333,7 +1334,7 @@ namespace ByAeroBeHero
                 serialPort1.Open();
 
                 //链接显示
-                _connectionControl.IsConnected(true);
+                //_connectionControl.IsConnected(true);
 
                 if (!serialPort1.IsOpen)
                 {

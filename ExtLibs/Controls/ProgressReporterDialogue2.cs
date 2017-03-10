@@ -38,6 +38,8 @@ namespace ByAeroBeHero.Controls
             doWorkArgs = new ProgressWorkerEventArgs2();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.btnClose.Visible = false;
+            //隐藏取消按钮
+            this.btnCancel.Visible = false;
 
         }
 
@@ -171,7 +173,7 @@ namespace ByAeroBeHero.Controls
         {
             this.Invoke((MethodInvoker)delegate
             {
-                this.btnClose.Visible = true;
+                this.btnClose.Visible = false;
             });
         }
 

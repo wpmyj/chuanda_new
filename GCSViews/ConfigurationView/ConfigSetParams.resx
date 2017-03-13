@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_RTL_ALT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 72</value>
+    <value>268, 65</value>
   </data>
   <data name="lbl_RTL_ALT.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 20</value>
@@ -163,7 +163,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="NUM_movelength.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 42</value>
+    <value>574, 49</value>
   </data>
   <data name="NUM_movelength.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -199,7 +199,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="tboxWriteV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 69</value>
+    <value>703, 61</value>
   </data>
   <data name="tboxWriteV.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 27</value>
@@ -229,7 +229,7 @@
     <value>微软雅黑, 10.2pt</value>
   </data>
   <data name="RTL_ALT_P.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 68</value>
+    <value>418, 61</value>
   </data>
   <data name="RTL_ALT_P.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
@@ -247,7 +247,7 @@
     <value>RTL_ALT_P</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.31600, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RTL_ALT_P.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -265,7 +265,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblMoveDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 46</value>
+    <value>423, 53</value>
   </data>
   <data name="lblMoveDistance.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 20</value>
@@ -295,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="myButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 112</value>
+    <value>574, 105</value>
   </data>
   <data name="myButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -325,7 +325,7 @@
     <value>NoControl</value>
   </data>
   <data name="Btn_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 112</value>
+    <value>467, 105</value>
   </data>
   <data name="Btn_.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -358,7 +358,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblAllMove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 46</value>
+    <value>667, 53</value>
   </data>
   <data name="lblAllMove.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -391,7 +391,7 @@
     <value>NoControl</value>
   </data>
   <data name="chb_AllMove.Location" type="System.Drawing.Point, System.Drawing">
-    <value>391, 49</value>
+    <value>757, 56</value>
   </data>
   <data name="chb_AllMove.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 17</value>
@@ -424,7 +424,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblCheckSpeech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 48</value>
+    <value>463, 52</value>
   </data>
   <data name="lblCheckSpeech.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -457,7 +457,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_enablespeech.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 47</value>
+    <value>553, 51</value>
   </data>
   <data name="CHK_enablespeech.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 24</value>
@@ -490,7 +490,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_speechwaypoint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 47</value>
+    <value>618, 51</value>
   </data>
   <data name="CHK_speechwaypoint.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 24</value>
@@ -523,7 +523,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_speechotherParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>390, 46</value>
+    <value>780, 50</value>
   </data>
   <data name="CHK_speechotherParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 24</value>
@@ -556,7 +556,7 @@
     <value>NoControl</value>
   </data>
   <data name="CHK_speechflightParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>294, 46</value>
+    <value>684, 50</value>
   </data>
   <data name="CHK_speechflightParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 24</value>
@@ -589,7 +589,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblChangeRow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 38</value>
+    <value>59, 44</value>
   </data>
   <data name="lblChangeRow.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -599,6 +599,9 @@
   </data>
   <data name="lblChangeRow.Text" xml:space="preserve">
     <value>换行关水泵：</value>
+  </data>
+  <data name="lblChangeRow.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;lblChangeRow.Name" xml:space="preserve">
     <value>lblChangeRow</value>
@@ -622,7 +625,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>570, 71</value>
+    <value>758, 63</value>
   </data>
   <data name="lblVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 20</value>
@@ -655,7 +658,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblVVNo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 72</value>
+    <value>594, 64</value>
   </data>
   <data name="lblVVNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 20</value>
@@ -688,7 +691,7 @@
     <value>NoControl</value>
   </data>
   <data name="chbShow_AllParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 46</value>
+    <value>484, 46</value>
   </data>
   <data name="chbShow_AllParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 24</value>
@@ -721,7 +724,7 @@
     <value>NoControl</value>
   </data>
   <data name="SPRAY_WRAP_EN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 41</value>
+    <value>172, 47</value>
   </data>
   <data name="SPRAY_WRAP_EN.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 17</value>
@@ -729,11 +732,14 @@
   <data name="SPRAY_WRAP_EN.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
   </data>
+  <data name="SPRAY_WRAP_EN.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Name" xml:space="preserve">
     <value>SPRAY_WRAP_EN</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6221.31600, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_WRAP_EN.Parent" xml:space="preserve">
     <value>panel4</value>
@@ -751,7 +757,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblControlParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 0</value>
+    <value>492, 0</value>
   </data>
   <data name="lblControlParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 24</value>
@@ -778,7 +784,7 @@
     <value>1, 0</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 26</value>
+    <value>1079, 26</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -796,10 +802,10 @@
     <value>1</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 13</value>
+    <value>100, 30</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>679, 164</value>
+    <value>1080, 164</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>105</value>
@@ -826,7 +832,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblPCParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 1</value>
+    <value>493, 2</value>
   </data>
   <data name="lblPCParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 24</value>
@@ -853,7 +859,7 @@
     <value>0, 1</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 26</value>
+    <value>1080, 26</value>
   </data>
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -871,10 +877,10 @@
     <value>0</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 183</value>
+    <value>100, 198</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 100</value>
+    <value>1080, 100</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>106</value>
@@ -901,7 +907,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblSDParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 1</value>
+    <value>494, -1</value>
   </data>
   <data name="lblSDParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 24</value>
@@ -931,7 +937,7 @@
     <value>-1, 0</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 26</value>
+    <value>1081, 26</value>
   </data>
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -949,10 +955,10 @@
     <value>2</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 289</value>
+    <value>100, 302</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>677, 100</value>
+    <value>1080, 100</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>107</value>
@@ -979,7 +985,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblShowParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 0</value>
+    <value>492, -1</value>
   </data>
   <data name="lblShowParams.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 24</value>
@@ -1003,10 +1009,10 @@
     <value>0</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>1, 0</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 26</value>
+    <value>1077, 26</value>
   </data>
   <data name="panel8.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1024,10 +1030,10 @@
     <value>0</value>
   </data>
   <data name="pSetParams.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 396</value>
+    <value>100, 406</value>
   </data>
   <data name="pSetParams.Size" type="System.Drawing.Size, System.Drawing">
-    <value>677, 100</value>
+    <value>1080, 100</value>
   </data>
   <data name="pSetParams.TabIndex" type="System.Int32, mscorlib">
     <value>108</value>
@@ -1057,7 +1063,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 536</value>
+    <value>1261, 536</value>
   </data>
   <data name="&gt;&gt;timer1.Name" xml:space="preserve">
     <value>timer1</value>

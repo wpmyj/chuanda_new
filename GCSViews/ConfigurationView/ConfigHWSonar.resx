@@ -163,7 +163,7 @@
     <value>False</value>
   </data>
   <data name="mavlinkComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 20</value>
+    <value>247, 21</value>
   </data>
   <data name="mavlinkComboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 28</value>
@@ -175,7 +175,7 @@
     <value>mavlinkComboBox1</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkComboBox1.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -205,13 +205,73 @@
     <value>cb_LevelSensor</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;cb_LevelSensor.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="SPRAY_RATE_MAX.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SPRAY_RATE_MAX.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="SPRAY_RATE_MAX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 22</value>
+  </data>
+  <data name="SPRAY_RATE_MAX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 27</value>
+  </data>
+  <data name="SPRAY_RATE_MAX.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SPRAY_RATE_MAX.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MAX.Name" xml:space="preserve">
+    <value>SPRAY_RATE_MAX</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MAX.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MAX.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MAX.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SPRAY_RATE_MIN.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="SPRAY_RATE_MIN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="SPRAY_RATE_MIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 22</value>
+  </data>
+  <data name="SPRAY_RATE_MIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 27</value>
+  </data>
+  <data name="SPRAY_RATE_MIN.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="SPRAY_RATE_MIN.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MIN.Name" xml:space="preserve">
+    <value>SPRAY_RATE_MIN</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MIN.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MIN.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;SPRAY_RATE_MIN.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="groupBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
@@ -247,7 +307,7 @@
     <value>NoControl</value>
   </data>
   <data name="MBtnSendSaray.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 138</value>
+    <value>489, 124</value>
   </data>
   <data name="MBtnSendSaray.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 23</value>
@@ -277,7 +337,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 101</value>
+    <value>533, 87</value>
   </data>
   <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -310,7 +370,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>534, 72</value>
+    <value>219, 74</value>
   </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -324,6 +384,9 @@
   <data name="label10.Text" xml:space="preserve">
     <value>~</value>
   </data>
+  <data name="label10.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
   </data>
@@ -334,7 +397,7 @@
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -346,7 +409,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 68</value>
+    <value>45, 70</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -359,6 +422,9 @@
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>水泵调速(%)</value>
+  </data>
+  <data name="label8.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -382,7 +448,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 97</value>
+    <value>341, 83</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -406,7 +472,7 @@
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -442,7 +508,7 @@
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="chbSonar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
@@ -472,13 +538,34 @@
     <value>chbSonar</value>
   </data>
   <data name="&gt;&gt;chbSonar.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;chbSonar.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;chbSonar.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>484, -1</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>雷达设备管理</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -514,7 +601,7 @@
     <value>1</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 62</value>
+    <value>100, 30</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1080, 78</value>
@@ -534,38 +621,26 @@
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblSpray.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblSpray.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 10pt, style=Bold</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblSpray.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>484, -1</value>
+  <data name="lblSpray.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 1</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 24</value>
+  <data name="lblSpray.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 24</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblSpray.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>雷达设备管理</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="lblSpray.Text" xml:space="preserve">
+    <value>飞行速度设置管理</value>
   </data>
   <data name="&gt;&gt;lblSpray.Name" xml:space="preserve">
     <value>lblSpray</value>
@@ -622,40 +697,13 @@
     <value>SPRAY_SPEEN_EN</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEEN_EN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkCheckBox, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEEN_EN.Parent" xml:space="preserve">
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEEN_EN.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="SPRAY_RATE_MIN.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SPRAY_RATE_MIN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="SPRAY_RATE_MIN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 65</value>
-  </data>
-  <data name="SPRAY_RATE_MIN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="SPRAY_RATE_MIN.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MIN.Name" xml:space="preserve">
-    <value>SPRAY_RATE_MIN</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MIN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MIN.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MIN.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="SPRAY_SPEED_MAX.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -664,7 +712,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="SPRAY_SPEED_MAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 96</value>
+    <value>565, 82</value>
   </data>
   <data name="SPRAY_SPEED_MAX.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 27</value>
@@ -676,40 +724,13 @@
     <value>SPRAY_SPEED_MAX</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MAX.Parent" xml:space="preserve">
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MAX.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="SPRAY_RATE_MAX.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="SPRAY_RATE_MAX.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="SPRAY_RATE_MAX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 65</value>
-  </data>
-  <data name="SPRAY_RATE_MAX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 27</value>
-  </data>
-  <data name="SPRAY_RATE_MAX.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MAX.Name" xml:space="preserve">
-    <value>SPRAY_RATE_MAX</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MAX.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;SPRAY_RATE_MAX.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>6</value>
   </data>
   <data name="SPRAY_SPEED_MIN.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -718,7 +739,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="SPRAY_SPEED_MIN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 96</value>
+    <value>458, 82</value>
   </data>
   <data name="SPRAY_SPEED_MIN.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 27</value>
@@ -730,16 +751,16 @@
     <value>SPRAY_SPEED_MIN</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MIN.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28239, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.24953, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MIN.Parent" xml:space="preserve">
     <value>panel5</value>
   </data>
   <data name="&gt;&gt;SPRAY_SPEED_MIN.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 146</value>
+    <value>100, 114</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
     <value>1080, 176</value>
@@ -757,39 +778,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblSpray.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSpray.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
-  </data>
-  <data name="lblSpray.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblSpray.Location" type="System.Drawing.Point, System.Drawing">
-    <value>467, 1</value>
-  </data>
-  <data name="lblSpray.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 24</value>
-  </data>
-  <data name="lblSpray.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblSpray.Text" xml:space="preserve">
-    <value>水泵开度设置管理</value>
-  </data>
-  <data name="&gt;&gt;lblSpray.Name" xml:space="preserve">
-    <value>lblSpray</value>
-  </data>
-  <data name="&gt;&gt;lblSpray.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSpray.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;lblSpray.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

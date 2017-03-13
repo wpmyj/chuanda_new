@@ -145,7 +145,7 @@
     <value>RATE_YAW_P</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_P.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -175,7 +175,7 @@
     <value>RATE_YAW_FF</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_FF.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_FF.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -205,7 +205,7 @@
     <value>RATE_RLL_FF</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_FF.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_FF.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -235,7 +235,7 @@
     <value>RATE_PIT_FF</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_FF.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_FF.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -268,7 +268,7 @@
     <value>RATE_PIT_IMAX</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_IMAX.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -301,7 +301,7 @@
     <value>RATE_PIT_D</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_D.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -334,7 +334,7 @@
     <value>RATE_PIT_I</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_I.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -367,7 +367,7 @@
     <value>RATE_PIT_P</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_PIT_P.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -400,7 +400,7 @@
     <value>RATE_RLL_IMAX</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_IMAX.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -433,7 +433,7 @@
     <value>RATE_RLL_D</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_D.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -466,7 +466,7 @@
     <value>RATE_RLL_I</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_I.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -499,7 +499,7 @@
     <value>RATE_RLL_P</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_RLL_P.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -532,7 +532,7 @@
     <value>RATE_YAW_I</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_I.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_I.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -565,7 +565,7 @@
     <value>RATE_YAW_IMAX</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_IMAX.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_IMAX.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -598,7 +598,7 @@
     <value>RATE_YAW_D</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_D.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RATE_YAW_D.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -631,7 +631,7 @@
     <value>STB_YAW_P</value>
   </data>
   <data name="&gt;&gt;STB_YAW_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;STB_YAW_P.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -664,7 +664,7 @@
     <value>STB_RLL_P</value>
   </data>
   <data name="&gt;&gt;STB_RLL_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;STB_RLL_P.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -697,7 +697,7 @@
     <value>STB_PIT_P</value>
   </data>
   <data name="&gt;&gt;STB_PIT_P.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6256.33522, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.18110, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;STB_PIT_P.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -748,7 +748,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_refreshpart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>341, 274</value>
+    <value>403, 273</value>
   </data>
   <data name="BUT_refreshpart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -784,7 +784,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_writePIDS.Location" type="System.Drawing.Point, System.Drawing">
-    <value>490, 274</value>
+    <value>552, 273</value>
   </data>
   <data name="BUT_writePIDS.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -871,7 +871,7 @@
     <value>0</value>
   </data>
   <data name="panel20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 211</value>
+    <value>809, 210</value>
   </data>
   <data name="panel20.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -916,7 +916,7 @@
     <value>0</value>
   </data>
   <data name="panel19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 158</value>
+    <value>809, 157</value>
   </data>
   <data name="panel19.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -961,7 +961,7 @@
     <value>0</value>
   </data>
   <data name="panel18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 111</value>
+    <value>809, 110</value>
   </data>
   <data name="panel18.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1006,7 +1006,7 @@
     <value>0</value>
   </data>
   <data name="panel17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 211</value>
+    <value>681, 210</value>
   </data>
   <data name="panel17.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1051,7 +1051,7 @@
     <value>0</value>
   </data>
   <data name="panel16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 158</value>
+    <value>681, 157</value>
   </data>
   <data name="panel16.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1099,7 +1099,7 @@
     <value>0</value>
   </data>
   <data name="panel15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>619, 111</value>
+    <value>681, 110</value>
   </data>
   <data name="panel15.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1144,7 +1144,7 @@
     <value>0</value>
   </data>
   <data name="panel14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>493, 211</value>
+    <value>555, 210</value>
   </data>
   <data name="panel14.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1189,7 +1189,7 @@
     <value>0</value>
   </data>
   <data name="panel13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>493, 158</value>
+    <value>555, 157</value>
   </data>
   <data name="panel13.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1234,7 +1234,7 @@
     <value>0</value>
   </data>
   <data name="panel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>493, 111</value>
+    <value>555, 110</value>
   </data>
   <data name="panel12.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1279,7 +1279,7 @@
     <value>0</value>
   </data>
   <data name="panel11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 211</value>
+    <value>429, 210</value>
   </data>
   <data name="panel11.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1324,7 +1324,7 @@
     <value>0</value>
   </data>
   <data name="panel10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 158</value>
+    <value>429, 157</value>
   </data>
   <data name="panel10.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1369,7 +1369,7 @@
     <value>0</value>
   </data>
   <data name="panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 111</value>
+    <value>429, 110</value>
   </data>
   <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1417,7 +1417,7 @@
     <value>0</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 209</value>
+    <value>212, 208</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1462,7 +1462,7 @@
     <value>0</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 158</value>
+    <value>212, 157</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1507,7 +1507,7 @@
     <value>0</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>150, 111</value>
+    <value>212, 110</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -1537,7 +1537,7 @@
     <value>NoControl</value>
   </data>
   <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 55</value>
+    <value>653, 54</value>
   </data>
   <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -1561,7 +1561,7 @@
     <value>28</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 79</value>
+    <value>425, 78</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>503, 1</value>
@@ -1591,7 +1591,7 @@
     <value>NoControl</value>
   </data>
   <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 57</value>
+    <value>232, 56</value>
   </data>
   <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -1615,7 +1615,7 @@
     <value>24</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 81</value>
+    <value>202, 80</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 1</value>
@@ -1645,7 +1645,7 @@
     <value>NoControl</value>
   </data>
   <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 87</value>
+    <value>467, 86</value>
   </data>
   <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 20</value>
@@ -1678,7 +1678,7 @@
     <value>NoControl</value>
   </data>
   <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 87</value>
+    <value>597, 86</value>
   </data>
   <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 20</value>
@@ -1711,7 +1711,7 @@
     <value>NoControl</value>
   </data>
   <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
-    <value>658, 87</value>
+    <value>720, 86</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
     <value>20, 20</value>
@@ -1744,7 +1744,7 @@
     <value>NoControl</value>
   </data>
   <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>772, 87</value>
+    <value>834, 86</value>
   </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
@@ -1777,7 +1777,7 @@
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>181, 87</value>
+    <value>243, 86</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 20</value>
@@ -1810,7 +1810,7 @@
     <value>NoControl</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 158</value>
+    <value>147, 157</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -1843,7 +1843,7 @@
     <value>NoControl</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 211</value>
+    <value>147, 210</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -1876,7 +1876,7 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, 111</value>
+    <value>147, 110</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -1912,7 +1912,7 @@
     <value>NoControl</value>
   </data>
   <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 0</value>
+    <value>466, -1</value>
   </data>
   <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 24</value>
@@ -1942,7 +1942,7 @@
     <value>1, 1</value>
   </data>
   <data name="panel22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>940, 26</value>
+    <value>1077, 26</value>
   </data>
   <data name="panel22.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1960,10 +1960,10 @@
     <value>0</value>
   </data>
   <data name="panel21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 11</value>
+    <value>100, 30</value>
   </data>
   <data name="panel21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>943, 334</value>
+    <value>1080, 334</value>
   </data>
   <data name="panel21.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -1996,7 +1996,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1130, 384</value>
+    <value>1234, 483</value>
   </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>

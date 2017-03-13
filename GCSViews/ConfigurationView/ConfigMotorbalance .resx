@@ -237,9 +237,6 @@
   <data name="&gt;&gt;lblprogress1.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="lblPositive1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -261,6 +258,9 @@
   <data name="lblPositive1.Text" xml:space="preserve">
     <value>正转平均值：</value>
   </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="lblPositive1.ToolTip" xml:space="preserve">
     <value>正转输出通道的平均值，四轴：2、4通道；六轴：2、4、6轴通道；八轴：2、4、6、8通道</value>
   </data>
@@ -474,9 +474,6 @@
   <data name="&gt;&gt;lblCheckReson1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="BtnChenckbalance.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
@@ -624,6 +621,24 @@
   <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="lblMotorbalance.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblMotorbalance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblMotorbalance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 0</value>
+  </data>
+  <data name="lblMotorbalance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="lblMotorbalance.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblMotorbalance.Text" xml:space="preserve">
+    <value>动平衡校准</value>
+  </data>
   <data name="&gt;&gt;lblMotorbalance.Name" xml:space="preserve">
     <value>lblMotorbalance</value>
   </data>
@@ -658,7 +673,7 @@
     <value>1</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 62</value>
+    <value>100, 30</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>1080, 260</value>
@@ -676,36 +691,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblMotorbalance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblMotorbalance.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
-  </data>
-  <data name="lblMotorbalance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 0</value>
-  </data>
-  <data name="lblMotorbalance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 24</value>
-  </data>
-  <data name="lblMotorbalance.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblMotorbalance.Text" xml:space="preserve">
-    <value>动平衡校准</value>
-  </data>
-  <data name="&gt;&gt;lblMotorbalance.Name" xml:space="preserve">
-    <value>lblMotorbalance</value>
-  </data>
-  <data name="&gt;&gt;lblMotorbalance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblMotorbalance.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;lblMotorbalance.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

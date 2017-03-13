@@ -3035,7 +3035,7 @@
     <value>宋体, 9pt</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 62</value>
+    <value>100, 30</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>1080, 714</value>

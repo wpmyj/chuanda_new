@@ -192,45 +192,6 @@
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="&gt;&gt;lblWarnInfo.Name" xml:space="preserve">
-    <value>lblWarnInfo</value>
-  </data>
-  <data name="&gt;&gt;lblWarnInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblWarnInfo.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;lblWarnInfo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 79</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>868, 77</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="lblWarnInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -270,44 +231,35 @@
   <data name="&gt;&gt;lblWarnInfo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panCalibrate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
+  <data name="panel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
   </data>
-  <data name="&gt;&gt;lblCalibrate.Name" xml:space="preserve">
-    <value>lblCalibrate</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 79</value>
   </data>
-  <data name="&gt;&gt;lblCalibrate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCalibrate.Parent" xml:space="preserve">
-    <value>panCalibrate</value>
-  </data>
-  <data name="&gt;&gt;lblCalibrate.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panCalibrate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 79</value>
-  </data>
-  <data name="panCalibrate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="panCalibrate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 57</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>868, 77</value>
   </data>
-  <data name="panCalibrate.TabIndex" type="System.Int32, mscorlib">
-    <value>87</value>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
   </data>
-  <data name="&gt;&gt;panCalibrate.Name" xml:space="preserve">
-    <value>panCalibrate</value>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
   </data>
-  <data name="&gt;&gt;panCalibrate.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panCalibrate.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;panCalibrate.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panCalibrate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
   <data name="lblCalibrate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -345,6 +297,30 @@
   <data name="&gt;&gt;lblCalibrate.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="panCalibrate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 79</value>
+  </data>
+  <data name="panCalibrate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panCalibrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 57</value>
+  </data>
+  <data name="panCalibrate.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;panCalibrate.Name" xml:space="preserve">
+    <value>panCalibrate</value>
+  </data>
+  <data name="&gt;&gt;panCalibrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panCalibrate.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;panCalibrate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnShowCalibrate.Font" type="System.Drawing.Font, System.Drawing">
     <value>微软雅黑, 9pt</value>
   </data>
@@ -377,6 +353,27 @@
   </data>
   <data name="panel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="lblCorrectA.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCorrectA.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblCorrectA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCorrectA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 1</value>
+  </data>
+  <data name="lblCorrectA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 24</value>
+  </data>
+  <data name="lblCorrectA.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCorrectA.Text" xml:space="preserve">
+    <value>修正</value>
   </data>
   <data name="&gt;&gt;lblCorrectA.Name" xml:space="preserve">
     <value>lblCorrectA</value>
@@ -448,7 +445,7 @@
     <value>3</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 62</value>
+    <value>100, 30</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>1080, 150</value>
@@ -468,41 +465,29 @@
   <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblCorrectA.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCorrectA.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
-  </data>
-  <data name="lblCorrectA.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblCorrectA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 1</value>
-  </data>
-  <data name="lblCorrectA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 24</value>
-  </data>
-  <data name="lblCorrectA.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblCorrectA.Text" xml:space="preserve">
-    <value>修正</value>
-  </data>
-  <data name="&gt;&gt;lblCorrectA.Name" xml:space="preserve">
-    <value>lblCorrectA</value>
-  </data>
-  <data name="&gt;&gt;lblCorrectA.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCorrectA.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;lblCorrectA.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
+  </data>
+  <data name="lblCalibrateAccel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCalibrateAccel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 10pt, style=Bold</value>
+  </data>
+  <data name="lblCalibrateAccel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCalibrateAccel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>518, 0</value>
+  </data>
+  <data name="lblCalibrateAccel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 24</value>
+  </data>
+  <data name="lblCalibrateAccel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblCalibrateAccel.Text" xml:space="preserve">
+    <value>校准</value>
   </data>
   <data name="&gt;&gt;lblCalibrateAccel.Name" xml:space="preserve">
     <value>lblCalibrateAccel</value>
@@ -604,39 +589,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblCalibrateAccel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblCalibrateAccel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 10pt, style=Bold</value>
-  </data>
-  <data name="lblCalibrateAccel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblCalibrateAccel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 0</value>
-  </data>
-  <data name="lblCalibrateAccel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 24</value>
-  </data>
-  <data name="lblCalibrateAccel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblCalibrateAccel.Text" xml:space="preserve">
-    <value>校准</value>
-  </data>
-  <data name="&gt;&gt;lblCalibrateAccel.Name" xml:space="preserve">
-    <value>lblCalibrateAccel</value>
-  </data>
-  <data name="&gt;&gt;lblCalibrateAccel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCalibrateAccel.Parent" xml:space="preserve">
-    <value>panel6</value>
-  </data>
-  <data name="&gt;&gt;lblCalibrateAccel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -142,7 +142,7 @@
     <value>NoControl</value>
   </data>
   <data name="CB_simple6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 47</value>
+    <value>154, 81</value>
   </data>
   <data name="CB_simple6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -229,7 +229,7 @@
     <value>NoControl</value>
   </data>
   <data name="CB_simple4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 50</value>
+    <value>154, 81</value>
   </data>
   <data name="CB_simple4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -352,7 +352,7 @@
     <value>NoControl</value>
   </data>
   <data name="CB_simple1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 43</value>
+    <value>154, 81</value>
   </data>
   <data name="CB_simple1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -391,7 +391,7 @@
     <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 55</value>
+    <value>570, 55</value>
   </data>
   <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -619,7 +619,7 @@
     <value>NoControl</value>
   </data>
   <data name="BUT_SaveModes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>352, 78</value>
+    <value>574, 41</value>
   </data>
   <data name="BUT_SaveModes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -631,7 +631,7 @@
     <value>132</value>
   </data>
   <data name="BUT_SaveModes.Text" xml:space="preserve">
-    <value>Save Modes</value>
+    <value>保存模式</value>
   </data>
   <data name="&gt;&gt;BUT_SaveModes.Name" xml:space="preserve">
     <value>BUT_SaveModes</value>
@@ -667,7 +667,7 @@
     <value>NoControl</value>
   </data>
   <data name="chk_ss6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 46</value>
+    <value>310, 81</value>
   </data>
   <data name="chk_ss6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -754,7 +754,7 @@
     <value>NoControl</value>
   </data>
   <data name="chk_ss4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 46</value>
+    <value>310, 81</value>
   </data>
   <data name="chk_ss4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -877,7 +877,7 @@
     <value>NoControl</value>
   </data>
   <data name="chk_ss1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 41</value>
+    <value>310, 81</value>
   </data>
   <data name="chk_ss1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -943,13 +943,13 @@
     <value>Left</value>
   </data>
   <data name="CMB_fmode4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 47</value>
+    <value>234, 41</value>
   </data>
   <data name="CMB_fmode4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="CMB_fmode4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 23</value>
+    <value>100, 23</value>
   </data>
   <data name="CMB_fmode4.TabIndex" type="System.Int32, mscorlib">
     <value>159</value>
@@ -973,7 +973,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="CMB_fmode1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 42</value>
+    <value>212, 36</value>
   </data>
   <data name="CMB_fmode1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -1006,7 +1006,7 @@
     <value>微软雅黑, 10.8pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 41</value>
+    <value>235, 35</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1036,13 +1036,13 @@
     <value>Left</value>
   </data>
   <data name="CMB_fmode6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 47</value>
+    <value>222, 41</value>
   </data>
   <data name="CMB_fmode6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="CMB_fmode6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 23</value>
+    <value>112, 23</value>
   </data>
   <data name="CMB_fmode6.TabIndex" type="System.Int32, mscorlib">
     <value>131</value>
@@ -1069,7 +1069,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 129</value>
+    <value>147, 129</value>
   </data>
   <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1105,7 +1105,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 182</value>
+    <value>147, 182</value>
   </data>
   <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1141,7 +1141,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 233</value>
+    <value>147, 233</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1180,7 +1180,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 57</value>
+    <value>147, 57</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1211,7 +1211,7 @@
     <value>微软雅黑, 9pt</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 50</value>
+    <value>660, 50</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 27</value>
@@ -1262,7 +1262,7 @@
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 289</value>
+    <value>147, 289</value>
   </data>
   <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -1298,7 +1298,7 @@
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 210</value>
+    <value>147, 210</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 19</value>
@@ -1331,7 +1331,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 157</value>
+    <value>147, 157</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 19</value>
@@ -1364,7 +1364,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 103</value>
+    <value>147, 103</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 19</value>
@@ -1397,7 +1397,7 @@
     <value>微软雅黑, 10pt, style=Bold</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>387, 0</value>
+    <value>514, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 24</value>
@@ -1424,7 +1424,7 @@
     <value>3, 0</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>858, 26</value>
+    <value>1074, 26</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -1442,10 +1442,10 @@
     <value>0</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 10</value>
+    <value>100, 30</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>864, 98</value>
+    <value>1080, 98</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -1475,7 +1475,7 @@
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 0</value>
+    <value>501, 2</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 24</value>
@@ -1502,7 +1502,7 @@
     <value>3, 0</value>
   </data>
   <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>858, 26</value>
+    <value>1074, 26</value>
   </data>
   <data name="panel5.TabIndex" type="System.Int32, mscorlib">
     <value>150</value>
@@ -1520,10 +1520,10 @@
     <value>1</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 114</value>
+    <value>100, 134</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>864, 123</value>
+    <value>1080, 111</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>151</value>
@@ -1553,7 +1553,7 @@
     <value>NoControl</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 0</value>
+    <value>514, 0</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 24</value>
@@ -1580,7 +1580,7 @@
     <value>3, 0</value>
   </data>
   <data name="panel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>858, 26</value>
+    <value>1074, 26</value>
   </data>
   <data name="panel9.TabIndex" type="System.Int32, mscorlib">
     <value>151</value>
@@ -1607,7 +1607,7 @@
     <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 261</value>
+    <value>147, 261</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 19</value>
@@ -1640,7 +1640,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 35</value>
+    <value>146, 35</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 19</value>
@@ -1664,10 +1664,10 @@
     <value>3</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 244</value>
+    <value>100, 252</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>864, 325</value>
+    <value>1080, 325</value>
   </data>
   <data name="panel8.TabIndex" type="System.Int32, mscorlib">
     <value>152</value>
@@ -1697,7 +1697,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>991, 602</value>
+    <value>1223, 602</value>
   </data>
   <data name="&gt;&gt;currentStateBindingSource.Name" xml:space="preserve">
     <value>currentStateBindingSource</value>

@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblFailSafeBegin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 163</value>
+    <value>268, 141</value>
   </data>
   <data name="lblFailSafeBegin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -161,178 +161,6 @@
   </data>
   <data name="&gt;&gt;lblFailSafeBegin.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>699, 90</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 25</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.TabIndex" type="System.Int32, mscorlib">
-    <value>142</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.ToolTip" xml:space="preserve">
-    <value>遥控器失控保护：
-       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
-       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
-       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”
-</value>
-  </data>
-  <data name="mavlinkNumericUpDownthr_fs_value.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDownthr_fs_value</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="mavlinkComboFS_GCS_ENABLE.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkComboFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 163</value>
-  </data>
-  <data name="mavlinkComboFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 23</value>
-  </data>
-  <data name="mavlinkComboFS_GCS_ENABLE.TabIndex" type="System.Int32, mscorlib">
-    <value>161</value>
-  </data>
-  <data name="mavlinkComboFS_GCS_ENABLE.ToolTip" xml:space="preserve">
-    <value>地面站失控保护：当地面站连接并且出现中断，将触发保护机制。</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Name" xml:space="preserve">
-    <value>mavlinkComboFS_GCS_ENABLE</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 92</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 8</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 28</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.TabIndex" type="System.Int32, mscorlib">
-    <value>151</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.ToolTip" xml:space="preserve">
-    <value>遥控器失控保护：
-       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
-       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
-       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”</value>
-  </data>
-  <data name="mavlinkComboBox_fs_thr_enable.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Name" xml:space="preserve">
-    <value>mavlinkComboBox_fs_thr_enable</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 58</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 8</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 28</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.TabIndex" type="System.Int32, mscorlib">
-    <value>158</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.ToolTip" xml:space="preserve">
-    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
-  </data>
-  <data name="mavlinkComboBoxfs_batt_enable.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Name" xml:space="preserve">
-    <value>mavlinkComboBoxfs_batt_enable</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 59</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 27</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.TabIndex" type="System.Int32, mscorlib">
-    <value>153</value>
-  </data>
-  <data name="mavlinkNumericUpDownlow_voltage.ToolTip" xml:space="preserve">
-    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Name" xml:space="preserve">
-    <value>mavlinkNumericUpDownlow_voltage</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.ZOrder" xml:space="preserve">
-    <value>11</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -380,7 +208,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblLevel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 129</value>
+    <value>708, 139</value>
   </data>
   <data name="lblLevel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -394,6 +222,9 @@
   <data name="lblLevel.Text" xml:space="preserve">
     <value>药量检测</value>
   </data>
+  <data name="lblLevel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;lblLevel.Name" xml:space="preserve">
     <value>lblLevel</value>
   </data>
@@ -404,7 +235,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblLevel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="lblPC.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -440,16 +271,56 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;lblPC.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Location" type="System.Drawing.Point, System.Drawing">
+    <value>821, 142</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 25</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.TabIndex" type="System.Int32, mscorlib">
+    <value>142</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.ToolTip" xml:space="preserve">
+    <value>遥控器失控保护：
+       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
+       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
+       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”
+</value>
+  </data>
+  <data name="mavlinkNumericUpDownthr_fs_value.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownthr_fs_value</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownthr_fs_value.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="mavlinkNumericUpDownfs_thr_value.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="mavlinkNumericUpDownfs_thr_value.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
   <data name="mavlinkNumericUpDownfs_thr_value.Location" type="System.Drawing.Point, System.Drawing">
-    <value>563, 90</value>
+    <value>563, 95</value>
   </data>
   <data name="mavlinkNumericUpDownfs_thr_value.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 25</value>
+    <value>129, 27</value>
   </data>
   <data name="mavlinkNumericUpDownfs_thr_value.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -458,13 +329,40 @@
     <value>mavlinkNumericUpDownfs_thr_value</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;mavlinkNumericUpDownfs_thr_value.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 141</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 23</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.TabIndex" type="System.Int32, mscorlib">
+    <value>161</value>
+  </data>
+  <data name="mavlinkComboFS_GCS_ENABLE.ToolTip" xml:space="preserve">
+    <value>地面站失控保护：当地面站连接并且出现中断，将触发保护机制。</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Name" xml:space="preserve">
+    <value>mavlinkComboFS_GCS_ENABLE</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboFS_GCS_ENABLE.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lblSafe.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -520,35 +418,146 @@
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 92</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 8</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 28</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.TabIndex" type="System.Int32, mscorlib">
+    <value>151</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.ToolTip" xml:space="preserve">
+    <value>遥控器失控保护：
+       1.当遥控器实际油门低于设置的保护油门时触发保护机制；
+       2.当遥控器支持S.BU安全机制时，遥控器丢失信号时触发保护机制；
+       当保护机制设置为“自主模式继续执行任务”时，表示在自主飞行模式下不会触发保护，手动模式失控保护默认为“返航”</value>
+  </data>
+  <data name="mavlinkComboBox_fs_thr_enable.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Name" xml:space="preserve">
+    <value>mavlinkComboBox_fs_thr_enable</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBox_fs_thr_enable.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>406, 58</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 8</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 28</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.TabIndex" type="System.Int32, mscorlib">
+    <value>158</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.ToolTip" xml:space="preserve">
+    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
+  </data>
+  <data name="mavlinkComboBoxfs_batt_enable.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Name" xml:space="preserve">
+    <value>mavlinkComboBoxfs_batt_enable</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkComboBoxfs_batt_enable.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 59</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 27</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.TabIndex" type="System.Int32, mscorlib">
+    <value>153</value>
+  </data>
+  <data name="mavlinkNumericUpDownlow_voltage.ToolTip" xml:space="preserve">
+    <value>低电压保护：实际单片电压小于地面站设置的电压时，触发相应保护动作。</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Name" xml:space="preserve">
+    <value>mavlinkNumericUpDownlow_voltage</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Type" xml:space="preserve">
+    <value>ByAeroBeHero.Controls.MavlinkNumericUpDown, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;mavlinkNumericUpDownlow_voltage.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="cb_FS_Level_Enable.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="cb_FS_Level_Enable.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
+    <value>微软雅黑, 2pt</value>
   </data>
   <data name="cb_FS_Level_Enable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 126</value>
+    <value>638, 103</value>
   </data>
   <data name="cb_FS_Level_Enable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 28</value>
+    <value>10, 12</value>
   </data>
   <data name="cb_FS_Level_Enable.TabIndex" type="System.Int32, mscorlib">
     <value>160</value>
+  </data>
+  <data name="cb_FS_Level_Enable.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Name" xml:space="preserve">
     <value>cb_FS_Level_Enable</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Type" xml:space="preserve">
-    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6221.28634, Culture=neutral, PublicKeyToken=null</value>
+    <value>ByAeroBeHero.Controls.MavlinkComboBox, ByAeroBeHero, Version=1.6.6281.25167, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;cb_FS_Level_Enable.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 62</value>
+    <value>100, 30</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1080, 222</value>

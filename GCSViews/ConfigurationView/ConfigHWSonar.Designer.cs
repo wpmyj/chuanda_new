@@ -80,6 +80,8 @@
             // 
             this.groupBox3.Controls.Add(this.mavlinkComboBox1);
             this.groupBox3.Controls.Add(this.cb_LevelSensor);
+            this.groupBox3.Controls.Add(this.SPRAY_RATE_MAX);
+            this.groupBox3.Controls.Add(this.SPRAY_RATE_MIN);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
@@ -161,11 +163,9 @@
             this.panel5.Controls.Add(this.SPRAY_SPEEN_EN);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.SPRAY_RATE_MIN);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.SPRAY_SPEED_MAX);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.SPRAY_RATE_MAX);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.SPRAY_SPEED_MIN);
             resources.ApplyResources(this.panel5, "panel5");
